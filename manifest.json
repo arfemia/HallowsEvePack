@@ -1,0 +1,20 @@
+{
+  "Group": "Ziggfreed",
+  "Name": "HallowsEvePack",
+  "Version": "1.0.0",
+  "Description": "Hallow's Eve, a yearly autumn event for any server running Ziggfreed's CommonLib. Each October, Old Jack opens the Forgotten Temple with a questline, dailies, Lantern Bombs, the Hallow King and the Hollow Crypt, all paid in Hallow Sweets. It plays on its own; MMO Skill Tree adds skill XP and set bonuses, and RPG Stations adds the Carving Bench.",
+  "Authors": [
+    {
+      "Name": "ZiggFreed"
+    }
+  ],
+  "Website": "https://mmo-skill-tree-docs.ziggfreed.com/",
+  "ServerVersion": ">=0.6.0-pre.13 <0.7.0",
+  "IncludesAssetPack": true,
+  "Dependencies": {
+    "Ziggfreed:ZiggfreedCommon": ">=2.2.0"
+  },
+  "OptionalDependencies": {
+    "Ziggfreed:RpgStations": ">=1.1.0"
+  }
+}
