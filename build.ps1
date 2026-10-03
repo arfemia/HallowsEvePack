@@ -20,8 +20,8 @@ $ErrorActionPreference = 'Stop'
 
 # --- PER-PACK ---
 $PackName          = 'HallowsEvePack'       # zip base name; the manifest Version is appended
-$ExtraExcludeNames = @()        # extra top-level file names to leave out of the zip
-$ExtraExcludeDirs  = @()        # extra top-level dir names (at the pack root) to skip
+$ExtraExcludeNames = @('.gitattributes') # extra top-level file names to leave out of the zip
+$ExtraExcludeDirs  = @('tools') # extra top-level dir names (at the pack root) to skip
 # ----------------
 
 $pack = $PSScriptRoot
