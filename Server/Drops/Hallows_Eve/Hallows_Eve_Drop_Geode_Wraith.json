@@ -1,0 +1,36 @@
+{
+  "$Comment": "What a Geode Wraith drops: the game's own Wraith cloth, often a Cursed Geode, and the better Lantern Bombs, since it is the toughest thing the event sends out. In a Multiple container each child is rolled on its own, and a child's Weight is its chance out of 100. Every branch ends in a concrete Single, which the game's validator needs.",
+  "Container": {
+    "Type": "Multiple",
+    "Containers": [
+      {
+        "Type": "Choice",
+        "Weight": 100,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Ingredient_Fabric_Scrap_Cindercloth", "QuantityMin": 1, "QuantityMax": 3 } }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 40,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Hallows_Eve_Cursed_Geode", "QuantityMin": 1, "QuantityMax": 1 } }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 25,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Hallows_Eve_Lantern_Bomb_Rare", "QuantityMin": 1, "QuantityMax": 1 } }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 5,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Hallows_Eve_Lantern_Bomb_Epic", "QuantityMin": 1, "QuantityMax": 1 } }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$Comment": [
+    "The toast and the sound a player gets when a hand-harvested pumpkin comes up hallowed during",
+    "Hallow's Eve. The file name is the moment id, and it is the Cue the pumpkin row",
+    "(BonusRows/HallowsEvePack/Hallows_Eve_Pumpkin_Find.json) puts on its find roll; a cue plays only",
+    "when the roll beside it handed something over.",
+    "",
+    "The Hallowed Pumpkin goes straight into the bag beside the harvest. Key is a line in this pack's",
+    "hallowseve.world.lang, written bare; Sound is any SoundEvent id, played where the player stands."
+  ],
+  "Toast": {
+    "Title": { "Key": "notify.hallows_eve_pumpkin_found" },
+    "Tone": "Reward"
+  },
+  "Sound": { "Id": "SFX_Default_Harvest" }
+}

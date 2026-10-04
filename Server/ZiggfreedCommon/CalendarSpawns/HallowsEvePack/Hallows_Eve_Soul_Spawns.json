@@ -1,0 +1,30 @@
+{
+  "$Comment": [
+    "Lost Souls after dark while Hallow's Eve runs, written as the world-spawn rule Hallows_Eve_Souls",
+    "when the event starts and stilled (every moon phase at zero) when it ends. Each Lost Soul starts",
+    "on the soil it spawns on (SpawnBlockSet). Harvest_Moon_Soul_Spawns.json names the same Rule at a",
+    "higher Priority and takes over on Harvest Moon nights.",
+    "",
+    "The night, the dawn clear-out and the light gate match the Hallows_Eve_Night rule, read by the",
+    "game's own NPC/Spawn/World codec. One rule per creature and environment: no other rule in this",
+    "pack names this role."
+  ],
+  "Event": "Hallows_Eve",
+  "Rule": "Hallows_Eve_Souls",
+  "Priority": 0,
+  "Spawn": {
+    "Environments": [
+      "Env_Zone1_Forests", "Env_Zone1_Autumn", "Env_Zone1_Azure", "Env_Zone1_Plains",
+      "Env_Zone1_Mountains", "Env_Zone1_Swamps", "Env_Zone1_Graveyard",
+      "Env_Zone2_Savanna", "Env_Zone2_Scrub", "Env_Zone2_Plateaus", "Env_Zone2_Deserts",
+      "Env_Zone3_Tundra", "Env_Zone3_Forests", "Env_Zone3_Mountains",
+      "Env_Zone4_Forests", "Env_Zone4_Jungles", "Env_Zone4_Wastes"
+    ],
+    "NPCs": [
+      { "Id": "Hallows_Eve_Lost_Soul", "Weight": 6, "SpawnBlockSet": "Soil" }
+    ],
+    "DayTimeRange": [19, 5],
+    "Despawn": { "DayTimeRange": [5, 19] },
+    "LightRanges": { "Light": [0, 8] }
+  }
+}

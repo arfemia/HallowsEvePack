@@ -1,0 +1,17 @@
+{
+  "$Comment": [
+    "The toast and the crack a player gets when a broken block turns up a Cursed Geode during",
+    "Hallow's Eve. The file name is the moment id, and it is the Cue the two geode rows",
+    "(BonusRows/HallowsEvePack/Hallows_Eve_Geode_Find*.json) put on their find roll; a cue plays only",
+    "when the roll beside it handed something over, so this never fires on an empty block.",
+    "",
+    "The geode lands where the block broke, which is why the words point at the rubble. Key is a line",
+    "in this pack's hallowseve.world.lang, written bare; Sound is any SoundEvent id, played where the",
+    "player stands. Delete either group to drop that half."
+  ],
+  "Toast": {
+    "Title": { "Key": "notify.hallows_eve_geode_found" },
+    "Tone": "Reward"
+  },
+  "Sound": { "Id": "SFX_Crystal_Break" }
+}

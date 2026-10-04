@@ -1,0 +1,30 @@
+{
+  "$Comment": [
+    "Geode Wraiths in the mineshafts of the first three zones while Hallow's Eve runs, written as the",
+    "world-spawn rule Hallows_Eve_Wraiths when the event starts and stilled (every moon phase at zero)",
+    "when it ends. The world's clock runs underground too: DayTimeRange 19 to 5 keeps them to the",
+    "night hours, and Despawn clears what is still out at dawn. That clear-out is what empties the",
+    "mineshafts once the event ends, since a stilled rule stops new spawns but leaves the rest standing.",
+    "LightRanges keeps them out of any passage a torch lights, and SpawnBlockSet Rock puts them on the",
+    "rock floor.",
+    "",
+    "Only the mineshafts, on purpose: the game spawns nothing of its own through world rules in most",
+    "cave environments, so a rule naming every cave would hand a Geode Wraith every spawn those caves",
+    "make. In a mineshaft they stay a find. Harvest Moon leaves this rule alone. One rule per creature",
+    "and environment: no other rule in this pack names this role."
+  ],
+  "Event": "Hallows_Eve",
+  "Rule": "Hallows_Eve_Wraiths",
+  "Priority": 0,
+  "Spawn": {
+    "Environments": [
+      "Env_Zone1_Mineshafts", "Env_Zone2_Mineshafts", "Env_Zone3_Mineshafts"
+    ],
+    "NPCs": [
+      { "Id": "Hallows_Eve_Geode_Wraith", "Weight": 3, "SpawnBlockSet": "Rock" }
+    ],
+    "DayTimeRange": [19, 5],
+    "Despawn": { "DayTimeRange": [5, 19] },
+    "LightRanges": { "Light": [0, 8] }
+  }
+}
