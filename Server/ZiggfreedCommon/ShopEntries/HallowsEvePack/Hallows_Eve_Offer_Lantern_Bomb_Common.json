@@ -1,0 +1,13 @@
+{
+  "$Comment": "Five common Lantern Bombs. The title and the line under it are the bomb's own name and description, so the stall calls it what the item calls itself. There is no Requires block: an offer at Old Jack's stall comes and goes with the stall.",
+  "Text": {
+    "TitleKey": "items.Hallows_Eve_Lantern_Bomb_Common.name",
+    "FlavorKey": "items.Hallows_Eve_Lantern_Bomb_Common.description"
+  },
+  "Shop": "Hallows_Eve_Old_Jack",
+  "Listing": { "Category": "bombs", "SortOrder": 10 },
+  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 6 } },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Hallows_Eve_Lantern_Bomb_Common", "Count": 5 } }
+  ]
+}

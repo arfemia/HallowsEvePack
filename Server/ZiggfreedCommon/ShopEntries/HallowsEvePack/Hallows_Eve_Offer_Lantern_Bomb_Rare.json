@@ -1,0 +1,13 @@
+{
+  "$Comment": "Two rare Lantern Bombs, the tier whose burst also slows. Named by the item's own keys.",
+  "Text": {
+    "TitleKey": "items.Hallows_Eve_Lantern_Bomb_Rare.name",
+    "FlavorKey": "items.Hallows_Eve_Lantern_Bomb_Rare.description"
+  },
+  "Shop": "Hallows_Eve_Old_Jack",
+  "Listing": { "Category": "bombs", "SortOrder": 30 },
+  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 18 } },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Hallows_Eve_Lantern_Bomb_Rare", "Count": 2 } }
+  ]
+}

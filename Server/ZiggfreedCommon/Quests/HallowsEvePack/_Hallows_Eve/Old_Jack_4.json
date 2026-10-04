@@ -1,0 +1,45 @@
+{
+  "$Comment": "Old Jack's fourth step: set Lost Souls free and hand over the Ectoplasm they drop. Both steps share Order 1, so they run side by side; the Ectoplasm is handed in at the giver.",
+  "Name": "Old_Jack_4",
+  "Text": {
+    "TitleKey": "quest.hallows_eve_old_jack_4.title",
+    "FlavorKey": "quest.hallows_eve_old_jack_4.flavor"
+  },
+  "Listing": {
+    "Icon": "Hallows_Eve_Ectoplasm",
+    "Category": "main",
+    "SortOrder": 40,
+    "Chains": [ { "Id": "hallows_eve_old_jack", "Tier": 4 } ],
+    "Hidden": true,
+    "RequirePrerequisites": true
+  },
+  "Flow": { "AutoAccept": false, "AutoTrack": true, "HideLockedSteps": true },
+  "Npc": { "ViewId": "Hallows_Eve_Old_Jack", "TurnInId": "giver" },
+  "CompletionDialogue": "Hallows_Eve_Old_Jack",
+  "Requires": {
+    "Quests": [ "hallows_eve_old_jack_3" ],
+    "Factors": [
+      { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
+    ]
+  },
+  "Objectives": {
+    "free_souls": {
+      "Kind": "KILL_ENTITY",
+      "Target": "Hallows_Eve_Lost_Soul",
+      "MatchMode": "EXACT",
+      "Amount": 5,
+      "Order": 1
+    },
+    "bring_ectoplasm": {
+      "Kind": "TURN_IN",
+      "Target": "Hallows_Eve_Ectoplasm",
+      "MatchMode": "EXACT",
+      "Amount": 5,
+      "Order": 1,
+      "TurnInNpcId": "giver"
+    }
+  },
+  "Rewards": {
+    "Claim": [ { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Chain_Pay" } } ]
+  }
+}

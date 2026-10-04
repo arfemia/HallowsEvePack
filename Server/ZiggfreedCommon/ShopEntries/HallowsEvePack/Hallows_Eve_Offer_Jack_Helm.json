@@ -1,0 +1,13 @@
+{
+  "$Comment": "The Jack Helm, one half of the Hallowed set. Named by the item's own keys.",
+  "Text": {
+    "TitleKey": "items.Hallows_Eve_Jack_Helm.name",
+    "FlavorKey": "items.Hallows_Eve_Jack_Helm.description"
+  },
+  "Shop": "Hallows_Eve_Old_Jack",
+  "Listing": { "Category": "gear", "SortOrder": 10 },
+  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 120 } },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Hallows_Eve_Jack_Helm", "Count": 1 } }
+  ]
+}

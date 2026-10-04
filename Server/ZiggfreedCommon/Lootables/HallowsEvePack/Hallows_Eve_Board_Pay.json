@@ -1,0 +1,26 @@
+{
+  "$Comment": [
+    "What a contract on Old Jack's board pays. Every roll is read on its own: the first always pays,",
+    "and the other two are chances on top. Chance is a percent from 0 to 100.",
+    "",
+    "Sweets pay through the Currency reward kind, since a counter wallet has no item to hand over.",
+    "A companion mod adds its own rolls to this table with a file of its own that names it in",
+    "ContributesTo, so nothing here has to change."
+  ],
+  "Name": "Hallows_Eve_Board_Pay",
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "12" } } ]
+      }
+    },
+    {
+      "Chance": { "Base": 30.0 },
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Cursed_Geode", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 5.0 },
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Lantern_Bomb_Epic", "Count": 1 } ] }
+    }
+  ]
+}

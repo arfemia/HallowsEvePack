@@ -1,0 +1,41 @@
+{
+  "$Comment": "One of Old Jack's three dailies: Hallowed Pumpkins handed in at the giver. A TURN_IN step is handed in where it is, so no report-back step is added.",
+  "Name": "Jack_Daily_Pumpkins",
+  "Text": {
+    "TitleKey": "quest.hallows_eve_jack_daily_pumpkins.title",
+    "FlavorKey": "quest.hallows_eve_jack_daily_pumpkins.flavor"
+  },
+  "Listing": {
+    "Icon": "Hallows_Eve_Hallowed_Pumpkin",
+    "Category": "misc",
+    "SortOrder": 120,
+    "Hidden": true,
+    "RequirePrerequisites": true
+  },
+  "Flow": { "AutoAccept": false, "AutoTrack": true, "HideLockedSteps": true },
+  "Repeat": {
+    "Reset": { "Period": "Daily" },
+    "CooldownFrom": "Complete"
+  },
+  "Npc": { "ViewId": "Hallows_Eve_Old_Jack", "TurnInId": "giver" },
+  "CompletionDialogue": "Hallows_Eve_Old_Jack",
+  "Requires": {
+    "Quests": [ "hallows_eve_old_jack_1" ],
+    "Factors": [
+      { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
+    ]
+  },
+  "Objectives": {
+    "bring_pumpkins": {
+      "Kind": "TURN_IN",
+      "Target": "Hallows_Eve_Hallowed_Pumpkin",
+      "MatchMode": "EXACT",
+      "Amount": 4,
+      "Order": 1,
+      "TurnInNpcId": "giver"
+    }
+  },
+  "Rewards": {
+    "Claim": [ { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Daily_Pay" } } ]
+  }
+}

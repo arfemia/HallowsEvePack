@@ -1,0 +1,21 @@
+{
+  "$Comment": "The Harvest Moon special: a bundle of epic and rare Lantern Bombs, on the shelf only while Harvest Moon runs. Its own Requires block is what hides it the rest of the season; the stall's block still hides it outside Hallow's Eve.",
+  "Text": {
+    "TitleKey": "shop.hallows_eve_offer_harvest_moon_bundle.title",
+    "FlavorKey": "shop.hallows_eve_offer_harvest_moon_bundle.desc"
+  },
+  "Icon": "Hallows_Eve_Lantern_Bomb_Epic",
+  "Shop": "Hallows_Eve_Old_Jack",
+  "Listing": { "Category": "bombs", "SortOrder": 50 },
+  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 40 } },
+  "Limits": { "Daily": 1 },
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:feature", "Param": "Harvest_Moon_Live", "Min": 1 }
+    ]
+  },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Hallows_Eve_Lantern_Bomb_Epic", "Count": 2 } },
+    { "Kind": "Item", "Params": { "Item": "Hallows_Eve_Lantern_Bomb_Rare", "Count": 3 } }
+  ]
+}

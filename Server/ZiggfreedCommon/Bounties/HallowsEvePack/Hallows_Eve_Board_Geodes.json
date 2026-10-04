@@ -1,0 +1,27 @@
+{
+  "$Comment": "A nightly contract on Old Jack's board. USE_ITEM with the Qualifier Crack counts a Cursed Geode cracked open.",
+  "Text": {
+    "TitleKey": "quest.hallows_eve_board_geodes.title",
+    "FlavorKey": "quest.hallows_eve_board_geodes.flavor"
+  },
+  "Listing": { "Category": "bounty", "Icon": "Hallows_Eve_Cursed_Geode" },
+  "Boards": [ { "Board": "Hallows_Eve_Daily", "Weight": 1 } ],
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
+    ]
+  },
+  "Objectives": {
+    "crack_geodes": {
+      "Kind": "USE_ITEM",
+      "Target": "Hallows_Eve_Cursed_Geode",
+      "MatchMode": "EXACT",
+      "Qualifier": "Crack",
+      "Amount": 4,
+      "TextKey": "objective.hallows_eve.crack_geodes"
+    }
+  },
+  "Rewards": {
+    "Auto": [ { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } } ]
+  }
+}

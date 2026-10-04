@@ -1,0 +1,20 @@
+{
+  "$Comment": "A nightly contract on Old Jack's board. It pays through Rewards.Auto the moment the work is done, because the board goes away with the event and a Claim would wait a year for it. The Requires block keeps it out of every draw while the event is off.",
+  "Text": {
+    "TitleKey": "quest.hallows_eve_board_souls.title",
+    "FlavorKey": "quest.hallows_eve_board_souls.flavor"
+  },
+  "Listing": { "Category": "bounty", "Icon": "Hallows_Eve_Ectoplasm" },
+  "Boards": [ { "Board": "Hallows_Eve_Daily", "Weight": 1 } ],
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
+    ]
+  },
+  "Objectives": {
+    "free_souls": { "Kind": "KILL_ENTITY", "Target": "Hallows_Eve_Lost_Soul", "MatchMode": "EXACT", "Amount": 8 }
+  },
+  "Rewards": {
+    "Auto": [ { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } } ]
+  }
+}

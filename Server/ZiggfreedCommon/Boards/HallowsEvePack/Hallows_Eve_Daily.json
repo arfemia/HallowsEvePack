@@ -1,0 +1,17 @@
+{
+  "$Comment": "Old Jack's board: one contract a night, drawn at midnight UTC from every contract naming this board, the pack's own and any a companion mod adds. The Requires block makes the board absent while the event is off, and its contracts pay the moment the work is done, so nothing waits on a board that has gone for the year. Order 90 keeps it behind a server's everyday boards.",
+  "Text": {
+    "TitleKey": "board.hallows_eve_daily.title",
+    "FlavorKey": "board.hallows_eve_daily.desc"
+  },
+  "Icon": "Hallows_Eve_Jack_Lantern",
+  "Order": 90,
+  "Rotation": { "Period": "Daily" },
+  "Slots": [ { "Count": 1 } ],
+  "Currencies": [ "Hallows_Eve_Sweets" ],
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
+    ]
+  }
+}

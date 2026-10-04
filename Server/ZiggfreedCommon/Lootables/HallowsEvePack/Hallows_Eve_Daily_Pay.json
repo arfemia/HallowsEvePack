@@ -1,0 +1,24 @@
+{
+  "$Comment": [
+    "What each of Old Jack's three dailies pays. Every roll is read on its own: the first always",
+    "pays, the other two are chances on top. Chance is a percent from 0 to 100. Sweets pay through",
+    "the Currency reward kind; a companion mod adds rolls with a file naming this table in",
+    "ContributesTo."
+  ],
+  "Name": "Hallows_Eve_Daily_Pay",
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "8" } } ]
+      }
+    },
+    {
+      "Chance": { "Base": 20.0 },
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Lantern_Bomb_Uncommon", "Count": 2 } ] }
+    },
+    {
+      "Chance": { "Base": 5.0 },
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Lantern_Bomb_Rare", "Count": 1 } ] }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "$Comment": "Three uncommon Lantern Bombs, the tier whose burst sets what it hits alight. Named by the item's own keys.",
+  "Text": {
+    "TitleKey": "items.Hallows_Eve_Lantern_Bomb_Uncommon.name",
+    "FlavorKey": "items.Hallows_Eve_Lantern_Bomb_Uncommon.description"
+  },
+  "Shop": "Hallows_Eve_Old_Jack",
+  "Listing": { "Category": "bombs", "SortOrder": 20 },
+  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 10 } },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Hallows_Eve_Lantern_Bomb_Uncommon", "Count": 3 } }
+  ]
+}

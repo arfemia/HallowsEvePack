@@ -1,0 +1,65 @@
+{
+  "$Comment": [
+    "The last step of Old Jack's questline: light the Hollow Lantern. Finishing it earns that year's",
+    "keepsake achievement, hallows_eve_lantern_keepsake, which hands over the Hollow Lantern itself.",
+    "",
+    "Repeat brings this one quest back once a year: the 60-day wait from finishing is longer than",
+    "the event and shorter than a year, so a returning player lights a new lantern next October and",
+    "earns that year's keepsake without walking the whole questline again. The steps before it never",
+    "come back."
+  ],
+  "Name": "Old_Jack_Lantern",
+  "Text": {
+    "TitleKey": "quest.hallows_eve_old_jack_lantern.title",
+    "FlavorKey": "quest.hallows_eve_old_jack_lantern.flavor"
+  },
+  "Listing": {
+    "Icon": "Hallows_Eve_Hollow_Lantern",
+    "Category": "main",
+    "SortOrder": 60,
+    "Chains": [ { "Id": "hallows_eve_old_jack", "Tier": 6 } ],
+    "Hidden": true,
+    "RequirePrerequisites": true
+  },
+  "Flow": { "AutoAccept": false, "AutoTrack": true, "HideLockedSteps": true },
+  "Repeat": {
+    "Cooldown": { "Days": 60 },
+    "CooldownFrom": "Complete"
+  },
+  "Npc": { "ViewId": "Hallows_Eve_Old_Jack", "TurnInId": "giver" },
+  "CompletionDialogue": "Hallows_Eve_Old_Jack",
+  "Requires": {
+    "Quests": [ "hallows_eve_old_jack_5" ],
+    "Factors": [
+      { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
+    ]
+  },
+  "Objectives": {
+    "knock_down_skeletons": {
+      "Kind": "KILL_ENTITY",
+      "Target": "Hallows_Eve_Jack_Skeleton",
+      "MatchMode": "EXACT",
+      "Amount": 5,
+      "Order": 1
+    },
+    "bring_pumpkin": {
+      "Kind": "TURN_IN",
+      "Target": "Hallows_Eve_Hallowed_Pumpkin",
+      "MatchMode": "EXACT",
+      "Amount": 1,
+      "Order": 1,
+      "TurnInNpcId": "giver"
+    },
+    "bring_ectoplasm": {
+      "Kind": "TURN_IN",
+      "Target": "Hallows_Eve_Ectoplasm",
+      "MatchMode": "EXACT",
+      "Amount": 5,
+      "Order": 1,
+      "TurnInNpcId": "giver"
+    }
+  },
+  "Rewards": {
+    "Claim": [ { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Lantern_Pay" } } ]
+  }
+}

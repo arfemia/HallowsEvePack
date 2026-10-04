@@ -1,0 +1,24 @@
+{
+  "$Comment": [
+    "What each step of Old Jack's questline pays, the last step aside. Every roll is read on its",
+    "own: the first always pays, the second is a chance on top. Chance is a percent from 0 to 100.",
+    "",
+    "The first roll hands over common Lantern Bombs as well as sweets, so the step that asks for",
+    "throws can start the moment the step before it is claimed. Sweets pay through the Currency",
+    "reward kind, since a counter wallet has no item to hand over. A companion mod adds rolls of",
+    "its own with a file that names this table in ContributesTo."
+  ],
+  "Name": "Hallows_Eve_Chain_Pay",
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "10" } } ],
+        "Items": [ { "Item": "Hallows_Eve_Lantern_Bomb_Common", "Count": 3 } ]
+      }
+    },
+    {
+      "Chance": { "Base": 25.0 },
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Lantern_Bomb_Uncommon", "Count": 1 } ] }
+    }
+  ]
+}

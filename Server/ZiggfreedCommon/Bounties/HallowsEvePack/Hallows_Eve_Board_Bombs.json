@@ -1,0 +1,27 @@
+{
+  "$Comment": "A nightly contract on Old Jack's board. USE_ITEM with the Qualifier Throw counts a thrown Lantern Bomb of any tier: the PREFIX match takes every id starting Hallows_Eve_Lantern_Bomb_. The step's own TextKey words it, since the shared sentence for the kind is generic.",
+  "Text": {
+    "TitleKey": "quest.hallows_eve_board_bombs.title",
+    "FlavorKey": "quest.hallows_eve_board_bombs.flavor"
+  },
+  "Listing": { "Category": "bounty", "Icon": "Hallows_Eve_Lantern_Bomb_Uncommon" },
+  "Boards": [ { "Board": "Hallows_Eve_Daily", "Weight": 1 } ],
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
+    ]
+  },
+  "Objectives": {
+    "throw_bombs": {
+      "Kind": "USE_ITEM",
+      "Target": "Hallows_Eve_Lantern_Bomb_",
+      "MatchMode": "PREFIX",
+      "Qualifier": "Throw",
+      "Amount": 10,
+      "TextKey": "objective.hallows_eve.throw_bombs"
+    }
+  },
+  "Rewards": {
+    "Auto": [ { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } } ]
+  }
+}

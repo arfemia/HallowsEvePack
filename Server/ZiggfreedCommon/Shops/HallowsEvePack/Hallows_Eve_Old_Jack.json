@@ -1,0 +1,21 @@
+{
+  "$Comment": "Old Jack's stall. The Requires block makes the stall, and every offer naming it, absent while the event is off. Order 90 keeps it behind a server's everyday storefronts, so a shop block or a conversation line that opens 'the first storefront' never lands here. CategoryOrder fixes the shelf order, and each shelf's name is a key in hallowseve.progression.lang.",
+  "Text": {
+    "TitleKey": "shop.hallows_eve_old_jack.title",
+    "FlavorKey": "shop.hallows_eve_old_jack.desc"
+  },
+  "Icon": "Hallows_Eve_Jack_Lantern",
+  "Order": 90,
+  "Currencies": [ "Hallows_Eve_Sweets" ],
+  "CategoryOrder": [ "bombs", "lights", "gear" ],
+  "Categories": {
+    "bombs": { "TitleKey": "shop.hallows_eve_old_jack.category.bombs" },
+    "lights": { "TitleKey": "shop.hallows_eve_old_jack.category.lights" },
+    "gear": { "TitleKey": "shop.hallows_eve_old_jack.category.gear" }
+  },
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
+    ]
+  }
+}

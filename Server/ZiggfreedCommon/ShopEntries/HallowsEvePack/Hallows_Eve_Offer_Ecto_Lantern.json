@@ -1,0 +1,16 @@
+{
+  "$Comment": "An Ecto Lantern, the light that burns ectoplasm. The price takes sweets and Ectoplasm together, so a server without a Carving Bench still has a use for what the Lost Souls leave behind. Named by the item's own keys.",
+  "Text": {
+    "TitleKey": "items.Hallows_Eve_Ecto_Lantern.name",
+    "FlavorKey": "items.Hallows_Eve_Ecto_Lantern.description"
+  },
+  "Shop": "Hallows_Eve_Old_Jack",
+  "Listing": { "Category": "lights", "SortOrder": 20 },
+  "Cost": {
+    "Currencies": { "Hallows_Eve_Sweets": 10 },
+    "Items": [ { "Item": "Hallows_Eve_Ectoplasm", "Count": 4 } ]
+  },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Hallows_Eve_Ecto_Lantern", "Count": 1 } }
+  ]
+}

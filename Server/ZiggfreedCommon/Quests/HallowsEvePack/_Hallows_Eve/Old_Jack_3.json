@@ -1,0 +1,37 @@
+{
+  "$Comment": "Old Jack's third step: put down Hollow Ghouls, which walk only at night while the event runs. Npc.TurnInId adds the report-back step to Old Jack.",
+  "Name": "Old_Jack_3",
+  "Text": {
+    "TitleKey": "quest.hallows_eve_old_jack_3.title",
+    "FlavorKey": "quest.hallows_eve_old_jack_3.flavor"
+  },
+  "Listing": {
+    "Icon": "Deco_Bone_Skulls",
+    "Category": "main",
+    "SortOrder": 30,
+    "Chains": [ { "Id": "hallows_eve_old_jack", "Tier": 3 } ],
+    "Hidden": true,
+    "RequirePrerequisites": true
+  },
+  "Flow": { "AutoAccept": false, "AutoTrack": true, "HideLockedSteps": true },
+  "Npc": { "ViewId": "Hallows_Eve_Old_Jack", "TurnInId": "giver" },
+  "CompletionDialogue": "Hallows_Eve_Old_Jack",
+  "Requires": {
+    "Quests": [ "hallows_eve_old_jack_2" ],
+    "Factors": [
+      { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
+    ]
+  },
+  "Objectives": {
+    "put_down_ghouls": {
+      "Kind": "KILL_ENTITY",
+      "Target": "Hallows_Eve_Hollow_Ghoul",
+      "MatchMode": "EXACT",
+      "Amount": 6,
+      "Order": 1
+    }
+  },
+  "Rewards": {
+    "Claim": [ { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Chain_Pay" } } ]
+  }
+}

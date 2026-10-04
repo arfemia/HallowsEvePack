@@ -1,0 +1,14 @@
+{
+  "$Comment": "One epic Lantern Bomb, the tier that splits into flaming shards. Limits.Daily caps how many one player buys a day; raise or remove it to taste.",
+  "Text": {
+    "TitleKey": "items.Hallows_Eve_Lantern_Bomb_Epic.name",
+    "FlavorKey": "items.Hallows_Eve_Lantern_Bomb_Epic.description"
+  },
+  "Shop": "Hallows_Eve_Old_Jack",
+  "Listing": { "Category": "bombs", "SortOrder": 40 },
+  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 30 } },
+  "Limits": { "Daily": 2 },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Hallows_Eve_Lantern_Bomb_Epic", "Count": 1 } }
+  ]
+}

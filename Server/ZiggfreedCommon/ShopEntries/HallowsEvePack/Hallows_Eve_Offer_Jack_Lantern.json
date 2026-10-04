@@ -1,0 +1,13 @@
+{
+  "$Comment": "A Jack Lantern to set down and light. Named by the item's own keys.",
+  "Text": {
+    "TitleKey": "items.Hallows_Eve_Jack_Lantern.name",
+    "FlavorKey": "items.Hallows_Eve_Jack_Lantern.description"
+  },
+  "Shop": "Hallows_Eve_Old_Jack",
+  "Listing": { "Category": "lights", "SortOrder": 10 },
+  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 15 } },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Hallows_Eve_Jack_Lantern", "Count": 1 } }
+  ]
+}
