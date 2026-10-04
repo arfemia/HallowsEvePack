@@ -1,0 +1,36 @@
+{
+  "$Comment": [
+    "Cursed Geodes in plain stone: while Hallow's Eve runs, breaking any rock a player did not place",
+    "can turn one up, and it lands where the block broke. The file name is the row's id.",
+    "",
+    "When names the moment and the blocks: BreakBlock on every block id starting Rock_. Chance is the",
+    "row's own odds as a percent (1 is one block in a hundred). A row has no gate of its own, so the",
+    "season rides on each roll's Conditions: calendar_live reads 1 only while the event runs, and a",
+    "roll whose condition fails hands nothing over. The first roll is the find and carries the Cue",
+    "that shows the toast; the second adds one more geode on Harvest Moon nights.",
+    "",
+    "Ore has a row of its own (Hallows_Eve_Geode_Find_Ore.json), because a row answers one name",
+    "pattern and the most specific pattern wins a name. A server owner retunes or switches off this",
+    "row by its id in mods/ziggfreedcommon/bonus-rows.json."
+  ],
+  "When": { "Kind": "BreakBlock", "Match": "Rock_*" },
+  "Chance": { "Base": 1.0 },
+  "Loot": {
+    "Rolls": [
+      {
+        "Conditions": [
+          { "Factor": "ziggfreedcommon:calendar_live", "Param": "Hallows_Eve", "Min": 1 }
+        ],
+        "Grants": { "Items": [ { "Item": "Hallows_Eve_Cursed_Geode", "Count": 1 } ] },
+        "Cue": "Hallows_Eve_Geode_Found"
+      },
+      {
+        "Conditions": [
+          { "Factor": "ziggfreedcommon:calendar_live", "Param": "Hallows_Eve", "Min": 1 },
+          { "Factor": "ziggfreedcommon:calendar_live", "Param": "Harvest_Moon", "Min": 1 }
+        ],
+        "Grants": { "Items": [ { "Item": "Hallows_Eve_Cursed_Geode", "Count": 1 } ] }
+      }
+    ]
+  }
+}
