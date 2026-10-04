@@ -1,0 +1,344 @@
+{
+  "Name": "Hallows_Eve_Old_Jack",
+  "$Comment": [
+    "Old Jack's conversation, everything he says at the Forgotten Temple while Hallow's Eve runs.",
+    "He contracts everything he says: I'm, it's, don't.",
+    "",
+    "HOW A SCREEN IS PICKED. Start is walked in a fixed order: First (top to bottom), then a quest",
+    "that is READY to hand in, then one he can OFFER, then one that is ACTIVE, then Then, then",
+    "Fallback. First holds the greeting, shown until the hail spends it, and the board line, shown",
+    "once a day (Once with Period Daily, turning over at midnight UTC) and skipped while the player",
+    "has something to hand in. Quests holds one row per quest, the questline first, so the questline",
+    "wins a tie with a daily. Then shows the lit-lantern line once the year's lantern is lit.",
+    "",
+    "THE FOOTER. Most screens pull in the jack_footer group: hand-ins, the quest list, the board, the",
+    "stall, the Almanac (only while the Almanac is switched on), two lore lines, the Harvest Moon",
+    "line (only while Harvest Moon runs) and goodbye. The trick-or-treat line is not here: it comes",
+    "from the DialogueExtensions file Hallows_Eve_Trick_Or_Treat, which adds it to every",
+    "conversation, this one included.",
+    "",
+    "The greeting's memory is kept per world family, ForgottenTemple, the one place he stands."
+  ],
+  "Header": [ "ActiveObjective" ],
+  "Memories": {
+    "old_jack_greeted": { "Where": { "GameplayConfig": [ "ForgottenTemple" ] } }
+  },
+  "Start": {
+    "First": [
+      {
+        "Node": "first_words",
+        "When": [
+          { "Type": "World", "Where": { "GameplayConfig": [ "ForgottenTemple" ] } },
+          { "Type": "NotRemembered", "Memory": "old_jack_greeted" }
+        ]
+      },
+      {
+        "Node": "board_fresh",
+        "When": [
+          { "Type": "Remembered", "Memory": "old_jack_greeted" },
+          { "Type": "Not", "Of": [ { "Type": "HasReadyToTurnIn" } ] }
+        ],
+        "Once": { "Period": "Daily" }
+      }
+    ],
+    "Quests": {
+      "hallows_eve_old_jack_1": { "Offerable": "patch_offer", "Active": "patch_brief", "Ready": "patch_ready" },
+      "hallows_eve_old_jack_2": { "Offerable": "lantern_work_offer", "Active": "active_generic", "Ready": "ready_generic" },
+      "hallows_eve_old_jack_3": { "Offerable": "ghouls_offer", "Active": "active_generic", "Ready": "ready_generic" },
+      "hallows_eve_old_jack_4": { "Offerable": "souls_offer", "Active": "active_generic", "Ready": "ready_generic" },
+      "hallows_eve_old_jack_5": { "Offerable": "geodes_offer", "Active": "active_generic", "Ready": "ready_generic" },
+      "hallows_eve_old_jack_lantern": { "Offerable": "lantern_offer", "Active": "lantern_brief", "Ready": "lantern_ready" },
+      "hallows_eve_jack_daily_souls": { "Offerable": "daily_souls_offer", "Active": "active_generic", "Ready": "ready_generic" },
+      "hallows_eve_jack_daily_pumpkins": { "Offerable": "daily_pumpkins_offer", "Active": "active_generic", "Ready": "ready_generic" },
+      "hallows_eve_jack_daily_geodes": { "Offerable": "daily_geodes_offer", "Active": "active_generic", "Ready": "ready_generic" }
+    },
+    "Then": [
+      {
+        "Node": "lantern_lit",
+        "When": [
+          { "Type": "QuestState", "Quest": "hallows_eve_old_jack_lantern", "State": "COMPLETED" }
+        ]
+      }
+    ],
+    "Fallback": "menu"
+  },
+  "Nodes": {
+    "first_words": {
+      "TextKey": "dialogue.hallows_eve_old_jack.first_words.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.hallows_eve_old_jack.first_words.opt.hail",
+          "Actions": [
+            { "Type": "Remember", "Memory": "old_jack_greeted" },
+            { "Type": "Goto", "Node": "menu" }
+          ]
+        }
+      ]
+    },
+    "board_fresh": {
+      "TextKey": "dialogue.hallows_eve_old_jack.board_fresh.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.hallows_eve_old_jack.board_fresh.opt.board",
+          "Style": "accept",
+          "Open": { "Type": "Board", "Board": "Hallows_Eve_Daily" }
+        },
+        {
+          "LabelKey": "dialogue.hallows_eve_old_jack.board_fresh.opt.later",
+          "Style": "neutral",
+          "Goto": "menu"
+        }
+      ]
+    },
+    "menu": {
+      "TextKey": "dialogue.hallows_eve_old_jack.menu.text",
+      "IncludeOptions": [ "jack_footer" ]
+    },
+    "patch_offer": {
+      "TextKey": "dialogue.hallows_eve_old_jack.patch_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.hallows_eve_old_jack.patch_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "hallows_eve_old_jack_1" }, { "Goto": "patch_brief" } ]
+        }
+      ],
+      "IncludeOptions": [ "jack_tail" ]
+    },
+    "patch_brief": {
+      "TextKey": "dialogue.hallows_eve_old_jack.patch_brief.text",
+      "IncludeOptions": [ "jack_footer" ]
+    },
+    "patch_ready": {
+      "TextKey": "dialogue.hallows_eve_old_jack.patch_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.hallows_eve_old_jack.patch_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "hallows_eve_old_jack_1" } ],
+          "Do": [
+            { "TurnIn": "hallows_eve_old_jack_1" },
+            { "Open": { "Type": "Quests", "Highlight": "hallows_eve_old_jack_1" } }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "jack_tail" ]
+    },
+    "lantern_work_offer": {
+      "TextKey": "dialogue.hallows_eve_old_jack.lantern_work_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.hallows_eve_old_jack.lantern_work_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "hallows_eve_old_jack_2" }, { "Goto": "active_generic" } ]
+        }
+      ],
+      "IncludeOptions": [ "jack_tail" ]
+    },
+    "ghouls_offer": {
+      "TextKey": "dialogue.hallows_eve_old_jack.ghouls_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.hallows_eve_old_jack.ghouls_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "hallows_eve_old_jack_3" }, { "Goto": "active_generic" } ]
+        }
+      ],
+      "IncludeOptions": [ "jack_tail" ]
+    },
+    "souls_offer": {
+      "TextKey": "dialogue.hallows_eve_old_jack.souls_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.hallows_eve_old_jack.souls_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "hallows_eve_old_jack_4" }, { "Goto": "active_generic" } ]
+        }
+      ],
+      "IncludeOptions": [ "jack_tail" ]
+    },
+    "geodes_offer": {
+      "TextKey": "dialogue.hallows_eve_old_jack.geodes_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.hallows_eve_old_jack.geodes_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "hallows_eve_old_jack_5" }, { "Goto": "active_generic" } ]
+        }
+      ],
+      "IncludeOptions": [ "jack_tail" ]
+    },
+    "lantern_offer": {
+      "TextKey": "dialogue.hallows_eve_old_jack.lantern_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.hallows_eve_old_jack.lantern_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "hallows_eve_old_jack_lantern" }, { "Goto": "lantern_brief" } ]
+        }
+      ],
+      "IncludeOptions": [ "jack_tail" ]
+    },
+    "lantern_brief": {
+      "TextKey": "dialogue.hallows_eve_old_jack.lantern_brief.text",
+      "IncludeOptions": [ "jack_footer" ]
+    },
+    "lantern_ready": {
+      "TextKey": "dialogue.hallows_eve_old_jack.lantern_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "hallows_eve_old_jack_lantern" } ],
+          "Do": [
+            { "TurnIn": "hallows_eve_old_jack_lantern" },
+            { "Open": { "Type": "Quests", "Highlight": "hallows_eve_old_jack_lantern" } }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "jack_tail" ]
+    },
+    "daily_souls_offer": {
+      "TextKey": "dialogue.hallows_eve_old_jack.daily_souls_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.hallows_eve_old_jack.daily_souls_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "hallows_eve_jack_daily_souls" }, { "Goto": "active_generic" } ]
+        }
+      ],
+      "IncludeOptions": [ "jack_tail" ]
+    },
+    "daily_pumpkins_offer": {
+      "TextKey": "dialogue.hallows_eve_old_jack.daily_pumpkins_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.hallows_eve_old_jack.daily_pumpkins_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "hallows_eve_jack_daily_pumpkins" }, { "Goto": "active_generic" } ]
+        }
+      ],
+      "IncludeOptions": [ "jack_tail" ]
+    },
+    "daily_geodes_offer": {
+      "TextKey": "dialogue.hallows_eve_old_jack.daily_geodes_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.hallows_eve_old_jack.daily_geodes_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "hallows_eve_jack_daily_geodes" }, { "Goto": "active_generic" } ]
+        }
+      ],
+      "IncludeOptions": [ "jack_tail" ]
+    },
+    "active_generic": {
+      "TextKey": "dialogue.hallows_eve_old_jack.active_generic.text",
+      "IncludeOptions": [ "jack_footer" ]
+    },
+    "ready_generic": {
+      "TextKey": "dialogue.hallows_eve_old_jack.ready_generic.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.hallows_eve_old_jack.ready_generic.opt.turnin",
+          "Style": "turnin",
+          "Open": "Quests"
+        }
+      ],
+      "IncludeOptions": [ "jack_tail" ]
+    },
+    "lantern_lit": {
+      "TextKey": "dialogue.hallows_eve_old_jack.lantern_lit.text",
+      "IncludeOptions": [ "jack_footer" ]
+    },
+    "who_are_you": {
+      "TextKey": "dialogue.hallows_eve_old_jack.who_are_you.text",
+      "IncludeOptions": [ "jack_tail" ]
+    },
+    "about_lantern": {
+      "TextKey": "dialogue.hallows_eve_old_jack.about_lantern.text",
+      "IncludeOptions": [ "jack_tail" ]
+    },
+    "harvest_moon": {
+      "TextKey": "dialogue.hallows_eve_old_jack.harvest_moon.text",
+      "IncludeOptions": [ "jack_tail" ]
+    }
+  },
+  "Fragments": {
+    "jack_footer": [
+      {
+        "LabelKey": "dialogue.hallows_eve_old_jack.opt.returned",
+        "Style": "accept",
+        "Conditions": [ { "Type": "HasReadyToTurnIn" } ],
+        "Open": "Quests"
+      },
+      {
+        "LabelKey": "dialogue.hallows_eve_old_jack.opt.quests",
+        "Style": "neutral",
+        "Open": "Quests"
+      },
+      {
+        "LabelKey": "dialogue.hallows_eve_old_jack.opt.board",
+        "Style": "neutral",
+        "Open": { "Type": "Board", "Board": "Hallows_Eve_Daily" }
+      },
+      {
+        "LabelKey": "dialogue.hallows_eve_old_jack.opt.shop",
+        "Style": "neutral",
+        "Open": { "Type": "Shop", "Shop": "Hallows_Eve_Old_Jack" }
+      },
+      {
+        "LabelKey": "dialogue.hallows_eve_old_jack.opt.almanac",
+        "Style": "neutral",
+        "Conditions": [
+          { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Almanac", "Min": 1 }
+        ],
+        "Open": { "Type": "Almanac", "Event": "Hallows_Eve" }
+      },
+      {
+        "LabelKey": "dialogue.hallows_eve_old_jack.opt.who",
+        "Style": "neutral",
+        "Goto": "who_are_you"
+      },
+      {
+        "LabelKey": "dialogue.hallows_eve_old_jack.opt.lantern",
+        "Style": "neutral",
+        "Goto": "about_lantern"
+      },
+      {
+        "LabelKey": "dialogue.hallows_eve_old_jack.opt.harvest",
+        "Style": "neutral",
+        "Conditions": [
+          { "Type": "Factor", "Factor": "ziggfreedcommon:calendar_live", "Param": "Harvest_Moon", "Min": 1 }
+        ],
+        "Goto": "harvest_moon"
+      },
+      {
+        "LabelKey": "dialogue.hallows_eve_old_jack.opt.farewell",
+        "Style": "farewell",
+        "Close": true
+      }
+    ],
+    "jack_tail": [
+      {
+        "LabelKey": "dialogue.hallows_eve_old_jack.opt.back",
+        "Style": "neutral",
+        "Goto": "menu"
+      },
+      {
+        "LabelKey": "dialogue.hallows_eve_old_jack.opt.who",
+        "Style": "neutral",
+        "Goto": "who_are_you"
+      },
+      {
+        "LabelKey": "dialogue.hallows_eve_old_jack.opt.lantern",
+        "Style": "neutral",
+        "Goto": "about_lantern"
+      },
+      {
+        "LabelKey": "dialogue.hallows_eve_old_jack.opt.farewell",
+        "Style": "farewell",
+        "Close": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "$Comment": "Put down Hollow Ghouls during one season. The description's number comes from the criterion's Amount through @amount.",
+  "Parent": "Hallows_Eve_Hallowed_Base",
+  "Text": {
+    "TitleKey": "achievement.hallows_eve_ghoul_breaker.title",
+    "FlavorKey": "achievement.hallows_eve_ghoul_breaker.desc",
+    "TextArgs": { "Title": [ "@year" ], "Flavor": [ "@amount" ] }
+  },
+  "Listing": {
+    "SortOrder": 40,
+    "Icon": "Deco_Bone_Skulls",
+    "Tags": [ "hallowed" ]
+  },
+  "Criteria": {
+    "put-down-ghouls": {
+      "Kind": "KILL_ENTITY",
+      "Target": "Hallows_Eve_Hollow_Ghoul",
+      "MatchMode": "EXACT",
+      "Amount": 50
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "$Comment": "Hallow's Eve in the Almanac: the season's name and picture, its yearly keepsake, and the tallies it keeps. The file name is the calendar event id. Each stat line counts one kind of moment; LiveOnly false keeps the every-season tally running all year, for the bombs and geodes a player still holds after the event.",
+  "Text": {
+    "TitleKey": "almanac.hallows_eve.title",
+    "FlavorKey": "almanac.hallows_eve.flavor"
+  },
+  "Icon": "Hallows_Eve_Jack_Lantern",
+  "Order": 10,
+  "Keepsake": "Hallows_Eve_Lantern_Keepsake",
+  "Stats": {
+    "Bombs_Thrown": {
+      "Kind": "USE_ITEM",
+      "Target": "Hallows_Eve_Lantern_Bomb_",
+      "MatchMode": "PREFIX",
+      "Qualifier": "Throw",
+      "TextKey": "almanac.hallows_eve.bombs_thrown",
+      "Icon": "Hallows_Eve_Lantern_Bomb_Common",
+      "Order": 10,
+      "LiveOnly": false
+    },
+    "Ghouls_Felled": {
+      "Kind": "KILL_ENTITY",
+      "Target": "Hallows_Eve_Hollow_Ghoul",
+      "MatchMode": "EXACT",
+      "TextKey": "almanac.hallows_eve.ghouls_felled",
+      "Icon": "Deco_Bone_Skulls",
+      "Order": 20
+    },
+    "Souls_Freed": {
+      "Kind": "KILL_ENTITY",
+      "Target": "Hallows_Eve_Lost_Soul",
+      "MatchMode": "EXACT",
+      "TextKey": "almanac.hallows_eve.souls_freed",
+      "Icon": "Hallows_Eve_Ectoplasm",
+      "Order": 30
+    },
+    "Geodes_Cracked": {
+      "Kind": "USE_ITEM",
+      "Target": "Hallows_Eve_Cursed_Geode",
+      "MatchMode": "EXACT",
+      "Qualifier": "Crack",
+      "TextKey": "almanac.hallows_eve.geodes_cracked",
+      "Icon": "Hallows_Eve_Cursed_Geode",
+      "Order": 40,
+      "LiveOnly": false
+    }
+  }
+}

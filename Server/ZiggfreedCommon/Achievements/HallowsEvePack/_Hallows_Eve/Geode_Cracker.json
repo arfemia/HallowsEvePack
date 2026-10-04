@@ -1,0 +1,24 @@
+{
+  "$Comment": "Crack Cursed Geodes during one season, counted by USE_ITEM with the Qualifier Crack. The description's number comes from the criterion's Amount through @amount.",
+  "Parent": "Hallows_Eve_Hallowed_Base",
+  "Text": {
+    "TitleKey": "achievement.hallows_eve_geode_cracker.title",
+    "FlavorKey": "achievement.hallows_eve_geode_cracker.desc",
+    "TextArgs": { "Title": [ "@year" ], "Flavor": [ "@amount" ] }
+  },
+  "Listing": {
+    "SortOrder": 50,
+    "Icon": "Hallows_Eve_Cursed_Geode",
+    "Tags": [ "hallowed" ]
+  },
+  "Criteria": {
+    "crack-cursed-geodes": {
+      "Kind": "USE_ITEM",
+      "Target": "Hallows_Eve_Cursed_Geode",
+      "MatchMode": "EXACT",
+      "Qualifier": "Crack",
+      "Amount": 15,
+      "TextKey": "objective.hallows_eve.crack_geodes"
+    }
+  }
+}

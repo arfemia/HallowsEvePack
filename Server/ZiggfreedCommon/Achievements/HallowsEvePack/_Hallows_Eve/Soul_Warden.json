@@ -1,0 +1,22 @@
+{
+  "$Comment": "Set Lost Souls free during one season. The description's number comes from the criterion's Amount through @amount.",
+  "Parent": "Hallows_Eve_Hallowed_Base",
+  "Text": {
+    "TitleKey": "achievement.hallows_eve_soul_warden.title",
+    "FlavorKey": "achievement.hallows_eve_soul_warden.desc",
+    "TextArgs": { "Title": [ "@year" ], "Flavor": [ "@amount" ] }
+  },
+  "Listing": {
+    "SortOrder": 30,
+    "Icon": "Hallows_Eve_Ectoplasm",
+    "Tags": [ "hallowed" ]
+  },
+  "Criteria": {
+    "free-lost-souls": {
+      "Kind": "KILL_ENTITY",
+      "Target": "Hallows_Eve_Lost_Soul",
+      "MatchMode": "EXACT",
+      "Amount": 30
+    }
+  }
+}

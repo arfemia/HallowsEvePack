@@ -1,0 +1,19 @@
+{
+  "$Comment": [
+    "The treat a trick turns into. Each costume trick in Hallows_Eve_Trick_Or_Treat names this table",
+    "as its FallbackLootable, and the Costume reward kind rolls it for the same player whenever the",
+    "costume cannot go on: already in a costume, in that very one, or under a transformation.",
+    "",
+    "Keep it a table that always pays: no Chance, no Conditions and no Costume row. A costume paid",
+    "from here never rolls a fallback of its own, and a roll that lands nothing tells nobody. Sweets",
+    "pay through the Currency reward kind, since a counter wallet has no item to hand over."
+  ],
+  "Name": "Hallows_Eve_Treats",
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "4" } } ]
+      }
+    }
+  ]
+}

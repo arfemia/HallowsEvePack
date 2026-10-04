@@ -1,0 +1,8 @@
+{
+  "$Comment": "The Hallowed: the title the season's capstone achievement pays. It shows beside a player's name in menus and leaderboards once they pick it. Where it sits around the name is the key title.hallows_eve_hallowed.display, whose {0} is the name. Enabled false hides it everywhere without taking it from anybody who earned it.",
+  "Order": 10,
+  "Text": {
+    "TitleKey": "title.hallows_eve_hallowed.name",
+    "FlavorKey": "title.hallows_eve_hallowed.flavor"
+  }
+}

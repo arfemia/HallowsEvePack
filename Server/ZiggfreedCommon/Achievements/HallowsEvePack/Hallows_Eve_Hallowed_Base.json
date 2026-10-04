@@ -1,0 +1,20 @@
+{
+  "$Comment": [
+    "The skeleton every Hallow's Eve achievement inherits through Parent. It is never earned.",
+    "",
+    "Occurrence ties an achievement to the Hallows_Eve calendar event: the library keeps one copy a",
+    "year, named <id>_<year>, that counts only while that year's event runs and stays a feat for",
+    "whoever earned it. Listing files every one under the Seasons category, in the Hallows_Eve",
+    "subcategory, which is where the Almanac and The Hallowed look for them. A child that writes",
+    "its own Listing keeps these two leaves and adds its own.",
+    "",
+    "This file sits outside the _Hallows_Eve folder on purpose: its file name already spells its",
+    "id, so Parent names it the same way in the game and in the build's own content check."
+  ],
+  "Abstract": true,
+  "Occurrence": { "Event": "Hallows_Eve" },
+  "Listing": {
+    "Category": "Seasons",
+    "Subcategory": "Hallows_Eve"
+  }
+}

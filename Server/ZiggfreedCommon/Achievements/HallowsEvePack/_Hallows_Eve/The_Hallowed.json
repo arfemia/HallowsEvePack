@@ -1,0 +1,28 @@
+{
+  "$Comment": [
+    "The Hallowed: the season's capstone, earned the moment every achievement tagged hallowed in",
+    "the Seasons > Hallows_Eve subcategory is earned in the same year. MetaSelector picks them, so a",
+    "new hallowed achievement counts toward it with no edit here; it never picks itself or another",
+    "capstone. It inherits the yearly occurrence, so each year has its own copy, and it pays the",
+    "title Hallows_Eve_Hallowed through the Title reward kind. Keep the hallowed tag off this file."
+  ],
+  "Parent": "Hallows_Eve_Hallowed_Base",
+  "Text": {
+    "TitleKey": "achievement.hallows_eve_the_hallowed.title",
+    "FlavorKey": "achievement.hallows_eve_the_hallowed.desc",
+    "TextArgs": { "Title": [ "@year" ] }
+  },
+  "Listing": {
+    "SortOrder": 90,
+    "Icon": "Hallows_Eve_Jack_Helm"
+  },
+  "Scoring": { "Points": 50 },
+  "MetaSelector": {
+    "Category": "Seasons",
+    "Subcategory": "Hallows_Eve",
+    "Tags": [ "hallowed" ]
+  },
+  "Rewards": {
+    "Auto": [ { "Kind": "Title", "Params": { "Title": "Hallows_Eve_Hallowed" } } ]
+  }
+}
