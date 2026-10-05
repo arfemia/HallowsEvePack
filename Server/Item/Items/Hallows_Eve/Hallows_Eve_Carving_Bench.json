@@ -1,0 +1,49 @@
+{
+  "$Comment": "The Carving Bench block: an RPG Stations station, so it works only on a server running RPG Stations. Pressing F on it runs Hallows_Eve_Carving_Bench_Use, which starts or stops carving at the station RpgStations/Stations/Hallows_Eve_Carving_Bench.json; sneak and press F to pick a recipe. The model is the game's workbench with carving props on it, with the workbench's two-block hitbox and four facings. It is crafted at a Workbench from pumpkins and wood, all year. BlockType.Light is the lantern glow on its tabletop.",
+  "TranslationProperties": {
+    "Name": "items.Hallows_Eve_Carving_Bench.name",
+    "Description": "items.Hallows_Eve_Carving_Bench.description"
+  },
+  "PlayerAnimationsId": "Block",
+  "Categories": ["Furniture.Furniture"],
+  "Icon": "Icons/ItemsGenerated/Hallows_Eve_Carving_Bench.png",
+  "IconProperties": {"Scale": 0.42, "Rotation": [22.5, 45.0, 22.5], "Translation": [12.9, -11.7]},
+  "MaxStack": 1,
+  "ItemLevel": 1,
+  "Quality": "Common",
+  "Recipe": {
+    "Input": [
+      {"ItemId": "Plant_Crop_Pumpkin_Item", "Quantity": 2},
+      {"ResourceTypeId": "Wood_Trunk", "Quantity": 2},
+      {"ResourceTypeId": "Wood_Planks", "Quantity": 6}
+    ],
+    "BenchRequirement": [
+      {"Type": "Crafting", "Id": "Workbench", "Categories": ["Workbench_Crafting"]}
+    ]
+  },
+  "Interactions": {"Primary": "Block_Primary", "Secondary": "Block_Secondary"},
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Hallows_Eve/Carving_Bench/Carving_Bench.blockymodel",
+    "CustomModelTexture": [
+      {"Texture": "Blocks/Hallows_Eve/Carving_Bench/Carving_Bench_Texture.png", "Weight": 1}
+    ],
+    "HitboxType": "Bench_Workbench",
+    "VariantRotation": "NESW",
+    "Light": {"Color": "#a63"},
+    "Flags": {},
+    "Gathering": {"Breaking": {"GatherType": "Benches"}},
+    "Support": {"Down": [{"FaceType": "Full"}]},
+    "BlockParticleSetId": "Wood",
+    "ParticleColor": "#6e4a2f",
+    "BlockSoundSetId": "Wood",
+    "PhysicalMaterialId": "Wood",
+    "TextureComputedColor": "#6C4C30",
+    "InteractionHint": "items.Hallows_Eve_Carving_Bench.hint",
+    "Interactions": {"Use": "Hallows_Eve_Carving_Bench_Use"}
+  },
+  "Tags": {"Type": ["Furniture"]},
+  "ItemSoundSetId": "ISS_Blocks_Wood"
+}
