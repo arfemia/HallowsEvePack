@@ -1,0 +1,34 @@
+{
+  "$Comment": [
+    "The pumpkin patch: while Hallow's Eve runs, a pumpkin harvested by hand sometimes comes with a",
+    "Hallowed Pumpkin, straight into the bag beside the harvest. The patch itself is the game's own",
+    "pumpkins, grown or found all year; only this find is seasonal. The file name is the row's id.",
+    "",
+    "When names PickupItem, the moment a hand harvest lands, on the harvested stack's item id",
+    "Plant_Crop_Pumpkin_Item. Chance is the row's own odds as a percent (20 is one harvest in five).",
+    "The season rides on each roll's Conditions: calendar_live reads 1 only while the event runs. The",
+    "first roll is the find and carries the toast's Cue; the second adds one more on Harvest Moon",
+    "nights. A server owner retunes or switches off this row by its id in",
+    "mods/ziggfreedcommon/bonus-rows.json."
+  ],
+  "When": { "Kind": "PickupItem", "Match": "Plant_Crop_Pumpkin_Item" },
+  "Chance": { "Base": 20.0 },
+  "Loot": {
+    "Rolls": [
+      {
+        "Conditions": [
+          { "Factor": "ziggfreedcommon:calendar_live", "Param": "Hallows_Eve", "Min": 1 }
+        ],
+        "Grants": { "Items": [ { "Item": "Hallows_Eve_Hallowed_Pumpkin", "Count": 1 } ] },
+        "Cue": "Hallows_Eve_Pumpkin_Found"
+      },
+      {
+        "Conditions": [
+          { "Factor": "ziggfreedcommon:calendar_live", "Param": "Hallows_Eve", "Min": 1 },
+          { "Factor": "ziggfreedcommon:calendar_live", "Param": "Harvest_Moon", "Min": 1 }
+        ],
+        "Grants": { "Items": [ { "Item": "Hallows_Eve_Hallowed_Pumpkin", "Count": 1 } ] }
+      }
+    ]
+  }
+}
