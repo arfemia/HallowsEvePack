@@ -48,6 +48,7 @@ SOUL_MODEL = "NPC/Hallows_Eve/Lost_Soul/Lost_Soul.blockymodel"
 WRAITH_MODEL = "NPC/Hallows_Eve/Geode_Wraith/Geode_Wraith.blockymodel"
 WAND_RIG = "Items/Weapons/Wand/Wood.blockymodel"
 ESSENCE_RIG = "Resources/Ingredients/Essence.blockymodel"
+GHOUL_RIG = "NPC/Undead/Ghoul/Models/Model.blockymodel"
 
 # Every model we ship, with the textures worn on it (Common/-relative).
 MODEL_TEXTURES = {
@@ -68,6 +69,7 @@ RIG_TEXTURES = {
     WAND_RIG: (f"{HE}/Costume_Wand/Costume_Wand_Texture.png", "Items/Weapons/Wand/Wood_Texture.png"),
     ESSENCE_RIG: (f"{HE}/Ectoplasm/Ectoplasm_Texture.png",
                   "Resources/Ingredients/Essence_Textures/Life_Essence_Texture.png"),
+    GHOUL_RIG: ("NPC/Hallows_Eve/Hollow_Ghoul/Hollow_Ghoul_Texture.png", "NPC/Undead/Ghoul/Models/Texture.png"),
 }
 GLOW_MODELS = (*BOMB_MODELS, HELM_MODEL, SHIELD_MODEL, PROP_MODEL, GEODE_MODEL, BENCH_MODEL)
 VANILLA_FILES = (
@@ -76,6 +78,7 @@ VANILLA_FILES = (
     "NPC/Elemental/Spirit_Ember/Models/Model.blockymodel", "NPC/Elemental/Spirit_Ember/Models/Texture.png",
     "NPC/Undead/Wraith/Models/Model.blockymodel", "NPC/Undead/Wraith/Models/Texture.png",
     ESSENCE_RIG, "Resources/Ingredients/Essence_Textures/Life_Essence_Texture.png",
+    GHOUL_RIG, "NPC/Undead/Ghoul/Models/Texture.png",
 )
 
 ICON_IDS = [f"Hallows_Eve_Lantern_Bomb_{t}" for t in TIERS] + [
@@ -92,7 +95,7 @@ ICON_IDS = [f"Hallows_Eve_Lantern_Bomb_{t}" for t in TIERS] + [
     "Hallows_Eve_Ectoplasm",
     "Hallows_Eve_Carving_Bench",
 ]
-MODEL_ICON_IDS = ["Hallows_Eve_Lost_Soul", "Hallows_Eve_Geode_Wraith"]
+MODEL_ICON_IDS = ["Hallows_Eve_Lost_Soul", "Hallows_Eve_Geode_Wraith", "Hallows_Eve_Hollow_Ghoul"]
 HORNS = {"R-Horn", "R-Horn2", "R-Horn3", "R-Horn-End", "R-Horn-End2",
          "L-Horn", "L-Horn2", "L-Horn3", "L-Horn-End", "L-Horn-End2"}
 

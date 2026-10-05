@@ -1,0 +1,36 @@
+{
+  "$Comment": "What a Hollow Ghoul drops: the game's own Ghoul drops (bone fragments, often linen) plus the event's Lantern Bombs. In a Multiple container each child is rolled on its own, and a child's Weight is its chance out of 100: 100 is every kill, 25 one kill in four. Every branch ends in a concrete Single, which the game's validator needs; a tree of Droplist references alone fails it and takes the whole pack down.",
+  "Container": {
+    "Type": "Multiple",
+    "Containers": [
+      {
+        "Type": "Choice",
+        "Weight": 100,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Ingredient_Bone_Fragment", "QuantityMin": 1, "QuantityMax": 3 } }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 50,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Ingredient_Fabric_Scrap_Linen", "QuantityMin": 2, "QuantityMax": 6 } }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 25,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Hallows_Eve_Lantern_Bomb_Common", "QuantityMin": 1, "QuantityMax": 2 } }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 8,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Hallows_Eve_Lantern_Bomb_Uncommon", "QuantityMin": 1, "QuantityMax": 1 } }
+        ]
+      }
+    ]
+  }
+}

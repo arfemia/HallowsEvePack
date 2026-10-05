@@ -47,30 +47,30 @@
         "Conversions": [
           {
             "Input": [
-              {"ItemId": "Plant_Crop_Pumpkin_Item", "Quantity": 1},
-              {"ItemId": "Ingredient_Charcoal", "Quantity": 1}
+              {"ItemId": "Ingredient_Charcoal", "Quantity": 1},
+              {"ItemId": "Plant_Crop_Pumpkin_Item", "Quantity": 1}
             ],
             "Output": [{"ItemId": "Hallows_Eve_Jack_Lantern", "Quantity": 1}]
           },
           {
             "Input": [
-              {"ItemId": "Plant_Crop_Pumpkin_Item", "Quantity": 1},
-              {"ItemId": "Hallows_Eve_Ectoplasm", "Quantity": 2}
+              {"ItemId": "Hallows_Eve_Ectoplasm", "Quantity": 2},
+              {"ItemId": "Plant_Crop_Pumpkin_Item", "Quantity": 1}
             ],
             "Output": [{"ItemId": "Hallows_Eve_Ecto_Lantern", "Quantity": 1}]
           },
           {
             "Input": [
-              {"ItemId": "Plant_Crop_Pumpkin_Item", "Quantity": 2},
               {"ItemId": "Ingredient_Leather_Light", "Quantity": 2},
+              {"ItemId": "Plant_Crop_Pumpkin_Item", "Quantity": 2},
               {"ItemId": "Ingredient_Charcoal", "Quantity": 1}
             ],
             "Output": [{"ItemId": "Hallows_Eve_Jack_Helm", "Quantity": 1}]
           },
           {
             "Input": [
-              {"ItemId": "Plant_Crop_Pumpkin_Item", "Quantity": 1},
-              {"ItemId": "Ingredient_Powder_Boom", "Quantity": 3}
+              {"ItemId": "Ingredient_Powder_Boom", "Quantity": 3},
+              {"ItemId": "Plant_Crop_Pumpkin_Item", "Quantity": 1}
             ],
             "Output": [
               {"ItemId": "Hallows_Eve_Lantern_Bomb_Common", "Quantity": 3}

@@ -1,0 +1,23 @@
+{
+  "$Comment": "Old Jack's look: an Outlander under the Jack Helm, in a hunter's coat, breeches and cape. Parent Outlander brings the body, its animations and its hitbox. DefaultAttachments replaces the parent's list whole, so the Outlander's ears, eyes and mouth are left out on purpose: the helm covers the whole head, and its carved face is his face. Light is that face's glow, a model light that moves with him; each hex digit is a red, green or blue level from 0 to f, and each level is also roughly how many blocks it reaches.",
+  "Parent": "Outlander",
+  "DefaultAttachments": [
+    {
+      "Model": "Items/Hallows_Eve/Jack_Helm/Jack_Helm.blockymodel",
+      "Texture": "Items/Hallows_Eve/Jack_Helm/Jack_Helm_Texture.png"
+    },
+    {
+      "Model": "NPC/Intelligent/Outlander/Models/Attachments/Hunter/Chest.blockymodel",
+      "Texture": "NPC/Intelligent/Outlander/Models/Attachments/Hunter/Chest_Texture.png"
+    },
+    {
+      "Model": "NPC/Intelligent/Outlander/Models/Attachments/Hunter/Legs.blockymodel",
+      "Texture": "NPC/Intelligent/Outlander/Models/Attachments/Hunter/Legs_Texture.png"
+    },
+    {
+      "Model": "NPC/Intelligent/Outlander/Models/Attachments/Hunter/Cape.blockymodel",
+      "Texture": "NPC/Intelligent/Outlander/Models/Attachments/Hunter/Cape_Texture.png"
+    }
+  ],
+  "Light": { "Color": "#ec9" }
+}

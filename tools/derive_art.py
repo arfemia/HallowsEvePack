@@ -225,9 +225,11 @@ WRAITH = "NPC/Undead/Wraith/Models/Model.blockymodel"
 WRAITH_TEXTURE = "NPC/Undead/Wraith/Models/Texture.png"
 ESSENCE = "Resources/Ingredients/Essence.blockymodel"
 ESSENCE_TEXTURE = "Resources/Ingredients/Essence_Textures/Life_Essence_Texture.png"
+GHOUL = "NPC/Undead/Ghoul/Models/Model.blockymodel"
+GHOUL_TEXTURE = "NPC/Undead/Ghoul/Models/Texture.png"
 VANILLA_FILES = tuple(f"Common/{rel}" for rel in (
     WORKBENCH, WORKBENCH_TEXTURE, WAND, WAND_TEXTURE, SPIRIT, SPIRIT_TEXTURE,
-    WRAITH, WRAITH_TEXTURE, ESSENCE, ESSENCE_TEXTURE))
+    WRAITH, WRAITH_TEXTURE, ESSENCE, ESSENCE_TEXTURE, GHOUL, GHOUL_TEXTURE))
 
 # --- the Cursed Geode: a scripted stone with a lit crack (64x64 texture, x, y, w, h) ---------
 
@@ -1129,6 +1131,22 @@ def soul_texture(texture):
     return rgba
 
 
+def hollow_ghoul_texture(texture):
+    """The Hollow Ghoul: the Ghoul's skin and hair turn ash grey and its cyan eyes a pumpkin glow."""
+    rgba = texture.astype(np.float64) / 255.0
+    hsv = rgb_to_hsv(rgba[..., :3])
+    hue, sat, val = hsv[..., 0] * 360.0, hsv[..., 1], hsv[..., 2]
+    cyan = (hue > 140) & (hue < 215)
+    eyes = cyan & (sat > 0.45) & (val > 0.6)
+    hair = cyan & ~eyes
+    skin = (hue >= 35) & (hue <= 110)
+    hsv[..., 0] = np.where(eyes, 28.0 / 360.0, np.where(skin, 30.0 / 360.0, hsv[..., 0]))
+    hsv[..., 1] = np.where(eyes, np.clip(sat * 1.2, 0, 1), np.where(skin | hair, sat * 0.2, sat))
+    hsv[..., 2] = np.where(skin, val * 0.8, val)
+    rgba[..., :3] = hsv_to_rgb(hsv)
+    return rgba
+
+
 def geode_wraith_texture(texture):
     """The Geode Wraith: the Wraith's teal soul-fire turns amethyst, its red sash slate and its
     robe a dusty cave grey; the rows grown under it hold the crystals' faces."""
@@ -1403,6 +1421,8 @@ ICON_PLAN = [
      f"{HE_NPCS}/Lost_Soul/Lost_Soul_Texture.png", ANGLE_MODEL, 128),
     (MODEL_ICONS, "Hallows_Eve_Geode_Wraith", f"{HE_NPCS}/Geode_Wraith/Geode_Wraith.blockymodel",
      f"{HE_NPCS}/Geode_Wraith/Geode_Wraith_Texture.png", ANGLE_MODEL, 128),
+    (MODEL_ICONS, "Hallows_Eve_Hollow_Ghoul", GHOUL,
+     f"{HE_NPCS}/Hollow_Ghoul/Hollow_Ghoul_Texture.png", ANGLE_MODEL, 128),
 ]
 
 
@@ -1431,6 +1451,7 @@ def build(seed_dir):
         vanilla[WORKBENCH_TEXTURE], seed_texture)
     images[f"{HE_NPCS}/Lost_Soul/Lost_Soul_Texture.png"] = soul_texture(vanilla[SPIRIT_TEXTURE])
     images[f"{HE_NPCS}/Geode_Wraith/Geode_Wraith_Texture.png"] = geode_wraith_texture(vanilla[WRAITH_TEXTURE])
+    images[f"{HE_NPCS}/Hollow_Ghoul/Hollow_Ghoul_Texture.png"] = hollow_ghoul_texture(vanilla[GHOUL_TEXTURE])
     outputs = {}
     for name, model in models.items():
         outputs[f"Common/{name}"] = (json.dumps(model, indent=2) + "\n").encode("utf-8")
@@ -1443,6 +1464,7 @@ def build(seed_dir):
     rigs = dict(models)
     rigs[WAND] = vanilla[WAND]
     rigs[ESSENCE] = vanilla[ESSENCE]
+    rigs[GHOUL] = vanilla[GHOUL]
     for folder, icon, model_name, texture_name, angles, size in ICON_PLAN:
         outputs[f"{folder}/{icon}.png"] = icon_png(rigs[model_name], texture_rgba[texture_name], angles, size)
     return dict(sorted(outputs.items())), rigs, texture_rgba

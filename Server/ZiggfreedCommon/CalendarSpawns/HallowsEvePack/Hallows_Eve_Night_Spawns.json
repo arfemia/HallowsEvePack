@@ -1,0 +1,37 @@
+{
+  "$Comment": [
+    "Jack Skeletons and Hollow Ghouls after dark while Hallow's Eve runs. When the event starts, the",
+    "calendar writes Spawn as the game's own world-spawn rule Hallows_Eve_Night; when it ends, the",
+    "calendar rewrites that rule with every moon phase at zero, so nothing new spawns. A rule is never",
+    "removed. Harvest_Moon_Night_Spawns.json names the same Rule at a higher Priority, so on Harvest",
+    "Moon nights its body (the same creatures, higher weights) takes over and hands the rule back after.",
+    "",
+    "Spawn is read by the game's NPC/Spawn/World codec, so it takes every key a vanilla rule takes:",
+    "DayTimeRange 19 to 5 is the night, Despawn clears what is still out at dawn, and LightRanges keeps",
+    "them away from anywhere a torch or a lantern lights. A stilled rule keeps its Despawn, so what is",
+    "out when the event ends is gone by the next dawn. The game allows one rule per creature and",
+    "environment, so no other rule in this pack names these two roles.",
+    "",
+    "To make the night busier or quieter, change the Weight values here and in the Harvest Moon file",
+    "together, keeping Harvest Moon's the higher pair."
+  ],
+  "Event": "Hallows_Eve",
+  "Rule": "Hallows_Eve_Night",
+  "Priority": 0,
+  "Spawn": {
+    "Environments": [
+      "Env_Zone1_Forests", "Env_Zone1_Autumn", "Env_Zone1_Azure", "Env_Zone1_Plains",
+      "Env_Zone1_Mountains", "Env_Zone1_Swamps", "Env_Zone1_Graveyard",
+      "Env_Zone2_Savanna", "Env_Zone2_Scrub", "Env_Zone2_Plateaus", "Env_Zone2_Deserts",
+      "Env_Zone3_Tundra", "Env_Zone3_Forests", "Env_Zone3_Mountains",
+      "Env_Zone4_Forests", "Env_Zone4_Jungles", "Env_Zone4_Wastes"
+    ],
+    "NPCs": [
+      { "Id": "Hallows_Eve_Jack_Skeleton", "Weight": 8, "SpawnBlockSet": "Soil", "Flock": { "Size": [1, 2] } },
+      { "Id": "Hallows_Eve_Hollow_Ghoul", "Weight": 4, "SpawnBlockSet": "Soil" }
+    ],
+    "DayTimeRange": [19, 5],
+    "Despawn": { "DayTimeRange": [5, 19] },
+    "LightRanges": { "Light": [0, 8] }
+  }
+}

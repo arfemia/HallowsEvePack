@@ -1,0 +1,25 @@
+{
+  "$Comment": "A Lost Soul: a flying spirit out at night while Hallow's Eve runs, dropping the Ectoplasm the event's lights and recipes use. It is a Variant of Template_Flying_Aggressive carrying the game's Ember Spirit's own Modify, with the look, the drop list and the nameplate changed, its burst of flames at death swapped for the plain fade, its Memories leaves replaced by IsMemory false, and one block left out on purpose: the Ember Spirit's _CombatConfig makes it immune to fire, which would let a Lost Soul shrug off the burning an Uncommon Lantern Bomb leaves and any torch or fire weapon a player brings. A Lost Soul is no fire spirit. Any key the template does not declare makes the game refuse the whole role, and the creature never spawns. IsMemory is false so a creature that walks a few weeks a year stays out of the Memories collection. It spawns only through this pack's calendar rules (CalendarSpawns/HallowsEvePack).",
+  "Type": "Variant",
+  "Reference": "Template_Flying_Aggressive",
+  "Modify": {
+    "DeathParticles": "Effect_Death",
+    "Appearance": "Hallows_Eve_Lost_Soul",
+    "DropList": "Hallows_Eve_Drop_Lost_Soul",
+    "MaxHealth": 126,
+    "IsMemory": false,
+    "NameTranslationKey": "npcs.Hallows_Eve_Lost_Soul.name",
+    "MotionFlyMinHeightAboveGround": 1,
+    "MotionFlyMaxHeightAboveGround": 5,
+    "MotionFlyMaxHorizontalSpeed": 6,
+    "ViewRange": 20,
+    "ViewSector": 180,
+    "HearingRange": 10,
+    "AlertedRange": 30,
+    "RangedAttack": "Spirit_Root_Spore_Gas",
+    "RangedAttackDistance": 10,
+    "CombatRelativeSpeedChase": 0.8,
+    "MotionDesiredAltitudeCombat": [2, 5],
+    "MotionDesiredAltitudeSearch": [7, 10]
+  }
+}
