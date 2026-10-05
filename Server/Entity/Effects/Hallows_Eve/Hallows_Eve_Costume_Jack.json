@@ -1,0 +1,12 @@
+{
+  "$Comment": "A costume: for three minutes the wearer takes the Jack Skeleton's look (the model Hallows_Eve_Jack_Skeleton). It changes the model and is no debuff, which is what makes it a costume: the wearer can take it off any time with /zigcostume off, and no second costume goes over it. The Costume Wand's primary use and the trick-or-treat tricks put it on. Duration is in seconds.",
+  "StatusEffectIcon": "Icons/ItemsGenerated/Hallows_Eve_Costume_Wand.png",
+  "OverlapBehavior": "Overwrite",
+  "Duration": 180,
+  "Debuff": false,
+  "ModelChange": "Hallows_Eve_Jack_Skeleton",
+  "ApplicationEffects": {
+    "Particles": [{"SystemId": "Potion_Morph_Burst"}],
+    "WorldSoundEventId": "SFX_Skeleton_Mage_Spellbook_Impact"
+  }
+}
