@@ -1,9 +1,9 @@
 {
-  "$Comment": "A Hollow Ghoul: the game's own Ghoul, out at night while Hallow's Eve runs and carrying the event's drops. It is a Variant of Template_Predator rather than of Ghoul because a Variant's Modify reaches only the Parameters its immediate Reference declares, and Ghoul declares just one; so this Modify is Ghoul's own, word for word, with the drop list and the nameplate changed and its Memories leaves replaced by IsMemory false. Any key the template does not declare makes the game refuse the whole role, and the creature never spawns. IsMemory is false so a creature that walks a few weeks a year stays out of the Memories collection. It spawns only through this pack's calendar rules (CalendarSpawns/HallowsEvePack), and what is still out at dawn is cleared, so none walks out of season.",
+  "$Comment": "A Hollow Ghoul: the game's Ghoul in ash grey with pumpkin-orange eyes, out at night while Hallow's Eve runs and carrying the event's drops. It is a Variant of Template_Predator rather than of Ghoul because a Variant's Modify reaches only the Parameters its immediate Reference declares, and Ghoul declares just one; so this Modify is Ghoul's own, word for word, with the look, the drop list and the nameplate changed and its Memories leaves replaced by IsMemory false. Any key the template does not declare makes the game refuse the whole role, and the creature never spawns. IsMemory is false so a creature that walks a few weeks a year stays out of the Memories collection. It spawns only through this pack's calendar rules (CalendarSpawns/HallowsEvePack), and what is still out at dawn is cleared, so none walks out of season.",
   "Type": "Variant",
   "Reference": "Template_Predator",
   "Modify": {
-    "Appearance": "Ghoul",
+    "Appearance": "Hallows_Eve_Hollow_Ghoul",
     "WanderRadius": 6,
     "ViewRange": 12,
     "HearingRange": 8,
