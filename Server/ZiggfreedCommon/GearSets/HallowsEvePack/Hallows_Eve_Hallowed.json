@@ -1,0 +1,14 @@
+{
+  "$Comment": "The Hallowed set: the Jack Helm worn and the Jack Shield in the utility slot. Its one tier asks for exactly that, Armor 1 and Utility 1, so a shield carried in the main hand never counts. While it holds, the tier adds Health and puts on the set's effect, Hallows_Eve_Hallowed_Set, which carries the glow and the fire ward. Raise or lower the Amount to tune the set; under Parent the Bonuses list replaces whole, so restate the tier you keep. The text keys live in hallowseve.items.lang.",
+  "Text": {"TitleKey": "gearset.hallows_eve_hallowed.title"},
+  "Members": ["Hallows_Eve_Jack_Helm", "Hallows_Eve_Jack_Shield"],
+  "Bonuses": [
+    {
+      "Armor": 1,
+      "Utility": 1,
+      "Text": {"TitleKey": "gearset.hallows_eve_hallowed.tier_full"},
+      "Effect": "Hallows_Eve_Hallowed_Set",
+      "StatModifiers": {"Health": [{"Amount": 10, "CalculationType": "Additive"}]}
+    }
+  ]
+}

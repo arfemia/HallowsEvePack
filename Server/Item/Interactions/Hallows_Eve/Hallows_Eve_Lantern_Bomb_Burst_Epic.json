@@ -1,0 +1,63 @@
+{
+  "$Comment": "The Epic Lantern Bomb's blast: every creature within 4.5 blocks of the bomb takes damage, a shove, Burn and Slow, and then four flaming shards fly out (Hallows_Eve_Lantern_Shard_Projectile and its three siblings) and burst where they land. Players are never hurt: the one hit rule matches only an entity that is not a player, and with no plain HitEntity a player matches nothing. IgnoreOwner also keeps the thrower out. All damage is the cause Hallows_Eve_Lantern_Burst, credited to the thrower. Range is the radius in blocks; BaseDamage and Knockback.Force set how hard it hits.",
+  "Type": "Selector",
+  "Selector": {"Id": "AOECircle", "Range": 4.5},
+  "IgnoreOwner": true,
+  "Effects": {
+    "WorldSoundEventId": "SFX_Goblin_Lobber_Bomb_Death",
+    "LocalSoundEventId": "SFX_Goblin_Lobber_Bomb_Death",
+    "Particles": [{"SystemId": "Explosion_Big", "TargetEntityPart": "Entity"}]
+  },
+  "HitEntityRules": [
+    {
+      "Matchers": [{"Type": "Player", "Invert": true}],
+      "Next": {
+        "Interactions": [
+          {"Type": "ApplyEffect", "EffectId": "Burn", "Entity": "Target"},
+          {"Type": "ApplyEffect", "EffectId": "Slow", "Entity": "Target"},
+          {
+            "Parent": "DamageEntityParent",
+            "DamageCalculator": {"BaseDamage": {"Hallows_Eve_Lantern_Burst": 45}},
+            "DamageEffects": {
+              "Knockback": {
+                "Type": "Point",
+                "VelocityConfig": {
+                  "AirResistance": 0.97,
+                  "AirResistanceMax": 0.96,
+                  "GroundResistance": 0.94,
+                  "GroundResistanceMax": 0.3,
+                  "Threshold": 3.0,
+                  "Style": "Exp"
+                },
+                "Force": 12,
+                "VelocityType": "Set"
+              },
+              "WorldParticles": [{"SystemId": "Impact_Mace_Charged", "Scale": 1}]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      {"Type": "Projectile", "Config": "Hallows_Eve_Lantern_Shard_Projectile", "IgnorePitch": true},
+      {
+        "Type": "Projectile",
+        "Config": "Hallows_Eve_Lantern_Shard_Projectile_Right",
+        "IgnorePitch": true
+      },
+      {
+        "Type": "Projectile",
+        "Config": "Hallows_Eve_Lantern_Shard_Projectile_Back",
+        "IgnorePitch": true
+      },
+      {
+        "Type": "Projectile",
+        "Config": "Hallows_Eve_Lantern_Shard_Projectile_Left",
+        "IgnorePitch": true
+      }
+    ]
+  }
+}

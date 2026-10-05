@@ -1,0 +1,47 @@
+{
+  "$Comment": "The Costume Wand's primary (Jack Skeleton) cast. A ray from the eyes finds what the wand points at. A player gets the costume Hallows_Eve_Costume_Jack (ZigCostume), and only a costume that lands goes on to count USE_ITEM with the Qualifier Costume for the caster; a player it cannot dress (one already in a costume, under a transformation, or in this very costume) fizzles through ZigCostume's Failed. Any other creature fizzles through the second rule, and pointing at nothing fizzles through the Selector's Failed. ZigCostume never dresses the caster.",
+  "Type": "Simple",
+  "RunTime": 0.2,
+  "Effects": {
+    "ItemAnimationId": "CastLeftCharged",
+    "WorldSoundEventId": "SFX_Skeleton_Mage_Spellbook_Impact",
+    "LocalSoundEventId": "SFX_Skeleton_Mage_Spellbook_Impact"
+  },
+  "Next": {
+    "Type": "Selector",
+    "Selector": {"Id": "Raycast", "Offset": {"Y": 1.6}},
+    "HitEntityRules": [
+      {
+        "Matchers": [{"Type": "Player"}],
+        "Next": {
+          "Interactions": [
+            {
+              "Type": "ZigCostume",
+              "EffectId": "Hallows_Eve_Costume_Jack",
+              "Next": {"Type": "ZigCreditProgress", "Qualifier": "Costume"},
+              "Failed": {
+                "Type": "Simple",
+                "RunTime": 0.2,
+                "Effects": {"WorldSoundEventId": "SFX_Bow_No_Ammo"}
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Matchers": [{"Type": "Player", "Invert": true}],
+        "Next": {
+          "Interactions": [
+            {"Type": "Simple", "RunTime": 0.2, "Effects": {"WorldSoundEventId": "SFX_Bow_No_Ammo"}}
+          ]
+        }
+      }
+    ],
+    "FailOn": "Entity",
+    "Failed": {
+      "Type": "Simple",
+      "RunTime": 0.2,
+      "Effects": {"ItemAnimationId": "Interact", "WorldSoundEventId": "SFX_Bow_No_Ammo"}
+    }
+  }
+}

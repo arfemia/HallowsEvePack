@@ -1,0 +1,24 @@
+{
+  "$Comment": "A Common Lantern Bomb's flight. Parent is the game's own bomb flight (Projectile_Config_Bomb_Base), so the arc, bounce and launch force are the game's; both interaction roots are replaced, so the game's own bomb explosion never fires. Half a second after the throw, or the moment it strikes a creature, it bursts with its own blast (Hallows_Eve_Lantern_Bomb_Burst_Common) and is removed; a strike interrupts the fuse, so it never bursts twice. UseModelScale makes the flight keep the scale its model file pins. The other three tiers take this file as their Parent and restate the roots with their own blast.",
+  "Parent": "Projectile_Config_Bomb_Base",
+  "Model": "Hallows_Eve_Lantern_Bomb_Common_Thrown",
+  "UseModelScale": true,
+  "Interactions": {
+    "ProjectileSpawn": {
+      "Cooldown": {"Cooldown": 0},
+      "Interactions": [
+        {"Type": "Simple", "RunTime": 0.5},
+        "Hallows_Eve_Lantern_Bomb_Burst_Common",
+        {"Type": "RemoveEntity", "Entity": "User"}
+      ]
+    },
+    "ProjectileHit": {
+      "Cooldown": {"Cooldown": 0},
+      "Rules": {"Interrupting": ["ProjectileSpawn"]},
+      "Interactions": [
+        "Hallows_Eve_Lantern_Bomb_Burst_Common",
+        {"Type": "RemoveEntity", "Entity": "User"}
+      ]
+    }
+  }
+}

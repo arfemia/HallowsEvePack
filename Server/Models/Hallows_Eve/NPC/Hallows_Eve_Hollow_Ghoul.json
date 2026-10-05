@@ -1,0 +1,6 @@
+{
+  "$Comment": "A Hollow Ghoul's look: the game's Ghoul, repainted ash grey with pumpkin-orange eyes by this pack's own texture (tools/derive_art.py writes it and the icon). Parent Ghoul brings the shape, the hitbox and every animation, so Texture is drawn on the Ghoul's own layout. Icon is its picture wherever a creature is listed.",
+  "Parent": "Ghoul",
+  "Texture": "NPC/Hallows_Eve/Hollow_Ghoul/Hollow_Ghoul_Texture.png",
+  "Icon": "Icons/ModelsGenerated/Hallows_Eve_Hollow_Ghoul.png"
+}

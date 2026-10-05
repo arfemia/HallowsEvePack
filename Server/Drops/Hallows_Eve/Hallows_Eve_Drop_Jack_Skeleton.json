@@ -1,0 +1,43 @@
+{
+  "$Comment": "What a Jack Skeleton drops: the game's own Skeleton Fighter drops (bone fragments, linen, now and then a scrap sword), Lantern Bombs, and sometimes the Hallowed Pumpkin it wore for a head, so a player with no pumpkin patch can still bring Old Jack his pumpkins. In a Multiple container each child is rolled on its own, and a child's Weight is its chance out of 100. Every branch ends in a concrete Single, which the game's validator needs.",
+  "Container": {
+    "Type": "Multiple",
+    "Containers": [
+      {
+        "Type": "Choice",
+        "Weight": 100,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Ingredient_Bone_Fragment", "QuantityMin": 1, "QuantityMax": 2 } }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 100,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Ingredient_Fabric_Scrap_Linen", "QuantityMin": 1, "QuantityMax": 2 } }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 10,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Weapon_Sword_Scrap", "QuantityMin": 1, "QuantityMax": 1 } }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 30,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Hallows_Eve_Lantern_Bomb_Common", "QuantityMin": 1, "QuantityMax": 2 } }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 15,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Hallows_Eve_Hallowed_Pumpkin", "QuantityMin": 1, "QuantityMax": 1 } }
+        ]
+      }
+    ]
+  }
+}

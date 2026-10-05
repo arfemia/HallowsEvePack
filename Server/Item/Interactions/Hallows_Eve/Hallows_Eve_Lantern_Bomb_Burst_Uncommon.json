@@ -1,0 +1,44 @@
+{
+  "$Comment": "The Uncommon Lantern Bomb's blast: every creature within 3.5 blocks of the bomb takes damage, a shove and Burn, the game's own burning. Players are never hurt: the one hit rule matches only an entity that is not a player, and with no plain HitEntity a player matches nothing. IgnoreOwner also keeps the thrower out. All damage is the cause Hallows_Eve_Lantern_Burst, credited to the thrower. Range is the radius in blocks; BaseDamage and Knockback.Force set how hard it hits.",
+  "Type": "Selector",
+  "Selector": {"Id": "AOECircle", "Range": 3.5},
+  "IgnoreOwner": true,
+  "Effects": {
+    "WorldSoundEventId": "SFX_Goblin_Lobber_Bomb_Death",
+    "LocalSoundEventId": "SFX_Goblin_Lobber_Bomb_Death",
+    "Particles": [
+      {"SystemId": "Explosion_Medium", "TargetEntityPart": "Entity"}
+    ]
+  },
+  "HitEntityRules": [
+    {
+      "Matchers": [{"Type": "Player", "Invert": true}],
+      "Next": {
+        "Interactions": [
+          {"Type": "ApplyEffect", "EffectId": "Burn", "Entity": "Target"},
+          {
+            "Parent": "DamageEntityParent",
+            "DamageCalculator": {"BaseDamage": {"Hallows_Eve_Lantern_Burst": 28}},
+            "DamageEffects": {
+              "Knockback": {
+                "Type": "Point",
+                "VelocityConfig": {
+                  "AirResistance": 0.97,
+                  "AirResistanceMax": 0.96,
+                  "GroundResistance": 0.94,
+                  "GroundResistanceMax": 0.3,
+                  "Threshold": 3.0,
+                  "Style": "Exp"
+                },
+                "Force": 9,
+                "VelocityType": "Set"
+              },
+              "WorldParticles": [{"SystemId": "Impact_Mace_Charged", "Scale": 1}]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Next": {"Type": "Simple", "RunTime": 0.1}
+}

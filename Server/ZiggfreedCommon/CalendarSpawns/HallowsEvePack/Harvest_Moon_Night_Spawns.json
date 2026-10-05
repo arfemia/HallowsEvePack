@@ -1,0 +1,31 @@
+{
+  "$Comment": [
+    "Harvest Moon's night: the Hallows_Eve_Night rule rewritten with higher weights while Harvest Moon",
+    "runs. It names the same Rule as Hallows_Eve_Night_Spawns.json, so it is a rewrite of that one rule",
+    "and never a second one (the game refuses a second rule for one creature in one environment), and",
+    "Priority 10 beats that file's 0 while both events run. When Harvest Moon ends, the Hallow's Eve",
+    "body takes the rule back.",
+    "",
+    "Keep the Environments, the creatures and the times the same as the Hallow's Eve file; change only",
+    "the weights, and keep them above that file's."
+  ],
+  "Event": "Harvest_Moon",
+  "Rule": "Hallows_Eve_Night",
+  "Priority": 10,
+  "Spawn": {
+    "Environments": [
+      "Env_Zone1_Forests", "Env_Zone1_Autumn", "Env_Zone1_Azure", "Env_Zone1_Plains",
+      "Env_Zone1_Mountains", "Env_Zone1_Swamps", "Env_Zone1_Graveyard",
+      "Env_Zone2_Savanna", "Env_Zone2_Scrub", "Env_Zone2_Plateaus", "Env_Zone2_Deserts",
+      "Env_Zone3_Tundra", "Env_Zone3_Forests", "Env_Zone3_Mountains",
+      "Env_Zone4_Forests", "Env_Zone4_Jungles", "Env_Zone4_Wastes"
+    ],
+    "NPCs": [
+      { "Id": "Hallows_Eve_Jack_Skeleton", "Weight": 16, "SpawnBlockSet": "Soil", "Flock": { "Size": [1, 2] } },
+      { "Id": "Hallows_Eve_Hollow_Ghoul", "Weight": 8, "SpawnBlockSet": "Soil" }
+    ],
+    "DayTimeRange": [19, 5],
+    "Despawn": { "DayTimeRange": [5, 19] },
+    "LightRanges": { "Light": [0, 8] }
+  }
+}

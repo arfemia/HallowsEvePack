@@ -1,0 +1,12 @@
+{
+  "$Comment": "The Hallowed set's look and its fire ward, held on the player while the set's tier is on (GearSets/HallowsEvePack/Hallows_Eve_Hallowed.json names it). DamageResistance takes 15 percent off Fire damage: burning, lava and a Lantern Bomb's flames all deal Fire. The look is a slow orange shimmer over the wearer (the model effect Hallows_Eve_Hallowed_Glow) with a few warm sparks. Infinite with OverlapBehavior Ignore, as a set effect must be: the set engine puts it on when the tier comes on and again at every login, and takes it off itself. Never apply this id from anything else.",
+  "Infinite": true,
+  "OverlapBehavior": "Ignore",
+  "DamageResistance": {"Fire": [{"Amount": 0.15, "CalculationType": "Percent"}]},
+  "ApplicationEffects": {
+    "ModelVFXId": "Hallows_Eve_Hallowed_Glow",
+    "Particles": [
+      {"SystemId": "Block_Gem_Sparks", "Color": "#ff9a2e", "Scale": 1.2}
+    ]
+  }
+}

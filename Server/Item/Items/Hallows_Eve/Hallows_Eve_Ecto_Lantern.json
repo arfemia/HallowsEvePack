@@ -1,0 +1,34 @@
+{
+  "$Comment": "The Ecto Lantern: a pumpkin lit by ectoplasm, with a steady green glow. It is the light the Lost Souls' ectoplasm buys, carved at a Carving Bench or bought at Old Jack's stall. It places like any block, on the game's carved-pumpkin pattern (Deco_Halloween_Pumpkin_Scary) with this pack's model. In BlockType.Light each hex digit is a light level from 0 to 15 and roughly its reach in blocks.",
+  "TranslationProperties": {
+    "Name": "items.Hallows_Eve_Ecto_Lantern.name",
+    "Description": "items.Hallows_Eve_Ecto_Lantern.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Hallows_Eve_Ecto_Lantern.png",
+  "Categories": ["Blocks.Deco"],
+  "Quality": "Uncommon",
+  "Interactions": {"Primary": "Block_Primary", "Secondary": "Block_Secondary"},
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Items/Hallows_Eve/Jack_Lantern/Jack_Lantern.blockymodel",
+    "CustomModelTexture": [
+      {"Texture": "Items/Hallows_Eve/Jack_Lantern/Ecto_Lantern_Texture.png", "Weight": 1}
+    ],
+    "Group": "Wood",
+    "HitboxType": "Plant_Full",
+    "VariantRotation": "NESW",
+    "Light": {"Radius": 8, "Color": "#5d8"},
+    "Flags": {},
+    "Gathering": {"Breaking": {"GatherType": "Woods"}},
+    "BlockParticleSetId": "Stone",
+    "BlockSoundSetId": "Plushie",
+    "PhysicalMaterialId": "Wool",
+    "TextureComputedColor": "#3E8A55"
+  },
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {"Scale": 0.6, "Rotation": [22.5, 45.0, 22.5], "Translation": [-1.0, -15.0]},
+  "Tags": {"Type": ["Deco"]},
+  "ItemSoundSetId": "ISS_Blocks_Wood"
+}

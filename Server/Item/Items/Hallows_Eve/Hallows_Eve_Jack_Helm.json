@@ -1,0 +1,41 @@
+{
+  "$Comment": "The Jack Helm, one half of the Hallowed set (ZiggfreedCommon/GearSets/HallowsEvePack/Hallows_Eve_Hallowed.json). A head armor piece on the iron helm's pattern: CosmeticsToHide clears ears, hair, beard and face accessories so nothing pokes through the pumpkin. Its own stats ride the native Armor block, and the set adds its bonus on top while the Jack Shield sits in the utility slot. Light is the warm glow the helm gives off in the hand or on the ground; the set's effect carries the wearer's glow.",
+  "TranslationProperties": {
+    "Name": "items.Hallows_Eve_Jack_Helm.name",
+    "Description": "items.Hallows_Eve_Jack_Helm.description"
+  },
+  "Quality": "Rare",
+  "ItemLevel": 20,
+  "PlayerAnimationsId": "Block",
+  "ItemSoundSetId": "ISS_Armor_Leather",
+  "Categories": ["Items.Armors"],
+  "Icon": "Icons/ItemsGenerated/Hallows_Eve_Jack_Helm.png",
+  "IconProperties": {"Rotation": [22.5, 45, 22.5], "Scale": 0.5, "Translation": [0, -15]},
+  "Model": "Items/Hallows_Eve/Jack_Helm/Jack_Helm.blockymodel",
+  "Texture": "Items/Hallows_Eve/Jack_Helm/Jack_Helm_Texture.png",
+  "Light": {"Color": "#c73"},
+  "Interactions": {
+    "Primary": {"Interactions": [{"Type": "EquipItem"}]},
+    "Secondary": {"Interactions": [{"Type": "EquipItem"}]}
+  },
+  "Armor": {
+    "ArmorSlot": "Head",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "EarAccessory",
+      "Ear",
+      "Haircut",
+      "HeadAccessory",
+      "FacialHair",
+      "FaceAccessory"
+    ],
+    "DamageResistance": {
+      "Physical": [{"Amount": 0.04, "CalculationType": "Percent"}],
+      "Projectile": [{"Amount": 0.04, "CalculationType": "Percent"}]
+    },
+    "StatModifiers": {"Health": [{"Amount": 6, "CalculationType": "Additive"}]}
+  },
+  "MaxDurability": 100,
+  "DurabilityLossOnHit": 0.5,
+  "Tags": {"Type": ["Armor"], "Family": ["Hallows_Eve"]}
+}

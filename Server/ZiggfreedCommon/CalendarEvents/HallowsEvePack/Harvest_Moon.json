@@ -1,0 +1,34 @@
+{
+  "$Comment": [
+    "Harvest Moon, the last nights of October, inside Hallow's Eve. The file name is the event id.",
+    "While it runs, CalendarSpawns/HallowsEvePack/Harvest_Moon_*.json rewrite the Hallow's Eve night",
+    "rules with higher weights and hand them back when it ends, and the geode and pumpkin finds roll",
+    "one more on its nights.",
+    "",
+    "It is an event of its own with its own switch. The finds roll their extra only while Hallow's",
+    "Eve runs too, but the spawn rewrites ride Harvest Moon alone: a server owner who switches only",
+    "Hallow's Eve off in mods/ziggfreedcommon/calendar.json still gets the busier nights, so switch",
+    "both off, or every event at once with $Enabled.",
+    "",
+    "Herald Start shows once to each player the first time they are on the server during the run;",
+    "End shows to everyone online when the run ends by its dates or by a command."
+  ],
+  "Window": { "Start": "10-29", "End": "10-31" },
+  "FirstYear": 2026,
+  "Presentation": {
+    "TitleKey": "calendar.harvest_moon.name",
+    "FlavorKey": "calendar.harvest_moon.flavor",
+    "Icon": "Hallows_Eve_Hallowed_Pumpkin"
+  },
+  "Herald": {
+    "Start": {
+      "TitleKey": "calendar.harvest_moon.herald.start",
+      "SubtitleKey": "calendar.harvest_moon.herald.start.sub",
+      "Major": true
+    },
+    "End": {
+      "TitleKey": "calendar.harvest_moon.herald.end",
+      "SubtitleKey": "calendar.harvest_moon.herald.end.sub"
+    }
+  }
+}
