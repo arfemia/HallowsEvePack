@@ -59,6 +59,7 @@ shop.hallows_eve_offer_harvest_moon_bundle.desc = Epic and Rare Lantern Bombs, s
 # ---- Achievements ----
 achievement.hallows_eve_lantern_keepsake.title = Hollow Lantern {0}
 achievement.hallows_eve_lantern_keepsake.desc = Light the Hollow Lantern with Old Jack.
+keepsake.hallows_eve_hollow_lantern.name = Hollow Lantern of {0}
 achievement.hallows_eve_lantern_lobber.title = Lantern Lobber {0}
 achievement.hallows_eve_lantern_lobber.desc = Throw {0} Lantern Bombs.
 achievement.hallows_eve_soul_warden.title = Soul Warden {0}

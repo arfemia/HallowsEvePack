@@ -30,7 +30,15 @@
   },
   "Rewards": {
     "Auto": [
-      { "Kind": "Item", "Params": { "Item": "Hallows_Eve_Hollow_Lantern", "Count": "1" } }
+      {
+        "Kind": "Item",
+        "Params": {
+          "Item": "Hallows_Eve_Hollow_Lantern",
+          "Count": "1",
+          "StackNameKey": "keepsake.hallows_eve_hollow_lantern.name",
+          "StackNameArg": "@year"
+        }
+      }
     ]
   }
 }
