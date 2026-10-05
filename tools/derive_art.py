@@ -9,7 +9,7 @@
 
 The seed is JackoLantern01.blockymodel and JackoLantern01_Texture.png, read from tools/seed/
 (a byte copy, kept beside the tool so the pack rebuilds from its own repo) unless --seed
-names another folder. The vanilla inputs are byte copies of ten files from the installed
+names another folder. The vanilla inputs are byte copies of twelve files from the installed
 game's Assets.zip, kept under tools/seed/vanilla/ at their Assets.zip paths (VANILLA_FILES);
 --vendor rewrites them from the Assets.zip it is given. A rerun writes byte-identical
 files: nothing here is random, and PNGs carry no metadata.
