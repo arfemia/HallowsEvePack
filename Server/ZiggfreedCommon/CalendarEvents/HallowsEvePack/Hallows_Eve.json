@@ -1,0 +1,38 @@
+{
+  "$Comment": [
+    "Hallow's Eve, this pack's yearly event. The file name is the event id: every gate, spawn rule",
+    "and find in the pack names it Hallows_Eve. Both days of the Window are in it, counted in UTC",
+    "because no Clock is written, so the event runs from the first moment of October 1st to the last",
+    "moment of November 3rd, every year from FirstYear on.",
+    "",
+    "Content that must vanish while the event is not running gates on ziggfreedcommon:feature with",
+    "Param Hallows_Eve_Live and Min 1 at the top of its Requires. A roll or a lock reads",
+    "ziggfreedcommon:calendar_live with Param Hallows_Eve instead.",
+    "",
+    "Presentation names the event wherever events are listed, with the Jack Lantern as its picture.",
+    "Herald is the banner: Start shows once to each player, the first time they are on the server",
+    "during a run; End shows to everyone online when a run ends by its dates or by a command, and",
+    "never when the event is switched off.",
+    "",
+    "A server owner switches the event off, or moves its days, in mods/ziggfreedcommon/calendar.json",
+    "without touching this file. /zigcalendar status Hallows_Eve shows what the server reads."
+  ],
+  "Window": { "Start": "10-01", "End": "11-03" },
+  "FirstYear": 2026,
+  "Presentation": {
+    "TitleKey": "calendar.hallows_eve.name",
+    "FlavorKey": "calendar.hallows_eve.flavor",
+    "Icon": "Hallows_Eve_Jack_Lantern"
+  },
+  "Herald": {
+    "Start": {
+      "TitleKey": "calendar.hallows_eve.herald.start",
+      "SubtitleKey": "calendar.hallows_eve.herald.start.sub",
+      "Major": true
+    },
+    "End": {
+      "TitleKey": "calendar.hallows_eve.herald.end",
+      "SubtitleKey": "calendar.hallows_eve.herald.end.sub"
+    }
+  }
+}

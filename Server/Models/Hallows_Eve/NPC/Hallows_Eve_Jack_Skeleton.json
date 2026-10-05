@@ -1,0 +1,19 @@
+{
+  "$Comment": "A Jack Skeleton's look: the game's Skeleton under the Jack Helm, in purple rags and rotten boots. Parent Skeleton brings the body, its animations and its hitbox. DefaultAttachments replaces the parent's list whole, so the skull's glowing eyes are left out on purpose: the helm's carved face is the face. Light is the pumpkin's glow, a model light that moves with it; each hex digit is a red, green or blue level from 0 to f. The costume wand's Jack costume puts a player in this same model, so a change here changes the costume too.",
+  "Parent": "Skeleton",
+  "DefaultAttachments": [
+    {
+      "Model": "Items/Hallows_Eve/Jack_Helm/Jack_Helm.blockymodel",
+      "Texture": "Items/Hallows_Eve/Jack_Helm/Jack_Helm_Texture.png"
+    },
+    {
+      "Model": "NPC/Undead/Skeleton/Models/Attachments/Cosmetics/Chest/Tunic_Torn.blockymodel",
+      "Texture": "NPC/Undead/Skeleton/Models/Attachments/Cosmetics/Chest/Tunic_Torn_Textures/Tunic_Torn_Purple.png"
+    },
+    {
+      "Model": "Cosmetics/Shoes/BootsBasic.blockymodel",
+      "Texture": "Cosmetics/Shoes/BootsBasic_Textures/Rotten_Leather.png"
+    }
+  ],
+  "Light": { "Color": "#962" }
+}

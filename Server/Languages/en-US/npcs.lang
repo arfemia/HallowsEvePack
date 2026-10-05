@@ -1,0 +1,9 @@
+# Hallow's Eve pack - the display names of its host and its creatures.
+# The game prepends the file name, so each key loads as npcs.<key> (npcs.Hallows_Eve_Old_Jack.name).
+# A role names its key in NameTranslationKey; a quest step that counts a creature finds the same key.
+
+Hallows_Eve_Old_Jack.name = Old Jack
+Hallows_Eve_Hollow_Ghoul.name = Hollow Ghoul
+Hallows_Eve_Jack_Skeleton.name = Jack Skeleton
+Hallows_Eve_Lost_Soul.name = Lost Soul
+Hallows_Eve_Geode_Wraith.name = Geode Wraith

@@ -1,0 +1,22 @@
+{
+  "$Comment": "What a Lost Soul drops: Ectoplasm on every kill, the ingredient behind the Ecto Lantern and the event's ectoplasm recipes, and now and then a Lantern Bomb. In a Multiple container each child is rolled on its own, and a child's Weight is its chance out of 100. Every branch ends in a concrete Single, which the game's validator needs.",
+  "Container": {
+    "Type": "Multiple",
+    "Containers": [
+      {
+        "Type": "Choice",
+        "Weight": 100,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Hallows_Eve_Ectoplasm", "QuantityMin": 1, "QuantityMax": 2 } }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 10,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Hallows_Eve_Lantern_Bomb_Common", "QuantityMin": 1, "QuantityMax": 1 } }
+        ]
+      }
+    ]
+  }
+}

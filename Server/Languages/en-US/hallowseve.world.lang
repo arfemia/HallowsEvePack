@@ -1,0 +1,23 @@
+# Hallow's Eve pack - the calendar's words (what each event is called, and its banners) and the
+# notices for a find. Keys are written bare: the library finds each one by its tail, whatever this
+# file is called. Banners and notices print markup as text, so none of these values carries any.
+
+# ---- Hallow's Eve ----
+calendar.hallows_eve.name = Hallow's Eve
+calendar.hallows_eve.flavor = Old Jack keeps the Forgotten Temple, and the dead walk at night.
+calendar.hallows_eve.herald.start = Hallow's Eve
+calendar.hallows_eve.herald.start.sub = Old Jack is waiting at the Forgotten Temple.
+calendar.hallows_eve.herald.end = Hallow's Eve is over
+calendar.hallows_eve.herald.end.sub = The lanterns go dark until next autumn.
+
+# ---- Harvest Moon ----
+calendar.harvest_moon.name = Harvest Moon
+calendar.harvest_moon.flavor = The moon hangs fat and orange, and more of the dead climb out to see it.
+calendar.harvest_moon.herald.start = Harvest Moon
+calendar.harvest_moon.herald.start.sub = The dead are restless tonight. Keep a lantern lit.
+calendar.harvest_moon.herald.end = The Harvest Moon sets
+calendar.harvest_moon.herald.end.sub = The nights go quiet again.
+
+# ---- Finds ----
+notify.hallows_eve_geode_found = A cursed geode, there in the rubble.
+notify.hallows_eve_pumpkin_found = A hallowed pumpkin, glowing in your pack.

@@ -1,0 +1,34 @@
+{
+  "$Comment": [
+    "What a Cursed Geode holds when a player cracks it open. The geode's use runs the crack, which",
+    "hands this table out by id, so retuning the haul is an edit here and nowhere else.",
+    "",
+    "Rolls are read one by one and each pays on its own: purple crystal fragments every time, and",
+    "an Epic Lantern Bomb now and then (Chance is a percent from 0 to 100). Pool is one draw from",
+    "the bag below, weighted against each other: the bomb tiers, Ectoplasm, or fire essence. Every",
+    "item the cracking player is owed lands in their bag.",
+    "",
+    "A companion mod adds its own rolls to this table with a file of its own that names it in",
+    "ContributesTo, so nothing here has to change. The table pays whenever a geode is cracked, in",
+    "season or out, since the geode itself is an ordinary item once found."
+  ],
+  "Name": "Hallows_Eve_Geode_Crack",
+  "Rolls": [
+    {
+      "Grants": { "Items": [ { "Item": "Ingredient_Crystal_Purple", "Count": 1, "CountMax": 3 } ] }
+    },
+    {
+      "Chance": { "Base": 5.0 },
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Lantern_Bomb_Epic", "Count": 1 } ] }
+    }
+  ],
+  "Pool": {
+    "Entries": [
+      { "Weight": 35, "Grants": { "Items": [ { "Item": "Hallows_Eve_Lantern_Bomb_Common", "Count": 1, "CountMax": 2 } ] } },
+      { "Weight": 25, "Grants": { "Items": [ { "Item": "Hallows_Eve_Lantern_Bomb_Uncommon", "Count": 1 } ] } },
+      { "Weight": 10, "Grants": { "Items": [ { "Item": "Hallows_Eve_Lantern_Bomb_Rare", "Count": 1 } ] } },
+      { "Weight": 15, "Grants": { "Items": [ { "Item": "Hallows_Eve_Ectoplasm", "Count": 1, "CountMax": 2 } ] } },
+      { "Weight": 15, "Grants": { "Items": [ { "Item": "Ingredient_Fire_Essence", "Count": 2, "CountMax": 3 } ] } }
+    ]
+  }
+}

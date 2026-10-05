@@ -1,0 +1,9 @@
+{
+  "$Comment": "A Lost Soul's look: the game's Ember Spirit as this pack's art tool reshapes and repaints it (tools/derive_art.py writes the model, the texture and the icon), pale, with a cold mint light and none of its parent's fire. Parent Spirit_Ember brings the size, the hitbox and every animation; Model keeps every node of the Ember Spirit's shape by name, so those animations still find them, and Texture is drawn on that model's layout. Particles replaces the parent's list whole, which is how the fire goes. Light is a model light that moves with it; each hex digit is a red, green or blue level from 0 to f. Icon is its picture wherever a creature is listed. The costume wand's Lost Soul costume puts a player in this same model, so a change here changes the costume too.",
+  "Parent": "Spirit_Ember",
+  "Model": "NPC/Hallows_Eve/Lost_Soul/Lost_Soul.blockymodel",
+  "Texture": "NPC/Hallows_Eve/Lost_Soul/Lost_Soul_Texture.png",
+  "Icon": "Icons/ModelsGenerated/Hallows_Eve_Lost_Soul.png",
+  "Particles": [],
+  "Light": { "Color": "#4b9" }
+}

@@ -1,0 +1,8 @@
+{
+  "$Comment": "A Geode Wraith's look: the game's Wraith as this pack's art tool reshapes and repaints it (tools/derive_art.py writes the model, the texture and the icon), amethyst growing from its back and shoulders, lit a cursed purple. Parent Wraith brings the hitbox, the animations and its blue flames; Model keeps every node of the Wraith's shape by name, so those animations still find them, and Texture is drawn on that model's layout. Light is a model light that moves with it; each hex digit is a red, green or blue level from 0 to f. Icon is its picture wherever a creature is listed.",
+  "Parent": "Wraith",
+  "Model": "NPC/Hallows_Eve/Geode_Wraith/Geode_Wraith.blockymodel",
+  "Texture": "NPC/Hallows_Eve/Geode_Wraith/Geode_Wraith_Texture.png",
+  "Icon": "Icons/ModelsGenerated/Hallows_Eve_Geode_Wraith.png",
+  "Light": { "Color": "#649" }
+}

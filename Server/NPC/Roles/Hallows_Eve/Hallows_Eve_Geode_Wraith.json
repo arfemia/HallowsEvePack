@@ -1,0 +1,39 @@
+{
+  "$Comment": "A Geode Wraith: the game's own Wraith, haunting the mineshafts while Hallow's Eve runs and guarding the Cursed Geodes. It is a Variant of Template_Intelligent rather than of Wraith because a Variant's Modify reaches only the Parameters its immediate Reference declares; so this Modify is Wraith's own, with the look, the drop list and the nameplate changed, its Memories leaves replaced by IsMemory false, and FlockArray emptied so it comes alone. Any key the template does not declare makes the game refuse the whole role, and the creature never spawns. IsMemory is false so a creature that walks a few weeks a year stays out of the Memories collection. It spawns only through this pack's calendar rules (CalendarSpawns/HallowsEvePack).",
+  "Type": "Variant",
+  "Reference": "Template_Intelligent",
+  "Modify": {
+    "MaxHealth": 193,
+    "HearingRange": 8,
+    "WakingPeriod": [0, 24],
+    "DropList": "Hallows_Eve_Drop_Geode_Wraith",
+    "Appearance": "Hallows_Eve_Geode_Wraith",
+    "Weapons": ["Weapon_Battleaxe_Scythe_Void"],
+    "OffHand": [],
+    "FlockArray": [],
+    "Attack": "Root_NPC_Wraith_Attack",
+    "AttackDistance": 3.5,
+    "TargetRange": 3.5,
+    "BlockProbability": 10,
+    "DesiredAttackDistanceRange": [2, 2.5],
+    "_InteractionVars": {
+      "Melee_Damage": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "$Comment": "Sets damage and onhit effects",
+            "DamageCalculator": {
+              "Type": "Absolute",
+              "BaseDamage": {
+                "Physical": 40
+              },
+              "RandomPercentageModifier": 0.1
+            }
+          }
+        ]
+      }
+    },
+    "IsMemory": false,
+    "NameTranslationKey": "npcs.Hallows_Eve_Geode_Wraith.name"
+  }
+}
