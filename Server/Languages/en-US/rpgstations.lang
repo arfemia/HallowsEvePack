@@ -1,0 +1,6 @@
+# Hallow's Eve pack - additive keys over RPG Stations' own rpgstations.lang (the "rpgstations."
+# namespace; a pack's keys add to the jar's and never replace one). The Carving Bench is this pack's.
+station.hallows_eve_carving_bench.name = Carving Bench
+station.hallows_eve_carving_bench.desc = Carve pumpkins into lanterns and bombs, or a helm to wear. The Hallowed work waits for Hallow's Eve.
+action.hallows_eve_carving_bench.carve.label = Carve
+action.hallows_eve_carving_bench.carve_hallowed.label = Hallowed Carving
