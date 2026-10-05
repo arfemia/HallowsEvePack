@@ -1,0 +1,9 @@
+# Allerheiligenabend-Paket - die Anzeigenamen seines Gastgebers und seiner Kreaturen.
+# Das Spiel stellt den Dateinamen voran, also lädt jeder Schlüssel als npcs.<key> (npcs.Hallows_Eve_Old_Jack.name).
+# Eine Rolle nennt ihren Schlüssel in NameTranslationKey; ein Questschritt, der eine Kreatur zählt, findet denselben Schlüssel.
+
+Hallows_Eve_Old_Jack.name = Alter Jack
+Hallows_Eve_Hollow_Ghoul.name = Hohler Ghul
+Hallows_Eve_Jack_Skeleton.name = Jack-Skelett
+Hallows_Eve_Lost_Soul.name = Verlorene Seele
+Hallows_Eve_Geode_Wraith.name = Geodengespenst

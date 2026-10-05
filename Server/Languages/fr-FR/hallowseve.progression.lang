@@ -1,0 +1,143 @@
+# Progression de la Veille de la Toussaint : la suite de quêtes du Vieux Jack, ses quotidiennes, son tableau et
+# son étal, sa conversation et la réplique des bonbons ou un sort, les succès de la saison et son titre, et sa
+# page d'Almanach. Les clés sont écrites nues : la bibliothèque trouve chacune par sa fin, quel que soit le nom
+# de ce fichier. Les nombres passent par {0} et viennent des fichiers de contenu, donc un réglage ne touche
+# jamais une traduction.
+
+# ---- Le porte-monnaie ----
+currency.hallows_eve_sweets.name = Friandises de la Toussaint
+
+# ---- La suite de quêtes du Vieux Jack ----
+quest.hallows_eve_old_jack_1.title = Champ de citrouilles
+quest.hallows_eve_old_jack_1.flavor = Cueille une citrouille ce mois-ci et de temps en temps, y en a une qui sort froide et luisante. Rapporte-m'en quelques-unes, de ces sanctifiées.
+quest.hallows_eve_old_jack_2.title = Travail de lanternes
+quest.hallows_eve_old_jack_2.flavor = Une citrouille sanctifiée avec une mèche courte, ça fait une belle Bombe-Lanterne. Lances-en quelques-unes sur quelque chose qui l'a bien cherché, puis dis-moi comment elles ont brûlé.
+quest.hallows_eve_old_jack_3.title = Goules sur les marches
+quest.hallows_eve_old_jack_3.flavor = Les Goules Creuses rampent hors des vieilles tombes à la nuit tombée, affamées. Renvoies-en quelques-unes sous terre avant qu'elles atteignent les marches du temple.
+quest.hallows_eve_old_jack_4.title = Tournée d'ectoplasme
+quest.hallows_eve_old_jack_4.flavor = Les Âmes Perdues flottent çà et là jusqu'à ce que quelqu'un les laisse partir. Libères-en quelques-unes et rapporte-moi l'ectoplasme qu'elles laissent derrière elles ; mes lanternes boivent ça.
+quest.hallows_eve_old_jack_5.title = Pierre maudite
+quest.hallows_eve_old_jack_5.flavor = Creuse profond ce mois-ci et la pierre fait pousser des géodes qui bourdonnent. Casses-en quelques-unes ; y a du bon dedans, sous la malédiction.
+quest.hallows_eve_old_jack_lantern.title = La Lanterne Creuse
+quest.hallows_eve_old_jack_lantern.flavor = Chaque année, la Lanterne Creuse s'éteint, et quelqu'un doit la rallumer. Fais tomber les squelettes qui portent ma figure, puis rapporte-moi ce qu'il faut à la lanterne.
+
+# ---- Les quotidiennes du Vieux Jack ----
+quest.hallows_eve_jack_daily_souls.title = Âmes agitées
+quest.hallows_eve_jack_daily_souls.flavor = D'autres Âmes Perdues ont flotté jusqu'ici la nuit dernière. Libères-en quelques-unes avant qu'elles s'installent pour de bon.
+quest.hallows_eve_jack_daily_pumpkins.title = Tournée des citrouilles
+quest.hallows_eve_jack_daily_pumpkins.flavor = Les lanternes brûlent les citrouilles sanctifiées plus vite que j'arrive à les sculpter. Rapporte-m'en encore quelques-unes avant la nuit.
+quest.hallows_eve_jack_daily_geodes.title = Pierre qui bourdonne
+quest.hallows_eve_jack_daily_geodes.flavor = La pierre du fond bourdonne encore. Casse deux ou trois Géodes Maudites avant qu'elles se cassent toutes seules.
+
+# ---- Étapes formulées pour ce pack ----
+objective.hallows_eve.throw_bombs = Lancez {0} Bombes-Lanternes
+objective.hallows_eve.crack_geodes = Cassez {0} Géodes Maudites
+objective.hallows_eve.attend = Soyez là pour la Veille de la Toussaint
+
+# ---- Le tableau du Vieux Jack ----
+board.hallows_eve_daily.title = Tableau du Vieux Jack
+board.hallows_eve_daily.desc = Un boulot par nuit, et ça paie.
+quest.hallows_eve_board_souls.title = Ratissage d'âmes
+quest.hallows_eve_board_souls.flavor = Ça grouille d'âmes autour du temple cette nuit. Libères-en un bon paquet avant le matin.
+quest.hallows_eve_board_ghouls.title = Battue de goules
+quest.hallows_eve_board_ghouls.flavor = Ça s'agite dans les tombes cette nuit. Renvoie les Goules Creuses d'où elles viennent, et sois pas tendre avec elles.
+quest.hallows_eve_board_bombs.title = Barrage de lanternes
+quest.hallows_eve_board_bombs.flavor = Grille une pile de Bombes-Lanternes cette nuit. Peu m'importe sur quoi, tant que c'est pas le temple.
+quest.hallows_eve_board_geodes.title = Géodes profondes
+quest.hallows_eve_board_geodes.flavor = La pierre du fond arrête pas de bourdonner, et ça m'empêche de dormir. Casse assez de Géodes Maudites pour la faire taire.
+quest.hallows_eve_board_harvest_moon.title = Chasse sous la Lune des Moissons
+quest.hallows_eve_board_harvest_moon.flavor = La Lune des Moissons est levée et les Squelettes Jack sortent en nombre. Fais-en tomber autant que tu peux avant qu'elle se couche.
+
+# ---- L'étal du Vieux Jack ----
+shop.hallows_eve_old_jack.title = Étal du Vieux Jack
+shop.hallows_eve_old_jack.desc = Des Bombes-Lanternes, des lanternes et quelques bricoles pour la saison.
+shop.hallows_eve_old_jack.category.bombs = Bombes-Lanternes
+shop.hallows_eve_old_jack.category.lights = Lanternes
+shop.hallows_eve_old_jack.category.gear = Équipement
+shop.hallows_eve_offer_harvest_moon_bundle.title = Lot de la Lune des Moissons
+shop.hallows_eve_offer_harvest_moon_bundle.desc = Des Bombes-Lanternes épiques et rares, vendues seulement tant que la Lune des Moissons est levée.
+
+# ---- Succès ----
+achievement.hallows_eve_lantern_keepsake.title = Lanterne Creuse {0}
+achievement.hallows_eve_lantern_keepsake.desc = Allumez la Lanterne Creuse avec le Vieux Jack.
+keepsake.hallows_eve_hollow_lantern.name = Lanterne Creuse de {0}
+achievement.hallows_eve_lantern_lobber.title = Lanceur de lanternes {0}
+achievement.hallows_eve_lantern_lobber.desc = Lancez {0} Bombes-Lanternes.
+achievement.hallows_eve_soul_warden.title = Gardien des âmes {0}
+achievement.hallows_eve_soul_warden.desc = Libérez {0} Âmes Perdues.
+achievement.hallows_eve_ghoul_breaker.title = Briseur de goules {0}
+achievement.hallows_eve_ghoul_breaker.desc = Abattez {0} Goules Creuses.
+achievement.hallows_eve_geode_cracker.title = Casseur de géodes {0}
+achievement.hallows_eve_geode_cracker.desc = Cassez {0} Géodes Maudites.
+achievement.hallows_eve_jacks_guest.title = Invité de Jack {0}
+achievement.hallows_eve_jacks_guest.desc = Soyez là pour la Veille de la Toussaint.
+achievement.hallows_eve_the_hallowed.title = Le Sanctifié {0}
+achievement.hallows_eve_the_hallowed.desc = Obtenez tous les succès de la Veille de la Toussaint en une seule saison.
+achievement.seasons_of_orbis.title = Saisons d'Orbis
+achievement.seasons_of_orbis.desc = Obtenez le succès ultime de chaque saison.
+
+# ---- Le titre Sanctifié ----
+title.hallows_eve_hallowed.name = Le Sanctifié
+title.hallows_eve_hallowed.flavor = A obtenu tous les succès de la Veille de la Toussaint en une seule saison.
+title.hallows_eve_hallowed.display = {0} le Sanctifié
+
+# ---- La page de l'Almanach ----
+almanac.hallows_eve.title = Veille de la Toussaint
+almanac.hallows_eve.flavor = Chaque automne, le Vieux Jack ouvre le Temple Oublié et en allume les lanternes.
+almanac.hallows_eve.bombs_thrown = Bombes-Lanternes lancées
+almanac.hallows_eve.ghouls_felled = Goules Creuses abattues
+almanac.hallows_eve.souls_freed = Âmes Perdues libérées
+almanac.hallows_eve.geodes_cracked = Géodes Maudites cassées
+
+# ---- La conversation du Vieux Jack ----
+dialogue.hallows_eve_old_jack.first_words.text = Fais pas attention à la tête. C'est une citrouille, et elle est là-dessus depuis un bon moment.\nMoi, c'est le Vieux Jack. Chaque automne, les morts s'agitent et les lanternes du <color is="#ffd97a">Temple Oublié</color> s'éteignent, alors je reviens les allumer. J'aurais bien besoin d'une paire de mains qui sont pas sculptées.
+dialogue.hallows_eve_old_jack.first_words.opt.hail = Un plaisir de te rencontrer, Jack.
+dialogue.hallows_eve_old_jack.board_fresh.text = Y a du nouveau sur mon tableau cette nuit. Un boulot, et il paie.
+dialogue.hallows_eve_old_jack.board_fresh.opt.board = Montre-moi le tableau.
+dialogue.hallows_eve_old_jack.board_fresh.opt.later = Plus tard, Jack.
+dialogue.hallows_eve_old_jack.menu.text = Les lanternes sont allumées et les goules se baladent. Qu'est-ce qu'il te faut ?
+dialogue.hallows_eve_old_jack.patch_offer.text = Cueille une citrouille ce mois-ci et de temps en temps, y en a une qui sort froide au toucher, un peu luisante. Des <b>citrouilles sanctifiées</b>, c'est comme ça que je les appelle.\nRapporte-m'en quelques-unes. Je te montrerai à quoi elles servent.
+dialogue.hallows_eve_old_jack.patch_offer.opt.accept = Je vais te trouver des citrouilles.
+dialogue.hallows_eve_old_jack.patch_brief.text = N'importe quelle <b>citrouille</b> que tu cueilles peut sortir sanctifiée ce mois-ci. Garde les froides qui luisent et rapporte-les ici.
+dialogue.hallows_eve_old_jack.patch_ready.text = Des <b>citrouilles sanctifiées</b>. Froides comme une marche de cave. Bien.\nBourrée d'huile à lampe, une de celles-là, ça fait une Bombe-Lanterne. J'en ai mis quelques-unes avec ta paie. Va voir comment elles brûlent.
+dialogue.hallows_eve_old_jack.patch_ready.opt.turnin = Voilà les citrouilles.
+dialogue.hallows_eve_old_jack.lantern_work_offer.text = Une <b>Bombe-Lanterne</b>, c'est une citrouille sanctifiée avec une mèche courte. Allume-la et lance-la. Ensuite, recule.\nLances-en quelques-unes sur quelque chose qui l'a bien cherché, et reviens me dire comment ça s'est passé.
+dialogue.hallows_eve_old_jack.lantern_work_offer.opt.accept = J'en lancerai quelques-unes.
+dialogue.hallows_eve_old_jack.ghouls_offer.text = Les <b>Goules Creuses</b> rampent hors des vieilles tombes à la nuit tombée, et elles sortent affamées.\nRenvoies-en quelques-unes sous terre avant qu'elles trouvent les marches du temple.
+dialogue.hallows_eve_old_jack.ghouls_offer.opt.accept = Je m'occupe des goules.
+dialogue.hallows_eve_old_jack.souls_offer.text = Pauvres choses, les <b>Âmes Perdues</b>. Elles flottent çà et là jusqu'à ce que quelqu'un les laisse partir.\nLibères-en quelques-unes et rapporte-moi l'<b>ectoplasme</b> qu'elles laissent derrière elles. Mes lanternes boivent ça.
+dialogue.hallows_eve_old_jack.souls_offer.opt.accept = Je vais les libérer.
+dialogue.hallows_eve_old_jack.geodes_offer.text = Creuse profond ce mois-ci et la pierre fait pousser des <b>Géodes Maudites</b>. Tu les entendras avant de les voir. Elles bourdonnent.\nCasses-en quelques-unes. Y a du bon dedans, sous la malédiction.
+dialogue.hallows_eve_old_jack.geodes_offer.opt.accept = J'en casserai quelques-unes.
+dialogue.hallows_eve_old_jack.lantern_offer.text = Chaque année, la <b>Lanterne Creuse</b> s'éteint, et chaque année quelqu'un doit la rallumer.\nCertains squelettes là-dehors portent ma figure. Fais tomber quelques <b>Squelettes Jack</b>, puis rapporte-moi une <b>citrouille sanctifiée</b> et de l'<b>ectoplasme</b> pour la remplir.
+dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Allumons-la.
+dialogue.hallows_eve_old_jack.lantern_brief.text = Les <b>Squelettes Jack</b> marchent la nuit. Fais-en tomber quelques-uns. Ensuite une <b>citrouille sanctifiée</b> et l'<b>ectoplasme</b>, et on l'allume ensemble.
+dialogue.hallows_eve_old_jack.lantern_ready.text = Une <b>citrouille sanctifiée</b>, et de l'<b>ectoplasme</b> pour la remplir à ras bord. Et les squelettes à ma figure sont couchés dans l'herbe, à leur place.\nBouge pas. Voilà. La Lanterne Creuse est allumée, et elle est à toi. Reviens l'an prochain et on en allumera une autre.
+dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = Voilà la citrouille, et l'ectoplasme.
+dialogue.hallows_eve_old_jack.active_generic.text = Toujours dehors ? Bien. La nuit est longue, et elle s'en va pas de sitôt.
+dialogue.hallows_eve_old_jack.ready_generic.text = Ça m'a l'air fait. Voyons ça.
+dialogue.hallows_eve_old_jack.ready_generic.opt.turnin = C'est fait.
+dialogue.hallows_eve_old_jack.daily_souls_offer.text = D'autres <b>Âmes Perdues</b> ont flotté jusqu'ici la nuit dernière. Libères-en quelques-unes avant qu'elles s'installent pour de bon.
+dialogue.hallows_eve_old_jack.daily_souls_offer.opt.accept = Je m'occupe des âmes.
+dialogue.hallows_eve_old_jack.daily_pumpkins_offer.text = Les lanternes brûlent les <b>citrouilles sanctifiées</b> plus vite que j'arrive à les sculpter. Rapporte-m'en encore quelques-unes avant la nuit.
+dialogue.hallows_eve_old_jack.daily_pumpkins_offer.opt.accept = J'apporterai des citrouilles.
+dialogue.hallows_eve_old_jack.daily_geodes_offer.text = La pierre du fond bourdonne encore. Casse deux ou trois <b>Géodes Maudites</b> avant qu'elles se cassent toutes seules.
+dialogue.hallows_eve_old_jack.daily_geodes_offer.opt.accept = J'en casserai deux ou trois.
+dialogue.hallows_eve_old_jack.lantern_lit.text = La Lanterne Creuse brûle toujours. Ça garde le pire du noir loin des marches.\nQu'est-ce qu'il te faut ?
+dialogue.hallows_eve_old_jack.who_are_you.text = Le Vieux Jack. J'avais une ferme, autrefois, loin d'ici. Et puis un octobre, je suis pas rentré chez moi, et je reviens chaque octobre depuis.\nMe demande pas pour la tête.
+dialogue.hallows_eve_old_jack.about_lantern.text = Une Lanterne Creuse, c'est une citrouille sanctifiée, évidée et remplie d'ectoplasme. Allumes-en une et les morts gardent leurs distances.\nEn novembre, elles sont éteintes. C'est pour ça qu'il m'en faut une nouvelle chaque année.
+dialogue.hallows_eve_old_jack.harvest_moon.text = Tu vois cette lune ? La Lune des Moissons. Quelques nuits par an, elle se lève grosse et orange, et tout ce qu'il y a dans les tombes se lève avec elle.\nSi tu veux du travail, c'est la bonne nuit. Si tu veux dormir, c'est pas la bonne.
+dialogue.hallows_eve_old_jack.opt.returned = Je suis de retour.
+dialogue.hallows_eve_old_jack.opt.quests = Qu'est-ce qu'il y a à faire ?
+dialogue.hallows_eve_old_jack.opt.board = Qu'est-ce qu'il y a sur le tableau ?
+dialogue.hallows_eve_old_jack.opt.shop = Voyons ton étal.
+dialogue.hallows_eve_old_jack.opt.almanac = Montre-moi l'Almanach.
+dialogue.hallows_eve_old_jack.opt.who = Qui es-tu ?
+dialogue.hallows_eve_old_jack.opt.lantern = C'est quoi, une Lanterne Creuse ?
+dialogue.hallows_eve_old_jack.opt.harvest = Pourquoi la lune est si grosse ?
+dialogue.hallows_eve_old_jack.opt.back = Autre chose.
+dialogue.hallows_eve_old_jack.opt.farewell = Bonne nuit, Jack.
+
+# ---- Bonbons ou un sort, la réplique de chaque conversation, et son avis ----
+dialogue.hallows_eve_trick_or_treat.opt.knock = Des bonbons ou un sort.
+notify.hallows_eve_treat = Une friandise pour avoir frappé.

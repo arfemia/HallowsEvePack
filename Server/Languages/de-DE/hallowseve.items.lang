@@ -1,0 +1,4 @@
+# Allerheiligenabend-Paket - die Worte des Geweihten Sets. Die Schlüssel stehen ohne Präfix: die Bibliothek findet
+# jeden an seinem Ende, egal wie diese Datei heißt. Die Meldung des Sets ist ein Toast, also trägt kein Wert Markup.
+gearset.hallows_eve_hallowed.title = Geweihtes Set
+gearset.hallows_eve_hallowed.tier_full = Helm auf und Schild in der Hand. Du leuchtest wie eine Laterne, und Feuer setzt dir weniger zu.

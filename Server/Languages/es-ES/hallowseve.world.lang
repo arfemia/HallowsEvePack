@@ -1,0 +1,24 @@
+# Paquete de la Noche de Ánimas - las palabras del calendario (cómo se llama cada evento, y sus pancartas) y los
+# avisos de un hallazgo. Las claves van sin prefijo: la biblioteca encuentra cada una por su final, se llame como
+# se llame este archivo. Las pancartas y los avisos imprimen el marcado como texto, así que ningún valor lleva.
+
+# ---- Noche de Ánimas ----
+calendar.hallows_eve.name = Noche de Ánimas
+calendar.hallows_eve.flavor = El Viejo Jack cuida el Templo Olvidado, y los muertos andan de noche.
+calendar.hallows_eve.herald.start = Noche de Ánimas
+calendar.hallows_eve.herald.start.sub = El Viejo Jack te espera en el Templo Olvidado.
+calendar.hallows_eve.herald.end = La Noche de Ánimas ha terminado
+calendar.hallows_eve.herald.end.sub = Los faroles se apagan hasta el próximo otoño.
+
+# ---- Luna de la Cosecha ----
+calendar.harvest_moon.name = Luna de la Cosecha
+calendar.harvest_moon.flavor = La luna cuelga gorda y naranja, y salen más muertos a verla.
+calendar.harvest_moon.herald.start = Luna de la Cosecha
+calendar.harvest_moon.herald.start.sub = Los muertos están inquietos esta noche. Ten un farol encendido.
+calendar.harvest_moon.herald.end = Se pone la Luna de la Cosecha
+calendar.harvest_moon.herald.end.sub = Las noches vuelven a estar tranquilas.
+
+# ---- Hallazgos ----
+notify.hallows_eve_geode_found = Una geoda maldita, ahí entre los escombros.
+notify.hallows_eve_pumpkin_found = Una calabaza consagrada, brillando en tu mochila.
+

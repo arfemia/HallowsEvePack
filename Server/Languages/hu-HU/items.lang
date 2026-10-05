@@ -1,0 +1,31 @@
+# Mindenszentek Éje csomag - tárgynevek és leírások. A játék a fájlnevet elé fűzi, így minden kulcs
+# items.<kulcs> néven töltődik be, azon a kulcson, amelyet a tárgy TranslationProperties-e megnevez (items.Hallows_Eve_Jack_Lantern.name).
+Hallows_Eve_Lantern_Bomb_Common.name = Lámpásbomba
+Hallows_Eve_Lantern_Bomb_Common.description = Fekete lőporral tömött faragott tök. Dobd arra, ami érted jön.
+Hallows_Eve_Lantern_Bomb_Uncommon.name = Égő Lámpásbomba
+Hallows_Eve_Lantern_Bomb_Uncommon.description = Tűzesszencia van a lőporban, így amit a robbanás elkap, az még egy darabig ég.
+Hallows_Eve_Lantern_Bomb_Rare.name = Kísérteties Lámpásbomba
+Hallows_Eve_Lantern_Bomb_Rare.description = Ektoplazma a lőporban. A robbanás éget, és a hideg, amit maga után hagy, lelassít mindent, ami belekerül.
+Hallows_Eve_Lantern_Bomb_Epic.name = Szilánkszóró Lámpásbomba
+Hallows_Eve_Lantern_Bomb_Epic.description = Egy átkozott geoda köré tömve. Éget és dermeszt, mint a többi, aztán lángoló szilánkokat szór szét minden irányba.
+Hallows_Eve_Jack_Helm.name = Jack-sisak
+Hallows_Eve_Jack_Helm.description = Fejméretűre kivájt tökhéj, a vigyor mögött gyertyával. A Megszentelt szett része: viseld úgy, hogy a Jack-pajzs a másik kezedben van.
+Hallows_Eve_Jack_Shield.name = Jack-pajzs
+Hallows_Eve_Jack_Shield.description = Fapajzs, előlapján egy faragott tökkel, amely sosem szűnik meg világítani. A Megszentelt szett része: tartsd a másik kezedben, miközben a Jack-sisakot viseled.
+Hallows_Eve_Jack_Lantern.name = Jack-lámpás
+Hallows_Eve_Jack_Lantern.description = Faragott tök, benne gyertya. Öreg Jack minden küszöbre akar egyet.
+Hallows_Eve_Hollow_Lantern.name = Vájt Lámpás
+Hallows_Eve_Hollow_Lantern.description = Sápadt lámpás, amelyet Öreg Jack annak ad, aki végigviszi a megbízásait. Minden Mindenszentek Éjének megvan a sajátja.
+Hallows_Eve_Ecto_Lantern.name = Ektolámpás
+Hallows_Eve_Ecto_Lantern.description = Ektoplazmától világító tök. A zöld fény bármilyen szélben egyenletesen ég.
+Hallows_Eve_Costume_Wand.name = Jelmezpálca
+Hallows_Eve_Costume_Wand.description = Fogd rá egy barátodra. Az egyik gomb Jack-csontvázzá változtatja, a másik Elveszett Lélekké, és a jelmezt bármikor leveheti, amikor csak akarja.
+Hallows_Eve_Cursed_Geode.name = Átkozott Geoda
+Hallows_Eve_Cursed_Geode.description = Egy kődarab, amelyben valami fényes mozog. Törd fel, és tartsd meg, bármi is hull ki belőle.
+Hallows_Eve_Ectoplasm.name = Ektoplazma
+Hallows_Eve_Ectoplasm.description = Ezt hagyja maga után egy Elveszett Lélek. Hideg a tapintása, és a faragók lámpásokban égetik.
+Hallows_Eve_Hallowed_Pumpkin.name = Megszentelt Tök
+Hallows_Eve_Hallowed_Pumpkin.description = Ibolyaszínű tök, a bordáiban arannyal. Csak Mindenszentek Éje idején bukkan fel.
+Hallows_Eve_Carving_Bench.name = Faragópad
+Hallows_Eve_Carving_Bench.description = Tökfaragásra berendezett munkapad. Állj elé az alapanyagokkal a zsákodban, és faragj.
+Hallows_Eve_Carving_Bench.hint = Nyomd meg: [{key}] a faragáshoz

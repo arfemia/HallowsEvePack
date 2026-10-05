@@ -1,0 +1,9 @@
+# Mindenszentek Éje csomag - a házigazdája és a lényei megjelenített nevei.
+# A játék a fájlnevet elé fűzi, így minden kulcs npcs.<kulcs> néven töltődik be (npcs.Hallows_Eve_Old_Jack.name).
+# Egy szerep a NameTranslationKey mezőben nevezi meg a kulcsát; egy lényt számláló küldetéslépés ugyanezt a kulcsot találja meg.
+
+Hallows_Eve_Old_Jack.name = Öreg Jack
+Hallows_Eve_Hollow_Ghoul.name = Kongó Ghúl
+Hallows_Eve_Jack_Skeleton.name = Jack-csontváz
+Hallows_Eve_Lost_Soul.name = Elveszett Lélek
+Hallows_Eve_Geode_Wraith.name = Geodalidérc

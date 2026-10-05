@@ -1,0 +1,23 @@
+# Allerheiligenabend-Paket - die Worte des Kalenders (wie jedes Ereignis heißt, und seine Banner) und die
+# Meldungen für einen Fund. Die Schlüssel stehen ohne Präfix: die Bibliothek findet jeden an seinem Ende, egal
+# wie diese Datei heißt. Banner und Meldungen geben Markup als Text aus, also trägt keiner dieser Werte welches.
+
+# ---- Allerheiligenabend ----
+calendar.hallows_eve.name = Allerheiligenabend
+calendar.hallows_eve.flavor = Der Alte Jack hütet den Vergessenen Tempel, und nachts gehen die Toten um.
+calendar.hallows_eve.herald.start = Allerheiligenabend
+calendar.hallows_eve.herald.start.sub = Der Alte Jack wartet am Vergessenen Tempel.
+calendar.hallows_eve.herald.end = Allerheiligenabend ist vorbei
+calendar.hallows_eve.herald.end.sub = Die Laternen bleiben bis zum nächsten Herbst dunkel.
+
+# ---- Erntemond ----
+calendar.harvest_moon.name = Erntemond
+calendar.harvest_moon.flavor = Der Mond hängt dick und orange am Himmel, und mehr Tote klettern heraus, um ihn zu sehen.
+calendar.harvest_moon.herald.start = Erntemond
+calendar.harvest_moon.herald.start.sub = Die Toten sind heute Nacht unruhig. Lass eine Laterne brennen.
+calendar.harvest_moon.herald.end = Der Erntemond geht unter
+calendar.harvest_moon.herald.end.sub = Die Nächte werden wieder still.
+
+# ---- Funde ----
+notify.hallows_eve_geode_found = Eine verfluchte Geode, dort im Geröll.
+notify.hallows_eve_pumpkin_found = Ein geweihter Kürbis, der in deinem Rucksack leuchtet.

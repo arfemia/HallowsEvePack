@@ -1,0 +1,142 @@
+# Mindenszentek Éje haladás: Öreg Jack küldetéssora, napi feladatai, táblája és standja, a beszélgetése és
+# a csokit vagy csalunk sor, a szezon teljesítményei és címe, valamint az Almanach-oldala.
+# A kulcsok csupaszok: a könyvtár a végük alapján talál rájuk, bárhogy is hívják ezt a fájlt.
+# A számok a {0} helyén érkeznek a tartalomfájlokból, így egy újrahangolás sosem érint fordítást.
+
+# ---- A pénztárca ----
+currency.hallows_eve_sweets.name = Mindenszenteki Cukorka
+
+# ---- Öreg Jack küldetéssora ----
+quest.hallows_eve_old_jack_1.title = Tökföld
+quest.hallows_eve_old_jack_1.flavor = Szedj tököt ebben a hónapban, és hébe-hóba akad egy hideg, világító. Hozz nekem párat azokból a Megszenteltekből.
+quest.hallows_eve_old_jack_2.title = Lámpásmunka
+quest.hallows_eve_old_jack_2.flavor = Rövid kanóccal egy Megszentelt tökből jó Lámpásbomba lesz. Dobj párat valamire, ami rászolgált, aztán mondd el, hogy égtek.
+quest.hallows_eve_old_jack_3.title = Ghúlok a Lépcsőn
+quest.hallows_eve_old_jack_3.flavor = Sötétedés után Kongó Ghúlok másznak ki a régi sírokból, éhesen. Tegyél vissza párat a földbe, mielőtt elérik a templom lépcsőjét.
+quest.hallows_eve_old_jack_4.title = Ektoplazmagyűjtés
+quest.hallows_eve_old_jack_4.flavor = Az Elveszett Lelkek addig sodródnak, amíg valaki el nem engedi őket. Szabadíts fel párat, és hozd el nekem az ektoplazmát, amit hátrahagynak; a lámpásaim isszák az ilyesmit.
+quest.hallows_eve_old_jack_5.title = Átkozott Kő
+quest.hallows_eve_old_jack_5.flavor = Áss mélyre ebben a hónapban, és a kőben zümmögő geodák nőnek. Törj fel párat; van bennük valami jó, az átok alatt.
+quest.hallows_eve_old_jack_lantern.title = A Vájt Lámpás
+quest.hallows_eve_old_jack_lantern.flavor = A Vájt Lámpás minden évben kialszik, és valakinek újra meg kell gyújtania. Verd le a csontvázakat, amik az én arcomat viselik, aztán hozd el, ami a lámpásnak kell.
+
+# ---- Öreg Jack napi feladatai ----
+quest.hallows_eve_jack_daily_souls.title = Nyugtalan Lelkek
+quest.hallows_eve_jack_daily_souls.flavor = Tegnap éjjel újabb Elveszett Lelkek sodródtak ide. Szabadíts fel néhányat, mielőtt végleg befészkelik magukat.
+quest.hallows_eve_jack_daily_pumpkins.title = Tökszedő Kör
+quest.hallows_eve_jack_daily_pumpkins.flavor = A lámpások gyorsabban égetik el a Megszentelt tököket, mint ahogy ki tudom faragni őket. Hozz még párat sötétedés előtt.
+quest.hallows_eve_jack_daily_geodes.title = Zümmögő Kő
+quest.hallows_eve_jack_daily_geodes.flavor = A mély kő megint zümmög. Törj fel pár Átkozott Geodát, mielőtt maguktól repednek meg.
+
+# ---- E csomag saját lépésszövegei ----
+objective.hallows_eve.throw_bombs = Dobj el {0} Lámpásbombát
+objective.hallows_eve.crack_geodes = Törj fel {0} Átkozott Geodát
+objective.hallows_eve.attend = Légy itt Mindenszentek Éjén
+
+# ---- Öreg Jack táblája ----
+board.hallows_eve_daily.title = Öreg Jack Táblája
+board.hallows_eve_daily.desc = Éjszakánként egy munka, és fizet.
+quest.hallows_eve_board_souls.title = Lélektakarítás
+quest.hallows_eve_board_souls.flavor = Ma éjjel sűrűn állnak a lelkek a templom körül. Szabadíts fel jó sokat közülük, mielőtt megvirrad.
+quest.hallows_eve_board_ghouls.title = Ghúlgyérítés
+quest.hallows_eve_board_ghouls.flavor = Ma éjjel nagy a forgalom a síroknál. Küldd vissza a Kongó Ghúlokat oda, ahonnan jöttek, és ne bánj velük finoman.
+quest.hallows_eve_board_bombs.title = Lámpászápor
+quest.hallows_eve_board_bombs.flavor = Égess el ma éjjel egy rakás Lámpásbombát. Nem nagyon érdekel, mire, csak ne a templomra.
+quest.hallows_eve_board_geodes.title = Mélységi Geodák
+quest.hallows_eve_board_geodes.flavor = A mély kő nem hagyja abba a zümmögést, és aludni sem tudok tőle. Törj fel annyi Átkozott Geodát, hogy elcsendesedjen.
+quest.hallows_eve_board_harvest_moon.title = Aratási Hold-vadászat
+quest.hallows_eve_board_harvest_moon.flavor = Fent van az Aratási Hold, és a Jack-csontvázak tömegével járnak kint. Verj le annyit, amennyit csak tudsz, mielőtt lenyugszik.
+
+# ---- Öreg Jack standja ----
+shop.hallows_eve_old_jack.title = Öreg Jack Standja
+shop.hallows_eve_old_jack.desc = Lámpásbombák, lámpások és pár furcsaság a szezonra.
+shop.hallows_eve_old_jack.category.bombs = Lámpásbombák
+shop.hallows_eve_old_jack.category.lights = Lámpások
+shop.hallows_eve_old_jack.category.gear = Felszerelés
+shop.hallows_eve_offer_harvest_moon_bundle.title = Aratási Hold-csomag
+shop.hallows_eve_offer_harvest_moon_bundle.desc = Epikus és Ritka Lámpásbombák, csak addig kaphatók, amíg fent van az Aratási Hold.
+
+# ---- Teljesítmények ----
+achievement.hallows_eve_lantern_keepsake.title = Vájt Lámpás {0}
+achievement.hallows_eve_lantern_keepsake.desc = Gyújtsd meg a Vájt Lámpást Öreg Jackkel.
+keepsake.hallows_eve_hollow_lantern.name = {0}. évi Vájt Lámpás
+achievement.hallows_eve_lantern_lobber.title = Lámpásdobáló {0}
+achievement.hallows_eve_lantern_lobber.desc = Dobj el {0} Lámpásbombát.
+achievement.hallows_eve_soul_warden.title = Lélekőrző {0}
+achievement.hallows_eve_soul_warden.desc = Szabadíts fel {0} Elveszett Lelket.
+achievement.hallows_eve_ghoul_breaker.title = Ghúltörő {0}
+achievement.hallows_eve_ghoul_breaker.desc = Teríts le {0} Kongó Ghúlt.
+achievement.hallows_eve_geode_cracker.title = Geodatörő {0}
+achievement.hallows_eve_geode_cracker.desc = Törj fel {0} Átkozott Geodát.
+achievement.hallows_eve_jacks_guest.title = Jack Vendége {0}
+achievement.hallows_eve_jacks_guest.desc = Légy itt Mindenszentek Éjén.
+achievement.hallows_eve_the_hallowed.title = A Megszentelt {0}
+achievement.hallows_eve_the_hallowed.desc = Szerezd meg Mindenszentek Éje összes teljesítményét egyetlen szezon alatt.
+achievement.seasons_of_orbis.title = Orbis Szezonjai
+achievement.seasons_of_orbis.desc = Szerezd meg minden szezon koronázó teljesítményét.
+
+# ---- A Megszentelt cím ----
+title.hallows_eve_hallowed.name = A Megszentelt
+title.hallows_eve_hallowed.flavor = Mindenszentek Éje minden teljesítménye megszerezve egyetlen szezon alatt.
+title.hallows_eve_hallowed.display = {0}, a Megszentelt
+
+# ---- Az Almanach-oldal ----
+almanac.hallows_eve.title = Mindenszentek Éje
+almanac.hallows_eve.flavor = Öreg Jack minden ősszel kinyitja a Feledett Templomot, és meggyújtja a lámpásait.
+almanac.hallows_eve.bombs_thrown = Eldobott Lámpásbombák
+almanac.hallows_eve.ghouls_felled = Leterített Kongó Ghúlok
+almanac.hallows_eve.souls_freed = Felszabadított Elveszett Lelkek
+almanac.hallows_eve.geodes_cracked = Feltört Átkozott Geodák
+
+# ---- Öreg Jack beszélgetése ----
+dialogue.hallows_eve_old_jack.first_words.text = Ne törődj a fejjel. Tök, és már jó ideje rajtam van.\nÖreg Jack vagyok. Minden ősszel nyugtalanok lesznek a holtak, és kialszanak a lámpások a <color is="#ffd97a">Feledett Templomban</color>, úgyhogy visszajövök, és meggyújtom őket. Jól jönne egy pár kéz, amit nem faragtak ki.
+dialogue.hallows_eve_old_jack.first_words.opt.hail = Örülök, hogy megismerhetlek, Jack.
+dialogue.hallows_eve_old_jack.board_fresh.text = Ma éjjel friss munka van a táblámon. Egy munka, és fizet.
+dialogue.hallows_eve_old_jack.board_fresh.opt.board = Mutasd a táblát.
+dialogue.hallows_eve_old_jack.board_fresh.opt.later = Majd később, Jack.
+dialogue.hallows_eve_old_jack.menu.text = A lámpások égnek, a ghúlok kint járkálnak. Mi kell?
+dialogue.hallows_eve_old_jack.patch_offer.text = Szedj tököt ebben a hónapban, és hébe-hóba akad egy, ami hideg a tapintásra, és halványan világít. <b>Megszentelt tököknek</b> hívom az ilyeneket.\nHozz párat. Megmutatom, mire jók.
+dialogue.hallows_eve_old_jack.patch_offer.opt.accept = Keresek neked pár tököt.
+dialogue.hallows_eve_old_jack.patch_brief.text = Ebben a hónapban bármelyik <b>tök</b>, amit leszedsz, Megszentelt lehet. A hidegeket, amik világítanak, tedd félre, és hozd ide.
+dialogue.hallows_eve_old_jack.patch_ready.text = <b>Megszentelt tökök</b>. Hidegek, mint a pincelépcső. Jó.\nLámpaolajjal megtömve egy ilyenből Lámpásbomba lesz. Tettem párat a fizetséged mellé. Menj, nézd meg, hogy égnek.
+dialogue.hallows_eve_old_jack.patch_ready.opt.turnin = Itt vannak a tökök.
+dialogue.hallows_eve_old_jack.lantern_work_offer.text = A <b>Lámpásbomba</b> egy Megszentelt tök rövid kanóccal. Gyújtsd meg, és dobd el. Aztán állj hátrébb.\nDobj párat valamire, ami rászolgált, aztán gyere, és mondd el, hogy sikerültek.
+dialogue.hallows_eve_old_jack.lantern_work_offer.opt.accept = Eldobok párat.
+dialogue.hallows_eve_old_jack.ghouls_offer.text = Sötétedés után <b>Kongó Ghúlok</b> másznak elő a régi sírokból, és éhesen jönnek.\nTegyél vissza párat a földbe, mielőtt megtalálják a templom lépcsőjét.
+dialogue.hallows_eve_old_jack.ghouls_offer.opt.accept = Elintézem a ghúlokat.
+dialogue.hallows_eve_old_jack.souls_offer.text = Szegény párák, az <b>Elveszett Lelkek</b>. Addig sodródnak, amíg valaki el nem engedi őket.\nSzabadíts fel párat, és hozd el nekem az <b>ektoplazmát</b>, amit hátrahagynak. A lámpásaim isszák az ilyesmit.
+dialogue.hallows_eve_old_jack.souls_offer.opt.accept = Felszabadítom őket.
+dialogue.hallows_eve_old_jack.geodes_offer.text = Áss mélyre ebben a hónapban, és a kőben <b>Átkozott Geodák</b> nőnek. Előbb hallod őket, mint látod. Zümmögnek.\nTörj fel párat. Van bennük valami jó, az átok alatt.
+dialogue.hallows_eve_old_jack.geodes_offer.opt.accept = Feltörök párat.
+dialogue.hallows_eve_old_jack.lantern_offer.text = Minden évben kialszik a <b>Vájt Lámpás</b>, és minden évben valakinek újra meg kell gyújtania.\nOdakint némelyik csontváz az én arcomat viseli. Verj le pár <b>Jack-csontvázat</b>, aztán hozz nekem egy <b>Megszentelt tököt</b> és egy kis <b>ektoplazmát</b>, hogy megtöltsük.
+dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Gyújtsuk meg.
+dialogue.hallows_eve_old_jack.lantern_brief.text = Éjjel <b>Jack-csontvázak</b> járnak. Verj le párat. Aztán egy <b>Megszentelt tök</b> meg az <b>ektoplazma</b>, és együtt meggyújtjuk.
+dialogue.hallows_eve_old_jack.lantern_ready.text = Egy <b>Megszentelt tök</b>, és <b>ektoplazma</b>, hogy színültig töltsük. És az arcomat viselő csontvázak ott fekszenek a fűben, ahová valók.\nMaradj nyugton. Így. Ég a Vájt Lámpás, és a tiéd, megtarthatod. Gyere vissza jövőre, és gyújtunk egy másikat.
+dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = Itt a tök, és az ektoplazma.
+dialogue.hallows_eve_old_jack.active_generic.text = Még kint jársz? Jó. Hosszú az éjszaka, nem szalad el.
+dialogue.hallows_eve_old_jack.ready_generic.text = Nekem úgy tűnik, kész. Lássuk.
+dialogue.hallows_eve_old_jack.ready_generic.opt.turnin = Kész van.
+dialogue.hallows_eve_old_jack.daily_souls_offer.text = Tegnap éjjel újabb <b>Elveszett Lelkek</b> sodródtak ide. Szabadíts fel néhányat, mielőtt végleg befészkelik magukat.
+dialogue.hallows_eve_old_jack.daily_souls_offer.opt.accept = Gondoskodom a lelkekről.
+dialogue.hallows_eve_old_jack.daily_pumpkins_offer.text = A lámpások gyorsabban égetik el a <b>Megszentelt tököket</b>, mint ahogy ki tudom faragni őket. Hozz még párat sötétedés előtt.
+dialogue.hallows_eve_old_jack.daily_pumpkins_offer.opt.accept = Hozok tököt.
+dialogue.hallows_eve_old_jack.daily_geodes_offer.text = A mély kő megint zümmög. Törj fel pár <b>Átkozott Geodát</b>, mielőtt maguktól repednek meg.
+dialogue.hallows_eve_old_jack.daily_geodes_offer.opt.accept = Feltörök egy-kettőt.
+dialogue.hallows_eve_old_jack.lantern_lit.text = A Vájt Lámpás még mindig ég. A legrosszabb sötétet távol tartja a lépcsőtől.\nMi kell?
+dialogue.hallows_eve_old_jack.who_are_you.text = Öreg Jack. Volt egyszer egy tanyám, messze innen. Aztán egy októberben nem mentem haza, és azóta minden októberben visszajövök.\nA fejről ne kérdezz.
+dialogue.hallows_eve_old_jack.about_lantern.text = A Vájt Lámpás egy kivájt Megszentelt tök, ektoplazmával megtöltve. Gyújts meg egyet, és a holtak tisztes távolban maradnak.\nNovemberre kiégnek. Ezért kell minden évben új.
+dialogue.hallows_eve_old_jack.harvest_moon.text = Látod azt a holdat? Aratási Hold. Évente pár éjszakán nagy és narancssárga, amikor feljön, és minden feljön vele, ami a sírokban van.\nHa munkát akarsz, ma éjjel van itt az ideje. Ha alvást, akkor nincs.
+dialogue.hallows_eve_old_jack.opt.returned = Visszajöttem.
+dialogue.hallows_eve_old_jack.opt.quests = Mit kell csinálni?
+dialogue.hallows_eve_old_jack.opt.board = Mi van a táblán?
+dialogue.hallows_eve_old_jack.opt.shop = Lássuk a standodat.
+dialogue.hallows_eve_old_jack.opt.almanac = Mutasd az Almanachot.
+dialogue.hallows_eve_old_jack.opt.who = Ki vagy te?
+dialogue.hallows_eve_old_jack.opt.lantern = Mi az a Vájt Lámpás?
+dialogue.hallows_eve_old_jack.opt.harvest = Miért ilyen nagy a hold?
+dialogue.hallows_eve_old_jack.opt.back = Valami mást.
+dialogue.hallows_eve_old_jack.opt.farewell = Jó éjt, Jack.
+
+# ---- Csokit vagy csalunk: a sor, amelyet minden beszélgetés megkap, és az értesítése ----
+dialogue.hallows_eve_trick_or_treat.opt.knock = Csokit vagy csalunk.
+notify.hallows_eve_treat = Egy finomság a kopogásért.

@@ -1,0 +1,31 @@
+# Pack Veille de la Toussaint - noms et descriptions des objets. Le jeu préfixe le nom du fichier, donc chaque clé
+# se charge en items.<clé>, la clé que nomment les TranslationProperties d'un objet (items.Hallows_Eve_Jack_Lantern.name).
+Hallows_Eve_Lantern_Bomb_Common.name = Bombe-Lanterne
+Hallows_Eve_Lantern_Bomb_Common.description = Une citrouille sculptée bourrée de poudre noire. Lancez-la sur ce qui vient vous chercher.
+Hallows_Eve_Lantern_Bomb_Uncommon.name = Bombe-Lanterne Ardente
+Hallows_Eve_Lantern_Bomb_Uncommon.description = De l'essence de feu dans la poudre, si bien que ce que l'explosion touche continue de brûler un moment.
+Hallows_Eve_Lantern_Bomb_Rare.name = Bombe-Lanterne Spectrale
+Hallows_Eve_Lantern_Bomb_Rare.description = De l'ectoplasme dans la poudre. L'explosion brûle, et le froid qu'elle laisse ralentit tout ce qui s'y trouve pris.
+Hallows_Eve_Lantern_Bomb_Epic.name = Bombe-Lanterne Fracassante
+Hallows_Eve_Lantern_Bomb_Epic.description = Bourrée autour d'une géode maudite. Elle brûle et glace comme les autres, puis projette des éclats enflammés dans toutes les directions.
+Hallows_Eve_Jack_Helm.name = Heaume de Jack
+Hallows_Eve_Jack_Helm.description = Une écorce de citrouille évidée à la taille d'une tête, avec une bougie derrière le sourire. Fait partie de la Panoplie Sanctifiée : portez-le avec le Bouclier de Jack dans votre main secondaire.
+Hallows_Eve_Jack_Shield.name = Bouclier de Jack
+Hallows_Eve_Jack_Shield.description = Un bouclier en bois recouvert d'une citrouille sculptée qui ne cesse jamais de luire. Fait partie de la Panoplie Sanctifiée : tenez-le dans votre main secondaire en portant le Heaume de Jack.
+Hallows_Eve_Jack_Lantern.name = Lanterne de Jack
+Hallows_Eve_Jack_Lantern.description = Une citrouille sculptée avec une bougie dedans. Le Vieux Jack en veut une sur chaque seuil.
+Hallows_Eve_Hollow_Lantern.name = Lanterne Creuse
+Hallows_Eve_Hollow_Lantern.description = Une lanterne pâle que le Vieux Jack offre à qui mène ses commissions à bien. Chaque Veille de la Toussaint a la sienne.
+Hallows_Eve_Ecto_Lantern.name = Lanterne Ectoplasmique
+Hallows_Eve_Ecto_Lantern.description = Une citrouille éclairée à l'ectoplasme. Sa lumière verte tient bon par tous les vents.
+Hallows_Eve_Costume_Wand.name = Baguette de Costume
+Hallows_Eve_Costume_Wand.description = Pointez-la sur un ami. Un bouton le change en Squelette Jack, l'autre en Âme Perdue, et il peut retirer le costume quand il veut.
+Hallows_Eve_Cursed_Geode.name = Géode Maudite
+Hallows_Eve_Cursed_Geode.description = Une masse de pierre où remue quelque chose de brillant. Cassez-la et gardez ce qui en tombe.
+Hallows_Eve_Ectoplasm.name = Ectoplasme
+Hallows_Eve_Ectoplasm.description = Ce qu'une Âme Perdue laisse derrière elle. Il est froid au toucher, et les sculpteurs le brûlent dans leurs lanternes.
+Hallows_Eve_Hallowed_Pumpkin.name = Citrouille Sanctifiée
+Hallows_Eve_Hallowed_Pumpkin.description = Une citrouille violette avec de l'or dans les côtes. Elle n'apparaît que pendant la Veille de la Toussaint.
+Hallows_Eve_Carving_Bench.name = Établi de Sculpture
+Hallows_Eve_Carving_Bench.description = Un établi aménagé pour sculpter les citrouilles. Placez-vous devant, les matériaux dans votre sac, et sculptez.
+Hallows_Eve_Carving_Bench.hint = Appuyez sur [{key}] pour sculpter

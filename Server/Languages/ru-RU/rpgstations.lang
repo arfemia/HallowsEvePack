@@ -1,0 +1,6 @@
+# Пак «Канун Всех Святых» - дополнительные ключи поверх собственного rpgstations.lang мода RPG Stations (пространство
+# имён "rpgstations."; ключи пака добавляются к ключам jar и никогда их не заменяют). Верстак резчика принадлежит этому паку.
+station.hallows_eve_carving_bench.name = Верстак резчика
+station.hallows_eve_carving_bench.desc = Вырезайте из тыкв фонари и бомбы или шлем, который можно надеть. Освящённая резьба ждёт Кануна Всех Святых.
+action.hallows_eve_carving_bench.carve.label = Резьба
+action.hallows_eve_carving_bench.carve_hallowed.label = Освящённая резьба

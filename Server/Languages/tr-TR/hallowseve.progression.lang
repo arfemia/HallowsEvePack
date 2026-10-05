@@ -1,0 +1,143 @@
+# Cadılar Bayramı ilerlemesi: Yaşlı Jack'in görev zinciri, günlükleri, panosu ve tezgahı, sohbeti ve
+# şeker mi şaka mı satırı, sezonun başarımları ve unvanı, ve Almanak sayfası.
+# Anahtarlar çıplak yazılır: kütüphane her birini kuyruğundan bulur, bu dosyanın adı ne olursa olsun.
+# Sayılar {0} ile gelir ve içerik dosyalarından okunur, böylece bir yeniden ayar hiçbir çeviriye dokunmaz.
+
+# ---- Cüzdan ----
+currency.hallows_eve_sweets.name = Cadı Şekeri
+
+# ---- Yaşlı Jack'in görev zinciri ----
+quest.hallows_eve_old_jack_1.title = Bal Kabağı Bostanı
+quest.hallows_eve_old_jack_1.flavor = Bu ay bal kabağı topla, arada bir soğuk ve parlayan bir tane çıkar. O Kutsanmışlardan birkaçını bana getir.
+quest.hallows_eve_old_jack_2.title = Fener İşi
+quest.hallows_eve_old_jack_2.flavor = Fitili kısa bir Kutsanmış bal kabağı iyi bir Fener Bombası olur. Hak eden bir şeye birkaç tane fırlat, sonra nasıl yandıklarını anlat bana.
+quest.hallows_eve_old_jack_3.title = Basamaklarda Gulyabaniler
+quest.hallows_eve_old_jack_3.flavor = Karanlık çökünce Oyuk Gulyabaniler eski mezarlardan aç karnına sürünerek çıkar. Tapınak basamaklarına varmadan birkaçını toprağa geri yolla.
+quest.hallows_eve_old_jack_4.title = Ektoplazma Seferi
+quest.hallows_eve_old_jack_4.flavor = Kayıp Ruhlar, biri onları salıverene kadar ortalıkta süzülür. Birkaçını serbest bırak, geride bıraktıkları ektoplazmayı bana getir; fenerlerim onu içer.
+quest.hallows_eve_old_jack_5.title = Lanetli Taş
+quest.hallows_eve_old_jack_5.flavor = Bu ay derine kaz, taşın içinde uğuldayan jeotlar büyür. Birkaçını kırıp aç; lanetin altında, içlerinde iyi şeyler var.
+quest.hallows_eve_old_jack_lantern.title = Oyuk Fener
+quest.hallows_eve_old_jack_lantern.flavor = Her yıl Oyuk Fener söner, birinin de onu yeniden yakması gerekir. Benim yüzümü takmış iskeletleri yere ser, sonra fenerin neye ihtiyacı varsa getir bana.
+
+# ---- Yaşlı Jack'in günlükleri ----
+quest.hallows_eve_jack_daily_souls.title = Huzursuz Ruhlar
+quest.hallows_eve_jack_daily_souls.flavor = Dün gece daha çok Kayıp Ruh süzülüp geldi. Temelli yerleşmeden birkaçını serbest bırak.
+quest.hallows_eve_jack_daily_pumpkins.title = Bal Kabağı Turu
+quest.hallows_eve_jack_daily_pumpkins.flavor = Fenerler Kutsanmış bal kabaklarını benim oyabildiğimden hızlı yakıp bitiriyor. Hava kararmadan birkaç tane daha getir.
+quest.hallows_eve_jack_daily_geodes.title = Uğuldayan Taş
+quest.hallows_eve_jack_daily_geodes.flavor = Derindeki taş yine uğulduyor. Kendiliğinden çatlamadan birkaç Lanetli Jeot kır.
+
+# ---- Bu paket için yazılmış adımlar ----
+objective.hallows_eve.throw_bombs = {0} Fener Bombası at
+objective.hallows_eve.crack_geodes = {0} Lanetli Jeot kır
+objective.hallows_eve.attend = Cadılar Bayramı'nda burada ol
+
+# ---- Yaşlı Jack'in panosu ----
+board.hallows_eve_daily.title = Yaşlı Jack'in Panosu
+board.hallows_eve_daily.desc = Gecede bir iş, parası da var.
+quest.hallows_eve_board_souls.title = Ruh Taraması
+quest.hallows_eve_board_souls.flavor = Bu gece tapınağın çevresi ruh kaynıyor. Sabah olmadan epeycesini serbest bırak.
+quest.hallows_eve_board_ghouls.title = Gulyabani Temizliği
+quest.hallows_eve_board_ghouls.flavor = Mezarlar bu gece hareketli. Oyuk Gulyabanileri geldikleri yere geri yolla, kibarlık da etme.
+quest.hallows_eve_board_bombs.title = Fener Yaylım Ateşi
+quest.hallows_eve_board_bombs.flavor = Bu gece bir yığın Fener Bombası tüket. Neye attığın pek umurumda değil, yeter ki tapınak olmasın.
+quest.hallows_eve_board_geodes.title = Derin Jeotlar
+quest.hallows_eve_board_geodes.flavor = Derindeki taş uğuldamayı kesmiyor, ben de bu yüzden uyuyamıyorum. Onu susturmaya yetecek kadar Lanetli Jeot kır.
+quest.hallows_eve_board_harvest_moon.title = Hasat Ayı Avı
+quest.hallows_eve_board_harvest_moon.flavor = Hasat Ayı doğdu, Jack İskeletleri de sürü sürü ortalıkta. Ay batmadan yere serebildiğin kadarını ser.
+
+# ---- Yaşlı Jack'in tezgahı ----
+shop.hallows_eve_old_jack.title = Yaşlı Jack'in Tezgahı
+shop.hallows_eve_old_jack.desc = Fener Bombaları, fenerler ve sezona uygun birkaç tuhaf şey.
+shop.hallows_eve_old_jack.category.bombs = Fener Bombaları
+shop.hallows_eve_old_jack.category.lights = Fenerler
+shop.hallows_eve_old_jack.category.gear = Teçhizat
+shop.hallows_eve_offer_harvest_moon_bundle.title = Hasat Ayı Paketi
+shop.hallows_eve_offer_harvest_moon_bundle.desc = Destansı ve Nadir Fener Bombaları, yalnızca Hasat Ayı gökteyken satılır.
+
+# ---- Başarımlar ----
+achievement.hallows_eve_lantern_keepsake.title = Oyuk Fener {0}
+achievement.hallows_eve_lantern_keepsake.desc = Yaşlı Jack ile Oyuk Fener'i yak.
+keepsake.hallows_eve_hollow_lantern.name = {0} Oyuk Feneri
+achievement.hallows_eve_lantern_lobber.title = Fener Fırlatıcısı {0}
+achievement.hallows_eve_lantern_lobber.desc = {0} Fener Bombası at.
+achievement.hallows_eve_soul_warden.title = Ruh Muhafızı {0}
+achievement.hallows_eve_soul_warden.desc = {0} Kayıp Ruh serbest bırak.
+achievement.hallows_eve_ghoul_breaker.title = Gulyabani Kıran {0}
+achievement.hallows_eve_ghoul_breaker.desc = {0} Oyuk Gulyabani yere ser.
+achievement.hallows_eve_geode_cracker.title = Jeot Kırıcı {0}
+achievement.hallows_eve_geode_cracker.desc = {0} Lanetli Jeot kır.
+achievement.hallows_eve_jacks_guest.title = Jack'in Misafiri {0}
+achievement.hallows_eve_jacks_guest.desc = Cadılar Bayramı'nda burada ol.
+achievement.hallows_eve_the_hallowed.title = Kutsanmış {0}
+achievement.hallows_eve_the_hallowed.desc = Tek bir sezonda tüm Cadılar Bayramı başarımlarını kazan.
+achievement.seasons_of_orbis.title = Orbis Sezonları
+achievement.seasons_of_orbis.desc = Her sezonun zirve başarımını kazan.
+
+# ---- Kutsanmış unvanı ----
+title.hallows_eve_hallowed.name = Kutsanmış
+title.hallows_eve_hallowed.flavor = Tek bir sezonda tüm Cadılar Bayramı başarımlarını kazanmış.
+title.hallows_eve_hallowed.display = Kutsanmış {0}
+
+# ---- Almanak sayfası ----
+almanac.hallows_eve.title = Cadılar Bayramı
+almanac.hallows_eve.flavor = Her sonbahar Yaşlı Jack Unutulmuş Tapınak'ı açar ve fenerlerini yakar.
+almanac.hallows_eve.bombs_thrown = Atılan Fener Bombaları
+almanac.hallows_eve.ghouls_felled = Alt edilen Oyuk Gulyabaniler
+almanac.hallows_eve.souls_freed = Serbest bırakılan Kayıp Ruhlar
+almanac.hallows_eve.geodes_cracked = Kırılan Lanetli Jeotlar
+
+# ---- Yaşlı Jack'in sohbeti ----
+dialogue.hallows_eve_old_jack.first_words.text = Kafaya takılma. Bal kabağı o, uzun zamandır da orada.\nBen Yaşlı Jack. Her sonbahar ölüler huzursuzlanır ve <color is="#ffd97a">Unutulmuş Tapınak'taki</color> fenerler söner, ben de dönüp onları yakarım. Oyulmamış bir çift el işime yarar.
+dialogue.hallows_eve_old_jack.first_words.opt.hail = Tanıştığımıza memnun oldum, Jack.
+dialogue.hallows_eve_old_jack.board_fresh.text = Bu gece panomda yeni iş var. Tek bir iş, parası da var.
+dialogue.hallows_eve_old_jack.board_fresh.opt.board = Panoyu göster.
+dialogue.hallows_eve_old_jack.board_fresh.opt.later = Sonra, Jack.
+dialogue.hallows_eve_old_jack.menu.text = Fenerler yandı, gulyabaniler de gezmeye çıktı. Ne lazım?
+dialogue.hallows_eve_old_jack.patch_offer.text = Bu ay bal kabağı topla, arada bir dokununca soğuk, hafif parlayan bir tane çıkar. Ben onlara <b>Kutsanmış bal kabağı</b> derim.\nBirkaç tane getir bana. Ne işe yaradıklarını gösteririm.
+dialogue.hallows_eve_old_jack.patch_offer.opt.accept = Sana birkaç bal kabağı bulurum.
+dialogue.hallows_eve_old_jack.patch_brief.text = Bu ay topladığın herhangi bir <b>bal kabağı</b> Kutsanmış çıkabilir. Parlayan soğukları ayır, buraya getir.
+dialogue.hallows_eve_old_jack.patch_ready.text = <b>Kutsanmış bal kabakları</b>. Kiler basamağı gibi soğuk. Güzel.\nLamba yağıyla doldurulunca bunlardan biri Fener Bombası olur. Ücretinin yanına birkaç tane koydum. Git, nasıl yandıklarını gör.
+dialogue.hallows_eve_old_jack.patch_ready.opt.turnin = İşte bal kabakları.
+dialogue.hallows_eve_old_jack.lantern_work_offer.text = <b>Fener Bombası</b> dediğin, fitili kısa bir Kutsanmış bal kabağıdır. Yak ve fırlat. Sonra geri çekil.\nHak eden bir şeye birkaç tane fırlat, sonra gel, nasıl gittiklerini anlat.
+dialogue.hallows_eve_old_jack.lantern_work_offer.opt.accept = Birkaç tane fırlatırım.
+dialogue.hallows_eve_old_jack.ghouls_offer.text = <b>Oyuk Gulyabaniler</b> karanlık çökünce eski mezarlardan sürünerek çıkar, aç da çıkarlar.\nTapınak basamaklarını bulmadan birkaçını toprağa geri yolla.
+dialogue.hallows_eve_old_jack.ghouls_offer.opt.accept = Gulyabanileri ben hallederim.
+dialogue.hallows_eve_old_jack.souls_offer.text = Zavallı şeyler şu <b>Kayıp Ruhlar</b>. Biri onları salıverene kadar ortalıkta süzülürler.\nBirkaçını serbest bırak, geride bıraktıkları <b>ektoplazmayı</b> bana getir. Fenerlerim onu içer.
+dialogue.hallows_eve_old_jack.souls_offer.opt.accept = Onları serbest bırakırım.
+dialogue.hallows_eve_old_jack.geodes_offer.text = Bu ay derine kaz, taşın içinde <b>Lanetli Jeotlar</b> büyür. Onları görmeden önce duyarsın. Uğuldarlar.\nBirkaçını kırıp aç. Lanetin altında, içlerinde iyi şeyler var.
+dialogue.hallows_eve_old_jack.geodes_offer.opt.accept = Birkaçını kırıp açarım.
+dialogue.hallows_eve_old_jack.lantern_offer.text = Her yıl <b>Oyuk Fener</b> söner, her yıl da birinin onu yeniden yakması gerekir.\nDışarıdaki iskeletlerin bazıları benim yüzümü takıyor. Birkaç <b>Jack İskeleti</b> yere ser, sonra bana bir <b>Kutsanmış bal kabağı</b> ve onu dolduracak kadar <b>ektoplazma</b> getir.
+dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Hadi yakalım.
+dialogue.hallows_eve_old_jack.lantern_brief.text = <b>Jack İskeletleri</b> geceleri dolaşır. Birkaçını yere ser. Sonra bir <b>Kutsanmış bal kabağı</b> ve <b>ektoplazma</b>, birlikte yakarız.
+dialogue.hallows_eve_old_jack.lantern_ready.text = Bir <b>Kutsanmış bal kabağı</b>, bir de ağzına kadar dolduracak <b>ektoplazma</b>. Benim yüzümü taşıyan iskeletler de ait oldukları yerde, çimenlerde yatıyor.\nKıpırdama. Oldu. Oyuk Fener yandı, artık senin. Seneye gel, bir tane daha yakarız.
+dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = İşte bal kabağı, bir de ektoplazma.
+dialogue.hallows_eve_old_jack.active_generic.text = Hâlâ uğraşıyor musun? İyi. Gece uzun, bir yere gittiği yok.
+dialogue.hallows_eve_old_jack.ready_generic.text = Bana bitmiş gibi görünüyor. Bir bakalım.
+dialogue.hallows_eve_old_jack.ready_generic.opt.turnin = Bitti.
+dialogue.hallows_eve_old_jack.daily_souls_offer.text = Dün gece daha çok <b>Kayıp Ruh</b> süzülüp geldi. Temelli yerleşmeden birkaçını serbest bırak.
+dialogue.hallows_eve_old_jack.daily_souls_offer.opt.accept = Ruhlarla ben ilgilenirim.
+dialogue.hallows_eve_old_jack.daily_pumpkins_offer.text = Fenerler <b>Kutsanmış bal kabaklarını</b> benim oyabildiğimden hızlı yakıp bitiriyor. Hava kararmadan birkaç tane daha getir.
+dialogue.hallows_eve_old_jack.daily_pumpkins_offer.opt.accept = Bal kabağı getiririm.
+dialogue.hallows_eve_old_jack.daily_geodes_offer.text = Derindeki taş yine uğulduyor. Kendiliğinden çatlamadan birkaç <b>Lanetli Jeot</b> kır.
+dialogue.hallows_eve_old_jack.daily_geodes_offer.opt.accept = Birkaç tane kırarım.
+dialogue.hallows_eve_old_jack.lantern_lit.text = Oyuk Fener hâlâ yanıyor. Karanlığın en kötüsünü basamaklardan uzak tutuyor.\nNe lazım?
+dialogue.hallows_eve_old_jack.who_are_you.text = Yaşlı Jack. Bir zamanlar buradan çok uzakta bir çiftliğim vardı. Sonra bir ekimde eve dönmedim, o günden beri her ekim geri geliyorum.\nBana kafayı sorma.
+dialogue.hallows_eve_old_jack.about_lantern.text = Oyuk Fener dediğin, oyulup içi ektoplazmayla doldurulmuş bir Kutsanmış bal kabağıdır. Birini yakarsan ölüler mesafesini korur.\nKasıma kadar sönüp giderler. O yüzden her yıl yenisine ihtiyacım var.
+dialogue.hallows_eve_old_jack.harvest_moon.text = Şu aya baktın mı? Hasat Ayı. Yılda birkaç gece iri ve turuncu yükselir, mezarlardaki her şey de onunla birlikte yükselir.\nİş istiyorsan, bu gece o gece. Uyku istiyorsan, değil.
+dialogue.hallows_eve_old_jack.opt.returned = Döndüm.
+dialogue.hallows_eve_old_jack.opt.quests = Yapılacak ne var?
+dialogue.hallows_eve_old_jack.opt.board = Panoda ne var?
+dialogue.hallows_eve_old_jack.opt.shop = Tezgahına bakalım.
+dialogue.hallows_eve_old_jack.opt.almanac = Almanak'ı göster.
+dialogue.hallows_eve_old_jack.opt.who = Sen kimsin?
+dialogue.hallows_eve_old_jack.opt.lantern = Oyuk Fener nedir?
+dialogue.hallows_eve_old_jack.opt.harvest = Ay neden bu kadar büyük?
+dialogue.hallows_eve_old_jack.opt.back = Başka bir şey.
+dialogue.hallows_eve_old_jack.opt.farewell = İyi geceler, Jack.
+
+# ---- Şeker mi şaka mı, her sohbetin aldığı satır ve bildirimi ----
+dialogue.hallows_eve_trick_or_treat.opt.knock = Şeker mi, şaka mı?
+notify.hallows_eve_treat = Kapıyı çaldığın için bir ikram.
+

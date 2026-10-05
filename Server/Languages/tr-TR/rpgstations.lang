@@ -1,0 +1,7 @@
+# Cadılar Bayramı paketi - RPG Stations'ın kendi rpgstations.lang dosyasına eklenen anahtarlar ("rpgstations."
+# ad alanı; bir paketin anahtarları jar'ınkilere eklenir, hiçbirinin yerine geçmez). Oyma Tezgahı bu paketindir.
+station.hallows_eve_carving_bench.name = Oyma Tezgahı
+station.hallows_eve_carving_bench.desc = Bal kabaklarını oyarak fener ve bomba yap, ya da takmak için bir miğfer. Kutsanmış işler Cadılar Bayramı'nı bekler.
+action.hallows_eve_carving_bench.carve.label = Oyma
+action.hallows_eve_carving_bench.carve_hallowed.label = Kutsanmış Oyma
+

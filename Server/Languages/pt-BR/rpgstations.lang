@@ -1,0 +1,7 @@
+# Pacote Noite das Bruxas - chaves adicionais sobre o rpgstations.lang do próprio RPG Stations (o namespace
+# "rpgstations."; as chaves de um pacote se somam às do jar e nunca substituem nenhuma). A Bancada de Entalhe é deste pacote.
+station.hallows_eve_carving_bench.name = Bancada de Entalhe
+station.hallows_eve_carving_bench.desc = Entalhe abóboras para fazer lanternas e bombas, ou um elmo para usar. O trabalho Consagrado espera pela Noite das Bruxas.
+action.hallows_eve_carving_bench.carve.label = Entalhar
+action.hallows_eve_carving_bench.carve_hallowed.label = Entalhe Consagrado
+

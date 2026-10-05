@@ -1,0 +1,6 @@
+# Mindenszentek Éje csomag - kiegészítő kulcsok az RPG Stations saját rpgstations.lang fájlja mellé (az "rpgstations."
+# névtér; egy csomag kulcsai hozzáadódnak a jar kulcsaihoz, és egyet sem írnak felül). A Faragópad ennek a csomagnak a része.
+station.hallows_eve_carving_bench.name = Faragópad
+station.hallows_eve_carving_bench.desc = Faragj tökökből lámpásokat és bombákat, vagy viselhető sisakot. A Megszentelt munkák Mindenszentek Éjére várnak.
+action.hallows_eve_carving_bench.carve.label = Faragás
+action.hallows_eve_carving_bench.carve_hallowed.label = Megszentelt faragás

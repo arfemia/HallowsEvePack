@@ -1,0 +1,23 @@
+# Пак «Канун Всех Святых» - слова календаря (как называется каждое событие и его баннеры) и
+# уведомления о находках. Ключи пишутся без префикса: библиотека находит каждый по его окончанию, как бы
+# ни назывался этот файл. Баннеры и уведомления печатают разметку как текст, поэтому ни одно из этих значений её не содержит.
+
+# ---- Канун Всех Святых ----
+calendar.hallows_eve.name = Канун Всех Святых
+calendar.hallows_eve.flavor = Старый Джек присматривает за Забытым Храмом, а по ночам бродят мертвецы.
+calendar.hallows_eve.herald.start = Канун Всех Святых
+calendar.hallows_eve.herald.start.sub = Старый Джек ждёт у Забытого Храма.
+calendar.hallows_eve.herald.end = Канун Всех Святых окончен
+calendar.hallows_eve.herald.end.sub = Фонари гаснут до следующей осени.
+
+# ---- Урожайная луна ----
+calendar.harvest_moon.name = Урожайная луна
+calendar.harvest_moon.flavor = Луна висит полная и оранжевая, и всё больше мертвецов вылезает на неё поглядеть.
+calendar.harvest_moon.herald.start = Урожайная луна
+calendar.harvest_moon.herald.start.sub = Этой ночью мертвецам неспокойно. Не гасите фонарь.
+calendar.harvest_moon.herald.end = Урожайная луна заходит
+calendar.harvest_moon.herald.end.sub = Ночи снова затихают.
+
+# ---- Находки ----
+notify.hallows_eve_geode_found = Проклятая жеода, прямо среди обломков.
+notify.hallows_eve_pumpkin_found = Освящённая тыква, светится у вас в рюкзаке.

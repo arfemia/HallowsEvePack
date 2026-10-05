@@ -1,0 +1,6 @@
+# Pacchetto Vigilia di Ognissanti - chiavi aggiuntive al rpgstations.lang di RPG Stations (lo spazio dei nomi
+# "rpgstations."; le chiavi di un pacchetto si aggiungono a quelle del jar e non ne sostituiscono mai una). Il Banco da Intaglio è di questo pacchetto.
+station.hallows_eve_carving_bench.name = Banco da Intaglio
+station.hallows_eve_carving_bench.desc = Intaglia zucche per farne lanterne e bombe, o un elmo da indossare. Gli intagli Consacrati aspettano la Vigilia di Ognissanti.
+action.hallows_eve_carving_bench.carve.label = Intaglia
+action.hallows_eve_carving_bench.carve_hallowed.label = Intaglio Consacrato

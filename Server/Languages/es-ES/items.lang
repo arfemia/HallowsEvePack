@@ -1,0 +1,33 @@
+# Paquete de la Noche de Ánimas - nombres y descripciones de objetos. El juego antepone el nombre del archivo, así
+# que cada clave se carga como items.<clave>, la clave que nombran las TranslationProperties de un objeto
+# (items.Hallows_Eve_Jack_Lantern.name).
+Hallows_Eve_Lantern_Bomb_Common.name = Bomba Farol
+Hallows_Eve_Lantern_Bomb_Common.description = Una calabaza tallada llena de pólvora negra. Tírasela a lo que venga a por ti.
+Hallows_Eve_Lantern_Bomb_Uncommon.name = Bomba Farol Ardiente
+Hallows_Eve_Lantern_Bomb_Uncommon.description = Esencia de fuego en la pólvora, así que lo que pille la explosión sigue ardiendo un rato.
+Hallows_Eve_Lantern_Bomb_Rare.name = Bomba Farol Espectral
+Hallows_Eve_Lantern_Bomb_Rare.description = Ectoplasma en la pólvora. La explosión quema, y el frío que deja ralentiza todo lo que atrapa.
+Hallows_Eve_Lantern_Bomb_Epic.name = Bomba Farol Fragmentadora
+Hallows_Eve_Lantern_Bomb_Epic.description = Cargada alrededor de una geoda maldita. Quema y hiela como las demás, y luego lanza esquirlas en llamas en todas direcciones.
+Hallows_Eve_Jack_Helm.name = Yelmo de Jack
+Hallows_Eve_Jack_Helm.description = Una corteza de calabaza vaciada a la medida de una cabeza, con una vela detrás de la sonrisa. Parte del conjunto Consagrado: llévalo con el Escudo de Jack en la mano secundaria.
+Hallows_Eve_Jack_Shield.name = Escudo de Jack
+Hallows_Eve_Jack_Shield.description = Un escudo de madera con una calabaza tallada en el frente que nunca deja de brillar. Parte del conjunto Consagrado: llévalo en la mano secundaria mientras llevas puesto el Yelmo de Jack.
+Hallows_Eve_Jack_Lantern.name = Farol de Jack
+Hallows_Eve_Jack_Lantern.description = Una calabaza tallada con una vela dentro. El Viejo Jack quiere una en cada puerta.
+Hallows_Eve_Hollow_Lantern.name = Farol de Ánimas
+Hallows_Eve_Hollow_Lantern.description = Un farol pálido que el Viejo Jack da a quien termina sus encargos. Cada Noche de Ánimas tiene el suyo.
+Hallows_Eve_Ecto_Lantern.name = Farol de Ectoplasma
+Hallows_Eve_Ecto_Lantern.description = Una calabaza iluminada con ectoplasma. La luz verde se mantiene firme con cualquier viento.
+Hallows_Eve_Costume_Wand.name = Varita de Disfraces
+Hallows_Eve_Costume_Wand.description = Apunta a un amigo con ella. Un botón lo convierte en un Esqueleto Jack, el otro en un Alma Perdida, y puede quitarse el disfraz cuando quiera.
+Hallows_Eve_Cursed_Geode.name = Geoda Maldita
+Hallows_Eve_Cursed_Geode.description = Un pedrusco con algo brillante moviéndose dentro. Ábrelo y quédate con lo que caiga.
+Hallows_Eve_Ectoplasm.name = Ectoplasma
+Hallows_Eve_Ectoplasm.description = Lo que deja atrás un Alma Perdida. Es frío al tacto, y los talladores lo queman en los faroles.
+Hallows_Eve_Hallowed_Pumpkin.name = Calabaza Consagrada
+Hallows_Eve_Hallowed_Pumpkin.description = Una calabaza violeta con oro en los gajos. Solo aparece durante la Noche de Ánimas.
+Hallows_Eve_Carving_Bench.name = Banco de Tallado
+Hallows_Eve_Carving_Bench.description = Un banco de trabajo preparado para tallar calabazas. Ponte delante con los materiales en la bolsa y talla.
+Hallows_Eve_Carving_Bench.hint = Presiona [{key}] para tallar
+

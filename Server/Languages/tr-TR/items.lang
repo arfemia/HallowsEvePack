@@ -1,0 +1,32 @@
+# Cadılar Bayramı paketi - eşya adları ve açıklamaları. Oyun dosya adını başa ekler, böylece her anahtar
+# items.<anahtar> olarak yüklenir; bu, bir eşyanın TranslationProperties alanının adlandırdığı anahtardır (items.Hallows_Eve_Jack_Lantern.name).
+Hallows_Eve_Lantern_Bomb_Common.name = Fener Bombası
+Hallows_Eve_Lantern_Bomb_Common.description = Kara barutla doldurulmuş oyma bir bal kabağı. Üstüne ne geliyorsa ona fırlat.
+Hallows_Eve_Lantern_Bomb_Uncommon.name = Yanan Fener Bombası
+Hallows_Eve_Lantern_Bomb_Uncommon.description = Barutta ateş özü var, bu yüzden patlamanın yakaladığı her şey bir süre yanmaya devam eder.
+Hallows_Eve_Lantern_Bomb_Rare.name = Hayalet Fener Bombası
+Hallows_Eve_Lantern_Bomb_Rare.description = Barutta ektoplazma var. Patlama yakar, geride bıraktığı soğuk da içinde kalan her şeyi yavaşlatır.
+Hallows_Eve_Lantern_Bomb_Epic.name = Parçalayıcı Fener Bombası
+Hallows_Eve_Lantern_Bomb_Epic.description = Lanetli bir jeotun çevresine doldurulmuş. Diğerleri gibi yakar ve üşütür, sonra dört bir yana alevli parçalar saçar.
+Hallows_Eve_Jack_Helm.name = Jack Miğferi
+Hallows_Eve_Jack_Helm.description = Bir kafaya oturacak şekilde oyulmuş bal kabağı kabuğu, sırıtışın ardında bir mum. Kutsanmış setin parçası: sol elinde Jack Kalkanı varken tak.
+Hallows_Eve_Jack_Shield.name = Jack Kalkanı
+Hallows_Eve_Jack_Shield.description = Önü, parlaması hiç kesilmeyen oyma bir bal kabağıyla kaplı tahta bir kalkan. Kutsanmış setin parçası: Jack Miğferi'ni takarken sol elinde taşı.
+Hallows_Eve_Jack_Lantern.name = Jack Feneri
+Hallows_Eve_Jack_Lantern.description = İçinde mum olan oyma bir bal kabağı. Yaşlı Jack her kapı eşiğinde bir tane olsun istiyor.
+Hallows_Eve_Hollow_Lantern.name = Oyuk Fener
+Hallows_Eve_Hollow_Lantern.description = Yaşlı Jack'in, işlerini sonuna kadar görene verdiği soluk bir fener. Her Cadılar Bayramı'nın kendi feneri vardır.
+Hallows_Eve_Ecto_Lantern.name = Ekto Feneri
+Hallows_Eve_Ecto_Lantern.description = Ektoplazmayla yanan bir bal kabağı. Yeşil ışığı hiçbir rüzgarda titremez.
+Hallows_Eve_Costume_Wand.name = Kostüm Asası
+Hallows_Eve_Costume_Wand.description = Bir arkadaşına doğrult. Bir tuş onu Jack İskeleti'ne, öteki Kayıp Ruh'a çevirir ve kostümü istediği an çıkarabilir.
+Hallows_Eve_Cursed_Geode.name = Lanetli Jeot
+Hallows_Eve_Cursed_Geode.description = İçinde parlak bir şeyin kıpırdadığı bir taş yumrusu. Kırıp aç, içinden ne düşerse senin.
+Hallows_Eve_Ectoplasm.name = Ektoplazma
+Hallows_Eve_Ectoplasm.description = Bir Kayıp Ruh'un geride bıraktığı şey. Dokununca soğuktur ve oymacılar onu fenerlerde yakar.
+Hallows_Eve_Hallowed_Pumpkin.name = Kutsanmış Bal Kabağı
+Hallows_Eve_Hallowed_Pumpkin.description = Dilimlerinde altın olan menekşe rengi bir bal kabağı. Yalnızca Cadılar Bayramı'nda çıkar.
+Hallows_Eve_Carving_Bench.name = Oyma Tezgahı
+Hallows_Eve_Carving_Bench.description = Bal kabağı oymak için kurulmuş bir tezgah. Malzemeler çantandayken başına geç ve oy.
+Hallows_Eve_Carving_Bench.hint = Oymak için [{key}] tuşuna bas
+

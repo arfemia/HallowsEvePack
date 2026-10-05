@@ -1,0 +1,9 @@
+# Pack Veille de la Toussaint - les noms affichés de son hôte et de ses créatures.
+# Le jeu préfixe le nom du fichier, donc chaque clé se charge en npcs.<clé> (npcs.Hallows_Eve_Old_Jack.name).
+# Un rôle nomme sa clé dans NameTranslationKey ; une étape de quête qui compte une créature trouve la même clé.
+
+Hallows_Eve_Old_Jack.name = Vieux Jack
+Hallows_Eve_Hollow_Ghoul.name = Goule Creuse
+Hallows_Eve_Jack_Skeleton.name = Squelette Jack
+Hallows_Eve_Lost_Soul.name = Âme Perdue
+Hallows_Eve_Geode_Wraith.name = Spectre de Géode

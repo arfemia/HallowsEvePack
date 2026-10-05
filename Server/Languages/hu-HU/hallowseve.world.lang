@@ -1,0 +1,23 @@
+# Mindenszentek Éje csomag - a naptár szövegei (minden esemény neve és a szalagcímei) és a leletek
+# értesítései. A kulcsok csupaszok: a könyvtár a végük alapján talál rájuk, bárhogy is hívják ezt a
+# fájlt. A szalagcímek és az értesítések szövegként írják ki a jelölést, így egyik érték sem hordoz ilyet.
+
+# ---- Mindenszentek Éje ----
+calendar.hallows_eve.name = Mindenszentek Éje
+calendar.hallows_eve.flavor = Öreg Jack vigyáz a Feledett Templomra, és éjjel járnak a holtak.
+calendar.hallows_eve.herald.start = Mindenszentek Éje
+calendar.hallows_eve.herald.start.sub = Öreg Jack a Feledett Templomban vár.
+calendar.hallows_eve.herald.end = Véget ért Mindenszentek Éje
+calendar.hallows_eve.herald.end.sub = A lámpások jövő őszig kialszanak.
+
+# ---- Aratási Hold ----
+calendar.harvest_moon.name = Aratási Hold
+calendar.harvest_moon.flavor = A hold kövéren és narancssárgán lóg az égen, és egyre több holt mászik elő, hogy megnézze.
+calendar.harvest_moon.herald.start = Aratási Hold
+calendar.harvest_moon.herald.start.sub = A holtak nyugtalanok ma éjjel. Tarts égve egy lámpást.
+calendar.harvest_moon.herald.end = Lenyugszik az Aratási Hold
+calendar.harvest_moon.herald.end.sub = Az éjszakák újra elcsendesednek.
+
+# ---- Leletek ----
+notify.hallows_eve_geode_found = Egy átkozott geoda, ott a törmelékben.
+notify.hallows_eve_pumpkin_found = Egy megszentelt tök, ott világít a zsákodban.

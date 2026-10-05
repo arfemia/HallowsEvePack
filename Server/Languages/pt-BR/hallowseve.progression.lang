@@ -1,0 +1,143 @@
+# Progressão da Noite das Bruxas: a linha de missões do Velho Jack, diárias, quadro e banca, a conversa dele e
+# a fala de doces ou travessuras, as conquistas e o título da temporada, e a página dela no Almanaque.
+# As chaves são escritas sem prefixo: a biblioteca encontra cada uma pelo final, seja qual for o nome deste arquivo.
+# Os números vêm em {0} e saem dos arquivos de conteúdo, então um rebalanceamento nunca mexe numa tradução.
+
+# ---- A carteira ----
+currency.hallows_eve_sweets.name = Doces das Bruxas
+
+# ---- A linha de missões do Velho Jack ----
+quest.hallows_eve_old_jack_1.title = Canteiro de Abóboras
+quest.hallows_eve_old_jack_1.flavor = Colhe abóbora este mês que de vez em quando sai uma fria e brilhando. Me traz algumas dessas Consagradas.
+quest.hallows_eve_old_jack_2.title = Serviço de Lanterna
+quest.hallows_eve_old_jack_2.flavor = Uma abóbora Consagrada com pavio curto vira uma boa Bomba-Lanterna. Joga umas em alguma coisa que tá merecendo, depois me conta como elas queimaram.
+quest.hallows_eve_old_jack_3.title = Carniçais nos Degraus
+quest.hallows_eve_old_jack_3.flavor = Os Carniçais Ocos saem rastejando das covas velhas depois que escurece, com fome. Põe uns de volta debaixo da terra antes que eles cheguem aos degraus do templo.
+quest.hallows_eve_old_jack_4.title = Busca de Ectoplasma
+quest.hallows_eve_old_jack_4.flavor = As Almas Perdidas ficam vagando até alguém soltar elas. Liberta umas e me traz o ectoplasma que elas deixam pra trás; minhas lanternas bebem esse troço.
+quest.hallows_eve_old_jack_5.title = Pedra Amaldiçoada
+quest.hallows_eve_old_jack_5.flavor = Cava fundo este mês que a pedra cria geodos que zumbem. Quebra uns; tem coisa boa neles, debaixo da maldição.
+quest.hallows_eve_old_jack_lantern.title = A Lanterna Oca
+quest.hallows_eve_old_jack_lantern.flavor = Todo ano a Lanterna Oca se apaga, e alguém tem que acender de novo. Derruba os esqueletos que usam a minha cara, depois me traz o que a lanterna precisa.
+
+# ---- As diárias do Velho Jack ----
+quest.hallows_eve_jack_daily_souls.title = Almas Inquietas
+quest.hallows_eve_jack_daily_souls.flavor = Mais Almas Perdidas chegaram vagando ontem à noite. Liberta algumas antes que elas se instalem de vez.
+quest.hallows_eve_jack_daily_pumpkins.title = Ronda das Abóboras
+quest.hallows_eve_jack_daily_pumpkins.flavor = As lanternas consomem abóboras Consagradas mais rápido do que eu dou conta de entalhar. Me traz mais umas antes de escurecer.
+quest.hallows_eve_jack_daily_geodes.title = Pedra que Zumbe
+quest.hallows_eve_jack_daily_geodes.flavor = A pedra lá do fundo tá zumbindo de novo. Quebra uns dois Geodos Amaldiçoados antes que eles se quebrem sozinhos.
+
+# ---- Passos com palavras deste pacote ----
+objective.hallows_eve.throw_bombs = Arremesse {0} Bombas-Lanterna
+objective.hallows_eve.crack_geodes = Quebre {0} Geodos Amaldiçoados
+objective.hallows_eve.attend = Esteja aqui durante a Noite das Bruxas
+
+# ---- O quadro do Velho Jack ----
+board.hallows_eve_daily.title = Quadro do Velho Jack
+board.hallows_eve_daily.desc = Um serviço por noite, e paga.
+quest.hallows_eve_board_souls.title = Varredura de Almas
+quest.hallows_eve_board_souls.flavor = Tem alma de monte em volta do templo esta noite. Liberta um bom tanto delas antes de amanhecer.
+quest.hallows_eve_board_ghouls.title = Abate de Carniçais
+quest.hallows_eve_board_ghouls.flavor = As covas tão agitadas esta noite. Manda os Carniçais Ocos de volta pro lugar de onde vieram, e não pega leve.
+quest.hallows_eve_board_bombs.title = Saraivada de Lanternas
+quest.hallows_eve_board_bombs.flavor = Queima uma pilha de Bombas-Lanterna esta noite. Não ligo muito pra onde, desde que não seja no templo.
+quest.hallows_eve_board_geodes.title = Geodos Profundos
+quest.hallows_eve_board_geodes.flavor = A pedra lá do fundo não para de zumbir, e eu não consigo dormir com isso. Quebra Geodos Amaldiçoados o bastante pra ela sossegar.
+quest.hallows_eve_board_harvest_moon.title = Caçada da Lua da Colheita
+quest.hallows_eve_board_harvest_moon.flavor = A Lua da Colheita subiu e os Esqueletos de Jack tão saindo aos montes. Derruba quantos conseguir antes que ela se ponha.
+
+# ---- A banca do Velho Jack ----
+shop.hallows_eve_old_jack.title = Banca do Velho Jack
+shop.hallows_eve_old_jack.desc = Bombas-Lanterna, lanternas e algumas curiosidades da temporada.
+shop.hallows_eve_old_jack.category.bombs = Bombas-Lanterna
+shop.hallows_eve_old_jack.category.lights = Lanternas
+shop.hallows_eve_old_jack.category.gear = Equipamento
+shop.hallows_eve_offer_harvest_moon_bundle.title = Pacote da Lua da Colheita
+shop.hallows_eve_offer_harvest_moon_bundle.desc = Bombas-Lanterna Épicas e Raras, vendidas só enquanto a Lua da Colheita está no céu.
+
+# ---- Conquistas ----
+achievement.hallows_eve_lantern_keepsake.title = Lanterna Oca {0}
+achievement.hallows_eve_lantern_keepsake.desc = Acenda a Lanterna Oca com o Velho Jack.
+keepsake.hallows_eve_hollow_lantern.name = Lanterna Oca de {0}
+achievement.hallows_eve_lantern_lobber.title = Lançador de Lanternas {0}
+achievement.hallows_eve_lantern_lobber.desc = Arremesse {0} Bombas-Lanterna.
+achievement.hallows_eve_soul_warden.title = Guardião das Almas {0}
+achievement.hallows_eve_soul_warden.desc = Liberte {0} Almas Perdidas.
+achievement.hallows_eve_ghoul_breaker.title = Quebra-Carniçais {0}
+achievement.hallows_eve_ghoul_breaker.desc = Derrube {0} Carniçais Ocos.
+achievement.hallows_eve_geode_cracker.title = Quebra-Geodos {0}
+achievement.hallows_eve_geode_cracker.desc = Quebre {0} Geodos Amaldiçoados.
+achievement.hallows_eve_jacks_guest.title = Convidado de Jack {0}
+achievement.hallows_eve_jacks_guest.desc = Esteja aqui durante a Noite das Bruxas.
+achievement.hallows_eve_the_hallowed.title = O Consagrado {0}
+achievement.hallows_eve_the_hallowed.desc = Obtenha todas as conquistas da Noite das Bruxas numa só temporada.
+achievement.seasons_of_orbis.title = Temporadas de Orbis
+achievement.seasons_of_orbis.desc = Obtenha a conquista que coroa cada temporada.
+
+# ---- O título Consagrado ----
+title.hallows_eve_hallowed.name = O Consagrado
+title.hallows_eve_hallowed.flavor = Obteve todas as conquistas da Noite das Bruxas numa só temporada.
+title.hallows_eve_hallowed.display = {0}, o Consagrado
+
+# ---- A página do Almanaque ----
+almanac.hallows_eve.title = Noite das Bruxas
+almanac.hallows_eve.flavor = Todo outono o Velho Jack abre o Templo Esquecido e acende suas lanternas.
+almanac.hallows_eve.bombs_thrown = Bombas-Lanterna arremessadas
+almanac.hallows_eve.ghouls_felled = Carniçais Ocos abatidos
+almanac.hallows_eve.souls_freed = Almas Perdidas libertadas
+almanac.hallows_eve.geodes_cracked = Geodos Amaldiçoados quebrados
+
+# ---- A conversa do Velho Jack ----
+dialogue.hallows_eve_old_jack.first_words.text = Não liga pra cabeça. É uma abóbora, e tá aí faz um bom tempo.\nSou o Velho Jack. Todo outono os mortos ficam inquietos e as lanternas do <color is="#ffd97a">Templo Esquecido</color> se apagam, então eu volto e acendo elas. Um par de mãos que não sejam entalhadas me cairia bem.
+dialogue.hallows_eve_old_jack.first_words.opt.hail = Prazer em te conhecer, Jack.
+dialogue.hallows_eve_old_jack.board_fresh.text = Tem serviço novo no meu quadro esta noite. Um serviço só, e paga.
+dialogue.hallows_eve_old_jack.board_fresh.opt.board = Mostre-me o quadro.
+dialogue.hallows_eve_old_jack.board_fresh.opt.later = Mais tarde, Jack.
+dialogue.hallows_eve_old_jack.menu.text = As lanternas tão acesas e os carniçais tão andando por aí. Do que você precisa?
+dialogue.hallows_eve_old_jack.patch_offer.text = Colhe abóbora este mês que de vez em quando sai uma fria ao toque, brilhando um pouco. <b>Abóboras Consagradas</b>, é como eu chamo essas.\nMe traz algumas. Eu te mostro pra que elas servem.
+dialogue.hallows_eve_old_jack.patch_offer.opt.accept = Vou achar umas abóboras para você.
+dialogue.hallows_eve_old_jack.patch_brief.text = Qualquer <b>abóbora</b> que você colher pode sair Consagrada este mês. Guarda as frias que brilham e traz pra cá.
+dialogue.hallows_eve_old_jack.patch_ready.text = <b>Abóboras Consagradas</b>. Frias como degrau de porão. Bom.\nRecheada com óleo de lamparina, uma dessas vira uma Bomba-Lanterna. Pus umas junto com o seu pagamento. Vai ver como elas queimam.
+dialogue.hallows_eve_old_jack.patch_ready.opt.turnin = Aqui estão as abóboras.
+dialogue.hallows_eve_old_jack.lantern_work_offer.text = Uma <b>Bomba-Lanterna</b> é uma abóbora Consagrada com pavio curto. Acende e joga. Depois sai de perto.\nJoga umas em alguma coisa que tá merecendo, e vem me contar como foi.
+dialogue.hallows_eve_old_jack.lantern_work_offer.opt.accept = Vou jogar algumas.
+dialogue.hallows_eve_old_jack.ghouls_offer.text = Os <b>Carniçais Ocos</b> saem rastejando das covas velhas depois que escurece, e saem com fome.\nPõe uns de volta debaixo da terra antes que eles achem os degraus do templo.
+dialogue.hallows_eve_old_jack.ghouls_offer.opt.accept = Eu cuido dos carniçais.
+dialogue.hallows_eve_old_jack.souls_offer.text = Coitadas, as <b>Almas Perdidas</b>. Ficam vagando até alguém soltar elas.\nLiberta umas e me traz o <b>ectoplasma</b> que elas deixam pra trás. Minhas lanternas bebem esse troço.
+dialogue.hallows_eve_old_jack.souls_offer.opt.accept = Vou libertá-las.
+dialogue.hallows_eve_old_jack.geodes_offer.text = Cava fundo este mês que a pedra cria <b>Geodos Amaldiçoados</b>. Você vai ouvir eles antes de ver. Eles zumbem.\nQuebra uns. Tem coisa boa neles, debaixo da maldição.
+dialogue.hallows_eve_old_jack.geodes_offer.opt.accept = Vou quebrar alguns.
+dialogue.hallows_eve_old_jack.lantern_offer.text = Todo ano a <b>Lanterna Oca</b> se apaga, e todo ano alguém tem que acender de novo.\nAlguns dos esqueletos lá fora usam a minha cara. Derruba uns <b>Esqueletos de Jack</b>, depois me traz uma <b>abóbora Consagrada</b> e um pouco de <b>ectoplasma</b> pra encher.
+dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Vamos acender.
+dialogue.hallows_eve_old_jack.lantern_brief.text = Os <b>Esqueletos de Jack</b> andam à noite. Derruba uns. Depois uma <b>abóbora Consagrada</b> e o <b>ectoplasma</b>, e a gente acende junto.
+dialogue.hallows_eve_old_jack.lantern_ready.text = Uma <b>abóbora Consagrada</b>, e <b>ectoplasma</b> pra encher até a boca. E os esqueletos com a minha cara tão caídos na grama, que é o lugar deles.\nFica parado. Pronto. A Lanterna Oca tá acesa, e é sua pra guardar. Volta ano que vem que a gente acende outra.
+dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = Aqui está a abóbora, e o ectoplasma.
+dialogue.hallows_eve_old_jack.active_generic.text = Ainda por aí? Bom. A noite é longa, e não vai a lugar nenhum.
+dialogue.hallows_eve_old_jack.ready_generic.text = Pra mim isso parece feito. Deixa eu ver.
+dialogue.hallows_eve_old_jack.ready_generic.opt.turnin = Está feito.
+dialogue.hallows_eve_old_jack.daily_souls_offer.text = Mais <b>Almas Perdidas</b> chegaram vagando ontem à noite. Liberta algumas antes que elas se instalem de vez.
+dialogue.hallows_eve_old_jack.daily_souls_offer.opt.accept = Deixa as almas comigo.
+dialogue.hallows_eve_old_jack.daily_pumpkins_offer.text = As lanternas consomem <b>abóboras Consagradas</b> mais rápido do que eu dou conta de entalhar. Me traz mais umas antes de escurecer.
+dialogue.hallows_eve_old_jack.daily_pumpkins_offer.opt.accept = Vou trazer abóboras.
+dialogue.hallows_eve_old_jack.daily_geodes_offer.text = A pedra lá do fundo tá zumbindo de novo. Quebra uns dois <b>Geodos Amaldiçoados</b> antes que eles se quebrem sozinhos.
+dialogue.hallows_eve_old_jack.daily_geodes_offer.opt.accept = Vou quebrar uns dois.
+dialogue.hallows_eve_old_jack.lantern_lit.text = A Lanterna Oca ainda tá acesa. Mantém o pior do escuro longe dos degraus.\nDo que você precisa?
+dialogue.hallows_eve_old_jack.who_are_you.text = Velho Jack. Já tive uma fazenda, longe daqui. Aí num outubro eu não voltei pra casa, e desde então volto todo outubro.\nNão me pergunta da cabeça.
+dialogue.hallows_eve_old_jack.about_lantern.text = Uma Lanterna Oca é uma abóbora Consagrada, escavada e cheia de ectoplasma. Acende uma e os mortos ficam longe.\nLá por novembro elas se apagam. Por isso eu preciso de uma nova todo ano.
+dialogue.hallows_eve_old_jack.harvest_moon.text = Tá vendo aquela lua? Lua da Colheita. Umas noites por ano ela sobe grande e laranja, e tudo que tá nas covas sobe junto.\nSe quer serviço, a noite é hoje. Se quer dormir, não é.
+dialogue.hallows_eve_old_jack.opt.returned = Voltei.
+dialogue.hallows_eve_old_jack.opt.quests = O que precisa ser feito?
+dialogue.hallows_eve_old_jack.opt.board = O que tem no quadro?
+dialogue.hallows_eve_old_jack.opt.shop = Vamos ver sua banca.
+dialogue.hallows_eve_old_jack.opt.almanac = Mostre-me o Almanaque.
+dialogue.hallows_eve_old_jack.opt.who = Quem é você?
+dialogue.hallows_eve_old_jack.opt.lantern = O que é uma Lanterna Oca?
+dialogue.hallows_eve_old_jack.opt.harvest = Por que a lua está tão grande?
+dialogue.hallows_eve_old_jack.opt.back = Outra coisa.
+dialogue.hallows_eve_old_jack.opt.farewell = Boa noite, Jack.
+
+# ---- Doces ou travessuras, a fala que toda conversa recebe, e o aviso dela ----
+dialogue.hallows_eve_trick_or_treat.opt.knock = Doces ou travessuras.
+notify.hallows_eve_treat = Um doce por bater na porta.
+

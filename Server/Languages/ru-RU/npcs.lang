@@ -1,0 +1,9 @@
+# Пак «Канун Всех Святых» - отображаемые имена его хозяина и его существ.
+# Игра добавляет имя файла в начало, поэтому каждый ключ загружается как npcs.<key> (npcs.Hallows_Eve_Old_Jack.name).
+# Роль называет свой ключ в NameTranslationKey; шаг квеста, который считает существо, находит тот же ключ.
+
+Hallows_Eve_Old_Jack.name = Старый Джек
+Hallows_Eve_Hollow_Ghoul.name = Полый упырь
+Hallows_Eve_Jack_Skeleton.name = Скелет-Джек
+Hallows_Eve_Lost_Soul.name = Заблудшая душа
+Hallows_Eve_Geode_Wraith.name = Призрак жеоды

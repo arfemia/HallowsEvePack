@@ -1,0 +1,23 @@
+# Pack Veille de la Toussaint - les mots du calendrier (le nom de chaque événement et ses bannières) et les
+# avis de trouvaille. Les clés sont écrites nues : la bibliothèque trouve chacune par sa fin, quel que soit
+# le nom de ce fichier. Bannières et avis affichent les balises comme du texte, donc aucune de ces valeurs n'en porte.
+
+# ---- Veille de la Toussaint ----
+calendar.hallows_eve.name = Veille de la Toussaint
+calendar.hallows_eve.flavor = Le Vieux Jack garde le Temple Oublié, et les morts marchent la nuit.
+calendar.hallows_eve.herald.start = Veille de la Toussaint
+calendar.hallows_eve.herald.start.sub = Le Vieux Jack attend au Temple Oublié.
+calendar.hallows_eve.herald.end = La Veille de la Toussaint est terminée
+calendar.hallows_eve.herald.end.sub = Les lanternes s'éteignent jusqu'à l'automne prochain.
+
+# ---- Lune des Moissons ----
+calendar.harvest_moon.name = Lune des Moissons
+calendar.harvest_moon.flavor = La lune pend, grosse et orange, et davantage de morts remontent pour la voir.
+calendar.harvest_moon.herald.start = Lune des Moissons
+calendar.harvest_moon.herald.start.sub = Les morts sont agités cette nuit. Gardez une lanterne allumée.
+calendar.harvest_moon.herald.end = La Lune des Moissons se couche
+calendar.harvest_moon.herald.end.sub = Les nuits redeviennent calmes.
+
+# ---- Trouvailles ----
+notify.hallows_eve_geode_found = Une géode maudite, là, dans les gravats.
+notify.hallows_eve_pumpkin_found = Une citrouille sanctifiée, qui luit dans votre sac.

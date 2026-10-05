@@ -1,0 +1,32 @@
+# Pacote Noite das Bruxas - nomes e descrições dos itens. O jogo prefixa o nome do arquivo, então cada chave
+# carrega como items.<key>, a chave que as TranslationProperties de um item nomeiam (items.Hallows_Eve_Jack_Lantern.name).
+Hallows_Eve_Lantern_Bomb_Common.name = Bomba-Lanterna
+Hallows_Eve_Lantern_Bomb_Common.description = Uma abóbora entalhada recheada de pólvora negra. Arremesse-a contra o que estiver vindo atrás de você.
+Hallows_Eve_Lantern_Bomb_Uncommon.name = Bomba-Lanterna Ardente
+Hallows_Eve_Lantern_Bomb_Uncommon.description = Essência de fogo na pólvora, então o que a explosão pegar continua queimando por um tempo.
+Hallows_Eve_Lantern_Bomb_Rare.name = Bomba-Lanterna Espectral
+Hallows_Eve_Lantern_Bomb_Rare.description = Ectoplasma na pólvora. A explosão queima, e o frio que ela deixa torna lento tudo o que for pego nela.
+Hallows_Eve_Lantern_Bomb_Epic.name = Bomba-Lanterna Estilhaçadora
+Hallows_Eve_Lantern_Bomb_Epic.description = Recheada em volta de um geodo amaldiçoado. Queima e gela como as outras, depois lança estilhaços em chamas para todos os lados.
+Hallows_Eve_Jack_Helm.name = Elmo de Jack
+Hallows_Eve_Jack_Helm.description = Uma casca de abóbora escavada para caber numa cabeça, com uma vela atrás do sorriso. Parte do conjunto Consagrado: use-o com o Escudo de Jack na mão secundária.
+Hallows_Eve_Jack_Shield.name = Escudo de Jack
+Hallows_Eve_Jack_Shield.description = Um escudo de madeira com a frente coberta por uma abóbora entalhada que nunca para de brilhar. Parte do conjunto Consagrado: leve-o na mão secundária enquanto usa o Elmo de Jack.
+Hallows_Eve_Jack_Lantern.name = Lanterna de Jack
+Hallows_Eve_Jack_Lantern.description = Uma abóbora entalhada com uma vela dentro. O Velho Jack quer uma na soleira de cada porta.
+Hallows_Eve_Hollow_Lantern.name = Lanterna Oca
+Hallows_Eve_Hollow_Lantern.description = Uma lanterna pálida que o Velho Jack dá a quem leva os pedidos dele até o fim. Cada Noite das Bruxas tem a sua.
+Hallows_Eve_Ecto_Lantern.name = Lanterna Ectoplásmica
+Hallows_Eve_Ecto_Lantern.description = Uma abóbora iluminada por ectoplasma. A luz verde fica firme em qualquer vento.
+Hallows_Eve_Costume_Wand.name = Varinha de Fantasia
+Hallows_Eve_Costume_Wand.description = Aponte para um amigo. Um botão o transforma em um Esqueleto de Jack, o outro em uma Alma Perdida, e ele pode tirar a fantasia quando quiser.
+Hallows_Eve_Cursed_Geode.name = Geodo Amaldiçoado
+Hallows_Eve_Cursed_Geode.description = Um pedaço de pedra com algo brilhante se mexendo dentro. Quebre-o e fique com o que cair.
+Hallows_Eve_Ectoplasm.name = Ectoplasma
+Hallows_Eve_Ectoplasm.description = O que uma Alma Perdida deixa para trás. É frio ao toque, e os entalhadores o queimam em lanternas.
+Hallows_Eve_Hallowed_Pumpkin.name = Abóbora Consagrada
+Hallows_Eve_Hallowed_Pumpkin.description = Uma abóbora violeta com dourado nos gomos. Só aparece durante a Noite das Bruxas.
+Hallows_Eve_Carving_Bench.name = Bancada de Entalhe
+Hallows_Eve_Carving_Bench.description = Uma bancada preparada para entalhar abóboras. Fique diante dela com os materiais na bolsa e entalhe.
+Hallows_Eve_Carving_Bench.hint = Pressione [{key}] para entalhar
+

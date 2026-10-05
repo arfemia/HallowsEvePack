@@ -1,0 +1,8 @@
+# Paquete de la Noche de Ánimas - claves adicionales sobre el rpgstations.lang propio de RPG Stations (el espacio de
+# nombres "rpgstations."; las claves de un paquete se suman a las del jar y nunca sustituyen ninguna). El Banco de
+# Tallado es de este paquete.
+station.hallows_eve_carving_bench.name = Banco de Tallado
+station.hallows_eve_carving_bench.desc = Talla calabazas para hacer faroles y bombas, o un yelmo que ponerte. La obra consagrada espera a la Noche de Ánimas.
+action.hallows_eve_carving_bench.carve.label = Tallar
+action.hallows_eve_carving_bench.carve_hallowed.label = Tallado Consagrado
+

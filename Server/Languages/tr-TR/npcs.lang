@@ -1,0 +1,9 @@
+# Cadılar Bayramı paketi - ev sahibinin ve yaratıklarının görünen adları.
+# Oyun dosya adını başa ekler, böylece her anahtar npcs.<anahtar> olarak yüklenir (npcs.Hallows_Eve_Old_Jack.name).
+# Bir rol anahtarını NameTranslationKey içinde adlandırır; bir yaratığı sayan görev adımı da aynı anahtarı bulur.
+
+Hallows_Eve_Old_Jack.name = Yaşlı Jack
+Hallows_Eve_Hollow_Ghoul.name = Oyuk Gulyabani
+Hallows_Eve_Jack_Skeleton.name = Jack İskeleti
+Hallows_Eve_Lost_Soul.name = Kayıp Ruh
+Hallows_Eve_Geode_Wraith.name = Jeot Hortlağı

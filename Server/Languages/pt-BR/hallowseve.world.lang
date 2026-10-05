@@ -1,0 +1,24 @@
+# Pacote Noite das Bruxas - as palavras do calendário (como cada evento se chama, e seus anúncios) e os
+# avisos de um achado. As chaves são escritas sem prefixo: a biblioteca encontra cada uma pelo final, seja qual
+# for o nome deste arquivo. Anúncios e avisos imprimem a marcação como texto, então nenhum destes valores leva marcação.
+
+# ---- Noite das Bruxas ----
+calendar.hallows_eve.name = Noite das Bruxas
+calendar.hallows_eve.flavor = O Velho Jack cuida do Templo Esquecido, e os mortos andam à noite.
+calendar.hallows_eve.herald.start = Noite das Bruxas
+calendar.hallows_eve.herald.start.sub = O Velho Jack espera no Templo Esquecido.
+calendar.hallows_eve.herald.end = A Noite das Bruxas acabou
+calendar.hallows_eve.herald.end.sub = As lanternas se apagam até o próximo outono.
+
+# ---- Lua da Colheita ----
+calendar.harvest_moon.name = Lua da Colheita
+calendar.harvest_moon.flavor = A lua paira redonda e laranja, e mais mortos saem das covas para vê-la.
+calendar.harvest_moon.herald.start = Lua da Colheita
+calendar.harvest_moon.herald.start.sub = Os mortos estão inquietos esta noite. Mantenha uma lanterna acesa.
+calendar.harvest_moon.herald.end = A Lua da Colheita se põe
+calendar.harvest_moon.herald.end.sub = As noites voltam a ficar quietas.
+
+# ---- Achados ----
+notify.hallows_eve_geode_found = Um geodo amaldiçoado, ali no entulho.
+notify.hallows_eve_pumpkin_found = Uma abóbora consagrada, brilhando na sua mochila.
+

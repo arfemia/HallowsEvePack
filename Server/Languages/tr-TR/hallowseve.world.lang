@@ -1,0 +1,24 @@
+# Cadılar Bayramı paketi - takvimin sözcükleri (her etkinliğin adı ve afişleri) ve bir buluntunun
+# bildirimleri. Anahtarlar çıplak yazılır: kütüphane her birini kuyruğundan bulur, bu dosyanın adı ne
+# olursa olsun. Afişler ve bildirimler biçimlendirmeyi metin olarak basar, bu yüzden bu değerlerin hiçbiri biçimlendirme taşımaz.
+
+# ---- Cadılar Bayramı ----
+calendar.hallows_eve.name = Cadılar Bayramı
+calendar.hallows_eve.flavor = Yaşlı Jack Unutulmuş Tapınak'a göz kulak olur, ölüler de geceleri yürür.
+calendar.hallows_eve.herald.start = Cadılar Bayramı
+calendar.hallows_eve.herald.start.sub = Yaşlı Jack, Unutulmuş Tapınak'ta bekliyor.
+calendar.hallows_eve.herald.end = Cadılar Bayramı sona erdi
+calendar.hallows_eve.herald.end.sub = Fenerler gelecek sonbahara kadar sönüyor.
+
+# ---- Hasat Ayı ----
+calendar.harvest_moon.name = Hasat Ayı
+calendar.harvest_moon.flavor = Ay iri ve turuncu asılı duruyor, onu görmeye daha çok ölü yerden çıkıyor.
+calendar.harvest_moon.herald.start = Hasat Ayı
+calendar.harvest_moon.herald.start.sub = Ölüler bu gece huzursuz. Bir fener yanık kalsın.
+calendar.harvest_moon.herald.end = Hasat Ayı batıyor
+calendar.harvest_moon.herald.end.sub = Geceler yeniden sakinleşiyor.
+
+# ---- Buluntular ----
+notify.hallows_eve_geode_found = Lanetli bir jeot, şurada molozun içinde.
+notify.hallows_eve_pumpkin_found = Kutsanmış bir bal kabağı, çantanda parlıyor.
+

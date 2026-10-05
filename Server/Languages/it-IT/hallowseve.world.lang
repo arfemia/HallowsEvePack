@@ -1,0 +1,23 @@
+# Pacchetto Vigilia di Ognissanti - le parole del calendario (come si chiama ogni evento, e i suoi annunci) e
+# gli avvisi per un ritrovamento. Le chiavi sono scritte nude: la libreria trova ciascuna dalla sua coda, comunque
+# si chiami questo file. Annunci e avvisi stampano il markup come testo, quindi nessuno di questi valori ne contiene.
+
+# ---- Vigilia di Ognissanti ----
+calendar.hallows_eve.name = Vigilia di Ognissanti
+calendar.hallows_eve.flavor = Il Vecchio Jack custodisce il Tempio Dimenticato, e di notte i morti camminano.
+calendar.hallows_eve.herald.start = Vigilia di Ognissanti
+calendar.hallows_eve.herald.start.sub = Il Vecchio Jack aspetta al Tempio Dimenticato.
+calendar.hallows_eve.herald.end = La Vigilia di Ognissanti è finita
+calendar.hallows_eve.herald.end.sub = Le lanterne si spengono fino al prossimo autunno.
+
+# ---- Luna del Raccolto ----
+calendar.harvest_moon.name = Luna del Raccolto
+calendar.harvest_moon.flavor = La luna pende grossa e arancione, e altri morti risalgono a guardarla.
+calendar.harvest_moon.herald.start = Luna del Raccolto
+calendar.harvest_moon.herald.start.sub = Stanotte i morti sono inquieti. Tieni accesa una lanterna.
+calendar.harvest_moon.herald.end = La Luna del Raccolto tramonta
+calendar.harvest_moon.herald.end.sub = Le notti tornano tranquille.
+
+# ---- Ritrovamenti ----
+notify.hallows_eve_geode_found = Una geode maledetta, lì tra le macerie.
+notify.hallows_eve_pumpkin_found = Una zucca consacrata, che brilla nel tuo zaino.

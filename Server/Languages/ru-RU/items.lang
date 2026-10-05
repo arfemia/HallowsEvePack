@@ -1,0 +1,31 @@
+# Пак «Канун Всех Святых» - названия и описания предметов. Игра добавляет имя файла в начало, поэтому каждый ключ
+# загружается как items.<key>, тот ключ, который называют TranslationProperties предмета (items.Hallows_Eve_Jack_Lantern.name).
+Hallows_Eve_Lantern_Bomb_Common.name = Фонарная бомба
+Hallows_Eve_Lantern_Bomb_Common.description = Резная тыква, набитая чёрным порохом. Бросьте её во всё, что на вас надвигается.
+Hallows_Eve_Lantern_Bomb_Uncommon.name = Пылающая фонарная бомба
+Hallows_Eve_Lantern_Bomb_Uncommon.description = В порохе эссенция огня, так что всё, что задело взрывом, ещё какое-то время горит.
+Hallows_Eve_Lantern_Bomb_Rare.name = Призрачная фонарная бомба
+Hallows_Eve_Lantern_Bomb_Rare.description = В порохе эктоплазма. Взрыв обжигает, а оставшийся после него холод замедляет всё, что в него попало.
+Hallows_Eve_Lantern_Bomb_Epic.name = Осколочная фонарная бомба
+Hallows_Eve_Lantern_Bomb_Epic.description = Порох набит вокруг проклятой жеоды. Обжигает и леденит, как остальные, а потом разбрасывает горящие осколки во все стороны.
+Hallows_Eve_Jack_Helm.name = Шлем Джека
+Hallows_Eve_Jack_Helm.description = Тыквенная корка, выдолбленная по размеру головы, со свечой за ухмылкой. Часть Освящённого комплекта: носите его вместе со Щитом Джека во второй руке.
+Hallows_Eve_Jack_Shield.name = Щит Джека
+Hallows_Eve_Jack_Shield.description = Деревянный щит, обтянутый спереди резной тыквой, что никогда не гаснет. Часть Освящённого комплекта: держите его во второй руке, пока носите Шлем Джека.
+Hallows_Eve_Jack_Lantern.name = Фонарь Джека
+Hallows_Eve_Jack_Lantern.description = Резная тыква со свечой внутри. Старый Джек хочет видеть такую у каждого порога.
+Hallows_Eve_Hollow_Lantern.name = Полый фонарь
+Hallows_Eve_Hollow_Lantern.description = Бледный фонарь, который Старый Джек дарит тому, кто доведёт его поручения до конца. У каждого Кануна Всех Святых он свой.
+Hallows_Eve_Ecto_Lantern.name = Эктофонарь
+Hallows_Eve_Ecto_Lantern.description = Тыква, которую освещает эктоплазма. Зелёный свет горит ровно при любом ветре.
+Hallows_Eve_Costume_Wand.name = Костюмная палочка
+Hallows_Eve_Costume_Wand.description = Наведите её на друга. Одна кнопка превращает его в Скелета-Джека, другая в Заблудшую душу, и он может снять костюм, когда захочет.
+Hallows_Eve_Cursed_Geode.name = Проклятая жеода
+Hallows_Eve_Cursed_Geode.description = Кусок камня, внутри которого шевелится что-то яркое. Расколите его и заберите всё, что выпадет.
+Hallows_Eve_Ectoplasm.name = Эктоплазма
+Hallows_Eve_Ectoplasm.description = То, что остаётся после Заблудшей души. Она холодная на ощупь, и резчики жгут её в фонарях.
+Hallows_Eve_Hallowed_Pumpkin.name = Освящённая тыква
+Hallows_Eve_Hallowed_Pumpkin.description = Фиолетовая тыква с золотом в рёбрах. Попадается только в Канун Всех Святых.
+Hallows_Eve_Carving_Bench.name = Верстак резчика
+Hallows_Eve_Carving_Bench.description = Верстак, приспособленный для резьбы по тыквам. Встаньте за него с материалами в сумке и вырезайте.
+Hallows_Eve_Carving_Bench.hint = Нажмите [{key}], чтобы вырезать

@@ -1,0 +1,9 @@
+# Paquete de la Noche de Ánimas - los nombres visibles de su anfitrión y sus criaturas.
+# El juego antepone el nombre del archivo, así que cada clave se carga como npcs.<clave> (npcs.Hallows_Eve_Old_Jack.name).
+# Un rol nombra su clave en NameTranslationKey; un paso de misión que cuenta una criatura encuentra la misma clave.
+
+Hallows_Eve_Old_Jack.name = Viejo Jack
+Hallows_Eve_Hollow_Ghoul.name = Gul Descarnado
+Hallows_Eve_Jack_Skeleton.name = Esqueleto Jack
+Hallows_Eve_Lost_Soul.name = Alma Perdida
+Hallows_Eve_Geode_Wraith.name = Espectro de Geoda

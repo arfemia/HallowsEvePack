@@ -1,0 +1,142 @@
+# Прогрессия Кануна Всех Святых: цепочка квестов Старого Джека, ежедневные задания, доска и прилавок, его разговор и
+# реплика «Сладость или гадость», достижения и титул сезона, а также его страница в Альманахе.
+# Ключи пишутся без префикса: библиотека находит каждый по его окончанию, как бы ни назывался этот файл.
+# Числа передаются через {0} и берутся из файлов контента, так что перебалансировка никогда не затрагивает перевод.
+
+# ---- Кошелёк ----
+currency.hallows_eve_sweets.name = Сладости Кануна
+
+# ---- Цепочка квестов Старого Джека ----
+quest.hallows_eve_old_jack_1.title = Тыквенная грядка
+quest.hallows_eve_old_jack_1.flavor = Сорвёшь тыкву в этом месяце, и нет-нет да попадётся холодная, светящаяся. Принеси мне несколько таких, Освящённых.
+quest.hallows_eve_old_jack_2.title = Фонарное дело
+quest.hallows_eve_old_jack_2.flavor = Из Освящённой тыквы с коротким фитилём выходит славная Фонарная бомба. Брось парочку во что-нибудь, что напросилось, потом расскажи, как горели.
+quest.hallows_eve_old_jack_3.title = Упыри на ступенях
+quest.hallows_eve_old_jack_3.flavor = Как стемнеет, из старых могил вылезают Полые упыри, голодные. Уложи парочку обратно в землю, пока не добрались до ступеней храма.
+quest.hallows_eve_old_jack_4.title = Поход за эктоплазмой
+quest.hallows_eve_old_jack_4.flavor = Заблудшие души так и бродят, пока кто-нибудь их не отпустит. Освободи парочку и принеси мне эктоплазму, что после них остаётся; мои фонари эту штуку пьют.
+quest.hallows_eve_old_jack_5.title = Проклятый камень
+quest.hallows_eve_old_jack_5.flavor = Копнёшь в этом месяце поглубже, а там в камне растут жеоды, что гудят. Расколи парочку; в них есть кое-что хорошее, под проклятием.
+quest.hallows_eve_old_jack_lantern.title = Полый фонарь
+quest.hallows_eve_old_jack_lantern.flavor = Каждый год Полый фонарь гаснет, и кому-то надо зажечь его снова. Повали скелетов с моим лицом, потом принеси мне, что нужно фонарю.
+
+# ---- Ежедневные задания Старого Джека ----
+quest.hallows_eve_jack_daily_souls.title = Неупокоенные души
+quest.hallows_eve_jack_daily_souls.flavor = Прошлой ночью ещё Заблудших душ прибилось. Освободи несколько, пока не обжились тут насовсем.
+quest.hallows_eve_jack_daily_pumpkins.title = Тыквенный обход
+quest.hallows_eve_jack_daily_pumpkins.flavor = Фонари сжигают Освящённые тыквы быстрей, чем я успеваю их вырезать. Принеси ещё несколько до темноты.
+quest.hallows_eve_jack_daily_geodes.title = Гудящий камень
+quest.hallows_eve_jack_daily_geodes.flavor = Глубинный камень опять гудит. Расколи пару Проклятых жеод, пока сами не раскололись.
+
+# ---- Шаги, сформулированные для этого пака ----
+objective.hallows_eve.throw_bombs = Бросьте Фонарные бомбы: {0}
+objective.hallows_eve.crack_geodes = Расколите Проклятые жеоды: {0}
+objective.hallows_eve.attend = Будьте здесь в Канун Всех Святых
+
+# ---- Доска Старого Джека ----
+board.hallows_eve_daily.title = Доска Старого Джека
+board.hallows_eve_daily.desc = Одна работа в ночь, и за неё платят.
+quest.hallows_eve_board_souls.title = Зачистка душ
+quest.hallows_eve_board_souls.flavor = Сегодня вокруг храма полно душ. Освободи побольше до утра.
+quest.hallows_eve_board_ghouls.title = Отбраковка упырей
+quest.hallows_eve_board_ghouls.flavor = На могилах сегодня оживлённо. Загони Полых упырей туда, откуда пришли, и не церемонься с ними.
+quest.hallows_eve_board_bombs.title = Фонарный обстрел
+quest.hallows_eve_board_bombs.flavor = Изведи сегодня кучу Фонарных бомб. Во что, мне без разницы, лишь бы не в храм.
+quest.hallows_eve_board_geodes.title = Глубинные жеоды
+quest.hallows_eve_board_geodes.flavor = Глубинный камень всё гудит, и мне от этого не спится. Расколи столько Проклятых жеод, чтобы он утих.
+quest.hallows_eve_board_harvest_moon.title = Охота под Урожайной луной
+quest.hallows_eve_board_harvest_moon.flavor = Урожайная луна взошла, и Скелеты-Джеки повылезали толпами. Повали сколько сможешь, пока она не зашла.
+
+# ---- Прилавок Старого Джека ----
+shop.hallows_eve_old_jack.title = Прилавок Старого Джека
+shop.hallows_eve_old_jack.desc = Фонарные бомбы, фонари и кое-какие диковинки к сезону.
+shop.hallows_eve_old_jack.category.bombs = Фонарные бомбы
+shop.hallows_eve_old_jack.category.lights = Фонари
+shop.hallows_eve_old_jack.category.gear = Снаряжение
+shop.hallows_eve_offer_harvest_moon_bundle.title = Набор Урожайной луны
+shop.hallows_eve_offer_harvest_moon_bundle.desc = Эпические и редкие Фонарные бомбы, продаются, только пока в небе Урожайная луна.
+
+# ---- Достижения ----
+achievement.hallows_eve_lantern_keepsake.title = Полый фонарь {0}
+achievement.hallows_eve_lantern_keepsake.desc = Зажгите Полый фонарь вместе со Старым Джеком.
+keepsake.hallows_eve_hollow_lantern.name = Полый фонарь {0} года
+achievement.hallows_eve_lantern_lobber.title = Метатель фонарей {0}
+achievement.hallows_eve_lantern_lobber.desc = Бросьте Фонарные бомбы: {0}.
+achievement.hallows_eve_soul_warden.title = Страж душ {0}
+achievement.hallows_eve_soul_warden.desc = Освободите Заблудшие души: {0}.
+achievement.hallows_eve_ghoul_breaker.title = Гроза упырей {0}
+achievement.hallows_eve_ghoul_breaker.desc = Уложите Полых упырей: {0}.
+achievement.hallows_eve_geode_cracker.title = Взломщик жеод {0}
+achievement.hallows_eve_geode_cracker.desc = Расколите Проклятые жеоды: {0}.
+achievement.hallows_eve_jacks_guest.title = Гость Джека {0}
+achievement.hallows_eve_jacks_guest.desc = Будьте здесь в Канун Всех Святых.
+achievement.hallows_eve_the_hallowed.title = Освящённый {0}
+achievement.hallows_eve_the_hallowed.desc = Получите все достижения Кануна Всех Святых за один сезон.
+achievement.seasons_of_orbis.title = Сезоны Орбиса
+achievement.seasons_of_orbis.desc = Получите венчающее достижение каждого сезона.
+
+# ---- Титул «Освящённый» ----
+title.hallows_eve_hallowed.name = Освящённый
+title.hallows_eve_hallowed.flavor = Все достижения Кануна Всех Святых, полученные за один сезон.
+title.hallows_eve_hallowed.display = {0} из Освящённых
+
+# ---- Страница Альманаха ----
+almanac.hallows_eve.title = Канун Всех Святых
+almanac.hallows_eve.flavor = Каждую осень Старый Джек открывает Забытый Храм и зажигает его фонари.
+almanac.hallows_eve.bombs_thrown = Брошено Фонарных бомб
+almanac.hallows_eve.ghouls_felled = Повержено Полых упырей
+almanac.hallows_eve.souls_freed = Освобождено Заблудших душ
+almanac.hallows_eve.geodes_cracked = Расколото Проклятых жеод
+
+# ---- Разговор со Старым Джеком ----
+dialogue.hallows_eve_old_jack.first_words.text = Не обращай внимания на голову. Это тыква, и сидит она там уже давненько.\nЯ Старый Джек. Каждую осень мертвецам не лежится, а фонари в <color is="#ffd97a">Забытом Храме</color> гаснут, вот я и возвращаюсь их зажечь. Мне бы не помешала пара рук, которые никто не вырезал.
+dialogue.hallows_eve_old_jack.first_words.opt.hail = Приятно познакомиться, Джек.
+dialogue.hallows_eve_old_jack.board_fresh.text = На моей доске сегодня свежая работа. Одно дело, и за него платят.
+dialogue.hallows_eve_old_jack.board_fresh.opt.board = Покажи доску.
+dialogue.hallows_eve_old_jack.board_fresh.opt.later = Потом, Джек.
+dialogue.hallows_eve_old_jack.menu.text = Фонари зажжены, а упыри вышли погулять. Что тебе нужно?
+dialogue.hallows_eve_old_jack.patch_offer.text = Сорвёшь тыкву в этом месяце, и нет-нет да попадётся холодная на ощупь, чуть светящаяся. <b>Освящённые тыквы</b>, так я их зову.\nПринеси мне несколько. Покажу, на что они годятся.
+dialogue.hallows_eve_old_jack.patch_offer.opt.accept = Найду тебе тыкв.
+dialogue.hallows_eve_old_jack.patch_brief.text = В этом месяце любая <b>тыква</b>, что сорвёшь, может оказаться Освящённой. Холодные, что светятся, оставляй и неси сюда.
+dialogue.hallows_eve_old_jack.patch_ready.text = <b>Освящённые тыквы</b>. Холодные, как ступенька в погребе. Хорошо.\nНабей такую ламповым маслом, и выйдет Фонарная бомба. Я положил парочку к твоей плате. Иди посмотри, как горят.
+dialogue.hallows_eve_old_jack.patch_ready.opt.turnin = Вот тыквы.
+dialogue.hallows_eve_old_jack.lantern_work_offer.text = <b>Фонарная бомба</b> - это Освящённая тыква с коротким фитилём. Подожги и брось. Потом отойди.\nБрось парочку во что-нибудь, что напросилось, и приходи, расскажи, как прошло.
+dialogue.hallows_eve_old_jack.lantern_work_offer.opt.accept = Брошу парочку.
+dialogue.hallows_eve_old_jack.ghouls_offer.text = <b>Полые упыри</b> вылезают из старых могил, как стемнеет, и вылезают голодными.\nУложи парочку обратно в землю, пока они не нашли ступени храма.
+dialogue.hallows_eve_old_jack.ghouls_offer.opt.accept = Разберусь с упырями.
+dialogue.hallows_eve_old_jack.souls_offer.text = Бедняжки, эти <b>Заблудшие души</b>. Бродят, пока кто-нибудь их не отпустит.\nОсвободи парочку и принеси мне <b>эктоплазму</b>, что после них остаётся. Мои фонари эту штуку пьют.
+dialogue.hallows_eve_old_jack.souls_offer.opt.accept = Я их освобожу.
+dialogue.hallows_eve_old_jack.geodes_offer.text = Копнёшь в этом месяце поглубже, а там в камне растут <b>Проклятые жеоды</b>. Услышишь их раньше, чем увидишь. Они гудят.\nРасколи парочку. В них есть кое-что хорошее, под проклятием.
+dialogue.hallows_eve_old_jack.geodes_offer.opt.accept = Расколю несколько.
+dialogue.hallows_eve_old_jack.lantern_offer.text = Каждый год <b>Полый фонарь</b> гаснет, и каждый год кому-то приходится зажигать его снова.\nНекоторые скелеты там ходят с моим лицом. Повали парочку <b>Скелетов-Джеков</b>, потом принеси мне <b>Освящённую тыкву</b> и немного <b>эктоплазмы</b>, чтобы его наполнить.
+dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Давай зажжём.
+dialogue.hallows_eve_old_jack.lantern_brief.text = <b>Скелеты-Джеки</b> бродят по ночам. Повали парочку. Потом <b>Освящённую тыкву</b> и <b>эктоплазму</b>, и зажжём его вместе.
+dialogue.hallows_eve_old_jack.lantern_ready.text = <b>Освящённая тыква</b>, и <b>эктоплазма</b>, чтобы наполнить её до краёв. А скелеты с моим лицом лежат в траве, где им и место.\nНе шевелись. Вот так. Полый фонарь горит, и он твой насовсем. Приходи в следующем году, зажжём ещё один.
+dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = Вот тыква, и эктоплазма.
+dialogue.hallows_eve_old_jack.active_generic.text = Всё ещё в деле? Хорошо. Ночь длинная, никуда она не денется.
+dialogue.hallows_eve_old_jack.ready_generic.text = По-моему, готово. Показывай.
+dialogue.hallows_eve_old_jack.ready_generic.opt.turnin = Готово.
+dialogue.hallows_eve_old_jack.daily_souls_offer.text = Прошлой ночью ещё <b>Заблудших душ</b> прибилось. Освободи несколько, пока не обжились тут насовсем.
+dialogue.hallows_eve_old_jack.daily_souls_offer.opt.accept = Займусь душами.
+dialogue.hallows_eve_old_jack.daily_pumpkins_offer.text = Фонари сжигают <b>Освящённые тыквы</b> быстрей, чем я успеваю их вырезать. Принеси ещё несколько до темноты.
+dialogue.hallows_eve_old_jack.daily_pumpkins_offer.opt.accept = Принесу тыкв.
+dialogue.hallows_eve_old_jack.daily_geodes_offer.text = Глубинный камень опять гудит. Расколи пару <b>Проклятых жеод</b>, пока сами не раскололись.
+dialogue.hallows_eve_old_jack.daily_geodes_offer.opt.accept = Расколю пару.
+dialogue.hallows_eve_old_jack.lantern_lit.text = Полый фонарь ещё горит. Держит самую темень подальше от ступеней.\nЧто тебе нужно?
+dialogue.hallows_eve_old_jack.who_are_you.text = Старый Джек. Держал когда-то ферму, далеко отсюда. Потом однажды в октябре я не вернулся домой, и с тех пор прихожу сюда каждый октябрь.\nПро голову не спрашивай.
+dialogue.hallows_eve_old_jack.about_lantern.text = Полый фонарь - это Освящённая тыква, выдолбленная и налитая эктоплазмой. Зажги такой, и мертвецы держатся подальше.\nК ноябрю они выгорают. Потому мне и нужен новый каждый год.
+dialogue.hallows_eve_old_jack.harvest_moon.text = Видишь луну? Урожайная луна. Несколько ночей в году она встаёт большая и оранжевая, и всё, что в могилах, встаёт вместе с ней.\nХочешь работы, сегодня самая ночь. Хочешь выспаться, то не сегодня.
+dialogue.hallows_eve_old_jack.opt.returned = Я снова здесь.
+dialogue.hallows_eve_old_jack.opt.quests = Что нужно сделать?
+dialogue.hallows_eve_old_jack.opt.board = Что на доске?
+dialogue.hallows_eve_old_jack.opt.shop = Покажи свой прилавок.
+dialogue.hallows_eve_old_jack.opt.almanac = Покажи Альманах.
+dialogue.hallows_eve_old_jack.opt.who = Кто ты?
+dialogue.hallows_eve_old_jack.opt.lantern = Что такое Полый фонарь?
+dialogue.hallows_eve_old_jack.opt.harvest = Почему луна такая большая?
+dialogue.hallows_eve_old_jack.opt.back = Кое-что другое.
+dialogue.hallows_eve_old_jack.opt.farewell = Доброй ночи, Джек.
+
+# ---- «Сладость или гадость»: реплика, которую получает каждый разговор, и её уведомление ----
+dialogue.hallows_eve_trick_or_treat.opt.knock = Сладость или гадость.
+notify.hallows_eve_treat = Угощение за стук.

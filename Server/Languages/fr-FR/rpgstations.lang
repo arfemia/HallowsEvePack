@@ -1,0 +1,7 @@
+# Pack Veille de la Toussaint - clés ajoutées au rpgstations.lang de RPG Stations (l'espace de noms
+# "rpgstations." ; les clés d'un pack s'ajoutent à celles du jar et n'en remplacent aucune). L'Établi de
+# Sculpture appartient à ce pack.
+station.hallows_eve_carving_bench.name = Établi de Sculpture
+station.hallows_eve_carving_bench.desc = Sculptez des citrouilles en lanternes et en bombes, ou en heaume à porter. Le travail sanctifié attend la Veille de la Toussaint.
+action.hallows_eve_carving_bench.carve.label = Sculpter
+action.hallows_eve_carving_bench.carve_hallowed.label = Sculpture Sanctifiée

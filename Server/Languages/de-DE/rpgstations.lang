@@ -1,0 +1,6 @@
+# Allerheiligenabend-Paket - zusätzliche Schlüssel zur eigenen rpgstations.lang von RPG Stations (der Namensraum
+# "rpgstations."; die Schlüssel eines Pakets ergänzen die des Jars und ersetzen nie einen). Die Schnitzbank gehört diesem Paket.
+station.hallows_eve_carving_bench.name = Schnitzbank
+station.hallows_eve_carving_bench.desc = Schnitze aus Kürbissen Laternen und Bomben oder einen Helm zum Tragen. Die geweihte Arbeit wartet auf den Allerheiligenabend.
+action.hallows_eve_carving_bench.carve.label = Schnitzen
+action.hallows_eve_carving_bench.carve_hallowed.label = Geweihtes Schnitzen

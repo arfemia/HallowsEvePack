@@ -1,0 +1,142 @@
+# Allerheiligenabend-Fortschritt: die Questreihe des Alten Jack, Tagesaufgaben, Tafel und Stand, sein Gespräch und
+# die Süßes-oder-Saures-Zeile, die Erfolge und der Titel der Saison und ihre Almanach-Seite.
+# Die Schlüssel stehen ohne Präfix: die Bibliothek findet jeden an seinem Ende, egal wie diese Datei heißt.
+# Zahlen kommen über {0} aus den Inhaltsdateien, also berührt eine Neuabstimmung nie eine Übersetzung.
+
+# ---- Die Geldbörse ----
+currency.hallows_eve_sweets.name = Allerheiligen-Naschwerk
+
+# ---- Die Questreihe des Alten Jack ----
+quest.hallows_eve_old_jack_1.title = Das Kürbisbeet
+quest.hallows_eve_old_jack_1.flavor = Ernte diesen Monat einen Kürbis, und ab und zu ist einer kalt und leuchtet. Bring mir ein paar von den Geweihten.
+quest.hallows_eve_old_jack_2.title = Laternenarbeit
+quest.hallows_eve_old_jack_2.flavor = Ein Geweihter Kürbis mit kurzer Lunte gibt 'ne gute Laternenbombe ab. Wirf ein paar auf was, das es verdient hat, dann erzähl mir, wie sie gebrannt haben.
+quest.hallows_eve_old_jack_3.title = Ghule auf den Stufen
+quest.hallows_eve_old_jack_3.flavor = Nach Einbruch der Dunkelheit kriechen Hohle Ghule aus den alten Gräbern, hungrig. Schick ein paar zurück unter die Erde, bevor sie die Tempelstufen erreichen.
+quest.hallows_eve_old_jack_4.title = Ektoplasma-Tour
+quest.hallows_eve_old_jack_4.flavor = Die Verlorenen Seelen treiben umher, bis jemand sie gehen lässt. Befrei ein paar und bring mir das Ektoplasma, das sie zurücklassen; meine Laternen trinken das Zeug.
+quest.hallows_eve_old_jack_5.title = Verfluchter Stein
+quest.hallows_eve_old_jack_5.flavor = Grab diesen Monat tief, und der Stein bildet Geoden, die summen. Knack ein paar auf; da steckt was Gutes drin, unter dem Fluch.
+quest.hallows_eve_old_jack_lantern.title = Die Hohle Laterne
+quest.hallows_eve_old_jack_lantern.flavor = Jedes Jahr geht die Hohle Laterne aus, und irgendwer muss sie wieder anzünden. Hau die Skelette um, die mein Gesicht tragen, dann bring mir, was die Laterne braucht.
+
+# ---- Die Tagesaufgaben des Alten Jack ----
+quest.hallows_eve_jack_daily_souls.title = Ruhelose Seelen
+quest.hallows_eve_jack_daily_souls.flavor = Letzte Nacht sind noch mehr Verlorene Seelen hergetrieben. Befrei ein paar, bevor sie sich für immer niederlassen.
+quest.hallows_eve_jack_daily_pumpkins.title = Kürbisrunde
+quest.hallows_eve_jack_daily_pumpkins.flavor = Die Laternen verbrennen Geweihte Kürbisse schneller, als ich sie schnitzen kann. Bring mir vor Einbruch der Dunkelheit noch ein paar.
+quest.hallows_eve_jack_daily_geodes.title = Summender Stein
+quest.hallows_eve_jack_daily_geodes.flavor = Der tiefe Stein summt wieder. Knack ein paar Verfluchte Geoden auf, bevor sie von selbst aufplatzen.
+
+# ---- Schritte, für dieses Paket formuliert ----
+objective.hallows_eve.throw_bombs = Wirf {0} Laternenbomben
+objective.hallows_eve.crack_geodes = Knacke {0} Verfluchte Geoden
+objective.hallows_eve.attend = Sei am Allerheiligenabend dabei
+
+# ---- Die Tafel des Alten Jack ----
+board.hallows_eve_daily.title = Tafel des Alten Jack
+board.hallows_eve_daily.desc = Ein Auftrag pro Nacht, und der wird bezahlt.
+quest.hallows_eve_board_souls.title = Seelenkehraus
+quest.hallows_eve_board_souls.flavor = Heute Nacht wimmelt es um den Tempel von Seelen. Befrei eine ganze Menge davon, bevor es Morgen wird.
+quest.hallows_eve_board_ghouls.title = Ghuljagd
+quest.hallows_eve_board_ghouls.flavor = Bei den Gräbern ist heute Nacht viel los. Schick die Hohlen Ghule dahin zurück, wo sie herkommen, und sei nicht zimperlich dabei.
+quest.hallows_eve_board_bombs.title = Laternenhagel
+quest.hallows_eve_board_bombs.flavor = Verballer heute Nacht einen Stapel Laternenbomben. Worauf, ist mir ziemlich egal, solange es nicht der Tempel ist.
+quest.hallows_eve_board_geodes.title = Tiefe Geoden
+quest.hallows_eve_board_geodes.flavor = Der tiefe Stein hört nicht auf zu summen, und ich kann davon nicht schlafen. Knack genug Verfluchte Geoden auf, damit er still wird.
+quest.hallows_eve_board_harvest_moon.title = Erntemond-Jagd
+quest.hallows_eve_board_harvest_moon.flavor = Der Erntemond ist aufgegangen, und die Jack-Skelette sind in Scharen unterwegs. Hau so viele um, wie du kannst, bevor er untergeht.
+
+# ---- Der Stand des Alten Jack ----
+shop.hallows_eve_old_jack.title = Stand des Alten Jack
+shop.hallows_eve_old_jack.desc = Laternenbomben, Laternen und ein paar seltsame Dinge für die Saison.
+shop.hallows_eve_old_jack.category.bombs = Laternenbomben
+shop.hallows_eve_old_jack.category.lights = Laternen
+shop.hallows_eve_old_jack.category.gear = Ausrüstung
+shop.hallows_eve_offer_harvest_moon_bundle.title = Erntemond-Paket
+shop.hallows_eve_offer_harvest_moon_bundle.desc = Epische und seltene Laternenbomben, nur zu haben, solange der Erntemond am Himmel steht.
+
+# ---- Erfolge ----
+achievement.hallows_eve_lantern_keepsake.title = Hohle Laterne {0}
+achievement.hallows_eve_lantern_keepsake.desc = Zünde mit dem Alten Jack die Hohle Laterne an.
+keepsake.hallows_eve_hollow_lantern.name = Hohle Laterne von {0}
+achievement.hallows_eve_lantern_lobber.title = Laternenwerfer {0}
+achievement.hallows_eve_lantern_lobber.desc = Wirf {0} Laternenbomben.
+achievement.hallows_eve_soul_warden.title = Seelenwächter {0}
+achievement.hallows_eve_soul_warden.desc = Befreie {0} Verlorene Seelen.
+achievement.hallows_eve_ghoul_breaker.title = Ghulbrecher {0}
+achievement.hallows_eve_ghoul_breaker.desc = Strecke {0} Hohle Ghule nieder.
+achievement.hallows_eve_geode_cracker.title = Geodenknacker {0}
+achievement.hallows_eve_geode_cracker.desc = Knacke {0} Verfluchte Geoden.
+achievement.hallows_eve_jacks_guest.title = Jacks Gast {0}
+achievement.hallows_eve_jacks_guest.desc = Sei am Allerheiligenabend dabei.
+achievement.hallows_eve_the_hallowed.title = Der Geweihte {0}
+achievement.hallows_eve_the_hallowed.desc = Erringe jeden Erfolg des Allerheiligenabends in einer Saison.
+achievement.seasons_of_orbis.title = Saisons von Orbis
+achievement.seasons_of_orbis.desc = Erringe den krönenden Erfolg jeder Saison.
+
+# ---- Der Titel Der Geweihte ----
+title.hallows_eve_hallowed.name = Der Geweihte
+title.hallows_eve_hallowed.flavor = Hat jeden Erfolg des Allerheiligenabends in einer Saison errungen.
+title.hallows_eve_hallowed.display = {0} der Geweihte
+
+# ---- Die Almanach-Seite ----
+almanac.hallows_eve.title = Allerheiligenabend
+almanac.hallows_eve.flavor = Jeden Herbst öffnet der Alte Jack den Vergessenen Tempel und zündet seine Laternen an.
+almanac.hallows_eve.bombs_thrown = Geworfene Laternenbomben
+almanac.hallows_eve.ghouls_felled = Erlegte Hohle Ghule
+almanac.hallows_eve.souls_freed = Befreite Verlorene Seelen
+almanac.hallows_eve.geodes_cracked = Geknackte Verfluchte Geoden
+
+# ---- Das Gespräch des Alten Jack ----
+dialogue.hallows_eve_old_jack.first_words.text = Stör dich nicht am Kopf. Ist ein Kürbis, und der sitzt da schon 'ne ganze Weile.\nIch bin der Alte Jack. Jeden Herbst werden die Toten unruhig, und die Laternen im <color is="#ffd97a">Vergessenen Tempel</color> gehen aus, also komm ich zurück und zünde sie an. Ich könnt ein Paar Hände gebrauchen, die nicht geschnitzt sind.
+dialogue.hallows_eve_old_jack.first_words.opt.hail = Freut mich, Jack.
+dialogue.hallows_eve_old_jack.board_fresh.text = Heute Nacht hängt neue Arbeit an meiner Tafel. Ein Auftrag, und der wird bezahlt.
+dialogue.hallows_eve_old_jack.board_fresh.opt.board = Zeig mir die Tafel.
+dialogue.hallows_eve_old_jack.board_fresh.opt.later = Später, Jack.
+dialogue.hallows_eve_old_jack.menu.text = Die Laternen brennen, und die Ghule sind unterwegs. Was brauchst du?
+dialogue.hallows_eve_old_jack.patch_offer.text = Ernte diesen Monat einen Kürbis, und hin und wieder fühlt sich einer kalt an und leuchtet ein bisschen. <b>Geweihte Kürbisse</b> nenn ich die.\nBring mir ein paar. Ich zeig dir, wofür die gut sind.
+dialogue.hallows_eve_old_jack.patch_offer.opt.accept = Ich besorg dir ein paar Kürbisse.
+dialogue.hallows_eve_old_jack.patch_brief.text = Diesen Monat kann jeder <b>Kürbis</b>, den du erntest, ein Geweihter sein. Behalt die kalten, die leuchten, und bring sie her.
+dialogue.hallows_eve_old_jack.patch_ready.text = <b>Geweihte Kürbisse</b>. Kalt wie 'ne Kellerstufe. Gut.\nMit Lampenöl gefüllt, gibt so einer eine Laternenbombe ab. Ich hab dir ein paar zu deinem Lohn gelegt. Geh und schau, wie sie brennen.
+dialogue.hallows_eve_old_jack.patch_ready.opt.turnin = Hier sind die Kürbisse.
+dialogue.hallows_eve_old_jack.lantern_work_offer.text = Eine <b>Laternenbombe</b> ist ein Geweihter Kürbis mit kurzer Lunte. Zünd sie an und wirf sie. Dann tritt zurück.\nWirf ein paar auf was, das es verdient hat, und komm und erzähl mir, wie's gelaufen ist.
+dialogue.hallows_eve_old_jack.lantern_work_offer.opt.accept = Ich werfe ein paar.
+dialogue.hallows_eve_old_jack.ghouls_offer.text = Nach Einbruch der Dunkelheit kriechen <b>Hohle Ghule</b> aus den alten Gräbern, und sie kommen hungrig raus.\nSchick ein paar von ihnen zurück unter die Erde, bevor sie die Tempelstufen finden.
+dialogue.hallows_eve_old_jack.ghouls_offer.opt.accept = Ich kümmere mich um die Ghule.
+dialogue.hallows_eve_old_jack.souls_offer.text = Arme Dinger, die <b>Verlorenen Seelen</b>. Die treiben umher, bis jemand sie gehen lässt.\nBefrei ein paar und bring mir das <b>Ektoplasma</b>, das sie zurücklassen. Meine Laternen trinken das Zeug.
+dialogue.hallows_eve_old_jack.souls_offer.opt.accept = Ich befreie sie.
+dialogue.hallows_eve_old_jack.geodes_offer.text = Grab diesen Monat tief, und der Stein bildet <b>Verfluchte Geoden</b>. Du hörst sie, bevor du sie siehst. Sie summen.\nKnack ein paar auf. Da steckt was Gutes drin, unter dem Fluch.
+dialogue.hallows_eve_old_jack.geodes_offer.opt.accept = Ich knacke ein paar auf.
+dialogue.hallows_eve_old_jack.lantern_offer.text = Jedes Jahr geht die <b>Hohle Laterne</b> aus, und jedes Jahr muss sie jemand wieder anzünden.\nEin paar von den Skeletten da draußen tragen mein Gesicht. Hau ein paar <b>Jack-Skelette</b> um, dann bring mir einen <b>Geweihten Kürbis</b> und etwas <b>Ektoplasma</b>, um sie zu füllen.
+dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Zünden wir sie an.
+dialogue.hallows_eve_old_jack.lantern_brief.text = <b>Jack-Skelette</b> streifen nachts umher. Hau ein paar um. Dann einen <b>Geweihten Kürbis</b> und das <b>Ektoplasma</b>, und wir zünden sie zusammen an.
+dialogue.hallows_eve_old_jack.lantern_ready.text = Ein <b>Geweihter Kürbis</b> und <b>Ektoplasma</b>, um ihn bis zum Rand zu füllen. Und die Skelette mit meinem Gesicht liegen im Gras, wo sie hingehören.\nHalt still. So. Die Hohle Laterne brennt, und du darfst sie behalten. Komm nächstes Jahr wieder, dann zünden wir die nächste an.
+dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = Hier ist der Kürbis, und das Ektoplasma.
+dialogue.hallows_eve_old_jack.active_generic.text = Noch unterwegs? Gut. Die Nacht ist lang, und die läuft dir nicht weg.
+dialogue.hallows_eve_old_jack.ready_generic.text = Sieht für mich erledigt aus. Zeig mal her.
+dialogue.hallows_eve_old_jack.ready_generic.opt.turnin = Ist erledigt.
+dialogue.hallows_eve_old_jack.daily_souls_offer.text = Letzte Nacht sind noch mehr <b>Verlorene Seelen</b> hergetrieben. Befrei ein paar, bevor sie sich für immer niederlassen.
+dialogue.hallows_eve_old_jack.daily_souls_offer.opt.accept = Ich kümmere mich um die Seelen.
+dialogue.hallows_eve_old_jack.daily_pumpkins_offer.text = Die Laternen verbrennen <b>Geweihte Kürbisse</b> schneller, als ich sie schnitzen kann. Bring mir vor Einbruch der Dunkelheit noch ein paar.
+dialogue.hallows_eve_old_jack.daily_pumpkins_offer.opt.accept = Ich bringe Kürbisse.
+dialogue.hallows_eve_old_jack.daily_geodes_offer.text = Der tiefe Stein summt wieder. Knack ein paar <b>Verfluchte Geoden</b> auf, bevor sie von selbst aufplatzen.
+dialogue.hallows_eve_old_jack.daily_geodes_offer.opt.accept = Ich knacke ein paar auf.
+dialogue.hallows_eve_old_jack.lantern_lit.text = Die Hohle Laterne brennt noch. Hält das Schlimmste der Dunkelheit von den Stufen fern.\nWas brauchst du?
+dialogue.hallows_eve_old_jack.who_are_you.text = Der Alte Jack. Ich hatte mal einen Hof, weit weg von hier. Dann bin ich eines Oktobers nicht heimgegangen, und seitdem komm ich jeden Oktober wieder.\nFrag mich nicht nach dem Kopf.
+dialogue.hallows_eve_old_jack.about_lantern.text = Eine Hohle Laterne ist ein Geweihter Kürbis, ausgehöhlt und mit Ektoplasma gefüllt. Zünd eine an, und die Toten halten Abstand.\nBis November sind sie ausgebrannt. Deshalb brauch ich jedes Jahr eine neue.
+dialogue.hallows_eve_old_jack.harvest_moon.text = Siehst du den Mond? Erntemond. Ein paar Nächte im Jahr geht er groß und orange auf, und alles in den Gräbern kommt mit ihm hoch.\nWenn du Arbeit willst, ist heute die Nacht. Wenn du Schlaf willst, nicht.
+dialogue.hallows_eve_old_jack.opt.returned = Ich bin zurück.
+dialogue.hallows_eve_old_jack.opt.quests = Was gibt's zu tun?
+dialogue.hallows_eve_old_jack.opt.board = Was hängt an der Tafel?
+dialogue.hallows_eve_old_jack.opt.shop = Zeig mal deinen Stand.
+dialogue.hallows_eve_old_jack.opt.almanac = Zeig mir den Almanach.
+dialogue.hallows_eve_old_jack.opt.who = Wer bist du?
+dialogue.hallows_eve_old_jack.opt.lantern = Was ist eine Hohle Laterne?
+dialogue.hallows_eve_old_jack.opt.harvest = Warum ist der Mond so groß?
+dialogue.hallows_eve_old_jack.opt.back = Etwas anderes.
+dialogue.hallows_eve_old_jack.opt.farewell = Gute Nacht, Jack.
+
+# ---- Süßes oder Saures, die Zeile, die jedes Gespräch bekommt, und ihre Meldung ----
+dialogue.hallows_eve_trick_or_treat.opt.knock = Süßes oder Saures.
+notify.hallows_eve_treat = Etwas Süßes fürs Klopfen.
