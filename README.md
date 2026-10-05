@@ -1,6 +1,6 @@
-# Hallow's Eve Pack
+# Seasons of Orbis
 
-A standalone Hytale content pack for Hallow's Eve, a yearly autumn event. It needs Ziggfreed's CommonLib (ZiggfreedCommon 2.2.0+) and RPG Stations (1.1.0+), which runs its Carving Bench. It never needs MMO Skill Tree.
+A standalone Hytale content pack of yearly events. Its first is Hallow's Eve, an autumn event. It needs Ziggfreed's CommonLib (ZiggfreedCommon 2.2.0+) and RPG Stations (1.1.0+), which runs its Carving Bench. It never needs MMO Skill Tree.
 
 From October 1 to November 3, Old Jack, a pumpkin-headed host, keeps the Forgotten Temple. He brings a questline that ends in lighting the Hollow Lantern, three dailies and a nightly board, a stall that takes Hallow Sweets, Lantern Bombs in four tiers, a Costume Wand and the Hallowed gear set. Ask any character with a conversation for a treat once a day: with MMO Skill Tree or another pack that gives characters conversations, every one of them plays along, and on this pack alone only Old Jack does. Earn the season's achievements: a yearly keepsake among them, and the title The Hallowed for earning them all. The Almanac keeps your tallies. Unspent sweets carry over to next year.
 
@@ -20,4 +20,4 @@ The Carving Bench, crafted at a Workbench, carves lanterns, the Jack Helm and La
 .\build.ps1 -Install:$false  # build only, no copy
 ```
 
-Produces `HallowsEvePack-<version>.zip` (forward-slash entries plus explicit directory entries, which the bundled `.lang` files need). The script is cross-platform (`pwsh ./build.ps1` works on macOS/Linux). To have it also copy the zip into your Hytale `Mods/` folder, set `HYTALE_MODS_DIR` once to that folder (or pass `-ModsDir <path>`).
+Produces `SeasonsOfOrbis-<version>.zip` (forward-slash entries plus explicit directory entries, which the bundled `.lang` files need). The script is cross-platform (`pwsh ./build.ps1` works on macOS/Linux). To have it also copy the zip into your Hytale `Mods/` folder, set `HYTALE_MODS_DIR` once to that folder (or pass `-ModsDir <path>`).

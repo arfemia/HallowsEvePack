@@ -1,6 +1,6 @@
-# Hallow's Eve Pack
+# Seasons of Orbis
 
-The yearly Hallow's Eve event. The family-wide rules apply here; this file adds only what is specific to this pack.
+The yearly-events pack (plugin id `Ziggfreed:SeasonsOfOrbis`; repository and folder keep the `HallowsEvePack` / `hallows-eve-pack` name), whose first event is Hallow's Eve. The family-wide rules apply here; this file adds only what is specific to this pack.
 
 - No MMO: the manifest hard-depends on ZiggfreedCommon and RPG Stations (the Carving Bench is an RPG Stations station). Author only zc and RPG Stations vocabulary and installed vanilla ids here; never an MMO id, kind or factor.
 - The MMO layer ships in the MMO jar under a `Hallows_Eve` subtree, as additive contributions (`ContributesTo`, extensions); a same-id override only where a contribution cannot express it.

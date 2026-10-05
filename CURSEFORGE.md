@@ -1,8 +1,8 @@
-# Hallow's Eve Pack
+# Seasons of Orbis
 
-Every October, Old Jack lights the lanterns in the Forgotten Temple, and the dead come out after dark.
+Yearly events for your Hytale server, starting with Hallow's Eve. Every October, Old Jack lights the lanterns in the Forgotten Temple, and the dead come out after dark.
 
-Hallow's Eve is a yearly autumn event for Hytale servers. It starts on its own on October 1 and runs to November 3, every year. You need Ziggfreed's CommonLib 2.2.0 or newer and RPG Stations 1.1.0 or newer. MMO Skill Tree is optional: with it, the season trains your skills as well.
+Hallow's Eve starts on its own on October 1 and runs to November 3, every year. You need Ziggfreed's CommonLib 2.2.0 or newer and RPG Stations 1.1.0 or newer. MMO Skill Tree is optional: with it, the season trains your skills as well.
 
 [![Discord](https://img.shields.io/badge/Discord-Join%20Server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/5NFdZsUxHZ) [![Ko-fi](https://img.shields.io/badge/Ko--fi-Support-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/ziggfreed) [![Documentation](https://img.shields.io/badge/Docs-Read%20More-0ea5e9?style=for-the-badge)](https://mmo-skill-tree-docs.ziggfreed.com)
 
@@ -55,7 +55,7 @@ Add the MMO Skill Bounty Pack 1.3.0 or newer and its Daily bounty board posts a 
 ## Install
 
 1. Install Ziggfreed's CommonLib (2.2.0 or newer) and RPG Stations (1.1.0 or newer).
-2. Drop `HallowsEvePack-1.0.0.zip` into your server's `Mods/` folder beside them.
+2. Drop `SeasonsOfOrbis-1.0.0.zip` into your server's `Mods/` folder beside them.
 3. Start the server. During the event, Old Jack is in the Forgotten Temple.
 
 ## Roadmap
@@ -85,4 +85,4 @@ Questions or suggestions? Join the [Discord](https://discord.gg/5NFdZsUxHZ) or l
 
 **Support Development:** [Ko-fi](https://ko-fi.com/ziggfreed) | [Buy Me a Coffee](https://buymeacoffee.com/wintergreensolutions)
 
-_The Hallow's Eve Pack is not affiliated with Hypixel Studios or Hytale._
+_Seasons of Orbis is not affiliated with Hypixel Studios or Hytale._

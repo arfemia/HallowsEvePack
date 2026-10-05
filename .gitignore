@@ -1,2 +1,4 @@
-# Built artifacts, produced by build.ps1 (versioned zip names, e.g. HallowsEvePack-1.0.0.zip)
+# Built artifacts, produced by build.ps1 (versioned zip names, e.g. SeasonsOfOrbis-1.0.0.zip;
+# HallowsEvePack-* is the name zips carried before 1.0.0 shipped)
+SeasonsOfOrbis*.zip
 HallowsEvePack*.zip

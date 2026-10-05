@@ -19,7 +19,7 @@ param(
 $ErrorActionPreference = 'Stop'
 
 # --- PER-PACK ---
-$PackName          = 'HallowsEvePack'       # zip base name; the manifest Version is appended
+$PackName          = 'SeasonsOfOrbis'       # zip base name; the manifest Version is appended
 $ExtraExcludeNames = @('.gitattributes') # extra top-level file names to leave out of the zip
 $ExtraExcludeDirs  = @('tools') # extra top-level dir names (at the pack root) to skip
 # ----------------
