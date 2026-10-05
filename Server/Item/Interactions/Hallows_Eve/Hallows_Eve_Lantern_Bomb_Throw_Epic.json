@@ -1,5 +1,5 @@
 {
-  "$Comment": "Throwing a Epic Lantern Bomb, in the game's own order: the throw animation, a one-second cooldown, the bomb leaves the hand (Hallows_Eve_Lantern_Bomb_Epic_Projectile), the throw counts as USE_ITEM with the Qualifier Throw, and only then is one bomb taken from the hand. Spending the bomb last is what lets the last bomb of a stack finish its own throw. A step counting thrown bombs names Target Hallows_Eve_Lantern_Bomb_Epic, or the prefix Hallows_Eve_Lantern_Bomb_ for every tier.",
+  "$Comment": "Throwing an Epic Lantern Bomb, in the game's own order: the throw animation, a one-second cooldown, the bomb leaves the hand (Hallows_Eve_Lantern_Bomb_Epic_Projectile), the throw counts as USE_ITEM with the Qualifier Throw, and only then is one bomb taken from the hand. Spending the bomb last is what lets the last bomb of a stack finish its own throw. A step counting thrown bombs names Target Hallows_Eve_Lantern_Bomb_Epic, or the prefix Hallows_Eve_Lantern_Bomb_ for every tier.",
   "Type": "Serial",
   "Interactions": [
     {"Type": "Simple", "RunTime": 0.25, "Effects": {"ItemAnimationId": "Throw"}},
