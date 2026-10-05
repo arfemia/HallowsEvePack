@@ -1,0 +1,6 @@
+{
+  "$Comment": "The Lantern Bombs' own damage. Every Lantern Bomb burst and shard deals this cause and nothing else, so a mod that rewards bomb damage can key on it. It takes Fire as its parent and inherits from it, so armor that resists fire resists a Lantern Bomb too. DamageTextColor tints the damage numbers it shows.",
+  "Parent": "Fire",
+  "Inherits": "Fire",
+  "DamageTextColor": "#FF8C1A"
+}

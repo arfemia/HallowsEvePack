@@ -1,0 +1,5 @@
+{
+  "$Comment": "A Uncommon Lantern Bomb in flight. Parent is the Common bomb's flight model; only the texture differs.",
+  "Parent": "Hallows_Eve_Lantern_Bomb_Common_Thrown",
+  "Texture": "Items/Hallows_Eve/Lantern_Bomb/Lantern_Bomb_Uncommon_Texture.png"
+}

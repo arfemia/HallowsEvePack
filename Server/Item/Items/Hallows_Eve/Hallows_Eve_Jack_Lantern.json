@@ -1,0 +1,34 @@
+{
+  "$Comment": "The Jack Lantern: a carved pumpkin with a candle inside and a warm glow. It places like any block, on the game's carved-pumpkin pattern (Deco_Halloween_Pumpkin_Scary) with this pack's model. In BlockType.Light each hex digit is a light level from 0 to 15 and roughly its reach in blocks.",
+  "TranslationProperties": {
+    "Name": "items.Hallows_Eve_Jack_Lantern.name",
+    "Description": "items.Hallows_Eve_Jack_Lantern.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Hallows_Eve_Jack_Lantern.png",
+  "Categories": ["Blocks.Deco"],
+  "Quality": "Common",
+  "Interactions": {"Primary": "Block_Primary", "Secondary": "Block_Secondary"},
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Items/Hallows_Eve/Jack_Lantern/Jack_Lantern.blockymodel",
+    "CustomModelTexture": [
+      {"Texture": "Items/Hallows_Eve/Jack_Lantern/Jack_Lantern_Texture.png", "Weight": 1}
+    ],
+    "Group": "Wood",
+    "HitboxType": "Plant_Full",
+    "VariantRotation": "NESW",
+    "Light": {"Radius": 8, "Color": "#ec9"},
+    "Flags": {},
+    "Gathering": {"Breaking": {"GatherType": "Woods"}},
+    "BlockParticleSetId": "Stone",
+    "BlockSoundSetId": "Plushie",
+    "PhysicalMaterialId": "Wool",
+    "TextureComputedColor": "#A14A09"
+  },
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {"Scale": 0.6, "Rotation": [22.5, 45.0, 22.5], "Translation": [-1.0, -15.0]},
+  "Tags": {"Type": ["Deco"]},
+  "ItemSoundSetId": "ISS_Blocks_Wood"
+}

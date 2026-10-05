@@ -1,0 +1,42 @@
+{
+  "$Comment": "One flaming shard of a Shattering Lantern Bomb, on the game's Fireball model. The Epic blast throws four, each on its own config a quarter turn apart (this one straight ahead, then Right, Back and Left, which change only SpawnRotationOffset.Yaw), with the blast's own pitch ignored and 35 degrees of lift added so each arcs before it falls. A shard bursts with Hallows_Eve_Lantern_Shard_Burst on whatever it strikes, creature or ground, or after a second and a half in the air, and is removed. LaunchForce sets how far the shards fly.",
+  "Model": "Fireball",
+  "SpawnRotationOffset": {"Pitch": 35, "Yaw": 0, "Roll": 0},
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 15,
+    "TerminalVelocityAir": 50,
+    "TerminalVelocityWater": 15,
+    "RotationMode": "VelocityDamped",
+    "Bounciness": 0.0,
+    "SticksVertically": true
+  },
+  "LaunchForce": 10,
+  "SpawnOffset": {"X": 0, "Y": 0.2, "Z": 0},
+  "Interactions": {
+    "ProjectileSpawn": {
+      "Cooldown": {"Cooldown": 0},
+      "Interactions": [
+        {"Type": "Simple", "RunTime": 1.5},
+        "Hallows_Eve_Lantern_Shard_Burst",
+        {"Type": "RemoveEntity", "Entity": "User"}
+      ]
+    },
+    "ProjectileHit": {
+      "Cooldown": {"Cooldown": 0},
+      "Rules": {"Interrupting": ["ProjectileSpawn"]},
+      "Interactions": [
+        "Hallows_Eve_Lantern_Shard_Burst",
+        {"Type": "RemoveEntity", "Entity": "User"}
+      ]
+    },
+    "ProjectileMiss": {
+      "Cooldown": {"Cooldown": 0},
+      "Rules": {"Interrupting": ["ProjectileSpawn"]},
+      "Interactions": [
+        "Hallows_Eve_Lantern_Shard_Burst",
+        {"Type": "RemoveEntity", "Entity": "User"}
+      ]
+    }
+  }
+}

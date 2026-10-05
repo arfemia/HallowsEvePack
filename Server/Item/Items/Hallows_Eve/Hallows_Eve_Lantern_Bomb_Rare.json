@@ -1,0 +1,13 @@
+{
+  "$Comment": "The Rare Lantern Bomb. Parent is the Uncommon bomb, so every leaf not restated here is inherited, MaxStack included; its blast burns and slows what it catches (Hallows_Eve_Lantern_Bomb_Burst_Rare).",
+  "Parent": "Hallows_Eve_Lantern_Bomb_Uncommon",
+  "TranslationProperties": {
+    "Name": "items.Hallows_Eve_Lantern_Bomb_Rare.name",
+    "Description": "items.Hallows_Eve_Lantern_Bomb_Rare.description"
+  },
+  "Quality": "Rare",
+  "ItemLevel": 30,
+  "Interactions": {"Primary": {"Interactions": ["Hallows_Eve_Lantern_Bomb_Throw_Rare"]}},
+  "Texture": "Items/Hallows_Eve/Lantern_Bomb/Lantern_Bomb_Rare_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Hallows_Eve_Lantern_Bomb_Rare.png"
+}

@@ -1,0 +1,5 @@
+{
+  "$Comment": "A Shattering Lantern Bomb's shard thrown 270 degrees round from the first. Parent is the first shard; only the yaw differs, and SpawnRotationOffset replaces whole, so pitch and roll are restated.",
+  "Parent": "Hallows_Eve_Lantern_Shard_Projectile",
+  "SpawnRotationOffset": {"Pitch": 35, "Yaw": 270, "Roll": 0}
+}

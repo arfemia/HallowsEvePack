@@ -1,0 +1,18 @@
+{
+  "$Comment": "The Jack Shield, the other half of the Hallowed set. Parent is the game's shield template, so it guards, bashes and spends stamina like the game's mid-tier shields; this file changes its look, name, quality and the stats it gives from the utility slot (Utility.StatModifiers, which the game applies to the item in that slot). The set counts it only in the utility slot, never in the main hand.",
+  "Parent": "Template_Weapon_Shield",
+  "TranslationProperties": {
+    "Name": "items.Hallows_Eve_Jack_Shield.name",
+    "Description": "items.Hallows_Eve_Jack_Shield.description"
+  },
+  "Model": "Items/Hallows_Eve/Jack_Shield/Jack_Shield.blockymodel",
+  "Texture": "Items/Hallows_Eve/Jack_Shield/Jack_Shield_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Hallows_Eve_Jack_Shield.png",
+  "Quality": "Rare",
+  "ItemLevel": 20,
+  "ItemSoundSetId": "ISS_Weapons_Shield_Wood",
+  "Utility": {
+    "Usable": true,
+    "StatModifiers": {"Health": [{"Amount": 4, "CalculationType": "Additive"}]}
+  }
+}

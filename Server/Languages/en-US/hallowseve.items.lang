@@ -1,0 +1,4 @@
+# Hallow's Eve pack - the Hallowed set's words. Keys are written bare: the library finds each one by
+# its tail, whatever this file is called. The set's notice is a toast, so no value carries markup.
+gearset.hallows_eve_hallowed.title = Hallowed Set
+gearset.hallows_eve_hallowed.tier_full = Helm on and shield in hand. You glow like a lantern, and fire bites less.
