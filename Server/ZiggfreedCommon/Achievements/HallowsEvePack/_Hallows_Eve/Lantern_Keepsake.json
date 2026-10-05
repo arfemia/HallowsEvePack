@@ -1,0 +1,36 @@
+{
+  "$Comment": [
+    "The yearly keepsake: light the Hollow Lantern with Old Jack, once a season, and keep it.",
+    "",
+    "It inherits the yearly occurrence from Hallows_Eve_Hallowed_Base, so each year mints its own",
+    "copy and @year in the title reads as that year. Feat files it with the feats, earned only.",
+    "The hallowed tag counts it toward The Hallowed. The reward is Auto: the lantern lands the",
+    "moment the questline's last quest is finished."
+  ],
+  "Parent": "Hallows_Eve_Hallowed_Base",
+  "Text": {
+    "TitleKey": "achievement.hallows_eve_lantern_keepsake.title",
+    "FlavorKey": "achievement.hallows_eve_lantern_keepsake.desc",
+    "TextArgs": { "Title": [ "@year" ] }
+  },
+  "Listing": {
+    "SortOrder": 10,
+    "Icon": "Hallows_Eve_Hollow_Lantern",
+    "Tags": [ "hallowed" ],
+    "Feat": true
+  },
+  "Scoring": { "Points": 25 },
+  "Criteria": {
+    "light-the-lantern": {
+      "Kind": "COMPLETE_QUEST",
+      "Target": "hallows_eve_old_jack_lantern",
+      "MatchMode": "EXACT",
+      "Amount": 1
+    }
+  },
+  "Rewards": {
+    "Auto": [
+      { "Kind": "Item", "Params": { "Item": "Hallows_Eve_Hollow_Lantern", "Count": "1" } }
+    ]
+  }
+}

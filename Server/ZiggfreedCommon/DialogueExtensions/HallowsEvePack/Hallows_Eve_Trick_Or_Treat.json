@@ -1,0 +1,30 @@
+{
+  "Name": "Hallows_Eve_Trick_Or_Treat",
+  "$Comment": [
+    "Trick-or-treat: one line this file adds to every conversation on the server, on the screens a",
+    "conversation opens on, while Hallow's Eve runs.",
+    "",
+    "Once with Period Daily, keyed by OnceId, is spent with every character at once: a player gets",
+    "one treat or trick a day, wherever they ask, and the line comes back at midnight UTC. The",
+    "Factor condition hides it whenever the event is off. Grant rolls the lootable",
+    "Hallows_Eve_Trick_Or_Treat, which always pays a few sweets with a notice and then draws one",
+    "more treat or a costume trick, and Close ends the conversation, since a line added to another",
+    "character's conversation has no screen of its own to go to. Add a Dialogues block with an",
+    "Exclude list to keep it out of a conversation, or set Enabled false in a file of the same name",
+    "to take it out everywhere."
+  ],
+  "Options": [
+    {
+      "LabelKey": "dialogue.hallows_eve_trick_or_treat.opt.knock",
+      "OnceId": "trick_or_treat",
+      "Once": { "Period": "Daily" },
+      "Style": "neutral",
+      "Presentation": { "Icon": { "Item": "Halloween_Basket_Pumpkin" } },
+      "Conditions": [
+        { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
+      ],
+      "Grant": [ { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Trick_Or_Treat" } } ],
+      "Close": true
+    }
+  ]
+}

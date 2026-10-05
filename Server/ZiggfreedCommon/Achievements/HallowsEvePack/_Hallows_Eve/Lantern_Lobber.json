@@ -1,0 +1,24 @@
+{
+  "$Comment": "Throw Lantern Bombs during one season. USE_ITEM with the Qualifier Throw counts every tier through the PREFIX match. The description's number comes from the criterion's Amount through @amount, so a retune touches no translation.",
+  "Parent": "Hallows_Eve_Hallowed_Base",
+  "Text": {
+    "TitleKey": "achievement.hallows_eve_lantern_lobber.title",
+    "FlavorKey": "achievement.hallows_eve_lantern_lobber.desc",
+    "TextArgs": { "Title": [ "@year" ], "Flavor": [ "@amount" ] }
+  },
+  "Listing": {
+    "SortOrder": 20,
+    "Icon": "Hallows_Eve_Lantern_Bomb_Common",
+    "Tags": [ "hallowed" ]
+  },
+  "Criteria": {
+    "throw-lantern-bombs": {
+      "Kind": "USE_ITEM",
+      "Target": "Hallows_Eve_Lantern_Bomb_",
+      "MatchMode": "PREFIX",
+      "Qualifier": "Throw",
+      "Amount": 50,
+      "TextKey": "objective.hallows_eve.throw_bombs"
+    }
+  }
+}

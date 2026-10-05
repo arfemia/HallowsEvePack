@@ -1,0 +1,24 @@
+{
+  "$Comment": "Be on the server while Hallow's Eve runs. CALENDAR_ATTENDED fires once per player for each year's run of the event, when the player is first in the world while it runs, so this is the season's welcome. The criterion's TextKey words the step, since the shared sentence names the event by its raw id.",
+  "Parent": "Hallows_Eve_Hallowed_Base",
+  "Text": {
+    "TitleKey": "achievement.hallows_eve_jacks_guest.title",
+    "FlavorKey": "achievement.hallows_eve_jacks_guest.desc",
+    "TextArgs": { "Title": [ "@year" ] }
+  },
+  "Listing": {
+    "SortOrder": 5,
+    "Icon": "Hallows_Eve_Jack_Lantern",
+    "Tags": [ "hallowed" ]
+  },
+  "Scoring": { "Points": 5 },
+  "Criteria": {
+    "attend-hallows-eve": {
+      "Kind": "CALENDAR_ATTENDED",
+      "Target": "Hallows_Eve",
+      "MatchMode": "EXACT",
+      "Amount": 1,
+      "TextKey": "objective.hallows_eve.attend"
+    }
+  }
+}

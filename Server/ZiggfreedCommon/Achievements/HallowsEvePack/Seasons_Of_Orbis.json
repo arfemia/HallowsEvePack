@@ -1,0 +1,13 @@
+{
+  "$Comment": "Seasons of Orbis: the cross-season capstone over each seasonal event's crowning achievement. It stays switched off, with no children, while only one seasonal event exists. It is filed under Seasons with no subcategory, which is where the Almanac looks for its banner.",
+  "Enabled": false,
+  "Text": {
+    "TitleKey": "achievement.seasons_of_orbis.title",
+    "FlavorKey": "achievement.seasons_of_orbis.desc"
+  },
+  "Listing": {
+    "Category": "Seasons",
+    "Icon": "Hallows_Eve_Hollow_Lantern"
+  },
+  "MetaChildren": []
+}
