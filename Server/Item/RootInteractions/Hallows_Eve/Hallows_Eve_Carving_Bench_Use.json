@@ -1,0 +1,7 @@
+{
+  "$Comment": "Pressing F on a Carving Bench: one call to RPG Stations' station interaction, naming the station by its id, the file name of RpgStations/Stations/Hallows_Eve_Carving_Bench.json in lower case. A plain press starts or stops carving; a sneaking press opens the recipe picker.",
+  "Cooldown": {"Id": "BlockInteraction", "Cooldown": 0.278, "ClickBypass": true},
+  "Interactions": [
+    {"Type": "rpg_station_use", "Station": "hallows_eve_carving_bench"}
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "$Comment": "The Carving Bench station (id hallows_eve_carving_bench, its file name in lower case). Two actions, in priority order: Carve_Hallowed runs when you hold a Hallowed Pumpkin, and only while Hallow's Eve runs (its Requires reads ziggfreedcommon:calendar_live, so off-season the bench turns the press away); Carve runs for anything else, all year. Each works from your bag, one recipe row per cycle. With more than one row a sneaking press opens the picker so you choose the row, and a plain press runs the first row your bag can pay for. Rows are Recipe.Conversions: change an Input or Output Quantity to rebalance, or add a row. Work.CycleMs is the time one carve takes.",
+  "Identity": {
+    "NameKey": "rpgstations.station.hallows_eve_carving_bench.name",
+    "DescKey": "rpgstations.station.hallows_eve_carving_bench.desc"
+  },
+  "Block": {"Exclusive": true},
+  "Actions": [
+    {
+      "Id": "Carve_Hallowed",
+      "Label": "rpgstations.action.hallows_eve_carving_bench.carve_hallowed.label",
+      "Select": {"ItemId": "Hallows_Eve_Hallowed_Pumpkin"},
+      "Requires": {
+        "Conditions": [
+          {"Factor": "ziggfreedcommon:calendar_live", "Param": "Hallows_Eve", "Min": 1}
+        ]
+      },
+      "Recipe": {
+        "Conversions": [
+          {
+            "Input": [
+              {"ItemId": "Hallows_Eve_Hallowed_Pumpkin", "Quantity": 2},
+              {"ItemId": "Weapon_Shield_Wood", "Quantity": 1}
+            ],
+            "Output": [{"ItemId": "Hallows_Eve_Jack_Shield", "Quantity": 1}]
+          }
+        ]
+      },
+      "Work": {"CycleMs": 6000, "MaxDurationMs": 600000},
+      "Worker": {
+        "Hold": {"MovementLock": true, "EffectId": "RPG_Station_Hold", "InterruptOnDamage": true},
+        "Animation": {"Swing": {"IntervalMs": 933}}
+      },
+      "Moments": {
+        "Cycle": {
+          "Sounds": ["SFX_Wood_Break"],
+          "Particles": [
+            {"SystemId": "Block_Gem_Sparks", "Color": "#ffd97a", "Scale": 1.2}
+          ]
+        }
+      }
+    },
+    {
+      "Id": "Carve",
+      "Label": "rpgstations.action.hallows_eve_carving_bench.carve.label",
+      "Recipe": {
+        "Conversions": [
+          {
+            "Input": [
+              {"ItemId": "Ingredient_Charcoal", "Quantity": 1},
+              {"ItemId": "Plant_Crop_Pumpkin_Item", "Quantity": 1}
+            ],
+            "Output": [{"ItemId": "Hallows_Eve_Jack_Lantern", "Quantity": 1}]
+          },
+          {
+            "Input": [
+              {"ItemId": "Hallows_Eve_Ectoplasm", "Quantity": 2},
+              {"ItemId": "Plant_Crop_Pumpkin_Item", "Quantity": 1}
+            ],
+            "Output": [{"ItemId": "Hallows_Eve_Ecto_Lantern", "Quantity": 1}]
+          },
+          {
+            "Input": [
+              {"ItemId": "Ingredient_Leather_Light", "Quantity": 2},
+              {"ItemId": "Plant_Crop_Pumpkin_Item", "Quantity": 2},
+              {"ItemId": "Ingredient_Charcoal", "Quantity": 1}
+            ],
+            "Output": [{"ItemId": "Hallows_Eve_Jack_Helm", "Quantity": 1}]
+          },
+          {
+            "Input": [
+              {"ItemId": "Ingredient_Powder_Boom", "Quantity": 3},
+              {"ItemId": "Plant_Crop_Pumpkin_Item", "Quantity": 1}
+            ],
+            "Output": [
+              {"ItemId": "Hallows_Eve_Lantern_Bomb_Common", "Quantity": 3}
+            ]
+          },
+          {
+            "Input": [
+              {"ItemId": "Hallows_Eve_Lantern_Bomb_Common", "Quantity": 3},
+              {"ItemId": "Ingredient_Fire_Essence", "Quantity": 1}
+            ],
+            "Output": [
+              {"ItemId": "Hallows_Eve_Lantern_Bomb_Uncommon", "Quantity": 3}
+            ]
+          },
+          {
+            "Input": [
+              {"ItemId": "Hallows_Eve_Lantern_Bomb_Uncommon", "Quantity": 3},
+              {"ItemId": "Hallows_Eve_Ectoplasm", "Quantity": 2}
+            ],
+            "Output": [{"ItemId": "Hallows_Eve_Lantern_Bomb_Rare", "Quantity": 3}]
+          },
+          {
+            "Input": [
+              {"ItemId": "Hallows_Eve_Lantern_Bomb_Rare", "Quantity": 3},
+              {"ItemId": "Hallows_Eve_Cursed_Geode", "Quantity": 1}
+            ],
+            "Output": [{"ItemId": "Hallows_Eve_Lantern_Bomb_Epic", "Quantity": 3}]
+          }
+        ]
+      },
+      "Work": {"CycleMs": 4000, "MaxDurationMs": 600000},
+      "Worker": {
+        "Hold": {"MovementLock": true, "EffectId": "RPG_Station_Hold", "InterruptOnDamage": true},
+        "Animation": {"Swing": {"IntervalMs": 933}}
+      },
+      "Moments": {"Cycle": {"Sounds": ["SFX_Wood_Break"]}}
+    }
+  ]
+}
