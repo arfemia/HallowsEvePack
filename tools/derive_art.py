@@ -1,24 +1,34 @@
 #!/usr/bin/env python3
-"""Derives the Hallow's Eve jack-o'-lantern art from one seed model.
+"""Derives the Hallow's Eve art from one seed model and a few vendored vanilla files.
 
     python tools/derive_art.py              # regenerate every output into the pack
     python tools/derive_art.py --check      # validate and compare with the tree; writes nothing
     python tools/derive_art.py --out DIR    # write the outputs under DIR instead of the pack
-    python tools/derive_art.py --seed DIR   # read the seed from DIR
+    python tools/derive_art.py --seed DIR   # read the seed (and DIR/vanilla) from DIR
+    python tools/derive_art.py --vendor ZIP # refresh tools/seed/vanilla/ from a game Assets.zip
 
 The seed is JackoLantern01.blockymodel and JackoLantern01_Texture.png, read from tools/seed/
 (a byte copy, kept beside the tool so the pack rebuilds from its own repo) unless --seed
-names another folder. A rerun writes byte-identical files: nothing here is random, and PNGs
-carry no metadata.
+names another folder. The vanilla inputs are byte copies of ten files from the installed
+game's Assets.zip, kept under tools/seed/vanilla/ at their Assets.zip paths (VANILLA_FILES);
+--vendor rewrites them from the Assets.zip it is given. A rerun writes byte-identical
+files: nothing here is random, and PNGs carry no metadata.
 
 What it writes (pack-relative):
-  Common/Items/Hallows_Eve/<Model>/<Model>.blockymodel  five models, each a vanilla rig
-      around the seed's `Base` box; scaling goes through `shape.stretch`, so every
-      `settings.size` stays the seed's integer and the UVs stay locked to it.
-  Common/Items/Hallows_Eve/<Model>/*_Texture.png        Pillow/numpy variants of the seed
-      texture, 64x64, with the fuse and handle painted into pixels the seed leaves empty.
-  Common/Icons/ItemsGenerated/Hallows_Eve_*.png         64x64 icons from a small
+  Common/Items/Hallows_Eve/<Model>/<Model>.blockymodel  seven item models, each a vanilla
+      rig around seed or scripted geometry; scaling goes through `shape.stretch`, so every
+      `settings.size` stays an integer and the UVs stay locked to it.
+  Common/Items/Hallows_Eve/<Model>/*_Texture.png        Pillow/numpy textures: variants of
+      the seed texture, recolours of the vanilla wand and essence textures, and the painted
+      Cursed Geode.
+  Common/Blocks/Hallows_Eve/Carving_Bench/              the Carving Bench: the vanilla
+      Workbench rig with carving props on it, and its 128x128 atlas.
+  Common/NPC/Hallows_Eve/<Mob>/                         the Lost Soul (on the Spirit_Ember
+      rig) and the Geode Wraith (on the Wraith rig): every vanilla node kept, so the vanilla
+      animations still drive them, plus a recoloured texture.
+  Common/Icons/ItemsGenerated/Hallows_Eve_*.png         64x64 item icons from a small
       orthographic renderer at each family's vanilla IconProperties angle.
+  Common/Icons/ModelsGenerated/Hallows_Eve_*.png        128x128 model icons for the two mobs.
 
 Format facts this relies on (hytale-shared-source and the Hytale Blockbench plugin):
   - A node's shape is centred at position + orientation * offset, in its parent's frame,
@@ -27,6 +37,9 @@ Format facts this relies on (hytale-shared-source and the Hytale Blockbench plug
     every stretch, offset and child position by k.
   - A textureLayout face covers `offset` plus the face's size; a mirrored axis runs from
     `offset` back towards zero (hytale_plugin.js, the textureLayout parse).
+  - A vanilla animation drives nodes by name, so a derived model that keeps every vanilla
+    node name (adding nodes, or hiding a shape with `visible: false`) animates as the vanilla
+    model does.
 """
 import argparse
 import copy
@@ -34,6 +47,7 @@ import io
 import json
 import math
 import sys
+import zipfile
 from pathlib import Path
 
 import numpy as np
@@ -45,8 +59,11 @@ DEFAULT_SEED = TOOLS / "seed"
 SEED_MODEL = "JackoLantern01.blockymodel"
 SEED_TEXTURE = "JackoLantern01_Texture.png"
 
-ITEMS = "Common/Items/Hallows_Eve"
+HE_ITEMS = "Items/Hallows_Eve"      # Common/-relative, the way an item or block JSON names a file
+HE_BLOCKS = "Blocks/Hallows_Eve"
+HE_NPCS = "NPC/Hallows_Eve"
 ICONS = "Common/Icons/ItemsGenerated"
+MODEL_ICONS = "Common/Icons/ModelsGenerated"
 
 # --- scale -------------------------------------------------------------------------------
 
@@ -180,6 +197,9 @@ ANGLE_SHIELD = (315, 270, 0)            # Weapon/Shield/Template_Weapon_Shield.j
 # so the strap and neck rim show and the helm never renders as the lantern's twin.
 ANGLE_HELM = (15, 45, 15)
 ANGLE_BLOCK = (22.5, 45, 22.5)          # Deco/Deco_Halloween_Pumpkin_Scary.json
+ANGLE_WAND = (45, 90, 0)                # Weapon/Wand/Weapon_Wand_Wood.json
+ANGLE_ESSENCE = (0, 0, 0)               # Ingredient/Ingredient_Life_Essence.json
+ANGLE_CRYSTAL = (34.315, 29.815, 22.5)  # Ingredient/Crystal/Ingredient_Crystal_Purple.json
 
 # --- quality colours: Server/Item/Qualities/<Quality>.json TextColor ------------------------
 
@@ -190,6 +210,93 @@ TIERS = {
     "Rare": ("#2770b7", 0.75, 1.15),
     "Epic": ("#8b339e", 0.82, 1.3),
 }
+
+# --- vanilla inputs: byte copies of the installed game's files, under tools/seed/vanilla/ ----
+# Keys are Common/-relative, as a model or item JSON names them. Each one is identical in the
+# live 0.6.8 Assets.zip and in Update 7's pre-release Assets.zip.
+
+WORKBENCH = "Blocks/Benches/Workbench.blockymodel"
+WORKBENCH_TEXTURE = "Blocks/Benches/Workbench_Texture.png"
+WAND = "Items/Weapons/Wand/Wood.blockymodel"
+WAND_TEXTURE = "Items/Weapons/Wand/Wood_Texture.png"
+SPIRIT = "NPC/Elemental/Spirit_Ember/Models/Model.blockymodel"
+SPIRIT_TEXTURE = "NPC/Elemental/Spirit_Ember/Models/Texture.png"
+WRAITH = "NPC/Undead/Wraith/Models/Model.blockymodel"
+WRAITH_TEXTURE = "NPC/Undead/Wraith/Models/Texture.png"
+ESSENCE = "Resources/Ingredients/Essence.blockymodel"
+ESSENCE_TEXTURE = "Resources/Ingredients/Essence_Textures/Life_Essence_Texture.png"
+VANILLA_FILES = tuple(f"Common/{rel}" for rel in (
+    WORKBENCH, WORKBENCH_TEXTURE, WAND, WAND_TEXTURE, SPIRIT, SPIRIT_TEXTURE,
+    WRAITH, WRAITH_TEXTURE, ESSENCE, ESSENCE_TEXTURE))
+
+# --- the Cursed Geode: a scripted stone with a lit crack (64x64 texture, x, y, w, h) ---------
+
+GEODE_SHELL = (14, 12, 14)      # the main stone, in px
+GEODE_FRONT = (0, 0, 14, 12)    # stone with the crack cut through it (transparent pixels)
+GEODE_SIDE = (14, 0, 14, 12)    # stone: back, right, left; the lumps take sub-rects of it
+GEODE_TOP = (28, 0, 14, 14)     # stone: top and bottom
+GEODE_GLOW = (42, 0, 12, 12)    # the cursed light behind the crack
+GEODE_CRYSTAL_SIDE = (0, 16, 3, 7)
+GEODE_CRYSTAL_TOP = (3, 16, 3, 3)
+# The crack's column on each of the front face's 12 rows; rows 4-7 are two pixels wide.
+GEODE_CRACK = (7, 7, 6, 6, 6, 7, 8, 8, 7, 6, 6, 7)
+GEODE_WIDE_ROWS = (4, 5, 6, 7)
+GEODE_LUMPS = [
+    # name, centre (from the shell's centre), size, yaw in degrees: kept off the front face
+    ("Shell2", (-3, 4, -2), (10, 8, 12), 20),
+    ("Shell3", (3, -3, 0), (12, 6, 10), -15),
+]
+GEODE_CRYSTALS = [
+    # name, root on the top face (from the shell's centre), size, (pitch, roll) in degrees
+    ("Crystal", (0.5, 5, 1), (3, 7, 3), (8, -12)),
+    ("Crystal2", (-2.5, 5, -1), (2, 5, 2), (0, 25)),
+    ("Crystal3", (3, 5, -2), (3, 6, 3), (-10, -35)),
+]
+
+# --- the Carving Bench: the vanilla Workbench with carving props (128x128 atlas) -------------
+
+BENCH_SIZE = (128, 128)         # the Workbench's 128x64 texture on top, the seed's 64x64 below
+BENCH_SEED_AT = (0, 64)         # where the seed texture sits on the bench atlas
+BLADE = (64, 64, 8, 8)          # the carving knife's steel, on the bench atlas
+BENCH_BITS = (4, 96)            # 2x2 of rind on the atlas, for the carved-out pieces
+K_BENCH_LANTERN = 0.6           # an 18 px jack-o'-lantern on the tabletop
+K_BENCH_PUMPKIN = 0.3           # 9 px pumpkins stored on the lower shelf
+TABLETOP_Y = 32                 # the Workbench's tabletop surface, in model px
+SHELF_Y = 16.5                  # the Workbench's lower shelf (Base2) surface
+# World positions (model px), placed clear of the Workbench's spool, papers, hammer, screws
+# and vice, inside the Bench_Workbench hitbox (x -48..16, z -16..16).
+BENCH_LANTERN_AT = (-36, -6)    # x, z on the tabletop, left end, carved face to the front (+Z)
+BENCH_PUMPKINS_AT = ((-28, 0), (-14, 0))    # x, z on the shelf
+BENCH_KNIFE_AT = (-4, 13)       # x, z of the handle: the knife lies along the front edge
+BENCH_KNIFE_YAW = 100           # degrees about Y: the blade points to +X
+BENCH_BITS_AT = ((-24, 11), (-21, 13))      # x, z: two carved-out pieces of rind
+
+# --- the mobs (G7): vanilla rigs kept whole, with their own texture ---------------------------
+
+# The Lost Soul is the Spirit_Ember rig without its horns: a pale soul with a mint glow.
+LOST_SOUL_HIDDEN_PREFIXES = ("R-Horn", "L-Horn")
+# The Geode Wraith is the Wraith rig with amethyst growing out of its back and shoulders.
+WRAITH_TEXTURE_GROWTH = 32      # rows added under the Wraith's 352x192 texture for the crystals
+WRAITH_CRYSTAL_SIDE = (0, 192, 6, 16)   # on the grown Geode Wraith texture
+WRAITH_CRYSTAL_TOP = (6, 192, 6, 6)
+WRAITH_CRYSTALS = [
+    # name, parent node, root (from the parent's centre), size, (pitch, roll) in degrees
+    ("Crystal_Back", "Chest", (-6, 6, -10.5), (6, 16, 6), (-40, 10)),
+    ("Crystal_Back2", "Chest", (5, 9, -10.5), (5, 13, 5), (-55, -15)),
+    ("Crystal_Back3", "Chest", (0, -3, -10.5), (4, 10, 4), (-70, 5)),
+    ("Crystal_L_Shoulder", "L-Shoulder", (2, 4, 0), (4, 11, 4), (5, -30)),
+    ("Crystal_R_Shoulder", "R-Shoulder", (-2, 4, 0), (4, 11, 4), (-5, 30)),
+]
+ANGLE_MODEL = (10, 25, 0)       # the mobs' model icons: nearly front-on, like vanilla's
+
+# --- the Costume Wand: the vanilla wood wand's texture, recoloured by the nodes it skins -----
+
+WAND_PARTS = [
+    # node names, the colour they turn, strength, brightness gain on that colour
+    (("Handle", "Handle2", "Stick"), "#3b2448", 0.85, 1.25),   # blackened wood, a violet cast
+    (("Leave_Staff", "Leave_Staff2"), "#f28a1e", 0.9, 1.35),   # the leaves turn pumpkin orange
+    (("Rope3", "Rope4"), "#8fd14a", 0.85, 1.2),                # a green cord
+]
 
 
 # =========================================================================================
@@ -320,6 +427,144 @@ def fuse_chain(body_half_height):
 
 
 # =========================================================================================
+# Vanilla inputs and node frames
+# =========================================================================================
+
+def load_vanilla(seed_dir):
+    """The vendored vanilla inputs: {Common/-relative path: model dict, or RGBA uint8 array}."""
+    out = {}
+    for rel in VANILLA_FILES:
+        path = seed_dir / "vanilla" / rel
+        key = rel[len("Common/"):]
+        if key.endswith(".blockymodel"):
+            out[key] = json.loads(path.read_text(encoding="utf-8"))
+        else:
+            with Image.open(path) as image:
+                out[key] = np.array(image.convert("RGBA"))
+    return out
+
+
+def vendor(zip_path, seed_dir):
+    """Copies VANILLA_FILES out of a game Assets.zip into seed_dir/vanilla, byte for byte."""
+    with zipfile.ZipFile(zip_path) as archive:
+        for rel in VANILLA_FILES:
+            target = seed_dir / "vanilla" / rel
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes(archive.read(rel))
+    return len(VANILLA_FILES)
+
+
+def vanilla_root(model):
+    """A copy of a vanilla model's single root node, ids dropped (finish_model renumbers)."""
+    if len(model["nodes"]) != 1:
+        raise ValueError(f"expected one root node, found {len(model['nodes'])}")
+    root = copy.deepcopy(model["nodes"][0])
+    for node in walk([root]):
+        node.pop("id", None)
+    return root
+
+
+def find_node(root, name):
+    return next(n for n in walk([root]) if n["name"] == name)
+
+
+def q_mul(a, b):
+    """Quaternion product a * b, each (x, y, z, w)."""
+    ax, ay, az, aw = a
+    bx, by, bz, bw = b
+    return (aw * bx + ax * bw + ay * bz - az * by,
+            aw * by - ax * bz + ay * bw + az * bx,
+            aw * bz + ax * by - ay * bx + az * bw,
+            aw * bw - ax * bx - ay * by - az * bz)
+
+
+def q_rot(q, v):
+    """Turns vector v by the unit quaternion q (x, y, z, w)."""
+    x, y, z, w = q
+    tx, ty, tz = 2 * (y * v[2] - z * v[1]), 2 * (z * v[0] - x * v[2]), 2 * (x * v[1] - y * v[0])
+    return (v[0] + w * tx + (y * tz - z * ty),
+            v[1] + w * ty + (z * tx - x * tz),
+            v[2] + w * tz + (x * ty - y * tx))
+
+
+def q_axis(axis, degrees):
+    """A unit quaternion (x, y, z, w) turning `degrees` about the 'x', 'y' or 'z' axis."""
+    half = math.radians(degrees) / 2
+    s, c = math.sin(half), math.cos(half)
+    return {"x": (s, 0.0, 0.0, c), "y": (0.0, s, 0.0, c), "z": (0.0, 0.0, s, c)}[axis]
+
+
+def node_frames(root):
+    """{id(node): (centre, orientation)} in model px for every node under `root`.
+
+    The centre is where a node's shape sits and where its children hang: position plus
+    orientation * offset, in the parent's frame (BlockyModelBoundsParser)."""
+    frames = {}
+
+    def visit(node, parent_centre, parent_ori):
+        ori = tuple(float(node["orientation"][a]) for a in "xyzw")
+        norm = math.sqrt(sum(c * c for c in ori))
+        ori = tuple(c / norm for c in ori)
+        pos = tuple(float(node["position"][a]) for a in "xyz")
+        off = tuple(float((node.get("shape") or {}).get("offset", {}).get(a, 0)) for a in "xyz")
+        local = tuple(p + o for p, o in zip(pos, q_rot(ori, off)))
+        centre = tuple(c + l for c, l in zip(parent_centre, q_rot(parent_ori, local)))
+        world_ori = q_mul(parent_ori, ori)
+        frames[id(node)] = (centre, world_ori)
+        for child in node.get("children", []):
+            visit(child, centre, world_ori)
+
+    visit(root, (0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 1.0))
+    return frames
+
+
+def hang(child, parent, frames, world_centre):
+    """Hangs `child` from `parent` so that the child's shape is centred at `world_centre`."""
+    centre, ori = frames[id(parent)]
+    inverse = (-ori[0], -ori[1], -ori[2], ori[3])
+    local = q_rot(inverse, tuple(w - c for w, c in zip(world_centre, centre)))
+    child_ori = tuple(child["orientation"][a] for a in "xyzw")
+    off = tuple(child["shape"]["offset"][a] for a in "xyz")
+    child["position"] = vec(tuple(l - o for l, o in zip(local, q_rot(child_ori, off))))
+    parent.setdefault("children", []).append(child)
+
+
+def rename_subtree(node, name):
+    """Names a seed body `name` and each of its children `<name>_<child>` (Glow, Stem, Stem2)."""
+    node["name"] = name
+    for child in node.get("children", []):
+        child["name"] = f"{name}_{child['name']}"
+
+
+def shift_uv(node, dx, dy):
+    """Moves every face of a subtree by (dx, dy) on its texture: the seed's place on an atlas."""
+    for n in walk([node]):
+        for entry in (n.get("shape") or {}).get("textureLayout", {}).values():
+            entry["offset"] = {"x": entry["offset"]["x"] + dx, "y": entry["offset"]["y"] + dy}
+
+
+def quad_node(name, position, orientation, size, rect, shading="fullbright"):
+    """A two-sided quad facing +Z, its one face at `rect` (the seed's Glow shape)."""
+    return {
+        "name": name,
+        "position": vec(position),
+        "orientation": quat(orientation),
+        "shape": {
+            "type": "quad",
+            "offset": vec((0, 0, 0)),
+            "stretch": vec((1, 1, 1)),
+            "settings": {"isPiece": False, "size": {"x": size[0], "y": size[1]}, "normal": "+Z"},
+            "textureLayout": {"front": layout(rect)},
+            "unwrapMode": "custom",
+            "visible": True,
+            "doubleSided": True,
+            "shadingMode": shading,
+        },
+        "children": [],
+    }
+
+
+# =========================================================================================
 # Models
 # =========================================================================================
 
@@ -374,6 +619,112 @@ def shield_model(seed_base):
 def lantern_model(seed_base):
     root = prop_root()
     root["children"].append(scaled_body(seed_base, 1.0, (0, SEED_BODY[1] / 2, 0)))
+    return finish_model(root)
+
+
+def uncarved_body(seed_base, k, placement):
+    """The seed pumpkin uncarved: the carved front takes the plain rind, and the glow goes."""
+    body = scaled_body(seed_base, k, placement)
+    body["children"] = [c for c in body["children"] if c["name"] != "Glow"]
+    body["shape"]["textureLayout"]["front"] = layout(SIDE)
+    return body
+
+
+def pumpkin_model(seed_base):
+    """The Hallowed Pumpkin: the uncarved seed at full size on vanilla Pumpkin.blockymodel's
+    root, standing on the ground (the item ships this model, since Update 7 redraws the
+    vanilla pumpkin's UV layout)."""
+    root = none_node("R-Attachment", (0, 0, 0), (0, 0, 0, 1), True)
+    root["children"].append(uncarved_body(seed_base, 1.0, (0, SEED_BODY[1] / 2, 0)))
+    return finish_model(root)
+
+
+def crystal_faces(side, top):
+    return {f: side for f in ("front", "back", "right", "left")} | {"top": top, "bottom": top}
+
+
+def crystal_node(name, root_at, size, pitch_roll, side, top):
+    """An amethyst shard, rooted at `root_at` and growing up its own Y, tilted by pitch
+    (about X) then roll (about Z)."""
+    pitch, roll = pitch_roll
+    orientation = q_mul(q_axis("x", pitch), q_axis("z", roll))
+    return box_node(name, root_at, orientation, size, (1, 1, 1), crystal_faces(side, top),
+                    shading="fullbright", offset=(0, size[1] / 2, 0))
+
+
+def geode_model():
+    """The Cursed Geode: a stone with two lumps, a crack in its front face lit from inside by
+    a glow quad 0.2 px behind it (the seed's carved-face trick), and amethyst on top."""
+    root = none_node("R-Attachment", (0, 0, 0), (0, 0, 0, 1), True)
+    w, h, d = GEODE_SHELL
+    faces = {f: GEODE_SIDE for f in ("back", "right", "left")}
+    faces |= {"front": GEODE_FRONT, "top": GEODE_TOP, "bottom": GEODE_TOP}
+    shell = box_node("Shell", (0, 0, 0), (0, 0, 0, 1), GEODE_SHELL, (1, 1, 1), faces,
+                     offset=(0, h / 2, 0))
+    for name, centre, size, yaw in GEODE_LUMPS:
+        lump = {f: GEODE_SIDE for f in ("front", "back", "right", "left")}
+        lump |= {"top": GEODE_TOP, "bottom": GEODE_TOP}
+        shell["children"].append(box_node(name, centre, q_axis("y", yaw), size, (1, 1, 1), lump))
+    shell["children"].append(quad_node("Glow", (0, 0, d / 2 - 0.2), (0, 0, 0, 1),
+                                       GEODE_GLOW[2:], GEODE_GLOW))
+    for name, root_at, size, pitch_roll in GEODE_CRYSTALS:
+        shell["children"].append(crystal_node(name, root_at, size, pitch_roll,
+                                              GEODE_CRYSTAL_SIDE, GEODE_CRYSTAL_TOP))
+    root["children"].append(shell)
+    return finish_model(root)
+
+
+def bench_model(workbench, seed_base):
+    """The Carving Bench: the vanilla Workbench with every node kept, so its own crafting and
+    placing animations still play on it, plus a lit jack-o'-lantern, a knife and two carved-out
+    pieces on the tabletop and two pumpkins on the shelf. The props hang from the node they
+    rest on, so they ride the tabletop's shake while it works."""
+    root = vanilla_root(workbench)
+    frames = node_frames(root)
+    tabletop, shelf = find_node(root, "Tabletop"), find_node(root, "Base2")
+    sx, sy = BENCH_SEED_AT
+    lantern = scaled_body(seed_base, K_BENCH_LANTERN, (0, 0, 0))
+    rename_subtree(lantern, "Carving_Lantern")
+    shift_uv(lantern, sx, sy)
+    x, z = BENCH_LANTERN_AT
+    hang(lantern, tabletop, frames, (x, TABLETOP_Y + SEED_BODY[1] / 2 * K_BENCH_LANTERN, z))
+    for i, (x, z) in enumerate(BENCH_PUMPKINS_AT, start=1):
+        pumpkin = uncarved_body(seed_base, K_BENCH_PUMPKIN, (0, 0, 0))
+        rename_subtree(pumpkin, f"Shelf_Pumpkin{i}")
+        shift_uv(pumpkin, sx, sy)
+        hang(pumpkin, shelf, frames, (x, SHELF_Y + SEED_BODY[1] / 2 * K_BENCH_PUMPKIN, z))
+    every = ("front", "back", "left", "right", "top", "bottom")
+    knife = box_node("Carving_Knife", (0, 0, 0), q_axis("y", BENCH_KNIFE_YAW), (2, 2, 5), (1, 1, 1),
+                     {f: (HANDLE[0] + sx, HANDLE[1] + sy) for f in every})
+    knife["children"].append(box_node("Carving_Knife_Blade", (0, -0.5, 6.5), (0, 0, 0, 1),
+                                      (2, 1, 8), (1, 1, 1), {f: BLADE for f in every}))
+    x, z = BENCH_KNIFE_AT
+    hang(knife, tabletop, frames, (x, TABLETOP_Y + 1, z))
+    for i, (x, z) in enumerate(BENCH_BITS_AT, start=1):
+        bit = box_node(f"Carving_Bit{i}", (0, 0, 0), q_axis("y", 30 * i), (2, 2, 2), (1, 1, 1),
+                       {f: BENCH_BITS for f in every})
+        hang(bit, tabletop, frames, (x, TABLETOP_Y + 1, z))
+    return finish_model(root)
+
+
+def lost_soul_model(spirit):
+    """The Lost Soul: the Spirit_Ember rig whole (its animations are Spirit_Root's set), with
+    the horns' shapes hidden, so it reads as a round, pale soul rather than an ember demon."""
+    root = vanilla_root(spirit)
+    for node in walk([root]):
+        if node["name"].startswith(LOST_SOUL_HIDDEN_PREFIXES):
+            node["shape"]["visible"] = False
+    return finish_model(root)
+
+
+def geode_wraith_model(wraith):
+    """The Geode Wraith: the Wraith rig whole (its animations are the Player set) with lit
+    amethyst growing out of its back and shoulders."""
+    root = vanilla_root(wraith)
+    for name, parent_name, root_at, size, pitch_roll in WRAITH_CRYSTALS:
+        crystal = crystal_node(name, root_at, size, pitch_roll,
+                               WRAITH_CRYSTAL_SIDE, WRAITH_CRYSTAL_TOP)
+        find_node(root, parent_name).setdefault("children", []).append(crystal)
     return finish_model(root)
 
 
@@ -553,6 +904,31 @@ def hollow(p):
     p.glow_ramp([(0.0, "#1d4fa8"), (0.45, "#3fb6ff"), (0.8, "#a8ecff"), (1.0, "#f2ffff")])
 
 
+def ecto(p):
+    """The Ecto Lantern: a sickly rind and an ectoplasm glow, green running from each cut-out."""
+    p.tint_rind("#7f7a36", 0.6, 0.95)
+    p.glow_ramp([(0.0, "#0e5a2a"), (0.45, "#2fe07a"), (0.8, "#a4ffc8"), (1.0, "#f0fff6")])
+    x0, y0, w, h = FRONT
+    alpha = p.rgba[..., 3]
+    for x in range(x0, x0 + w):
+        for row in range(h - 1):
+            if alpha[y0 + row, x] == 0 and alpha[y0 + row + 1, x] > 0:   # a cut-out's bottom edge
+                for d in range(1, 2 + (x * 7 + row * 3) % 4):
+                    y = y0 + row + d
+                    if y >= y0 + h or alpha[y, x] == 0:
+                        break
+                    p.rgba[y, x, :3] = hex_rgb("#a4ffc8" if d == 1 else "#3fd98a")
+
+
+def hallowed(p):
+    """The Hallowed Pumpkin: a midnight-violet rind with gold light along the ribs."""
+    violet = hex_rgb("#3d2456")[None, None, :] * (0.55 + 0.75 * p.lum / p.rind_ref)[..., None]
+    gold = ramp(np.clip(p.groove * 1.4, 0, 1), [(0.0, "#5a3a2a"), (0.5, "#c8902a"), (1.0, "#ffe08a")])
+    t = np.clip(p.groove * 1.3, 0, 1)[..., None]
+    p.set(p.rind, violet * (1 - t) + gold * t)
+    p.set(p.stem, hex_rgb("#2a1f17")[None, None, :] * (0.7 + 0.6 * p.lum[..., None]))
+
+
 def textures(seed_texture):
     out = {}
     for tier, (colour, strength, gain) in TIERS.items():
@@ -578,7 +954,200 @@ def textures(seed_texture):
     pale = Paint(seed_texture)
     hollow(pale)
     out["Jack_Lantern/Hollow_Lantern_Texture.png"] = pale
+    ecto_lantern = Paint(seed_texture)
+    ecto(ecto_lantern)
+    out["Jack_Lantern/Ecto_Lantern_Texture.png"] = ecto_lantern
+    pumpkin = Paint(seed_texture)
+    hallowed(pumpkin)
+    out["Hallowed_Pumpkin/Hallowed_Pumpkin_Texture.png"] = pumpkin
     return out
+
+
+def float_png(rgba):
+    """PNG bytes of a float RGBA image (0..1), rounded the way Paint.png rounds."""
+    data = np.clip(np.rint(rgba * 255.0), 0, 255).astype(np.uint8)
+    return png_bytes(Image.fromarray(data))
+
+
+def rgb_to_hsv(rgb):
+    """Vectorised RGB (0..1) to HSV, hue in [0, 1)."""
+    r, g, b = rgb[..., 0], rgb[..., 1], rgb[..., 2]
+    mx, mn = rgb.max(axis=-1), rgb.min(axis=-1)
+    d = mx - mn
+    safe = np.where(d > 1e-12, d, 1.0)
+    hue = np.select([d <= 1e-12, mx == r, mx == g],
+                    [np.zeros_like(mx), ((g - b) / safe) % 6.0, (b - r) / safe + 2.0],
+                    (r - g) / safe + 4.0) / 6.0
+    sat = np.where(mx > 1e-12, d / np.where(mx > 1e-12, mx, 1.0), 0.0)
+    return np.stack([hue, sat, mx], axis=-1)
+
+
+def hsv_to_rgb(hsv):
+    h, s, v = hsv[..., 0] % 1.0, hsv[..., 1], hsv[..., 2]
+    i = np.floor(h * 6.0).astype(int) % 6
+    f = h * 6.0 - np.floor(h * 6.0)
+    p, q, t = v * (1 - s), v * (1 - s * f), v * (1 - s * (1 - f))
+    return np.stack([np.choose(i, [v, q, p, p, t, v]),
+                     np.choose(i, [t, v, v, q, p, p]),
+                     np.choose(i, [p, p, t, v, v, q])], axis=-1)
+
+
+def hash01(x, y, salt):
+    """Integer-hash noise in [0, 1): the same pixel and salt always give the same value."""
+    x = np.asarray(x, dtype=np.uint64)
+    y = np.asarray(y, dtype=np.uint64)
+    mask = np.uint64(0xFFFFFFFF)
+    v = (x * np.uint64(374761393) + y * np.uint64(668265263) + np.uint64(salt * 2246822519)) & mask
+    v = ((v ^ (v >> np.uint64(13))) * np.uint64(1274126177)) & mask
+    return ((v ^ (v >> np.uint64(16))) & np.uint64(0xFFFF)).astype(np.float64) / 65536.0
+
+
+def paint_stone(rgba, rect, salt):
+    """Cool, cursed stone: two octaves of hash noise through a grey-violet ramp, edges darker."""
+    x, y, w, h = rect
+    ys, xs = np.mgrid[y:y + h, x:x + w]
+    n = 0.55 * hash01(xs // 2, ys // 2, salt) + 0.45 * hash01(xs, ys, salt + 1)
+    colour = ramp(n, [(0.0, "#2b2530"), (0.55, "#4d4552"), (1.0, "#7a7080")])
+    edge = (xs == x) | (xs == x + w - 1) | (ys == y) | (ys == y + h - 1)
+    rgba[y:y + h, x:x + w, :3] = np.where(edge[..., None], colour * 0.75, colour)
+    rgba[y:y + h, x:x + w, 3] = 1.0
+
+
+def paint_crystal(rgba, side, top):
+    """Amethyst: each side face light at the tip and dark at the root, one edge lit."""
+    x, y, w, h = side
+    for row in range(h):
+        colour = ramp(np.array(1 - row / max(h - 1, 1)), [(0.0, "#4a1f7a"), (0.6, "#a86bff"), (1.0, "#f1ddff")])
+        for col in range(w):
+            shade = 0.8 if col == 0 else (1.1 if col == w - 1 else 1.0)
+            rgba[y + row, x + col, :3] = np.clip(colour * shade, 0, 1)
+    rgba[y:y + h, x:x + w, 3] = 1.0
+    x, y, w, h = top
+    rgba[y:y + h, x:x + w, :3] = hex_rgb("#e9d4ff")
+    rgba[y + h // 2, x + w // 2, :3] = hex_rgb("#ffffff")
+    rgba[y:y + h, x:x + w, 3] = 1.0
+
+
+def geode_texture():
+    """The Cursed Geode's 64x64 texture: stone, the crack cut through the front, the glow."""
+    rgba = np.zeros((64, 64, 4))
+    for salt, rect in enumerate((GEODE_FRONT, GEODE_SIDE, GEODE_TOP), start=1):
+        paint_stone(rgba, rect, 10 * salt)
+    x0, y0 = GEODE_FRONT[:2]
+    crack = np.zeros((64, 64), dtype=bool)
+    for row, col in enumerate(GEODE_CRACK):
+        crack[y0 + row, x0 + col] = True
+        if row in GEODE_WIDE_ROWS:
+            crack[y0 + row, x0 + col + 1] = True
+    rim = dilate(crack, 1) & ~crack & rect_mask(GEODE_FRONT)
+    rgba[..., :3] = np.where(rim[..., None], rgba[..., :3] * 0.5 + hex_rgb("#9a5cff") * 0.5, rgba[..., :3])
+    rgba[crack] = 0.0
+    gx, gy, gw, gh = GEODE_GLOW
+    ys, xs = np.mgrid[0:gh, 0:gw]
+    dist = np.hypot((xs + 0.5 - gw / 2) / (gw / 2), (ys + 0.5 - gh / 2) / (gh / 2))
+    rgba[gy:gy + gh, gx:gx + gw, :3] = ramp(1 - np.clip(dist, 0, 1),
+                                            [(0.0, "#3b1466"), (0.5, "#9a4dff"), (1.0, "#f3dcff")])
+    rgba[gy:gy + gh, gx:gx + gw, 3] = 1.0
+    paint_crystal(rgba, GEODE_CRYSTAL_SIDE, GEODE_CRYSTAL_TOP)
+    return rgba
+
+
+def face_mask(model, names, shape):
+    """Every texel that a face of one of the named nodes covers."""
+    mask = np.zeros(shape, dtype=bool)
+    for node in walk(model["nodes"]):
+        s = node.get("shape") or {}
+        if node["name"] not in names or s.get("type") not in ("box", "quad"):
+            continue
+        for face, entry in s.get("textureLayout", {}).items():
+            x0, y0, x1, y1 = face_rect(entry, *face_dims(s, face))
+            mask[max(0, int(y0)):int(y1), max(0, int(x0)):int(x1)] = True
+    return mask
+
+
+def wand_texture(model, texture):
+    """The Costume Wand: the vanilla wood wand's texture, each part tinted with its shading kept."""
+    rgba = texture.astype(np.float64) / 255.0
+    lum = luminance(rgba[..., :3])
+    opaque = rgba[..., 3] > 0
+    for names, colour, strength, gain in WAND_PARTS:
+        mask = face_mask(model, names, opaque.shape) & opaque
+        ref = float(lum[mask].mean())
+        shaded = hex_rgb(colour)[None, None, :] * (lum / ref * gain)[..., None]
+        mixed = np.clip(rgba[..., :3] * (1 - strength) + shaded * strength, 0, 1)
+        rgba[..., :3] = np.where(mask[..., None], mixed, rgba[..., :3])
+    return rgba
+
+
+def ectoplasm_texture(texture):
+    """Ectoplasm: the vanilla life essence's shading, mapped onto a ghost green."""
+    rgba = texture.astype(np.float64) / 255.0
+    opaque = rgba[..., 3] > 0
+    lum = luminance(rgba[..., :3])
+    lo, hi = float(lum[opaque].min()), float(lum[opaque].max())
+    colour = ramp((lum - lo) / max(hi - lo, 1e-6),
+                  [(0.0, "#0b3a2c"), (0.45, "#1fb37a"), (0.8, "#7dffc4"), (1.0, "#effff8")])
+    rgba[..., :3] = np.where(opaque[..., None], colour, rgba[..., :3])
+    return rgba
+
+
+def bench_texture(workbench_texture, seed_texture):
+    """The Carving Bench atlas: the Workbench's texture weathered on top, the seed's below
+    (the knife handle's grain painted into it), and the knife's steel beside that."""
+    rgba = np.zeros((BENCH_SIZE[1], BENCH_SIZE[0], 4))
+    wood = workbench_texture.astype(np.float64) / 255.0
+    grey = luminance(wood[..., :3])[..., None]
+    wood[..., :3] = np.clip((wood[..., :3] * 0.7 + grey * 0.3) * 0.88, 0, 1)
+    rgba[:wood.shape[0], :wood.shape[1]] = wood
+    seed = Paint(seed_texture)
+    paint_handle(seed)
+    sx, sy = BENCH_SEED_AT
+    rgba[sy:sy + 64, sx:sx + 64] = seed.rgba
+    bx, by, bw, bh = BLADE
+    steel = ["#e9eef2", "#cfd6dc", "#b3bcc4", "#98a2ab", "#7f8a94", "#69737d", "#555e67", "#434a52"]
+    for row in range(bh):
+        rgba[by + row, bx:bx + bw, :3] = hex_rgb(steel[row])
+    rgba[by:by + bh, bx:bx + bw, 3] = 1.0
+    return rgba
+
+
+def soul_texture(texture):
+    """The Lost Soul: the ember spirit's rock turns a pale blue and its fire a cold mint."""
+    rgba = texture.astype(np.float64) / 255.0
+    opaque = rgba[..., 3] > 0
+    rgb = rgba[..., :3]
+    lum = luminance(rgb)
+    hsv = rgb_to_hsv(rgb)
+    fire = opaque & (hsv[..., 2] > 0.7) & (hsv[..., 1] > 0.3)
+    body = opaque & ~fire
+    lo, hi = float(lum[body].min()), float(lum[body].max())
+    pale = ramp((lum - lo) / max(hi - lo, 1e-6),
+                [(0.0, "#26364e"), (0.35, "#6789a8"), (0.75, "#c4dfec"), (1.0, "#f4fbfd")])
+    flo, fhi = float(lum[fire].min()), float(lum[fire].max())
+    cold = ramp((lum - flo) / max(fhi - flo, 1e-6), [(0.0, "#1f8f6a"), (0.5, "#62f0b4"), (1.0, "#f0fff8")])
+    rgba[..., :3] = np.where(fire[..., None], cold, np.where(body[..., None], pale, rgb))
+    return rgba
+
+
+def geode_wraith_texture(texture):
+    """The Geode Wraith: the Wraith's teal soul-fire turns amethyst, its red sash slate and its
+    robe a dusty cave grey; the rows grown under it hold the crystals' faces."""
+    src = texture.astype(np.float64) / 255.0
+    h, w = src.shape[:2]
+    rgba = np.zeros((h + WRAITH_TEXTURE_GROWTH, w, 4))
+    rgba[:h] = src
+    hsv = rgb_to_hsv(src[..., :3])
+    hue, sat, val = hsv[..., 0] * 360.0, hsv[..., 1], hsv[..., 2]
+    fire = (hue > 150) & (hue < 210) & (sat > 0.25)
+    sash = ((hue < 25) | (hue > 340)) & (sat > 0.35)
+    robe = (hue >= 210) & (hue <= 300) & ~fire
+    hsv[..., 0] = np.where(fire, 285.0 / 360.0, hsv[..., 0])
+    hsv[..., 1] = np.where(sash, sat * 0.15, np.where(robe, sat * 0.5, sat))
+    hsv[..., 2] = np.where(sash, val * 0.8, np.where(robe, np.clip(val * 1.1, 0, 1), val))
+    rgba[:h, :, :3] = hsv_to_rgb(hsv)
+    if WRAITH_CRYSTALS:
+        paint_crystal(rgba, WRAITH_CRYSTAL_SIDE, WRAITH_CRYSTAL_TOP)
+    return rgba
 
 
 def png_bytes(image):
@@ -785,9 +1354,9 @@ def draw_face(canvas, depth, tex, tex_size, screen, z, uvs, rect, shade):
     zone[covers] = pixel_z[covers]
 
 
-def icon_png(model, texture_rgba, angles):
+def icon_png(model, texture_rgba, angles, size=64):
     """Renders, trims the alpha bounding box, centres it on a square with a 4% margin, and
-    resizes to 64x64 with LANCZOS (the blockbench-hytale skill's icon recipe)."""
+    resizes to size x size with LANCZOS (the blockbench-hytale skill's icon recipe)."""
     canvas = render(model, texture_rgba, angles)
     image = Image.fromarray(np.clip(np.rint(canvas * 255), 0, 255).astype(np.uint8))
     image = image.crop(image.getchannel("A").getbbox())
@@ -795,7 +1364,7 @@ def icon_png(model, texture_rgba, angles):
     side += 2 * round(side * 0.04)
     square = Image.new("RGBA", (side, side), (0, 0, 0, 0))
     square.paste(image, ((side - image.size[0]) // 2, (side - image.size[1]) // 2))
-    return png_bytes(square.resize((64, 64), Image.LANCZOS))
+    return png_bytes(square.resize((size, size), Image.LANCZOS))
 
 
 # =========================================================================================
@@ -803,58 +1372,95 @@ def icon_png(model, texture_rgba, angles):
 # =========================================================================================
 
 ICON_PLAN = [
-    # icon id, model, texture, angle
-    *[(f"Hallows_Eve_Lantern_Bomb_{t}", "Lantern_Bomb/Lantern_Bomb.blockymodel",
-       f"Lantern_Bomb/Lantern_Bomb_{t}_Texture.png", ANGLE_BOMB) for t in TIERS],
-    ("Hallows_Eve_Jack_Helm", "Jack_Helm/Jack_Helm.blockymodel",
-     "Jack_Helm/Jack_Helm_Texture.png", ANGLE_HELM),
-    ("Hallows_Eve_Burning_Jack_Helm", "Jack_Helm/Jack_Helm.blockymodel",
-     "Jack_Helm/Burning_Jack_Helm_Texture.png", ANGLE_HELM),
-    ("Hallows_Eve_Jack_Shield", "Jack_Shield/Jack_Shield.blockymodel",
-     "Jack_Shield/Jack_Shield_Texture.png", ANGLE_SHIELD),
-    ("Hallows_Eve_Flaming_Jack_Shield", "Jack_Shield/Jack_Shield.blockymodel",
-     "Jack_Shield/Flaming_Jack_Shield_Texture.png", ANGLE_SHIELD),
-    ("Hallows_Eve_Jack_Lantern", "Jack_Lantern/Jack_Lantern.blockymodel",
-     "Jack_Lantern/Jack_Lantern_Texture.png", ANGLE_BLOCK),
-    ("Hallows_Eve_Hollow_Lantern", "Jack_Lantern/Jack_Lantern.blockymodel",
-     "Jack_Lantern/Hollow_Lantern_Texture.png", ANGLE_BLOCK),
+    # icon folder, icon id, model, texture (Common/-relative), angle, size in px
+    *[(ICONS, f"Hallows_Eve_Lantern_Bomb_{t}", f"{HE_ITEMS}/Lantern_Bomb/Lantern_Bomb.blockymodel",
+       f"{HE_ITEMS}/Lantern_Bomb/Lantern_Bomb_{t}_Texture.png", ANGLE_BOMB, 64) for t in TIERS],
+    (ICONS, "Hallows_Eve_Jack_Helm", f"{HE_ITEMS}/Jack_Helm/Jack_Helm.blockymodel",
+     f"{HE_ITEMS}/Jack_Helm/Jack_Helm_Texture.png", ANGLE_HELM, 64),
+    (ICONS, "Hallows_Eve_Burning_Jack_Helm", f"{HE_ITEMS}/Jack_Helm/Jack_Helm.blockymodel",
+     f"{HE_ITEMS}/Jack_Helm/Burning_Jack_Helm_Texture.png", ANGLE_HELM, 64),
+    (ICONS, "Hallows_Eve_Jack_Shield", f"{HE_ITEMS}/Jack_Shield/Jack_Shield.blockymodel",
+     f"{HE_ITEMS}/Jack_Shield/Jack_Shield_Texture.png", ANGLE_SHIELD, 64),
+    (ICONS, "Hallows_Eve_Flaming_Jack_Shield", f"{HE_ITEMS}/Jack_Shield/Jack_Shield.blockymodel",
+     f"{HE_ITEMS}/Jack_Shield/Flaming_Jack_Shield_Texture.png", ANGLE_SHIELD, 64),
+    (ICONS, "Hallows_Eve_Jack_Lantern", f"{HE_ITEMS}/Jack_Lantern/Jack_Lantern.blockymodel",
+     f"{HE_ITEMS}/Jack_Lantern/Jack_Lantern_Texture.png", ANGLE_BLOCK, 64),
+    (ICONS, "Hallows_Eve_Hollow_Lantern", f"{HE_ITEMS}/Jack_Lantern/Jack_Lantern.blockymodel",
+     f"{HE_ITEMS}/Jack_Lantern/Hollow_Lantern_Texture.png", ANGLE_BLOCK, 64),
+    (ICONS, "Hallows_Eve_Ecto_Lantern", f"{HE_ITEMS}/Jack_Lantern/Jack_Lantern.blockymodel",
+     f"{HE_ITEMS}/Jack_Lantern/Ecto_Lantern_Texture.png", ANGLE_BLOCK, 64),
+    (ICONS, "Hallows_Eve_Hallowed_Pumpkin", f"{HE_ITEMS}/Hallowed_Pumpkin/Hallowed_Pumpkin.blockymodel",
+     f"{HE_ITEMS}/Hallowed_Pumpkin/Hallowed_Pumpkin_Texture.png", ANGLE_BLOCK, 64),
+    (ICONS, "Hallows_Eve_Cursed_Geode", f"{HE_ITEMS}/Cursed_Geode/Cursed_Geode.blockymodel",
+     f"{HE_ITEMS}/Cursed_Geode/Cursed_Geode_Texture.png", ANGLE_CRYSTAL, 64),
+    (ICONS, "Hallows_Eve_Costume_Wand", WAND,
+     f"{HE_ITEMS}/Costume_Wand/Costume_Wand_Texture.png", ANGLE_WAND, 64),
+    (ICONS, "Hallows_Eve_Ectoplasm", ESSENCE,
+     f"{HE_ITEMS}/Ectoplasm/Ectoplasm_Texture.png", ANGLE_ESSENCE, 64),
+    (ICONS, "Hallows_Eve_Carving_Bench", f"{HE_BLOCKS}/Carving_Bench/Carving_Bench.blockymodel",
+     f"{HE_BLOCKS}/Carving_Bench/Carving_Bench_Texture.png", ANGLE_BLOCK, 64),
+    (MODEL_ICONS, "Hallows_Eve_Lost_Soul", f"{HE_NPCS}/Lost_Soul/Lost_Soul.blockymodel",
+     f"{HE_NPCS}/Lost_Soul/Lost_Soul_Texture.png", ANGLE_MODEL, 128),
+    (MODEL_ICONS, "Hallows_Eve_Geode_Wraith", f"{HE_NPCS}/Geode_Wraith/Geode_Wraith.blockymodel",
+     f"{HE_NPCS}/Geode_Wraith/Geode_Wraith_Texture.png", ANGLE_MODEL, 128),
 ]
 
 
 def build(seed_dir):
-    """Returns ({pack-relative path: bytes}, {model name: model dict}, {texture name: rgba})."""
+    """Returns ({pack-relative path: bytes}, {Common/-relative model path: model dict, the two
+    vanilla rigs an icon renders from included}, {Common/-relative texture path: rgba})."""
     seed_base, seed_texture = load_seed(seed_dir)
+    vanilla = load_vanilla(seed_dir)
     models = {
-        "Lantern_Bomb/Lantern_Bomb.blockymodel": bomb_model(seed_base, center=False),
-        "Lantern_Bomb/Lantern_Bomb_Center.blockymodel": bomb_model(seed_base, center=True),
-        "Jack_Helm/Jack_Helm.blockymodel": helm_model(seed_base),
-        "Jack_Shield/Jack_Shield.blockymodel": shield_model(seed_base),
-        "Jack_Lantern/Jack_Lantern.blockymodel": lantern_model(seed_base),
+        f"{HE_ITEMS}/Lantern_Bomb/Lantern_Bomb.blockymodel": bomb_model(seed_base, center=False),
+        f"{HE_ITEMS}/Lantern_Bomb/Lantern_Bomb_Center.blockymodel": bomb_model(seed_base, center=True),
+        f"{HE_ITEMS}/Jack_Helm/Jack_Helm.blockymodel": helm_model(seed_base),
+        f"{HE_ITEMS}/Jack_Shield/Jack_Shield.blockymodel": shield_model(seed_base),
+        f"{HE_ITEMS}/Jack_Lantern/Jack_Lantern.blockymodel": lantern_model(seed_base),
+        f"{HE_ITEMS}/Hallowed_Pumpkin/Hallowed_Pumpkin.blockymodel": pumpkin_model(seed_base),
+        f"{HE_ITEMS}/Cursed_Geode/Cursed_Geode.blockymodel": geode_model(),
+        f"{HE_BLOCKS}/Carving_Bench/Carving_Bench.blockymodel": bench_model(vanilla[WORKBENCH], seed_base),
+        f"{HE_NPCS}/Lost_Soul/Lost_Soul.blockymodel": lost_soul_model(vanilla[SPIRIT]),
+        f"{HE_NPCS}/Geode_Wraith/Geode_Wraith.blockymodel": geode_wraith_model(vanilla[WRAITH]),
     }
-    paints = textures(seed_texture)
+    images = {f"{HE_ITEMS}/{name}": paint.rgba for name, paint in textures(seed_texture).items()}
+    images[f"{HE_ITEMS}/Cursed_Geode/Cursed_Geode_Texture.png"] = geode_texture()
+    images[f"{HE_ITEMS}/Costume_Wand/Costume_Wand_Texture.png"] = wand_texture(vanilla[WAND], vanilla[WAND_TEXTURE])
+    images[f"{HE_ITEMS}/Ectoplasm/Ectoplasm_Texture.png"] = ectoplasm_texture(vanilla[ESSENCE_TEXTURE])
+    images[f"{HE_BLOCKS}/Carving_Bench/Carving_Bench_Texture.png"] = bench_texture(
+        vanilla[WORKBENCH_TEXTURE], seed_texture)
+    images[f"{HE_NPCS}/Lost_Soul/Lost_Soul_Texture.png"] = soul_texture(vanilla[SPIRIT_TEXTURE])
+    images[f"{HE_NPCS}/Geode_Wraith/Geode_Wraith_Texture.png"] = geode_wraith_texture(vanilla[WRAITH_TEXTURE])
     outputs = {}
     for name, model in models.items():
-        outputs[f"{ITEMS}/{name}"] = (json.dumps(model, indent=2) + "\n").encode("utf-8")
+        outputs[f"Common/{name}"] = (json.dumps(model, indent=2) + "\n").encode("utf-8")
     texture_rgba = {}
-    for name, paint in paints.items():
-        data = paint.png()
-        outputs[f"{ITEMS}/{name}"] = data
+    for name, rgba in images.items():
+        data = float_png(rgba)
+        outputs[f"Common/{name}"] = data
         with Image.open(io.BytesIO(data)) as image:
             texture_rgba[name] = np.array(image.convert("RGBA"))
-    for icon, model_name, texture_name, angles in ICON_PLAN:
-        outputs[f"{ICONS}/{icon}.png"] = icon_png(models[model_name], texture_rgba[texture_name], angles)
-    return dict(sorted(outputs.items())), models, texture_rgba
+    rigs = dict(models)
+    rigs[WAND] = vanilla[WAND]
+    rigs[ESSENCE] = vanilla[ESSENCE]
+    for folder, icon, model_name, texture_name, angles, size in ICON_PLAN:
+        outputs[f"{folder}/{icon}.png"] = icon_png(rigs[model_name], texture_rgba[texture_name], angles, size)
+    return dict(sorted(outputs.items())), rigs, texture_rgba
 
 
 def validate(models, texture_rgba):
-    """The structural rules every derived model must keep; returns a list of problems."""
+    """The structural rules every derived model, and every vanilla rig worn with one of our
+    textures, must keep; returns a list of problems."""
     problems = []
-    pairs = {name: [t for _, m, t, _ in ICON_PLAN if m == name] for name in models}
-    pairs["Lantern_Bomb/Lantern_Bomb_Center.blockymodel"] = pairs["Lantern_Bomb/Lantern_Bomb.blockymodel"]
+    pairs = {name: sorted({t for _, _, m, t, _, _ in ICON_PLAN if m == name}) for name in models}
+    pairs[f"{HE_ITEMS}/Lantern_Bomb/Lantern_Bomb_Center.blockymodel"] = pairs[
+        f"{HE_ITEMS}/Lantern_Bomb/Lantern_Bomb.blockymodel"]
     for name, model in models.items():
         nodes = list(walk(model["nodes"]))
         if len(nodes) > 255:
             problems.append(f"{name}: {len(nodes)} nodes (max 255)")
+        if not pairs[name]:
+            problems.append(f"{name}: no texture is checked against it")
         for node in nodes:
             shape = node.get("shape") or {}
             if shape.get("type") not in ("box", "quad"):
@@ -878,10 +1484,21 @@ def main(argv=None):
     parser.add_argument("--check", action="store_true", help="validate and compare; write nothing")
     parser.add_argument("--out", type=Path, default=PACK, help="output root (default: the pack)")
     parser.add_argument("--seed", type=Path, default=DEFAULT_SEED, help="folder holding the seed")
+    parser.add_argument("--vendor", type=Path, metavar="ZIP",
+                        help="copy VANILLA_FILES out of this Assets.zip into SEED/vanilla, then stop")
     args = parser.parse_args(argv)
 
+    if args.vendor:
+        count = vendor(args.vendor, args.seed)
+        print(f"vendored {count} files from {args.vendor} into {args.seed / 'vanilla'}")
+        return 0
     if not (args.seed / SEED_MODEL).is_file() or not (args.seed / SEED_TEXTURE).is_file():
         print(f"seed not found in {args.seed}", file=sys.stderr)
+        return 2
+    missing = [rel for rel in VANILLA_FILES if not (args.seed / "vanilla" / rel).is_file()]
+    if missing:
+        print(f"vanilla inputs missing under {args.seed / 'vanilla'}: {', '.join(missing)}; "
+              "rerun with --vendor <Assets.zip>", file=sys.stderr)
         return 2
     outputs, models, texture_rgba = build(args.seed)
     problems = validate(models, texture_rgba)
