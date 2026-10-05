@@ -1,0 +1,32 @@
+{
+  "$Comment": [
+    "Cursed Geodes in ore: while Hallow's Eve runs, breaking an ore block a player did not place turns",
+    "one up far more often than plain stone does, and it lands where the block broke. The file name is",
+    "the row's id.",
+    "",
+    "When names BreakBlock on every block id starting Ore_. Chance is the row's own odds as a percent.",
+    "The season rides on each roll's Conditions, as in Hallows_Eve_Geode_Find.json: the first roll is",
+    "the find and carries the toast's Cue, the second adds one more geode on Harvest Moon nights. A",
+    "server owner retunes or switches off this row by its id in mods/ziggfreedcommon/bonus-rows.json."
+  ],
+  "When": { "Kind": "BreakBlock", "Match": "Ore_*" },
+  "Chance": { "Base": 6.0 },
+  "Loot": {
+    "Rolls": [
+      {
+        "Conditions": [
+          { "Factor": "ziggfreedcommon:calendar_live", "Param": "Hallows_Eve", "Min": 1 }
+        ],
+        "Grants": { "Items": [ { "Item": "Hallows_Eve_Cursed_Geode", "Count": 1 } ] },
+        "Cue": "Hallows_Eve_Geode_Found"
+      },
+      {
+        "Conditions": [
+          { "Factor": "ziggfreedcommon:calendar_live", "Param": "Hallows_Eve", "Min": 1 },
+          { "Factor": "ziggfreedcommon:calendar_live", "Param": "Harvest_Moon", "Min": 1 }
+        ],
+        "Grants": { "Items": [ { "Item": "Hallows_Eve_Cursed_Geode", "Count": 1 } ] }
+      }
+    ]
+  }
+}
