@@ -1,0 +1,31 @@
+{
+  "$Comment": "The Costume Wand: point it at another player and dress them up. Primary puts on the Jack Skeleton costume (Hallows_Eve_Costume_Wand_Cast), Secondary the Lost Soul (Hallows_Eve_Costume_Wand_Cast_Soul); both share the one five-second cooldown Hallows_Eve_Costume_Wand. It dresses only another player, who can take the costume off with /zigcostume off, and a costume that lands counts as USE_ITEM with the Qualifier Costume for the player who cast it. Worn on the game's wood wand model with this pack's texture.",
+  "TranslationProperties": {
+    "Name": "items.Hallows_Eve_Costume_Wand.name",
+    "Description": "items.Hallows_Eve_Costume_Wand.description"
+  },
+  "Categories": ["Items.Weapons"],
+  "Icon": "Icons/ItemsGenerated/Hallows_Eve_Costume_Wand.png",
+  "Quality": "Uncommon",
+  "ItemLevel": 20,
+  "Model": "Items/Weapons/Wand/Wood.blockymodel",
+  "Texture": "Items/Hallows_Eve/Costume_Wand/Costume_Wand_Texture.png",
+  "PlayerAnimationsId": "Wand",
+  "Particles": [{"SystemId": "Wood_Wand", "TargetNodeName": "Handle"}],
+  "Utility": {"Compatible": true},
+  "Interactions": {
+    "Primary": {
+      "Cooldown": {"Id": "Hallows_Eve_Costume_Wand", "Cooldown": 5},
+      "Interactions": ["Hallows_Eve_Costume_Wand_Cast"]
+    },
+    "Secondary": {
+      "Cooldown": {"Id": "Hallows_Eve_Costume_Wand", "Cooldown": 5},
+      "Interactions": ["Hallows_Eve_Costume_Wand_Cast_Soul"]
+    }
+  },
+  "IconProperties": {"Scale": 0.6, "Translation": [-13, -16], "Rotation": [45, 90, 0]},
+  "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",
+  "Tags": {"Type": ["Weapon"], "Family": ["Wand"]},
+  "Weapon": {},
+  "ItemSoundSetId": "ISS_Weapons_Wand"
+}

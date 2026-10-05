@@ -1,0 +1,35 @@
+{
+  "$Comment": "A Hallowed Pumpkin: the season's own pumpkin, violet with gold in the ribs. It turns up when you harvest pumpkins while Hallow's Eve runs, and Jack Skeletons drop it. It places like the game's pumpkins, on this pack's model at a Jack Lantern's size, and it is what the Hallowed carving at a Carving Bench takes (the Jack Shield).",
+  "TranslationProperties": {
+    "Name": "items.Hallows_Eve_Hallowed_Pumpkin.name",
+    "Description": "items.Hallows_Eve_Hallowed_Pumpkin.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Hallows_Eve_Hallowed_Pumpkin.png",
+  "Quality": "Rare",
+  "Categories": ["Items.Ingredients"],
+  "Interactions": {"Primary": "Block_Primary", "Secondary": "Block_Secondary"},
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Items/Hallows_Eve/Hallowed_Pumpkin/Hallowed_Pumpkin.blockymodel",
+    "CustomModelScale": 1.0,
+    "CustomModelTexture": [
+      {"Texture": "Items/Hallows_Eve/Hallowed_Pumpkin/Hallowed_Pumpkin_Texture.png", "Weight": 1}
+    ],
+    "HitboxType": "Plant_Full",
+    "VariantRotation": "NESW",
+    "Flags": {},
+    "Support": {"Down": [{"FaceType": "Full"}]},
+    "Gathering": {"Breaking": {"GatherType": "Woods"}},
+    "BlockParticleSetId": "Stone",
+    "BlockSoundSetId": "Plushie",
+    "PhysicalMaterialId": "Wool",
+    "TextureComputedColor": "#5B2A86"
+  },
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {"Scale": 0.6, "Rotation": [22.5, 45.0, 22.5], "Translation": [-1.0, -15.0]},
+  "Tags": {"Type": ["Ingredient"]},
+  "ItemSoundSetId": "ISS_Items_Foliage",
+  "MaxStack": 25
+}

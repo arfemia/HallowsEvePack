@@ -1,0 +1,15 @@
+{
+  "$Comment": "The Hallowed set's shimmer: a soft orange highlight that rises over the wearer and falls back, on loop, with bloom. HighlightColor is the colour and HighlightThickness how strong it reads; AnimationDuration is one rise in seconds. The set's effect, Hallows_Eve_Hallowed_Set, is the only thing that names it.",
+  "SwitchTo": "PostColor",
+  "PostColorOpacity": 0.0,
+  "NoiseScale": {"X": 4.0, "Y": 20.0},
+  "NoiseScrollSpeed": {"Y": -0.1},
+  "AnimationDuration": 2.0,
+  "EffectDirection": "BottomUp",
+  "AnimationRange": {"Y": 1.0},
+  "UseBloomOnHighlight": true,
+  "HighlightThickness": 0.3,
+  "HighlightColor": "#ff9a2e",
+  "LoopOption": "LoopMirror",
+  "CurveType": "QuartInOut"
+}

@@ -1,0 +1,20 @@
+{
+  "$Comment": "Ectoplasm, what a Lost Soul leaves behind. An ingredient on the game's life essence pattern, worn on the game's essence model with this pack's texture: it burns in the Ecto Lantern and goes into the Spectral Lantern Bomb at a Carving Bench, and Old Jack takes it at his stall. The faint Light is its glow in the hand or on the ground.",
+  "TranslationProperties": {
+    "Name": "items.Hallows_Eve_Ectoplasm.name",
+    "Description": "items.Hallows_Eve_Ectoplasm.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Hallows_Eve_Ectoplasm.png",
+  "Quality": "Uncommon",
+  "Categories": ["Items.Ingredients"],
+  "Model": "Resources/Ingredients/Essence.blockymodel",
+  "Texture": "Items/Hallows_Eve/Ectoplasm/Ectoplasm_Texture.png",
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {"Scale": 0.6, "Rotation": [0, 0, 0], "Translation": [0, -13]},
+  "Tags": {"Type": ["Ingredient"]},
+  "Scale": 0.8,
+  "Light": {"Color": "#153", "Radius": 1},
+  "ItemSoundSetId": "ISS_Items_Gems",
+  "MaxStack": 100,
+  "DropOnDeath": true
+}

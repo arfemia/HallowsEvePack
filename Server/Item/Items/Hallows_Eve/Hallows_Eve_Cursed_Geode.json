@@ -1,0 +1,20 @@
+{
+  "$Comment": "A Cursed Geode, a find from mining while Hallow's Eve runs. Secondary cracks it open (Hallows_Eve_Cursed_Geode_Crack): one geode is spent, the table Hallows_Eve_Geode_Crack pays out, and the crack counts as USE_ITEM with the Qualifier Crack. The item never checks the calendar, so a geode kept from October still cracks in March. At a Carving Bench it is also the core of the Shattering Lantern Bomb.",
+  "TranslationProperties": {
+    "Name": "items.Hallows_Eve_Cursed_Geode.name",
+    "Description": "items.Hallows_Eve_Cursed_Geode.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Hallows_Eve_Cursed_Geode.png",
+  "Quality": "Uncommon",
+  "Categories": ["Items.Ingredients"],
+  "Model": "Items/Hallows_Eve/Cursed_Geode/Cursed_Geode.blockymodel",
+  "Texture": "Items/Hallows_Eve/Cursed_Geode/Cursed_Geode_Texture.png",
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {"Scale": 0.75, "Translation": [-0.3, 0.3], "Rotation": [34.315, 29.815, 22.5]},
+  "Interactions": {"Secondary": {"Interactions": ["Hallows_Eve_Cursed_Geode_Crack"]}},
+  "Tags": {"Type": ["Ingredient"]},
+  "Light": {"Color": "#306", "Radius": 1},
+  "ItemSoundSetId": "ISS_Items_Gems",
+  "MaxStack": 25,
+  "DropOnDeath": true
+}
