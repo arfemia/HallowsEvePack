@@ -1,0 +1,31 @@
+# Hallow's Eve pack - item names and descriptions. The game prepends the file name, so each key
+# loads as items.<key>, the key an item's TranslationProperties names (items.Hallows_Eve_Jack_Lantern.name).
+Hallows_Eve_Lantern_Bomb_Common.name = Lantern Bomb
+Hallows_Eve_Lantern_Bomb_Common.description = A carved pumpkin packed with black powder. Throw it at whatever is coming for you.
+Hallows_Eve_Lantern_Bomb_Uncommon.name = Burning Lantern Bomb
+Hallows_Eve_Lantern_Bomb_Uncommon.description = Fire essence in the powder, so whatever the blast catches keeps burning a while.
+Hallows_Eve_Lantern_Bomb_Rare.name = Spectral Lantern Bomb
+Hallows_Eve_Lantern_Bomb_Rare.description = Ectoplasm in the powder. The blast burns, and the chill it leaves slows anything caught in it.
+Hallows_Eve_Lantern_Bomb_Epic.name = Shattering Lantern Bomb
+Hallows_Eve_Lantern_Bomb_Epic.description = Packed around a cursed geode. It burns and chills like the others, then throws flaming shards in every direction.
+Hallows_Eve_Jack_Helm.name = Jack Helm
+Hallows_Eve_Jack_Helm.description = A pumpkin rind hollowed out to fit a head, with a candle behind the grin. Part of the Hallowed set: wear it with the Jack Shield in your off hand.
+Hallows_Eve_Jack_Shield.name = Jack Shield
+Hallows_Eve_Jack_Shield.description = A wooden shield faced with a carved pumpkin that never stops glowing. Part of the Hallowed set: carry it in your off hand while you wear the Jack Helm.
+Hallows_Eve_Jack_Lantern.name = Jack Lantern
+Hallows_Eve_Jack_Lantern.description = A carved pumpkin with a candle inside. Old Jack wants one on every doorstep.
+Hallows_Eve_Hollow_Lantern.name = Hollow Lantern
+Hallows_Eve_Hollow_Lantern.description = A pale lantern Old Jack gives to whoever sees his errands through. Each Hallow's Eve has its own.
+Hallows_Eve_Ecto_Lantern.name = Ecto Lantern
+Hallows_Eve_Ecto_Lantern.description = A pumpkin lit by ectoplasm. The green light holds steady in any wind.
+Hallows_Eve_Costume_Wand.name = Costume Wand
+Hallows_Eve_Costume_Wand.description = Point it at a friend. One button turns them into a Jack Skeleton, the other into a Lost Soul, and they can take the costume off whenever they like.
+Hallows_Eve_Cursed_Geode.name = Cursed Geode
+Hallows_Eve_Cursed_Geode.description = A lump of stone with something bright moving inside. Crack it open and keep whatever falls out.
+Hallows_Eve_Ectoplasm.name = Ectoplasm
+Hallows_Eve_Ectoplasm.description = What a Lost Soul leaves behind. It is cold to the touch, and carvers burn it in lanterns.
+Hallows_Eve_Hallowed_Pumpkin.name = Hallowed Pumpkin
+Hallows_Eve_Hallowed_Pumpkin.description = A violet pumpkin with gold in its ribs. It only turns up during Hallow's Eve.
+Hallows_Eve_Carving_Bench.name = Carving Bench
+Hallows_Eve_Carving_Bench.description = A workbench set up for pumpkin carving. Stand at it with the makings in your bag and carve.
+Hallows_Eve_Carving_Bench.hint = Press [{key}] to carve

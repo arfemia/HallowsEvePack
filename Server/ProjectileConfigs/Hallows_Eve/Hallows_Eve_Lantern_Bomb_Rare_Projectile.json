@@ -1,0 +1,23 @@
+{
+  "$Comment": "A Rare Lantern Bomb's flight. Parent is the Uncommon bomb's flight; this file changes the flight model and restates both roots with the Rare blast, since a child's Interactions replace the parent's whole.",
+  "Parent": "Hallows_Eve_Lantern_Bomb_Uncommon_Projectile",
+  "Model": "Hallows_Eve_Lantern_Bomb_Rare_Thrown",
+  "Interactions": {
+    "ProjectileSpawn": {
+      "Cooldown": {"Cooldown": 0},
+      "Interactions": [
+        {"Type": "Simple", "RunTime": 0.5},
+        "Hallows_Eve_Lantern_Bomb_Burst_Rare",
+        {"Type": "RemoveEntity", "Entity": "User"}
+      ]
+    },
+    "ProjectileHit": {
+      "Cooldown": {"Cooldown": 0},
+      "Rules": {"Interrupting": ["ProjectileSpawn"]},
+      "Interactions": [
+        "Hallows_Eve_Lantern_Bomb_Burst_Rare",
+        {"Type": "RemoveEntity", "Entity": "User"}
+      ]
+    }
+  }
+}

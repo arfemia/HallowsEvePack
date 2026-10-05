@@ -1,0 +1,26 @@
+{
+  "$Comment": "Where a Shattering Lantern Bomb's flaming shard lands: every creature within a block and a half takes a little damage and Burn. Players are never hurt, by the same one rule the bombs' blasts use. Range, BaseDamage and the Burn line are the knobs.",
+  "Type": "Selector",
+  "Selector": {"Id": "AOECircle", "Range": 1.5},
+  "IgnoreOwner": true,
+  "Effects": {
+    "Particles": [
+      {"SystemId": "Explosion_Small", "TargetEntityPart": "Entity"}
+    ]
+  },
+  "HitEntityRules": [
+    {
+      "Matchers": [{"Type": "Player", "Invert": true}],
+      "Next": {
+        "Interactions": [
+          {"Type": "ApplyEffect", "EffectId": "Burn", "Entity": "Target"},
+          {
+            "Parent": "DamageEntityParent",
+            "DamageCalculator": {"BaseDamage": {"Hallows_Eve_Lantern_Burst": 8}}
+          }
+        ]
+      }
+    }
+  ],
+  "Next": {"Type": "Simple", "RunTime": 0.1}
+}

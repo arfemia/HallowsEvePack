@@ -1,0 +1,22 @@
+{
+  "$Comment": "Cracking a Cursed Geode open. The geode is spent first, and only a geode actually spent pays: ModifyInventory takes one from the hand, and only its Next pays the table Hallows_Eve_Geode_Crack (ZigGrantReward) and counts the crack (ZigCreditProgress, USE_ITEM with the Qualifier Crack, its Target the geode even when it was the last one). Tune what a crack pays in that table, never here.",
+  "Type": "Simple",
+  "RunTime": 0.3,
+  "Effects": {"ItemAnimationId": "SwingDown", "WorldSoundEventId": "SFX_Crystal_Break"},
+  "Next": {
+    "Type": "ModifyInventory",
+    "AdjustHeldItemQuantity": -1,
+    "Next": {
+      "Type": "Serial",
+      "Interactions": [
+        {
+          "Type": "ZigGrantReward",
+          "Rewards": [
+            {"Kind": "Lootable", "Params": {"Lootable": "Hallows_Eve_Geode_Crack"}}
+          ]
+        },
+        {"Type": "ZigCreditProgress", "Qualifier": "Crack"}
+      ]
+    }
+  }
+}

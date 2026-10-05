@@ -1,0 +1,15 @@
+{
+  "$Comment": "The Uncommon Lantern Bomb. Parent is the Common bomb, so every leaf not restated here is inherited, MaxStack included; its blast sets what it catches burning (Hallows_Eve_Lantern_Bomb_Burst_Uncommon).",
+  "Parent": "Hallows_Eve_Lantern_Bomb_Common",
+  "TranslationProperties": {
+    "Name": "items.Hallows_Eve_Lantern_Bomb_Uncommon.name",
+    "Description": "items.Hallows_Eve_Lantern_Bomb_Uncommon.description"
+  },
+  "Quality": "Uncommon",
+  "ItemLevel": 25,
+  "Interactions": {
+    "Primary": {"Interactions": ["Hallows_Eve_Lantern_Bomb_Throw_Uncommon"]}
+  },
+  "Texture": "Items/Hallows_Eve/Lantern_Bomb/Lantern_Bomb_Uncommon_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Hallows_Eve_Lantern_Bomb_Uncommon.png"
+}

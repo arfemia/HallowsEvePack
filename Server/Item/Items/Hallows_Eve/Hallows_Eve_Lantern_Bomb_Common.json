@@ -1,0 +1,23 @@
+{
+  "$Comment": "The Common Lantern Bomb, the root of the four tiers: the Uncommon, Rare and Epic bombs each take the tier below as their Parent and change only their name, quality, item level, look and throw. An item with a Weapon block stacks to one unless MaxStack says otherwise, so MaxStack is set here and every tier inherits it. Tags.Family Bomb files it with the game's own bombs. Primary throws it (Hallows_Eve_Lantern_Bomb_Throw_Common).",
+  "TranslationProperties": {
+    "Name": "items.Hallows_Eve_Lantern_Bomb_Common.name",
+    "Description": "items.Hallows_Eve_Lantern_Bomb_Common.description"
+  },
+  "Categories": ["Items.Weapons"],
+  "Quality": "Common",
+  "ItemLevel": 20,
+  "PlayerAnimationsId": "Item",
+  "Interactions": {"Primary": {"Interactions": ["Hallows_Eve_Lantern_Bomb_Throw_Common"]}},
+  "MaxStack": 10,
+  "IconProperties": {"Scale": 0.87, "Translation": [-7.11, -7.7], "Rotation": [4.685, 6.935, 315]},
+  "Model": "Items/Hallows_Eve/Lantern_Bomb/Lantern_Bomb.blockymodel",
+  "Texture": "Items/Hallows_Eve/Lantern_Bomb/Lantern_Bomb_Common_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Hallows_Eve_Lantern_Bomb_Common.png",
+  "Particles": [
+    {"SystemId": "Fuse_Bomb", "TargetNodeName": "Fuse_Lit", "TargetEntityPart": "PrimaryItem"}
+  ],
+  "Tags": {"Type": ["Weapon"], "Family": ["Bomb"]},
+  "Weapon": {},
+  "SoundEventId": "SFX_Bomb_Fuse"
+}

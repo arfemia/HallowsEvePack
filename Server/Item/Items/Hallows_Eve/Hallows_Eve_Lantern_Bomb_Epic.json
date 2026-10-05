@@ -1,0 +1,13 @@
+{
+  "$Comment": "The Epic Lantern Bomb. Parent is the Rare bomb, so every leaf not restated here is inherited, MaxStack included; its blast burns and slows, then splits into four flaming shards (Hallows_Eve_Lantern_Bomb_Burst_Epic).",
+  "Parent": "Hallows_Eve_Lantern_Bomb_Rare",
+  "TranslationProperties": {
+    "Name": "items.Hallows_Eve_Lantern_Bomb_Epic.name",
+    "Description": "items.Hallows_Eve_Lantern_Bomb_Epic.description"
+  },
+  "Quality": "Epic",
+  "ItemLevel": 35,
+  "Interactions": {"Primary": {"Interactions": ["Hallows_Eve_Lantern_Bomb_Throw_Epic"]}},
+  "Texture": "Items/Hallows_Eve/Lantern_Bomb/Lantern_Bomb_Epic_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Hallows_Eve_Lantern_Bomb_Epic.png"
+}

@@ -1,0 +1,20 @@
+{
+  "$Comment": "A Common Lantern Bomb in flight: the held bomb's twin with its geometry centred on the pivot, so it spins about its middle, wearing the Common texture. The fuse keeps burning on the Fuse_Lit node. MinScale and MaxScale pin its size at one, and the projectile config's UseModelScale makes the flight honour them. The other three tiers take this file as their Parent and change only the texture.",
+  "Model": "Items/Hallows_Eve/Lantern_Bomb/Lantern_Bomb_Center.blockymodel",
+  "Texture": "Items/Hallows_Eve/Lantern_Bomb/Lantern_Bomb_Common_Texture.png",
+  "EyeHeight": 0.15,
+  "HitBox": {"Max": {"X": 0.15, "Y": 0.15, "Z": 0.15}, "Min": {"X": -0.15, "Y": -0.15, "Z": -0.15}},
+  "MinScale": 1,
+  "MaxScale": 1,
+  "Particles": [{"SystemId": "Fuse_Bomb", "TargetNodeName": "Fuse_Lit"}],
+  "AnimationSets": {
+    "Idle": {
+      "Animations": [
+        {
+          "Animation": "Items/Animations/Spin_Pitch/Spin_Pitch_Down.blockyanim",
+          "SoundEventId": "SFX_Bomb_Fuse"
+        }
+      ]
+    }
+  }
+}
