@@ -1,0 +1,8 @@
+{
+  "$Comment": "The favor with Old Jack that gear adds while it is worn. An item names this stat in its own StatModifiers (the Jack Helm, in Armor.StatModifiers), Additive on the Max, and the library adds the stat's Max to the favor a player has earned: every gate, the rank shown and the Reputation page count it, while Old Jack's own attitude reads earned favor alone. Base Max 0, so a player wearing none of it is untouched. Its tooltip line is the client.lang key itemTooltip.stats.Reputation_Hallows_Eve_Old_Jack.",
+  "InitialValue": 0.0,
+  "Min": -1000000.0,
+  "Max": 0.0,
+  "Shared": false,
+  "HideFromTooltip": false
+}

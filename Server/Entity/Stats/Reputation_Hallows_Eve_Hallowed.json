@@ -1,0 +1,8 @@
+{
+  "$Comment": "The favor with the Hallowed that gear adds while it is worn: the Jack Shield in the utility slot (Utility.StatModifiers) and the Hallowed set's tier (ZiggfreedCommon/GearSets/HallowsEvePack/Hallows_Eve_Hallowed.json), each Additive on the Max. The library adds the stat's Max to the favor a player has earned wherever favor is read. Base Max 0, so a player wearing none of it is untouched. Its tooltip line is the client.lang key itemTooltip.stats.Reputation_Hallows_Eve_Hallowed.",
+  "InitialValue": 0.0,
+  "Min": -1000000.0,
+  "Max": 0.0,
+  "Shared": false,
+  "HideFromTooltip": false
+}

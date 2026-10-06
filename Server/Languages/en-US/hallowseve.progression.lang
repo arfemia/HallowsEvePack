@@ -1,5 +1,6 @@
 # Hallow's Eve progression: Old Jack's questline, dailies, board and stall, his conversation and
-# the trick-or-treat line, the season's achievements and title, and its Almanac page.
+# the trick-or-treat line, the season's achievements and titles, its two reputations (Old Jack's
+# Favor and the Hallowed) and its Almanac page.
 # Keys are written bare: the library finds each one by its tail, whatever this file is called.
 # Numbers ride {0} and come from the content files, so a retune never touches a translation.
 
@@ -79,6 +80,18 @@ achievement.seasons_of_orbis.desc = Earn every season's crowning achievement.
 title.hallows_eve_hallowed.name = The Hallowed
 title.hallows_eve_hallowed.flavor = Earned every Hallow's Eve achievement in one season.
 title.hallows_eve_hallowed.display = {0} the Hallowed
+
+# ---- Reputations: Old Jack's Favor and the Hallowed ----
+reputation.hallows_eve_old_jack.name = Old Jack's Favor
+reputation.hallows_eve_old_jack.flavor = Old Jack takes a while to warm up to people. Do his errands and stop for a word now and then.
+reputation.hallows_eve_old_jack.rank.neutral = Stranger
+reputation.hallows_eve_old_jack.rank.friendly = Regular
+reputation.hallows_eve_old_jack.rank.honored = Trusted
+reputation.hallows_eve_old_jack.rank.revered = Confidant
+reputation.hallows_eve_old_jack.rank.exalted = Jack's Own
+reputation.hallows_eve_hallowed.name = The Hallowed
+reputation.hallows_eve_hallowed.flavor = The Hallowed keep the dead where they belong. Put down what climbs out of the graves at night and they take notice.
+notify.hallows_eve_hallowed_cache = A cache from the Hallowed, for keeping the dead down.
 
 # ---- The Almanac page ----
 almanac.hallows_eve.title = Hallow's Eve
