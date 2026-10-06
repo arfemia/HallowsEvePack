@@ -17,6 +17,7 @@ Hallow's Eve starts on its own on October 1 and runs to November 3, every year. 
 - **Old Jack**, a pumpkin-headed host who sets up in the Forgotten Temple for the season. His six quests end with lighting the Hollow Lantern, a keepsake with the year on it, and that last quest comes back every October.
 - Three dailies, plus Old Jack's board with one job a night. It pays the moment you finish.
 - Hallow Sweets, the season's money. Spend them at Old Jack's stall on Lantern Bombs, lanterns, the Jack Helm and a Costume Wand. Whatever you don't spend keeps until next year.
+- A shelf of Halloween decorations at the stall too: lights, two carved pumpkins (one scary, one cute), a straw basket, a scarecrow and a wagon.
 - Trick or treat. Once a day, knock on any character who has a conversation for you. With MMO Skill Tree or another pack that gives characters conversations, every one of them plays along; on this pack alone, only Old Jack does. You always get a few sweets, then maybe more, some candy canes, a pumpkin pie, or a costume.
 - After dark, away from torches, Jack Skeletons, Hollow Ghouls and Lost Souls come out, and Geode Wraiths walk the mineshafts. By dawn they are gone.
 - **Lantern Bombs**: carved pumpkins packed with black powder, in four tiers. Each one hits harder and wider than the last. The Burning Lantern Bomb sets things on fire. Go a tier up and they slow down too, and the Shattering Lantern Bomb throws flaming shards on top. A blast never hurts a player.
@@ -26,7 +27,8 @@ Hallow's Eve starts on its own on October 1 and runs to November 3, every year. 
 - The Carving Bench. Craft it at a Workbench, then carve lanterns, the Jack Helm and Lantern Bombs on it all year. The Jack Shield only carves during the event.
 - Harvest Moon, the last three days of October. About twice the creatures come out at night, and every geode and Hallowed Pumpkin you find comes in pairs. Old Jack puts a bundle of bombs on the stall.
 - Seven achievements a season. The last one, The Hallowed, is for earning the other six in one season and gives you the title "the Hallowed". Each year's achievements stay with you as feats.
-- An Almanac page for the season: your keepsakes, and lifetime counts of bombs thrown, ghouls felled, souls freed and geodes cracked.
+- Keepsakes that build over the years. Old Friend wants three Hallow's Eves. Light the Hollow Lantern in three seasons for Lantern Keeper and the title "Keeper of Lanterns". First Lanterns only goes to players who light it in 2026, the first year.
+- An Almanac page for the season: your keepsakes, and lifetime counts of bombs thrown, ghouls felled, Jack Skeletons knocked down, souls freed, geodes cracked and Geode Wraiths put down.
 - Translated into 9 languages.
 
 ## How it works
@@ -68,7 +70,7 @@ Add the MMO Skill Bounty Pack 1.3.0 or newer and its Daily bounty board posts a 
 
 ### v1.0.0 (unreleased, held)
 
-First release: Old Jack's questline, dailies, board and stall, trick-or-treat, the creatures of the season, Lantern Bombs, the Hallowed set, the Costume Wand, Cursed Geodes, the Carving Bench, Harvest Moon, seven achievements with a title, and an Almanac page. Needs Ziggfreed's CommonLib 2.2.0 and RPG Stations 1.1.0.
+First release: Old Jack's questline, dailies, board and stall (Halloween decorations included), trick-or-treat, the creatures of the season, Lantern Bombs, the Hallowed set, the Costume Wand, Cursed Geodes, the Carving Bench, Harvest Moon, seven achievements a season with a title, three keepsakes across the years with another, and an Almanac page. Needs Ziggfreed's CommonLib 2.2.0 and RPG Stations 1.1.0.
 
 ## Links & Support
 
