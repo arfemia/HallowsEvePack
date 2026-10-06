@@ -19,7 +19,7 @@
     "Anchor is the temple's arrival spot plus an offset: four blocks along negative X, onto the open",
     "landing, and two and a half along positive Z. To move him, edit Anchor.WorldSpawn.Offset (small",
     "enough to stay off the walls) and Yaw to turn him, then look at the spot in game. To take him out",
-    "without editing this file, set Enabled false for this id in",
+    "without editing this file, set enabled (lower case, as that file spells it) to false for this id in",
     "mods/ziggfreedcommon/npc-placements.json."
   ],
   "Name": "Hallows_Eve_Old_Jack_Temple",
