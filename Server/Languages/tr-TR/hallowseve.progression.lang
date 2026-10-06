@@ -35,13 +35,13 @@ objective.hallows_eve.attend = Cadılar Bayramı'nda burada ol
 
 # ---- Yaşlı Jack'in panosu ----
 board.hallows_eve_daily.title = Yaşlı Jack'in Panosu
-board.hallows_eve_daily.desc = Gecede bir iş, parası da var.
+board.hallows_eve_daily.desc = Karanlık için iş var, gün ışığı için de. Müdavimlerim biraz fazlasını alır.
 quest.hallows_eve_board_souls.title = Ruh Taraması
 quest.hallows_eve_board_souls.flavor = Bu gece tapınağın çevresi ruh kaynıyor. Sabah olmadan epeycesini serbest bırak.
 quest.hallows_eve_board_ghouls.title = Gulyabani Temizliği
 quest.hallows_eve_board_ghouls.flavor = Mezarlar bu gece hareketli. Oyuk Gulyabanileri geldikleri yere geri yolla, kibarlık da etme.
 quest.hallows_eve_board_bombs.title = Fener Yaylım Ateşi
-quest.hallows_eve_board_bombs.flavor = Bu gece bir yığın Fener Bombası tüket. Neye attığın pek umurumda değil, yeter ki tapınak olmasın.
+quest.hallows_eve_board_bombs.flavor = Benim için bir yığın Fener Bombası tüket. Neye attığın pek umurumda değil, yeter ki tapınak olmasın.
 quest.hallows_eve_board_geodes.title = Derin Jeotlar
 quest.hallows_eve_board_geodes.flavor = Derindeki taş uğuldamayı kesmiyor, ben de bu yüzden uyuyamıyorum. Onu susturmaya yetecek kadar Lanetli Jeot kır.
 quest.hallows_eve_board_harvest_moon.title = Hasat Ayı Avı
@@ -91,7 +91,7 @@ almanac.hallows_eve.geodes_cracked = Kırılan Lanetli Jeotlar
 # ---- Yaşlı Jack'in sohbeti ----
 dialogue.hallows_eve_old_jack.first_words.text = Kafaya takılma. Bal kabağı o, uzun zamandır da orada.\nBen Yaşlı Jack. Her sonbahar ölüler huzursuzlanır ve <color is="#ffd97a">Unutulmuş Tapınak'taki</color> fenerler söner, ben de dönüp onları yakarım. Oyulmamış bir çift el işime yarar.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Tanıştığımıza memnun oldum, Jack.
-dialogue.hallows_eve_old_jack.board_fresh.text = Bu gece panomda yeni iş var. Tek bir iş, parası da var.
+dialogue.hallows_eve_old_jack.board_fresh.text = Panomda yeni iş var, kimi karanlık için, kimi gün ışığı için. Parası da var.
 dialogue.hallows_eve_old_jack.board_fresh.opt.board = Panoyu göster.
 dialogue.hallows_eve_old_jack.board_fresh.opt.later = Sonra, Jack.
 dialogue.hallows_eve_old_jack.menu.text = Fenerler yandı, gulyabaniler de gezmeye çıktı. Ne lazım?
@@ -160,4 +160,30 @@ shop.hallows_eve_offer_pumpkin_cute.title = Sevimli Cadılar Bayramı Bal Kabağ
 # ---- More Almanac tallies ----
 almanac.hallows_eve.skeletons_knocked_down = Yere serilen Jack İskeletleri
 almanac.hallows_eve.wraiths_put_down = Alt edilen Jeot Hortlakları
+
+# ---- Jack'in Sırdaşı, Yaşlı Jack'in panosunun dereceleri ve iki itibar: Yaşlı Jack'in Teveccühü ve Kutsanmış ----
+objective.hallows_eve.jack_confidant = Yaşlı Jack'in Sırdaşı ol
+board.hallows_eve_daily.grade.night = Gece İşi
+board.hallows_eve_daily.grade.day = Gündüz İşi
+achievement.hallows_eve_jacks_confidant.title = Jack'in Sırdaşı
+achievement.hallows_eve_jacks_confidant.desc = Yaşlı Jack'in Sırdaşı ol.
+title.hallows_eve_jacks_confidant.name = Jack'in Sırdaşı
+title.hallows_eve_jacks_confidant.flavor = Yaşlı Jack'in Sırdaşı oldu.
+title.hallows_eve_jacks_confidant.display = {0}, Jack'in Sırdaşı
+reputation.hallows_eve_old_jack.name = Yaşlı Jack'in Teveccühü
+reputation.hallows_eve_old_jack.flavor = Yaşlı Jack'in insanlara ısınması zaman alır. Ayak işlerini gör, arada bir de durup iki laf et.
+reputation.hallows_eve_old_jack.rank.neutral = Yabancı
+reputation.hallows_eve_old_jack.rank.friendly = Müdavim
+reputation.hallows_eve_old_jack.rank.honored = Güvenilir
+reputation.hallows_eve_old_jack.rank.revered = Sırdaş
+reputation.hallows_eve_old_jack.rank.exalted = Jack'in Yakını
+factor.hallows_eve_old_jack.friendly = Yaşlı Jack nezdinde Müdavim rütbesi
+factor.hallows_eve_old_jack.honored = Yaşlı Jack nezdinde Güvenilir rütbesi
+reputation.hallows_eve_hallowed.name = Kutsanmışlar
+reputation.hallows_eve_hallowed.flavor = Kutsanmışlar ölüleri ait oldukları yerde tutar. Geceleri mezarlardan tırmanıp çıkanları yere ser, onlar da fark eder.
+notify.hallows_eve_hallowed_cache = Kutsanmışlardan bir zula, ölüleri yerin altında tuttuğun için.
+dialogue.hallows_eve_old_jack.board_fresh_friendly.text = Yine sen. İyi.\nPanomda yeni iş var, senin için de biraz fazladan koydum.
+dialogue.hallows_eve_old_jack.board_fresh_honored.text = Geldin demek. Merak etmeye başlamıştım.\nPano bugün dolu, işi başkasına vereceğime sana veririm.
+dialogue.hallows_eve_old_jack.board_fresh_revered.text = Otur biraz. Gulyabaniler bekleyebilir.\nBu basamaklara her gece geri gelen pek olmaz. Ne zaman istersen panoda iş var.
+dialogue.hallows_eve_old_jack.opt.standing = Aramız nasıl?
 

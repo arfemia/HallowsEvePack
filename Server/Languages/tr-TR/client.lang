@@ -1,0 +1,4 @@
+# Seasons of Orbis - client-namespace additions, tr-TR: the item-tooltip label of each stat this pack ships,
+# itemTooltip.stats.<StatId>, loaded as client.<key>. {value} is the client's own placeholder.
+itemTooltip.stats.Reputation_Hallows_Eve_Old_Jack = Yaşlı Jack'in Teveccühü: {value}
+itemTooltip.stats.Reputation_Hallows_Eve_Hallowed = Kutsanmışların Teveccühü: {value}

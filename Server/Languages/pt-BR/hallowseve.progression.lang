@@ -35,13 +35,13 @@ objective.hallows_eve.attend = Esteja aqui durante a Noite das Bruxas
 
 # ---- O quadro do Velho Jack ----
 board.hallows_eve_daily.title = Quadro do Velho Jack
-board.hallows_eve_daily.desc = Um serviço por noite, e paga.
+board.hallows_eve_daily.desc = Serviço pro escuro e serviço pra luz do dia. Meus fregueses ganham um pouco mais.
 quest.hallows_eve_board_souls.title = Varredura de Almas
 quest.hallows_eve_board_souls.flavor = Tem alma de monte em volta do templo esta noite. Liberta um bom tanto delas antes de amanhecer.
 quest.hallows_eve_board_ghouls.title = Abate de Carniçais
 quest.hallows_eve_board_ghouls.flavor = As covas tão agitadas esta noite. Manda os Carniçais Ocos de volta pro lugar de onde vieram, e não pega leve.
 quest.hallows_eve_board_bombs.title = Saraivada de Lanternas
-quest.hallows_eve_board_bombs.flavor = Queima uma pilha de Bombas-Lanterna esta noite. Não ligo muito pra onde, desde que não seja no templo.
+quest.hallows_eve_board_bombs.flavor = Queima uma pilha de Bombas-Lanterna pra mim. Não ligo muito em quê, desde que não seja no templo.
 quest.hallows_eve_board_geodes.title = Geodos Profundos
 quest.hallows_eve_board_geodes.flavor = A pedra lá do fundo não para de zumbir, e eu não consigo dormir com isso. Quebra Geodos Amaldiçoados o bastante pra ela sossegar.
 quest.hallows_eve_board_harvest_moon.title = Caçada da Lua da Colheita
@@ -91,7 +91,7 @@ almanac.hallows_eve.geodes_cracked = Geodos Amaldiçoados quebrados
 # ---- A conversa do Velho Jack ----
 dialogue.hallows_eve_old_jack.first_words.text = Não liga pra cabeça. É uma abóbora, e tá aí faz um bom tempo.\nSou o Velho Jack. Todo outono os mortos ficam inquietos e as lanternas do <color is="#ffd97a">Templo Esquecido</color> se apagam, então eu volto e acendo elas. Um par de mãos que não sejam entalhadas me cairia bem.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Prazer em te conhecer, Jack.
-dialogue.hallows_eve_old_jack.board_fresh.text = Tem serviço novo no meu quadro esta noite. Um serviço só, e paga.
+dialogue.hallows_eve_old_jack.board_fresh.text = Tem serviço novo no meu quadro, um pouco pro escuro e um pouco pra luz do dia. E paga.
 dialogue.hallows_eve_old_jack.board_fresh.opt.board = Mostre-me o quadro.
 dialogue.hallows_eve_old_jack.board_fresh.opt.later = Mais tarde, Jack.
 dialogue.hallows_eve_old_jack.menu.text = As lanternas tão acesas e os carniçais tão andando por aí. Do que você precisa?
@@ -160,4 +160,30 @@ shop.hallows_eve_offer_pumpkin_cute.title = Abóbora Fofa da Noite das Bruxas
 # ---- More Almanac tallies ----
 almanac.hallows_eve.skeletons_knocked_down = Esqueletos de Jack derrubados
 almanac.hallows_eve.wraiths_put_down = Assombrações de Geodo abatidas
+
+# ---- Reputações: o Favor do Velho Jack e os Consagrados, o Confidente de Jack, os selos do quadro e as falas novas do Jack ----
+objective.hallows_eve.jack_confidant = Torne-se Confidente do Velho Jack
+board.hallows_eve_daily.grade.night = Serviço Noturno
+board.hallows_eve_daily.grade.day = Serviço Diurno
+achievement.hallows_eve_jacks_confidant.title = Confidente de Jack
+achievement.hallows_eve_jacks_confidant.desc = Torne-se Confidente do Velho Jack.
+title.hallows_eve_jacks_confidant.name = Confidente de Jack
+title.hallows_eve_jacks_confidant.flavor = Tornou-se Confidente do Velho Jack.
+title.hallows_eve_jacks_confidant.display = {0}, Confidente de Jack
+reputation.hallows_eve_old_jack.name = Favor do Velho Jack
+reputation.hallows_eve_old_jack.flavor = O Velho Jack demora a se afeiçoar às pessoas. Faça os recados dele e pare para um dedo de prosa de vez em quando.
+reputation.hallows_eve_old_jack.rank.neutral = Forasteiro
+reputation.hallows_eve_old_jack.rank.friendly = Freguês
+reputation.hallows_eve_old_jack.rank.honored = De Confiança
+reputation.hallows_eve_old_jack.rank.revered = Confidente
+reputation.hallows_eve_old_jack.rank.exalted = Gente do Jack
+factor.hallows_eve_old_jack.friendly = nível Freguês com o Velho Jack
+factor.hallows_eve_old_jack.honored = nível De Confiança com o Velho Jack
+reputation.hallows_eve_hallowed.name = Os Consagrados
+reputation.hallows_eve_hallowed.flavor = Os Consagrados mantêm os mortos onde é o lugar deles. Derrube o que sai das covas à noite e eles reparam.
+notify.hallows_eve_hallowed_cache = Um agrado dos Consagrados, por manter os mortos debaixo da terra.
+dialogue.hallows_eve_old_jack.board_fresh_friendly.text = Você de novo. Bom.\nTem serviço novo no meu quadro, e eu pus um pouco a mais pra você.
+dialogue.hallows_eve_old_jack.board_fresh_honored.text = Aí está você. Eu já tava estranhando.\nO quadro tá cheio hoje, e prefiro que o serviço fique com você do que com qualquer outro.
+dialogue.hallows_eve_old_jack.board_fresh_revered.text = Senta um minuto. Os carniçais podem esperar.\nPouca gente volta pra esses degraus noite após noite. O quadro tem serviço sempre que você quiser.
+dialogue.hallows_eve_old_jack.opt.standing = Em que pé estamos?
 

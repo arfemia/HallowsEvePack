@@ -35,13 +35,13 @@ objective.hallows_eve.attend = Légy itt Mindenszentek Éjén
 
 # ---- Öreg Jack táblája ----
 board.hallows_eve_daily.title = Öreg Jack Táblája
-board.hallows_eve_daily.desc = Éjszakánként egy munka, és fizet.
+board.hallows_eve_daily.desc = Munka sötétben és munka napvilágnál. A törzsvendégeim kapnak egy kicsivel többet.
 quest.hallows_eve_board_souls.title = Lélektakarítás
 quest.hallows_eve_board_souls.flavor = Ma éjjel sűrűn állnak a lelkek a templom körül. Szabadíts fel jó sokat közülük, mielőtt megvirrad.
 quest.hallows_eve_board_ghouls.title = Ghúlgyérítés
 quest.hallows_eve_board_ghouls.flavor = Ma éjjel nagy a forgalom a síroknál. Küldd vissza a Kongó Ghúlokat oda, ahonnan jöttek, és ne bánj velük finoman.
 quest.hallows_eve_board_bombs.title = Lámpászápor
-quest.hallows_eve_board_bombs.flavor = Égess el ma éjjel egy rakás Lámpásbombát. Nem nagyon érdekel, mire, csak ne a templomra.
+quest.hallows_eve_board_bombs.flavor = Égess el nekem egy rakás Lámpásbombát. Nem nagyon érdekel, mire, csak ne a templomra.
 quest.hallows_eve_board_geodes.title = Mélységi Geodák
 quest.hallows_eve_board_geodes.flavor = A mély kő nem hagyja abba a zümmögést, és aludni sem tudok tőle. Törj fel annyi Átkozott Geodát, hogy elcsendesedjen.
 quest.hallows_eve_board_harvest_moon.title = Aratási Hold-vadászat
@@ -91,7 +91,7 @@ almanac.hallows_eve.geodes_cracked = Feltört Átkozott Geodák
 # ---- Öreg Jack beszélgetése ----
 dialogue.hallows_eve_old_jack.first_words.text = Ne törődj a fejjel. Tök, és már jó ideje rajtam van.\nÖreg Jack vagyok. Minden ősszel nyugtalanok lesznek a holtak, és kialszanak a lámpások a <color is="#ffd97a">Feledett Templomban</color>, úgyhogy visszajövök, és meggyújtom őket. Jól jönne egy pár kéz, amit nem faragtak ki.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Örülök, hogy megismerhetlek, Jack.
-dialogue.hallows_eve_old_jack.board_fresh.text = Ma éjjel friss munka van a táblámon. Egy munka, és fizet.
+dialogue.hallows_eve_old_jack.board_fresh.text = Friss munka van a táblámon, egy része sötétben, egy része napvilágnál. Fizet.
 dialogue.hallows_eve_old_jack.board_fresh.opt.board = Mutasd a táblát.
 dialogue.hallows_eve_old_jack.board_fresh.opt.later = Majd később, Jack.
 dialogue.hallows_eve_old_jack.menu.text = A lámpások égnek, a ghúlok kint járkálnak. Mi kell?
@@ -160,3 +160,29 @@ shop.hallows_eve_offer_pumpkin_cute.title = Aranyos Halloween-tök
 # ---- More Almanac tallies ----
 almanac.hallows_eve.skeletons_knocked_down = Leütött Jack-csontvázak
 almanac.hallows_eve.wraiths_put_down = Leterített Geodalidércek
+
+# ---- Hírnevek (Öreg Jack Kegye és a Megszentelt), a tábla sávjai, Jack Bizalmasa ----
+objective.hallows_eve.jack_confidant = Légy Öreg Jack Bizalmasa
+board.hallows_eve_daily.grade.night = Éjszakai munka
+board.hallows_eve_daily.grade.day = Nappali munka
+achievement.hallows_eve_jacks_confidant.title = Jack Bizalmasa
+achievement.hallows_eve_jacks_confidant.desc = Légy Öreg Jack Bizalmasa.
+title.hallows_eve_jacks_confidant.name = Jack Bizalmasa
+title.hallows_eve_jacks_confidant.flavor = Öreg Jack Bizalmasa lett.
+title.hallows_eve_jacks_confidant.display = {0}, Jack Bizalmasa
+reputation.hallows_eve_old_jack.name = Öreg Jack Kegye
+reputation.hallows_eve_old_jack.flavor = Öreg Jack lassan melegszik fel az emberek iránt. Intézd el a megbízásait, és hébe-hóba állj meg nála egy szóra.
+reputation.hallows_eve_old_jack.rank.neutral = Idegen
+reputation.hallows_eve_old_jack.rank.friendly = Törzsvendég
+reputation.hallows_eve_old_jack.rank.honored = Megbízható
+reputation.hallows_eve_old_jack.rank.revered = Bizalmas
+reputation.hallows_eve_old_jack.rank.exalted = Jack Embere
+factor.hallows_eve_old_jack.friendly = Törzsvendég rang Öreg Jacknél
+factor.hallows_eve_old_jack.honored = Megbízható rang Öreg Jacknél
+reputation.hallows_eve_hallowed.name = A Megszenteltek
+reputation.hallows_eve_hallowed.flavor = A Megszenteltek ott tartják a holtakat, ahová valók. Teríts le, ami éjjel kimászik a sírokból, és felfigyelnek rád.
+notify.hallows_eve_hallowed_cache = Egy csomag a Megszenteltektől, amiért lent tartod a holtakat.
+dialogue.hallows_eve_old_jack.board_fresh_friendly.text = Megint te. Jó.\nFriss munka van a táblámon, és feltettem rá egy kis pluszt neked.
+dialogue.hallows_eve_old_jack.board_fresh_honored.text = Hát itt vagy. Már kezdtem tűnődni.\nMa tele van a tábla, és inkább neked adnám a munkát, mint bárki másnak.
+dialogue.hallows_eve_old_jack.board_fresh_revered.text = Ülj le egy percre. A ghúlok várhatnak.\nNem sokan jönnek vissza ehhez a lépcsőhöz éjszakáról éjszakára. A táblán van munka, amikor csak akarod.
+dialogue.hallows_eve_old_jack.opt.standing = Hogy állunk mi ketten?

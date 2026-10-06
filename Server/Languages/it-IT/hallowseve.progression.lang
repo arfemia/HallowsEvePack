@@ -35,13 +35,13 @@ objective.hallows_eve.attend = Partecipa alla Vigilia di Ognissanti
 
 # ---- La bacheca del Vecchio Jack ----
 board.hallows_eve_daily.title = Bacheca del Vecchio Jack
-board.hallows_eve_daily.desc = Un lavoro a notte, e paga.
+board.hallows_eve_daily.desc = Lavoro da fare col buio e lavoro da fare alla luce del giorno. Ai miei habitué tocca qualcosa in più.
 quest.hallows_eve_board_souls.title = Retata di Anime
 quest.hallows_eve_board_souls.flavor = Stanotte le anime sono fitte attorno al tempio. Liberane un bel po' prima del mattino.
 quest.hallows_eve_board_ghouls.title = Falciata di Ghoul
 quest.hallows_eve_board_ghouls.flavor = Stanotte le tombe sono affollate. Rimanda i Ghoul Vuoti da dove sono venuti, e non andarci piano.
 quest.hallows_eve_board_bombs.title = Raffica di Lanterne
-quest.hallows_eve_board_bombs.flavor = Stanotte brucia una pila di Bombe Lanterna. Contro cosa non m'importa granché, basta che non sia il tempio.
+quest.hallows_eve_board_bombs.flavor = Brucia una pila di Bombe Lanterna per me. Contro cosa non m'importa granché, basta che non sia il tempio.
 quest.hallows_eve_board_geodes.title = Geodi Profonde
 quest.hallows_eve_board_geodes.flavor = La pietra profonda non smette di ronzare, e non mi fa dormire. Spacca abbastanza Geodi Maledette da zittirla.
 quest.hallows_eve_board_harvest_moon.title = Caccia della Luna del Raccolto
@@ -91,7 +91,7 @@ almanac.hallows_eve.geodes_cracked = Geodi Maledette spaccate
 # ---- La conversazione del Vecchio Jack ----
 dialogue.hallows_eve_old_jack.first_words.text = Non badare alla testa. È una zucca, e sta lì sopra da un bel pezzo.\nSono il Vecchio Jack. Ogni autunno i morti si agitano e le lanterne del <color is="#ffd97a">Tempio Dimenticato</color> si spengono, così torno e le riaccendo. Mi farebbe comodo un paio di mani che non siano intagliate.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Piacere di conoscerti, Jack.
-dialogue.hallows_eve_old_jack.board_fresh.text = Stanotte c'è lavoro nuovo sulla mia bacheca. Un lavoro, e paga.
+dialogue.hallows_eve_old_jack.board_fresh.text = C'è lavoro nuovo sulla mia bacheca, un po' da fare col buio e un po' alla luce del giorno. Paga.
 dialogue.hallows_eve_old_jack.board_fresh.opt.board = Fammi vedere la bacheca.
 dialogue.hallows_eve_old_jack.board_fresh.opt.later = Più tardi, Jack.
 dialogue.hallows_eve_old_jack.menu.text = Le lanterne sono accese e i ghoul vanno in giro. Che ti serve?
@@ -160,3 +160,29 @@ shop.hallows_eve_offer_pumpkin_cute.title = Zucca di Halloween Carina
 # ---- More Almanac tallies ----
 almanac.hallows_eve.skeletons_knocked_down = Scheletri Jack abbattuti
 almanac.hallows_eve.wraiths_put_down = Spettri delle Geodi abbattuti
+
+# ---- Il Confidente di Jack, le due reputazioni (il Favore del Vecchio Jack e il Consacrato), i gradi della bacheca e le sue battute ----
+objective.hallows_eve.jack_confidant = Diventa Confidente del Vecchio Jack
+board.hallows_eve_daily.grade.night = Lavoro di Notte
+board.hallows_eve_daily.grade.day = Lavoro di Giorno
+achievement.hallows_eve_jacks_confidant.title = Confidente di Jack
+achievement.hallows_eve_jacks_confidant.desc = Diventa Confidente del Vecchio Jack.
+title.hallows_eve_jacks_confidant.name = Confidente di Jack
+title.hallows_eve_jacks_confidant.flavor = È diventato Confidente del Vecchio Jack.
+title.hallows_eve_jacks_confidant.display = {0}, Confidente di Jack
+reputation.hallows_eve_old_jack.name = Favore del Vecchio Jack
+reputation.hallows_eve_old_jack.flavor = Il Vecchio Jack ci mette un po' a sciogliersi con la gente. Fagli qualche commissione e ogni tanto fermati a scambiare due parole.
+reputation.hallows_eve_old_jack.rank.neutral = Sconosciuto
+reputation.hallows_eve_old_jack.rank.friendly = Habitué
+reputation.hallows_eve_old_jack.rank.honored = Fidato
+reputation.hallows_eve_old_jack.rank.revered = Confidente
+reputation.hallows_eve_old_jack.rank.exalted = Uno di Jack
+factor.hallows_eve_old_jack.friendly = il rango di Habitué presso il Vecchio Jack
+factor.hallows_eve_old_jack.honored = il rango di Fidato presso il Vecchio Jack
+reputation.hallows_eve_hallowed.name = I Consacrati
+reputation.hallows_eve_hallowed.flavor = I Consacrati tengono i morti al loro posto. Abbatti ciò che di notte risale dalle tombe e loro se ne accorgono.
+notify.hallows_eve_hallowed_cache = Una scorta dai Consacrati, per aver tenuto i morti sottoterra.
+dialogue.hallows_eve_old_jack.board_fresh_friendly.text = Ancora tu. Bene.\nC'è lavoro nuovo sulla mia bacheca, e ci ho messo qualcosa in più per te.
+dialogue.hallows_eve_old_jack.board_fresh_honored.text = Eccoti. Cominciavo a farmi delle domande.\nOggi la bacheca è piena, e il lavoro preferisco darlo a te che a chiunque altro.
+dialogue.hallows_eve_old_jack.board_fresh_revered.text = Siediti un momento. I ghoul possono aspettare.\nNon sono in molti a tornare su questi gradini notte dopo notte. Sulla bacheca c'è lavoro ogni volta che lo vuoi.
+dialogue.hallows_eve_old_jack.opt.standing = Come stanno le cose tra noi?

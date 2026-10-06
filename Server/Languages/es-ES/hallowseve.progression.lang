@@ -35,13 +35,13 @@ objective.hallows_eve.attend = Asiste a la Noche de Ánimas
 
 # ---- El tablón del Viejo Jack ----
 board.hallows_eve_daily.title = Tablón del Viejo Jack
-board.hallows_eve_daily.desc = Un trabajo por noche, y se paga.
+board.hallows_eve_daily.desc = Trabajo para la oscuridad y trabajo para la luz del día. A mis asiduos les toca un poco más.
 quest.hallows_eve_board_souls.title = Barrida de Almas
 quest.hallows_eve_board_souls.flavor = Esta noche hay almas a montones alrededor del templo. Libera a un buen puñado antes de que amanezca.
 quest.hallows_eve_board_ghouls.title = Batida de Gules
 quest.hallows_eve_board_ghouls.flavor = Las tumbas tienen mucho movimiento esta noche. Devuelve a los Gules Descarnados al sitio del que salieron, y no te andes con delicadezas.
 quest.hallows_eve_board_bombs.title = Andanada de Faroles
-quest.hallows_eve_board_bombs.flavor = Gasta un montón de Bombas Farol esta noche. No me importa mucho a qué, mientras no sea al templo.
+quest.hallows_eve_board_bombs.flavor = Gasta un montón de Bombas Farol por mí. No me importa mucho a qué, mientras no sea al templo.
 quest.hallows_eve_board_geodes.title = Geodas Profundas
 quest.hallows_eve_board_geodes.flavor = La piedra del fondo no para de zumbar, y no me deja dormir. Rompe suficientes Geodas Malditas para que se calle.
 quest.hallows_eve_board_harvest_moon.title = Caza de la Luna de la Cosecha
@@ -91,7 +91,7 @@ almanac.hallows_eve.geodes_cracked = Geodas Malditas rotas
 # ---- La conversación del Viejo Jack ----
 dialogue.hallows_eve_old_jack.first_words.text = No le hagas caso a la cabeza. Es una calabaza, y lleva ahí puesta mucho tiempo.\nSoy el Viejo Jack. Cada otoño los muertos se inquietan y los faroles del <color is="#ffd97a">Templo Olvidado</color> se apagan, así que vuelvo y los enciendo. No me vendría mal un par de manos que no estén talladas.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Un placer conocerte, Jack.
-dialogue.hallows_eve_old_jack.board_fresh.text = Esta noche hay trabajo nuevo en mi tablón. Un encargo, y se paga.
+dialogue.hallows_eve_old_jack.board_fresh.text = Hay trabajo nuevo en mi tablón, una parte para la oscuridad y otra para la luz del día. Se paga.
 dialogue.hallows_eve_old_jack.board_fresh.opt.board = Enséñame el tablón.
 dialogue.hallows_eve_old_jack.board_fresh.opt.later = Más tarde, Jack.
 dialogue.hallows_eve_old_jack.menu.text = Los faroles están encendidos y los gules han salido a pasear. ¿Qué necesitas?
@@ -160,4 +160,30 @@ shop.hallows_eve_offer_pumpkin_cute.title = Calabaza de Halloween Simpática
 # ---- More Almanac tallies ----
 almanac.hallows_eve.skeletons_knocked_down = Esqueletos Jack tumbados
 almanac.hallows_eve.wraiths_put_down = Espectros de Geoda abatidos
+
+# ---- Confidente de Jack, las insignias del tablón y las dos reputaciones (el Favor del Viejo Jack y los Consagrados) ----
+objective.hallows_eve.jack_confidant = Conviértete en Confidente del Viejo Jack
+board.hallows_eve_daily.grade.night = Trabajo de Noche
+board.hallows_eve_daily.grade.day = Trabajo de Día
+achievement.hallows_eve_jacks_confidant.title = Confidente de Jack
+achievement.hallows_eve_jacks_confidant.desc = Conviértete en Confidente del Viejo Jack.
+title.hallows_eve_jacks_confidant.name = Confidente de Jack
+title.hallows_eve_jacks_confidant.flavor = Se convirtió en Confidente del Viejo Jack.
+title.hallows_eve_jacks_confidant.display = {0}, Confidente de Jack
+reputation.hallows_eve_old_jack.name = Favor del Viejo Jack
+reputation.hallows_eve_old_jack.flavor = Al Viejo Jack le cuesta coger confianza con la gente. Hazle los recados y párate a cruzar unas palabras con él de vez en cuando.
+reputation.hallows_eve_old_jack.rank.neutral = Forastero
+reputation.hallows_eve_old_jack.rank.friendly = Asiduo
+reputation.hallows_eve_old_jack.rank.honored = De Confianza
+reputation.hallows_eve_old_jack.rank.revered = Confidente
+reputation.hallows_eve_old_jack.rank.exalted = De los de Jack
+factor.hallows_eve_old_jack.friendly = el rango Asiduo con el Viejo Jack
+factor.hallows_eve_old_jack.honored = el rango De Confianza con el Viejo Jack
+reputation.hallows_eve_hallowed.name = Los Consagrados
+reputation.hallows_eve_hallowed.flavor = Los Consagrados mantienen a los muertos donde deben estar. Abate lo que sale de las tumbas por la noche y ellos toman nota.
+notify.hallows_eve_hallowed_cache = Un alijo de los Consagrados, por mantener a los muertos bajo tierra.
+dialogue.hallows_eve_old_jack.board_fresh_friendly.text = Tú otra vez. Bien.\nHay trabajo nuevo en mi tablón, y he colgado algo de más para ti.
+dialogue.hallows_eve_old_jack.board_fresh_honored.text = Ahí estás. Ya me preguntaba dónde andabas.\nHoy el tablón está lleno, y prefiero que el trabajo te toque a ti antes que a nadie.
+dialogue.hallows_eve_old_jack.board_fresh_revered.text = Siéntate un momento. Los gules pueden esperar.\nPocos vuelven a esta escalera noche tras noche. En el tablón hay trabajo cuando quieras.
+dialogue.hallows_eve_old_jack.opt.standing = ¿Cómo estamos tú y yo?
 

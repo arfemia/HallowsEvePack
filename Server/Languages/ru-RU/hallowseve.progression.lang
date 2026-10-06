@@ -35,13 +35,13 @@ objective.hallows_eve.attend = Будьте здесь в Канун Всех С
 
 # ---- Доска Старого Джека ----
 board.hallows_eve_daily.title = Доска Старого Джека
-board.hallows_eve_daily.desc = Одна работа в ночь, и за неё платят.
+board.hallows_eve_daily.desc = Работа впотьмах и работа при свете дня. Моим завсегдатаям перепадает чуть больше.
 quest.hallows_eve_board_souls.title = Зачистка душ
 quest.hallows_eve_board_souls.flavor = Сегодня вокруг храма полно душ. Освободи побольше до утра.
 quest.hallows_eve_board_ghouls.title = Отбраковка упырей
 quest.hallows_eve_board_ghouls.flavor = На могилах сегодня оживлённо. Загони Полых упырей туда, откуда пришли, и не церемонься с ними.
 quest.hallows_eve_board_bombs.title = Фонарный обстрел
-quest.hallows_eve_board_bombs.flavor = Изведи сегодня кучу Фонарных бомб. Во что, мне без разницы, лишь бы не в храм.
+quest.hallows_eve_board_bombs.flavor = Изведи для меня кучу Фонарных бомб. Во что, мне без разницы, лишь бы не в храм.
 quest.hallows_eve_board_geodes.title = Глубинные жеоды
 quest.hallows_eve_board_geodes.flavor = Глубинный камень всё гудит, и мне от этого не спится. Расколи столько Проклятых жеод, чтобы он утих.
 quest.hallows_eve_board_harvest_moon.title = Охота под Урожайной луной
@@ -91,7 +91,7 @@ almanac.hallows_eve.geodes_cracked = Расколото Проклятых же�
 # ---- Разговор со Старым Джеком ----
 dialogue.hallows_eve_old_jack.first_words.text = Не обращай внимания на голову. Это тыква, и сидит она там уже давненько.\nЯ Старый Джек. Каждую осень мертвецам не лежится, а фонари в <color is="#ffd97a">Забытом Храме</color> гаснут, вот я и возвращаюсь их зажечь. Мне бы не помешала пара рук, которые никто не вырезал.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Приятно познакомиться, Джек.
-dialogue.hallows_eve_old_jack.board_fresh.text = На моей доске сегодня свежая работа. Одно дело, и за него платят.
+dialogue.hallows_eve_old_jack.board_fresh.text = На моей доске свежая работа, кое-что впотьмах, кое-что при свете дня. За неё платят.
 dialogue.hallows_eve_old_jack.board_fresh.opt.board = Покажи доску.
 dialogue.hallows_eve_old_jack.board_fresh.opt.later = Потом, Джек.
 dialogue.hallows_eve_old_jack.menu.text = Фонари зажжены, а упыри вышли погулять. Что тебе нужно?
@@ -160,3 +160,29 @@ shop.hallows_eve_offer_pumpkin_cute.title = Милая тыква на Хэлл�
 # ---- More Almanac tallies ----
 almanac.hallows_eve.skeletons_knocked_down = Повалено Скелетов-Джеков
 almanac.hallows_eve.wraiths_put_down = Уложено Призраков жеоды
+
+# ---- Расположение Старого Джека и Освящённые: репутации, значки доски и «Наперсник Джека» ----
+objective.hallows_eve.jack_confidant = Станьте наперсником Старого Джека
+board.hallows_eve_daily.grade.night = Работа ночью
+board.hallows_eve_daily.grade.day = Работа днём
+achievement.hallows_eve_jacks_confidant.title = Наперсник Джека
+achievement.hallows_eve_jacks_confidant.desc = Станьте наперсником Старого Джека.
+title.hallows_eve_jacks_confidant.name = Наперсник Джека
+title.hallows_eve_jacks_confidant.flavor = Стал наперсником Старого Джека.
+title.hallows_eve_jacks_confidant.display = {0}, Наперсник Джека
+reputation.hallows_eve_old_jack.name = Расположение Старого Джека
+reputation.hallows_eve_old_jack.flavor = Старый Джек не сразу теплеет к людям. Выполняйте его поручения и время от времени заходите перекинуться словом.
+reputation.hallows_eve_old_jack.rank.neutral = Незнакомец
+reputation.hallows_eve_old_jack.rank.friendly = Завсегдатай
+reputation.hallows_eve_old_jack.rank.honored = Доверенный
+reputation.hallows_eve_old_jack.rank.revered = Наперсник
+reputation.hallows_eve_old_jack.rank.exalted = Свой человек
+factor.hallows_eve_old_jack.friendly = ранг «Завсегдатай» у Старого Джека
+factor.hallows_eve_old_jack.honored = ранг «Доверенный» у Старого Джека
+reputation.hallows_eve_hallowed.name = Освящённые
+reputation.hallows_eve_hallowed.flavor = Освящённые держат мёртвых там, где им место. Укладывайте обратно то, что по ночам вылезает из могил, и они это заметят.
+notify.hallows_eve_hallowed_cache = Тайник от Освящённых за то, что не даёте мёртвым подняться.
+dialogue.hallows_eve_old_jack.board_fresh_friendly.text = Опять ты. Хорошо.\nНа доске свежая работа, а тебе я накинул чуть сверху.
+dialogue.hallows_eve_old_jack.board_fresh_honored.text = Вот и ты. А я уж начал гадать.\nДоска сегодня полная, и пусть лучше работа достанется тебе, чем кому-то ещё.
+dialogue.hallows_eve_old_jack.board_fresh_revered.text = Присядь на минутку. Упыри подождут.\nНемногие возвращаются к этим ступеням ночь за ночью. Работа на доске будет, когда захочешь.
+dialogue.hallows_eve_old_jack.opt.standing = Как мы с тобой ладим?

@@ -33,16 +33,19 @@ quest.hallows_eve_jack_daily_geodes.flavor = La pierre du fond bourdonne encore.
 objective.hallows_eve.throw_bombs = Lancez {0} Bombes-Lanternes
 objective.hallows_eve.crack_geodes = Cassez {0} Géodes Maudites
 objective.hallows_eve.attend = Soyez là pour la Veille de la Toussaint
+objective.hallows_eve.jack_confidant = Devenez le Confident du Vieux Jack
 
 # ---- Le tableau du Vieux Jack ----
 board.hallows_eve_daily.title = Tableau du Vieux Jack
-board.hallows_eve_daily.desc = Un boulot par nuit, et ça paie.
+board.hallows_eve_daily.desc = Du boulot pour la nuit et du boulot pour le jour. Mes habitués ont droit à un peu plus.
+board.hallows_eve_daily.grade.night = Travail de nuit
+board.hallows_eve_daily.grade.day = Travail de jour
 quest.hallows_eve_board_souls.title = Ratissage d'âmes
 quest.hallows_eve_board_souls.flavor = Ça grouille d'âmes autour du temple cette nuit. Libères-en un bon paquet avant le matin.
 quest.hallows_eve_board_ghouls.title = Battue de goules
 quest.hallows_eve_board_ghouls.flavor = Ça s'agite dans les tombes cette nuit. Renvoie les Goules Creuses d'où elles viennent, et sois pas tendre avec elles.
 quest.hallows_eve_board_bombs.title = Barrage de lanternes
-quest.hallows_eve_board_bombs.flavor = Grille une pile de Bombes-Lanternes cette nuit. Peu m'importe sur quoi, tant que c'est pas le temple.
+quest.hallows_eve_board_bombs.flavor = Grille-moi une pile de Bombes-Lanternes. Peu m'importe sur quoi, tant que c'est pas le temple.
 quest.hallows_eve_board_geodes.title = Géodes profondes
 quest.hallows_eve_board_geodes.flavor = La pierre du fond arrête pas de bourdonner, et ça m'empêche de dormir. Casse assez de Géodes Maudites pour la faire taire.
 quest.hallows_eve_board_harvest_moon.title = Chasse sous la Lune des Moissons
@@ -81,6 +84,27 @@ title.hallows_eve_hallowed.name = Le Sanctifié
 title.hallows_eve_hallowed.flavor = A obtenu tous les succès de la Veille de la Toussaint en une seule saison.
 title.hallows_eve_hallowed.display = {0} le Sanctifié
 
+# ---- Le Confident de Jack : le succès et son titre ----
+achievement.hallows_eve_jacks_confidant.title = Confident de Jack
+achievement.hallows_eve_jacks_confidant.desc = Devenez le Confident du Vieux Jack.
+title.hallows_eve_jacks_confidant.name = Confident de Jack
+title.hallows_eve_jacks_confidant.flavor = Est devenu le Confident du Vieux Jack.
+title.hallows_eve_jacks_confidant.display = {0}, Confident de Jack
+
+# ---- Réputations : la Faveur du Vieux Jack et le Sanctifié ----
+reputation.hallows_eve_old_jack.name = Faveur du Vieux Jack
+reputation.hallows_eve_old_jack.flavor = Le Vieux Jack met du temps à s'ouvrir aux gens. Faites ses commissions et passez lui dire un mot de temps en temps.
+reputation.hallows_eve_old_jack.rank.neutral = Étranger
+reputation.hallows_eve_old_jack.rank.friendly = Habitué
+reputation.hallows_eve_old_jack.rank.honored = De confiance
+reputation.hallows_eve_old_jack.rank.revered = Confident
+reputation.hallows_eve_old_jack.rank.exalted = Un des siens
+factor.hallows_eve_old_jack.friendly = le statut d'Habitué du Vieux Jack
+factor.hallows_eve_old_jack.honored = la confiance du Vieux Jack
+reputation.hallows_eve_hallowed.name = Les Sanctifiés
+reputation.hallows_eve_hallowed.flavor = Les Sanctifiés gardent les morts à leur place. Abattez ce qui sort des tombes la nuit et ils le remarquent.
+notify.hallows_eve_hallowed_cache = Une réserve des Sanctifiés, pour avoir gardé les morts sous terre.
+
 # ---- La page de l'Almanach ----
 almanac.hallows_eve.title = Veille de la Toussaint
 almanac.hallows_eve.flavor = Chaque automne, le Vieux Jack ouvre le Temple Oublié et en allume les lanternes.
@@ -92,9 +116,12 @@ almanac.hallows_eve.geodes_cracked = Géodes Maudites cassées
 # ---- La conversation du Vieux Jack ----
 dialogue.hallows_eve_old_jack.first_words.text = Fais pas attention à la tête. C'est une citrouille, et elle est là-dessus depuis un bon moment.\nMoi, c'est le Vieux Jack. Chaque automne, les morts s'agitent et les lanternes du <color is="#ffd97a">Temple Oublié</color> s'éteignent, alors je reviens les allumer. J'aurais bien besoin d'une paire de mains qui sont pas sculptées.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Un plaisir de te rencontrer, Jack.
-dialogue.hallows_eve_old_jack.board_fresh.text = Y a du nouveau sur mon tableau cette nuit. Un boulot, et il paie.
+dialogue.hallows_eve_old_jack.board_fresh.text = Y a du nouveau sur mon tableau, un peu pour la nuit, un peu pour le jour. Ça paie.
 dialogue.hallows_eve_old_jack.board_fresh.opt.board = Montre-moi le tableau.
 dialogue.hallows_eve_old_jack.board_fresh.opt.later = Plus tard, Jack.
+dialogue.hallows_eve_old_jack.board_fresh_friendly.text = Encore toi. Bien.\nY a du nouveau sur mon tableau, et j'ai prévu un petit plus pour toi.
+dialogue.hallows_eve_old_jack.board_fresh_honored.text = Te voilà. Je commençais à me demander.\nLe tableau est plein aujourd'hui, et j'aime mieux que le boulot te revienne à toi qu'à n'importe qui.
+dialogue.hallows_eve_old_jack.board_fresh_revered.text = Assieds-toi une minute. Les goules peuvent attendre.\nY en a pas beaucoup qui reviennent sur ces marches nuit après nuit. Y a du boulot au tableau quand tu en veux.
 dialogue.hallows_eve_old_jack.menu.text = Les lanternes sont allumées et les goules se baladent. Qu'est-ce qu'il te faut ?
 dialogue.hallows_eve_old_jack.patch_offer.text = Cueille une citrouille ce mois-ci et de temps en temps, y en a une qui sort froide au toucher, un peu luisante. Des <b>citrouilles sanctifiées</b>, c'est comme ça que je les appelle.\nRapporte-m'en quelques-unes. Je te montrerai à quoi elles servent.
 dialogue.hallows_eve_old_jack.patch_offer.opt.accept = Je vais te trouver des citrouilles.
@@ -131,6 +158,7 @@ dialogue.hallows_eve_old_jack.opt.returned = Je suis de retour.
 dialogue.hallows_eve_old_jack.opt.quests = Qu'est-ce qu'il y a à faire ?
 dialogue.hallows_eve_old_jack.opt.board = Qu'est-ce qu'il y a sur le tableau ?
 dialogue.hallows_eve_old_jack.opt.shop = Voyons ton étal.
+dialogue.hallows_eve_old_jack.opt.standing = On en est où, tous les deux ?
 dialogue.hallows_eve_old_jack.opt.almanac = Montre-moi l'Almanach.
 dialogue.hallows_eve_old_jack.opt.who = Qui es-tu ?
 dialogue.hallows_eve_old_jack.opt.lantern = C'est quoi, une Lanterne Creuse ?

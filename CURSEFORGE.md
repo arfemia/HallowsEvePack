@@ -15,7 +15,9 @@ Hallow's Eve starts on its own on October 1 and runs to November 3, every year. 
 ## What it adds
 
 - **Old Jack**, a pumpkin-headed host who sets up in the Forgotten Temple for the season. His six quests end with lighting the Hollow Lantern, a keepsake with the year on it, and that last quest comes back every October.
-- Three dailies, plus Old Jack's board with one job a night. It pays the moment you finish.
+- Three dailies, plus Old Jack's board: a job for the dark and a job for the daylight, every day. Earn his favor and a second of each opens up. Jobs pay the moment you finish.
+- Two reputations, Old Jack's Favor and the Hallowed. Old Jack's runs from Stranger up to Jack's Own. The Hallowed keep counting past Exalted and leave you a cache every so often. His quests and board jobs pay into both, and putting down the night's creatures raises the Hallowed. The Jack Helm and the Jack Shield add favor while you wear them. Favor carries over to next year.
+- Old Jack warms up to you. He greets you by your rank once a day and pays a little favor for the visit. Once he trusts you, he sells you the Jack Shield, and at Confidant you earn Jack's Confidant and its title.
 - Hallow Sweets, the season's money. Spend them at Old Jack's stall on Lantern Bombs, lanterns, the Jack Helm and a Costume Wand. Whatever you don't spend keeps until next year.
 - A shelf of Halloween decorations at the stall too: lights, two carved pumpkins (one scary, one cute), a straw basket, a scarecrow and a wagon.
 - Trick or treat. Once a day, knock on any character who has a conversation for you. With MMO Skill Tree or another pack that gives characters conversations, every one of them plays along; on this pack alone, only Old Jack does. You always get a few sweets, then maybe more, some candy canes, a pumpkin pie, or a costume.
@@ -34,14 +36,14 @@ Hallow's Eve starts on its own on October 1 and runs to November 3, every year. 
 ## How it works
 
 1. Log in any time from October 1 to November 3. A banner tells you Old Jack is waiting at the Forgotten Temple.
-2. Find him there and press F. He hands out the questline, and his conversation opens his board and his stall. Ask him for the Almanac to see your season.
+2. Find him there and press F. He hands out the questline, and his conversation opens his board and his stall. Ask him for the Almanac to see your season, or how you stand with him.
 3. Go out after dark, away from torches. The creatures his quests and board send you after drop the bombs, Ectoplasm and pumpkins you will want.
 4. Spend your sweets at the stall, or carve what you need at a Carving Bench.
 5. On November 3 the event ends and Old Jack leaves. Everything you earned stays with you, and a quest you had not finished waits for him to come back next October.
 
 ## With MMO Skill Tree
 
-Install MMO Skill Tree 1.7.0 or newer beside this pack and the season also trains skills. Lantern Bombs train Artillery. Old Jack's rewards and the cracked geodes pay skill XP, and on some nights his board posts a skill daily. The Hallowed set adds luck and Artillery damage, the Carving Bench trains Crafting, and while Harvest Moon is up, Harvesting and Artillery XP get a lift for everyone. None of it needs this pack to change, and the pack never needs MMO Skill Tree.
+Install MMO Skill Tree 1.7.0 or newer beside this pack and the season also trains skills. Lantern Bombs train Artillery. Old Jack's rewards and the cracked geodes pay skill XP, and his board posts a Skill job every day, which pays favor like his own. The Hallowed set adds luck and Artillery damage, the Carving Bench trains Crafting, and while Harvest Moon is up, Harvesting and Artillery XP get a lift for everyone. None of it needs this pack to change, and the pack never needs MMO Skill Tree.
 
 Add the MMO Skill Bounty Pack 1.3.0 or newer and its Daily bounty board posts a haunt contract each day of the event, paying a few Hallow Sweets on top of its tokens and XP.
 
@@ -70,7 +72,7 @@ Add the MMO Skill Bounty Pack 1.3.0 or newer and its Daily bounty board posts a 
 
 ### v1.0.0 (unreleased, held)
 
-First release: Old Jack's questline, dailies, board and stall (Halloween decorations included), trick-or-treat, the creatures of the season, Lantern Bombs, the Hallowed set, the Costume Wand, Cursed Geodes, the Carving Bench, Harvest Moon, seven achievements a season with a title, three keepsakes across the years with another, and an Almanac page. Needs Ziggfreed's CommonLib 2.2.0 and RPG Stations 1.1.0.
+First release: Old Jack's questline, dailies, board and stall (Halloween decorations included), favor with Old Jack and the Hallowed, trick-or-treat, the creatures of the season, Lantern Bombs, the Hallowed set, the Costume Wand, Cursed Geodes, the Carving Bench, Harvest Moon, seven achievements a season with a title, three keepsakes across the years with another, and an Almanac page. Needs Ziggfreed's CommonLib 2.2.0 and RPG Stations 1.1.0.
 
 ## Links & Support
 

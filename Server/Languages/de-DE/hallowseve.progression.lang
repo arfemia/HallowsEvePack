@@ -35,13 +35,13 @@ objective.hallows_eve.attend = Sei am Allerheiligenabend dabei
 
 # ---- Die Tafel des Alten Jack ----
 board.hallows_eve_daily.title = Tafel des Alten Jack
-board.hallows_eve_daily.desc = Ein Auftrag pro Nacht, und der wird bezahlt.
+board.hallows_eve_daily.desc = Arbeit für die Dunkelheit und Arbeit fürs Tageslicht. Meine Stammgäste kriegen ein bisschen mehr.
 quest.hallows_eve_board_souls.title = Seelenkehraus
 quest.hallows_eve_board_souls.flavor = Heute Nacht wimmelt es um den Tempel von Seelen. Befrei eine ganze Menge davon, bevor es Morgen wird.
 quest.hallows_eve_board_ghouls.title = Ghuljagd
 quest.hallows_eve_board_ghouls.flavor = Bei den Gräbern ist heute Nacht viel los. Schick die Hohlen Ghule dahin zurück, wo sie herkommen, und sei nicht zimperlich dabei.
 quest.hallows_eve_board_bombs.title = Laternenhagel
-quest.hallows_eve_board_bombs.flavor = Verballer heute Nacht einen Stapel Laternenbomben. Worauf, ist mir ziemlich egal, solange es nicht der Tempel ist.
+quest.hallows_eve_board_bombs.flavor = Verballer einen Stapel Laternenbomben für mich. Worauf, ist mir ziemlich egal, solange es nicht der Tempel ist.
 quest.hallows_eve_board_geodes.title = Tiefe Geoden
 quest.hallows_eve_board_geodes.flavor = Der tiefe Stein hört nicht auf zu summen, und ich kann davon nicht schlafen. Knack genug Verfluchte Geoden auf, damit er still wird.
 quest.hallows_eve_board_harvest_moon.title = Erntemond-Jagd
@@ -91,7 +91,7 @@ almanac.hallows_eve.geodes_cracked = Geknackte Verfluchte Geoden
 # ---- Das Gespräch des Alten Jack ----
 dialogue.hallows_eve_old_jack.first_words.text = Stör dich nicht am Kopf. Ist ein Kürbis, und der sitzt da schon 'ne ganze Weile.\nIch bin der Alte Jack. Jeden Herbst werden die Toten unruhig, und die Laternen im <color is="#ffd97a">Vergessenen Tempel</color> gehen aus, also komm ich zurück und zünde sie an. Ich könnt ein Paar Hände gebrauchen, die nicht geschnitzt sind.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Freut mich, Jack.
-dialogue.hallows_eve_old_jack.board_fresh.text = Heute Nacht hängt neue Arbeit an meiner Tafel. Ein Auftrag, und der wird bezahlt.
+dialogue.hallows_eve_old_jack.board_fresh.text = An meiner Tafel hängt neue Arbeit, einiges für die Dunkelheit und einiges fürs Tageslicht. Die wird bezahlt.
 dialogue.hallows_eve_old_jack.board_fresh.opt.board = Zeig mir die Tafel.
 dialogue.hallows_eve_old_jack.board_fresh.opt.later = Später, Jack.
 dialogue.hallows_eve_old_jack.menu.text = Die Laternen brennen, und die Ghule sind unterwegs. Was brauchst du?
@@ -160,3 +160,29 @@ shop.hallows_eve_offer_pumpkin_cute.title = Niedlicher Halloween-Kürbis
 # ---- More Almanac tallies ----
 almanac.hallows_eve.skeletons_knocked_down = Umgehauene Jack-Skelette
 almanac.hallows_eve.wraiths_put_down = Niedergestreckte Geodengespenster
+
+# ---- Ruf: die Gunst des Alten Jack und die Geweihten, Jacks Vertrauter, die Abzeichen der Tafel ----
+objective.hallows_eve.jack_confidant = Werde Vertrauter des Alten Jack
+board.hallows_eve_daily.grade.night = Nachtarbeit
+board.hallows_eve_daily.grade.day = Tagarbeit
+achievement.hallows_eve_jacks_confidant.title = Jacks Vertrauter
+achievement.hallows_eve_jacks_confidant.desc = Werde Vertrauter des Alten Jack.
+title.hallows_eve_jacks_confidant.name = Jacks Vertrauter
+title.hallows_eve_jacks_confidant.flavor = Wurde zum Vertrauten des Alten Jack.
+title.hallows_eve_jacks_confidant.display = {0}, Jacks Vertrauter
+reputation.hallows_eve_old_jack.name = Gunst des Alten Jack
+reputation.hallows_eve_old_jack.flavor = Der Alte Jack braucht eine Weile, bis er mit Leuten warm wird. Erledig seine Besorgungen und bleib ab und zu auf ein Wort stehen.
+reputation.hallows_eve_old_jack.rank.neutral = Fremder
+reputation.hallows_eve_old_jack.rank.friendly = Stammgast
+reputation.hallows_eve_old_jack.rank.honored = Bewährt
+reputation.hallows_eve_old_jack.rank.revered = Vertrauter
+reputation.hallows_eve_old_jack.rank.exalted = Jacks Familie
+factor.hallows_eve_old_jack.friendly = den Rang Stammgast beim Alten Jack
+factor.hallows_eve_old_jack.honored = den Rang Bewährt beim Alten Jack
+reputation.hallows_eve_hallowed.name = Die Geweihten
+reputation.hallows_eve_hallowed.flavor = Die Geweihten halten die Toten dort, wo sie hingehören. Streck nieder, was nachts aus den Gräbern klettert, und sie werden auf dich aufmerksam.
+notify.hallows_eve_hallowed_cache = Ein Vorrat von den Geweihten, weil du die Toten unter der Erde hältst.
+dialogue.hallows_eve_old_jack.board_fresh_friendly.text = Du schon wieder. Gut.\nAn meiner Tafel hängt neue Arbeit, und für dich hab ich ein bisschen was draufgelegt.
+dialogue.hallows_eve_old_jack.board_fresh_honored.text = Da bist du ja. Ich hab mich schon gefragt.\nDie Tafel ist heute voll, und die Arbeit geb ich lieber dir als sonst wem.
+dialogue.hallows_eve_old_jack.board_fresh_revered.text = Setz dich kurz. Die Ghule können warten.\nNicht viele kommen Nacht für Nacht zu diesen Stufen zurück. An der Tafel gibt's Arbeit, wann immer du willst.
+dialogue.hallows_eve_old_jack.opt.standing = Wie stehen wir zueinander?
