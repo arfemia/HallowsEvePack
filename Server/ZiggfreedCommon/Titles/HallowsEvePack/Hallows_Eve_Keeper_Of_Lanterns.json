@@ -1,0 +1,8 @@
+{
+  "$Comment": "Keeper of Lanterns: the title the Lantern Keeper achievement pays, for lighting the Hollow Lantern over several seasons. It shows beside a player's name in menus and leaderboards once they pick it. Where it sits around the name is the key title.hallows_eve_keeper_of_lanterns.display, whose {0} is the name. Enabled false hides it everywhere without taking it from anybody who earned it.",
+  "Order": 20,
+  "Text": {
+    "TitleKey": "title.hallows_eve_keeper_of_lanterns.name",
+    "FlavorKey": "title.hallows_eve_keeper_of_lanterns.flavor"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$Comment": "The game's own cute carved pumpkin. The game calls both carved pumpkins Halloween Pumpkin, and a stall row shows no picture, so this offer carries its own title key in hallowseve.progression.lang to tell the two apart.",
+  "Text": {
+    "TitleKey": "shop.hallows_eve_offer_pumpkin_cute.title"
+  },
+  "Shop": "Hallows_Eve_Old_Jack",
+  "Listing": { "Category": "decor", "SortOrder": 30 },
+  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 6 } },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Deco_Halloween_Pumpkin_Cute", "Count": 1 } }
+  ]
+}

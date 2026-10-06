@@ -140,3 +140,23 @@ dialogue.hallows_eve_old_jack.opt.farewell = Gute Nacht, Jack.
 # ---- Süßes oder Saures, die Zeile, die jedes Gespräch bekommt, und ihre Meldung ----
 dialogue.hallows_eve_trick_or_treat.opt.knock = Süßes oder Saures.
 notify.hallows_eve_treat = Etwas Süßes fürs Klopfen.
+
+# ---- Achievements across the years, and the Keeper of Lanterns title ----
+achievement.hallows_eve_old_friend.title = Alter Freund
+achievement.hallows_eve_old_friend.desc = Sei bei {0} Allerheiligenabenden dabei.
+achievement.hallows_eve_lantern_keeper.title = Laternenhüter
+achievement.hallows_eve_lantern_keeper.desc = Zünde die Hohle Laterne in {0} Saisons an.
+achievement.hallows_eve_first_lanterns.title = Erste Laternen
+achievement.hallows_eve_first_lanterns.desc = Zünde die Hohle Laterne in der ersten Saison an.
+title.hallows_eve_keeper_of_lanterns.name = Hüter der Laternen
+title.hallows_eve_keeper_of_lanterns.flavor = Hat mit dem Alten Jack die Hohle Laterne angezündet, Jahr um Jahr.
+title.hallows_eve_keeper_of_lanterns.display = {0}, Hüter der Laternen
+
+# ---- The stall's decorations shelf ----
+shop.hallows_eve_old_jack.category.decor = Dekorationen
+shop.hallows_eve_offer_pumpkin_scary.title = Gruseliger Halloween-Kürbis
+shop.hallows_eve_offer_pumpkin_cute.title = Niedlicher Halloween-Kürbis
+
+# ---- More Almanac tallies ----
+almanac.hallows_eve.skeletons_knocked_down = Umgehauene Jack-Skelette
+almanac.hallows_eve.wraiths_put_down = Niedergestreckte Geodengespenster

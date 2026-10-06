@@ -140,3 +140,23 @@ dialogue.hallows_eve_old_jack.opt.farewell = Goodnight, Jack.
 # ---- Trick-or-treat, the line every conversation gets, and its notice ----
 dialogue.hallows_eve_trick_or_treat.opt.knock = Trick or treat.
 notify.hallows_eve_treat = A treat for knocking.
+
+# ---- Achievements across the years, and the Keeper of Lanterns title ----
+achievement.hallows_eve_old_friend.title = Old Friend
+achievement.hallows_eve_old_friend.desc = Be here for {0} Hallow's Eves.
+achievement.hallows_eve_lantern_keeper.title = Lantern Keeper
+achievement.hallows_eve_lantern_keeper.desc = Light the Hollow Lantern in {0} seasons.
+achievement.hallows_eve_first_lanterns.title = First Lanterns
+achievement.hallows_eve_first_lanterns.desc = Light the Hollow Lantern in the first season.
+title.hallows_eve_keeper_of_lanterns.name = Keeper of Lanterns
+title.hallows_eve_keeper_of_lanterns.flavor = Lit the Hollow Lantern with Old Jack, year after year.
+title.hallows_eve_keeper_of_lanterns.display = {0}, Keeper of Lanterns
+
+# ---- The stall's decorations shelf ----
+shop.hallows_eve_old_jack.category.decor = Decorations
+shop.hallows_eve_offer_pumpkin_scary.title = Scary Halloween Pumpkin
+shop.hallows_eve_offer_pumpkin_cute.title = Cute Halloween Pumpkin
+
+# ---- More Almanac tallies ----
+almanac.hallows_eve.skeletons_knocked_down = Jack Skeletons knocked down
+almanac.hallows_eve.wraiths_put_down = Geode Wraiths put down

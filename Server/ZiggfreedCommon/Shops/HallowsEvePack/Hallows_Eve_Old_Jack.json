@@ -7,11 +7,12 @@
   "Icon": "Hallows_Eve_Jack_Lantern",
   "Order": 90,
   "Currencies": [ "Hallows_Eve_Sweets" ],
-  "CategoryOrder": [ "bombs", "lights", "gear" ],
+  "CategoryOrder": [ "bombs", "lights", "gear", "decor" ],
   "Categories": {
     "bombs": { "TitleKey": "shop.hallows_eve_old_jack.category.bombs" },
     "lights": { "TitleKey": "shop.hallows_eve_old_jack.category.lights" },
-    "gear": { "TitleKey": "shop.hallows_eve_old_jack.category.gear" }
+    "gear": { "TitleKey": "shop.hallows_eve_old_jack.category.gear" },
+    "decor": { "TitleKey": "shop.hallows_eve_old_jack.category.decor" }
   },
   "Where": { "GameplayConfig": [ "ForgottenTemple" ] },
   "Requires": {

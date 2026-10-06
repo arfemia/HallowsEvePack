@@ -1,0 +1,32 @@
+{
+  "$Comment": [
+    "Be on the server for several Hallow's Eves. CALENDAR_ATTENDED fires once per player for each",
+    "year's run of the event, so each season adds one, and the criterion's Amount is how many it takes.",
+    "",
+    "It has no Parent, so it is one achievement kept across the years rather than a yearly copy, and",
+    "it carries no hallowed tag, so The Hallowed never waits on it. The description's number comes",
+    "from the Amount through @amount. The criterion's TextKey words the step, since the shared",
+    "sentence names the event by its raw id."
+  ],
+  "Text": {
+    "TitleKey": "achievement.hallows_eve_old_friend.title",
+    "FlavorKey": "achievement.hallows_eve_old_friend.desc",
+    "TextArgs": { "Flavor": [ "@amount" ] }
+  },
+  "Listing": {
+    "Category": "Seasons",
+    "Subcategory": "Hallows_Eve",
+    "SortOrder": 100,
+    "Icon": "Hallows_Eve_Hallowed_Pumpkin"
+  },
+  "Scoring": { "Points": 25 },
+  "Criteria": {
+    "attend-hallows-eves": {
+      "Kind": "CALENDAR_ATTENDED",
+      "Target": "Hallows_Eve",
+      "MatchMode": "EXACT",
+      "Amount": 3,
+      "TextKey": "objective.hallows_eve.attend"
+    }
+  }
+}

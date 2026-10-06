@@ -1,0 +1,34 @@
+{
+  "$Comment": [
+    "Light the Hollow Lantern with Old Jack in several seasons. The Lantern quest comes back once a",
+    "year, so each season's lighting adds one, and the criterion's Amount is how many it takes.",
+    "",
+    "It has no Parent, so it is one achievement kept across the years rather than a yearly copy, and",
+    "it carries no hallowed tag, so The Hallowed never waits on it. It pays the title",
+    "Hallows_Eve_Keeper_Of_Lanterns through the Title reward kind, Auto since a title needs no bag",
+    "room. The description's number comes from the Amount through @amount."
+  ],
+  "Text": {
+    "TitleKey": "achievement.hallows_eve_lantern_keeper.title",
+    "FlavorKey": "achievement.hallows_eve_lantern_keeper.desc",
+    "TextArgs": { "Flavor": [ "@amount" ] }
+  },
+  "Listing": {
+    "Category": "Seasons",
+    "Subcategory": "Hallows_Eve",
+    "SortOrder": 110,
+    "Icon": "Hallows_Eve_Hollow_Lantern"
+  },
+  "Scoring": { "Points": 25 },
+  "Criteria": {
+    "light-the-lantern": {
+      "Kind": "COMPLETE_QUEST",
+      "Target": "hallows_eve_old_jack_lantern",
+      "MatchMode": "EXACT",
+      "Amount": 3
+    }
+  },
+  "Rewards": {
+    "Auto": [ { "Kind": "Title", "Params": { "Title": "Hallows_Eve_Keeper_Of_Lanterns" } } ]
+  }
+}

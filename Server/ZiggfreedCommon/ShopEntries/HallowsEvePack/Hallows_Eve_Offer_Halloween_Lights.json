@@ -1,0 +1,12 @@
+{
+  "$Comment": "The game's own Halloween Lights, on the decorations shelf so a season's sweets have somewhere to go. The title is the item's own name key, written in full (server.items.<Id>.name) so the stall shows the name the item shows in the bag; the item has no description key, so the offer has no line under it.",
+  "Text": {
+    "TitleKey": "server.items.Deco_Halloween_Lights.name"
+  },
+  "Shop": "Hallows_Eve_Old_Jack",
+  "Listing": { "Category": "decor", "SortOrder": 10 },
+  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 8 } },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Deco_Halloween_Lights", "Count": 1 } }
+  ]
+}

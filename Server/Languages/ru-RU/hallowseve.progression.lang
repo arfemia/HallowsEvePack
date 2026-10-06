@@ -140,3 +140,23 @@ dialogue.hallows_eve_old_jack.opt.farewell = Доброй ночи, Джек.
 # ---- «Сладость или гадость»: реплика, которую получает каждый разговор, и её уведомление ----
 dialogue.hallows_eve_trick_or_treat.opt.knock = Сладость или гадость.
 notify.hallows_eve_treat = Угощение за стук.
+
+# ---- Achievements across the years, and the Keeper of Lanterns title ----
+achievement.hallows_eve_old_friend.title = Старый друг
+achievement.hallows_eve_old_friend.desc = Будьте здесь в Канун Всех Святых (сезонов: {0}).
+achievement.hallows_eve_lantern_keeper.title = Хранитель фонарей
+achievement.hallows_eve_lantern_keeper.desc = Зажгите Полый фонарь (сезонов: {0}).
+achievement.hallows_eve_first_lanterns.title = Первые фонари
+achievement.hallows_eve_first_lanterns.desc = Зажгите Полый фонарь в первый сезон.
+title.hallows_eve_keeper_of_lanterns.name = Хранитель фонарей
+title.hallows_eve_keeper_of_lanterns.flavor = Год за годом зажигал Полый фонарь вместе со Старым Джеком.
+title.hallows_eve_keeper_of_lanterns.display = {0}, Хранитель фонарей
+
+# ---- The stall's decorations shelf ----
+shop.hallows_eve_old_jack.category.decor = Украшения
+shop.hallows_eve_offer_pumpkin_scary.title = Страшная тыква на Хэллоуин
+shop.hallows_eve_offer_pumpkin_cute.title = Милая тыква на Хэллоуин
+
+# ---- More Almanac tallies ----
+almanac.hallows_eve.skeletons_knocked_down = Повалено Скелетов-Джеков
+almanac.hallows_eve.wraiths_put_down = Уложено Призраков жеоды

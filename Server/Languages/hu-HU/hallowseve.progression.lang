@@ -140,3 +140,23 @@ dialogue.hallows_eve_old_jack.opt.farewell = Jó éjt, Jack.
 # ---- Csokit vagy csalunk: a sor, amelyet minden beszélgetés megkap, és az értesítése ----
 dialogue.hallows_eve_trick_or_treat.opt.knock = Csokit vagy csalunk.
 notify.hallows_eve_treat = Egy finomság a kopogásért.
+
+# ---- Achievements across the years, and the Keeper of Lanterns title ----
+achievement.hallows_eve_old_friend.title = Régi Barát
+achievement.hallows_eve_old_friend.desc = Légy itt {0} Mindenszentek Éjén.
+achievement.hallows_eve_lantern_keeper.title = Lámpásőr
+achievement.hallows_eve_lantern_keeper.desc = Gyújtsd meg a Vájt Lámpást {0} szezonban.
+achievement.hallows_eve_first_lanterns.title = Első Lámpások
+achievement.hallows_eve_first_lanterns.desc = Gyújtsd meg a Vájt Lámpást az első szezonban.
+title.hallows_eve_keeper_of_lanterns.name = A Lámpások Őre
+title.hallows_eve_keeper_of_lanterns.flavor = Évről évre meggyújtotta a Vájt Lámpást Öreg Jackkel.
+title.hallows_eve_keeper_of_lanterns.display = {0}, a Lámpások Őre
+
+# ---- The stall's decorations shelf ----
+shop.hallows_eve_old_jack.category.decor = Dekorációk
+shop.hallows_eve_offer_pumpkin_scary.title = Ijesztő Halloween-tök
+shop.hallows_eve_offer_pumpkin_cute.title = Aranyos Halloween-tök
+
+# ---- More Almanac tallies ----
+almanac.hallows_eve.skeletons_knocked_down = Leütött Jack-csontvázak
+almanac.hallows_eve.wraiths_put_down = Leterített Geodalidércek

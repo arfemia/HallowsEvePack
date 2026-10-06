@@ -141,3 +141,23 @@ dialogue.hallows_eve_old_jack.opt.farewell = Buenas noches, Jack.
 dialogue.hallows_eve_trick_or_treat.opt.knock = Truco o trato.
 notify.hallows_eve_treat = Un dulce por llamar a la puerta.
 
+# ---- Achievements across the years, and the Keeper of Lanterns title ----
+achievement.hallows_eve_old_friend.title = Viejo Amigo
+achievement.hallows_eve_old_friend.desc = Acude a {0} Noches de Ánimas.
+achievement.hallows_eve_lantern_keeper.title = Guardafaroles
+achievement.hallows_eve_lantern_keeper.desc = Enciende el Farol de Ánimas en {0} temporadas.
+achievement.hallows_eve_first_lanterns.title = Primeros Faroles
+achievement.hallows_eve_first_lanterns.desc = Enciende el Farol de Ánimas en la primera temporada.
+title.hallows_eve_keeper_of_lanterns.name = Guardián de los Faroles
+title.hallows_eve_keeper_of_lanterns.flavor = Encendió el Farol de Ánimas con el Viejo Jack, año tras año.
+title.hallows_eve_keeper_of_lanterns.display = {0}, Guardián de los Faroles
+
+# ---- The stall's decorations shelf ----
+shop.hallows_eve_old_jack.category.decor = Decoración
+shop.hallows_eve_offer_pumpkin_scary.title = Calabaza de Halloween Siniestra
+shop.hallows_eve_offer_pumpkin_cute.title = Calabaza de Halloween Simpática
+
+# ---- More Almanac tallies ----
+almanac.hallows_eve.skeletons_knocked_down = Esqueletos Jack tumbados
+almanac.hallows_eve.wraiths_put_down = Espectros de Geoda abatidos
+

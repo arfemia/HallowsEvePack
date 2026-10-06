@@ -141,3 +141,23 @@ dialogue.hallows_eve_old_jack.opt.farewell = Boa noite, Jack.
 dialogue.hallows_eve_trick_or_treat.opt.knock = Doces ou travessuras.
 notify.hallows_eve_treat = Um doce por bater na porta.
 
+# ---- Achievements across the years, and the Keeper of Lanterns title ----
+achievement.hallows_eve_old_friend.title = Velho Amigo
+achievement.hallows_eve_old_friend.desc = Esteja aqui durante {0} Noites das Bruxas.
+achievement.hallows_eve_lantern_keeper.title = Guardião das Lanternas
+achievement.hallows_eve_lantern_keeper.desc = Acenda a Lanterna Oca em {0} temporadas.
+achievement.hallows_eve_first_lanterns.title = Primeiras Lanternas
+achievement.hallows_eve_first_lanterns.desc = Acenda a Lanterna Oca na primeira temporada.
+title.hallows_eve_keeper_of_lanterns.name = Guardião das Lanternas
+title.hallows_eve_keeper_of_lanterns.flavor = Acendeu a Lanterna Oca com o Velho Jack, ano após ano.
+title.hallows_eve_keeper_of_lanterns.display = {0}, Guardião das Lanternas
+
+# ---- The stall's decorations shelf ----
+shop.hallows_eve_old_jack.category.decor = Decoração
+shop.hallows_eve_offer_pumpkin_scary.title = Abóbora Assustadora da Noite das Bruxas
+shop.hallows_eve_offer_pumpkin_cute.title = Abóbora Fofa da Noite das Bruxas
+
+# ---- More Almanac tallies ----
+almanac.hallows_eve.skeletons_knocked_down = Esqueletos de Jack derrubados
+almanac.hallows_eve.wraiths_put_down = Assombrações de Geodo abatidas
+

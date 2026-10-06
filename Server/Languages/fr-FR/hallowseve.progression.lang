@@ -141,3 +141,23 @@ dialogue.hallows_eve_old_jack.opt.farewell = Bonne nuit, Jack.
 # ---- Bonbons ou un sort, la réplique de chaque conversation, et son avis ----
 dialogue.hallows_eve_trick_or_treat.opt.knock = Des bonbons ou un sort.
 notify.hallows_eve_treat = Une friandise pour avoir frappé.
+
+# ---- Achievements across the years, and the Keeper of Lanterns title ----
+achievement.hallows_eve_old_friend.title = Vieil Ami
+achievement.hallows_eve_old_friend.desc = Soyez là pour la Veille de la Toussaint, {0} fois.
+achievement.hallows_eve_lantern_keeper.title = Gardien de la Lanterne
+achievement.hallows_eve_lantern_keeper.desc = Allumez la Lanterne Creuse lors de {0} saisons.
+achievement.hallows_eve_first_lanterns.title = Premières Lanternes
+achievement.hallows_eve_first_lanterns.desc = Allumez la Lanterne Creuse dès la première saison.
+title.hallows_eve_keeper_of_lanterns.name = Gardien des Lanternes
+title.hallows_eve_keeper_of_lanterns.flavor = A allumé la Lanterne Creuse avec le Vieux Jack, année après année.
+title.hallows_eve_keeper_of_lanterns.display = {0}, Gardien des Lanternes
+
+# ---- The stall's decorations shelf ----
+shop.hallows_eve_old_jack.category.decor = Décorations
+shop.hallows_eve_offer_pumpkin_scary.title = Citrouille d'Halloween effrayante
+shop.hallows_eve_offer_pumpkin_cute.title = Citrouille d'Halloween mignonne
+
+# ---- More Almanac tallies ----
+almanac.hallows_eve.skeletons_knocked_down = Squelettes Jack abattus
+almanac.hallows_eve.wraiths_put_down = Spectres de Géode terrassés

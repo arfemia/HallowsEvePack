@@ -140,3 +140,23 @@ dialogue.hallows_eve_old_jack.opt.farewell = Buonanotte, Jack.
 # ---- Dolcetto o scherzetto, la battuta che ogni conversazione riceve, e il suo avviso ----
 dialogue.hallows_eve_trick_or_treat.opt.knock = Dolcetto o scherzetto.
 notify.hallows_eve_treat = Un dolcetto per aver bussato.
+
+# ---- Achievements across the years, and the Keeper of Lanterns title ----
+achievement.hallows_eve_old_friend.title = Vecchio Amico
+achievement.hallows_eve_old_friend.desc = Partecipa a {0} Vigilie di Ognissanti.
+achievement.hallows_eve_lantern_keeper.title = Custode della Lanterna
+achievement.hallows_eve_lantern_keeper.desc = Accendi la Lanterna Cava in {0} stagioni.
+achievement.hallows_eve_first_lanterns.title = Prime Lanterne
+achievement.hallows_eve_first_lanterns.desc = Accendi la Lanterna Cava nella prima stagione.
+title.hallows_eve_keeper_of_lanterns.name = Custode delle Lanterne
+title.hallows_eve_keeper_of_lanterns.flavor = Ha acceso la Lanterna Cava con il Vecchio Jack, anno dopo anno.
+title.hallows_eve_keeper_of_lanterns.display = {0}, Custode delle Lanterne
+
+# ---- The stall's decorations shelf ----
+shop.hallows_eve_old_jack.category.decor = Decorazioni
+shop.hallows_eve_offer_pumpkin_scary.title = Zucca di Halloween Spaventosa
+shop.hallows_eve_offer_pumpkin_cute.title = Zucca di Halloween Carina
+
+# ---- More Almanac tallies ----
+almanac.hallows_eve.skeletons_knocked_down = Scheletri Jack abbattuti
+almanac.hallows_eve.wraiths_put_down = Spettri delle Geodi abbattuti

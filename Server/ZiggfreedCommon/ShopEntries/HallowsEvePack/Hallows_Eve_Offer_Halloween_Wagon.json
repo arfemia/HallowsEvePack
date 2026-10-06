@@ -1,0 +1,12 @@
+{
+  "$Comment": "The game's own Halloween Wagon, the dearest of the decorations. The title is the item's own name key, written in full (server.items.<Id>.name) so the stall shows the name the item shows in the bag; the item has no description key, so the offer has no line under it.",
+  "Text": {
+    "TitleKey": "server.items.Halloween_Wagon.name"
+  },
+  "Shop": "Hallows_Eve_Old_Jack",
+  "Listing": { "Category": "decor", "SortOrder": 60 },
+  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 75 } },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Halloween_Wagon", "Count": 1 } }
+  ]
+}

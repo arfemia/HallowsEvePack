@@ -141,3 +141,23 @@ dialogue.hallows_eve_old_jack.opt.farewell = İyi geceler, Jack.
 dialogue.hallows_eve_trick_or_treat.opt.knock = Şeker mi, şaka mı?
 notify.hallows_eve_treat = Kapıyı çaldığın için bir ikram.
 
+# ---- Achievements across the years, and the Keeper of Lanterns title ----
+achievement.hallows_eve_old_friend.title = Eski Dost
+achievement.hallows_eve_old_friend.desc = {0} Cadılar Bayramı'nda burada ol.
+achievement.hallows_eve_lantern_keeper.title = Fener Bekçisi
+achievement.hallows_eve_lantern_keeper.desc = {0} sezonda Oyuk Fener'i yak.
+achievement.hallows_eve_first_lanterns.title = İlk Fenerler
+achievement.hallows_eve_first_lanterns.desc = İlk sezonda Oyuk Fener'i yak.
+title.hallows_eve_keeper_of_lanterns.name = Fener Bekçisi
+title.hallows_eve_keeper_of_lanterns.flavor = Yaşlı Jack ile Oyuk Fener'i yıllar boyunca yaktı.
+title.hallows_eve_keeper_of_lanterns.display = {0}, Fener Bekçisi
+
+# ---- The stall's decorations shelf ----
+shop.hallows_eve_old_jack.category.decor = Süsler
+shop.hallows_eve_offer_pumpkin_scary.title = Korkunç Cadılar Bayramı Bal Kabağı
+shop.hallows_eve_offer_pumpkin_cute.title = Sevimli Cadılar Bayramı Bal Kabağı
+
+# ---- More Almanac tallies ----
+almanac.hallows_eve.skeletons_knocked_down = Yere serilen Jack İskeletleri
+almanac.hallows_eve.wraiths_put_down = Alt edilen Jeot Hortlakları
+
