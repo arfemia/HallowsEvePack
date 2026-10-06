@@ -83,6 +83,6 @@ First release: Old Jack's questline, dailies, board and stall, trick-or-treat, t
 
 Questions or suggestions? Join the [Discord](https://discord.gg/5NFdZsUxHZ) or leave a comment.
 
-**Support Development:** [Ko-fi](https://ko-fi.com/ziggfreed) | [Buy Me a Coffee](https://buymeacoffee.com/wintergreensolutions)
+**Support Development:** [Ko-fi](https://ko-fi.com/ziggfreed)
 
 _Seasons of Orbis is not affiliated with Hypixel Studios or Hytale._
