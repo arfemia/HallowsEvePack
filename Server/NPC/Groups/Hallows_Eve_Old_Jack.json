@@ -1,0 +1,4 @@
+{
+  "$Comment": "Old Jack on his own, as a group of one. The reputation group Hallows_Eve_Old_Jack (NPC/Reputation/Groups) names this group, which is how the game ties the way he treats each player to that player's favor with him. Add another role id to IncludeRoles and that character shares his favor.",
+  "IncludeRoles": [ "Hallows_Eve_Old_Jack" ]
+}

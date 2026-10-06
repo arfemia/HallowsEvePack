@@ -5,7 +5,7 @@
     "FlavorKey": "quest.hallows_eve_board_harvest_moon.flavor"
   },
   "Listing": { "Category": "bounty", "Icon": "Hallows_Eve_Jack_Helm" },
-  "Boards": [ { "Board": "Hallows_Eve_Daily", "Weight": 4 } ],
+  "Boards": [ { "Board": "Hallows_Eve_Daily", "Difficulty": "Hallows_Eve_Night", "Weight": 4 } ],
   "Requires": {
     "Factors": [
       { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 },
@@ -16,6 +16,10 @@
     "knock_down_skeletons": { "Kind": "KILL_ENTITY", "Target": "Hallows_Eve_Jack_Skeleton", "MatchMode": "EXACT", "Amount": 12 }
   },
   "Rewards": {
-    "Auto": [ { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } } ]
+    "Auto": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 50 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 25 } }
+    ]
   }
 }

@@ -1,0 +1,5 @@
+{
+  "$Comment": "Old Jack's Favor: one number per player, kept and saved by the game itself, through death and across worlds. NPCGroups names the group holding his role, so Old Jack takes the attitude of the rank a player's favor reaches. InitialReputationValue is where every player starts. ZiggfreedCommon/Reputations/HallowsEvePack/Hallows_Eve_Old_Jack.json gives it its name, cap, rank names and the gear that adds to it.",
+  "NPCGroups": [ "Hallows_Eve_Old_Jack" ],
+  "InitialReputationValue": 0
+}

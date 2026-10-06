@@ -3,9 +3,9 @@
     "What lighting the Hollow Lantern pays, once a year. The Hollow Lantern itself is not here:",
     "the yearly keepsake achievement hands it over, so it can carry the year.",
     "",
-    "The first roll always pays sweets and a Jack Shield, the half of the Hallowed set Old Jack's",
-    "stall does not sell, so a server without RPG Stations can still finish the set. The second roll",
-    "is a chance on top; Chance is a percent from 0 to 100."
+    "The first roll always pays sweets and a Jack Shield, so everyone who lights the lantern can",
+    "finish the Hallowed set; Old Jack's stall sells more shields only to players Honored with him.",
+    "The second roll is a chance on top; Chance is a percent from 0 to 100."
   ],
   "Name": "Hallows_Eve_Lantern_Pay",
   "Rolls": [

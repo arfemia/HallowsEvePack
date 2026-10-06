@@ -1,0 +1,38 @@
+{
+  "$Comment": [
+    "Jack's Confidant: reach Revered with Old Jack, the rank his reputation calls Confidant.",
+    "",
+    "Earned once and kept. Favor with Old Jack carries from one Hallow's Eve to the next, so this",
+    "file has no Parent: the yearly skeleton would mint a copy each year that every Revered player",
+    "collects again at login for nothing. It carries no hallowed tag either, which keeps it out of",
+    "The Hallowed. REPUTATION_RANK credits every rank a player's favor has reached, gear included,",
+    "each time their favor or their gear changes and when they log in, so wearing the Jack Helm can",
+    "earn this too. Target is the rank id and Qualifier the reputation id. The criterion's TextKey",
+    "words the step with Old Jack's own rank name. It pays the title Hallows_Eve_Jacks_Confidant",
+    "through the Title reward kind."
+  ],
+  "Text": {
+    "TitleKey": "achievement.hallows_eve_jacks_confidant.title",
+    "FlavorKey": "achievement.hallows_eve_jacks_confidant.desc"
+  },
+  "Listing": {
+    "Category": "Seasons",
+    "Subcategory": "Hallows_Eve",
+    "SortOrder": 130,
+    "Icon": "Hallows_Eve_Jack_Helm"
+  },
+  "Scoring": { "Points": 25 },
+  "Criteria": {
+    "reach-confidant": {
+      "Kind": "REPUTATION_RANK",
+      "Target": "Revered",
+      "MatchMode": "EXACT",
+      "Qualifier": "Hallows_Eve_Old_Jack",
+      "Amount": 1,
+      "TextKey": "objective.hallows_eve.jack_confidant"
+    }
+  },
+  "Rewards": {
+    "Auto": [ { "Kind": "Title", "Params": { "Title": "Hallows_Eve_Jacks_Confidant" } } ]
+  }
+}

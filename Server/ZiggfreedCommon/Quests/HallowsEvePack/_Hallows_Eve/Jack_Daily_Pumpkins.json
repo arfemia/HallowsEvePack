@@ -36,6 +36,10 @@
     }
   },
   "Rewards": {
-    "Claim": [ { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Daily_Pay" } } ]
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Daily_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 75 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 10 } }
+    ]
   }
 }

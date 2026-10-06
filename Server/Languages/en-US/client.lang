@@ -1,0 +1,6 @@
+# Hallow's Eve pack - client-namespace additions, en-US. This file's basename ("client") targets the
+# game's own client namespace, so each key loads as client.<key>: here the item-tooltip label of a
+# stat this pack ships, itemTooltip.stats.<StatId>. {value} is the client's own placeholder, filled
+# with the item's amount. These keys only add; none replaces a key the client ships.
+itemTooltip.stats.Reputation_Hallows_Eve_Old_Jack = Old Jack's Favor: {value}
+itemTooltip.stats.Reputation_Hallows_Eve_Hallowed = Hallowed Favor: {value}

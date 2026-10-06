@@ -1,11 +1,11 @@
 {
-  "$Comment": "A nightly contract on Old Jack's board. USE_ITEM with the Qualifier Throw counts a thrown Lantern Bomb of any tier: the PREFIX match takes every id starting Hallows_Eve_Lantern_Bomb_. The step's own TextKey words it, since the shared sentence for the kind is generic.",
+  "$Comment": "A day contract on Old Jack's board: its Difficulty band Hallows_Eve_Day posts it in the board's daylight slots, since it can be finished before dark. USE_ITEM with the Qualifier Throw counts a thrown Lantern Bomb of any tier: the PREFIX match takes every id starting Hallows_Eve_Lantern_Bomb_. The step's own TextKey words it, since the shared sentence for the kind is generic.",
   "Text": {
     "TitleKey": "quest.hallows_eve_board_bombs.title",
     "FlavorKey": "quest.hallows_eve_board_bombs.flavor"
   },
   "Listing": { "Category": "bounty", "Icon": "Hallows_Eve_Lantern_Bomb_Uncommon" },
-  "Boards": [ { "Board": "Hallows_Eve_Daily", "Weight": 1 } ],
+  "Boards": [ { "Board": "Hallows_Eve_Daily", "Difficulty": "Hallows_Eve_Day", "Weight": 1 } ],
   "Requires": {
     "Factors": [
       { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
@@ -22,6 +22,10 @@
     }
   },
   "Rewards": {
-    "Auto": [ { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } } ]
+    "Auto": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 50 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 25 } }
+    ]
   }
 }

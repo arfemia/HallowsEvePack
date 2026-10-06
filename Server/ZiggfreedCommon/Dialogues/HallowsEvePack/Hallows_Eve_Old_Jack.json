@@ -11,8 +11,17 @@
     "has something to hand in. Quests holds one row per quest, the questline first, so the questline",
     "wins a tie with a daily. Then shows the lit-lantern line once the year's lantern is lit.",
     "",
+    "THE BOARD LINE AND FAVOR. The board line comes in four wordings, one per band of favor with",
+    "Old Jack, highest first, so the first that applies is the player's own rank: Revered, Honored,",
+    "Friendly, then the plain one, which is also what shows while the reputation is switched off.",
+    "All four share one daily Once through OnceId, so whichever wording a player hears spends the",
+    "line for the day, and a rank climbed later that day does not bring it back. Their Actions pay",
+    "a little favor with Old Jack (the Reputation reward; Amount is how much) when the player",
+    "finishes the line, whichever way they leave it: an answer, trick-or-treat or goodbye.",
+    "",
     "THE FOOTER. Most screens pull in the jack_footer group: hand-ins, the quest list, the board, the",
-    "stall, the Almanac (only while the Almanac is switched on), two lore lines, the Harvest Moon",
+    "stall, How do we stand? (it opens the Reputation page, and shows once the player has any favor",
+    "with him), the Almanac (only while the Almanac is switched on), two lore lines, the Harvest Moon",
     "line (only while Harvest Moon runs) and goodbye. The trick-or-treat line is not here: it comes",
     "from the DialogueExtensions file Hallows_Eve_Trick_Or_Treat, which adds it to every",
     "conversation, this one included.",
@@ -33,12 +42,55 @@
         ]
       },
       {
+        "Node": "board_fresh_revered",
+        "When": [
+          { "Type": "Remembered", "Memory": "old_jack_greeted" },
+          { "Type": "Not", "Of": [ { "Type": "HasReadyToTurnIn" } ] },
+          { "Type": "Factor", "Factor": "ziggfreedcommon:reputation_rank", "Param": "Hallows_Eve_Old_Jack/Revered", "Min": 1 }
+        ],
+        "Once": { "Period": "Daily" },
+        "OnceId": "board_fresh",
+        "Actions": [
+          { "Type": "Grant", "Rewards": [ { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 10 } } ] }
+        ]
+      },
+      {
+        "Node": "board_fresh_honored",
+        "When": [
+          { "Type": "Remembered", "Memory": "old_jack_greeted" },
+          { "Type": "Not", "Of": [ { "Type": "HasReadyToTurnIn" } ] },
+          { "Type": "Factor", "Factor": "ziggfreedcommon:reputation_rank", "Param": "Hallows_Eve_Old_Jack/Honored", "Min": 1 }
+        ],
+        "Once": { "Period": "Daily" },
+        "OnceId": "board_fresh",
+        "Actions": [
+          { "Type": "Grant", "Rewards": [ { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 10 } } ] }
+        ]
+      },
+      {
+        "Node": "board_fresh_friendly",
+        "When": [
+          { "Type": "Remembered", "Memory": "old_jack_greeted" },
+          { "Type": "Not", "Of": [ { "Type": "HasReadyToTurnIn" } ] },
+          { "Type": "Factor", "Factor": "ziggfreedcommon:reputation_rank", "Param": "Hallows_Eve_Old_Jack/Friendly", "Min": 1 }
+        ],
+        "Once": { "Period": "Daily" },
+        "OnceId": "board_fresh",
+        "Actions": [
+          { "Type": "Grant", "Rewards": [ { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 10 } } ] }
+        ]
+      },
+      {
         "Node": "board_fresh",
         "When": [
           { "Type": "Remembered", "Memory": "old_jack_greeted" },
           { "Type": "Not", "Of": [ { "Type": "HasReadyToTurnIn" } ] }
         ],
-        "Once": { "Period": "Daily" }
+        "Once": { "Period": "Daily" },
+        "OnceId": "board_fresh",
+        "Actions": [
+          { "Type": "Grant", "Rewards": [ { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 10 } } ] }
+        ]
       }
     ],
     "Quests": {
@@ -77,18 +129,19 @@
     },
     "board_fresh": {
       "TextKey": "dialogue.hallows_eve_old_jack.board_fresh.text",
-      "Options": [
-        {
-          "LabelKey": "dialogue.hallows_eve_old_jack.board_fresh.opt.board",
-          "Style": "accept",
-          "Open": { "Type": "Board", "Board": "Hallows_Eve_Daily" }
-        },
-        {
-          "LabelKey": "dialogue.hallows_eve_old_jack.board_fresh.opt.later",
-          "Style": "neutral",
-          "Goto": "menu"
-        }
-      ]
+      "IncludeOptions": [ "jack_greeting" ]
+    },
+    "board_fresh_friendly": {
+      "TextKey": "dialogue.hallows_eve_old_jack.board_fresh_friendly.text",
+      "IncludeOptions": [ "jack_greeting" ]
+    },
+    "board_fresh_honored": {
+      "TextKey": "dialogue.hallows_eve_old_jack.board_fresh_honored.text",
+      "IncludeOptions": [ "jack_greeting" ]
+    },
+    "board_fresh_revered": {
+      "TextKey": "dialogue.hallows_eve_old_jack.board_fresh_revered.text",
+      "IncludeOptions": [ "jack_greeting" ]
     },
     "menu": {
       "TextKey": "dialogue.hallows_eve_old_jack.menu.text",
@@ -264,6 +317,18 @@
     }
   },
   "Fragments": {
+    "jack_greeting": [
+      {
+        "LabelKey": "dialogue.hallows_eve_old_jack.board_fresh.opt.board",
+        "Style": "accept",
+        "Open": { "Type": "Board", "Board": "Hallows_Eve_Daily" }
+      },
+      {
+        "LabelKey": "dialogue.hallows_eve_old_jack.board_fresh.opt.later",
+        "Style": "neutral",
+        "Goto": "menu"
+      }
+    ],
     "jack_footer": [
       {
         "LabelKey": "dialogue.hallows_eve_old_jack.opt.returned",
@@ -285,6 +350,14 @@
         "LabelKey": "dialogue.hallows_eve_old_jack.opt.shop",
         "Style": "neutral",
         "Open": { "Type": "Shop", "Shop": "Hallows_Eve_Old_Jack" }
+      },
+      {
+        "LabelKey": "dialogue.hallows_eve_old_jack.opt.standing",
+        "Style": "neutral",
+        "Conditions": [
+          { "Type": "Factor", "Factor": "ziggfreedcommon:reputation", "Param": "Hallows_Eve_Old_Jack", "Min": 1 }
+        ],
+        "Open": { "Type": "Reputation", "Reputation": "Hallows_Eve_Old_Jack" }
       },
       {
         "LabelKey": "dialogue.hallows_eve_old_jack.opt.almanac",

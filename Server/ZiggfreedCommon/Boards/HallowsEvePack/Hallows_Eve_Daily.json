@@ -1,5 +1,25 @@
 {
-  "$Comment": "Old Jack's board: one contract a night, drawn at midnight UTC from every contract naming this board, the pack's own and any a companion mod adds. The Requires block makes the board absent while the event is off, and its contracts pay the moment the work is done, so nothing waits on a board that has gone for the year. Order 90 keeps it behind a server's everyday boards. Where keeps it in the Forgotten Temple: anywhere else it is left out of every list and opens closed.",
+  "$Comment": [
+    "Old Jack's board, drawn once a day at midnight UTC, one contract per slot. A slot posts only",
+    "contracts whose Boards entry names its Difficulty band. Hallows_Eve_Night holds the creature",
+    "contracts, which can only be finished after dark; Hallows_Eve_Day holds the ones a player can",
+    "finish in daylight; Hallows_Eve_Skill holds the skill contracts a companion mod adds (MMO Skill",
+    "Tree adds four).",
+    "",
+    "Favor with Old Jack opens more of the board. The third and fourth slots carry Requires: the",
+    "second Night job opens at Friendly, the second Day job at Honored. Everyone sees them posted,",
+    "and a player below the rank sees them locked, with the reason. Each band has two contracts on",
+    "an ordinary day (three on Harvest Moon nights), so a band fills two slots at most.",
+    "",
+    "The skill slot is Optional: where nothing carries its band the board shows no gap. A contract",
+    "naming this board without a band is never drawn, so a companion's contract names one of these",
+    "bands, or a band of its own with a slot added here. Grades names each band for the badge on its",
+    "rows; a band left out reads through the key board.grade.<band>, which the mod filling it can",
+    "ship. The Requires block at the top makes the board absent while the event is off, and its",
+    "contracts pay the moment the work is done, so nothing waits on a board that has gone for the",
+    "year. Order 90 keeps it behind a server's everyday boards. Where keeps it in the Forgotten",
+    "Temple: anywhere else it is left out of every list and opens closed."
+  ],
   "Text": {
     "TitleKey": "board.hallows_eve_daily.title",
     "FlavorKey": "board.hallows_eve_daily.desc"
@@ -7,7 +27,17 @@
   "Icon": "Hallows_Eve_Jack_Lantern",
   "Order": 90,
   "Rotation": { "Period": "Daily" },
-  "Slots": [ { "Count": 1 } ],
+  "Slots": [
+    { "Difficulty": "Hallows_Eve_Night" },
+    { "Difficulty": "Hallows_Eve_Day" },
+    { "Difficulty": "Hallows_Eve_Night", "Optional": true, "Requires": { "Factors": [ { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Hallows_Eve_Old_Jack/Friendly", "Min": 1 } ] } },
+    { "Difficulty": "Hallows_Eve_Day", "Optional": true, "Requires": { "Factors": [ { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Hallows_Eve_Old_Jack/Honored", "Min": 1 } ] } },
+    { "Difficulty": "Hallows_Eve_Skill", "Optional": true }
+  ],
+  "Grades": {
+    "Hallows_Eve_Night": { "TitleKey": "board.hallows_eve_daily.grade.night" },
+    "Hallows_Eve_Day": { "TitleKey": "board.hallows_eve_daily.grade.day" }
+  },
   "Currencies": [ "Hallows_Eve_Sweets" ],
   "Where": { "GameplayConfig": [ "ForgottenTemple" ] },
   "Requires": {
