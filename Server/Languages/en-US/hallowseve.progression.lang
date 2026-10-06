@@ -189,3 +189,6 @@ shop.hallows_eve_offer_pumpkin_cute.title = Cute Halloween Pumpkin
 # ---- More Almanac tallies ----
 almanac.hallows_eve.skeletons_knocked_down = Jack Skeletons knocked down
 almanac.hallows_eve.wraiths_put_down = Geode Wraiths put down
+
+# ---- Book breadcrumb ----
+achievement.category.seasons.hallows_eve = Hallow's Eve
