@@ -30,7 +30,7 @@ Hallow's Eve starts on its own on October 1 and runs to November 3, every year. 
 - Harvest Moon, the last three days of October. About twice the creatures come out at night, and every geode and Hallowed Pumpkin you find comes in pairs. Old Jack puts a bundle of bombs on the stall.
 - Seven achievements a season. The last one, The Hallowed, is for earning the other six in one season and gives you the title "the Hallowed". Each year's achievements stay with you as feats.
 - Keepsakes that build over the years. Old Friend wants three Hallow's Eves. Light the Hollow Lantern in three seasons for Lantern Keeper and the title "Keeper of Lanterns". First Lanterns only goes to players who light it in 2026, the first year.
-- An Almanac page for the season: your keepsakes, and lifetime counts of bombs thrown, ghouls felled, Jack Skeletons knocked down, souls freed, geodes cracked and Geode Wraiths put down.
+- An Almanac page for the season, opening on a banner built from its own items: your keepsakes, and lifetime counts of bombs thrown, ghouls felled, Jack Skeletons knocked down, souls freed, geodes cracked and Geode Wraiths put down.
 - Translated into 9 languages.
 
 ## How it works
@@ -54,6 +54,7 @@ Add the MMO Skill Bounty Pack 1.3.0 or newer and its Daily bounty board posts a 
 - Off means gone. Old Jack, his stall and board, his quests, the trick-or-treat line and the sweets in the wallet strip all disappear, and no new creatures spawn (any still out leave at dawn). Nothing anyone earned is lost, and it all comes back when the event does.
 - The items keep working all year once someone has them.
 - `/zigcalendar status Hallows_Eve` shows what the server reads.
+- The Almanac page's banner is laid out from the season's items. You can rearrange it, or swap in a picture of your own, in `mods/ziggfreedcommon/almanac.json`; whatever you leave out stays as the pack has it.
 - The creatures are as tough as the game's own: a Hollow Ghoul hits like a Ghoul, and they come out in the first zone too. They are not Memories.
 
 ## Install
