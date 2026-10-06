@@ -5,7 +5,7 @@
     "FlavorKey": "quest.hallows_eve_board_ghouls.flavor"
   },
   "Listing": { "Category": "bounty", "Icon": "Deco_Bone_Skulls" },
-  "Boards": [ { "Board": "Hallows_Eve_Daily", "Weight": 1 } ],
+  "Boards": [ { "Board": "Hallows_Eve_Daily", "Difficulty": "Hallows_Eve_Night", "Weight": 1 } ],
   "Requires": {
     "Factors": [
       { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
@@ -15,6 +15,10 @@
     "put_down_ghouls": { "Kind": "KILL_ENTITY", "Target": "Hallows_Eve_Hollow_Ghoul", "MatchMode": "EXACT", "Amount": 10 }
   },
   "Rewards": {
-    "Auto": [ { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } } ]
+    "Auto": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 50 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 25 } }
+    ]
   }
 }

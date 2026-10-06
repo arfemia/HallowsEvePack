@@ -36,13 +36,15 @@ objective.hallows_eve.attend = Be here for Hallow's Eve
 
 # ---- Old Jack's board ----
 board.hallows_eve_daily.title = Old Jack's Board
-board.hallows_eve_daily.desc = One job a night, and it pays.
+board.hallows_eve_daily.desc = Work for the dark and work for the daylight. Folks I trust get a bit more.
+board.hallows_eve_daily.grade.night = Night Work
+board.hallows_eve_daily.grade.day = Day Work
 quest.hallows_eve_board_souls.title = Soul Sweep
 quest.hallows_eve_board_souls.flavor = Souls are thick around the temple tonight. Set a good many of them free before morning.
 quest.hallows_eve_board_ghouls.title = Ghoul Cull
 quest.hallows_eve_board_ghouls.flavor = The graves are busy tonight. Put the Hollow Ghouls back where they came from, and don't be gentle about it.
 quest.hallows_eve_board_bombs.title = Lantern Barrage
-quest.hallows_eve_board_bombs.flavor = Burn through a stack of Lantern Bombs tonight. I don't much care what at, as long as it isn't the temple.
+quest.hallows_eve_board_bombs.flavor = Burn through a stack of Lantern Bombs for me. I don't much care what at, as long as it isn't the temple.
 quest.hallows_eve_board_geodes.title = Deep Geodes
 quest.hallows_eve_board_geodes.flavor = The deep stone won't stop humming, and I can't sleep for it. Crack enough Cursed Geodes to quiet it down.
 quest.hallows_eve_board_harvest_moon.title = Harvest Moon Hunt
@@ -104,7 +106,7 @@ almanac.hallows_eve.geodes_cracked = Cursed Geodes cracked
 # ---- Old Jack's conversation ----
 dialogue.hallows_eve_old_jack.first_words.text = Don't mind the head. It's a pumpkin, and it's been on there a long while.\nI'm Old Jack. Every autumn the dead get restless and the lanterns in the <color is="#ffd97a">Forgotten Temple</color> go dark, so I come back and light them. I could use a pair of hands that aren't carved.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Pleased to meet you, Jack.
-dialogue.hallows_eve_old_jack.board_fresh.text = There's fresh work on my board tonight. One job, and it pays.
+dialogue.hallows_eve_old_jack.board_fresh.text = There's fresh work on my board, some for the dark and some for the daylight. It pays.
 dialogue.hallows_eve_old_jack.board_fresh.opt.board = Show me the board.
 dialogue.hallows_eve_old_jack.board_fresh.opt.later = Later, Jack.
 dialogue.hallows_eve_old_jack.menu.text = The lanterns are lit and the ghouls are out walking. What do you need?

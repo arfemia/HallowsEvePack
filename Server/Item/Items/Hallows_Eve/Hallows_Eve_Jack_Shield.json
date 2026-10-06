@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Jack Shield, the other half of the Hallowed set. Parent is the game's shield template, so it guards, bashes and spends stamina like the game's mid-tier shields; this file changes its look, name, quality and the stats it gives from the utility slot (Utility.StatModifiers, which the game applies to the item in that slot). The set counts it only in the utility slot, never in the main hand.",
+  "$Comment": "The Jack Shield, the other half of the Hallowed set. Parent is the game's shield template, so it guards, bashes and spends stamina like the game's mid-tier shields; this file changes its look, name, quality and the stats it gives from the utility slot (Utility.StatModifiers, which the game applies to the item in that slot). The set counts it only in the utility slot, never in the main hand. From the utility slot it also adds favor with the Hallowed on the stat Reputation_Hallows_Eve_Hallowed.",
   "Parent": "Template_Weapon_Shield",
   "TranslationProperties": {
     "Name": "items.Hallows_Eve_Jack_Shield.name",
@@ -13,6 +13,9 @@
   "ItemSoundSetId": "ISS_Weapons_Shield_Wood",
   "Utility": {
     "Usable": true,
-    "StatModifiers": {"Health": [{"Amount": 4, "CalculationType": "Additive"}]}
+    "StatModifiers": {
+      "Health": [{"Amount": 4, "CalculationType": "Additive"}],
+      "Reputation_Hallows_Eve_Hallowed": [{"Amount": 100, "CalculationType": "Additive", "Target": "Max"}]
+    }
   }
 }

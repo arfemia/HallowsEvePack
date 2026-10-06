@@ -8,7 +8,8 @@
     "one treat or trick a day, wherever they ask, and the line comes back at midnight UTC. The",
     "Factor condition hides it whenever the event is off. Grant rolls the lootable",
     "Hallows_Eve_Trick_Or_Treat, which always pays a few sweets with a notice and then draws one",
-    "more treat or a costume trick, and Close ends the conversation, since a line added to another",
+    "more treat or a costume trick, and adds a little favor with the Hallowed (the Reputation",
+    "reward; Amount is how much). Close ends the conversation, since a line added to another",
     "character's conversation has no screen of its own to go to. Add a Dialogues block with an",
     "Exclude list to keep it out of a conversation, or set Enabled false in a file of the same name",
     "to take it out everywhere."
@@ -23,7 +24,10 @@
       "Conditions": [
         { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
       ],
-      "Grant": [ { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Trick_Or_Treat" } } ],
+      "Grant": [
+        { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Trick_Or_Treat" } },
+        { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 5 } }
+      ],
       "Close": true
     }
   ]
