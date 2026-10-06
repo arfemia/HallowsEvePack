@@ -33,10 +33,11 @@ quest.hallows_eve_jack_daily_geodes.flavor = The deep stone's humming again. Cra
 objective.hallows_eve.throw_bombs = Throw {0} Lantern Bombs
 objective.hallows_eve.crack_geodes = Crack {0} Cursed Geodes
 objective.hallows_eve.attend = Be here for Hallow's Eve
+objective.hallows_eve.jack_confidant = Become Old Jack's Confidant
 
 # ---- Old Jack's board ----
 board.hallows_eve_daily.title = Old Jack's Board
-board.hallows_eve_daily.desc = Work for the dark and work for the daylight. Folks I trust get a bit more.
+board.hallows_eve_daily.desc = Work for the dark and work for the daylight. My regulars get a bit more.
 board.hallows_eve_daily.grade.night = Night Work
 board.hallows_eve_daily.grade.day = Day Work
 quest.hallows_eve_board_souls.title = Soul Sweep
@@ -82,6 +83,13 @@ achievement.seasons_of_orbis.desc = Earn every season's crowning achievement.
 title.hallows_eve_hallowed.name = The Hallowed
 title.hallows_eve_hallowed.flavor = Earned every Hallow's Eve achievement in one season.
 title.hallows_eve_hallowed.display = {0} the Hallowed
+
+# ---- Jack's Confidant: the achievement and its title ----
+achievement.hallows_eve_jacks_confidant.title = Jack's Confidant
+achievement.hallows_eve_jacks_confidant.desc = Become Old Jack's Confidant.
+title.hallows_eve_jacks_confidant.name = Jack's Confidant
+title.hallows_eve_jacks_confidant.flavor = Became Old Jack's Confidant.
+title.hallows_eve_jacks_confidant.display = {0}, Jack's Confidant
 
 # ---- Reputations: Old Jack's Favor and the Hallowed ----
 reputation.hallows_eve_old_jack.name = Old Jack's Favor

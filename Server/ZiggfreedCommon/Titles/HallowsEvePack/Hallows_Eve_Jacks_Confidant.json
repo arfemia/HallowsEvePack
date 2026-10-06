@@ -1,0 +1,8 @@
+{
+  "$Comment": "Jack's Confidant: the title the achievement hallows_eve_jacks_confidant pays once a player is Revered with Old Jack. It shows beside a player's name in menus and leaderboards once they pick it. Where it sits around the name is the key title.hallows_eve_jacks_confidant.display, whose {0} is the name. Enabled false hides it everywhere without taking it from anybody who earned it.",
+  "Order": 30,
+  "Text": {
+    "TitleKey": "title.hallows_eve_jacks_confidant.name",
+    "FlavorKey": "title.hallows_eve_jacks_confidant.flavor"
+  }
+}
