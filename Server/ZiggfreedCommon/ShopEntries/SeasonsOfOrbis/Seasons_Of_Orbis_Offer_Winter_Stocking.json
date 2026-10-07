@@ -1,0 +1,8 @@
+{
+  "$Comment": "The game's own Winter Stocking on the festival shelf, the cheapest piece on it. The title is the item's own name key, written in full (server.items.<Id>.name) so the shelf shows the name the item shows in the bag; the item has no description key, so the offer has no line under it.",
+  "Text": { "TitleKey": "server.items.WinterHoliday_Stocking.name" },
+  "Shop": "Seasons_Of_Orbis_Festival_Stall",
+  "Listing": { "Category": "festival", "SortOrder": 60 },
+  "Cost": { "Currencies": { "Seasons_Of_Orbis_Festival_Token": 20 } },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "WinterHoliday_Stocking", "Count": 1 } } ]
+}

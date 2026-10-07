@@ -1,0 +1,8 @@
+{
+  "$Comment": "The game's own Winter Wreath on the festival shelf, sold for festival tokens at every season's host. The title is the item's own name key, written in full (server.items.<Id>.name) so the shelf shows the name the item shows in the bag; the item has no description key, so the offer has no line under it.",
+  "Text": { "TitleKey": "server.items.Winter_Holiday_Wreath.name" },
+  "Shop": "Seasons_Of_Orbis_Festival_Stall",
+  "Listing": { "Category": "festival", "SortOrder": 30 },
+  "Cost": { "Currencies": { "Seasons_Of_Orbis_Festival_Token": 30 } },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Winter_Holiday_Wreath", "Count": 1 } } ]
+}
