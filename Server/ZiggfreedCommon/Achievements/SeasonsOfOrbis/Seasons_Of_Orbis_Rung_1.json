@@ -1,0 +1,40 @@
+{
+  "$Comment": [
+    "The first rung of the Seasons of Orbis ladder: a keepsake kept from two different seasons.",
+    "",
+    "MetaSelector picks every achievement under Seasons that carries the season_keepsake tag, which a",
+    "season puts on its yearly keepsake and on nothing else. AnyYear lets any year's copy of a keepsake",
+    "stand for it, and the copies are counted by season, so two years of one season count once. Needs",
+    "is how many seasons it takes. A season a server owner switches off in calendar.json leaves the",
+    "count, and what a player already earned stays theirs. The description's number comes from",
+    "TextArgs, so keep it equal to Needs.",
+    "",
+    "Filed under Seasons with no subcategory, beside the other two rungs, which is where the Almanac",
+    "looks for its banner; Chains draws the three as one ladder. The rewards are Auto, since tokens and",
+    "favor need no bag room."
+  ],
+  "Text": {
+    "TitleKey": "achievement.seasons_of_orbis_rung_1.title",
+    "FlavorKey": "achievement.seasons_of_orbis_rung.desc",
+    "TextArgs": { "Flavor": [ "2" ] }
+  },
+  "Listing": {
+    "Category": "Seasons",
+    "SortOrder": 10,
+    "Icon": "Ingredient_Motes_Light",
+    "Chains": [ { "Id": "seasons_of_orbis", "Tier": 1 } ]
+  },
+  "Scoring": { "Points": 25 },
+  "MetaSelector": {
+    "Category": "Seasons",
+    "Tags": [ "season_keepsake" ],
+    "AnyYear": true,
+    "Needs": 2
+  },
+  "Rewards": {
+    "Auto": [
+      { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "25" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 1500 } }
+    ]
+  }
+}

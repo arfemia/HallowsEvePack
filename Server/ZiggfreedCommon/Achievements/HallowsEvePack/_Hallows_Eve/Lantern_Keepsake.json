@@ -4,9 +4,11 @@
     "",
     "It inherits the yearly occurrence from Hallows_Eve_Hallowed_Base, so each year mints its own",
     "copy and @year in the title reads as that year. Feat files it with the feats, earned only.",
-    "The hallowed tag counts it toward The Hallowed. The reward is a Claim, like every achievement",
-    "reward but a title or a token: the lantern waits on the achievements page until the player",
-    "collects it, so a full bag never costs anyone the year's keepsake."
+    "The hallowed tag counts it toward The Hallowed, and season_keepsake toward the Seasons of Orbis",
+    "ladder, which counts each season's keepsake once: that tag goes on a season's yearly keepsake",
+    "and on nothing else. The reward is a Claim, like every achievement reward but a title or a",
+    "token: the lantern waits on the achievements page until the player collects it, so a full bag",
+    "never costs anyone the year's keepsake."
   ],
   "Parent": "Hallows_Eve_Hallowed_Base",
   "Text": {
@@ -17,7 +19,7 @@
   "Listing": {
     "SortOrder": 10,
     "Icon": "Hallows_Eve_Hollow_Lantern",
-    "Tags": [ "hallowed" ],
+    "Tags": [ "hallowed", "season_keepsake" ],
     "Feat": true
   },
   "Scoring": { "Points": 25 },
