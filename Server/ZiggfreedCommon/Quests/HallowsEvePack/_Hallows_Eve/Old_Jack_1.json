@@ -3,11 +3,10 @@
     "The first step of Old Jack's questline: bring him Hallowed Pumpkins.",
     "",
     "The _Hallows_Eve folder makes the id hallows_eve_old_jack_1. Its Parent, Hallows_Eve_Quest_Base,",
-    "keeps the quest off open lists, so it is offered only at Old Jack, and the top-level Requires",
-    "condition makes it absent while the event is off. A TURN_IN step is handed in at the giver, so",
-    "no report-back step is added. Every step of the questline but the last pays through",
-    "Hallows_Eve_Chain_Pay, which also hands over the Lantern Bombs the next step asks the player to",
-    "throw.",
+    "keeps the quest off open lists, so it is offered only at Old Jack, and its Season makes it absent",
+    "while the event is off. A TURN_IN step is handed in at the giver, so no report-back step is",
+    "added. Every step of the questline but the last pays through Hallows_Eve_Chain_Pay, which also",
+    "hands over the Lantern Bombs the next step asks the player to throw.",
     "",
     "The Mmo_Xp row is MMO Skill Tree's: Harvesting XP, the skill the pumpkins come from, paid only where",
     "that mod runs. A server without it skips the row when the quest pays and shows nothing for it."
@@ -23,11 +22,6 @@
     "Category": "main",
     "SortOrder": 10,
     "Chains": [ { "Id": "hallows_eve_old_jack", "Tier": 1 } ]
-  },
-  "Requires": {
-    "Factors": [
-      { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
-    ]
   },
   "Objectives": {
     "bring_pumpkins": {

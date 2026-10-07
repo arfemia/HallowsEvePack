@@ -16,10 +16,7 @@
     "CooldownFrom": "Complete"
   },
   "Requires": {
-    "Quests": [ "hallows_eve_old_jack_1" ],
-    "Factors": [
-      { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
-    ]
+    "Quests": [ "hallows_eve_old_jack_1" ]
   },
   "Objectives": {
     "crack_geodes": {

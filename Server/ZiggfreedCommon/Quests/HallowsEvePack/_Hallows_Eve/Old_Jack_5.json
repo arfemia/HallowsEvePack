@@ -13,10 +13,7 @@
     "Chains": [ { "Id": "hallows_eve_old_jack", "Tier": 5 } ]
   },
   "Requires": {
-    "Quests": [ "hallows_eve_old_jack_4" ],
-    "Factors": [
-      { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
-    ]
+    "Quests": [ "hallows_eve_old_jack_4" ]
   },
   "Objectives": {
     "crack_geodes": {

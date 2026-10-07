@@ -5,9 +5,9 @@
     "(Dialogues/HallowsEvePack/Hallows_Eve_Old_Jack.json) rather than a screen, because he has quests",
     "and lines to say before any list opens. Author Dialogue or Open, never both.",
     "",
-    "Requires is what makes him a guest: the feature Hallows_Eve_Live reads 1 only while the event is",
-    "switched on and running, so he arrives when it starts and leaves when it ends, is stopped by a",
-    "command, or is switched off. The library looks at every placement again at each start and end,",
+    "Season is what makes him a guest: Hallows_Eve is live only while the event is switched on and",
+    "running, so he arrives when it starts and leaves when it ends, is stopped by a command, or is",
+    "switched off. The library looks at every placement again at each start and end,",
     "so neither needs a restart. Lifecycle keeps his chunk loaded (which is also what lets the end of",
     "the event find him and take him away), stands him up again if something removes him, and raises",
     "his health past anything that can be dealt.",
@@ -39,15 +39,7 @@
       "Yaw": 180.0
     }
   },
-  "Requires": {
-    "Factors": [
-      {
-        "Factor": "ziggfreedcommon:feature",
-        "Param": "Hallows_Eve_Live",
-        "Min": 1
-      }
-    ]
-  },
+  "Season": "Hallows_Eve",
   "Lifecycle": {
     "KeepAlive": true,
     "Respawn": true,

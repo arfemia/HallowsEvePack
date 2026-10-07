@@ -7,11 +7,6 @@
   },
   "Listing": { "Icon": "Hallows_Eve_Cursed_Geode" },
   "Boards": [ { "Board": "Hallows_Eve_Daily", "Difficulty": "Hallows_Eve_Day", "Weight": 1 } ],
-  "Requires": {
-    "Factors": [
-      { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
-    ]
-  },
   "Objectives": {
     "crack_geodes": {
       "Kind": "USE_ITEM",

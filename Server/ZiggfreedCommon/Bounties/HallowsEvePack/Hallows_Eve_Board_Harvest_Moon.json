@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Harvest Moon contract. Its second condition keeps it out of the draw except on Harvest Moon nights, and its Weight of 4 makes it the likeliest posting on those nights. It writes its own Rewards.Auto, the base's list with MMO Skill Tree's Mmo_Xp row added (Defense XP for the fight), because a child's list replaces the base's whole. A server without that mod skips the row.",
+  "$Comment": "The Harvest Moon contract. Its own Requires keeps it out of the draw except on Harvest Moon nights, and Season, from its Parent, keeps it out whenever Hallow's Eve is off. Its Weight of 4 makes it the likeliest posting on those nights. It writes its own Rewards.Auto, the base's list with MMO Skill Tree's Mmo_Xp row added (Defense XP for the fight), because a child's list replaces the base's whole. A server without that mod skips the row.",
   "Parent": "Hallows_Eve_Contract_Base",
   "Text": {
     "TitleKey": "quest.hallows_eve_board_harvest_moon.title",
@@ -9,7 +9,6 @@
   "Boards": [ { "Board": "Hallows_Eve_Daily", "Difficulty": "Hallows_Eve_Night", "Weight": 4 } ],
   "Requires": {
     "Factors": [
-      { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 },
       { "Factor": "ziggfreedcommon:feature", "Param": "Harvest_Moon_Live", "Min": 1 }
     ]
   },
