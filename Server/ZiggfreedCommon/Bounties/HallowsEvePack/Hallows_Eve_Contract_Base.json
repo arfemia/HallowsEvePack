@@ -1,0 +1,27 @@
+{
+  "$Comment": [
+    "The skeleton every contract on Old Jack's board inherits through Parent. It is Abstract, so it",
+    "is never posted itself.",
+    "",
+    "Listing files each child with the board's contracts. Boards posts a child in the board's night",
+    "slots; a contract for the daylight slots, or one drawn more often, writes its own Boards, which",
+    "replaces this list whole. Rewards is what every contract on the board pays, through Rewards.Auto",
+    "because the board goes away with the event and a Claim would wait a year for it: the board's pay",
+    "table, and favor with Old Jack and the Hallowed (the Reputation rewards; Amount is how much). A",
+    "child that writes its own Rewards.Auto replaces that list whole.",
+    "",
+    "It carries no Requires and no Objectives: each contract writes its own Requires, with the",
+    "Hallows_Eve_Live condition at the top that keeps it out of every draw while the event is off,",
+    "and its own steps."
+  ],
+  "Abstract": true,
+  "Listing": { "Category": "bounty" },
+  "Boards": [ { "Board": "Hallows_Eve_Daily", "Difficulty": "Hallows_Eve_Night", "Weight": 1 } ],
+  "Rewards": {
+    "Auto": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 50 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 25 } }
+    ]
+  }
+}

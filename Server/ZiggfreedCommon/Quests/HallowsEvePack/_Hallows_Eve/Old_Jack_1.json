@@ -2,13 +2,15 @@
   "$Comment": [
     "The first step of Old Jack's questline: bring him Hallowed Pumpkins.",
     "",
-    "The _Hallows_Eve folder makes the id hallows_eve_old_jack_1. Hidden keeps the quest off open",
-    "lists, so it is offered only at Old Jack, and the top-level Requires condition makes it absent",
-    "while the event is off. A TURN_IN step is handed in at the giver, so no report-back step is",
-    "added. Every step of the questline but the last pays through Hallows_Eve_Chain_Pay, which also",
-    "hands over the Lantern Bombs the next step asks the player to throw."
+    "The _Hallows_Eve folder makes the id hallows_eve_old_jack_1. Its Parent, Hallows_Eve_Quest_Base,",
+    "keeps the quest off open lists, so it is offered only at Old Jack, and the top-level Requires",
+    "condition makes it absent while the event is off. A TURN_IN step is handed in at the giver, so",
+    "no report-back step is added. Every step of the questline but the last pays through",
+    "Hallows_Eve_Chain_Pay, which also hands over the Lantern Bombs the next step asks the player to",
+    "throw."
   ],
   "Name": "Old_Jack_1",
+  "Parent": "Hallows_Eve_Quest_Base",
   "Text": {
     "TitleKey": "quest.hallows_eve_old_jack_1.title",
     "FlavorKey": "quest.hallows_eve_old_jack_1.flavor"
@@ -17,13 +19,8 @@
     "Icon": "Hallows_Eve_Hallowed_Pumpkin",
     "Category": "main",
     "SortOrder": 10,
-    "Chains": [ { "Id": "hallows_eve_old_jack", "Tier": 1 } ],
-    "Hidden": true,
-    "RequirePrerequisites": true
+    "Chains": [ { "Id": "hallows_eve_old_jack", "Tier": 1 } ]
   },
-  "Flow": { "AutoAccept": false, "AutoTrack": true, "HideLockedSteps": true },
-  "Npc": { "ViewId": "Hallows_Eve_Old_Jack", "TurnInId": "giver" },
-  "CompletionDialogue": "Hallows_Eve_Old_Jack",
   "Requires": {
     "Factors": [
       { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }

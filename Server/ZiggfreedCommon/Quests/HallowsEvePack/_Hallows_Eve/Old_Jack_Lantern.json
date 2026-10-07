@@ -9,6 +9,7 @@
     "come back."
   ],
   "Name": "Old_Jack_Lantern",
+  "Parent": "Hallows_Eve_Quest_Base",
   "Text": {
     "TitleKey": "quest.hallows_eve_old_jack_lantern.title",
     "FlavorKey": "quest.hallows_eve_old_jack_lantern.flavor"
@@ -17,17 +18,12 @@
     "Icon": "Hallows_Eve_Hollow_Lantern",
     "Category": "main",
     "SortOrder": 60,
-    "Chains": [ { "Id": "hallows_eve_old_jack", "Tier": 6 } ],
-    "Hidden": true,
-    "RequirePrerequisites": true
+    "Chains": [ { "Id": "hallows_eve_old_jack", "Tier": 6 } ]
   },
-  "Flow": { "AutoAccept": false, "AutoTrack": true, "HideLockedSteps": true },
   "Repeat": {
     "Cooldown": { "Days": 60 },
     "CooldownFrom": "Complete"
   },
-  "Npc": { "ViewId": "Hallows_Eve_Old_Jack", "TurnInId": "giver" },
-  "CompletionDialogue": "Hallows_Eve_Old_Jack",
   "Requires": {
     "Quests": [ "hallows_eve_old_jack_5" ],
     "Factors": [

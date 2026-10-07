@@ -2,9 +2,11 @@
   "$Comment": [
     "Old Jack's second step: throw Lantern Bombs. USE_ITEM with the Qualifier Throw counts a",
     "throw of any tier through the PREFIX match on Hallows_Eve_Lantern_Bomb_, and the step's own",
-    "TextKey words it. Npc.TurnInId adds the report-back step to Old Jack after the throws."
+    "TextKey words it. Npc.TurnInId, which the Parent sets, adds the report-back step to Old Jack",
+    "after the throws."
   ],
   "Name": "Old_Jack_2",
+  "Parent": "Hallows_Eve_Quest_Base",
   "Text": {
     "TitleKey": "quest.hallows_eve_old_jack_2.title",
     "FlavorKey": "quest.hallows_eve_old_jack_2.flavor"
@@ -13,13 +15,8 @@
     "Icon": "Hallows_Eve_Lantern_Bomb_Common",
     "Category": "main",
     "SortOrder": 20,
-    "Chains": [ { "Id": "hallows_eve_old_jack", "Tier": 2 } ],
-    "Hidden": true,
-    "RequirePrerequisites": true
+    "Chains": [ { "Id": "hallows_eve_old_jack", "Tier": 2 } ]
   },
-  "Flow": { "AutoAccept": false, "AutoTrack": true, "HideLockedSteps": true },
-  "Npc": { "ViewId": "Hallows_Eve_Old_Jack", "TurnInId": "giver" },
-  "CompletionDialogue": "Hallows_Eve_Old_Jack",
   "Requires": {
     "Quests": [ "hallows_eve_old_jack_1" ],
     "Factors": [

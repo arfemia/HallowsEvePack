@@ -1,0 +1,5 @@
+{
+  "$Comment": "The skeleton every offer at Old Jack's stall inherits through Parent: the storefront it is sold at. It is Abstract, so it is never on sale itself, and it carries no Requires: an offer comes and goes with the stall, whose own Requires block makes it absent while the event is off. Each offer writes its own shelf (Listing.Category), its place on it, its price and what it hands over; the four Lantern Bomb offers are written by ShopEntryGenerators/HallowsEvePack/Hallows_Eve_Lantern_Bomb_Offers.json.",
+  "Abstract": true,
+  "Shop": "Hallows_Eve_Old_Jack"
+}

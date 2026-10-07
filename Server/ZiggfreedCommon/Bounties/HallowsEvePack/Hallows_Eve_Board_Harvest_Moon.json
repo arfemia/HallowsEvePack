@@ -1,10 +1,11 @@
 {
   "$Comment": "The Harvest Moon contract. Its second condition keeps it out of the draw except on Harvest Moon nights, and its Weight of 4 makes it the likeliest posting on those nights.",
+  "Parent": "Hallows_Eve_Contract_Base",
   "Text": {
     "TitleKey": "quest.hallows_eve_board_harvest_moon.title",
     "FlavorKey": "quest.hallows_eve_board_harvest_moon.flavor"
   },
-  "Listing": { "Category": "bounty", "Icon": "Hallows_Eve_Jack_Helm" },
+  "Listing": { "Icon": "Hallows_Eve_Jack_Helm" },
   "Boards": [ { "Board": "Hallows_Eve_Daily", "Difficulty": "Hallows_Eve_Night", "Weight": 4 } ],
   "Requires": {
     "Factors": [
@@ -14,12 +15,5 @@
   },
   "Objectives": {
     "knock_down_skeletons": { "Kind": "KILL_ENTITY", "Target": "Hallows_Eve_Jack_Skeleton", "MatchMode": "EXACT", "Amount": 12 }
-  },
-  "Rewards": {
-    "Auto": [
-      { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } },
-      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 50 } },
-      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 25 } }
-    ]
   }
 }

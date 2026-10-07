@@ -1,0 +1,36 @@
+{
+  "$Comment": [
+    "Writes the four Lantern Bomb offers at Old Jack's stall from one file, one per tier, each a child",
+    "of ShopEntries/HallowsEvePack/Hallows_Eve_Offer_Base.json, which names the stall. One row binds",
+    "every number that differs for a tier: how many bombs (count), the price in Hallow Sweets (price),",
+    "the place on the bombs shelf (order) and how many one player may buy a day (daily; 0 is no daily",
+    "limit, so raise or zero it to taste). IdPattern spells each offer's id, which is what a player's",
+    "purchase count is filed under, so keep it as it is. The title and the line under it are the",
+    "bomb's own name and description, so the stall calls each tier what the item calls itself."
+  ],
+  "Base": "Hallows_Eve_Offer_Base",
+  "IdPattern": "Hallows_Eve_Offer_Lantern_Bomb_{tier}",
+  "ForEach": [
+    {
+      "Token": "tier",
+      "Values": [
+        { "tier": "Common", "count": 5, "price": 6, "order": 10, "daily": 0 },
+        { "tier": "Uncommon", "count": 3, "price": 10, "order": 20, "daily": 0 },
+        { "tier": "Rare", "count": 2, "price": 18, "order": 30, "daily": 0 },
+        { "tier": "Epic", "count": 1, "price": 30, "order": 40, "daily": 2 }
+      ]
+    }
+  ],
+  "Child": {
+    "Text": {
+      "TitleKey": "items.Hallows_Eve_Lantern_Bomb_{tier}.name",
+      "FlavorKey": "items.Hallows_Eve_Lantern_Bomb_{tier}.description"
+    },
+    "Listing": { "Category": "bombs", "SortOrder": "{order}" },
+    "Cost": { "Currencies": { "Hallows_Eve_Sweets": "{price}" } },
+    "Limits": { "Daily": "{daily}" },
+    "Rewards": [
+      { "Kind": "Item", "Params": { "Item": "Hallows_Eve_Lantern_Bomb_{tier}", "Count": "{count}" } }
+    ]
+  }
+}

@@ -1,6 +1,7 @@
 {
   "$Comment": "One of Old Jack's three dailies: Cursed Geodes cracked open, counted by USE_ITEM with the Qualifier Crack and worded by the step's own TextKey.",
   "Name": "Jack_Daily_Geodes",
+  "Parent": "Hallows_Eve_Quest_Base",
   "Text": {
     "TitleKey": "quest.hallows_eve_jack_daily_geodes.title",
     "FlavorKey": "quest.hallows_eve_jack_daily_geodes.flavor"
@@ -8,17 +9,12 @@
   "Listing": {
     "Icon": "Hallows_Eve_Cursed_Geode",
     "Category": "misc",
-    "SortOrder": 130,
-    "Hidden": true,
-    "RequirePrerequisites": true
+    "SortOrder": 130
   },
-  "Flow": { "AutoAccept": false, "AutoTrack": true, "HideLockedSteps": true },
   "Repeat": {
     "Reset": { "Period": "Daily" },
     "CooldownFrom": "Complete"
   },
-  "Npc": { "ViewId": "Hallows_Eve_Old_Jack", "TurnInId": "giver" },
-  "CompletionDialogue": "Hallows_Eve_Old_Jack",
   "Requires": {
     "Quests": [ "hallows_eve_old_jack_1" ],
     "Factors": [

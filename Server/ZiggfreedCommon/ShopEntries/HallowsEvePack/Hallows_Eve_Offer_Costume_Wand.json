@@ -1,10 +1,10 @@
 {
   "$Comment": "The costume wand, which puts a costume on another player who can take it off again. Named by the item's own keys.",
+  "Parent": "Hallows_Eve_Offer_Base",
   "Text": {
     "TitleKey": "items.Hallows_Eve_Costume_Wand.name",
     "FlavorKey": "items.Hallows_Eve_Costume_Wand.description"
   },
-  "Shop": "Hallows_Eve_Old_Jack",
   "Listing": { "Category": "gear", "SortOrder": 20 },
   "Cost": { "Currencies": { "Hallows_Eve_Sweets": 60 } },
   "Rewards": [

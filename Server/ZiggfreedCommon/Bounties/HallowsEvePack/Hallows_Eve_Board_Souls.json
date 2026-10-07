@@ -1,11 +1,11 @@
 {
-  "$Comment": "A nightly contract on Old Jack's board. It pays through Rewards.Auto the moment the work is done, because the board goes away with the event and a Claim would wait a year for it. The Requires block keeps it out of every draw while the event is off.",
+  "$Comment": "A nightly contract on Old Jack's board. Its Parent, Hallows_Eve_Contract_Base, posts it in the night slots and pays it through Rewards.Auto the moment the work is done, because the board goes away with the event and a Claim would wait a year for it. The Requires block keeps it out of every draw while the event is off.",
+  "Parent": "Hallows_Eve_Contract_Base",
   "Text": {
     "TitleKey": "quest.hallows_eve_board_souls.title",
     "FlavorKey": "quest.hallows_eve_board_souls.flavor"
   },
-  "Listing": { "Category": "bounty", "Icon": "Hallows_Eve_Ectoplasm" },
-  "Boards": [ { "Board": "Hallows_Eve_Daily", "Difficulty": "Hallows_Eve_Night", "Weight": 1 } ],
+  "Listing": { "Icon": "Hallows_Eve_Ectoplasm" },
   "Requires": {
     "Factors": [
       { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
@@ -13,12 +13,5 @@
   },
   "Objectives": {
     "free_souls": { "Kind": "KILL_ENTITY", "Target": "Hallows_Eve_Lost_Soul", "MatchMode": "EXACT", "Amount": 8 }
-  },
-  "Rewards": {
-    "Auto": [
-      { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } },
-      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 50 } },
-      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 25 } }
-    ]
   }
 }

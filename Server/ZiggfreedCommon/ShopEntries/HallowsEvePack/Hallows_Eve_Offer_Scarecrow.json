@@ -1,9 +1,9 @@
 {
   "$Comment": "The game's own Scarecrow, one of the stall's two big pieces, priced well above the small decorations. The title is the item's own name key, written in full (server.items.<Id>.name) so the stall shows the name the item shows in the bag; the item has no description key, so the offer has no line under it.",
+  "Parent": "Hallows_Eve_Offer_Base",
   "Text": {
     "TitleKey": "server.items.Deco_Scarecrow.name"
   },
-  "Shop": "Hallows_Eve_Old_Jack",
   "Listing": { "Category": "decor", "SortOrder": 50 },
   "Cost": { "Currencies": { "Hallows_Eve_Sweets": 45 } },
   "Rewards": [

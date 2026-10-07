@@ -1,6 +1,7 @@
 {
-  "$Comment": "Old Jack's fifth step: crack Cursed Geodes open. USE_ITEM with the Qualifier Crack counts a geode cracked, and the step's own TextKey words it. Npc.TurnInId adds the report-back step.",
+  "$Comment": "Old Jack's fifth step: crack Cursed Geodes open. USE_ITEM with the Qualifier Crack counts a geode cracked, and the step's own TextKey words it. Npc.TurnInId, which the Parent sets, adds the report-back step.",
   "Name": "Old_Jack_5",
+  "Parent": "Hallows_Eve_Quest_Base",
   "Text": {
     "TitleKey": "quest.hallows_eve_old_jack_5.title",
     "FlavorKey": "quest.hallows_eve_old_jack_5.flavor"
@@ -9,13 +10,8 @@
     "Icon": "Hallows_Eve_Cursed_Geode",
     "Category": "main",
     "SortOrder": 50,
-    "Chains": [ { "Id": "hallows_eve_old_jack", "Tier": 5 } ],
-    "Hidden": true,
-    "RequirePrerequisites": true
+    "Chains": [ { "Id": "hallows_eve_old_jack", "Tier": 5 } ]
   },
-  "Flow": { "AutoAccept": false, "AutoTrack": true, "HideLockedSteps": true },
-  "Npc": { "ViewId": "Hallows_Eve_Old_Jack", "TurnInId": "giver" },
-  "CompletionDialogue": "Hallows_Eve_Old_Jack",
   "Requires": {
     "Quests": [ "hallows_eve_old_jack_4" ],
     "Factors": [

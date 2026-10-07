@@ -6,6 +6,7 @@
     "the pay is one edit there."
   ],
   "Name": "Jack_Daily_Souls",
+  "Parent": "Hallows_Eve_Quest_Base",
   "Text": {
     "TitleKey": "quest.hallows_eve_jack_daily_souls.title",
     "FlavorKey": "quest.hallows_eve_jack_daily_souls.flavor"
@@ -13,17 +14,12 @@
   "Listing": {
     "Icon": "Hallows_Eve_Ectoplasm",
     "Category": "misc",
-    "SortOrder": 110,
-    "Hidden": true,
-    "RequirePrerequisites": true
+    "SortOrder": 110
   },
-  "Flow": { "AutoAccept": false, "AutoTrack": true, "HideLockedSteps": true },
   "Repeat": {
     "Reset": { "Period": "Daily" },
     "CooldownFrom": "Complete"
   },
-  "Npc": { "ViewId": "Hallows_Eve_Old_Jack", "TurnInId": "giver" },
-  "CompletionDialogue": "Hallows_Eve_Old_Jack",
   "Requires": {
     "Quests": [ "hallows_eve_old_jack_1" ],
     "Factors": [

@@ -1,11 +1,11 @@
 {
-  "$Comment": "A nightly contract on Old Jack's board, paid through Rewards.Auto because the board goes away with the event. Hollow Ghouls walk only at night, and only while the event runs.",
+  "$Comment": "A nightly contract on Old Jack's board: its Parent posts it in the night slots and pays it through Rewards.Auto, because the board goes away with the event. Hollow Ghouls walk only at night, and only while the event runs.",
+  "Parent": "Hallows_Eve_Contract_Base",
   "Text": {
     "TitleKey": "quest.hallows_eve_board_ghouls.title",
     "FlavorKey": "quest.hallows_eve_board_ghouls.flavor"
   },
-  "Listing": { "Category": "bounty", "Icon": "Deco_Bone_Skulls" },
-  "Boards": [ { "Board": "Hallows_Eve_Daily", "Difficulty": "Hallows_Eve_Night", "Weight": 1 } ],
+  "Listing": { "Icon": "Deco_Bone_Skulls" },
   "Requires": {
     "Factors": [
       { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
@@ -13,12 +13,5 @@
   },
   "Objectives": {
     "put_down_ghouls": { "Kind": "KILL_ENTITY", "Target": "Hallows_Eve_Hollow_Ghoul", "MatchMode": "EXACT", "Amount": 10 }
-  },
-  "Rewards": {
-    "Auto": [
-      { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } },
-      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 50 } },
-      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 25 } }
-    ]
   }
 }

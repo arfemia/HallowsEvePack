@@ -1,6 +1,7 @@
 {
   "$Comment": "One of Old Jack's three dailies: Hallowed Pumpkins handed in at the giver. A TURN_IN step is handed in where it is, so no report-back step is added.",
   "Name": "Jack_Daily_Pumpkins",
+  "Parent": "Hallows_Eve_Quest_Base",
   "Text": {
     "TitleKey": "quest.hallows_eve_jack_daily_pumpkins.title",
     "FlavorKey": "quest.hallows_eve_jack_daily_pumpkins.flavor"
@@ -8,17 +9,12 @@
   "Listing": {
     "Icon": "Hallows_Eve_Hallowed_Pumpkin",
     "Category": "misc",
-    "SortOrder": 120,
-    "Hidden": true,
-    "RequirePrerequisites": true
+    "SortOrder": 120
   },
-  "Flow": { "AutoAccept": false, "AutoTrack": true, "HideLockedSteps": true },
   "Repeat": {
     "Reset": { "Period": "Daily" },
     "CooldownFrom": "Complete"
   },
-  "Npc": { "ViewId": "Hallows_Eve_Old_Jack", "TurnInId": "giver" },
-  "CompletionDialogue": "Hallows_Eve_Old_Jack",
   "Requires": {
     "Quests": [ "hallows_eve_old_jack_1" ],
     "Factors": [
