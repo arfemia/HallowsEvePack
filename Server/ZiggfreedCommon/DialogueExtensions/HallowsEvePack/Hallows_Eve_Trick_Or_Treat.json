@@ -6,8 +6,8 @@
     "",
     "Once with Period Daily and PerCharacter true, keyed by OnceId, is kept per character: a player",
     "gets one treat or trick a day from each character they ask, and the line comes back at",
-    "midnight UTC. Leave PerCharacter out to make it one knock a day across every character. The",
-    "Factor condition hides it whenever the event is off. Grant rolls the lootable",
+    "midnight UTC. Leave PerCharacter out to make it one knock a day across every character. Season",
+    "hides it whenever the event is off. Grant rolls the lootable",
     "Hallows_Eve_Trick_Or_Treat, which always pays a few sweets with a notice and then draws one",
     "more treat or a costume trick, and adds a little favor with the Hallowed (Hallows_Eve_Hallowed) (the Reputation",
     "reward; Amount is how much). It names no Goto and no Close, so the conversation stays on the",
@@ -17,6 +17,7 @@
     "Exclude list to keep it out of a conversation, or set Enabled false in a file of the same name",
     "to take it out everywhere."
   ],
+  "Season": "Hallows_Eve",
   "Options": [
     {
       "LabelKey": "dialogue.hallows_eve_trick_or_treat.opt.knock",
@@ -24,9 +25,6 @@
       "Once": { "Period": "Daily", "PerCharacter": true },
       "Style": "neutral",
       "Presentation": { "Icon": { "Item": "Halloween_Basket_Pumpkin" } },
-      "Conditions": [
-        { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
-      ],
       "Grant": [
         { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Trick_Or_Treat" } },
         { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 5 } }

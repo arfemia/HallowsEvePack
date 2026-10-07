@@ -1,11 +1,7 @@
 {
-  "$Comment": "Hallow Sweets: what Old Jack pays in and what his stall charges. A plain number this server keeps for each player, so it cannot be dropped, traded or lost. It has no OnDeath and no Decay, so unspent sweets keep from one October to the next. The Requires block takes the wallet out of every balance strip while the event is off; balances are kept and still earned. Its name is the key currency.hallows_eve_sweets.name.",
+  "$Comment": "Hallow Sweets: what Old Jack pays in and what his stall charges. A plain number this server keeps for each player, so it cannot be dropped, traded or lost. It has no OnDeath and no Decay, so unspent sweets keep from one October to the next. Season takes the wallet out of every balance strip while the event is off; balances are kept and still earned. Its name is the key currency.hallows_eve_sweets.name.",
   "Icon": "Halloween_Basket_Pumpkin",
   "Color": "#ff9a3c",
   "Cap": 0,
-  "Requires": {
-    "Factors": [
-      { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
-    ]
-  }
+  "Season": "Hallows_Eve"
 }
