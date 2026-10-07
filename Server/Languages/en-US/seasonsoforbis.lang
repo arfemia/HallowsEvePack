@@ -12,3 +12,10 @@ reputation.seasons_of_orbis_festival.rank.festival_tier_3 = Exalted IV
 
 # ---- The festival token ----
 currency.seasons_of_orbis_festival_token.name = Festival Token
+
+# ---- The festival shelf ----
+shop.seasons_of_orbis_festival_stall.title = Festival Stall
+shop.seasons_of_orbis_festival_stall.desc = Decorations from every season's festival, and a costume or two, for festival tokens.
+shop.seasons_of_orbis_festival_stall.category.festival = Festival Shelf
+# Not used by the pack itself: the words for a server owner's Almanac link that opens the stall all year.
+almanac.seasons_of_orbis.link.festival_stall = Visit the festival stall
