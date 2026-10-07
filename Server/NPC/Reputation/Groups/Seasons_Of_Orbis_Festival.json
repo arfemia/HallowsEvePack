@@ -1,0 +1,5 @@
+{
+  "$Comment": "Festival Favor: a reputation earned in every season, with nobody standing behind it. NPCGroups is an empty list, so no character's attitude follows it and each season's host keeps their own. Keep the key even while it is empty: a reputation group with no NPCGroups key at all breaks every NPC that spawns, and so does one naming an NPC group the game has not loaded. InitialReputationValue is where every player starts. ZiggfreedCommon/Reputations/SeasonsOfOrbis/Seasons_Of_Orbis_Festival.json gives it its name, its ranks past Exalted and what it pays beyond them.",
+  "NPCGroups": [],
+  "InitialReputationValue": 0
+}

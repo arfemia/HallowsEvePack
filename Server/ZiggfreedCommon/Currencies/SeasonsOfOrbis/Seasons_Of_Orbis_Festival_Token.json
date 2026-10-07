@@ -1,0 +1,6 @@
+{
+  "$Comment": "Festival Tokens: what every season pays beside any currency of its own, and what the festival shelf charges. A plain number this server keeps for each player, so it cannot be dropped, traded or lost. It has no OnDeath and no Decay, so tokens keep from one season to the next, and no Season or Requires, so the wallet shows all year. Each season's pay tables add a roll that pays it through the Currency reward kind. Its name is the key currency.seasons_of_orbis_festival_token.name.",
+  "Icon": "Ingredient_Motes_Light",
+  "Color": "#f2c14e",
+  "Cap": 0
+}
