@@ -1,0 +1,22 @@
+{
+  "$Comment": [
+    "Artillery XP for the Lantern Bombs, on a server running MMO Skill Tree. Only that mod reads this",
+    "folder, so without it the file is never loaded.",
+    "",
+    "A thrown bomb bursts after it leaves the hand, so by the time it lands the thrower may hold",
+    "something else, or nothing once the stack runs out. A cause: key ties the XP to the burst's own",
+    "damage cause instead of to whatever is in hand, so every hit the burst lands trains Artillery.",
+    "The value is the per-hit XP of the per-hit combat XP mode; the damage-based modes award by",
+    "damage dealt and ignore it.",
+    "",
+    "The cause is matched by its exact id, and its Inherits: Fire never reaches the Fire row, which",
+    "is why it needs a row of its own. The bombs in hand need none: every tier's id contains Bomb,",
+    "which MMO Skill Tree's own Artillery map already covers."
+  ],
+  "Name": "Hallows_Eve",
+  "Payload": {
+    "ARTILLERY": {
+      "cause:Hallows_Eve_Lantern_Burst": 12
+    }
+  }
+}

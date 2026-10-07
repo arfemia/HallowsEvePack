@@ -1,0 +1,36 @@
+{
+  "$Comment": [
+    "MMO Skill Tree's half of the Hallowed set: with the Jack Helm worn and the Jack Shield in the",
+    "utility slot, the wearer gets a little luck and more Artillery damage, on top of the health,",
+    "glow and fire resistance Hallows_Eve_Hallowed.json gives.",
+    "",
+    "It is a second set over the same two members, so that file stays as it is: an item can belong",
+    "to several sets, and each set's tiers apply on their own. Each set also shows its own notice when",
+    "its tier comes on, which is why a player sees two. Requires takes this file out on a server",
+    "without MMO Skill Tree, where these stats do not exist and its notice would name a bonus nobody",
+    "gets; always write it with Min 1.",
+    "",
+    "MMO_Luck takes whole percent points (5 is 5%), the luck every skill's lucky rolls read.",
+    "MMO_DamageFlat_ARTILLERY adds raw damage to a hit while an Artillery weapon is in hand when it",
+    "lands, which for a Lantern Bomb means another bomb still in hand. Both are Additive on purpose:",
+    "these channels have a base of zero, so a Multiplicative entry computes nothing."
+  ],
+  "Text": { "TitleKey": "gearset.mmo_hallows_eve_hallowed.title" },
+  "Requires": {
+    "Factors": [
+      { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 }
+    ]
+  },
+  "Members": [ "Hallows_Eve_Jack_Helm", "Hallows_Eve_Jack_Shield" ],
+  "Bonuses": [
+    {
+      "Armor": 1,
+      "Utility": 1,
+      "Text": { "TitleKey": "gearset.mmo_hallows_eve_hallowed.tier_full" },
+      "StatModifiers": {
+        "MMO_Luck": [ { "Amount": 5, "CalculationType": "Additive" } ],
+        "MMO_DamageFlat_ARTILLERY": [ { "Amount": 4, "CalculationType": "Additive" } ]
+      }
+    }
+  ]
+}

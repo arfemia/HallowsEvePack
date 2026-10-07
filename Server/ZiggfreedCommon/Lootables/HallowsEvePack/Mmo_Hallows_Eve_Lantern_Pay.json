@@ -1,0 +1,24 @@
+{
+  "$Comment": [
+    "Skill XP added to what lighting the Hollow Lantern pays, once a year: the Hallows_Eve_Lantern_Pay",
+    "table, on a server running MMO Skill Tree. It folds into that table through ContributesTo, rolls",
+    "only; see Mmo_Hallows_Eve_Chain_Pay.json for how a contribution behaves. The year's last step of",
+    "Old Jack's questline pays the most Artillery XP."
+  ],
+  "Name": "Mmo_Hallows_Eve_Lantern_Pay",
+  "ContributesTo": "Hallows_Eve_Lantern_Pay",
+  "Requires": {
+    "Factors": [
+      { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 }
+    ]
+  },
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [
+          { "Kind": "Mmo_Xp", "Params": { "Skill": "ARTILLERY", "Amount": "1000" } }
+        ]
+      }
+    }
+  ]
+}

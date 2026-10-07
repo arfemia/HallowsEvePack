@@ -1,0 +1,12 @@
+{
+  "$Comment": [
+    "Crafting XP for the Carving Bench's Hallowed recipes, the ones that carve only while Hallow's Eve",
+    "runs (the action Carve_Hallowed). They take rarer inputs than the everyday carves, so each cycle",
+    "pays more. See Mmo_Hallows_Eve_Carving.json for how a scoped extension behaves, with MMO Skill",
+    "Tree and without it."
+  ],
+  "Target": { "Station": "Hallows_Eve_Carving_Bench", "Action": "Carve_Hallowed" },
+  "PerCycleContributions": [
+    { "Channel": "mmoskilltree:skill_xp", "Param": "CRAFTING", "Amount": 10.0 }
+  ]
+}
