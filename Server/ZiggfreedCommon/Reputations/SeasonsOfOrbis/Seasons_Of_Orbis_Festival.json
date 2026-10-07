@@ -1,0 +1,35 @@
+{
+  "$Comment": [
+    "Festival Favor: the name, picture and ranks of the game's reputation group of the same id",
+    "(NPC/Reputation/Groups/Seasons_Of_Orbis_Festival.json), a reputation with no characters in it.",
+    "",
+    "It climbs the seven shared ranks like any reputation, then keeps going. Each Ranks entry with a",
+    "From is a rank of this reputation's own that starts at that much earned favor; every From sits",
+    "above Exalted's floor, so the shared ranks keep theirs. Name is the rank's name, a key in",
+    "seasonsoforbis.lang, and a lock on one of these ranks reads that name with the reputation's.",
+    "",
+    "No Cap, so favor keeps climbing. Beyond pays its Rewards each time earned favor passes another",
+    "multiple of Every above the last rank's floor: here festival tokens.",
+    "",
+    "Favor comes from the Reputation rewards on every season's quests and board jobs and on the",
+    "Seasons of Orbis ladder, so each quest card says how much. Order 5 puts it above the seasons'",
+    "own reputations on the Reputation page."
+  ],
+  "Text": {
+    "TitleKey": "reputation.seasons_of_orbis_festival.name",
+    "FlavorKey": "reputation.seasons_of_orbis_festival.flavor"
+  },
+  "Icon": "Deco_Trophy_Harvest",
+  "Order": 5,
+  "Ranks": {
+    "Festival_Tier_1": { "Name": "reputation.seasons_of_orbis_festival.rank.festival_tier_1", "From": 30000 },
+    "Festival_Tier_2": { "Name": "reputation.seasons_of_orbis_festival.rank.festival_tier_2", "From": 40000 },
+    "Festival_Tier_3": { "Name": "reputation.seasons_of_orbis_festival.rank.festival_tier_3", "From": 50000 }
+  },
+  "Beyond": {
+    "Every": 5000,
+    "Rewards": [
+      { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "25" } }
+    ]
+  }
+}
