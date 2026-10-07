@@ -19,3 +19,15 @@ shop.seasons_of_orbis_festival_stall.desc = Decorations from every season's fest
 shop.seasons_of_orbis_festival_stall.category.festival = Festival Shelf
 # Not used by the pack itself: the words for a server owner's Almanac link that opens the stall all year.
 almanac.seasons_of_orbis.link.festival_stall = Visit the festival stall
+
+# ---- The Seasons of Orbis ladder ----
+achievement.seasons_of_orbis_rung_1.title = Season to Season
+achievement.seasons_of_orbis_rung_2.title = Round the Year
+achievement.seasons_of_orbis_rung.desc = Keep a keepsake from {0} different seasons.
+achievement.seasons_of_orbis.title = Seasons of Orbis
+achievement.seasons_of_orbis.desc = Keep a keepsake from every season.
+
+# ---- The ladder's title ----
+title.seasons_of_orbis_every_season.name = Friend of the Seasons
+title.seasons_of_orbis_every_season.flavor = Kept a keepsake from every season.
+title.seasons_of_orbis_every_season.display = {0}, Friend of the Seasons

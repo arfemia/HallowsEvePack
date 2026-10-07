@@ -1,0 +1,34 @@
+{
+  "$Comment": [
+    "The second rung of the Seasons of Orbis ladder: a keepsake kept from four different seasons.",
+    "",
+    "It picks exactly what the first rung picks (every Seasons achievement tagged season_keepsake, any",
+    "year's copy standing for its keepsake, counted by season) and asks for more of them: Needs is how",
+    "many seasons it takes. Until a server runs that many seasons it waits, and it is earned the moment",
+    "the last one is kept. The description's number comes from TextArgs, so keep it equal to Needs."
+  ],
+  "Text": {
+    "TitleKey": "achievement.seasons_of_orbis_rung_2.title",
+    "FlavorKey": "achievement.seasons_of_orbis_rung.desc",
+    "TextArgs": { "Flavor": [ "4" ] }
+  },
+  "Listing": {
+    "Category": "Seasons",
+    "SortOrder": 20,
+    "Icon": "Rock_Gem_Topaz",
+    "Chains": [ { "Id": "seasons_of_orbis", "Tier": 2 } ]
+  },
+  "Scoring": { "Points": 50 },
+  "MetaSelector": {
+    "Category": "Seasons",
+    "Tags": [ "season_keepsake" ],
+    "AnyYear": true,
+    "Needs": 4
+  },
+  "Rewards": {
+    "Auto": [
+      { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "50" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 3000 } }
+    ]
+  }
+}

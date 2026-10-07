@@ -1,0 +1,8 @@
+{
+  "$Comment": "The title the top rung of the Seasons of Orbis ladder pays, for keeping a keepsake from every season. It shows beside a player's name in menus and leaderboards once they pick it. Where it sits around the name is the key title.seasons_of_orbis_every_season.display, whose {0} is the name. Enabled false hides it everywhere without taking it from anybody who earned it.",
+  "Order": 5,
+  "Text": {
+    "TitleKey": "title.seasons_of_orbis_every_season.name",
+    "FlavorKey": "title.seasons_of_orbis_every_season.flavor"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "$Comment": [
+    "Seasons of Orbis, the top rung of the ladder: a keepsake kept from every season this server runs.",
+    "",
+    "MetaSelector writes no Needs, so it asks for every season it finds: each season whose yearly",
+    "keepsake carries the season_keepsake tag, any year's copy standing for it. A new season raises",
+    "the count, and a player who already earned this keeps it. A season a server owner switches off",
+    "in calendar.json leaves the count, so this stays within reach. It pays the title",
+    "Seasons_Of_Orbis_Every_Season through the Title reward kind.",
+    "",
+    "Keep this file's name: it is the id every player's progress on it is filed under. Filed under",
+    "Seasons with no subcategory, which is where the Almanac looks for its banner."
+  ],
+  "Text": {
+    "TitleKey": "achievement.seasons_of_orbis.title",
+    "FlavorKey": "achievement.seasons_of_orbis.desc"
+  },
+  "Listing": {
+    "Category": "Seasons",
+    "SortOrder": 30,
+    "Icon": "Deco_Trophy_Harvest",
+    "Chains": [ { "Id": "seasons_of_orbis", "Tier": 3 } ]
+  },
+  "Scoring": { "Points": 100 },
+  "MetaSelector": {
+    "Category": "Seasons",
+    "Tags": [ "season_keepsake" ],
+    "AnyYear": true
+  },
+  "Rewards": {
+    "Auto": [
+      { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "100" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 6000 } },
+      { "Kind": "Title", "Params": { "Title": "Seasons_Of_Orbis_Every_Season" } }
+    ]
+  }
+}
