@@ -1,10 +1,29 @@
 {
-  "$Comment": "Hallow's Eve in the Almanac: the season's name and picture, its yearly keepsake, and the tallies it keeps. The file name is the calendar event id. Each stat line counts one kind of moment; LiveOnly false keeps the every-season tally running all year, for the bombs and geodes a player still holds after the event.",
+  "$Comment": "Hallow's Eve in the Almanac: the season's name and picture, its yearly keepsake, and the tallies it keeps. The file name is the calendar event id. Each stat line counts one kind of moment; LiveOnly false keeps the every-season tally running all year, for the bombs and geodes a player still holds after the event. Hero.Composition is the banner at the top of the season's page: each item's own icon drawn at X and Y (pixels from the top-left of the 962 x 240 plate) and Size (a square side up to 128; 64, 96 and 128 read best), over the Background colour. Keep the plate left of about x 450 clear for the title, status and dates. Gradient paints the sky from its Top colour down to its Bottom one in place of the flat Background, and Glow lays a soft round light under the items, its square box placed by X, Y and Size the way an item's is.",
   "Text": {
     "TitleKey": "almanac.hallows_eve.title",
     "FlavorKey": "almanac.hallows_eve.flavor"
   },
   "Icon": "Hallows_Eve_Jack_Lantern",
+  "Accent": "#F08A24",
+  "Hero": {
+    "Composition": {
+      "Background": "#121A2E",
+      "Gradient": { "Top": "#0A0F1E", "Bottom": "#2A1A2C" },
+      "Glow": { "Color": "#A0501A", "X": 514, "Y": -78, "Size": 400 },
+      "Items": [
+        { "Item": "Hallows_Eve_Jack_Lantern", "X": 650, "Y": 58, "Size": 128 },
+        { "Item": "Hallows_Eve_Ecto_Lantern", "X": 546, "Y": 90, "Size": 96 },
+        { "Item": "Hallows_Eve_Hollow_Lantern", "X": 786, "Y": 90, "Size": 96 },
+        { "Item": "Hallows_Eve_Lantern_Bomb_Common", "X": 562, "Y": 14, "Size": 64 },
+        { "Item": "Hallows_Eve_Ectoplasm", "X": 802, "Y": 14, "Size": 64 },
+        { "Item": "Hallows_Eve_Hallowed_Pumpkin", "X": 476, "Y": 40, "Size": 64 },
+        { "Item": "Hallows_Eve_Cursed_Geode", "X": 890, "Y": 40, "Size": 64 },
+        { "Item": "Halloween_Basket_Pumpkin", "X": 476, "Y": 118, "Size": 64 },
+        { "Item": "Hallows_Eve_Jack_Shield", "X": 890, "Y": 116, "Size": 64 }
+      ]
+    }
+  },
   "Order": 10,
   "Keepsake": "Hallows_Eve_Lantern_Keepsake",
   "Stats": {
