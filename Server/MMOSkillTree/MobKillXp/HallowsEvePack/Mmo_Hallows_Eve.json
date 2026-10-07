@@ -1,0 +1,15 @@
+{
+  "$Comment": [
+    "Kill XP for Hallow's Eve's Lost Souls, on a server running MMO Skill Tree. Only that mod reads",
+    "this folder, so without it the file is never loaded.",
+    "",
+    "A pattern is matched as a substring of the creature's role id and the longest match wins, so",
+    "this row reaches only that role. The other three Hallow's Eve creatures already match a pattern",
+    "MMO Skill Tree ships (Ghoul, Skeleton, Wraith) and need no row; without this one a Lost Soul",
+    "would fall to the plain fallback. The value is the XP a kill is worth before any boost."
+  ],
+  "Name": "Mmo_Hallows_Eve",
+  "Payload": {
+    "Hallows_Eve_Lost_Soul": 65
+  }
+}

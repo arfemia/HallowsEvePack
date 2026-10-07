@@ -1,0 +1,31 @@
+{
+  "$Comment": [
+    "A skill daily on Old Jack's board, for a server running MMO Skill Tree: earn this much Harvesting",
+    "XP while you carry it. See Mmo_Hallows_Eve_Daily_Artillery.json for how the four skill dailies",
+    "share the board, why they vanish with the event or without MMO Skill Tree, and why they pay at",
+    "once."
+  ],
+  "Text": {
+    "TitleKey": "quest.mmo_hallows_eve_daily_harvesting.title",
+    "FlavorKey": "quest.mmo_hallows_eve_daily_harvesting.flavor"
+  },
+  "Listing": { "Category": "bounty", "Icon": "Tool_Sickle_Crude" },
+  "Boards": [ { "Board": "Hallows_Eve_Daily", "Difficulty": "Hallows_Eve_Skill", "Weight": 0.5 } ],
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 },
+      { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 }
+    ]
+  },
+  "Objectives": {
+    "gain_xp": { "Kind": "GAIN_XP", "Target": "HARVESTING", "MatchMode": "EXACT", "Amount": 2500 }
+  },
+  "Rewards": {
+    "Auto": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 50 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 25 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "HARVESTING", "Amount": "600" } }
+    ]
+  }
+}
