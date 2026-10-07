@@ -1,0 +1,14 @@
+# Seasons of Orbis across the seasons: Festival Favor, the festival token, the Seasons of Orbis
+# ladder and the festival shelf every season's host carries.
+# Keys are written bare: the library finds each one by its tail, whatever this file is called.
+# Numbers ride {0} and come from the content files, so a retune never touches a translation.
+
+# ---- Festival Favor ----
+reputation.seasons_of_orbis_festival.name = Festival Favor
+reputation.seasons_of_orbis_festival.flavor = Every season has a host, and the hosts talk. Turn up for their festivals and they remember you next time round.
+reputation.seasons_of_orbis_festival.rank.festival_tier_1 = Exalted II
+reputation.seasons_of_orbis_festival.rank.festival_tier_2 = Exalted III
+reputation.seasons_of_orbis_festival.rank.festival_tier_3 = Exalted IV
+
+# ---- The festival token ----
+currency.seasons_of_orbis_festival_token.name = Festival Token
