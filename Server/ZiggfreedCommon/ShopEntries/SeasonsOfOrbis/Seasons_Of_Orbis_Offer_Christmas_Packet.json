@@ -1,0 +1,8 @@
+{
+  "$Comment": "The game's own Small Red Christmas Packet on the festival shelf, a small chest that holds things. The title is the item's own name key, written in full (server.items.<Id>.name) so the shelf shows the name the item shows in the bag; the item has no description key, so the offer has no line under it.",
+  "Text": { "TitleKey": "server.items.Furniture_Christmas_Chest_Small_Red.name" },
+  "Shop": "Seasons_Of_Orbis_Festival_Stall",
+  "Listing": { "Category": "festival", "SortOrder": 80 },
+  "Cost": { "Currencies": { "Seasons_Of_Orbis_Festival_Token": 40 } },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Furniture_Christmas_Chest_Small_Red", "Count": 1 } } ]
+}

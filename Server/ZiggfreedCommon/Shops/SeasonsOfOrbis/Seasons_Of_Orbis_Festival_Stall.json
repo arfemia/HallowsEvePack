@@ -1,0 +1,15 @@
+{
+  "$Comment": "The festival shelf: decorations from every season's festival and a costume, priced in festival tokens. Each season's host carries it beside their own stall by naming it in Includes, so the same offers turn up at every host, and any purchase limit an offer sets is one limit across them all. It ships switched off (Enabled false), which keeps it out of every storefront list and leaves it to the hosts. It has no Where and no Season, so a host carries it whatever world they stand in and whatever season is on. A server owner who wants it open all year switches it on in mods/ziggfreedcommon/shops.json and links it from an Almanac page with a Destination of Type Shop. Order 95 keeps it behind a server's everyday storefronts once it is open. Each offer names this storefront in its Shop leaf, and the shelf's name is a key in seasonsoforbis.lang.",
+  "Enabled": false,
+  "Text": {
+    "TitleKey": "shop.seasons_of_orbis_festival_stall.title",
+    "FlavorKey": "shop.seasons_of_orbis_festival_stall.desc"
+  },
+  "Icon": "Ingredient_Motes_Light",
+  "Order": 95,
+  "Currencies": [ "Seasons_Of_Orbis_Festival_Token" ],
+  "CategoryOrder": [ "festival" ],
+  "Categories": {
+    "festival": { "TitleKey": "shop.seasons_of_orbis_festival_stall.category.festival" }
+  }
+}
