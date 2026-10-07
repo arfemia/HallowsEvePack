@@ -186,3 +186,4 @@ dialogue.hallows_eve_old_jack.board_fresh_friendly.text = Опять ты. Хо�
 dialogue.hallows_eve_old_jack.board_fresh_honored.text = Вот и ты. А я уж начал гадать.\nДоска сегодня полная, и пусть лучше работа достанется тебе, чем кому-то ещё.
 dialogue.hallows_eve_old_jack.board_fresh_revered.text = Присядь на минутку. Упыри подождут.\nНемногие возвращаются к этим ступеням ночь за ночью. Работа на доске будет, когда захочешь.
 dialogue.hallows_eve_old_jack.opt.standing = Как мы с тобой ладим?
+achievement.category.seasons.hallows_eve = Канун Всех Святых
