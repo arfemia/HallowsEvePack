@@ -1,0 +1,25 @@
+{
+  "$Comment": [
+    "Mining XP added to what a cracked Cursed Geode holds: the Hallows_Eve_Geode_Crack table, on a",
+    "server running MMO Skill Tree. It folds into that table through ContributesTo; see",
+    "Mmo_Hallows_Eve_Chain_Pay.json for how a contribution behaves. That table draws once from a pool",
+    "of its own, so this file adds a roll and never a pool entry: an entry here would join that draw",
+    "and thin out every item in it."
+  ],
+  "Name": "Mmo_Hallows_Eve_Geode_Crack",
+  "ContributesTo": "Hallows_Eve_Geode_Crack",
+  "Requires": {
+    "Factors": [
+      { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 }
+    ]
+  },
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [
+          { "Kind": "Mmo_Xp", "Params": { "Skill": "MINING", "Amount": "40" } }
+        ]
+      }
+    }
+  ]
+}

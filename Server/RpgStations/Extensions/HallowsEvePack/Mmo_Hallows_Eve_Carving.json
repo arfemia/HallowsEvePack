@@ -1,0 +1,17 @@
+{
+  "$Comment": [
+    "Crafting XP at the Carving Bench: every finished carve on the bench's everyday action, Carve,",
+    "trains Crafting on a server running MMO Skill Tree.",
+    "",
+    "The Target scopes this to that one action of that one station, so a Carve action some other pack",
+    "ships is left alone. RPG Stations forwards each PerCycleContributions entry on every completed",
+    "cycle, and MMO Skill Tree pays it as XP in the skill Param names; the action's own",
+    "ContributionScale, if it has one, has already scaled the Amount. Without MMO Skill Tree nothing",
+    "listens on the mmoskilltree:skill_xp channel, so the entry goes nowhere and nothing else happens.",
+    "The bench's event-only action has a file of its own, Mmo_Hallows_Eve_Carving_Hallowed.json."
+  ],
+  "Target": { "Station": "Hallows_Eve_Carving_Bench", "Action": "Carve" },
+  "PerCycleContributions": [
+    { "Channel": "mmoskilltree:skill_xp", "Param": "CRAFTING", "Amount": 6.0 }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "$Comment": [
+    "Harvest Moon nights lift Harvesting and Artillery XP for everyone, on a server running MMO Skill",
+    "Tree. Only that mod reads this folder, so without it the file is never loaded.",
+    "",
+    "A boost rule is a standing boost: nobody activates it and it has no timer. It applies to every XP",
+    "award in the skills it names while its Requires passes, and it counts as a global boost, so the",
+    "server's stack mode and multiplier cap in skill-config.json bound it like any other.",
+    "",
+    "Skills takes skill ids, a category (GATHERING, COMBAT, CRAFTING, MISC) or all, the words",
+    "/mmoboost takes. Multiplier is the factor applied to the XP: 1.25 is a quarter more.",
+    "ziggfreedcommon:calendar_live reads 1 only while that calendar event runs, so this rule needs both",
+    "Hallow's Eve and its Harvest Moon running. Text.TitleKey names it on the boosts pages; its words",
+    "are in hallowseve.mmo.lang. To change or switch it off, ship a file with this same name in a pack",
+    "of your own that loads after this one."
+  ],
+  "Text": { "TitleKey": "boostrule.mmo_hallows_eve_harvest_moon.title" },
+  "Skills": [ "HARVESTING", "ARTILLERY" ],
+  "Multiplier": 1.25,
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:calendar_live", "Param": "Hallows_Eve", "Min": 1 },
+      { "Factor": "ziggfreedcommon:calendar_live", "Param": "Harvest_Moon", "Min": 1 }
+    ]
+  }
+}

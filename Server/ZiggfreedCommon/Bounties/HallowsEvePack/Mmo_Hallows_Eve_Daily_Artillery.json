@@ -1,0 +1,40 @@
+{
+  "$Comment": [
+    "A skill daily on Old Jack's board, for a server running MMO Skill Tree: earn this much Artillery",
+    "XP while you carry it, any way you like. Its siblings aim at Harvesting, Mining and Crafting.",
+    "",
+    "Old Jack's board posts this pack's other contracts in its night and day slots, and one of these",
+    "four every day in its skill slot, the Difficulty band Hallows_Eve_Skill that only these carry.",
+    "Weight sets how often each comes up against its three siblings.",
+    "",
+    "Requires holds two switches at the top level. The event's running switch takes the contract out",
+    "of the draw whenever the event is off. hytale:mod_installed takes the whole file out on a server",
+    "without MMO Skill Tree, since its objective and its XP reward are that mod's; always write it",
+    "with Min 1. It pays the moment the work is done (Rewards.Auto), because the board leaves with",
+    "the event: the board's own pay table, the same favor with Old Jack and the Hallowed as his other",
+    "contracts (the Reputation rewards; Amount is how much), plus XP in the skill it aims at."
+  ],
+  "Text": {
+    "TitleKey": "quest.mmo_hallows_eve_daily_artillery.title",
+    "FlavorKey": "quest.mmo_hallows_eve_daily_artillery.flavor"
+  },
+  "Listing": { "Category": "bounty", "Icon": "Weapon_Bomb" },
+  "Boards": [ { "Board": "Hallows_Eve_Daily", "Difficulty": "Hallows_Eve_Skill", "Weight": 0.5 } ],
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 },
+      { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 }
+    ]
+  },
+  "Objectives": {
+    "gain_xp": { "Kind": "GAIN_XP", "Target": "ARTILLERY", "MatchMode": "EXACT", "Amount": 2500 }
+  },
+  "Rewards": {
+    "Auto": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 50 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 25 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "ARTILLERY", "Amount": "600" } }
+    ]
+  }
+}
