@@ -79,8 +79,6 @@ achievement.hallows_eve_jacks_guest.title = Jack's Guest {0}
 achievement.hallows_eve_jacks_guest.desc = Be here for Hallow's Eve.
 achievement.hallows_eve_the_hallowed.title = The Hallowed {0}
 achievement.hallows_eve_the_hallowed.desc = Earn every Hallow's Eve achievement in one season.
-achievement.seasons_of_orbis.title = Seasons of Orbis
-achievement.seasons_of_orbis.desc = Earn every season's crowning achievement.
 
 # ---- The Hallowed title ----
 title.hallows_eve_hallowed.name = The Hallowed
