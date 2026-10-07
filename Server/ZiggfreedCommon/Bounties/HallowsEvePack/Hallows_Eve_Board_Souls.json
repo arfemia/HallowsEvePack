@@ -1,16 +1,11 @@
 {
-  "$Comment": "A nightly contract on Old Jack's board. Its Parent, Hallows_Eve_Contract_Base, posts it in the night slots. The Requires block keeps it out of every draw while the event is off. It writes its own Rewards.Claim, the base's list with MMO Skill Tree's Mmo_Xp row added (Defense XP for the fight), because a child's list replaces the base's whole. The pay waits at the board until the player collects it, and the board goes away with the event, so a job left uncollected then waits for the board to come back next year. A server without that mod skips the row.",
+  "$Comment": "A nightly contract on Old Jack's board. Its Parent, Hallows_Eve_Contract_Base, posts it in the night slots. The Parent's Season keeps it out of every draw while the event is off. It writes its own Rewards.Claim, the base's list with MMO Skill Tree's Mmo_Xp row added (Defense XP for the fight), because a child's list replaces the base's whole. The pay waits at the board until the player collects it, and the board goes away with the event, so a job left uncollected then waits for the board to come back next year. A server without that mod skips the row.",
   "Parent": "Hallows_Eve_Contract_Base",
   "Text": {
     "TitleKey": "quest.hallows_eve_board_souls.title",
     "FlavorKey": "quest.hallows_eve_board_souls.flavor"
   },
   "Listing": { "Icon": "Hallows_Eve_Ectoplasm" },
-  "Requires": {
-    "Factors": [
-      { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
-    ]
-  },
   "Objectives": {
     "free_souls": { "Kind": "KILL_ENTITY", "Target": "Hallows_Eve_Lost_Soul", "MatchMode": "EXACT", "Amount": 8, "TextKey": "objective.hallows_eve.free_souls" }
   },

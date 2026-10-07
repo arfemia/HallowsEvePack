@@ -12,10 +12,7 @@
     "Chains": [ { "Id": "hallows_eve_old_jack", "Tier": 3 } ]
   },
   "Requires": {
-    "Quests": [ "hallows_eve_old_jack_2" ],
-    "Factors": [
-      { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
-    ]
+    "Quests": [ "hallows_eve_old_jack_2" ]
   },
   "Objectives": {
     "put_down_ghouls": {
