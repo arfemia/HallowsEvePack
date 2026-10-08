@@ -15,11 +15,15 @@
     "resolves. Each villager has an id and a conversation of their own: the invitation line is spent per",
     "conversation, so two villagers sharing one would count as one person asked.",
     "",
-    "Anchor is the temple's arrival spot plus an offset: fourteen blocks along negative X, out along the",
-    "open landing, and two back along negative Z, past Elsie. To move Bram, edit Anchor.WorldSpawn.Offset",
-    "(small enough to stay off the walls) and Yaw to turn him, then look at the spot in game. To take him",
-    "out without editing this file, set enabled (lower case, as that file spells it) to false for this id",
-    "in mods/ziggfreedcommon/npc-placements.json."
+    "The three villagers stand apart, so asking them all is a walk through the temple: Bram on the",
+    "meadow halfway down the road from the arrival, Tomas where that road comes into the kweebec village,",
+    "and Elsie on the village's far side. No spawn marker stands on that meadow, so Anchor is the",
+    "temple's arrival spot plus an offset, as the host's is: fifty and a half blocks along negative X down",
+    "the road, eight down (the road falls eight blocks from the landing to the meadow, and an anchor",
+    "never finds the ground for itself), and eleven along positive Z, off the road onto the grass. To",
+    "move Bram, edit Anchor.WorldSpawn.Offset and Yaw, keeping Y on the ground the new spot stands on,",
+    "then look at the spot in game. To take him out without editing this file, set enabled (lower case,",
+    "as that file spells it) to false for this id in mods/ziggfreedcommon/npc-placements.json."
   ],
   "Name": "Harvest_Feast_Shepherd_Temple",
   "Enabled": true,
@@ -33,7 +37,7 @@
   },
   "Anchor": {
     "WorldSpawn": {
-      "Offset": { "X": -14, "Z": -2 },
+      "Offset": { "X": -50.5, "Y": -8, "Z": 11 },
       "Yaw": 180.0
     }
   },

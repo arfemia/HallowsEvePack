@@ -15,11 +15,16 @@
     "resolves. Each villager has an id and a conversation of their own: the invitation line is spent per",
     "conversation, so two villagers sharing one would count as one person asked.",
     "",
-    "Anchor is the temple's arrival spot plus an offset: nine blocks along negative X, onto the open",
-    "landing, and two and a half along positive Z, on Old Jack's side and well past his spot. To move",
-    "Tomas, edit Anchor.WorldSpawn.Offset (small enough to stay off the walls) and Yaw to turn him, then",
-    "look at the spot in game. To take him out without editing this file, set enabled (lower case, as",
-    "that file spells it) to false for this id in mods/ziggfreedcommon/npc-placements.json."
+    "The three villagers stand apart, so asking them all is a walk through the temple: Bram on the",
+    "meadow halfway down the road from the arrival, Tomas where that road comes into the kweebec village,",
+    "and Elsie on the village's far side. Anchor stands Tomas beside the Rootling Merchant's spawn marker",
+    "(Temple_Kweebec_Merchant_Static), which every Forgotten Temple carries once, so he moves with the",
+    "temple's own layout: three blocks along positive X and seven along negative Z from the marker is",
+    "the open path at the village end of the road, well clear of the merchant and of anybody else",
+    "standing at that marker. Limits.OncePerWorld keeps him to one spot even if a temple ever carries the",
+    "marker twice. To move Tomas, edit Anchor.Structure.Offset and Yaw, then look at the spot in game. To",
+    "take him out without editing this file, set enabled (lower case, as that file spells it) to false",
+    "for this id in mods/ziggfreedcommon/npc-placements.json."
   ],
   "Name": "Harvest_Feast_Miller_Temple",
   "Enabled": true,
@@ -32,10 +37,14 @@
     "NpcId": "Harvest_Feast_Miller"
   },
   "Anchor": {
-    "WorldSpawn": {
-      "Offset": { "X": -9, "Z": 2.5 },
+    "Structure": {
+      "MarkerIds": [ "Temple_Kweebec_Merchant_Static" ],
+      "Offset": { "X": 3, "Z": -7 },
       "Yaw": 180.0
     }
+  },
+  "Limits": {
+    "OncePerWorld": true
   },
   "Lifecycle": {
     "KeepAlive": true,

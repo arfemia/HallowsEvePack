@@ -30,7 +30,7 @@
     "off_season": {
       "TextKey": "dialogue.harvest_feast_shepherd.off_season.text",
       "Options": [
-        { "LabelKey": "dialogue.harvest_feast_shepherd.opt.farewell", "Style": "farewell", "Close": true }
+        { "LabelKey": "dialogue.harvest_feast_shepherd.off_season.opt.farewell", "Style": "farewell", "Close": true }
       ]
     },
     "greeting": {
