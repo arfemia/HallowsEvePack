@@ -1,0 +1,40 @@
+{
+  "$Comment": [
+    "Harvest Feast, the season after Hallow's Eve. The file name is the event id: every Season leaf,",
+    "spawn rule and Almanac page in the pack names it Harvest_Feast. Both days of the Window are in it,",
+    "counted in UTC because no Clock is written, so the feast runs from the first moment of November",
+    "20th to the last moment of December 1st, every year from FirstYear on. US Thanksgiving, the fourth",
+    "Thursday of November, always falls inside it.",
+    "",
+    "A file that must vanish while the feast is off writes Season: Harvest_Feast, on itself or on the",
+    "base it inherits from. A conversation line reads ziggfreedcommon:feature with Param",
+    "Harvest_Feast_Live and Min 1 instead, and a roll or a lock reads ziggfreedcommon:calendar_live with",
+    "Param Harvest_Feast.",
+    "",
+    "Presentation names the feast wherever events are listed, with the game's pumpkin pie as its",
+    "picture. Herald is the banner: Start shows once to each player, the first time they are on the",
+    "server during a run; End shows to everyone online when a run ends by its dates or by a command, and",
+    "never when the event is switched off.",
+    "",
+    "A server owner switches the feast off, or moves its days, in mods/ziggfreedcommon/calendar.json",
+    "without touching this file. /zigcalendar status Harvest_Feast shows what the server reads."
+  ],
+  "Window": { "Start": "11-20", "End": "12-01" },
+  "FirstYear": 2026,
+  "Presentation": {
+    "TitleKey": "calendar.harvest_feast.name",
+    "FlavorKey": "calendar.harvest_feast.flavor",
+    "Icon": "Food_Pie_Pumpkin"
+  },
+  "Herald": {
+    "Start": {
+      "TitleKey": "calendar.harvest_feast.herald.start",
+      "SubtitleKey": "calendar.harvest_feast.herald.start.sub",
+      "Major": true
+    },
+    "End": {
+      "TitleKey": "calendar.harvest_feast.herald.end",
+      "SubtitleKey": "calendar.harvest_feast.herald.end.sub"
+    }
+  }
+}

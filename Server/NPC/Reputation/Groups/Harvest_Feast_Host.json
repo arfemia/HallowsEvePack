@@ -1,0 +1,5 @@
+{
+  "$Comment": "Favor at the Feast: one number per player, kept and saved by the game itself, through death and across worlds. NPCGroups names the group holding the host's role (NPC/Groups/Harvest_Feast_Host.json), so the host takes the attitude of the rank a player's favor reaches; a group named here that the game never loaded breaks every NPC that spawns. InitialReputationValue is where every player starts. ZiggfreedCommon/Reputations/SeasonsOfOrbis/Harvest_Feast_Host.json gives it its name, cap and rank names.",
+  "NPCGroups": [ "Harvest_Feast_Host" ],
+  "InitialReputationValue": 0
+}

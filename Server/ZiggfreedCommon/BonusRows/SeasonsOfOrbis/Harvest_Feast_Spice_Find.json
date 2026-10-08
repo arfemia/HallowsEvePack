@@ -1,0 +1,30 @@
+{
+  "$Comment": [
+    "A pinch of spice: while Harvest Feast runs, a pumpkin harvested by hand sometimes comes with Spices,",
+    "straight into the bag beside the harvest, which is one less trip for a pumpkin pie. The pumpkins are",
+    "the game's own, grown or found all year; only this find is seasonal. The file name is the row's id.",
+    "",
+    "When names PickupItem, the moment a hand harvest lands, on the harvested stack's item id",
+    "Plant_Crop_Pumpkin_Item. Chance is the row's own odds as a percent (15 is about one harvest in",
+    "seven). Season leaves the whole row out while the feast is off, so its roll needs no condition of",
+    "its own. The roll carries the toast's Cue. A server owner retunes or switches off this row by its",
+    "id in mods/ziggfreedcommon/bonus-rows.json.",
+    "",
+    "Hallow's Eve's pumpkin row (BonusRows/HallowsEvePack/Hallows_Eve_Pumpkin_Find.json) names the same",
+    "item, and two rows naming one item are one answer: the id that sorts last. While the feast runs",
+    "that is this row; while it is off, the Season leaf takes this row out and the Hallow's Eve row",
+    "answers again. A server running both seasons at once (a forced run, or days moved to overlap) gets",
+    "the spice and no Hallowed Pumpkins until the feast ends."
+  ],
+  "Season": "Harvest_Feast",
+  "When": { "Kind": "PickupItem", "Match": "Plant_Crop_Pumpkin_Item" },
+  "Chance": { "Base": 15.0 },
+  "Loot": {
+    "Rolls": [
+      {
+        "Grants": { "Items": [ { "Item": "Ingredient_Spices", "Count": 1 } ] },
+        "Cue": "Harvest_Feast_Spice_Found"
+      }
+    ]
+  }
+}

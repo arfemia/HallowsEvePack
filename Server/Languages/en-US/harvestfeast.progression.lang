@@ -1,0 +1,15 @@
+# Harvest Feast progression: the host's questline, the yearly feast and the dailies, the feast board and
+# the feast stall, the host's conversation, the season's achievements and title, the host's reputation
+# and the Almanac page. Keys are written bare: the library finds each one by its tail, whatever this
+# file is called. A quest, a contract or an achievement takes its words from the keys its id spells
+# (quest.<id>.title and .flavor, achievement.<id>.title and .desc), so no content file names those.
+# Numbers ride {0} and come from the content files, so a retune never touches a translation.
+
+# ---- The host's reputation ----
+reputation.harvest_feast_host.name = Favor at the Feast
+reputation.harvest_feast_host.flavor = The host remembers who helped in the kitchen. Do the errands and stop for a word now and then.
+reputation.harvest_feast_host.rank.neutral = Newcomer
+reputation.harvest_feast_host.rank.friendly = Neighbor
+reputation.harvest_feast_host.rank.honored = Regular
+reputation.harvest_feast_host.rank.revered = Family
+reputation.harvest_feast_host.rank.exalted = Head of the Table

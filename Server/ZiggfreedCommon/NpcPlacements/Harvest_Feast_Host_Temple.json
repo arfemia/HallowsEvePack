@@ -1,0 +1,49 @@
+{
+  "$Comment": [
+    "Martha the Cook, the feast's host, standing in the Forgotten Temple while Harvest Feast runs. The",
+    "role, this placement and the conversation pressing F opens all ship in this pack. Interact names",
+    "the conversation (Dialogues/SeasonsOfOrbis/Harvest_Feast_Host.json) rather than a screen, because",
+    "the host has quests and lines to say before any list opens. Author Dialogue or Open, never both.",
+    "",
+    "Season is what makes the host a guest: the placement stands only while the calendar event",
+    "Harvest_Feast is switched on and running, so the host arrives when it starts and leaves when it",
+    "ends, is stopped by a command, or is switched off. The library looks at every placement again at",
+    "each start and end, so neither needs a restart. Lifecycle keeps the host's chunk loaded (which is",
+    "also what lets the end of the feast find the host and clear the spot), stands the host up again",
+    "if something removes the host, and raises the host's health past anything that can be dealt.",
+    "",
+    "Where finds the temple by its GameplayConfig id, which stays the same on every visit while the",
+    "world's name does not. This placement authors no Identity.NpcId, so the character IS the role: the",
+    "feast's quests bind to Harvest_Feast_Host.",
+    "",
+    "Anchor is the temple's arrival spot plus an offset: four blocks along negative X, onto the open",
+    "landing, and two back along negative Z, across the landing from Old Jack's spot, so the two hosts",
+    "never share a spot even when a server owner moves a season's days. To move the host, edit",
+    "Anchor.WorldSpawn.Offset (small enough to stay off the walls) and Yaw to turn the host, then look",
+    "at the spot in game. To take the host out without editing this file, set enabled (lower case, as",
+    "that file spells it) to false for this id in mods/ziggfreedcommon/npc-placements.json."
+  ],
+  "Name": "Harvest_Feast_Host_Temple",
+  "Enabled": true,
+  "Season": "Harvest_Feast",
+  "Where": {
+    "GameplayConfig": [ "ForgottenTemple" ]
+  },
+  "Identity": {
+    "Role": "Harvest_Feast_Host"
+  },
+  "Anchor": {
+    "WorldSpawn": {
+      "Offset": { "X": -4, "Z": -2 },
+      "Yaw": 180.0
+    }
+  },
+  "Lifecycle": {
+    "KeepAlive": true,
+    "Respawn": true,
+    "Fortify": true
+  },
+  "Interact": {
+    "Dialogue": "Harvest_Feast_Host"
+  }
+}
