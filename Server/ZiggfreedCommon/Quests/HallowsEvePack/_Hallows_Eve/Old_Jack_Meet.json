@@ -11,12 +11,14 @@
     "collected, and the conversation would open the quest list instead of the offer. So its pay table,",
     "Hallows_Eve_Meet_Pay (a small welcome of sweets), sits in Auto, paid the moment it is handed in.",
     "",
-    "The Not group keeps it from anyone who already finished Pumpkin Patch, and with no Repeat it comes",
-    "once per player, ever. Pumpkin Patch does not wait on it: a player whose quest log was full when",
-    "this tried to arm still gets the questline from Old Jack.",
+    "Its Parent's Season makes it absent while the event is off, so its own Requires holds only the Not",
+    "group, which keeps it from anyone who already finished Pumpkin Patch. With no Repeat it comes once",
+    "per player, ever. Pumpkin Patch does not wait on it: a player whose quest log was full when this",
+    "tried to arm still gets the questline from Old Jack.",
     "",
     "Beside the table, MMO Skill Tree's Mmo_Xp row pays Acrobatics XP for the walk down, in Auto with the",
-    "rest. A server without that mod skips the row and shows nothing for it."
+    "rest. Its own Requires, the hytale:mod_installed gate, leaves the row out on a server without that",
+    "mod, unpaid and unshown, and the table still pays."
   ],
   "Name": "Old_Jack_Meet",
   "Parent": "Hallows_Eve_Quest_Base",
@@ -31,9 +33,6 @@
   },
   "Flow": { "AutoAccept": true },
   "Requires": {
-    "Factors": [
-      { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
-    ],
     "Not": [
       { "Quests": [ "hallows_eve_old_jack_1" ] }
     ]
@@ -51,7 +50,8 @@
   "Rewards": {
     "Auto": [
       { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Meet_Pay" } },
-      { "Kind": "Mmo_Xp", "Params": { "Skill": "ACROBATICS", "Amount": "250" } }
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "ACROBATICS", "Amount": "250" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
     ]
   }
 }

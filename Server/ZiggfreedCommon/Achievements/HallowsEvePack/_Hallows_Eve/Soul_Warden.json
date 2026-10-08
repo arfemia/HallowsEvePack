@@ -1,5 +1,5 @@
 {
-  "$Comment": "Set Lost Souls free during one season. The description's number comes from the criterion's Amount through @amount. Each year's copy pays MMO Skill Tree's Mmo_Xp row once, Defense XP for the fight, in Auto since XP needs no bag room. A server without that mod skips the row and shows nothing for it.",
+  "$Comment": "Set Lost Souls free during one season. The description's number comes from the criterion's Amount through @amount. Each year's copy pays MMO Skill Tree's Mmo_Xp row once, Defense XP for the fight, in Auto since XP needs no bag room. Its own Requires, the hytale:mod_installed gate, leaves the row out on a server without that mod, unpaid and unshown.",
   "Parent": "Hallows_Eve_Hallowed_Base",
   "Text": {
     "TitleKey": "achievement.hallows_eve_soul_warden.title",
@@ -21,7 +21,8 @@
   },
   "Rewards": {
     "Auto": [
-      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "500" } }
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
     ]
   }
 }

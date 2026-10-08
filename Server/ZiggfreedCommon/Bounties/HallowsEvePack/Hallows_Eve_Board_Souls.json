@@ -1,5 +1,5 @@
 {
-  "$Comment": "A nightly contract on Old Jack's board. Its Parent, Hallows_Eve_Contract_Base, posts it in the night slots and pays it through Rewards.Auto the moment the work is done, because the board goes away with the event and a Claim would wait a year for it. The Parent's Season keeps it out of every draw while the event is off. It writes its own Rewards.Auto, the base's list with MMO Skill Tree's Mmo_Xp row added (Defense XP for the fight), because a child's list replaces the base's whole. A server without that mod skips the row.",
+  "$Comment": "A nightly contract on Old Jack's board. Its Parent, Hallows_Eve_Contract_Base, posts it in the night slots and pays it through Rewards.Auto the moment the work is done, because the board goes away with the event and a Claim would wait a year for it. The Parent's Season keeps it out of every draw while the event is off. It writes its own Rewards.Auto, the base's list with MMO Skill Tree's Mmo_Xp row added (Defense XP for the fight), because a child's list replaces the base's whole. Its own Requires, the hytale:mod_installed gate, leaves the row out on a server without that mod, and the rest of the contract pays.",
   "Parent": "Hallows_Eve_Contract_Base",
   "Text": {
     "TitleKey": "quest.hallows_eve_board_souls.title",
@@ -14,7 +14,8 @@
       { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 50 } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 25 } },
-      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "200" } }
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "200" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
     ]
   }
 }

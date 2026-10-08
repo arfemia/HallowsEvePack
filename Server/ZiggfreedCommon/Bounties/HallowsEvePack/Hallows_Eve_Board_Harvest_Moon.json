@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Harvest Moon contract. Its own Requires keeps it out of the draw except on Harvest Moon nights, and Season, from its Parent, keeps it out whenever Hallow's Eve is off. Its Weight of 4 makes it the likeliest posting on those nights. It writes its own Rewards.Auto, the base's list with MMO Skill Tree's Mmo_Xp row added (Defense XP for the fight), because a child's list replaces the base's whole. A server without that mod skips the row.",
+  "$Comment": "The Harvest Moon contract. Its own Requires keeps it out of the draw except on Harvest Moon nights, and Season, from its Parent, keeps it out whenever Hallow's Eve is off. Its Weight of 4 makes it the likeliest posting on those nights. It writes its own Rewards.Auto, the base's list with MMO Skill Tree's Mmo_Xp row added (Defense XP for the fight), because a child's list replaces the base's whole. Its own Requires, the hytale:mod_installed gate, leaves the row out on a server without that mod, and the rest of the contract pays.",
   "Parent": "Hallows_Eve_Contract_Base",
   "Text": {
     "TitleKey": "quest.hallows_eve_board_harvest_moon.title",
@@ -20,7 +20,8 @@
       { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 50 } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 25 } },
-      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "200" } }
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "200" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
     ]
   }
 }

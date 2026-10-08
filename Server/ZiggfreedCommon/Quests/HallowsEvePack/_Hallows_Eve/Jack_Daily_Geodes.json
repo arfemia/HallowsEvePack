@@ -1,5 +1,5 @@
 {
-  "$Comment": "One of Old Jack's three dailies: Cursed Geodes cracked open, counted by USE_ITEM with the Qualifier Crack and worded by the step's own TextKey. The Mmo_Xp row is MMO Skill Tree's: Mining XP, the skill the geodes turn up with, paid only where that mod runs. A server without it skips the row when the quest pays and shows nothing for it.",
+  "$Comment": "One of Old Jack's three dailies: Cursed Geodes cracked open, counted by USE_ITEM with the Qualifier Crack and worded by the step's own TextKey. The Mmo_Xp row is MMO Skill Tree's: Mining XP, the skill the geodes turn up with, paid only where that mod runs. Its own Requires, the hytale:mod_installed gate, leaves the row out on a server without it, unpaid and unshown, and the rest of the quest pays.",
   "Name": "Jack_Daily_Geodes",
   "Parent": "Hallows_Eve_Quest_Base",
   "Text": {
@@ -34,7 +34,8 @@
       { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Daily_Pay" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 75 } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 10 } },
-      { "Kind": "Mmo_Xp", "Params": { "Skill": "MINING", "Amount": "150" } }
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "MINING", "Amount": "150" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
     ]
   }
 }
