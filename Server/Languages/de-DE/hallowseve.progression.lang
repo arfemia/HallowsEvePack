@@ -94,6 +94,8 @@ almanac.hallows_eve.geodes_cracked = Geknackte Verfluchte Geoden
 # ---- Das Gespräch des Alten Jack ----
 dialogue.hallows_eve_old_jack.meet_arrival.text = Hast also hergefunden. Gut.\nStör dich nicht am Kopf. Ist ein Kürbis, und der sitzt da schon 'ne ganze Weile. Ich bin der Alte Jack, und jeden Herbst komm ich mit meinen Laternen zurück, solange die Toten umgehen. Arbeit gibt's, wenn du willst, angefangen mit <b>Kürbissen</b>.
 dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = Kürbisse?
+dialogue.hallows_eve_old_jack.meet_offer.text = Bevor ich's vergess. Jeder, der mich findet, kriegt ein Willkommen, und du hattest deins noch nicht.
+dialogue.hallows_eve_old_jack.meet_offer.opt.accept = Danke, Jack.
 dialogue.hallows_eve_old_jack.first_words.text = Stör dich nicht am Kopf. Ist ein Kürbis, und der sitzt da schon 'ne ganze Weile.\nIch bin der Alte Jack. Jeden Herbst werden die Toten unruhig, also komm ich mit meinen Laternen zurück in den <color is="#ffd97a">Vergessenen Tempel</color>. Ich könnt ein Paar Hände gebrauchen, die nicht geschnitzt sind.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Freut mich, Jack.
 dialogue.hallows_eve_old_jack.board_fresh.text = An meiner Tafel hängt neue Arbeit, einiges für die Dunkelheit und einiges fürs Tageslicht. Die wird bezahlt.

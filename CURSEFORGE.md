@@ -37,7 +37,7 @@ Hallow's Eve starts on its own on October 1 and runs to November 3, every year. 
 ## How it works
 
 1. Log in any time from October 1 to November 3. A banner tells you Old Jack is waiting at the Forgotten Temple, and a quest in your log, Lanterns in the Temple, sends you to find him.
-2. Find him there and press F. He hands out the questline, and his conversation opens his board and his stall. Ask him for the Almanac to see your season, or how you stand with him.
+2. Find him there and press F. Lanterns in the Temple pays a few sweets and an Objective Book, which opens your quests, achievements and the Almanac. He hands out the questline, and his conversation opens his board and his stall. Ask him for the Almanac to see your season, or how you stand with him.
 3. Go out after dark, away from torches. The creatures his quests and board send you after drop the bombs, Ectoplasm and pumpkins you will want.
 4. Spend your sweets at the stall, or carve what you need at a Carving Bench.
 5. On November 3 the event ends and Old Jack leaves. Everything you earned stays with you. A quest you had not finished waits for him to come back next October, and so does a board job you never collected.

@@ -122,6 +122,8 @@ almanac.hallows_eve.geodes_cracked = Géodes Maudites cassées
 # ---- La conversation du Vieux Jack ----
 dialogue.hallows_eve_old_jack.meet_arrival.text = Tu as trouvé l'endroit, alors. Bien.\nFais pas attention à la tête. C'est une citrouille, et elle est là-dessus depuis un bon moment. Moi, c'est le Vieux Jack, et chaque automne je reviens avec mes lanternes tant que les morts rôdent. Y a du boulot si tu en veux, à commencer par les <b>citrouilles</b>.
 dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = Des citrouilles ?
+dialogue.hallows_eve_old_jack.meet_offer.text = Avant que j'oublie. Tous ceux qui me trouvent ont droit à un accueil, et t'as pas encore eu le tien.
+dialogue.hallows_eve_old_jack.meet_offer.opt.accept = Merci, Jack.
 dialogue.hallows_eve_old_jack.first_words.text = Fais pas attention à la tête. C'est une citrouille, et elle est là-dessus depuis un bon moment.\nMoi, c'est le Vieux Jack. Chaque automne, les morts s'agitent, alors je reviens au <color is="#ffd97a">Temple Oublié</color> avec mes lanternes. J'aurais bien besoin d'une paire de mains qui sont pas sculptées.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Un plaisir de te rencontrer, Jack.
 dialogue.hallows_eve_old_jack.board_fresh.text = Y a du nouveau sur mon tableau, un peu pour la nuit, un peu pour le jour. Ça paie.

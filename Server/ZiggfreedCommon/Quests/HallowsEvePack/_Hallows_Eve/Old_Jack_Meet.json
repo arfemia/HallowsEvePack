@@ -1,6 +1,6 @@
 {
   "$Comment": [
-    "The way into Hallow's Eve: go and find Old Jack in the Forgotten Temple. Nobody hands it over.",
+    "The way into Hallow's Eve: go and find Old Jack in the Forgotten Temple. It arms itself:",
     "Flow.AutoAccept puts it in every player's quest log while the event runs, at their next login or",
     "world change, and the base's Flow.AutoTrack pins it to their tracker. The _Hallows_Eve folder makes",
     "the id hallows_eve_old_jack_meet.",
@@ -13,9 +13,18 @@
     "OnceId meet_patch_offer opens on Pumpkin Patch's offer. It names no TurnInAt, so the sweets can",
     "also be collected from the quest log anywhere.",
     "",
-    "The Not group keeps it from anyone who already finished Pumpkin Patch, and with no Repeat it comes",
-    "once per player, ever. Pumpkin Patch does not wait on it: a player whose quest log was full when",
-    "this tried to arm still gets the questline from Old Jack.",
+    "The Not group keeps it from anyone who already finished Pumpkin Patch, and with no Repeat it pays",
+    "once per player, ever. A player who abandons it before finishing Pumpkin Patch gets it back: an",
+    "abandoned quest reads as never taken, so the next auto-accept pass (a login, a world change, or",
+    "another of their quests finishing) arms it again, and until then Old Jack's conversation offers",
+    "it, its answer taking it and handing it in on the spot. The same offer reaches a player whose",
+    "quest log was full when this tried to arm. Once handed in it cannot be abandoned, so its pay",
+    "always waits to be collected. Pumpkin Patch does not wait on it: a player without it still gets",
+    "the questline from Old Jack.",
+    "",
+    "The Item row hands over the library's Objective Book, the way into every quest and achievement list,",
+    "so a server with this pack and no MMO Skill Tree has a way to get one; a player who already holds",
+    "one from another mod gets a second.",
     "",
     "Beside the table, MMO Skill Tree's Mmo_Xp row pays Acrobatics XP for the walk down, in Claim with the",
     "rest. A server without that mod skips the row and shows nothing for it."
@@ -53,6 +62,7 @@
   "Rewards": {
     "Claim": [
       { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Meet_Pay" } },
+      { "Kind": "Item", "Params": { "Item": "Ziggfreed_Objective_Book", "Count": "1" } },
       { "Kind": "Mmo_Xp", "Params": { "Skill": "ACROBATICS", "Amount": "250" } }
     ]
   }

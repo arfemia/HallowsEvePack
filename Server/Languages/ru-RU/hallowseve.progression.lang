@@ -94,6 +94,8 @@ almanac.hallows_eve.geodes_cracked = Расколото Проклятых же�
 # ---- Разговор со Старым Джеком ----
 dialogue.hallows_eve_old_jack.meet_arrival.text = Значит, нашёл дорогу. Хорошо.\nНе обращай внимания на голову. Это тыква, и сидит она там уже давненько. Я Старый Джек, и каждую осень возвращаюсь со своими фонарями, пока мертвецы на ногах. Работа есть, если захочешь, и начнём с <b>тыкв</b>.
 dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = Тыквы?
+dialogue.hallows_eve_old_jack.meet_offer.text = Пока не забыл. Каждому, кто меня находит, положено приветствие, а ты своё ещё не получил.
+dialogue.hallows_eve_old_jack.meet_offer.opt.accept = Спасибо, Джек.
 dialogue.hallows_eve_old_jack.first_words.text = Не обращай внимания на голову. Это тыква, и сидит она там уже давненько.\nЯ Старый Джек. Каждую осень мертвецам не лежится, вот я и возвращаюсь в <color is="#ffd97a">Забытый Храм</color> со своими фонарями. Мне бы не помешала пара рук, которые никто не вырезал.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Приятно познакомиться, Джек.
 dialogue.hallows_eve_old_jack.board_fresh.text = На моей доске свежая работа, кое-что впотьмах, кое-что при свете дня. За неё платят.

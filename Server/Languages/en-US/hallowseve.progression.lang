@@ -122,6 +122,8 @@ almanac.hallows_eve.geodes_cracked = Cursed Geodes cracked
 # ---- Old Jack's conversation ----
 dialogue.hallows_eve_old_jack.meet_arrival.text = You found the place, then. Good.\nDon't mind the head. It's a pumpkin, and it's been on there a long while. I'm Old Jack, and every autumn I come back with my lanterns while the dead are up. There's work if you want it, starting with <b>pumpkins</b>.
 dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = Pumpkins?
+dialogue.hallows_eve_old_jack.meet_offer.text = Before I forget. Everybody who finds me gets a welcome, and you haven't had yours.
+dialogue.hallows_eve_old_jack.meet_offer.opt.accept = Thanks, Jack.
 dialogue.hallows_eve_old_jack.first_words.text = Don't mind the head. It's a pumpkin, and it's been on there a long while.\nI'm Old Jack. Every autumn the dead get restless, so I come back to the <color is="#ffd97a">Forgotten Temple</color> with my lanterns. I could use a pair of hands that aren't carved.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Pleased to meet you, Jack.
 dialogue.hallows_eve_old_jack.board_fresh.text = There's fresh work on my board, some for the dark and some for the daylight. It pays.

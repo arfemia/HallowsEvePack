@@ -94,6 +94,8 @@ almanac.hallows_eve.geodes_cracked = Feltört Átkozott Geodák
 # ---- Öreg Jack beszélgetése ----
 dialogue.hallows_eve_old_jack.meet_arrival.text = Szóval megtaláltad a helyet. Jó.\nNe törődj a fejjel. Tök, és már jó ideje rajtam van. Öreg Jack vagyok, és minden ősszel visszajövök a lámpásaimmal, amíg a holtak kint járnak. Ha kell munka, van, és a <b>tökökkel</b> kezdjük.
 dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = Tökök?
+dialogue.hallows_eve_old_jack.meet_offer.text = Mielőtt elfelejtem. Mindenki, aki megtalál, kap egy üdvözlést, és te még nem kaptad meg a tiédet.
+dialogue.hallows_eve_old_jack.meet_offer.opt.accept = Kösz, Jack.
 dialogue.hallows_eve_old_jack.first_words.text = Ne törődj a fejjel. Tök, és már jó ideje rajtam van.\nÖreg Jack vagyok. Minden ősszel nyugtalanok lesznek a holtak, úgyhogy visszajövök a <color is="#ffd97a">Feledett Templomba</color> a lámpásaimmal. Jól jönne egy pár kéz, amit nem faragtak ki.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Örülök, hogy megismerhetlek, Jack.
 dialogue.hallows_eve_old_jack.board_fresh.text = Friss munka van a táblámon, egy része sötétben, egy része napvilágnál. Fizet.

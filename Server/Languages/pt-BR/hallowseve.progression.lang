@@ -94,6 +94,8 @@ almanac.hallows_eve.geodes_cracked = Geodos Amaldiçoados quebrados
 # ---- A conversa do Velho Jack ----
 dialogue.hallows_eve_old_jack.meet_arrival.text = Então você achou o lugar. Bom.\nNão liga pra cabeça. É uma abóbora, e tá aí faz um bom tempo. Sou o Velho Jack, e todo outono eu volto com as minhas lanternas enquanto os mortos tão de pé. Tem serviço se você quiser, começando pelas <b>abóboras</b>.
 dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = Abóboras?
+dialogue.hallows_eve_old_jack.meet_offer.text = Antes que eu esqueça. Todo mundo que me acha ganha umas boas-vindas, e você ainda não ganhou as suas.
+dialogue.hallows_eve_old_jack.meet_offer.opt.accept = Valeu, Jack.
 dialogue.hallows_eve_old_jack.first_words.text = Não liga pra cabeça. É uma abóbora, e tá aí faz um bom tempo.\nSou o Velho Jack. Todo outono os mortos ficam inquietos, então eu volto pro <color is="#ffd97a">Templo Esquecido</color> com as minhas lanternas. Um par de mãos que não sejam entalhadas me cairia bem.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Prazer em te conhecer, Jack.
 dialogue.hallows_eve_old_jack.board_fresh.text = Tem serviço novo no meu quadro, um pouco pro escuro e um pouco pra luz do dia. E paga.

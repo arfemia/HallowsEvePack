@@ -94,6 +94,8 @@ almanac.hallows_eve.geodes_cracked = Geodi Maledette spaccate
 # ---- La conversazione del Vecchio Jack ----
 dialogue.hallows_eve_old_jack.meet_arrival.text = Hai trovato il posto, allora. Bene.\nNon badare alla testa. È una zucca, e sta lì sopra da un bel pezzo. Sono il Vecchio Jack, e ogni autunno torno con le mie lanterne finché i morti sono in giro. C'è lavoro, se lo vuoi, a cominciare dalle <b>zucche</b>.
 dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = Zucche?
+dialogue.hallows_eve_old_jack.meet_offer.text = Prima che me ne scordi. Tutti quelli che mi trovano ricevono un benvenuto, e tu il tuo non l'hai avuto.
+dialogue.hallows_eve_old_jack.meet_offer.opt.accept = Grazie, Jack.
 dialogue.hallows_eve_old_jack.first_words.text = Non badare alla testa. È una zucca, e sta lì sopra da un bel pezzo.\nSono il Vecchio Jack. Ogni autunno i morti si agitano, così torno al <color is="#ffd97a">Tempio Dimenticato</color> con le mie lanterne. Mi farebbe comodo un paio di mani che non siano intagliate.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Piacere di conoscerti, Jack.
 dialogue.hallows_eve_old_jack.board_fresh.text = C'è lavoro nuovo sulla mia bacheca, un po' da fare col buio e un po' alla luce del giorno. Paga.

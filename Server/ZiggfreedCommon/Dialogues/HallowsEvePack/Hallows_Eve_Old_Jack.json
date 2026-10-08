@@ -16,7 +16,10 @@
     "this conversation again, so the questline still opens straight after the arrival. Then the board",
     "line, shown once a day (Once with Period Daily, turning over at midnight UTC) and skipped while",
     "the player has something to hand in. Quests holds one row per quest, the questline first, so the",
-    "questline wins a tie with a daily. Then shows the lit-lantern line once the year's lantern is lit.",
+    "questline wins a tie with a daily. Lanterns in the Temple's row leads it, for a player who gave",
+    "that quest up or whose quest log was full when it tried to arm: its offer, meet_offer, takes it and",
+    "hands it in on the spot, the walk being done. Then shows the lit-lantern line once the year's",
+    "lantern is lit.",
     "",
     "THE BOARD LINE AND FAVOR. The board line comes in four wordings, one per band of favor with",
     "Old Jack, highest first, so the first that applies is the player's own rank: Revered, Honored,",
@@ -118,6 +121,7 @@
       }
     ],
     "Quests": {
+      "hallows_eve_old_jack_meet": { "Offerable": "meet_offer" },
       "hallows_eve_old_jack_1": { "Offerable": "patch_offer", "Active": "patch_brief", "Ready": "patch_ready" },
       "hallows_eve_old_jack_2": { "Offerable": "lantern_work_offer", "Active": "active_generic", "Ready": "ready_generic" },
       "hallows_eve_old_jack_3": { "Offerable": "ghouls_offer", "Active": "active_generic", "Ready": "ready_generic" },
@@ -151,6 +155,21 @@
           ]
         }
       ]
+    },
+    "meet_offer": {
+      "TextKey": "dialogue.hallows_eve_old_jack.meet_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.hallows_eve_old_jack.meet_offer.opt.accept",
+          "Style": "accept",
+          "Do": [
+            { "Accept": "hallows_eve_old_jack_meet" },
+            { "TurnIn": "hallows_eve_old_jack_meet" },
+            { "Goto": "patch_offer" }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "jack_tail" ]
     },
     "first_words": {
       "TextKey": "dialogue.hallows_eve_old_jack.first_words.text",

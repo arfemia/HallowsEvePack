@@ -94,6 +94,8 @@ almanac.hallows_eve.geodes_cracked = Geodas Malditas rotas
 # ---- La conversación del Viejo Jack ----
 dialogue.hallows_eve_old_jack.meet_arrival.text = Así que diste con el sitio. Bien.\nNo le hagas caso a la cabeza. Es una calabaza, y lleva ahí puesta mucho tiempo. Soy el Viejo Jack, y cada otoño vuelvo con mis faroles mientras los muertos andan sueltos. Hay trabajo si lo quieres, empezando por las <b>calabazas</b>.
 dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = ¿Calabazas?
+dialogue.hallows_eve_old_jack.meet_offer.text = Antes de que se me olvide. Todo el que me encuentra recibe una bienvenida, y tú no has tenido la tuya.
+dialogue.hallows_eve_old_jack.meet_offer.opt.accept = Gracias, Jack.
 dialogue.hallows_eve_old_jack.first_words.text = No le hagas caso a la cabeza. Es una calabaza, y lleva ahí puesta mucho tiempo.\nSoy el Viejo Jack. Cada otoño los muertos se inquietan, así que vuelvo al <color is="#ffd97a">Templo Olvidado</color> con mis faroles. No me vendría mal un par de manos que no estén talladas.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Un placer conocerte, Jack.
 dialogue.hallows_eve_old_jack.board_fresh.text = Hay trabajo nuevo en mi tablón, una parte para la oscuridad y otra para la luz del día. Se paga.

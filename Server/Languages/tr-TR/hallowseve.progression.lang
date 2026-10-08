@@ -94,6 +94,8 @@ almanac.hallows_eve.geodes_cracked = Kırılan Lanetli Jeotlar
 # ---- Yaşlı Jack'in sohbeti ----
 dialogue.hallows_eve_old_jack.meet_arrival.text = Demek yeri buldun. Güzel.\nKafaya takılma. Bal kabağı o, uzun zamandır da orada. Ben Yaşlı Jack; her sonbahar, ölüler ortalıkta dolaşırken fenerlerimle geri gelirim. İstersen iş var, ilk iş <b>bal kabakları</b>.
 dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = Bal kabakları mı?
+dialogue.hallows_eve_old_jack.meet_offer.text = Unutmadan. Beni bulan herkes bir hoş geldin alır, sen daha seninkini almadın.
+dialogue.hallows_eve_old_jack.meet_offer.opt.accept = Sağ ol, Jack.
 dialogue.hallows_eve_old_jack.first_words.text = Kafaya takılma. Bal kabağı o, uzun zamandır da orada.\nBen Yaşlı Jack. Her sonbahar ölüler huzursuzlanır, ben de <color is="#ffd97a">Unutulmuş Tapınak'a</color> fenerlerimle dönerim. Oyulmamış bir çift el işime yarar.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Tanıştığımıza memnun oldum, Jack.
 dialogue.hallows_eve_old_jack.board_fresh.text = Panomda yeni iş var, kimi karanlık için, kimi gün ışığı için. Parası da var.
