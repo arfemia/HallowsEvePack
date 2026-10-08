@@ -1,0 +1,40 @@
+{
+  "Name": "Harvest_Feast_Invitation",
+  "$Comment": [
+    "The invitation line: one line this file adds to every other character's conversation while Harvest",
+    "Feast runs, so a player carrying the invitation tour (the host's quest harvest_feast_invitations) can",
+    "ask anybody along. It reaches characters that have a conversation of their own; the game's own",
+    "merchants and townsfolk have none, so they never show it. Three villagers stand in the Forgotten",
+    "Temple while the feast runs (NpcPlacements/Harvest_Feast_Miller_Temple.json, _Weaver_Temple and",
+    "_Shepherd_Temple), each with a conversation of their own, so there is always somebody to ask.",
+    "Dialogues.Exclude keeps the line out of the seasons' hosts' conversations: nobody invites the cook to",
+    "the cook's own table.",
+    "",
+    "The QuestState condition shows the line only while the tour is carried. Once with Period Daily and",
+    "PerConversation true is spent with the character asked and nobody else, so one walk can ask several",
+    "people, and the same character can be asked again from midnight UTC. MarkTalked with no Target",
+    "credits whoever the player is talking to, and its Qualifier is what the tour's step counts, so no",
+    "other talk step on the server moves the tour. Close ends the conversation, since a line added to",
+    "another character's conversation has no screen of its own to go to. The line pays nothing itself:",
+    "the tour pays once, when it is handed in. Season hides the line whenever the feast is off; to take",
+    "it out everywhere, set Enabled false in a file of the same name."
+  ],
+  "Season": "Harvest_Feast",
+  "Dialogues": { "Exclude": [ "Harvest_Feast_Host", "Hallows_Eve_Old_Jack" ] },
+  "Options": [
+    {
+      "LabelKey": "dialogue.harvest_feast_invitation.opt.invite",
+      "OnceId": "harvest_feast_invitation",
+      "Once": { "Period": "Daily", "PerConversation": true },
+      "Style": "neutral",
+      "Presentation": { "Icon": { "Item": "Food_Pie_Pumpkin" } },
+      "Conditions": [
+        { "Type": "QuestState", "Quest": "harvest_feast_invitations", "State": "ACTIVE" }
+      ],
+      "Actions": [
+        { "Type": "MarkTalked", "Qualifier": "Harvest_Feast_Invitation" },
+        { "Type": "Close" }
+      ]
+    }
+  ]
+}
