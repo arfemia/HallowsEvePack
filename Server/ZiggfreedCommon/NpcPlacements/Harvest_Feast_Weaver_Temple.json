@@ -15,9 +15,14 @@
     "resolves. Each villager has an id and a conversation of their own: the invitation line is spent per",
     "conversation, so two villagers sharing one would count as one person asked.",
     "",
-    "Anchor is the temple's arrival spot plus an offset: eleven blocks along negative X, onto the open",
-    "landing, and two back along negative Z, on the host's side and well past the host's spot. To move",
-    "Elsie, edit Anchor.WorldSpawn.Offset (small enough to stay off the walls) and Yaw to turn her, then",
+    "The three villagers stand apart, so asking them all is a walk through the temple: Bram on the",
+    "meadow halfway down the road from the arrival, Tomas where that road comes into the kweebec village,",
+    "and Elsie on the village's far side. Anchor stands Elsie beside the Rootling Merchant's spawn marker",
+    "(Temple_Kweebec_Merchant_Static), which every Forgotten Temple carries once, so she moves with the",
+    "temple's own layout: sixteen blocks along negative X and five along positive Z from the marker is",
+    "the cobbled ground just south of the marble dais on the village's west side, well clear of the",
+    "merchant and of anybody else standing at that marker. Limits.OncePerWorld keeps her to one spot even",
+    "if a temple ever carries the marker twice. To move Elsie, edit Anchor.Structure.Offset and Yaw, then",
     "look at the spot in game. To take her out without editing this file, set enabled (lower case, as",
     "that file spells it) to false for this id in mods/ziggfreedcommon/npc-placements.json."
   ],
@@ -32,10 +37,14 @@
     "NpcId": "Harvest_Feast_Weaver"
   },
   "Anchor": {
-    "WorldSpawn": {
-      "Offset": { "X": -11, "Z": -2 },
+    "Structure": {
+      "MarkerIds": [ "Temple_Kweebec_Merchant_Static" ],
+      "Offset": { "X": -16, "Z": 5 },
       "Yaw": 180.0
     }
+  },
+  "Limits": {
+    "OncePerWorld": true
   },
   "Lifecycle": {
     "KeepAlive": true,

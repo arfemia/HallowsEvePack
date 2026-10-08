@@ -1,9 +1,10 @@
 # Harvest Feast progression: the host's questline, the yearly feast and the dailies, the feast board and
 # the feast stall, the host's conversation, the season's achievements and title, the host's reputation
-# and the Almanac page, the shared meal and the invitation tour, and the feast's villagers. Keys are written bare: the library finds each one by its tail, whatever this
-# file is called. A quest, a contract or an achievement takes its words from the keys its id spells
-# (quest.<id>.title and .flavor, achievement.<id>.title and .desc), so no content file names those.
-# Numbers ride {0} and come from the content files, so a retune never touches a translation.
+# and the Almanac page, the shared meal and the invitation tour, and the feast's villagers. Keys are
+# written bare: the library finds each one by its tail, whatever this file is called. A quest, a
+# contract or an achievement takes its words from the keys its id spells (quest.<id>.title and
+# .flavor, achievement.<id>.title and .desc), so no content file names those. Numbers ride {0} and
+# come from the content files, so a retune never touches a translation.
 
 # ---- The host's reputation ----
 reputation.harvest_feast_host.name = Favor at the Feast
@@ -159,18 +160,21 @@ dialogue.harvest_feast_invitation.opt.invite = You're invited to Martha's feast 
 
 # ---- The feast's villagers: Tomas the Miller, Elsie the Weaver and Bram the Shepherd ----
 dialogue.harvest_feast_miller.off_season.text = The feast's packed away, and so's the flour.\nI'll be back with more when the fields come in next year.
+dialogue.harvest_feast_miller.off_season.opt.farewell = Until next year, then.
 dialogue.harvest_feast_miller.greeting.text = Mind the flour, it gets on everything.\nI've hauled sacks up from the mill all week so the ovens never go cold. I could do with a seat at the long table once the feast gets going.
 dialogue.harvest_feast_miller.mill.text = Down by the river, same as ever. The wheel turns whether I'm there or not.\nThis time of year every sack it grinds goes to the feast.
 dialogue.harvest_feast_miller.opt.mill = Where's your mill?
 dialogue.harvest_feast_miller.opt.back = Fair enough.
 dialogue.harvest_feast_miller.opt.farewell = I'll let you get back to it.
 dialogue.harvest_feast_weaver.off_season.text = The feast is over and the cloths are folded away.\nCome and find me when the fields are in again. I will have new ones by then.
-dialogue.harvest_feast_weaver.greeting.text = Careful, that basket is full of wool I have not spun yet.\nI wove the cloths for the long table. It would be nice to sit down at the feast and eat off one of them for once.
+dialogue.harvest_feast_weaver.off_season.opt.farewell = I'll look out for them.
+dialogue.harvest_feast_weaver.greeting.text = I have been at my loom since dawn. It is good to stand somewhere else for a change.\nI wove the cloths for the long table. It would be nice to sit down at the feast and eat off one of them for once.
 dialogue.harvest_feast_weaver.cloth.text = A runner for the middle of the table, wheat gold with an orange edge.\nSomebody always spills gravy on it, so I weave a new one every year.
 dialogue.harvest_feast_weaver.opt.cloth = What are you weaving now?
 dialogue.harvest_feast_weaver.opt.back = It's lovely work.
 dialogue.harvest_feast_weaver.opt.farewell = I won't keep you.
 dialogue.harvest_feast_shepherd.off_season.text = Feast's done. I'm off back up the hill before the sheep wander any further.
+dialogue.harvest_feast_shepherd.off_season.opt.farewell = Safe walk home.
 dialogue.harvest_feast_shepherd.greeting.text = Came down from the hills with fleece for the weaver. The sheep can look after themselves for a few days.\nThey can't, really. But I wasn't going to miss the feast.
 dialogue.harvest_feast_shepherd.sheep.text = My sister. She says she doesn't mind.\nThat means I'm taking her back a whole pie.
 dialogue.harvest_feast_shepherd.opt.sheep = Who's watching your sheep?
