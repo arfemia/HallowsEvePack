@@ -27,6 +27,7 @@
       "Target": "Hallows_Eve_Hallowed_Pumpkin",
       "MatchMode": "EXACT",
       "Amount": 4,
+      "TextKey": "objective.hallows_eve.bring_pumpkins",
       "Order": 1,
       "TurnInNpcId": "giver"
     }

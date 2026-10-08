@@ -24,6 +24,7 @@
       "Target": "Hallows_Eve_Hollow_Ghoul",
       "MatchMode": "EXACT",
       "Amount": 6,
+      "TextKey": "objective.hallows_eve.put_down_ghouls",
       "Order": 1
     }
   },

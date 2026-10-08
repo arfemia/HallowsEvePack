@@ -6,6 +6,7 @@
 
 # ---- The wallet ----
 currency.hallows_eve_sweets.name = Hallow Sweets
+currency.hallows_eve_sweets.amount = {0, number} {0, plural, one {Hallow Sweet} other {Hallow Sweets}}
 
 # ---- Old Jack's questline ----
 quest.category.hallows_eve = Hallow's Eve
@@ -36,6 +37,12 @@ quest.hallows_eve_jack_daily_geodes.flavor = Crack a couple of Cursed Geodes for
 objective.hallows_eve.meet_jack = Find Old Jack in the Forgotten Temple
 objective.hallows_eve.throw_bombs = Throw {0} Lantern Bombs
 objective.hallows_eve.crack_geodes = Crack {0} Cursed Geodes
+objective.hallows_eve.bring_pumpkins = Bring {0} Hallowed Pumpkins
+objective.hallows_eve.bring_pumpkin = Bring a Hallowed Pumpkin
+objective.hallows_eve.put_down_ghouls = Put down {0} Hollow Ghouls
+objective.hallows_eve.free_souls = Set {0} Lost Souls free
+objective.hallows_eve.bring_ectoplasm = Bring {0} Ectoplasm
+objective.hallows_eve.knock_down_skeletons = Knock down {0} Jack Skeletons
 objective.hallows_eve.attend = Take part in Hallow's Eve
 objective.hallows_eve.jack_confidant = Become Old Jack's Confidant
 
@@ -133,9 +140,9 @@ dialogue.hallows_eve_old_jack.first_words.text = Don't mind the head. It's a pum
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Pleased to meet you, Jack.
 dialogue.hallows_eve_old_jack.meet.text = You found the place, then. Good.\nI'm Old Jack. Everybody who finds me gets a <b>welcome</b>, and you haven't had yours yet.
 dialogue.hallows_eve_old_jack.meet.opt.accept = Thanks, Jack.
-dialogue.hallows_eve_old_jack.board_fresh.text = There's fresh work on my board, some for the dark and some for the daylight. It pays.
+dialogue.hallows_eve_old_jack.board_fresh.text = There's fresh work on my board, some for the dark and some for the daylight. It pays in Hallow Sweets, and my stall takes those.
 dialogue.hallows_eve_old_jack.menu.text = The lanterns are lit and the ghouls are out walking. What do you need?
-dialogue.hallows_eve_old_jack.patch_offer.text = Pick a pumpkin this month and every so often one comes up cold to the touch, glowing a little. <b>Hallowed Pumpkins</b>, I call those.\nBring me a few. I'll show you what they're good for.
+dialogue.hallows_eve_old_jack.patch_offer.text = Pick a pumpkin this month and every so often one comes up cold to the touch, glowing a little. <b>Hallowed Pumpkins</b>, I call those.\nBring me a few. My lanterns won't stay lit without them.
 dialogue.hallows_eve_old_jack.patch_offer.opt.accept = I'll find you some pumpkins.
 dialogue.hallows_eve_old_jack.patch_ready.text = <b>Hallowed Pumpkins</b>. Cold as a cellar step.\nI've put a few Lantern Bombs in with your pay. Go and see how they burn.
 dialogue.hallows_eve_old_jack.patch_ready.opt.turnin = Here are the pumpkins.
@@ -156,6 +163,10 @@ dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Let's light it.
 dialogue.hallows_eve_old_jack.lantern_ready.text = A <b>Hallowed Pumpkin</b>, and <b>Ectoplasm</b> to fill it. The skeletons with my face are down in the grass where they belong.\nThere. The Hollow Lantern's lit, and it's yours to keep. Take the shield too, it goes with the helm. Come back next year and we'll light another.
 dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = Here's the pumpkin, and the Ectoplasm.
 dialogue.hallows_eve_old_jack.active_generic.text = Off you go, then. I'll be here when it's done.
+dialogue.hallows_eve_old_jack.active_pumpkins.text = Pumpkins grow wild in the <color is="#ffd97a">autumn woods</color>, and the <color is="#ffd97a">Kweebecs</color> keep them in their gardens. Pick them by hand and every so often there's a <b>Hallowed Pumpkin</b> among them. The <b>Jack Skeletons</b> drop them too, after dark.
+dialogue.hallows_eve_old_jack.active_bombs.text = Throw the <b>Lantern Bombs</b> from your pay at anything that has it coming. Run short and my stall has more, and the <b>Jack Skeletons</b> drop a few after dark.
+dialogue.hallows_eve_old_jack.active_night.text = The dead walk after dark, out in the wild and away from any torch. Gone by dawn.\nA <b>Lost Soul</b> leaves <b>Ectoplasm</b> when you set it free, and a <b>Jack Skeleton</b> sometimes drops a <b>Hallowed Pumpkin</b>.
+dialogue.hallows_eve_old_jack.active_stone.text = Break <b>stone</b>, <b>ore</b> most of all, and now and then a <b>Cursed Geode</b> falls out. Hold one in your hand and crack it open.
 dialogue.hallows_eve_old_jack.ready_generic.text = That looks done to me. Let's see it.
 dialogue.hallows_eve_old_jack.ready_generic.opt.turnin = It's done.
 dialogue.hallows_eve_old_jack.lantern_lit.text = The Hollow Lantern's still burning. Keeps the worst of the dark off the steps.\nWhat do you need?

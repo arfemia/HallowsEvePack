@@ -35,6 +35,7 @@
       "Target": "Hallows_Eve_Lost_Soul",
       "MatchMode": "EXACT",
       "Amount": 6,
+      "TextKey": "objective.hallows_eve.free_souls",
       "Order": 1
     }
   },
