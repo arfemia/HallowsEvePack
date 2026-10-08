@@ -1,0 +1,18 @@
+{
+  "$Comment": "The game's meat pie recipe page, sold to players Friendly with the host. Requires is a lock, not a hide: a player below the rank still sees the offer, locked, with the rank's own name in the reason, and the Season leaf on the base still hides it while the feast is off. A player buys it once (Limits.Total). It is named with this pack's keys, and its picture is the pie.",
+  "Parent": "Harvest_Feast_Offer_Base",
+  "Text": {
+    "TitleKey": "shop.harvest_feast_offer_recipe_meat_pie.title",
+    "FlavorKey": "shop.harvest_feast_offer_recipe_meat_pie.desc"
+  },
+  "Icon": "Food_Pie_Meat",
+  "Listing": { "Category": "kitchen", "SortOrder": 20 },
+  "Cost": { "Currencies": { "Seasons_Of_Orbis_Festival_Token": 12 } },
+  "Limits": { "Total": 1 },
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Harvest_Feast_Host/Friendly", "Min": 1 }
+    ]
+  },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Recipe_Food_Pie_Meat", "Count": 1 } } ]
+}

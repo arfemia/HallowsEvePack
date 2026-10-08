@@ -1,0 +1,9 @@
+{
+  "$Comment": "The game's own popcorn, four to a bag, two bags a day. The title is the item's own name key, written in full (server.items.<Id>.name) so the stall shows the name the item shows in the bag. The item's own description carries formatting meant for its tooltip, so the offer leaves it out.",
+  "Parent": "Harvest_Feast_Offer_Base",
+  "Text": { "TitleKey": "server.items.Food_Popcorn.name" },
+  "Listing": { "Category": "kitchen", "SortOrder": 30 },
+  "Cost": { "Currencies": { "Seasons_Of_Orbis_Festival_Token": 2 } },
+  "Limits": { "Daily": 2 },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Food_Popcorn", "Count": 4 } } ]
+}

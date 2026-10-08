@@ -1,0 +1,13 @@
+{
+  "$Comment": "The game's apple pie recipe page. Reading it teaches the recipe for good, so a player buys it once (Limits.Total). The game builds the page's own name from the pie's, which an offer cannot spell, so the offer is named with this pack's keys, and its picture is the pie.",
+  "Parent": "Harvest_Feast_Offer_Base",
+  "Text": {
+    "TitleKey": "shop.harvest_feast_offer_recipe_apple_pie.title",
+    "FlavorKey": "shop.harvest_feast_offer_recipe_apple_pie.desc"
+  },
+  "Icon": "Food_Pie_Apple",
+  "Listing": { "Category": "kitchen", "SortOrder": 10 },
+  "Cost": { "Currencies": { "Seasons_Of_Orbis_Festival_Token": 8 } },
+  "Limits": { "Total": 1 },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Recipe_Food_Pie_Apple", "Count": 1 } } ]
+}

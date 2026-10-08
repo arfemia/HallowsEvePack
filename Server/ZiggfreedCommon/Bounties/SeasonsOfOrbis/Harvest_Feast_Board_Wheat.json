@@ -1,0 +1,9 @@
+{
+  "$Comment": "A Field job on the feast board: pick wild wheat by hand. PICKUP_ITEM counts each hand harvest of the wheat's own item. The season, the listing and the pay come from Harvest_Feast_Contract_Base.",
+  "Parent": "Harvest_Feast_Contract_Base",
+  "Listing": { "Icon": "Plant_Crop_Wheat_Item" },
+  "Boards": [ { "Board": "Harvest_Feast_Daily", "Difficulty": "Harvest_Feast_Field", "Weight": 1 } ],
+  "Objectives": {
+    "pick_wheat": { "Kind": "PICKUP_ITEM", "Target": "Plant_Crop_Wheat_Item", "MatchMode": "EXACT", "Amount": 30 }
+  }
+}

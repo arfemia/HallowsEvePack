@@ -1,0 +1,10 @@
+{
+  "$Comment": "A Kitchen job on the feast board: bring pumpkin pies to the table, handed in at the board. A pie needs the recipe the host gives on the turkey hunt, the second quest, so Requires locks the job until that quest is claimed: it is still posted, and a player without the recipe sees it locked with the reason. Its own Requires leaves the base's Season untouched. The rest comes from Harvest_Feast_Contract_Base.",
+  "Parent": "Harvest_Feast_Contract_Base",
+  "Listing": { "Icon": "Food_Pie_Pumpkin" },
+  "Boards": [ { "Board": "Harvest_Feast_Daily", "Difficulty": "Harvest_Feast_Kitchen", "Weight": 1 } ],
+  "Requires": { "Quests": [ "harvest_feast_host_2" ] },
+  "Objectives": {
+    "bring_pies": { "Kind": "TURN_IN", "Target": "Food_Pie_Pumpkin", "MatchMode": "EXACT", "Amount": 2 }
+  }
+}

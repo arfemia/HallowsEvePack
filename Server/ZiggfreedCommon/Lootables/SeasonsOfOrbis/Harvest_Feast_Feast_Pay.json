@@ -1,0 +1,23 @@
+{
+  "$Comment": [
+    "What sitting down to the feast pays, once a year. The plate with the year on it is not here: the",
+    "yearly keepsake achievement hands it over, so it can carry the year.",
+    "",
+    "The first roll always pays festival tokens and two meat pies to take home, the feast's leftovers.",
+    "The second roll is a chance on top; Chance is a percent from 0 to 100. Favor rides the quest's own",
+    "Rewards."
+  ],
+  "Name": "Harvest_Feast_Feast_Pay",
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "5" } } ],
+        "Items": [ { "Item": "Food_Pie_Meat", "Count": 2 } ]
+      }
+    },
+    {
+      "Chance": { "Base": 20.0 },
+      "Grants": { "Items": [ { "Item": "Plant_Seeds_Corn", "Count": 4 } ] }
+    }
+  ]
+}

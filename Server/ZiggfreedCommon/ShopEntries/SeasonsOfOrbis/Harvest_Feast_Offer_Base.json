@@ -1,0 +1,6 @@
+{
+  "$Comment": "The skeleton every offer on the feast stall inherits through Parent. It is never for sale. Season hides every offer built on it while the feast is off, even one that writes its own Requires (a favor lock), since Season is a leaf of its own; Shop puts each one on the host's stall. A child names its words, its shelf, its price, any limit and what it hands over.",
+  "Abstract": true,
+  "Season": "Harvest_Feast",
+  "Shop": "Harvest_Feast_Host"
+}

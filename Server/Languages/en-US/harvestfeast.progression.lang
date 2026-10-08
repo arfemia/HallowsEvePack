@@ -13,3 +13,27 @@ reputation.harvest_feast_host.rank.friendly = Neighbor
 reputation.harvest_feast_host.rank.honored = Regular
 reputation.harvest_feast_host.rank.revered = Family
 reputation.harvest_feast_host.rank.exalted = Head of the Table
+
+# ---- The feast board ----
+board.harvest_feast_daily.title = The Feast Board
+board.harvest_feast_daily.desc = Work out in the fields and work in the kitchen. Regulars at my table get a bit more.
+board.harvest_feast_daily.grade.field = Field Work
+board.harvest_feast_daily.grade.kitchen = Kitchen Work
+quest.harvest_feast_board_turkeys.title = Turkey Drive
+quest.harvest_feast_board_turkeys.flavor = The woods are full of turkeys this week. Bring down a good few of them, and mind the ones that fly at your face.
+quest.harvest_feast_board_wheat.title = Wheat Harvest
+quest.harvest_feast_board_wheat.flavor = The wild wheat won't wait for anybody. Pick as much as you can carry before the frost gets to it.
+quest.harvest_feast_board_pies.title = Pies for the Table
+quest.harvest_feast_board_pies.flavor = Every seat at the table wants a slice. Bake a couple of pumpkin pies and bring them over while they're warm.
+quest.harvest_feast_board_roast.title = Fire Pit
+quest.harvest_feast_board_roast.flavor = Cook a pile of meat over an open fire. The smell alone brings people to the table.
+
+# ---- The feast stall ----
+shop.harvest_feast_host.title = The Feast Stall
+shop.harvest_feast_host.desc = Recipes, popcorn and a few things for the season.
+shop.harvest_feast_host.category.kitchen = Kitchen
+shop.harvest_feast_host.category.decor = Decorations
+shop.harvest_feast_offer_recipe_apple_pie.title = Apple Pie Recipe
+shop.harvest_feast_offer_recipe_apple_pie.desc = Read it once and you can bake apple pies for good.
+shop.harvest_feast_offer_recipe_meat_pie.title = Meat Pie Recipe
+shop.harvest_feast_offer_recipe_meat_pie.desc = The host's own meat pie, written down for friends of the table.
