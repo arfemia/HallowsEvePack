@@ -1,0 +1,35 @@
+{
+  "$Comment": [
+    "The shared meal: once a day, roast a vegetable over a fire and share it at the host's table. It opens",
+    "once the first quest is done, like the other dailies. Repeat.Reset with Period Daily is a calendar",
+    "daily: it comes back at midnight UTC. The dish is handed in at the host, so no report-back step is",
+    "added. It pays through Harvest_Feast_Shared_Meal_Pay, a table only this quest names, so what a",
+    "companion mod adds to that table lands on the meal alone. Favor with the host and Festival Favor ride",
+    "its own Rewards, where the quest card shows them."
+  ],
+  "Name": "Shared_Meal",
+  "Parent": "Harvest_Feast_Quest_Base",
+  "Listing": { "Icon": "Food_Vegetable_Cooked", "Category": "misc", "SortOrder": 140 },
+  "Requires": { "Quests": [ "harvest_feast_host_1" ] },
+  "Repeat": {
+    "Reset": { "Period": "Daily" },
+    "CooldownFrom": "Complete"
+  },
+  "Objectives": {
+    "share_a_dish": {
+      "Kind": "TURN_IN",
+      "Target": "Food_Vegetable_Cooked",
+      "MatchMode": "EXACT",
+      "Amount": 1,
+      "Order": 1,
+      "TurnInNpcId": "giver"
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Harvest_Feast_Shared_Meal_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 50 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 25 } }
+    ]
+  }
+}

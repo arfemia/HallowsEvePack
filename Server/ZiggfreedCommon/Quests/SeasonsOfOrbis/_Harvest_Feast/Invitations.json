@@ -1,0 +1,38 @@
+{
+  "$Comment": [
+    "The invitation tour: once in each run of Harvest Feast, invite people to the feast, then tell the",
+    "host who's coming. The step counts a talk credit carrying the Qualifier Harvest_Feast_Invitation,",
+    "which only the invitation line gives (DialogueExtensions/SeasonsOfOrbis/Harvest_Feast_Invitation.json):",
+    "that line shows in every other character's conversation while this quest is carried, and each",
+    "character can be asked once a day. No Target means whoever the player is talking to. Npc.TurnInId,",
+    "from the base, adds the report-back step to the host once enough people are asked.",
+    "",
+    "Repeat.PerRun brings it back once in each run of the feast: a run pays it once, a forced or moved run",
+    "cannot pay it twice, and a tour left unfinished when the run ends waits for the next one with its",
+    "invitations kept. It pays through Harvest_Feast_Invitations_Pay, with favor with the host and",
+    "Festival Favor on its own Rewards."
+  ],
+  "Name": "Invitations",
+  "Parent": "Harvest_Feast_Quest_Base",
+  "Listing": { "Icon": "Food_Pie_Apple", "Category": "misc", "SortOrder": 100 },
+  "Requires": { "Quests": [ "harvest_feast_host_1" ] },
+  "Repeat": {
+    "PerRun": { "Event": "Harvest_Feast", "Times": 1 }
+  },
+  "Objectives": {
+    "invite_people": {
+      "Kind": "TALK_TO_NPC",
+      "Qualifier": "Harvest_Feast_Invitation",
+      "Amount": 3,
+      "TextKey": "objective.harvest_feast.invite",
+      "Order": 1
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Harvest_Feast_Invitations_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 150 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 200 } }
+    ]
+  }
+}
