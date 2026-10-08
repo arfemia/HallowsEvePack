@@ -105,10 +105,18 @@ reputation.hallows_eve_old_jack.rank.exalted = Jack's Own
 factor.hallows_eve_old_jack.friendly = Regular with Old Jack
 factor.hallows_eve_old_jack.honored = Trusted with Old Jack
 factor.hallows_eve_old_jack.exalted = Jack's Own with Old Jack
+reputation.hallows_eve_old_jack.earn.quests = Do his errands and his daily jobs.
+reputation.hallows_eve_old_jack.earn.board = Take contracts from his board.
+reputation.hallows_eve_old_jack.earn.talk = Stop by for a word once a day.
+reputation.hallows_eve_old_jack.earn.gear = Wear a Jack Helm. It adds to his favor while you have it on.
 reputation.hallows_eve_hallowed.name = The Hallowed
 reputation.hallows_eve_hallowed.flavor = The Hallowed keep the dead where they belong. Put down what climbs out of the graves at night and they take notice.
 factor.hallows_eve_hallowed.revered = Revered with the Hallowed
 factor.hallows_eve_hallowed.exalted = Exalted with the Hallowed
+reputation.hallows_eve_hallowed.earn.kills = Put down the creatures that crawl out at night.
+reputation.hallows_eve_hallowed.earn.jack = Old Jack's daily jobs and board contracts count too.
+reputation.hallows_eve_hallowed.earn.treats = Ask anyone you talk to for a trick or treat, once a day.
+reputation.hallows_eve_hallowed.earn.gear = Carry a Jack Shield. It adds to their favor while it is equipped.
 notify.hallows_eve_hallowed_cache = A cache from the Hallowed, for keeping the dead down.
 
 # ---- The Almanac page ----

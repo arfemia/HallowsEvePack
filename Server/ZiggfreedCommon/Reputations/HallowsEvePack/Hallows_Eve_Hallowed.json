@@ -10,7 +10,9 @@
     "the stat the Jack Shield, the Flaming Jack Shield and the Hallowed set add to. With no Cap, favor",
     "keeps climbing past Exalted, and Beyond pays its Rewards each time earned favor passes another",
     "multiple of Every above Exalted's floor: here the loot table Hallows_Eve_Hallowed_Cache. Its",
-    "Revered and Exalted ranks open the Burning Jack Helm and the Flaming Jack Shield at Old Jack's stall."
+    "Revered and Exalted ranks open the Burning Jack Helm and the Flaming Jack Shield at Old Jack's stall.",
+    "Earn lists the ways to earn favor, one lang key a line, for the How to earn block on the",
+    "Reputation page."
   ],
   "Text": {
     "TitleKey": "reputation.hallows_eve_hallowed.name",
@@ -25,5 +27,13 @@
   "Beyond": {
     "Every": 5000,
     "Rewards": [ { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Hallowed_Cache" } } ]
+  },
+  "Earn": {
+    "Lines": [
+      "reputation.hallows_eve_hallowed.earn.kills",
+      "reputation.hallows_eve_hallowed.earn.jack",
+      "reputation.hallows_eve_hallowed.earn.treats",
+      "reputation.hallows_eve_hallowed.earn.gear"
+    ]
   }
 }
