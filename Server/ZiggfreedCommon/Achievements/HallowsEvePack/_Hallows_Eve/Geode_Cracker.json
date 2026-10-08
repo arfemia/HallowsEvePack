@@ -1,5 +1,5 @@
 {
-  "$Comment": "Crack Cursed Geodes during one season, counted by USE_ITEM with the Qualifier Crack. The description's number comes from the criterion's Amount through @amount. Each year's copy pays MMO Skill Tree's Mmo_Xp row once, Mining XP, the skill the geodes turn up with, in Auto since XP needs no bag room. A server without that mod skips the row and shows nothing for it.",
+  "$Comment": "Crack Cursed Geodes during one season, counted by USE_ITEM with the Qualifier Crack. The description's number comes from the criterion's Amount through @amount. Each year's copy pays MMO Skill Tree's Mmo_Xp row once, Mining XP, the skill the geodes turn up with, in Claim: it waits on the achievements page until the player collects it, as every achievement reward does but a title or a token. A server without that mod skips the row and shows nothing for it.",
   "Parent": "Hallows_Eve_Hallowed_Base",
   "Text": {
     "TitleKey": "achievement.hallows_eve_geode_cracker.title",
@@ -22,7 +22,7 @@
     }
   },
   "Rewards": {
-    "Auto": [
+    "Claim": [
       { "Kind": "Mmo_Xp", "Params": { "Skill": "MINING", "Amount": "1000" } }
     ]
   }

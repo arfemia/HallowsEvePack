@@ -19,5 +19,5 @@ calendar.harvest_moon.herald.end = La Luna del Raccolto tramonta
 calendar.harvest_moon.herald.end.sub = Le notti tornano tranquille.
 
 # ---- Ritrovamenti ----
-notify.hallows_eve_geode_found = Una geode maledetta, lì tra le macerie.
-notify.hallows_eve_pumpkin_found = Una zucca consacrata, che brilla nel tuo zaino.
+notify.hallows_eve_geode_found = Una Geode Maledetta, lì tra le macerie.
+notify.hallows_eve_pumpkin_found = Una Zucca Consacrata, che brilla nel tuo zaino.

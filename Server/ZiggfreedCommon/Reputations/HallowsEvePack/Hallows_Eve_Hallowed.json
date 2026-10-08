@@ -1,13 +1,16 @@
 {
   "$Comment": [
-    "The Hallowed: the name, picture and payouts of the game's reputation group of the same id",
-    "(NPC/Reputation/Groups/Hallows_Eve_Hallowed.json), a reputation with no characters in it.",
+    "The Lantern Watch: the name, picture and payouts of the game's reputation group of the same id",
+    "(NPC/Reputation/Groups/Hallows_Eve_Hallowed.json), a reputation with no characters in it. Players",
+    "read the name from reputation.hallows_eve_hallowed.name; never rename the id, since every",
+    "player's favor is filed under it.",
     "",
     "Kills pays Amount favor for each creature put down whose role is in one of the listed NPC",
     "groups; Hallows_Eve_Event_Mobs (NPC/Groups) holds the season's four night creatures. Gear names",
-    "the stat the Jack Shield and the Hallowed set add to. With no Cap, favor keeps climbing past",
-    "Exalted, and Beyond pays its Rewards each time earned favor passes another multiple of Every",
-    "above Exalted's floor: here the loot table Hallows_Eve_Hallowed_Cache."
+    "the stat the Jack Shield, the Flaming Jack Shield and the Hallowed set add to. With no Cap, favor",
+    "keeps climbing past Exalted, and Beyond pays its Rewards each time earned favor passes another",
+    "multiple of Every above Exalted's floor: here the loot table Hallows_Eve_Hallowed_Cache. Its",
+    "Revered and Exalted ranks open the Burning Jack Helm and the Flaming Jack Shield at Old Jack's stall."
   ],
   "Text": {
     "TitleKey": "reputation.hallows_eve_hallowed.name",

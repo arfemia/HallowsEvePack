@@ -19,5 +19,5 @@ calendar.harvest_moon.herald.end = Lenyugszik az Aratási Hold
 calendar.harvest_moon.herald.end.sub = Az éjszakák újra elcsendesednek.
 
 # ---- Leletek ----
-notify.hallows_eve_geode_found = Egy átkozott geoda, ott a törmelékben.
-notify.hallows_eve_pumpkin_found = Egy megszentelt tök, ott világít a zsákodban.
+notify.hallows_eve_geode_found = Egy Átkozott Geoda, ott a törmelékben.
+notify.hallows_eve_pumpkin_found = Egy Megszentelt Tök, ott világít a zsákodban.

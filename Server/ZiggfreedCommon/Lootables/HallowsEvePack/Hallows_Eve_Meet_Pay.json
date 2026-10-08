@@ -2,9 +2,10 @@
   "$Comment": [
     "What Lanterns in the Temple pays when the player finds Old Jack: a small welcome of sweets,",
     "through the Currency reward kind, since a counter wallet has no item to hand over. The quest",
-    "pays this table in its Auto bucket, the moment it is handed in, so nothing waits to be collected",
-    "on the way to Pumpkin Patch's offer. A companion mod adds its own rolls to this table with a",
-    "file of its own that names it in ContributesTo, so nothing here has to change."
+    "pays this table through its Claim bucket: the sweets wait in the quest until the player collects",
+    "them, and collecting them at Old Jack leads straight on to Pumpkin Patch's offer. A companion mod",
+    "adds its own rolls to this table with a file of its own that names it in ContributesTo, so",
+    "nothing here has to change."
   ],
   "Name": "Hallows_Eve_Meet_Pay",
   "Rolls": [

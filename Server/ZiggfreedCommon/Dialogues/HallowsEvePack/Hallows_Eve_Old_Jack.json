@@ -8,11 +8,15 @@
     "that is READY to hand in, then one he can OFFER, then one that is ACTIVE, then Then, then",
     "Fallback. First opens with the arrival line for a player carrying Lanterns in the Temple (the",
     "quest every player gets while the event runs): its one answer marks him greeted, hands that",
-    "quest in and goes straight to Pumpkin Patch's offer. Then the greeting, for anyone who came",
-    "without that quest, shown until the hail spends it, and the board line, shown",
-    "once a day (Once with Period Daily, turning over at midnight UTC) and skipped while the player",
-    "has something to hand in. Quests holds one row per quest, the questline first, so the questline",
-    "wins a tie with a daily. Then shows the lit-lantern line once the year's lantern is lit.",
+    "quest in and goes on to Pumpkin Patch's offer. That quest's sweets wait to be collected, though,",
+    "and a hand-in that parks a quest takes the player to it on his list, Collect in front of them,",
+    "whatever the answer goes on to. Then the greeting, for anyone who came without that quest, shown",
+    "until the hail spends it. Then Pumpkin Patch's offer, once (OnceId meet_patch_offer), for a",
+    "player who has handed the intro in and not taken Pumpkin Patch yet: collecting the sweets plays",
+    "this conversation again, so the questline still opens straight after the arrival. Then the board",
+    "line, shown once a day (Once with Period Daily, turning over at midnight UTC) and skipped while",
+    "the player has something to hand in. Quests holds one row per quest, the questline first, so the",
+    "questline wins a tie with a daily. Then shows the lit-lantern line once the year's lantern is lit.",
     "",
     "THE BOARD LINE AND FAVOR. The board line comes in four wordings, one per band of favor with",
     "Old Jack, highest first, so the first that applies is the player's own rank: Revered, Honored,",
@@ -50,6 +54,16 @@
           { "Type": "World", "Where": { "GameplayConfig": [ "ForgottenTemple" ] } },
           { "Type": "NotRemembered", "Memory": "old_jack_greeted" }
         ]
+      },
+      {
+        "Node": "patch_offer",
+        "When": [
+          { "Type": "World", "Where": { "GameplayConfig": [ "ForgottenTemple" ] } },
+          { "Type": "QuestState", "Quest": "hallows_eve_old_jack_meet", "States": [ "COMPLETED_UNCLAIMED", "COMPLETED" ] },
+          { "Type": "QuestState", "Quest": "hallows_eve_old_jack_1", "State": "NOT_STARTED" }
+        ],
+        "Once": true,
+        "OnceId": "meet_patch_offer"
       },
       {
         "Node": "board_fresh_revered",

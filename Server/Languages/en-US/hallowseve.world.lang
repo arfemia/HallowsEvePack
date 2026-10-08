@@ -19,5 +19,5 @@ calendar.harvest_moon.herald.end = The Harvest Moon sets
 calendar.harvest_moon.herald.end.sub = The nights go quiet again.
 
 # ---- Finds ----
-notify.hallows_eve_geode_found = A cursed geode, there in the rubble.
-notify.hallows_eve_pumpkin_found = A hallowed pumpkin, glowing in your pack.
+notify.hallows_eve_geode_found = A Cursed Geode, there in the rubble.
+notify.hallows_eve_pumpkin_found = A Hallowed Pumpkin, glowing in your pack.

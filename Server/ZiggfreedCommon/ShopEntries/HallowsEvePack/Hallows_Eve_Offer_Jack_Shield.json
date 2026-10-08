@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Jack Shield, the other half of the Hallowed set, for players Honored with Old Jack. The Requires block locks it until then; a locked offer still shows on the shelf, so a player can see what to work towards. Gear favor counts toward the rank, so wearing the Jack Helm helps. Lighting the Hollow Lantern pays one shield too. Named by the item's own keys.",
+  "$Comment": "The Jack Shield, the other half of the Hallowed set, open to everyone at the stall like the Jack Helm. Lighting the Hollow Lantern pays one shield a year, and the Carving Bench's Hallowed Carving makes one during the event, so the stall's copy is for a spare or a second hand. Named by the item's own keys.",
   "Parent": "Hallows_Eve_Offer_Base",
   "Text": {
     "TitleKey": "items.Hallows_Eve_Jack_Shield.name",
@@ -7,11 +7,6 @@
   },
   "Listing": { "Category": "gear", "SortOrder": 15 },
   "Cost": { "Currencies": { "Hallows_Eve_Sweets": 150 } },
-  "Requires": {
-    "Factors": [
-      { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Hallows_Eve_Old_Jack/Honored", "Min": 1 }
-    ]
-  },
   "Rewards": [
     { "Kind": "Item", "Params": { "Item": "Hallows_Eve_Jack_Shield", "Count": 1 } }
   ]

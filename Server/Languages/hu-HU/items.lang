@@ -1,17 +1,21 @@
 # Mindenszentek Éje csomag - tárgynevek és leírások. A játék a fájlnevet elé fűzi, így minden kulcs
 # items.<kulcs> néven töltődik be, azon a kulcson, amelyet a tárgy TranslationProperties-e megnevez (items.Hallows_Eve_Jack_Lantern.name).
 Hallows_Eve_Lantern_Bomb_Common.name = Lámpásbomba
-Hallows_Eve_Lantern_Bomb_Common.description = Fekete lőporral tömött faragott tök. Dobd arra, ami érted jön.
+Hallows_Eve_Lantern_Bomb_Common.description = Robbanó Porral tömött faragott tök. Dobd arra, ami érted jön.
 Hallows_Eve_Lantern_Bomb_Uncommon.name = Égő Lámpásbomba
 Hallows_Eve_Lantern_Bomb_Uncommon.description = Tűzesszencia van a lőporban, így amit a robbanás elkap, az még egy darabig ég.
 Hallows_Eve_Lantern_Bomb_Rare.name = Kísérteties Lámpásbomba
 Hallows_Eve_Lantern_Bomb_Rare.description = Ektoplazma a lőporban. A robbanás éget, és a hideg, amit maga után hagy, lelassít mindent, ami belekerül.
 Hallows_Eve_Lantern_Bomb_Epic.name = Szilánkszóró Lámpásbomba
-Hallows_Eve_Lantern_Bomb_Epic.description = Egy átkozott geoda köré tömve. Éget és dermeszt, mint a többi, aztán lángoló szilánkokat szór szét minden irányba.
+Hallows_Eve_Lantern_Bomb_Epic.description = Egy Átkozott Geoda köré tömve. Éget és dermeszt, mint a többi, aztán lángoló szilánkokat szór szét minden irányba.
 Hallows_Eve_Jack_Helm.name = Jack-sisak
 Hallows_Eve_Jack_Helm.description = Fejméretűre kivájt tökhéj, a vigyor mögött gyertyával. A Megszentelt szett része: viseld úgy, hogy a Jack-pajzs a másik kezedben van.
 Hallows_Eve_Jack_Shield.name = Jack-pajzs
 Hallows_Eve_Jack_Shield.description = Fapajzs, előlapján egy faragott tökkel, amely sosem szűnik meg világítani. A Megszentelt szett része: tartsd a másik kezedben, miközben a Jack-sisakot viseled.
+Hallows_Eve_Burning_Jack_Helm.name = Égő Jack-sisak
+Hallows_Eve_Burning_Jack_Helm.description = Feketére szenesedett Jack-sisak, a repedéseiben még parázs izzik. Jobban bírja az ütést, mint a sima, és a tűz is kevésbé mar. A Megszentelt szett része: viseld úgy, hogy egy Jack-pajzs vagy egy Lángoló Jack-pajzs van a másik kezedben.
+Hallows_Eve_Flaming_Jack_Shield.name = Lángoló Jack-pajzs
+Hallows_Eve_Flaming_Jack_Shield.description = Feketére szenesedett Jack-pajzs, a faragott arca úgy ég, mint a parázs. Kevesebb állóképességbe kerül vele a blokkolás, mint a simával. A Megszentelt szett része: tartsd a másik kezedben, miközben egy Jack-sisakot vagy egy Égő Jack-sisakot viselsz.
 Hallows_Eve_Jack_Lantern.name = Jack-lámpás
 Hallows_Eve_Jack_Lantern.description = Faragott tök, benne gyertya. Öreg Jack minden küszöbre akar egyet.
 Hallows_Eve_Hollow_Lantern.name = Vájt Lámpás

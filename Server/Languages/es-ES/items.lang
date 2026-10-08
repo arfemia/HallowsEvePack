@@ -2,23 +2,27 @@
 # que cada clave se carga como items.<clave>, la clave que nombran las TranslationProperties de un objeto
 # (items.Hallows_Eve_Jack_Lantern.name).
 Hallows_Eve_Lantern_Bomb_Common.name = Bomba Farol
-Hallows_Eve_Lantern_Bomb_Common.description = Una calabaza tallada llena de pólvora negra. Tírasela a lo que venga a por ti.
+Hallows_Eve_Lantern_Bomb_Common.description = Una calabaza tallada llena de Polvo Explosivo. Tírasela a lo que venga a por ti.
 Hallows_Eve_Lantern_Bomb_Uncommon.name = Bomba Farol Ardiente
-Hallows_Eve_Lantern_Bomb_Uncommon.description = Esencia de fuego en la pólvora, así que lo que pille la explosión sigue ardiendo un rato.
+Hallows_Eve_Lantern_Bomb_Uncommon.description = Esencia de Fuego en la pólvora, así que lo que pille la explosión sigue ardiendo un rato.
 Hallows_Eve_Lantern_Bomb_Rare.name = Bomba Farol Espectral
 Hallows_Eve_Lantern_Bomb_Rare.description = Ectoplasma en la pólvora. La explosión quema, y el frío que deja ralentiza todo lo que atrapa.
 Hallows_Eve_Lantern_Bomb_Epic.name = Bomba Farol Fragmentadora
-Hallows_Eve_Lantern_Bomb_Epic.description = Cargada alrededor de una geoda maldita. Quema y hiela como las demás, y luego lanza esquirlas en llamas en todas direcciones.
+Hallows_Eve_Lantern_Bomb_Epic.description = Cargada alrededor de una Geoda Maldita. Quema y hiela como las demás, y luego lanza esquirlas en llamas en todas direcciones.
 Hallows_Eve_Jack_Helm.name = Yelmo de Jack
 Hallows_Eve_Jack_Helm.description = Una corteza de calabaza vaciada a la medida de una cabeza, con una vela detrás de la sonrisa. Parte del conjunto Consagrado: llévalo con el Escudo de Jack en la mano secundaria.
 Hallows_Eve_Jack_Shield.name = Escudo de Jack
 Hallows_Eve_Jack_Shield.description = Un escudo de madera con una calabaza tallada en el frente que nunca deja de brillar. Parte del conjunto Consagrado: llévalo en la mano secundaria mientras llevas puesto el Yelmo de Jack.
+Hallows_Eve_Burning_Jack_Helm.name = Yelmo Ardiente de Jack
+Hallows_Eve_Burning_Jack_Helm.description = Un Yelmo de Jack carbonizado, con brasas que aún brillan en las grietas. Aguanta los golpes mejor que el corriente, y el fuego le hace menos mella. Parte del conjunto Consagrado: llévalo con un Escudo de Jack o un Escudo Llameante de Jack en la mano secundaria.
+Hallows_Eve_Flaming_Jack_Shield.name = Escudo Llameante de Jack
+Hallows_Eve_Flaming_Jack_Shield.description = Un Escudo de Jack carbonizado, con la cara tallada ardiendo como un ascua. Mantener la guardia con él gasta menos resistencia que con el corriente. Parte del conjunto Consagrado: llévalo en la mano secundaria mientras llevas puesto un Yelmo de Jack o un Yelmo Ardiente de Jack.
 Hallows_Eve_Jack_Lantern.name = Farol de Jack
 Hallows_Eve_Jack_Lantern.description = Una calabaza tallada con una vela dentro. El Viejo Jack quiere una en cada puerta.
 Hallows_Eve_Hollow_Lantern.name = Farol de Ánimas
 Hallows_Eve_Hollow_Lantern.description = Un farol pálido que el Viejo Jack da a quien termina sus encargos. Cada Noche de Ánimas tiene el suyo.
 Hallows_Eve_Ecto_Lantern.name = Farol de Ectoplasma
-Hallows_Eve_Ecto_Lantern.description = Una calabaza iluminada con ectoplasma. La luz verde se mantiene firme con cualquier viento.
+Hallows_Eve_Ecto_Lantern.description = Una calabaza iluminada con Ectoplasma. La luz verde se mantiene firme con cualquier viento.
 Hallows_Eve_Costume_Wand.name = Varita de Disfraces
 Hallows_Eve_Costume_Wand.description = Apunta a un amigo con ella. Un botón lo convierte en un Esqueleto Jack, el otro en un Alma Perdida, y puede quitarse el disfraz cuando quiera.
 Hallows_Eve_Cursed_Geode.name = Geoda Maldita

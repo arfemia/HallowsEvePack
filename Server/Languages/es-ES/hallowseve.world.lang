@@ -19,6 +19,6 @@ calendar.harvest_moon.herald.end = Se pone la Luna de la Cosecha
 calendar.harvest_moon.herald.end.sub = Las noches vuelven a estar tranquilas.
 
 # ---- Hallazgos ----
-notify.hallows_eve_geode_found = Una geoda maldita, ahí entre los escombros.
-notify.hallows_eve_pumpkin_found = Una calabaza consagrada, brillando en tu mochila.
+notify.hallows_eve_geode_found = Una Geoda Maldita, ahí entre los escombros.
+notify.hallows_eve_pumpkin_found = Una Calabaza Consagrada, brillando en tu mochila.
 

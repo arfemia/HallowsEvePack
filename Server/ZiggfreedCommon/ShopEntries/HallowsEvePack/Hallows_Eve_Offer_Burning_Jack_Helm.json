@@ -1,0 +1,19 @@
+{
+  "$Comment": "The Burning Jack Helm, the charred and sturdier Jack Helm, for players at the top of either reputation: Revered with the Lantern Watch (Hallows_Eve_Hallowed) or Jack's Own with Old Jack. AnyOf opens it on either route, and the lock line names both; a locked offer still shows on the shelf, so a player can see what to work towards. Gear favor counts toward each rank. Priced well above the plain helm, so sweets saved over the years have somewhere to go. Named by the item's own keys.",
+  "Parent": "Hallows_Eve_Offer_Base",
+  "Text": {
+    "TitleKey": "items.Hallows_Eve_Burning_Jack_Helm.name",
+    "FlavorKey": "items.Hallows_Eve_Burning_Jack_Helm.description"
+  },
+  "Listing": { "Category": "gear", "SortOrder": 30 },
+  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 600 } },
+  "Requires": {
+    "AnyOf": [
+      { "Factors": [ { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Hallows_Eve_Hallowed/Revered", "Min": 1 } ] },
+      { "Factors": [ { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Hallows_Eve_Old_Jack/Exalted", "Min": 1 } ] }
+    ]
+  },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Hallows_Eve_Burning_Jack_Helm", "Count": 1 } }
+  ]
+}

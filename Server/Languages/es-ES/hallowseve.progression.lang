@@ -8,7 +8,7 @@ currency.hallows_eve_sweets.name = Dulces de Ánimas
 
 # ---- La cadena de misiones del Viejo Jack ----
 quest.hallows_eve_old_jack_meet.title = Faroles en el Templo
-quest.hallows_eve_old_jack_meet.flavor = Ya es otra vez la temporada, así que he vuelto al Templo Olvidado con mis faroles. Cualquiera de los portales del templo te lleva hasta allí. Ven a buscarme. No me vendría mal una mano.
+quest.hallows_eve_old_jack_meet.flavor = Ya es otra vez la temporada, así que he vuelto al Templo Olvidado con mis faroles. Cualquier Portal del Templo Olvidado te lleva hasta allí. Ven a buscarme. No me vendría mal una mano.
 quest.hallows_eve_old_jack_1.title = El Calabazar
 quest.hallows_eve_old_jack_1.flavor = Recoge una calabaza este mes y de vez en cuando te sale una fría y reluciente. Tráeme unas cuantas de esas consagradas.
 quest.hallows_eve_old_jack_2.title = Faena de Faroles
@@ -16,9 +16,9 @@ quest.hallows_eve_old_jack_2.flavor = Cualquier calabaza rellena de pólvora da 
 quest.hallows_eve_old_jack_3.title = Gules en la Escalera
 quest.hallows_eve_old_jack_3.flavor = Los Gules Descarnados salen a rastras de las tumbas viejas al caer la noche, con hambre. Devuelve a unos cuantos bajo tierra antes de que lleguen a la escalera del templo.
 quest.hallows_eve_old_jack_4.title = Recogida de Ectoplasma
-quest.hallows_eve_old_jack_4.flavor = Las Almas Perdidas andan a la deriva hasta que alguien las deja ir. Libera a unas cuantas y tráeme el ectoplasma que dejan atrás; mis faroles se lo beben.
+quest.hallows_eve_old_jack_4.flavor = Las Almas Perdidas andan a la deriva hasta que alguien las deja ir. Libera a unas cuantas y tráeme el Ectoplasma que dejan atrás; mis faroles se lo beben.
 quest.hallows_eve_old_jack_5.title = Piedra Maldita
-quest.hallows_eve_old_jack_5.flavor = Cava hondo este mes y a la piedra le salen geodas que zumban. Abre unas cuantas; hay algo bueno en ellas, debajo de la maldición.
+quest.hallows_eve_old_jack_5.flavor = Rompe piedra este mes, cualquier piedra, y de vez en cuando cae de ella una Geoda Maldita. Abre unas cuantas; hay algo bueno en ellas, debajo de la maldición.
 quest.hallows_eve_old_jack_lantern.title = El Farol de Ánimas
 quest.hallows_eve_old_jack_lantern.flavor = Cada año el Farol de Ánimas se apaga, y alguien tiene que volver a encenderlo. Tumba a los esqueletos que llevan mi cara, y luego tráeme lo que necesita el farol.
 
@@ -26,19 +26,19 @@ quest.hallows_eve_old_jack_lantern.flavor = Cada año el Farol de Ánimas se apa
 quest.hallows_eve_jack_daily_souls.title = Almas Inquietas
 quest.hallows_eve_jack_daily_souls.flavor = Anoche llegaron más Almas Perdidas, a la deriva. Libera a unas cuantas antes de que se instalen para siempre.
 quest.hallows_eve_jack_daily_pumpkins.title = Ronda de Calabazas
-quest.hallows_eve_jack_daily_pumpkins.flavor = Los faroles queman calabazas consagradas más deprisa de lo que yo puedo tallarlas. Tráeme unas cuantas más antes de que oscurezca.
+quest.hallows_eve_jack_daily_pumpkins.flavor = Los faroles queman Calabazas Consagradas más deprisa de lo que yo puedo tallarlas. Tráeme unas cuantas más antes de que oscurezca.
 quest.hallows_eve_jack_daily_geodes.title = Piedra que Zumba
-quest.hallows_eve_jack_daily_geodes.flavor = La piedra del fondo vuelve a zumbar. Rompe un par de Geodas Malditas antes de que se rompan solas.
+quest.hallows_eve_jack_daily_geodes.flavor = Rompe un par de Geodas Malditas por mí. Últimamente tengo las manos demasiado agarrotadas para eso.
 
 # ---- Pasos redactados para este paquete ----
 objective.hallows_eve.meet_jack = Encuentra al Viejo Jack en el Templo Olvidado
 objective.hallows_eve.throw_bombs = Lanza {0} Bombas Farol
 objective.hallows_eve.crack_geodes = Rompe {0} Geodas Malditas
-objective.hallows_eve.attend = Asiste a la Noche de Ánimas
+objective.hallows_eve.attend = Participa en la Noche de Ánimas
 
 # ---- El tablón del Viejo Jack ----
 board.hallows_eve_daily.title = Tablón del Viejo Jack
-board.hallows_eve_daily.desc = Trabajo para la oscuridad y trabajo para la luz del día. A mis asiduos les toca un poco más.
+board.hallows_eve_daily.desc = Trabajo para la oscuridad y trabajo para la luz del día. A mis asiduos les toca un poco más. Cobra tu paga antes de que recoja el puesto, o tendrá que esperar al otoño que viene.
 quest.hallows_eve_board_souls.title = Barrida de Almas
 quest.hallows_eve_board_souls.flavor = Esta noche hay almas a montones alrededor del templo. Libera a un buen puñado antes de que amanezca.
 quest.hallows_eve_board_ghouls.title = Batida de Gules
@@ -48,7 +48,7 @@ quest.hallows_eve_board_bombs.flavor = Gasta un montón de Bombas Farol por mí.
 quest.hallows_eve_board_geodes.title = Geodas Profundas
 quest.hallows_eve_board_geodes.flavor = La piedra del fondo no para de zumbar, y no me deja dormir. Rompe suficientes Geodas Malditas para que se calle.
 quest.hallows_eve_board_harvest_moon.title = Caza de la Luna de la Cosecha
-quest.hallows_eve_board_harvest_moon.flavor = La Luna de la Cosecha está en lo alto y los Esqueletos Jack han salido en masa. Tumba todos los que puedas antes de que se ponga.
+quest.hallows_eve_board_harvest_moon.flavor = La Luna de la Cosecha está en lo alto y los Esqueletos Jack han salido en masa. Tumba a un buen puñado antes de que se ponga.
 
 # ---- El puesto del Viejo Jack ----
 shop.hallows_eve_old_jack.title = Puesto del Viejo Jack
@@ -57,7 +57,7 @@ shop.hallows_eve_old_jack.category.bombs = Bombas Farol
 shop.hallows_eve_old_jack.category.lights = Faroles
 shop.hallows_eve_old_jack.category.gear = Equipo
 shop.hallows_eve_offer_harvest_moon_bundle.title = Lote de la Luna de la Cosecha
-shop.hallows_eve_offer_harvest_moon_bundle.desc = Bombas Farol épicas y raras, a la venta solo mientras la Luna de la Cosecha está en lo alto.
+shop.hallows_eve_offer_harvest_moon_bundle.desc = Bombas Farol Fragmentadoras y Espectrales, a la venta solo mientras la Luna de la Cosecha está en lo alto.
 
 # ---- Logros ----
 achievement.hallows_eve_lantern_keepsake.title = Farol de Ánimas {0}
@@ -72,15 +72,15 @@ achievement.hallows_eve_ghoul_breaker.desc = Abate {0} Gules Descarnados.
 achievement.hallows_eve_geode_cracker.title = Rompegeodas {0}
 achievement.hallows_eve_geode_cracker.desc = Rompe {0} Geodas Malditas.
 achievement.hallows_eve_jacks_guest.title = Invitado de Jack {0}
-achievement.hallows_eve_jacks_guest.desc = Asiste a la Noche de Ánimas.
+achievement.hallows_eve_jacks_guest.desc = Participa en la Noche de Ánimas.
 achievement.hallows_eve_the_hallowed.title = El Consagrado {0}
-achievement.hallows_eve_the_hallowed.desc = Consigue todos los logros de la Noche de Ánimas en una misma temporada.
+achievement.hallows_eve_the_hallowed.desc = Consigue todos los logros de la Noche de Ánimas de este año.
 achievement.seasons_of_orbis.title = Temporadas de Orbis
 achievement.seasons_of_orbis.desc = Consigue el logro cumbre de cada temporada.
 
 # ---- El título Consagrado ----
 title.hallows_eve_hallowed.name = El Consagrado
-title.hallows_eve_hallowed.flavor = Consiguió todos los logros de la Noche de Ánimas en una misma temporada.
+title.hallows_eve_hallowed.flavor = Consiguió todos los logros de la Noche de Ánimas de un mismo año.
 title.hallows_eve_hallowed.display = {0} el Consagrado
 
 # ---- La página del Almanaque ----
@@ -93,44 +93,44 @@ almanac.hallows_eve.geodes_cracked = Geodas Malditas rotas
 
 # ---- La conversación del Viejo Jack ----
 dialogue.hallows_eve_old_jack.meet_arrival.text = Así que diste con el sitio. Bien.\nNo le hagas caso a la cabeza. Es una calabaza, y lleva ahí puesta mucho tiempo. Soy el Viejo Jack, y cada otoño vuelvo con mis faroles mientras los muertos andan sueltos. Hay trabajo si lo quieres, empezando por las <b>calabazas</b>.
-dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = ¿Me has mandado llamar?
+dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = ¿Calabazas?
 dialogue.hallows_eve_old_jack.first_words.text = No le hagas caso a la cabeza. Es una calabaza, y lleva ahí puesta mucho tiempo.\nSoy el Viejo Jack. Cada otoño los muertos se inquietan, así que vuelvo al <color is="#ffd97a">Templo Olvidado</color> con mis faroles. No me vendría mal un par de manos que no estén talladas.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Un placer conocerte, Jack.
 dialogue.hallows_eve_old_jack.board_fresh.text = Hay trabajo nuevo en mi tablón, una parte para la oscuridad y otra para la luz del día. Se paga.
 dialogue.hallows_eve_old_jack.board_fresh.opt.board = Enséñame el tablón.
 dialogue.hallows_eve_old_jack.board_fresh.opt.later = Más tarde, Jack.
 dialogue.hallows_eve_old_jack.menu.text = Los faroles están encendidos y los gules han salido a pasear. ¿Qué necesitas?
-dialogue.hallows_eve_old_jack.patch_offer.text = Recoge una calabaza este mes y de vez en cuando te sale una fría al tacto, con un poco de brillo. <b>Calabazas consagradas</b>, las llamo yo.\nTráeme unas cuantas. Te enseñaré para qué sirven.
+dialogue.hallows_eve_old_jack.patch_offer.text = Recoge una calabaza este mes y de vez en cuando te sale una fría al tacto, con un poco de brillo. <b>Calabazas Consagradas</b>, las llamo yo.\nTráeme unas cuantas. Te enseñaré para qué sirven.
 dialogue.hallows_eve_old_jack.patch_offer.opt.accept = Te buscaré unas calabazas.
 dialogue.hallows_eve_old_jack.patch_brief.text = Cualquier <b>calabaza</b> que recojas este mes puede salir consagrada. Guarda las frías que brillan y tráelas aquí.
-dialogue.hallows_eve_old_jack.patch_ready.text = <b>Calabazas consagradas</b>. Frías como un escalón de bodega. Bien, estas son para los faroles.\nTe he metido unas cuantas Bombas Farol con la paga. Calabazas corrientes y pólvora negra, nada del otro mundo. Ve a ver cómo arden.
+dialogue.hallows_eve_old_jack.patch_ready.text = <b>Calabazas Consagradas</b>. Frías como un escalón de bodega. Bien, estas son para los faroles.\nTe he metido unas cuantas Bombas Farol con la paga. Calabazas corrientes y Polvo Explosivo, nada del otro mundo. Ve a ver cómo arden.
 dialogue.hallows_eve_old_jack.patch_ready.opt.turnin = Aquí tienes las calabazas.
 dialogue.hallows_eve_old_jack.lantern_work_offer.text = Una <b>Bomba Farol</b> es una calabaza rellena de pólvora y con la mecha corta. Enciéndela y tírala. Luego apártate.\nTira unas cuantas a algo que se lo tenga merecido, y ven a contarme qué tal fueron.
 dialogue.hallows_eve_old_jack.lantern_work_offer.opt.accept = Tiraré unas cuantas.
 dialogue.hallows_eve_old_jack.ghouls_offer.text = Los <b>Gules Descarnados</b> salen a rastras de las tumbas viejas al caer la noche, y salen con hambre.\nDevuelve a unos cuantos bajo tierra antes de que den con la escalera del templo.
 dialogue.hallows_eve_old_jack.ghouls_offer.opt.accept = Yo me encargo de los gules.
-dialogue.hallows_eve_old_jack.souls_offer.text = Pobrecillas, las <b>Almas Perdidas</b>. Andan a la deriva hasta que alguien las deja ir.\nLibera a unas cuantas y tráeme el <b>ectoplasma</b> que dejan atrás. Mis faroles se lo beben.
+dialogue.hallows_eve_old_jack.souls_offer.text = Pobrecillas, las <b>Almas Perdidas</b>. Andan a la deriva hasta que alguien las deja ir.\nLibera a unas cuantas y tráeme el <b>Ectoplasma</b> que dejan atrás. Mis faroles se lo beben.
 dialogue.hallows_eve_old_jack.souls_offer.opt.accept = Las liberaré.
-dialogue.hallows_eve_old_jack.geodes_offer.text = Cava hondo este mes y a la piedra le salen <b>Geodas Malditas</b>. Las oirás antes de verlas. Zumban.\nAbre unas cuantas. Hay algo bueno en ellas, debajo de la maldición.
+dialogue.hallows_eve_old_jack.geodes_offer.text = Rompe piedra este mes, cualquier piedra, y de vez en cuando cae de ella una <b>Geoda Maldita</b>.\nAbre unas cuantas. Hay algo bueno en ellas, debajo de la maldición.
 dialogue.hallows_eve_old_jack.geodes_offer.opt.accept = Abriré unas cuantas.
-dialogue.hallows_eve_old_jack.lantern_offer.text = Cada año el <b>Farol de Ánimas</b> se apaga, y cada año alguien tiene que volver a encenderlo.\nAlgunos de los esqueletos de ahí fuera llevan mi cara. Tumba a unos cuantos <b>Esqueletos Jack</b>, y luego tráeme una <b>calabaza consagrada</b> y algo de <b>ectoplasma</b> para llenarla.
+dialogue.hallows_eve_old_jack.lantern_offer.text = Cada año el <b>Farol de Ánimas</b> se apaga, y cada año alguien tiene que volver a encenderlo.\nAlgunos de los esqueletos de ahí fuera llevan mi cara. Tumba a unos cuantos <b>Esqueletos Jack</b>, y luego tráeme una <b>Calabaza Consagrada</b> y algo de <b>Ectoplasma</b> para llenarla.
 dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Vamos a encenderlo.
-dialogue.hallows_eve_old_jack.lantern_brief.text = Los <b>Esqueletos Jack</b> andan de noche. Tumba a unos cuantos. Luego una <b>calabaza consagrada</b> y el <b>ectoplasma</b>, y lo encendemos juntos.
-dialogue.hallows_eve_old_jack.lantern_ready.text = Una <b>calabaza consagrada</b>, y <b>ectoplasma</b> para llenarla hasta arriba. Y los esqueletos con mi cara están tirados en la hierba, que es donde tienen que estar.\nNo te muevas. Ya está. El Farol de Ánimas está encendido, y te lo quedas. Vuelve el año que viene y encenderemos otro.
-dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = Aquí tienes la calabaza, y el ectoplasma.
+dialogue.hallows_eve_old_jack.lantern_brief.text = Los <b>Esqueletos Jack</b> andan de noche. Tumba a unos cuantos. Luego una <b>Calabaza Consagrada</b> y el <b>Ectoplasma</b>, y lo encendemos juntos.
+dialogue.hallows_eve_old_jack.lantern_ready.text = Una <b>Calabaza Consagrada</b>, y <b>Ectoplasma</b> para llenarla hasta arriba. Y los esqueletos con mi cara están tirados en la hierba, que es donde tienen que estar.\nNo te muevas. Ya está. El Farol de Ánimas está encendido, y te lo quedas. Vuelve el año que viene y encenderemos otro. Llévate también el escudo. Va con el yelmo.
+dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = Aquí tienes la calabaza, y el Ectoplasma.
 dialogue.hallows_eve_old_jack.active_generic.text = ¿Todavía en faena? Bien. La noche es larga, y no se va a ningún sitio.
 dialogue.hallows_eve_old_jack.ready_generic.text = Eso me parece terminado. A ver.
 dialogue.hallows_eve_old_jack.ready_generic.opt.turnin = Está hecho.
 dialogue.hallows_eve_old_jack.daily_souls_offer.text = Anoche llegaron más <b>Almas Perdidas</b>, a la deriva. Libera a unas cuantas antes de que se instalen para siempre.
 dialogue.hallows_eve_old_jack.daily_souls_offer.opt.accept = Me ocuparé de las almas.
-dialogue.hallows_eve_old_jack.daily_pumpkins_offer.text = Los faroles queman <b>calabazas consagradas</b> más deprisa de lo que yo puedo tallarlas. Tráeme unas cuantas más antes de que oscurezca.
+dialogue.hallows_eve_old_jack.daily_pumpkins_offer.text = Los faroles queman <b>Calabazas Consagradas</b> más deprisa de lo que yo puedo tallarlas. Tráeme unas cuantas más antes de que oscurezca.
 dialogue.hallows_eve_old_jack.daily_pumpkins_offer.opt.accept = Traeré calabazas.
-dialogue.hallows_eve_old_jack.daily_geodes_offer.text = La piedra del fondo vuelve a zumbar. Rompe un par de <b>Geodas Malditas</b> antes de que se rompan solas.
+dialogue.hallows_eve_old_jack.daily_geodes_offer.text = Rompe un par de <b>Geodas Malditas</b> por mí. Últimamente tengo las manos demasiado agarrotadas para eso.
 dialogue.hallows_eve_old_jack.daily_geodes_offer.opt.accept = Romperé un par.
 dialogue.hallows_eve_old_jack.lantern_lit.text = El Farol de Ánimas sigue ardiendo. Mantiene lo peor de la oscuridad lejos de la escalera.\n¿Qué necesitas?
 dialogue.hallows_eve_old_jack.who_are_you.text = El Viejo Jack. Tuve una granja hace tiempo, muy lejos de aquí. Luego un octubre no volví a casa, y desde entonces he vuelto cada octubre.\nNo me preguntes por la cabeza.
-dialogue.hallows_eve_old_jack.about_lantern.text = Un Farol de Ánimas es una calabaza consagrada, vaciada y llena de ectoplasma. Enciende uno y los muertos guardan las distancias.\nPara noviembre ya se han consumido. Por eso necesito uno nuevo cada año.
-dialogue.hallows_eve_old_jack.harvest_moon.text = ¿Ves esa luna? La Luna de la Cosecha. Unas pocas noches al año sale grande y naranja, y todo lo que hay en las tumbas sale con ella.\nSi quieres trabajo, esta es la noche. Yo estaré en pie hasta que se ponga.
+dialogue.hallows_eve_old_jack.about_lantern.text = Un Farol de Ánimas es una Calabaza Consagrada, vaciada y llena de Ectoplasma. Enciende uno y los muertos guardan las distancias.\nPara noviembre ya se han consumido. Por eso necesito uno nuevo cada año.
+dialogue.hallows_eve_old_jack.harvest_moon.text = ¿Ves esa luna? La Luna de la Cosecha. Unas pocas noches al año los muertos se inquietan bajo ella, y las tumbas se vacían.\nSi quieres trabajo, esta es la noche. Yo estaré en pie hasta que se ponga.
 dialogue.hallows_eve_old_jack.opt.returned = He vuelto.
 dialogue.hallows_eve_old_jack.opt.quests = ¿Qué hay que hacer?
 dialogue.hallows_eve_old_jack.opt.board = ¿Qué hay en el tablón?
@@ -138,7 +138,7 @@ dialogue.hallows_eve_old_jack.opt.shop = A ver tu puesto.
 dialogue.hallows_eve_old_jack.opt.almanac = Enséñame el Almanaque.
 dialogue.hallows_eve_old_jack.opt.who = ¿Quién eres?
 dialogue.hallows_eve_old_jack.opt.lantern = ¿Qué es un Farol de Ánimas?
-dialogue.hallows_eve_old_jack.opt.harvest = ¿Por qué está tan grande la luna?
+dialogue.hallows_eve_old_jack.opt.harvest = ¿Qué es la Luna de la Cosecha?
 dialogue.hallows_eve_old_jack.opt.back = Otra cosa.
 dialogue.hallows_eve_old_jack.opt.farewell = Buenas noches, Jack.
 
@@ -148,7 +148,7 @@ notify.hallows_eve_treat = Un dulce por llamar a la puerta.
 
 # ---- Achievements across the years, and the Keeper of Lanterns title ----
 achievement.hallows_eve_old_friend.title = Viejo Amigo
-achievement.hallows_eve_old_friend.desc = Acude a {0} Noches de Ánimas.
+achievement.hallows_eve_old_friend.desc = Participa en {0} Noches de Ánimas.
 achievement.hallows_eve_lantern_keeper.title = Guardafaroles
 achievement.hallows_eve_lantern_keeper.desc = Enciende el Farol de Ánimas en {0} temporadas.
 achievement.hallows_eve_first_lanterns.title = Primeros Faroles
@@ -184,9 +184,12 @@ reputation.hallows_eve_old_jack.rank.revered = Confidente
 reputation.hallows_eve_old_jack.rank.exalted = De los de Jack
 factor.hallows_eve_old_jack.friendly = el rango Asiduo con el Viejo Jack
 factor.hallows_eve_old_jack.honored = el rango De Confianza con el Viejo Jack
-reputation.hallows_eve_hallowed.name = Los Consagrados
-reputation.hallows_eve_hallowed.flavor = Los Consagrados mantienen a los muertos donde deben estar. Abate lo que sale de las tumbas por la noche y ellos toman nota.
-notify.hallows_eve_hallowed_cache = Un alijo de los Consagrados, por mantener a los muertos bajo tierra.
+factor.hallows_eve_old_jack.exalted = el rango De los de Jack con el Viejo Jack
+reputation.hallows_eve_hallowed.name = La Guardia de los Faroles
+reputation.hallows_eve_hallowed.flavor = La Guardia de los Faroles mantiene a los muertos donde deben estar. Abate lo que sale de las tumbas por la noche y la Guardia toma nota.
+factor.hallows_eve_hallowed.revered = el rango Reverenciado con la Guardia de los Faroles
+factor.hallows_eve_hallowed.exalted = el rango Exaltado con la Guardia de los Faroles
+notify.hallows_eve_hallowed_cache = Un alijo de la Guardia de los Faroles, por mantener a los muertos bajo tierra.
 dialogue.hallows_eve_old_jack.board_fresh_friendly.text = Tú otra vez. Bien.\nHay trabajo nuevo en mi tablón, y he colgado algo de más para ti.
 dialogue.hallows_eve_old_jack.board_fresh_honored.text = Ahí estás. Ya me preguntaba dónde andabas.\nHoy el tablón está lleno, y prefiero que el trabajo te toque a ti antes que a nadie.
 dialogue.hallows_eve_old_jack.board_fresh_revered.text = Siéntate un momento. Los gules pueden esperar.\nPocos vuelven a esta escalera noche tras noche. En el tablón hay trabajo cuando quieras.

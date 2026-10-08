@@ -5,12 +5,15 @@
     "",
     "Listing files each child with the board's contracts. Boards posts a child in the board's night",
     "slots; a contract for the daylight slots, or one drawn more often, writes its own Boards, which",
-    "replaces this list whole. Rewards is what every contract on the board pays, through Rewards.Auto",
-    "because the board goes away with the event and a Claim would wait a year for it: the board's pay",
-    "table, and favor with Old Jack and the Hallowed (the Reputation rewards; Amount is how much). A",
-    "child that writes its own Rewards.Auto replaces that list whole. Every shipped contract does, to",
-    "add MMO Skill Tree's Mmo_Xp row for the skill its work trains, so retuning this list means",
-    "retuning theirs too.",
+    "replaces this list whole. Rewards is what every contract on the board pays, through Rewards.Claim",
+    "like every contract's: the pay waits at the board until the player collects it. The board leaves",
+    "with the event, so a job finished in its last hours waits there until the board is back next",
+    "year, which is why the board's own description asks players to collect before Old Jack packs up.",
+    "The list is the board's pay table, and favor with Old Jack and the Lantern Watch (the Reputation",
+    "rewards; Amount is how much). A child that writes its own Rewards.Claim replaces that list whole.",
+    "Every shipped contract does, to add MMO Skill Tree's Mmo_Xp row for the skill its work trains, so",
+    "retuning this list means retuning theirs too. Each bucket inherits on its own, so a list left in",
+    "Rewards.Auto here would pay on top of every child's own Claim.",
     "",
     "It carries no Requires and no Objectives: each contract writes its own Requires, with the",
     "Hallows_Eve_Live condition at the top that keeps it out of every draw while the event is off,",
@@ -20,7 +23,7 @@
   "Listing": { "Category": "bounty" },
   "Boards": [ { "Board": "Hallows_Eve_Daily", "Difficulty": "Hallows_Eve_Night", "Weight": 1 } ],
   "Rewards": {
-    "Auto": [
+    "Claim": [
       { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 50 } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 25 } }

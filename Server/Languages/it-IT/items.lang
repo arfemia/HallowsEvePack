@@ -1,23 +1,27 @@
 # Pacchetto Vigilia di Ognissanti - nomi e descrizioni degli oggetti. Il gioco antepone il nome del file, quindi ogni chiave
 # viene caricata come items.<chiave>, la chiave indicata dalle TranslationProperties di un oggetto (items.Hallows_Eve_Jack_Lantern.name).
 Hallows_Eve_Lantern_Bomb_Common.name = Bomba Lanterna
-Hallows_Eve_Lantern_Bomb_Common.description = Una zucca intagliata piena di polvere nera. Lanciala contro qualunque cosa ti venga addosso.
+Hallows_Eve_Lantern_Bomb_Common.description = Una zucca intagliata piena di Polvere Esplosiva. Lanciala contro qualunque cosa ti venga addosso.
 Hallows_Eve_Lantern_Bomb_Uncommon.name = Bomba Lanterna Ardente
-Hallows_Eve_Lantern_Bomb_Uncommon.description = Essenza di fuoco nella polvere, così ciò che l'esplosione investe continua a bruciare per un po'.
+Hallows_Eve_Lantern_Bomb_Uncommon.description = Essenza di Fuoco nella polvere, così ciò che l'esplosione investe continua a bruciare per un po'.
 Hallows_Eve_Lantern_Bomb_Rare.name = Bomba Lanterna Spettrale
 Hallows_Eve_Lantern_Bomb_Rare.description = Ectoplasma nella polvere. L'esplosione brucia, e il gelo che lascia rallenta tutto ciò che ci finisce dentro.
 Hallows_Eve_Lantern_Bomb_Epic.name = Bomba Lanterna Frantumante
-Hallows_Eve_Lantern_Bomb_Epic.description = Caricata attorno a una geode maledetta. Brucia e gela come le altre, poi scaglia schegge infuocate in ogni direzione.
+Hallows_Eve_Lantern_Bomb_Epic.description = Caricata attorno a una Geode Maledetta. Brucia e gela come le altre, poi scaglia schegge infuocate in ogni direzione.
 Hallows_Eve_Jack_Helm.name = Elmo di Jack
 Hallows_Eve_Jack_Helm.description = Una buccia di zucca scavata a misura di testa, con una candela dietro il ghigno. Parte del Set Consacrato: indossalo con lo Scudo di Jack nella mano secondaria.
 Hallows_Eve_Jack_Shield.name = Scudo di Jack
 Hallows_Eve_Jack_Shield.description = Uno scudo di legno rivestito da una zucca intagliata che non smette mai di brillare. Parte del Set Consacrato: portalo nella mano secondaria mentre indossi l'Elmo di Jack.
+Hallows_Eve_Burning_Jack_Helm.name = Elmo di Jack Ardente
+Hallows_Eve_Burning_Jack_Helm.description = Un Elmo di Jack annerito dal fuoco, con le braci ancora accese nelle crepe. Incassa i colpi meglio di quello normale, e il fuoco morde meno. Parte del Set Consacrato: indossalo con uno Scudo di Jack o uno Scudo di Jack Fiammeggiante nella mano secondaria.
+Hallows_Eve_Flaming_Jack_Shield.name = Scudo di Jack Fiammeggiante
+Hallows_Eve_Flaming_Jack_Shield.description = Uno Scudo di Jack annerito dal fuoco, con il volto intagliato che arde come un tizzone. Tenere la guardia costa meno resistenza che con quello normale. Parte del Set Consacrato: portalo nella mano secondaria mentre indossi un Elmo di Jack o un Elmo di Jack Ardente.
 Hallows_Eve_Jack_Lantern.name = Lanterna di Jack
 Hallows_Eve_Jack_Lantern.description = Una zucca intagliata con una candela dentro. Il Vecchio Jack ne vuole una su ogni soglia.
 Hallows_Eve_Hollow_Lantern.name = Lanterna Cava
 Hallows_Eve_Hollow_Lantern.description = Una lanterna pallida che il Vecchio Jack dà a chi porta a termine le sue commissioni. Ogni Vigilia di Ognissanti ha la sua.
 Hallows_Eve_Ecto_Lantern.name = Lanterna Ectoplasmica
-Hallows_Eve_Ecto_Lantern.description = Una zucca illuminata dall'ectoplasma. La luce verde resta salda con qualsiasi vento.
+Hallows_Eve_Ecto_Lantern.description = Una zucca illuminata dall'Ectoplasma. La luce verde resta salda con qualsiasi vento.
 Hallows_Eve_Costume_Wand.name = Bacchetta dei Costumi
 Hallows_Eve_Costume_Wand.description = Puntala su un amico. Un tasto lo trasforma in uno Scheletro Jack, l'altro in un'Anima Perduta, e può togliersi il costume quando vuole.
 Hallows_Eve_Cursed_Geode.name = Geode Maledetta

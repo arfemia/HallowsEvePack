@@ -1,0 +1,35 @@
+{
+  "$Comment": "The Flaming Jack Shield: the Jack Shield charred black, its carved face burning, sold at Old Jack's stall to players Exalted with the Lantern Watch (ShopEntries/HallowsEvePack/Hallows_Eve_Offer_Flaming_Jack_Shield.json). Parent is the game's shield template, as the Jack Shield's is, and it is a member of the Hallowed set, so it completes the set with either helm. Its stats ride Utility.StatModifiers, counted wherever it is equipped, main hand or utility slot: twice the Jack Shield's Health and twice its favor with the Lantern Watch (the stat Reputation_Hallows_Eve_Hallowed). It blocks for less stamina than the plain one: InteractionVars.Guard_Wield writes the game's guard with a higher StaminaCost Value (stamina spent is the damage blocked divided by Value; the template's 12 is the wooden tier, the iron shield writes 14 and the cobalt and thorium shields about 17), in the iron shield's own shape. That key replaces the template's Guard_Wield whole, so the guard's sounds come from the game's Weapon_Shield_Secondary_Guard_Wield, as the iron shield's do. Light is the glow it gives off in the hand or on the ground.",
+  "Parent": "Template_Weapon_Shield",
+  "TranslationProperties": {
+    "Name": "items.Hallows_Eve_Flaming_Jack_Shield.name",
+    "Description": "items.Hallows_Eve_Flaming_Jack_Shield.description"
+  },
+  "Model": "Items/Hallows_Eve/Jack_Shield/Jack_Shield.blockymodel",
+  "Texture": "Items/Hallows_Eve/Jack_Shield/Flaming_Jack_Shield_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Hallows_Eve_Flaming_Jack_Shield.png",
+  "Quality": "Epic",
+  "ItemLevel": 30,
+  "ItemSoundSetId": "ISS_Weapons_Shield_Wood",
+  "Light": {"Color": "#f62"},
+  "InteractionVars": {
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Shield_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 17,
+            "CostType": "Damage"
+          }
+        }
+      ]
+    }
+  },
+  "Utility": {
+    "Usable": true,
+    "StatModifiers": {
+      "Health": [{"Amount": 8, "CalculationType": "Additive"}],
+      "Reputation_Hallows_Eve_Hallowed": [{"Amount": 200, "CalculationType": "Additive", "Target": "Max"}]
+    }
+  }
+}

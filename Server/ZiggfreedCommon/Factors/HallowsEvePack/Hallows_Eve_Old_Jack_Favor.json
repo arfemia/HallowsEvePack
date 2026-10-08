@@ -1,10 +1,13 @@
 {
-  "$Comment": "Names the favor gates on Old Jack's stall and board for lock lines, so a player below one reads the rank and whose favor it is: 'Requires Trusted with Old Jack'. Each Keys entry spells a gate's Param (the reputation id, a slash, the rank id) and points at a full lang key: the lang file's name, a dot, then the key as written in hallowseve.progression.lang. Gate on another rank and add its entry here, or its lock reads the library's generic line.",
+  "$Comment": "Names the favor gates on Old Jack's stall and board for lock lines, so a player below one reads the rank and whose favor it is: 'Requires Trusted with Old Jack'. It covers both of the season's reputations, Old Jack's and the Lantern Watch's (id Hallows_Eve_Hallowed). Each Keys entry spells a gate's Param (the reputation id, a slash, the rank id) and points at a full lang key: the lang file's name, a dot, then the key as written in hallowseve.progression.lang. Gate on another rank and add its entry here, or its lock reads the library's generic line.",
   "Factor": "ziggfreedcommon:reputation_rank",
   "ParamNames": {
     "Keys": {
       "Hallows_Eve_Old_Jack/Friendly": "hallowseve.progression.factor.hallows_eve_old_jack.friendly",
-      "Hallows_Eve_Old_Jack/Honored": "hallowseve.progression.factor.hallows_eve_old_jack.honored"
+      "Hallows_Eve_Old_Jack/Honored": "hallowseve.progression.factor.hallows_eve_old_jack.honored",
+      "Hallows_Eve_Old_Jack/Exalted": "hallowseve.progression.factor.hallows_eve_old_jack.exalted",
+      "Hallows_Eve_Hallowed/Revered": "hallowseve.progression.factor.hallows_eve_hallowed.revered",
+      "Hallows_Eve_Hallowed/Exalted": "hallowseve.progression.factor.hallows_eve_hallowed.exalted"
     }
   }
 }

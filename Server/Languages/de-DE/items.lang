@@ -1,17 +1,21 @@
 # Allerheiligenabend-Paket - Gegenstandsnamen und -beschreibungen. Das Spiel stellt den Dateinamen voran, also lädt
 # jeder Schlüssel als items.<key>, der Schlüssel, den die TranslationProperties eines Gegenstands nennen (items.Hallows_Eve_Jack_Lantern.name).
 Hallows_Eve_Lantern_Bomb_Common.name = Laternenbombe
-Hallows_Eve_Lantern_Bomb_Common.description = Ein geschnitzter Kürbis, vollgestopft mit Schwarzpulver. Wirf ihn auf alles, was hinter dir her ist.
+Hallows_Eve_Lantern_Bomb_Common.description = Ein geschnitzter Kürbis, vollgestopft mit Knallpulver. Wirf ihn auf alles, was hinter dir her ist.
 Hallows_Eve_Lantern_Bomb_Uncommon.name = Brennende Laternenbombe
 Hallows_Eve_Lantern_Bomb_Uncommon.description = Feueressenz im Pulver, also brennt alles, was die Explosion erwischt, noch eine Weile weiter.
 Hallows_Eve_Lantern_Bomb_Rare.name = Spektrale Laternenbombe
 Hallows_Eve_Lantern_Bomb_Rare.description = Ektoplasma im Pulver. Die Explosion brennt, und die Kälte, die sie hinterlässt, verlangsamt alles, was hineingerät.
 Hallows_Eve_Lantern_Bomb_Epic.name = Splitternde Laternenbombe
-Hallows_Eve_Lantern_Bomb_Epic.description = Um eine verfluchte Geode gepackt. Sie brennt und kühlt wie die anderen und schleudert dann brennende Splitter in alle Richtungen.
+Hallows_Eve_Lantern_Bomb_Epic.description = Um eine Verfluchte Geode gepackt. Sie brennt und kühlt wie die anderen und schleudert dann brennende Splitter in alle Richtungen.
 Hallows_Eve_Jack_Helm.name = Jack-Helm
 Hallows_Eve_Jack_Helm.description = Eine Kürbisschale, so ausgehöhlt, dass ein Kopf hineinpasst, mit einer Kerze hinter dem Grinsen. Teil des Geweihten Sets: trag ihn mit dem Jack-Schild in der Nebenhand.
 Hallows_Eve_Jack_Shield.name = Jack-Schild
 Hallows_Eve_Jack_Shield.description = Ein Holzschild, auf dessen Front ein geschnitzter Kürbis sitzt, der nie aufhört zu leuchten. Teil des Geweihten Sets: führ ihn in der Nebenhand, während du den Jack-Helm trägst.
+Hallows_Eve_Burning_Jack_Helm.name = Brennender Jack-Helm
+Hallows_Eve_Burning_Jack_Helm.description = Ein schwarz verkohlter Jack-Helm, in dessen Rissen noch Glut glimmt. Er steckt Treffer besser weg als der einfache, und Feuer setzt dir weniger zu. Teil des Geweihten Sets: trag ihn mit einem Jack-Schild oder einem Flammenden Jack-Schild in der Nebenhand.
+Hallows_Eve_Flaming_Jack_Shield.name = Flammender Jack-Schild
+Hallows_Eve_Flaming_Jack_Shield.description = Ein schwarz verkohlter Jack-Schild, dessen geschnitztes Gesicht wie Kohle glüht. Blocken kostet mit ihm weniger Ausdauer als mit dem einfachen. Teil des Geweihten Sets: führ ihn in der Nebenhand, während du einen Jack-Helm oder einen Brennenden Jack-Helm trägst.
 Hallows_Eve_Jack_Lantern.name = Jack-Laterne
 Hallows_Eve_Jack_Lantern.description = Ein geschnitzter Kürbis mit einer Kerze darin. Der Alte Jack will vor jeder Haustür einen sehen.
 Hallows_Eve_Hollow_Lantern.name = Hohle Laterne

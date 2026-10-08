@@ -8,7 +8,7 @@ currency.hallows_eve_sweets.name = Dolcetti di Ognissanti
 
 # ---- La serie di missioni del Vecchio Jack ----
 quest.hallows_eve_old_jack_meet.title = Lanterne nel Tempio
-quest.hallows_eve_old_jack_meet.flavor = È tornata la stagione, quindi sono di nuovo nel Tempio Dimenticato con le mie lanterne. Ci arrivi da uno qualsiasi dei portali del tempio. Vieni a cercarmi. Una mano mi farebbe comodo.
+quest.hallows_eve_old_jack_meet.flavor = È tornata la stagione, quindi sono di nuovo nel Tempio Dimenticato con le mie lanterne. Ci arrivi da un Portale del Tempio Dimenticato qualsiasi. Vieni a cercarmi. Una mano mi farebbe comodo.
 quest.hallows_eve_old_jack_1.title = Campo di Zucche
 quest.hallows_eve_old_jack_1.flavor = Raccogli zucche questo mese e ogni tanto ne spunta una fredda e luminosa. Portamene qualcuna di quelle Consacrate.
 quest.hallows_eve_old_jack_2.title = Lanterne all'Opera
@@ -16,9 +16,9 @@ quest.hallows_eve_old_jack_2.flavor = Qualunque zucca piena di polvere nera fa u
 quest.hallows_eve_old_jack_3.title = Ghoul sui Gradini
 quest.hallows_eve_old_jack_3.flavor = Col buio i Ghoul Vuoti strisciano fuori dalle vecchie tombe, affamati. Rimettine qualcuno sottoterra prima che arrivino ai gradini del tempio.
 quest.hallows_eve_old_jack_4.title = Corsa all'Ectoplasma
-quest.hallows_eve_old_jack_4.flavor = Le Anime Perdute vagano finché qualcuno non le lascia andare. Liberane qualcuna e portami l'ectoplasma che si lasciano dietro; le mie lanterne se lo bevono.
+quest.hallows_eve_old_jack_4.flavor = Le Anime Perdute vagano finché qualcuno non le lascia andare. Liberane qualcuna e portami l'Ectoplasma che si lasciano dietro; le mie lanterne se lo bevono.
 quest.hallows_eve_old_jack_5.title = Pietra Maledetta
-quest.hallows_eve_old_jack_5.flavor = Scava a fondo questo mese e la pietra fa crescere geodi che ronzano. Spaccane qualcuna; c'è del buono dentro, sotto la maledizione.
+quest.hallows_eve_old_jack_5.flavor = Rompi la pietra questo mese, una pietra qualunque, e ogni tanto ne salta fuori una Geode Maledetta. Spaccane qualcuna; c'è del buono dentro, sotto la maledizione.
 quest.hallows_eve_old_jack_lantern.title = La Lanterna Cava
 quest.hallows_eve_old_jack_lantern.flavor = Ogni anno la Lanterna Cava si spegne, e qualcuno deve riaccenderla. Butta giù gli scheletri con la mia faccia, poi portami quello che serve alla lanterna.
 
@@ -28,7 +28,7 @@ quest.hallows_eve_jack_daily_souls.flavor = Ieri notte sono arrivate altre Anime
 quest.hallows_eve_jack_daily_pumpkins.title = Giro delle Zucche
 quest.hallows_eve_jack_daily_pumpkins.flavor = Le lanterne consumano le Zucche Consacrate più in fretta di quanto riesco a intagliarle. Portamene qualcun'altra prima che faccia buio.
 quest.hallows_eve_jack_daily_geodes.title = Pietra Ronzante
-quest.hallows_eve_jack_daily_geodes.flavor = La pietra profonda ronza di nuovo. Spacca un paio di Geodi Maledette prima che si spacchino da sole.
+quest.hallows_eve_jack_daily_geodes.flavor = Spaccami un paio di Geodi Maledette. Ormai ho le mani troppo rigide per farlo.
 
 # ---- Passi formulati per questo pacchetto ----
 objective.hallows_eve.meet_jack = Trova il Vecchio Jack nel Tempio Dimenticato
@@ -38,7 +38,7 @@ objective.hallows_eve.attend = Partecipa alla Vigilia di Ognissanti
 
 # ---- La bacheca del Vecchio Jack ----
 board.hallows_eve_daily.title = Bacheca del Vecchio Jack
-board.hallows_eve_daily.desc = Lavoro da fare col buio e lavoro da fare alla luce del giorno. Ai miei habitué tocca qualcosa in più.
+board.hallows_eve_daily.desc = Lavoro da fare col buio e lavoro da fare alla luce del giorno. Ai miei habitué tocca qualcosa in più. Ritira la paga prima che io levi le tende, o ti aspetta fino al prossimo autunno.
 quest.hallows_eve_board_souls.title = Retata di Anime
 quest.hallows_eve_board_souls.flavor = Stanotte le anime sono fitte attorno al tempio. Liberane un bel po' prima del mattino.
 quest.hallows_eve_board_ghouls.title = Falciata di Ghoul
@@ -48,7 +48,7 @@ quest.hallows_eve_board_bombs.flavor = Brucia una pila di Bombe Lanterna per me.
 quest.hallows_eve_board_geodes.title = Geodi Profonde
 quest.hallows_eve_board_geodes.flavor = La pietra profonda non smette di ronzare, e non mi fa dormire. Spacca abbastanza Geodi Maledette da zittirla.
 quest.hallows_eve_board_harvest_moon.title = Caccia della Luna del Raccolto
-quest.hallows_eve_board_harvest_moon.flavor = La Luna del Raccolto è sorta e gli Scheletri Jack sono fuori in gran numero. Buttane giù quanti più puoi prima che tramonti.
+quest.hallows_eve_board_harvest_moon.flavor = La Luna del Raccolto è sorta e gli Scheletri Jack sono fuori in gran numero. Buttane giù un bel po' prima che tramonti.
 
 # ---- La bancarella del Vecchio Jack ----
 shop.hallows_eve_old_jack.title = Bancarella del Vecchio Jack
@@ -57,7 +57,7 @@ shop.hallows_eve_old_jack.category.bombs = Bombe Lanterna
 shop.hallows_eve_old_jack.category.lights = Lanterne
 shop.hallows_eve_old_jack.category.gear = Equipaggiamento
 shop.hallows_eve_offer_harvest_moon_bundle.title = Pacchetto della Luna del Raccolto
-shop.hallows_eve_offer_harvest_moon_bundle.desc = Bombe Lanterna Epiche e Rare, in vendita solo finché la Luna del Raccolto è alta.
+shop.hallows_eve_offer_harvest_moon_bundle.desc = Bombe Lanterna Frantumanti e Spettrali, in vendita solo finché la Luna del Raccolto è alta.
 
 # ---- Obiettivi ----
 achievement.hallows_eve_lantern_keepsake.title = Lanterna Cava {0}
@@ -74,13 +74,13 @@ achievement.hallows_eve_geode_cracker.desc = Spacca {0} Geodi Maledette.
 achievement.hallows_eve_jacks_guest.title = Ospite di Jack {0}
 achievement.hallows_eve_jacks_guest.desc = Partecipa alla Vigilia di Ognissanti.
 achievement.hallows_eve_the_hallowed.title = Il Consacrato {0}
-achievement.hallows_eve_the_hallowed.desc = Ottieni tutti gli obiettivi della Vigilia di Ognissanti in una sola stagione.
+achievement.hallows_eve_the_hallowed.desc = Ottieni tutti gli obiettivi della Vigilia di Ognissanti di quest'anno.
 achievement.seasons_of_orbis.title = Stagioni di Orbis
 achievement.seasons_of_orbis.desc = Ottieni l'obiettivo che corona ogni stagione.
 
 # ---- Il titolo del Consacrato ----
 title.hallows_eve_hallowed.name = Il Consacrato
-title.hallows_eve_hallowed.flavor = Ottenuti tutti gli obiettivi della Vigilia di Ognissanti in una sola stagione.
+title.hallows_eve_hallowed.flavor = Ottenuti tutti gli obiettivi della Vigilia di Ognissanti in un solo anno.
 title.hallows_eve_hallowed.display = {0} il Consacrato
 
 # ---- La pagina dell'Almanacco ----
@@ -93,7 +93,7 @@ almanac.hallows_eve.geodes_cracked = Geodi Maledette spaccate
 
 # ---- La conversazione del Vecchio Jack ----
 dialogue.hallows_eve_old_jack.meet_arrival.text = Hai trovato il posto, allora. Bene.\nNon badare alla testa. È una zucca, e sta lì sopra da un bel pezzo. Sono il Vecchio Jack, e ogni autunno torno con le mie lanterne finché i morti sono in giro. C'è lavoro, se lo vuoi, a cominciare dalle <b>zucche</b>.
-dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = Mi hai mandato a chiamare?
+dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = Zucche?
 dialogue.hallows_eve_old_jack.first_words.text = Non badare alla testa. È una zucca, e sta lì sopra da un bel pezzo.\nSono il Vecchio Jack. Ogni autunno i morti si agitano, così torno al <color is="#ffd97a">Tempio Dimenticato</color> con le mie lanterne. Mi farebbe comodo un paio di mani che non siano intagliate.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Piacere di conoscerti, Jack.
 dialogue.hallows_eve_old_jack.board_fresh.text = C'è lavoro nuovo sulla mia bacheca, un po' da fare col buio e un po' alla luce del giorno. Paga.
@@ -103,21 +103,21 @@ dialogue.hallows_eve_old_jack.menu.text = Le lanterne sono accese e i ghoul vann
 dialogue.hallows_eve_old_jack.patch_offer.text = Raccogli zucche questo mese e ogni tanto ne spunta una fredda al tatto, che brilla un po'. <b>Zucche Consacrate</b>, le chiamo io.\nPortamene qualcuna. Ti faccio vedere a cosa servono.
 dialogue.hallows_eve_old_jack.patch_offer.opt.accept = Ti trovo qualche zucca.
 dialogue.hallows_eve_old_jack.patch_brief.text = Qualunque <b>zucca</b> raccogli questo mese potrebbe uscire Consacrata. Tieni quelle fredde che brillano e portale qui.
-dialogue.hallows_eve_old_jack.patch_ready.text = <b>Zucche Consacrate</b>. Fredde come uno scalino di cantina. Bene, queste sono per le lanterne.\nTi ho messo qualche Bomba Lanterna insieme alla paga. Zucche normali e polvere nera, niente di speciale. Va' a vedere come bruciano.
+dialogue.hallows_eve_old_jack.patch_ready.text = <b>Zucche Consacrate</b>. Fredde come uno scalino di cantina. Bene, queste sono per le lanterne.\nTi ho messo qualche Bomba Lanterna insieme alla paga. Zucche normali e Polvere Esplosiva, niente di speciale. Va' a vedere come bruciano.
 dialogue.hallows_eve_old_jack.patch_ready.opt.turnin = Ecco le zucche.
 dialogue.hallows_eve_old_jack.lantern_work_offer.text = Una <b>Bomba Lanterna</b> è una zucca piena di polvere nera e con la miccia corta. Accendila e lanciala. Poi fatti indietro.\nTirane qualcuna contro qualcosa che se l'è cercata, e torna a dirmi come sono andate.
 dialogue.hallows_eve_old_jack.lantern_work_offer.opt.accept = Ne tiro qualcuna.
 dialogue.hallows_eve_old_jack.ghouls_offer.text = I <b>Ghoul Vuoti</b> strisciano fuori dalle vecchie tombe col buio, ed escono affamati.\nRimettine qualcuno sottoterra prima che trovino i gradini del tempio.
 dialogue.hallows_eve_old_jack.ghouls_offer.opt.accept = Ci penso io ai ghoul.
-dialogue.hallows_eve_old_jack.souls_offer.text = Poverine, le <b>Anime Perdute</b>. Vagano finché qualcuno non le lascia andare.\nLiberane qualcuna e portami l'<b>ectoplasma</b> che si lasciano dietro. Le mie lanterne se lo bevono.
+dialogue.hallows_eve_old_jack.souls_offer.text = Poverine, le <b>Anime Perdute</b>. Vagano finché qualcuno non le lascia andare.\nLiberane qualcuna e portami l'<b>Ectoplasma</b> che si lasciano dietro. Le mie lanterne se lo bevono.
 dialogue.hallows_eve_old_jack.souls_offer.opt.accept = Le libero io.
-dialogue.hallows_eve_old_jack.geodes_offer.text = Scava a fondo questo mese e la pietra fa crescere <b>Geodi Maledette</b>. Le senti prima di vederle. Ronzano.\nSpaccane qualcuna. C'è del buono dentro, sotto la maledizione.
+dialogue.hallows_eve_old_jack.geodes_offer.text = Rompi la pietra questo mese, una pietra qualunque, e ogni tanto ne salta fuori una <b>Geode Maledetta</b>.\nSpaccane qualcuna. C'è del buono dentro, sotto la maledizione.
 dialogue.hallows_eve_old_jack.geodes_offer.opt.accept = Ne spacco qualcuna.
-dialogue.hallows_eve_old_jack.lantern_offer.text = Ogni anno la <b>Lanterna Cava</b> si spegne, e ogni anno qualcuno deve riaccenderla.\nAlcuni degli scheletri là fuori hanno la mia faccia. Butta giù qualche <b>Scheletro Jack</b>, poi portami una <b>Zucca Consacrata</b> e un po' di <b>ectoplasma</b> per riempirla.
+dialogue.hallows_eve_old_jack.lantern_offer.text = Ogni anno la <b>Lanterna Cava</b> si spegne, e ogni anno qualcuno deve riaccenderla.\nAlcuni degli scheletri là fuori hanno la mia faccia. Butta giù qualche <b>Scheletro Jack</b>, poi portami una <b>Zucca Consacrata</b> e un po' di <b>Ectoplasma</b> per riempirla.
 dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Accendiamola.
-dialogue.hallows_eve_old_jack.lantern_brief.text = Gli <b>Scheletri Jack</b> camminano di notte. Buttane giù qualcuno. Poi una <b>Zucca Consacrata</b> e l'<b>ectoplasma</b>, e la accendiamo insieme.
-dialogue.hallows_eve_old_jack.lantern_ready.text = Una <b>Zucca Consacrata</b>, e <b>ectoplasma</b> per riempirla fino all'orlo. E gli scheletri con la mia faccia stanno stesi nell'erba, dove devono stare.\nNon muoverti. Ecco. La Lanterna Cava è accesa, e te la puoi tenere. Torna l'anno prossimo e ne accendiamo un'altra.
-dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = Ecco la zucca, e l'ectoplasma.
+dialogue.hallows_eve_old_jack.lantern_brief.text = Gli <b>Scheletri Jack</b> camminano di notte. Buttane giù qualcuno. Poi una <b>Zucca Consacrata</b> e l'<b>Ectoplasma</b>, e la accendiamo insieme.
+dialogue.hallows_eve_old_jack.lantern_ready.text = Una <b>Zucca Consacrata</b>, e <b>Ectoplasma</b> per riempirla fino all'orlo. E gli scheletri con la mia faccia stanno stesi nell'erba, dove devono stare.\nNon muoverti. Ecco. La Lanterna Cava è accesa, e te la puoi tenere. Torna l'anno prossimo e ne accendiamo un'altra. Prendi anche lo scudo. Fa il paio con l'elmo.
+dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = Ecco la zucca, e l'Ectoplasma.
 dialogue.hallows_eve_old_jack.active_generic.text = Ancora in giro? Bene. La notte è lunga, e non va da nessuna parte.
 dialogue.hallows_eve_old_jack.ready_generic.text = Mi sembra fatto. Fammi vedere.
 dialogue.hallows_eve_old_jack.ready_generic.opt.turnin = Fatto.
@@ -125,12 +125,12 @@ dialogue.hallows_eve_old_jack.daily_souls_offer.text = Ieri notte sono arrivate 
 dialogue.hallows_eve_old_jack.daily_souls_offer.opt.accept = Mi occupo io delle anime.
 dialogue.hallows_eve_old_jack.daily_pumpkins_offer.text = Le lanterne consumano le <b>Zucche Consacrate</b> più in fretta di quanto riesco a intagliarle. Portamene qualcun'altra prima che faccia buio.
 dialogue.hallows_eve_old_jack.daily_pumpkins_offer.opt.accept = Ti porto le zucche.
-dialogue.hallows_eve_old_jack.daily_geodes_offer.text = La pietra profonda ronza di nuovo. Spacca un paio di <b>Geodi Maledette</b> prima che si spacchino da sole.
+dialogue.hallows_eve_old_jack.daily_geodes_offer.text = Spaccami un paio di <b>Geodi Maledette</b>. Ormai ho le mani troppo rigide per farlo.
 dialogue.hallows_eve_old_jack.daily_geodes_offer.opt.accept = Ne spacco un paio.
 dialogue.hallows_eve_old_jack.lantern_lit.text = La Lanterna Cava brucia ancora. Tiene lontano dai gradini il peggio del buio.\nChe ti serve?
 dialogue.hallows_eve_old_jack.who_are_you.text = Il Vecchio Jack. Una volta avevo una fattoria, lontano da qui. Poi un ottobre non sono tornato a casa, e da allora torno ogni ottobre.\nNon chiedermi della testa.
-dialogue.hallows_eve_old_jack.about_lantern.text = Una Lanterna Cava è una Zucca Consacrata, svuotata e riempita di ectoplasma. Accendine una e i morti stanno alla larga.\nEntro novembre si spengono. Per questo me ne serve una nuova ogni anno.
-dialogue.hallows_eve_old_jack.harvest_moon.text = Vedi quella luna? Luna del Raccolto. Qualche notte all'anno viene su grossa e arancione, e tutto quello che c'è nelle tombe viene su con lei.\nSe vuoi lavorare, stanotte è la notte giusta. Io resto sveglio finché non tramonta.
+dialogue.hallows_eve_old_jack.about_lantern.text = Una Lanterna Cava è una Zucca Consacrata, svuotata e riempita di Ectoplasma. Accendine una e i morti stanno alla larga.\nEntro novembre si spengono. Per questo me ne serve una nuova ogni anno.
+dialogue.hallows_eve_old_jack.harvest_moon.text = Vedi quella luna? Luna del Raccolto. Qualche notte all'anno, sotto di lei, i morti si agitano e le tombe si svuotano.\nSe vuoi lavorare, stanotte è la notte giusta. Io resto sveglio finché non tramonta.
 dialogue.hallows_eve_old_jack.opt.returned = Rieccomi.
 dialogue.hallows_eve_old_jack.opt.quests = Cosa c'è da fare?
 dialogue.hallows_eve_old_jack.opt.board = Cosa c'è sulla bacheca?
@@ -138,7 +138,7 @@ dialogue.hallows_eve_old_jack.opt.shop = Vediamo la tua bancarella.
 dialogue.hallows_eve_old_jack.opt.almanac = Fammi vedere l'Almanacco.
 dialogue.hallows_eve_old_jack.opt.who = Chi sei?
 dialogue.hallows_eve_old_jack.opt.lantern = Cos'è una Lanterna Cava?
-dialogue.hallows_eve_old_jack.opt.harvest = Perché la luna è così grande?
+dialogue.hallows_eve_old_jack.opt.harvest = Cos'è una Luna del Raccolto?
 dialogue.hallows_eve_old_jack.opt.back = Qualcos'altro.
 dialogue.hallows_eve_old_jack.opt.farewell = Buonanotte, Jack.
 
@@ -184,9 +184,12 @@ reputation.hallows_eve_old_jack.rank.revered = Confidente
 reputation.hallows_eve_old_jack.rank.exalted = Uno di Jack
 factor.hallows_eve_old_jack.friendly = il rango di Habitué presso il Vecchio Jack
 factor.hallows_eve_old_jack.honored = il rango di Fidato presso il Vecchio Jack
-reputation.hallows_eve_hallowed.name = I Consacrati
-reputation.hallows_eve_hallowed.flavor = I Consacrati tengono i morti al loro posto. Abbatti ciò che di notte risale dalle tombe e loro se ne accorgono.
-notify.hallows_eve_hallowed_cache = Una scorta dai Consacrati, per aver tenuto i morti sottoterra.
+factor.hallows_eve_old_jack.exalted = il rango di Uno di Jack presso il Vecchio Jack
+reputation.hallows_eve_hallowed.name = La Guardia delle Lanterne
+reputation.hallows_eve_hallowed.flavor = La Guardia delle Lanterne tiene i morti al loro posto. Abbatti ciò che di notte risale dalle tombe e la Guardia se ne accorge.
+factor.hallows_eve_hallowed.revered = il rango di Riverito presso la Guardia delle Lanterne
+factor.hallows_eve_hallowed.exalted = il rango di Osannato presso la Guardia delle Lanterne
+notify.hallows_eve_hallowed_cache = Una scorta dalla Guardia delle Lanterne, per aver tenuto i morti sottoterra.
 dialogue.hallows_eve_old_jack.board_fresh_friendly.text = Ancora tu. Bene.\nC'è lavoro nuovo sulla mia bacheca, e ci ho messo qualcosa in più per te.
 dialogue.hallows_eve_old_jack.board_fresh_honored.text = Eccoti. Cominciavo a farmi delle domande.\nOggi la bacheca è piena, e il lavoro preferisco darlo a te che a chiunque altro.
 dialogue.hallows_eve_old_jack.board_fresh_revered.text = Siediti un momento. I ghoul possono aspettare.\nNon sono in molti a tornare su questi gradini notte dopo notte. Sulla bacheca c'è lavoro ogni volta che lo vuoi.

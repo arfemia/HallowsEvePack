@@ -1,0 +1,18 @@
+{
+  "$Comment": "The Flaming Jack Shield, the charred and sturdier Jack Shield, for players Exalted with the Lantern Watch (Hallows_Eve_Hallowed), the longest climb the season has. The Requires block locks it until then; a locked offer still shows on the shelf, so a player can see what to work towards. Gear favor counts toward the rank, so the plain Jack Shield helps. The dearest thing on the stall, so sweets saved over the years have somewhere to go. Named by the item's own keys.",
+  "Parent": "Hallows_Eve_Offer_Base",
+  "Text": {
+    "TitleKey": "items.Hallows_Eve_Flaming_Jack_Shield.name",
+    "FlavorKey": "items.Hallows_Eve_Flaming_Jack_Shield.description"
+  },
+  "Listing": { "Category": "gear", "SortOrder": 35 },
+  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 800 } },
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Hallows_Eve_Hallowed/Exalted", "Min": 1 }
+    ]
+  },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Hallows_Eve_Flaming_Jack_Shield", "Count": 1 } }
+  ]
+}

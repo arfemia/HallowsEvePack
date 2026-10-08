@@ -1,0 +1,12 @@
+{
+  "$Comment": "The game's own Halloween Broomstick, a staff no recipe or drop hands out, so the stall is where players find one. Open to everyone and priced well above the basics, so a season's spare sweets have somewhere to go. The title is the item's own name key, written in full (server.items.<Id>.name) so the stall shows the name the item shows in the bag; the item has no description key, so the offer has no line under it.",
+  "Parent": "Hallows_Eve_Offer_Base",
+  "Text": {
+    "TitleKey": "server.items.Halloween_Broomstick.name"
+  },
+  "Listing": { "Category": "gear", "SortOrder": 25 },
+  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 400 } },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Halloween_Broomstick", "Count": 1 } }
+  ]
+}

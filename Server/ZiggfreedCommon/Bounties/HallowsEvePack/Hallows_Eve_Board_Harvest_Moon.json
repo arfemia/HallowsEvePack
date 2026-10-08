@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Harvest Moon contract. Its second condition keeps it out of the draw except on Harvest Moon nights, and its Weight of 4 makes it the likeliest posting on those nights. It writes its own Rewards.Auto, the base's list with MMO Skill Tree's Mmo_Xp row added (Defense XP for the fight), because a child's list replaces the base's whole. A server without that mod skips the row.",
+  "$Comment": "The Harvest Moon contract. Its second condition keeps it out of the draw except on Harvest Moon nights, and its Weight of 4 makes it the likeliest posting on those nights. It writes its own Rewards.Claim, the base's list with MMO Skill Tree's Mmo_Xp row added (Defense XP for the fight), because a child's list replaces the base's whole; the pay waits at the board until the player collects it. A server without that mod skips the row.",
   "Parent": "Hallows_Eve_Contract_Base",
   "Text": {
     "TitleKey": "quest.hallows_eve_board_harvest_moon.title",
@@ -17,7 +17,7 @@
     "knock_down_skeletons": { "Kind": "KILL_ENTITY", "Target": "Hallows_Eve_Jack_Skeleton", "MatchMode": "EXACT", "Amount": 12 }
   },
   "Rewards": {
-    "Auto": [
+    "Claim": [
       { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 50 } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 25 } },

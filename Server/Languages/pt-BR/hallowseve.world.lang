@@ -19,6 +19,6 @@ calendar.harvest_moon.herald.end = A Lua da Colheita se põe
 calendar.harvest_moon.herald.end.sub = As noites voltam a ficar quietas.
 
 # ---- Achados ----
-notify.hallows_eve_geode_found = Um geodo amaldiçoado, ali no entulho.
-notify.hallows_eve_pumpkin_found = Uma abóbora consagrada, brilhando na sua mochila.
+notify.hallows_eve_geode_found = Um Geodo Amaldiçoado, ali no entulho.
+notify.hallows_eve_pumpkin_found = Uma Abóbora Consagrada, brilhando na sua mochila.
 

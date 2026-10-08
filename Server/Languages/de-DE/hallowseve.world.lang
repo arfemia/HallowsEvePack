@@ -19,5 +19,5 @@ calendar.harvest_moon.herald.end = Der Erntemond geht unter
 calendar.harvest_moon.herald.end.sub = Die Nächte werden wieder still.
 
 # ---- Funde ----
-notify.hallows_eve_geode_found = Eine verfluchte Geode, dort im Geröll.
-notify.hallows_eve_pumpkin_found = Ein geweihter Kürbis, der in deinem Rucksack leuchtet.
+notify.hallows_eve_geode_found = Eine Verfluchte Geode, dort im Geröll.
+notify.hallows_eve_pumpkin_found = Ein Geweihter Kürbis, der in deinem Rucksack leuchtet.
