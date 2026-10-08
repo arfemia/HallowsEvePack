@@ -28,7 +28,7 @@ quest.hallows_eve_jack_daily_souls.title = Âmes agitées
 quest.hallows_eve_jack_daily_souls.flavor = D'autres Âmes Perdues ont flotté jusqu'ici la nuit dernière. Libères-en quelques-unes avant qu'elles s'installent pour de bon.
 quest.hallows_eve_jack_daily_pumpkins.title = Tournée des citrouilles
 quest.hallows_eve_jack_daily_pumpkins.flavor = Les lanternes brûlent les Citrouilles Sanctifiées plus vite que j'arrive à les sculpter. Rapporte-m'en encore quelques-unes avant la nuit.
-quest.hallows_eve_jack_daily_geodes.title = Pierre qui bourdonne
+quest.hallows_eve_jack_daily_geodes.title = Géodes pour Jack
 quest.hallows_eve_jack_daily_geodes.flavor = Casse-moi deux ou trois Géodes Maudites. J'ai les mains trop raides pour ça, ces temps-ci.
 
 # ---- Étapes formulées pour ce pack ----
@@ -50,7 +50,7 @@ quest.hallows_eve_board_ghouls.flavor = Ça s'agite dans les tombes cette nuit. 
 quest.hallows_eve_board_bombs.title = Barrage de lanternes
 quest.hallows_eve_board_bombs.flavor = Grille-moi une pile de Bombes-Lanternes. Peu m'importe sur quoi, tant que c'est pas le temple.
 quest.hallows_eve_board_geodes.title = Géodes profondes
-quest.hallows_eve_board_geodes.flavor = La pierre du fond arrête pas de bourdonner, et ça m'empêche de dormir. Casse assez de Géodes Maudites pour la faire taire.
+quest.hallows_eve_board_geodes.flavor = Les Géodes Maudites sortent de nouveau de la pierre, surtout du minerai. Casse-m'en quelques-unes, et gare à tes doigts.
 quest.hallows_eve_board_harvest_moon.title = Chasse sous la Lune des Moissons
 quest.hallows_eve_board_harvest_moon.flavor = La Lune des Moissons est levée et les Squelettes Jack sortent en nombre. Fais-en tomber un bon paquet avant qu'elle se couche.
 

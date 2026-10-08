@@ -27,7 +27,7 @@ quest.hallows_eve_jack_daily_souls.title = Anime Inquiete
 quest.hallows_eve_jack_daily_souls.flavor = Ieri notte sono arrivate altre Anime Perdute. Liberane qualcuna prima che mettano radici.
 quest.hallows_eve_jack_daily_pumpkins.title = Giro delle Zucche
 quest.hallows_eve_jack_daily_pumpkins.flavor = Le lanterne consumano le Zucche Consacrate più in fretta di quanto riesco a intagliarle. Portamene qualcun'altra prima che faccia buio.
-quest.hallows_eve_jack_daily_geodes.title = Pietra Ronzante
+quest.hallows_eve_jack_daily_geodes.title = Geodi per Jack
 quest.hallows_eve_jack_daily_geodes.flavor = Spaccami un paio di Geodi Maledette. Ormai ho le mani troppo rigide per farlo.
 
 # ---- Passi formulati per questo pacchetto ----
@@ -46,7 +46,7 @@ quest.hallows_eve_board_ghouls.flavor = Stanotte le tombe sono affollate. Rimand
 quest.hallows_eve_board_bombs.title = Raffica di Lanterne
 quest.hallows_eve_board_bombs.flavor = Brucia una pila di Bombe Lanterna per me. Contro cosa non m'importa granché, basta che non sia il tempio.
 quest.hallows_eve_board_geodes.title = Geodi Profonde
-quest.hallows_eve_board_geodes.flavor = La pietra profonda non smette di ronzare, e non mi fa dormire. Spacca abbastanza Geodi Maledette da zittirla.
+quest.hallows_eve_board_geodes.flavor = Le Geodi Maledette spuntano di nuovo nella pietra, soprattutto nel minerale. Spaccamene qualcuna, e occhio alle dita.
 quest.hallows_eve_board_harvest_moon.title = Caccia della Luna del Raccolto
 quest.hallows_eve_board_harvest_moon.flavor = La Luna del Raccolto è sorta e gli Scheletri Jack sono fuori in gran numero. Buttane giù un bel po' prima che tramonti.
 

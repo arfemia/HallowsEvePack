@@ -27,7 +27,7 @@ quest.hallows_eve_jack_daily_souls.title = Huzursuz Ruhlar
 quest.hallows_eve_jack_daily_souls.flavor = Dün gece daha çok Kayıp Ruh süzülüp geldi. Temelli yerleşmeden birkaçını serbest bırak.
 quest.hallows_eve_jack_daily_pumpkins.title = Bal Kabağı Turu
 quest.hallows_eve_jack_daily_pumpkins.flavor = Fenerler Kutsanmış Bal Kabaklarını benim oyabildiğimden hızlı yakıp bitiriyor. Hava kararmadan birkaç tane daha getir.
-quest.hallows_eve_jack_daily_geodes.title = Uğuldayan Taş
+quest.hallows_eve_jack_daily_geodes.title = Jack İçin Jeotlar
 quest.hallows_eve_jack_daily_geodes.flavor = Benim için birkaç Lanetli Jeot kır. Ellerim bu aralar o iş için fazla tutuk.
 
 # ---- Bu paket için yazılmış adımlar ----
@@ -46,7 +46,7 @@ quest.hallows_eve_board_ghouls.flavor = Mezarlar bu gece hareketli. Oyuk Gulyaba
 quest.hallows_eve_board_bombs.title = Fener Yaylım Ateşi
 quest.hallows_eve_board_bombs.flavor = Benim için bir yığın Fener Bombası tüket. Neye attığın pek umurumda değil, yeter ki tapınak olmasın.
 quest.hallows_eve_board_geodes.title = Derin Jeotlar
-quest.hallows_eve_board_geodes.flavor = Derindeki taş uğuldamayı kesmiyor, ben de bu yüzden uyuyamıyorum. Onu susturmaya yetecek kadar Lanetli Jeot kır.
+quest.hallows_eve_board_geodes.flavor = Lanetli Jeotlar yine taştan çıkıyor, en çok da cevherden. Benim için birkaçını kırıp aç, parmaklarına da dikkat et.
 quest.hallows_eve_board_harvest_moon.title = Hasat Ayı Avı
 quest.hallows_eve_board_harvest_moon.flavor = Hasat Ayı doğdu, Jack İskeletleri de sürü sürü ortalıkta. Ay batmadan epeycesini yere ser.
 

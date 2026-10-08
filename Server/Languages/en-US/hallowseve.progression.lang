@@ -28,7 +28,7 @@ quest.hallows_eve_jack_daily_souls.title = Restless Souls
 quest.hallows_eve_jack_daily_souls.flavor = More Lost Souls drifted in last night. Set some free before they settle in for good.
 quest.hallows_eve_jack_daily_pumpkins.title = Pumpkin Rounds
 quest.hallows_eve_jack_daily_pumpkins.flavor = The lanterns burn through Hallowed Pumpkins faster than I can carve them. Bring me a few more before dark.
-quest.hallows_eve_jack_daily_geodes.title = Humming Stone
+quest.hallows_eve_jack_daily_geodes.title = Geodes for Jack
 quest.hallows_eve_jack_daily_geodes.flavor = Crack a couple of Cursed Geodes for me. My hands are too stiff for it these days.
 
 # ---- Steps worded for this pack ----
@@ -50,7 +50,7 @@ quest.hallows_eve_board_ghouls.flavor = The graves are busy tonight. Put the Hol
 quest.hallows_eve_board_bombs.title = Lantern Barrage
 quest.hallows_eve_board_bombs.flavor = Burn through a stack of Lantern Bombs for me. I don't much care what at, as long as it isn't the temple.
 quest.hallows_eve_board_geodes.title = Deep Geodes
-quest.hallows_eve_board_geodes.flavor = The deep stone won't stop humming, and I can't sleep for it. Crack enough Cursed Geodes to quiet it down.
+quest.hallows_eve_board_geodes.flavor = Cursed Geodes are turning up in the stone again, the ore most of all. Crack some open for me, and mind your fingers.
 quest.hallows_eve_board_harvest_moon.title = Harvest Moon Hunt
 quest.hallows_eve_board_harvest_moon.flavor = The Harvest Moon is up and the Jack Skeletons are out in numbers. Knock a good few down before it sets.
 

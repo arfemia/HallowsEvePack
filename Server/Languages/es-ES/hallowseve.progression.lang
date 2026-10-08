@@ -27,7 +27,7 @@ quest.hallows_eve_jack_daily_souls.title = Almas Inquietas
 quest.hallows_eve_jack_daily_souls.flavor = Anoche llegaron más Almas Perdidas, a la deriva. Libera a unas cuantas antes de que se instalen para siempre.
 quest.hallows_eve_jack_daily_pumpkins.title = Ronda de Calabazas
 quest.hallows_eve_jack_daily_pumpkins.flavor = Los faroles queman Calabazas Consagradas más deprisa de lo que yo puedo tallarlas. Tráeme unas cuantas más antes de que oscurezca.
-quest.hallows_eve_jack_daily_geodes.title = Piedra que Zumba
+quest.hallows_eve_jack_daily_geodes.title = Geodas para Jack
 quest.hallows_eve_jack_daily_geodes.flavor = Rompe un par de Geodas Malditas por mí. Últimamente tengo las manos demasiado agarrotadas para eso.
 
 # ---- Pasos redactados para este paquete ----
@@ -46,7 +46,7 @@ quest.hallows_eve_board_ghouls.flavor = Las tumbas tienen mucho movimiento esta 
 quest.hallows_eve_board_bombs.title = Andanada de Faroles
 quest.hallows_eve_board_bombs.flavor = Gasta un montón de Bombas Farol por mí. No me importa mucho a qué, mientras no sea al templo.
 quest.hallows_eve_board_geodes.title = Geodas Profundas
-quest.hallows_eve_board_geodes.flavor = La piedra del fondo no para de zumbar, y no me deja dormir. Rompe suficientes Geodas Malditas para que se calle.
+quest.hallows_eve_board_geodes.flavor = Vuelven a aparecer Geodas Malditas en la piedra, sobre todo en el mineral. Abre unas cuantas por mí, y ojo con los dedos.
 quest.hallows_eve_board_harvest_moon.title = Caza de la Luna de la Cosecha
 quest.hallows_eve_board_harvest_moon.flavor = La Luna de la Cosecha está en lo alto y los Esqueletos Jack han salido en masa. Tumba a un buen puñado antes de que se ponga.
 

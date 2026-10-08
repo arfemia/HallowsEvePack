@@ -27,7 +27,7 @@ quest.hallows_eve_jack_daily_souls.title = Almas Inquietas
 quest.hallows_eve_jack_daily_souls.flavor = Mais Almas Perdidas chegaram vagando ontem à noite. Liberta algumas antes que elas se instalem de vez.
 quest.hallows_eve_jack_daily_pumpkins.title = Ronda das Abóboras
 quest.hallows_eve_jack_daily_pumpkins.flavor = As lanternas consomem Abóboras Consagradas mais rápido do que eu dou conta de entalhar. Me traz mais umas antes de escurecer.
-quest.hallows_eve_jack_daily_geodes.title = Pedra que Zumbe
+quest.hallows_eve_jack_daily_geodes.title = Geodos para Jack
 quest.hallows_eve_jack_daily_geodes.flavor = Quebra uns dois Geodos Amaldiçoados pra mim. Minhas mãos andam duras demais pra isso.
 
 # ---- Passos com palavras deste pacote ----
@@ -46,7 +46,7 @@ quest.hallows_eve_board_ghouls.flavor = As covas tão agitadas esta noite. Manda
 quest.hallows_eve_board_bombs.title = Saraivada de Lanternas
 quest.hallows_eve_board_bombs.flavor = Queima uma pilha de Bombas-Lanterna pra mim. Não ligo muito em quê, desde que não seja no templo.
 quest.hallows_eve_board_geodes.title = Geodos Profundos
-quest.hallows_eve_board_geodes.flavor = A pedra lá do fundo não para de zumbir, e eu não consigo dormir com isso. Quebra Geodos Amaldiçoados o bastante pra ela sossegar.
+quest.hallows_eve_board_geodes.flavor = Os Geodos Amaldiçoados tão aparecendo na pedra de novo, principalmente no minério. Quebra uns pra mim, e cuidado com os dedos.
 quest.hallows_eve_board_harvest_moon.title = Caçada da Lua da Colheita
 quest.hallows_eve_board_harvest_moon.flavor = A Lua da Colheita subiu e os Esqueletos de Jack tão saindo aos montes. Derruba um bom punhado antes que ela se ponha.
 

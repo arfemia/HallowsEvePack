@@ -27,7 +27,7 @@ quest.hallows_eve_jack_daily_souls.title = Неупокоенные души
 quest.hallows_eve_jack_daily_souls.flavor = Прошлой ночью ещё Заблудших душ прибилось. Освободи несколько, пока не обжились тут насовсем.
 quest.hallows_eve_jack_daily_pumpkins.title = Тыквенный обход
 quest.hallows_eve_jack_daily_pumpkins.flavor = Фонари сжигают Освящённые тыквы быстрей, чем я успеваю их вырезать. Принеси ещё несколько до темноты.
-quest.hallows_eve_jack_daily_geodes.title = Гудящий камень
+quest.hallows_eve_jack_daily_geodes.title = Жеоды для Джека
 quest.hallows_eve_jack_daily_geodes.flavor = Расколи для меня пару Проклятых жеод. Руки у меня нынче для этого не гнутся.
 
 # ---- Шаги, сформулированные для этого пака ----
@@ -46,7 +46,7 @@ quest.hallows_eve_board_ghouls.flavor = На могилах сегодня ож�
 quest.hallows_eve_board_bombs.title = Фонарный обстрел
 quest.hallows_eve_board_bombs.flavor = Изведи для меня кучу Фонарных бомб. Во что, мне без разницы, лишь бы не в храм.
 quest.hallows_eve_board_geodes.title = Глубинные жеоды
-quest.hallows_eve_board_geodes.flavor = Глубинный камень всё гудит, и мне от этого не спится. Расколи столько Проклятых жеод, чтобы он утих.
+quest.hallows_eve_board_geodes.flavor = Проклятые жеоды опять попадаются в камне, а больше всего в руде. Расколи мне несколько и пальцы береги.
 quest.hallows_eve_board_harvest_moon.title = Охота под Урожайной луной
 quest.hallows_eve_board_harvest_moon.flavor = Урожайная луна взошла, и Скелеты-Джеки повылезали толпами. Повали их побольше, пока она не зашла.
 

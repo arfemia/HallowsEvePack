@@ -27,7 +27,7 @@ quest.hallows_eve_jack_daily_souls.title = Nyugtalan Lelkek
 quest.hallows_eve_jack_daily_souls.flavor = Tegnap éjjel újabb Elveszett Lelkek sodródtak ide. Szabadíts fel néhányat, mielőtt végleg befészkelik magukat.
 quest.hallows_eve_jack_daily_pumpkins.title = Tökszedő Kör
 quest.hallows_eve_jack_daily_pumpkins.flavor = A lámpások gyorsabban égetik el a Megszentelt Tököket, mint ahogy ki tudom faragni őket. Hozz még párat sötétedés előtt.
-quest.hallows_eve_jack_daily_geodes.title = Zümmögő Kő
+quest.hallows_eve_jack_daily_geodes.title = Geodák Jacknek
 quest.hallows_eve_jack_daily_geodes.flavor = Törj fel nekem pár Átkozott Geodát. A kezem mostanában már túl merev hozzá.
 
 # ---- E csomag saját lépésszövegei ----
@@ -46,7 +46,7 @@ quest.hallows_eve_board_ghouls.flavor = Ma éjjel nagy a forgalom a síroknál. 
 quest.hallows_eve_board_bombs.title = Lámpászápor
 quest.hallows_eve_board_bombs.flavor = Égess el nekem egy rakás Lámpásbombát. Nem nagyon érdekel, mire, csak ne a templomra.
 quest.hallows_eve_board_geodes.title = Mélységi Geodák
-quest.hallows_eve_board_geodes.flavor = A mély kő nem hagyja abba a zümmögést, és aludni sem tudok tőle. Törj fel annyi Átkozott Geodát, hogy elcsendesedjen.
+quest.hallows_eve_board_geodes.flavor = Megint Átkozott Geodák bukkannak fel a kőben, leginkább az ércben. Törj fel nekem néhányat, és vigyázz az ujjaidra.
 quest.hallows_eve_board_harvest_moon.title = Aratási Hold-vadászat
 quest.hallows_eve_board_harvest_moon.flavor = Fent van az Aratási Hold, és a Jack-csontvázak tömegével járnak kint. Verj le belőlük jó párat, mielőtt lenyugszik.
 

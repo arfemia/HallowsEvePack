@@ -27,7 +27,7 @@ quest.hallows_eve_jack_daily_souls.title = Ruhelose Seelen
 quest.hallows_eve_jack_daily_souls.flavor = Letzte Nacht sind noch mehr Verlorene Seelen hergetrieben. Befrei ein paar, bevor sie sich für immer niederlassen.
 quest.hallows_eve_jack_daily_pumpkins.title = Kürbisrunde
 quest.hallows_eve_jack_daily_pumpkins.flavor = Die Laternen verbrennen Geweihte Kürbisse schneller, als ich sie schnitzen kann. Bring mir vor Einbruch der Dunkelheit noch ein paar.
-quest.hallows_eve_jack_daily_geodes.title = Summender Stein
+quest.hallows_eve_jack_daily_geodes.title = Geoden für Jack
 quest.hallows_eve_jack_daily_geodes.flavor = Knack ein paar Verfluchte Geoden für mich auf. Meine Hände sind dafür inzwischen zu steif.
 
 # ---- Schritte, für dieses Paket formuliert ----
@@ -46,7 +46,7 @@ quest.hallows_eve_board_ghouls.flavor = Bei den Gräbern ist heute Nacht viel lo
 quest.hallows_eve_board_bombs.title = Laternenhagel
 quest.hallows_eve_board_bombs.flavor = Verballer einen Stapel Laternenbomben für mich. Worauf, ist mir ziemlich egal, solange es nicht der Tempel ist.
 quest.hallows_eve_board_geodes.title = Tiefe Geoden
-quest.hallows_eve_board_geodes.flavor = Der tiefe Stein hört nicht auf zu summen, und ich kann davon nicht schlafen. Knack genug Verfluchte Geoden auf, damit er still wird.
+quest.hallows_eve_board_geodes.flavor = Verfluchte Geoden tauchen wieder im Stein auf, vor allem im Erz. Knack welche für mich auf, und Vorsicht mit den Fingern.
 quest.hallows_eve_board_harvest_moon.title = Erntemond-Jagd
 quest.hallows_eve_board_harvest_moon.flavor = Der Erntemond ist aufgegangen, und die Jack-Skelette sind in Scharen unterwegs. Hau 'ne ordentliche Menge um, bevor er untergeht.
 
