@@ -1,0 +1,37 @@
+{
+  "$Comment": [
+    "Hytale's Anniversary, one day a year for the day Hytale came out. The file name is the event id.",
+    "Start and End are the same day, so the event runs from the first moment of January 13th to the",
+    "last, counted in UTC because no Clock is written, every year from FirstYear on. FirstYear is the",
+    "first anniversary.",
+    "",
+    "Being on the server that day earns that year's copy of the Hytale_Anniversary achievement, which",
+    "pays the title Hytale_Anniversary_Ever_Present, and the Almanac marks the player as having taken",
+    "part. Nothing else hangs on it: no currency, keepsake or quest, and no file names it in a Season",
+    "leaf. Content of your own meant for the day alone can write Season: Hytale_Anniversary; a roll or",
+    "a lock reads ziggfreedcommon:calendar_live with Param Hytale_Anniversary.",
+    "",
+    "Presentation names the day wherever events are listed, with the game's Old Map as its picture.",
+    "Herald.Start is the banner: it shows once to each player, the first time they are on the server",
+    "that day. There is no End banner, so the day closes quietly at midnight.",
+    "",
+    "A server owner switches the day off, moves it, or gives it a Clock so it starts at their own",
+    "midnight, in mods/ziggfreedcommon/calendar.json without touching this file. Switched off, the day",
+    "earns no copy, and every copy a player already earned stays theirs.",
+    "/zigcalendar status Hytale_Anniversary shows what the server reads."
+  ],
+  "Window": { "Start": "01-13", "End": "01-13" },
+  "FirstYear": 2027,
+  "Presentation": {
+    "TitleKey": "calendar.hytale_anniversary.name",
+    "FlavorKey": "calendar.hytale_anniversary.flavor",
+    "Icon": "Deco_Map"
+  },
+  "Herald": {
+    "Start": {
+      "TitleKey": "calendar.hytale_anniversary.herald.start",
+      "SubtitleKey": "calendar.hytale_anniversary.herald.start.sub",
+      "Major": true
+    }
+  }
+}

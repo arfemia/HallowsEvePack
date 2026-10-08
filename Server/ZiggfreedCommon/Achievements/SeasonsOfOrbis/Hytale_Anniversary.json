@@ -1,0 +1,49 @@
+{
+  "$Comment": [
+    "Hytale's anniversary achievement: be on the server on January 13th.",
+    "",
+    "Occurrence ties it to the Hytale_Anniversary calendar event, so the library keeps one copy a year,",
+    "named hytale_anniversary_<year>. A copy counts only on its own year's day and afterwards stays a",
+    "feat for whoever earned it. CALENDAR_ATTENDED fires once per player for each year's run, the first",
+    "time they are in the world that day, so being here is all it takes. The criterion's TextKey words",
+    "the step, since the shared sentence names the event by its raw id.",
+    "",
+    "Text needs no keys: the title and description every copy shares come from the id, as",
+    "achievement.hytale_anniversary.title and .desc, and TextArgs puts the copy's year in the title. A",
+    "year whose own line ships, achievement.hytale_anniversary_<year>.title, is named by that line",
+    "instead: Hytale's First Anniversary for the first.",
+    "",
+    "Listing files it under Seasons, in the Hytale_Anniversary subcategory, which is where the",
+    "anniversary's Almanac page finds it. It carries no season_keepsake tag and its page names no",
+    "Keepsake, so the Seasons of Orbis ladder never counts it.",
+    "",
+    "Every year's copy pays its points and the title Hytale_Anniversary_Ever_Present through the Title",
+    "reward kind, and nothing else. The title is the same every year, so a player who earns a later",
+    "year's copy already holds it and keeps it; the grant changes nothing."
+  ],
+  "Occurrence": { "Event": "Hytale_Anniversary" },
+  "Text": {
+    "TextArgs": { "Title": [ "@year" ] }
+  },
+  "Listing": {
+    "Category": "Seasons",
+    "Subcategory": "Hytale_Anniversary",
+    "SortOrder": 10,
+    "Icon": "Deco_Map"
+  },
+  "Scoring": { "Points": 5 },
+  "Criteria": {
+    "attend-hytale-anniversary": {
+      "Kind": "CALENDAR_ATTENDED",
+      "Target": "Hytale_Anniversary",
+      "MatchMode": "EXACT",
+      "Amount": 1,
+      "TextKey": "objective.hytale_anniversary.attend"
+    }
+  },
+  "Rewards": {
+    "Auto": [
+      { "Kind": "Title", "Params": { "Title": "Hytale_Anniversary_Ever_Present" } }
+    ]
+  }
+}
