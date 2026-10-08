@@ -1,5 +1,5 @@
 {
-  "$Comment": "Martha the Cook's look, every piece of it the game's own: an Outlander's body and face in a farmer's shirt and vest, plain brown trousers, brown boots and a straw hat. Parent Outlander brings the body, its animations and its hitbox. DefaultAttachments replaces the parent's list whole, so the Outlander's ears, eyes and mouth come first again. A greyscale texture takes its colour from GradientSet and GradientId, the dyes the character creator offers players: change a GradientId to re-dye one piece.",
+  "$Comment": "Martha the Cook's look, every piece of it the game's own: an Outlander's body and face in the character creator's apron dress over a farmer's shirt, plain brown trousers, brown boots and a straw hat. Parent Outlander brings the body, its animations and its hitbox. DefaultAttachments replaces the parent's list whole, so the Outlander's ears, eyes and mouth come first again. The apron dress is the creator's OnePiece_ApronDress overtop: the OnePiece model with its ApronDress texture, dyed from Pastel_Cotton, the set the creator offers it in. A greyscale texture takes its colour from GradientSet and GradientId, the dyes the character creator offers players: change a GradientId to re-dye one piece.",
   "Parent": "Outlander",
   "DefaultAttachments": [
     {
@@ -21,10 +21,10 @@
       "GradientId": "Red"
     },
     {
-      "Model": "Cosmetics/Overtops/Overtops_Long_Waist_NoSleeve.blockymodel",
-      "Texture": "Cosmetics/Overtops/Overtops_Long_Sleeve_Waist_Sleeve/Farmer_Vest_Greyscale.png",
-      "GradientSet": "Fantasy_Cotton_Dark",
-      "GradientId": "Brown"
+      "Model": "Cosmetics/Overtops/OnePiece.blockymodel",
+      "Texture": "Cosmetics/Overtops/OnePiece_Textures/ApronDress_Greyscale.png",
+      "GradientSet": "Pastel_Cotton",
+      "GradientId": "Orange"
     },
     {
       "Model": "Cosmetics/Pants/Pants_Straight.blockymodel",
