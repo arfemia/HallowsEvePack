@@ -1,6 +1,6 @@
 {
   "$Comment": [
-    "The Lantern Watch: the name, picture and payouts of the game's reputation group of the same id",
+    "The Hallowed: the name, picture and payouts of the game's reputation group of the same id",
     "(NPC/Reputation/Groups/Hallows_Eve_Hallowed.json), a reputation with no characters in it. Players",
     "read the name from reputation.hallows_eve_hallowed.name; never rename the id, since every",
     "player's favor is filed under it.",

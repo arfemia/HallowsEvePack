@@ -1,9 +1,9 @@
 {
   "$Comment": [
     "What the trick-or-treat line hands over. The roll always pays a few sweets, and its Cue",
-    "Hallows_Eve_Treat plays the toast and sound of the moment file of that name, so a knock",
-    "always shows, even though sweets land in a wallet and not in the bag. Then the pool draws once:",
-    "more sweets, a vanilla food, or a trick. Weight sets how often each comes up against the rest.",
+    "Hallows_Eve_Treat plays the sound of the moment file of that name, and the library's toast",
+    "lists what the knock paid, even though sweets land in a wallet and not in the bag. Then the",
+    "pool draws once: more sweets, a vanilla food, or a trick. Weight sets how often each comes up against the rest.",
     "",
     "Sweets pay through the Currency reward kind. The tricks put a costume on the player through",
     "the Costume reward kind; the player takes it off with /zigcostume off. A player already in a",

@@ -1,5 +1,5 @@
 {
-  "$Comment": "The creatures Hallow's Eve brings out at night. The Lantern Watch reputation's (Hallows_Eve_Hallowed) Kills table (ZiggfreedCommon/Reputations/HallowsEvePack/Hallows_Eve_Hallowed.json) pays favor for each one put down. No reputation group names this group, so it changes nothing about how they treat a player. Add a role id here and its kills count too.",
+  "$Comment": "The creatures Hallow's Eve brings out at night. The Hallowed reputation's (Hallows_Eve_Hallowed) Kills table (ZiggfreedCommon/Reputations/HallowsEvePack/Hallows_Eve_Hallowed.json) pays favor for each one put down. No reputation group names this group, so it changes nothing about how they treat a player. Add a role id here and its kills count too.",
   "IncludeRoles": [
     "Hallows_Eve_Hollow_Ghoul",
     "Hallows_Eve_Jack_Skeleton",

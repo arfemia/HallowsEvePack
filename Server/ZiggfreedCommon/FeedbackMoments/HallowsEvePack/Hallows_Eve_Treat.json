@@ -1,17 +1,11 @@
 {
   "$Comment": [
-    "The notice a player gets each time the trick-or-treat line pays out: a toast and a small",
-    "pickup sound, to that player alone. The loot table Hallows_Eve_Trick_Or_Treat names this",
-    "moment with its Cue, and a cue fires only when the sweets beside it were actually paid.",
-    "Reword the toast with the key notify.hallows_eve_treat; add a Broadcast group to tell the",
-    "whole server, or delete the Sound group for a silent toast."
+    "The sound a player hears each time the trick-or-treat line pays out, to that player alone. The",
+    "loot table Hallows_Eve_Trick_Or_Treat names this moment with its Cue, and a cue fires only when",
+    "the sweets beside it were actually paid. The library already shows a toast listing what the",
+    "line paid, so this moment adds no toast of its own; add a Toast group for a fixed line beside",
+    "it, or a Broadcast group to tell the whole server."
   ],
-  "Toast": {
-    "Title": {
-      "Key": "notify.hallows_eve_treat"
-    },
-    "Tone": "Reward"
-  },
   "Sound": {
     "Id": "SFX_Player_Pickup_Item"
   }

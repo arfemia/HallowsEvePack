@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Lantern Watch (players read that name; the id stays Hallows_Eve_Hallowed): a reputation with nobody standing behind it. NPCGroups is an empty list, so no character's attitude ever follows it. Keep the key even while it is empty: a reputation group with no NPCGroups key at all breaks every NPC that spawns. ZiggfreedCommon/Reputations/HallowsEvePack/Hallows_Eve_Hallowed.json names it and sets its kill table and the cache it pays past its top rank.",
+  "$Comment": "The Hallowed (Hallows_Eve_Hallowed): a reputation with nobody standing behind it. NPCGroups is an empty list, so no character's attitude ever follows it. Keep the key even while it is empty: a reputation group with no NPCGroups key at all breaks every NPC that spawns. ZiggfreedCommon/Reputations/HallowsEvePack/Hallows_Eve_Hallowed.json names it and sets its kill table and the cache it pays past its top rank.",
   "NPCGroups": [],
   "InitialReputationValue": 0
 }

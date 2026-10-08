@@ -9,7 +9,7 @@
     "like every contract's: the pay waits at the board until the player collects it. The board leaves",
     "with the event, so a job finished in its last hours waits there until the board is back next",
     "year, which is why the board's own description asks players to collect before Old Jack packs up.",
-    "The list is the board's pay table, and favor with Old Jack and the Lantern Watch (the Reputation",
+    "The list is the board's pay table, and favor with Old Jack and the Hallowed (the Reputation",
     "rewards; Amount is how much). A child that writes its own Rewards.Claim replaces that list whole.",
     "Every shipped contract does, to add MMO Skill Tree's Mmo_Xp row for the skill its work trains, so",
     "retuning this list means retuning theirs too. Each bucket inherits on its own, so a list left in",

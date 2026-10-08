@@ -2,7 +2,7 @@
   "Group": "Ziggfreed",
   "Name": "SeasonsOfOrbis",
   "Version": "1.0.0",
-  "Description": "Seasons of Orbis, yearly events for any server running Ziggfreed's CommonLib and RPG Stations. The first is Hallow's Eve: each October, Old Jack comes to the Forgotten Temple with a questline, dailies and a board with work for the dark and the daylight, paid in Hallow Sweets and in favor with him and the Lantern Watch, and the dead walk at night. Throw Lantern Bombs, and trick-or-treat at every character with a conversation. RPG Stations runs the Carving Bench; MMO Skill Tree is optional and adds skill XP and set bonuses.",
+  "Description": "Seasons of Orbis, yearly events for any server running Ziggfreed's CommonLib and RPG Stations. The first is Hallow's Eve: each October, Old Jack comes to the Forgotten Temple with a questline, dailies and a board with work for the dark and the daylight, paid in Hallow Sweets and in favor with him and the Hallowed, and the dead walk at night. Throw Lantern Bombs, and trick-or-treat at every character with a conversation. RPG Stations runs the Carving Bench; MMO Skill Tree is optional and adds skill XP and set bonuses.",
   "Authors": [
     {
       "Name": "ZiggFreed"

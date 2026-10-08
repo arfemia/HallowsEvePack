@@ -3,4 +3,4 @@
 # stat this pack ships, itemTooltip.stats.<StatId>. {value} is the client's own placeholder, filled
 # with the item's amount. These keys only add; none replaces a key the client ships.
 itemTooltip.stats.Reputation_Hallows_Eve_Old_Jack = Old Jack's Favor: {value}
-itemTooltip.stats.Reputation_Hallows_Eve_Hallowed = Lantern Watch Favor: {value}
+itemTooltip.stats.Reputation_Hallows_Eve_Hallowed = Hallowed Favor: {value}

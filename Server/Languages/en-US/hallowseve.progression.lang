@@ -1,6 +1,6 @@
 # Hallow's Eve progression: Old Jack's questline, dailies, board and stall, his conversation and
 # the trick-or-treat line, the season's achievements and titles, its two reputations (Old Jack's
-# Favor and the Lantern Watch, whose id stays Hallows_Eve_Hallowed) and its Almanac page.
+# Favor and the Hallowed, id Hallows_Eve_Hallowed) and its Almanac page.
 # Keys are written bare: the library finds each one by its tail, whatever this file is called.
 # Numbers ride {0} and come from the content files, so a retune never touches a translation.
 
@@ -94,7 +94,7 @@ title.hallows_eve_jacks_confidant.name = Jack's Confidant
 title.hallows_eve_jacks_confidant.flavor = Became Old Jack's Confidant.
 title.hallows_eve_jacks_confidant.display = {0}, Jack's Confidant
 
-# ---- Reputations: Old Jack's Favor and the Lantern Watch (id Hallows_Eve_Hallowed) ----
+# ---- Reputations: Old Jack's Favor and the Hallowed (id Hallows_Eve_Hallowed) ----
 reputation.hallows_eve_old_jack.name = Old Jack's Favor
 reputation.hallows_eve_old_jack.flavor = Old Jack takes a while to warm up to people. Do his errands and stop for a word now and then.
 reputation.hallows_eve_old_jack.rank.neutral = Stranger
@@ -105,11 +105,11 @@ reputation.hallows_eve_old_jack.rank.exalted = Jack's Own
 factor.hallows_eve_old_jack.friendly = Regular with Old Jack
 factor.hallows_eve_old_jack.honored = Trusted with Old Jack
 factor.hallows_eve_old_jack.exalted = Jack's Own with Old Jack
-reputation.hallows_eve_hallowed.name = The Lantern Watch
-reputation.hallows_eve_hallowed.flavor = The Lantern Watch keeps the dead where they belong. Put down what climbs out of the graves at night and the Watch takes notice.
-factor.hallows_eve_hallowed.revered = Revered with the Lantern Watch
-factor.hallows_eve_hallowed.exalted = Exalted with the Lantern Watch
-notify.hallows_eve_hallowed_cache = A cache from the Lantern Watch, for keeping the dead down.
+reputation.hallows_eve_hallowed.name = The Hallowed
+reputation.hallows_eve_hallowed.flavor = The Hallowed keep the dead where they belong. Put down what climbs out of the graves at night and they take notice.
+factor.hallows_eve_hallowed.revered = Revered with the Hallowed
+factor.hallows_eve_hallowed.exalted = Exalted with the Hallowed
+notify.hallows_eve_hallowed_cache = A cache from the Hallowed, for keeping the dead down.
 
 # ---- The Almanac page ----
 almanac.hallows_eve.title = Hallow's Eve
@@ -120,23 +120,15 @@ almanac.hallows_eve.souls_freed = Lost Souls freed
 almanac.hallows_eve.geodes_cracked = Cursed Geodes cracked
 
 # ---- Old Jack's conversation ----
-dialogue.hallows_eve_old_jack.meet_arrival.text = You found the place, then. Good.\nDon't mind the head. It's a pumpkin, and it's been on there a long while. I'm Old Jack, and every autumn I come back with my lanterns while the dead are up. There's work if you want it, starting with <b>pumpkins</b>.
-dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = Pumpkins?
-dialogue.hallows_eve_old_jack.meet_offer.text = Before I forget. Everybody who finds me gets a welcome, and you haven't had yours.
-dialogue.hallows_eve_old_jack.meet_offer.opt.accept = Thanks, Jack.
 dialogue.hallows_eve_old_jack.first_words.text = Don't mind the head. It's a pumpkin, and it's been on there a long while.\nI'm Old Jack. Every autumn the dead get restless, so I come back to the <color is="#ffd97a">Forgotten Temple</color> with my lanterns. I could use a pair of hands that aren't carved.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Pleased to meet you, Jack.
+dialogue.hallows_eve_old_jack.meet.text = You found the place, then. Good.\nI'm Old Jack. Everybody who finds me gets a <b>welcome</b>, and you haven't had yours yet.
+dialogue.hallows_eve_old_jack.meet.opt.accept = Thanks, Jack.
 dialogue.hallows_eve_old_jack.board_fresh.text = There's fresh work on my board, some for the dark and some for the daylight. It pays.
-dialogue.hallows_eve_old_jack.board_fresh.opt.board = Show me the board.
-dialogue.hallows_eve_old_jack.board_fresh.opt.later = Later, Jack.
-dialogue.hallows_eve_old_jack.board_fresh_friendly.text = You again. Good.\nThere's fresh work on my board, and I've put a little extra up for you.
-dialogue.hallows_eve_old_jack.board_fresh_honored.text = There you are. I was starting to wonder.\nThe board's full today, and I'd sooner the work went to you than anybody.
-dialogue.hallows_eve_old_jack.board_fresh_revered.text = Sit a minute. The ghouls can wait.\nNot many come back to these steps night after night. The board's got work whenever you want it.
 dialogue.hallows_eve_old_jack.menu.text = The lanterns are lit and the ghouls are out walking. What do you need?
 dialogue.hallows_eve_old_jack.patch_offer.text = Pick a pumpkin this month and every so often one comes up cold to the touch, glowing a little. <b>Hallowed Pumpkins</b>, I call those.\nBring me a few. I'll show you what they're good for.
 dialogue.hallows_eve_old_jack.patch_offer.opt.accept = I'll find you some pumpkins.
-dialogue.hallows_eve_old_jack.patch_brief.text = Any <b>pumpkin</b> you pick might come up Hallowed this month. Keep the cold ones that glow and bring them here.
-dialogue.hallows_eve_old_jack.patch_ready.text = <b>Hallowed Pumpkins</b>. Cold as a cellar step. Good, these are for the lanterns.\nI've put a few Lantern Bombs in with your pay. Plain pumpkins and Boom Powder, nothing fancy. Go and see how they burn.
+dialogue.hallows_eve_old_jack.patch_ready.text = <b>Hallowed Pumpkins</b>. Cold as a cellar step.\nI've put a few Lantern Bombs in with your pay. Go and see how they burn.
 dialogue.hallows_eve_old_jack.patch_ready.opt.turnin = Here are the pumpkins.
 dialogue.hallows_eve_old_jack.lantern_work_offer.text = A <b>Lantern Bomb</b> is a pumpkin packed with powder and a short fuse. Light it and throw it. Then stand back.\nThrow a few at something that has it coming, and come and tell me how they went.
 dialogue.hallows_eve_old_jack.lantern_work_offer.opt.accept = I'll throw a few.
@@ -146,39 +138,32 @@ dialogue.hallows_eve_old_jack.souls_offer.text = Poor things, the <b>Lost Souls<
 dialogue.hallows_eve_old_jack.souls_offer.opt.accept = I'll set them free.
 dialogue.hallows_eve_old_jack.geodes_offer.text = Break stone this month, any stone, and now and then a <b>Cursed Geode</b> falls out of it.\nCrack a few open. There's good in them, under the curse.
 dialogue.hallows_eve_old_jack.geodes_offer.opt.accept = I'll crack some open.
+dialogue.hallows_eve_old_jack.daily_offer.text = I've a few small jobs that come round every day. Take what you like.
+dialogue.hallows_eve_old_jack.daily_offer.opt.souls = I'll see to the souls.
+dialogue.hallows_eve_old_jack.daily_offer.opt.pumpkins = I'll bring pumpkins.
+dialogue.hallows_eve_old_jack.daily_offer.opt.geodes = I'll crack some geodes.
 dialogue.hallows_eve_old_jack.lantern_offer.text = Every year the <b>Hollow Lantern</b> goes out, and every year somebody has to light it again.\nSome of the skeletons out there wear my face. Knock a few <b>Jack Skeletons</b> down, then bring me a <b>Hallowed Pumpkin</b> and some <b>Ectoplasm</b> to fill it.
 dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Let's light it.
-dialogue.hallows_eve_old_jack.lantern_brief.text = <b>Jack Skeletons</b> walk at night. Knock a few down. Then a <b>Hallowed Pumpkin</b> and the <b>Ectoplasm</b>, and we light it together.
-dialogue.hallows_eve_old_jack.lantern_ready.text = A <b>Hallowed Pumpkin</b>, and <b>Ectoplasm</b> to fill it to the brim. And the skeletons with my face are lying in the grass where they belong.\nHold still. There. The Hollow Lantern's lit, and it's yours to keep. Come back next year and we'll light another. Take the shield as well. It goes with the helm.
+dialogue.hallows_eve_old_jack.lantern_ready.text = A <b>Hallowed Pumpkin</b>, and <b>Ectoplasm</b> to fill it. The skeletons with my face are down in the grass where they belong.\nThere. The Hollow Lantern's lit, and it's yours to keep. Take the shield too, it goes with the helm. Come back next year and we'll light another.
 dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = Here's the pumpkin, and the Ectoplasm.
-dialogue.hallows_eve_old_jack.active_generic.text = Still out there? Good. The night's long, and it isn't going anywhere.
+dialogue.hallows_eve_old_jack.active_generic.text = Off you go, then. I'll be here when it's done.
 dialogue.hallows_eve_old_jack.ready_generic.text = That looks done to me. Let's see it.
 dialogue.hallows_eve_old_jack.ready_generic.opt.turnin = It's done.
-dialogue.hallows_eve_old_jack.daily_souls_offer.text = More <b>Lost Souls</b> drifted in last night. Set some free before they settle in for good.
-dialogue.hallows_eve_old_jack.daily_souls_offer.opt.accept = I'll see to the souls.
-dialogue.hallows_eve_old_jack.daily_pumpkins_offer.text = The lanterns burn through <b>Hallowed Pumpkins</b> faster than I can carve them. Bring me a few more before dark.
-dialogue.hallows_eve_old_jack.daily_pumpkins_offer.opt.accept = I'll bring pumpkins.
-dialogue.hallows_eve_old_jack.daily_geodes_offer.text = Crack a couple of <b>Cursed Geodes</b> for me. My hands are too stiff for it these days.
-dialogue.hallows_eve_old_jack.daily_geodes_offer.opt.accept = I'll crack a couple.
 dialogue.hallows_eve_old_jack.lantern_lit.text = The Hollow Lantern's still burning. Keeps the worst of the dark off the steps.\nWhat do you need?
-dialogue.hallows_eve_old_jack.who_are_you.text = Old Jack. I kept a farm once, a long way from here. Then one October I didn't go home, and I've come back every October since.\nDon't ask me about the head.
-dialogue.hallows_eve_old_jack.about_lantern.text = A Hollow Lantern's a Hallowed Pumpkin, carved out and filled with Ectoplasm. Light one and the dead keep their distance.\nThey burn out by November. That's why I need a new one every year.
+dialogue.hallows_eve_old_jack.who_are_you.text = Old Jack. I kept a farm once, a long way from here. Then one October I didn't go home, and I've come back every October since.\nEvery year I light a Hollow Lantern to keep the dead off these steps. They burn out by November. Don't ask me about the head.
 dialogue.hallows_eve_old_jack.harvest_moon.text = See that moon? Harvest Moon. A few nights a year the dead get restless under it, and the graves empty out.\nIf you want work, tonight's the night. I'll be up till it sets.
-dialogue.hallows_eve_old_jack.opt.returned = I'm back.
 dialogue.hallows_eve_old_jack.opt.quests = What needs doing?
 dialogue.hallows_eve_old_jack.opt.board = What's on the board?
 dialogue.hallows_eve_old_jack.opt.shop = Let's see your stall.
 dialogue.hallows_eve_old_jack.opt.standing = How do we stand?
 dialogue.hallows_eve_old_jack.opt.almanac = Show me the Almanac.
 dialogue.hallows_eve_old_jack.opt.who = Who are you?
-dialogue.hallows_eve_old_jack.opt.lantern = What's a Hollow Lantern?
 dialogue.hallows_eve_old_jack.opt.harvest = What's a Harvest Moon?
 dialogue.hallows_eve_old_jack.opt.back = Something else.
 dialogue.hallows_eve_old_jack.opt.farewell = Goodnight, Jack.
 
-# ---- Trick-or-treat, the line every conversation gets, and its notice ----
+# ---- Trick-or-treat, the line every conversation gets ----
 dialogue.hallows_eve_trick_or_treat.opt.knock = Trick or treat.
-notify.hallows_eve_treat = A treat for knocking.
 
 # ---- Achievements across the years, and the Keeper of Lanterns title ----
 achievement.hallows_eve_old_friend.title = Old Friend
