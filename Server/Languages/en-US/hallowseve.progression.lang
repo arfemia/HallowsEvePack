@@ -8,6 +8,8 @@
 currency.hallows_eve_sweets.name = Hallow Sweets
 
 # ---- Old Jack's questline ----
+quest.hallows_eve_old_jack_meet.title = Lanterns in the Temple
+quest.hallows_eve_old_jack_meet.flavor = It's the season again, so I'm back in the Forgotten Temple, keeping the lanterns lit. Any of the temple gateways will get you there. Come and find me. I could use a hand.
 quest.hallows_eve_old_jack_1.title = Pumpkin Patch
 quest.hallows_eve_old_jack_1.flavor = Pick a pumpkin this month and now and then one comes up cold and glowing. Bring me a few of those Hallowed ones.
 quest.hallows_eve_old_jack_2.title = Lantern Work
@@ -30,6 +32,7 @@ quest.hallows_eve_jack_daily_geodes.title = Humming Stone
 quest.hallows_eve_jack_daily_geodes.flavor = The deep stone's humming again. Crack a couple of Cursed Geodes before they crack on their own.
 
 # ---- Steps worded for this pack ----
+objective.hallows_eve.meet_jack = Find Old Jack in the Forgotten Temple
 objective.hallows_eve.throw_bombs = Throw {0} Lantern Bombs
 objective.hallows_eve.crack_geodes = Crack {0} Cursed Geodes
 objective.hallows_eve.attend = Be here for Hallow's Eve
@@ -114,6 +117,8 @@ almanac.hallows_eve.souls_freed = Lost Souls freed
 almanac.hallows_eve.geodes_cracked = Cursed Geodes cracked
 
 # ---- Old Jack's conversation ----
+dialogue.hallows_eve_old_jack.meet_arrival.text = You found the place, then. Good.\nDon't mind the head. It's a pumpkin, and it's been on there a long while. I'm Old Jack, and every autumn I come back to keep these lanterns lit while the dead are up. There's work if you want it, starting with <b>pumpkins</b>.
+dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = You sent for me?
 dialogue.hallows_eve_old_jack.first_words.text = Don't mind the head. It's a pumpkin, and it's been on there a long while.\nI'm Old Jack. Every autumn the dead get restless and the lanterns in the <color is="#ffd97a">Forgotten Temple</color> go dark, so I come back and light them. I could use a pair of hands that aren't carved.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Pleased to meet you, Jack.
 dialogue.hallows_eve_old_jack.board_fresh.text = There's fresh work on my board, some for the dark and some for the daylight. It pays.
@@ -153,7 +158,7 @@ dialogue.hallows_eve_old_jack.daily_geodes_offer.opt.accept = I'll crack a coupl
 dialogue.hallows_eve_old_jack.lantern_lit.text = The Hollow Lantern's still burning. Keeps the worst of the dark off the steps.\nWhat do you need?
 dialogue.hallows_eve_old_jack.who_are_you.text = Old Jack. I kept a farm once, a long way from here. Then one October I didn't go home, and I've come back every October since.\nDon't ask me about the head.
 dialogue.hallows_eve_old_jack.about_lantern.text = A Hollow Lantern's a Hallowed pumpkin, carved out and filled with ectoplasm. Light one and the dead keep their distance.\nThey burn out by November. That's why I need a new one every year.
-dialogue.hallows_eve_old_jack.harvest_moon.text = See that moon? Harvest Moon. A few nights a year it comes up big and orange, and everything in the graves comes up with it.\nIf you want work, tonight's the night. If you want sleep, it isn't.
+dialogue.hallows_eve_old_jack.harvest_moon.text = See that moon? Harvest Moon. A few nights a year it comes up big and orange, and everything in the graves comes up with it.\nIf you want work, tonight's the night. I'll be up till it sets.
 dialogue.hallows_eve_old_jack.opt.returned = I'm back.
 dialogue.hallows_eve_old_jack.opt.quests = What needs doing?
 dialogue.hallows_eve_old_jack.opt.board = What's on the board?

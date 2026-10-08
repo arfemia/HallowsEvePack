@@ -1,5 +1,5 @@
 {
-  "$Comment": "Set Lost Souls free during one season. The description's number comes from the criterion's Amount through @amount.",
+  "$Comment": "Set Lost Souls free during one season. The description's number comes from the criterion's Amount through @amount. Each year's copy pays MMO Skill Tree's Mmo_Xp row once, Defense XP for the fight, in Auto since XP needs no bag room. A server without that mod skips the row and shows nothing for it.",
   "Parent": "Hallows_Eve_Hallowed_Base",
   "Text": {
     "TitleKey": "achievement.hallows_eve_soul_warden.title",
@@ -18,5 +18,10 @@
       "MatchMode": "EXACT",
       "Amount": 30
     }
+  },
+  "Rewards": {
+    "Auto": [
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "500" } }
+    ]
   }
 }

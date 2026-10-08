@@ -1,5 +1,5 @@
 {
-  "$Comment": "Throw Lantern Bombs during one season. USE_ITEM with the Qualifier Throw counts every tier through the PREFIX match. The description's number comes from the criterion's Amount through @amount, so a retune touches no translation.",
+  "$Comment": "Throw Lantern Bombs during one season. USE_ITEM with the Qualifier Throw counts every tier through the PREFIX match. The description's number comes from the criterion's Amount through @amount, so a retune touches no translation. Each year's copy pays MMO Skill Tree's Mmo_Xp row once, Artillery XP for the throws, in Auto since XP needs no bag room. A server without that mod skips the row and shows nothing for it.",
   "Parent": "Hallows_Eve_Hallowed_Base",
   "Text": {
     "TitleKey": "achievement.hallows_eve_lantern_lobber.title",
@@ -20,5 +20,10 @@
       "Amount": 50,
       "TextKey": "objective.hallows_eve.throw_bombs"
     }
+  },
+  "Rewards": {
+    "Auto": [
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "ARTILLERY", "Amount": "500" } }
+    ]
   }
 }

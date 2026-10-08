@@ -1,5 +1,5 @@
 {
-  "$Comment": "Old Jack's fourth step: set Lost Souls free and hand over the Ectoplasm they drop. Both steps share Order 1, so they run side by side; the Ectoplasm is handed in at the giver.",
+  "$Comment": "Old Jack's fourth step: set Lost Souls free and hand over the Ectoplasm they drop. Both steps share Order 1, so they run side by side; the Ectoplasm is handed in at the giver. The Mmo_Xp row is MMO Skill Tree's: Defense XP for the fight, the Ectoplasm included since the souls drop it, paid only where that mod runs. A server without it skips the row when the quest pays and shows nothing for it.",
   "Name": "Old_Jack_4",
   "Parent": "Hallows_Eve_Quest_Base",
   "Text": {
@@ -39,7 +39,8 @@
     "Claim": [
       { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Chain_Pay" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 250 } },
-      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 100 } }
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 100 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "250" } }
     ]
   }
 }

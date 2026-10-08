@@ -7,6 +7,8 @@
 currency.hallows_eve_sweets.name = Dolcetti di Ognissanti
 
 # ---- La serie di missioni del Vecchio Jack ----
+quest.hallows_eve_old_jack_meet.title = Lanterne nel Tempio
+quest.hallows_eve_old_jack_meet.flavor = È tornata la stagione, quindi sono di nuovo nel Tempio Dimenticato a tenere accese le lanterne. Ci arrivi da uno qualsiasi dei portali del tempio. Vieni a cercarmi. Una mano mi farebbe comodo.
 quest.hallows_eve_old_jack_1.title = Campo di Zucche
 quest.hallows_eve_old_jack_1.flavor = Raccogli zucche questo mese e ogni tanto ne spunta una fredda e luminosa. Portamene qualcuna di quelle Consacrate.
 quest.hallows_eve_old_jack_2.title = Lanterne all'Opera
@@ -29,6 +31,7 @@ quest.hallows_eve_jack_daily_geodes.title = Pietra Ronzante
 quest.hallows_eve_jack_daily_geodes.flavor = La pietra profonda ronza di nuovo. Spacca un paio di Geodi Maledette prima che si spacchino da sole.
 
 # ---- Passi formulati per questo pacchetto ----
+objective.hallows_eve.meet_jack = Trova il Vecchio Jack nel Tempio Dimenticato
 objective.hallows_eve.throw_bombs = Lancia {0} Bombe Lanterna
 objective.hallows_eve.crack_geodes = Spacca {0} Geodi Maledette
 objective.hallows_eve.attend = Partecipa alla Vigilia di Ognissanti
@@ -89,6 +92,8 @@ almanac.hallows_eve.souls_freed = Anime Perdute liberate
 almanac.hallows_eve.geodes_cracked = Geodi Maledette spaccate
 
 # ---- La conversazione del Vecchio Jack ----
+dialogue.hallows_eve_old_jack.meet_arrival.text = Hai trovato il posto, allora. Bene.\nNon badare alla testa. È una zucca, e sta lì sopra da un bel pezzo. Sono il Vecchio Jack, e ogni autunno torno a tenere accese queste lanterne finché i morti sono in giro. C'è lavoro, se lo vuoi, a cominciare dalle <b>zucche</b>.
+dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = Mi hai mandato a chiamare?
 dialogue.hallows_eve_old_jack.first_words.text = Non badare alla testa. È una zucca, e sta lì sopra da un bel pezzo.\nSono il Vecchio Jack. Ogni autunno i morti si agitano e le lanterne del <color is="#ffd97a">Tempio Dimenticato</color> si spengono, così torno e le riaccendo. Mi farebbe comodo un paio di mani che non siano intagliate.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Piacere di conoscerti, Jack.
 dialogue.hallows_eve_old_jack.board_fresh.text = C'è lavoro nuovo sulla mia bacheca, un po' da fare col buio e un po' alla luce del giorno. Paga.
@@ -125,7 +130,7 @@ dialogue.hallows_eve_old_jack.daily_geodes_offer.opt.accept = Ne spacco un paio.
 dialogue.hallows_eve_old_jack.lantern_lit.text = La Lanterna Cava brucia ancora. Tiene lontano dai gradini il peggio del buio.\nChe ti serve?
 dialogue.hallows_eve_old_jack.who_are_you.text = Il Vecchio Jack. Una volta avevo una fattoria, lontano da qui. Poi un ottobre non sono tornato a casa, e da allora torno ogni ottobre.\nNon chiedermi della testa.
 dialogue.hallows_eve_old_jack.about_lantern.text = Una Lanterna Cava è una Zucca Consacrata, svuotata e riempita di ectoplasma. Accendine una e i morti stanno alla larga.\nEntro novembre si spengono. Per questo me ne serve una nuova ogni anno.
-dialogue.hallows_eve_old_jack.harvest_moon.text = Vedi quella luna? Luna del Raccolto. Qualche notte all'anno viene su grossa e arancione, e tutto quello che c'è nelle tombe viene su con lei.\nSe vuoi lavorare, stanotte è la notte giusta. Se vuoi dormire, no.
+dialogue.hallows_eve_old_jack.harvest_moon.text = Vedi quella luna? Luna del Raccolto. Qualche notte all'anno viene su grossa e arancione, e tutto quello che c'è nelle tombe viene su con lei.\nSe vuoi lavorare, stanotte è la notte giusta. Io resto sveglio finché non tramonta.
 dialogue.hallows_eve_old_jack.opt.returned = Rieccomi.
 dialogue.hallows_eve_old_jack.opt.quests = Cosa c'è da fare?
 dialogue.hallows_eve_old_jack.opt.board = Cosa c'è sulla bacheca?

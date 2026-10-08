@@ -7,6 +7,8 @@
 currency.hallows_eve_sweets.name = Сладости Кануна
 
 # ---- Цепочка квестов Старого Джека ----
+quest.hallows_eve_old_jack_meet.title = Фонари в храме
+quest.hallows_eve_old_jack_meet.flavor = Снова пришёл сезон, так что я опять в Забытом Храме, слежу, чтобы фонари горели. Туда ведут любые врата храма. Приходи, найди меня. Помощь мне не помешает.
 quest.hallows_eve_old_jack_1.title = Тыквенная грядка
 quest.hallows_eve_old_jack_1.flavor = Сорвёшь тыкву в этом месяце, и нет-нет да попадётся холодная, светящаяся. Принеси мне несколько таких, Освящённых.
 quest.hallows_eve_old_jack_2.title = Фонарное дело
@@ -29,6 +31,7 @@ quest.hallows_eve_jack_daily_geodes.title = Гудящий камень
 quest.hallows_eve_jack_daily_geodes.flavor = Глубинный камень опять гудит. Расколи пару Проклятых жеод, пока сами не раскололись.
 
 # ---- Шаги, сформулированные для этого пака ----
+objective.hallows_eve.meet_jack = Найдите Старого Джека в Забытом Храме
 objective.hallows_eve.throw_bombs = Бросьте Фонарные бомбы: {0}
 objective.hallows_eve.crack_geodes = Расколите Проклятые жеоды: {0}
 objective.hallows_eve.attend = Будьте здесь в Канун Всех Святых
@@ -89,6 +92,8 @@ almanac.hallows_eve.souls_freed = Освобождено Заблудших ду
 almanac.hallows_eve.geodes_cracked = Расколото Проклятых жеод
 
 # ---- Разговор со Старым Джеком ----
+dialogue.hallows_eve_old_jack.meet_arrival.text = Значит, нашёл дорогу. Хорошо.\nНе обращай внимания на голову. Это тыква, и сидит она там уже давненько. Я Старый Джек, и каждую осень возвращаюсь, чтобы эти фонари горели, пока мертвецы на ногах. Работа есть, если захочешь, и начнём с <b>тыкв</b>.
+dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = Ты меня звал?
 dialogue.hallows_eve_old_jack.first_words.text = Не обращай внимания на голову. Это тыква, и сидит она там уже давненько.\nЯ Старый Джек. Каждую осень мертвецам не лежится, а фонари в <color is="#ffd97a">Забытом Храме</color> гаснут, вот я и возвращаюсь их зажечь. Мне бы не помешала пара рук, которые никто не вырезал.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Приятно познакомиться, Джек.
 dialogue.hallows_eve_old_jack.board_fresh.text = На моей доске свежая работа, кое-что впотьмах, кое-что при свете дня. За неё платят.
@@ -125,7 +130,7 @@ dialogue.hallows_eve_old_jack.daily_geodes_offer.opt.accept = Расколю п�
 dialogue.hallows_eve_old_jack.lantern_lit.text = Полый фонарь ещё горит. Держит самую темень подальше от ступеней.\nЧто тебе нужно?
 dialogue.hallows_eve_old_jack.who_are_you.text = Старый Джек. Держал когда-то ферму, далеко отсюда. Потом однажды в октябре я не вернулся домой, и с тех пор прихожу сюда каждый октябрь.\nПро голову не спрашивай.
 dialogue.hallows_eve_old_jack.about_lantern.text = Полый фонарь - это Освящённая тыква, выдолбленная и налитая эктоплазмой. Зажги такой, и мертвецы держатся подальше.\nК ноябрю они выгорают. Потому мне и нужен новый каждый год.
-dialogue.hallows_eve_old_jack.harvest_moon.text = Видишь луну? Урожайная луна. Несколько ночей в году она встаёт большая и оранжевая, и всё, что в могилах, встаёт вместе с ней.\nХочешь работы, сегодня самая ночь. Хочешь выспаться, то не сегодня.
+dialogue.hallows_eve_old_jack.harvest_moon.text = Видишь луну? Урожайная луна. Несколько ночей в году она встаёт большая и оранжевая, и всё, что в могилах, встаёт вместе с ней.\nХочешь работы, сегодня самая ночь. Я не лягу, пока она не зайдёт.
 dialogue.hallows_eve_old_jack.opt.returned = Я снова здесь.
 dialogue.hallows_eve_old_jack.opt.quests = Что нужно сделать?
 dialogue.hallows_eve_old_jack.opt.board = Что на доске?

@@ -8,6 +8,8 @@
 currency.hallows_eve_sweets.name = Friandises de la Toussaint
 
 # ---- La suite de quêtes du Vieux Jack ----
+quest.hallows_eve_old_jack_meet.title = Lanternes du temple
+quest.hallows_eve_old_jack_meet.flavor = C'est de nouveau la saison, alors me revoilà au Temple Oublié, à garder les lanternes allumées. N'importe quel portail du temple t'y mènera. Viens me trouver. J'aurais bien besoin d'un coup de main.
 quest.hallows_eve_old_jack_1.title = Champ de citrouilles
 quest.hallows_eve_old_jack_1.flavor = Cueille une citrouille ce mois-ci et de temps en temps, y en a une qui sort froide et luisante. Rapporte-m'en quelques-unes, de ces sanctifiées.
 quest.hallows_eve_old_jack_2.title = Travail de lanternes
@@ -30,6 +32,7 @@ quest.hallows_eve_jack_daily_geodes.title = Pierre qui bourdonne
 quest.hallows_eve_jack_daily_geodes.flavor = La pierre du fond bourdonne encore. Casse deux ou trois Géodes Maudites avant qu'elles se cassent toutes seules.
 
 # ---- Étapes formulées pour ce pack ----
+objective.hallows_eve.meet_jack = Trouvez le Vieux Jack dans le Temple Oublié
 objective.hallows_eve.throw_bombs = Lancez {0} Bombes-Lanternes
 objective.hallows_eve.crack_geodes = Cassez {0} Géodes Maudites
 objective.hallows_eve.attend = Soyez là pour la Veille de la Toussaint
@@ -114,6 +117,8 @@ almanac.hallows_eve.souls_freed = Âmes Perdues libérées
 almanac.hallows_eve.geodes_cracked = Géodes Maudites cassées
 
 # ---- La conversation du Vieux Jack ----
+dialogue.hallows_eve_old_jack.meet_arrival.text = Tu as trouvé l'endroit, alors. Bien.\nFais pas attention à la tête. C'est une citrouille, et elle est là-dessus depuis un bon moment. Moi, c'est le Vieux Jack, et chaque automne je reviens garder ces lanternes allumées tant que les morts rôdent. Y a du boulot si tu en veux, à commencer par les <b>citrouilles</b>.
+dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = Tu m'as fait appeler ?
 dialogue.hallows_eve_old_jack.first_words.text = Fais pas attention à la tête. C'est une citrouille, et elle est là-dessus depuis un bon moment.\nMoi, c'est le Vieux Jack. Chaque automne, les morts s'agitent et les lanternes du <color is="#ffd97a">Temple Oublié</color> s'éteignent, alors je reviens les allumer. J'aurais bien besoin d'une paire de mains qui sont pas sculptées.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Un plaisir de te rencontrer, Jack.
 dialogue.hallows_eve_old_jack.board_fresh.text = Y a du nouveau sur mon tableau, un peu pour la nuit, un peu pour le jour. Ça paie.
@@ -153,7 +158,7 @@ dialogue.hallows_eve_old_jack.daily_geodes_offer.opt.accept = J'en casserai deux
 dialogue.hallows_eve_old_jack.lantern_lit.text = La Lanterne Creuse brûle toujours. Ça garde le pire du noir loin des marches.\nQu'est-ce qu'il te faut ?
 dialogue.hallows_eve_old_jack.who_are_you.text = Le Vieux Jack. J'avais une ferme, autrefois, loin d'ici. Et puis un octobre, je suis pas rentré chez moi, et je reviens chaque octobre depuis.\nMe demande pas pour la tête.
 dialogue.hallows_eve_old_jack.about_lantern.text = Une Lanterne Creuse, c'est une citrouille sanctifiée, évidée et remplie d'ectoplasme. Allumes-en une et les morts gardent leurs distances.\nEn novembre, elles sont éteintes. C'est pour ça qu'il m'en faut une nouvelle chaque année.
-dialogue.hallows_eve_old_jack.harvest_moon.text = Tu vois cette lune ? La Lune des Moissons. Quelques nuits par an, elle se lève grosse et orange, et tout ce qu'il y a dans les tombes se lève avec elle.\nSi tu veux du travail, c'est la bonne nuit. Si tu veux dormir, c'est pas la bonne.
+dialogue.hallows_eve_old_jack.harvest_moon.text = Tu vois cette lune ? La Lune des Moissons. Quelques nuits par an, elle se lève grosse et orange, et tout ce qu'il y a dans les tombes se lève avec elle.\nSi tu veux du travail, c'est la bonne nuit. Je reste debout jusqu'à ce qu'elle se couche.
 dialogue.hallows_eve_old_jack.opt.returned = Je suis de retour.
 dialogue.hallows_eve_old_jack.opt.quests = Qu'est-ce qu'il y a à faire ?
 dialogue.hallows_eve_old_jack.opt.board = Qu'est-ce qu'il y a sur le tableau ?

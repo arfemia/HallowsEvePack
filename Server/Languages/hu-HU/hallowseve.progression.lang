@@ -7,6 +7,8 @@
 currency.hallows_eve_sweets.name = Mindenszenteki Cukorka
 
 # ---- Öreg Jack küldetéssora ----
+quest.hallows_eve_old_jack_meet.title = Lámpások a Templomban
+quest.hallows_eve_old_jack_meet.flavor = Megint itt a szezon, úgyhogy visszajöttem a Feledett Templomba, és égve tartom a lámpásokat. Bármelyik templomkapu elvisz oda. Gyere, keress meg. Jól jönne egy pár kéz.
 quest.hallows_eve_old_jack_1.title = Tökföld
 quest.hallows_eve_old_jack_1.flavor = Szedj tököt ebben a hónapban, és hébe-hóba akad egy hideg, világító. Hozz nekem párat azokból a Megszenteltekből.
 quest.hallows_eve_old_jack_2.title = Lámpásmunka
@@ -29,6 +31,7 @@ quest.hallows_eve_jack_daily_geodes.title = Zümmögő Kő
 quest.hallows_eve_jack_daily_geodes.flavor = A mély kő megint zümmög. Törj fel pár Átkozott Geodát, mielőtt maguktól repednek meg.
 
 # ---- E csomag saját lépésszövegei ----
+objective.hallows_eve.meet_jack = Találd meg Öreg Jacket a Feledett Templomban
 objective.hallows_eve.throw_bombs = Dobj el {0} Lámpásbombát
 objective.hallows_eve.crack_geodes = Törj fel {0} Átkozott Geodát
 objective.hallows_eve.attend = Légy itt Mindenszentek Éjén
@@ -89,6 +92,8 @@ almanac.hallows_eve.souls_freed = Felszabadított Elveszett Lelkek
 almanac.hallows_eve.geodes_cracked = Feltört Átkozott Geodák
 
 # ---- Öreg Jack beszélgetése ----
+dialogue.hallows_eve_old_jack.meet_arrival.text = Szóval megtaláltad a helyet. Jó.\nNe törődj a fejjel. Tök, és már jó ideje rajtam van. Öreg Jack vagyok, és minden ősszel visszajövök, hogy égve tartsam ezeket a lámpásokat, amíg a holtak kint járnak. Ha kell munka, van, és a <b>tökökkel</b> kezdjük.
+dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = Te hívattál?
 dialogue.hallows_eve_old_jack.first_words.text = Ne törődj a fejjel. Tök, és már jó ideje rajtam van.\nÖreg Jack vagyok. Minden ősszel nyugtalanok lesznek a holtak, és kialszanak a lámpások a <color is="#ffd97a">Feledett Templomban</color>, úgyhogy visszajövök, és meggyújtom őket. Jól jönne egy pár kéz, amit nem faragtak ki.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Örülök, hogy megismerhetlek, Jack.
 dialogue.hallows_eve_old_jack.board_fresh.text = Friss munka van a táblámon, egy része sötétben, egy része napvilágnál. Fizet.
@@ -125,7 +130,7 @@ dialogue.hallows_eve_old_jack.daily_geodes_offer.opt.accept = Feltörök egy-ket
 dialogue.hallows_eve_old_jack.lantern_lit.text = A Vájt Lámpás még mindig ég. A legrosszabb sötétet távol tartja a lépcsőtől.\nMi kell?
 dialogue.hallows_eve_old_jack.who_are_you.text = Öreg Jack. Volt egyszer egy tanyám, messze innen. Aztán egy októberben nem mentem haza, és azóta minden októberben visszajövök.\nA fejről ne kérdezz.
 dialogue.hallows_eve_old_jack.about_lantern.text = A Vájt Lámpás egy kivájt Megszentelt tök, ektoplazmával megtöltve. Gyújts meg egyet, és a holtak tisztes távolban maradnak.\nNovemberre kiégnek. Ezért kell minden évben új.
-dialogue.hallows_eve_old_jack.harvest_moon.text = Látod azt a holdat? Aratási Hold. Évente pár éjszakán nagy és narancssárga, amikor feljön, és minden feljön vele, ami a sírokban van.\nHa munkát akarsz, ma éjjel van itt az ideje. Ha alvást, akkor nincs.
+dialogue.hallows_eve_old_jack.harvest_moon.text = Látod azt a holdat? Aratási Hold. Évente pár éjszakán nagy és narancssárga, amikor feljön, és minden feljön vele, ami a sírokban van.\nHa munkát akarsz, ma éjjel van itt az ideje. Én fent leszek, amíg le nem nyugszik.
 dialogue.hallows_eve_old_jack.opt.returned = Visszajöttem.
 dialogue.hallows_eve_old_jack.opt.quests = Mit kell csinálni?
 dialogue.hallows_eve_old_jack.opt.board = Mi van a táblán?

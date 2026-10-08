@@ -6,7 +6,12 @@
     "Repeat brings this one quest back once a year: the 60-day wait from finishing is longer than",
     "the event and shorter than a year, so a returning player lights a new lantern next October and",
     "earns that year's keepsake without walking the whole questline again. The steps before it never",
-    "come back."
+    "come back.",
+    "",
+    "The two Mmo_Xp rows are MMO Skill Tree's, paid only where that mod runs: Defense XP for the",
+    "skeletons and the souls the Ectoplasm comes from, and Harvesting XP for the pumpkin, at the rate a",
+    "pumpkin step of the questline pays. A server without that mod skips both rows and shows nothing for",
+    "them."
   ],
   "Name": "Old_Jack_Lantern",
   "Parent": "Hallows_Eve_Quest_Base",
@@ -59,7 +64,9 @@
     "Claim": [
       { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Lantern_Pay" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 500 } },
-      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 100 } }
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 100 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "750" } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "HARVESTING", "Amount": "250" } }
     ]
   }
 }

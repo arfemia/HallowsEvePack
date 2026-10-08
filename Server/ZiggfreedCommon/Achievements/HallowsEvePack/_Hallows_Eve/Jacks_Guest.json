@@ -1,5 +1,5 @@
 {
-  "$Comment": "Be on the server while Hallow's Eve runs. CALENDAR_ATTENDED fires once per player for each year's run of the event, when the player is first in the world while it runs, so this is the season's welcome. The criterion's TextKey words the step, since the shared sentence names the event by its raw id.",
+  "$Comment": "Be on the server while Hallow's Eve runs. CALENDAR_ATTENDED fires once per player for each year's run of the event, when the player is first in the world while it runs, so this is the season's welcome. The criterion's TextKey words the step, since the shared sentence names the event by its raw id. Each year's copy also hands over MMO Skill Tree's Mmo_Boost_Token: a quarter more XP in every skill for half an hour, the season's welcome, which the player starts when it suits them. It is kept with their skills, not in the bag, so it pays in Auto. A server without that mod skips the row and shows nothing for it.",
   "Parent": "Hallows_Eve_Hallowed_Base",
   "Text": {
     "TitleKey": "achievement.hallows_eve_jacks_guest.title",
@@ -20,5 +20,10 @@
       "Amount": 1,
       "TextKey": "objective.hallows_eve.attend"
     }
+  },
+  "Rewards": {
+    "Auto": [
+      { "Kind": "Mmo_Boost_Token", "Params": { "Skill": "ALL", "Multiplier": "1.25", "DurationMinutes": "30" } }
+    ]
   }
 }

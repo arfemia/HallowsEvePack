@@ -4,7 +4,11 @@
     "the Seasons > Hallows_Eve subcategory is earned in the same year. MetaSelector picks them, so a",
     "new hallowed achievement counts toward it with no edit here; it never picks itself or another",
     "capstone. It inherits the yearly occurrence, so each year has its own copy, and it pays the",
-    "title Hallows_Eve_Hallowed through the Title reward kind. Keep the hallowed tag off this file."
+    "title Hallows_Eve_Hallowed through the Title reward kind. Keep the hallowed tag off this file.",
+    "",
+    "Each year's copy also hands over MMO Skill Tree's Mmo_Boost_Token: half again as much XP in every",
+    "skill for an hour, which the player starts when it suits them. It is kept with their skills, not in",
+    "the bag, so it pays in Auto. A server without that mod skips the row and shows nothing for it."
   ],
   "Parent": "Hallows_Eve_Hallowed_Base",
   "Text": {
@@ -23,6 +27,9 @@
     "Tags": [ "hallowed" ]
   },
   "Rewards": {
-    "Auto": [ { "Kind": "Title", "Params": { "Title": "Hallows_Eve_Hallowed" } } ]
+    "Auto": [
+      { "Kind": "Title", "Params": { "Title": "Hallows_Eve_Hallowed" } },
+      { "Kind": "Mmo_Boost_Token", "Params": { "Skill": "ALL", "Multiplier": "1.5", "DurationMinutes": "60" } }
+    ]
   }
 }

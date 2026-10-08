@@ -1,0 +1,57 @@
+{
+  "$Comment": [
+    "The way into Hallow's Eve: go and find Old Jack in the Forgotten Temple. Nobody hands it over.",
+    "Flow.AutoAccept puts it in every player's quest log while the event runs, at their next login or",
+    "world change, and the base's Flow.AutoTrack pins it to their tracker. The _Hallows_Eve folder makes",
+    "the id hallows_eve_old_jack_meet.",
+    "",
+    "The one step is a TURN_IN with a blank Target, handed in at the giver: nothing to bring, only the",
+    "walk. Old Jack's conversation hands it in from its first screen and goes straight on to Pumpkin",
+    "Patch's offer. Keep it that way: a Claim reward or a TurnInAt would leave the quest waiting to be",
+    "collected, and the conversation would open the quest list instead of the offer. So its pay table,",
+    "Hallows_Eve_Meet_Pay (a small welcome of sweets), sits in Auto, paid the moment it is handed in.",
+    "",
+    "The Not group keeps it from anyone who already finished Pumpkin Patch, and with no Repeat it comes",
+    "once per player, ever. Pumpkin Patch does not wait on it: a player whose quest log was full when",
+    "this tried to arm still gets the questline from Old Jack.",
+    "",
+    "Beside the table, MMO Skill Tree's Mmo_Xp row pays Acrobatics XP for the walk down, in Auto with the",
+    "rest. A server without that mod skips the row and shows nothing for it."
+  ],
+  "Name": "Old_Jack_Meet",
+  "Parent": "Hallows_Eve_Quest_Base",
+  "Text": {
+    "TitleKey": "quest.hallows_eve_old_jack_meet.title",
+    "FlavorKey": "quest.hallows_eve_old_jack_meet.flavor"
+  },
+  "Listing": {
+    "Icon": "Hallows_Eve_Jack_Lantern",
+    "Category": "main",
+    "SortOrder": 5
+  },
+  "Flow": { "AutoAccept": true },
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
+    ],
+    "Not": [
+      { "Quests": [ "hallows_eve_old_jack_1" ] }
+    ]
+  },
+  "Objectives": {
+    "meet_jack": {
+      "Kind": "TURN_IN",
+      "Target": "",
+      "Amount": 1,
+      "Order": 1,
+      "TurnInNpcId": "giver",
+      "TextKey": "objective.hallows_eve.meet_jack"
+    }
+  },
+  "Rewards": {
+    "Auto": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Meet_Pay" } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "ACROBATICS", "Amount": "250" } }
+    ]
+  }
+}

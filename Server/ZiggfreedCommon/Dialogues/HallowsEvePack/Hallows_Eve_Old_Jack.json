@@ -6,7 +6,10 @@
     "",
     "HOW A SCREEN IS PICKED. Start is walked in a fixed order: First (top to bottom), then a quest",
     "that is READY to hand in, then one he can OFFER, then one that is ACTIVE, then Then, then",
-    "Fallback. First holds the greeting, shown until the hail spends it, and the board line, shown",
+    "Fallback. First opens with the arrival line for a player carrying Lanterns in the Temple (the",
+    "quest every player gets while the event runs): its one answer marks him greeted, hands that",
+    "quest in and goes straight to Pumpkin Patch's offer. Then the greeting, for anyone who came",
+    "without that quest, shown until the hail spends it, and the board line, shown",
     "once a day (Once with Period Daily, turning over at midnight UTC) and skipped while the player",
     "has something to hand in. Quests holds one row per quest, the questline first, so the questline",
     "wins a tie with a daily. Then shows the lit-lantern line once the year's lantern is lit.",
@@ -34,6 +37,13 @@
   },
   "Start": {
     "First": [
+      {
+        "Node": "meet_arrival",
+        "When": [
+          { "Type": "World", "Where": { "GameplayConfig": [ "ForgottenTemple" ] } },
+          { "Type": "QuestState", "Quest": "hallows_eve_old_jack_meet", "State": "ACTIVE" }
+        ]
+      },
       {
         "Node": "first_words",
         "When": [
@@ -115,6 +125,19 @@
     "Fallback": "menu"
   },
   "Nodes": {
+    "meet_arrival": {
+      "TextKey": "dialogue.hallows_eve_old_jack.meet_arrival.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.hallows_eve_old_jack.meet_arrival.opt.hail",
+          "Do": [
+            { "Action": { "Type": "Remember", "Memory": "old_jack_greeted" } },
+            { "TurnIn": "hallows_eve_old_jack_meet" },
+            { "Goto": "patch_offer" }
+          ]
+        }
+      ]
+    },
     "first_words": {
       "TextKey": "dialogue.hallows_eve_old_jack.first_words.text",
       "Options": [

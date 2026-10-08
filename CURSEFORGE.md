@@ -35,7 +35,7 @@ Hallow's Eve starts on its own on October 1 and runs to November 3, every year. 
 
 ## How it works
 
-1. Log in any time from October 1 to November 3. A banner tells you Old Jack is waiting at the Forgotten Temple.
+1. Log in any time from October 1 to November 3. A banner tells you Old Jack is waiting at the Forgotten Temple, and a quest in your log, Lanterns in the Temple, sends you to find him.
 2. Find him there and press F. He hands out the questline, and his conversation opens his board and his stall. Ask him for the Almanac to see your season, or how you stand with him.
 3. Go out after dark, away from torches. The creatures his quests and board send you after drop the bombs, Ectoplasm and pumpkins you will want.
 4. Spend your sweets at the stall, or carve what you need at a Carving Bench.
@@ -43,7 +43,7 @@ Hallow's Eve starts on its own on October 1 and runs to November 3, every year. 
 
 ## With MMO Skill Tree
 
-Install MMO Skill Tree 1.7.0 or newer beside this pack and the season also trains skills. Lantern Bombs train Artillery. Old Jack's rewards and the cracked geodes pay skill XP, and his board posts a Skill job every day, which pays favor like his own. The Hallowed set adds luck and Artillery damage, the Carving Bench trains Crafting, and while Harvest Moon is up, Harvesting and Artillery XP get a lift for everyone. None of it needs this pack to change, and the pack never needs MMO Skill Tree.
+Install MMO Skill Tree 1.7.0 or newer beside this pack and the season also trains skills. Lantern Bombs train Artillery. Old Jack's quests, his board jobs and the season's achievements pay XP in the skill the work trains: Defense for the fights, Harvesting for the pumpkins, Mining for the geodes and Artillery for the bombs. The Hallowed and Jack's Guest each add an XP boost token, cracked geodes pay Mining XP, and his board posts a Skill job every day, which pays favor like his own. The Hallowed set adds luck and Artillery damage, the Carving Bench trains Crafting, and while Harvest Moon is up, Harvesting and Artillery XP get a lift for everyone. The pack never needs MMO Skill Tree: without it, those rewards don't show and the rest of the season plays the same.
 
 Add the MMO Skill Bounty Pack 1.3.0 or newer and its Daily bounty board posts a haunt contract each day of the event, paying a few Hallow Sweets on top of its tokens and XP.
 

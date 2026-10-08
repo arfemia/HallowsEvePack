@@ -7,7 +7,10 @@
     "condition makes it absent while the event is off. A TURN_IN step is handed in at the giver, so",
     "no report-back step is added. Every step of the questline but the last pays through",
     "Hallows_Eve_Chain_Pay, which also hands over the Lantern Bombs the next step asks the player to",
-    "throw."
+    "throw.",
+    "",
+    "The Mmo_Xp row is MMO Skill Tree's: Harvesting XP, the skill the pumpkins come from, paid only where",
+    "that mod runs. A server without it skips the row when the quest pays and shows nothing for it."
   ],
   "Name": "Old_Jack_1",
   "Parent": "Hallows_Eve_Quest_Base",
@@ -40,7 +43,8 @@
     "Claim": [
       { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Chain_Pay" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 250 } },
-      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 100 } }
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 100 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "HARVESTING", "Amount": "250" } }
     ]
   }
 }

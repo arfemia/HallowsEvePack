@@ -3,7 +3,10 @@
     "One of Old Jack's three dailies, open once the first step of his questline is done.",
     "Repeat.Reset with Period Daily is a calendar daily: it comes back at midnight UTC, not a fixed",
     "number of hours after the last one. Each daily pays through Hallows_Eve_Daily_Pay, so retuning",
-    "the pay is one edit there."
+    "the pay is one edit there.",
+    "",
+    "The Mmo_Xp row is MMO Skill Tree's: Defense XP for the fight, paid only where that mod runs. A",
+    "server without it skips the row when the quest pays and shows nothing for it."
   ],
   "Name": "Jack_Daily_Souls",
   "Parent": "Hallows_Eve_Quest_Base",
@@ -39,7 +42,8 @@
     "Claim": [
       { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Daily_Pay" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 75 } },
-      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 10 } }
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 10 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "150" } }
     ]
   }
 }
