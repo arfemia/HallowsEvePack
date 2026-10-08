@@ -1,0 +1,32 @@
+{
+  "$Comment": [
+    "One of the host's three dailies, open once the first quest is done. Repeat.Reset with Period Daily",
+    "is a calendar daily: it comes back at midnight UTC, not a fixed number of hours after the last one.",
+    "Each daily pays through Harvest_Feast_Daily_Pay, so retuning the pay is one edit there. The",
+    "report-back step to the host comes from the base's Npc.TurnInId."
+  ],
+  "Name": "Daily_Turkeys",
+  "Parent": "Harvest_Feast_Quest_Base",
+  "Listing": { "Icon": "Food_Wildmeat_Raw", "Category": "misc", "SortOrder": 110 },
+  "Requires": { "Quests": [ "harvest_feast_host_1" ] },
+  "Repeat": {
+    "Reset": { "Period": "Daily" },
+    "CooldownFrom": "Complete"
+  },
+  "Objectives": {
+    "bring_down_turkeys": {
+      "Kind": "KILL_ENTITY",
+      "Target": "Harvest_Feast_Turkey",
+      "MatchMode": "EXACT",
+      "Amount": 4,
+      "Order": 1
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Harvest_Feast_Daily_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 75 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 40 } }
+    ]
+  }
+}

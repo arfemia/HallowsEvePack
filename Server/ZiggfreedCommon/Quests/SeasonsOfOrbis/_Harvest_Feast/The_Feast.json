@@ -1,0 +1,57 @@
+{
+  "$Comment": [
+    "The yearly feast: once the questline is done, bring the host a pumpkin pie, some cooked meat and",
+    "carrots, and sit down to the feast. Finishing it earns that year's keepsake achievement,",
+    "harvest_feast_keepsake, which hands over a plate with the year on it.",
+    "",
+    "Repeat.PerRun brings this one quest back once in each year's run of Harvest Feast: a run pays it",
+    "once, a forced or moved run cannot pay it twice, and a feast left unfinished when the run ends waits",
+    "for next year and counts for that year's run. The steps before it never come back. Everything here",
+    "is handed in at the host, so no report-back step is added."
+  ],
+  "Name": "The_Feast",
+  "Parent": "Harvest_Feast_Quest_Base",
+  "Listing": {
+    "Icon": "Deco_Plate",
+    "Category": "main",
+    "SortOrder": 40,
+    "Chains": [ { "Id": "harvest_feast_host", "Tier": 4 } ]
+  },
+  "Requires": { "Quests": [ "harvest_feast_host_3" ] },
+  "Repeat": {
+    "PerRun": { "Event": "Harvest_Feast", "Times": 1 }
+  },
+  "Objectives": {
+    "bring_pie": {
+      "Kind": "TURN_IN",
+      "Target": "Food_Pie_Pumpkin",
+      "MatchMode": "EXACT",
+      "Amount": 1,
+      "Order": 1,
+      "TurnInNpcId": "giver"
+    },
+    "bring_roast": {
+      "Kind": "TURN_IN",
+      "Target": "Food_Wildmeat_Cooked",
+      "MatchMode": "EXACT",
+      "Amount": 4,
+      "Order": 1,
+      "TurnInNpcId": "giver"
+    },
+    "bring_carrots": {
+      "Kind": "TURN_IN",
+      "Target": "Plant_Crop_Carrot_Item",
+      "MatchMode": "EXACT",
+      "Amount": 10,
+      "Order": 1,
+      "TurnInNpcId": "giver"
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Harvest_Feast_Feast_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 500 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 400 } }
+    ]
+  }
+}

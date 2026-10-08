@@ -1,0 +1,24 @@
+{
+  "$Comment": [
+    "The skeleton every Harvest Feast achievement inherits through Parent. It is never earned.",
+    "",
+    "Occurrence ties an achievement to the Harvest_Feast calendar event: the library keeps one copy a",
+    "year, named <id>_<year>, that counts only while that year's feast runs and stays a feat for whoever",
+    "earned it. Listing files every one under the Seasons category, in the Harvest_Feast subcategory,",
+    "which is where the Almanac and The Full Table look for them. TextArgs puts the year into each title.",
+    "A child takes its words from the keys its id spells (achievement.<id>.title and .desc); a child that",
+    "writes its own Listing or TextArgs keeps these leaves and adds its own.",
+    "",
+    "This file sits outside the _Harvest_Feast folder on purpose: its file name already spells its id, so",
+    "Parent names it the same way in the game and in the build's own content check."
+  ],
+  "Abstract": true,
+  "Occurrence": { "Event": "Harvest_Feast" },
+  "Listing": {
+    "Category": "Seasons",
+    "Subcategory": "Harvest_Feast"
+  },
+  "Text": {
+    "TextArgs": { "Title": [ "@year" ] }
+  }
+}

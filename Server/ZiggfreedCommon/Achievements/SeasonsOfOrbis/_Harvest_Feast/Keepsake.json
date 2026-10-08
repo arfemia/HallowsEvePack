@@ -1,0 +1,41 @@
+{
+  "$Comment": [
+    "The yearly keepsake: sit down to the feast with the host, once a season, and keep the plate.",
+    "",
+    "It inherits the yearly occurrence from Harvest_Feast_Achievement_Base, so each year mints its own",
+    "copy and @year in the title reads as that year. Feat files it with the feats, earned only. The",
+    "full_table tag counts it toward The Full Table, and season_keepsake toward the Seasons of Orbis",
+    "ladder; the feast's Almanac page names this file in Keepsake, and no other Harvest Feast file carries",
+    "season_keepsake. The reward is Auto: the plate lands the moment the feast is finished, its stack",
+    "named with the year."
+  ],
+  "Parent": "Harvest_Feast_Achievement_Base",
+  "Listing": {
+    "SortOrder": 10,
+    "Icon": "Deco_Plate",
+    "Tags": [ "full_table", "season_keepsake" ],
+    "Feat": true
+  },
+  "Scoring": { "Points": 25 },
+  "Criteria": {
+    "sit-down-to-the-feast": {
+      "Kind": "COMPLETE_QUEST",
+      "Target": "harvest_feast_the_feast",
+      "MatchMode": "EXACT",
+      "Amount": 1
+    }
+  },
+  "Rewards": {
+    "Auto": [
+      {
+        "Kind": "Item",
+        "Params": {
+          "Item": "Deco_Plate",
+          "Count": "1",
+          "StackNameKey": "keepsake.harvest_feast_plate.name",
+          "StackNameArg": "@year"
+        }
+      }
+    ]
+  }
+}

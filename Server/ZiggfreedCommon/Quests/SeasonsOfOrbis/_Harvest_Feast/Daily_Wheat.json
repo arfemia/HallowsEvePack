@@ -1,0 +1,28 @@
+{
+  "$Comment": "One of the host's three dailies: wheat handed in at the host. A TURN_IN step is handed in where it is, so no report-back step is added.",
+  "Name": "Daily_Wheat",
+  "Parent": "Harvest_Feast_Quest_Base",
+  "Listing": { "Icon": "Plant_Crop_Wheat_Item", "Category": "misc", "SortOrder": 120 },
+  "Requires": { "Quests": [ "harvest_feast_host_1" ] },
+  "Repeat": {
+    "Reset": { "Period": "Daily" },
+    "CooldownFrom": "Complete"
+  },
+  "Objectives": {
+    "bring_wheat": {
+      "Kind": "TURN_IN",
+      "Target": "Plant_Crop_Wheat_Item",
+      "MatchMode": "EXACT",
+      "Amount": 12,
+      "Order": 1,
+      "TurnInNpcId": "giver"
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Harvest_Feast_Daily_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 75 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 40 } }
+    ]
+  }
+}

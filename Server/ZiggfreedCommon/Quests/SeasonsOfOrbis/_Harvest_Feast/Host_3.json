@@ -1,0 +1,29 @@
+{
+  "$Comment": "The host's third quest: bake a pumpkin pie at the game's Cooking Bench, from the recipe page the second quest hands over, and bring it in. The pie is handed in at the host, so no report-back step is added.",
+  "Name": "Host_3",
+  "Parent": "Harvest_Feast_Quest_Base",
+  "Listing": {
+    "Icon": "Food_Pie_Pumpkin",
+    "Category": "main",
+    "SortOrder": 30,
+    "Chains": [ { "Id": "harvest_feast_host", "Tier": 3 } ]
+  },
+  "Requires": { "Quests": [ "harvest_feast_host_2" ] },
+  "Objectives": {
+    "bring_pie": {
+      "Kind": "TURN_IN",
+      "Target": "Food_Pie_Pumpkin",
+      "MatchMode": "EXACT",
+      "Amount": 1,
+      "Order": 1,
+      "TurnInNpcId": "giver"
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Harvest_Feast_Chain_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 250 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 150 } }
+    ]
+  }
+}

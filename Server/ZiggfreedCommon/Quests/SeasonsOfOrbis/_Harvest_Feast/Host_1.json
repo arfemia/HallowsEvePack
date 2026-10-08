@@ -1,0 +1,28 @@
+{
+  "$Comment": "The first of the host's quests: wheat for the ovens. The _Harvest_Feast folder makes the id harvest_feast_host_1. A TURN_IN step is handed in at the host, so no report-back step is added. The questline's steps pay through Harvest_Feast_Chain_Pay, with favor with the host and Festival Favor on their own Rewards so the quest card shows them.",
+  "Name": "Host_1",
+  "Parent": "Harvest_Feast_Quest_Base",
+  "Listing": {
+    "Icon": "Plant_Crop_Wheat_Item",
+    "Category": "main",
+    "SortOrder": 10,
+    "Chains": [ { "Id": "harvest_feast_host", "Tier": 1 } ]
+  },
+  "Objectives": {
+    "bring_wheat": {
+      "Kind": "TURN_IN",
+      "Target": "Plant_Crop_Wheat_Item",
+      "MatchMode": "EXACT",
+      "Amount": 15,
+      "Order": 1,
+      "TurnInNpcId": "giver"
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Harvest_Feast_Chain_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 250 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 150 } }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$Comment": [
+    "The skeleton every Harvest Feast quest inherits through Parent. It is never offered.",
+    "",
+    "Season hides every quest built on it while the feast is off; a child that writes its own Requires",
+    "(the quest before it) keeps it, since Season is a leaf of its own. Hidden keeps each quest off open",
+    "lists, so it is offered only at the host, and RequirePrerequisites keeps a locked one out of sight.",
+    "Npc binds them all to the host (the role Harvest_Feast_Host), who takes the hand-ins, and",
+    "CompletionDialogue sends a finished quest back to the host's conversation.",
+    "",
+    "A child adds its Listing (icon, category, order, its tier in the questline), its Requires, its",
+    "Objectives, its Rewards and any Repeat, and takes its words from the keys its id spells",
+    "(quest.<id>.title and .flavor). This file sits outside the _Harvest_Feast folder on purpose: its file",
+    "name already spells its id, so Parent names it the same way in the game and in the build's own",
+    "content check."
+  ],
+  "Name": "Harvest_Feast_Quest_Base",
+  "Abstract": true,
+  "Season": "Harvest_Feast",
+  "Listing": { "Hidden": true, "RequirePrerequisites": true },
+  "Flow": { "AutoAccept": false, "AutoTrack": true, "HideLockedSteps": true },
+  "Npc": { "ViewId": "Harvest_Feast_Host", "TurnInId": "giver" },
+  "CompletionDialogue": "Harvest_Feast_Host"
+}
