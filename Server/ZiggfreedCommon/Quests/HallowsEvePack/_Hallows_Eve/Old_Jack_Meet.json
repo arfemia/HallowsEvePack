@@ -12,24 +12,26 @@
     "its beat with the OnceId meet_patch_offer opens on Pumpkin Patch's offer. It names no TurnInAt, so",
     "the pay can also be collected from the quest log anywhere.",
     "",
-    "The Not group keeps it from anyone who already finished Pumpkin Patch, and with no Repeat it pays",
-    "once per player, ever. A player who abandons it before finishing Pumpkin Patch gets it back: an",
-    "abandoned quest reads as never taken, so the Quests tab of the player's quest menu offers Accept",
-    "for it at once (a quest that arms itself is never taken only at its giver), the next auto-accept",
-    "pass (a login, a world change, or another of their quests finishing) arms it again, and Old Jack's",
+    "Its Parent's Season makes it absent while the event is off, so its own Requires holds only the Not",
+    "group. The Not group keeps it from anyone who already finished Pumpkin Patch, and with no Repeat it",
+    "pays once per player, ever. A player who abandons it before finishing Pumpkin Patch gets it back: an",
+    "abandoned quest reads as never taken, so the Quests tab of the player's quest menu offers Accept for",
+    "it at once (a quest that arms itself is never taken only at its giver), the next auto-accept pass (a",
+    "login, a world change, or another of their quests finishing) arms it again, and Old Jack's",
     "conversation offers it, its answer taking it and opening his quest list on it. Its Listing turns the",
-    "base's Hidden off so the Quests tab lists it while it is untaken; the inherited",
-    "RequirePrerequisites still keeps it off that list for anyone past Pumpkin Patch. The same ways",
-    "back reach a player whose quest log was full when this tried to arm. Once handed in it cannot be",
-    "abandoned, so its pay always waits to be collected. Pumpkin Patch does not wait on it: a player",
-    "without it still gets the questline from Old Jack.",
+    "base's Hidden off so the Quests tab lists it while it is untaken; the inherited RequirePrerequisites",
+    "still keeps it off that list for anyone past Pumpkin Patch. The same ways back reach a player whose",
+    "quest log was full when this tried to arm. Once handed in it cannot be abandoned, so its pay always",
+    "waits to be collected. Pumpkin Patch does not wait on it: a player without it still gets the",
+    "questline from Old Jack.",
     "",
     "The Item row hands over the library's Objective Book, the way into every quest and achievement list,",
     "so a server with this pack and no MMO Skill Tree has a way to get one; a player who already holds",
     "one from another mod gets a second.",
     "",
-    "Beside the table, MMO Skill Tree's Mmo_Xp row pays Acrobatics XP for the walk down, in Claim with the",
-    "rest. A server without that mod skips the row and shows nothing for it."
+    "Beside the table, MMO Skill Tree's Mmo_Xp row pays Acrobatics XP for the walk down, in Claim with",
+    "the rest. Its own Requires, the hytale:mod_installed gate, leaves the row out on a server without",
+    "that mod, unpaid and unshown, while the other rows still pay."
   ],
   "Name": "Old_Jack_Meet",
   "Parent": "Hallows_Eve_Quest_Base",
@@ -44,9 +46,6 @@
   },
   "Flow": { "AutoAccept": true },
   "Requires": {
-    "Factors": [
-      { "Factor": "ziggfreedcommon:feature", "Param": "Hallows_Eve_Live", "Min": 1 }
-    ],
     "Not": [
       { "Quests": [ "hallows_eve_old_jack_1" ] }
     ]
@@ -65,7 +64,8 @@
     "Claim": [
       { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Meet_Pay" } },
       { "Kind": "Item", "Params": { "Item": "Ziggfreed_Objective_Book", "Count": "1" } },
-      { "Kind": "Mmo_Xp", "Params": { "Skill": "ACROBATICS", "Amount": "250" } }
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "ACROBATICS", "Amount": "250" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
     ]
   }
 }

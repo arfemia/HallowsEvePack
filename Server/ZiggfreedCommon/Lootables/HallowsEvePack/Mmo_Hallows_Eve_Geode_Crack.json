@@ -1,10 +1,17 @@
 {
   "$Comment": [
     "Mining XP added to what a cracked Cursed Geode holds: the Hallows_Eve_Geode_Crack table, on a",
-    "server running MMO Skill Tree. It folds into that table through ContributesTo; see",
-    "Mmo_Hallows_Eve_Chain_Pay.json for how a contribution behaves. That table draws once from a pool",
-    "of its own, so this file adds a roll and never a pool entry: an entry here would join that draw",
-    "and thin out every item in it."
+    "server running MMO Skill Tree.",
+    "",
+    "ContributesTo folds these rolls into that table without touching its file, so the table's own",
+    "loot is tuned there alone. Requires takes this file out on a server without MMO Skill Tree, so",
+    "the table pays exactly what its own file says there; always write it with Min 1. A roll with no",
+    "Chance always pays, and Amount is XP before any boost.",
+    "",
+    "That table draws once from a pool of its own, so this file adds a roll and never a pool entry:",
+    "an entry here would join that draw and thin out every item in it. Old Jack's quests, board jobs",
+    "and achievements pay their skill XP in their own reward rows instead, so no file tops up their",
+    "pay tables."
   ],
   "Name": "Mmo_Hallows_Eve_Geode_Crack",
   "ContributesTo": "Hallows_Eve_Geode_Crack",
