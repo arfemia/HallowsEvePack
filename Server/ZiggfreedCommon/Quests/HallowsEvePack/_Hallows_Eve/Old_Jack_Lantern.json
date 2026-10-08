@@ -41,6 +41,7 @@
       "Target": "Hallows_Eve_Jack_Skeleton",
       "MatchMode": "EXACT",
       "Amount": 5,
+      "TextKey": "objective.hallows_eve.knock_down_skeletons",
       "Order": 1
     },
     "bring_pumpkin": {
@@ -48,6 +49,7 @@
       "Target": "Hallows_Eve_Hallowed_Pumpkin",
       "MatchMode": "EXACT",
       "Amount": 1,
+      "TextKey": "objective.hallows_eve.bring_pumpkin",
       "Order": 1,
       "TurnInNpcId": "giver"
     },
@@ -56,6 +58,7 @@
       "Target": "Hallows_Eve_Ectoplasm",
       "MatchMode": "EXACT",
       "Amount": 5,
+      "TextKey": "objective.hallows_eve.bring_ectoplasm",
       "Order": 1,
       "TurnInNpcId": "giver"
     }

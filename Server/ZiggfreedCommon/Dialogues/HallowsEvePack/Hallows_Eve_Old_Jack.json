@@ -22,11 +22,15 @@
     "Quests holds one row per quest: the intro, the questline, then the dailies, so the questline",
     "wins a tie with a daily. The intro's row brings the welcome back for a player who gave that",
     "quest up or whose quest log was full when it tried to arm: that answer takes it and opens his",
-    "quest list on it. Every quest shares active_generic while it is being worked on. Pumpkin Patch",
-    "and the lantern quest have hand-in lines of their own; the rest share ready_generic, which opens",
-    "his quest list for the hand-in. The three dailies share daily_offer, one answer each, shown while",
-    "that daily is free to take. Then shows the lit-lantern line while this year's lantern burns",
-    "(the lantern quest reads ON_COOLDOWN until it comes back next year).",
+    "quest list on it. While a quest is being worked on, its Active screen says what to do and where,",
+    "one screen per kind of work: active_pumpkins (Pumpkin Patch, Pumpkin Rounds), active_bombs",
+    "(Lantern Work), active_night (Ghouls on the Steps, Ectoplasm Run, Restless Souls, and The Hollow",
+    "Lantern, whose skeletons, Ectoplasm and pumpkin all come from the night) and active_stone (Cursed",
+    "Stone, Geodes for Jack). active_generic is the send-off an offer's answer goes to once the quest",
+    "is taken. Pumpkin Patch and the lantern quest have hand-in lines of their own; the rest share",
+    "ready_generic, which opens his quest list for the hand-in. The three dailies share daily_offer,",
+    "one answer each, shown while that daily is free to take. Then shows the lit-lantern line while",
+    "this year's lantern burns (the lantern quest reads ON_COOLDOWN until it comes back next year).",
     "",
     "THE MENU. The steady screens carry jack_menu, the one menu: his quest list, the board, the stall,",
     "How do we stand? (the Reputation page, shown once the player has any favor with him), the Almanac",
@@ -84,15 +88,15 @@
     ],
     "Quests": {
       "hallows_eve_old_jack_meet": { "Offerable": "meet" },
-      "hallows_eve_old_jack_1": { "Offerable": "patch_offer", "Active": "active_generic", "Ready": "patch_ready" },
-      "hallows_eve_old_jack_2": { "Offerable": "lantern_work_offer", "Active": "active_generic", "Ready": "ready_generic" },
-      "hallows_eve_old_jack_3": { "Offerable": "ghouls_offer", "Active": "active_generic", "Ready": "ready_generic" },
-      "hallows_eve_old_jack_4": { "Offerable": "souls_offer", "Active": "active_generic", "Ready": "ready_generic" },
-      "hallows_eve_old_jack_5": { "Offerable": "geodes_offer", "Active": "active_generic", "Ready": "ready_generic" },
-      "hallows_eve_old_jack_lantern": { "Offerable": "lantern_offer", "Active": "active_generic", "Ready": "lantern_ready" },
-      "hallows_eve_jack_daily_souls": { "Offerable": "daily_offer", "Active": "active_generic", "Ready": "ready_generic" },
-      "hallows_eve_jack_daily_pumpkins": { "Offerable": "daily_offer", "Active": "active_generic", "Ready": "ready_generic" },
-      "hallows_eve_jack_daily_geodes": { "Offerable": "daily_offer", "Active": "active_generic", "Ready": "ready_generic" }
+      "hallows_eve_old_jack_1": { "Offerable": "patch_offer", "Active": "active_pumpkins", "Ready": "patch_ready" },
+      "hallows_eve_old_jack_2": { "Offerable": "lantern_work_offer", "Active": "active_bombs", "Ready": "ready_generic" },
+      "hallows_eve_old_jack_3": { "Offerable": "ghouls_offer", "Active": "active_night", "Ready": "ready_generic" },
+      "hallows_eve_old_jack_4": { "Offerable": "souls_offer", "Active": "active_night", "Ready": "ready_generic" },
+      "hallows_eve_old_jack_5": { "Offerable": "geodes_offer", "Active": "active_stone", "Ready": "ready_generic" },
+      "hallows_eve_old_jack_lantern": { "Offerable": "lantern_offer", "Active": "active_night", "Ready": "lantern_ready" },
+      "hallows_eve_jack_daily_souls": { "Offerable": "daily_offer", "Active": "active_night", "Ready": "ready_generic" },
+      "hallows_eve_jack_daily_pumpkins": { "Offerable": "daily_offer", "Active": "active_pumpkins", "Ready": "ready_generic" },
+      "hallows_eve_jack_daily_geodes": { "Offerable": "daily_offer", "Active": "active_stone", "Ready": "ready_generic" }
     },
     "Then": [
       {
@@ -152,6 +156,22 @@
     },
     "active_generic": {
       "TextKey": "dialogue.hallows_eve_old_jack.active_generic.text",
+      "IncludeOptions": [ "jack_menu" ]
+    },
+    "active_pumpkins": {
+      "TextKey": "dialogue.hallows_eve_old_jack.active_pumpkins.text",
+      "IncludeOptions": [ "jack_menu" ]
+    },
+    "active_bombs": {
+      "TextKey": "dialogue.hallows_eve_old_jack.active_bombs.text",
+      "IncludeOptions": [ "jack_menu" ]
+    },
+    "active_night": {
+      "TextKey": "dialogue.hallows_eve_old_jack.active_night.text",
+      "IncludeOptions": [ "jack_menu" ]
+    },
+    "active_stone": {
+      "TextKey": "dialogue.hallows_eve_old_jack.active_stone.text",
       "IncludeOptions": [ "jack_menu" ]
     },
     "ready_generic": {
