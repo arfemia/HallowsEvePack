@@ -1,0 +1,24 @@
+{
+  "$Comment": [
+    "Wild Turkeys in the daytime while Harvest Feast runs, written as the world-spawn rule",
+    "Harvest_Feast_Turkeys when the feast starts and stilled (every moon phase at zero) when it ends.",
+    "They come in small flocks onto soil in the first zone's autumn woods, forests and plains, from six",
+    "in the morning to six at night, and the ones still out are gone after dark, so a night after the",
+    "feast ends none are left.",
+    "",
+    "The body is read by the game's own NPC/Spawn/World codec, the shape of its own animal rules. One",
+    "rule per creature and environment: no other rule in this pack names this role, and the game's own",
+    "turkey rule names the game's Turkey, a different role."
+  ],
+  "Event": "Harvest_Feast",
+  "Rule": "Harvest_Feast_Turkeys",
+  "Priority": 0,
+  "Spawn": {
+    "Environments": [ "Env_Zone1_Autumn", "Env_Zone1_Forests", "Env_Zone1_Plains" ],
+    "NPCs": [
+      { "Id": "Harvest_Feast_Turkey", "Weight": 12, "SpawnBlockSet": "Soil", "Flock": "Group_Small" }
+    ],
+    "DayTimeRange": [6, 18],
+    "Despawn": { "DayTimeRange": [19, 5] }
+  }
+}

@@ -1,0 +1,14 @@
+# Harvest Feast - the calendar's words (what the feast is called, and its banners) and the notice for
+# a find. Keys are written bare: the library finds each one by its tail, whatever this file is called.
+# Banners and notices print markup as text, so none of these values carries any.
+
+# ---- Harvest Feast ----
+calendar.harvest_feast.name = Harvest Feast
+calendar.harvest_feast.flavor = The fields are in, and a long table goes up in the Forgotten Temple.
+calendar.harvest_feast.herald.start = Harvest Feast
+calendar.harvest_feast.herald.start.sub = The feast table is set in the Forgotten Temple.
+calendar.harvest_feast.herald.end = Harvest Feast is over
+calendar.harvest_feast.herald.end.sub = The table's packed away until next year.
+
+# ---- Finds ----
+notify.harvest_feast_spice_found = A pinch of spice, tucked in with the pumpkin.

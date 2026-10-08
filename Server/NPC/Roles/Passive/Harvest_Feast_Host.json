@@ -1,0 +1,10 @@
+{
+  "$Comment": "Martha the Cook, the feast's host, who sets out a long table in the Forgotten Temple while Harvest Feast runs. A thin Variant: Template_Zig_QuestGiver, shipped by Ziggfreed's CommonLib, holds the whole body (standing, watching, the press-F action), and this file only says how the host looks and reads. Modify may name only the five parameters that template declares: Appearance, NameTranslationKey, Weapons, OffHand and DefaultOffHandSlot. Naming anything else makes the game refuse the whole role, and the only sign in game is a host who never appears. Appearance is this pack's own model (Models/Harvest_Feast/NPC/Harvest_Feast_Host.json), built from the game's own pieces. Weapons puts the game's crude sickle in the host's hand. NameTranslationKey is the nameplate, in this pack's npcs.lang. NpcPlacements/Harvest_Feast_Host_Temple.json stands the host in the temple, and only while the feast runs.",
+  "Type": "Variant",
+  "Reference": "Template_Zig_QuestGiver",
+  "Modify": {
+    "Appearance": "Harvest_Feast_Host",
+    "NameTranslationKey": "npcs.Harvest_Feast_Host.name",
+    "Weapons": [ "Tool_Sickle_Crude" ]
+  }
+}
