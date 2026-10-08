@@ -1,0 +1,438 @@
+{
+  "Name": "Harvest_Feast_Host",
+  "$Comment": [
+    "The Feast Host's conversation, everything the host says in the Forgotten Temple while Harvest Feast",
+    "runs. The host contracts everything: I'm, it's, don't.",
+    "",
+    "HOW A SCREEN IS PICKED. Start is walked in a fixed order: First (top to bottom), then a quest that is",
+    "READY to hand in, then one the host can OFFER, then one that is ACTIVE, then Then, then Fallback.",
+    "First holds three things. The off-season line comes first and shows only while the feast is off (a",
+    "visit after a command ends it, or a server owner who stands the host somewhere all year), and its",
+    "only answer is goodbye. The greeting shows until the hail spends it. The board line shows once a day",
+    "(Once with Period Daily, turning over at midnight UTC) and is skipped while the player has something",
+    "to hand in. Quests holds one row per quest, the questline first, so the questline wins a tie with a",
+    "daily. Then shows the after-feast line once this year's feast is done.",
+    "",
+    "THE BOARD LINE AND FAVOR. The board line comes in four wordings, one per band of favor with the host,",
+    "highest first, so the first that applies is the player's own rank: Revered, Honored, Friendly, then",
+    "the plain one, which is also what shows while the reputation is switched off. All four share one",
+    "daily Once through OnceId, so whichever wording a player hears spends the line for the day, and a rank",
+    "climbed later that day does not bring it back. Their Actions pay a little favor with the host when",
+    "the player finishes the line, whichever way they leave it.",
+    "",
+    "THE SEASON. A conversation has no Season leaf, so every option that opens the board or the stall",
+    "carries the Factor condition ziggfreedcommon:feature Harvest_Feast_Live, Min 1: while the feast is off",
+    "they are not offered, and nobody is sent to a screen that opens closed.",
+    "",
+    "THE FOOTER. Most screens pull in the feast_footer group: hand-ins, the quest list, the board, the",
+    "stall, How do we stand? (it opens the Reputation page, and shows once the player has any favor with",
+    "the host), the Almanac (only while the Almanac is switched on), two lore lines and goodbye.",
+    "",
+    "The greeting's memory is kept per world family, ForgottenTemple, the one place the host stands."
+  ],
+  "Header": [ "ActiveObjective" ],
+  "Memories": {
+    "feast_host_greeted": { "Where": { "GameplayConfig": [ "ForgottenTemple" ] } }
+  },
+  "Start": {
+    "First": [
+      {
+        "Node": "off_season",
+        "When": [
+          { "Type": "Not", "Of": [ { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Harvest_Feast_Live", "Min": 1 } ] }
+        ]
+      },
+      {
+        "Node": "first_words",
+        "When": [
+          { "Type": "World", "Where": { "GameplayConfig": [ "ForgottenTemple" ] } },
+          { "Type": "NotRemembered", "Memory": "feast_host_greeted" }
+        ]
+      },
+      {
+        "Node": "board_fresh_revered",
+        "When": [
+          { "Type": "Remembered", "Memory": "feast_host_greeted" },
+          { "Type": "Not", "Of": [ { "Type": "HasReadyToTurnIn" } ] },
+          { "Type": "Factor", "Factor": "ziggfreedcommon:reputation_rank", "Param": "Harvest_Feast_Host/Revered", "Min": 1 }
+        ],
+        "Once": { "Period": "Daily" },
+        "OnceId": "board_fresh",
+        "Actions": [
+          { "Type": "Grant", "Rewards": [ { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 10 } } ] }
+        ]
+      },
+      {
+        "Node": "board_fresh_honored",
+        "When": [
+          { "Type": "Remembered", "Memory": "feast_host_greeted" },
+          { "Type": "Not", "Of": [ { "Type": "HasReadyToTurnIn" } ] },
+          { "Type": "Factor", "Factor": "ziggfreedcommon:reputation_rank", "Param": "Harvest_Feast_Host/Honored", "Min": 1 }
+        ],
+        "Once": { "Period": "Daily" },
+        "OnceId": "board_fresh",
+        "Actions": [
+          { "Type": "Grant", "Rewards": [ { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 10 } } ] }
+        ]
+      },
+      {
+        "Node": "board_fresh_friendly",
+        "When": [
+          { "Type": "Remembered", "Memory": "feast_host_greeted" },
+          { "Type": "Not", "Of": [ { "Type": "HasReadyToTurnIn" } ] },
+          { "Type": "Factor", "Factor": "ziggfreedcommon:reputation_rank", "Param": "Harvest_Feast_Host/Friendly", "Min": 1 }
+        ],
+        "Once": { "Period": "Daily" },
+        "OnceId": "board_fresh",
+        "Actions": [
+          { "Type": "Grant", "Rewards": [ { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 10 } } ] }
+        ]
+      },
+      {
+        "Node": "board_fresh",
+        "When": [
+          { "Type": "Remembered", "Memory": "feast_host_greeted" },
+          { "Type": "Not", "Of": [ { "Type": "HasReadyToTurnIn" } ] }
+        ],
+        "Once": { "Period": "Daily" },
+        "OnceId": "board_fresh",
+        "Actions": [
+          { "Type": "Grant", "Rewards": [ { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 10 } } ] }
+        ]
+      }
+    ],
+    "Quests": {
+      "harvest_feast_host_1": { "Offerable": "wheat_offer", "Active": "wheat_brief", "Ready": "wheat_ready" },
+      "harvest_feast_host_2": { "Offerable": "turkeys_offer", "Active": "active_generic", "Ready": "turkeys_ready" },
+      "harvest_feast_host_3": { "Offerable": "pie_offer", "Active": "pie_brief", "Ready": "pie_ready" },
+      "harvest_feast_the_feast": { "Offerable": "feast_offer", "Active": "feast_brief", "Ready": "feast_ready" },
+      "harvest_feast_daily_turkeys": { "Offerable": "daily_turkeys_offer", "Active": "active_generic", "Ready": "ready_generic" },
+      "harvest_feast_daily_wheat": { "Offerable": "daily_wheat_offer", "Active": "active_generic", "Ready": "ready_generic" },
+      "harvest_feast_daily_roast": { "Offerable": "daily_roast_offer", "Active": "active_generic", "Ready": "ready_generic" }
+    },
+    "Then": [
+      {
+        "Node": "feast_done",
+        "When": [
+          { "Type": "QuestState", "Quest": "harvest_feast_the_feast", "State": "COMPLETED" }
+        ]
+      }
+    ],
+    "Fallback": "menu"
+  },
+  "Nodes": {
+    "off_season": {
+      "TextKey": "dialogue.harvest_feast_host.off_season.text",
+      "Options": [
+        { "LabelKey": "dialogue.harvest_feast_host.opt.farewell", "Style": "farewell", "Close": true }
+      ]
+    },
+    "first_words": {
+      "TextKey": "dialogue.harvest_feast_host.first_words.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.first_words.opt.hail",
+          "Actions": [
+            { "Type": "Remember", "Memory": "feast_host_greeted" },
+            { "Type": "Goto", "Node": "menu" }
+          ]
+        }
+      ]
+    },
+    "board_fresh": {
+      "TextKey": "dialogue.harvest_feast_host.board_fresh.text",
+      "IncludeOptions": [ "feast_greeting" ]
+    },
+    "board_fresh_friendly": {
+      "TextKey": "dialogue.harvest_feast_host.board_fresh_friendly.text",
+      "IncludeOptions": [ "feast_greeting" ]
+    },
+    "board_fresh_honored": {
+      "TextKey": "dialogue.harvest_feast_host.board_fresh_honored.text",
+      "IncludeOptions": [ "feast_greeting" ]
+    },
+    "board_fresh_revered": {
+      "TextKey": "dialogue.harvest_feast_host.board_fresh_revered.text",
+      "IncludeOptions": [ "feast_greeting" ]
+    },
+    "menu": {
+      "TextKey": "dialogue.harvest_feast_host.menu.text",
+      "IncludeOptions": [ "feast_footer" ]
+    },
+    "wheat_offer": {
+      "TextKey": "dialogue.harvest_feast_host.wheat_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.wheat_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "harvest_feast_host_1" }, { "Goto": "wheat_brief" } ]
+        }
+      ],
+      "IncludeOptions": [ "feast_tail" ]
+    },
+    "wheat_brief": {
+      "TextKey": "dialogue.harvest_feast_host.wheat_brief.text",
+      "IncludeOptions": [ "feast_footer" ]
+    },
+    "wheat_ready": {
+      "TextKey": "dialogue.harvest_feast_host.wheat_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.wheat_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "harvest_feast_host_1" } ],
+          "Do": [
+            { "TurnIn": "harvest_feast_host_1" },
+            { "Open": { "Type": "Quests", "Highlight": "harvest_feast_host_1" } }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "feast_tail" ]
+    },
+    "turkeys_offer": {
+      "TextKey": "dialogue.harvest_feast_host.turkeys_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.turkeys_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "harvest_feast_host_2" }, { "Goto": "active_generic" } ]
+        }
+      ],
+      "IncludeOptions": [ "feast_tail" ]
+    },
+    "turkeys_ready": {
+      "TextKey": "dialogue.harvest_feast_host.turkeys_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.turkeys_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "harvest_feast_host_2" } ],
+          "Do": [
+            { "TurnIn": "harvest_feast_host_2" },
+            { "Open": { "Type": "Quests", "Highlight": "harvest_feast_host_2" } }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "feast_tail" ]
+    },
+    "pie_offer": {
+      "TextKey": "dialogue.harvest_feast_host.pie_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.pie_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "harvest_feast_host_3" }, { "Goto": "pie_brief" } ]
+        }
+      ],
+      "IncludeOptions": [ "feast_tail" ]
+    },
+    "pie_brief": {
+      "TextKey": "dialogue.harvest_feast_host.pie_brief.text",
+      "IncludeOptions": [ "feast_footer" ]
+    },
+    "pie_ready": {
+      "TextKey": "dialogue.harvest_feast_host.pie_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.pie_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "harvest_feast_host_3" } ],
+          "Do": [
+            { "TurnIn": "harvest_feast_host_3" },
+            { "Open": { "Type": "Quests", "Highlight": "harvest_feast_host_3" } }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "feast_tail" ]
+    },
+    "feast_offer": {
+      "TextKey": "dialogue.harvest_feast_host.feast_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.feast_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "harvest_feast_the_feast" }, { "Goto": "feast_brief" } ]
+        }
+      ],
+      "IncludeOptions": [ "feast_tail" ]
+    },
+    "feast_brief": {
+      "TextKey": "dialogue.harvest_feast_host.feast_brief.text",
+      "IncludeOptions": [ "feast_footer" ]
+    },
+    "feast_ready": {
+      "TextKey": "dialogue.harvest_feast_host.feast_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.feast_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "harvest_feast_the_feast" } ],
+          "Do": [
+            { "TurnIn": "harvest_feast_the_feast" },
+            { "Open": { "Type": "Quests", "Highlight": "harvest_feast_the_feast" } }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "feast_tail" ]
+    },
+    "feast_done": {
+      "TextKey": "dialogue.harvest_feast_host.feast_done.text",
+      "IncludeOptions": [ "feast_footer" ]
+    },
+    "daily_turkeys_offer": {
+      "TextKey": "dialogue.harvest_feast_host.daily_turkeys_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.daily_turkeys_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "harvest_feast_daily_turkeys" }, { "Goto": "active_generic" } ]
+        }
+      ],
+      "IncludeOptions": [ "feast_tail" ]
+    },
+    "daily_wheat_offer": {
+      "TextKey": "dialogue.harvest_feast_host.daily_wheat_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.daily_wheat_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "harvest_feast_daily_wheat" }, { "Goto": "active_generic" } ]
+        }
+      ],
+      "IncludeOptions": [ "feast_tail" ]
+    },
+    "daily_roast_offer": {
+      "TextKey": "dialogue.harvest_feast_host.daily_roast_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.daily_roast_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "harvest_feast_daily_roast" }, { "Goto": "active_generic" } ]
+        }
+      ],
+      "IncludeOptions": [ "feast_tail" ]
+    },
+    "active_generic": {
+      "TextKey": "dialogue.harvest_feast_host.active_generic.text",
+      "IncludeOptions": [ "feast_footer" ]
+    },
+    "ready_generic": {
+      "TextKey": "dialogue.harvest_feast_host.ready_generic.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.ready_generic.opt.turnin",
+          "Style": "turnin",
+          "Open": "Quests"
+        }
+      ],
+      "IncludeOptions": [ "feast_tail" ]
+    },
+    "who_are_you": {
+      "TextKey": "dialogue.harvest_feast_host.who_are_you.text",
+      "IncludeOptions": [ "feast_tail" ]
+    },
+    "about_feast": {
+      "TextKey": "dialogue.harvest_feast_host.about_feast.text",
+      "IncludeOptions": [ "feast_tail" ]
+    }
+  },
+  "Fragments": {
+    "feast_greeting": [
+      {
+        "LabelKey": "dialogue.harvest_feast_host.board_fresh.opt.board",
+        "Style": "accept",
+        "Conditions": [
+          { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Harvest_Feast_Live", "Min": 1 }
+        ],
+        "Open": { "Type": "Board", "Board": "Harvest_Feast_Daily" }
+      },
+      {
+        "LabelKey": "dialogue.harvest_feast_host.board_fresh.opt.later",
+        "Style": "neutral",
+        "Goto": "menu"
+      }
+    ],
+    "feast_footer": [
+      {
+        "LabelKey": "dialogue.harvest_feast_host.opt.returned",
+        "Style": "accept",
+        "Conditions": [ { "Type": "HasReadyToTurnIn" } ],
+        "Open": "Quests"
+      },
+      {
+        "LabelKey": "dialogue.harvest_feast_host.opt.quests",
+        "Style": "neutral",
+        "Open": "Quests"
+      },
+      {
+        "LabelKey": "dialogue.harvest_feast_host.opt.board",
+        "Style": "neutral",
+        "Conditions": [
+          { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Harvest_Feast_Live", "Min": 1 }
+        ],
+        "Open": { "Type": "Board", "Board": "Harvest_Feast_Daily" }
+      },
+      {
+        "LabelKey": "dialogue.harvest_feast_host.opt.shop",
+        "Style": "neutral",
+        "Conditions": [
+          { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Harvest_Feast_Live", "Min": 1 }
+        ],
+        "Open": { "Type": "Shop", "Shop": "Harvest_Feast_Host" }
+      },
+      {
+        "LabelKey": "dialogue.harvest_feast_host.opt.standing",
+        "Style": "neutral",
+        "Conditions": [
+          { "Type": "Factor", "Factor": "ziggfreedcommon:reputation", "Param": "Harvest_Feast_Host", "Min": 1 }
+        ],
+        "Open": { "Type": "Reputation", "Reputation": "Harvest_Feast_Host" }
+      },
+      {
+        "LabelKey": "dialogue.harvest_feast_host.opt.almanac",
+        "Style": "neutral",
+        "Conditions": [
+          { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Almanac", "Min": 1 }
+        ],
+        "Open": { "Type": "Almanac", "Event": "Harvest_Feast" }
+      },
+      {
+        "LabelKey": "dialogue.harvest_feast_host.opt.who",
+        "Style": "neutral",
+        "Goto": "who_are_you"
+      },
+      {
+        "LabelKey": "dialogue.harvest_feast_host.opt.feast",
+        "Style": "neutral",
+        "Goto": "about_feast"
+      },
+      {
+        "LabelKey": "dialogue.harvest_feast_host.opt.farewell",
+        "Style": "farewell",
+        "Close": true
+      }
+    ],
+    "feast_tail": [
+      {
+        "LabelKey": "dialogue.harvest_feast_host.opt.back",
+        "Style": "neutral",
+        "Goto": "menu"
+      },
+      {
+        "LabelKey": "dialogue.harvest_feast_host.opt.who",
+        "Style": "neutral",
+        "Goto": "who_are_you"
+      },
+      {
+        "LabelKey": "dialogue.harvest_feast_host.opt.feast",
+        "Style": "neutral",
+        "Goto": "about_feast"
+      },
+      {
+        "LabelKey": "dialogue.harvest_feast_host.opt.farewell",
+        "Style": "farewell",
+        "Close": true
+      }
+    ]
+  }
+}
