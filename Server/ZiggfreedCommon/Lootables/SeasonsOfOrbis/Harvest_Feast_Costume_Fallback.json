@@ -1,0 +1,11 @@
+{
+  "$Comment": "What the turkey costume pays instead when it cannot go on: the player is already in a costume, or in a form they cannot take off. The host's second quest names this table as the costume's FallbackLootable, so a player always gets something. It always pays, with no Chance and no Conditions, and it carries no costume of its own.",
+  "Name": "Harvest_Feast_Costume_Fallback",
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "1" } } ]
+      }
+    }
+  ]
+}

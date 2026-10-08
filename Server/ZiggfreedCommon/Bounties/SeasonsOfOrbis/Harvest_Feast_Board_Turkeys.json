@@ -1,0 +1,9 @@
+{
+  "$Comment": "A Field job on the feast board: bring down Wild Turkeys, the feast's own, which walk the first zone's woods and fields by day while the feast runs. The season, the listing and the pay come from Harvest_Feast_Contract_Base.",
+  "Parent": "Harvest_Feast_Contract_Base",
+  "Listing": { "Icon": "Food_Wildmeat_Raw" },
+  "Boards": [ { "Board": "Harvest_Feast_Daily", "Difficulty": "Harvest_Feast_Field", "Weight": 1 } ],
+  "Objectives": {
+    "bring_down_turkeys": { "Kind": "KILL_ENTITY", "Target": "Harvest_Feast_Turkey", "MatchMode": "EXACT", "Amount": 8 }
+  }
+}

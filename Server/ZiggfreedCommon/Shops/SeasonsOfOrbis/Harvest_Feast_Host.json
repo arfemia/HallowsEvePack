@@ -1,0 +1,29 @@
+{
+  "$Comment": [
+    "The feast stall. Season makes the stall, and every offer naming it, absent while the feast is off.",
+    "Order 90 keeps it behind a server's everyday storefronts, so a shop block or a conversation line that",
+    "opens the first storefront never lands here. Where keeps the stall in the Forgotten Temple: anywhere",
+    "else it is left out of every list and opens closed.",
+    "",
+    "Everything here is priced in festival tokens, the currency every season shares. Includes carries the",
+    "festival shelf (Seasons_Of_Orbis_Festival_Stall) beside the host's own goods: the same offers every",
+    "season's host sells, with one purchase limit across them all. The shelf brings its own wallet, place",
+    "and name, so the header shows festival tokens and the festival shelf follows the host's own shelves",
+    "with no line of its own here. CategoryOrder fixes the order of the host's own shelves, and each one's",
+    "name is a key in harvestfeast.progression.lang."
+  ],
+  "Season": "Harvest_Feast",
+  "Text": {
+    "TitleKey": "shop.harvest_feast_host.title",
+    "FlavorKey": "shop.harvest_feast_host.desc"
+  },
+  "Icon": "Food_Pie_Pumpkin",
+  "Order": 90,
+  "Includes": [ "Seasons_Of_Orbis_Festival_Stall" ],
+  "CategoryOrder": [ "kitchen", "decor" ],
+  "Categories": {
+    "kitchen": { "TitleKey": "shop.harvest_feast_host.category.kitchen" },
+    "decor": { "TitleKey": "shop.harvest_feast_host.category.decor" }
+  },
+  "Where": { "GameplayConfig": [ "ForgottenTemple" ] }
+}

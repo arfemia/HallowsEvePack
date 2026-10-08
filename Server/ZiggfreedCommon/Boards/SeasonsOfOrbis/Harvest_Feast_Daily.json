@@ -1,0 +1,42 @@
+{
+  "$Comment": [
+    "The feast board, drawn once a day at midnight UTC, one contract per slot. A slot posts only",
+    "contracts whose Boards entry names its Difficulty band. Harvest_Feast_Field holds the work out in the",
+    "woods and fields (turkeys, wheat); Harvest_Feast_Kitchen holds the cooking brought to the table",
+    "(pies, roast); Harvest_Feast_Skill holds the skill jobs this pack adds for a server running MMO Skill",
+    "Tree.",
+    "",
+    "Favor with the host opens more of the board. The third and fourth slots carry Requires: the second",
+    "Field job opens at Friendly, the second Kitchen job at Honored. Everyone sees them posted, and a",
+    "player below the rank sees them locked, with the reason. Each band has two contracts, so a band fills",
+    "two slots at most.",
+    "",
+    "The skill slot is Optional: where nothing carries its band the board shows no gap. Grades names each",
+    "band for the badge on its rows: TitleKey is its words, Color the badge's colour. Season makes the board",
+    "absent while the feast is off, and its contracts pay the moment the work is done, so nothing waits on",
+    "a board that has gone for the year. Order 90 keeps it behind a server's everyday boards. Where keeps",
+    "it in the Forgotten Temple: anywhere else it is left out of every list and opens closed."
+  ],
+  "Season": "Harvest_Feast",
+  "Text": {
+    "TitleKey": "board.harvest_feast_daily.title",
+    "FlavorKey": "board.harvest_feast_daily.desc"
+  },
+  "Icon": "Plant_Crop_Wheat_Item",
+  "Order": 90,
+  "Rotation": { "Period": "Daily" },
+  "Slots": [
+    { "Difficulty": "Harvest_Feast_Field" },
+    { "Difficulty": "Harvest_Feast_Kitchen" },
+    { "Difficulty": "Harvest_Feast_Field", "Optional": true, "Requires": { "Factors": [ { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Harvest_Feast_Host/Friendly", "Min": 1 } ] } },
+    { "Difficulty": "Harvest_Feast_Kitchen", "Optional": true, "Requires": { "Factors": [ { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Harvest_Feast_Host/Honored", "Min": 1 } ] } },
+    { "Difficulty": "Harvest_Feast_Skill", "Optional": true }
+  ],
+  "Grades": {
+    "Harvest_Feast_Field": { "TitleKey": "board.harvest_feast_daily.grade.field", "Color": "#9ccc65" },
+    "Harvest_Feast_Kitchen": { "TitleKey": "board.harvest_feast_daily.grade.kitchen", "Color": "#ffb74d" },
+    "Harvest_Feast_Skill": { "TitleKey": "board.harvest_feast_daily.grade.skill", "Color": "#c08a3a" }
+  },
+  "Currencies": [ "Seasons_Of_Orbis_Festival_Token" ],
+  "Where": { "GameplayConfig": [ "ForgottenTemple" ] }
+}
