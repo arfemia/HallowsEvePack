@@ -1,19 +1,23 @@
 {
   "$Comment": [
-    "Seasons of Orbis, the top rung of the ladder: a keepsake kept from every season this server runs.",
+    "Seasons of Orbis, the top rung of the ladder: a keepsake kept from every season this server runs,",
+    "and never from fewer than two.",
     "",
     "MetaSelector writes no Needs, so it asks for every season it finds: each season whose yearly",
-    "keepsake carries the season_keepsake tag, any year's copy standing for it. A new season raises",
-    "the count, and a player who already earned this keeps it. A season a server owner switches off",
-    "in calendar.json leaves the count, so this stays within reach. It pays the title",
-    "Seasons_Of_Orbis_Every_Season through the Title reward kind.",
+    "keepsake carries the season_keepsake tag, any year's copy standing for it. AtLeast is the floor",
+    "under that count, so on a server running one season this waits for a second and never comes",
+    "before the first rung. A new season raises the count, and a player who already earned this keeps",
+    "it. A season a server owner switches off in calendar.json leaves the count, so this stays within",
+    "reach while at least two seasons are on. The description's number comes from TextArgs, so keep it",
+    "equal to AtLeast. It pays the title Seasons_Of_Orbis_Every_Season through the Title reward kind.",
     "",
     "Keep this file's name: it is the id every player's progress on it is filed under. Filed under",
     "Seasons with no subcategory, which is where the Almanac looks for its banner."
   ],
   "Text": {
     "TitleKey": "achievement.seasons_of_orbis.title",
-    "FlavorKey": "achievement.seasons_of_orbis.desc"
+    "FlavorKey": "achievement.seasons_of_orbis.desc",
+    "TextArgs": { "Flavor": [ "2" ] }
   },
   "Listing": {
     "Category": "Seasons",
@@ -25,7 +29,8 @@
   "MetaSelector": {
     "Category": "Seasons",
     "Tags": [ "season_keepsake" ],
-    "AnyYear": true
+    "AnyYear": true,
+    "AtLeast": 2
   },
   "Rewards": {
     "Auto": [

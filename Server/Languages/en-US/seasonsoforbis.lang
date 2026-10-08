@@ -25,7 +25,7 @@ achievement.seasons_of_orbis_rung_1.title = Season to Season
 achievement.seasons_of_orbis_rung_2.title = Round the Year
 achievement.seasons_of_orbis_rung.desc = Keep a keepsake from {0} different seasons.
 achievement.seasons_of_orbis.title = Seasons of Orbis
-achievement.seasons_of_orbis.desc = Keep a keepsake from every season.
+achievement.seasons_of_orbis.desc = Keep a keepsake from every season, at least {0} of them.
 
 # ---- The ladder's title ----
 title.seasons_of_orbis_every_season.name = Friend of the Seasons
