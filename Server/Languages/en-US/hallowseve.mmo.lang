@@ -1,0 +1,16 @@
+# Seasons of Orbis - the words of Hallow's Eve's MMO Skill Tree layer: the skill contracts on Old Jack's
+# board and their slot's badge, the Harvest Moon boost and the Hallowed set's skill half. Keys are written
+# bare: MMO Skill Tree and the library find each one by its tail, whatever this file is called. Nothing
+# reads them on a server without MMO Skill Tree.
+board.grade.hallows_eve_skill = Skill Work
+boostrule.mmo_hallows_eve_harvest_moon.title = Harvest Moon
+gearset.mmo_hallows_eve_hallowed.title = Hallowed Set (skills)
+gearset.mmo_hallows_eve_hallowed.tier_full = Helm and shield together: a little more luck, and harder Artillery hits.
+quest.mmo_hallows_eve_daily_artillery.title = Lantern Drill
+quest.mmo_hallows_eve_daily_artillery.flavor = A good arm takes practice, and this is the month for it. Throw at whatever deserves it tonight and come back with a steadier aim.
+quest.mmo_hallows_eve_daily_harvesting.title = Night Harvest
+quest.mmo_hallows_eve_daily_harvesting.flavor = The patches won't pick themselves, and the cold pumpkins only come up for a steady hand. Spend tonight in the fields.
+quest.mmo_hallows_eve_daily_mining.title = Deep Shift
+quest.mmo_hallows_eve_daily_mining.flavor = The stone gives its geodes up to people who know it. Put in a long shift underground tonight and get to know it better.
+quest.mmo_hallows_eve_daily_crafting.title = Busy Hands
+quest.mmo_hallows_eve_daily_crafting.flavor = Every lantern on the temple steps was made by somebody's hands. Spend tonight at a bench, any bench, and keep yours busy.
