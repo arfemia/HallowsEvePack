@@ -3,10 +3,10 @@
     "The last step of Old Jack's questline: light the Hollow Lantern. Finishing it earns that year's",
     "keepsake achievement, hallows_eve_lantern_keepsake, which hands over the Hollow Lantern itself.",
     "",
-    "Repeat brings this one quest back once a year: the 60-day wait from finishing is longer than",
-    "the event and shorter than a year, so a returning player lights a new lantern next October and",
-    "earns that year's keepsake without walking the whole questline again. The steps before it never",
-    "come back.",
+    "Repeat.PerRun brings this one quest back once in each Hallow's Eve (Times is how often one run",
+    "takes it), so a returning player lights a new lantern next October and earns that year's",
+    "keepsake without walking the whole questline again. A lantern left unfinished when the event",
+    "ends waits for the next one. The steps before it never come back.",
     "",
     "The two Mmo_Xp rows are MMO Skill Tree's, paid only where that mod runs: Defense XP for the",
     "skeletons and the souls the Ectoplasm comes from, and Harvesting XP for the pumpkin, at the rate a",
@@ -26,8 +26,7 @@
     "Chains": [ { "Id": "hallows_eve_old_jack", "Tier": 6 } ]
   },
   "Repeat": {
-    "Cooldown": { "Days": 60 },
-    "CooldownFrom": "Complete"
+    "PerRun": { "Event": "Hallows_Eve", "Times": 1 }
   },
   "Requires": {
     "Quests": [ "hallows_eve_old_jack_5" ]
