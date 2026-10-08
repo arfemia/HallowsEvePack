@@ -8,6 +8,7 @@
 currency.hallows_eve_sweets.name = Hallow Sweets
 
 # ---- Old Jack's questline ----
+quest.category.hallows_eve = Hallow's Eve
 quest.hallows_eve_old_jack_meet.title = Lanterns in the Temple
 quest.hallows_eve_old_jack_meet.flavor = It's the season again, so I'm back in the Forgotten Temple with my lanterns. Any Forgotten Temple Gateway will get you there. Come and find me. I could use a hand.
 quest.hallows_eve_old_jack_1.title = Pumpkin Patch

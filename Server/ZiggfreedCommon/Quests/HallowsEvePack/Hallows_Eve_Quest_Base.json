@@ -3,7 +3,9 @@
     "The skeleton every Hallow's Eve quest at Old Jack inherits through Parent. It is Abstract, so it",
     "is never offered itself.",
     "",
-    "Listing keeps each quest off open lists, so it is offered only at Old Jack; Flow, Npc and",
+    "Listing keeps each quest off open lists, so it is offered only at Old Jack, and files it under",
+    "the Hallows_Eve category, which reads \"Hallow's Eve\" in a quest's list line and in the book's",
+    "category filter (its name is quest.category.hallows_eve in the pack's lang). Flow, Npc and",
     "CompletionDialogue are how each one is taken, tracked and handed in there. Npc.TurnInId adds the",
     "report-back step to Old Jack to every quest whose own steps hand nothing in. A child that writes",
     "its own Listing or Flow keeps every leaf of these it leaves out.",
@@ -14,7 +16,7 @@
     "spells its id, and Parent names it the same way in the game and in the build's content check."
   ],
   "Abstract": true,
-  "Listing": { "Hidden": true, "RequirePrerequisites": true },
+  "Listing": { "Category": "Hallows_Eve", "Hidden": true, "RequirePrerequisites": true },
   "Flow": { "AutoAccept": false, "AutoTrack": true, "HideLockedSteps": true },
   "Npc": { "ViewId": "Hallows_Eve_Old_Jack", "TurnInId": "giver" },
   "CompletionDialogue": "Hallows_Eve_Old_Jack"
