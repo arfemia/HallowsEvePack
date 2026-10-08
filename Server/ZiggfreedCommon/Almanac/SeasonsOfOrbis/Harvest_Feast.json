@@ -1,0 +1,63 @@
+{
+  "$Comment": "Harvest Feast in the Almanac: the season's name and picture, its yearly keepsake, and the tallies it keeps. The file name is the calendar event id. Each stat line counts one kind of moment while the feast runs; its key is the tally's name in every player's record, so never rename one. Hero.Composition is the banner at the top of the season's page: each item's own icon drawn at X and Y (pixels from the top-left of the 962 x 240 plate) and Size (a square side up to 128; 64, 96 and 128 read best), over the Background colour. Keep the plate left of about x 450 clear for the title, status and dates. Gradient paints the sky from its Top colour down to its Bottom one in place of the flat Background, and Glow lays a soft round light under the items, its square box placed by X, Y and Size the way an item's is. Accent is the season's colour for the strip under the top of the page; a colour too dark to read against a row is swapped for the shared one.",
+  "Text": {
+    "TitleKey": "almanac.harvest_feast.title",
+    "FlavorKey": "almanac.harvest_feast.flavor"
+  },
+  "Icon": "Food_Pie_Pumpkin",
+  "Accent": "#D9A441",
+  "Hero": {
+    "Composition": {
+      "Background": "#1A140C",
+      "Gradient": { "Top": "#0E0A06", "Bottom": "#3A2614" },
+      "Glow": { "Color": "#B8742A", "X": 514, "Y": -78, "Size": 400 },
+      "Items": [
+        { "Item": "Food_Pie_Pumpkin", "X": 650, "Y": 58, "Size": 128 },
+        { "Item": "Food_Pie_Apple", "X": 546, "Y": 90, "Size": 96 },
+        { "Item": "Food_Pie_Meat", "X": 786, "Y": 90, "Size": 96 },
+        { "Item": "Deco_Trophy_Harvest", "X": 562, "Y": 14, "Size": 64 },
+        { "Item": "Food_Popcorn", "X": 802, "Y": 14, "Size": 64 },
+        { "Item": "Plant_Leaves_Autumn", "X": 476, "Y": 40, "Size": 64 },
+        { "Item": "Plant_Crop_Corn_Item", "X": 890, "Y": 40, "Size": 64 },
+        { "Item": "Plant_Crop_Wheat_Item", "X": 476, "Y": 118, "Size": 64 },
+        { "Item": "Plant_Crop_Pumpkin_Item", "X": 890, "Y": 116, "Size": 64 }
+      ]
+    }
+  },
+  "Order": 20,
+  "Keepsake": "Harvest_Feast_Keepsake",
+  "Stats": {
+    "Turkeys_Brought_Down": {
+      "Kind": "KILL_ENTITY",
+      "Target": "Harvest_Feast_Turkey",
+      "MatchMode": "EXACT",
+      "TextKey": "almanac.harvest_feast.turkeys_brought_down",
+      "Icon": "Food_Wildmeat_Raw",
+      "Order": 10
+    },
+    "Crops_Picked": {
+      "Kind": "PICKUP_ITEM",
+      "Target": "Plant_Crop_",
+      "MatchMode": "PREFIX",
+      "TextKey": "almanac.harvest_feast.crops_picked",
+      "Icon": "Plant_Crop_Wheat_Item",
+      "Order": 20
+    },
+    "Feasts": {
+      "Kind": "COMPLETE_QUEST",
+      "Target": "harvest_feast_the_feast",
+      "MatchMode": "EXACT",
+      "TextKey": "almanac.harvest_feast.feasts",
+      "Icon": "Deco_Plate",
+      "Order": 30
+    },
+    "Errands": {
+      "Kind": "COMPLETE_QUEST",
+      "Target": "harvest_feast_daily_",
+      "MatchMode": "PREFIX",
+      "TextKey": "almanac.harvest_feast.errands",
+      "Icon": "Food_Bread",
+      "Order": 40
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$Comment": "Pick crops by hand during one season. PICKUP_ITEM counts each hand harvest, and the PREFIX match on Plant_Crop_ takes every crop the game grows: wheat, pumpkins, carrots, corn and the rest. The description's number comes from the criterion's Amount through @amount. The full_table tag counts it toward The Full Table.",
+  "Parent": "Harvest_Feast_Achievement_Base",
+  "Text": { "TextArgs": { "Flavor": [ "@amount" ] } },
+  "Listing": { "SortOrder": 30, "Icon": "Plant_Crop_Pumpkin_Item", "Tags": [ "full_table" ] },
+  "Criteria": {
+    "pick-crops": {
+      "Kind": "PICKUP_ITEM",
+      "Target": "Plant_Crop_",
+      "MatchMode": "PREFIX",
+      "Amount": 100
+    }
+  }
+}

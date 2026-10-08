@@ -1,0 +1,35 @@
+{
+  "$Comment": [
+    "The host's second quest: bring down Wild Turkeys. Npc.TurnInId, from the base, adds the report-back",
+    "step to the host after the hunt. Its Claim also hands over the game's pumpkin pie recipe page, which",
+    "the third quest needs, and puts the turkey costume on the player for a few minutes. A player already",
+    "in a costume keeps their look and gets Harvest_Feast_Costume_Fallback instead."
+  ],
+  "Name": "Host_2",
+  "Parent": "Harvest_Feast_Quest_Base",
+  "Listing": {
+    "Icon": "Food_Wildmeat_Raw",
+    "Category": "main",
+    "SortOrder": 20,
+    "Chains": [ { "Id": "harvest_feast_host", "Tier": 2 } ]
+  },
+  "Requires": { "Quests": [ "harvest_feast_host_1" ] },
+  "Objectives": {
+    "bring_down_turkeys": {
+      "Kind": "KILL_ENTITY",
+      "Target": "Harvest_Feast_Turkey",
+      "MatchMode": "EXACT",
+      "Amount": 5,
+      "Order": 1
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Harvest_Feast_Chain_Pay" } },
+      { "Kind": "Item", "Params": { "Item": "Recipe_Food_Pie_Pumpkin", "Count": "1" } },
+      { "Kind": "Costume", "Params": { "Costume": "Harvest_Feast_Costume_Turkey", "FallbackLootable": "Harvest_Feast_Costume_Fallback" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 250 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 150 } }
+    ]
+  }
+}

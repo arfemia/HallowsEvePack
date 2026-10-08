@@ -1,0 +1,20 @@
+{
+  "$Comment": [
+    "The Full Table: the season's capstone, earned the moment every achievement tagged full_table in the",
+    "Seasons > Harvest_Feast subcategory is earned in the same year. MetaSelector picks them, so a new",
+    "full_table achievement counts toward it with no edit here; it never picks itself or another",
+    "capstone. It inherits the yearly occurrence, so each year has its own copy, and it pays the title",
+    "Harvest_Feast_Full_Table through the Title reward kind. Keep the full_table tag off this file."
+  ],
+  "Parent": "Harvest_Feast_Achievement_Base",
+  "Listing": { "SortOrder": 90, "Icon": "Deco_Trophy_Harvest" },
+  "Scoring": { "Points": 50 },
+  "MetaSelector": {
+    "Category": "Seasons",
+    "Subcategory": "Harvest_Feast",
+    "Tags": [ "full_table" ]
+  },
+  "Rewards": {
+    "Auto": [ { "Kind": "Title", "Params": { "Title": "Harvest_Feast_Full_Table" } } ]
+  }
+}
