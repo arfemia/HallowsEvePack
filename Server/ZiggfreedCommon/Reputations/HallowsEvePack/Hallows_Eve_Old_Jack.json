@@ -7,7 +7,8 @@
     "Helm adds to it. Cap is the most favor earning can reach: Exalted's floor, so Jack's Own is as",
     "far as it goes. Ranks renames the library's ranks for Old Jack alone; a rank left out keeps the",
     "library's name. Order places him on the Reputation page. Favor comes from the Reputation rewards",
-    "on his quests and board contracts and from his daily board line."
+    "on his quests and board contracts and from his daily board line. Earn lists those ways, one lang",
+    "key a line, for the How to earn block on the Reputation page."
   ],
   "Text": {
     "TitleKey": "reputation.hallows_eve_old_jack.name",
@@ -23,5 +24,13 @@
     "Honored": { "Name": "reputation.hallows_eve_old_jack.rank.honored" },
     "Revered": { "Name": "reputation.hallows_eve_old_jack.rank.revered" },
     "Exalted": { "Name": "reputation.hallows_eve_old_jack.rank.exalted" }
+  },
+  "Earn": {
+    "Lines": [
+      "reputation.hallows_eve_old_jack.earn.quests",
+      "reputation.hallows_eve_old_jack.earn.board",
+      "reputation.hallows_eve_old_jack.earn.talk",
+      "reputation.hallows_eve_old_jack.earn.gear"
+    ]
   }
 }
