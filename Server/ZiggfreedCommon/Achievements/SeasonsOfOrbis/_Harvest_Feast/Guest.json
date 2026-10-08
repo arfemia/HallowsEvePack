@@ -1,0 +1,15 @@
+{
+  "$Comment": "Be on the server while Harvest Feast runs. CALENDAR_ATTENDED fires once per player for each year's run of the event, when the player is first in the world while it runs, so this is the season's welcome. The criterion's TextKey words the step, since the shared sentence names the event by its raw id. The full_table tag counts it toward The Full Table.",
+  "Parent": "Harvest_Feast_Achievement_Base",
+  "Listing": { "SortOrder": 5, "Icon": "Food_Bread", "Tags": [ "full_table" ] },
+  "Scoring": { "Points": 5 },
+  "Criteria": {
+    "attend-harvest-feast": {
+      "Kind": "CALENDAR_ATTENDED",
+      "Target": "Harvest_Feast",
+      "MatchMode": "EXACT",
+      "Amount": 1,
+      "TextKey": "objective.harvest_feast.attend"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "$Comment": "The Full Table: the title the season's capstone achievement pays. It shows beside a player's name in menus and leaderboards once they pick it. It names no keys: title.harvest_feast_full_table.name and .flavor name and describe it, and .display, whose {0} is the name, is where it sits around the name. Enabled false hides it everywhere without taking it from anybody who earned it.",
+  "Order": 40
+}

@@ -37,3 +37,51 @@ shop.harvest_feast_offer_recipe_apple_pie.title = Apple Pie Recipe
 shop.harvest_feast_offer_recipe_apple_pie.desc = Read it once and you can bake apple pies for good.
 shop.harvest_feast_offer_recipe_meat_pie.title = Meat Pie Recipe
 shop.harvest_feast_offer_recipe_meat_pie.desc = The host's own meat pie, written down for friends of the table.
+
+# ---- The host's questline and the yearly feast ----
+quest.harvest_feast_host_1.title = Wheat for the Ovens
+quest.harvest_feast_host_1.flavor = Bread first, it always is. The wild wheat grows thick this time of year, so bring me a good armful for the ovens.
+quest.harvest_feast_host_2.title = The Turkey Hunt
+quest.harvest_feast_host_2.flavor = The wild turkeys are fat and loud this month, and not as daft as they look. Bring a few down; the table's no good without a roast.
+quest.harvest_feast_host_3.title = The First Pie
+quest.harvest_feast_host_3.flavor = Here's the part I can't do alone. Read that recipe page, bake a pumpkin pie at a cooking bench, and bring it to me.
+quest.harvest_feast_the_feast.title = The Long Table
+quest.harvest_feast_the_feast.flavor = Once a year we put it all on the table and eat till nobody can stand. Bring a pie, some roast and a basket of carrots, and we'll set it out together.
+
+# ---- The host's dailies ----
+quest.harvest_feast_daily_turkeys.title = Turkey Run
+quest.harvest_feast_daily_turkeys.flavor = The turkeys are back in the woods and louder than ever. Bring a few more down before they eat every seed in the field.
+quest.harvest_feast_daily_wheat.title = Flour Rounds
+quest.harvest_feast_daily_wheat.flavor = The ovens went through every bit of flour last night. Bring me more wheat before the bread runs out.
+quest.harvest_feast_daily_roast.title = Roast for the Table
+quest.harvest_feast_daily_roast.flavor = Cook some meat over a fire and bring it here. People keep eating it before it gets to the table.
+
+# ---- Steps worded for this season ----
+objective.harvest_feast.attend = Be here for Harvest Feast
+
+# ---- Achievements ----
+achievement.category.seasons.harvest_feast = Harvest Feast
+achievement.harvest_feast_guest.title = A Seat at the Table {0}
+achievement.harvest_feast_guest.desc = Be here for Harvest Feast.
+achievement.harvest_feast_turkey_chaser.title = Turkey Chaser {0}
+achievement.harvest_feast_turkey_chaser.desc = Bring down {0} Wild Turkeys.
+achievement.harvest_feast_full_baskets.title = Full Baskets {0}
+achievement.harvest_feast_full_baskets.desc = Pick {0} crops by hand.
+achievement.harvest_feast_keepsake.title = Feast Plate {0}
+achievement.harvest_feast_keepsake.desc = Sit down to the feast at the long table.
+keepsake.harvest_feast_plate.name = Feast Plate of {0}
+achievement.harvest_feast_full_table.title = The Full Table {0}
+achievement.harvest_feast_full_table.desc = Earn every Harvest Feast achievement in one season.
+
+# ---- The Full Table title ----
+title.harvest_feast_full_table.name = The Full Table
+title.harvest_feast_full_table.flavor = Earned every Harvest Feast achievement in one season.
+title.harvest_feast_full_table.display = {0} of the Full Table
+
+# ---- The Almanac page ----
+almanac.harvest_feast.title = Harvest Feast
+almanac.harvest_feast.flavor = Each year when the fields are in, a long table goes up in the Forgotten Temple and everybody eats.
+almanac.harvest_feast.turkeys_brought_down = Wild Turkeys brought down
+almanac.harvest_feast.crops_picked = Crops picked by hand
+almanac.harvest_feast.feasts = Feasts sat down to
+almanac.harvest_feast.errands = Errands run for the host
