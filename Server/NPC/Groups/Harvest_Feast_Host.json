@@ -1,0 +1,4 @@
+{
+  "$Comment": "Martha the Cook, the feast's host, alone in a group of one. The reputation group Harvest_Feast_Host (NPC/Reputation/Groups) names this group, which is how the game ties the way the host treats each player to that player's favor. Add another role id to IncludeRoles and that character shares the host's favor.",
+  "IncludeRoles": [ "Harvest_Feast_Host" ]
+}

@@ -1,0 +1,26 @@
+{
+  "$Comment": [
+    "Favor at the Feast: the name, picture and limits of the game's reputation group of the same id",
+    "(NPC/Reputation/Groups/Harvest_Feast_Host.json), which keeps each player's number.",
+    "",
+    "Cap is the most favor earning can reach: Exalted's floor, so Head of the Table is as far as it goes.",
+    "Ranks renames the library's ranks for the host alone; a rank left out keeps the library's name, and a",
+    "lock on one of these ranks reads the name written here. Order places the host on the Reputation page",
+    "after Old Jack and the Hallowed. Favor comes from the Reputation rewards on the host's quests and",
+    "board jobs and from the host's daily greeting. No gear adds to it, so there is no Gear group."
+  ],
+  "Text": {
+    "TitleKey": "reputation.harvest_feast_host.name",
+    "FlavorKey": "reputation.harvest_feast_host.flavor"
+  },
+  "Icon": "Food_Pie_Apple",
+  "Order": 30,
+  "Cap": 21000,
+  "Ranks": {
+    "Neutral": { "Name": "reputation.harvest_feast_host.rank.neutral" },
+    "Friendly": { "Name": "reputation.harvest_feast_host.rank.friendly" },
+    "Honored": { "Name": "reputation.harvest_feast_host.rank.honored" },
+    "Revered": { "Name": "reputation.harvest_feast_host.rank.revered" },
+    "Exalted": { "Name": "reputation.harvest_feast_host.rank.exalted" }
+  }
+}

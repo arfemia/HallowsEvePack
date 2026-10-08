@@ -1,0 +1,14 @@
+{
+  "$Comment": [
+    "The toast and the sound a player gets when a hand-harvested pumpkin comes with Spices during Harvest",
+    "Feast. The file name is the moment id, and it is the Cue the spice row",
+    "(BonusRows/SeasonsOfOrbis/Harvest_Feast_Spice_Find.json) puts on its roll; a cue plays only when the",
+    "roll beside it handed something over. Key is a line in this pack's harvestfeast.world.lang, written",
+    "bare; Sound is any SoundEvent id, played where the player stands."
+  ],
+  "Toast": {
+    "Title": { "Key": "notify.harvest_feast_spice_found" },
+    "Tone": "Reward"
+  },
+  "Sound": { "Id": "SFX_Default_Harvest" }
+}
