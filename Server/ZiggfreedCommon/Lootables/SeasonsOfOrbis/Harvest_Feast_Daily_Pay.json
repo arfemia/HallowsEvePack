@@ -1,0 +1,24 @@
+{
+  "$Comment": [
+    "What each of the host's three dailies pays. Every roll is read on its own: the first always pays, the",
+    "other two are chances on top. Chance is a percent from 0 to 100. Festival tokens pay through the",
+    "Currency reward kind; favor rides each daily's own Rewards. A companion mod adds rolls with a file",
+    "naming this table in ContributesTo."
+  ],
+  "Name": "Harvest_Feast_Daily_Pay",
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "1" } } ]
+      }
+    },
+    {
+      "Chance": { "Base": 20.0 },
+      "Grants": { "Items": [ { "Item": "Food_Pie_Apple", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 5.0 },
+      "Grants": { "Items": [ { "Item": "Plant_Seeds_Corn", "Count": 2 } ] }
+    }
+  ]
+}

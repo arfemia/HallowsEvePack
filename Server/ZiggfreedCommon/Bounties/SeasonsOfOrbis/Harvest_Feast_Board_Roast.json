@@ -1,0 +1,9 @@
+{
+  "$Comment": "A Kitchen job on the feast board: bring cooked wild meat, the roast from a campfire, handed in at the board. The season, the listing and the pay come from Harvest_Feast_Contract_Base.",
+  "Parent": "Harvest_Feast_Contract_Base",
+  "Listing": { "Icon": "Food_Wildmeat_Cooked" },
+  "Boards": [ { "Board": "Harvest_Feast_Daily", "Difficulty": "Harvest_Feast_Kitchen", "Weight": 1 } ],
+  "Objectives": {
+    "bring_roast": { "Kind": "TURN_IN", "Target": "Food_Wildmeat_Cooked", "MatchMode": "EXACT", "Amount": 5 }
+  }
+}

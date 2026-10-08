@@ -1,0 +1,8 @@
+{
+  "$Comment": "The game's own autumn leaves, a stack to scatter round the table. The title is the item's own name key, written in full (server.items.<Id>.name); the item has no description key, so the offer has no line under it.",
+  "Parent": "Harvest_Feast_Offer_Base",
+  "Text": { "TitleKey": "server.items.Plant_Leaves_Autumn.name" },
+  "Listing": { "Category": "decor", "SortOrder": 10 },
+  "Cost": { "Currencies": { "Seasons_Of_Orbis_Festival_Token": 2 } },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Plant_Leaves_Autumn", "Count": 16 } } ]
+}

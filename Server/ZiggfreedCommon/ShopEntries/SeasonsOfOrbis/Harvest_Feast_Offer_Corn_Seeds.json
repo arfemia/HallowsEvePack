@@ -1,0 +1,12 @@
+{
+  "$Comment": "The game's own corn seeds, for the popcorn and for luring turkeys: corn grows wild in few places, so the stall sells a bag a day. Named by the item's own keys, written in full (server.items.<Id>.name and .description).",
+  "Parent": "Harvest_Feast_Offer_Base",
+  "Text": {
+    "TitleKey": "server.items.Plant_Seeds_Corn.name",
+    "FlavorKey": "server.items.Plant_Seeds_Corn.description"
+  },
+  "Listing": { "Category": "kitchen", "SortOrder": 40 },
+  "Cost": { "Currencies": { "Seasons_Of_Orbis_Festival_Token": 3 } },
+  "Limits": { "Daily": 1 },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Plant_Seeds_Corn", "Count": 4 } } ]
+}
