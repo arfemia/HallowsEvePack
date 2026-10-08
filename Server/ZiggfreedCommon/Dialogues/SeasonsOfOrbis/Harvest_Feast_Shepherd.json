@@ -1,0 +1,56 @@
+{
+  "Name": "Harvest_Feast_Shepherd",
+  "$Comment": [
+    "Bram the Shepherd's conversation, one of the three villagers standing in the Forgotten Temple while",
+    "Harvest Feast runs. Bram contracts, and keeps it short: I'm, can't, she's.",
+    "",
+    "Start's First beat answers a visit while the feast is off (after a command ends it, or when a server",
+    "owner stands Bram somewhere all year) with one line and goodbye. Otherwise the conversation opens on",
+    "greeting, the Fallback. A conversation has no Season leaf, so the off-season beat reads the feature",
+    "ziggfreedcommon:feature Harvest_Feast_Live, Min 1.",
+    "",
+    "Bram gives no quest and credits no talk of his own. The invitation tour's line is not in this file:",
+    "DialogueExtensions/SeasonsOfOrbis/Harvest_Feast_Invitation.json adds it to the screens a",
+    "conversation opens on while the player carries the tour, after a screen's own lines and before the",
+    "goodbye group, so goodbye stays last. That line is spent once a day per conversation, which is why",
+    "each villager has a conversation of their own."
+  ],
+  "Start": {
+    "First": [
+      {
+        "Node": "off_season",
+        "When": [
+          { "Type": "Not", "Of": [ { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Harvest_Feast_Live", "Min": 1 } ] }
+        ]
+      }
+    ],
+    "Fallback": "greeting"
+  },
+  "Nodes": {
+    "off_season": {
+      "TextKey": "dialogue.harvest_feast_shepherd.off_season.text",
+      "Options": [
+        { "LabelKey": "dialogue.harvest_feast_shepherd.opt.farewell", "Style": "farewell", "Close": true }
+      ]
+    },
+    "greeting": {
+      "TextKey": "dialogue.harvest_feast_shepherd.greeting.text",
+      "Options": [
+        { "LabelKey": "dialogue.harvest_feast_shepherd.opt.sheep", "Style": "neutral", "Goto": "sheep" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "sheep": {
+      "TextKey": "dialogue.harvest_feast_shepherd.sheep.text",
+      "Options": [
+        { "LabelKey": "dialogue.harvest_feast_shepherd.opt.back", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    }
+  },
+  "Fragments": {
+    "goodbye": [
+      { "LabelKey": "dialogue.harvest_feast_shepherd.opt.farewell", "Style": "farewell", "Close": true }
+    ]
+  }
+}

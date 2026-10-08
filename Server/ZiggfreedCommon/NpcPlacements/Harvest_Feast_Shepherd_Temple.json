@@ -1,0 +1,48 @@
+{
+  "$Comment": [
+    "Bram the Shepherd, one of the three villagers standing in the Forgotten Temple while Harvest Feast",
+    "runs, so a player carrying the invitation tour always has somebody to ask. The role, this placement",
+    "and the conversation pressing F opens all ship in this pack. Interact names the conversation",
+    "(Dialogues/SeasonsOfOrbis/Harvest_Feast_Shepherd.json). Author Dialogue or Open, never both.",
+    "",
+    "Season makes Bram a guest, as it does the host: the placement stands only while the calendar event",
+    "Harvest_Feast is switched on and running, and the library looks at every placement again at each",
+    "start and end, so neither needs a restart. Lifecycle keeps his chunk loaded, stands him up again if",
+    "something removes him, and raises his health past anything that can be dealt.",
+    "",
+    "Where finds the temple by its GameplayConfig id, which stays the same on every visit while the",
+    "world's name does not. Identity.NpcId is spelled as the role, so a nameplate key built from it",
+    "resolves. Each villager has an id and a conversation of their own: the invitation line is spent per",
+    "conversation, so two villagers sharing one would count as one person asked.",
+    "",
+    "Anchor is the temple's arrival spot plus an offset: fourteen blocks along negative X, out along the",
+    "open landing, and two back along negative Z, past Elsie. To move Bram, edit Anchor.WorldSpawn.Offset",
+    "(small enough to stay off the walls) and Yaw to turn him, then look at the spot in game. To take him",
+    "out without editing this file, set enabled (lower case, as that file spells it) to false for this id",
+    "in mods/ziggfreedcommon/npc-placements.json."
+  ],
+  "Name": "Harvest_Feast_Shepherd_Temple",
+  "Enabled": true,
+  "Season": "Harvest_Feast",
+  "Where": {
+    "GameplayConfig": [ "ForgottenTemple" ]
+  },
+  "Identity": {
+    "Role": "Harvest_Feast_Shepherd",
+    "NpcId": "Harvest_Feast_Shepherd"
+  },
+  "Anchor": {
+    "WorldSpawn": {
+      "Offset": { "X": -14, "Z": -2 },
+      "Yaw": 180.0
+    }
+  },
+  "Lifecycle": {
+    "KeepAlive": true,
+    "Respawn": true,
+    "Fortify": true
+  },
+  "Interact": {
+    "Dialogue": "Harvest_Feast_Shepherd"
+  }
+}

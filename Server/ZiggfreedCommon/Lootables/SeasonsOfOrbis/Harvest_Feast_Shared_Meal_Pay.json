@@ -1,0 +1,24 @@
+{
+  "$Comment": [
+    "What sharing a meal at the host's table pays, once a day. Every roll is read on its own: the first",
+    "always pays, the second is a chance on top. Chance is a percent from 0 to 100.",
+    "",
+    "The first roll pays festival tokens through the Currency reward kind, and a loaf to take home: you",
+    "bring something, you take something home. Favor rides the quest's own Rewards. Only the shared meal",
+    "pays from this table, so a companion mod that adds a roll here, with a file naming this table in",
+    "ContributesTo, adds it to the meal alone."
+  ],
+  "Name": "Harvest_Feast_Shared_Meal_Pay",
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "1" } } ],
+        "Items": [ { "Item": "Food_Bread", "Count": 1 } ]
+      }
+    },
+    {
+      "Chance": { "Base": 20.0 },
+      "Grants": { "Items": [ { "Item": "Food_Popcorn", "Count": 2 } ] }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "$Comment": "Tomas the Miller, one of the three villagers who stand in the Forgotten Temple while Harvest Feast runs, so a player carrying the invitation tour always has somebody to ask. A thin Variant: Template_Zig_QuestGiver, shipped by Ziggfreed's CommonLib, holds the whole body (standing, watching, the press-F action), and this file only says how Tomas looks and reads. Modify may name only the five parameters that template declares: Appearance, NameTranslationKey, Weapons, OffHand and DefaultOffHandSlot. Naming anything else makes the game refuse the whole role, and the only sign in game is a villager who never appears. Appearance is this pack's own model (Models/Harvest_Feast/NPC/Harvest_Feast_Miller.json), built from the game's own pieces. Tomas holds nothing: Weapons and OffHand are left out, so the template's empty hands stand. NameTranslationKey is the nameplate, in this pack's npcs.lang. NpcPlacements/Harvest_Feast_Miller_Temple.json stands Tomas in the temple, and only while the feast runs.",
+  "Type": "Variant",
+  "Reference": "Template_Zig_QuestGiver",
+  "Modify": {
+    "Appearance": "Harvest_Feast_Miller",
+    "NameTranslationKey": "npcs.Harvest_Feast_Miller.name"
+  }
+}

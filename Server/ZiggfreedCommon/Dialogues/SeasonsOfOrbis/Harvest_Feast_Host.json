@@ -24,6 +24,12 @@
     "carries the Factor condition ziggfreedcommon:feature Harvest_Feast_Live, Min 1: while the feast is off",
     "they are not offered, and nobody is sent to a screen that opens closed.",
     "",
+    "THE TABLE AND THE TOUR. The shared meal (harvest_feast_shared_meal) and the invitation tour",
+    "(harvest_feast_invitations) have rows like any quest. The line a player uses to invite somebody is",
+    "not in this file: DialogueExtensions/SeasonsOfOrbis/Harvest_Feast_Invitation.json adds it to every",
+    "other character's conversation and leaves this one out, since nobody invites the cook to the cook's",
+    "own table.",
+    "",
     "THE FOOTER. Most screens pull in the feast_footer group: hand-ins, the quest list, the board, the",
     "stall, How do we stand? (it opens the Reputation page, and shows once the player has any favor with",
     "the host), the Almanac (only while the Almanac is switched on), two lore lines and goodbye.",
@@ -106,9 +112,11 @@
       "harvest_feast_host_2": { "Offerable": "turkeys_offer", "Active": "active_generic", "Ready": "turkeys_ready" },
       "harvest_feast_host_3": { "Offerable": "pie_offer", "Active": "pie_brief", "Ready": "pie_ready" },
       "harvest_feast_the_feast": { "Offerable": "feast_offer", "Active": "feast_brief", "Ready": "feast_ready" },
+      "harvest_feast_invitations": { "Offerable": "invitations_offer", "Active": "invitations_brief", "Ready": "invitations_ready" },
       "harvest_feast_daily_turkeys": { "Offerable": "daily_turkeys_offer", "Active": "active_generic", "Ready": "ready_generic" },
       "harvest_feast_daily_wheat": { "Offerable": "daily_wheat_offer", "Active": "active_generic", "Ready": "ready_generic" },
-      "harvest_feast_daily_roast": { "Offerable": "daily_roast_offer", "Active": "active_generic", "Ready": "ready_generic" }
+      "harvest_feast_daily_roast": { "Offerable": "daily_roast_offer", "Active": "active_generic", "Ready": "ready_generic" },
+      "harvest_feast_shared_meal": { "Offerable": "meal_offer", "Active": "meal_brief", "Ready": "meal_ready" }
     },
     "Then": [
       {
@@ -308,6 +316,66 @@
           "LabelKey": "dialogue.harvest_feast_host.daily_roast_offer.opt.accept",
           "Style": "accept",
           "Do": [ { "Accept": "harvest_feast_daily_roast" }, { "Goto": "active_generic" } ]
+        }
+      ],
+      "IncludeOptions": [ "feast_tail" ]
+    },
+    "meal_offer": {
+      "TextKey": "dialogue.harvest_feast_host.meal_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.meal_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "harvest_feast_shared_meal" }, { "Goto": "meal_brief" } ]
+        }
+      ],
+      "IncludeOptions": [ "feast_tail" ]
+    },
+    "meal_brief": {
+      "TextKey": "dialogue.harvest_feast_host.meal_brief.text",
+      "IncludeOptions": [ "feast_footer" ]
+    },
+    "meal_ready": {
+      "TextKey": "dialogue.harvest_feast_host.meal_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.meal_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "harvest_feast_shared_meal" } ],
+          "Do": [
+            { "TurnIn": "harvest_feast_shared_meal" },
+            { "Open": { "Type": "Quests", "Highlight": "harvest_feast_shared_meal" } }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "feast_tail" ]
+    },
+    "invitations_offer": {
+      "TextKey": "dialogue.harvest_feast_host.invitations_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.invitations_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "harvest_feast_invitations" }, { "Goto": "invitations_brief" } ]
+        }
+      ],
+      "IncludeOptions": [ "feast_tail" ]
+    },
+    "invitations_brief": {
+      "TextKey": "dialogue.harvest_feast_host.invitations_brief.text",
+      "IncludeOptions": [ "feast_footer" ]
+    },
+    "invitations_ready": {
+      "TextKey": "dialogue.harvest_feast_host.invitations_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.invitations_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "harvest_feast_invitations" } ],
+          "Do": [
+            { "TurnIn": "harvest_feast_invitations" },
+            { "Open": { "Type": "Quests", "Highlight": "harvest_feast_invitations" } }
+          ]
         }
       ],
       "IncludeOptions": [ "feast_tail" ]
