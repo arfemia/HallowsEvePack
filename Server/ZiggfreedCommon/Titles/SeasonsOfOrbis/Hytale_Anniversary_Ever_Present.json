@@ -1,0 +1,8 @@
+{
+  "$Comment": "The Ever-Present: the title every year's copy of the Hytale_Anniversary achievement pays, for being on the server on Hytale's anniversary. Every copy pays this same title, so a player who earns it once keeps it, and a later year's copy changes nothing. It shows beside a player's name in menus and leaderboards once they pick it. Where it sits around the name is the key title.hytale_anniversary_ever_present.display, whose {0} is the name. Enabled false hides it everywhere without taking it from anybody who earned it.",
+  "Order": 90,
+  "Text": {
+    "TitleKey": "title.hytale_anniversary_ever_present.name",
+    "FlavorKey": "title.hytale_anniversary_ever_present.flavor"
+  }
+}

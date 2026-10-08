@@ -1,5 +1,5 @@
 # Seasons of Orbis across the seasons: Festival Favor, the festival token, the Seasons of Orbis
-# ladder and the festival shelf every season's host carries.
+# ladder and the festival shelf every season's host carries; and Hytale's Anniversary, a one-day event.
 # Keys are written bare: the library finds each one by its tail, whatever this file is called.
 # Numbers ride {0} and come from the content files, so a retune never touches a translation.
 
@@ -31,3 +31,30 @@ achievement.seasons_of_orbis.desc = Keep a keepsake from every season, at least 
 title.seasons_of_orbis_every_season.name = Friend of the Seasons
 title.seasons_of_orbis_every_season.flavor = Kept a keepsake from every season.
 title.seasons_of_orbis_every_season.display = {0}, Friend of the Seasons
+
+# ---- Hytale's Anniversary: one day a year, with a banner, an Almanac page, that year's achievement and its title ----
+calendar.hytale_anniversary.name = Hytale's Anniversary
+calendar.hytale_anniversary.flavor = The day Hytale came out. Every year on this day, being here earns that year's anniversary achievement.
+calendar.hytale_anniversary.herald.start = Happy Anniversary, Hytale
+calendar.hytale_anniversary.herald.start.sub = Hytale came out on this day. Being here today earns this year's anniversary achievement.
+almanac.hytale_anniversary.title = Hytale's Anniversary
+almanac.hytale_anniversary.flavor = Hytale came out on this day, and the first adventurers came to Orbis. Be on the server on the day for that year's anniversary achievement, then light a candle, share some bread, and say hello to whoever is about.
+achievement.category.seasons.hytale_anniversary = Hytale's Anniversary
+achievement.hytale_anniversary.title = Hytale's Anniversary {0}
+achievement.hytale_anniversary.desc = Be here for Hytale's anniversary.
+objective.hytale_anniversary.attend = Be here for Hytale's anniversary
+# Each year's own name, by the year it runs. A year with no line here is named by the title above, with its year.
+achievement.hytale_anniversary_2027.title = Hytale's First Anniversary
+achievement.hytale_anniversary_2028.title = Hytale's Second Anniversary
+achievement.hytale_anniversary_2029.title = Hytale's Third Anniversary
+achievement.hytale_anniversary_2030.title = Hytale's Fourth Anniversary
+achievement.hytale_anniversary_2031.title = Hytale's Fifth Anniversary
+achievement.hytale_anniversary_2032.title = Hytale's Sixth Anniversary
+achievement.hytale_anniversary_2033.title = Hytale's Seventh Anniversary
+achievement.hytale_anniversary_2034.title = Hytale's Eighth Anniversary
+achievement.hytale_anniversary_2035.title = Hytale's Ninth Anniversary
+achievement.hytale_anniversary_2036.title = Hytale's Tenth Anniversary
+# The title every year's copy pays: the same one each year.
+title.hytale_anniversary_ever_present.name = The Ever-Present
+title.hytale_anniversary_ever_present.flavor = Was here for Hytale's anniversary.
+title.hytale_anniversary_ever_present.display = {0} the Ever-Present
