@@ -1,5 +1,5 @@
 {
-  "$Comment": "A day contract on Old Jack's board: its Difficulty band Hallows_Eve_Day posts it in the board's daylight slots, since it can be finished before dark. USE_ITEM with the Qualifier Throw counts a thrown Lantern Bomb of any tier: the PREFIX match takes every id starting Hallows_Eve_Lantern_Bomb_. The step's own TextKey words it, since the shared sentence for the kind is generic. It writes its own Rewards.Claim, the base's list with MMO Skill Tree's Mmo_Xp row added (Artillery XP for the throws), because a child's list replaces the base's whole; the pay waits at the board until the player collects it. A server without that mod skips the row.",
+  "$Comment": "A day contract on Old Jack's board: its Difficulty band Hallows_Eve_Day posts it in the board's daylight slots, since it can be finished before dark. USE_ITEM with the Qualifier Throw counts a thrown Lantern Bomb of any tier: the PREFIX match takes every id starting Hallows_Eve_Lantern_Bomb_. The step's own TextKey words it, since the shared sentence for the kind is generic. It writes its own Rewards.Claim, the base's list with MMO Skill Tree's Mmo_Xp row added (Artillery XP for the throws), because a child's list replaces the base's whole; the pay waits at the board until the player collects it. Its own Requires, the hytale:mod_installed gate, leaves the row out on a server without that mod, and the rest of the contract pays.",
   "Parent": "Hallows_Eve_Contract_Base",
   "Text": {
     "TitleKey": "quest.hallows_eve_board_bombs.title",
@@ -22,7 +22,8 @@
       { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 50 } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 25 } },
-      { "Kind": "Mmo_Xp", "Params": { "Skill": "ARTILLERY", "Amount": "200" } }
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "ARTILLERY", "Amount": "200" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
     ]
   }
 }
