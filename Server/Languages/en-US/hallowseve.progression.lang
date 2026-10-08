@@ -9,7 +9,7 @@ currency.hallows_eve_sweets.name = Hallow Sweets
 
 # ---- Old Jack's questline ----
 quest.hallows_eve_old_jack_meet.title = Lanterns in the Temple
-quest.hallows_eve_old_jack_meet.flavor = It's the season again, so I'm back in the Forgotten Temple, keeping the lanterns lit. Any of the temple gateways will get you there. Come and find me. I could use a hand.
+quest.hallows_eve_old_jack_meet.flavor = It's the season again, so I'm back in the Forgotten Temple with my lanterns. Any of the temple gateways will get you there. Come and find me. I could use a hand.
 quest.hallows_eve_old_jack_1.title = Pumpkin Patch
 quest.hallows_eve_old_jack_1.flavor = Pick a pumpkin this month and now and then one comes up cold and glowing. Bring me a few of those Hallowed ones.
 quest.hallows_eve_old_jack_2.title = Lantern Work
@@ -110,16 +110,16 @@ notify.hallows_eve_hallowed_cache = A cache from the Hallowed, for keeping the d
 
 # ---- The Almanac page ----
 almanac.hallows_eve.title = Hallow's Eve
-almanac.hallows_eve.flavor = Each autumn Old Jack opens the Forgotten Temple and lights its lanterns.
+almanac.hallows_eve.flavor = Each autumn Old Jack sets up in the Forgotten Temple, and the dead walk at night.
 almanac.hallows_eve.bombs_thrown = Lantern Bombs thrown
 almanac.hallows_eve.ghouls_felled = Hollow Ghouls felled
 almanac.hallows_eve.souls_freed = Lost Souls freed
 almanac.hallows_eve.geodes_cracked = Cursed Geodes cracked
 
 # ---- Old Jack's conversation ----
-dialogue.hallows_eve_old_jack.meet_arrival.text = You found the place, then. Good.\nDon't mind the head. It's a pumpkin, and it's been on there a long while. I'm Old Jack, and every autumn I come back to keep these lanterns lit while the dead are up. There's work if you want it, starting with <b>pumpkins</b>.
+dialogue.hallows_eve_old_jack.meet_arrival.text = You found the place, then. Good.\nDon't mind the head. It's a pumpkin, and it's been on there a long while. I'm Old Jack, and every autumn I come back with my lanterns while the dead are up. There's work if you want it, starting with <b>pumpkins</b>.
 dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = You sent for me?
-dialogue.hallows_eve_old_jack.first_words.text = Don't mind the head. It's a pumpkin, and it's been on there a long while.\nI'm Old Jack. Every autumn the dead get restless and the lanterns in the <color is="#ffd97a">Forgotten Temple</color> go dark, so I come back and light them. I could use a pair of hands that aren't carved.
+dialogue.hallows_eve_old_jack.first_words.text = Don't mind the head. It's a pumpkin, and it's been on there a long while.\nI'm Old Jack. Every autumn the dead get restless, so I come back to the <color is="#ffd97a">Forgotten Temple</color> with my lanterns. I could use a pair of hands that aren't carved.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Pleased to meet you, Jack.
 dialogue.hallows_eve_old_jack.board_fresh.text = There's fresh work on my board, some for the dark and some for the daylight. It pays.
 dialogue.hallows_eve_old_jack.board_fresh.opt.board = Show me the board.

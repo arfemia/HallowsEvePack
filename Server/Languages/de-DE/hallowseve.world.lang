@@ -4,7 +4,7 @@
 
 # ---- Allerheiligenabend ----
 calendar.hallows_eve.name = Allerheiligenabend
-calendar.hallows_eve.flavor = Der Alte Jack hütet den Vergessenen Tempel, und nachts gehen die Toten um.
+calendar.hallows_eve.flavor = Der Alte Jack richtet sich im Vergessenen Tempel ein, und nachts gehen die Toten um.
 calendar.hallows_eve.herald.start = Allerheiligenabend
 calendar.hallows_eve.herald.start.sub = Der Alte Jack wartet am Vergessenen Tempel.
 calendar.hallows_eve.herald.end = Allerheiligenabend ist vorbei

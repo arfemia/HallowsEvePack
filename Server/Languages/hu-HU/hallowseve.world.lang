@@ -4,7 +4,7 @@
 
 # ---- Mindenszentek Éje ----
 calendar.hallows_eve.name = Mindenszentek Éje
-calendar.hallows_eve.flavor = Öreg Jack vigyáz a Feledett Templomra, és éjjel járnak a holtak.
+calendar.hallows_eve.flavor = Öreg Jack berendezkedik a Feledett Templomban, és éjjel járnak a holtak.
 calendar.hallows_eve.herald.start = Mindenszentek Éje
 calendar.hallows_eve.herald.start.sub = Öreg Jack a Feledett Templomban vár.
 calendar.hallows_eve.herald.end = Véget ért Mindenszentek Éje

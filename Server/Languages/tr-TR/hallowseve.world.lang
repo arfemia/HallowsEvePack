@@ -4,7 +4,7 @@
 
 # ---- Cadılar Bayramı ----
 calendar.hallows_eve.name = Cadılar Bayramı
-calendar.hallows_eve.flavor = Yaşlı Jack Unutulmuş Tapınak'a göz kulak olur, ölüler de geceleri yürür.
+calendar.hallows_eve.flavor = Yaşlı Jack Unutulmuş Tapınak'a yerleşir, ölüler de geceleri dolaşır.
 calendar.hallows_eve.herald.start = Cadılar Bayramı
 calendar.hallows_eve.herald.start.sub = Yaşlı Jack, Unutulmuş Tapınak'ta bekliyor.
 calendar.hallows_eve.herald.end = Cadılar Bayramı sona erdi

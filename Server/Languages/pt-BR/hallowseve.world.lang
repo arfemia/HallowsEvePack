@@ -4,7 +4,7 @@
 
 # ---- Noite das Bruxas ----
 calendar.hallows_eve.name = Noite das Bruxas
-calendar.hallows_eve.flavor = O Velho Jack cuida do Templo Esquecido, e os mortos andam à noite.
+calendar.hallows_eve.flavor = O Velho Jack se instala no Templo Esquecido, e os mortos andam à noite.
 calendar.hallows_eve.herald.start = Noite das Bruxas
 calendar.hallows_eve.herald.start.sub = O Velho Jack espera no Templo Esquecido.
 calendar.hallows_eve.herald.end = A Noite das Bruxas acabou

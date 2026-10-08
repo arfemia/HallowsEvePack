@@ -8,7 +8,7 @@ currency.hallows_eve_sweets.name = Dulces de Ánimas
 
 # ---- La cadena de misiones del Viejo Jack ----
 quest.hallows_eve_old_jack_meet.title = Faroles en el Templo
-quest.hallows_eve_old_jack_meet.flavor = Ya es otra vez la temporada, así que he vuelto al Templo Olvidado a mantener encendidos los faroles. Cualquiera de los portales del templo te lleva hasta allí. Ven a buscarme. No me vendría mal una mano.
+quest.hallows_eve_old_jack_meet.flavor = Ya es otra vez la temporada, así que he vuelto al Templo Olvidado con mis faroles. Cualquiera de los portales del templo te lleva hasta allí. Ven a buscarme. No me vendría mal una mano.
 quest.hallows_eve_old_jack_1.title = El Calabazar
 quest.hallows_eve_old_jack_1.flavor = Recoge una calabaza este mes y de vez en cuando te sale una fría y reluciente. Tráeme unas cuantas de esas consagradas.
 quest.hallows_eve_old_jack_2.title = Faena de Faroles
@@ -85,16 +85,16 @@ title.hallows_eve_hallowed.display = {0} el Consagrado
 
 # ---- La página del Almanaque ----
 almanac.hallows_eve.title = Noche de Ánimas
-almanac.hallows_eve.flavor = Cada otoño, el Viejo Jack abre el Templo Olvidado y enciende sus faroles.
+almanac.hallows_eve.flavor = Cada otoño el Viejo Jack se instala en el Templo Olvidado, y los muertos andan de noche.
 almanac.hallows_eve.bombs_thrown = Bombas Farol lanzadas
 almanac.hallows_eve.ghouls_felled = Gules Descarnados abatidos
 almanac.hallows_eve.souls_freed = Almas Perdidas liberadas
 almanac.hallows_eve.geodes_cracked = Geodas Malditas rotas
 
 # ---- La conversación del Viejo Jack ----
-dialogue.hallows_eve_old_jack.meet_arrival.text = Así que diste con el sitio. Bien.\nNo le hagas caso a la cabeza. Es una calabaza, y lleva ahí puesta mucho tiempo. Soy el Viejo Jack, y cada otoño vuelvo para mantener encendidos estos faroles mientras los muertos andan sueltos. Hay trabajo si lo quieres, empezando por las <b>calabazas</b>.
+dialogue.hallows_eve_old_jack.meet_arrival.text = Así que diste con el sitio. Bien.\nNo le hagas caso a la cabeza. Es una calabaza, y lleva ahí puesta mucho tiempo. Soy el Viejo Jack, y cada otoño vuelvo con mis faroles mientras los muertos andan sueltos. Hay trabajo si lo quieres, empezando por las <b>calabazas</b>.
 dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = ¿Me has mandado llamar?
-dialogue.hallows_eve_old_jack.first_words.text = No le hagas caso a la cabeza. Es una calabaza, y lleva ahí puesta mucho tiempo.\nSoy el Viejo Jack. Cada otoño los muertos se inquietan y los faroles del <color is="#ffd97a">Templo Olvidado</color> se apagan, así que vuelvo y los enciendo. No me vendría mal un par de manos que no estén talladas.
+dialogue.hallows_eve_old_jack.first_words.text = No le hagas caso a la cabeza. Es una calabaza, y lleva ahí puesta mucho tiempo.\nSoy el Viejo Jack. Cada otoño los muertos se inquietan, así que vuelvo al <color is="#ffd97a">Templo Olvidado</color> con mis faroles. No me vendría mal un par de manos que no estén talladas.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Un placer conocerte, Jack.
 dialogue.hallows_eve_old_jack.board_fresh.text = Hay trabajo nuevo en mi tablón, una parte para la oscuridad y otra para la luz del día. Se paga.
 dialogue.hallows_eve_old_jack.board_fresh.opt.board = Enséñame el tablón.

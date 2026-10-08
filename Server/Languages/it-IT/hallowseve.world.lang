@@ -4,7 +4,7 @@
 
 # ---- Vigilia di Ognissanti ----
 calendar.hallows_eve.name = Vigilia di Ognissanti
-calendar.hallows_eve.flavor = Il Vecchio Jack custodisce il Tempio Dimenticato, e di notte i morti camminano.
+calendar.hallows_eve.flavor = Il Vecchio Jack si stabilisce nel Tempio Dimenticato, e di notte i morti camminano.
 calendar.hallows_eve.herald.start = Vigilia di Ognissanti
 calendar.hallows_eve.herald.start.sub = Il Vecchio Jack aspetta al Tempio Dimenticato.
 calendar.hallows_eve.herald.end = La Vigilia di Ognissanti è finita

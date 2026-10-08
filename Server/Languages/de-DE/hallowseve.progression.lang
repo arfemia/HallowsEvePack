@@ -8,7 +8,7 @@ currency.hallows_eve_sweets.name = Allerheiligen-Naschwerk
 
 # ---- Die Questreihe des Alten Jack ----
 quest.hallows_eve_old_jack_meet.title = Laternen im Tempel
-quest.hallows_eve_old_jack_meet.flavor = Es ist wieder Saison, also bin ich zurück im Vergessenen Tempel und halte die Laternen am Brennen. Jedes der Tempeltore bringt dich hin. Komm und such mich. Ich könnt 'ne Hand gebrauchen.
+quest.hallows_eve_old_jack_meet.flavor = Es ist wieder Saison, also bin ich mit meinen Laternen zurück im Vergessenen Tempel. Jedes der Tempeltore bringt dich hin. Komm und such mich. Ich könnt 'ne Hand gebrauchen.
 quest.hallows_eve_old_jack_1.title = Das Kürbisbeet
 quest.hallows_eve_old_jack_1.flavor = Ernte diesen Monat einen Kürbis, und ab und zu ist einer kalt und leuchtet. Bring mir ein paar von den Geweihten.
 quest.hallows_eve_old_jack_2.title = Laternenarbeit
@@ -85,16 +85,16 @@ title.hallows_eve_hallowed.display = {0} der Geweihte
 
 # ---- Die Almanach-Seite ----
 almanac.hallows_eve.title = Allerheiligenabend
-almanac.hallows_eve.flavor = Jeden Herbst öffnet der Alte Jack den Vergessenen Tempel und zündet seine Laternen an.
+almanac.hallows_eve.flavor = Jeden Herbst richtet sich der Alte Jack im Vergessenen Tempel ein, und nachts gehen die Toten um.
 almanac.hallows_eve.bombs_thrown = Geworfene Laternenbomben
 almanac.hallows_eve.ghouls_felled = Erlegte Hohle Ghule
 almanac.hallows_eve.souls_freed = Befreite Verlorene Seelen
 almanac.hallows_eve.geodes_cracked = Geknackte Verfluchte Geoden
 
 # ---- Das Gespräch des Alten Jack ----
-dialogue.hallows_eve_old_jack.meet_arrival.text = Hast also hergefunden. Gut.\nStör dich nicht am Kopf. Ist ein Kürbis, und der sitzt da schon 'ne ganze Weile. Ich bin der Alte Jack, und jeden Herbst komm ich zurück und halt diese Laternen am Brennen, solange die Toten umgehen. Arbeit gibt's, wenn du willst, angefangen mit <b>Kürbissen</b>.
+dialogue.hallows_eve_old_jack.meet_arrival.text = Hast also hergefunden. Gut.\nStör dich nicht am Kopf. Ist ein Kürbis, und der sitzt da schon 'ne ganze Weile. Ich bin der Alte Jack, und jeden Herbst komm ich mit meinen Laternen zurück, solange die Toten umgehen. Arbeit gibt's, wenn du willst, angefangen mit <b>Kürbissen</b>.
 dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = Du hast mich rufen lassen?
-dialogue.hallows_eve_old_jack.first_words.text = Stör dich nicht am Kopf. Ist ein Kürbis, und der sitzt da schon 'ne ganze Weile.\nIch bin der Alte Jack. Jeden Herbst werden die Toten unruhig, und die Laternen im <color is="#ffd97a">Vergessenen Tempel</color> gehen aus, also komm ich zurück und zünde sie an. Ich könnt ein Paar Hände gebrauchen, die nicht geschnitzt sind.
+dialogue.hallows_eve_old_jack.first_words.text = Stör dich nicht am Kopf. Ist ein Kürbis, und der sitzt da schon 'ne ganze Weile.\nIch bin der Alte Jack. Jeden Herbst werden die Toten unruhig, also komm ich mit meinen Laternen zurück in den <color is="#ffd97a">Vergessenen Tempel</color>. Ich könnt ein Paar Hände gebrauchen, die nicht geschnitzt sind.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Freut mich, Jack.
 dialogue.hallows_eve_old_jack.board_fresh.text = An meiner Tafel hängt neue Arbeit, einiges für die Dunkelheit und einiges fürs Tageslicht. Die wird bezahlt.
 dialogue.hallows_eve_old_jack.board_fresh.opt.board = Zeig mir die Tafel.

@@ -4,7 +4,7 @@
 
 # ---- Канун Всех Святых ----
 calendar.hallows_eve.name = Канун Всех Святых
-calendar.hallows_eve.flavor = Старый Джек присматривает за Забытым Храмом, а по ночам бродят мертвецы.
+calendar.hallows_eve.flavor = Старый Джек обосновывается в Забытом Храме, а по ночам бродят мертвецы.
 calendar.hallows_eve.herald.start = Канун Всех Святых
 calendar.hallows_eve.herald.start.sub = Старый Джек ждёт у Забытого Храма.
 calendar.hallows_eve.herald.end = Канун Всех Святых окончен

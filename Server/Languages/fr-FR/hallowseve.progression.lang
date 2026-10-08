@@ -8,8 +8,8 @@
 currency.hallows_eve_sweets.name = Friandises de la Toussaint
 
 # ---- La suite de quêtes du Vieux Jack ----
-quest.hallows_eve_old_jack_meet.title = Lanternes du temple
-quest.hallows_eve_old_jack_meet.flavor = C'est de nouveau la saison, alors me revoilà au Temple Oublié, à garder les lanternes allumées. N'importe quel portail du temple t'y mènera. Viens me trouver. J'aurais bien besoin d'un coup de main.
+quest.hallows_eve_old_jack_meet.title = Lanternes dans le temple
+quest.hallows_eve_old_jack_meet.flavor = C'est de nouveau la saison, alors me revoilà au Temple Oublié avec mes lanternes. N'importe quel portail du temple t'y mènera. Viens me trouver. J'aurais bien besoin d'un coup de main.
 quest.hallows_eve_old_jack_1.title = Champ de citrouilles
 quest.hallows_eve_old_jack_1.flavor = Cueille une citrouille ce mois-ci et de temps en temps, y en a une qui sort froide et luisante. Rapporte-m'en quelques-unes, de ces sanctifiées.
 quest.hallows_eve_old_jack_2.title = Travail de lanternes
@@ -110,16 +110,16 @@ notify.hallows_eve_hallowed_cache = Une réserve des Sanctifiés, pour avoir gar
 
 # ---- La page de l'Almanach ----
 almanac.hallows_eve.title = Veille de la Toussaint
-almanac.hallows_eve.flavor = Chaque automne, le Vieux Jack ouvre le Temple Oublié et en allume les lanternes.
+almanac.hallows_eve.flavor = Chaque automne, le Vieux Jack s'installe dans le Temple Oublié, et les morts marchent la nuit.
 almanac.hallows_eve.bombs_thrown = Bombes-Lanternes lancées
 almanac.hallows_eve.ghouls_felled = Goules Creuses abattues
 almanac.hallows_eve.souls_freed = Âmes Perdues libérées
 almanac.hallows_eve.geodes_cracked = Géodes Maudites cassées
 
 # ---- La conversation du Vieux Jack ----
-dialogue.hallows_eve_old_jack.meet_arrival.text = Tu as trouvé l'endroit, alors. Bien.\nFais pas attention à la tête. C'est une citrouille, et elle est là-dessus depuis un bon moment. Moi, c'est le Vieux Jack, et chaque automne je reviens garder ces lanternes allumées tant que les morts rôdent. Y a du boulot si tu en veux, à commencer par les <b>citrouilles</b>.
+dialogue.hallows_eve_old_jack.meet_arrival.text = Tu as trouvé l'endroit, alors. Bien.\nFais pas attention à la tête. C'est une citrouille, et elle est là-dessus depuis un bon moment. Moi, c'est le Vieux Jack, et chaque automne je reviens avec mes lanternes tant que les morts rôdent. Y a du boulot si tu en veux, à commencer par les <b>citrouilles</b>.
 dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = Tu m'as fait appeler ?
-dialogue.hallows_eve_old_jack.first_words.text = Fais pas attention à la tête. C'est une citrouille, et elle est là-dessus depuis un bon moment.\nMoi, c'est le Vieux Jack. Chaque automne, les morts s'agitent et les lanternes du <color is="#ffd97a">Temple Oublié</color> s'éteignent, alors je reviens les allumer. J'aurais bien besoin d'une paire de mains qui sont pas sculptées.
+dialogue.hallows_eve_old_jack.first_words.text = Fais pas attention à la tête. C'est une citrouille, et elle est là-dessus depuis un bon moment.\nMoi, c'est le Vieux Jack. Chaque automne, les morts s'agitent, alors je reviens au <color is="#ffd97a">Temple Oublié</color> avec mes lanternes. J'aurais bien besoin d'une paire de mains qui sont pas sculptées.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Un plaisir de te rencontrer, Jack.
 dialogue.hallows_eve_old_jack.board_fresh.text = Y a du nouveau sur mon tableau, un peu pour la nuit, un peu pour le jour. Ça paie.
 dialogue.hallows_eve_old_jack.board_fresh.opt.board = Montre-moi le tableau.

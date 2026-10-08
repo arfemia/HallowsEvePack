@@ -1,6 +1,6 @@
 # Seasons of Orbis
 
-Yearly events for your Hytale server, starting with Hallow's Eve. Every October, Old Jack lights the lanterns in the Forgotten Temple, and the dead come out after dark.
+Yearly events for your Hytale server, starting with Hallow's Eve. Every October, Old Jack sets up in the Forgotten Temple, and the dead come out after dark.
 
 Hallow's Eve starts on its own on October 1 and runs to November 3, every year. You need Ziggfreed's CommonLib 2.2.0 or newer and RPG Stations 1.1.0 or newer. MMO Skill Tree is optional: with it, the season trains your skills as well.
 

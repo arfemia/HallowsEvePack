@@ -8,7 +8,7 @@ currency.hallows_eve_sweets.name = Dolcetti di Ognissanti
 
 # ---- La serie di missioni del Vecchio Jack ----
 quest.hallows_eve_old_jack_meet.title = Lanterne nel Tempio
-quest.hallows_eve_old_jack_meet.flavor = È tornata la stagione, quindi sono di nuovo nel Tempio Dimenticato a tenere accese le lanterne. Ci arrivi da uno qualsiasi dei portali del tempio. Vieni a cercarmi. Una mano mi farebbe comodo.
+quest.hallows_eve_old_jack_meet.flavor = È tornata la stagione, quindi sono di nuovo nel Tempio Dimenticato con le mie lanterne. Ci arrivi da uno qualsiasi dei portali del tempio. Vieni a cercarmi. Una mano mi farebbe comodo.
 quest.hallows_eve_old_jack_1.title = Campo di Zucche
 quest.hallows_eve_old_jack_1.flavor = Raccogli zucche questo mese e ogni tanto ne spunta una fredda e luminosa. Portamene qualcuna di quelle Consacrate.
 quest.hallows_eve_old_jack_2.title = Lanterne all'Opera
@@ -85,16 +85,16 @@ title.hallows_eve_hallowed.display = {0} il Consacrato
 
 # ---- La pagina dell'Almanacco ----
 almanac.hallows_eve.title = Vigilia di Ognissanti
-almanac.hallows_eve.flavor = Ogni autunno il Vecchio Jack apre il Tempio Dimenticato e ne accende le lanterne.
+almanac.hallows_eve.flavor = Ogni autunno il Vecchio Jack si stabilisce nel Tempio Dimenticato, e di notte i morti camminano.
 almanac.hallows_eve.bombs_thrown = Bombe Lanterna lanciate
 almanac.hallows_eve.ghouls_felled = Ghoul Vuoti abbattuti
 almanac.hallows_eve.souls_freed = Anime Perdute liberate
 almanac.hallows_eve.geodes_cracked = Geodi Maledette spaccate
 
 # ---- La conversazione del Vecchio Jack ----
-dialogue.hallows_eve_old_jack.meet_arrival.text = Hai trovato il posto, allora. Bene.\nNon badare alla testa. È una zucca, e sta lì sopra da un bel pezzo. Sono il Vecchio Jack, e ogni autunno torno a tenere accese queste lanterne finché i morti sono in giro. C'è lavoro, se lo vuoi, a cominciare dalle <b>zucche</b>.
+dialogue.hallows_eve_old_jack.meet_arrival.text = Hai trovato il posto, allora. Bene.\nNon badare alla testa. È una zucca, e sta lì sopra da un bel pezzo. Sono il Vecchio Jack, e ogni autunno torno con le mie lanterne finché i morti sono in giro. C'è lavoro, se lo vuoi, a cominciare dalle <b>zucche</b>.
 dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = Mi hai mandato a chiamare?
-dialogue.hallows_eve_old_jack.first_words.text = Non badare alla testa. È una zucca, e sta lì sopra da un bel pezzo.\nSono il Vecchio Jack. Ogni autunno i morti si agitano e le lanterne del <color is="#ffd97a">Tempio Dimenticato</color> si spengono, così torno e le riaccendo. Mi farebbe comodo un paio di mani che non siano intagliate.
+dialogue.hallows_eve_old_jack.first_words.text = Non badare alla testa. È una zucca, e sta lì sopra da un bel pezzo.\nSono il Vecchio Jack. Ogni autunno i morti si agitano, così torno al <color is="#ffd97a">Tempio Dimenticato</color> con le mie lanterne. Mi farebbe comodo un paio di mani che non siano intagliate.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Piacere di conoscerti, Jack.
 dialogue.hallows_eve_old_jack.board_fresh.text = C'è lavoro nuovo sulla mia bacheca, un po' da fare col buio e un po' alla luce del giorno. Paga.
 dialogue.hallows_eve_old_jack.board_fresh.opt.board = Fammi vedere la bacheca.

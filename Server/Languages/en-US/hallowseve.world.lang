@@ -4,7 +4,7 @@
 
 # ---- Hallow's Eve ----
 calendar.hallows_eve.name = Hallow's Eve
-calendar.hallows_eve.flavor = Old Jack keeps the Forgotten Temple, and the dead walk at night.
+calendar.hallows_eve.flavor = Old Jack sets up in the Forgotten Temple, and the dead walk at night.
 calendar.hallows_eve.herald.start = Hallow's Eve
 calendar.hallows_eve.herald.start.sub = Old Jack is waiting at the Forgotten Temple.
 calendar.hallows_eve.herald.end = Hallow's Eve is over

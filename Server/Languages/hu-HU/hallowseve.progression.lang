@@ -8,7 +8,7 @@ currency.hallows_eve_sweets.name = Mindenszenteki Cukorka
 
 # ---- Öreg Jack küldetéssora ----
 quest.hallows_eve_old_jack_meet.title = Lámpások a Templomban
-quest.hallows_eve_old_jack_meet.flavor = Megint itt a szezon, úgyhogy visszajöttem a Feledett Templomba, és égve tartom a lámpásokat. Bármelyik templomkapu elvisz oda. Gyere, keress meg. Jól jönne egy pár kéz.
+quest.hallows_eve_old_jack_meet.flavor = Megint itt a szezon, úgyhogy visszajöttem a Feledett Templomba a lámpásaimmal. Bármelyik templomkapu elvisz oda. Gyere, keress meg. Jól jönne egy pár kéz.
 quest.hallows_eve_old_jack_1.title = Tökföld
 quest.hallows_eve_old_jack_1.flavor = Szedj tököt ebben a hónapban, és hébe-hóba akad egy hideg, világító. Hozz nekem párat azokból a Megszenteltekből.
 quest.hallows_eve_old_jack_2.title = Lámpásmunka
@@ -85,16 +85,16 @@ title.hallows_eve_hallowed.display = {0}, a Megszentelt
 
 # ---- Az Almanach-oldal ----
 almanac.hallows_eve.title = Mindenszentek Éje
-almanac.hallows_eve.flavor = Öreg Jack minden ősszel kinyitja a Feledett Templomot, és meggyújtja a lámpásait.
+almanac.hallows_eve.flavor = Öreg Jack minden ősszel berendezkedik a Feledett Templomban, és éjjel járnak a holtak.
 almanac.hallows_eve.bombs_thrown = Eldobott Lámpásbombák
 almanac.hallows_eve.ghouls_felled = Leterített Kongó Ghúlok
 almanac.hallows_eve.souls_freed = Felszabadított Elveszett Lelkek
 almanac.hallows_eve.geodes_cracked = Feltört Átkozott Geodák
 
 # ---- Öreg Jack beszélgetése ----
-dialogue.hallows_eve_old_jack.meet_arrival.text = Szóval megtaláltad a helyet. Jó.\nNe törődj a fejjel. Tök, és már jó ideje rajtam van. Öreg Jack vagyok, és minden ősszel visszajövök, hogy égve tartsam ezeket a lámpásokat, amíg a holtak kint járnak. Ha kell munka, van, és a <b>tökökkel</b> kezdjük.
+dialogue.hallows_eve_old_jack.meet_arrival.text = Szóval megtaláltad a helyet. Jó.\nNe törődj a fejjel. Tök, és már jó ideje rajtam van. Öreg Jack vagyok, és minden ősszel visszajövök a lámpásaimmal, amíg a holtak kint járnak. Ha kell munka, van, és a <b>tökökkel</b> kezdjük.
 dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = Te hívattál?
-dialogue.hallows_eve_old_jack.first_words.text = Ne törődj a fejjel. Tök, és már jó ideje rajtam van.\nÖreg Jack vagyok. Minden ősszel nyugtalanok lesznek a holtak, és kialszanak a lámpások a <color is="#ffd97a">Feledett Templomban</color>, úgyhogy visszajövök, és meggyújtom őket. Jól jönne egy pár kéz, amit nem faragtak ki.
+dialogue.hallows_eve_old_jack.first_words.text = Ne törődj a fejjel. Tök, és már jó ideje rajtam van.\nÖreg Jack vagyok. Minden ősszel nyugtalanok lesznek a holtak, úgyhogy visszajövök a <color is="#ffd97a">Feledett Templomba</color> a lámpásaimmal. Jól jönne egy pár kéz, amit nem faragtak ki.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Örülök, hogy megismerhetlek, Jack.
 dialogue.hallows_eve_old_jack.board_fresh.text = Friss munka van a táblámon, egy része sötétben, egy része napvilágnál. Fizet.
 dialogue.hallows_eve_old_jack.board_fresh.opt.board = Mutasd a táblát.

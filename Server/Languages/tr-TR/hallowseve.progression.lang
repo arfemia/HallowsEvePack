@@ -8,7 +8,7 @@ currency.hallows_eve_sweets.name = Cadı Şekeri
 
 # ---- Yaşlı Jack'in görev zinciri ----
 quest.hallows_eve_old_jack_meet.title = Tapınakta Fenerler
-quest.hallows_eve_old_jack_meet.flavor = Yine mevsimi geldi, ben de Unutulmuş Tapınak'a döndüm, fenerlerin sönmemesine bakıyorum. Tapınak geçitlerinden herhangi biri seni oraya götürür. Gel de beni bul. Bir çift el daha işime yarar.
+quest.hallows_eve_old_jack_meet.flavor = Yine mevsimi geldi, ben de Unutulmuş Tapınak'a fenerlerimle döndüm. Tapınak geçitlerinden herhangi biri seni oraya götürür. Gel de beni bul. Bir çift el daha işime yarar.
 quest.hallows_eve_old_jack_1.title = Bal Kabağı Bostanı
 quest.hallows_eve_old_jack_1.flavor = Bu ay bal kabağı topla, arada bir soğuk ve parlayan bir tane çıkar. O Kutsanmışlardan birkaçını bana getir.
 quest.hallows_eve_old_jack_2.title = Fener İşi
@@ -85,16 +85,16 @@ title.hallows_eve_hallowed.display = Kutsanmış {0}
 
 # ---- Almanak sayfası ----
 almanac.hallows_eve.title = Cadılar Bayramı
-almanac.hallows_eve.flavor = Her sonbahar Yaşlı Jack Unutulmuş Tapınak'ı açar ve fenerlerini yakar.
+almanac.hallows_eve.flavor = Her sonbahar Yaşlı Jack Unutulmuş Tapınak'a yerleşir, ölüler de geceleri dolaşır.
 almanac.hallows_eve.bombs_thrown = Atılan Fener Bombaları
 almanac.hallows_eve.ghouls_felled = Alt edilen Oyuk Gulyabaniler
 almanac.hallows_eve.souls_freed = Serbest bırakılan Kayıp Ruhlar
 almanac.hallows_eve.geodes_cracked = Kırılan Lanetli Jeotlar
 
 # ---- Yaşlı Jack'in sohbeti ----
-dialogue.hallows_eve_old_jack.meet_arrival.text = Demek yeri buldun. Güzel.\nKafaya takılma. Bal kabağı o, uzun zamandır da orada. Ben Yaşlı Jack; her sonbahar, ölüler ortalıkta dolaşırken bu fenerleri yanık tutmak için geri gelirim. İstersen iş var, ilk iş <b>bal kabakları</b>.
+dialogue.hallows_eve_old_jack.meet_arrival.text = Demek yeri buldun. Güzel.\nKafaya takılma. Bal kabağı o, uzun zamandır da orada. Ben Yaşlı Jack; her sonbahar, ölüler ortalıkta dolaşırken fenerlerimle geri gelirim. İstersen iş var, ilk iş <b>bal kabakları</b>.
 dialogue.hallows_eve_old_jack.meet_arrival.opt.hail = Beni sen mi çağırdın?
-dialogue.hallows_eve_old_jack.first_words.text = Kafaya takılma. Bal kabağı o, uzun zamandır da orada.\nBen Yaşlı Jack. Her sonbahar ölüler huzursuzlanır ve <color is="#ffd97a">Unutulmuş Tapınak'taki</color> fenerler söner, ben de dönüp onları yakarım. Oyulmamış bir çift el işime yarar.
+dialogue.hallows_eve_old_jack.first_words.text = Kafaya takılma. Bal kabağı o, uzun zamandır da orada.\nBen Yaşlı Jack. Her sonbahar ölüler huzursuzlanır, ben de <color is="#ffd97a">Unutulmuş Tapınak'a</color> fenerlerimle dönerim. Oyulmamış bir çift el işime yarar.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Tanıştığımıza memnun oldum, Jack.
 dialogue.hallows_eve_old_jack.board_fresh.text = Panomda yeni iş var, kimi karanlık için, kimi gün ışığı için. Parası da var.
 dialogue.hallows_eve_old_jack.board_fresh.opt.board = Panoyu göster.
