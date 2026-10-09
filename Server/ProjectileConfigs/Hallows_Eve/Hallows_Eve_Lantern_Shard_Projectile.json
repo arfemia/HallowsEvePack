@@ -1,5 +1,5 @@
 {
-  "$Comment": "One flaming shard of a Shattering Lantern Bomb, on the game's Fireball model. The Epic blast throws four, each on its own config a quarter turn apart (this one straight ahead, then Right, Back and Left, which change only SpawnRotationOffset.Yaw), with the blast's own pitch ignored and 35 degrees of lift added so each arcs before it falls. A shard bursts with Hallows_Eve_Lantern_Shard_Burst on whatever it strikes, creature or ground, or after a second and a half in the air, and is removed. LaunchForce sets how far the shards fly.",
+  "$Comment": "One flaming shard of a Shattering Lantern Bomb, on the game's Fireball model. The Epic blast throws four, each on its own config a quarter turn apart (this one straight ahead, then Right, Back and Left, which change only SpawnRotationOffset.Yaw), with the blast's own pitch ignored and 35 degrees of lift added so each arcs before it falls. A shard runs Hallows_Eve_Lantern_Shard_Burst on whatever it strikes, creature or ground, or after a second and a half in the air; that interaction both bursts and removes the shard, and keeps a fallback removal half a second later that nothing can block, so a shard is gone within two seconds of the blast. The fuse ignores the thrower changing held item, since these chains run on the thrower. LaunchForce sets how far the shards fly.",
   "Model": "Fireball",
   "SpawnRotationOffset": {"Pitch": 35, "Yaw": 0, "Roll": 0},
   "Physics": {
@@ -17,26 +17,19 @@
     "ProjectileSpawn": {
       "Cooldown": {"Cooldown": 0},
       "Interactions": [
-        {"Type": "Simple", "RunTime": 1.5},
-        "Hallows_Eve_Lantern_Shard_Burst",
-        {"Type": "RemoveEntity", "Entity": "User"}
+        {"Type": "Simple", "RunTime": 1.5, "OnItemChangeBehavior": "Ignore"},
+        "Hallows_Eve_Lantern_Shard_Burst"
       ]
     },
     "ProjectileHit": {
       "Cooldown": {"Cooldown": 0},
       "Rules": {"Interrupting": ["ProjectileSpawn"]},
-      "Interactions": [
-        "Hallows_Eve_Lantern_Shard_Burst",
-        {"Type": "RemoveEntity", "Entity": "User"}
-      ]
+      "Interactions": ["Hallows_Eve_Lantern_Shard_Burst"]
     },
     "ProjectileMiss": {
       "Cooldown": {"Cooldown": 0},
       "Rules": {"Interrupting": ["ProjectileSpawn"]},
-      "Interactions": [
-        "Hallows_Eve_Lantern_Shard_Burst",
-        {"Type": "RemoveEntity", "Entity": "User"}
-      ]
+      "Interactions": ["Hallows_Eve_Lantern_Shard_Burst"]
     }
   }
 }

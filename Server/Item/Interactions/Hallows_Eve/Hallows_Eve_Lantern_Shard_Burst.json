@@ -1,26 +1,45 @@
 {
-  "$Comment": "Where a Shattering Lantern Bomb's flaming shard lands: every creature within a block and a half takes a little damage and Burn. Players are never hurt, by the same one rule the bombs' blasts use. Range, BaseDamage and the Burn line are the knobs.",
-  "Type": "Selector",
-  "Selector": {"Id": "AOECircle", "Range": 1.5},
-  "IgnoreOwner": true,
-  "Effects": {
-    "Particles": [
-      {"SystemId": "Explosion_Small", "TargetEntityPart": "Entity"}
-    ]
-  },
-  "HitEntityRules": [
+  "$Comment": "Where a Shattering Lantern Bomb's flaming shard bursts, and how the shard leaves the world. A Parallel runs two branches at once. The first is the burst: every creature within a block and a half takes a little damage and Burn (players never, by the same one rule the bombs' blasts use), then the shard is removed a tenth of a second later. The second is a fork of server-only steps that removes the shard half a second in no matter what the first branch is doing: a Selector waits on the thrower's client, and the shard's chains run on the thrower, so without this fork a burst that never finishes leaves the shard lying there. OnItemChangeBehavior Ignore on every step stops the thrower switching or using up the held item from cancelling the chain before its RemoveEntity. Range, BaseDamage and the Burn line are the knobs; the 0.5 is the longest a landed shard can stay.",
+  "Type": "Parallel",
+  "OnItemChangeBehavior": "Ignore",
+  "Interactions": [
     {
-      "Matchers": [{"Type": "Player", "Invert": true}],
-      "Next": {
-        "Interactions": [
-          {"Type": "ApplyEffect", "EffectId": "Burn", "Entity": "Target"},
-          {
-            "Parent": "DamageEntityParent",
-            "DamageCalculator": {"BaseDamage": {"Hallows_Eve_Lantern_Burst": 8}}
-          }
-        ]
-      }
+      "Interactions": [
+        {
+          "Type": "Selector",
+          "Selector": {"Id": "AOECircle", "Range": 1.5},
+          "IgnoreOwner": true,
+          "OnItemChangeBehavior": "Ignore",
+          "Effects": {
+            "Particles": [
+              {"SystemId": "Explosion_Small", "TargetEntityPart": "Entity"}
+            ]
+          },
+          "HitEntityRules": [
+            {
+              "Matchers": [{"Type": "Player", "Invert": true}],
+              "Next": {
+                "Interactions": [
+                  {"Type": "ApplyEffect", "EffectId": "Burn", "Entity": "Target", "OnItemChangeBehavior": "Ignore"},
+                  {
+                    "Parent": "DamageEntityParent",
+                    "OnItemChangeBehavior": "Ignore",
+                    "DamageCalculator": {"BaseDamage": {"Hallows_Eve_Lantern_Burst": 8}}
+                  }
+                ]
+              }
+            }
+          ],
+          "Next": {"Type": "Simple", "RunTime": 0.1, "OnItemChangeBehavior": "Ignore"}
+        },
+        {"Type": "RemoveEntity", "Entity": "User", "OnItemChangeBehavior": "Ignore"}
+      ]
+    },
+    {
+      "Interactions": [
+        {"Type": "Simple", "RunTime": 0.5, "OnItemChangeBehavior": "Ignore"},
+        {"Type": "RemoveEntity", "Entity": "User", "OnItemChangeBehavior": "Ignore"}
+      ]
     }
-  ],
-  "Next": {"Type": "Simple", "RunTime": 0.1}
+  ]
 }
