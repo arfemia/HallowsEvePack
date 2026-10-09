@@ -5,7 +5,10 @@
     "It picks exactly what the first rung picks (every Seasons achievement tagged season_keepsake, any",
     "year's copy standing for its keepsake, counted by season) and asks for more of them: Needs is how",
     "many seasons it takes. Until a server runs that many seasons it waits, and it is earned the moment",
-    "the last one is kept. The description's number comes from TextArgs, so keep it equal to Needs."
+    "the last one is kept. The description's number comes from TextArgs, so keep it equal to Needs.",
+    "",
+    "Rewards: the festival tokens and the Festival Favor are Claims, waiting on the achievements page",
+    "until the player collects them. A title is the one thing an achievement pays the moment it is earned."
   ],
   "Text": {
     "TitleKey": "achievement.seasons_of_orbis_rung_2.title",
@@ -26,7 +29,7 @@
     "Needs": 4
   },
   "Rewards": {
-    "Auto": [
+    "Claim": [
       { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "50" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 3000 } }
     ]
