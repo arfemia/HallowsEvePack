@@ -1,5 +1,5 @@
 {
-  "$Comment": "The first of the host's quests: wheat for the ovens. The _Harvest_Feast folder makes the id harvest_feast_host_1. A TURN_IN step is handed in at the host, so no report-back step is added. The questline's steps pay through Harvest_Feast_Chain_Pay, with favor with the host and Festival Favor on their own Rewards so the quest card shows them.",
+  "$Comment": "The first of the host's quests: wheat for the ovens. The _Harvest_Feast folder makes the id harvest_feast_host_1. A TURN_IN step is handed in at the host, so no report-back step is added. The questline's steps pay through Harvest_Feast_Chain_Pay, with favor with the host and Festival Favor on their own Rewards so the quest card shows them. The Mmo_Xp row is MMO Skill Tree's: Harvesting XP for the wheat, waiting to be collected with the rest. The row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that mod, unpaid and unshown, and the rest of the quest pays.",
   "Name": "Host_1",
   "Parent": "Harvest_Feast_Quest_Base",
   "Listing": {
@@ -22,7 +22,9 @@
     "Claim": [
       { "Kind": "Lootable", "Params": { "Lootable": "Harvest_Feast_Chain_Pay" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 250 } },
-      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 150 } }
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 150 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "HARVESTING", "Amount": "2500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
     ]
   }
 }
