@@ -4,8 +4,9 @@
     "Trick-or-treat: one line this file adds to every conversation on the server, on the screens a",
     "conversation opens on, while Hallow's Eve runs.",
     "",
-    "Once with Period Daily, keyed by OnceId, is spent with every character at once: a player gets",
-    "one treat or trick a day, wherever they ask, and the line comes back at midnight UTC. The",
+    "Once with Period Daily and PerCharacter true, keyed by OnceId, is kept per character: a player",
+    "gets one treat or trick a day from each character they ask, and the line comes back at",
+    "midnight UTC. Leave PerCharacter out to make it one knock a day across every character. The",
     "Factor condition hides it whenever the event is off. Grant rolls the lootable",
     "Hallows_Eve_Trick_Or_Treat, which always pays a few sweets with a notice and then draws one",
     "more treat or a costume trick, and adds a little favor with the Hallowed (Hallows_Eve_Hallowed) (the Reputation",
@@ -20,7 +21,7 @@
     {
       "LabelKey": "dialogue.hallows_eve_trick_or_treat.opt.knock",
       "OnceId": "trick_or_treat",
-      "Once": { "Period": "Daily" },
+      "Once": { "Period": "Daily", "PerCharacter": true },
       "Style": "neutral",
       "Presentation": { "Icon": { "Item": "Halloween_Basket_Pumpkin" } },
       "Conditions": [

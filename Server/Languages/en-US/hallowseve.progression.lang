@@ -123,7 +123,7 @@ factor.hallows_eve_hallowed.revered = Revered with the Hallowed
 factor.hallows_eve_hallowed.exalted = Exalted with the Hallowed
 reputation.hallows_eve_hallowed.earn.kills = Put down the creatures that crawl out at night.
 reputation.hallows_eve_hallowed.earn.jack = Old Jack's daily jobs and board contracts count too.
-reputation.hallows_eve_hallowed.earn.treats = Ask anyone you talk to for a trick or treat, once a day.
+reputation.hallows_eve_hallowed.earn.treats = Ask everyone you talk to for a trick or treat, once a day each.
 reputation.hallows_eve_hallowed.earn.gear = Carry a Jack Shield. It adds to their favor while it is equipped.
 notify.hallows_eve_hallowed_cache = A cache from the Hallowed, for keeping the dead down.
 

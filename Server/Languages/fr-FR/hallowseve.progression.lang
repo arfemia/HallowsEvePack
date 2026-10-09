@@ -123,7 +123,7 @@ factor.hallows_eve_hallowed.revered = le rang Révéré auprès des Sanctifiés
 factor.hallows_eve_hallowed.exalted = le rang Exalté auprès des Sanctifiés
 reputation.hallows_eve_hallowed.earn.kills = Abattez les créatures qui sortent de terre la nuit.
 reputation.hallows_eve_hallowed.earn.jack = Les quotidiennes du Vieux Jack et les contrats de son tableau comptent aussi.
-reputation.hallows_eve_hallowed.earn.treats = Une fois par jour, demandez des bonbons ou un sort à chaque personne à qui vous parlez.
+reputation.hallows_eve_hallowed.earn.treats = Demandez des bonbons ou un sort à chaque personne à qui vous parlez, une fois par jour pour chacune.
 reputation.hallows_eve_hallowed.earn.gear = Tenez un Bouclier de Jack. Il augmente leur faveur tant qu'il est équipé.
 notify.hallows_eve_hallowed_cache = Une réserve des Sanctifiés, pour avoir gardé les morts sous terre.
 
