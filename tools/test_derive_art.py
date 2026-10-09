@@ -5,11 +5,11 @@ Run from the pack root:
     python -m unittest tools/test_derive_art.py -v
 
 The checks are written independently of derive_art.py: the bounds maths re-implements
-hytale-shared-source's BlockyModelBoundsParser (accumulateNodeBounds), and the face-rect
+shared-source/release's BlockyModelBoundsParser (accumulateNodeBounds), and the face-rect
 maths re-implements the Hytale team's Blockbench plugin (hytale_plugin.js, the
 textureLayout -> UV parse), where a mirrored axis runs from `offset` back towards zero and
 angle 90/180/270 swap or flip the rect. Two checks read outside the pack and skip when the
-source is absent: the vanilla rigs in hytale-shared-source, and the installed game's
+source is absent: the vanilla rigs in shared-source/release, and the installed game's
 Assets.zip (HYTALE_ASSETS_ZIP, else the MMO root's gradle.properties install).
 """
 import copy
@@ -32,7 +32,11 @@ PACK = TOOLS.parent
 COMMON = PACK / "Common"
 VENDORED = TOOLS / "seed" / "vanilla"
 ROOT = PACK.parents[1]
-VANILLA = ROOT / "hytale-shared-source" / "HytaleAssets" / "Common"
+# The workspace's shared-source/release clone sits beside hyMMO: the first folder above it that holds one,
+# so the main checkout and a linked worktree under worktrees/ both find it.
+SHARED_SOURCE = next((p / "shared-source" / "release" for p in ROOT.parents
+                      if (p / "shared-source" / "release").is_dir()), ROOT.parent / "shared-source" / "release")
+VANILLA = SHARED_SOURCE / "HytaleAssets" / "Common"
 
 HE = "Items/Hallows_Eve"
 TIERS = ("Common", "Uncommon", "Rare", "Epic")
@@ -440,7 +444,7 @@ class DerivedArtTest(unittest.TestCase):
 
     def test_chains_match_their_vanilla_sources(self):
         if not VANILLA.is_dir():
-            self.skipTest(f"hytale-shared-source not found at {VANILLA}")
+            self.skipTest(f"shared-source/release not found at {VANILLA}")
         pairs = [
             (BOMB_MODELS[0], "NPC/Intelligent/Goblin/Models/Weapons/Bomb/Fire.blockymodel",
              ["R-Attachment", "Origin_Projectile", "Origin_Item"]),
