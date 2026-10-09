@@ -5,7 +5,12 @@
     "daily: it comes back at midnight UTC. The dish is handed in at the host, so no report-back step is",
     "added. It pays through Harvest_Feast_Shared_Meal_Pay, a table only this quest names, so what a",
     "companion mod adds to that table lands on the meal alone. Favor with the host and Festival Favor ride",
-    "its own Rewards, where the quest card shows them."
+    "its own Rewards, where the quest card shows them.",
+    "",
+    "The Mmo_Boost_Token row is MMO Skill Tree's: a little more XP in every skill for an hour, which the",
+    "player collects with the rest and starts when it suits them. The row's own Requires, the",
+    "hytale:mod_installed gate, leaves it out on a server without that mod, unpaid and unshown, and the",
+    "rest of the meal pays."
   ],
   "Name": "Shared_Meal",
   "Parent": "Harvest_Feast_Quest_Base",
@@ -29,7 +34,9 @@
     "Claim": [
       { "Kind": "Lootable", "Params": { "Lootable": "Harvest_Feast_Shared_Meal_Pay" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 50 } },
-      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 25 } }
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 25 } },
+      { "Kind": "Mmo_Boost_Token", "Params": { "Skill": "ALL", "Multiplier": "1.1", "DurationMinutes": "60" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
     ]
   }
 }

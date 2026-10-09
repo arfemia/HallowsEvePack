@@ -1,0 +1,14 @@
+{
+  "$Comment": "A skill job on the feast board, on a server running MMO Skill Tree: earn this much Woodcutting XP while you carry it, firewood for the ovens. See Mmo_Harvest_Feast_Skill_Contract_Base.json for how the skill jobs share the board, why they vanish without MMO Skill Tree and why their pay waits at the board.",
+  "Parent": "Mmo_Harvest_Feast_Skill_Contract_Base",
+  "Listing": { "Icon": "Tool_Hatchet_Crude" },
+  "Objectives": {
+    "gain_xp": { "Kind": "GAIN_XP", "Target": "WOODCUTTING", "MatchMode": "EXACT", "Amount": 2500 }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 50 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "WOODCUTTING", "Amount": "600" } }
+    ]
+  }
+}

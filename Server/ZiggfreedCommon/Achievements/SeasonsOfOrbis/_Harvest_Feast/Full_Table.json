@@ -4,7 +4,12 @@
     "Seasons > Harvest_Feast subcategory is earned in the same year. MetaSelector picks them, so a new",
     "full_table achievement counts toward it with no edit here; it never picks itself or another",
     "capstone. It inherits the yearly occurrence, so each year has its own copy, and it pays the title",
-    "Harvest_Feast_Full_Table through the Title reward kind. Keep the full_table tag off this file."
+    "Harvest_Feast_Full_Table through the Title reward kind. Keep the full_table tag off this file.",
+    "",
+    "Each year's copy also hands over MMO Skill Tree's Mmo_Boost_Token: half again as much XP in every",
+    "skill for an hour, which the player starts when it suits them. It is kept with their skills, not in",
+    "the bag, so it pays in Auto. Its own Requires, the hytale:mod_installed gate, leaves the row out on",
+    "a server without that mod, unpaid and unshown, and the title still pays."
   ],
   "Parent": "Harvest_Feast_Achievement_Base",
   "Listing": { "SortOrder": 90, "Icon": "Deco_Trophy_Harvest" },
@@ -15,6 +20,10 @@
     "Tags": [ "full_table" ]
   },
   "Rewards": {
-    "Auto": [ { "Kind": "Title", "Params": { "Title": "Harvest_Feast_Full_Table" } } ]
+    "Auto": [
+      { "Kind": "Title", "Params": { "Title": "Harvest_Feast_Full_Table" } },
+      { "Kind": "Mmo_Boost_Token", "Params": { "Skill": "ALL", "Multiplier": "1.5", "DurationMinutes": "60" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
   }
 }

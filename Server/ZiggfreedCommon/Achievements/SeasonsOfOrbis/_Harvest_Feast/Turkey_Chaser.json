@@ -1,5 +1,5 @@
 {
-  "$Comment": "Bring down Wild Turkeys during one season. The description's number comes from the criterion's Amount through @amount, so a retune touches no translation. The full_table tag counts it toward The Full Table.",
+  "$Comment": "Bring down Wild Turkeys during one season. The description's number comes from the criterion's Amount through @amount, so a retune touches no translation. The full_table tag counts it toward The Full Table. Each year's copy pays MMO Skill Tree's Mmo_Xp row once, Defense XP for the hunt, waiting on the achievements page until the player collects it. The row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that mod, unpaid and unshown.",
   "Parent": "Harvest_Feast_Achievement_Base",
   "Text": { "TextArgs": { "Flavor": [ "@amount" ] } },
   "Listing": { "SortOrder": 20, "Icon": "Food_Wildmeat_Raw", "Tags": [ "full_table" ] },
@@ -10,5 +10,11 @@
       "MatchMode": "EXACT",
       "Amount": 25
     }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "2500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
   }
 }

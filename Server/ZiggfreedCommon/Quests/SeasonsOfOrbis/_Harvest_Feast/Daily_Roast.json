@@ -1,5 +1,5 @@
 {
-  "$Comment": "One of the host's three dailies: cooked wild meat, the roast from a campfire, handed in at the host. A TURN_IN step is handed in where it is, so no report-back step is added.",
+  "$Comment": "One of the host's three dailies: cooked wild meat, the roast from a campfire, handed in at the host. A TURN_IN step is handed in where it is, so no report-back step is added. The Mmo_Xp row is MMO Skill Tree's: Crafting XP for the cooking, waiting to be collected with the rest. The row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that mod, unpaid and unshown, and the rest of the quest pays.",
   "Name": "Daily_Roast",
   "Parent": "Harvest_Feast_Quest_Base",
   "Listing": { "Icon": "Food_Wildmeat_Cooked", "Category": "misc", "SortOrder": 130 },
@@ -22,7 +22,9 @@
     "Claim": [
       { "Kind": "Lootable", "Params": { "Lootable": "Harvest_Feast_Daily_Pay" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 75 } },
-      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 40 } }
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 40 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "CRAFTING", "Amount": "1500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
     ]
   }
 }

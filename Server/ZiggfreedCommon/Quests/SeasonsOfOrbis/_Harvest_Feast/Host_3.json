@@ -1,5 +1,5 @@
 {
-  "$Comment": "Martha's third quest: bake a pumpkin pie at the game's Chef's Stove (Bench_Cooking), from the recipe page the second quest hands over, and bring it in. The pie is handed in at Martha, so no report-back step is added.",
+  "$Comment": "Martha's third quest: bake a pumpkin pie at the game's Chef's Stove (Bench_Cooking), from the recipe page the second quest hands over, and bring it in. The pie is handed in at Martha, so no report-back step is added. The Mmo_Xp row is MMO Skill Tree's: Crafting XP for the baking, waiting to be collected with the rest. The row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that mod, unpaid and unshown, and the rest of the quest pays.",
   "Name": "Host_3",
   "Parent": "Harvest_Feast_Quest_Base",
   "Listing": {
@@ -23,7 +23,9 @@
     "Claim": [
       { "Kind": "Lootable", "Params": { "Lootable": "Harvest_Feast_Chain_Pay" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 250 } },
-      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 150 } }
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 150 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "CRAFTING", "Amount": "2500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
     ]
   }
 }

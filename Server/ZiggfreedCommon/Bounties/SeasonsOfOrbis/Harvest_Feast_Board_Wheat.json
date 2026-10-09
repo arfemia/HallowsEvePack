@@ -1,9 +1,18 @@
 {
-  "$Comment": "A Field job on the feast board: pick wild wheat by hand. PICKUP_ITEM counts each hand harvest of the wheat's own item. The season, the listing and the pay come from Harvest_Feast_Contract_Base.",
+  "$Comment": "A Field job on the feast board: pick wild wheat by hand. PICKUP_ITEM counts each hand harvest of the wheat's own item. It writes its own Rewards.Claim, the base's list with MMO Skill Tree's Mmo_Xp row added (Harvesting XP for the picking), because a child's list replaces the base's whole. The row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that mod, and the rest of the job pays. The season and the listing come from Harvest_Feast_Contract_Base.",
   "Parent": "Harvest_Feast_Contract_Base",
   "Listing": { "Icon": "Plant_Crop_Wheat_Item" },
   "Boards": [ { "Board": "Harvest_Feast_Daily", "Difficulty": "Harvest_Feast_Field", "Weight": 1 } ],
   "Objectives": {
     "pick_wheat": { "Kind": "PICKUP_ITEM", "Target": "Plant_Crop_Wheat_Item", "MatchMode": "EXACT", "Amount": 30 }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Harvest_Feast_Board_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 50 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 30 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "HARVESTING", "Amount": "1500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
   }
 }

@@ -16,7 +16,11 @@
     "which keeps it from anyone who already finished Wheat for the Ovens. With no Repeat it comes once per",
     "player, ever. Wheat for the Ovens does not wait on it: a player without it still gets the questline",
     "from Martha. It pays a few festival tokens through the Currency reward kind, since a counter wallet",
-    "has no item to hand over."
+    "has no item to hand over.",
+    "",
+    "Beside the tokens, MMO Skill Tree's Mmo_Xp row pays Acrobatics XP for the walk to the temple,",
+    "collected with the rest. Its own Requires, the hytale:mod_installed gate, leaves the row out on a",
+    "server without that mod, unpaid and unshown, and the tokens still pay."
   ],
   "Name": "Martha_Meet",
   "Parent": "Harvest_Feast_Quest_Base",
@@ -43,7 +47,9 @@
   },
   "Rewards": {
     "Claim": [
-      { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "2" } }
+      { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "2" } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "ACROBATICS", "Amount": "2500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
     ]
   }
 }
