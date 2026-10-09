@@ -4,10 +4,14 @@
     "(NPC/Reputation/Groups/Harvest_Feast_Host.json), which keeps each player's number.",
     "",
     "Cap is the most favor earning can reach: Exalted's floor, so Head of the Table is as far as it goes.",
-    "Ranks renames the library's ranks for the host alone; a rank left out keeps the library's name, and a",
-    "lock on one of these ranks reads the name written here. Order places the host on the Reputation page",
-    "after Old Jack and the Hallowed. Favor comes from the Reputation rewards on the host's quests and",
-    "board jobs and from the host's daily greeting. No gear adds to it, so there is no Gear group."
+    "Ranks renames the library's ranks for Martha alone; a rank left out keeps the library's name, and a",
+    "lock on one of these ranks reads the name written here. Order places her on the Reputation page",
+    "after Old Jack and the Hallowed. Favor comes from the Reputation rewards on her quests and board jobs",
+    "and from her daily greeting. No gear adds to it, so there is no Gear group.",
+    "",
+    "The ranks open things up: Friendly the meat pie recipe and a second Field job, Honored a second",
+    "Kitchen job, Revered (Family) the Caesar salad recipe at her stall, and Exalted (Head of the Table)",
+    "the achievement harvest_feast_head_of_the_table and its title."
   ],
   "Text": {
     "TitleKey": "reputation.harvest_feast_host.name",

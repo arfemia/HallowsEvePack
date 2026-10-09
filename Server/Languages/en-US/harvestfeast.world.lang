@@ -6,7 +6,7 @@
 calendar.harvest_feast.name = Harvest Feast
 calendar.harvest_feast.flavor = The fields are in, and a long table goes up in the Forgotten Temple.
 calendar.harvest_feast.herald.start = Harvest Feast
-calendar.harvest_feast.herald.start.sub = The feast table is set in the Forgotten Temple.
+calendar.harvest_feast.herald.start.sub = Martha the Cook is setting the table in the Forgotten Temple.
 calendar.harvest_feast.herald.end = Harvest Feast is over
 calendar.harvest_feast.herald.end.sub = The table's packed away until next year.
 

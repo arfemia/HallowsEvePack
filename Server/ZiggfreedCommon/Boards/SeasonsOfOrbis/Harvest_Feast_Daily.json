@@ -6,16 +6,18 @@
     "(pies, roast); Harvest_Feast_Skill holds the skill jobs this pack adds for a server running MMO Skill",
     "Tree.",
     "",
-    "Favor with the host opens more of the board. The third and fourth slots carry Requires: the second",
+    "Favor with Martha opens more of the board. The third and fourth slots carry Requires: the second",
     "Field job opens at Friendly, the second Kitchen job at Honored. Everyone sees them posted, and a",
     "player below the rank sees them locked, with the reason. Each band has two contracts, so a band fills",
     "two slots at most.",
     "",
     "The skill slot is Optional: where nothing carries its band the board shows no gap. Grades names each",
     "band for the badge on its rows: TitleKey is its words, Color the badge's colour. Season makes the board",
-    "absent while the feast is off, and its contracts pay the moment the work is done, so nothing waits on",
-    "a board that has gone for the year. Order 90 keeps it behind a server's everyday boards. Where keeps",
-    "it in the Forgotten Temple: anywhere else it is left out of every list and opens closed."
+    "absent while the feast is off. Its contracts' pay waits here until the player collects it",
+    "(Rewards.Claim), so a job left uncollected when the feast ends waits for the board to come back next",
+    "year; the board's description asks players to collect before the table's packed away. Order 90 keeps",
+    "it behind a server's everyday boards. Where keeps it in the Forgotten Temple: anywhere else it is left",
+    "out of every list and opens closed."
   ],
   "Season": "Harvest_Feast",
   "Text": {

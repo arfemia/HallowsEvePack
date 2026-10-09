@@ -1,5 +1,5 @@
 {
-  "$Comment": "The host's third quest: bake a pumpkin pie at the game's Cooking Bench, from the recipe page the second quest hands over, and bring it in. The pie is handed in at the host, so no report-back step is added.",
+  "$Comment": "Martha's third quest: bake a pumpkin pie at the game's Chef's Stove (Bench_Cooking), from the recipe page the second quest hands over, and bring it in. The pie is handed in at Martha, so no report-back step is added.",
   "Name": "Host_3",
   "Parent": "Harvest_Feast_Quest_Base",
   "Listing": {

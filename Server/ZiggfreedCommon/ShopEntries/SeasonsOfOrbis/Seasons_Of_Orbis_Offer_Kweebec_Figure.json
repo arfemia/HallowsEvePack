@@ -1,0 +1,13 @@
+{
+  "$Comment": "The game's own Carved Kweebec Figure on the festival shelf, for players at Exalted III with Festival Favor (Festival_Tier_2). No recipe or drop in the game hands one over, so the shelf is the way to get one. Requires is a lock, not a hide: a player below the rank still sees it, locked, with the rank's name in the reason, so they can see what to work towards. The title is the item's own name key, written in full (server.items.<Id>.name); the item has no description key, so the offer has no line under it.",
+  "Text": { "TitleKey": "server.items.Furniture_Kweebec_Statue.name" },
+  "Shop": "Seasons_Of_Orbis_Festival_Stall",
+  "Listing": { "Category": "festival", "SortOrder": 110 },
+  "Cost": { "Currencies": { "Seasons_Of_Orbis_Festival_Token": 80 } },
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Seasons_Of_Orbis_Festival/Festival_Tier_2", "Min": 1 }
+    ]
+  },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Furniture_Kweebec_Statue", "Count": 1 } } ]
+}

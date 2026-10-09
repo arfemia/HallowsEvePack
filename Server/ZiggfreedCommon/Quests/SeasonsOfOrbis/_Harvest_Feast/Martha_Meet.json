@@ -1,0 +1,49 @@
+{
+  "$Comment": [
+    "The way into Harvest Feast: go and find Martha the Cook in the Forgotten Temple. It arms itself:",
+    "Flow.AutoAccept puts it in every player's quest log while the feast runs, at their next login or",
+    "world change, and the base's Flow.AutoTrack pins it to their tracker. The _Harvest_Feast folder makes",
+    "the id harvest_feast_martha_meet.",
+    "",
+    "The one step is a TURN_IN with a blank Target, handed in at the giver: nothing to bring, only the",
+    "walk. Martha's conversation opens on her arrival line while it is carried, and its answer hands it",
+    "in. Its pay is a Claim like every quest's, so the hand-in takes the player to her quest list with",
+    "Collect in front of them; collecting it plays her conversation again, and its beat with the OnceId",
+    "meet_wheat_offer opens on her first quest's offer. A player whose quest log was full when it tried to",
+    "arm takes it from the same arrival line, through its quest row.",
+    "",
+    "Its Parent's Season hides it while the feast is off, so its own Requires holds only the Not group,",
+    "which keeps it from anyone who already finished Wheat for the Ovens. With no Repeat it comes once per",
+    "player, ever. Wheat for the Ovens does not wait on it: a player without it still gets the questline",
+    "from Martha. It pays a few festival tokens through the Currency reward kind, since a counter wallet",
+    "has no item to hand over."
+  ],
+  "Name": "Martha_Meet",
+  "Parent": "Harvest_Feast_Quest_Base",
+  "Listing": {
+    "Icon": "Food_Bread",
+    "Category": "main",
+    "SortOrder": 5
+  },
+  "Flow": { "AutoAccept": true },
+  "Requires": {
+    "Not": [
+      { "Quests": [ "harvest_feast_host_1" ] }
+    ]
+  },
+  "Objectives": {
+    "meet_martha": {
+      "Kind": "TURN_IN",
+      "Target": "",
+      "Amount": 1,
+      "Order": 1,
+      "TurnInNpcId": "giver",
+      "TextKey": "objective.harvest_feast.meet_martha"
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "2" } }
+    ]
+  }
+}
