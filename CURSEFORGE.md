@@ -72,7 +72,7 @@ Add the MMO Skill Bounty Pack 1.3.0 or newer and its Daily bounty board posts a 
 
 ### [Full Changelog](https://github.com/arfemia/HallowsEvePack/tree/main/patch-notes)
 
-### v1.0.0 (unreleased, held)
+### v1.0.0
 
 First release: Old Jack's questline, dailies, board and stall (Halloween decorations and the Halloween Broomstick included), favor with Old Jack and the Hallowed, trick-or-treat, the creatures of the season, Lantern Bombs, the Hallowed set and its two charred pieces for the top ranks, the Costume Wand, Cursed Geodes, the Carving Bench, Harvest Moon, seven achievements a season with a title, three keepsakes across the years with another, and an Almanac page. Needs Ziggfreed's CommonLib 2.2.0 and RPG Stations 1.1.0.
 
