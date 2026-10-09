@@ -5,6 +5,8 @@
 
 # ---- A pénztárca ----
 currency.hallows_eve_sweets.name = Mindenszenteki Cukorka
+currency.hallows_eve_sweets.amount = {0, number} {0, plural, one {Mindenszenteki Cukorka} other {Mindenszenteki Cukorka}}
+quest.category.hallows_eve = Mindenszentek Éje
 
 # ---- Öreg Jack küldetéssora ----
 quest.hallows_eve_old_jack_meet.title = Lámpások a Templomban
@@ -34,6 +36,12 @@ quest.hallows_eve_jack_daily_geodes.flavor = Törj fel nekem pár Átkozott Geod
 objective.hallows_eve.meet_jack = Találd meg Öreg Jacket a Feledett Templomban
 objective.hallows_eve.throw_bombs = Dobj el {0} Lámpásbombát
 objective.hallows_eve.crack_geodes = Törj fel {0} Átkozott Geodát
+objective.hallows_eve.bring_pumpkins = Hozz {0} Megszentelt Tököt
+objective.hallows_eve.bring_pumpkin = Hozz egy Megszentelt Tököt
+objective.hallows_eve.put_down_ghouls = Teríts le {0} Kongó Ghúlt
+objective.hallows_eve.free_souls = Szabadíts fel {0} Elveszett Lelket
+objective.hallows_eve.bring_ectoplasm = Hozz {0} Ektoplazmát
+objective.hallows_eve.knock_down_skeletons = Verj le {0} Jack-csontvázat
 objective.hallows_eve.attend = Vegyél részt Mindenszentek Éjén
 
 # ---- Öreg Jack táblája ----
@@ -96,9 +104,9 @@ dialogue.hallows_eve_old_jack.first_words.text = Ne törődj a fejjel. Tök, és
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Örülök, hogy megismerhetlek, Jack.
 dialogue.hallows_eve_old_jack.meet.text = Szóval megtaláltad a helyet. Jó.\nÖreg Jack vagyok. Mindenki, aki megtalál, kap egy <b>üdvözlést</b>, és te még nem kaptad meg a tiédet.
 dialogue.hallows_eve_old_jack.meet.opt.accept = Kösz, Jack.
-dialogue.hallows_eve_old_jack.board_fresh.text = Friss munka van a táblámon, egy része sötétben, egy része napvilágnál. Fizet.
+dialogue.hallows_eve_old_jack.board_fresh.text = Friss munka van a táblámon, egy része sötétben, egy része napvilágnál. Mindenszenteki Cukorkában fizet, a standom meg azt fogadja el.
 dialogue.hallows_eve_old_jack.menu.text = A lámpások égnek, a ghúlok kint járkálnak. Mi kell?
-dialogue.hallows_eve_old_jack.patch_offer.text = Szedj tököt ebben a hónapban, és hébe-hóba akad egy, ami hideg a tapintásra, és halványan világít. <b>Megszentelt Tököknek</b> hívom az ilyeneket.\nHozz párat. Megmutatom, mire jók.
+dialogue.hallows_eve_old_jack.patch_offer.text = Szedj tököt ebben a hónapban, és hébe-hóba akad egy, ami hideg a tapintásra, és halványan világít. <b>Megszentelt Tököknek</b> hívom az ilyeneket.\nHozz párat. Nélkülük nem maradnak égve a lámpásaim.
 dialogue.hallows_eve_old_jack.patch_offer.opt.accept = Keresek neked pár tököt.
 dialogue.hallows_eve_old_jack.patch_ready.text = <b>Megszentelt Tökök</b>. Hidegek, mint a pincelépcső.\nTettem pár Lámpásbombát a fizetséged mellé. Menj, nézd meg, hogy égnek.
 dialogue.hallows_eve_old_jack.patch_ready.opt.turnin = Itt vannak a tökök.
@@ -118,7 +126,10 @@ dialogue.hallows_eve_old_jack.lantern_offer.text = Minden évben kialszik a <b>V
 dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Gyújtsuk meg.
 dialogue.hallows_eve_old_jack.lantern_ready.text = Egy <b>Megszentelt Tök</b>, és <b>Ektoplazma</b>, hogy megtöltsük. Az arcomat viselő csontvázak lent fekszenek a fűben, ahová valók.\nÍgy. Ég a Vájt Lámpás, és a tiéd, megtarthatod. Vidd a pajzsot is, illik a sisakhoz. Gyere vissza jövőre, és gyújtunk egy másikat.
 dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = Itt a tök, és az Ektoplazma.
-dialogue.hallows_eve_old_jack.active_generic.text = Akkor menj csak. Itt leszek, mire végzel.
+dialogue.hallows_eve_old_jack.active_pumpkins.text = Az <color is="#ffd97a">őszi erdőkben</color> vadon nő a tök, és a <color is="#ffd97a">Kweebecek</color> is termesztik a kertjeikben. Szedd le kézzel, és hébe-hóba akad köztük egy <b>Megszentelt Tök</b>. Sötétedés után a <b>Jack-csontvázak</b> is ejtenek belőle.
+dialogue.hallows_eve_old_jack.active_bombs.text = Dobd a béredből kapott <b>Lámpásbombákat</b> arra, ami rászolgált. Ha kifogysz, a standomon van még, és sötétedés után a <b>Jack-csontvázak</b> is ejtenek párat.
+dialogue.hallows_eve_old_jack.active_night.text = Sötétedés után járnak a holtak, kint a vadonban, távol minden fáklyától. Hajnalra eltűnnek.\nEgy <b>Elveszett Lélek</b> <b>Ektoplazmát</b> hagy hátra, amikor felszabadítod, egy <b>Jack-csontváz</b> pedig néha egy <b>Megszentelt Tököt</b> ejt.
+dialogue.hallows_eve_old_jack.active_stone.text = Fejts <b>követ</b>, leginkább <b>ércet</b>, és hébe-hóba kiesik belőle egy <b>Átkozott Geoda</b>. Fogd a kezedbe, és törd fel.
 dialogue.hallows_eve_old_jack.ready_generic.text = Nekem úgy tűnik, kész. Lássuk.
 dialogue.hallows_eve_old_jack.ready_generic.opt.turnin = Kész van.
 dialogue.hallows_eve_old_jack.lantern_lit.text = A Vájt Lámpás még mindig ég. A legrosszabb sötétet távol tartja a lépcsőtől.\nMi kell?
@@ -175,10 +186,18 @@ reputation.hallows_eve_old_jack.rank.exalted = Jack Embere
 factor.hallows_eve_old_jack.friendly = Törzsvendég rang Öreg Jacknél
 factor.hallows_eve_old_jack.honored = Megbízható rang Öreg Jacknél
 factor.hallows_eve_old_jack.exalted = Jack Embere rang Öreg Jacknél
+reputation.hallows_eve_old_jack.earn.quests = Intézd el a megbízásait és a napi feladatait.
+reputation.hallows_eve_old_jack.earn.board = Vállalj megbízásokat a táblájáról.
+reputation.hallows_eve_old_jack.earn.talk = Naponta egyszer állj meg nála egy szóra.
+reputation.hallows_eve_old_jack.earn.gear = Viselj Jack-sisakot. Amíg rajtad van, növeli a kegyét.
 reputation.hallows_eve_hallowed.name = A Megszenteltek
 reputation.hallows_eve_hallowed.flavor = A Megszenteltek ott tartják a holtakat, ahová valók. Teríts le, ami éjjel kimászik a sírokból, és felfigyelnek rád.
 factor.hallows_eve_hallowed.revered = Nagyra becsült rang a Megszentelteknél
 factor.hallows_eve_hallowed.exalted = Magasztalt rang a Megszentelteknél
+reputation.hallows_eve_hallowed.earn.kills = Teríts le a lényeket, amelyek éjjel előmásznak.
+reputation.hallows_eve_hallowed.earn.jack = Öreg Jack napi feladatai és táblás megbízásai is beleszámítanak.
+reputation.hallows_eve_hallowed.earn.treats = Mondd bárkinek, akivel beszélsz, hogy csokit vagy csalunk, naponta egyszer.
+reputation.hallows_eve_hallowed.earn.gear = Tarts a kezedben egy Jack-pajzsot. Amíg fel van szerelve, növeli a kegyüket.
 notify.hallows_eve_hallowed_cache = Egy csomag a Megszenteltektől, amiért lent tartod a holtakat.
 dialogue.hallows_eve_old_jack.opt.standing = Hogy állunk mi ketten?
 achievement.category.seasons.hallows_eve = Mindenszentek Éje

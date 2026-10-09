@@ -6,6 +6,8 @@
 
 # ---- Le porte-monnaie ----
 currency.hallows_eve_sweets.name = Friandises de la Toussaint
+currency.hallows_eve_sweets.amount = {0, number} {0, plural, one {Friandise de la Toussaint} other {Friandises de la Toussaint}}
+quest.category.hallows_eve = Veille de la Toussaint
 
 # ---- La suite de quêtes du Vieux Jack ----
 quest.hallows_eve_old_jack_meet.title = Lanternes dans le temple
@@ -35,6 +37,12 @@ quest.hallows_eve_jack_daily_geodes.flavor = Casse-moi deux ou trois Géodes Mau
 objective.hallows_eve.meet_jack = Trouvez le Vieux Jack dans le Temple Oublié
 objective.hallows_eve.throw_bombs = Lancez {0} Bombes-Lanternes
 objective.hallows_eve.crack_geodes = Cassez {0} Géodes Maudites
+objective.hallows_eve.bring_pumpkins = Rapportez {0} Citrouilles Sanctifiées
+objective.hallows_eve.bring_pumpkin = Rapportez une Citrouille Sanctifiée
+objective.hallows_eve.put_down_ghouls = Abattez {0} Goules Creuses
+objective.hallows_eve.free_souls = Libérez {0} Âmes Perdues
+objective.hallows_eve.bring_ectoplasm = Rapportez {0} Ectoplasmes
+objective.hallows_eve.knock_down_skeletons = Faites tomber {0} Squelettes Jack
 objective.hallows_eve.attend = Participez à la Veille de la Toussaint
 objective.hallows_eve.jack_confidant = Devenez le Confident du Vieux Jack
 
@@ -105,10 +113,18 @@ reputation.hallows_eve_old_jack.rank.exalted = Un des siens
 factor.hallows_eve_old_jack.friendly = le statut d'Habitué du Vieux Jack
 factor.hallows_eve_old_jack.honored = la confiance du Vieux Jack
 factor.hallows_eve_old_jack.exalted = le rang Un des siens auprès du Vieux Jack
+reputation.hallows_eve_old_jack.earn.quests = Faites ses commissions et ses tâches quotidiennes.
+reputation.hallows_eve_old_jack.earn.board = Prenez des contrats sur son tableau.
+reputation.hallows_eve_old_jack.earn.talk = Passez lui dire un mot une fois par jour.
+reputation.hallows_eve_old_jack.earn.gear = Portez un Heaume de Jack. Il augmente sa faveur tant que vous l'avez sur la tête.
 reputation.hallows_eve_hallowed.name = Les Sanctifiés
 reputation.hallows_eve_hallowed.flavor = Les Sanctifiés gardent les morts à leur place. Abattez ce qui sort des tombes la nuit et ils le remarquent.
 factor.hallows_eve_hallowed.revered = le rang Révéré auprès des Sanctifiés
 factor.hallows_eve_hallowed.exalted = le rang Exalté auprès des Sanctifiés
+reputation.hallows_eve_hallowed.earn.kills = Abattez les créatures qui sortent de terre la nuit.
+reputation.hallows_eve_hallowed.earn.jack = Les quotidiennes du Vieux Jack et les contrats de son tableau comptent aussi.
+reputation.hallows_eve_hallowed.earn.treats = Une fois par jour, demandez des bonbons ou un sort à chaque personne à qui vous parlez.
+reputation.hallows_eve_hallowed.earn.gear = Tenez un Bouclier de Jack. Il augmente leur faveur tant qu'il est équipé.
 notify.hallows_eve_hallowed_cache = Une réserve des Sanctifiés, pour avoir gardé les morts sous terre.
 
 # ---- La page de l'Almanach ----
@@ -124,9 +140,9 @@ dialogue.hallows_eve_old_jack.first_words.text = Fais pas attention à la tête.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Un plaisir de te rencontrer, Jack.
 dialogue.hallows_eve_old_jack.meet.text = Tu as trouvé l'endroit, alors. Bien.\nMoi, c'est le Vieux Jack. Tous ceux qui me trouvent ont droit à un <b>accueil</b>, et t'as pas encore eu le tien.
 dialogue.hallows_eve_old_jack.meet.opt.accept = Merci, Jack.
-dialogue.hallows_eve_old_jack.board_fresh.text = Y a du nouveau sur mon tableau, un peu pour la nuit, un peu pour le jour. Ça paie.
+dialogue.hallows_eve_old_jack.board_fresh.text = Y a du nouveau sur mon tableau, un peu pour la nuit, un peu pour le jour. Ça paie en Friandises de la Toussaint, et mon étal les prend.
 dialogue.hallows_eve_old_jack.menu.text = Les lanternes sont allumées et les goules se baladent. Qu'est-ce qu'il te faut ?
-dialogue.hallows_eve_old_jack.patch_offer.text = Cueille une citrouille ce mois-ci et de temps en temps, y en a une qui sort froide au toucher, un peu luisante. Des <b>Citrouilles Sanctifiées</b>, c'est comme ça que je les appelle.\nRapporte-m'en quelques-unes. Je te montrerai à quoi elles servent.
+dialogue.hallows_eve_old_jack.patch_offer.text = Cueille une citrouille ce mois-ci et de temps en temps, y en a une qui sort froide au toucher, un peu luisante. Des <b>Citrouilles Sanctifiées</b>, c'est comme ça que je les appelle.\nRapporte-m'en quelques-unes. Sans elles, mes lanternes restent pas allumées.
 dialogue.hallows_eve_old_jack.patch_offer.opt.accept = Je vais te trouver des citrouilles.
 dialogue.hallows_eve_old_jack.patch_ready.text = Des <b>Citrouilles Sanctifiées</b>. Froides comme une marche de cave.\nJ'ai mis quelques Bombes-Lanternes avec ta paie. Va voir comment elles brûlent.
 dialogue.hallows_eve_old_jack.patch_ready.opt.turnin = Voilà les citrouilles.
@@ -146,7 +162,10 @@ dialogue.hallows_eve_old_jack.lantern_offer.text = Chaque année, la <b>Lanterne
 dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Allumons-la.
 dialogue.hallows_eve_old_jack.lantern_ready.text = Une <b>Citrouille Sanctifiée</b>, et de l'<b>Ectoplasme</b> pour la remplir. Les squelettes à ma figure sont couchés dans l'herbe, à leur place.\nVoilà. La Lanterne Creuse est allumée, et elle est à toi. Prends le bouclier aussi, il va avec le heaume. Reviens l'an prochain et on en allumera une autre.
 dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = Voilà la citrouille, et l'Ectoplasme.
-dialogue.hallows_eve_old_jack.active_generic.text = Vas-y, alors. Je serai là quand ce sera fait.
+dialogue.hallows_eve_old_jack.active_pumpkins.text = Les citrouilles poussent à l'état sauvage dans les <color is="#ffd97a">bois d'automne</color>, et les <color is="#ffd97a">Kweebecs</color> en cultivent dans leurs jardins. Cueille-les à la main et de temps en temps, y a une <b>Citrouille Sanctifiée</b> dans le lot. Les <b>Squelettes Jack</b> en lâchent aussi, une fois la nuit tombée.
+dialogue.hallows_eve_old_jack.active_bombs.text = Les <b>Bombes-Lanternes</b> de ta paie, lance-les sur tout ce qui l'a bien cherché. Si t'es à court, mon étal en a d'autres, et les <b>Squelettes Jack</b> en lâchent quelques-unes une fois la nuit tombée.
+dialogue.hallows_eve_old_jack.active_night.text = Les morts marchent à la nuit tombée, en pleine nature, loin de toute torche. Disparus à l'aube.\nUne <b>Âme Perdue</b> laisse de l'<b>Ectoplasme</b> quand tu la libères, et un <b>Squelette Jack</b> lâche parfois une <b>Citrouille Sanctifiée</b>.
+dialogue.hallows_eve_old_jack.active_stone.text = Brise de la <b>pierre</b>, du <b>minerai</b> surtout, et de temps en temps une <b>Géode Maudite</b> en tombe. Prends-en une en main et casse-la.
 dialogue.hallows_eve_old_jack.ready_generic.text = Ça m'a l'air fait. Voyons ça.
 dialogue.hallows_eve_old_jack.ready_generic.opt.turnin = C'est fait.
 dialogue.hallows_eve_old_jack.lantern_lit.text = La Lanterne Creuse brûle toujours. Ça garde le pire du noir loin des marches.\nQu'est-ce qu'il te faut ?

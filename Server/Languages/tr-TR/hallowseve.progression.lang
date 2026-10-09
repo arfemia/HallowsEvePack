@@ -5,6 +5,8 @@
 
 # ---- Cüzdan ----
 currency.hallows_eve_sweets.name = Cadı Şekeri
+currency.hallows_eve_sweets.amount = {0, number} {0, plural, one {Cadı Şekeri} other {Cadı Şekeri}}
+quest.category.hallows_eve = Cadılar Bayramı
 
 # ---- Yaşlı Jack'in görev zinciri ----
 quest.hallows_eve_old_jack_meet.title = Tapınakta Fenerler
@@ -34,6 +36,12 @@ quest.hallows_eve_jack_daily_geodes.flavor = Benim için birkaç Lanetli Jeot k�
 objective.hallows_eve.meet_jack = Unutulmuş Tapınak'ta Yaşlı Jack'i bul
 objective.hallows_eve.throw_bombs = {0} Fener Bombası at
 objective.hallows_eve.crack_geodes = {0} Lanetli Jeot kır
+objective.hallows_eve.bring_pumpkins = {0} Kutsanmış Bal Kabağı getir
+objective.hallows_eve.bring_pumpkin = Bir Kutsanmış Bal Kabağı getir
+objective.hallows_eve.put_down_ghouls = {0} Oyuk Gulyabani alt et
+objective.hallows_eve.free_souls = {0} Kayıp Ruh serbest bırak
+objective.hallows_eve.bring_ectoplasm = {0} Ektoplazma getir
+objective.hallows_eve.knock_down_skeletons = {0} Jack İskeleti yere ser
 objective.hallows_eve.attend = Cadılar Bayramı'na katıl
 
 # ---- Yaşlı Jack'in panosu ----
@@ -96,9 +104,9 @@ dialogue.hallows_eve_old_jack.first_words.text = Kafaya takılma. Bal kabağı o
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Tanıştığımıza memnun oldum, Jack.
 dialogue.hallows_eve_old_jack.meet.text = Demek yeri buldun. Güzel.\nBen Yaşlı Jack. Beni bulan herkes bir <b>hoş geldin</b> alır, sen daha seninkini almadın.
 dialogue.hallows_eve_old_jack.meet.opt.accept = Sağ ol, Jack.
-dialogue.hallows_eve_old_jack.board_fresh.text = Panomda yeni iş var, kimi karanlık için, kimi gün ışığı için. Parası da var.
+dialogue.hallows_eve_old_jack.board_fresh.text = Panomda yeni iş var, kimi karanlık için, kimi gün ışığı için. Ücretini Cadı Şekeriyle alırsın, tezgahımda da o geçer.
 dialogue.hallows_eve_old_jack.menu.text = Fenerler yandı, gulyabaniler de gezmeye çıktı. Ne lazım?
-dialogue.hallows_eve_old_jack.patch_offer.text = Bu ay bal kabağı topla, arada bir dokununca soğuk, hafif parlayan bir tane çıkar. Ben onlara <b>Kutsanmış Bal Kabağı</b> derim.\nBirkaç tane getir bana. Ne işe yaradıklarını gösteririm.
+dialogue.hallows_eve_old_jack.patch_offer.text = Bu ay bal kabağı topla, arada bir dokununca soğuk, hafif parlayan bir tane çıkar. Ben onlara <b>Kutsanmış Bal Kabağı</b> derim.\nBirkaç tane getir bana. Onlar olmadan fenerlerim yanık kalmaz.
 dialogue.hallows_eve_old_jack.patch_offer.opt.accept = Sana birkaç bal kabağı bulurum.
 dialogue.hallows_eve_old_jack.patch_ready.text = <b>Kutsanmış Bal Kabakları</b>. Kiler basamağı gibi soğuk.\nÜcretinin yanına birkaç Fener Bombası koydum. Git, nasıl yandıklarını gör.
 dialogue.hallows_eve_old_jack.patch_ready.opt.turnin = İşte bal kabakları.
@@ -118,7 +126,10 @@ dialogue.hallows_eve_old_jack.lantern_offer.text = Her yıl <b>Oyuk Fener</b> s�
 dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Hadi yakalım.
 dialogue.hallows_eve_old_jack.lantern_ready.text = Bir <b>Kutsanmış Bal Kabağı</b>, bir de onu dolduracak <b>Ektoplazma</b>. Benim yüzümü taşıyan iskeletler ait oldukları yerde, çimenlerde yatıyor.\nOldu. Oyuk Fener yandı, artık senin. Kalkanı da al, miğferle takım olur. Seneye gel, bir tane daha yakarız.
 dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = İşte bal kabağı, bir de Ektoplazma.
-dialogue.hallows_eve_old_jack.active_generic.text = Hadi, git bakalım. İş bitince ben burada olurum.
+dialogue.hallows_eve_old_jack.active_pumpkins.text = Bal kabakları <color is="#ffd97a">sonbahar ormanlarında</color> kendiliğinden yetişir, <color is="#ffd97a">Kweebecler</color> de bahçelerinde yetiştirir. Elle topla, arada bir aralarından bir <b>Kutsanmış Bal Kabağı</b> çıkar. Karanlık çökünce <b>Jack İskeletleri</b> de bunlardan düşürür.
+dialogue.hallows_eve_old_jack.active_bombs.text = Ücretinden çıkan <b>Fener Bombalarını</b> hak eden ne varsa ona fırlat. Biterse tezgahımda daha var, karanlık çökünce <b>Jack İskeletleri</b> de birkaç tane düşürür.
+dialogue.hallows_eve_old_jack.active_night.text = Karanlık çökünce ölüler dolaşır, dışarıda yabanda, her meşaleden uzakta. Şafak sökünce yok olurlar.\nSerbest bıraktığın her <b>Kayıp Ruh</b> geride <b>Ektoplazma</b> bırakır, bir <b>Jack İskeleti</b> de bazen bir <b>Kutsanmış Bal Kabağı</b> düşürür.
+dialogue.hallows_eve_old_jack.active_stone.text = <b>Taş</b> kır, en çok da <b>cevher</b>, arada bir içinden bir <b>Lanetli Jeot</b> düşer. Birini eline al ve kırıp aç.
 dialogue.hallows_eve_old_jack.ready_generic.text = Bana bitmiş gibi görünüyor. Bir bakalım.
 dialogue.hallows_eve_old_jack.ready_generic.opt.turnin = Bitti.
 dialogue.hallows_eve_old_jack.lantern_lit.text = Oyuk Fener hâlâ yanıyor. Karanlığın en kötüsünü basamaklardan uzak tutuyor.\nNe lazım?
@@ -175,10 +186,18 @@ reputation.hallows_eve_old_jack.rank.exalted = Jack'in Yakını
 factor.hallows_eve_old_jack.friendly = Yaşlı Jack nezdinde Müdavim rütbesi
 factor.hallows_eve_old_jack.honored = Yaşlı Jack nezdinde Güvenilir rütbesi
 factor.hallows_eve_old_jack.exalted = Yaşlı Jack nezdinde Jack'in Yakını rütbesi
+reputation.hallows_eve_old_jack.earn.quests = Ayak işlerini ve günlük işlerini gör.
+reputation.hallows_eve_old_jack.earn.board = Panosundan sözleşme al.
+reputation.hallows_eve_old_jack.earn.talk = Günde bir kez uğrayıp iki laf et.
+reputation.hallows_eve_old_jack.earn.gear = Bir Jack Miğferi tak. Başında olduğu sürece teveccühünü artırır.
 reputation.hallows_eve_hallowed.name = Kutsanmışlar
 reputation.hallows_eve_hallowed.flavor = Kutsanmışlar ölüleri ait oldukları yerde tutar. Geceleri mezarlardan tırmanıp çıkanları yere ser, onlar da fark eder.
 factor.hallows_eve_hallowed.revered = Kutsanmışlar nezdinde Muhterem rütbesi
 factor.hallows_eve_hallowed.exalted = Kutsanmışlar nezdinde Yüce rütbesi
+reputation.hallows_eve_hallowed.earn.kills = Geceleri sürünüp çıkan yaratıkları yere ser.
+reputation.hallows_eve_hallowed.earn.jack = Yaşlı Jack'in günlük işleri ve pano sözleşmeleri de sayılır.
+reputation.hallows_eve_hallowed.earn.treats = Konuştuğun herkese günde bir kez şeker mi şaka mı diye sor.
+reputation.hallows_eve_hallowed.earn.gear = Bir Jack Kalkanı taşı. Elinde olduğu sürece onların teveccühünü artırır.
 notify.hallows_eve_hallowed_cache = Kutsanmışlardan bir zula, ölüleri yerin altında tuttuğun için.
 dialogue.hallows_eve_old_jack.opt.standing = Aramız nasıl?
 

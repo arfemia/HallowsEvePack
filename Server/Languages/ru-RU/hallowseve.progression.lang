@@ -5,6 +5,8 @@
 
 # ---- Кошелёк ----
 currency.hallows_eve_sweets.name = Сладости Кануна
+currency.hallows_eve_sweets.amount = {0, number} {0, plural, one {Сладость Кануна} few {Сладости Кануна} many {Сладостей Кануна} other {Сладости Кануна}}
+quest.category.hallows_eve = Канун Всех Святых
 
 # ---- Цепочка квестов Старого Джека ----
 quest.hallows_eve_old_jack_meet.title = Фонари в храме
@@ -34,6 +36,12 @@ quest.hallows_eve_jack_daily_geodes.flavor = Расколи для меня па
 objective.hallows_eve.meet_jack = Найдите Старого Джека в Забытом Храме
 objective.hallows_eve.throw_bombs = Бросьте Фонарные бомбы: {0}
 objective.hallows_eve.crack_geodes = Расколите Проклятые жеоды: {0}
+objective.hallows_eve.bring_pumpkins = Принесите Освящённые тыквы: {0}
+objective.hallows_eve.bring_pumpkin = Принесите Освящённую тыкву
+objective.hallows_eve.put_down_ghouls = Уложите Полых упырей: {0}
+objective.hallows_eve.free_souls = Освободите Заблудшие души: {0}
+objective.hallows_eve.bring_ectoplasm = Принесите Эктоплазму: {0}
+objective.hallows_eve.knock_down_skeletons = Повалите Скелетов-Джеков: {0}
 objective.hallows_eve.attend = Примите участие в Кануне Всех Святых
 
 # ---- Доска Старого Джека ----
@@ -96,9 +104,9 @@ dialogue.hallows_eve_old_jack.first_words.text = Не обращай внима�
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Приятно познакомиться, Джек.
 dialogue.hallows_eve_old_jack.meet.text = Значит, нашёл дорогу. Хорошо.\nЯ Старый Джек. Каждому, кто меня находит, положено <b>приветствие</b>, а ты своё ещё не получил.
 dialogue.hallows_eve_old_jack.meet.opt.accept = Спасибо, Джек.
-dialogue.hallows_eve_old_jack.board_fresh.text = На моей доске свежая работа, кое-что впотьмах, кое-что при свете дня. За неё платят.
+dialogue.hallows_eve_old_jack.board_fresh.text = На моей доске свежая работа, кое-что впотьмах, кое-что при свете дня. Плачу Сладостями Кануна, а на моём прилавке они в ходу.
 dialogue.hallows_eve_old_jack.menu.text = Фонари зажжены, а упыри вышли погулять. Что тебе нужно?
-dialogue.hallows_eve_old_jack.patch_offer.text = Сорвёшь тыкву в этом месяце, и нет-нет да попадётся холодная на ощупь, чуть светящаяся. <b>Освящённые тыквы</b>, так я их зову.\nПринеси мне несколько. Покажу, на что они годятся.
+dialogue.hallows_eve_old_jack.patch_offer.text = Сорвёшь тыкву в этом месяце, и нет-нет да попадётся холодная на ощупь, чуть светящаяся. <b>Освящённые тыквы</b>, так я их зову.\nПринеси мне несколько. Без них мои фонари гаснут.
 dialogue.hallows_eve_old_jack.patch_offer.opt.accept = Найду тебе тыкв.
 dialogue.hallows_eve_old_jack.patch_ready.text = <b>Освящённые тыквы</b>. Холодные, как ступенька в погребе.\nЯ положил парочку Фонарных бомб к твоей плате. Иди посмотри, как горят.
 dialogue.hallows_eve_old_jack.patch_ready.opt.turnin = Вот тыквы.
@@ -118,7 +126,10 @@ dialogue.hallows_eve_old_jack.lantern_offer.text = Каждый год <b>Пол
 dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Давай зажжём.
 dialogue.hallows_eve_old_jack.lantern_ready.text = <b>Освящённая тыква</b>, и <b>Эктоплазма</b>, чтобы её наполнить. Скелеты с моим лицом лежат в траве, где им и место.\nВот так. Полый фонарь горит, и он твой насовсем. Щит тоже возьми, он к шлему в пару. Приходи в следующем году, зажжём ещё один.
 dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = Вот тыква, и Эктоплазма.
-dialogue.hallows_eve_old_jack.active_generic.text = Ну, ступай. Я буду тут, когда управишься.
+dialogue.hallows_eve_old_jack.active_pumpkins.text = Тыквы растут сами по себе в <color is="#ffd97a">осенних лесах</color>, а <color is="#ffd97a">квибеки</color> держат их на своих грядках. Собирай их руками, и нет-нет да попадётся среди них <b>Освящённая тыква</b>. А как стемнеет, их роняют ещё и <b>Скелеты-Джеки</b>.
+dialogue.hallows_eve_old_jack.active_bombs.text = Бросай <b>Фонарные бомбы</b>, что получил в уплату, во всё, что напросилось. Кончатся, на моём прилавке есть ещё, да и <b>Скелеты-Джеки</b> роняют парочку, как стемнеет.
+dialogue.hallows_eve_old_jack.active_night.text = Как стемнеет, мертвецы бродят в глуши, подальше от любого факела. К рассвету их уже нет.\nОсвободишь <b>Заблудшую душу</b>, и после неё останется <b>Эктоплазма</b>, а <b>Скелет-Джек</b> иной раз роняет <b>Освящённую тыкву</b>.
+dialogue.hallows_eve_old_jack.active_stone.text = Ломай <b>камень</b>, особенно <b>руду</b>, и нет-нет да выпадет <b>Проклятая жеода</b>. Возьми её в руку и расколи.
 dialogue.hallows_eve_old_jack.ready_generic.text = По-моему, готово. Показывай.
 dialogue.hallows_eve_old_jack.ready_generic.opt.turnin = Готово.
 dialogue.hallows_eve_old_jack.lantern_lit.text = Полый фонарь ещё горит. Держит самую темень подальше от ступеней.\nЧто тебе нужно?
@@ -175,10 +186,18 @@ reputation.hallows_eve_old_jack.rank.exalted = Свой человек
 factor.hallows_eve_old_jack.friendly = ранг «Завсегдатай» у Старого Джека
 factor.hallows_eve_old_jack.honored = ранг «Доверенный» у Старого Джека
 factor.hallows_eve_old_jack.exalted = ранг «Свой человек» у Старого Джека
+reputation.hallows_eve_old_jack.earn.quests = Выполняйте его поручения и ежедневные задания.
+reputation.hallows_eve_old_jack.earn.board = Берите контракты с его доски.
+reputation.hallows_eve_old_jack.earn.talk = Заходите раз в день перекинуться словом.
+reputation.hallows_eve_old_jack.earn.gear = Носите Шлем Джека. Пока он на вас, он даёт прибавку к расположению Старого Джека.
 reputation.hallows_eve_hallowed.name = Освящённые
 reputation.hallows_eve_hallowed.flavor = Освящённые держат мёртвых там, где им место. Укладывайте обратно то, что по ночам вылезает из могил, и они это заметят.
 factor.hallows_eve_hallowed.revered = ранг «Почтение» у Освящённых
 factor.hallows_eve_hallowed.exalted = ранг «Превознесение» у Освящённых
+reputation.hallows_eve_hallowed.earn.kills = Укладывайте обратно тварей, что выползают по ночам.
+reputation.hallows_eve_hallowed.earn.jack = Ежедневные задания и контракты с доски Старого Джека тоже идут в зачёт.
+reputation.hallows_eve_hallowed.earn.treats = Говорите «Сладость или гадость» любому, с кем разговариваете, раз в день.
+reputation.hallows_eve_hallowed.earn.gear = Возьмите Щит Джека. Пока он экипирован, он даёт прибавку к расположению Освящённых.
 notify.hallows_eve_hallowed_cache = Тайник от Освящённых за то, что не даёте мёртвым подняться.
 dialogue.hallows_eve_old_jack.opt.standing = Как мы с тобой ладим?
 achievement.category.seasons.hallows_eve = Канун Всех Святых

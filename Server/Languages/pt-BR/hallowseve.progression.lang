@@ -5,6 +5,8 @@
 
 # ---- A carteira ----
 currency.hallows_eve_sweets.name = Doces das Bruxas
+currency.hallows_eve_sweets.amount = {0, number} {0, plural, one {Doce das Bruxas} other {Doces das Bruxas}}
+quest.category.hallows_eve = Noite das Bruxas
 
 # ---- A linha de missões do Velho Jack ----
 quest.hallows_eve_old_jack_meet.title = Lanternas no Templo
@@ -34,6 +36,12 @@ quest.hallows_eve_jack_daily_geodes.flavor = Quebra uns dois Geodos Amaldiçoado
 objective.hallows_eve.meet_jack = Encontre o Velho Jack no Templo Esquecido
 objective.hallows_eve.throw_bombs = Arremesse {0} Bombas-Lanterna
 objective.hallows_eve.crack_geodes = Quebre {0} Geodos Amaldiçoados
+objective.hallows_eve.bring_pumpkins = Traga {0} Abóboras Consagradas
+objective.hallows_eve.bring_pumpkin = Traga uma Abóbora Consagrada
+objective.hallows_eve.put_down_ghouls = Abata {0} Carniçais Ocos
+objective.hallows_eve.free_souls = Liberte {0} Almas Perdidas
+objective.hallows_eve.bring_ectoplasm = Traga {0} de Ectoplasma
+objective.hallows_eve.knock_down_skeletons = Derrube {0} Esqueletos de Jack
 objective.hallows_eve.attend = Participe da Noite das Bruxas
 
 # ---- O quadro do Velho Jack ----
@@ -96,9 +104,9 @@ dialogue.hallows_eve_old_jack.first_words.text = Não liga pra cabeça. É uma a
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Prazer em te conhecer, Jack.
 dialogue.hallows_eve_old_jack.meet.text = Então você achou o lugar. Bom.\nSou o Velho Jack. Todo mundo que me acha ganha umas <b>boas-vindas</b>, e você ainda não ganhou as suas.
 dialogue.hallows_eve_old_jack.meet.opt.accept = Valeu, Jack.
-dialogue.hallows_eve_old_jack.board_fresh.text = Tem serviço novo no meu quadro, um pouco pro escuro e um pouco pra luz do dia. E paga.
+dialogue.hallows_eve_old_jack.board_fresh.text = Tem serviço novo no meu quadro, um pouco pro escuro e um pouco pra luz do dia. Paga em Doces das Bruxas, que é o que a minha banca aceita.
 dialogue.hallows_eve_old_jack.menu.text = As lanternas tão acesas e os carniçais tão andando por aí. Do que você precisa?
-dialogue.hallows_eve_old_jack.patch_offer.text = Colhe abóbora este mês que de vez em quando sai uma fria ao toque, brilhando um pouco. <b>Abóboras Consagradas</b>, é como eu chamo essas.\nMe traz algumas. Eu te mostro pra que elas servem.
+dialogue.hallows_eve_old_jack.patch_offer.text = Colhe abóbora este mês que de vez em quando sai uma fria ao toque, brilhando um pouco. <b>Abóboras Consagradas</b>, é como eu chamo essas.\nMe traz algumas. Minhas lanternas não ficam acesas sem elas.
 dialogue.hallows_eve_old_jack.patch_offer.opt.accept = Vou achar umas abóboras para você.
 dialogue.hallows_eve_old_jack.patch_ready.text = <b>Abóboras Consagradas</b>. Frias como degrau de porão.\nPus umas Bombas-Lanterna junto com o seu pagamento. Vai ver como elas queimam.
 dialogue.hallows_eve_old_jack.patch_ready.opt.turnin = Aqui estão as abóboras.
@@ -118,7 +126,10 @@ dialogue.hallows_eve_old_jack.lantern_offer.text = Todo ano a <b>Lanterna Oca</b
 dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Vamos acender.
 dialogue.hallows_eve_old_jack.lantern_ready.text = Uma <b>Abóbora Consagrada</b>, e <b>Ectoplasma</b> pra encher. Os esqueletos com a minha cara tão caídos na grama, que é o lugar deles.\nPronto. A Lanterna Oca tá acesa, e é sua pra guardar. Leva o escudo também, faz par com o elmo. Volta ano que vem que a gente acende outra.
 dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = Aqui está a abóbora, e o Ectoplasma.
-dialogue.hallows_eve_old_jack.active_generic.text = Vai lá, então. Quando terminar, eu tô aqui.
+dialogue.hallows_eve_old_jack.active_pumpkins.text = Abóbora nasce solta nos <color is="#ffd97a">bosques de outono</color>, e os <color is="#ffd97a">Kweebecs</color> plantam nas hortas deles. Colhe com as mãos que de vez em quando vem uma <b>Abóbora Consagrada</b> no meio. Os <b>Esqueletos de Jack</b> também deixam cair umas, depois que escurece.
+dialogue.hallows_eve_old_jack.active_bombs.text = Joga as <b>Bombas-Lanterna</b> do seu pagamento em qualquer coisa que tá merecendo. Se faltar, minha banca tem mais, e os <b>Esqueletos de Jack</b> deixam cair umas depois que escurece.
+dialogue.hallows_eve_old_jack.active_night.text = Os mortos andam depois que escurece, lá no mato e longe de qualquer tocha. Somem quando amanhece.\nUma <b>Alma Perdida</b> deixa <b>Ectoplasma</b> quando você liberta ela, e um <b>Esqueleto de Jack</b> às vezes deixa cair uma <b>Abóbora Consagrada</b>.
+dialogue.hallows_eve_old_jack.active_stone.text = Quebra <b>pedra</b>, principalmente <b>minério</b>, que de vez em quando cai um <b>Geodo Amaldiçoado</b>. Segura um na mão e quebra ele pra abrir.
 dialogue.hallows_eve_old_jack.ready_generic.text = Pra mim isso parece feito. Deixa eu ver.
 dialogue.hallows_eve_old_jack.ready_generic.opt.turnin = Está feito.
 dialogue.hallows_eve_old_jack.lantern_lit.text = A Lanterna Oca ainda tá acesa. Mantém o pior do escuro longe dos degraus.\nDo que você precisa?
@@ -175,10 +186,18 @@ reputation.hallows_eve_old_jack.rank.exalted = Gente do Jack
 factor.hallows_eve_old_jack.friendly = nível Freguês com o Velho Jack
 factor.hallows_eve_old_jack.honored = nível De Confiança com o Velho Jack
 factor.hallows_eve_old_jack.exalted = nível Gente do Jack com o Velho Jack
+reputation.hallows_eve_old_jack.earn.quests = Faça os recados e os serviços diários dele.
+reputation.hallows_eve_old_jack.earn.board = Pegue contratos do quadro dele.
+reputation.hallows_eve_old_jack.earn.talk = Dê uma passada para um dedo de prosa, uma vez por dia.
+reputation.hallows_eve_old_jack.earn.gear = Use um Elmo de Jack. Ele soma ao favor do Jack enquanto estiver na sua cabeça.
 reputation.hallows_eve_hallowed.name = Os Consagrados
 reputation.hallows_eve_hallowed.flavor = Os Consagrados mantêm os mortos onde é o lugar deles. Derrube o que sai das covas à noite e eles reparam.
 factor.hallows_eve_hallowed.revered = nível Reverenciado com os Consagrados
 factor.hallows_eve_hallowed.exalted = nível Exaltado com os Consagrados
+reputation.hallows_eve_hallowed.earn.kills = Abata as criaturas que saem rastejando à noite.
+reputation.hallows_eve_hallowed.earn.jack = Os serviços diários e os contratos do quadro do Velho Jack também contam.
+reputation.hallows_eve_hallowed.earn.treats = Peça doces ou travessuras a qualquer um com quem você conversar, uma vez por dia.
+reputation.hallows_eve_hallowed.earn.gear = Leve um Escudo de Jack. Ele soma ao favor dos Consagrados enquanto estiver equipado.
 notify.hallows_eve_hallowed_cache = Um agrado dos Consagrados, por manter os mortos debaixo da terra.
 dialogue.hallows_eve_old_jack.opt.standing = Em que pé estamos?
 

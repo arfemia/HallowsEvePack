@@ -5,6 +5,8 @@
 
 # ---- Il portafoglio ----
 currency.hallows_eve_sweets.name = Dolcetti di Ognissanti
+currency.hallows_eve_sweets.amount = {0, number} {0, plural, one {Dolcetto di Ognissanti} other {Dolcetti di Ognissanti}}
+quest.category.hallows_eve = Vigilia di Ognissanti
 
 # ---- La serie di missioni del Vecchio Jack ----
 quest.hallows_eve_old_jack_meet.title = Lanterne nel Tempio
@@ -34,6 +36,12 @@ quest.hallows_eve_jack_daily_geodes.flavor = Spaccami un paio di Geodi Maledette
 objective.hallows_eve.meet_jack = Trova il Vecchio Jack nel Tempio Dimenticato
 objective.hallows_eve.throw_bombs = Lancia {0} Bombe Lanterna
 objective.hallows_eve.crack_geodes = Spacca {0} Geodi Maledette
+objective.hallows_eve.bring_pumpkins = Porta {0} Zucche Consacrate
+objective.hallows_eve.bring_pumpkin = Porta una Zucca Consacrata
+objective.hallows_eve.put_down_ghouls = Rimetti sottoterra {0} Ghoul Vuoti
+objective.hallows_eve.free_souls = Libera {0} Anime Perdute
+objective.hallows_eve.bring_ectoplasm = Porta {0} Ectoplasma
+objective.hallows_eve.knock_down_skeletons = Butta giù {0} Scheletri Jack
 objective.hallows_eve.attend = Partecipa alla Vigilia di Ognissanti
 
 # ---- La bacheca del Vecchio Jack ----
@@ -96,9 +104,9 @@ dialogue.hallows_eve_old_jack.first_words.text = Non badare alla testa. È una z
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Piacere di conoscerti, Jack.
 dialogue.hallows_eve_old_jack.meet.text = Hai trovato il posto, allora. Bene.\nSono il Vecchio Jack. Tutti quelli che mi trovano ricevono un <b>benvenuto</b>, e tu il tuo non l'hai ancora avuto.
 dialogue.hallows_eve_old_jack.meet.opt.accept = Grazie, Jack.
-dialogue.hallows_eve_old_jack.board_fresh.text = C'è lavoro nuovo sulla mia bacheca, un po' da fare col buio e un po' alla luce del giorno. Paga.
+dialogue.hallows_eve_old_jack.board_fresh.text = C'è lavoro nuovo sulla mia bacheca, un po' da fare col buio e un po' alla luce del giorno. Paga in Dolcetti di Ognissanti, e la mia bancarella li accetta.
 dialogue.hallows_eve_old_jack.menu.text = Le lanterne sono accese e i ghoul vanno in giro. Che ti serve?
-dialogue.hallows_eve_old_jack.patch_offer.text = Raccogli zucche questo mese e ogni tanto ne spunta una fredda al tatto, che brilla un po'. <b>Zucche Consacrate</b>, le chiamo io.\nPortamene qualcuna. Ti faccio vedere a cosa servono.
+dialogue.hallows_eve_old_jack.patch_offer.text = Raccogli zucche questo mese e ogni tanto ne spunta una fredda al tatto, che brilla un po'. <b>Zucche Consacrate</b>, le chiamo io.\nPortamene qualcuna. Senza quelle le mie lanterne non restano accese.
 dialogue.hallows_eve_old_jack.patch_offer.opt.accept = Ti trovo qualche zucca.
 dialogue.hallows_eve_old_jack.patch_ready.text = <b>Zucche Consacrate</b>. Fredde come uno scalino di cantina.\nTi ho messo qualche Bomba Lanterna insieme alla paga. Va' a vedere come bruciano.
 dialogue.hallows_eve_old_jack.patch_ready.opt.turnin = Ecco le zucche.
@@ -118,7 +126,10 @@ dialogue.hallows_eve_old_jack.lantern_offer.text = Ogni anno la <b>Lanterna Cava
 dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Accendiamola.
 dialogue.hallows_eve_old_jack.lantern_ready.text = Una <b>Zucca Consacrata</b>, e <b>Ectoplasma</b> per riempirla. Gli scheletri con la mia faccia stanno stesi nell'erba, dove devono stare.\nEcco. La Lanterna Cava è accesa, e te la puoi tenere. Prendi anche lo scudo, fa il paio con l'elmo. Torna l'anno prossimo e ne accendiamo un'altra.
 dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = Ecco la zucca, e l'Ectoplasma.
-dialogue.hallows_eve_old_jack.active_generic.text = Va' pure, allora. Quando hai finito, io sono qui.
+dialogue.hallows_eve_old_jack.active_pumpkins.text = Le zucche crescono selvatiche nei <color is="#ffd97a">boschi autunnali</color>, e i <color is="#ffd97a">Kweebec</color> le tengono nei loro orti. Raccoglile a mano e ogni tanto in mezzo spunta una <b>Zucca Consacrata</b>. Col buio ne lasciano cadere anche gli <b>Scheletri Jack</b>.
+dialogue.hallows_eve_old_jack.active_bombs.text = Tira le <b>Bombe Lanterna</b> che hai avuto come paga contro qualunque cosa se la sia cercata. Se resti senza, alla mia bancarella ne trovi altre, e col buio gli <b>Scheletri Jack</b> ne lasciano cadere qualcuna.
+dialogue.hallows_eve_old_jack.active_night.text = I morti camminano col buio, là fuori nelle terre selvagge, lontano da ogni torcia. All'alba se ne sono andati.\nUn'<b>Anima Perduta</b> lascia dell'<b>Ectoplasma</b> quando la liberi, e a volte uno <b>Scheletro Jack</b> lascia cadere una <b>Zucca Consacrata</b>.
+dialogue.hallows_eve_old_jack.active_stone.text = Rompi la <b>pietra</b>, soprattutto il <b>minerale</b>, e ogni tanto ne salta fuori una <b>Geode Maledetta</b>. Tienine una in mano e spaccala.
 dialogue.hallows_eve_old_jack.ready_generic.text = Mi sembra fatto. Fammi vedere.
 dialogue.hallows_eve_old_jack.ready_generic.opt.turnin = Fatto.
 dialogue.hallows_eve_old_jack.lantern_lit.text = La Lanterna Cava brucia ancora. Tiene lontano dai gradini il peggio del buio.\nChe ti serve?
@@ -175,10 +186,18 @@ reputation.hallows_eve_old_jack.rank.exalted = Uno di Jack
 factor.hallows_eve_old_jack.friendly = il rango di Habitué presso il Vecchio Jack
 factor.hallows_eve_old_jack.honored = il rango di Fidato presso il Vecchio Jack
 factor.hallows_eve_old_jack.exalted = il rango di Uno di Jack presso il Vecchio Jack
+reputation.hallows_eve_old_jack.earn.quests = Sbriga le sue commissioni e i suoi lavori giornalieri.
+reputation.hallows_eve_old_jack.earn.board = Prendi i contratti dalla sua bacheca.
+reputation.hallows_eve_old_jack.earn.talk = Passa a scambiare due parole una volta al giorno.
+reputation.hallows_eve_old_jack.earn.gear = Indossa un Elmo di Jack. Finché ce l'hai in testa, aumenta il suo favore.
 reputation.hallows_eve_hallowed.name = I Consacrati
 reputation.hallows_eve_hallowed.flavor = I Consacrati tengono i morti al loro posto. Abbatti ciò che di notte risale dalle tombe e loro se ne accorgono.
 factor.hallows_eve_hallowed.revered = il rango di Riverito presso i Consacrati
 factor.hallows_eve_hallowed.exalted = il rango di Osannato presso i Consacrati
+reputation.hallows_eve_hallowed.earn.kills = Abbatti le creature che di notte strisciano fuori.
+reputation.hallows_eve_hallowed.earn.jack = Contano anche i lavori giornalieri del Vecchio Jack e i contratti della sua bacheca.
+reputation.hallows_eve_hallowed.earn.treats = Chiedi dolcetto o scherzetto a chiunque con cui parli, una volta al giorno.
+reputation.hallows_eve_hallowed.earn.gear = Porta uno Scudo di Jack. Finché è equipaggiato, aumenta il loro favore.
 notify.hallows_eve_hallowed_cache = Una scorta dai Consacrati, per aver tenuto i morti sottoterra.
 dialogue.hallows_eve_old_jack.opt.standing = Come stanno le cose tra noi?
 achievement.category.seasons.hallows_eve = Vigilia di Ognissanti

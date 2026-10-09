@@ -5,6 +5,8 @@
 
 # ---- Die Geldbörse ----
 currency.hallows_eve_sweets.name = Allerheiligen-Naschwerk
+currency.hallows_eve_sweets.amount = {0, number} {0, plural, one {Allerheiligen-Naschwerk} other {Allerheiligen-Naschwerk}}
+quest.category.hallows_eve = Allerheiligenabend
 
 # ---- Die Questreihe des Alten Jack ----
 quest.hallows_eve_old_jack_meet.title = Laternen im Tempel
@@ -34,6 +36,12 @@ quest.hallows_eve_jack_daily_geodes.flavor = Knack ein paar Verfluchte Geoden f�
 objective.hallows_eve.meet_jack = Finde den Alten Jack im Vergessenen Tempel
 objective.hallows_eve.throw_bombs = Wirf {0} Laternenbomben
 objective.hallows_eve.crack_geodes = Knacke {0} Verfluchte Geoden
+objective.hallows_eve.bring_pumpkins = Bringe {0} Geweihte Kürbisse
+objective.hallows_eve.bring_pumpkin = Bringe einen Geweihten Kürbis
+objective.hallows_eve.put_down_ghouls = Strecke {0} Hohle Ghule nieder
+objective.hallows_eve.free_souls = Befreie {0} Verlorene Seelen
+objective.hallows_eve.bring_ectoplasm = Bringe {0} Ektoplasma
+objective.hallows_eve.knock_down_skeletons = Hau {0} Jack-Skelette um
 objective.hallows_eve.attend = Nimm am Allerheiligenabend teil
 
 # ---- Die Tafel des Alten Jack ----
@@ -96,9 +104,9 @@ dialogue.hallows_eve_old_jack.first_words.text = Stör dich nicht am Kopf. Ist e
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Freut mich, Jack.
 dialogue.hallows_eve_old_jack.meet.text = Hast also hergefunden. Gut.\nIch bin der Alte Jack. Jeder, der mich findet, kriegt ein <b>Willkommen</b>, und du hattest deins noch nicht.
 dialogue.hallows_eve_old_jack.meet.opt.accept = Danke, Jack.
-dialogue.hallows_eve_old_jack.board_fresh.text = An meiner Tafel hängt neue Arbeit, einiges für die Dunkelheit und einiges fürs Tageslicht. Die wird bezahlt.
+dialogue.hallows_eve_old_jack.board_fresh.text = An meiner Tafel hängt neue Arbeit, einiges für die Dunkelheit und einiges fürs Tageslicht. Bezahlt wird in Allerheiligen-Naschwerk, und das nehm ich an meinem Stand.
 dialogue.hallows_eve_old_jack.menu.text = Die Laternen brennen, und die Ghule sind unterwegs. Was brauchst du?
-dialogue.hallows_eve_old_jack.patch_offer.text = Ernte diesen Monat einen Kürbis, und hin und wieder fühlt sich einer kalt an und leuchtet ein bisschen. <b>Geweihte Kürbisse</b> nenn ich die.\nBring mir ein paar. Ich zeig dir, wofür die gut sind.
+dialogue.hallows_eve_old_jack.patch_offer.text = Ernte diesen Monat einen Kürbis, und hin und wieder fühlt sich einer kalt an und leuchtet ein bisschen. <b>Geweihte Kürbisse</b> nenn ich die.\nBring mir ein paar. Ohne die gehen mir die Laternen aus.
 dialogue.hallows_eve_old_jack.patch_offer.opt.accept = Ich besorg dir ein paar Kürbisse.
 dialogue.hallows_eve_old_jack.patch_ready.text = <b>Geweihte Kürbisse</b>. Kalt wie 'ne Kellerstufe.\nIch hab dir ein paar Laternenbomben zu deinem Lohn gelegt. Geh und schau, wie sie brennen.
 dialogue.hallows_eve_old_jack.patch_ready.opt.turnin = Hier sind die Kürbisse.
@@ -118,7 +126,10 @@ dialogue.hallows_eve_old_jack.lantern_offer.text = Jedes Jahr geht die <b>Hohle 
 dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Zünden wir sie an.
 dialogue.hallows_eve_old_jack.lantern_ready.text = Ein <b>Geweihter Kürbis</b> und <b>Ektoplasma</b>, um ihn zu füllen. Die Skelette mit meinem Gesicht liegen unten im Gras, wo sie hingehören.\nSo. Die Hohle Laterne brennt, und du darfst sie behalten. Nimm den Schild auch mit, der gehört zum Helm. Komm nächstes Jahr wieder, dann zünden wir die nächste an.
 dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = Hier ist der Kürbis, und das Ektoplasma.
-dialogue.hallows_eve_old_jack.active_generic.text = Dann mal los. Ich bin hier, wenn's erledigt ist.
+dialogue.hallows_eve_old_jack.active_pumpkins.text = Kürbisse wachsen wild in den <color is="#ffd97a">Herbstwäldern</color>, und die <color is="#ffd97a">Kweebecs</color> bauen sie in ihren Gärten an. Ernte sie von Hand, und ab und zu ist ein <b>Geweihter Kürbis</b> darunter. Nach Einbruch der Dunkelheit lassen auch die <b>Jack-Skelette</b> welche fallen.
+dialogue.hallows_eve_old_jack.active_bombs.text = Wirf die <b>Laternenbomben</b> aus deinem Lohn auf alles, was es verdient hat. Gehen sie dir aus, hat mein Stand mehr, und die <b>Jack-Skelette</b> lassen nach Einbruch der Dunkelheit ein paar fallen.
+dialogue.hallows_eve_old_jack.active_night.text = Nach Einbruch der Dunkelheit gehen die Toten um, draußen in der Wildnis und weit weg von jeder Fackel. Im Morgengrauen sind sie weg.\nEine <b>Verlorene Seele</b> lässt <b>Ektoplasma</b> zurück, wenn du sie befreist, und ein <b>Jack-Skelett</b> lässt manchmal einen <b>Geweihten Kürbis</b> fallen.
+dialogue.hallows_eve_old_jack.active_stone.text = Bau <b>Stein</b> ab, vor allem <b>Erz</b>, und ab und zu fällt 'ne <b>Verfluchte Geode</b> raus. Nimm eine in die Hand und knack sie auf.
 dialogue.hallows_eve_old_jack.ready_generic.text = Sieht für mich erledigt aus. Zeig mal her.
 dialogue.hallows_eve_old_jack.ready_generic.opt.turnin = Ist erledigt.
 dialogue.hallows_eve_old_jack.lantern_lit.text = Die Hohle Laterne brennt noch. Hält das Schlimmste der Dunkelheit von den Stufen fern.\nWas brauchst du?
@@ -175,10 +186,18 @@ reputation.hallows_eve_old_jack.rank.exalted = Jacks Familie
 factor.hallows_eve_old_jack.friendly = den Rang Stammgast beim Alten Jack
 factor.hallows_eve_old_jack.honored = den Rang Bewährt beim Alten Jack
 factor.hallows_eve_old_jack.exalted = den Rang Jacks Familie beim Alten Jack
+reputation.hallows_eve_old_jack.earn.quests = Erledige seine Besorgungen und seine Tagesaufgaben.
+reputation.hallows_eve_old_jack.earn.board = Nimm Aufträge von seiner Tafel an.
+reputation.hallows_eve_old_jack.earn.talk = Schau einmal am Tag auf ein Wort bei ihm vorbei.
+reputation.hallows_eve_old_jack.earn.gear = Trag einen Jack-Helm. Solange du ihn aufhast, bringt er dir zusätzliche Gunst.
 reputation.hallows_eve_hallowed.name = Die Geweihten
 reputation.hallows_eve_hallowed.flavor = Die Geweihten halten die Toten dort, wo sie hingehören. Streck nieder, was nachts aus den Gräbern klettert, und sie werden auf dich aufmerksam.
 factor.hallows_eve_hallowed.revered = den Rang Respektvoll bei den Geweihten
 factor.hallows_eve_hallowed.exalted = den Rang Ehrfürchtig bei den Geweihten
+reputation.hallows_eve_hallowed.earn.kills = Streck die Kreaturen nieder, die nachts herauskriechen.
+reputation.hallows_eve_hallowed.earn.jack = Die Tagesaufgaben des Alten Jack und die Aufträge an seiner Tafel zählen auch.
+reputation.hallows_eve_hallowed.earn.treats = Frag jeden, mit dem du sprichst, einmal am Tag nach Süßem oder Saurem.
+reputation.hallows_eve_hallowed.earn.gear = Führ einen Jack-Schild. Solange er ausgerüstet ist, bringt er dir zusätzliche Gunst.
 notify.hallows_eve_hallowed_cache = Ein Vorrat von den Geweihten, weil du die Toten unter der Erde hältst.
 dialogue.hallows_eve_old_jack.opt.standing = Wie stehen wir zueinander?
 achievement.category.seasons.hallows_eve = Allerheiligenabend
