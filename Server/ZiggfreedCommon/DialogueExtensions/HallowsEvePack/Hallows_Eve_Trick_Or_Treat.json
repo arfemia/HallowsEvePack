@@ -9,8 +9,10 @@
     "Factor condition hides it whenever the event is off. Grant rolls the lootable",
     "Hallows_Eve_Trick_Or_Treat, which always pays a few sweets with a notice and then draws one",
     "more treat or a costume trick, and adds a little favor with the Hallowed (Hallows_Eve_Hallowed) (the Reputation",
-    "reward; Amount is how much). Close ends the conversation, since a line added to another",
-    "character's conversation has no screen of its own to go to. Add a Dialogues block with an",
+    "reward; Amount is how much). It names no Goto and no Close, so the conversation stays on the",
+    "screen it was on, the line gone for the day, and the library's receipt toast shows inside it:",
+    "every thing the knock paid (the treat, the sweets, the favor) as rows, with the pickup sound,",
+    "once. Add a Dialogues block with an",
     "Exclude list to keep it out of a conversation, or set Enabled false in a file of the same name",
     "to take it out everywhere."
   ],
@@ -27,8 +29,7 @@
       "Grant": [
         { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Trick_Or_Treat" } },
         { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 5 } }
-      ],
-      "Close": true
+      ]
     }
   ]
 }

@@ -8,7 +8,9 @@
     "category filter (its name is quest.category.hallows_eve in the pack's lang). Flow, Npc and",
     "CompletionDialogue are how each one is taken, tracked and handed in there. Npc.TurnInId adds the",
     "report-back step to Old Jack to every quest whose own steps hand nothing in. A child that writes",
-    "its own Listing or Flow keeps every leaf of these it leaves out.",
+    "its own Listing or Flow keeps every leaf of these it leaves out. Flow leaves HideLockedSteps off, so",
+    "the book lists every step of a quest being carried, the ones still ahead under a lock, and a player",
+    "sees what comes next, the report-back to Old Jack included.",
     "",
     "It carries no Requires, no Objectives and no Rewards: each quest writes its own Requires, with",
     "the Hallows_Eve_Live condition at the top that makes it absent while the event is off, its own",
@@ -17,7 +19,7 @@
   ],
   "Abstract": true,
   "Listing": { "Category": "Hallows_Eve", "Hidden": true, "RequirePrerequisites": true },
-  "Flow": { "AutoAccept": false, "AutoTrack": true, "HideLockedSteps": true },
+  "Flow": { "AutoAccept": false, "AutoTrack": true },
   "Npc": { "ViewId": "Hallows_Eve_Old_Jack", "TurnInId": "giver" },
   "CompletionDialogue": "Hallows_Eve_Old_Jack"
 }
