@@ -8,7 +8,6 @@
   },
   "Listing": {
     "Icon": "Hallows_Eve_Cursed_Geode",
-    "Category": "main",
     "SortOrder": 50,
     "Chains": [ { "Id": "hallows_eve_old_jack", "Tier": 5 } ]
   },

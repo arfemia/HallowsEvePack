@@ -162,7 +162,6 @@ dialogue.hallows_eve_old_jack.lantern_offer.text = Every year the <b>Hollow Lant
 dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Let's light it.
 dialogue.hallows_eve_old_jack.lantern_ready.text = A <b>Hallowed Pumpkin</b>, and <b>Ectoplasm</b> to fill it. The skeletons with my face are down in the grass where they belong.\nThere. The Hollow Lantern's lit, and it's yours to keep. Take the shield too, it goes with the helm. Come back next year and we'll light another.
 dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = Here's the pumpkin, and the Ectoplasm.
-dialogue.hallows_eve_old_jack.active_generic.text = Off you go, then. I'll be here when it's done.
 dialogue.hallows_eve_old_jack.active_pumpkins.text = Pumpkins grow wild in the <color is="#ffd97a">autumn woods</color>, and the <color is="#ffd97a">Kweebecs</color> keep them in their gardens. Pick them by hand and every so often there's a <b>Hallowed Pumpkin</b> among them. The <b>Jack Skeletons</b> drop them too, after dark.
 dialogue.hallows_eve_old_jack.active_bombs.text = Throw the <b>Lantern Bombs</b> from your pay at anything that has it coming. Run short and my stall has more, and the <b>Jack Skeletons</b> drop a few after dark.
 dialogue.hallows_eve_old_jack.active_night.text = The dead walk after dark, out in the wild and away from any torch. Gone by dawn.\nA <b>Lost Soul</b> leaves <b>Ectoplasm</b> when you set it free, and a <b>Jack Skeleton</b> sometimes drops a <b>Hallowed Pumpkin</b>.

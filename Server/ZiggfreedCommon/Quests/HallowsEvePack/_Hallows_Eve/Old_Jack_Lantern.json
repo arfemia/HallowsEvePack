@@ -21,7 +21,6 @@
   },
   "Listing": {
     "Icon": "Hallows_Eve_Hollow_Lantern",
-    "Category": "main",
     "SortOrder": 60,
     "Chains": [ { "Id": "hallows_eve_old_jack", "Tier": 6 } ]
   },

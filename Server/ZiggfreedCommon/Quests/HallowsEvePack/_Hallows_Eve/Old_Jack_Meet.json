@@ -40,7 +40,6 @@
   "Listing": {
     "Hidden": false,
     "Icon": "Hallows_Eve_Jack_Lantern",
-    "Category": "main",
     "SortOrder": 5
   },
   "Flow": { "AutoAccept": true },

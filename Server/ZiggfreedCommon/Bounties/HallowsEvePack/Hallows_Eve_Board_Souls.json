@@ -12,7 +12,7 @@
     ]
   },
   "Objectives": {
-    "free_souls": { "Kind": "KILL_ENTITY", "Target": "Hallows_Eve_Lost_Soul", "MatchMode": "EXACT", "Amount": 8 }
+    "free_souls": { "Kind": "KILL_ENTITY", "Target": "Hallows_Eve_Lost_Soul", "MatchMode": "EXACT", "Amount": 8, "TextKey": "objective.hallows_eve.free_souls" }
   },
   "Rewards": {
     "Claim": [

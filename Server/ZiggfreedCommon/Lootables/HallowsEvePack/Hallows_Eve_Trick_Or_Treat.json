@@ -1,8 +1,8 @@
 {
   "$Comment": [
-    "What the trick-or-treat line hands over. The roll always pays a few sweets, and its Cue",
-    "Hallows_Eve_Treat plays the sound of the moment file of that name, and the library's toast",
-    "lists what the knock paid, even though sweets land in a wallet and not in the bag. Then the",
+    "What the trick-or-treat line hands over. The roll always pays a few sweets, and the library's",
+    "receipt toast lists what the knock paid and plays the pickup sound, so a knock is one sound,",
+    "even though sweets land in a wallet and not in the bag. It names no Cue for that reason. Then the",
     "pool draws once: more sweets, a vanilla food, or a trick. Weight sets how often each comes up against the rest.",
     "",
     "Sweets pay through the Currency reward kind. The tricks put a costume on the player through",
@@ -15,8 +15,7 @@
     {
       "Grants": {
         "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "2" } } ]
-      },
-      "Cue": "Hallows_Eve_Treat"
+      }
     }
   ],
   "Pool": {

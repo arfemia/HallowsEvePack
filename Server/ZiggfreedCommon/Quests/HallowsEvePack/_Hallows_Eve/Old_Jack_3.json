@@ -8,7 +8,6 @@
   },
   "Listing": {
     "Icon": "Deco_Bone_Skulls",
-    "Category": "main",
     "SortOrder": 30,
     "Chains": [ { "Id": "hallows_eve_old_jack", "Tier": 3 } ]
   },

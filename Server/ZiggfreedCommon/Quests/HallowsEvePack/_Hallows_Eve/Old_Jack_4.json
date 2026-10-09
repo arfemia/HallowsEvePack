@@ -8,7 +8,6 @@
   },
   "Listing": {
     "Icon": "Hallows_Eve_Ectoplasm",
-    "Category": "main",
     "SortOrder": 40,
     "Chains": [ { "Id": "hallows_eve_old_jack", "Tier": 4 } ]
   },

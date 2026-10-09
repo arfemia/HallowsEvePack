@@ -20,7 +20,6 @@
   },
   "Listing": {
     "Icon": "Hallows_Eve_Hallowed_Pumpkin",
-    "Category": "main",
     "SortOrder": 10,
     "Chains": [ { "Id": "hallows_eve_old_jack", "Tier": 1 } ]
   },

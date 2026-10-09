@@ -14,7 +14,7 @@
     ]
   },
   "Objectives": {
-    "knock_down_skeletons": { "Kind": "KILL_ENTITY", "Target": "Hallows_Eve_Jack_Skeleton", "MatchMode": "EXACT", "Amount": 12 }
+    "knock_down_skeletons": { "Kind": "KILL_ENTITY", "Target": "Hallows_Eve_Jack_Skeleton", "MatchMode": "EXACT", "Amount": 12, "TextKey": "objective.hallows_eve.knock_down_skeletons" }
   },
   "Rewards": {
     "Claim": [

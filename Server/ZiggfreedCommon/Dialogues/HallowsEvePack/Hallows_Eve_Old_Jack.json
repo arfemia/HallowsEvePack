@@ -26,8 +26,9 @@
     "one screen per kind of work: active_pumpkins (Pumpkin Patch, Pumpkin Rounds), active_bombs",
     "(Lantern Work), active_night (Ghouls on the Steps, Ectoplasm Run, Restless Souls, and The Hollow",
     "Lantern, whose skeletons, Ectoplasm and pumpkin all come from the night) and active_stone (Cursed",
-    "Stone, Geodes for Jack). active_generic is the send-off an offer's answer goes to once the quest",
-    "is taken. Pumpkin Patch and the lantern quest have hand-in lines of their own; the rest share",
+    "Stone, Geodes for Jack). An offer's answer takes its quest and goes straight to that screen, so",
+    "the player hears what to do and where the moment they take it. Pumpkin Patch and the lantern",
+    "quest have hand-in lines of their own; the rest share",
     "ready_generic, which opens his quest list for the hand-in. The three dailies share daily_offer,",
     "one answer each, shown while that daily is free to take. Then shows the lit-lantern line while",
     "this year's lantern burns (the lantern quest reads ON_COOLDOWN until it comes back next year).",
@@ -154,10 +155,6 @@
       "TextKey": "dialogue.hallows_eve_old_jack.lantern_lit.text",
       "IncludeOptions": [ "jack_menu" ]
     },
-    "active_generic": {
-      "TextKey": "dialogue.hallows_eve_old_jack.active_generic.text",
-      "IncludeOptions": [ "jack_menu" ]
-    },
     "active_pumpkins": {
       "TextKey": "dialogue.hallows_eve_old_jack.active_pumpkins.text",
       "IncludeOptions": [ "jack_menu" ]
@@ -191,7 +188,7 @@
         {
           "LabelKey": "dialogue.hallows_eve_old_jack.patch_offer.opt.accept",
           "Style": "accept",
-          "Do": [ { "Accept": "hallows_eve_old_jack_1" }, { "Goto": "active_generic" } ]
+          "Do": [ { "Accept": "hallows_eve_old_jack_1" }, { "Goto": "active_pumpkins" } ]
         }
       ],
       "IncludeOptions": [ "jack_back" ]
@@ -217,7 +214,7 @@
         {
           "LabelKey": "dialogue.hallows_eve_old_jack.lantern_work_offer.opt.accept",
           "Style": "accept",
-          "Do": [ { "Accept": "hallows_eve_old_jack_2" }, { "Goto": "active_generic" } ]
+          "Do": [ { "Accept": "hallows_eve_old_jack_2" }, { "Goto": "active_bombs" } ]
         }
       ],
       "IncludeOptions": [ "jack_back" ]
@@ -228,7 +225,7 @@
         {
           "LabelKey": "dialogue.hallows_eve_old_jack.ghouls_offer.opt.accept",
           "Style": "accept",
-          "Do": [ { "Accept": "hallows_eve_old_jack_3" }, { "Goto": "active_generic" } ]
+          "Do": [ { "Accept": "hallows_eve_old_jack_3" }, { "Goto": "active_night" } ]
         }
       ],
       "IncludeOptions": [ "jack_back" ]
@@ -239,7 +236,7 @@
         {
           "LabelKey": "dialogue.hallows_eve_old_jack.souls_offer.opt.accept",
           "Style": "accept",
-          "Do": [ { "Accept": "hallows_eve_old_jack_4" }, { "Goto": "active_generic" } ]
+          "Do": [ { "Accept": "hallows_eve_old_jack_4" }, { "Goto": "active_night" } ]
         }
       ],
       "IncludeOptions": [ "jack_back" ]
@@ -250,7 +247,7 @@
         {
           "LabelKey": "dialogue.hallows_eve_old_jack.geodes_offer.opt.accept",
           "Style": "accept",
-          "Do": [ { "Accept": "hallows_eve_old_jack_5" }, { "Goto": "active_generic" } ]
+          "Do": [ { "Accept": "hallows_eve_old_jack_5" }, { "Goto": "active_stone" } ]
         }
       ],
       "IncludeOptions": [ "jack_back" ]
@@ -261,7 +258,7 @@
         {
           "LabelKey": "dialogue.hallows_eve_old_jack.lantern_offer.opt.accept",
           "Style": "accept",
-          "Do": [ { "Accept": "hallows_eve_old_jack_lantern" }, { "Goto": "active_generic" } ]
+          "Do": [ { "Accept": "hallows_eve_old_jack_lantern" }, { "Goto": "active_night" } ]
         }
       ],
       "IncludeOptions": [ "jack_back" ]
@@ -288,19 +285,19 @@
           "LabelKey": "dialogue.hallows_eve_old_jack.daily_offer.opt.souls",
           "Style": "accept",
           "Conditions": [ { "Type": "QuestState", "Quest": "hallows_eve_jack_daily_souls", "State": "NOT_STARTED" } ],
-          "Do": [ { "Accept": "hallows_eve_jack_daily_souls" }, { "Goto": "active_generic" } ]
+          "Do": [ { "Accept": "hallows_eve_jack_daily_souls" }, { "Goto": "active_night" } ]
         },
         {
           "LabelKey": "dialogue.hallows_eve_old_jack.daily_offer.opt.pumpkins",
           "Style": "accept",
           "Conditions": [ { "Type": "QuestState", "Quest": "hallows_eve_jack_daily_pumpkins", "State": "NOT_STARTED" } ],
-          "Do": [ { "Accept": "hallows_eve_jack_daily_pumpkins" }, { "Goto": "active_generic" } ]
+          "Do": [ { "Accept": "hallows_eve_jack_daily_pumpkins" }, { "Goto": "active_pumpkins" } ]
         },
         {
           "LabelKey": "dialogue.hallows_eve_old_jack.daily_offer.opt.geodes",
           "Style": "accept",
           "Conditions": [ { "Type": "QuestState", "Quest": "hallows_eve_jack_daily_geodes", "State": "NOT_STARTED" } ],
-          "Do": [ { "Accept": "hallows_eve_jack_daily_geodes" }, { "Goto": "active_generic" } ]
+          "Do": [ { "Accept": "hallows_eve_jack_daily_geodes" }, { "Goto": "active_stone" } ]
         }
       ],
       "IncludeOptions": [ "jack_back" ]
