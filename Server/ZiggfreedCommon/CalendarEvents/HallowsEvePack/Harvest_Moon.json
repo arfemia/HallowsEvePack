@@ -1,6 +1,7 @@
 {
   "$Comment": [
-    "Harvest Moon, the last nights of October, inside Hallow's Eve. The file name is the event id.",
+    "Harvest Moon, the nights around Halloween (October 28th to November 1st, both days in, UTC),",
+    "inside Hallow's Eve. The file name is the event id.",
     "While it runs, CalendarSpawns/HallowsEvePack/Harvest_Moon_*.json rewrite the Hallow's Eve night",
     "rules with higher weights and hand them back when it ends, and the geode and pumpkin finds roll",
     "one more on its nights.",
@@ -13,7 +14,7 @@
     "Herald Start shows once to each player the first time they are on the server during the run;",
     "End shows to everyone online when the run ends by its dates or by a command."
   ],
-  "Window": { "Start": "10-29", "End": "10-31" },
+  "Window": { "Start": "10-28", "End": "11-01" },
   "FirstYear": 2026,
   "Presentation": {
     "TitleKey": "calendar.harvest_moon.name",

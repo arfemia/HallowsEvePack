@@ -2,7 +2,7 @@
 
 Yearly events for your Hytale server, starting with Hallow's Eve. Every October, Old Jack sets up in the Forgotten Temple, and the dead come out after dark.
 
-Hallow's Eve starts on its own on October 1 and runs to November 3, every year. You need Ziggfreed's CommonLib 2.2.0 or newer and RPG Stations 1.1.0 or newer. MMO Skill Tree is optional: with it, the season trains your skills as well.
+Hallow's Eve starts on its own on October 1 and runs to November 12, every year. You need Ziggfreed's CommonLib 2.2.0 or newer and RPG Stations 1.1.0 or newer. MMO Skill Tree is optional: with it, the season trains your skills as well.
 
 [![Discord](https://img.shields.io/badge/Discord-Join%20Server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/5NFdZsUxHZ) [![Ko-fi](https://img.shields.io/badge/Ko--fi-Support-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/ziggfreed) [![Documentation](https://img.shields.io/badge/Docs-Read%20More-0ea5e9?style=for-the-badge)](https://mmo-skill-tree-docs.ziggfreed.com)
 
@@ -28,7 +28,7 @@ Hallow's Eve starts on its own on October 1 and runs to November 3, every year. 
 - A Costume Wand. Turn a friend into a Jack Skeleton or a Lost Soul for a few minutes. They can take it off whenever they like.
 - Cursed Geodes turn up while you mine. Crack one for crystals and something extra. Pumpkins you pick by hand sometimes come up Hallowed.
 - The Carving Bench. Craft it at a Workbench, then carve lanterns, the Jack Helm and Lantern Bombs on it all year. The Jack Shield only carves during the event.
-- Harvest Moon, the last three days of October. About twice the creatures come out at night, and every geode and Hallowed Pumpkin you find comes in pairs. Old Jack puts a bundle of bombs on the stall.
+- Harvest Moon, October 28 to November 1. About twice the creatures come out at night, and every geode and Hallowed Pumpkin you find comes in pairs. Old Jack puts a bundle of bombs on the stall.
 - Seven achievements a season. The last one, The Hallowed, is for earning the other six in one season and gives you the title "the Hallowed". Each year's achievements stay with you as feats.
 - Keepsakes that build over the years. Old Friend wants three Hallow's Eves. Light the Hollow Lantern in three seasons for Lantern Keeper and the title "Keeper of Lanterns". First Lanterns only goes to players who light it in 2026, the first year.
 - An Almanac page for the season, opening on a banner built from its own items: your keepsakes, and lifetime counts of bombs thrown, ghouls felled, Jack Skeletons knocked down, souls freed, geodes cracked and Geode Wraiths put down.
@@ -36,11 +36,11 @@ Hallow's Eve starts on its own on October 1 and runs to November 3, every year. 
 
 ## How it works
 
-1. Log in any time from October 1 to November 3. A banner tells you Old Jack is waiting at the Forgotten Temple, and a quest in your log, Lanterns in the Temple, sends you to find him.
+1. Log in any time from October 1 to November 12. A banner tells you Old Jack is waiting at the Forgotten Temple, and a quest in your log, Lanterns in the Temple, sends you to find him.
 2. Find him there and press F. He opens your quest list on Lanterns in the Temple: hand it in for a few sweets and an Objective Book, which opens your quests, achievements and the Almanac. Then he hands out the questline, and his conversation opens his board and his stall. Ask him for the Almanac to see your season, or how you stand with him.
 3. Go out after dark, away from torches. The creatures his quests and board send you after drop the bombs, Ectoplasm and pumpkins you will want.
 4. Spend your sweets at the stall, or carve what you need at a Carving Bench.
-5. On November 3 the event ends and Old Jack leaves. Everything you earned stays with you. A quest you had not finished waits for him to come back next October, and so does a board job you never collected.
+5. On November 12 the event ends and Old Jack leaves. Everything you earned stays with you. A quest you had not finished waits for him to come back next October, and so does a board job you never collected.
 
 ## With MMO Skill Tree
 

@@ -3,7 +3,7 @@
     "Hallow's Eve, this pack's yearly event. The file name is the event id: every gate, spawn rule",
     "and find in the pack names it Hallows_Eve. Both days of the Window are in it, counted in UTC",
     "because no Clock is written, so the event runs from the first moment of October 1st to the last",
-    "moment of November 3rd, every year from FirstYear on.",
+    "moment of November 12th, every year from FirstYear on.",
     "",
     "Content that must vanish while the event is not running gates on ziggfreedcommon:feature with",
     "Param Hallows_Eve_Live and Min 1 at the top of its Requires. A roll or a lock reads",
@@ -17,7 +17,7 @@
     "A server owner switches the event off, or moves its days, in mods/ziggfreedcommon/calendar.json",
     "without touching this file. /zigcalendar status Hallows_Eve shows what the server reads."
   ],
-  "Window": { "Start": "10-01", "End": "11-03" },
+  "Window": { "Start": "10-01", "End": "11-12" },
   "FirstYear": 2026,
   "Presentation": {
     "TitleKey": "calendar.hallows_eve.name",
