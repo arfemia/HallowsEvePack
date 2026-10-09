@@ -1,5 +1,5 @@
 {
-  "$Comment": "Be on the server while Harvest Feast runs. CALENDAR_ATTENDED fires once per player for each year's run of the event, when the player is first in the world while it runs, so this is the season's welcome. The criterion's TextKey words the step, since the shared sentence names the event by its raw id. The full_table tag counts it toward The Full Table.",
+  "$Comment": "Be on the server while Harvest Feast runs. CALENDAR_ATTENDED fires once per player for each year's run of the event, when the player is first in the world while it runs, so this is the season's welcome. The criterion's TextKey words the step, since the shared sentence names the event by its raw id. The full_table tag counts it toward The Full Table. Each year's copy also hands over MMO Skill Tree's Mmo_Boost_Token: a quarter more XP in every skill for half an hour, which the player starts when it suits them. It is kept with their skills, not in the bag, so it pays in Auto. Its own Requires, the hytale:mod_installed gate, leaves the row out on a server without that mod, unpaid and unshown.",
   "Parent": "Harvest_Feast_Achievement_Base",
   "Listing": { "SortOrder": 5, "Icon": "Food_Bread", "Tags": [ "full_table" ] },
   "Scoring": { "Points": 5 },
@@ -11,5 +11,11 @@
       "Amount": 1,
       "TextKey": "objective.harvest_feast.attend"
     }
+  },
+  "Rewards": {
+    "Auto": [
+      { "Kind": "Mmo_Boost_Token", "Params": { "Skill": "ALL", "Multiplier": "1.25", "DurationMinutes": "30" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
   }
 }

@@ -1,0 +1,27 @@
+{
+  "$Comment": [
+    "The skeleton for the skill jobs on the feast board, posted only on a server running MMO Skill Tree. It",
+    "is never posted itself.",
+    "",
+    "It takes the season and the listing from Harvest_Feast_Contract_Base. Requires keeps the jobs off a",
+    "server without MMO Skill Tree: the plain hytale:mod_installed condition at the top, with Min 1, drops",
+    "this file and every job built on it at load where that mod is missing, so nothing reads or reports",
+    "them, and the board's optional skill slot shows no gap. A job built on it writes no Requires of its",
+    "own, since a child's Requires replaces this one whole, mod gate and all. Boards posts every child in",
+    "that slot, the band Harvest_Feast_Skill, which only these jobs carry.",
+    "",
+    "A child names its skill in its one GAIN_XP objective and writes its own Rewards.Claim, which replaces",
+    "the feast base's list: a little favor with Martha and XP in that skill. Like every job on the board,",
+    "the pay waits at the board until the player collects it, so a full bag never costs anyone a reward,",
+    "and a job finished in the feast's last hours waits there until the board is back next year. The",
+    "board's pay table and Festival Favor stay with the feast's own jobs, so a server with MMO Skill Tree",
+    "earns festival tokens and Festival Favor at the pace of one without. Each child takes its words from",
+    "the keys its id spells, in harvestfeast.mmo.lang."
+  ],
+  "Abstract": true,
+  "Parent": "Harvest_Feast_Contract_Base",
+  "Requires": {
+    "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ]
+  },
+  "Boards": [ { "Board": "Harvest_Feast_Daily", "Difficulty": "Harvest_Feast_Skill", "Weight": 0.5 } ]
+}
