@@ -8,8 +8,10 @@
     "ranks above Exalted included, each time their favor changes and when they log in. Target is the rank",
     "id and Qualifier the reputation id; the criterion's TextKey words the step with the rank's name.",
     "",
-    "Filed under Seasons with no subcategory, beside the ladder; it carries no season_keepsake tag, so",
-    "the ladder never counts it, and no Chains, so it is no rung. It pays the title",
+    "Filed under Seasons in a subcategory of its own, Festival_Favor, because it is no ladder rung: the",
+    "Almanac's banner walks the achievements under Seasons with no subcategory, which are the ladder's",
+    "three rungs, so it stops at the top rung, and this one still shows in the achievement book. It",
+    "carries no season_keepsake tag, so the ladder never counts it, and no Chains. It pays the title",
     "Seasons_Of_Orbis_Guest_Of_Honor through the Title reward kind, on unlock: a title is the one thing an",
     "achievement pays without waiting to be collected."
   ],
@@ -19,6 +21,7 @@
   },
   "Listing": {
     "Category": "Seasons",
+    "Subcategory": "Festival_Favor",
     "SortOrder": 40,
     "Icon": "Furniture_Kweebec_Statue"
   },
