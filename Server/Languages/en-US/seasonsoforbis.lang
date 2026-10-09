@@ -33,6 +33,8 @@ title.seasons_of_orbis_every_season.flavor = Earned the keepsake of every season
 title.seasons_of_orbis_every_season.display = {0}, Friend of the Seasons
 
 # ---- Guest of Honor: the achievement and its title, for Festival Favor's Exalted IV ----
+# The header of its own corner of the Seasons achievements, beside the ladder.
+achievement.category.seasons.festival_favor = Festival Favor
 achievement.seasons_of_orbis_guest_of_honor.title = Guest of Honor
 achievement.seasons_of_orbis_guest_of_honor.desc = Reach Exalted IV with Festival Favor.
 objective.seasons_of_orbis.guest_of_honor = Reach Exalted IV with Festival Favor
