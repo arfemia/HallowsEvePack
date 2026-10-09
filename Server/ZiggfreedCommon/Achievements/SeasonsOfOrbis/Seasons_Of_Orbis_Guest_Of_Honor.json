@@ -1,0 +1,39 @@
+{
+  "$Comment": [
+    "Guest of Honor: reach Exalted IV with Festival Favor (Festival_Tier_3), the highest of the ranks",
+    "Festival Favor adds above Exalted.",
+    "",
+    "Earned once and kept: Festival Favor carries from season to season and year to year, so this has no",
+    "Occurrence. REPUTATION_RANK credits every rank a player's favor has reached, the reputation's own",
+    "ranks above Exalted included, each time their favor changes and when they log in. Target is the rank",
+    "id and Qualifier the reputation id; the criterion's TextKey words the step with the rank's name.",
+    "",
+    "Filed under Seasons with no subcategory, beside the ladder; it carries no season_keepsake tag, so",
+    "the ladder never counts it, and no Chains, so it is no rung. It pays the title",
+    "Seasons_Of_Orbis_Guest_Of_Honor through the Title reward kind, on unlock: a title is the one thing an",
+    "achievement pays without waiting to be collected."
+  ],
+  "Text": {
+    "TitleKey": "achievement.seasons_of_orbis_guest_of_honor.title",
+    "FlavorKey": "achievement.seasons_of_orbis_guest_of_honor.desc"
+  },
+  "Listing": {
+    "Category": "Seasons",
+    "SortOrder": 40,
+    "Icon": "Furniture_Kweebec_Statue"
+  },
+  "Scoring": { "Points": 50 },
+  "Criteria": {
+    "reach-exalted-iv": {
+      "Kind": "REPUTATION_RANK",
+      "Target": "Festival_Tier_3",
+      "MatchMode": "EXACT",
+      "Qualifier": "Seasons_Of_Orbis_Festival",
+      "Amount": 1,
+      "TextKey": "objective.seasons_of_orbis.guest_of_honor"
+    }
+  },
+  "Rewards": {
+    "Auto": [ { "Kind": "Title", "Params": { "Title": "Seasons_Of_Orbis_Guest_Of_Honor" } } ]
+  }
+}

@@ -15,7 +15,7 @@ currency.seasons_of_orbis_festival_token.name = Festival Token
 
 # ---- The festival shelf ----
 shop.seasons_of_orbis_festival_stall.title = Festival Stall
-shop.seasons_of_orbis_festival_stall.desc = Decorations from every season's festival, and a costume or two, for festival tokens.
+shop.seasons_of_orbis_festival_stall.desc = Decorations from every season's festival, for festival tokens.
 shop.seasons_of_orbis_festival_stall.category.festival = Festival Shelf
 # Not used by the pack itself: the words for a server owner's Almanac link that opens the stall all year.
 almanac.seasons_of_orbis.link.festival_stall = Visit the festival stall
@@ -23,14 +23,22 @@ almanac.seasons_of_orbis.link.festival_stall = Visit the festival stall
 # ---- The Seasons of Orbis ladder ----
 achievement.seasons_of_orbis_rung_1.title = Season to Season
 achievement.seasons_of_orbis_rung_2.title = Round the Year
-achievement.seasons_of_orbis_rung.desc = Keep a keepsake from {0} different seasons.
+achievement.seasons_of_orbis_rung.desc = Earn the keepsakes of {0} different seasons.
 achievement.seasons_of_orbis.title = Seasons of Orbis
-achievement.seasons_of_orbis.desc = Keep a keepsake from every season, at least {0} of them.
+achievement.seasons_of_orbis.desc = Earn the keepsake of every season this server holds (at least {0}).
 
 # ---- The ladder's title ----
 title.seasons_of_orbis_every_season.name = Friend of the Seasons
-title.seasons_of_orbis_every_season.flavor = Kept a keepsake from every season.
+title.seasons_of_orbis_every_season.flavor = Earned the keepsake of every season.
 title.seasons_of_orbis_every_season.display = {0}, Friend of the Seasons
+
+# ---- Guest of Honor: the achievement and its title, for Festival Favor's Exalted IV ----
+achievement.seasons_of_orbis_guest_of_honor.title = Guest of Honor
+achievement.seasons_of_orbis_guest_of_honor.desc = Reach Exalted IV with Festival Favor.
+objective.seasons_of_orbis.guest_of_honor = Reach Exalted IV with Festival Favor
+title.seasons_of_orbis_guest_of_honor.name = Guest of Honor
+title.seasons_of_orbis_guest_of_honor.flavor = Reached Exalted IV with Festival Favor.
+title.seasons_of_orbis_guest_of_honor.display = {0}, Guest of Honor
 
 # ---- Hytale's Anniversary: one day a year, with a banner, an Almanac page, that year's achievement and its title ----
 calendar.hytale_anniversary.name = Hytale's Anniversary

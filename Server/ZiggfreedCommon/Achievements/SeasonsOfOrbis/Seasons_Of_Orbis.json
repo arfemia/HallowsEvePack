@@ -1,15 +1,20 @@
 {
   "$Comment": [
-    "Seasons of Orbis, the top rung of the ladder: a keepsake kept from every season this server runs,",
-    "and never from fewer than two.",
+    "Seasons of Orbis, the top rung of the ladder: the keepsake of every season this server runs, and",
+    "never fewer than four.",
     "",
     "MetaSelector writes no Needs, so it asks for every season it finds: each season whose yearly",
     "keepsake carries the season_keepsake tag, any year's copy standing for it. AtLeast is the floor",
-    "under that count, so on a server running one season this waits for a second and never comes",
-    "before the first rung. A new season raises the count, and a player who already earned this keeps",
-    "it. A season a server owner switches off in calendar.json leaves the count, so this stays within",
-    "reach while at least two seasons are on. The description's number comes from TextArgs, so keep it",
-    "equal to AtLeast. It pays the title Seasons_Of_Orbis_Every_Season through the Title reward kind.",
+    "under that count, the second rung's Needs, so it comes after the second rung and waits until a",
+    "server runs a fourth season. A new season raises the count, and a player who already earned this",
+    "keeps it. A season a server owner switches off in calendar.json leaves the count, so this stays",
+    "within reach while at least four seasons are on. The description's number comes from TextArgs, so",
+    "keep it equal to AtLeast.",
+    "",
+    "Rewards: the title Seasons_Of_Orbis_Every_Season (the Title reward kind) lands the moment it is",
+    "earned, the one thing an achievement pays on unlock. The game's Harvest Trophy, the festival tokens",
+    "and the Festival Favor are Claims, waiting on the achievements page until the player collects them,",
+    "so a full bag never costs anyone the trophy.",
     "",
     "Keep this file's name: it is the id every player's progress on it is filed under. Filed under",
     "Seasons with no subcategory, which is where the Almanac looks for its banner."
@@ -17,7 +22,7 @@
   "Text": {
     "TitleKey": "achievement.seasons_of_orbis.title",
     "FlavorKey": "achievement.seasons_of_orbis.desc",
-    "TextArgs": { "Flavor": [ "2" ] }
+    "TextArgs": { "Flavor": [ "4" ] }
   },
   "Listing": {
     "Category": "Seasons",
@@ -30,13 +35,16 @@
     "Category": "Seasons",
     "Tags": [ "season_keepsake" ],
     "AnyYear": true,
-    "AtLeast": 2
+    "AtLeast": 4
   },
   "Rewards": {
     "Auto": [
-      { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "100" } },
-      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 6000 } },
       { "Kind": "Title", "Params": { "Title": "Seasons_Of_Orbis_Every_Season" } }
+    ],
+    "Claim": [
+      { "Kind": "Item", "Params": { "Item": "Deco_Trophy_Harvest", "Count": 1 } },
+      { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "100" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 6000 } }
     ]
   }
 }

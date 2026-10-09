@@ -1,0 +1,36 @@
+{
+  "$Comment": [
+    "Head of the Table: reach Exalted with Martha, the rank her favor calls Head of the Table.",
+    "",
+    "Earned once and kept. Favor with Martha carries from one feast to the next, so this file has no",
+    "Parent: the yearly skeleton would mint a copy each year that every Exalted player collects again at",
+    "login for nothing. It carries no full_table tag either, which keeps it out of The Full Table.",
+    "REPUTATION_RANK credits every rank a player's favor has reached, each time their favor changes and",
+    "when they log in. Target is the rank id and Qualifier the reputation id. The criterion's TextKey",
+    "words the step with Martha's own rank name. The _Harvest_Feast folder makes the id",
+    "harvest_feast_head_of_the_table, and its words come from the keys that id spells.",
+    "",
+    "It pays the title Harvest_Feast_Head_Of_The_Table through the Title reward kind, on unlock: a title",
+    "is the one thing an achievement pays without waiting to be collected."
+  ],
+  "Listing": {
+    "Category": "Seasons",
+    "Subcategory": "Harvest_Feast",
+    "SortOrder": 100,
+    "Icon": "Food_Pie_Apple"
+  },
+  "Scoring": { "Points": 25 },
+  "Criteria": {
+    "reach-head-of-the-table": {
+      "Kind": "REPUTATION_RANK",
+      "Target": "Exalted",
+      "MatchMode": "EXACT",
+      "Qualifier": "Harvest_Feast_Host",
+      "Amount": 1,
+      "TextKey": "objective.harvest_feast.head_of_the_table"
+    }
+  },
+  "Rewards": {
+    "Auto": [ { "Kind": "Title", "Params": { "Title": "Harvest_Feast_Head_Of_The_Table" } } ]
+  }
+}

@@ -1,23 +1,32 @@
 {
   "Name": "Harvest_Feast_Host",
   "$Comment": [
-    "The Feast Host's conversation, everything the host says in the Forgotten Temple while Harvest Feast",
-    "runs. The host contracts everything: I'm, it's, don't.",
+    "Martha the Cook's conversation, everything she says in the Forgotten Temple while Harvest Feast",
+    "runs. She contracts everything: I'm, it's, don't.",
     "",
     "HOW A SCREEN IS PICKED. Start is walked in a fixed order: First (top to bottom), then a quest that is",
-    "READY to hand in, then one the host can OFFER, then one that is ACTIVE, then Then, then Fallback.",
-    "First holds three things. The off-season line comes first and shows only while the feast is off (a",
-    "visit after a command ends it, or a server owner who stands the host somewhere all year), and its",
-    "only answer is goodbye. The greeting shows until the hail spends it. The board line shows once a day",
-    "(Once with Period Daily, turning over at midnight UTC) and is skipped while the player has something",
-    "to hand in. Quests holds one row per quest, the questline first, so the questline wins a tie with a",
-    "daily. Then shows the after-feast line once this year's feast is done.",
+    "READY to hand in, then one she can OFFER, then one that is ACTIVE, then Then, then Fallback.",
+    "First holds five things. The off-season line comes first and shows only while the feast is off (a",
+    "visit after a command ends it, or a server owner who stands her somewhere all year), and its only",
+    "answer is goodbye. Then her arrival line, for a player carrying Supper in the Temple (the quest",
+    "every player gets while the feast runs): its answer marks her greeted and hands that quest in, and",
+    "since its pay is a Claim, the hand-in takes the player to her quest list with Collect in front of",
+    "them. Then the greeting, for anyone who came without that quest, shown until the hail spends it.",
+    "Then Wheat for the Ovens' offer, once (OnceId meet_wheat_offer), for a player who has handed the",
+    "intro in and not taken that quest yet: collecting the intro plays this conversation again, so the",
+    "questline opens straight after the arrival. Then the board line, shown once a day (Once with Period",
+    "Daily, turning over at midnight UTC) and skipped while the player has something to hand in.",
     "",
-    "THE BOARD LINE AND FAVOR. The board line comes in four wordings, one per band of favor with the host,",
+    "Quests holds one row per quest: the intro, the questline, then the rest, so the questline wins a tie",
+    "with a daily. The intro's row brings the arrival line back for a player whose quest log was full when",
+    "the intro tried to arm: its answer for them takes the quest and hands it in. Then shows the",
+    "after-feast line once this year's feast is done.",
+    "",
+    "THE BOARD LINE AND FAVOR. The board line comes in four wordings, one per band of favor with Martha,",
     "highest first, so the first that applies is the player's own rank: Revered, Honored, Friendly, then",
     "the plain one, which is also what shows while the reputation is switched off. All four share one",
     "daily Once through OnceId, so whichever wording a player hears spends the line for the day, and a rank",
-    "climbed later that day does not bring it back. Their Actions pay a little favor with the host when",
+    "climbed later that day does not bring it back. Their Actions pay a little favor with Martha when",
     "the player finishes the line, whichever way they leave it.",
     "",
     "THE SEASON. A conversation has no Season leaf, so every option that opens the board or the stall",
@@ -32,9 +41,9 @@
     "",
     "THE FOOTER. Most screens pull in the feast_footer group: hand-ins, the quest list, the board, the",
     "stall, How do we stand? (it opens the Reputation page, and shows once the player has any favor with",
-    "the host), the Almanac (only while the Almanac is switched on), two lore lines and goodbye.",
+    "her), the Almanac (only while the Almanac is switched on), two lore lines and goodbye.",
     "",
-    "The greeting's memory is kept per world family, ForgottenTemple, the one place the host stands."
+    "The greeting's memory is kept per world family, ForgottenTemple, the one place she stands."
   ],
   "Header": [ "ActiveObjective" ],
   "Memories": {
@@ -49,11 +58,28 @@
         ]
       },
       {
+        "Node": "meet_arrival",
+        "When": [
+          { "Type": "World", "Where": { "GameplayConfig": [ "ForgottenTemple" ] } },
+          { "Type": "QuestState", "Quest": "harvest_feast_martha_meet", "State": "ACTIVE" }
+        ]
+      },
+      {
         "Node": "first_words",
         "When": [
           { "Type": "World", "Where": { "GameplayConfig": [ "ForgottenTemple" ] } },
           { "Type": "NotRemembered", "Memory": "feast_host_greeted" }
         ]
+      },
+      {
+        "Node": "wheat_offer",
+        "When": [
+          { "Type": "World", "Where": { "GameplayConfig": [ "ForgottenTemple" ] } },
+          { "Type": "QuestState", "Quest": "harvest_feast_martha_meet", "States": [ "COMPLETED_UNCLAIMED", "COMPLETED" ] },
+          { "Type": "QuestState", "Quest": "harvest_feast_host_1", "State": "NOT_STARTED" }
+        ],
+        "Once": true,
+        "OnceId": "meet_wheat_offer"
       },
       {
         "Node": "board_fresh_revered",
@@ -108,6 +134,7 @@
       }
     ],
     "Quests": {
+      "harvest_feast_martha_meet": { "Offerable": "meet_arrival", "Active": "meet_arrival", "Ready": "meet_arrival" },
       "harvest_feast_host_1": { "Offerable": "wheat_offer", "Active": "wheat_brief", "Ready": "wheat_ready" },
       "harvest_feast_host_2": { "Offerable": "turkeys_offer", "Active": "active_generic", "Ready": "turkeys_ready" },
       "harvest_feast_host_3": { "Offerable": "pie_offer", "Active": "pie_brief", "Ready": "pie_ready" },
@@ -133,6 +160,32 @@
       "TextKey": "dialogue.harvest_feast_host.off_season.text",
       "Options": [
         { "LabelKey": "dialogue.harvest_feast_host.opt.farewell", "Style": "farewell", "Close": true }
+      ]
+    },
+    "meet_arrival": {
+      "TextKey": "dialogue.harvest_feast_host.meet_arrival.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.meet_arrival.opt.hail",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "QuestState", "Quest": "harvest_feast_martha_meet", "State": "ACTIVE" } ],
+          "Do": [
+            { "Remember": "feast_host_greeted" },
+            { "TurnIn": "harvest_feast_martha_meet" },
+            { "Goto": "wheat_offer" }
+          ]
+        },
+        {
+          "LabelKey": "dialogue.harvest_feast_host.meet_arrival.opt.hail",
+          "Style": "accept",
+          "Conditions": [ { "Type": "QuestState", "Quest": "harvest_feast_martha_meet", "State": "NOT_STARTED" } ],
+          "Do": [
+            { "Remember": "feast_host_greeted" },
+            { "Accept": "harvest_feast_martha_meet" },
+            { "TurnIn": "harvest_feast_martha_meet" },
+            { "Goto": "wheat_offer" }
+          ]
+        }
       ]
     },
     "first_words": {

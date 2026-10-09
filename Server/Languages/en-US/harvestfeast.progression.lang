@@ -1,29 +1,29 @@
-# Harvest Feast progression: the host's questline, the yearly feast and the dailies, the feast board and
-# the feast stall, the host's conversation, the season's achievements and title, the host's reputation
-# and the Almanac page, the shared meal and the invitation tour, and the feast's villagers. Keys are
-# written bare: the library finds each one by its tail, whatever this file is called. A quest, a
-# contract or an achievement takes its words from the keys its id spells (quest.<id>.title and
+# Harvest Feast progression: Martha's intro quest, her questline, the yearly feast and the dailies, the
+# feast board and the feast stall, her conversation, the season's achievements and titles, her
+# reputation and the Almanac page, the shared meal and the invitation tour, and the feast's villagers.
+# Keys are written bare: the library finds each one by its tail, whatever this file is called. A quest,
+# a contract or an achievement takes its words from the keys its id spells (quest.<id>.title and
 # .flavor, achievement.<id>.title and .desc), so no content file names those. Numbers ride {0} and
 # come from the content files, so a retune never touches a translation.
 
-# ---- The host's reputation ----
+# ---- Martha's reputation ----
 reputation.harvest_feast_host.name = Favor at the Feast
-reputation.harvest_feast_host.flavor = The host remembers who helped in the kitchen. Do the errands and stop for a word now and then.
+reputation.harvest_feast_host.flavor = Martha remembers who turned up to help and who only turned up to eat.
 reputation.harvest_feast_host.rank.neutral = Newcomer
 reputation.harvest_feast_host.rank.friendly = Neighbor
-reputation.harvest_feast_host.rank.honored = Regular
+reputation.harvest_feast_host.rank.honored = Known Face
 reputation.harvest_feast_host.rank.revered = Family
 reputation.harvest_feast_host.rank.exalted = Head of the Table
 
 # ---- The feast board ----
 board.harvest_feast_daily.title = The Feast Board
-board.harvest_feast_daily.desc = Work out in the fields and work in the kitchen. Regulars at my table get a bit more.
+board.harvest_feast_daily.desc = Field jobs and kitchen jobs, fresh every morning. The more you help, the more I put up for you. Collect your pay before the table's packed away, or it waits till next year.
 board.harvest_feast_daily.grade.field = Field Work
 board.harvest_feast_daily.grade.kitchen = Kitchen Work
 quest.harvest_feast_board_turkeys.title = Turkey Drive
-quest.harvest_feast_board_turkeys.flavor = The woods are full of turkeys this week. Bring down a good few of them, and mind the ones that fly at your face.
+quest.harvest_feast_board_turkeys.flavor = The woods are full of turkeys this week. Bring down a good few, if you can catch them; they run like they know what's for dinner.
 quest.harvest_feast_board_wheat.title = Wheat Harvest
-quest.harvest_feast_board_wheat.flavor = The wild wheat won't wait for anybody. Pick as much as you can carry before the frost gets to it.
+quest.harvest_feast_board_wheat.flavor = The wild wheat won't wait for anybody. Get it picked before the frost does.
 quest.harvest_feast_board_pies.title = Pies for the Table
 quest.harvest_feast_board_pies.flavor = Every seat at the table wants a slice. Bake a couple of pumpkin pies and bring them over while they're warm.
 quest.harvest_feast_board_roast.title = Fire Pit
@@ -31,29 +31,36 @@ quest.harvest_feast_board_roast.flavor = Cook a pile of meat over an open fire. 
 
 # ---- The feast stall ----
 shop.harvest_feast_host.title = The Feast Stall
-shop.harvest_feast_host.desc = Recipes, popcorn and a few things for the season.
+shop.harvest_feast_host.desc = Recipes from my own book, popcorn by the bag, and a few things for the house.
 shop.harvest_feast_host.category.kitchen = Kitchen
 shop.harvest_feast_host.category.decor = Decorations
 shop.harvest_feast_offer_recipe_apple_pie.title = Apple Pie Recipe
 shop.harvest_feast_offer_recipe_apple_pie.desc = Read it once and you can bake apple pies for good.
 shop.harvest_feast_offer_recipe_meat_pie.title = Meat Pie Recipe
-shop.harvest_feast_offer_recipe_meat_pie.desc = The host's own meat pie, written down for friends of the table.
+shop.harvest_feast_offer_recipe_meat_pie.desc = Martha's own meat pie, written down for friends of the table.
+shop.harvest_feast_offer_recipe_caesar_salad.title = Caesar Salad Recipe
+shop.harvest_feast_offer_recipe_caesar_salad.desc = Martha's Caesar salad, written down for family.
 
-# ---- The host's questline and the yearly feast ----
+# ---- Martha's intro quest ----
+quest.harvest_feast_martha_meet.title = Supper in the Temple
+quest.harvest_feast_martha_meet.flavor = The fields are in, so I'm cooking in the Forgotten Temple again. Any Forgotten Temple Gateway will get you there. Come and find me, and come hungry.
+objective.harvest_feast.meet_martha = Find Martha the Cook in the Forgotten Temple
+
+# ---- Martha's questline and the yearly feast ----
 quest.harvest_feast_host_1.title = Wheat for the Ovens
 quest.harvest_feast_host_1.flavor = Bread first, it always is. The wild wheat grows thick this time of year, so bring me a good armful for the ovens.
 quest.harvest_feast_host_2.title = The Turkey Hunt
 quest.harvest_feast_host_2.flavor = The wild turkeys are fat and loud this month, and not as daft as they look. Bring a few down; the table's no good without a roast.
 quest.harvest_feast_host_3.title = The First Pie
-quest.harvest_feast_host_3.flavor = Here's the part I can't do alone. Read that recipe page, bake a pumpkin pie at a cooking bench, and bring it to me.
+quest.harvest_feast_host_3.flavor = Your turn at the stove. Learn that recipe, bake a pumpkin pie at a Chef's Stove, and bring it to me.
 quest.harvest_feast_the_feast.title = The Long Table
 quest.harvest_feast_the_feast.flavor = Once a year we put it all on the table and eat till nobody can stand. Bring a pie, some roast and a basket of carrots, and we'll set it out together.
 
-# ---- The host's dailies ----
+# ---- Martha's dailies ----
 quest.harvest_feast_daily_turkeys.title = Turkey Run
-quest.harvest_feast_daily_turkeys.flavor = The turkeys are back in the woods and louder than ever. Bring a few more down before they eat every seed in the field.
-quest.harvest_feast_daily_wheat.title = Flour Rounds
-quest.harvest_feast_daily_wheat.flavor = The ovens went through every bit of flour last night. Bring me more wheat before the bread runs out.
+quest.harvest_feast_daily_turkeys.flavor = Yesterday's roast went down to the last bone. Bring me a few more turkeys and I'll start another.
+quest.harvest_feast_daily_wheat.title = Bread for the Morning
+quest.harvest_feast_daily_wheat.flavor = Every loaf I baked today is already gone. Bring me more wheat, or there's no bread in the morning.
 quest.harvest_feast_daily_roast.title = Roast for the Table
 quest.harvest_feast_daily_roast.flavor = Cook some meat over a fire and bring it here. People keep eating it before it gets to the table.
 
@@ -72,12 +79,20 @@ achievement.harvest_feast_keepsake.title = Feast Plate {0}
 achievement.harvest_feast_keepsake.desc = Sit down to the feast at the long table.
 keepsake.harvest_feast_plate.name = Feast Plate of {0}
 achievement.harvest_feast_full_table.title = The Full Table {0}
-achievement.harvest_feast_full_table.desc = Earn every Harvest Feast achievement in one season.
+achievement.harvest_feast_full_table.desc = Earn all of this year's Harvest Feast achievements.
 
 # ---- The Full Table title ----
 title.harvest_feast_full_table.name = The Full Table
-title.harvest_feast_full_table.flavor = Earned every Harvest Feast achievement in one season.
+title.harvest_feast_full_table.flavor = Earned all of one year's Harvest Feast achievements.
 title.harvest_feast_full_table.display = {0} of the Full Table
+
+# ---- Head of the Table: the achievement and its title, for Martha's top rank ----
+achievement.harvest_feast_head_of_the_table.title = Head of the Table
+achievement.harvest_feast_head_of_the_table.desc = Become Head of the Table with Martha.
+objective.harvest_feast.head_of_the_table = Become Head of the Table with Martha
+title.harvest_feast_head_of_the_table.name = Head of the Table
+title.harvest_feast_head_of_the_table.flavor = Became Head of the Table with Martha.
+title.harvest_feast_head_of_the_table.display = {0}, Head of the Table
 
 # ---- The Almanac page ----
 almanac.harvest_feast.title = Harvest Feast
@@ -85,19 +100,21 @@ almanac.harvest_feast.flavor = Each year when the fields are in, a long table go
 almanac.harvest_feast.turkeys_brought_down = Wild Turkeys brought down
 almanac.harvest_feast.crops_picked = Crops picked by hand
 almanac.harvest_feast.feasts = Feasts sat down to
-almanac.harvest_feast.errands = Errands run for the host
+almanac.harvest_feast.errands = Errands run for Martha
 
-# ---- The host's conversation ----
+# ---- Martha's conversation ----
 dialogue.harvest_feast_host.off_season.text = The feast's over for this year, and the table's packed away.\nCome back when the fields are in.
-dialogue.harvest_feast_host.first_words.text = Mind the table, it's longer than it looks.\nEvery year when the fields are in, I set it up here in the <color is="#ffd97a">Forgotten Temple</color> and feed whoever turns up. There's a lot of cooking between now and the feast, and I could use the help.
+dialogue.harvest_feast_host.meet_arrival.text = You walked all that way on an empty stomach, I can tell.\nI'm Martha. When the fields are in I cook for whoever turns up, and the bread comes first. We'll start you on <b>wheat</b>.
+dialogue.harvest_feast_host.meet_arrival.opt.hail = Pleased to meet you, Martha.
+dialogue.harvest_feast_host.first_words.text = Mind the table, it's longer than it looks.\nEvery year when the fields are in, I set it up here in the <color is="#ffd97a">Forgotten Temple</color> and feed whoever turns up. There's a lot of cooking between now and the feast. You look like you could carry a sack of flour.
 dialogue.harvest_feast_host.first_words.opt.hail = Happy to help.
-dialogue.harvest_feast_host.board_fresh.text = There's fresh work on the board, some out in the fields and some in the kitchen. It pays.
+dialogue.harvest_feast_host.board_fresh.text = Board's up. Fields or kitchen, it all needs doing, and it all pays.
 dialogue.harvest_feast_host.board_fresh.opt.board = Show me the board.
 dialogue.harvest_feast_host.board_fresh.opt.later = Later.
-dialogue.harvest_feast_host.board_fresh_friendly.text = Back again. Good, I saved you a chair.\nThere's work on the board, and a little extra for you.
-dialogue.harvest_feast_host.board_fresh_honored.text = There you are. The kitchen's been quiet without you.\nThe board's full today. Take your pick.
-dialogue.harvest_feast_host.board_fresh_revered.text = Sit down a minute, you've earned it.\nThere's always a place at this table for you. The board's there when you're ready.
-dialogue.harvest_feast_host.menu.text = The ovens are hot and the table's half set. What do you need?
+dialogue.harvest_feast_host.board_fresh_friendly.text = Wipe your boots. I saved you a chair.\nThere's an extra job on the board with your name on it.
+dialogue.harvest_feast_host.board_fresh_honored.text = Oh good, it's you. Take your pick off the board before the others get to it.
+dialogue.harvest_feast_host.board_fresh_revered.text = Sit. Eat something first, you look half starved.\nThe board will keep.
+dialogue.harvest_feast_host.menu.text = Mind the pot. What can I do for you?
 dialogue.harvest_feast_host.wheat_offer.text = Bread first. It always is.\nThe wild <b>wheat</b> grows thick in the open fields this time of year. Pick me a good armful for the ovens.
 dialogue.harvest_feast_host.wheat_offer.opt.accept = I'll bring wheat.
 dialogue.harvest_feast_host.wheat_brief.text = <b>Wheat</b> grows wild out in the open fields. Pick it by hand and bring it here.
@@ -107,25 +124,25 @@ dialogue.harvest_feast_host.turkeys_offer.text = The <b>Wild Turkeys</b> are out
 dialogue.harvest_feast_host.turkeys_offer.opt.accept = I'll go hunting.
 dialogue.harvest_feast_host.turkeys_ready.text = You smell like the woods. Good, that means it went well.\nHere's a recipe for the next job. And hold still: if you're going to chase turkeys all week, you might as well look like one.
 dialogue.harvest_feast_host.turkeys_ready.opt.turnin = Back from the hunt.
-dialogue.harvest_feast_host.pie_offer.text = Here's the part I can't do alone. Read that recipe page, then bake a <b>pumpkin pie</b> at a <b>cooking bench</b>.\nDough, a pumpkin, a pinch of spice and a hot oven. Bring it to me.
+dialogue.harvest_feast_host.pie_offer.text = Your turn at the stove. Learn that recipe, then bake a <b>pumpkin pie</b> at a <b>Chef's Stove</b>.\nDough, a pumpkin, a pinch of spice and a hot oven. Bring it to me.
 dialogue.harvest_feast_host.pie_offer.opt.accept = I'll bake you a pie.
-dialogue.harvest_feast_host.pie_brief.text = Read the recipe page, then bake a <b>pumpkin pie</b> at a <b>cooking bench</b>. You'll want dough, a pumpkin and some spice.
-dialogue.harvest_feast_host.pie_ready.text = Smell that. That's a pie somebody cared about.\nYou've done your share and more. When the feast comes round, you're sitting at the table.
+dialogue.harvest_feast_host.pie_brief.text = Learn the recipe, then bake a <b>pumpkin pie</b> at a <b>Chef's Stove</b>. You'll want dough, a pumpkin and some spice.
+dialogue.harvest_feast_host.pie_ready.text = Smell that. That's a pie somebody cared about.\nYou've done your share and more. Come and sit down; it's time we ate.
 dialogue.harvest_feast_host.pie_ready.opt.turnin = Here's the pie.
 dialogue.harvest_feast_host.feast_offer.text = Once a year we put it all on the table and eat till nobody can stand.\nBring me a <b>pumpkin pie</b>, some <b>cooked meat</b> and a basket of <b>carrots</b>, and we'll set it out together.
 dialogue.harvest_feast_host.feast_offer.opt.accept = Let's set the table.
 dialogue.harvest_feast_host.feast_brief.text = A <b>pumpkin pie</b>, <b>cooked meat</b> from the fire and <b>carrots</b> from the fields. Then we eat.
 dialogue.harvest_feast_host.feast_ready.text = Pie, roast and carrots. Now that's a feast.\nSit, eat, and take this plate home with you. It's got the year on it, so you'll remember.
 dialogue.harvest_feast_host.feast_ready.opt.turnin = Here's everything.
-dialogue.harvest_feast_host.feast_done.text = Still full? So am I. The table stays set until the feast is over.\nWhat do you need?
-dialogue.harvest_feast_host.daily_turkeys_offer.text = The <b>Wild Turkeys</b> are back in the woods. Bring a few more down before they get any louder.
+dialogue.harvest_feast_host.feast_done.text = Still full? So am I. The table stays set until the feast is over.\nWhat can I do for you?
+dialogue.harvest_feast_host.daily_turkeys_offer.text = Yesterday's roast went down to the last bone. Bring me a few more <b>Wild Turkeys</b> and I'll start another.
 dialogue.harvest_feast_host.daily_turkeys_offer.opt.accept = I'll go hunting.
-dialogue.harvest_feast_host.daily_wheat_offer.text = The ovens went through every bit of flour last night. I need more <b>wheat</b>.
+dialogue.harvest_feast_host.daily_wheat_offer.text = Every loaf I baked today is already gone. More <b>wheat</b>, or there's no bread in the morning.
 dialogue.harvest_feast_host.daily_wheat_offer.opt.accept = I'll bring wheat.
 dialogue.harvest_feast_host.daily_roast_offer.text = Cook some <b>meat</b> over a fire and bring it here. People keep eating it before it gets to the table.
 dialogue.harvest_feast_host.daily_roast_offer.opt.accept = I'll bring a roast.
-dialogue.harvest_feast_host.active_generic.text = Still at it? Good. No rush, the ovens aren't going anywhere.
-dialogue.harvest_feast_host.ready_generic.text = That looks done to me. Let's have it.
+dialogue.harvest_feast_host.active_generic.text = Go on, then. I'll keep a plate warm.
+dialogue.harvest_feast_host.ready_generic.text = Let me see what you've brought.
 dialogue.harvest_feast_host.ready_generic.opt.turnin = It's done.
 dialogue.harvest_feast_host.who_are_you.text = Nobody important. I cook.\nWhen the fields are in, I come here, set out the long table and feed whoever turns up. Some years that's a dozen people. Some years it's everyone for miles.
 dialogue.harvest_feast_host.about_feast.text = It's a thank-you, mostly. The fields gave us plenty, and the least we can do is eat it together.\nYou bring something, you take something home. That's all the rules there are.
@@ -141,9 +158,9 @@ dialogue.harvest_feast_host.opt.back = Something else.
 dialogue.harvest_feast_host.opt.farewell = See you at the table.
 
 # ---- The shared meal and the invitation tour ----
-quest.harvest_feast_shared_meal.title = Pull Up a Chair
+quest.harvest_feast_shared_meal.title = The Shared Table
 quest.harvest_feast_shared_meal.flavor = Nobody eats alone at my table. Roast a vegetable over a fire, bring it here, and sit down a while.
-quest.harvest_feast_invitations.title = Spread the Word
+quest.harvest_feast_invitations.title = The Guest List
 quest.harvest_feast_invitations.flavor = A long table's no good half empty. Go and invite a few people to the feast, then come and tell me who's coming.
 objective.harvest_feast.invite = Invite {0} people to the feast
 dialogue.harvest_feast_host.meal_offer.text = Nobody eats alone at my table.\nRoast a <b>vegetable</b> over a fire and bring it here, and we'll share it. Come by every day if you like. There's always a chair.
@@ -153,15 +170,15 @@ dialogue.harvest_feast_host.meal_ready.text = Sit, sit. Pass that here and have 
 dialogue.harvest_feast_host.meal_ready.opt.turnin = Let's share it.
 dialogue.harvest_feast_host.invitations_offer.text = A long table's no good half empty.\nGo and tell folk about the feast, anybody who'll stop for a word. <b>Invite a few people</b>, then come back and tell me who's coming.
 dialogue.harvest_feast_host.invitations_offer.opt.accept = I'll spread the word.
-dialogue.harvest_feast_host.invitations_brief.text = Talk to folk, anybody but me, and <b>invite them to the feast</b>. Come back once you've asked a few.
+dialogue.harvest_feast_host.invitations_brief.text = Talk to folk, anybody but me, and <b>invite them to the feast</b>. Start with the ones about the temple; they've worked all week and nobody's asked them yet. Come back once you've asked a few.
 dialogue.harvest_feast_host.invitations_ready.text = That many? I'd best bake more bread.\nThank you. A full table's the whole point.
 dialogue.harvest_feast_host.invitations_ready.opt.turnin = They're coming.
-dialogue.harvest_feast_invitation.opt.invite = You're invited to Martha's feast in the Forgotten Temple.
+dialogue.harvest_feast_invitation.opt.invite = Come and eat with us at Martha's table.
 
 # ---- The feast's villagers: Tomas the Miller, Elsie the Weaver and Bram the Shepherd ----
 dialogue.harvest_feast_miller.off_season.text = The feast's packed away, and so's the flour.\nI'll be back with more when the fields come in next year.
 dialogue.harvest_feast_miller.off_season.opt.farewell = Until next year, then.
-dialogue.harvest_feast_miller.greeting.text = Mind the flour, it gets on everything.\nI've hauled sacks up from the mill all week so the ovens never go cold. I could do with a seat at the long table once the feast gets going.
+dialogue.harvest_feast_miller.greeting.text = Don't stand too close, the flour gets on everything.\nI've hauled sacks up from the mill all week so the ovens never go cold. I could do with a seat at the long table once the feast gets going.
 dialogue.harvest_feast_miller.mill.text = Down by the river, same as ever. The wheel turns whether I'm there or not.\nThis time of year every sack it grinds goes to the feast.
 dialogue.harvest_feast_miller.opt.mill = Where's your mill?
 dialogue.harvest_feast_miller.opt.back = Fair enough.
