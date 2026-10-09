@@ -6,6 +6,8 @@
       "Hallows_Eve_Old_Jack/Friendly": "hallowseve.progression.factor.hallows_eve_old_jack.friendly",
       "Hallows_Eve_Old_Jack/Honored": "hallowseve.progression.factor.hallows_eve_old_jack.honored",
       "Hallows_Eve_Old_Jack/Exalted": "hallowseve.progression.factor.hallows_eve_old_jack.exalted",
+      "Hallows_Eve_Hallowed/Friendly": "hallowseve.progression.factor.hallows_eve_hallowed.friendly",
+      "Hallows_Eve_Hallowed/Honored": "hallowseve.progression.factor.hallows_eve_hallowed.honored",
       "Hallows_Eve_Hallowed/Revered": "hallowseve.progression.factor.hallows_eve_hallowed.revered",
       "Hallows_Eve_Hallowed/Exalted": "hallowseve.progression.factor.hallows_eve_hallowed.exalted"
     }

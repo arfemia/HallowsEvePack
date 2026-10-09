@@ -1,0 +1,18 @@
+{
+  "$Comment": "The game's own Spyglass, a goblin gadget: look through it to zoom in, and in the Guttering Hollows it pinpoints a Voidtaken beast. For players Friendly with the Hallowed (Hallows_Eve_Hallowed); the Requires block locks it until then, and a locked offer still shows on the shelf, so a player can see what to work towards. It opens the run of game gadgets at the end of the gear shelf. The name is the item's own key, written in full (server.items.<Id>.name); the line under it is this pack's shop.hallows_eve_offer_spyglass.desc, because the game's own description still carries a work-in-progress marker.",
+  "Parent": "Hallows_Eve_Offer_Base",
+  "Text": {
+    "TitleKey": "server.items.Tool_Spyglass.name",
+    "FlavorKey": "shop.hallows_eve_offer_spyglass.desc"
+  },
+  "Listing": { "Category": "gear", "SortOrder": 40 },
+  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 400 } },
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Hallows_Eve_Hallowed/Friendly", "Min": 1 }
+    ]
+  },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Tool_Spyglass", "Count": 1 } }
+  ]
+}

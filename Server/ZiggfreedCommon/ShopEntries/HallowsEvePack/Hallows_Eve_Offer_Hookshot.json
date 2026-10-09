@@ -1,0 +1,18 @@
+{
+  "$Comment": "The game's own Hookshot, a goblin gadget: it reels the player to the block it hits, or a creature to the player, and latches onto the Hook Anchors sold beside it (Hallows_Eve_Offer_Scrap_Hook). For players Trusted with Old Jack, which the gate spells Hallows_Eve_Old_Jack/Honored: Old Jack's ranks keep the library's ids under the names Reputations/HallowsEvePack/Hallows_Eve_Old_Jack.json gives them. The Requires block locks it until then; a locked offer still shows on the shelf, so a player can see what to work towards. Named by the item's own keys, written in full (server.items.<Id>.name) so the stall shows the name and line the item shows in the bag.",
+  "Parent": "Hallows_Eve_Offer_Base",
+  "Text": {
+    "TitleKey": "server.items.Tool_Hookshot.name",
+    "FlavorKey": "server.items.Tool_Hookshot.description"
+  },
+  "Listing": { "Category": "gear", "SortOrder": 55 },
+  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 800 } },
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Hallows_Eve_Old_Jack/Honored", "Min": 1 }
+    ]
+  },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Tool_Hookshot", "Count": 1 } }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "$Comment": "The game's own Goblin Repair Kit, a goblin gadget that repairs tools, weapons and armor with no loss of maximum durability. The reward's Count is how many kits each purchase hands over. For players Friendly with the Hallowed (Hallows_Eve_Hallowed); the Requires block locks it until then, and a locked offer still shows on the shelf, so a player can see what to work towards. Named by the item's own keys, written in full (server.items.<Id>.name) so the stall shows the name and line the item shows in the bag.",
+  "Parent": "Hallows_Eve_Offer_Base",
+  "Text": {
+    "TitleKey": "server.items.Tool_Repair_Kit_Goblin.name",
+    "FlavorKey": "server.items.Tool_Repair_Kit_Goblin.description"
+  },
+  "Listing": { "Category": "gear", "SortOrder": 45 },
+  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 150 } },
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Hallows_Eve_Hallowed/Friendly", "Min": 1 }
+    ]
+  },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Tool_Repair_Kit_Goblin", "Count": 3 } }
+  ]
+}

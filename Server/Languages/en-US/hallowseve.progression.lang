@@ -70,6 +70,7 @@ shop.hallows_eve_old_jack.category.lights = Lanterns
 shop.hallows_eve_old_jack.category.gear = Gear
 shop.hallows_eve_offer_harvest_moon_bundle.title = Harvest Moon Bundle
 shop.hallows_eve_offer_harvest_moon_bundle.desc = Shattering and Spectral Lantern Bombs, sold only while the Harvest Moon is up.
+shop.hallows_eve_offer_spyglass.desc = Look through it in the Guttering Hollows to pinpoint the location of a Voidtaken beast.
 
 # ---- Achievements ----
 achievement.hallows_eve_lantern_keepsake.title = Hollow Lantern {0}
@@ -119,6 +120,8 @@ reputation.hallows_eve_old_jack.earn.talk = Stop by for a word once a day.
 reputation.hallows_eve_old_jack.earn.gear = Wear a Jack Helm. It adds to his favor while you have it on.
 reputation.hallows_eve_hallowed.name = The Hallowed
 reputation.hallows_eve_hallowed.flavor = The Hallowed keep the dead where they belong. Put down what climbs out of the graves at night and they take notice.
+factor.hallows_eve_hallowed.friendly = Friendly with the Hallowed
+factor.hallows_eve_hallowed.honored = Honored with the Hallowed
 factor.hallows_eve_hallowed.revered = Revered with the Hallowed
 factor.hallows_eve_hallowed.exalted = Exalted with the Hallowed
 reputation.hallows_eve_hallowed.earn.kills = Put down the creatures that crawl out at night.

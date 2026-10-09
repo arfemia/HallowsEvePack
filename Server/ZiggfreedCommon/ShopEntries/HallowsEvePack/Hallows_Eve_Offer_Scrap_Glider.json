@@ -1,0 +1,18 @@
+{
+  "$Comment": "The game's own Scrap Glider, a goblin gadget, for players Honored with the Hallowed (Hallows_Eve_Hallowed). The Requires block locks it until then; a locked offer still shows on the shelf, so a player can see what to work towards. Named by the item's own keys, written in full (server.items.<Id>.name) so the stall shows the name and line the item shows in the bag.",
+  "Parent": "Hallows_Eve_Offer_Base",
+  "Text": {
+    "TitleKey": "server.items.Glider_Scrap.name",
+    "FlavorKey": "server.items.Glider_Scrap.description"
+  },
+  "Listing": { "Category": "gear", "SortOrder": 50 },
+  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 800 } },
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Hallows_Eve_Hallowed/Honored", "Min": 1 }
+    ]
+  },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Glider_Scrap", "Count": 1 } }
+  ]
+}

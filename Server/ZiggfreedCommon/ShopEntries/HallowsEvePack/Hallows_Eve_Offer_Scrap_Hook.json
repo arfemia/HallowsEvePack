@@ -1,0 +1,18 @@
+{
+  "$Comment": "The game's own Hook Anchor (item Scrap_Hook): a block to place that the Hookshot sold beside it latches onto. The reward's Count is how many anchors each purchase hands over. For players Trusted with Old Jack, which the gate spells Hallows_Eve_Old_Jack/Honored, the same gate as the Hookshot. The Requires block locks it until then; a locked offer still shows on the shelf, so a player can see what to work towards. Named by the item's own keys, written in full (server.items.<Id>.name) so the stall shows the name and line the item shows in the bag.",
+  "Parent": "Hallows_Eve_Offer_Base",
+  "Text": {
+    "TitleKey": "server.items.Scrap_Hook.name",
+    "FlavorKey": "server.items.Scrap_Hook.description"
+  },
+  "Listing": { "Category": "gear", "SortOrder": 60 },
+  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 100 } },
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Hallows_Eve_Old_Jack/Honored", "Min": 1 }
+    ]
+  },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Scrap_Hook", "Count": 3 } }
+  ]
+}
