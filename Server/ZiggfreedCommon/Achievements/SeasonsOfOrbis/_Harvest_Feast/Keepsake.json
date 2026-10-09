@@ -1,13 +1,17 @@
 {
   "$Comment": [
-    "The yearly keepsake: sit down to the feast with the host, once a season, and keep the plate.",
+    "The yearly keepsake: sit down to the feast with Martha, once a season, and keep the plate.",
     "",
     "It inherits the yearly occurrence from Harvest_Feast_Achievement_Base, so each year mints its own",
     "copy and @year in the title reads as that year. Feat files it with the feats, earned only. The",
     "full_table tag counts it toward The Full Table, and season_keepsake toward the Seasons of Orbis",
     "ladder; the feast's Almanac page names this file in Keepsake, and no other Harvest Feast file carries",
-    "season_keepsake. The reward is Auto: the plate lands the moment the feast is finished, its stack",
-    "named with the year."
+    "season_keepsake. The reward is a Claim, like every achievement reward but a title or a token: the",
+    "plate waits on the achievements page until the player collects it, its stack named with the year, so",
+    "a full bag never costs anyone the year's keepsake.",
+    "",
+    "StackNameKey, keepsake.harvest_feast_plate.name, is stamped into every plate handed over and read",
+    "back from the item, so never rename that key: a plate already in a player's bag would lose its name."
   ],
   "Parent": "Harvest_Feast_Achievement_Base",
   "Listing": {
@@ -26,7 +30,7 @@
     }
   },
   "Rewards": {
-    "Auto": [
+    "Claim": [
       {
         "Kind": "Item",
         "Params": {

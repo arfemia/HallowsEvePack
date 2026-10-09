@@ -1,0 +1,18 @@
+{
+  "$Comment": "The game's Caesar salad recipe page, sold to players Revered with Martha, the rank her favor calls Family. Requires is a lock, not a hide: a player below the rank still sees the offer, locked, with the rank's own name in the reason, so they can see what to work towards, and the Season leaf on the base still hides it while the feast is off. A player buys it once (Limits.Total). The game builds the page's own name from the salad's, which an offer cannot spell, so the offer is named with this pack's keys, and its picture is the salad.",
+  "Parent": "Harvest_Feast_Offer_Base",
+  "Text": {
+    "TitleKey": "shop.harvest_feast_offer_recipe_caesar_salad.title",
+    "FlavorKey": "shop.harvest_feast_offer_recipe_caesar_salad.desc"
+  },
+  "Icon": "Food_Salad_Caesar",
+  "Listing": { "Category": "kitchen", "SortOrder": 25 },
+  "Cost": { "Currencies": { "Seasons_Of_Orbis_Festival_Token": 20 } },
+  "Limits": { "Total": 1 },
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Harvest_Feast_Host/Revered", "Min": 1 }
+    ]
+  },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Recipe_Food_Salad_Caesar", "Count": 1 } } ]
+}

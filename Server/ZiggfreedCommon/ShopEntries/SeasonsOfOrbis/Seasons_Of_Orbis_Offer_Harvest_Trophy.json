@@ -1,8 +1,0 @@
-{
-  "$Comment": "The game's own Harvest Trophy on the festival shelf, its one big piece, priced well above the rest. The title is the item's own name key, written in full (server.items.<Id>.name) so the shelf shows the name the item shows in the bag. The item's own description carries formatting meant for its tooltip, so the offer leaves it out.",
-  "Text": { "TitleKey": "server.items.Deco_Trophy_Harvest.name" },
-  "Shop": "Seasons_Of_Orbis_Festival_Stall",
-  "Listing": { "Category": "festival", "SortOrder": 20 },
-  "Cost": { "Currencies": { "Seasons_Of_Orbis_Festival_Token": 200 } },
-  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Deco_Trophy_Harvest", "Count": 1 } } ]
-}

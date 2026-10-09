@@ -4,16 +4,20 @@
     "",
     "Season hides every contract built on it while the feast is off; a child that writes its own",
     "Requires keeps it, since Season is a leaf of its own. Listing files each one with the contracts.",
-    "Rewards.Auto is what every job on the feast board pays the moment the work is done: the board's pay",
-    "table, a little favor with the host and a little Festival Favor. A child that writes Rewards",
-    "replaces the list whole. A child names its board and band in Boards and its work in Objectives, and",
-    "takes its words from the keys its id spells (quest.<id>.title and .flavor)."
+    "Rewards.Claim is what every job on the feast board pays, like every contract's: the pay waits at the",
+    "board until the player collects it. The board leaves with the feast, so a job finished in its last",
+    "hours waits there until the board is back next year, which is why the board's own description asks",
+    "players to collect before the table's packed away. The list is the board's pay table, a little favor",
+    "with Martha and a little Festival Favor. A child that writes its own Rewards.Claim replaces the list",
+    "whole. Each bucket inherits on its own, so a list left in Rewards.Auto here would pay on top of every",
+    "child's Claim. A child names its board and band in Boards and its work in Objectives, and takes its",
+    "words from the keys its id spells (quest.<id>.title and .flavor)."
   ],
   "Abstract": true,
   "Season": "Harvest_Feast",
   "Listing": { "Category": "bounty" },
   "Rewards": {
-    "Auto": [
+    "Claim": [
       { "Kind": "Lootable", "Params": { "Lootable": "Harvest_Feast_Board_Pay" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 50 } },
       { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 30 } }

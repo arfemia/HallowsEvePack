@@ -11,6 +11,11 @@
     "No Cap, so favor keeps climbing. Beyond pays its Rewards each time earned favor passes another",
     "multiple of Every above the last rank's floor: here festival tokens.",
     "",
+    "Each rank of its own pays something: Festival_Tier_1 and Festival_Tier_2 unlock an offer each on",
+    "the festival shelf (a Requires lock on the rank, ziggfreedcommon:reputation_rank with Param",
+    "Seasons_Of_Orbis_Festival/<rank> and Min 1), and Festival_Tier_3 earns the achievement",
+    "seasons_of_orbis_guest_of_honor and its title.",
+    "",
     "Favor comes from the Reputation rewards on every season's quests and board jobs and on the",
     "Seasons of Orbis ladder, so each quest card says how much. Order 5 puts it above the seasons'",
     "own reputations on the Reputation page."
