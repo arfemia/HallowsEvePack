@@ -8,7 +8,7 @@
   "Rewards": {
     "Claim": [
       { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 50 } },
-      { "Kind": "Mmo_Xp", "Params": { "Skill": "CRAFTING", "Amount": "500" } }
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "CRAFTING", "Amount": "1500" } }
     ]
   }
 }
