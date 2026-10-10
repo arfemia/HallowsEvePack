@@ -4,11 +4,13 @@
     "(NPC/Reputation/Groups/Hallows_Eve_Old_Jack.json), which keeps each player's number.",
     "",
     "Gear names the stat whose Max equipped items add on top of what a player has earned; the Jack",
-    "Helm adds to it. Cap is the most favor earning can reach: Exalted's floor, so Jack's Own is as",
-    "far as it goes. Ranks renames the library's ranks for Old Jack alone; a rank left out keeps the",
-    "library's name. Order places him on the Reputation page. Favor comes from the Reputation rewards",
-    "on his quests and board contracts and from his daily board line. Earn lists those ways, one lang",
-    "key a line, for the How to earn block on the Reputation page."
+    "Helm and the Burning Jack Helm add to it, which helps a player toward each rank on the way up.",
+    "Cap is the most favor earning can reach: Exalted's floor, so Jack's Own is as far as it goes,",
+    "and gear worn there has no rank left to reach. Ranks renames the library's ranks for Old Jack",
+    "alone; a rank left out keeps the library's name. Order places him on the Reputation page. Favor",
+    "comes from the Reputation rewards on his quests and board contracts and from his daily board",
+    "line. Earn lists those ways, one lang key a line, for the How to earn block on the Reputation",
+    "page."
   ],
   "Text": {
     "TitleKey": "reputation.hallows_eve_old_jack.name",
