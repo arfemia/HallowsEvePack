@@ -63,9 +63,9 @@
       { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Lantern_Pay" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 500 } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 100 } },
-      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "750" },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "5000" },
         "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } },
-      { "Kind": "Mmo_Xp", "Params": { "Skill": "HARVESTING", "Amount": "250" },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "HARVESTING", "Amount": "2500" },
         "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
     ]
   }
