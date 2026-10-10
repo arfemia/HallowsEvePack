@@ -48,7 +48,7 @@ objective.hallows_eve.jack_confidant = Become Old Jack's Confidant
 
 # ---- Old Jack's board ----
 board.hallows_eve_daily.title = Old Jack's Board
-board.hallows_eve_daily.desc = Work for the dark and work for the daylight. My regulars get a bit more. Collect your pay before I pack up, or it waits till next autumn.
+board.hallows_eve_daily.desc = Work for the dark and work for the daylight. My regulars get a bit more. Collect your pay before I pack up. Miss me, and what you've earned still waits in your Objective Book.
 board.hallows_eve_daily.grade.night = Night Work
 board.hallows_eve_daily.grade.day = Day Work
 quest.hallows_eve_board_souls.title = Soul Sweep

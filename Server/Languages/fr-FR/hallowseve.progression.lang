@@ -48,7 +48,6 @@ objective.hallows_eve.jack_confidant = Devenez le Confident du Vieux Jack
 
 # ---- Le tableau du Vieux Jack ----
 board.hallows_eve_daily.title = Tableau du Vieux Jack
-board.hallows_eve_daily.desc = Du boulot pour la nuit et du boulot pour le jour. Mes habitués ont droit à un peu plus. Récupère ta paie avant que je remballe, sinon elle attend l'automne prochain.
 board.hallows_eve_daily.grade.night = Travail de nuit
 board.hallows_eve_daily.grade.day = Travail de jour
 quest.hallows_eve_board_souls.title = Ratissage d'âmes

@@ -46,7 +46,6 @@ objective.hallows_eve.attend = Participa en la Noche de Ánimas
 
 # ---- El tablón del Viejo Jack ----
 board.hallows_eve_daily.title = Tablón del Viejo Jack
-board.hallows_eve_daily.desc = Trabajo para la oscuridad y trabajo para la luz del día. A mis asiduos les toca un poco más. Cobra tu paga antes de que recoja el puesto, o tendrá que esperar al otoño que viene.
 quest.hallows_eve_board_souls.title = Barrida de Almas
 quest.hallows_eve_board_souls.flavor = Esta noche hay almas a montones alrededor del templo. Libera a un buen puñado antes de que amanezca.
 quest.hallows_eve_board_ghouls.title = Batida de Gules

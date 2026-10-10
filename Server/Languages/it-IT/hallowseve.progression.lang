@@ -46,7 +46,6 @@ objective.hallows_eve.attend = Partecipa alla Vigilia di Ognissanti
 
 # ---- La bacheca del Vecchio Jack ----
 board.hallows_eve_daily.title = Bacheca del Vecchio Jack
-board.hallows_eve_daily.desc = Lavoro da fare col buio e lavoro da fare alla luce del giorno. Ai miei habitué tocca qualcosa in più. Ritira la paga prima che io levi le tende, o ti aspetta fino al prossimo autunno.
 quest.hallows_eve_board_souls.title = Retata di Anime
 quest.hallows_eve_board_souls.flavor = Stanotte le anime sono fitte attorno al tempio. Liberane un bel po' prima del mattino.
 quest.hallows_eve_board_ghouls.title = Falciata di Ghoul

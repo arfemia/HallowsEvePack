@@ -46,7 +46,6 @@ objective.hallows_eve.attend = Nimm am Allerheiligenabend teil
 
 # ---- Die Tafel des Alten Jack ----
 board.hallows_eve_daily.title = Tafel des Alten Jack
-board.hallows_eve_daily.desc = Arbeit für die Dunkelheit und Arbeit fürs Tageslicht. Meine Stammgäste kriegen ein bisschen mehr. Hol deinen Lohn ab, bevor ich zusammenpacke, sonst wartet er bis zum nächsten Herbst.
 quest.hallows_eve_board_souls.title = Seelenkehraus
 quest.hallows_eve_board_souls.flavor = Heute Nacht wimmelt es um den Tempel von Seelen. Befrei eine ganze Menge davon, bevor es Morgen wird.
 quest.hallows_eve_board_ghouls.title = Ghuljagd

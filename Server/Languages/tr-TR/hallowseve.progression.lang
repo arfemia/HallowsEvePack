@@ -46,7 +46,6 @@ objective.hallows_eve.attend = Cadılar Bayramı'na katıl
 
 # ---- Yaşlı Jack'in panosu ----
 board.hallows_eve_daily.title = Yaşlı Jack'in Panosu
-board.hallows_eve_daily.desc = Karanlık için iş var, gün ışığı için de. Müdavimlerim biraz fazlasını alır. Ücretini ben tezgahı toplamadan al, yoksa gelecek sonbahara kalır.
 quest.hallows_eve_board_souls.title = Ruh Taraması
 quest.hallows_eve_board_souls.flavor = Bu gece tapınağın çevresi ruh kaynıyor. Sabah olmadan epeycesini serbest bırak.
 quest.hallows_eve_board_ghouls.title = Gulyabani Temizliği

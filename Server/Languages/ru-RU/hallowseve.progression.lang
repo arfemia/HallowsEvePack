@@ -46,7 +46,6 @@ objective.hallows_eve.attend = Примите участие в Кануне В�
 
 # ---- Доска Старого Джека ----
 board.hallows_eve_daily.title = Доска Старого Джека
-board.hallows_eve_daily.desc = Работа впотьмах и работа при свете дня. Моим завсегдатаям перепадает чуть больше. Забирай плату, пока я не собрался, а то пролежит до следующей осени.
 quest.hallows_eve_board_souls.title = Зачистка душ
 quest.hallows_eve_board_souls.flavor = Сегодня вокруг храма полно душ. Освободи побольше до утра.
 quest.hallows_eve_board_ghouls.title = Отбраковка упырей

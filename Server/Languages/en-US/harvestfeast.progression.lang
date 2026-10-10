@@ -17,7 +17,7 @@ reputation.harvest_feast_host.rank.exalted = Head of the Table
 
 # ---- The feast board ----
 board.harvest_feast_daily.title = The Feast Board
-board.harvest_feast_daily.desc = Field jobs and kitchen jobs, fresh every morning. The more you help, the more I put up for you. Collect your pay before the table's packed away, or it waits till next year.
+board.harvest_feast_daily.desc = Field jobs and kitchen jobs, fresh every morning. The more you help, the more I put up for you. Collect your pay before the table's packed away. If you're late, what you've earned still waits in your Objective Book.
 board.harvest_feast_daily.grade.field = Field Work
 board.harvest_feast_daily.grade.kitchen = Kitchen Work
 quest.harvest_feast_board_turkeys.title = Turkey Drive

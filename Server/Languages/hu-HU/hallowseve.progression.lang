@@ -46,7 +46,6 @@ objective.hallows_eve.attend = Vegyél részt Mindenszentek Éjén
 
 # ---- Öreg Jack táblája ----
 board.hallows_eve_daily.title = Öreg Jack Táblája
-board.hallows_eve_daily.desc = Munka sötétben és munka napvilágnál. A törzsvendégeim kapnak egy kicsivel többet. Vedd fel a béred, mielőtt összepakolok, különben jövő őszig vár rád.
 quest.hallows_eve_board_souls.title = Lélektakarítás
 quest.hallows_eve_board_souls.flavor = Ma éjjel sűrűn állnak a lelkek a templom körül. Szabadíts fel jó sokat közülük, mielőtt megvirrad.
 quest.hallows_eve_board_ghouls.title = Ghúlgyérítés

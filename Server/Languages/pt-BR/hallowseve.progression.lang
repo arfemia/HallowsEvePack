@@ -46,7 +46,6 @@ objective.hallows_eve.attend = Participe da Noite das Bruxas
 
 # ---- O quadro do Velho Jack ----
 board.hallows_eve_daily.title = Quadro do Velho Jack
-board.hallows_eve_daily.desc = Serviço pro escuro e serviço pra luz do dia. Meus fregueses ganham um pouco mais. Pega seu pagamento antes de eu desmontar a banca, senão ele fica pro outono que vem.
 quest.hallows_eve_board_souls.title = Varredura de Almas
 quest.hallows_eve_board_souls.flavor = Tem alma de monte em volta do templo esta noite. Liberta um bom tanto delas antes de amanhecer.
 quest.hallows_eve_board_ghouls.title = Abate de Carniçais
