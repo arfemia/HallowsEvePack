@@ -23,7 +23,7 @@
   },
   "Rewards": {
     "Claim": [
-      { "Kind": "Mmo_Xp", "Params": { "Skill": "MINING", "Amount": "1000" },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "MINING", "Amount": "5000" },
         "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
     ]
   }

@@ -64,7 +64,7 @@
     "Claim": [
       { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Meet_Pay" } },
       { "Kind": "Item", "Params": { "Item": "Ziggfreed_Objective_Book", "Count": "1" } },
-      { "Kind": "Mmo_Xp", "Params": { "Skill": "ACROBATICS", "Amount": "250" },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "ACROBATICS", "Amount": "2500" },
         "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
     ]
   }

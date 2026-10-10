@@ -24,7 +24,7 @@
       { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 50 } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 25 } },
-      { "Kind": "Mmo_Xp", "Params": { "Skill": "MINING", "Amount": "700" } }
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "MINING", "Amount": "1500" } }
     ]
   }
 }
