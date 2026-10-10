@@ -1,11 +1,11 @@
 {
   "$Comment": [
-    "What a contract on Old Jack's board pays. Every roll is read on its own: the first always pays,",
-    "and the other two are chances on top. Chance is a percent from 0 to 100.",
+    "What a contract on Old Jack's board pays. Every roll is read on its own: the first and the last",
+    "always pay, and the two between are chances on top. Chance is a percent from 0 to 100.",
     "",
-    "Sweets pay through the Currency reward kind, since a counter wallet has no item to hand over.",
-    "A companion mod adds its own rolls to this table with a file of its own that names it in",
-    "ContributesTo, so nothing here has to change."
+    "Sweets and festival tokens (what every season pays) pay through the Currency reward kind, since",
+    "a counter wallet has no item to hand over. A companion mod adds its own rolls to this table with",
+    "a file of its own that names it in ContributesTo, so nothing here has to change."
   ],
   "Name": "Hallows_Eve_Board_Pay",
   "Rolls": [
@@ -21,6 +21,11 @@
     {
       "Chance": { "Base": 5.0 },
       "Grants": { "Items": [ { "Item": "Hallows_Eve_Lantern_Bomb_Epic", "Count": 1 } ] }
+    },
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "1" } } ]
+      }
     }
   ]
 }
