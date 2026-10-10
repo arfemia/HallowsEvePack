@@ -10,11 +10,14 @@
 #   .\build.ps1 -Install:$false  # build only, no copy
 #   .\build.ps1 -ModsDir <path>  # build + install into an explicit folder
 #
-# The install target resolves from -ModsDir, then $env:HYTALE_MODS_DIR. If neither is
-# set the copy is skipped (the build still succeeds) with a hint to set the env var.
+# The install target (R205, R206): an explicit -ModsDir always wins. Otherwise, inside the
+# family's workspace, its tools\mods-dir.ps1 (the first one found walking up) picks the Mods
+# folder of the client family.properties' patchline plays, or $env:HYTALE_MODS_DIR when no
+# Hytale install is found. Built alone (a lone clone), it is $env:HYTALE_MODS_DIR. With no
+# target, or one whose folder does not exist, the copy is skipped (the build still succeeds).
 param(
     [bool]$Install = $true,
-    [string]$ModsDir = $env:HYTALE_MODS_DIR
+    [string]$ModsDir = ''
 )
 $ErrorActionPreference = 'Stop'
 
@@ -68,9 +71,29 @@ try {
     $zip.Dispose()
 }
 
+# The install target (see the header), from the first tools\mods-dir.ps1 above this pack, looked for up to the
+# family root (the folder holding family.properties, whose patchline that resolver reads); with none, -ModsDir,
+# else HYTALE_MODS_DIR. Returns Path ($null when there is none) and Display (the client or source, and the folder).
+function Resolve-InstallTarget([string]$From, [string]$Explicit) {
+    $dir = Split-Path -Parent $From
+    while ($dir) {
+        $resolver = Join-Path (Join-Path $dir 'tools') 'mods-dir.ps1'
+        if (Test-Path -LiteralPath $resolver -PathType Leaf) { . $resolver; return (Resolve-ModsDir -ModsDir $Explicit) }
+        if (Test-Path -LiteralPath (Join-Path $dir 'family.properties') -PathType Leaf) { break }
+        $dir = Split-Path -Parent $dir
+    }
+    if ($Explicit) { return [pscustomobject]@{ Path = $Explicit; Display = "$Explicit (-ModsDir)" } }
+    if ($env:HYTALE_MODS_DIR) { return [pscustomobject]@{ Path = $env:HYTALE_MODS_DIR; Display = "$($env:HYTALE_MODS_DIR) (HYTALE_MODS_DIR, no workspace resolver above this pack)" } }
+    return [pscustomobject]@{ Path = $null; Display = 'none' }
+}
+
 if ($Install) {
+    $explicitModsDir = if ($PSBoundParameters.ContainsKey('ModsDir')) { $ModsDir } else { '' }
+    $target = Resolve-InstallTarget $pack $explicitModsDir
+    $ModsDir = $target.Path
+    if ($ModsDir) { Write-Host "Install target: $($target.Display)" }
     if (-not $ModsDir) {
-        Write-Host "No Mods folder set - pass -ModsDir <path> or set `$env:HYTALE_MODS_DIR to auto-install. Built zip only."
+        Write-Host "No Mods folder found - pass -ModsDir <path>, or set `$env:HYTALE_MODS_DIR (used only when no Hytale install is found), to auto-install. Built zip only."
     } elseif (-not (Test-Path $ModsDir)) {
         Write-Warning "Mods folder '$ModsDir' not found. Built zip only."
     } else {
