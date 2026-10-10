@@ -4,7 +4,7 @@
 # reads them on a server without MMO Skill Tree.
 board.grade.hallows_eve_skill = Skill Work
 boostrule.mmo_hallows_eve_harvest_moon.title = Harvest Moon
-gearset.mmo_hallows_eve_hallowed.tier_full = Helm and shield together: a little more luck, and harder Artillery hits.
+gearset.mmo_hallows_eve_hallowed.tier_full = Plus a little more luck, and harder Artillery hits.
 quest.mmo_hallows_eve_daily_artillery.title = Lantern Drill
 quest.mmo_hallows_eve_daily_artillery.flavor = A steady throwing arm is worth having this time of year. Get some practice in.
 quest.mmo_hallows_eve_daily_harvesting.title = Night Harvest
