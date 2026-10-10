@@ -13,8 +13,8 @@
     "with Min 1. Its pay waits at Old Jack's board to be collected (Rewards.Claim), as every",
     "contract's does: the board's own pay table, the same favor with Old Jack and the Hallowed as his",
     "other contracts (the Reputation rewards; Amount is how much), plus XP in the skill it aims at.",
-    "The board leaves with the event, so a job finished in its last hours waits there until the board",
-    "posts again: collect it before the season ends."
+    "The board leaves with the event, and a job finished but not collected by then shows Collect in",
+    "the player's Objective Book instead."
   ],
   "Text": {
     "TitleKey": "quest.mmo_hallows_eve_daily_artillery.title",

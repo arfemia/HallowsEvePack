@@ -14,8 +14,8 @@
     "The skill slot is Optional: where nothing carries its band the board shows no gap. Grades names each",
     "band for the badge on its rows: TitleKey is its words, Color the badge's colour. Season makes the board",
     "absent while the feast is off. Its contracts' pay waits here until the player collects it",
-    "(Rewards.Claim), so a job left uncollected when the feast ends waits for the board to come back next",
-    "year; the board's description asks players to collect before the table's packed away. Order 90 keeps",
+    "(Rewards.Claim); a job left uncollected when the feast ends shows Collect in the player's Objective",
+    "Book instead, since a contract whose board is gone is collected anywhere. Order 90 keeps",
     "it behind a server's everyday boards. Where keeps it in the Forgotten Temple: anywhere else it is left",
     "out of every list and opens closed."
   ],

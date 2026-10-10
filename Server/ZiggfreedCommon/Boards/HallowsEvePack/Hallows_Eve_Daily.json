@@ -16,9 +16,9 @@
     "bands, or a band of its own with a slot added here. Grades names each band for the badge on its",
     "rows; a band left out reads through the key board.grade.<band>, which the mod filling it can",
     "ship. Season makes the board absent while the event is off. Its contracts' pay waits here",
-    "until the player collects it (Rewards.Claim), so a job left uncollected when the event ends",
-    "waits for the board to come back next year; the board's description asks players to collect",
-    "before Old Jack packs up. Order 90 keeps it behind a server's everyday boards. Where keeps it",
+    "until the player collects it (Rewards.Claim); a job left uncollected when the event ends shows",
+    "Collect in the player's Objective Book instead, since a contract whose board is gone is",
+    "collected anywhere. Order 90 keeps it behind a server's everyday boards. Where keeps it",
     "in the Forgotten Temple: anywhere else it is left out of every list and opens closed."
   ],
   "Text": {

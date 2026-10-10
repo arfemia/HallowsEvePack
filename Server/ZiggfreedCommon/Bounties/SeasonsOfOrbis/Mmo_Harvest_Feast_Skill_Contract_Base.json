@@ -13,7 +13,7 @@
     "A child names its skill in its one GAIN_XP objective and writes its own Rewards.Claim, which replaces",
     "the feast base's list: a little favor with Martha and XP in that skill. Like every job on the board,",
     "the pay waits at the board until the player collects it, so a full bag never costs anyone a reward,",
-    "and a job finished in the feast's last hours waits there until the board is back next year. The",
+    "and a job not collected when the feast ends shows Collect in the player's Objective Book. The",
     "board's pay table and Festival Favor stay with the feast's own jobs, so a server with MMO Skill Tree",
     "earns festival tokens and Festival Favor at the pace of one without. Each child takes its words from",
     "the keys its id spells, in harvestfeast.mmo.lang."
