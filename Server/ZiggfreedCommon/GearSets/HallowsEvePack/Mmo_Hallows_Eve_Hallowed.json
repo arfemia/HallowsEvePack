@@ -1,11 +1,13 @@
 {
   "$Comment": [
-    "MMO Skill Tree's half of the Hallowed set: with the Jack Helm worn and the Jack Shield in the",
-    "utility slot, the wearer gets a little luck and more Artillery damage, on top of the health,",
-    "glow and fire resistance Hallows_Eve_Hallowed.json gives.",
+    "MMO Skill Tree's half of the Hallowed set: with a Jack Helm worn and a Jack Shield in the utility",
+    "slot, the wearer gets a little luck and more Artillery damage, on top of the health, glow and fire",
+    "resistance Hallows_Eve_Hallowed.json gives. Members holds both helms (the Jack Helm and the",
+    "Burning Jack Helm) and both shields (the Jack Shield and the Flaming Jack Shield), the same four as",
+    "that set, so any helm with any shield completes it.",
     "",
-    "It is a second set over the same two members, so that file stays as it is: an item can belong",
-    "to several sets, and each set's tiers apply on their own. Each set also shows its own notice when",
+    "It is a second set over the same members, so that file stays as it is: an item can belong to",
+    "several sets, and each set's tiers apply on their own. Each set also shows its own notice when",
     "its tier comes on, which is why a player sees two. Requires takes this file out on a server",
     "without MMO Skill Tree, where these stats do not exist and its notice would name a bonus nobody",
     "gets; always write it with Min 1.",
@@ -21,7 +23,7 @@
       { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 }
     ]
   },
-  "Members": [ "Hallows_Eve_Jack_Helm", "Hallows_Eve_Jack_Shield" ],
+  "Members": [ "Hallows_Eve_Jack_Helm", "Hallows_Eve_Jack_Shield", "Hallows_Eve_Burning_Jack_Helm", "Hallows_Eve_Flaming_Jack_Shield" ],
   "Bonuses": [
     {
       "Armor": 1,
