@@ -21,7 +21,11 @@
     "never share a spot even when a server owner moves a season's days. To move the host, edit",
     "Anchor.WorldSpawn.Offset (small enough to stay off the walls) and Yaw to turn the host, then look",
     "at the spot in game. To take the host out without editing this file, set enabled (lower case, as",
-    "that file spells it) to false for this id in mods/ziggfreedcommon/npc-placements.json."
+    "that file spells it) to false for this id in mods/ziggfreedcommon/npc-placements.json.",
+    "",
+    "Props are the feast's supper table, drawn while Martha stands: a tavern table in front of her and a",
+    "bench across it turned to face her, each offset from her spot along the world's own axes and raised",
+    "half a block (Y 0.5), because a block is drawn centred on the point it is given."
   ],
   "Name": "Harvest_Feast_Host_Temple",
   "Enabled": true,
@@ -45,5 +49,9 @@
   },
   "Interact": {
     "Dialogue": "Harvest_Feast_Host"
-  }
+  },
+  "Props": [
+    { "Item": "Furniture_Tavern_Table", "Offset": { "X": 0.3, "Y": 0.5, "Z": 2 }, "Yaw": 0.0 },
+    { "Item": "Furniture_Tavern_Bench", "Offset": { "X": -0.5, "Y": 0.5, "Z": 3 }, "Yaw": 0.0 }
+  ]
 }
