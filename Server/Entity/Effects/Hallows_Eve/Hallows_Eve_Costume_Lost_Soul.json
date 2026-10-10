@@ -1,6 +1,7 @@
 {
   "$Comment": "A costume: for three minutes the wearer takes the Lost Soul's look (the model Hallows_Eve_Lost_Soul). It changes the model and is no debuff, which is what makes it a costume: the wearer can take it off any time with /zigcostume off, and no second costume goes over it. The Costume Wand's secondary use and the trick-or-treat tricks put it on. Duration is in seconds.",
-  "StatusEffectIcon": "Icons/ItemsGenerated/Hallows_Eve_Costume_Wand.png",
+  "Name": "hallowseve.items.effect.hallows_eve_costume_lost_soul.name",
+  "StatusEffectIcon": "Icons/ModelsGenerated/Hallows_Eve_Lost_Soul.png",
   "OverlapBehavior": "Overwrite",
   "Duration": 180,
   "Debuff": false,

@@ -1,4 +1,10 @@
-# Hallow's Eve pack - the Hallowed set's words. Keys are written bare: the library finds each one by
-# its tail, whatever this file is called. The set's notice is a toast, so no value carries markup.
+# Hallow's Eve pack - the Hallowed set's and the costumes' words. Keys are written bare: the library
+# finds each gear-set key by its tail, whatever this file is called. The set's notice is a toast, so no
+# value carries markup.
 gearset.hallows_eve_hallowed.title = Hallowed Set
 gearset.hallows_eve_hallowed.tier_full = Helm on and shield in hand: a little more health, fire bites less, you glow like a lantern, and your standing with the Hallowed gets a lift.
+
+# The costumes' names, shown when a player hovers the costume's icon. The effect JSON spells the full
+# key (hallowseve.items.effect...), because the client reads an effect's Name exactly as written.
+effect.hallows_eve_costume_jack.name = Jack Skeleton Costume
+effect.hallows_eve_costume_lost_soul.name = Lost Soul Costume
