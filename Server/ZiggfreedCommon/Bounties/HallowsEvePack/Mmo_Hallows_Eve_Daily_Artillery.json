@@ -10,9 +10,11 @@
     "Requires holds two switches at the top level. The event's running switch takes the contract out",
     "of the draw whenever the event is off. hytale:mod_installed takes the whole file out on a server",
     "without MMO Skill Tree, since its objective and its XP reward are that mod's; always write it",
-    "with Min 1. It pays the moment the work is done (Rewards.Auto), because the board leaves with",
-    "the event: the board's own pay table, the same favor with Old Jack and the Hallowed as his other",
-    "contracts (the Reputation rewards; Amount is how much), plus XP in the skill it aims at."
+    "with Min 1. Its pay waits at Old Jack's board to be collected (Rewards.Claim), as every",
+    "contract's does: the board's own pay table, the same favor with Old Jack and the Hallowed as his",
+    "other contracts (the Reputation rewards; Amount is how much), plus XP in the skill it aims at.",
+    "The board leaves with the event, so a job finished in its last hours waits there until the board",
+    "posts again: collect it before the season ends."
   ],
   "Text": {
     "TitleKey": "quest.mmo_hallows_eve_daily_artillery.title",
@@ -30,7 +32,7 @@
     "gain_xp": { "Kind": "GAIN_XP", "Target": "ARTILLERY", "MatchMode": "EXACT", "Amount": 2500 }
   },
   "Rewards": {
-    "Auto": [
+    "Claim": [
       { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 50 } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 25 } },
