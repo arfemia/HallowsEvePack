@@ -12,3 +12,8 @@ calendar.harvest_feast.herald.end.sub = The table's packed away until next year.
 
 # ---- Finds ----
 notify.harvest_feast_spice_found = A pinch of spice, tucked in with the pumpkin.
+
+# ---- Costumes ----
+# A costume's buff-bar tile name. Its effect's Name is this key in full
+# (harvestfeast.world.effect...), because the client reads an effect's Name exactly as written.
+effect.harvest_feast_costume_turkey.name = Turkey Costume

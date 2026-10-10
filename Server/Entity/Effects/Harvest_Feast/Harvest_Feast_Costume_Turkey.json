@@ -1,5 +1,6 @@
 {
   "$Comment": "A costume: for three minutes the wearer takes the game's turkey look (the model Turkey). It changes the model and is no debuff, which is what makes it a costume: the wearer can take it off any time with /zigcostume off, and no second costume goes over it. The host puts it on a player who comes back from the turkey hunt, the second quest, through the Costume reward kind. Duration is in seconds.",
+  "Name": "harvestfeast.world.effect.harvest_feast_costume_turkey.name",
   "StatusEffectIcon": "Icons/ModelsGenerated/Turkey.png",
   "OverlapBehavior": "Overwrite",
   "Duration": 180,
