@@ -1,29 +1,27 @@
 {
   "$Comment": [
-    "MMO Skill Tree's half of the Hallowed set: with a Jack Helm worn and a Jack Shield in the utility",
-    "slot, the wearer gets a little luck and more Artillery damage, on top of the health, glow and fire",
-    "resistance Hallows_Eve_Hallowed.json gives. Members holds both helms (the Jack Helm and the",
-    "Burning Jack Helm) and both shields (the Jack Shield and the Flaming Jack Shield), the same four as",
-    "that set, so any helm with any shield completes it.",
+    "MMO Skill Tree's half of the Hallowed set, Hallows_Eve_Hallowed.json. Joins adds this file to that",
+    "set instead of making a set of its own, so the player still sees one Hallowed set: one notice,",
+    "one entry, one look. The set's name, members and look stay that file's, so this file names none.",
     "",
-    "It is a second set over the same members, so that file stays as it is: an item can belong to",
-    "several sets, and each set's tiers apply on their own. Each set also shows its own notice when",
-    "its tier comes on, which is why a player sees two. Requires takes this file out on a server",
-    "without MMO Skill Tree, where these stats do not exist and its notice would name a bonus nobody",
-    "gets; always write it with Min 1.",
+    "Its one tier asks exactly what the set's tier asks, a Jack Helm worn and a Jack Shield in the",
+    "utility slot (Armor 1 and Utility 1), so it joins that tier: its stats apply beside the set's,",
+    "and its line follows the set's line in the same notice. A tier asking for something else would",
+    "be added as a tier of its own. Requires takes this file out on a server without MMO Skill Tree,",
+    "where these stats do not exist and its line would name a bonus nobody gets; always write it with",
+    "Min 1.",
     "",
     "MMO_Luck takes whole percent points (5 is 5%), the luck every skill's lucky rolls read.",
     "MMO_DamageFlat_ARTILLERY adds raw damage to a hit while an Artillery weapon is in hand when it",
     "lands, which for a Lantern Bomb means another bomb still in hand. Both are Additive on purpose:",
     "these channels have a base of zero, so a Multiplicative entry computes nothing."
   ],
-  "Text": { "TitleKey": "gearset.mmo_hallows_eve_hallowed.title" },
+  "Joins": "Hallows_Eve_Hallowed",
   "Requires": {
     "Factors": [
       { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 }
     ]
   },
-  "Members": [ "Hallows_Eve_Jack_Helm", "Hallows_Eve_Jack_Shield", "Hallows_Eve_Burning_Jack_Helm", "Hallows_Eve_Flaming_Jack_Shield" ],
   "Bonuses": [
     {
       "Armor": 1,
