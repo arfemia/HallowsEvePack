@@ -1,0 +1,8 @@
+{
+  "$Comment": "The Hallowed set's tile on the buff bar, held on the player while the set's tier is on (GearSets/HallowsEvePack/Hallows_Eve_Hallowed.json names it as that tier's Badge): the Hallowed Pumpkin's icon, and the set's own name on hover. It carries nothing else; the glow and the fire ward are the set's Effect, Hallows_Eve_Hallowed_Set. Infinite, as a set's tile must be: the set engine puts it on when the tier comes on and again at every login, and takes it off itself. Never apply this id from anything else.",
+  "Name": "hallowseve.items.gearset.hallows_eve_hallowed.title",
+  "StatusEffectIcon": "Icons/ItemsGenerated/Hallows_Eve_Hallowed_Pumpkin.png",
+  "Infinite": true,
+  "OverlapBehavior": "Ignore",
+  "Debuff": false
+}
