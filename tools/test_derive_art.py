@@ -5,7 +5,7 @@ Run from the pack root:
     python -m unittest tools/test_derive_art.py -v
 
 The checks are written independently of derive_art.py: the bounds maths re-implements
-shared-source/release's BlockyModelBoundsParser (accumulateNodeBounds), and the face-rect
+reference/shared-source/release's BlockyModelBoundsParser (accumulateNodeBounds), and the face-rect
 maths re-implements the Hytale team's Blockbench plugin (hytale_plugin.js, the
 textureLayout -> UV parse), where a mirrored axis runs from `offset` back towards zero and
 angle 90/180/270 swap or flip the rect. Two checks read outside the pack and skip when the
@@ -467,7 +467,7 @@ class DerivedArtTest(unittest.TestCase):
 
     def test_chains_match_their_vanilla_sources(self):
         if not VANILLA.is_dir():
-            self.skipTest(f"shared-source/release not found at {VANILLA}")
+            self.skipTest(f"reference/shared-source/release not found at {VANILLA}")
         pairs = [
             (BOMB_MODELS[0], "NPC/Intelligent/Goblin/Models/Weapons/Bomb/Fire.blockymodel",
              ["R-Attachment", "Origin_Projectile", "Origin_Item"]),

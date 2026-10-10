@@ -30,7 +30,7 @@ What it writes (pack-relative):
       orthographic renderer at each family's vanilla IconProperties angle.
   Common/Icons/ModelsGenerated/Hallows_Eve_*.png        128x128 model icons for the two mobs.
 
-Format facts this relies on (shared-source/release and the Hytale Blockbench plugin):
+Format facts this relies on (reference/shared-source/release and the Hytale Blockbench plugin):
   - A node's shape is centred at position + orientation * offset, in its parent's frame,
     and its children hang from that same point (BlockyModelBoundsParser).
   - `stretch` scales the node's own size only, so a uniform scale of a subtree multiplies
@@ -100,7 +100,7 @@ HELM_RIM_ROWS = (26, 27)        # the hollowed neck rim on the bottom edge
 HELM_STRAP = (12, 6, 6, 18)     # x, first row, width, rows: a cheek strap down the rind
 HELM_BUCKLE = (11, 13, 8, 5)    # x, first row, width, rows: a brass buckle on that strap
 
-# --- vanilla rigs (copied verbatim from shared-source/release/HytaleAssets/Common/) ----------
+# --- vanilla rigs (copied verbatim from reference/shared-source/release/HytaleAssets/Common/) ----------
 
 def none_node(name, position, orientation, is_piece, offset=(0, 0, 0), shading="flat"):
     return {
