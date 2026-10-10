@@ -13,14 +13,14 @@
     "like every contract's: the pay waits at the board until the player collects it. The board leaves",
     "with the event, so a job finished in its last hours waits there until the board is back next",
     "year, which is why the board's own description asks players to collect before Old Jack packs up.",
-    "The list is the board's pay table, and favor with Old Jack and the Hallowed (the Reputation",
-    "rewards; Amount is how much). A child that writes its own Rewards.Claim replaces that list whole.",
-    "Every shipped contract does, to add MMO Skill Tree's Mmo_Xp row for the skill its work trains, so",
-    "retuning this list means retuning theirs too. That row carries its own Requires, the",
-    "hytale:mod_installed gate (always Min 1), which leaves it out on a server without that mod while",
-    "the plain rows still pay there; a contract whose every row is gated would pay nothing there, so",
-    "keep these three. Each bucket inherits on its own, so a list left in Rewards.Auto here would pay on",
-    "top of every child's own Claim.",
+    "The list is the board's pay table, favor with Old Jack and the Hallowed, and Festival Favor,",
+    "which every season's work pays (the Reputation rewards; Amount is how much). A child that writes",
+    "its own Rewards.Claim replaces that list whole. Every shipped contract does, to add MMO Skill",
+    "Tree's Mmo_Xp row for the skill its work trains, so re-tuning this list means re-tuning theirs",
+    "too. That row carries its own Requires, the hytale:mod_installed gate (always Min 1), which leaves",
+    "it out on a server without that mod while the plain rows still pay there; a contract whose every",
+    "row is gated would pay nothing there, so keep these plain rows. Each bucket inherits on its own, so",
+    "a list left in Rewards.Auto here would pay on top of every child's own Claim.",
     "",
     "It carries no Requires and no Objectives: a child that writes its own Requires.Factors drops an",
     "inherited gate, and an inherited step can be re-tuned but never removed."
@@ -34,7 +34,8 @@
     "Claim": [
       { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 50 } },
-      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 25 } }
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 25 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 30 } }
     ]
   }
 }

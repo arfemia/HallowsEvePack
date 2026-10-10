@@ -29,6 +29,9 @@
     "so a server with this pack and no MMO Skill Tree has a way to get one; a player who already holds",
     "one from another mod gets a second.",
     "",
+    "The Currency row pays a few festival tokens, the currency every season shares, as every season's way",
+    "in does, through the Currency reward kind, since a counter wallet has no item to hand over.",
+    "",
     "Beside the table, MMO Skill Tree's Mmo_Xp row pays Acrobatics XP for the walk down, in Claim with",
     "the rest. Its own Requires, the hytale:mod_installed gate, leaves the row out on a server without",
     "that mod, unpaid and unshown, while the other rows still pay."
@@ -64,6 +67,7 @@
     "Claim": [
       { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Meet_Pay" } },
       { "Kind": "Item", "Params": { "Item": "Ziggfreed_Objective_Book", "Count": "1" } },
+      { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "2" } },
       { "Kind": "Mmo_Xp", "Params": { "Skill": "ACROBATICS", "Amount": "2500" },
         "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
     ]

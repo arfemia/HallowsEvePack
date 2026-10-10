@@ -1,11 +1,12 @@
 {
-  "$Comment": "Old Jack's stall. Season makes the stall, and every offer naming it, absent while Hallow's Eve is off. Order 90 keeps it behind a server's everyday storefronts, so a shop block or a conversation line that opens 'the first storefront' never lands here. Where keeps the stall in the Forgotten Temple: anywhere else it is left out of every list and opens closed. CategoryOrder fixes the shelf order, and each shelf's name is a key in hallowseve.progression.lang.",
+  "$Comment": "Old Jack's stall. Season makes the stall, and every offer naming it, absent while Hallow's Eve is off. Order 90 keeps it behind a server's everyday storefronts, so a shop block or a conversation line that opens 'the first storefront' never lands here. Where keeps the stall in the Forgotten Temple: anywhere else it is left out of every list and opens closed. Includes carries the festival shelf (Seasons_Of_Orbis_Festival_Stall) beside Old Jack's own goods: the same offers every season's host sells, priced in festival tokens, with one purchase limit across them all. The shelf brings its own wallet, place and name, so the header shows festival tokens beside the sweets and the festival shelf follows Old Jack's own shelves with no line of its own here. CategoryOrder fixes the order of his own shelves, and each one's name is a key in hallowseve.progression.lang.",
   "Text": {
     "TitleKey": "shop.hallows_eve_old_jack.title",
     "FlavorKey": "shop.hallows_eve_old_jack.desc"
   },
   "Icon": "Hallows_Eve_Jack_Lantern",
   "Order": 90,
+  "Includes": [ "Seasons_Of_Orbis_Festival_Stall" ],
   "Currencies": [ "Hallows_Eve_Sweets" ],
   "CategoryOrder": [ "bombs", "lights", "gear", "decor" ],
   "Categories": {

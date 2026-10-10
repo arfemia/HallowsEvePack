@@ -41,6 +41,7 @@
       { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Daily_Pay" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 75 } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 10 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 40 } },
       { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "1500" },
         "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
     ]
