@@ -10,9 +10,10 @@ file under Common/ (an item's Icon, Model and Texture, a block's CustomModel and
 CustomModelTexture, a model's attachments and animations). Each must exist in the pack's own
 Common/ or in the game's Assets.zip: the engine refuses an asset whose file is missing
 ("Common Asset '...' doesn't exist!") and that drops the whole pack at boot. The Assets.zip is
---assets, else HYTALE_ASSETS_ZIP, else the install the MMO's gradle.properties names (mmo-skills,
-found through the workspace's family.properties); without one, vanilla paths are reported as
-unchecked rather than missing.
+--assets, else HYTALE_ASSETS_ZIP, else the install the workspace's family.properties names
+(hytaleHome, patchline, game_build, as every family build reads them; the MMO's gradle.properties,
+mmo-skills found through the same file, gives a key it lacks); without one, vanilla paths are
+reported as unchecked rather than missing.
 """
 import argparse
 import json
@@ -24,6 +25,9 @@ from pathlib import Path
 TOOLS = Path(__file__).resolve().parent
 PACK = TOOLS.parent
 SUFFIXES = (".png", ".blockymodel", ".blockyanim")
+# The server build keys this reads: family.properties carries them under their gradle.properties
+# names, and its value wins over the MMO's (R181), as in the MMO's tools/dev-env.ps1.
+SERVER_KEYS = ("hytaleHome", "patchline", "game_build")
 
 
 def read_properties(path):
@@ -36,29 +40,40 @@ def read_properties(path):
     return values
 
 
+def family_root(start):
+    """The nearest folder above `start` holding family.properties (the workspace, or a tree under
+    worktrees/); None outside a workspace."""
+    return next((p for p in start.parents if (p / "family.properties").is_file()), None)
+
+
 def mmo_skills(start):
-    """The MMO repo: <root>/<repo.mmo-skills>, where root is the nearest folder above `start` holding
-    family.properties (the workspace, or a tree under worktrees/); None outside a workspace."""
-    root = next((p for p in start.parents if (p / "family.properties").is_file()), None)
+    """The MMO repo: <root>/<repo.mmo-skills>, where root is family_root(start); None outside a
+    workspace."""
+    root = family_root(start)
     if root is None:
         return None
     rel = read_properties(root / "family.properties").get("repo.mmo-skills")
     return root / rel if rel else None
 
 
+ROOT = family_root(PACK)
 MMO = mmo_skills(PACK)
 
 
 def installed_assets_zip():
-    """HYTALE_ASSETS_ZIP, else <hytaleHome>/<patchline>/package/game/<game_build>/Assets.zip
-    from the MMO's gradle.properties (as its tools/dev-env.ps1 resolves it), else None."""
+    """HYTALE_ASSETS_ZIP, else <hytaleHome>/<patchline>/package/game/<game_build>/Assets.zip, each
+    key from the workspace's family.properties, else from the MMO's gradle.properties (as its
+    tools/dev-env.ps1 resolves them), else None."""
     override = os.environ.get("HYTALE_ASSETS_ZIP")
     if override:
         return Path(override)
-    if MMO is None or not (MMO / "gradle.properties").is_file():
-        return None
-    values = read_properties(MMO / "gradle.properties")
-    if "hytaleHome" not in values:
+    values = {}
+    if MMO is not None and (MMO / "gradle.properties").is_file():
+        values.update(read_properties(MMO / "gradle.properties"))
+    if ROOT is not None:
+        workspace = read_properties(ROOT / "family.properties")
+        values.update({key: workspace[key] for key in SERVER_KEYS if workspace.get(key)})
+    if not values.get("hytaleHome"):
         return None
     return (Path(values["hytaleHome"]) / values.get("patchline", "release") / "package" / "game"
             / values.get("game_build", "latest") / "Assets.zip")
