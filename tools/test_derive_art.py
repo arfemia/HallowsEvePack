@@ -9,8 +9,9 @@ shared-source/release's BlockyModelBoundsParser (accumulateNodeBounds), and the 
 maths re-implements the Hytale team's Blockbench plugin (hytale_plugin.js, the
 textureLayout -> UV parse), where a mirrored axis runs from `offset` back towards zero and
 angle 90/180/270 swap or flip the rect. Two checks read outside the pack and skip when the
-source is absent: the vanilla rigs in shared-source/release, and the installed game's
-Assets.zip (HYTALE_ASSETS_ZIP, else the MMO root's gradle.properties install).
+source is absent: the vanilla rigs in the workspace's shared source, and the installed game's
+Assets.zip (HYTALE_ASSETS_ZIP, else the install the MMO's gradle.properties names, mmo-skills
+found through the workspace's family.properties).
 """
 import copy
 import hashlib
@@ -31,11 +32,38 @@ TOOLS = Path(__file__).resolve().parent
 PACK = TOOLS.parent
 COMMON = PACK / "Common"
 VENDORED = TOOLS / "seed" / "vanilla"
-ROOT = PACK.parents[1]
-# The workspace's shared-source/release clone sits beside hyMMO: the first folder above it that holds one,
-# so the main checkout and a linked worktree under worktrees/ both find it.
-SHARED_SOURCE = next((p / "shared-source" / "release" for p in ROOT.parents
-                      if (p / "shared-source" / "release").is_dir()), ROOT.parent / "shared-source" / "release")
+
+
+def read_properties(path):
+    """{key: value} from a .properties file's `key=value` lines, `#` comments skipped."""
+    values = {}
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if "=" in line and not line.lstrip().startswith("#"):
+            key, value = line.split("=", 1)
+            values[key.strip()] = value.strip()
+    return values
+
+
+def mmo_skills(start):
+    """The MMO repo: <root>/<repo.mmo-skills>, where root is the nearest folder above `start` holding
+    family.properties (the workspace, or a tree under worktrees/); None outside a workspace."""
+    root = next((p for p in start.parents if (p / "family.properties").is_file()), None)
+    if root is None:
+        return None
+    rel = read_properties(root / "family.properties").get("repo.mmo-skills")
+    return root / rel if rel else None
+
+
+def shared_source(start):
+    """The shared source: the first folder above `start` holding reference/shared-source/release (a tree
+    holds none, so the walk passes its root up to main's), else the first holding shared-source/release
+    (the layout before the un-nest), else the first marker, relative to the working folder."""
+    markers = (Path("reference", "shared-source", "release"), Path("shared-source", "release"))
+    return next((p / m for m in markers for p in start.parents if (p / m).is_dir()), markers[0])
+
+
+MMO = mmo_skills(PACK)
+SHARED_SOURCE = shared_source(PACK)
 VANILLA = SHARED_SOURCE / "HytaleAssets" / "Common"
 
 HE = "Items/Hallows_Eve"
@@ -304,19 +332,14 @@ def hash_tree(root, rels):
 
 
 def installed_assets_zip():
-    """The game Assets.zip the MMO builds against: HYTALE_ASSETS_ZIP, else the root
-    gradle.properties' hytaleHome/patchline/game_build (as tools/dev-env.ps1 resolves it)."""
+    """The game Assets.zip the MMO builds against: HYTALE_ASSETS_ZIP, else the MMO's gradle.properties'
+    hytaleHome/patchline/game_build (as its tools/dev-env.ps1 resolves it)."""
     override = os.environ.get("HYTALE_ASSETS_ZIP")
     if override:
         return Path(override)
-    props = ROOT / "gradle.properties"
-    if not props.is_file():
+    if MMO is None or not (MMO / "gradle.properties").is_file():
         return None
-    values = {}
-    for line in props.read_text(encoding="utf-8").splitlines():
-        if "=" in line and not line.lstrip().startswith("#"):
-            key, value = line.split("=", 1)
-            values[key.strip()] = value.strip()
+    values = read_properties(MMO / "gradle.properties")
     if "hytaleHome" not in values:
         return None
     return (Path(values["hytaleHome"]) / values.get("patchline", "release") / "package" / "game"

@@ -10,8 +10,9 @@ file under Common/ (an item's Icon, Model and Texture, a block's CustomModel and
 CustomModelTexture, a model's attachments and animations). Each must exist in the pack's own
 Common/ or in the game's Assets.zip: the engine refuses an asset whose file is missing
 ("Common Asset '...' doesn't exist!") and that drops the whole pack at boot. The Assets.zip is
---assets, else HYTALE_ASSETS_ZIP, else the install the MMO root's gradle.properties names;
-without one, vanilla paths are reported as unchecked rather than missing.
+--assets, else HYTALE_ASSETS_ZIP, else the install the MMO's gradle.properties names (mmo-skills,
+found through the workspace's family.properties); without one, vanilla paths are reported as
+unchecked rather than missing.
 """
 import argparse
 import json
@@ -22,24 +23,41 @@ from pathlib import Path
 
 TOOLS = Path(__file__).resolve().parent
 PACK = TOOLS.parent
-ROOT = PACK.parents[1]
 SUFFIXES = (".png", ".blockymodel", ".blockyanim")
+
+
+def read_properties(path):
+    """{key: value} from a .properties file's `key=value` lines, `#` comments skipped."""
+    values = {}
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if "=" in line and not line.lstrip().startswith("#"):
+            key, value = line.split("=", 1)
+            values[key.strip()] = value.strip()
+    return values
+
+
+def mmo_skills(start):
+    """The MMO repo: <root>/<repo.mmo-skills>, where root is the nearest folder above `start` holding
+    family.properties (the workspace, or a tree under worktrees/); None outside a workspace."""
+    root = next((p for p in start.parents if (p / "family.properties").is_file()), None)
+    if root is None:
+        return None
+    rel = read_properties(root / "family.properties").get("repo.mmo-skills")
+    return root / rel if rel else None
+
+
+MMO = mmo_skills(PACK)
 
 
 def installed_assets_zip():
     """HYTALE_ASSETS_ZIP, else <hytaleHome>/<patchline>/package/game/<game_build>/Assets.zip
-    from the MMO root's gradle.properties (as tools/dev-env.ps1 resolves it), else None."""
+    from the MMO's gradle.properties (as its tools/dev-env.ps1 resolves it), else None."""
     override = os.environ.get("HYTALE_ASSETS_ZIP")
     if override:
         return Path(override)
-    props = ROOT / "gradle.properties"
-    if not props.is_file():
+    if MMO is None or not (MMO / "gradle.properties").is_file():
         return None
-    values = {}
-    for line in props.read_text(encoding="utf-8").splitlines():
-        if "=" in line and not line.lstrip().startswith("#"):
-            key, value = line.split("=", 1)
-            values[key.strip()] = value.strip()
+    values = read_properties(MMO / "gradle.properties")
     if "hytaleHome" not in values:
         return None
     return (Path(values["hytaleHome"]) / values.get("patchline", "release") / "package" / "game"
