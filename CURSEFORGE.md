@@ -54,7 +54,7 @@ Each season brings a host to the Forgotten Temple: Old Jack for Hallow's Eve, Ma
 
 - **Festival Favor** is a reputation every season shares. Every quest Old Jack or Martha gives you, except the one that first sends you to them, pays it, and so does every Night, Day, Field and Kitchen job on their boards. It climbs to Exalted and keeps going through Exalted II, Exalted III and Exalted IV, and past that it keeps paying you Festival Tokens. It stays with you from season to season and year to year.
 - Festival Tokens, the wallet every season shares. Old Jack's quests and board jobs pay them, and so do Martha's quests and her Field and Kitchen jobs. They carry over from one season to the next. You can't drop or lose them, and your wallet shows them all year.
-- The Festival Shelf, at Old Jack's stall and at Martha's: a Winter Stocking for 20 tokens, a Halloween Pumpkin Basket for 25, a Winter Wreath, Winter Garland or Winter Lights for 30 each, a Small Red Christmas Packet for 40 and a Snowman for 50. Every host carries the same shelf, so tokens from Hallow's Eve spend at Harvest Feast too.
+- The Festival Shelf, at Old Jack's stall and at Martha's, stocked by season. The winter decorations are on sale from November 20 to January 6, so they're at Martha's while the Harvest Feast runs: a Winter Stocking for 20 tokens, a Winter Wreath, Winter Garland or Winter Lights for 30 each, a Small Red Christmas Packet for 40 and a Snowman for 50. During Hallow's Eve, Old Jack's has a Halloween Pumpkin Basket for 25. Tokens from Hallow's Eve spend at Harvest Feast too.
 - Exalted II with Festival Favor opens the Goblin Plushie on the shelf for 60 tokens, and Exalted III the Carved Kweebec Figure for 80. No recipe or drop in the game hands either one out. Reach Exalted IV for Guest of Honor and its title.
 - Three achievements count keepsakes from different seasons, the Hollow Lantern and the Feast Plate so far, any year's counting. Season to Season wants keepsakes from two seasons and pays 25 Festival Tokens, Round the Year four for 50. Seasons of Orbis wants one from every season your server runs, never fewer than four, and pays 100 tokens, a Harvest Trophy and the title "Friend of the Seasons". With two seasons in the pack, Season to Season is the one within reach.
 
@@ -89,7 +89,7 @@ Add the MMO Skill Bounty Pack 1.3.0 or newer and its Daily bounty board posts a 
 - To switch Hallow's Eve off, add `"Hallows_Eve": { "Enabled": false }` to `mods/ziggfreedcommon/calendar.json` and run `/zigcalendar reload`. Harvest Moon, Harvest Feast and the anniversary have their own switches under `"Harvest_Moon"`, `"Harvest_Feast"` and `"Hytale_Anniversary"`, and the same file can move any event's days.
 - An event switched off is gone from the world: the host leaves with everything they brought, and no new creatures or Wild Turkeys spawn. Nothing anyone earned is lost, and it all comes back when the event does.
 - The items keep working all year once someone has them.
-- The Festival Shelf can also open all year as a stall of its own: switch it on in `mods/ziggfreedcommon/shops.json`.
+- The Festival Shelf can also open all year as a stall of its own: switch it on in `mods/ziggfreedcommon/shops.json`. The winter decorations still sell only from November 20 to January 6 there, and the Pumpkin Basket only during Hallow's Eve.
 - `/zigcalendar status Harvest_Feast` shows what the server reads for that event.
 - Each season's Almanac banner is laid out from its items. You can rearrange it, or swap in a picture of your own, in `mods/ziggfreedcommon/almanac.json`; whatever you leave out stays as the pack has it.
 - The creatures are as tough as the game's own: a Hollow Ghoul hits like a Ghoul, and they come out in the first zone too. Neither they nor the Wild Turkeys are Memories.
@@ -110,7 +110,7 @@ Add the MMO Skill Bounty Pack 1.3.0 or newer and its Daily bounty board posts a 
 
 ### v1.1.0 (unreleased, held)
 
-Harvest Feast, with Martha the Cook's questline, dailies, board and stall, Wild Turkeys, favor with Martha, five achievements a season with a title, Head of the Table with another, and an Almanac page. Festival Favor and Festival Tokens shared by every season, with the Festival Shelf at both stalls and three achievements for keepsakes across the seasons. Hytale's Anniversary every January 13. At Old Jack's stall, five of Update 7's gadgets. Lantern Bombs deal the game's own fire damage. Built for Hytale's Update 7; needs Ziggfreed's CommonLib 2.3.0 and RPG Stations 1.1.1.
+Harvest Feast, with Martha the Cook's questline, dailies, board and stall, Wild Turkeys, favor with Martha, five achievements a season with a title, Head of the Table with another, and an Almanac page. Festival Favor and Festival Tokens shared by every season, with the Festival Shelf at both stalls, stocked by season, and three achievements for keepsakes across the seasons. Hytale's Anniversary every January 13. At Old Jack's stall, five of Update 7's gadgets. Lantern Bombs deal the game's own fire damage. Built for Hytale's Update 7; needs Ziggfreed's CommonLib 2.3.0 and RPG Stations 1.1.1.
 
 ### v1.0.0
 
