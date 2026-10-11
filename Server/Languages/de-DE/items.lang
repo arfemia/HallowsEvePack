@@ -1,4 +1,4 @@
-# Allerheiligenabend-Paket - Gegenstandsnamen und -beschreibungen. Das Spiel stellt den Dateinamen voran, also lädt
+# Halloween-Paket - Gegenstandsnamen und -beschreibungen. Das Spiel stellt den Dateinamen voran, also lädt
 # jeder Schlüssel als items.<key>, der Schlüssel, den die TranslationProperties eines Gegenstands nennen (items.Hallows_Eve_Jack_Lantern.name).
 Hallows_Eve_Lantern_Bomb_Common.name = Laternenbombe
 Hallows_Eve_Lantern_Bomb_Common.description = Ein geschnitzter Kürbis, vollgestopft mit Knallpulver. Wirf ihn auf alles, was hinter dir her ist.
@@ -18,18 +18,18 @@ Hallows_Eve_Flaming_Jack_Shield.name = Flammender Jack-Schild
 Hallows_Eve_Flaming_Jack_Shield.description = Ein schwarz verkohlter Jack-Schild, dessen geschnitztes Gesicht wie Kohle glüht. Blocken kostet mit ihm weniger Ausdauer als mit dem einfachen. Teil des Geweihten Sets: führ ihn in der Nebenhand, während du einen Jack-Helm oder einen Brennenden Jack-Helm trägst.
 Hallows_Eve_Jack_Lantern.name = Jack-Laterne
 Hallows_Eve_Jack_Lantern.description = Ein geschnitzter Kürbis mit einer Kerze darin. Der Alte Jack will vor jeder Haustür einen sehen.
-Hallows_Eve_Hollow_Lantern.name = Hohle Laterne
-Hallows_Eve_Hollow_Lantern.description = Eine bleiche Laterne, die der Alte Jack jedem schenkt, der seine Aufträge zu Ende bringt. Jeder Allerheiligenabend hat seine eigene.
+Hallows_Eve_Hollow_Lantern.name = Hollow-Laterne
+Hallows_Eve_Hollow_Lantern.description = Eine bleiche Laterne, die der Alte Jack jedem schenkt, der seine Aufträge zu Ende bringt. Jedes Halloween hat seine eigene.
 Hallows_Eve_Ecto_Lantern.name = Ekto-Laterne
 Hallows_Eve_Ecto_Lantern.description = Ein Kürbis, erleuchtet von Ektoplasma. Das grüne Licht bleibt bei jedem Wind ruhig.
 Hallows_Eve_Costume_Wand.name = Kostümstab
 Hallows_Eve_Costume_Wand.description = Richte ihn auf einen Freund. Eine Taste macht ihn zu einem Jack-Skelett, die andere zu einer Verlorenen Seele, und er kann das Kostüm ablegen, wann immer er will.
 Hallows_Eve_Cursed_Geode.name = Verfluchte Geode
-Hallows_Eve_Cursed_Geode.description = Ein Steinbrocken, in dem sich etwas Helles bewegt. Zu Allerheiligenabend tauchen sie in abgebautem Stein auf, vor allem in Erz. Nimm ihn in die Hand, knack ihn per Rechtsklick auf und behalt, was herausfällt.
+Hallows_Eve_Cursed_Geode.description = Ein Steinbrocken, in dem sich etwas Helles bewegt. Zu Halloween tauchen sie in abgebautem Stein auf, vor allem in Erz. Nimm ihn in die Hand, knack ihn per Rechtsklick auf und behalt, was herausfällt.
 Hallows_Eve_Ectoplasm.name = Ektoplasma
 Hallows_Eve_Ectoplasm.description = Was eine Verlorene Seele zurücklässt. Es fühlt sich kalt an, und Schnitzer verbrennen es in Laternen.
 Hallows_Eve_Hallowed_Pumpkin.name = Geweihter Kürbis
-Hallows_Eve_Hallowed_Pumpkin.description = Ein violetter Kürbis mit Gold in den Rippen. Zu Allerheiligenabend ist ab und zu einer dabei, wenn du Kürbisse von Hand erntest, und Jack-Skelette lassen welche fallen. Der Alte Jack will sie für seine Laternen.
+Hallows_Eve_Hallowed_Pumpkin.description = Ein violetter Kürbis mit Gold in den Rippen. Zu Halloween ist ab und zu einer dabei, wenn du Kürbisse von Hand erntest, und Jack-Skelette lassen welche fallen. Der Alte Jack will sie für seine Laternen.
 Hallows_Eve_Carving_Bench.name = Schnitzbank
 Hallows_Eve_Carving_Bench.description = Eine Werkbank, eingerichtet zum Kürbisschnitzen. Stell dich mit dem Nötigen in der Tasche davor und schnitz.
 Hallows_Eve_Carving_Bench.hint = Drücke [{key}] zum Schnitzen
