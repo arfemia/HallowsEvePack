@@ -202,3 +202,21 @@ reputation.hallows_eve_hallowed.earn.gear = Возьмите Щит Джека. 
 notify.hallows_eve_hallowed_cache = Тайник от Освящённых за то, что не даёте мёртвым подняться.
 dialogue.hallows_eve_old_jack.opt.standing = Как мы с тобой ладим?
 achievement.category.seasons.hallows_eve = Канун Всех Святых
+
+# ---- The Almanac page's items: where each comes from ----
+almanac.hallows_eve.source.pumpkin = Нет-нет да попадается, когда собираете тыквы руками, а ещё их роняют Скелеты-Джеки.
+almanac.hallows_eve.source.geode = Попадаются в камне и руде, которые вы добываете, а ещё их роняют Призраки жеоды.
+almanac.hallows_eve.source.ectoplasm = Остаётся после Заблудших душ, а ещё лежит внутри Проклятых жеод.
+almanac.hallows_eve.source.bombs = Падают с ночных тварей, лежат внутри Проклятых жеод, вырезаются на Верстаке резчика или продаются на прилавке Старого Джека.
+almanac.hallows_eve.source.bomb_epic = Редко падает с Призраков жеоды или лежит внутри Проклятых жеод и в тайнике Освящённых. Ещё её можно вырезать из Призрачных фонарных бомб и Проклятой жеоды или купить пару в день на прилавке Старого Джека.
+almanac.hallows_eve.source.trick_or_treat = Раздают, когда вы просите «Сладость или гадость».
+almanac.hallows_eve.source.workbench = Делается на Верстаке в любое время года.
+almanac.hallows_eve.source.carved = Вырезается на Верстаке резчика или продаётся на прилавке Старого Джека.
+almanac.hallows_eve.source.jack_shield = Вырезается из Освящённых тыкв и деревянного щита на Верстаке резчика или продаётся на прилавке Старого Джека.
+almanac.hallows_eve.source.burning_helm = Продаётся на прилавке Старого Джека, когда Освящённые вас чтят на уровне «Почтение» или Старый Джек доверяет вам до конца.
+almanac.hallows_eve.source.flaming_shield = Продаётся на прилавке Старого Джека, когда Освящённые ценят вас выше всех, на уровне «Превознесение».
+almanac.hallows_eve.source.stall = Продаётся на прилавке Старого Джека.
+almanac.hallows_eve.source.stall_favor = Продаётся на прилавке Старого Джека по мере того, как растёт ваше расположение у него и у Освящённых.
+almanac.hallows_eve.source.festival_stall = Продаётся на праздничной полке прилавка Старого Джека.
+almanac.hallows_eve.source.keepsake = Памятный подарок Старого Джека, раз в год за прохождение его истории.
+almanac.hallows_eve.source.festival_favor = Продаётся на праздничных прилавках тем, у кого высокое расположение праздников.

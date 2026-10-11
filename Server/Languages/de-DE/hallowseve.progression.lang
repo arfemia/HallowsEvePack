@@ -202,3 +202,21 @@ reputation.hallows_eve_hallowed.earn.gear = Führ einen Jack-Schild. Solange er 
 notify.hallows_eve_hallowed_cache = Ein Vorrat von den Geweihten, weil du die Toten unter der Erde hältst.
 dialogue.hallows_eve_old_jack.opt.standing = Wie stehen wir zueinander?
 achievement.category.seasons.hallows_eve = Allerheiligenabend
+
+# ---- The Almanac page's items: where each comes from ----
+almanac.hallows_eve.source.pumpkin = Hin und wieder dabei, wenn du Kürbisse von Hand erntest, und von Jack-Skeletten fallen gelassen.
+almanac.hallows_eve.source.geode = Steckt im Stein und Erz, das du abbaust, und wird von Geodengespenstern fallen gelassen.
+almanac.hallows_eve.source.ectoplasm = Wird von Verlorenen Seelen fallen gelassen und steckt in Verfluchten Geoden.
+almanac.hallows_eve.source.bombs = Wird von den Kreaturen der Nacht fallen gelassen, steckt in Verfluchten Geoden, wird an einer Schnitzbank geschnitzt oder am Stand des Alten Jack gekauft.
+almanac.hallows_eve.source.bomb_epic = Wird selten von Geodengespenstern fallen gelassen oder steckt in Verfluchten Geoden und im Vorrat der Geweihten. Du kannst sie auch aus Spektralen Laternenbomben und einer Verfluchten Geode schnitzen oder am Stand des Alten Jack ein paar am Tag kaufen.
+almanac.hallows_eve.source.trick_or_treat = Wird verteilt, wenn du Süßes oder Saures sagst.
+almanac.hallows_eve.source.workbench = Wird an einer Werkbank gebaut, zu jeder Jahreszeit.
+almanac.hallows_eve.source.carved = Wird an einer Schnitzbank geschnitzt oder am Stand des Alten Jack gekauft.
+almanac.hallows_eve.source.jack_shield = Wird aus Geweihten Kürbissen und einem Holzschild an einer Schnitzbank geschnitzt oder am Stand des Alten Jack gekauft.
+almanac.hallows_eve.source.burning_helm = Wird am Stand des Alten Jack verkauft, sobald die Geweihten dich respektieren oder der Alte Jack dir voll vertraut.
+almanac.hallows_eve.source.flaming_shield = Wird am Stand des Alten Jack verkauft, sobald die Geweihten dich in höchsten Ehren halten.
+almanac.hallows_eve.source.stall = Wird am Stand des Alten Jack verkauft.
+almanac.hallows_eve.source.stall_favor = Wird am Stand des Alten Jack verkauft, wenn dein Ansehen bei ihm und den Geweihten wächst.
+almanac.hallows_eve.source.festival_stall = Wird im Festivalregal am Stand des Alten Jack verkauft.
+almanac.hallows_eve.source.keepsake = Das Andenken des Alten Jack, einmal im Jahr geschenkt, wenn du seine Geschichte abschließt.
+almanac.hallows_eve.source.festival_favor = Wird an den Festivalständen an alle verkauft, die viel Festivalgunst haben.

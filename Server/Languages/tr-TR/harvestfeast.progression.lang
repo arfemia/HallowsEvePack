@@ -102,6 +102,20 @@ almanac.harvest_feast.crops_picked = Elle toplanan ürünler
 almanac.harvest_feast.feasts = Katılınan şölenler
 almanac.harvest_feast.errands = Martha için yapılan ayak işleri
 
+# ---- The Almanac page's items: where each comes from ----
+almanac.harvest_feast.source.bake_pumpkin = Martha'nın verdiği tarifle yemek tezgahında pişirilir.
+almanac.harvest_feast.source.errands = Martha'nın ayak işlerinden arada bir çıkan bir ikram.
+almanac.harvest_feast.source.feast = Yılda bir kez Şölen'in kendisinde sunulur.
+almanac.harvest_feast.source.popcorn = Martha'nın hikâyesinden, panosundan ve ortak yemekten gelir ya da tezgahından satın alınır.
+almanac.harvest_feast.source.bread = Günlük ortak yemekte paylaşılır, Martha'nın hikâyesinin de parçasıdır.
+almanac.harvest_feast.source.story = Martha hikâyesi sırasında sana verir.
+almanac.harvest_feast.source.stall = Martha'nın tezgahında satılır.
+almanac.harvest_feast.source.stall_favor = Martha nezdindeki itibarın yükseldikçe Martha'nın tezgahında satılır.
+almanac.harvest_feast.source.seeds = Şölen'den ve Martha'nın ayak işlerinden gelir ya da tezgahından satın alınır.
+almanac.harvest_feast.source.keepsake = Şölen'in hatırası, Şölen sofrasına oturduğunda yılda bir kez verilir.
+almanac.harvest_feast.source.winter = Şölen sürerken Martha'nın tezgahındaki şenlik rafında satılır.
+almanac.harvest_feast.source.festival_favor = Şenlik Teveccühü yüksek olanlara şenlik tezgahlarında satılır.
+
 # ---- Martha's conversation ----
 dialogue.harvest_feast_host.off_season.text = Bu yılın şöleni bitti, sofra da kaldırıldı.\nTarlalar toplanınca yine gel.
 dialogue.harvest_feast_host.meet_arrival.text = O kadar yolu aç karnına yürümüşsün, belli.\nBen Martha. Tarlalar toplanınca kim gelirse onun için yemek pişiririm, önce de ekmek gelir. Seni <b>buğday</b> ile başlatalım.

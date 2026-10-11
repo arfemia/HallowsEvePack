@@ -197,3 +197,17 @@ dialogue.harvest_feast_shepherd.sheep.text = Mia sorella. Dice che non le dispia
 dialogue.harvest_feast_shepherd.opt.sheep = Chi guarda le tue pecore?
 dialogue.harvest_feast_shepherd.opt.back = Se l'è meritato.
 dialogue.harvest_feast_shepherd.opt.farewell = Goditi la festa.
+
+# ---- The Almanac page's items: where each comes from ----
+almanac.harvest_feast.source.bake_pumpkin = Cuocila a un banco da cucina con la ricetta che ti dà Martha.
+almanac.harvest_feast.source.errands = Un premio ogni tanto per le commissioni di Martha.
+almanac.harvest_feast.source.feast = Servito alla Festa stessa, una volta all'anno.
+almanac.harvest_feast.source.popcorn = Dalla storia di Martha, dalla sua bacheca e dal pasto condiviso, o si compra alla sua bancarella.
+almanac.harvest_feast.source.bread = Si condivide al pasto di ogni giorno, e fa parte della storia di Martha.
+almanac.harvest_feast.source.story = Te lo dà Martha durante la sua storia.
+almanac.harvest_feast.source.stall = In vendita alla bancarella di Martha.
+almanac.harvest_feast.source.stall_favor = In vendita alla bancarella di Martha man mano che cresce la tua stima presso di lei.
+almanac.harvest_feast.source.seeds = Dalla Festa e dalle commissioni di Martha, o si comprano alla sua bancarella.
+almanac.harvest_feast.source.keepsake = Il ricordo della Festa, che ricevi una volta all'anno quando ti siedi a tavola.
+almanac.harvest_feast.source.winter = In vendita sullo scaffale delle feste della bancarella di Martha mentre dura la festa.
+almanac.harvest_feast.source.festival_favor = In vendita alle bancarelle delle feste a chi ha un alto Favore delle Feste.

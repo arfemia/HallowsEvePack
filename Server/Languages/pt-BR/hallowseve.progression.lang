@@ -203,3 +203,21 @@ notify.hallows_eve_hallowed_cache = Um agrado dos Consagrados, por manter os mor
 dialogue.hallows_eve_old_jack.opt.standing = Em que pé estamos?
 
 achievement.category.seasons.hallows_eve = Noite das Bruxas
+
+# ---- The Almanac page's items: where each comes from ----
+almanac.hallows_eve.source.pumpkin = Aparece de vez em quando ao colher abóboras com as mãos, e os Esqueletos de Jack deixam cair algumas.
+almanac.hallows_eve.source.geode = Aparece na pedra e no minério que você quebra, e as Assombrações de Geodo deixam cair alguns.
+almanac.hallows_eve.source.ectoplasm = As Almas Perdidas deixam cair, e também vem dentro dos Geodos Amaldiçoados.
+almanac.hallows_eve.source.bombs = As criaturas da noite deixam cair, vêm dentro dos Geodos Amaldiçoados, são entalhadas numa Bancada de Entalhe ou compradas na banca do Velho Jack.
+almanac.hallows_eve.source.bomb_epic = As Assombrações de Geodo raramente deixam cair, e vêm dentro dos Geodos Amaldiçoados e do agrado dos Consagrados. Você também pode entalhar uma com Bombas-Lanterna Espectrais e um Geodo Amaldiçoado, ou comprar algumas por dia na banca do Velho Jack.
+almanac.hallows_eve.source.trick_or_treat = Dado a quem pede doces ou travessuras.
+almanac.hallows_eve.source.workbench = Feito numa Bancada de Trabalho, em qualquer época do ano.
+almanac.hallows_eve.source.carved = Entalhado numa Bancada de Entalhe, ou comprado na banca do Velho Jack.
+almanac.hallows_eve.source.jack_shield = Entalhado com Abóboras Consagradas e um escudo de madeira numa Bancada de Entalhe, ou comprado na banca do Velho Jack.
+almanac.hallows_eve.source.burning_helm = Vendido na banca do Velho Jack quando os Consagrados reverenciam você ou o Velho Jack confia totalmente em você.
+almanac.hallows_eve.source.flaming_shield = Vendido na banca do Velho Jack quando os Consagrados têm você na mais alta conta.
+almanac.hallows_eve.source.stall = Vendido na banca do Velho Jack.
+almanac.hallows_eve.source.stall_favor = Vendido na banca do Velho Jack conforme sua posição com ele e com os Consagrados cresce.
+almanac.hallows_eve.source.festival_stall = Vendido na Prateleira do Festival da banca do Velho Jack.
+almanac.hallows_eve.source.keepsake = Lembrança do Velho Jack, dada uma vez por ano quando você termina a história dele.
+almanac.hallows_eve.source.festival_favor = Vendido nas barracas do festival a quem tem muito Favor do Festival.

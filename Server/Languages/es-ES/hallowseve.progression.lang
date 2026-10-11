@@ -203,3 +203,21 @@ notify.hallows_eve_hallowed_cache = Un alijo de los Consagrados, por mantener a 
 dialogue.hallows_eve_old_jack.opt.standing = ¿Cómo estamos tú y yo?
 
 achievement.category.seasons.hallows_eve = Noche de Ánimas
+
+# ---- The Almanac page's items: where each comes from ----
+almanac.hallows_eve.source.pumpkin = De vez en cuando sale al recoger calabazas a mano, y la sueltan los Esqueletos Jack.
+almanac.hallows_eve.source.geode = Sale al picar roca y mineral, y la sueltan los Espectros de Geoda.
+almanac.hallows_eve.source.ectoplasm = Lo sueltan las Almas Perdidas, y aparece dentro de las Geodas Malditas.
+almanac.hallows_eve.source.bombs = Las sueltan las criaturas de la noche, aparecen dentro de las Geodas Malditas, se tallan en un Banco de Tallado o se compran en el puesto del Viejo Jack.
+almanac.hallows_eve.source.bomb_epic = Rara vez la sueltan los Espectros de Geoda, o aparece en las Geodas Malditas y en el alijo de los Consagrados. También puedes tallar una con Bombas Farol Espectrales y una Geoda Maldita, o comprar un par al día en el puesto del Viejo Jack.
+almanac.hallows_eve.source.trick_or_treat = Te la dan cuando pides truco o trato.
+almanac.hallows_eve.source.workbench = Se fabrica en un Banco de trabajo, en cualquier época del año.
+almanac.hallows_eve.source.carved = Se talla en un Banco de Tallado o se compra en el puesto del Viejo Jack.
+almanac.hallows_eve.source.jack_shield = Se talla con Calabazas Consagradas y un escudo de madera en un Banco de Tallado, o se compra en el puesto del Viejo Jack.
+almanac.hallows_eve.source.burning_helm = Se vende en el puesto del Viejo Jack cuando los Consagrados te veneran o el Viejo Jack confía del todo en ti.
+almanac.hallows_eve.source.flaming_shield = Se vende en el puesto del Viejo Jack cuando los Consagrados te tienen en la más alta estima.
+almanac.hallows_eve.source.stall = Se vende en el puesto del Viejo Jack.
+almanac.hallows_eve.source.stall_favor = Se vende en el puesto del Viejo Jack a medida que crece tu favor con él y con los Consagrados.
+almanac.hallows_eve.source.festival_stall = Se vende en el estante del festival del puesto del Viejo Jack.
+almanac.hallows_eve.source.keepsake = Recuerdo del Viejo Jack, que te da una vez al año cuando terminas su historia.
+almanac.hallows_eve.source.festival_favor = Se vende en los puestos del festival a quienes tienen mucho Favor del Festival.

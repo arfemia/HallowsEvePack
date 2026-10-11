@@ -202,3 +202,21 @@ reputation.hallows_eve_hallowed.earn.gear = Tarts a kezedben egy Jack-pajzsot. A
 notify.hallows_eve_hallowed_cache = Egy csomag a Megszenteltektől, amiért lent tartod a holtakat.
 dialogue.hallows_eve_old_jack.opt.standing = Hogy állunk mi ketten?
 achievement.category.seasons.hallows_eve = Mindenszentek Éje
+
+# ---- The Almanac page's items: where each comes from ----
+almanac.hallows_eve.source.pumpkin = Hébe-hóba akad, amikor kézzel szedsz tököt, és a Jack-csontvázak is ejtik.
+almanac.hallows_eve.source.geode = A kibányászott kőben és ércben akad, és a Geodalidércek ejtik.
+almanac.hallows_eve.source.ectoplasm = Az Elveszett Lelkek ejtik, és Átkozott Geodákban található.
+almanac.hallows_eve.source.bombs = Az éjszaka lényei ejtik, Átkozott Geodákban található, Faragópadon faragható, vagy megvehető Öreg Jack standján.
+almanac.hallows_eve.source.bomb_epic = A Geodalidércek ritkán ejtik, és Átkozott Geodákban meg a Megszenteltek csomagjában is akad. Faraghatsz is egyet Kísérteties Lámpásbombákból és egy Átkozott Geodából, vagy vehetsz naponta párat Öreg Jack standján.
+almanac.hallows_eve.source.trick_or_treat = Akkor kapod, amikor csokit vagy csalunk-ot mondasz.
+almanac.hallows_eve.source.workbench = Munkapadon készül, az év bármely szakában.
+almanac.hallows_eve.source.carved = Faragópadon faragható, vagy megvehető Öreg Jack standján.
+almanac.hallows_eve.source.jack_shield = Megszentelt Tökből és egy fapajzsból faragható Faragópadon, vagy megvehető Öreg Jack standján.
+almanac.hallows_eve.source.burning_helm = Öreg Jack standján kapható, amint a Megszenteltek nagyra becsülnek, vagy Öreg Jack teljesen megbízik benned.
+almanac.hallows_eve.source.flaming_shield = Öreg Jack standján kapható, amint a Megszenteltek a legnagyobb becsben tartanak.
+almanac.hallows_eve.source.stall = Öreg Jack standján kapható.
+almanac.hallows_eve.source.stall_favor = Öreg Jack standján kapható, ahogy nő a becsülésed nála és a Megszenteltek előtt.
+almanac.hallows_eve.source.festival_stall = A fesztiválpolcon kapható Öreg Jack standján.
+almanac.hallows_eve.source.keepsake = Öreg Jack emléktárgya, évente egyszer kapod, amikor végigviszed a történetét.
+almanac.hallows_eve.source.festival_favor = A fesztiválstandokon kapható azoknak, akiknek magas a Fesztiválkegyük.

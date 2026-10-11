@@ -205,3 +205,21 @@ shop.hallows_eve_offer_pumpkin_cute.title = Citrouille d'Halloween mignonne
 almanac.hallows_eve.skeletons_knocked_down = Squelettes Jack abattus
 almanac.hallows_eve.wraiths_put_down = Spectres de Géode terrassés
 achievement.category.seasons.hallows_eve = Veille de la Toussaint
+
+# ---- The Almanac page's items: where each comes from ----
+almanac.hallows_eve.source.pumpkin = Se trouve de temps en temps quand vous cueillez des citrouilles à la main, et lâchée par les Squelettes Jack.
+almanac.hallows_eve.source.geode = Se trouve dans la pierre et le minerai que vous minez, et lâchée par les Spectres de Géode.
+almanac.hallows_eve.source.ectoplasm = Lâché par les Âmes Perdues, et trouvé dans les Géodes Maudites.
+almanac.hallows_eve.source.bombs = Lâchées par les créatures de la nuit, trouvées dans les Géodes Maudites, sculptées à un Établi de Sculpture ou achetées à l'étal du Vieux Jack.
+almanac.hallows_eve.source.bomb_epic = Rarement lâchée par les Spectres de Géode, ou trouvée dans les Géodes Maudites et la réserve des Sanctifiés. Vous pouvez aussi en sculpter une avec des bombes Spectrales et une Géode Maudite, ou en acheter quelques-unes par jour à l'étal du Vieux Jack.
+almanac.hallows_eve.source.trick_or_treat = Donnés quand vous réclamez des bonbons ou un sort.
+almanac.hallows_eve.source.workbench = Fabriqué à un Établi, en toute saison.
+almanac.hallows_eve.source.carved = Sculpté à un Établi de Sculpture, ou acheté à l'étal du Vieux Jack.
+almanac.hallows_eve.source.jack_shield = Sculpté avec des Citrouilles Sanctifiées et un bouclier en bois à un Établi de Sculpture, ou acheté à l'étal du Vieux Jack.
+almanac.hallows_eve.source.burning_helm = Vendu à l'étal du Vieux Jack quand les Sanctifiés vous révèrent ou que le Vieux Jack vous fait entièrement confiance.
+almanac.hallows_eve.source.flaming_shield = Vendu à l'étal du Vieux Jack quand les Sanctifiés vous tiennent en la plus haute estime.
+almanac.hallows_eve.source.stall = Vendu à l'étal du Vieux Jack.
+almanac.hallows_eve.source.stall_favor = Vendu à l'étal du Vieux Jack à mesure que grandit votre réputation auprès de lui et des Sanctifiés.
+almanac.hallows_eve.source.festival_stall = Vendu sur l'étagère du festival de l'étal du Vieux Jack.
+almanac.hallows_eve.source.keepsake = Souvenir du Vieux Jack, offert une fois par an quand vous terminez son histoire.
+almanac.hallows_eve.source.festival_favor = Vendu aux étals du festival à ceux qui ont beaucoup de Faveur du festival.

@@ -197,3 +197,17 @@ dialogue.harvest_feast_shepherd.sheep.text = A nővérem. Azt mondja, nem bánja
 dialogue.harvest_feast_shepherd.opt.sheep = Ki vigyáz a birkáidra?
 dialogue.harvest_feast_shepherd.opt.back = Megérdemelte.
 dialogue.harvest_feast_shepherd.opt.farewell = Élvezd a lakomát.
+
+# ---- The Almanac page's items: where each comes from ----
+almanac.harvest_feast.source.bake_pumpkin = Süsd meg egy főzőpadon azzal a recepttel, amit Martha ad.
+almanac.harvest_feast.source.errands = Hébe-hóba jutalom Martha megbízásaiért.
+almanac.harvest_feast.source.feast = Magán a Lakomán szolgálják fel, évente egyszer.
+almanac.harvest_feast.source.popcorn = Martha történetéből, a tábláról és a közös asztalról, vagy megvehető a standján.
+almanac.harvest_feast.source.bread = A napi közös étkezésnél osztják, és része Martha történetének.
+almanac.harvest_feast.source.story = Martha adja neked a története során.
+almanac.harvest_feast.source.stall = Martha standján kapható.
+almanac.harvest_feast.source.stall_favor = Martha standján kapható, ahogy nő a becsülésed nála.
+almanac.harvest_feast.source.seeds = A Lakomáról és Martha megbízásaiból, vagy megvehető a standján.
+almanac.harvest_feast.source.keepsake = A Lakoma emléktárgya, évente egyszer kapod, amikor asztalhoz ülsz a Lakomán.
+almanac.harvest_feast.source.winter = A fesztiválpolcon kapható Martha standján, amíg a lakoma tart.
+almanac.harvest_feast.source.festival_favor = A fesztiválstandokon kapható azoknak, akiknek magas a Fesztiválkegyük.

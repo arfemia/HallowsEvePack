@@ -197,3 +197,17 @@ dialogue.harvest_feast_shepherd.sheep.text = Ma sœur. Elle dit que ça ne la d�
 dialogue.harvest_feast_shepherd.opt.sheep = Qui garde tes moutons ?
 dialogue.harvest_feast_shepherd.opt.back = Elle l'a mérité.
 dialogue.harvest_feast_shepherd.opt.farewell = Profite de la fête.
+
+# ---- The Almanac page's items: where each comes from ----
+almanac.harvest_feast.source.bake_pumpkin = À cuire à un poste de cuisine, avec la recette que Martha vous donne.
+almanac.harvest_feast.source.errands = Une gourmandise de temps en temps, grâce aux commissions de Martha.
+almanac.harvest_feast.source.feast = Servie à la Fête elle-même, une fois par an.
+almanac.harvest_feast.source.popcorn = Vient de l'histoire de Martha, de son tableau et du repas partagé, ou s'achète à son étal.
+almanac.harvest_feast.source.bread = Partagé au repas du jour, et fait partie de l'histoire de Martha.
+almanac.harvest_feast.source.story = Martha vous le donne pendant son histoire.
+almanac.harvest_feast.source.stall = Vendu à l'étal de Martha.
+almanac.harvest_feast.source.stall_favor = Vendu à l'étal de Martha à mesure que grandit votre réputation auprès d'elle.
+almanac.harvest_feast.source.seeds = Vient de la Fête et des commissions de Martha, ou s'achète à son étal.
+almanac.harvest_feast.source.keepsake = Souvenir de la Fête, offert une fois par an quand vous vous attablez à la Fête.
+almanac.harvest_feast.source.winter = Vendu sur l'étagère du festival de l'étal de Martha pendant la fête.
+almanac.harvest_feast.source.festival_favor = Vendu aux étals du festival à ceux qui ont beaucoup de Faveur du festival.

@@ -197,3 +197,17 @@ dialogue.harvest_feast_shepherd.sheep.text = Моя сестра. Говорит
 dialogue.harvest_feast_shepherd.opt.sheep = Кто присматривает за твоими овцами?
 dialogue.harvest_feast_shepherd.opt.back = Она заслужила.
 dialogue.harvest_feast_shepherd.opt.farewell = Хорошего пира.
+
+# ---- The Almanac page's items: where each comes from ----
+almanac.harvest_feast.source.bake_pumpkin = Пеките на Кухонной плите по рецепту, который даёт Марта.
+almanac.harvest_feast.source.errands = Угощение, которое время от времени достаётся за поручения Марты.
+almanac.harvest_feast.source.feast = Подаётся на самом пиру, раз в год.
+almanac.harvest_feast.source.popcorn = Из истории Марты, с её доски и общего стола, или покупается на её прилавке.
+almanac.harvest_feast.source.bread = Раздаётся за ежедневным общим столом и входит в историю Марты.
+almanac.harvest_feast.source.story = Марта даёт его вам по ходу своей истории.
+almanac.harvest_feast.source.stall = Продаётся на прилавке Марты.
+almanac.harvest_feast.source.stall_favor = Продаётся на прилавке Марты по мере того, как растёт ваше расположение у неё.
+almanac.harvest_feast.source.seeds = С пира и за поручения Марты, или покупаются на её прилавке.
+almanac.harvest_feast.source.keepsake = Памятный подарок пира, раз в год, когда вы садитесь за стол.
+almanac.harvest_feast.source.winter = Продаётся на праздничной полке прилавка Марты, пока идёт пир.
+almanac.harvest_feast.source.festival_favor = Продаётся на праздничных прилавках тем, у кого высокое расположение праздников.
