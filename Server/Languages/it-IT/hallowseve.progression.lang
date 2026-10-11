@@ -46,6 +46,7 @@ objective.hallows_eve.attend = Partecipa alla Vigilia di Ognissanti
 
 # ---- La bacheca del Vecchio Jack ----
 board.hallows_eve_daily.title = Bacheca del Vecchio Jack
+board.hallows_eve_daily.desc = Lavoro per il buio e lavoro per la luce del giorno. I miei habitué ricevono qualcosa in più. Ritira la paga prima che io sbaracchi. Se non mi trovi, quello che hai guadagnato ti aspetta comunque nel tuo Libro degli obiettivi.
 quest.hallows_eve_board_souls.title = Retata di Anime
 quest.hallows_eve_board_souls.flavor = Stanotte le anime sono fitte attorno al tempio. Liberane un bel po' prima del mattino.
 quest.hallows_eve_board_ghouls.title = Falciata di Ghoul
@@ -65,6 +66,7 @@ shop.hallows_eve_old_jack.category.lights = Lanterne
 shop.hallows_eve_old_jack.category.gear = Equipaggiamento
 shop.hallows_eve_offer_harvest_moon_bundle.title = Pacchetto della Luna del Raccolto
 shop.hallows_eve_offer_harvest_moon_bundle.desc = Bombe Lanterna Frantumanti e Spettrali, in vendita solo finché la Luna del Raccolto è alta.
+shop.hallows_eve_offer_spyglass.desc = Guardaci dentro nelle Cavità Tremolanti per individuare dove si trova una bestia Divorata dal Vuoto.
 
 # ---- Obiettivi ----
 achievement.hallows_eve_lantern_keepsake.title = Lanterna Cava {0}
@@ -82,8 +84,6 @@ achievement.hallows_eve_jacks_guest.title = Ospite di Jack {0}
 achievement.hallows_eve_jacks_guest.desc = Partecipa alla Vigilia di Ognissanti.
 achievement.hallows_eve_the_hallowed.title = Il Consacrato {0}
 achievement.hallows_eve_the_hallowed.desc = Ottieni tutti gli obiettivi della Vigilia di Ognissanti di quest'anno.
-achievement.seasons_of_orbis.title = Stagioni di Orbis
-achievement.seasons_of_orbis.desc = Ottieni l'obiettivo che corona ogni stagione.
 
 # ---- Il titolo del Consacrato ----
 title.hallows_eve_hallowed.name = Il Consacrato
@@ -191,7 +191,9 @@ reputation.hallows_eve_old_jack.earn.talk = Passa a scambiare due parole una vol
 reputation.hallows_eve_old_jack.earn.gear = Indossa un Elmo di Jack. Finché ce l'hai in testa, aumenta il suo favore.
 reputation.hallows_eve_hallowed.name = I Consacrati
 reputation.hallows_eve_hallowed.flavor = I Consacrati tengono i morti al loro posto. Abbatti ciò che di notte risale dalle tombe e loro se ne accorgono.
-factor.hallows_eve_hallowed.revered = il rango di Riverito presso i Consacrati
+factor.hallows_eve_hallowed.friendly = il rango di Amichevole presso i Consacrati
+factor.hallows_eve_hallowed.honored = il rango di Onorato presso i Consacrati
+factor.hallows_eve_hallowed.revered =il rango di Riverito presso i Consacrati
 factor.hallows_eve_hallowed.exalted = il rango di Osannato presso i Consacrati
 reputation.hallows_eve_hallowed.earn.kills = Abbatti le creature che di notte strisciano fuori.
 reputation.hallows_eve_hallowed.earn.jack = Contano anche i lavori giornalieri del Vecchio Jack e i contratti della sua bacheca.

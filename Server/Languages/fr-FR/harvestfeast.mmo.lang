@@ -1,0 +1,21 @@
+
+# Harvest Feast with MMO Skill Tree: the words for the skill jobs on the feast board, the board's skill
+# band and the feast's Harvesting boost. Nothing reads them on a server without MMO Skill Tree.
+# Keys are written bare: MMO Skill Tree and the library find each one by its tail, whatever this file is
+# called. A skill job takes its words from the keys its id spells (quest.<id>.title and .flavor).
+
+# ---- The feast board's skill band ----
+board.harvest_feast_daily.grade.skill = Travail de compétence
+
+# ---- The skill jobs ----
+quest.mmo_harvest_feast_daily_harvesting.title = Champs pleins
+quest.mmo_harvest_feast_daily_harvesting.flavor = Il y a plus dans les champs que deux mains n'en peuvent rentrer. Passe la journée à cueillir, et prends de la vitesse.
+quest.mmo_harvest_feast_daily_crafting.title = Établis occupés
+quest.mmo_harvest_feast_daily_crafting.flavor = Les établis ne refroidissent pas de la semaine. Passe la journée à fabriquer des choses ; n'importe quel établi fera l'affaire.
+quest.mmo_harvest_feast_daily_archery.title = Exercice du chasseur
+quest.mmo_harvest_feast_daily_archery.flavor = Les dindes s'effraient au moindre pas. Apprends à les abattre de loin, et le rôti te remerciera.
+quest.mmo_harvest_feast_daily_woodcutting.title = Bois pour les fours
+quest.mmo_harvest_feast_daily_woodcutting.flavor = Les fours mangent du bois toute la semaine. Abats quelques arbres et entretiens les feux.
+
+# ---- The feast's boost ----
+boostrule.mmo_harvest_feast_harvesting.title = Fête des Moissons

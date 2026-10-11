@@ -46,6 +46,7 @@ objective.hallows_eve.attend = Participa en la Noche de Ánimas
 
 # ---- El tablón del Viejo Jack ----
 board.hallows_eve_daily.title = Tablón del Viejo Jack
+board.hallows_eve_daily.desc = Trabajo para la oscuridad y trabajo para la luz del día. A mis habituales les toca algo más. Cobra antes de que recoja. Si no me pillas, lo que hayas ganado te espera en tu Libro de Misiones.
 quest.hallows_eve_board_souls.title = Barrida de Almas
 quest.hallows_eve_board_souls.flavor = Esta noche hay almas a montones alrededor del templo. Libera a un buen puñado antes de que amanezca.
 quest.hallows_eve_board_ghouls.title = Batida de Gules
@@ -65,6 +66,7 @@ shop.hallows_eve_old_jack.category.lights = Faroles
 shop.hallows_eve_old_jack.category.gear = Equipo
 shop.hallows_eve_offer_harvest_moon_bundle.title = Lote de la Luna de la Cosecha
 shop.hallows_eve_offer_harvest_moon_bundle.desc = Bombas Farol Fragmentadoras y Espectrales, a la venta solo mientras la Luna de la Cosecha está en lo alto.
+shop.hallows_eve_offer_spyglass.desc = Mira por él en las Hondonadas Mortecinas para localizar a una bestia Tomada por el Vacío.
 
 # ---- Logros ----
 achievement.hallows_eve_lantern_keepsake.title = Farol de Ánimas {0}
@@ -82,8 +84,6 @@ achievement.hallows_eve_jacks_guest.title = Invitado de Jack {0}
 achievement.hallows_eve_jacks_guest.desc = Participa en la Noche de Ánimas.
 achievement.hallows_eve_the_hallowed.title = El Consagrado {0}
 achievement.hallows_eve_the_hallowed.desc = Consigue todos los logros de la Noche de Ánimas de este año.
-achievement.seasons_of_orbis.title = Temporadas de Orbis
-achievement.seasons_of_orbis.desc = Consigue el logro cumbre de cada temporada.
 
 # ---- El título Consagrado ----
 title.hallows_eve_hallowed.name = El Consagrado
@@ -191,6 +191,8 @@ reputation.hallows_eve_old_jack.earn.talk = Pásate a cruzar unas palabras con �
 reputation.hallows_eve_old_jack.earn.gear = Ponte un Yelmo de Jack. Suma a su favor mientras lo lleves puesto.
 reputation.hallows_eve_hallowed.name = Los Consagrados
 reputation.hallows_eve_hallowed.flavor = Los Consagrados mantienen a los muertos donde deben estar. Abate lo que sale de las tumbas por la noche y ellos toman nota.
+factor.hallows_eve_hallowed.friendly = el rango Amistoso con los Consagrados
+factor.hallows_eve_hallowed.honored = el rango Honorable con los Consagrados
 factor.hallows_eve_hallowed.revered = el rango Reverenciado con los Consagrados
 factor.hallows_eve_hallowed.exalted = el rango Exaltado con los Consagrados
 reputation.hallows_eve_hallowed.earn.kills = Abate a las criaturas que salen a rastras por la noche.

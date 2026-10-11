@@ -1,0 +1,199 @@
+# Harvest Feast progression: Martha's intro quest, her questline, the yearly feast and the dailies, the
+# feast board and the feast stall, her conversation, the season's achievements and titles, her
+# reputation and the Almanac page, the shared meal and the invitation tour, and the feast's villagers.
+# Keys are written bare: the library finds each one by its tail, whatever this file is called. A quest,
+# a contract or an achievement takes its words from the keys its id spells (quest.<id>.title and
+# .flavor, achievement.<id>.title and .desc), so no content file names those. Numbers ride {0} and
+# come from the content files, so a retune never touches a translation.
+
+# ---- Martha's reputation ----
+reputation.harvest_feast_host.name = Расположение на пиру
+reputation.harvest_feast_host.flavor = Марта помнит, кто пришёл помочь, а кто пришёл только поесть.
+reputation.harvest_feast_host.rank.neutral = Новичок
+reputation.harvest_feast_host.rank.friendly = Сосед
+reputation.harvest_feast_host.rank.honored = Знакомое лицо
+reputation.harvest_feast_host.rank.revered = Семья
+reputation.harvest_feast_host.rank.exalted = Во главе стола
+
+# ---- The feast board ----
+board.harvest_feast_daily.title = Доска пира
+board.harvest_feast_daily.desc = Работа в поле и работа на кухне, каждое утро новая. Чем больше помогаешь, тем больше я выкладываю для тебя. Забирай плату, пока стол не убрали. Опоздаешь, и заработанное всё равно дождётся тебя в Книге квестов.
+board.harvest_feast_daily.grade.field = Работа в поле
+board.harvest_feast_daily.grade.kitchen = Работа на кухне
+quest.harvest_feast_board_turkeys.title = Охота на индюков
+quest.harvest_feast_board_turkeys.flavor = На этой неделе лес полон индюков. Подстрели побольше, если поймаешь: они бегут так, будто знают, что будет на ужин.
+quest.harvest_feast_board_wheat.title = Сбор пшеницы
+quest.harvest_feast_board_wheat.flavor = Дикая пшеница никого не ждёт. Собери её раньше, чем ударят заморозки.
+quest.harvest_feast_board_pies.title = Пироги к столу
+quest.harvest_feast_board_pies.flavor = Каждому за столом нужен кусок. Испеки пару тыквенных пирогов и неси, пока тёплые.
+quest.harvest_feast_board_roast.title = Костровая яма
+quest.harvest_feast_board_roast.flavor = Приготовь гору мяса на открытом огне. Один запах приведёт людей к столу.
+
+# ---- The feast stall ----
+shop.harvest_feast_host.title = Прилавок пира
+shop.harvest_feast_host.desc = Рецепты из моей книги, попкорн мешками и кое-что для дома.
+shop.harvest_feast_host.category.kitchen = Кухня
+shop.harvest_feast_host.category.decor = Украшения
+shop.harvest_feast_offer_recipe_apple_pie.title = Рецепт: яблочный пирог
+shop.harvest_feast_offer_recipe_apple_pie.desc = Прочти один раз, и яблочные пироги будут тебе по силам навсегда.
+shop.harvest_feast_offer_recipe_meat_pie.title = Рецепт: мясной пирог
+shop.harvest_feast_offer_recipe_meat_pie.desc = Собственный мясной пирог Марты, записанный для друзей стола.
+shop.harvest_feast_offer_recipe_caesar_salad.title = Рецепт: салат «Цезарь»
+shop.harvest_feast_offer_recipe_caesar_salad.desc = Салат «Цезарь» от Марты, записанный для семьи.
+
+# ---- Martha's intro quest ----
+quest.harvest_feast_martha_meet.title = Ужин в Храме
+quest.harvest_feast_martha_meet.flavor = Поля убраны, и я снова готовлю в Забытом Храме. Туда ведут любые Врата Забытого Храма. Приходи, найди меня, и приходи голодным.
+objective.harvest_feast.meet_martha = Найдите Марту-повариху в Забытом Храме
+
+# ---- Martha's questline and the yearly feast ----
+quest.harvest_feast_host_1.title = Пшеница для печей
+quest.harvest_feast_host_1.flavor = Сначала хлеб, так всегда. Дикая пшеница в эту пору растёт густо, так что принеси мне хорошую охапку для печей.
+quest.harvest_feast_host_2.title = Охота на индюков
+quest.harvest_feast_host_2.flavor = Дикие индюки в этом месяце жирные и шумные, и не такие глупые, как кажутся. Подстрели парочку: без жаркого стол не стол.
+quest.harvest_feast_host_3.title = Первый пирог
+quest.harvest_feast_host_3.flavor = Теперь твоя очередь у плиты. Выучи рецепт, испеки тыквенный пирог на Кухонной плите и принеси мне.
+quest.harvest_feast_the_feast.title = Длинный стол
+quest.harvest_feast_the_feast.flavor = Раз в год мы выставляем всё на стол и едим, пока не встанем с трудом. Принеси пирог, жаркое и корзину моркови, и накроем вместе.
+
+# ---- Martha's dailies ----
+quest.harvest_feast_daily_turkeys.title = Индюков сюда
+quest.harvest_feast_daily_turkeys.flavor = Вчерашнее жаркое съели до последней косточки. Принеси ещё индюков, и я поставлю новое.
+quest.harvest_feast_daily_wheat.title = Хлеб на утро
+quest.harvest_feast_daily_wheat.flavor = Каждый мой каравай сегодня уже разобрали. Принеси ещё пшеницы, иначе утром хлеба не будет.
+quest.harvest_feast_daily_roast.title = Жаркое к столу
+quest.harvest_feast_daily_roast.flavor = Прожарь мясо на огне и неси сюда. Его съедают раньше, чем оно доходит до стола.
+
+# ---- Steps worded for this season ----
+objective.harvest_feast.attend = Примите участие в Празднике урожая
+
+# ---- Achievements ----
+achievement.category.seasons.harvest_feast = Праздник урожая
+achievement.harvest_feast_guest.title = Место за столом {0}
+achievement.harvest_feast_guest.desc = Примите участие в Празднике урожая.
+achievement.harvest_feast_turkey_chaser.title = Охотник на индюков {0}
+achievement.harvest_feast_turkey_chaser.desc = Подстрелите диких индюков: {0}.
+achievement.harvest_feast_full_baskets.title = Полные корзины {0}
+achievement.harvest_feast_full_baskets.desc = Соберите вручную урожай: {0}.
+achievement.harvest_feast_keepsake.title = Пиршественная тарелка {0}
+achievement.harvest_feast_keepsake.desc = Сядьте за пир за длинным столом.
+keepsake.harvest_feast_plate.name = Пиршественная тарелка {0} года
+achievement.harvest_feast_full_table.title = Полный стол {0}
+achievement.harvest_feast_full_table.desc = Получите все достижения Праздника урожая этого года.
+
+# ---- The Full Table title ----
+title.harvest_feast_full_table.name = Полный стол
+title.harvest_feast_full_table.flavor = Получены все достижения Праздника урожая одного года.
+title.harvest_feast_full_table.display = {0} из Полного стола
+
+# ---- Head of the Table: the achievement and its title, for Martha's top rank ----
+achievement.harvest_feast_head_of_the_table.title = Во главе стола
+achievement.harvest_feast_head_of_the_table.desc = Станьте во главе стола у Марты.
+objective.harvest_feast.head_of_the_table = Станьте во главе стола у Марты
+title.harvest_feast_head_of_the_table.name = Во главе стола
+title.harvest_feast_head_of_the_table.flavor = Стал во главе стола у Марты.
+title.harvest_feast_head_of_the_table.display = {0}, во главе стола
+
+# ---- The Almanac page ----
+almanac.harvest_feast.title = Праздник урожая
+almanac.harvest_feast.flavor = Каждый год, когда поля убраны, в Забытом Храме накрывают длинный стол, и едят все.
+almanac.harvest_feast.turkeys_brought_down = Подстрелено диких индюков
+almanac.harvest_feast.crops_picked = Урожая собрано вручную
+almanac.harvest_feast.feasts = Пиров, на которых посидели
+almanac.harvest_feast.errands = Поручений для Марты выполнено
+
+# ---- Martha's conversation ----
+dialogue.harvest_feast_host.off_season.text = Пир в этом году закончился, и стол убран.\nПриходи, когда поля будут убраны.
+dialogue.harvest_feast_host.meet_arrival.text = Ты шёл сюда так далеко на голодный желудок, я же вижу.\nЯ Марта. Когда поля убраны, я готовлю для всех, кто придёт, и хлеб всегда первым делом. Начнём с <b>пшеницы</b>.
+dialogue.harvest_feast_host.meet_arrival.opt.hail = Рад встрече, Марта.
+dialogue.harvest_feast_host.first_words.text = Осторожно со столом, он длиннее, чем кажется.\nКаждый год, когда поля убраны, я накрываю его здесь, в <color is="#ffd97a">Забытом Храме</color>, и кормлю всех, кто придёт. До пира готовить и готовить. Ты, похоже, мешок муки унесёшь.
+dialogue.harvest_feast_host.first_words.opt.hail = Рад помочь.
+dialogue.harvest_feast_host.board_fresh.text = Доска готова. В поле или на кухне, делать надо всё, и за всё платят.
+dialogue.harvest_feast_host.board_fresh.opt.board = Покажи доску.
+dialogue.harvest_feast_host.board_fresh.opt.later = Потом.
+dialogue.harvest_feast_host.board_fresh_friendly.text = Вытри сапоги. Я оставила тебе стул.\nНа доске есть лишняя работа, как раз для тебя.
+dialogue.harvest_feast_host.board_fresh_honored.text = А, хорошо, это ты. Выбирай с доски, пока другие не разобрали.
+dialogue.harvest_feast_host.board_fresh_revered.text = Садись. Сначала поешь, на тебе лица нет от голода.\nДоска подождёт.
+dialogue.harvest_feast_host.menu.text = Осторожно, котёл. Чем могу помочь?
+dialogue.harvest_feast_host.wheat_offer.text = Сначала хлеб. Так всегда.\nДикая <b>пшеница</b> в эту пору растёт густо на открытых полях. Собери мне хорошую охапку для печей.
+dialogue.harvest_feast_host.wheat_offer.opt.accept = Принесу пшеницы.
+dialogue.harvest_feast_host.wheat_brief.text = <b>Пшеница</b> растёт дикой на открытых полях. Собирай вручную и неси сюда.
+dialogue.harvest_feast_host.wheat_ready.text = Славная охапка. К утру мука будет готова.\nТеперь для пира нужно жаркое. Возвращайся, когда будешь готов к охоте.
+dialogue.harvest_feast_host.wheat_ready.opt.turnin = Вот пшеница.
+dialogue.harvest_feast_host.turkeys_offer.text = В этом месяце в лесу бродят <b>дикие индюки</b>, жирные, шумные и не такие глупые, как кажутся.\nПодстрели парочку. Без жаркого стол не стол.
+dialogue.harvest_feast_host.turkeys_offer.opt.accept = Пойду на охоту.
+dialogue.harvest_feast_host.turkeys_ready.text = От тебя пахнет лесом. Хорошо, значит, всё удалось.\nВот рецепт для следующего дела. И стой смирно: раз уж ты всю неделю гоняешься за индюками, пусть и выглядишь как они.
+dialogue.harvest_feast_host.turkeys_ready.opt.turnin = Вернулся с охоты.
+dialogue.harvest_feast_host.pie_offer.text = Теперь твоя очередь у плиты. Выучи рецепт и испеки <b>тыквенный пирог</b> на <b>Кухонной плите</b>.\nТесто, тыква, щепотка специй и горячая печь. Принеси его мне.
+dialogue.harvest_feast_host.pie_offer.opt.accept = Испеку тебе пирог.
+dialogue.harvest_feast_host.pie_brief.text = Выучи рецепт и испеки <b>тыквенный пирог</b> на <b>Кухонной плите</b>. Понадобятся тесто, тыква и немного специй.
+dialogue.harvest_feast_host.pie_ready.text = Понюхай. Это пирог, в который вложили душу.\nТы сделал свою долю и больше. Иди садись, пора есть.
+dialogue.harvest_feast_host.pie_ready.opt.turnin = Вот пирог.
+dialogue.harvest_feast_host.feast_offer.text = Раз в год мы выставляем всё на стол и едим, пока не встанем с трудом.\nПринеси мне <b>тыквенный пирог</b>, немного <b>жареного мяса</b> и корзину <b>моркови</b>, и накроем вместе.
+dialogue.harvest_feast_host.feast_offer.opt.accept = Накроем на стол.
+dialogue.harvest_feast_host.feast_brief.text = <b>Тыквенный пирог</b>, <b>жареное мясо</b> с огня и <b>морковь</b> с полей. Потом едим.
+dialogue.harvest_feast_host.feast_ready.text = Пирог, жаркое и морковь. Вот это пир.\nСадись, ешь и возьми эту тарелку домой. На ней год, так что не забудешь.
+dialogue.harvest_feast_host.feast_ready.opt.turnin = Вот всё.
+dialogue.harvest_feast_host.feast_done.text = Всё ещё сыт? Я тоже. Стол стоит накрытым, пока пир не кончится.\nЧем могу помочь?
+dialogue.harvest_feast_host.daily_turkeys_offer.text = Вчерашнее жаркое съели до последней косточки. Принеси ещё <b>диких индюков</b>, и я поставлю новое.
+dialogue.harvest_feast_host.daily_turkeys_offer.opt.accept = Пойду на охоту.
+dialogue.harvest_feast_host.daily_wheat_offer.text = Каждый мой каравай сегодня уже разобрали. Нужна ещё <b>пшеница</b>, иначе утром хлеба не будет.
+dialogue.harvest_feast_host.daily_wheat_offer.opt.accept = Принесу пшеницы.
+dialogue.harvest_feast_host.daily_roast_offer.text = Прожарь <b>мясо</b> на огне и неси сюда. Его съедают раньше, чем оно доходит до стола.
+dialogue.harvest_feast_host.daily_roast_offer.opt.accept = Принесу жаркое.
+dialogue.harvest_feast_host.active_generic.text = Ну иди. Я оставлю тебе тёплую тарелку.
+dialogue.harvest_feast_host.ready_generic.text = Покажи, что ты принёс.
+dialogue.harvest_feast_host.ready_generic.opt.turnin = Готово.
+dialogue.harvest_feast_host.who_are_you.text = Никто важный. Я готовлю.\nКогда поля убраны, я прихожу сюда, накрываю длинный стол и кормлю всех, кто придёт. В иные годы это дюжина человек. В иные - все на много миль вокруг.
+dialogue.harvest_feast_host.about_feast.text = Это в основном благодарность. Поля дали нам вдоволь, и меньшее, что мы можем, - съесть это вместе.\nПринёс что-то, забрал что-то домой. Вот и все правила.
+dialogue.harvest_feast_host.opt.returned = Я вернулся.
+dialogue.harvest_feast_host.opt.quests = Что нужно сделать?
+dialogue.harvest_feast_host.opt.board = Что на доске?
+dialogue.harvest_feast_host.opt.shop = Покажи свой прилавок.
+dialogue.harvest_feast_host.opt.standing = Как мы с тобой ладим?
+dialogue.harvest_feast_host.opt.almanac = Покажи Альманах.
+dialogue.harvest_feast_host.opt.who = Кто ты?
+dialogue.harvest_feast_host.opt.feast = Зачем этот пир?
+dialogue.harvest_feast_host.opt.back = Другое.
+dialogue.harvest_feast_host.opt.farewell = До встречи за столом.
+
+# ---- The shared meal and the invitation tour ----
+quest.harvest_feast_shared_meal.title = Общий стол
+quest.harvest_feast_shared_meal.flavor = За моим столом никто не ест в одиночку. Запеки овощ на огне, неси сюда и посиди немного.
+quest.harvest_feast_invitations.title = Список гостей
+quest.harvest_feast_invitations.flavor = Длинный стол наполовину пустой никуда не годится. Пригласи на пир нескольких человек, а потом скажи мне, кто придёт.
+objective.harvest_feast.invite = Пригласите на пир людей: {0}
+dialogue.harvest_feast_host.meal_offer.text = За моим столом никто не ест в одиночку.\nЗапеки <b>овощ</b> на огне и неси сюда, поделимся. Приходи хоть каждый день. Для тебя всегда найдётся стул.
+dialogue.harvest_feast_host.meal_offer.opt.accept = Принесу что-нибудь.
+dialogue.harvest_feast_host.meal_brief.text = Подойдёт любой <b>овощ</b>. Запеки его на огне и неси к столу.
+dialogue.harvest_feast_host.meal_ready.text = Садись, садись. Давай сюда и бери немного моего.\nВот. Теперь ты сегодня поел как следует.
+dialogue.harvest_feast_host.meal_ready.opt.turnin = Давай поделимся.
+dialogue.harvest_feast_host.invitations_offer.text = Длинный стол наполовину пустой никуда не годится.\nРасскажи людям о пире, любому, кто остановится поговорить. <b>Пригласи нескольких человек</b>, а потом вернись и скажи мне, кто придёт.
+dialogue.harvest_feast_host.invitations_offer.opt.accept = Разнесу весть.
+dialogue.harvest_feast_host.invitations_brief.text = Поговори с людьми, с любым, кроме меня, и <b>пригласи их на пир</b>. Начни с тех, кто у храма: они работали всю неделю, и их ещё никто не звал. Возвращайся, когда позовёшь нескольких.
+dialogue.harvest_feast_host.invitations_ready.text = Столько? Придётся печь ещё хлеба.\nСпасибо. Полный стол - вот в чём всё дело.
+dialogue.harvest_feast_host.invitations_ready.opt.turnin = Они придут.
+dialogue.harvest_feast_invitation.opt.invite = Приходи поесть с нами за столом Марты.
+
+# ---- The feast's villagers: Tomas the Miller, Elsie the Weaver and Bram the Shepherd ----
+dialogue.harvest_feast_miller.off_season.text = Пир убран, и мука тоже.\nЯ вернусь с новой, когда в следующем году уберут поля.
+dialogue.harvest_feast_miller.off_season.opt.farewell = Тогда до следующего года.
+dialogue.harvest_feast_miller.greeting.text = Не стой так близко, мука липнет ко всему.\nЯ всю неделю таскал мешки с мельницы, чтобы печи не остывали. Мне бы тоже местечко за длинным столом, когда пир начнётся.
+dialogue.harvest_feast_miller.mill.text = Внизу у реки, как всегда. Колесо вертится, есть я там или нет.\nВ эту пору каждый мешок, что оно мелет, идёт на пир.
+dialogue.harvest_feast_miller.opt.mill = Где твоя мельница?
+dialogue.harvest_feast_miller.opt.back = Понятно.
+dialogue.harvest_feast_miller.opt.farewell = Не буду отвлекать.
+dialogue.harvest_feast_weaver.off_season.text = Пир закончился, скатерти сложены.\nЗаходи, когда поля снова будут убраны. К тому времени у меня будут новые.
+dialogue.harvest_feast_weaver.off_season.opt.farewell = Буду ждать.
+dialogue.harvest_feast_weaver.greeting.text = Я с рассвета за станком. Приятно хоть раз постоять в другом месте.\nЯ ткала скатерти для длинного стола. Было бы славно хоть раз сесть на пиру и поесть с одной из них.
+dialogue.harvest_feast_weaver.cloth.text = Дорожка на середину стола, цвета пшеницы с оранжевой каймой.\nКто-нибудь вечно проливает на неё подливу, так что каждый год я тку новую.
+dialogue.harvest_feast_weaver.opt.cloth = Что ты сейчас ткёшь?
+dialogue.harvest_feast_weaver.opt.back = Прекрасная работа.
+dialogue.harvest_feast_weaver.opt.farewell = Не буду задерживать.
+dialogue.harvest_feast_shepherd.off_season.text = Пир кончился. Я иду обратно на холм, пока овцы не разбрелись дальше.
+dialogue.harvest_feast_shepherd.off_season.opt.farewell = Доброй дороги домой.
+dialogue.harvest_feast_shepherd.greeting.text = Спустился с холмов с шерстью для ткачихи. Овцы пару дней проживут и сами.\nНа самом деле нет. Но пир я пропустить не мог.
+dialogue.harvest_feast_shepherd.sheep.text = Моя сестра. Говорит, что не против.\nЗначит, я несу ей целый пирог.
+dialogue.harvest_feast_shepherd.opt.sheep = Кто присматривает за твоими овцами?
+dialogue.harvest_feast_shepherd.opt.back = Она заслужила.
+dialogue.harvest_feast_shepherd.opt.farewell = Хорошего пира.

@@ -1,0 +1,19 @@
+# Harvest Feast - the calendar's words (what the feast is called, and its banners) and the notice for
+# a find. Keys are written bare: the library finds each one by its tail, whatever this file is called.
+# Banners and notices print markup as text, so none of these values carries any.
+
+# ---- Harvest Feast ----
+calendar.harvest_feast.name = Fête des Moissons
+calendar.harvest_feast.flavor = Les champs sont rentrés, et une longue table se dresse dans le Temple Oublié.
+calendar.harvest_feast.herald.start = Fête des Moissons
+calendar.harvest_feast.herald.start.sub = Martha la Cuisinière dresse la table dans le Temple Oublié.
+calendar.harvest_feast.herald.end = La Fête des Moissons est finie
+calendar.harvest_feast.herald.end.sub = La table est rangée jusqu'à l'an prochain.
+
+# ---- Finds ----
+notify.harvest_feast_spice_found = Une pincée d'épices, glissée avec la citrouille.
+
+# ---- Costumes ----
+# A costume's buff-bar tile name. Its effect's Name is this key in full
+# (harvestfeast.world.effect...), because the client reads an effect's Name exactly as written.
+effect.harvest_feast_costume_turkey.name = Costume de dinde

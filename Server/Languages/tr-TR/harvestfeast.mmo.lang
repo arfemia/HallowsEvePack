@@ -1,0 +1,21 @@
+
+# Harvest Feast with MMO Skill Tree: the words for the skill jobs on the feast board, the board's skill
+# band and the feast's Harvesting boost. Nothing reads them on a server without MMO Skill Tree.
+# Keys are written bare: MMO Skill Tree and the library find each one by its tail, whatever this file is
+# called. A skill job takes its words from the keys its id spells (quest.<id>.title and .flavor).
+
+# ---- The feast board's skill band ----
+board.harvest_feast_daily.grade.skill = Yetenek İşleri
+
+# ---- The skill jobs ----
+quest.mmo_harvest_feast_daily_harvesting.title = Dolu Tarlalar
+quest.mmo_harvest_feast_daily_harvesting.flavor = Tarlalarda bir çift elin toplayabileceğinden fazlası var. Bugünü toplamakla geçir, bu işte hızlan.
+quest.mmo_harvest_feast_daily_crafting.title = Işlek Tezgahlar
+quest.mmo_harvest_feast_daily_crafting.flavor = Tezgahlar bu hafta hiç soğumuyor. Bugünü bir şeyler yapmakla geçir; hangi tezgah olsa olur.
+quest.mmo_harvest_feast_daily_archery.title = Avcının Talimi
+quest.mmo_harvest_feast_daily_archery.flavor = Hindiler ayak sesinde ürker. Onları uzaktan indirmeyi öğren, kızartma sana müteşekkir olur.
+quest.mmo_harvest_feast_daily_woodcutting.title = Fırın Odunu
+quest.mmo_harvest_feast_daily_woodcutting.flavor = Fırınlar bütün hafta odun yer. Birkaç ağaç devir, ateşler sönmesin.
+
+# ---- The feast's boost ----
+boostrule.mmo_harvest_feast_harvesting.title = Hasat Şöleni

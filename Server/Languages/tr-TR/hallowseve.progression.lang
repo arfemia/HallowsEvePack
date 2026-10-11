@@ -46,6 +46,7 @@ objective.hallows_eve.attend = Cadılar Bayramı'na katıl
 
 # ---- Yaşlı Jack'in panosu ----
 board.hallows_eve_daily.title = Yaşlı Jack'in Panosu
+board.hallows_eve_daily.desc = Karanlık için çalış, gün ışığı için çalış. Müdavimlerim biraz daha fazla alır. Toparlanmadan önce ücretini al. Beni kaçırırsan, kazandıkların yine Görev Kitabında bekler.
 quest.hallows_eve_board_souls.title = Ruh Taraması
 quest.hallows_eve_board_souls.flavor = Bu gece tapınağın çevresi ruh kaynıyor. Sabah olmadan epeycesini serbest bırak.
 quest.hallows_eve_board_ghouls.title = Gulyabani Temizliği
@@ -65,6 +66,7 @@ shop.hallows_eve_old_jack.category.lights = Fenerler
 shop.hallows_eve_old_jack.category.gear = Teçhizat
 shop.hallows_eve_offer_harvest_moon_bundle.title = Hasat Ayı Paketi
 shop.hallows_eve_offer_harvest_moon_bundle.desc = Parçalayıcı ve Hayalet Fener Bombaları, yalnızca Hasat Ayı gökteyken satılır.
+shop.hallows_eve_offer_spyglass.desc = Bir Boşluk yaratığının yerini bulmak için Sönük Oyuklar'da bununla bak.
 
 # ---- Başarımlar ----
 achievement.hallows_eve_lantern_keepsake.title = Oyuk Fener {0}
@@ -82,8 +84,6 @@ achievement.hallows_eve_jacks_guest.title = Jack'in Misafiri {0}
 achievement.hallows_eve_jacks_guest.desc = Cadılar Bayramı'na katıl.
 achievement.hallows_eve_the_hallowed.title = Kutsanmış {0}
 achievement.hallows_eve_the_hallowed.desc = Bu yılın tüm Cadılar Bayramı başarımlarını kazan.
-achievement.seasons_of_orbis.title = Orbis Sezonları
-achievement.seasons_of_orbis.desc = Her sezonun zirve başarımını kazan.
 
 # ---- Kutsanmış unvanı ----
 title.hallows_eve_hallowed.name = Kutsanmış
@@ -191,6 +191,8 @@ reputation.hallows_eve_old_jack.earn.talk = Günde bir kez uğrayıp iki laf et.
 reputation.hallows_eve_old_jack.earn.gear = Bir Jack Miğferi tak. Başında olduğu sürece teveccühünü artırır.
 reputation.hallows_eve_hallowed.name = Kutsanmışlar
 reputation.hallows_eve_hallowed.flavor = Kutsanmışlar ölüleri ait oldukları yerde tutar. Geceleri mezarlardan tırmanıp çıkanları yere ser, onlar da fark eder.
+factor.hallows_eve_hallowed.friendly = Kutsanmışlar nezdinde Dostane rütbesi
+factor.hallows_eve_hallowed.honored = Kutsanmışlar nezdinde Saygın rütbesi
 factor.hallows_eve_hallowed.revered = Kutsanmışlar nezdinde Muhterem rütbesi
 factor.hallows_eve_hallowed.exalted = Kutsanmışlar nezdinde Yüce rütbesi
 reputation.hallows_eve_hallowed.earn.kills = Geceleri sürünüp çıkan yaratıkları yere ser.

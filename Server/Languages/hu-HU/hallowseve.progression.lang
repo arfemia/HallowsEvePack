@@ -46,6 +46,7 @@ objective.hallows_eve.attend = Vegyél részt Mindenszentek Éjén
 
 # ---- Öreg Jack táblája ----
 board.hallows_eve_daily.title = Öreg Jack Táblája
+board.hallows_eve_daily.desc = Munka a sötétnek, munka a nappalnak. A törzsvendégeim kicsit többet kapnak. Vedd fel a béredet, mielőtt összepakolok. Ha lekésel, amit megkerestél, még vár a Küldetésnaplódban.
 quest.hallows_eve_board_souls.title = Lélektakarítás
 quest.hallows_eve_board_souls.flavor = Ma éjjel sűrűn állnak a lelkek a templom körül. Szabadíts fel jó sokat közülük, mielőtt megvirrad.
 quest.hallows_eve_board_ghouls.title = Ghúlgyérítés
@@ -65,6 +66,7 @@ shop.hallows_eve_old_jack.category.lights = Lámpások
 shop.hallows_eve_old_jack.category.gear = Felszerelés
 shop.hallows_eve_offer_harvest_moon_bundle.title = Aratási Hold-csomag
 shop.hallows_eve_offer_harvest_moon_bundle.desc = Szilánkszóró és Kísérteties Lámpásbombák, csak addig kaphatók, amíg fent van az Aratási Hold.
+shop.hallows_eve_offer_spyglass.desc = Nézz át rajta a Pislákoló Üregekben, hogy megtudd, hol van egy Ürességmegszállta fenevad.
 
 # ---- Teljesítmények ----
 achievement.hallows_eve_lantern_keepsake.title = Vájt Lámpás {0}
@@ -82,8 +84,6 @@ achievement.hallows_eve_jacks_guest.title = Jack Vendége {0}
 achievement.hallows_eve_jacks_guest.desc = Vegyél részt Mindenszentek Éjén.
 achievement.hallows_eve_the_hallowed.title = A Megszentelt {0}
 achievement.hallows_eve_the_hallowed.desc = Szerezd meg az idei Mindenszentek Éje összes teljesítményét.
-achievement.seasons_of_orbis.title = Orbis Szezonjai
-achievement.seasons_of_orbis.desc = Szerezd meg minden szezon koronázó teljesítményét.
 
 # ---- A Megszentelt cím ----
 title.hallows_eve_hallowed.name = A Megszentelt
@@ -191,7 +191,9 @@ reputation.hallows_eve_old_jack.earn.talk = Naponta egyszer állj meg nála egy 
 reputation.hallows_eve_old_jack.earn.gear = Viselj Jack-sisakot. Amíg rajtad van, növeli a kegyét.
 reputation.hallows_eve_hallowed.name = A Megszenteltek
 reputation.hallows_eve_hallowed.flavor = A Megszenteltek ott tartják a holtakat, ahová valók. Teríts le, ami éjjel kimászik a sírokból, és felfigyelnek rád.
-factor.hallows_eve_hallowed.revered = Nagyra becsült rang a Megszentelteknél
+factor.hallows_eve_hallowed.friendly = Barátságos rang a Megszentelteknél
+factor.hallows_eve_hallowed.honored = Tisztelt rang a Megszentelteknél
+factor.hallows_eve_hallowed.revered =Nagyra becsült rang a Megszentelteknél
 factor.hallows_eve_hallowed.exalted = Magasztalt rang a Megszentelteknél
 reputation.hallows_eve_hallowed.earn.kills = Teríts le a lényeket, amelyek éjjel előmásznak.
 reputation.hallows_eve_hallowed.earn.jack = Öreg Jack napi feladatai és táblás megbízásai is beleszámítanak.

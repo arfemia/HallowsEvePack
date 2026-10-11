@@ -1,0 +1,70 @@
+# Seasons of Orbis across the seasons: Festival Favor, the festival token, the Seasons of Orbis
+# ladder and the festival shelf every season's host carries; and Hytale's Anniversary, a one-day event.
+# Keys are written bare: the library finds each one by its tail, whatever this file is called.
+# Numbers ride {0} and come from the content files, so a retune never touches a translation.
+
+# ---- Festival Favor ----
+reputation.seasons_of_orbis_festival.name = Festivalgunst
+reputation.seasons_of_orbis_festival.flavor = Jede Saison hat einen Gastgeber, und die Gastgeber reden miteinander. Erscheine zu ihren Festen, und sie erinnern sich beim nächsten Mal an dich.
+reputation.seasons_of_orbis_festival.rank.festival_tier_1 = Ehrfürchtig II
+reputation.seasons_of_orbis_festival.rank.festival_tier_2 = Ehrfürchtig III
+reputation.seasons_of_orbis_festival.rank.festival_tier_3 = Ehrfürchtig IV
+
+# ---- The festival token ----
+currency.seasons_of_orbis_festival_token.name = Festivalmarke
+
+# ---- The festival shelf ----
+shop.seasons_of_orbis_festival_stall.title = Festivalstand
+shop.seasons_of_orbis_festival_stall.desc = Dekorationen vom Fest jeder Saison, gegen Festivalmarken.
+shop.seasons_of_orbis_festival_stall.category.festival = Festivalregal
+# Not used by the pack itself: the words for a server owner's Almanac link that opens the stall all year.
+almanac.seasons_of_orbis.link.festival_stall = Besuche den Festivalstand
+
+# ---- The Seasons of Orbis ladder ----
+achievement.seasons_of_orbis_rung_1.title = Von Saison zu Saison
+achievement.seasons_of_orbis_rung_2.title = Rund ums Jahr
+achievement.seasons_of_orbis_rung.desc = Erhalte die Andenken von {0} verschiedenen Saisons.
+achievement.seasons_of_orbis.title = Saisons von Orbis
+achievement.seasons_of_orbis.desc = Erhalte das Andenken jeder Saison, die dieser Server hat (mindestens {0}).
+
+# ---- The ladder's title ----
+title.seasons_of_orbis_every_season.name = Freund der Saisons
+title.seasons_of_orbis_every_season.flavor = Hat das Andenken jeder Saison erhalten.
+title.seasons_of_orbis_every_season.display = {0}, Freund der Saisons
+
+# ---- Guest of Honor: the achievement and its title, for Festival Favor's Exalted IV ----
+# The header of its own corner of the Seasons achievements, beside the ladder.
+achievement.category.seasons.festival_favor = Festivalgunst
+achievement.seasons_of_orbis_guest_of_honor.title = Ehrengast
+achievement.seasons_of_orbis_guest_of_honor.desc = Erreiche Ehrfürchtig IV bei der Festivalgunst.
+objective.seasons_of_orbis.guest_of_honor = Erreiche Ehrfürchtig IV bei der Festivalgunst
+title.seasons_of_orbis_guest_of_honor.name = Ehrengast
+title.seasons_of_orbis_guest_of_honor.flavor = Hat Ehrfürchtig IV bei der Festivalgunst erreicht.
+title.seasons_of_orbis_guest_of_honor.display = {0}, Ehrengast
+
+# ---- Hytale's Anniversary: one day a year, with a banner, an Almanac page, that year's achievement and its title ----
+calendar.hytale_anniversary.name = Hytale-Jubiläum
+calendar.hytale_anniversary.flavor = Der Tag, an dem Hytale erschien. Wer jedes Jahr an diesem Tag hier ist, erhält den Jubiläumserfolg dieses Jahres.
+calendar.hytale_anniversary.herald.start = Alles Gute zum Jubiläum, Hytale
+calendar.hytale_anniversary.herald.start.sub = Hytale ist an diesem Tag erschienen. Wer heute hier ist, erhält den Jubiläumserfolg dieses Jahres.
+almanac.hytale_anniversary.title = Hytale-Jubiläum
+almanac.hytale_anniversary.flavor = Hytale ist an diesem Tag erschienen, und die ersten Abenteurer kamen nach Orbis. Sei am Tag selbst auf dem Server, dann erhältst du den Jubiläumserfolg dieses Jahres. Zünde eine Kerze an, teile etwas Brot und sag allen Hallo, die gerade da sind.
+achievement.category.seasons.hytale_anniversary = Hytale-Jubiläum
+achievement.hytale_anniversary.title = Hytale-Jubiläum {0}
+achievement.hytale_anniversary.desc = Sei zum Jubiläum von Hytale dabei.
+objective.hytale_anniversary.attend = Sei zum Jubiläum von Hytale dabei
+# Each year's own name, by the year it runs. A year with no line here is named by the title above, with its year.
+achievement.hytale_anniversary_2027.title = Erstes Hytale-Jubiläum
+achievement.hytale_anniversary_2028.title = Zweites Hytale-Jubiläum
+achievement.hytale_anniversary_2029.title = Drittes Hytale-Jubiläum
+achievement.hytale_anniversary_2030.title = Viertes Hytale-Jubiläum
+achievement.hytale_anniversary_2031.title = Fünftes Hytale-Jubiläum
+achievement.hytale_anniversary_2032.title = Sechstes Hytale-Jubiläum
+achievement.hytale_anniversary_2033.title = Siebtes Hytale-Jubiläum
+achievement.hytale_anniversary_2034.title = Achtes Hytale-Jubiläum
+achievement.hytale_anniversary_2035.title = Neuntes Hytale-Jubiläum
+achievement.hytale_anniversary_2036.title = Zehntes Hytale-Jubiläum
+# The title every year's copy pays: the same one each year.
+title.hytale_anniversary_ever_present.name = Der Allgegenwärtige
+title.hytale_anniversary_ever_present.flavor = War zum Jubiläum von Hytale dabei.
+title.hytale_anniversary_ever_present.display = {0} der Allgegenwärtige

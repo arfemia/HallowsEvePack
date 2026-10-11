@@ -46,6 +46,7 @@ objective.hallows_eve.attend = Participe da Noite das Bruxas
 
 # ---- O quadro do Velho Jack ----
 board.hallows_eve_daily.title = Quadro do Velho Jack
+board.hallows_eve_daily.desc = Trabalho para a escuridão e trabalho para a luz do dia. Meus fregueses levam um pouco mais. Pegue o seu pagamento antes que eu feche. Se me perder, o que você ganhou continua esperando no seu Livro de Objetivos.
 quest.hallows_eve_board_souls.title = Varredura de Almas
 quest.hallows_eve_board_souls.flavor = Tem alma de monte em volta do templo esta noite. Liberta um bom tanto delas antes de amanhecer.
 quest.hallows_eve_board_ghouls.title = Abate de Carniçais
@@ -65,6 +66,7 @@ shop.hallows_eve_old_jack.category.lights = Lanternas
 shop.hallows_eve_old_jack.category.gear = Equipamento
 shop.hallows_eve_offer_harvest_moon_bundle.title = Pacote da Lua da Colheita
 shop.hallows_eve_offer_harvest_moon_bundle.desc = Bombas-Lanterna Estilhaçadoras e Espectrais, vendidas só enquanto a Lua da Colheita está no céu.
+shop.hallows_eve_offer_spyglass.desc = Observe através dela nas Grotas Gotejantes para localizar uma besta tomada pelo Vazio.
 
 # ---- Conquistas ----
 achievement.hallows_eve_lantern_keepsake.title = Lanterna Oca {0}
@@ -82,8 +84,6 @@ achievement.hallows_eve_jacks_guest.title = Convidado de Jack {0}
 achievement.hallows_eve_jacks_guest.desc = Participe da Noite das Bruxas.
 achievement.hallows_eve_the_hallowed.title = O Consagrado {0}
 achievement.hallows_eve_the_hallowed.desc = Obtenha todas as conquistas da Noite das Bruxas deste ano.
-achievement.seasons_of_orbis.title = Temporadas de Orbis
-achievement.seasons_of_orbis.desc = Obtenha a conquista que coroa cada temporada.
 
 # ---- O título Consagrado ----
 title.hallows_eve_hallowed.name = O Consagrado
@@ -191,6 +191,8 @@ reputation.hallows_eve_old_jack.earn.talk = Dê uma passada para um dedo de pros
 reputation.hallows_eve_old_jack.earn.gear = Use um Elmo de Jack. Ele soma ao favor do Jack enquanto estiver na sua cabeça.
 reputation.hallows_eve_hallowed.name = Os Consagrados
 reputation.hallows_eve_hallowed.flavor = Os Consagrados mantêm os mortos onde é o lugar deles. Derrube o que sai das covas à noite e eles reparam.
+factor.hallows_eve_hallowed.friendly = nível Amistoso com os Consagrados
+factor.hallows_eve_hallowed.honored = nível Honrado com os Consagrados
 factor.hallows_eve_hallowed.revered = nível Reverenciado com os Consagrados
 factor.hallows_eve_hallowed.exalted = nível Exaltado com os Consagrados
 reputation.hallows_eve_hallowed.earn.kills = Abata as criaturas que saem rastejando à noite.

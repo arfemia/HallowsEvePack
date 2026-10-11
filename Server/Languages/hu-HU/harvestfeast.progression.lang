@@ -1,0 +1,199 @@
+# Harvest Feast progression: Martha's intro quest, her questline, the yearly feast and the dailies, the
+# feast board and the feast stall, her conversation, the season's achievements and titles, her
+# reputation and the Almanac page, the shared meal and the invitation tour, and the feast's villagers.
+# Keys are written bare: the library finds each one by its tail, whatever this file is called. A quest,
+# a contract or an achievement takes its words from the keys its id spells (quest.<id>.title and
+# .flavor, achievement.<id>.title and .desc), so no content file names those. Numbers ride {0} and
+# come from the content files, so a retune never touches a translation.
+
+# ---- Martha's reputation ----
+reputation.harvest_feast_host.name = Lakomai Kegy
+reputation.harvest_feast_host.flavor = Martha emlékszik, ki jött segíteni, és ki jött csak enni.
+reputation.harvest_feast_host.rank.neutral = Újonc
+reputation.harvest_feast_host.rank.friendly = Szomszéd
+reputation.harvest_feast_host.rank.honored = Ismerős Arc
+reputation.harvest_feast_host.rank.revered = Család
+reputation.harvest_feast_host.rank.exalted = Asztalfő
+
+# ---- The feast board ----
+board.harvest_feast_daily.title = A Lakoma Táblája
+board.harvest_feast_daily.desc = Mezei munkák és konyhai munkák, minden reggel frissen. Minél többet segítesz, annál többet rakok ki neked. Vedd fel a béredet, mielőtt az asztalt elpakolják. Ha elkésel, amit megkerestél, még vár a Küldetésnaplódban.
+board.harvest_feast_daily.grade.field = Mezei munka
+board.harvest_feast_daily.grade.kitchen = Konyhai munka
+quest.harvest_feast_board_turkeys.title = Pulykahajsza
+quest.harvest_feast_board_turkeys.flavor = Ezen a héten tele az erdő pulykával. Teríts le jó párat, ha utolérheted őket; úgy futnak, mintha tudnák, mi lesz vacsorára.
+quest.harvest_feast_board_wheat.title = Búzaaratás
+quest.harvest_feast_board_wheat.flavor = A vadbúza nem vár senkire. Szedd le, mielőtt a dér megteszi.
+quest.harvest_feast_board_pies.title = Pitét az Asztalra
+quest.harvest_feast_board_pies.flavor = Az asztalnál minden ülés egy szeletet kíván. Süss pár tökpitét, és hozd át, amíg meleg.
+quest.harvest_feast_board_roast.title = Tűzrakás
+quest.harvest_feast_board_roast.flavor = Süss egy halom húst nyílt tűzön. Az illata egymaga az asztalhoz hozza az embereket.
+
+# ---- The feast stall ----
+shop.harvest_feast_host.title = A Lakoma Standja
+shop.harvest_feast_host.desc = Receptek a saját könyvemből, pattogatott kukorica zacskószám, meg pár dolog a házhoz.
+shop.harvest_feast_host.category.kitchen = Konyha
+shop.harvest_feast_host.category.decor = Dekorációk
+shop.harvest_feast_offer_recipe_apple_pie.title = Almás Pite Recept
+shop.harvest_feast_offer_recipe_apple_pie.desc = Olvasd el egyszer, és örökre süthetsz almás pitét.
+shop.harvest_feast_offer_recipe_meat_pie.title = Húspite Recept
+shop.harvest_feast_offer_recipe_meat_pie.desc = Martha saját húspitéje, leírva az asztal barátainak.
+shop.harvest_feast_offer_recipe_caesar_salad.title = Caesar Saláta Recept
+shop.harvest_feast_offer_recipe_caesar_salad.desc = Martha Caesar salátája, leírva a családnak.
+
+# ---- Martha's intro quest ----
+quest.harvest_feast_martha_meet.title = Vacsora a Templomban
+quest.harvest_feast_martha_meet.flavor = A termés a fedél alatt, úgyhogy megint a Feledett Templomban főzök. Bármelyik Feledett Templom-kapu elvisz oda. Gyere, keress meg, és éhesen gyere.
+objective.harvest_feast.meet_martha = Találd meg Marthát, a Szakácsot a Feledett Templomban
+
+# ---- Martha's questline and the yearly feast ----
+quest.harvest_feast_host_1.title = Búza a Sütőknek
+quest.harvest_feast_host_1.flavor = Előbb a kenyér, mindig az. A vadbúza ilyenkor sűrűn terem, hozz hát egy jó karnyit a sütőknek.
+quest.harvest_feast_host_2.title = A Pulykavadászat
+quest.harvest_feast_host_2.flavor = A vadpulykák ebben a hónapban kövérek és hangosak, és nem olyan buták, mint amilyennek látszanak. Teríts le párat; asztal sült nélkül semmit sem ér.
+quest.harvest_feast_host_3.title = Az Első Pite
+quest.harvest_feast_host_3.flavor = Te jössz a tűzhelynél. Tanuld meg a receptet, süss egy tökpitét egy Szakács Tűzhelyen, és hozd el nekem.
+quest.harvest_feast_the_feast.title = A Hosszú Asztal
+quest.harvest_feast_the_feast.flavor = Évente egyszer mindent az asztalra teszünk, és addig eszünk, amíg senki sem bír felállni. Hozz egy pitét, némi sültet és egy kosár sárgarépát, és együtt terítünk meg.
+
+# ---- Martha's dailies ----
+quest.harvest_feast_daily_turkeys.title = Pulykafutam
+quest.harvest_feast_daily_turkeys.flavor = A tegnapi sültből az utolsó csontig semmi sem maradt. Hozz még pár pulykát, és kezdek egy újat.
+quest.harvest_feast_daily_wheat.title = Kenyér Reggelre
+quest.harvest_feast_daily_wheat.flavor = Minden ma sütött cipóm elfogyott. Hozz még búzát, különben nincs kenyér reggelre.
+quest.harvest_feast_daily_roast.title = Sült az Asztalra
+quest.harvest_feast_daily_roast.flavor = Süss húst tűzön, és hozd ide. Az emberek mindig megeszik, mielőtt az asztalra kerülne.
+
+# ---- Steps worded for this season ----
+objective.harvest_feast.attend = Légy itt az Aratási Lakomán
+
+# ---- Achievements ----
+achievement.category.seasons.harvest_feast = Aratási Lakoma
+achievement.harvest_feast_guest.title = Egy Hely az Asztalnál {0}
+achievement.harvest_feast_guest.desc = Légy itt az Aratási Lakomán.
+achievement.harvest_feast_turkey_chaser.title = Pulykahajtó {0}
+achievement.harvest_feast_turkey_chaser.desc = Teríts le {0} Vadpulykát.
+achievement.harvest_feast_full_baskets.title = Teli Kosarak {0}
+achievement.harvest_feast_full_baskets.desc = Szedj le {0} termést kézzel.
+achievement.harvest_feast_keepsake.title = Lakomatányér {0}
+achievement.harvest_feast_keepsake.desc = Ülj le a lakomára a hosszú asztalhoz.
+keepsake.harvest_feast_plate.name = {0}. évi Lakomatányér
+achievement.harvest_feast_full_table.title = A Teli Asztal {0}
+achievement.harvest_feast_full_table.desc = Szerezd meg az idei Aratási Lakoma összes teljesítményét.
+
+# ---- The Full Table title ----
+title.harvest_feast_full_table.name = A Teli Asztal
+title.harvest_feast_full_table.flavor = Egy év Aratási Lakomájának minden teljesítménye megszerezve.
+title.harvest_feast_full_table.display = {0}, a Teli Asztal
+
+# ---- Head of the Table: the achievement and its title, for Martha's top rank ----
+achievement.harvest_feast_head_of_the_table.title = Asztalfő
+achievement.harvest_feast_head_of_the_table.desc = Légy Asztalfő Marthánál.
+objective.harvest_feast.head_of_the_table = Légy Asztalfő Marthánál
+title.harvest_feast_head_of_the_table.name = Asztalfő
+title.harvest_feast_head_of_the_table.flavor = Asztalfő lett Marthánál.
+title.harvest_feast_head_of_the_table.display = {0}, Asztalfő
+
+# ---- The Almanac page ----
+almanac.harvest_feast.title = Aratási Lakoma
+almanac.harvest_feast.flavor = Minden évben, amikor a termés a fedél alatt van, egy hosszú asztalt állítanak a Feledett Templomban, és mindenki eszik.
+almanac.harvest_feast.turkeys_brought_down = Leterített Vadpulykák
+almanac.harvest_feast.crops_picked = Kézzel szedett termések
+almanac.harvest_feast.feasts = Lakomák, amelyeken részt vettél
+almanac.harvest_feast.errands = Martháért elvégzett megbízások
+
+# ---- Martha's conversation ----
+dialogue.harvest_feast_host.off_season.text = Az idei lakoma véget ért, az asztalt elpakoltuk.\nGyere vissza, ha a termés újra a fedél alatt lesz.
+dialogue.harvest_feast_host.meet_arrival.text = Üres gyomorral gyalogoltál idáig, látom rajtad.\nMartha vagyok. Ha a termés a fedél alatt van, főzök mindenkinek, aki betér, és a kenyér az első. Veled a <b>búzával</b> kezdjük.
+dialogue.harvest_feast_host.meet_arrival.opt.hail = Örvendek, Martha.
+dialogue.harvest_feast_host.first_words.text = Vigyázz az asztallal, hosszabb, mint amilyennek látszik.\nMinden évben, ha a termés a fedél alatt van, itt állítom fel a <color is="#ffd97a">Feledett Templomban</color>, és megetetek mindenkit, aki betér. Sok a főznivaló a lakomáig. Úgy nézel ki, mint aki el tud vinni egy zsák lisztet.
+dialogue.harvest_feast_host.first_words.opt.hail = Szívesen segítek.
+dialogue.harvest_feast_host.board_fresh.text = Fent a tábla. Mező vagy konyha, mind elvégzendő, és mind fizet.
+dialogue.harvest_feast_host.board_fresh.opt.board = Mutasd a táblát.
+dialogue.harvest_feast_host.board_fresh.opt.later = Később.
+dialogue.harvest_feast_host.board_fresh_friendly.text = Töröld le a csizmád. Tartottam neked egy széket.\nVan egy extra munka a táblán, a te neveddel.
+dialogue.harvest_feast_host.board_fresh_honored.text = Á, jó, te vagy az. Válassz a tábláról, mielőtt a többiek odaérnek.
+dialogue.harvest_feast_host.board_fresh_revered.text = Ülj le. Egyél valamit előbb, félig éhen halsz.\nA tábla megvár.
+dialogue.harvest_feast_host.menu.text = Vigyázz a fazékkal. Miben segíthetek?
+dialogue.harvest_feast_host.wheat_offer.text = Előbb a kenyér. Mindig az.\nA <b>búza</b> ilyenkor vadon, sűrűn terem a nyílt mezőkön. Szedj nekem egy jó karnyit a sütőknek.
+dialogue.harvest_feast_host.wheat_offer.opt.accept = Hozok búzát.
+dialogue.harvest_feast_host.wheat_brief.text = A <b>búza</b> vadon terem a nyílt mezőkön. Szedd le kézzel, és hozd ide.
+dialogue.harvest_feast_host.wheat_ready.text = Ez egy szép karnyi. A liszt reggelre megőrlődik.\nNa most, a lakomához sült is kell. Gyere vissza, ha készen állsz vadászni.
+dialogue.harvest_feast_host.wheat_ready.opt.turnin = Itt a búza.
+dialogue.harvest_feast_host.turkeys_offer.text = A <b>Vadpulykák</b> ebben a hónapban kint vannak az erdőben, kövérek és hangosak, és nem olyan buták, mint amilyennek látszanak.\nTeríts le párat. Asztal sült nélkül semmit sem ér.
+dialogue.harvest_feast_host.turkeys_offer.opt.accept = Megyek vadászni.
+dialogue.harvest_feast_host.turkeys_ready.text = Erdőszagod van. Jó, az azt jelenti, hogy jól ment.\nItt egy recept a következő munkához. És maradj nyugton: ha egész héten pulykákat hajkurászol, nézhetsz ki úgy is, mint egy.
+dialogue.harvest_feast_host.turkeys_ready.opt.turnin = Visszatértem a vadászatról.
+dialogue.harvest_feast_host.pie_offer.text = Te jössz a tűzhelynél. Tanuld meg a receptet, aztán süss egy <b>tökpitét</b> egy <b>Szakács Tűzhelyen</b>.\nTészta, egy tök, egy csipet fűszer és egy forró sütő. Hozd el nekem.
+dialogue.harvest_feast_host.pie_offer.opt.accept = Sütök neked egy pitét.
+dialogue.harvest_feast_host.pie_brief.text = Tanuld meg a receptet, aztán süss egy <b>tökpitét</b> egy <b>Szakács Tűzhelyen</b>. Tészta, egy tök és némi fűszer kell hozzá.
+dialogue.harvest_feast_host.pie_ready.text = Érzed az illatát? Ez egy pite, amire valaki vigyázott.\nElvégezted a magadét, sőt többet is. Gyere, ülj le; ideje enni.
+dialogue.harvest_feast_host.pie_ready.opt.turnin = Itt a pite.
+dialogue.harvest_feast_host.feast_offer.text = Évente egyszer mindent az asztalra teszünk, és addig eszünk, amíg senki sem bír felállni.\nHozz nekem egy <b>tökpitét</b>, némi <b>főtt húst</b> és egy kosár <b>sárgarépát</b>, és együtt terítünk meg.
+dialogue.harvest_feast_host.feast_offer.opt.accept = Terítsünk meg.
+dialogue.harvest_feast_host.feast_brief.text = Egy <b>tökpite</b>, <b>főtt hús</b> a tűzről és <b>sárgarépa</b> a földekről. Aztán eszünk.
+dialogue.harvest_feast_host.feast_ready.text = Pite, sült és sárgarépa. Na, ez egy lakoma.\nÜlj le, egyél, és vidd haza ezt a tányért. Rajta az évszám, hogy emlékezz.
+dialogue.harvest_feast_host.feast_ready.opt.turnin = Itt van minden.
+dialogue.harvest_feast_host.feast_done.text = Még jól laktál? Én is. Az asztal megterítve marad, amíg a lakoma véget nem ér.\nMiben segíthetek?
+dialogue.harvest_feast_host.daily_turkeys_offer.text = A tegnapi sültből az utolsó csontig semmi sem maradt. Hozz még pár <b>Vadpulykát</b>, és kezdek egy újat.
+dialogue.harvest_feast_host.daily_turkeys_offer.opt.accept = Megyek vadászni.
+dialogue.harvest_feast_host.daily_wheat_offer.text = Minden ma sütött cipóm elfogyott. Még <b>búzát</b>, különben nincs kenyér reggelre.
+dialogue.harvest_feast_host.daily_wheat_offer.opt.accept = Hozok búzát.
+dialogue.harvest_feast_host.daily_roast_offer.text = Süss <b>húst</b> tűzön, és hozd ide. Az emberek mindig megeszik, mielőtt az asztalra kerülne.
+dialogue.harvest_feast_host.daily_roast_offer.opt.accept = Hozok sültet.
+dialogue.harvest_feast_host.active_generic.text = Hát eredj. Tartok neked egy meleg tányért.
+dialogue.harvest_feast_host.ready_generic.text = Hadd lássam, mit hoztál.
+dialogue.harvest_feast_host.ready_generic.opt.turnin = Kész van.
+dialogue.harvest_feast_host.who_are_you.text = Senki fontos. Főzök.\nHa a termés a fedél alatt van, idejövök, kiterítem a hosszú asztalt, és megetetek mindenkit, aki betér. Néha tucatnyian vagyunk. Néha mindenki a környékről.
+dialogue.harvest_feast_host.about_feast.text = Leginkább köszönet. A földek bőven adtak, és a legkevesebb, hogy együtt esszük meg.\nHozol valamit, viszel haza valamit. Ennyi a szabály.
+dialogue.harvest_feast_host.opt.returned = Visszajöttem.
+dialogue.harvest_feast_host.opt.quests = Mit kell csinálni?
+dialogue.harvest_feast_host.opt.board = Mi van a táblán?
+dialogue.harvest_feast_host.opt.shop = Lássuk a standodat.
+dialogue.harvest_feast_host.opt.standing = Hogy állunk mi ketten?
+dialogue.harvest_feast_host.opt.almanac = Mutasd az Almanachot.
+dialogue.harvest_feast_host.opt.who = Ki vagy te?
+dialogue.harvest_feast_host.opt.feast = Mire jó a lakoma?
+dialogue.harvest_feast_host.opt.back = Valami mást.
+dialogue.harvest_feast_host.opt.farewell = Találkozunk az asztalnál.
+
+# ---- The shared meal and the invitation tour ----
+quest.harvest_feast_shared_meal.title = A Közös Asztal
+quest.harvest_feast_shared_meal.flavor = Az én asztalomnál senki sem eszik egyedül. Süss meg egy zöldséget tűzön, hozd ide, és ülj le egy kicsit.
+quest.harvest_feast_invitations.title = A Vendéglista
+quest.harvest_feast_invitations.flavor = Egy hosszú asztal félig üresen semmit sem ér. Hívj meg pár embert a lakomára, aztán gyere, és mondd meg, ki jön.
+objective.harvest_feast.invite = Hívj meg {0} embert a lakomára
+dialogue.harvest_feast_host.meal_offer.text = Az én asztalomnál senki sem eszik egyedül.\nSüss meg egy <b>zöldséget</b> tűzön, és hozd ide, megosztjuk. Gyere el minden nap, ha van kedved. Mindig van egy szék.
+dialogue.harvest_feast_host.meal_offer.opt.accept = Hozok valamit.
+dialogue.harvest_feast_host.meal_brief.text = Bármilyen <b>zöldség</b> megteszi. Süsd meg tűzön, és hozd az asztalhoz.
+dialogue.harvest_feast_host.meal_ready.text = Ülj, ülj. Add ide azt, és egyél az enyémből.\nNa. Most már rendesen ettél ma.
+dialogue.harvest_feast_host.meal_ready.opt.turnin = Osszuk meg.
+dialogue.harvest_feast_host.invitations_offer.text = Egy hosszú asztal félig üresen semmit sem ér.\nMenj, és mesélj az embereknek a lakomáról, mindenkinek, aki megáll egy szóra. <b>Hívj meg pár embert</b>, aztán gyere vissza, és mondd meg, ki jön.
+dialogue.harvest_feast_host.invitations_offer.opt.accept = Terjesztem a hírt.
+dialogue.harvest_feast_host.invitations_brief.text = Beszélj az emberekkel, bárkivel, csak velem ne, és <b>hívd meg őket a lakomára</b>. Kezdd a templom körüliekkel; egész héten dolgoztak, és még senki sem kérdezte őket. Gyere vissza, ha megkérdeztél párat.
+dialogue.harvest_feast_host.invitations_ready.text = Ennyien? Jobb, ha több kenyeret sütök.\nKöszönöm. A teli asztal a lényeg.
+dialogue.harvest_feast_host.invitations_ready.opt.turnin = Jönnek.
+dialogue.harvest_feast_invitation.opt.invite = Gyere, egyél velünk Martha asztalánál.
+
+# ---- The feast's villagers: Tomas the Miller, Elsie the Weaver and Bram the Shepherd ----
+dialogue.harvest_feast_miller.off_season.text = A lakomát elpakolták, a liszttel együtt.\nJövök több liszttel, ha jövőre a termés a fedél alá kerül.
+dialogue.harvest_feast_miller.off_season.opt.farewell = Akkor jövőre.
+dialogue.harvest_feast_miller.greeting.text = Ne állj túl közel, a liszt mindenre ráragad.\nEgész héten zsákokat cipeltem fel a malomból, hogy a sütők soha ne hűljenek ki. Jól jönne egy hely a hosszú asztalnál, ha a lakoma beindul.
+dialogue.harvest_feast_miller.mill.text = Lent a folyónál, mint mindig. A kerék forog, akár ott vagyok, akár nem.\nÉvnek ezen szakában minden megőrölt zsák a lakomára megy.
+dialogue.harvest_feast_miller.opt.mill = Hol a malmod?
+dialogue.harvest_feast_miller.opt.back = Értem.
+dialogue.harvest_feast_miller.opt.farewell = Nem tartalak fel.
+dialogue.harvest_feast_weaver.off_season.text = A lakoma véget ért, az abroszokat összehajtogattuk.\nKeress meg, ha a termés újra a fedél alatt lesz. Addigra újak lesznek.
+dialogue.harvest_feast_weaver.off_season.opt.farewell = Kíváncsian várom őket.
+dialogue.harvest_feast_weaver.greeting.text = Hajnal óta a szövőszékemnél vagyok. Jó változatosságból máshol állni.\nÉn szőttem az abroszokat a hosszú asztalra. Jó lenne végre leülni a lakomára, és az egyikről enni.
+dialogue.harvest_feast_weaver.cloth.text = Futó az asztal közepére, búzaarany, narancssárga szegéllyel.\nMindig kiönt rá valaki mártást, ezért minden évben újat szövök.
+dialogue.harvest_feast_weaver.opt.cloth = Mit szősz most?
+dialogue.harvest_feast_weaver.opt.back = Szép munka.
+dialogue.harvest_feast_weaver.opt.farewell = Nem tartalak fel.
+dialogue.harvest_feast_shepherd.off_season.text = Vége a lakomának. Megyek vissza a dombra, mielőtt a birkák még messzebb kóborolnak.
+dialogue.harvest_feast_shepherd.off_season.opt.farewell = Jó utat haza.
+dialogue.harvest_feast_shepherd.greeting.text = Lejöttem a hegyekből gyapjúval a takácsnak. A birkák elvannak maguktól pár napig.\nValójában nem. De a lakomát nem hagytam volna ki.
+dialogue.harvest_feast_shepherd.sheep.text = A nővérem. Azt mondja, nem bánja.\nEz azt jelenti, hogy egy egész pitét viszek neki vissza.
+dialogue.harvest_feast_shepherd.opt.sheep = Ki vigyáz a birkáidra?
+dialogue.harvest_feast_shepherd.opt.back = Megérdemelte.
+dialogue.harvest_feast_shepherd.opt.farewell = Élvezd a lakomát.

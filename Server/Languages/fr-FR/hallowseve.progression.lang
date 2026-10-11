@@ -48,6 +48,7 @@ objective.hallows_eve.jack_confidant = Devenez le Confident du Vieux Jack
 
 # ---- Le tableau du Vieux Jack ----
 board.hallows_eve_daily.title = Tableau du Vieux Jack
+board.hallows_eve_daily.desc = Du travail pour l'ombre et du travail pour le jour. Mes habitués touchent un peu plus. Touche ta paie avant que je plie bagage. Si tu me rates, ce que tu as gagné t'attend dans ton Carnet de quêtes.
 board.hallows_eve_daily.grade.night = Travail de nuit
 board.hallows_eve_daily.grade.day = Travail de jour
 quest.hallows_eve_board_souls.title = Ratissage d'âmes
@@ -69,6 +70,7 @@ shop.hallows_eve_old_jack.category.lights = Lanternes
 shop.hallows_eve_old_jack.category.gear = Équipement
 shop.hallows_eve_offer_harvest_moon_bundle.title = Lot de la Lune des Moissons
 shop.hallows_eve_offer_harvest_moon_bundle.desc = Des Bombes-Lanternes Fracassantes et Spectrales, vendues seulement tant que la Lune des Moissons est levée.
+shop.hallows_eve_offer_spyglass.desc = Regardez à travers dans les Antres Vacillants pour repérer l'emplacement d'une bête corrompue du Néant.
 
 # ---- Succès ----
 achievement.hallows_eve_lantern_keepsake.title = Lanterne Creuse {0}
@@ -86,8 +88,6 @@ achievement.hallows_eve_jacks_guest.title = Invité de Jack {0}
 achievement.hallows_eve_jacks_guest.desc = Participez à la Veille de la Toussaint.
 achievement.hallows_eve_the_hallowed.title = Le Sanctifié {0}
 achievement.hallows_eve_the_hallowed.desc = Obtenez tous les succès de la Veille de la Toussaint de cette année.
-achievement.seasons_of_orbis.title = Saisons d'Orbis
-achievement.seasons_of_orbis.desc = Obtenez le succès ultime de chaque saison.
 
 # ---- Le titre Sanctifié ----
 title.hallows_eve_hallowed.name = Le Sanctifié
@@ -118,6 +118,8 @@ reputation.hallows_eve_old_jack.earn.talk = Passez lui dire un mot une fois par 
 reputation.hallows_eve_old_jack.earn.gear = Portez un Heaume de Jack. Il augmente sa faveur tant que vous l'avez sur la tête.
 reputation.hallows_eve_hallowed.name = Les Sanctifiés
 reputation.hallows_eve_hallowed.flavor = Les Sanctifiés gardent les morts à leur place. Abattez ce qui sort des tombes la nuit et ils le remarquent.
+factor.hallows_eve_hallowed.friendly = le rang Amical auprès des Sanctifiés
+factor.hallows_eve_hallowed.honored = le rang Honoré auprès des Sanctifiés
 factor.hallows_eve_hallowed.revered = le rang Révéré auprès des Sanctifiés
 factor.hallows_eve_hallowed.exalted = le rang Exalté auprès des Sanctifiés
 reputation.hallows_eve_hallowed.earn.kills = Abattez les créatures qui sortent de terre la nuit.

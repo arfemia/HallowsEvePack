@@ -2,3 +2,8 @@
 # alapján talál rájuk, bárhogy is hívják ezt a fájlt. A szett értesítése felugró üzenet, így egyik érték sem hordoz jelölést.
 gearset.hallows_eve_hallowed.title = Megszentelt Szett
 gearset.hallows_eve_hallowed.tier_full = Sisak a fejen, pajzs a kézben: egy kicsivel több életerő, a tűz kevésbé mar, világítasz, mint egy lámpás, és a hírneved is nő egy kicsit a Megszentelteknél.
+
+# A jelmezek nevei, amelyek a jelmez ikonja fölé húzott egérnél jelennek meg. Az effekt JSON a teljes
+# kulcsot írja ki (hallowseve.items.effect...), mert a kliens az effekt Name mezőjét szó szerint olvassa.
+effect.hallows_eve_costume_jack.name = Jack-csontváz Jelmez
+effect.hallows_eve_costume_lost_soul.name = Elveszett Lélek Jelmez

@@ -46,6 +46,7 @@ objective.hallows_eve.attend = Примите участие в Кануне В�
 
 # ---- Доска Старого Джека ----
 board.hallows_eve_daily.title = Доска Старого Джека
+board.hallows_eve_daily.desc = Работа для тьмы и работа для дня. Постоянным клиентам перепадает чуть больше. Забирай плату, пока я не собрался. Пропустишь меня, и заработанное всё равно дождётся тебя в Книге квестов.
 quest.hallows_eve_board_souls.title = Зачистка душ
 quest.hallows_eve_board_souls.flavor = Сегодня вокруг храма полно душ. Освободи побольше до утра.
 quest.hallows_eve_board_ghouls.title = Отбраковка упырей
@@ -65,6 +66,7 @@ shop.hallows_eve_old_jack.category.lights = Фонари
 shop.hallows_eve_old_jack.category.gear = Снаряжение
 shop.hallows_eve_offer_harvest_moon_bundle.title = Набор Урожайной луны
 shop.hallows_eve_offer_harvest_moon_bundle.desc = Осколочные и Призрачные фонарные бомбы, продаются, только пока в небе Урожайная луна.
+shop.hallows_eve_offer_spyglass.desc = Посмотрите в неё в Гаснущих Низинах, чтобы найти место, где бродит зверь, взятый пустотой.
 
 # ---- Достижения ----
 achievement.hallows_eve_lantern_keepsake.title = Полый фонарь {0}
@@ -82,8 +84,6 @@ achievement.hallows_eve_jacks_guest.title = Гость Джека {0}
 achievement.hallows_eve_jacks_guest.desc = Примите участие в Кануне Всех Святых.
 achievement.hallows_eve_the_hallowed.title = Освящённый {0}
 achievement.hallows_eve_the_hallowed.desc = Получите все достижения Кануна Всех Святых этого года.
-achievement.seasons_of_orbis.title = Сезоны Орбиса
-achievement.seasons_of_orbis.desc = Получите венчающее достижение каждого сезона.
 
 # ---- Титул «Освящённый» ----
 title.hallows_eve_hallowed.name = Освящённый
@@ -191,7 +191,9 @@ reputation.hallows_eve_old_jack.earn.talk = Заходите раз в день 
 reputation.hallows_eve_old_jack.earn.gear = Носите Шлем Джека. Пока он на вас, он даёт прибавку к расположению Старого Джека.
 reputation.hallows_eve_hallowed.name = Освящённые
 reputation.hallows_eve_hallowed.flavor = Освящённые держат мёртвых там, где им место. Укладывайте обратно то, что по ночам вылезает из могил, и они это заметят.
-factor.hallows_eve_hallowed.revered = ранг «Почтение» у Освящённых
+factor.hallows_eve_hallowed.friendly = ранг «Дружелюбие» у Освящённых
+factor.hallows_eve_hallowed.honored = ранг «Уважение» у Освящённых
+factor.hallows_eve_hallowed.revered =ранг «Почтение» у Освящённых
 factor.hallows_eve_hallowed.exalted = ранг «Превознесение» у Освящённых
 reputation.hallows_eve_hallowed.earn.kills = Укладывайте обратно тварей, что выползают по ночам.
 reputation.hallows_eve_hallowed.earn.jack = Ежедневные задания и контракты с доски Старого Джека тоже идут в зачёт.

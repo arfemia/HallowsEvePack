@@ -1,0 +1,199 @@
+# Harvest Feast progression: Martha's intro quest, her questline, the yearly feast and the dailies, the
+# feast board and the feast stall, her conversation, the season's achievements and titles, her
+# reputation and the Almanac page, the shared meal and the invitation tour, and the feast's villagers.
+# Keys are written bare: the library finds each one by its tail, whatever this file is called. A quest,
+# a contract or an achievement takes its words from the keys its id spells (quest.<id>.title and
+# .flavor, achievement.<id>.title and .desc), so no content file names those. Numbers ride {0} and
+# come from the content files, so a retune never touches a translation.
+
+# ---- Martha's reputation ----
+reputation.harvest_feast_host.name = Şölende Teveccüh
+reputation.harvest_feast_host.flavor = Martha yardıma gelenle yalnızca yemeğe gelenin kim olduğunu hatırlar.
+reputation.harvest_feast_host.rank.neutral = Yeni Gelen
+reputation.harvest_feast_host.rank.friendly = Komşu
+reputation.harvest_feast_host.rank.honored = Tanıdık Yüz
+reputation.harvest_feast_host.rank.revered = Aile
+reputation.harvest_feast_host.rank.exalted = Sofra Başı
+
+# ---- The feast board ----
+board.harvest_feast_daily.title = Şölen Panosu
+board.harvest_feast_daily.desc = Tarla işleri ve mutfak işleri, her sabah taze. Ne kadar çok yardım edersen senin için o kadar çok işi panoya asarım. Sofra kaldırılmadan ücretini al. Geç kalırsan, kazandıkların yine Görev Kitabında bekler.
+board.harvest_feast_daily.grade.field = Tarla İşleri
+board.harvest_feast_daily.grade.kitchen = Mutfak İşleri
+quest.harvest_feast_board_turkeys.title = Hindi Avı
+quest.harvest_feast_board_turkeys.flavor = Bu hafta ormanlar hindi dolu. Yakalayabilirsen epey indir; sanki akşam yemeğinin ne olduğunu biliyorlarmış gibi kaçıyorlar.
+quest.harvest_feast_board_wheat.title = Buğday Hasadı
+quest.harvest_feast_board_wheat.flavor = Yabani buğday kimseyi beklemez. Don vurmadan topla.
+quest.harvest_feast_board_pies.title = Sofra İçin Turtalar
+quest.harvest_feast_board_pies.flavor = Sofradaki her koltuk bir dilim istiyor. Birkaç bal kabaklı turta pişir, sıcakken getir.
+quest.harvest_feast_board_roast.title = Ateş Çukuru
+quest.harvest_feast_board_roast.flavor = Açık ateşte bir yığın et pişir. Koku bile insanları sofraya getirir.
+
+# ---- The feast stall ----
+shop.harvest_feast_host.title = Şölen Tezgahı
+shop.harvest_feast_host.desc = Kendi defterimden tarifler, torba torba patlamış mısır ve ev için birkaç şey.
+shop.harvest_feast_host.category.kitchen = Mutfak
+shop.harvest_feast_host.category.decor = Süsler
+shop.harvest_feast_offer_recipe_apple_pie.title = Elmalı Turta Tarifi
+shop.harvest_feast_offer_recipe_apple_pie.desc = Bir kez oku, elmalı turtayı artık hep pişirebilirsin.
+shop.harvest_feast_offer_recipe_meat_pie.title = Etli Turta Tarifi
+shop.harvest_feast_offer_recipe_meat_pie.desc = Martha'nın kendi etli turtası, sofranın dostları için yazıldı.
+shop.harvest_feast_offer_recipe_caesar_salad.title = Sezar Salata Tarifi
+shop.harvest_feast_offer_recipe_caesar_salad.desc = Martha'nın Sezar salatası, aile için yazıldı.
+
+# ---- Martha's intro quest ----
+quest.harvest_feast_martha_meet.title = Tapınakta Akşam Yemeği
+quest.harvest_feast_martha_meet.flavor = Tarlalar toplandı, ben de yine Unutulmuş Tapınak'ta yemek pişiriyorum. Herhangi bir Unutulmuş Tapınak Geçidi seni oraya götürür. Gel de beni bul, aç gel.
+objective.harvest_feast.meet_martha = Unutulmuş Tapınak'ta Aşçı Martha'yı bul
+
+# ---- Martha's questline and the yearly feast ----
+quest.harvest_feast_host_1.title = Fırınlar İçin Buğday
+quest.harvest_feast_host_1.flavor = Önce ekmek, hep öyle olur. Yabani buğday yılın bu zamanı gür büyür, bana fırınlar için bir kucak dolusu getir.
+quest.harvest_feast_host_2.title = Hindi Avı
+quest.harvest_feast_host_2.flavor = Yabani hindiler bu ay semiz ve gürültülü, göründükleri kadar da aptal değiller. Birkaçını indir; kızartması olmayan sofra sofra değildir.
+quest.harvest_feast_host_3.title = İlk Turta
+quest.harvest_feast_host_3.flavor = Ocak başı sende. Şu tarifi öğren, bir Aşçı Ocağı'nda bal kabaklı turta pişir ve bana getir.
+quest.harvest_feast_the_feast.title = Uzun Sofra
+quest.harvest_feast_the_feast.flavor = Yılda bir her şeyi sofraya koyar, kimse ayakta duramayana dek yeriz. Bir turta, biraz kızartma ve bir sepet havuç getir, birlikte kuralım.
+
+# ---- Martha's dailies ----
+quest.harvest_feast_daily_turkeys.title = Hindi Koşusu
+quest.harvest_feast_daily_turkeys.flavor = Dünkü kızartma son kemiğine dek gitti. Birkaç hindi daha getir, bir tane daha başlatayım.
+quest.harvest_feast_daily_wheat.title = Sabah İçin Ekmek
+quest.harvest_feast_daily_wheat.flavor = Bugün pişirdiğim her somun bitti. Bana daha çok buğday getir, yoksa sabaha ekmek yok.
+quest.harvest_feast_daily_roast.title = Sofra İçin Kızartma
+quest.harvest_feast_daily_roast.flavor = Biraz eti ateşte pişir, buraya getir. İnsanlar sofraya varmadan yiyip bitiriyor.
+
+# ---- Steps worded for this season ----
+objective.harvest_feast.attend = Hasat Şöleni'nde burada ol
+
+# ---- Achievements ----
+achievement.category.seasons.harvest_feast = Hasat Şöleni
+achievement.harvest_feast_guest.title = Sofrada Bir Yer {0}
+achievement.harvest_feast_guest.desc = Hasat Şöleni'nde burada ol.
+achievement.harvest_feast_turkey_chaser.title = Hindi Kovalayan {0}
+achievement.harvest_feast_turkey_chaser.desc = {0} Yabani Hindi indir.
+achievement.harvest_feast_full_baskets.title = Dolu Sepetler {0}
+achievement.harvest_feast_full_baskets.desc = Elle {0} ürün topla.
+achievement.harvest_feast_keepsake.title = Şölen Tabağı {0}
+achievement.harvest_feast_keepsake.desc = Uzun sofrada şölene otur.
+keepsake.harvest_feast_plate.name = {0} Şölen Tabağı
+achievement.harvest_feast_full_table.title = Dolu Sofra {0}
+achievement.harvest_feast_full_table.desc = Bu yılın tüm Hasat Şöleni başarımlarını kazan.
+
+# ---- The Full Table title ----
+title.harvest_feast_full_table.name = Dolu Sofra
+title.harvest_feast_full_table.flavor = Bir yılın tüm Hasat Şöleni başarımlarını kazanmış.
+title.harvest_feast_full_table.display = {0}, Dolu Sofra
+
+# ---- Head of the Table: the achievement and its title, for Martha's top rank ----
+achievement.harvest_feast_head_of_the_table.title = Sofra Başı
+achievement.harvest_feast_head_of_the_table.desc = Martha nezdinde Sofra Başı ol.
+objective.harvest_feast.head_of_the_table = Martha nezdinde Sofra Başı ol
+title.harvest_feast_head_of_the_table.name = Sofra Başı
+title.harvest_feast_head_of_the_table.flavor = Martha nezdinde Sofra Başı oldu.
+title.harvest_feast_head_of_the_table.display = {0}, Sofra Başı
+
+# ---- The Almanac page ----
+almanac.harvest_feast.title = Hasat Şöleni
+almanac.harvest_feast.flavor = Her yıl tarlalar toplanınca Unutulmuş Tapınak'ta uzun bir sofra kurulur ve herkes yer.
+almanac.harvest_feast.turkeys_brought_down = İndirilen Yabani Hindiler
+almanac.harvest_feast.crops_picked = Elle toplanan ürünler
+almanac.harvest_feast.feasts = Katılınan şölenler
+almanac.harvest_feast.errands = Martha için yapılan ayak işleri
+
+# ---- Martha's conversation ----
+dialogue.harvest_feast_host.off_season.text = Bu yılın şöleni bitti, sofra da kaldırıldı.\nTarlalar toplanınca yine gel.
+dialogue.harvest_feast_host.meet_arrival.text = O kadar yolu aç karnına yürümüşsün, belli.\nBen Martha. Tarlalar toplanınca kim gelirse onun için yemek pişiririm, önce de ekmek gelir. Seni <b>buğday</b> ile başlatalım.
+dialogue.harvest_feast_host.meet_arrival.opt.hail = Memnun oldum, Martha.
+dialogue.harvest_feast_host.first_words.text = Sofraya dikkat et, göründüğünden uzun.\nHer yıl tarlalar toplanınca onu burada, <color is="#ffd97a">Unutulmuş Tapınak'ta</color> kurar, kim gelirse doyururum. Şölene kadar pişecek çok yemek var. Bir çuval un taşıyabilecek gibi duruyorsun.
+dialogue.harvest_feast_host.first_words.opt.hail = Yardım etmekten memnunum.
+dialogue.harvest_feast_host.board_fresh.text = Pano hazır. Tarla da olsa mutfak da olsa, hepsi yapılmalı ve hepsi ödüyor.
+dialogue.harvest_feast_host.board_fresh.opt.board = Panoyu göster.
+dialogue.harvest_feast_host.board_fresh.opt.later = Sonra.
+dialogue.harvest_feast_host.board_fresh_friendly.text = Botlarını sil. Sana bir sandalye ayırdım.\nPanoda üzerinde adın yazılı fazladan bir iş var.
+dialogue.harvest_feast_host.board_fresh_honored.text = Ah, iyi ki geldin. Ötekiler gelmeden panodan işini seç.
+dialogue.harvest_feast_host.board_fresh_revered.text = Otur. Önce bir şey ye, yarı aç görünüyorsun.\nPano nasılsa bekler.
+dialogue.harvest_feast_host.menu.text = Kazana dikkat. Senin için ne yapabilirim?
+dialogue.harvest_feast_host.wheat_offer.text = Önce ekmek. Hep öyle olur.\nYabani <b>buğday</b> yılın bu zamanı açık tarlalarda gür büyür. Fırınlar için bana bir kucak dolusu topla.
+dialogue.harvest_feast_host.wheat_offer.opt.accept = Buğday getireceğim.
+dialogue.harvest_feast_host.wheat_brief.text = <b>Buğday</b> açık tarlalarda yabani yetişir. Elle topla ve buraya getir.
+dialogue.harvest_feast_host.wheat_ready.text = Güzel bir kucak bu. Un sabaha öğütülmüş olur.\nŞimdi, şölene kızartma gerek. Ava çıkmaya hazır olunca gel.
+dialogue.harvest_feast_host.wheat_ready.opt.turnin = İşte buğday.
+dialogue.harvest_feast_host.turkeys_offer.text = <b>Yabani Hindiler</b> bu ay ormanda, semiz, gürültülü ve göründükleri kadar aptal değiller.\nBirkaçını indir. Kızartması olmayan sofra sofra değildir.
+dialogue.harvest_feast_host.turkeys_offer.opt.accept = Ava çıkacağım.
+dialogue.harvest_feast_host.turkeys_ready.text = Orman kokuyorsun. İyi, demek ki iyi geçti.\nSıradaki iş için bir tarif. Kıpırdama da: bütün hafta hindi kovalayacaksan, bari biri gibi görün.
+dialogue.harvest_feast_host.turkeys_ready.opt.turnin = Avdan döndüm.
+dialogue.harvest_feast_host.pie_offer.text = Ocak başı sende. Şu tarifi öğren, sonra bir <b>Aşçı Ocağı'nda</b> <b>bal kabaklı turta</b> pişir.\nHamur, bir bal kabağı, bir tutam baharat ve sıcak bir fırın. Bana getir.
+dialogue.harvest_feast_host.pie_offer.opt.accept = Sana turta pişireceğim.
+dialogue.harvest_feast_host.pie_brief.text = Tarifi öğren, sonra bir <b>Aşçı Ocağı'nda</b> <b>bal kabaklı turta</b> pişir. Hamur, bir bal kabağı ve biraz baharat lazım olacak.
+dialogue.harvest_feast_host.pie_ready.text = Şu kokuya bak. Birinin özenle yaptığı bir turta bu.\nPayına düşeni yaptın, fazlasını da. Gel otur; yemek vakti.
+dialogue.harvest_feast_host.pie_ready.opt.turnin = İşte turta.
+dialogue.harvest_feast_host.feast_offer.text = Yılda bir her şeyi sofraya koyar, kimse ayakta duramayana dek yeriz.\nBana bir <b>bal kabaklı turta</b>, biraz <b>pişmiş et</b> ve bir sepet <b>havuç</b> getir, birlikte kuralım.
+dialogue.harvest_feast_host.feast_offer.opt.accept = Sofrayı kuralım.
+dialogue.harvest_feast_host.feast_brief.text = Bir <b>bal kabaklı turta</b>, ateşte <b>pişmiş et</b> ve tarlalardan <b>havuç</b>. Sonra yeriz.
+dialogue.harvest_feast_host.feast_ready.text = Turta, kızartma ve havuç. İşte şölen bu.\nOtur, ye, bu tabağı da eve götür. Üzerinde yıl yazıyor, unutmazsın.
+dialogue.harvest_feast_host.feast_ready.opt.turnin = Hepsi burada.
+dialogue.harvest_feast_host.feast_done.text = Hâlâ tok musun? Ben de. Sofra şölen bitene dek kurulu kalır.\nSenin için ne yapabilirim?
+dialogue.harvest_feast_host.daily_turkeys_offer.text = Dünkü kızartma son kemiğine dek gitti. Birkaç <b>Yabani Hindi</b> daha getir, bir tane daha başlatayım.
+dialogue.harvest_feast_host.daily_turkeys_offer.opt.accept = Ava çıkacağım.
+dialogue.harvest_feast_host.daily_wheat_offer.text = Bugün pişirdiğim her somun bitti. Daha çok <b>buğday</b>, yoksa sabaha ekmek yok.
+dialogue.harvest_feast_host.daily_wheat_offer.opt.accept = Buğday getireceğim.
+dialogue.harvest_feast_host.daily_roast_offer.text = Biraz <b>eti</b> ateşte pişir, buraya getir. İnsanlar sofraya varmadan yiyip bitiriyor.
+dialogue.harvest_feast_host.daily_roast_offer.opt.accept = Bir kızartma getireceğim.
+dialogue.harvest_feast_host.active_generic.text = Hadi git o zaman. Sana bir tabak sıcak tutarım.
+dialogue.harvest_feast_host.ready_generic.text = Neler getirdiğine bir bakayım.
+dialogue.harvest_feast_host.ready_generic.opt.turnin = Bitti.
+dialogue.harvest_feast_host.who_are_you.text = Önemli biri değilim. Yemek pişiririm.\nTarlalar toplanınca buraya gelir, uzun sofrayı kurar, kim gelirse doyururum. Kimi yıl bir düzine insan olur. Kimi yıl millerce çevredeki herkes.
+dialogue.harvest_feast_host.about_feast.text = Çoğunlukla bir teşekkür. Tarlalar bize bol verdi, yapabileceğimizin en azı onu birlikte yemek.\nBir şey getirirsin, eve bir şey götürürsün. Bütün kural bu.
+dialogue.harvest_feast_host.opt.returned = Döndüm.
+dialogue.harvest_feast_host.opt.quests = Yapılacak ne var?
+dialogue.harvest_feast_host.opt.board = Panoda ne var?
+dialogue.harvest_feast_host.opt.shop = Tezgahına bakalım.
+dialogue.harvest_feast_host.opt.standing = Aramız nasıl?
+dialogue.harvest_feast_host.opt.almanac = Almanak'ı göster.
+dialogue.harvest_feast_host.opt.who = Sen kimsin?
+dialogue.harvest_feast_host.opt.feast = Şölen ne için?
+dialogue.harvest_feast_host.opt.back = Başka bir şey.
+dialogue.harvest_feast_host.opt.farewell = Sofrada görüşürüz.
+
+# ---- The shared meal and the invitation tour ----
+quest.harvest_feast_shared_meal.title = Ortak Sofra
+quest.harvest_feast_shared_meal.flavor = Soframda kimse tek başına yemez. Bir sebzeyi ateşte közle, buraya getir ve bir süre otur.
+quest.harvest_feast_invitations.title = Davetli Listesi
+quest.harvest_feast_invitations.flavor = Uzun sofra yarı boşken olmaz. Git, birkaç kişiyi şölene davet et, sonra gelip kimin geleceğini söyle.
+objective.harvest_feast.invite = {0} kişiyi şölene davet et
+dialogue.harvest_feast_host.meal_offer.text = Soframda kimse tek başına yemez.\nBir <b>sebzeyi</b> ateşte közle ve buraya getir, birlikte yeriz. İstersen her gün uğra. Her zaman bir sandalye var.
+dialogue.harvest_feast_host.meal_offer.opt.accept = Bir şey getireceğim.
+dialogue.harvest_feast_host.meal_brief.text = Her <b>sebze</b> olur. Ateşte közle ve sofraya getir.
+dialogue.harvest_feast_host.meal_ready.text = Otur, otur. Onu bana uzat, benimkinden de al.\nİşte. Bugün doğru dürüst yemek yedin.
+dialogue.harvest_feast_host.meal_ready.opt.turnin = Paylaşalım.
+dialogue.harvest_feast_host.invitations_offer.text = Uzun sofra yarı boşken olmaz.\nGit, insanlara şölenden bahset, bir laf için duracak herkese. <b>Birkaç kişiyi davet et</b>, sonra dön ve kimin geleceğini söyle.
+dialogue.harvest_feast_host.invitations_offer.opt.accept = Haberi yayacağım.
+dialogue.harvest_feast_host.invitations_brief.text = İnsanlarla konuş, benden başka herkesle, ve onları <b>şölene davet et</b>. Tapınaktakilerle başla; bütün hafta çalıştılar ve kimse onlara sormadı. Birkaç kişiye sorunca dön.
+dialogue.harvest_feast_host.invitations_ready.text = O kadar mı? Daha çok ekmek pişirsem iyi olur.\nTeşekkür ederim. Bütün mesele dolu bir sofra.
+dialogue.harvest_feast_host.invitations_ready.opt.turnin = Geliyorlar.
+dialogue.harvest_feast_invitation.opt.invite = Gel, Martha'nın sofrasında bizimle ye.
+
+# ---- The feast's villagers: Tomas the Miller, Elsie the Weaver and Bram the Shepherd ----
+dialogue.harvest_feast_miller.off_season.text = Şölen kaldırıldı, un da öyle.\nGelecek yıl tarlalar toplanınca daha fazlasıyla dönerim.
+dialogue.harvest_feast_miller.off_season.opt.farewell = Öyleyse gelecek yıla.
+dialogue.harvest_feast_miller.greeting.text = Fazla yaklaşma, un her şeye bulaşır.\nFırınlar hiç soğumasın diye bütün hafta değirmenden çuval taşıdım. Şölen başlayınca uzun sofrada bir yerim olsa fena olmazdı.
+dialogue.harvest_feast_miller.mill.text = Nehrin aşağısında, hep olduğu gibi. Ben orada olsam da olmasam da çark döner.\nYılın bu zamanı öğüttüğü her çuval şölene gider.
+dialogue.harvest_feast_miller.opt.mill = Değirmenin nerede?
+dialogue.harvest_feast_miller.opt.back = Haklısın.
+dialogue.harvest_feast_miller.opt.farewell = İşinin başına dönebilirsin.
+dialogue.harvest_feast_weaver.off_season.text = Şölen bitti, örtüler katlanıp kaldırıldı.\nTarlalar yine toplanınca beni bul. O zamana yenilerim olur.
+dialogue.harvest_feast_weaver.off_season.opt.farewell = Gözüm üzerlerinde olacak.
+dialogue.harvest_feast_weaver.greeting.text = Şafaktan beri tezgahımdayım. Değişiklik olsun diye başka bir yerde durmak iyi geldi.\nUzun sofranın örtülerini ben dokudum. Bir kereliğine şölende oturup birinden yemek hoş olurdu.
+dialogue.harvest_feast_weaver.cloth.text = Sofranın ortası için bir yolluk, buğday sarısı, turuncu kenarlı.\nÜzerine hep biri sos döker, ben de her yıl yenisini dokurum.
+dialogue.harvest_feast_weaver.opt.cloth = Şimdi ne dokuyorsun?
+dialogue.harvest_feast_weaver.opt.back = Güzel iş.
+dialogue.harvest_feast_weaver.opt.farewell = Seni oyalamayayım.
+dialogue.harvest_feast_shepherd.off_season.text = Şölen bitti. Koyunlar daha da uzaklaşmadan tepeye dönüyorum.
+dialogue.harvest_feast_shepherd.off_season.opt.farewell = Eve sağ salim yürü.
+dialogue.harvest_feast_shepherd.greeting.text = Dokumacı için yün getirip tepelerden indim. Koyunlar birkaç gün kendilerine bakar.\nBakamaz aslında. Ama şöleni kaçıracak değildim.
+dialogue.harvest_feast_shepherd.sheep.text = Kız kardeşim. Sorun etmediğini söylüyor.\nYani ona koca bir turta götürüyorum.
+dialogue.harvest_feast_shepherd.opt.sheep = Koyunlarına kim bakıyor?
+dialogue.harvest_feast_shepherd.opt.back = Hak etti.
+dialogue.harvest_feast_shepherd.opt.farewell = Şölenin tadını çıkar.

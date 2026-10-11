@@ -1,0 +1,199 @@
+# Harvest Feast progression: Martha's intro quest, her questline, the yearly feast and the dailies, the
+# feast board and the feast stall, her conversation, the season's achievements and titles, her
+# reputation and the Almanac page, the shared meal and the invitation tour, and the feast's villagers.
+# Keys are written bare: the library finds each one by its tail, whatever this file is called. A quest,
+# a contract or an achievement takes its words from the keys its id spells (quest.<id>.title and
+# .flavor, achievement.<id>.title and .desc), so no content file names those. Numbers ride {0} and
+# come from the content files, so a retune never touches a translation.
+
+# ---- Martha's reputation ----
+reputation.harvest_feast_host.name = Favore alla Festa
+reputation.harvest_feast_host.flavor = Martha ricorda chi è venuto ad aiutare e chi è venuto solo a mangiare.
+reputation.harvest_feast_host.rank.neutral = Nuovo Arrivato
+reputation.harvest_feast_host.rank.friendly = Vicino di Casa
+reputation.harvest_feast_host.rank.honored = Volto Noto
+reputation.harvest_feast_host.rank.revered = Famiglia
+reputation.harvest_feast_host.rank.exalted = Capotavola
+
+# ---- The feast board ----
+board.harvest_feast_daily.title = La Bacheca della Festa
+board.harvest_feast_daily.desc = Lavori nei campi e lavori in cucina, freschi ogni mattina. Più aiuti, più ne metto da parte per te. Ritira la paga prima che la tavola venga sparecchiata. Se arrivi tardi, quello che hai guadagnato ti aspetta comunque nel tuo Libro degli obiettivi.
+board.harvest_feast_daily.grade.field = Lavoro nei Campi
+board.harvest_feast_daily.grade.kitchen = Lavoro in Cucina
+quest.harvest_feast_board_turkeys.title = Battuta ai Tacchini
+quest.harvest_feast_board_turkeys.flavor = I boschi sono pieni di tacchini questa settimana. Abbattine parecchi, se riesci a prenderli; corrono come se sapessero cosa c'è per cena.
+quest.harvest_feast_board_wheat.title = Raccolto di Grano
+quest.harvest_feast_board_wheat.flavor = Il grano selvatico non aspetta nessuno. Raccoglilo prima che arrivi il gelo.
+quest.harvest_feast_board_pies.title = Torte per la Tavola
+quest.harvest_feast_board_pies.flavor = Ogni posto a tavola vuole una fetta. Inforna un paio di torte di zucca e portale qui finché sono calde.
+quest.harvest_feast_board_roast.title = Il Fuoco all'Aperto
+quest.harvest_feast_board_roast.flavor = Cuoci un bel mucchio di carne su un fuoco aperto. Basta il profumo a portare la gente a tavola.
+
+# ---- The feast stall ----
+shop.harvest_feast_host.title = La Bancarella della Festa
+shop.harvest_feast_host.desc = Ricette dal mio libro, popcorn a sacchetti e qualcosa per la casa.
+shop.harvest_feast_host.category.kitchen = Cucina
+shop.harvest_feast_host.category.decor = Decorazioni
+shop.harvest_feast_offer_recipe_apple_pie.title = Ricetta della Torta di Mele
+shop.harvest_feast_offer_recipe_apple_pie.desc = Leggila una volta e saprai fare la torta di mele per sempre.
+shop.harvest_feast_offer_recipe_meat_pie.title = Ricetta della Torta di Carne
+shop.harvest_feast_offer_recipe_meat_pie.desc = La torta di carne di Martha, messa per iscritto per gli amici della tavola.
+shop.harvest_feast_offer_recipe_caesar_salad.title = Ricetta dell'Insalata Caesar
+shop.harvest_feast_offer_recipe_caesar_salad.desc = L'insalata Caesar di Martha, messa per iscritto per la famiglia.
+
+# ---- Martha's intro quest ----
+quest.harvest_feast_martha_meet.title = Cena nel Tempio
+quest.harvest_feast_martha_meet.flavor = I campi sono raccolti, quindi cucino di nuovo nel Tempio Dimenticato. Ci arrivi da un Portale del Tempio Dimenticato qualsiasi. Vieni a cercarmi, e vieni con appetito.
+objective.harvest_feast.meet_martha = Trova Martha la Cuoca nel Tempio Dimenticato
+
+# ---- Martha's questline and the yearly feast ----
+quest.harvest_feast_host_1.title = Grano per i Forni
+quest.harvest_feast_host_1.flavor = Prima il pane, sempre. Il grano selvatico cresce fitto in questo periodo, quindi portami una bella bracciata per i forni.
+quest.harvest_feast_host_2.title = La Caccia al Tacchino
+quest.harvest_feast_host_2.flavor = I tacchini selvatici sono grassi e rumorosi questo mese, e non così sciocchi come sembrano. Abbattine qualcuno; la tavola non vale niente senza un arrosto.
+quest.harvest_feast_host_3.title = La Prima Torta
+quest.harvest_feast_host_3.flavor = Tocca a te ai fornelli. Impara quella ricetta, inforna una torta di zucca a un Fornello dello Chef e portala a me.
+quest.harvest_feast_the_feast.title = La Lunga Tavola
+quest.harvest_feast_the_feast.flavor = Una volta l'anno mettiamo tutto in tavola e mangiamo finché nessuno si regge in piedi. Porta una torta, un po' di arrosto e un cesto di carote, e la apparecchiamo insieme.
+
+# ---- Martha's dailies ----
+quest.harvest_feast_daily_turkeys.title = Corsa ai Tacchini
+quest.harvest_feast_daily_turkeys.flavor = L'arrosto di ieri è finito fino all'ultimo osso. Portami qualche altro tacchino e ne comincio un altro.
+quest.harvest_feast_daily_wheat.title = Pane per il Mattino
+quest.harvest_feast_daily_wheat.flavor = Ogni pagnotta che ho sfornato oggi è già sparita. Portami altro grano, o domattina niente pane.
+quest.harvest_feast_daily_roast.title = Arrosto per la Tavola
+quest.harvest_feast_daily_roast.flavor = Cuoci della carne su un fuoco e portala qui. La gente continua a mangiarsela prima che arrivi a tavola.
+
+# ---- Steps worded for this season ----
+objective.harvest_feast.attend = Sii presente alla Festa del Raccolto
+
+# ---- Achievements ----
+achievement.category.seasons.harvest_feast = Festa del Raccolto
+achievement.harvest_feast_guest.title = Un Posto a Tavola {0}
+achievement.harvest_feast_guest.desc = Sii presente alla Festa del Raccolto.
+achievement.harvest_feast_turkey_chaser.title = Cacciatore di Tacchini {0}
+achievement.harvest_feast_turkey_chaser.desc = Abbatti {0} Tacchini Selvatici.
+achievement.harvest_feast_full_baskets.title = Cesti Pieni {0}
+achievement.harvest_feast_full_baskets.desc = Raccogli {0} raccolti a mano.
+achievement.harvest_feast_keepsake.title = Piatto della Festa {0}
+achievement.harvest_feast_keepsake.desc = Siediti al banchetto alla lunga tavola.
+keepsake.harvest_feast_plate.name = Piatto della Festa del {0}
+achievement.harvest_feast_full_table.title = La Tavola Piena {0}
+achievement.harvest_feast_full_table.desc = Ottieni tutti gli obiettivi della Festa del Raccolto di quest'anno.
+
+# ---- The Full Table title ----
+title.harvest_feast_full_table.name = La Tavola Piena
+title.harvest_feast_full_table.flavor = Ottenuti tutti gli obiettivi della Festa del Raccolto di un anno.
+title.harvest_feast_full_table.display = {0} della Tavola Piena
+
+# ---- Head of the Table: the achievement and its title, for Martha's top rank ----
+achievement.harvest_feast_head_of_the_table.title = Capotavola
+achievement.harvest_feast_head_of_the_table.desc = Diventa Capotavola con Martha.
+objective.harvest_feast.head_of_the_table = Diventa Capotavola con Martha
+title.harvest_feast_head_of_the_table.name = Capotavola
+title.harvest_feast_head_of_the_table.flavor = Ottenuto il rango di Capotavola con Martha.
+title.harvest_feast_head_of_the_table.display = {0}, Capotavola
+
+# ---- The Almanac page ----
+almanac.harvest_feast.title = Festa del Raccolto
+almanac.harvest_feast.flavor = Ogni anno, quando i campi sono raccolti, nel Tempio Dimenticato si apparecchia una lunga tavola e mangiano tutti.
+almanac.harvest_feast.turkeys_brought_down = Tacchini Selvatici abbattuti
+almanac.harvest_feast.crops_picked = Raccolti presi a mano
+almanac.harvest_feast.feasts = Banchetti a cui ti sei seduto
+almanac.harvest_feast.errands = Commissioni fatte per Martha
+
+# ---- Martha's conversation ----
+dialogue.harvest_feast_host.off_season.text = La festa di quest'anno è finita, e la tavola è sparecchiata.\nTorna quando i campi saranno raccolti.
+dialogue.harvest_feast_host.meet_arrival.text = Hai fatto tutta quella strada a stomaco vuoto, si vede.\nSono Martha. Quando i campi sono raccolti cucino per chiunque si presenti, e il pane viene per primo. Cominceremo col <b>grano</b>.
+dialogue.harvest_feast_host.meet_arrival.opt.hail = Piacere di conoscerti, Martha.
+dialogue.harvest_feast_host.first_words.text = Occhio alla tavola, è più lunga di quanto sembri.\nOgni anno, quando i campi sono raccolti, la apparecchio qui nel <color is="#ffd97a">Tempio Dimenticato</color> e do da mangiare a chiunque si presenti. C'è un sacco da cucinare da qui alla festa. Hai l'aria di chi sa portare un sacco di farina.
+dialogue.harvest_feast_host.first_words.opt.hail = Ti aiuto volentieri.
+dialogue.harvest_feast_host.board_fresh.text = La bacheca è pronta. Campi o cucina, c'è da fare di tutto, e tutto paga.
+dialogue.harvest_feast_host.board_fresh.opt.board = Fammi vedere la bacheca.
+dialogue.harvest_feast_host.board_fresh.opt.later = Dopo.
+dialogue.harvest_feast_host.board_fresh_friendly.text = Pulisciti gli stivali. Ti ho tenuto una sedia.\nSulla bacheca c'è un lavoro in più con il tuo nome.
+dialogue.harvest_feast_host.board_fresh_honored.text = Oh bene, sei tu. Scegli dalla bacheca prima che arrivino gli altri.
+dialogue.harvest_feast_host.board_fresh_revered.text = Siediti. Mangia qualcosa prima, hai l'aria di chi non mangia da giorni.\nLa bacheca può aspettare.
+dialogue.harvest_feast_host.menu.text = Occhio alla pentola. Cosa posso fare per te?
+dialogue.harvest_feast_host.wheat_offer.text = Prima il pane. Sempre.\nIl <b>grano</b> selvatico cresce fitto nei campi aperti in questo periodo. Raccoglimene una bella bracciata per i forni.
+dialogue.harvest_feast_host.wheat_offer.opt.accept = Porterò il grano.
+dialogue.harvest_feast_host.wheat_brief.text = Il <b>grano</b> cresce selvatico nei campi aperti. Raccoglilo a mano e portalo qui.
+dialogue.harvest_feast_host.wheat_ready.text = Che bella bracciata. La farina sarà macinata entro mattina.\nOra, una festa vuole un arrosto. Torna quando vuoi andare a caccia.
+dialogue.harvest_feast_host.wheat_ready.opt.turnin = Ecco il grano.
+dialogue.harvest_feast_host.turkeys_offer.text = I <b>Tacchini Selvatici</b> sono nei boschi questo mese, grassi e rumorosi e non così sciocchi come sembrano.\nAbbattine qualcuno. La tavola non vale niente senza un arrosto.
+dialogue.harvest_feast_host.turkeys_offer.opt.accept = Vado a caccia.
+dialogue.harvest_feast_host.turkeys_ready.text = Sai di bosco. Bene, vuol dire che è andata bene.\nEcco una ricetta per il lavoro successivo. E non muoverti: se passi la settimana a inseguire tacchini, tanto vale che tu ne abbia l'aspetto.
+dialogue.harvest_feast_host.turkeys_ready.opt.turnin = Eccomi dalla caccia.
+dialogue.harvest_feast_host.pie_offer.text = Tocca a te ai fornelli. Impara quella ricetta, poi inforna una <b>torta di zucca</b> a un <b>Fornello dello Chef</b>.\nImpasto, una zucca, un pizzico di spezie e un forno caldo. Portala a me.
+dialogue.harvest_feast_host.pie_offer.opt.accept = Ti inforno una torta.
+dialogue.harvest_feast_host.pie_brief.text = Impara la ricetta, poi inforna una <b>torta di zucca</b> a un <b>Fornello dello Chef</b>. Ti serviranno impasto, una zucca e un po' di spezie.
+dialogue.harvest_feast_host.pie_ready.text = Senti che profumo. Questa è una torta fatta con cura.\nHai fatto la tua parte e più. Vieni a sederti; è ora di mangiare.
+dialogue.harvest_feast_host.pie_ready.opt.turnin = Ecco la torta.
+dialogue.harvest_feast_host.feast_offer.text = Una volta l'anno mettiamo tutto in tavola e mangiamo finché nessuno si regge in piedi.\nPortami una <b>torta di zucca</b>, della <b>carne cotta</b> e un cesto di <b>carote</b>, e la apparecchiamo insieme.
+dialogue.harvest_feast_host.feast_offer.opt.accept = Apparecchiamo.
+dialogue.harvest_feast_host.feast_brief.text = Una <b>torta di zucca</b>, <b>carne cotta</b> sul fuoco e <b>carote</b> dei campi. Poi si mangia.
+dialogue.harvest_feast_host.feast_ready.text = Torta, arrosto e carote. Questa sì che è una festa.\nSiediti, mangia, e porta a casa questo piatto. Ha sopra l'anno, così te ne ricorderai.
+dialogue.harvest_feast_host.feast_ready.opt.turnin = Ecco tutto.
+dialogue.harvest_feast_host.feast_done.text = Hai ancora lo stomaco pieno? Anch'io. La tavola resta apparecchiata finché dura la festa.\nCosa posso fare per te?
+dialogue.harvest_feast_host.daily_turkeys_offer.text = L'arrosto di ieri è finito fino all'ultimo osso. Portami qualche altro <b>Tacchino Selvatico</b> e ne comincio un altro.
+dialogue.harvest_feast_host.daily_turkeys_offer.opt.accept = Vado a caccia.
+dialogue.harvest_feast_host.daily_wheat_offer.text = Ogni pagnotta che ho sfornato oggi è già sparita. Altro <b>grano</b>, o domattina niente pane.
+dialogue.harvest_feast_host.daily_wheat_offer.opt.accept = Porterò il grano.
+dialogue.harvest_feast_host.daily_roast_offer.text = Cuoci della <b>carne</b> su un fuoco e portala qui. La gente continua a mangiarsela prima che arrivi a tavola.
+dialogue.harvest_feast_host.daily_roast_offer.opt.accept = Porterò un arrosto.
+dialogue.harvest_feast_host.active_generic.text = Vai pure, allora. Ti tengo un piatto al caldo.
+dialogue.harvest_feast_host.ready_generic.text = Fammi vedere cosa hai portato.
+dialogue.harvest_feast_host.ready_generic.opt.turnin = Fatto.
+dialogue.harvest_feast_host.who_are_you.text = Nessuno d'importante. Cucino.\nQuando i campi sono raccolti vengo qui, apparecchio la lunga tavola e do da mangiare a chiunque si presenti. Certi anni è una dozzina di persone. Certi anni è tutta la gente per miglia.
+dialogue.harvest_feast_host.about_feast.text = È soprattutto un grazie. I campi ci hanno dato tanto, e il minimo è mangiarlo insieme.\nPorti qualcosa, porti a casa qualcosa. Sono tutte le regole che ci sono.
+dialogue.harvest_feast_host.opt.returned = Eccomi di nuovo.
+dialogue.harvest_feast_host.opt.quests = Cosa c'è da fare?
+dialogue.harvest_feast_host.opt.board = Cosa c'è sulla bacheca?
+dialogue.harvest_feast_host.opt.shop = Vediamo la tua bancarella.
+dialogue.harvest_feast_host.opt.standing = A che punto siamo?
+dialogue.harvest_feast_host.opt.almanac = Mostrami l'Almanacco.
+dialogue.harvest_feast_host.opt.who = Chi sei?
+dialogue.harvest_feast_host.opt.feast = A cosa serve la festa?
+dialogue.harvest_feast_host.opt.back = Altro.
+dialogue.harvest_feast_host.opt.farewell = Ci vediamo a tavola.
+
+# ---- The shared meal and the invitation tour ----
+quest.harvest_feast_shared_meal.title = La Tavola Condivisa
+quest.harvest_feast_shared_meal.flavor = Alla mia tavola nessuno mangia da solo. Arrostisci una verdura su un fuoco, portala qui e siediti un po'.
+quest.harvest_feast_invitations.title = La Lista degli Ospiti
+quest.harvest_feast_invitations.flavor = Una lunga tavola mezza vuota non serve a niente. Vai a invitare un po' di gente alla festa, poi torna a dirmi chi viene.
+objective.harvest_feast.invite = Invita {0} persone alla festa
+dialogue.harvest_feast_host.meal_offer.text = Alla mia tavola nessuno mangia da solo.\nArrostisci una <b>verdura</b> su un fuoco e portala qui, e la dividiamo. Passa ogni giorno, se ti va. C'è sempre una sedia.
+dialogue.harvest_feast_host.meal_offer.opt.accept = Porterò qualcosa.
+dialogue.harvest_feast_host.meal_brief.text = Va bene qualsiasi <b>verdura</b>. Arrostiscila su un fuoco e portala a tavola.
+dialogue.harvest_feast_host.meal_ready.text = Siediti, siediti. Passa qui quella e assaggia la mia.\nEcco. Oggi hai mangiato come si deve.
+dialogue.harvest_feast_host.meal_ready.opt.turnin = Dividiamola.
+dialogue.harvest_feast_host.invitations_offer.text = Una lunga tavola mezza vuota non serve a niente.\nVai a parlare della festa alla gente, a chiunque si fermi per due parole. <b>Invita un po' di persone</b>, poi torna a dirmi chi viene.
+dialogue.harvest_feast_host.invitations_offer.opt.accept = Spargo la voce.
+dialogue.harvest_feast_host.invitations_brief.text = Parla con la gente, chiunque tranne me, e <b>invitala alla festa</b>. Comincia da quelli intorno al tempio; hanno lavorato tutta la settimana e nessuno glielo ha ancora chiesto. Torna quando ne hai invitati un po'.
+dialogue.harvest_feast_host.invitations_ready.text = Così tanti? Meglio che sforni altro pane.\nGrazie. Una tavola piena è il senso di tutto.
+dialogue.harvest_feast_host.invitations_ready.opt.turnin = Stanno arrivando.
+dialogue.harvest_feast_invitation.opt.invite = Vieni a mangiare con noi alla tavola di Martha.
+
+# ---- The feast's villagers: Tomas the Miller, Elsie the Weaver and Bram the Shepherd ----
+dialogue.harvest_feast_miller.off_season.text = La festa è sparecchiata, e la farina pure.\nTornerò con altra quando i campi saranno raccolti l'anno prossimo.
+dialogue.harvest_feast_miller.off_season.opt.farewell = Allora all'anno prossimo.
+dialogue.harvest_feast_miller.greeting.text = Non starmi troppo vicino, la farina finisce dappertutto.\nHo trascinato sacchi dal mulino tutta la settimana perché i forni non si spengano mai. Mi farebbe comodo un posto alla lunga tavola, quando la festa comincia.
+dialogue.harvest_feast_miller.mill.text = Giù al fiume, come sempre. La ruota gira anche se non ci sono.\nIn questo periodo ogni sacco che macina va alla festa.
+dialogue.harvest_feast_miller.opt.mill = Dov'è il tuo mulino?
+dialogue.harvest_feast_miller.opt.back = Capisco.
+dialogue.harvest_feast_miller.opt.farewell = Ti lascio al tuo lavoro.
+dialogue.harvest_feast_weaver.off_season.text = La festa è finita e le tovaglie sono piegate.\nVieni a cercarmi quando i campi saranno di nuovo raccolti. Allora ne avrò di nuove.
+dialogue.harvest_feast_weaver.off_season.opt.farewell = Le aspetterò.
+dialogue.harvest_feast_weaver.greeting.text = Sono al mio telaio dall'alba. Fa bene stare in piedi da un'altra parte, per cambiare.\nHo tessuto le tovaglie per la lunga tavola. Sarebbe bello, per una volta, sedermi alla festa e mangiare su una di loro.
+dialogue.harvest_feast_weaver.cloth.text = Un runner per il centro della tavola, color oro del grano con il bordo arancione.\nQualcuno ci rovescia sempre il sugo, così ne tesso uno nuovo ogni anno.
+dialogue.harvest_feast_weaver.opt.cloth = Cosa stai tessendo ora?
+dialogue.harvest_feast_weaver.opt.back = È un bel lavoro.
+dialogue.harvest_feast_weaver.opt.farewell = Non ti trattengo.
+dialogue.harvest_feast_shepherd.off_season.text = La festa è finita. Torno su per la collina prima che le pecore si allontanino ancora.
+dialogue.harvest_feast_shepherd.off_season.opt.farewell = Buon ritorno a casa.
+dialogue.harvest_feast_shepherd.greeting.text = Sono sceso dalle colline con il vello per la tessitrice. Le pecore se la cavano da sole per qualche giorno.\nIn realtà no. Ma la festa non me la perdevo.
+dialogue.harvest_feast_shepherd.sheep.text = Mia sorella. Dice che non le dispiace.\nVuol dire che le porto una torta intera.
+dialogue.harvest_feast_shepherd.opt.sheep = Chi guarda le tue pecore?
+dialogue.harvest_feast_shepherd.opt.back = Se l'è meritato.
+dialogue.harvest_feast_shepherd.opt.farewell = Goditi la festa.
