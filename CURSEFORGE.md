@@ -2,7 +2,7 @@
 
 Yearly events for your Hytale server. Hallow's Eve runs from October 1 to November 12, Harvest Feast from November 20 to December 1, and every January 13 is Hytale's Anniversary.
 
-Each season brings a host to the Forgotten Temple: Old Jack for Hallow's Eve, Martha the Cook for Harvest Feast. Both have quests, a board of daily jobs, a stall and achievements, and the Festival Tokens you earn at one spend at the other. Built for Hytale's Update 7, it needs Ziggfreed's CommonLib 2.3.0 or newer and RPG Stations 1.1.1 or newer. MMO Skill Tree is optional: with it, both seasons train your skills.
+Each season brings a host to the Forgotten Temple: Old Jack for Hallow's Eve, Martha the Cook for Harvest Feast. Both have quests, a board of daily jobs, a stall and achievements, and the Festival Tokens you earn at one spend at the other. Built for Hytale's Update 7, it needs Ziggfreed's CommonLib 2.3.0 or newer and RPG Stations 1.1.1 or newer. MMO Skill Tree is optional: with it, both seasons train your skills. Everything in the pack plays in nine languages.
 
 [![Discord](https://img.shields.io/badge/Discord-Join%20Server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/5NFdZsUxHZ) [![Ko-fi](https://img.shields.io/badge/Ko--fi-Support-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/ziggfreed) [![Documentation](https://img.shields.io/badge/Docs-Read%20More-0ea5e9?style=for-the-badge)](https://mmo-skill-tree-docs.ziggfreed.com)
 
