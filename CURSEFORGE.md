@@ -25,7 +25,7 @@ Each season brings a host to the Forgotten Temple: Old Jack for Hallow's Eve, Ma
 - The top of each reputation pays off at his stall. Revered with the Hallowed, or Jack's Own with Old Jack, opens the Burning Jack Helm; Exalted with the Hallowed opens the Flaming Jack Shield. Both are charred black and tougher than the plain pair. They still count toward the Hallowed set.
 - Trick or treat. Knock on every character who has a conversation for you, once a day each. With MMO Skill Tree or another pack that gives characters conversations, every one of them plays along; on this pack alone, only Old Jack does. You always get a few sweets, then maybe more, some candy canes, a pumpkin pie, or a costume.
 - After dark, away from torches, Jack Skeletons, Hollow Ghouls and Lost Souls come out, and Geode Wraiths walk the mineshafts. By dawn they are gone.
-- Lantern Bombs: carved pumpkins packed with Boom Powder, in four tiers. Each one hits harder and wider than the last. The Burning Lantern Bomb sets things on fire, the Spectral Lantern Bomb slows them down too, and the Shattering Lantern Bomb throws flaming shards on top. A blast never hurts a player.
+- Lantern Bombs: carved pumpkins packed with Boom Powder, in four tiers. Each one hits harder and wider than the last. The Burning Lantern Bomb sets things on fire, the Spectral Lantern Bomb slows them down too, and the Shattering Lantern Bomb throws flaming shards on top. Every blast deals fire damage, so a creature's fire resistance softens it. A blast never hurts a player.
 - The Hallowed set, the Jack Helm and the Jack Shield. Helm on and shield in your off hand gives you more health and less fire damage, and you glow like a lantern. While you wear it, a Hallowed Set icon shows with your other effects.
 - A Costume Wand. Turn a friend into a Jack Skeleton or a Lost Soul for a few minutes. Their costume shows with their other effects as Jack Skeleton Costume or Lost Soul Costume. They can take it off whenever they like.
 - Cursed Geodes turn up while you mine. Crack one for crystals and something extra. Pumpkins you pick by hand sometimes come up Hallowed.
@@ -108,9 +108,9 @@ Add the MMO Skill Bounty Pack 1.3.0 or newer and its Daily bounty board posts a 
 
 ### [Full Changelog](https://github.com/arfemia/HallowsEvePack/tree/main/patch-notes)
 
-### v1.1.0
+### v1.1.0 (unreleased, held)
 
-Harvest Feast, with Martha the Cook's questline, dailies, board and stall, Wild Turkeys, favor with Martha, five achievements a season with a title, Head of the Table with another, and an Almanac page. Festival Favor and Festival Tokens shared by every season, with the Festival Shelf at both stalls and three achievements for keepsakes across the seasons. Hytale's Anniversary every January 13. At Old Jack's stall, five of Update 7's gadgets. Built for Hytale's Update 7; needs Ziggfreed's CommonLib 2.3.0 and RPG Stations 1.1.1.
+Harvest Feast, with Martha the Cook's questline, dailies, board and stall, Wild Turkeys, favor with Martha, five achievements a season with a title, Head of the Table with another, and an Almanac page. Festival Favor and Festival Tokens shared by every season, with the Festival Shelf at both stalls and three achievements for keepsakes across the seasons. Hytale's Anniversary every January 13. At Old Jack's stall, five of Update 7's gadgets. Lantern Bombs deal the game's own fire damage. Built for Hytale's Update 7; needs Ziggfreed's CommonLib 2.3.0 and RPG Stations 1.1.1.
 
 ### v1.0.0
 
