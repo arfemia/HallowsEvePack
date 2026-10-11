@@ -6,11 +6,12 @@
     "else it is left out of every list and opens closed.",
     "",
     "Everything here is priced in festival tokens, the currency every season shares. Includes carries the",
-    "festival shelf (Seasons_Of_Orbis_Festival_Stall) beside the host's own goods: the same offers every",
-    "season's host sells, with one purchase limit across them all. The shelf brings its own wallet, place",
-    "and name, so the header shows festival tokens and the festival shelf follows the host's own shelves",
-    "with no line of its own here. CategoryOrder fixes the order of the host's own shelves, and each one's",
-    "name is a key in harvestfeast.progression.lang."
+    "festival shelf (Seasons_Of_Orbis_Festival_Stall) beside the host's own goods: the offers every",
+    "season's host shares, with one purchase limit across them all, each on sale only in its own Season",
+    "or Dates (so the winter pieces show here and the Pumpkin Basket does not). The shelf brings its own",
+    "wallet, place and name, so the header shows festival tokens and the festival shelf follows the host's",
+    "own shelves with no line of its own here. CategoryOrder fixes the order of the host's own shelves, and",
+    "each one's name is a key in harvestfeast.progression.lang."
   ],
   "Season": "Harvest_Feast",
   "Text": {

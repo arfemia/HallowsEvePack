@@ -1,7 +1,8 @@
 {
-  "$Comment": "The game's own Halloween Pumpkin Basket on the festival shelf, sold for festival tokens at every season's host. The title is the item's own name key, written in full (server.items.<Id>.name) so the shelf shows the name the item shows in the bag; the item has no description key, so the offer has no line under it.",
+  "$Comment": "The game's own Halloween Pumpkin Basket on the festival shelf, priced in festival tokens. Season keeps it on sale only while Hallow's Eve runs, following the event's own days and any change or force an owner makes to them, so Old Jack's stall carries it and it is off the shelf (hidden, not locked) at every other host, Martha's Harvest Feast stall included. The title is the item's own name key, written in full (server.items.<Id>.name) so the shelf shows the name the item shows in the bag; the item has no description key, so the offer has no line under it.",
   "Text": { "TitleKey": "server.items.Halloween_Basket_Pumpkin.name" },
   "Shop": "Seasons_Of_Orbis_Festival_Stall",
+  "Season": "Hallows_Eve",
   "Listing": { "Category": "festival", "SortOrder": 10 },
   "Cost": { "Currencies": { "Seasons_Of_Orbis_Festival_Token": 25 } },
   "Rewards": [ { "Kind": "Item", "Params": { "Item": "Halloween_Basket_Pumpkin", "Count": 1 } } ]
