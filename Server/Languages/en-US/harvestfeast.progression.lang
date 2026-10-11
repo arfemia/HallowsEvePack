@@ -102,6 +102,20 @@ almanac.harvest_feast.crops_picked = Crops picked by hand
 almanac.harvest_feast.feasts = Feasts sat down to
 almanac.harvest_feast.errands = Errands run for Martha
 
+# ---- The Almanac page's items: where each comes from ----
+almanac.harvest_feast.source.bake_pumpkin = Bake it at a cooking bench from the recipe Martha gives you.
+almanac.harvest_feast.source.errands = A treat now and then from Martha's errands.
+almanac.harvest_feast.source.feast = Served at the Feast itself, once a year.
+almanac.harvest_feast.source.popcorn = From Martha's story, her board and the shared meal, or bought at her stall.
+almanac.harvest_feast.source.bread = Shared at the daily meal, and part of Martha's story.
+almanac.harvest_feast.source.story = Martha gives it to you during her story.
+almanac.harvest_feast.source.stall = Sold at Martha's stall.
+almanac.harvest_feast.source.stall_favor = Sold at Martha's stall as your standing with her grows.
+almanac.harvest_feast.source.seeds = From the Feast and Martha's errands, or bought at her stall.
+almanac.harvest_feast.source.keepsake = The Feast's keepsake, given once a year when you sit down to the Feast.
+almanac.harvest_feast.source.winter = Sold on the festival shelf at Martha's stall while the feast runs.
+almanac.harvest_feast.source.festival_favor = Sold at the festival stalls to those high in Festival Favor.
+
 # ---- Martha's conversation ----
 dialogue.harvest_feast_host.off_season.text = The feast's over for this year, and the table's packed away.\nCome back when the fields are in.
 dialogue.harvest_feast_host.meet_arrival.text = You walked all that way on an empty stomach, I can tell.\nI'm Martha. When the fields are in I cook for whoever turns up, and the bread comes first. We'll start you on <b>wheat</b>.

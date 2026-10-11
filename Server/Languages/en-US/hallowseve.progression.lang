@@ -205,5 +205,23 @@ shop.hallows_eve_offer_pumpkin_cute.title = Cute Halloween Pumpkin
 almanac.hallows_eve.skeletons_knocked_down = Jack Skeletons knocked down
 almanac.hallows_eve.wraiths_put_down = Geode Wraiths put down
 
+# ---- The Almanac page's items: where each comes from ----
+almanac.hallows_eve.source.pumpkin = Found now and then when you pick pumpkins by hand, and dropped by Jack Skeletons.
+almanac.hallows_eve.source.geode = Found in the rock and ore you mine, and dropped by Geode Wraiths.
+almanac.hallows_eve.source.ectoplasm = Dropped by Lost Souls, and found inside Cursed Geodes.
+almanac.hallows_eve.source.bombs = Dropped by the night's creatures, found inside Cursed Geodes, carved at a Carving Bench, or bought at Old Jack's stall.
+almanac.hallows_eve.source.bomb_epic = Rarely dropped by Geode Wraiths or found inside Cursed Geodes and the Hallowed's cache. You can also carve one from Rare bombs and a Cursed Geode, or buy a couple a day at Old Jack's stall.
+almanac.hallows_eve.source.trick_or_treat = Handed out when you go trick-or-treating.
+almanac.hallows_eve.source.workbench = Built at a Workbench, any time of year.
+almanac.hallows_eve.source.carved = Carved at a Carving Bench, or bought at Old Jack's stall.
+almanac.hallows_eve.source.jack_shield = Carved from Hallowed Pumpkins and a wooden shield at a Carving Bench, or bought at Old Jack's stall.
+almanac.hallows_eve.source.burning_helm = Sold at Old Jack's stall once the Hallowed revere you or Old Jack trusts you completely.
+almanac.hallows_eve.source.flaming_shield = Sold at Old Jack's stall once the Hallowed hold you in the highest regard.
+almanac.hallows_eve.source.stall = Sold at Old Jack's stall.
+almanac.hallows_eve.source.stall_favor = Sold at Old Jack's stall as your standing with him and the Hallowed grows.
+almanac.hallows_eve.source.festival_stall = Sold on the festival shelf at Old Jack's stall.
+almanac.hallows_eve.source.keepsake = Old Jack's keepsake, given once a year when you finish his story.
+almanac.hallows_eve.source.festival_favor = Sold at the festival stalls to those high in Festival Favor.
+
 # ---- Book breadcrumb ----
 achievement.category.seasons.hallows_eve = Hallow's Eve
