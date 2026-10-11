@@ -1,5 +1,6 @@
 {
-  "$Comment": "The Rare Lantern Bomb's blast: every creature within 4 blocks of the bomb takes damage, a shove, Burn and Slow, the game's own chill that halves a creature's speed. Players are never hurt: the one hit rule matches only an entity that is not a player, and with no plain HitEntity a player matches nothing. IgnoreOwner also keeps the thrower out. All damage is the cause Hallows_Eve_Lantern_Burst, credited to the thrower. Range is the radius in blocks; BaseDamage and Knockback.Force set how hard it hits.",
+  "$Comment": "The Rare Lantern Bomb's blast: every creature within 4 blocks of the bomb takes damage, a shove, Burn and Slow, the game's own chill that halves a creature's speed. Players are never hurt: the one hit rule matches only an entity that is not a player, and with no plain HitEntity a player matches nothing. IgnoreOwner also keeps the thrower out. All damage is the game's own Fire, credited to the thrower, so a creature's fire resistance softens it. The Hit tag marks every hit as a Lantern Bomb's, which a mod that rewards bomb damage can key on. Range is the radius in blocks; BaseDamage and Knockback.Force set how hard it hits.",
+  "Tags": {"Hit": ["Hallows_Eve_Lantern_Bomb"]},
   "Type": "Selector",
   "Selector": {"Id": "AOECircle", "Range": 4},
   "IgnoreOwner": true,
@@ -19,7 +20,7 @@
           {"Type": "ApplyEffect", "EffectId": "Slow", "Entity": "Target"},
           {
             "Parent": "DamageEntityParent",
-            "DamageCalculator": {"BaseDamage": {"Hallows_Eve_Lantern_Burst": 36}},
+            "DamageCalculator": {"BaseDamage": {"Fire": 36}},
             "DamageEffects": {
               "Knockback": {
                 "Type": "Point",
