@@ -1,0 +1,24 @@
+{
+  "$Comment": "A day errand on Old Jack's errands board (Hallows_Eve_Errands), half of his board's Hallowed Pumpkins job: half the pumpkins, and half its flat pay, with the board's own pay table on top. Its Boards entry names the errands board and its day band, which replaces the base's whole list. A pumpkin picked by hand out in the world sometimes comes with a Hallowed Pumpkin while the event runs; TURN_IN hands them over at the errands board, where the errand is collected. It writes its own Rewards.Claim because a child's list replaces the base's whole: the pay waits at the errands board until the player collects it. MMO Skill Tree's Mmo_Xp row (Harvesting XP, the skill the pumpkins come from) carries its own Requires, the hytale:mod_installed gate, which leaves the row out on a server without that mod while the rest of the errand pays.",
+  "Parent": "Hallows_Eve_Contract_Base",
+  "Text": {
+    "TitleKey": "quest.hallows_eve_errand_pumpkins.title",
+    "FlavorKey": "quest.hallows_eve_errand_pumpkins.flavor"
+  },
+  "Listing": { "Icon": "Hallows_Eve_Hallowed_Pumpkin" },
+  "Boards": [ { "Board": "Hallows_Eve_Errands", "Difficulty": "Hallows_Eve_Day", "Weight": 1 } ],
+  "Objectives": {
+    "bring_pumpkins": { "Kind": "TURN_IN", "Target": "Hallows_Eve_Hallowed_Pumpkin", "MatchMode": "EXACT", "Amount": 2, "TextKey": "objective.hallows_eve.bring_pumpkins" }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } },
+      { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": 5 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 25 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 12 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 15 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "HARVESTING", "Amount": "750" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

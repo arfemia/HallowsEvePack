@@ -11,8 +11,9 @@
     "of the draw whenever the event is off. hytale:mod_installed takes the whole file out on a server",
     "without MMO Skill Tree, since its objective and its XP reward are that mod's; always write it",
     "with Min 1. Its pay waits at Old Jack's board to be collected (Rewards.Claim), as every",
-    "contract's does: the board's own pay table, the same favor with Old Jack and the Hallowed as his",
-    "other contracts (the Reputation rewards; Amount is how much), plus XP in the skill it aims at.",
+    "contract's does: the board's own pay table, the same flat ten Hallow Sweets (the Currency reward)",
+    "and the same favor with Old Jack and the Hallowed as his other contracts (the Reputation rewards;",
+    "Amount is how much), plus XP in the skill it aims at.",
     "The board leaves with the event, and a job finished but not collected by then shows Collect in",
     "the player's Objective Book instead."
   ],
@@ -34,6 +35,7 @@
   "Rewards": {
     "Claim": [
       { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } },
+      { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": 10 } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 50 } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 25 } },
       { "Kind": "Mmo_Xp", "Params": { "Skill": "ARTILLERY", "Amount": "1500" } }

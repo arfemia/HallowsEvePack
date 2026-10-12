@@ -1,0 +1,27 @@
+{
+  "$Comment": [
+    "The sweets bonus on Old Jack's board pay: one draw from twelve amounts of Hallow Sweets, one to",
+    "twelve, each Weight 1 so each is as likely as the next. Hallows_Eve_Board_Pay reaches this table",
+    "12 times in 13, so with the draw that pays nothing the bonus runs from none to twelve. To move the",
+    "top of the range, add or take away entries here and keep Hallows_Eve_Board_Pay's Chance at N / (N",
+    "+ 1) for N entries. Sweets pay through the Currency reward kind, since a counter wallet has no item",
+    "to hand over."
+  ],
+  "Name": "Hallows_Eve_Board_Sweets",
+  "Pool": {
+    "Entries": [
+      { "Weight": 1, "Grants": { "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "1" } } ] } },
+      { "Weight": 1, "Grants": { "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "2" } } ] } },
+      { "Weight": 1, "Grants": { "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "3" } } ] } },
+      { "Weight": 1, "Grants": { "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "4" } } ] } },
+      { "Weight": 1, "Grants": { "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "5" } } ] } },
+      { "Weight": 1, "Grants": { "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "6" } } ] } },
+      { "Weight": 1, "Grants": { "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "7" } } ] } },
+      { "Weight": 1, "Grants": { "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "8" } } ] } },
+      { "Weight": 1, "Grants": { "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "9" } } ] } },
+      { "Weight": 1, "Grants": { "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "10" } } ] } },
+      { "Weight": 1, "Grants": { "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "11" } } ] } },
+      { "Weight": 1, "Grants": { "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "12" } } ] } }
+    ]
+  }
+}

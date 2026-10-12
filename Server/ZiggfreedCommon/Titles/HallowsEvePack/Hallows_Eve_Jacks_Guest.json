@@ -1,0 +1,8 @@
+{
+  "$Comment": "Jack's Guest: the title each year's copy of the achievement hallows_eve_jacks_guest pays, for being on the server while Hallow's Eve runs. It shows beside a player's name in menus and leaderboards once they pick it. Where it sits around the name is the key title.hallows_eve_jacks_guest.display, whose {0} is the name. A player who earned the achievement before the title existed gets it at their next login. Enabled false hides it everywhere without taking it from anybody who earned it.",
+  "Order": 40,
+  "Text": {
+    "TitleKey": "title.hallows_eve_jacks_guest.name",
+    "FlavorKey": "title.hallows_eve_jacks_guest.flavor"
+  }
+}

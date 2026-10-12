@@ -38,7 +38,7 @@
           { "Item": "Hallows_Eve_Lantern_Bomb_Uncommon", "SourceKey": "almanac.hallows_eve.source.bombs" },
           { "Item": "Hallows_Eve_Lantern_Bomb_Rare", "SourceKey": "almanac.hallows_eve.source.bombs" },
           { "Item": "Hallows_Eve_Lantern_Bomb_Epic", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.bomb_epic" },
-          { "Item": "Food_Candy_Cane", "SourceKey": "almanac.hallows_eve.source.trick_or_treat" },
+          { "Item": "Plant_Fruit_Apple", "SourceKey": "almanac.hallows_eve.source.trick_or_treat" },
           { "Item": "Food_Pie_Pumpkin", "SourceKey": "almanac.hallows_eve.source.trick_or_treat" },
           { "Item": "Hallows_Eve_Carving_Bench", "SourceKey": "almanac.hallows_eve.source.workbench" },
           { "Item": "Hallows_Eve_Jack_Lantern", "SourceKey": "almanac.hallows_eve.source.carved" },

@@ -1,7 +1,13 @@
 {
   "$Comment": [
-    "What a contract on Old Jack's board pays. Every roll is read on its own: the first and the last",
-    "always pay, and the two between are chances on top. Chance is a percent from 0 to 100.",
+    "What a contract on Old Jack's board, or an errand on his errands board, pays on top of the flat",
+    "Hallow Sweets every job lists in its own rewards. Every roll is read on its own: the last always",
+    "pays, and the three before it are chances. Chance is a percent from 0 to 100.",
+    "",
+    "The first roll is the sweets bonus, anywhere from none to twelve, each amount as likely as the",
+    "next: it lands 12 times in 13 (Chance 92.3077) and then draws one of Hallows_Eve_Board_Sweets's",
+    "twelve amounts, so missing it is the thirteenth outcome. A wallet amount has no range of its own",
+    "the way an item's Count and CountMax do, which is why the bonus is drawn from a table.",
     "",
     "Sweets and festival tokens (what every season pays) pay through the Currency reward kind, since",
     "a counter wallet has no item to hand over. A companion mod adds its own rolls to this table with",
@@ -10,8 +16,9 @@
   "Name": "Hallows_Eve_Board_Pay",
   "Rolls": [
     {
+      "Chance": { "Base": 92.3077 },
       "Grants": {
-        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "12" } } ]
+        "Rewards": [ { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Sweets" } } ]
       }
     },
     {

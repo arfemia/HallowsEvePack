@@ -1,0 +1,36 @@
+{
+  "$Comment": [
+    "Old Jack's errands board: two small jobs that change every four hours, beside his daily board.",
+    "Rotation Every Hours 4 is a span cadence, counted from the clock rather than a calendar boundary,",
+    "so every player sees the same two errands for the same four hours and a restart changes nothing.",
+    "",
+    "One slot posts an errand from the Hallows_Eve_Night band, for after dark, and one from the",
+    "Hallows_Eve_Day band, for daylight; only the Hallows_Eve_Errand_ contracts name this board, and",
+    "each band has three of them. An errand is half a board job: half the work, half the flat pay,",
+    "with the board's own pay table on top. Grades names each band with the daily board's words.",
+    "",
+    "Old Jack's conversation opens it from his menu, the line under his daily board's. Season makes",
+    "the board absent while the event is off; an errand left uncollected when the event ends shows",
+    "Collect in the player's Objective Book instead. Order 91 sorts it straight after the daily",
+    "board. Where keeps it in the Forgotten Temple: anywhere else it is left out of every list and",
+    "opens closed."
+  ],
+  "Text": {
+    "TitleKey": "board.hallows_eve_errands.title",
+    "FlavorKey": "board.hallows_eve_errands.desc"
+  },
+  "Icon": "Hallows_Eve_Ecto_Lantern",
+  "Order": 91,
+  "Rotation": { "Every": { "Hours": 4 } },
+  "Slots": [
+    { "Difficulty": "Hallows_Eve_Night" },
+    { "Difficulty": "Hallows_Eve_Day" }
+  ],
+  "Grades": {
+    "Hallows_Eve_Night": { "TitleKey": "board.hallows_eve_daily.grade.night" },
+    "Hallows_Eve_Day": { "TitleKey": "board.hallows_eve_daily.grade.day" }
+  },
+  "Currencies": [ "Hallows_Eve_Sweets" ],
+  "Where": { "GameplayConfig": [ "ForgottenTemple" ] },
+  "Season": "Hallows_Eve"
+}
