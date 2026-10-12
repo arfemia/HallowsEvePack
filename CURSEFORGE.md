@@ -18,6 +18,7 @@ Each season brings a host to the Forgotten Temple, Old Jack for Hallow's Eve, wi
 
 - **Old Jack**, a pumpkin-headed host, sets up in the Forgotten Temple for the season. A quest in your log, Lanterns in the Temple, sends you to him. His six quests end with lighting the Hollow Lantern, a keepsake with the year on it, and that last quest comes back every October.
 - Three dailies, plus Old Jack's board: a job for the dark and a job for the daylight, every day. Earn his favor and a second of each opens up. Collect a finished job's pay before he packs up for the year. Pay you never collected shows Collect in your Objective Book.
+- Old Jack's Errands, a second board. Ask him "Got any errands?" for two small jobs, one for the night and one for the day, that change every four hours. An errand is half a board job, for about half the pay.
 - Two reputations, Old Jack's Favor and the Hallowed. Old Jack's runs from Stranger up to Jack's Own. Your favor with the Hallowed keeps counting past Exalted, and every so often a cache waits for you to collect on their Reputation page. His quests and board jobs pay into both, and putting down the night's creatures raises your favor with the Hallowed. The Jack Helm and the Jack Shield add favor while you wear them. Favor carries over to next year.
 - Stop by for a word with Old Jack once a day and he pays a little favor for the visit. At Confidant you earn Jack's Confidant and its title.
 - Hallow Sweets. Spend them at Old Jack's stall on Lantern Bombs, lanterns, the Jack Helm and Jack Shield, a Costume Wand and the game's own Halloween Broomstick, which you can't get anywhere else. A shelf of Halloween decorations sits there too: lights, two carved pumpkins (one scary, one cute), a straw basket, a scarecrow and a wagon. Whatever you don't spend keeps until next year.
@@ -88,18 +89,6 @@ Add the MMO Skill Bounty Pack 1.3.0 or newer and its Daily bounty board posts a 
 - Harvest Feast, the next season, comes later this year.
 - The Hallow King and his Hollow Crypt, in a later update.
 
-## Versions
-
-### [Full Changelog](https://github.com/arfemia/HallowsEvePack/tree/main/patch-notes)
-
-### v1.1.0 (unreleased, held)
-
-Old Jack's board gains four jobs and shows its pay before you take one, and his Errands board posts two small jobs every four hours. Jack's Guest now gives a title. Cursed Geodes and trick-or-treating pay in full. At Old Jack's stall, five of Update 7's gadgets. Lantern Bombs deal the game's own fire damage, and the Shattering Lantern Bomb's landing blast hurts the creatures around it. Each season's Almanac page shows every item you can find that season, and hovering one tells you where it comes from. Festival Favor and Festival Tokens, shared by every season, with the Festival Shelf at Old Jack's stall, and three achievements for keepsakes across the seasons. Hytale's Anniversary every January 13. Built for Hytale's Update 7; needs Ziggfreed's CommonLib 2.3.0 and RPG Stations 1.1.1.
-
-### v1.0.0
-
-First release: Old Jack's questline, dailies, board and stall (Halloween decorations and the Halloween Broomstick included), favor with Old Jack and the Hallowed, trick-or-treat, the creatures of the season, Lantern Bombs, the Hallowed set and its two charred pieces for the top ranks, the Costume Wand, Cursed Geodes, the Carving Bench, Harvest Moon, seven achievements a season with a title, three keepsakes across the years with another, and an Almanac page. Needs Ziggfreed's CommonLib 2.2.0 and RPG Stations 1.1.0.
-
 ## Links & Support
 
 [![MMO Skill Tree](https://img.shields.io/badge/CurseForge-MMO%20Skill%20Tree-F16436?style=for-the-badge&logo=curseforge&logoColor=white)](https://www.curseforge.com/hytale/mods/mmo-skill-tree) [![Get Pro Edition](https://img.shields.io/badge/Get%20Pro%20Edition-F59E0B?style=for-the-badge)](https://mmo-skill-tree-docs.ziggfreed.com/commercial)
@@ -109,6 +98,7 @@ First release: Old Jack's questline, dailies, board and stall (Halloween decorat
 - [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree) (optional)
 - [MMO Skill Bounty Pack](https://www.curseforge.com/hytale/mods/mmo-skill-tree-bounty-board-pack-rich-customizable)
 - [Documentation](https://mmo-skill-tree-docs.ziggfreed.com)
+- [Patch notes for every version](https://github.com/arfemia/HallowsEvePack/tree/main/patch-notes)
 - [Discord](https://discord.gg/5NFdZsUxHZ)
 
 Questions or suggestions? Join the [Discord](https://discord.gg/5NFdZsUxHZ) or leave a comment.
