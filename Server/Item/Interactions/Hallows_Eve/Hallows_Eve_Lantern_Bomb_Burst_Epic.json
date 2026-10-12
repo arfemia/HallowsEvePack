@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Epic Lantern Bomb's blast: every creature within 4.5 blocks of the bomb takes damage, a shove, Burn and Slow, and then four flaming shards fly out (Hallows_Eve_Lantern_Shard_Projectile and its three siblings) and burst where they land. Players are never hurt: the one hit rule matches only an entity that is not a player, and with no plain HitEntity a player matches nothing. IgnoreOwner also keeps the thrower out. All damage is the game's own Fire, credited to the thrower, so a creature's fire resistance softens it. The Hit tag marks every hit as a Lantern Bomb's, which a mod that rewards bomb damage can key on. Range is the radius in blocks; BaseDamage and Knockback.Force set how hard it hits.",
+  "$Comment": "The Epic Lantern Bomb's blast: every creature within 4.5 blocks of the bomb takes damage, a shove, Burn and Slow, and then four flaming shards fly out (Hallows_Eve_Lantern_Shard_Projectile and its three siblings) and burst where they land. The last step waits a tenth of a second, as the other tiers' blasts do, so the blast's hits land before the bomb is removed. Players are never hurt: the one hit rule matches only an entity that is not a player, and with no plain HitEntity a player matches nothing. IgnoreOwner also keeps the thrower out. All damage is the game's own Fire, credited to the thrower, so a creature's fire resistance softens it. The Hit tag marks every hit as a Lantern Bomb's, which a mod that rewards bomb damage can key on. Range is the radius in blocks; BaseDamage and Knockback.Force set how hard it hits.",
   "Tags": {"Hit": ["Hallows_Eve_Lantern_Bomb"]},
   "Type": "Selector",
   "Selector": {"Id": "AOECircle", "Range": 4.5},
@@ -58,7 +58,8 @@
         "Type": "Projectile",
         "Config": "Hallows_Eve_Lantern_Shard_Projectile_Left",
         "IgnorePitch": true
-      }
+      },
+      {"Type": "Simple", "RunTime": 0.1}
     ]
   }
 }
