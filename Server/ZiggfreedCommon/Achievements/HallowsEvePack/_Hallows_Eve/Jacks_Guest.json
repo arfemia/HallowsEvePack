@@ -15,8 +15,13 @@
     "",
     "Rewards.Claim is favor with Old Jack and with the Hallowed (the Reputation rewards; Amount is how",
     "much), waiting on the achievements page until the player collects it. A copy earned before these",
-    "rows existed was settled the moment it was earned, so it never shows them to collect."
+    "rows existed was settled with nothing to collect; ClaimAddedOn tells the library that a copy earned",
+    "before that day and settled that way is owed them, so it offers them once, at the player's next",
+    "login. The day falls after the season's last day, so a server that updates late still reaches",
+    "every copy earned without them; a copy earned with them is never offered twice. Add any new Claim",
+    "row at the end of the list, never in the middle."
   ],
+  "ClaimAddedOn": "2026-11-13",
   "Parent": "Hallows_Eve_Hallowed_Base",
   "Text": {
     "TitleKey": "achievement.hallows_eve_jacks_guest.title",
