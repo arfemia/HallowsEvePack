@@ -4,9 +4,9 @@
 
 # ---- Harvest Feast ----
 calendar.harvest_feast.name = Праздник урожая
-calendar.harvest_feast.flavor = Поля убраны, и в Забытом Храме накрывают длинный стол.
+calendar.harvest_feast.flavor = Поля убраны, и в Забытом храме накрывают длинный стол.
 calendar.harvest_feast.herald.start = Праздник урожая
-calendar.harvest_feast.herald.start.sub = Марта-повариха накрывает на стол в Забытом Храме.
+calendar.harvest_feast.herald.start.sub = Марта-повариха накрывает на стол в Забытом храме.
 calendar.harvest_feast.herald.end = Праздник урожая закончился
 calendar.harvest_feast.herald.end.sub = Стол убран до следующего года.
 

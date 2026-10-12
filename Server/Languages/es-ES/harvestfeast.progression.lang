@@ -43,7 +43,7 @@ shop.harvest_feast_offer_recipe_caesar_salad.desc = La ensalada César de Martha
 
 # ---- Martha's intro quest ----
 quest.harvest_feast_martha_meet.title = Cena en el Templo
-quest.harvest_feast_martha_meet.flavor = La cosecha está recogida, así que vuelvo a cocinar en el Templo Olvidado. Cualquier Portal del Templo Olvidado te lleva hasta allí. Ven a buscarme, y ven con hambre.
+quest.harvest_feast_martha_meet.flavor = La cosecha está recogida, así que vuelvo a cocinar en el Templo Olvidado. Cualquier Portal al Templo Olvidado te lleva hasta allí. Ven a buscarme, y ven con hambre.
 objective.harvest_feast.meet_martha = Encuentra a Martha la Cocinera en el Templo Olvidado
 
 # ---- Martha's questline and the yearly feast ----

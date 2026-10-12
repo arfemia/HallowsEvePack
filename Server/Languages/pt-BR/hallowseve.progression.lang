@@ -90,7 +90,7 @@ shop.hallows_eve_old_jack.category.lights = Lanternas
 shop.hallows_eve_old_jack.category.gear = Equipamento
 shop.hallows_eve_offer_harvest_moon_bundle.title = Pacote da Lua da Colheita
 shop.hallows_eve_offer_harvest_moon_bundle.desc = Bombas-Lanterna Estilhaçadoras e Espectrais, vendidas só enquanto a Lua da Colheita está no céu.
-shop.hallows_eve_offer_spyglass.desc = Observe através dela nas Grotas Gotejantes para localizar uma besta tomada pelo Vazio.
+shop.hallows_eve_offer_spyglass.desc = Observe através dela nas Grotas Gotejantes para localizar uma besta apossada do Vazio.
 
 # ---- Conquistas ----
 achievement.hallows_eve_lantern_keepsake.title = Lanterna Oca {0}

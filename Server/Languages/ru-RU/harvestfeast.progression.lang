@@ -43,8 +43,8 @@ shop.harvest_feast_offer_recipe_caesar_salad.desc = Салат «Цезарь» 
 
 # ---- Martha's intro quest ----
 quest.harvest_feast_martha_meet.title = Ужин в Храме
-quest.harvest_feast_martha_meet.flavor = Поля убраны, и я снова готовлю в Забытом Храме. Туда ведут любые Врата Забытого Храма. Приходи, найди меня, и приходи голодным.
-objective.harvest_feast.meet_martha = Найдите Марту-повариху в Забытом Храме
+quest.harvest_feast_martha_meet.flavor = Поля убраны, и я снова готовлю в Забытом храме. Туда ведут любые Врата забытого храма. Приходи, найди меня, и приходи голодным.
+objective.harvest_feast.meet_martha = Найдите Марту-повариху в Забытом храме
 
 # ---- Martha's questline and the yearly feast ----
 quest.harvest_feast_host_1.title = Пшеница для печей
@@ -96,7 +96,7 @@ title.harvest_feast_head_of_the_table.display = {0}, во главе стола
 
 # ---- The Almanac page ----
 almanac.harvest_feast.title = Праздник урожая
-almanac.harvest_feast.flavor = Каждый год, когда поля убраны, в Забытом Храме накрывают длинный стол, и едят все.
+almanac.harvest_feast.flavor = Каждый год, когда поля убраны, в Забытом храме накрывают длинный стол, и едят все.
 almanac.harvest_feast.turkeys_brought_down = Подстрелено диких индюков
 almanac.harvest_feast.crops_picked = Урожая собрано вручную
 almanac.harvest_feast.feasts = Пиров, на которых посидели
@@ -106,7 +106,7 @@ almanac.harvest_feast.errands = Поручений для Марты выпол�
 dialogue.harvest_feast_host.off_season.text = Пир в этом году закончился, и стол убран.\nПриходи, когда поля будут убраны.
 dialogue.harvest_feast_host.meet_arrival.text = Ты шёл сюда так далеко на голодный желудок, я же вижу.\nЯ Марта. Когда поля убраны, я готовлю для всех, кто придёт, и хлеб всегда первым делом. Начнём с <b>пшеницы</b>.
 dialogue.harvest_feast_host.meet_arrival.opt.hail = Рад встрече, Марта.
-dialogue.harvest_feast_host.first_words.text = Осторожно со столом, он длиннее, чем кажется.\nКаждый год, когда поля убраны, я накрываю его здесь, в <color is="#ffd97a">Забытом Храме</color>, и кормлю всех, кто придёт. До пира готовить и готовить. Ты, похоже, мешок муки унесёшь.
+dialogue.harvest_feast_host.first_words.text = Осторожно со столом, он длиннее, чем кажется.\nКаждый год, когда поля убраны, я накрываю его здесь, в <color is="#ffd97a">Забытом храме</color>, и кормлю всех, кто придёт. До пира готовить и готовить. Ты, похоже, мешок муки унесёшь.
 dialogue.harvest_feast_host.first_words.opt.hail = Рад помочь.
 dialogue.harvest_feast_host.board_fresh.text = Доска готова. В поле или на кухне, делать надо всё, и за всё платят.
 dialogue.harvest_feast_host.board_fresh.opt.board = Покажи доску.

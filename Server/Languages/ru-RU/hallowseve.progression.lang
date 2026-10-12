@@ -10,7 +10,7 @@ quest.category.hallows_eve = Канун Всех Святых
 
 # ---- Цепочка квестов Старого Джека ----
 quest.hallows_eve_old_jack_meet.title = Фонари в храме
-quest.hallows_eve_old_jack_meet.flavor = Снова пришёл сезон, так что я опять в Забытом Храме со своими фонарями. Туда ведут любые Врата Забытого Храма. Приходи, найди меня. Помощь мне не помешает.
+quest.hallows_eve_old_jack_meet.flavor = Снова пришёл сезон, так что я опять в Забытом храме со своими фонарями. Туда ведут любые Врата забытого храма. Приходи, найди меня. Помощь мне не помешает.
 quest.hallows_eve_old_jack_1.title = Тыквенная грядка
 quest.hallows_eve_old_jack_1.flavor = Сорвёшь тыкву в этом месяце, и нет-нет да попадётся холодная, светящаяся. Принеси мне несколько таких, Освящённых.
 quest.hallows_eve_old_jack_2.title = Фонарное дело
@@ -33,7 +33,7 @@ quest.hallows_eve_jack_daily_geodes.title = Жеоды для Джека
 quest.hallows_eve_jack_daily_geodes.flavor = Расколи для меня пару Проклятых жеод. Руки у меня нынче для этого не гнутся.
 
 # ---- Шаги, сформулированные для этого пака ----
-objective.hallows_eve.meet_jack = Найдите Старого Джека в Забытом Храме
+objective.hallows_eve.meet_jack = Найдите Старого Джека в Забытом храме
 objective.hallows_eve.throw_bombs = Бросьте Фонарные бомбы: {0}
 objective.hallows_eve.crack_geodes = Расколите Проклятые жеоды: {0}
 objective.hallows_eve.bring_pumpkins = Принесите Освящённые тыквы: {0}
@@ -116,14 +116,14 @@ title.hallows_eve_hallowed.display = {0} из Освящённых
 
 # ---- Страница Альманаха ----
 almanac.hallows_eve.title = Канун Всех Святых
-almanac.hallows_eve.flavor = Каждую осень Старый Джек обосновывается в Забытом Храме, а по ночам бродят мертвецы.
+almanac.hallows_eve.flavor = Каждую осень Старый Джек обосновывается в Забытом храме, а по ночам бродят мертвецы.
 almanac.hallows_eve.bombs_thrown = Брошено Фонарных бомб
 almanac.hallows_eve.ghouls_felled = Повержено Полых упырей
 almanac.hallows_eve.souls_freed = Освобождено Заблудших душ
 almanac.hallows_eve.geodes_cracked = Расколото Проклятых жеод
 
 # ---- Разговор со Старым Джеком ----
-dialogue.hallows_eve_old_jack.first_words.text = Не обращай внимания на голову. Это тыква, и сидит она там уже давненько.\nЯ Старый Джек. Каждую осень мертвецам не лежится, вот я и возвращаюсь в <color is="#ffd97a">Забытый Храм</color> со своими фонарями. Мне бы не помешала пара рук, которые никто не вырезал.
+dialogue.hallows_eve_old_jack.first_words.text = Не обращай внимания на голову. Это тыква, и сидит она там уже давненько.\nЯ Старый Джек. Каждую осень мертвецам не лежится, вот я и возвращаюсь в <color is="#ffd97a">Забытый храм</color> со своими фонарями. Мне бы не помешала пара рук, которые никто не вырезал.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Приятно познакомиться, Джек.
 dialogue.hallows_eve_old_jack.meet.text = Значит, нашёл дорогу. Хорошо.\nЯ Старый Джек. Каждому, кто меня находит, положено <b>приветствие</b>, а ты своё ещё не получил.
 dialogue.hallows_eve_old_jack.meet.opt.accept = Спасибо, Джек.

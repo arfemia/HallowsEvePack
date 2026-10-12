@@ -57,11 +57,11 @@
           { "Item": "Deco_Scarecrow", "SourceKey": "almanac.hallows_eve.source.stall" },
           { "Item": "Halloween_Wagon", "SourceKey": "almanac.hallows_eve.source.stall" },
           { "Item": "Halloween_Broomstick", "SourceKey": "almanac.hallows_eve.source.stall" },
-          { "Item": "Tool_Spyglass", "SourceKey": "almanac.hallows_eve.source.stall_favor" },
-          { "Item": "Tool_Repair_Kit_Goblin", "SourceKey": "almanac.hallows_eve.source.stall_favor" },
-          { "Item": "Scrap_Hook", "SourceKey": "almanac.hallows_eve.source.stall_favor" },
-          { "Item": "Glider_Scrap", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.stall_favor" },
-          { "Item": "Tool_Hookshot", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.stall_favor" },
+          { "Item": "Tool_Spyglass", "SourceKey": "almanac.hallows_eve.source.stall_or_lab" },
+          { "Item": "Tool_Repair_Kit_Goblin", "SourceKey": "almanac.hallows_eve.source.stall_or_lab" },
+          { "Item": "Scrap_Hook", "SourceKey": "almanac.hallows_eve.source.stall_or_lab" },
+          { "Item": "Glider_Scrap", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.stall_or_lab" },
+          { "Item": "Tool_Hookshot", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.stall_or_lab" },
           { "Item": "Deco_Goblin_Plush", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.festival_favor" },
           { "Item": "Furniture_Kweebec_Statue", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.festival_favor" }
         ]

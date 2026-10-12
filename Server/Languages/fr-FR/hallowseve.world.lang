@@ -4,9 +4,9 @@
 
 # ---- Veille de la Toussaint ----
 calendar.hallows_eve.name = Veille de la Toussaint
-calendar.hallows_eve.flavor = Le Vieux Jack s'installe dans le Temple Oublié, et les morts marchent la nuit.
+calendar.hallows_eve.flavor = Le Vieux Jack s'installe dans le Temple de l'Oubli, et les morts marchent la nuit.
 calendar.hallows_eve.herald.start = Veille de la Toussaint
-calendar.hallows_eve.herald.start.sub = Le Vieux Jack attend au Temple Oublié.
+calendar.hallows_eve.herald.start.sub = Le Vieux Jack attend au Temple de l'Oubli.
 calendar.hallows_eve.herald.end = La Veille de la Toussaint est terminée
 calendar.hallows_eve.herald.end.sub = Les lanternes s'éteignent jusqu'à l'automne prochain.
 

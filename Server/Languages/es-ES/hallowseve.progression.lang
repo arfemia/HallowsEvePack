@@ -10,7 +10,7 @@ quest.category.hallows_eve = Noche de Ánimas
 
 # ---- La cadena de misiones del Viejo Jack ----
 quest.hallows_eve_old_jack_meet.title = Faroles en el Templo
-quest.hallows_eve_old_jack_meet.flavor = Ya es otra vez la temporada, así que he vuelto al Templo Olvidado con mis faroles. Cualquier Portal del Templo Olvidado te lleva hasta allí. Ven a buscarme. No me vendría mal una mano.
+quest.hallows_eve_old_jack_meet.flavor = Ya es otra vez la temporada, así que he vuelto al Templo Olvidado con mis faroles. Cualquier Portal al Templo Olvidado te lleva hasta allí. Ven a buscarme. No me vendría mal una mano.
 quest.hallows_eve_old_jack_1.title = El Calabazar
 quest.hallows_eve_old_jack_1.flavor = Recoge una calabaza este mes y de vez en cuando te sale una fría y reluciente. Tráeme unas cuantas de esas consagradas.
 quest.hallows_eve_old_jack_2.title = Faena de Faroles

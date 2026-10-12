@@ -11,7 +11,7 @@ quest.category.hallows_eve = Veille de la Toussaint
 
 # ---- La suite de quêtes du Vieux Jack ----
 quest.hallows_eve_old_jack_meet.title = Lanternes dans le temple
-quest.hallows_eve_old_jack_meet.flavor = C'est de nouveau la saison, alors me revoilà au Temple Oublié avec mes lanternes. N'importe quel Portail du Temple Oublié t'y mènera. Viens me trouver. J'aurais bien besoin d'un coup de main.
+quest.hallows_eve_old_jack_meet.flavor = C'est de nouveau la saison, alors me revoilà au Temple de l'Oubli avec mes lanternes. N'importe quelle Entrée du Temple de l'Oubli t'y mènera. Viens me trouver. J'aurais bien besoin d'un coup de main.
 quest.hallows_eve_old_jack_1.title = Champ de citrouilles
 quest.hallows_eve_old_jack_1.flavor = Cueille une citrouille ce mois-ci et de temps en temps, y en a une qui sort froide et luisante. Rapporte-m'en quelques-unes, de ces sanctifiées.
 quest.hallows_eve_old_jack_2.title = Travail de lanternes
@@ -34,7 +34,7 @@ quest.hallows_eve_jack_daily_geodes.title = Géodes pour Jack
 quest.hallows_eve_jack_daily_geodes.flavor = Casse-moi deux ou trois Géodes Maudites. J'ai les mains trop raides pour ça, ces temps-ci.
 
 # ---- Étapes formulées pour ce pack ----
-objective.hallows_eve.meet_jack = Trouvez le Vieux Jack dans le Temple Oublié
+objective.hallows_eve.meet_jack = Trouvez le Vieux Jack dans le Temple de l'Oubli
 objective.hallows_eve.throw_bombs = Lancez {0} Bombes-Lanternes
 objective.hallows_eve.crack_geodes = Cassez {0} Géodes Maudites
 objective.hallows_eve.bring_pumpkins = Rapportez {0} Citrouilles Sanctifiées
@@ -161,14 +161,14 @@ notify.hallows_eve_hallowed_cache = Une réserve des Sanctifiés, pour avoir gar
 
 # ---- La page de l'Almanach ----
 almanac.hallows_eve.title = Veille de la Toussaint
-almanac.hallows_eve.flavor = Chaque automne, le Vieux Jack s'installe dans le Temple Oublié, et les morts marchent la nuit.
+almanac.hallows_eve.flavor = Chaque automne, le Vieux Jack s'installe dans le Temple de l'Oubli, et les morts marchent la nuit.
 almanac.hallows_eve.bombs_thrown = Bombes-Lanternes lancées
 almanac.hallows_eve.ghouls_felled = Goules Creuses abattues
 almanac.hallows_eve.souls_freed = Âmes Perdues libérées
 almanac.hallows_eve.geodes_cracked = Géodes Maudites cassées
 
 # ---- La conversation du Vieux Jack ----
-dialogue.hallows_eve_old_jack.first_words.text = Fais pas attention à la tête. C'est une citrouille, et elle est là-dessus depuis un bon moment.\nMoi, c'est le Vieux Jack. Chaque automne, les morts s'agitent, alors je reviens au <color is="#ffd97a">Temple Oublié</color> avec mes lanternes. J'aurais bien besoin d'une paire de mains qui sont pas sculptées.
+dialogue.hallows_eve_old_jack.first_words.text = Fais pas attention à la tête. C'est une citrouille, et elle est là-dessus depuis un bon moment.\nMoi, c'est le Vieux Jack. Chaque automne, les morts s'agitent, alors je reviens au <color is="#ffd97a">Temple de l'Oubli</color> avec mes lanternes. J'aurais bien besoin d'une paire de mains qui sont pas sculptées.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Un plaisir de te rencontrer, Jack.
 dialogue.hallows_eve_old_jack.meet.text = Tu as trouvé l'endroit, alors. Bien.\nMoi, c'est le Vieux Jack. Tous ceux qui me trouvent ont droit à un <b>accueil</b>, et t'as pas encore eu le tien.
 dialogue.hallows_eve_old_jack.meet.opt.accept = Merci, Jack.
