@@ -7,3 +7,4 @@ gearset.hallows_eve_hallowed.tier_full = Helm auf und Schild in der Hand: etwas 
 # key (hallowseve.items.effect...), because the client reads an effect's Name exactly as written.
 effect.hallows_eve_costume_jack.name = Jack-Skelett-Kostüm
 effect.hallows_eve_costume_lost_soul.name = Kostüm der Verlorenen Seele
+effect.hallows_eve_lantern_burn.name = Verbrennung

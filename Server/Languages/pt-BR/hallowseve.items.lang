@@ -7,4 +7,5 @@ gearset.hallows_eve_hallowed.tier_full = Elmo na cabeça e escudo na mão: um po
 # key (hallowseve.items.effect...), because the client reads an effect's Name exactly as written.
 effect.hallows_eve_costume_jack.name = Fantasia de Esqueleto de Jack
 effect.hallows_eve_costume_lost_soul.name = Fantasia de Alma Perdida
+effect.hallows_eve_lantern_burn.name = Queimadura
 

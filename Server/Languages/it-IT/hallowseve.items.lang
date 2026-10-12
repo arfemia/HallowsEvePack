@@ -7,3 +7,4 @@ gearset.hallows_eve_hallowed.tier_full = Elmo in testa e scudo in mano: un po' p
 # per intero (hallowseve.items.effect...), perché il client legge il Name di un effetto esattamente come scritto.
 effect.hallows_eve_costume_jack.name = Costume da Scheletro Jack
 effect.hallows_eve_costume_lost_soul.name = Costume da Anima Perduta
+effect.hallows_eve_lantern_burn.name = Bruciatura

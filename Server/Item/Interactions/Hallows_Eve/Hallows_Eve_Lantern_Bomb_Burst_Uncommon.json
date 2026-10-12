@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Uncommon Lantern Bomb's blast: every creature within 3.5 blocks of the bomb takes damage, a shove and Burn, the game's own burning. Players are never hurt: the one hit rule matches only an entity that is not a player, and with no plain HitEntity a player matches nothing. IgnoreOwner also keeps the thrower out. All damage is the game's own Fire, credited to the thrower, so a creature's fire resistance softens it. The Hit tag marks every hit as a Lantern Bomb's, which a mod that rewards bomb damage can key on. Range is the radius in blocks; BaseDamage and Knockback.Force set how hard it hits.",
+  "$Comment": "The Uncommon Lantern Bomb's blast: every creature within 3.5 blocks of the bomb takes damage, a shove and the game's own burning (Hallows_Eve_Lantern_Burn: Burn carrying the Lantern Bomb tag, so the burn counts as the blast's). Players are never hurt: the one hit rule matches only an entity that is not a player, and with no plain HitEntity a player matches nothing. IgnoreOwner also keeps the thrower out. All damage is the game's own Fire, credited to the thrower, so a creature's fire resistance softens it. The Hit tag marks every hit as a Lantern Bomb's, which a mod that rewards bomb damage can key on. Range is the radius in blocks; BaseDamage and Knockback.Force set how hard it hits.",
   "Tags": {"Hit": ["Hallows_Eve_Lantern_Bomb"]},
   "Type": "Selector",
   "Selector": {"Id": "AOECircle", "Range": 3.5},
@@ -16,7 +16,7 @@
       "Matchers": [{"Type": "Player", "Invert": true}],
       "Next": {
         "Interactions": [
-          {"Type": "ApplyEffect", "EffectId": "Burn", "Entity": "Target"},
+          {"Type": "ApplyEffect", "EffectId": "Hallows_Eve_Lantern_Burn", "Entity": "Target"},
           {
             "Parent": "DamageEntityParent",
             "DamageCalculator": {"BaseDamage": {"Fire": 28}},

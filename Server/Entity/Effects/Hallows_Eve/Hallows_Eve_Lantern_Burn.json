@@ -1,0 +1,35 @@
+{
+  "$Comment": "The Lantern Bombs' burn: the game's own Burn, field for field on the same Burn_Template, so it ticks 5 Fire a second for 3 seconds with Burn's look, sound and icon. The Uncommon, Rare and Epic blasts and the Epic's shards apply it instead of Burn. The one difference is the Hit tag, the same one every blast and shard carries: each tick of this burn counts as the bomb's, so a mod that rewards bomb damage pays for the burn as well (on a server running MMO Skill Tree, this pack's XP map trains Artillery with it, never Magic). Keep its own DamageCalculator: an effect that inherits its parent's carries the parent's untagged one, and the ticks would read untagged. Duration and DamageCalculatorCooldown are in seconds; BaseDamage is each tick's damage.",
+  "Parent": "Burn_Template",
+  "Name": "hallowseve.items.effect.hallows_eve_lantern_burn.name",
+  "Tags": {"Hit": ["Hallows_Eve_Lantern_Bomb"]},
+  "ApplicationEffects": {
+    "EntityBottomTint": "#100600",
+    "EntityTopTint": "#cf2302",
+    "ScreenEffect": "ScreenEffects/Fire.png",
+    "WorldSoundEventId": "SFX_Effect_Burn_World",
+    "LocalSoundEventId": "SFX_Effect_Burn_Local",
+    "Particles": [
+      {
+        "SystemId": "Effect_Fire"
+      }
+    ],
+    "ModelVFXId": "Burn"
+  },
+  "DamageCalculatorCooldown": 1,
+  "DamageCalculator": {
+    "BaseDamage": {
+      "Fire": 5
+    }
+  },
+  "DamageEffects": {
+    "WorldSoundEventId": "SFX_Effect_Burn_World",
+    "PlayerSoundEventId": "SFX_Effect_Burn_Local"
+  },
+  "OverlapBehavior": "Overwrite",
+  "Infinite": false,
+  "Debuff": true,
+  "StatusEffectIcon": "UI/StatusEffects/Burn.png",
+  "Duration": 3,
+  "DeathMessageKey": "server.general.deathCause.burn"
+}

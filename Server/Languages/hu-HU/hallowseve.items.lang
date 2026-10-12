@@ -7,3 +7,4 @@ gearset.hallows_eve_hallowed.tier_full = Sisak a fejen, pajzs a kézben: egy kic
 # kulcsot írja ki (hallowseve.items.effect...), mert a kliens az effekt Name mezőjét szó szerint olvassa.
 effect.hallows_eve_costume_jack.name = Jack-csontváz Jelmez
 effect.hallows_eve_costume_lost_soul.name = Elveszett Lélek Jelmez
+effect.hallows_eve_lantern_burn.name = Égés
