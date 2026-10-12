@@ -6,16 +6,17 @@
     "raw id.",
     "",
     "Rewards.Auto pays what lands the moment it is earned: the title Hallows_Eve_Jacks_Guest (the Title",
-    "reward kind), and MMO Skill Tree's Mmo_Boost_Token, a quarter more XP in every skill for half an",
-    "hour, which the player starts when it suits them and which is kept with their skills, not in the",
-    "bag. The token's own Requires, the hytale:mod_installed gate, leaves that row out on a server",
-    "without that mod, unpaid and unshown. Every year's copy names the same title, so a second year",
-    "unlocks nothing new; a player who earned the achievement before the title existed gets it at their",
-    "next login.",
+    "reward kind). Every year's copy names the same title, so a second year unlocks nothing new; a",
+    "player who earned the achievement before the title existed gets it at their next login.",
     "",
-    "Rewards.Claim is favor with Old Jack and with the Hallowed (the Reputation rewards; Amount is how",
-    "much), waiting on the achievements page until the player collects it. A copy earned before these",
-    "rows existed was settled with nothing to collect; ClaimAddedOn tells the library that a copy earned",
+    "Rewards.Claim waits on the achievements page until the player collects it, and the collect notice",
+    "lists each row: favor with Old Jack and with the Hallowed (the Reputation rewards; Amount is how",
+    "much), then MMO Skill Tree's Mmo_Boost_Token, a quarter more XP in every skill for half an hour,",
+    "which the player starts when it suits them. The token's own Requires, the hytale:mod_installed",
+    "gate, leaves that row out on a server without that mod, unpaid and unshown.",
+    "",
+    "A copy earned before these rows existed was settled with nothing to collect; ClaimAddedOn tells",
+    "the library that a copy earned",
     "before that day and settled that way is owed them, so it offers them once, at the player's next",
     "login. The day falls after the season's last day, so a server that updates late still reaches",
     "every copy earned without them; a copy earned with them is never offered twice. Add any new Claim",
@@ -45,13 +46,13 @@
   },
   "Rewards": {
     "Auto": [
-      { "Kind": "Title", "Params": { "Title": "Hallows_Eve_Jacks_Guest" } },
-      { "Kind": "Mmo_Boost_Token", "Params": { "Skill": "ALL", "Multiplier": "1.25", "DurationMinutes": "30" },
-        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+      { "Kind": "Title", "Params": { "Title": "Hallows_Eve_Jacks_Guest" } }
     ],
     "Claim": [
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 500 } },
-      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 250 } }
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 250 } },
+      { "Kind": "Mmo_Boost_Token", "Params": { "Skill": "ALL", "Multiplier": "1.25", "DurationMinutes": "30" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
     ]
   }
 }
