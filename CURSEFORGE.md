@@ -1,8 +1,8 @@
 # Seasons of Orbis
 
-Yearly events for your Hytale server. Hallow's Eve runs from October 1 to November 12, Harvest Feast from November 20 to December 1, and every January 13 is Hytale's Anniversary.
+Yearly events for your Hytale server. Hallow's Eve runs from October 1 to November 12, and every January 13 is Hytale's Anniversary.
 
-Each season brings a host to the Forgotten Temple: Old Jack for Hallow's Eve, Martha the Cook for Harvest Feast. Both have quests, a board of daily jobs, a stall and achievements, and the Festival Tokens you earn at one spend at the other. Built for Hytale's Update 7, it needs Ziggfreed's CommonLib 2.3.0 or newer and RPG Stations 1.1.1 or newer. MMO Skill Tree is optional: with it, both seasons train your skills. Everything in the pack plays in nine languages.
+Each season brings a host to the Forgotten Temple, Old Jack for Hallow's Eve, with quests, a board of daily jobs, a stall and achievements. The Festival Tokens and Festival Favor you earn carry over from one season to the next. Built for Hytale's Update 7, it needs Ziggfreed's CommonLib 2.3.0 or newer and RPG Stations 1.1.1 or newer. MMO Skill Tree is optional: with it, Hallow's Eve trains your skills. Everything in the pack plays in nine languages.
 
 [![Discord](https://img.shields.io/badge/Discord-Join%20Server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/5NFdZsUxHZ) [![Ko-fi](https://img.shields.io/badge/Ko--fi-Support-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/ziggfreed) [![Documentation](https://img.shields.io/badge/Docs-Read%20More-0ea5e9?style=for-the-badge)](https://mmo-skill-tree-docs.ziggfreed.com)
 
@@ -35,28 +35,13 @@ Each season brings a host to the Forgotten Temple: Old Jack for Hallow's Eve, Ma
 - Achievements across the years. Old Friend wants three Hallow's Eves. Light the Hollow Lantern in three seasons for Lantern Keeper and the title "Keeper of Lanterns". First Lanterns only goes to players who light it in 2026, the first year.
 - An Almanac page for the season, opening on a banner built from its own items: your keepsakes, and lifetime counts of bombs thrown, ghouls felled, Jack Skeletons knocked down, souls freed, geodes cracked and Geode Wraiths put down. Each season's Almanac page shows every item you can find that season, and hovering one tells you where it comes from.
 
-### Harvest Feast, November 20 to December 1
-
-- **Martha the Cook** sets up a long table in the Forgotten Temple, with a bench across from her. A quest in your log, Supper in the Temple, sends you to her through any Forgotten Temple Gateway and pays two Festival Tokens when you hand it in.
-- Her four quests are Wheat for the Ovens, The Turkey Hunt, The First Pie and The Long Table. The Turkey Hunt hands you the pumpkin pie recipe and turns you into a turkey for three minutes. In The First Pie you bake one at a Chef's Stove.
-- The Long Table is the feast itself. Bring a pumpkin pie, cooked wildmeat and carrots, sit down, and take home two Meat Pies. It comes back every Harvest Feast.
-- After Wheat for the Ovens, Martha has three dailies: Turkey Run, Bread for the Morning and Roast for the Table. The Shared Table comes round every day as well. Roast a vegetable over a fire, bring it to her table and take home a loaf.
-- The Guest List, once every Harvest Feast. Ask three characters to the feast, then go back and tell her who's coming. Tomas the Miller, Elsie the Weaver and Bram the Shepherd stand around the temple while the feast runs, so there is always somebody to ask.
-- The Feast Board posts a Field job and a Kitchen job every day. Field work means Wild Turkeys or wild wheat; Kitchen work wants pumpkin pies or cooked wildmeat. A second Field job opens once you are a Neighbor with Martha, and a second Kitchen job at Known Face. Pay you never collected before the table is packed away shows Collect in your Objective Book.
-- Wild Turkeys roam the first zone's autumn woods, forests and plains by day. They drop what the game's own turkeys drop and come to you for corn. You can tame them, too. The ones still out are gone after dark.
-- A pumpkin you harvest by hand sometimes comes with Spices.
-- The Feast Stall takes Festival Tokens. Martha sells the Apple Pie Recipe for 8, the Meat Pie Recipe for 12 once you are a Neighbor and the Caesar Salad Recipe for 20 once you are Family, each one once. Four Popcorn cost 2 tokens (twice a day), four Corn Seed Bags 3 (once a day), and 16 Autumn Leaves 2.
-- Favor at the Feast runs from Newcomer through Neighbor, Known Face and Family to Head of the Table. Her quests and board jobs pay it, and once a day she pays a little for stopping by. Reach Head of the Table for the achievement of the same name and its title. Favor stays with you from one Harvest Feast to the next.
-- Sitting down to The Long Table earns Feast Plate, a keepsake with the year in its name. A Seat at the Table is for being here during the feast. Turkey Chaser wants 25 Wild Turkeys brought down, and Full Baskets 100 crops picked by hand. Earn all four in one season for The Full Table and the title "of the Full Table".
-- An Almanac page of its own, which Martha opens for you. It keeps your Feast Plates and lifetime tallies of Wild Turkeys brought down, crops picked by hand, feasts sat down to and errands run for Martha.
-
 ### Every season
 
-- **Festival Favor** is a reputation every season shares. Every quest Old Jack or Martha gives you, except the one that first sends you to them, pays it, and so does every Night, Day, Field and Kitchen job on their boards. It climbs to Exalted and keeps going through Exalted II, Exalted III and Exalted IV, and past that it earns you Festival Tokens to collect on its Reputation page. It stays with you from season to season and year to year.
-- Festival Tokens, the wallet every season shares. Old Jack's quests and board jobs pay them, and so do Martha's quests and her Field and Kitchen jobs. They carry over from one season to the next. You can't drop or lose them, and your wallet shows them all year.
-- The Festival Shelf, at Old Jack's stall and at Martha's, stocked by season. The winter decorations are on sale from November 20 to January 6, so they're at Martha's while the Harvest Feast runs: a Winter Stocking for 20 tokens, a Winter Wreath, Winter Garland or Winter Lights for 30 each, a Small Red Christmas Packet for 40 and a Snowman for 50. During Hallow's Eve, Old Jack's has a Halloween Pumpkin Basket for 25. Tokens from Hallow's Eve spend at Harvest Feast too.
+- **Festival Favor** is a reputation every season shares. Every quest Old Jack gives after Lanterns in the Temple pays it, and so does every Night and Day job on his board. It climbs to Exalted and keeps going through Exalted II, Exalted III and Exalted IV, and past that it earns you Festival Tokens to collect on its Reputation page. It stays with you from season to season and year to year.
+- Festival Tokens, the wallet every season shares. Old Jack's quests and board jobs pay them. They carry over from one season to the next. You can't drop or lose them, and your wallet shows them all year.
+- The Festival Shelf at Old Jack's stall sells by season, priced in Festival Tokens. During Hallow's Eve it has a Halloween Pumpkin Basket for 25.
 - Exalted II with Festival Favor opens the Goblin Plushie on the shelf for 60 tokens, and Exalted III the Carved Kweebec Figure for 80. No recipe or drop in the game hands either one out. Reach Exalted IV for Guest of Honor and its title.
-- Three achievements count keepsakes from different seasons, the Hollow Lantern and the Feast Plate so far, any year's counting. Season to Season wants keepsakes from two seasons and pays 25 Festival Tokens, Round the Year four for 50. Seasons of Orbis wants one from every season your server runs, never fewer than four, and pays 100 tokens, a Harvest Trophy and the title "Friend of the Seasons". With two seasons in the pack, Season to Season is the one within reach.
+- Three achievements count keepsakes from different seasons, such as the Hollow Lantern, any year's counting. Season to Season wants keepsakes from two seasons and pays 25 Festival Tokens, Round the Year four for 50. Seasons of Orbis wants one from every season your server runs, never fewer than four, and pays 100 tokens, a Harvest Trophy and the title "Friend of the Seasons".
 
 ### Hytale's Anniversary, January 13
 
@@ -67,17 +52,15 @@ Every January 13, starting in 2027, the day Hytale came out gets a banner and an
 1. Log in while a season runs. A banner marks its start, and a quest in your log sends you to its host in the Forgotten Temple.
 2. Find them there and press F. Hand in the quest and they offer their first quest. Old Jack's, Lanterns in the Temple, also gives you an Objective Book, which opens your quests, achievements and the Almanac.
 3. The host's conversation opens their board and their stall. Ask them for the Almanac to see your season, and once they know you, "How do we stand?" opens the Reputation page.
-4. Go out and do the work. Old Jack's creatures come out after dark, away from torches. Martha's Wild Turkeys roam by day.
-5. Spend sweets at Old Jack's stall and Festival Tokens at either host's, or carve what you need at a Carving Bench.
+4. Go out and do the work. Old Jack's creatures come out after dark, away from torches.
+5. Spend sweets and Festival Tokens at Old Jack's stall, or carve what you need at a Carving Bench.
 6. When a season ends, its host leaves and everything you earned stays with you. A quest you had not finished waits for them to come back next year.
 
 ## With MMO Skill Tree
 
-Install MMO Skill Tree 1.7.1 or newer beside this pack and both seasons train skills.
+Install MMO Skill Tree 1.7.1 or newer beside this pack and Hallow's Eve trains your skills.
 
 During Hallow's Eve, Lantern Bombs train Artillery. Old Jack's quests, his board jobs and the season's achievements pay XP in the skill the work trains: Defense for the fights, Harvesting for the pumpkins, Mining for the geodes and Artillery for the bombs. His dailies and board jobs pay 1,500 XP each, and each step of his questline at least 2,500. The Hallowed and Jack's Guest each add an XP boost token. Cracked geodes pay Mining XP, and his board posts a Skill job every day, which pays favor like his own. The Hallowed set adds luck and Artillery damage. The Carving Bench trains Crafting, and while Harvest Moon is up, Harvesting and Artillery XP get a lift for everyone.
-
-During Harvest Feast, Martha's quests and board jobs pay XP in the skill the work trains: Harvesting for the wheat and crops, Defense for the turkeys, Crafting for the cooking and baking, and Acrobatics for the walk to the temple and the invitations. Her board posts a Skill job every day too. The Shared Table, A Seat at the Table and The Full Table each add an XP boost token. Harvesting XP runs a quarter higher for everyone while the feast does.
 
 The pack never needs MMO Skill Tree: without it, those rewards don't show and the rest of each season plays the same.
 
@@ -87,12 +70,12 @@ Add the MMO Skill Bounty Pack 1.3.0 or newer and its Daily bounty board posts a 
 
 - Nothing to place. Each event starts and ends by the date (UTC), and each season's host sets up in the temple on their own.
 - To switch Hallow's Eve off, add `"Hallows_Eve": { "Enabled": false }` to `mods/ziggfreedcommon/calendar.json` and run `/zigcalendar reload`. Harvest Moon, Harvest Feast and the anniversary have their own switches under `"Harvest_Moon"`, `"Harvest_Feast"` and `"Hytale_Anniversary"`, and the same file can move any event's days.
-- An event switched off is gone from the world: the host leaves with everything they brought, and no new creatures or Wild Turkeys spawn. Nothing anyone earned is lost, and it all comes back when the event does.
+- An event switched off is gone from the world: the host leaves with everything they brought, and no new creatures spawn. Nothing anyone earned is lost, and it all comes back when the event does.
 - The items keep working all year once someone has them.
 - The Festival Shelf can also open all year as a stall of its own: switch it on in `mods/ziggfreedcommon/shops.json`. The winter decorations still sell only from November 20 to January 6 there, and the Pumpkin Basket only during Hallow's Eve.
-- `/zigcalendar status Harvest_Feast` shows what the server reads for that event.
+- `/zigcalendar status Hallows_Eve` shows what the server reads for that event.
 - Each season's Almanac banner is laid out from its items. You can rearrange it, or swap in a picture of your own, in `mods/ziggfreedcommon/almanac.json`; whatever you leave out stays as the pack has it.
-- The creatures are as tough as the game's own: a Hollow Ghoul hits like a Ghoul, and they come out in the first zone too. Neither they nor the Wild Turkeys are Memories.
+- The creatures are as tough as the game's own: a Hollow Ghoul hits like a Ghoul, and they come out in the first zone too. None of them are Memories.
 
 ## Install
 
@@ -102,6 +85,7 @@ Add the MMO Skill Bounty Pack 1.3.0 or newer and its Daily bounty board posts a 
 
 ## Roadmap
 
+- Harvest Feast, the next season, comes later this year.
 - The Hallow King and his Hollow Crypt, in a later update.
 
 ## Versions
@@ -110,7 +94,7 @@ Add the MMO Skill Bounty Pack 1.3.0 or newer and its Daily bounty board posts a 
 
 ### v1.1.0 (unreleased, held)
 
-Harvest Feast, with Martha the Cook's questline, dailies, board and stall, Wild Turkeys, favor with Martha, five achievements a season with a title, Head of the Table with another, and an Almanac page. Festival Favor and Festival Tokens shared by every season, with the Festival Shelf at both stalls, stocked by season, and three achievements for keepsakes across the seasons. Hytale's Anniversary every January 13. Old Jack's board gains four jobs and shows its pay before you take one, and his Errands board posts two small jobs every four hours. Jack's Guest now gives a title. Cursed Geodes and trick-or-treating pay in full. At Old Jack's stall, five of Update 7's gadgets. Lantern Bombs deal the game's own fire damage, and the Shattering Lantern Bomb's landing blast hurts the creatures around it. Each season's Almanac page shows every item you can find that season, and hovering one tells you where it comes from. Built for Hytale's Update 7; needs Ziggfreed's CommonLib 2.3.0 and RPG Stations 1.1.1.
+Old Jack's board gains four jobs and shows its pay before you take one, and his Errands board posts two small jobs every four hours. Jack's Guest now gives a title. Cursed Geodes and trick-or-treating pay in full. At Old Jack's stall, five of Update 7's gadgets. Lantern Bombs deal the game's own fire damage, and the Shattering Lantern Bomb's landing blast hurts the creatures around it. Each season's Almanac page shows every item you can find that season, and hovering one tells you where it comes from. Festival Favor and Festival Tokens, shared by every season, with the Festival Shelf at Old Jack's stall, and three achievements for keepsakes across the seasons. Hytale's Anniversary every January 13. Built for Hytale's Update 7; needs Ziggfreed's CommonLib 2.3.0 and RPG Stations 1.1.1.
 
 ### v1.0.0
 

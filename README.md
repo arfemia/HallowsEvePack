@@ -1,6 +1,6 @@
 # Seasons of Orbis
 
-A standalone Hytale content pack of yearly events: Hallow's Eve from October 1 to November 12, Harvest Feast from November 20 to December 1, and Hytale's Anniversary every January 13. Each season brings a host to the Forgotten Temple with quests, a daily board, a stall and achievements, and every season shares one reputation, Festival Favor, and one wallet, Festival Tokens. It never needs MMO Skill Tree.
+A standalone Hytale content pack of yearly events: Hallow's Eve from October 1 to November 12 and Hytale's Anniversary every January 13. Each season brings a host to the Forgotten Temple with quests, a daily board, a stall and achievements, and every season shares one reputation, Festival Favor, and one wallet, Festival Tokens. It never needs MMO Skill Tree.
 
 ## Requirements
 
@@ -25,15 +25,9 @@ After dark Jack Skeletons, Hollow Ghouls and Lost Souls come out, and Geode Wrai
 
 The Carving Bench, crafted at a Workbench, carves lanterns, the Jack Helm and Lantern Bombs all year. Its Hallowed recipe, the Jack Shield, opens only during the event.
 
-## Harvest Feast
-
-From November 20 to December 1, Martha the Cook sets up a long table in the Forgotten Temple. Her four quests run from Wheat for the Ovens to The Long Table, the feast itself, which comes back every year. She has three dailies, The Shared Table every day and The Guest List once a feast, with Tomas the Miller, Elsie the Weaver and Bram the Shepherd standing around the temple to invite. The Feast Board posts a Field job and a Kitchen job every day. Her stall takes Festival Tokens for pie and salad recipes, popcorn, corn seed and autumn leaves. Wild Turkeys roam the first zone's autumn woods, forests and plains by day, and hand-picked pumpkins sometimes come with Spices.
-
-Favor at the Feast runs from Newcomer to Head of the Table, which earns an achievement and a title. Neighbor and Known Face open a second Field and a second Kitchen job, and Neighbor and Family open the Meat Pie and Caesar Salad recipes. The season has its own achievements, among them a yearly keepsake (the Feast Plate) and the title "of the Full Table" for earning the other four in one season, and an Almanac page.
-
 ## Every season
 
-- Festival Favor, a reputation every season shares, runs up to Exalted and on through Exalted II, III and IV. Old Jack's and Martha's quests (all but the first) and their Night, Day, Field and Kitchen jobs pay it.
+- Festival Favor, a reputation every season shares, runs up to Exalted and on through Exalted II, III and IV. Old Jack's quests (all but the first) and his Night and Day jobs pay it.
 - Festival Tokens, the wallet every season shares, carry over from season to season and spend at the Festival Shelf in each host's stall, on decorations from the game's own festivals. Exalted II and Exalted III open the Goblin Plushie and the Carved Kweebec Figure there.
 - Three achievements count keepsakes from different seasons: Season to Season, Round the Year and Seasons of Orbis, which gives the title "Friend of the Seasons".
 - Hytale's Anniversary: every January 13 from 2027, being on the server earns that year's anniversary achievement and the title "the Ever-Present".
@@ -42,10 +36,10 @@ Server owners switch any event off, or move its days, in `mods/ziggfreedcommon/c
 
 ## With other mods
 
-- **With MMO Skill Tree** (1.7.1+), both seasons train skills. Hallow's Eve: Lantern Bombs train Artillery, Old Jack's rewards and the cracked geodes pay skill XP, his board posts a Skill job every day that pays favor like his own, the Hallowed set adds luck and Artillery damage, the Carving Bench trains Crafting, and Harvest Moon lifts Harvesting and Artillery XP. Harvest Feast: Martha's quests, board jobs and two of the season's achievements pay XP in Harvesting, Defense, Crafting and Acrobatics, her board posts a Skill job every day, and Harvesting XP runs a quarter higher while the feast does. The pack never needs MMO Skill Tree.
+- **With MMO Skill Tree** (1.7.1+), Hallow's Eve trains skills: Lantern Bombs train Artillery, Old Jack's rewards and the cracked geodes pay skill XP, his board posts a Skill job every day that pays favor like his own, the Hallowed set adds luck and Artillery damage, the Carving Bench trains Crafting, and Harvest Moon lifts Harvesting and Artillery XP. The pack never needs MMO Skill Tree.
 - **With the MMO Skill Bounty Pack** (1.3.0+), the Daily bounty board posts a haunt contract each day of Hallow's Eve.
 
-1.1.0 adds Harvest Feast, Festival Favor and Festival Tokens, the Seasons of Orbis achievements and Hytale's Anniversary, beside MMO Skill Tree 1.7.1. 1.0.0 was the pack's first release, beside MMO Skill Tree 1.7.0.
+1.1.0 adds Festival Favor and Festival Tokens, the Seasons of Orbis achievements, Hytale's Anniversary and more for Hallow's Eve, beside MMO Skill Tree 1.7.1. Harvest Feast, the next season, comes later this year. 1.0.0 was the pack's first release, beside MMO Skill Tree 1.7.0.
 
 ## Build
 
