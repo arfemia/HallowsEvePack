@@ -33,7 +33,7 @@ Each season brings a host to the Forgotten Temple: Old Jack for Hallow's Eve, Ma
 - Harvest Moon, October 28 to November 1. About twice the creatures come out at night, and every geode and Hallowed Pumpkin you find comes in pairs. Old Jack puts a bundle of bombs on the stall.
 - Seven achievements a season. The last one, The Hallowed, is for earning the other six in one season and gives you the title "the Hallowed". Each year's achievements stay with you as feats.
 - Achievements across the years. Old Friend wants three Hallow's Eves. Light the Hollow Lantern in three seasons for Lantern Keeper and the title "Keeper of Lanterns". First Lanterns only goes to players who light it in 2026, the first year.
-- An Almanac page for the season, opening on a banner built from its own items: your keepsakes, and lifetime counts of bombs thrown, ghouls felled, Jack Skeletons knocked down, souls freed, geodes cracked and Geode Wraiths put down.
+- An Almanac page for the season, opening on a banner built from its own items: your keepsakes, and lifetime counts of bombs thrown, ghouls felled, Jack Skeletons knocked down, souls freed, geodes cracked and Geode Wraiths put down. Each season's Almanac page shows every item you can find that season, and hovering one tells you where it comes from.
 
 ### Harvest Feast, November 20 to December 1
 
@@ -110,7 +110,7 @@ Add the MMO Skill Bounty Pack 1.3.0 or newer and its Daily bounty board posts a 
 
 ### v1.1.0 (unreleased, held)
 
-Harvest Feast, with Martha the Cook's questline, dailies, board and stall, Wild Turkeys, favor with Martha, five achievements a season with a title, Head of the Table with another, and an Almanac page. Festival Favor and Festival Tokens shared by every season, with the Festival Shelf at both stalls, stocked by season, and three achievements for keepsakes across the seasons. Hytale's Anniversary every January 13. Old Jack's board gains four jobs and shows its pay before you take one, and his Errands board posts two small jobs every four hours. Jack's Guest now gives a title. Cursed Geodes and trick-or-treating pay in full. At Old Jack's stall, five of Update 7's gadgets. Lantern Bombs deal the game's own fire damage, and the Shattering Lantern Bomb's landing blast hurts the creatures around it. Built for Hytale's Update 7; needs Ziggfreed's CommonLib 2.3.0 and RPG Stations 1.1.1.
+Harvest Feast, with Martha the Cook's questline, dailies, board and stall, Wild Turkeys, favor with Martha, five achievements a season with a title, Head of the Table with another, and an Almanac page. Festival Favor and Festival Tokens shared by every season, with the Festival Shelf at both stalls, stocked by season, and three achievements for keepsakes across the seasons. Hytale's Anniversary every January 13. Old Jack's board gains four jobs and shows its pay before you take one, and his Errands board posts two small jobs every four hours. Jack's Guest now gives a title. Cursed Geodes and trick-or-treating pay in full. At Old Jack's stall, five of Update 7's gadgets. Lantern Bombs deal the game's own fire damage, and the Shattering Lantern Bomb's landing blast hurts the creatures around it. Each season's Almanac page shows every item you can find that season, and hovering one tells you where it comes from. Built for Hytale's Update 7; needs Ziggfreed's CommonLib 2.3.0 and RPG Stations 1.1.1.
 
 ### v1.0.0
 
