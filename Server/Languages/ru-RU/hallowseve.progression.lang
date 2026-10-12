@@ -57,6 +57,30 @@ quest.hallows_eve_board_geodes.title = Глубинные жеоды
 quest.hallows_eve_board_geodes.flavor = Проклятые жеоды опять попадаются в камне, а больше всего в руде. Расколи мне несколько и пальцы береги.
 quest.hallows_eve_board_harvest_moon.title = Охота под Урожайной луной
 quest.hallows_eve_board_harvest_moon.flavor = Урожайная луна взошла, и Скелеты-Джеки повылезали толпами. Повали их побольше, пока она не зашла.
+quest.hallows_eve_board_wraiths.title = Призраки шахт
+quest.hallows_eve_board_wraiths.flavor = После темноты по шахтам бродит что-то с косой, там, куда не достаёт свет факелов. Уложи парочку для меня.
+quest.hallows_eve_board_ectoplasm.title = Топливо для фонарей
+quest.hallows_eve_board_ectoplasm.flavor = В моих фонарях кончается Эктоплазма. Заблудшие души оставляют её, когда их отпускаешь, так что принеси мне её побольше.
+quest.hallows_eve_board_pumpkins.title = Холодные тыквы
+quest.hallows_eve_board_pumpkins.flavor = Фонарям нужно больше Освящённых тыкв, чем даёт моя грядка. Собирай тыквы руками и неси мне холодные.
+quest.hallows_eve_board_carving.title = Резьба на верстаке
+quest.hallows_eve_board_carving.flavor = На каждое крыльцо нужен фонарь, а я режу не так быстро. Вырежи несколько Фонарей Джека на Верстаке резчика: на каждый по тыкве и кусочку угля.
+
+# ---- Old Jack's errands board ----
+board.hallows_eve_errands.title = Поручения Старого Джека
+board.hallows_eve_errands.desc = Мелкие дела, одно для тьмы и одно для дня. Каждые несколько часов я вешаю новую пару, так что заглядывай.
+quest.hallows_eve_errand_souls.title = Бродячие души
+quest.hallows_eve_errand_souls.flavor = Несколько Заблудших душ забрели сюда с тех пор, как я смотрел в последний раз. Отпусти их, когда будет минутка.
+quest.hallows_eve_errand_ghouls.title = Ночной дозор на кладбище
+quest.hallows_eve_errand_ghouls.flavor = Какие-то Полые упыри опять скребутся у могил. Уложи их обратно, пока не разбрелись.
+quest.hallows_eve_errand_ectoplasm.title = Гаснущий фонарь
+quest.hallows_eve_errand_ectoplasm.flavor = Один из моих фонарей гаснет. Немного Эктоплазмы дотянет его до утра.
+quest.hallows_eve_errand_bombs.title = Бомбовая практика
+quest.hallows_eve_errand_bombs.flavor = Остались лишние Фонарные бомбы? Брось парочку для меня. Мне нравится шум.
+quest.hallows_eve_errand_geodes.title = Треснувший камень
+quest.hallows_eve_errand_geodes.flavor = Расколи для меня несколько Проклятых жеод. Люблю слушать, как они лопаются.
+quest.hallows_eve_errand_pumpkins.title = Запасные тыквы
+quest.hallows_eve_errand_pumpkins.flavor = Фонарь на ступенях раскис. Принеси мне Освящённых тыкв, когда будешь проходить мимо.
 
 # ---- Прилавок Старого Джека ----
 shop.hallows_eve_old_jack.title = Прилавок Старого Джека
@@ -136,6 +160,7 @@ dialogue.hallows_eve_old_jack.who_are_you.text = Старый Джек. Держ
 dialogue.hallows_eve_old_jack.harvest_moon.text = Видишь луну? Урожайная луна. Несколько ночей в году мертвецам под ней не лежится, и могилы пустеют.\nХочешь работы, сегодня самая ночь. Я не лягу, пока она не зайдёт.
 dialogue.hallows_eve_old_jack.opt.quests = Что нужно сделать?
 dialogue.hallows_eve_old_jack.opt.board = Что на доске?
+dialogue.hallows_eve_old_jack.opt.errands = Есть поручения?
 dialogue.hallows_eve_old_jack.opt.shop = Покажи свой прилавок.
 dialogue.hallows_eve_old_jack.opt.almanac = Покажи Альманах.
 dialogue.hallows_eve_old_jack.opt.who = Кто ты?
@@ -168,6 +193,8 @@ almanac.hallows_eve.wraiths_put_down = Уложено Призраков жео�
 
 # ---- Расположение Старого Джека и Освящённые: репутации, значки доски и «Наперсник Джека» ----
 objective.hallows_eve.jack_confidant = Станьте наперсником Старого Джека
+objective.hallows_eve.put_down_wraiths = Уложите Призраков жеоды: {0}
+objective.hallows_eve.carve_lanterns = Вырежьте Фонари Джека: {0}
 board.hallows_eve_daily.grade.night = Работа ночью
 board.hallows_eve_daily.grade.day = Работа днём
 achievement.hallows_eve_jacks_confidant.title = Наперсник Джека
@@ -175,6 +202,12 @@ achievement.hallows_eve_jacks_confidant.desc = Станьте наперсник
 title.hallows_eve_jacks_confidant.name = Наперсник Джека
 title.hallows_eve_jacks_confidant.flavor = Стал наперсником Старого Джека.
 title.hallows_eve_jacks_confidant.display = {0}, Наперсник Джека
+
+# ---- Jack's Guest: the title the yearly achievement pays ----
+title.hallows_eve_jacks_guest.name = Гость Джека
+title.hallows_eve_jacks_guest.flavor = Принял участие в Кануне Всех Святых.
+title.hallows_eve_jacks_guest.display = {0}, Гость Джека
+
 reputation.hallows_eve_old_jack.name = Расположение Старого Джека
 reputation.hallows_eve_old_jack.flavor = Старый Джек не сразу теплеет к людям. Выполняйте его поручения и время от времени заходите перекинуться словом.
 reputation.hallows_eve_old_jack.rank.neutral = Незнакомец

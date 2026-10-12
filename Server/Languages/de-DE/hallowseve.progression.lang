@@ -43,6 +43,8 @@ objective.hallows_eve.free_souls = Befreie {0} Verlorene Seelen
 objective.hallows_eve.bring_ectoplasm = Bringe {0} Ektoplasma
 objective.hallows_eve.knock_down_skeletons = Hau {0} Jack-Skelette um
 objective.hallows_eve.attend = Nimm an Halloween teil
+objective.hallows_eve.put_down_wraiths = Strecke {0} Geodengespenster nieder
+objective.hallows_eve.carve_lanterns = Schnitze {0} Jack-Laternen
 
 # ---- Die Tafel des Alten Jack ----
 board.hallows_eve_daily.title = Tafel des Alten Jack
@@ -57,6 +59,30 @@ quest.hallows_eve_board_geodes.title = Tiefe Geoden
 quest.hallows_eve_board_geodes.flavor = Verfluchte Geoden tauchen wieder im Stein auf, vor allem im Erz. Knack welche für mich auf, und Vorsicht mit den Fingern.
 quest.hallows_eve_board_harvest_moon.title = Erntemond-Jagd
 quest.hallows_eve_board_harvest_moon.flavor = Der Erntemond ist aufgegangen, und die Jack-Skelette sind in Scharen unterwegs. Hau 'ne ordentliche Menge um, bevor er untergeht.
+quest.hallows_eve_board_wraiths.title = Gespenster im Schacht
+quest.hallows_eve_board_wraiths.flavor = Nachts geht etwas mit einer Sense durch die Schächte, dort unten, wo keine Fackel hinreicht. Streck ein paar davon für mich nieder.
+quest.hallows_eve_board_ectoplasm.title = Laternenfutter
+quest.hallows_eve_board_ectoplasm.flavor = Meinen Laternen geht das Ektoplasma aus. Die Verlorenen Seelen lassen es zurück, wenn du sie befreist, also bring mir davon eine ordentliche Menge.
+quest.hallows_eve_board_pumpkins.title = Kalte Kürbisse
+quest.hallows_eve_board_pumpkins.flavor = Die Laternen wollen mehr Geweihte Kürbisse, als mein Beet hergibt. Pflück Kürbisse von Hand und bring mir die kalten.
+quest.hallows_eve_board_carving.title = Schnitzbank-Arbeit
+quest.hallows_eve_board_carving.flavor = Vor jede Tür gehört eine Laterne, und ich schnitze nun mal nicht schneller. Schnitze ein paar Jack-Laternen an einer Schnitzbank, jede aus einem Kürbis und einem Stück Holzkohle.
+
+# ---- Old Jack's errands board ----
+board.hallows_eve_errands.title = Besorgungen des Alten Jack
+board.hallows_eve_errands.desc = Kleine Arbeiten, eine für die Dunkelheit und eine für den Tag. Ich hänge alle paar Stunden ein frisches Paar auf, schau also wieder vorbei.
+quest.hallows_eve_errand_souls.title = Streunende Seelen
+quest.hallows_eve_errand_souls.flavor = Ein paar Verlorene Seelen sind hergetrieben, seit ich zuletzt geschaut habe. Befrei sie, wenn du eine Minute hast.
+quest.hallows_eve_errand_ghouls.title = Grabwache
+quest.hallows_eve_errand_ghouls.flavor = Ein paar Hollow-Ghule scharren schon wieder an den Gräbern. Leg sie wieder hin, bevor sie davonstreunen.
+quest.hallows_eve_errand_ectoplasm.title = Flackernde Laterne
+quest.hallows_eve_errand_ectoplasm.flavor = Eine meiner Laternen flackert. Ein bisschen Ektoplasma bringt sie durch die Nacht.
+quest.hallows_eve_errand_bombs.title = Bombenübung
+quest.hallows_eve_errand_bombs.flavor = Hast du Laternenbomben übrig? Wirf ein paar für mich. Ich mag den Krach.
+quest.hallows_eve_errand_geodes.title = Gesprungener Stein
+quest.hallows_eve_errand_geodes.flavor = Knack ein paar Verfluchte Geoden für mich auf. Ich höre sie gern platzen.
+quest.hallows_eve_errand_pumpkins.title = Ersatzkürbisse
+quest.hallows_eve_errand_pumpkins.flavor = Auf den Stufen ist eine Laterne weich geworden. Bring mir ein paar Geweihte Kürbisse, wenn du vorbeikommst.
 
 # ---- Der Marktstand des Alten Jack ----
 shop.hallows_eve_old_jack.title = Marktstand des Alten Jack
@@ -136,6 +162,7 @@ dialogue.hallows_eve_old_jack.who_are_you.text = Der Alte Jack. Ich hatte mal ei
 dialogue.hallows_eve_old_jack.harvest_moon.text = Siehst du den Mond? Erntemond. Ein paar Nächte im Jahr werden die Toten unter ihm unruhig, und die Gräber leeren sich.\nWenn du Arbeit willst, ist heute die Nacht. Ich bleib wach, bis er untergeht.
 dialogue.hallows_eve_old_jack.opt.quests = Was gibt's zu tun?
 dialogue.hallows_eve_old_jack.opt.board = Was hängt an der Tafel?
+dialogue.hallows_eve_old_jack.opt.errands = Gibt's Besorgungen?
 dialogue.hallows_eve_old_jack.opt.shop = Zeig mal deinen Marktstand.
 dialogue.hallows_eve_old_jack.opt.almanac = Zeig mir den Almanach.
 dialogue.hallows_eve_old_jack.opt.who = Wer bist du?
@@ -175,6 +202,11 @@ achievement.hallows_eve_jacks_confidant.desc = Werde Vertrauter des Alten Jack.
 title.hallows_eve_jacks_confidant.name = Jacks Vertrauter
 title.hallows_eve_jacks_confidant.flavor = Wurde zum Vertrauten des Alten Jack.
 title.hallows_eve_jacks_confidant.display = {0}, Jacks Vertrauter
+
+# ---- Jack's Guest: the title the yearly achievement pays ----
+title.hallows_eve_jacks_guest.name = Jacks Gast
+title.hallows_eve_jacks_guest.flavor = Hat an Halloween teilgenommen.
+title.hallows_eve_jacks_guest.display = {0}, Jacks Gast
 reputation.hallows_eve_old_jack.name = Gunst des Alten Jack
 reputation.hallows_eve_old_jack.flavor = Der Alte Jack braucht eine Weile, bis er mit Leuten warm wird. Erledig seine Besorgungen und bleib ab und zu auf ein Wort stehen.
 reputation.hallows_eve_old_jack.rank.neutral = Fremder

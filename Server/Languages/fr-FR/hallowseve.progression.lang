@@ -45,6 +45,8 @@ objective.hallows_eve.bring_ectoplasm = Rapportez {0} Ectoplasmes
 objective.hallows_eve.knock_down_skeletons = Faites tomber {0} Squelettes Jack
 objective.hallows_eve.attend = Participez à la Veille de la Toussaint
 objective.hallows_eve.jack_confidant = Devenez le Confident du Vieux Jack
+objective.hallows_eve.put_down_wraiths = Abattez {0} Spectres de Géode
+objective.hallows_eve.carve_lanterns = Sculptez {0} Lanternes de Jack
 
 # ---- Le tableau du Vieux Jack ----
 board.hallows_eve_daily.title = Tableau du Vieux Jack
@@ -61,6 +63,30 @@ quest.hallows_eve_board_geodes.title = Géodes profondes
 quest.hallows_eve_board_geodes.flavor = Les Géodes Maudites sortent de nouveau de la pierre, surtout du minerai. Casse-m'en quelques-unes, et gare à tes doigts.
 quest.hallows_eve_board_harvest_moon.title = Chasse sous la Lune des Moissons
 quest.hallows_eve_board_harvest_moon.flavor = La Lune des Moissons est levée et les Squelettes Jack sortent en nombre. Fais-en tomber un bon paquet avant qu'elle se couche.
+quest.hallows_eve_board_wraiths.title = Spectres des galeries
+quest.hallows_eve_board_wraiths.flavor = Quelque chose avec une faux arpente les galeries après la tombée de la nuit, là où les torches n'arrivent pas. Abats-en quelques-uns pour moi.
+quest.hallows_eve_board_ectoplasm.title = Carburant de lanterne
+quest.hallows_eve_board_ectoplasm.flavor = Mes lanternes manquent d'Ectoplasme. Les Âmes Perdues en laissent derrière elles quand on les libère, alors rapporte-m'en une bonne quantité.
+quest.hallows_eve_board_pumpkins.title = Citrouilles froides
+quest.hallows_eve_board_pumpkins.flavor = Les lanternes veulent plus de Citrouilles Sanctifiées que mon carré ne m'en donne. Cueille des citrouilles à la main et rapporte-moi les froides.
+quest.hallows_eve_board_carving.title = Sculpture à l'établi
+quest.hallows_eve_board_carving.flavor = Chaque seuil veut sa lanterne, et je sculpte pas plus vite que ça. Sculpte des Lanternes de Jack à un Établi de Sculpture, une citrouille et un peu de charbon de bois chacune.
+
+# ---- Old Jack's errands board ----
+board.hallows_eve_errands.title = Commissions du Vieux Jack
+board.hallows_eve_errands.desc = De petits boulots, un pour l'ombre et un pour le jour. J'épingle une nouvelle paire toutes les quelques heures, alors repasse.
+quest.hallows_eve_errand_souls.title = Âmes errantes
+quest.hallows_eve_errand_souls.flavor = Quelques Âmes Perdues ont dérivé jusqu'ici depuis mon dernier tour. Libère-les quand tu as une minute.
+quest.hallows_eve_errand_ghouls.title = Veille des tombes
+quest.hallows_eve_errand_ghouls.flavor = Des Goules Creuses grattent encore les tombes. Remets-les à terre avant qu'elles s'éloignent.
+quest.hallows_eve_errand_ectoplasm.title = Lanterne vacillante
+quest.hallows_eve_errand_ectoplasm.flavor = Une de mes lanternes vacille. Un peu d'Ectoplasme lui ferait passer la nuit.
+quest.hallows_eve_errand_bombs.title = Séance de tir
+quest.hallows_eve_errand_bombs.flavor = Des Bombes-Lanternes en trop ? Lances-en quelques-unes pour moi. J'aime le bruit.
+quest.hallows_eve_errand_geodes.title = Pierre fendue
+quest.hallows_eve_errand_geodes.flavor = Ouvre-moi quelques Géodes Maudites. J'aime les entendre éclater.
+quest.hallows_eve_errand_pumpkins.title = Citrouilles de rechange
+quest.hallows_eve_errand_pumpkins.flavor = Une lanterne s'est ramollie sur les marches. Rapporte-moi des Citrouilles Sanctifiées si tu passes par là.
 
 # ---- L'étal du Vieux Jack ----
 shop.hallows_eve_old_jack.title = Étal du Vieux Jack
@@ -100,6 +126,11 @@ achievement.hallows_eve_jacks_confidant.desc = Devenez le Confident du Vieux Jac
 title.hallows_eve_jacks_confidant.name = Confident de Jack
 title.hallows_eve_jacks_confidant.flavor = Est devenu le Confident du Vieux Jack.
 title.hallows_eve_jacks_confidant.display = {0}, Confident de Jack
+
+# ---- Jack's Guest: the title the yearly achievement pays ----
+title.hallows_eve_jacks_guest.name = Invité de Jack
+title.hallows_eve_jacks_guest.flavor = A pris part à la Veille de la Toussaint.
+title.hallows_eve_jacks_guest.display = {0}, Invité de Jack
 
 # ---- Réputations : la Faveur du Vieux Jack et le Sanctifié ----
 reputation.hallows_eve_old_jack.name = Faveur du Vieux Jack
@@ -174,6 +205,7 @@ dialogue.hallows_eve_old_jack.who_are_you.text = Le Vieux Jack. J'avais une ferm
 dialogue.hallows_eve_old_jack.harvest_moon.text = Tu vois cette lune ? La Lune des Moissons. Quelques nuits par an, les morts s'agitent sous elle, et les tombes se vident.\nSi tu veux du travail, c'est la bonne nuit. Je reste debout jusqu'à ce qu'elle se couche.
 dialogue.hallows_eve_old_jack.opt.quests = Qu'est-ce qu'il y a à faire ?
 dialogue.hallows_eve_old_jack.opt.board = Qu'est-ce qu'il y a sur le tableau ?
+dialogue.hallows_eve_old_jack.opt.errands = Tu as des commissions ?
 dialogue.hallows_eve_old_jack.opt.shop = Voyons ton étal.
 dialogue.hallows_eve_old_jack.opt.standing = On en est où, tous les deux ?
 dialogue.hallows_eve_old_jack.opt.almanac = Montre-moi l'Almanach.

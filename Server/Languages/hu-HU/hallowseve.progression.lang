@@ -57,6 +57,30 @@ quest.hallows_eve_board_geodes.title = Mélységi Geodák
 quest.hallows_eve_board_geodes.flavor = Megint Átkozott Geodák bukkannak fel a kőben, leginkább az ércben. Törj fel nekem néhányat, és vigyázz az ujjaidra.
 quest.hallows_eve_board_harvest_moon.title = Aratási Hold-vadászat
 quest.hallows_eve_board_harvest_moon.flavor = Fent van az Aratási Hold, és a Jack-csontvázak tömegével járnak kint. Verj le belőlük jó párat, mielőtt lenyugszik.
+quest.hallows_eve_board_wraiths.title = Aknák Lidércei
+quest.hallows_eve_board_wraiths.flavor = Valami kaszával jár az aknákban sötétedés után, lent, ahová a fáklyák fénye nem ér el. Terítsd le nekem párat belőlük.
+quest.hallows_eve_board_ectoplasm.title = Lámpásüzemanyag
+quest.hallows_eve_board_ectoplasm.flavor = A lámpásaimból fogy az Ektoplazma. Az Elveszett Lelkek hátrahagyják, ha felszabadítod őket, úgyhogy hozz belőle jó sokat.
+quest.hallows_eve_board_pumpkins.title = Hideg Tökök
+quest.hallows_eve_board_pumpkins.flavor = A lámpások több Megszentelt Tököt kérnek, mint amennyit a földem ad. Szedj tököt kézzel, és hozd el nekem a hidegeket.
+quest.hallows_eve_board_carving.title = Padon Faragva
+quest.hallows_eve_board_carving.flavor = Minden küszöbre jár egy lámpás, én meg csak olyan gyorsan faragok, amilyen gyorsan tudok. Faragj Jack-lámpásokat egy Faragópadon, darabonként egy tökből és egy kis faszénből.
+
+# ---- Old Jack's errands board ----
+board.hallows_eve_errands.title = Öreg Jack Apró Munkái
+board.hallows_eve_errands.desc = Apró munkák, egy a sötétnek és egy a nappalnak. Pár óránként kitűzök egy újabb párat, úgyhogy nézz vissza.
+quest.hallows_eve_errand_souls.title = Kósza Lelkek
+quest.hallows_eve_errand_souls.flavor = Pár Elveszett Lélek idesodródott, mióta utoljára körülnéztem. Szabadítsd fel őket, ha lesz egy perced.
+quest.hallows_eve_errand_ghouls.title = Sírőrség
+quest.hallows_eve_errand_ghouls.flavor = Néhány Kongó Ghúl megint a síroknál kaparász. Tedd vissza őket, mielőtt elkóborolnak.
+quest.hallows_eve_errand_ectoplasm.title = Pislákoló Lámpás
+quest.hallows_eve_errand_ectoplasm.flavor = Az egyik lámpásom pislákol. Egy kis Ektoplazma átvinné az éjszakán.
+quest.hallows_eve_errand_bombs.title = Bombagyakorlat
+quest.hallows_eve_errand_bombs.flavor = Van felesleges Lámpásbombád? Dobj el párat nekem. Szeretem a zajt.
+quest.hallows_eve_errand_geodes.title = Repedt Kő
+quest.hallows_eve_errand_geodes.flavor = Törj fel nekem pár Átkozott Geodát. Szeretem hallani, ahogy pattannak.
+quest.hallows_eve_errand_pumpkins.title = Tartalék Tökök
+quest.hallows_eve_errand_pumpkins.flavor = Az egyik lámpás elpuhult a lépcsőn. Hozz nekem Megszentelt Tököket, ha erre jársz.
 
 # ---- Öreg Jack standja ----
 shop.hallows_eve_old_jack.title = Öreg Jack Standja
@@ -136,6 +160,7 @@ dialogue.hallows_eve_old_jack.who_are_you.text = Öreg Jack. Volt egyszer egy ta
 dialogue.hallows_eve_old_jack.harvest_moon.text = Látod azt a holdat? Aratási Hold. Évente pár éjszakán nyugtalanná válnak alatta a holtak, és kiürülnek a sírok.\nHa munkát akarsz, ma éjjel van itt az ideje. Én fent leszek, amíg le nem nyugszik.
 dialogue.hallows_eve_old_jack.opt.quests = Mit kell csinálni?
 dialogue.hallows_eve_old_jack.opt.board = Mi van a táblán?
+dialogue.hallows_eve_old_jack.opt.errands = Van valami elintéznivaló?
 dialogue.hallows_eve_old_jack.opt.shop = Lássuk a standodat.
 dialogue.hallows_eve_old_jack.opt.almanac = Mutasd az Almanachot.
 dialogue.hallows_eve_old_jack.opt.who = Ki vagy te?
@@ -168,6 +193,8 @@ almanac.hallows_eve.wraiths_put_down = Leterített Geodalidércek
 
 # ---- Hírnevek (Öreg Jack Kegye és a Megszentelt), a tábla sávjai, Jack Bizalmasa ----
 objective.hallows_eve.jack_confidant = Légy Öreg Jack Bizalmasa
+objective.hallows_eve.put_down_wraiths = Teríts le {0} Geodalidércet
+objective.hallows_eve.carve_lanterns = Faragj {0} Jack-lámpást
 board.hallows_eve_daily.grade.night = Éjszakai munka
 board.hallows_eve_daily.grade.day = Nappali munka
 achievement.hallows_eve_jacks_confidant.title = Jack Bizalmasa
@@ -175,6 +202,12 @@ achievement.hallows_eve_jacks_confidant.desc = Légy Öreg Jack Bizalmasa.
 title.hallows_eve_jacks_confidant.name = Jack Bizalmasa
 title.hallows_eve_jacks_confidant.flavor = Öreg Jack Bizalmasa lett.
 title.hallows_eve_jacks_confidant.display = {0}, Jack Bizalmasa
+
+# ---- Jack's Guest: the title the yearly achievement pays ----
+title.hallows_eve_jacks_guest.name = Jack Vendége
+title.hallows_eve_jacks_guest.flavor = Részt vett Mindenszentek Éjén.
+title.hallows_eve_jacks_guest.display = {0}, Jack Vendége
+
 reputation.hallows_eve_old_jack.name = Öreg Jack Kegye
 reputation.hallows_eve_old_jack.flavor = Öreg Jack lassan melegszik fel az emberek iránt. Intézd el a megbízásait, és hébe-hóba állj meg nála egy szóra.
 reputation.hallows_eve_old_jack.rank.neutral = Idegen

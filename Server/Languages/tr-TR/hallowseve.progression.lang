@@ -57,6 +57,30 @@ quest.hallows_eve_board_geodes.title = Derin Jeotlar
 quest.hallows_eve_board_geodes.flavor = Lanetli Jeotlar yine taştan çıkıyor, en çok da cevherden. Benim için birkaçını kırıp aç, parmaklarına da dikkat et.
 quest.hallows_eve_board_harvest_moon.title = Hasat Ayı Avı
 quest.hallows_eve_board_harvest_moon.flavor = Hasat Ayı doğdu, Jack İskeletleri de sürü sürü ortalıkta. Ay batmadan epeycesini yere ser.
+quest.hallows_eve_board_wraiths.title = Maden Ocağı Hortlakları
+quest.hallows_eve_board_wraiths.flavor = Elinde tırpan olan bir şey hava karardıktan sonra maden ocaklarında dolaşıyor, meşalelerin ışığı yetişmeyen diplerde. Birkaçını benim için alt et.
+quest.hallows_eve_board_ectoplasm.title = Fener Yakıtı
+quest.hallows_eve_board_ectoplasm.flavor = Fenerlerimin Ektoplazması azalıyor. Kayıp Ruhlar serbest kalınca onu geride bırakır, o yüzden bana bolca getir.
+quest.hallows_eve_board_pumpkins.title = Soğuk Kabaklar
+quest.hallows_eve_board_pumpkins.flavor = Fenerler, bahçemin verdiğinden fazla Kutsanmış Bal Kabağı istiyor. Kabakları elle topla, bana soğuk olanları getir.
+quest.hallows_eve_board_carving.title = Tezgahta Oyma
+quest.hallows_eve_board_carving.flavor = Her kapı eşiği bir fener ister, ben de ancak bu kadar hızlı oyabilirim. Oyma Tezgahında birkaç Jack Feneri oy, her biri için bir kabak ve azıcık odun kömürü.
+
+# ---- Old Jack's errands board ----
+board.hallows_eve_errands.title = Yaşlı Jack'in Ayak İşleri
+board.hallows_eve_errands.desc = Ufak tefek işler, biri karanlık için, biri gün ışığı için. Birkaç saatte bir yeni bir çift asıyorum, o yüzden arada uğra.
+quest.hallows_eve_errand_souls.title = Başıboş Ruhlar
+quest.hallows_eve_errand_souls.flavor = Ben son baktığımdan beri birkaç Kayıp Ruh buraya sürüklenmiş. Bir dakikan olunca onları serbest bırak.
+quest.hallows_eve_errand_ghouls.title = Mezar Nöbeti
+quest.hallows_eve_errand_ghouls.flavor = Birkaç Oyuk Gulyabani yine mezarları eşeliyor. Başlarını alıp gitmeden onları yerlerine geri yatır.
+quest.hallows_eve_errand_ectoplasm.title = Titreyen Fener
+quest.hallows_eve_errand_ectoplasm.flavor = Fenerlerimden biri titreyip sönmek üzere. Azıcık Ektoplazma onu geceden çıkarır.
+quest.hallows_eve_errand_bombs.title = Bomba Talimi
+quest.hallows_eve_errand_bombs.flavor = Elinde artan Fener Bombası var mı? Benim için birkaçını at. Gürültüsünü severim.
+quest.hallows_eve_errand_geodes.title = Çatlak Taş
+quest.hallows_eve_errand_geodes.flavor = Benim için birkaç Lanetli Jeot kır. Patlayışlarını dinlemeyi severim.
+quest.hallows_eve_errand_pumpkins.title = Yedek Kabaklar
+quest.hallows_eve_errand_pumpkins.flavor = Basamaktaki bir fener çürüyüp çökmüş. Yoldan geçerken bana birkaç Kutsanmış Bal Kabağı getir.
 
 # ---- Yaşlı Jack'in tezgahı ----
 shop.hallows_eve_old_jack.title = Yaşlı Jack'in Tezgahı
@@ -136,6 +160,7 @@ dialogue.hallows_eve_old_jack.who_are_you.text = Yaşlı Jack. Bir zamanlar bura
 dialogue.hallows_eve_old_jack.harvest_moon.text = Şu aya baktın mı? Hasat Ayı. Yılda birkaç gece ölüler onun altında huzursuzlanır, mezarlar da boşalır.\nİş istiyorsan, bu gece o gece. Ben ay batana kadar ayaktayım.
 dialogue.hallows_eve_old_jack.opt.quests = Yapılacak ne var?
 dialogue.hallows_eve_old_jack.opt.board = Panoda ne var?
+dialogue.hallows_eve_old_jack.opt.errands = Ayak işi var mı?
 dialogue.hallows_eve_old_jack.opt.shop = Tezgahına bakalım.
 dialogue.hallows_eve_old_jack.opt.almanac = Almanak'ı göster.
 dialogue.hallows_eve_old_jack.opt.who = Sen kimsin?
@@ -168,6 +193,8 @@ almanac.hallows_eve.wraiths_put_down = Alt edilen Jeot Hortlakları
 
 # ---- Jack'in Sırdaşı, Yaşlı Jack'in panosunun dereceleri ve iki itibar: Yaşlı Jack'in Teveccühü ve Kutsanmış ----
 objective.hallows_eve.jack_confidant = Yaşlı Jack'in Sırdaşı ol
+objective.hallows_eve.put_down_wraiths = {0} Jeot Hortlağı alt et
+objective.hallows_eve.carve_lanterns = {0} Jack Feneri oy
 board.hallows_eve_daily.grade.night = Gece İşi
 board.hallows_eve_daily.grade.day = Gündüz İşi
 achievement.hallows_eve_jacks_confidant.title = Jack'in Sırdaşı
@@ -175,6 +202,12 @@ achievement.hallows_eve_jacks_confidant.desc = Yaşlı Jack'in Sırdaşı ol.
 title.hallows_eve_jacks_confidant.name = Jack'in Sırdaşı
 title.hallows_eve_jacks_confidant.flavor = Yaşlı Jack'in Sırdaşı oldu.
 title.hallows_eve_jacks_confidant.display = {0}, Jack'in Sırdaşı
+
+# ---- Jack's Guest: the title the yearly achievement pays ----
+title.hallows_eve_jacks_guest.name = Jack'in Misafiri
+title.hallows_eve_jacks_guest.flavor = Cadılar Bayramı'na katıldı.
+title.hallows_eve_jacks_guest.display = {0}, Jack'in Misafiri
+
 reputation.hallows_eve_old_jack.name = Yaşlı Jack'in Teveccühü
 reputation.hallows_eve_old_jack.flavor = Yaşlı Jack'in insanlara ısınması zaman alır. Ayak işlerini gör, arada bir de durup iki laf et.
 reputation.hallows_eve_old_jack.rank.neutral = Yabancı

@@ -57,6 +57,30 @@ quest.hallows_eve_board_geodes.title = Geodi Profonde
 quest.hallows_eve_board_geodes.flavor = Le Geodi Maledette spuntano di nuovo nella pietra, soprattutto nel minerale. Spaccamene qualcuna, e occhio alle dita.
 quest.hallows_eve_board_harvest_moon.title = Caccia della Luna del Raccolto
 quest.hallows_eve_board_harvest_moon.flavor = La Luna del Raccolto è sorta e gli Scheletri Jack sono fuori in gran numero. Buttane giù un bel po' prima che tramonti.
+quest.hallows_eve_board_wraiths.title = Spettri delle Miniere
+quest.hallows_eve_board_wraiths.flavor = Qualcosa con una falce cammina nelle miniere dopo il tramonto, laggiù dove le torce non arrivano. Abbattine qualcuno per me.
+quest.hallows_eve_board_ectoplasm.title = Combustibile per Lanterne
+quest.hallows_eve_board_ectoplasm.flavor = Alle mie lanterne manca l'Ectoplasma. Le Anime Perdute lo lasciano indietro quando le liberi, quindi portamene una bella scorta.
+quest.hallows_eve_board_pumpkins.title = Zucche Fredde
+quest.hallows_eve_board_pumpkins.flavor = Le lanterne vogliono più Zucche Consacrate di quante ne dia il mio campo. Raccogli le zucche a mano e portami quelle fredde.
+quest.hallows_eve_board_carving.title = Intaglio al Banco
+quest.hallows_eve_board_carving.flavor = Ogni soglia vuole una lanterna, e io più in fretta di così non intaglio. Intaglia qualche Lanterna di Jack a un Banco da Intaglio, una zucca e un po' di carbone per ciascuna.
+
+# ---- Old Jack's errands board ----
+board.hallows_eve_errands.title = Commissioni del Vecchio Jack
+board.hallows_eve_errands.desc = Lavoretti, uno per il buio e uno per la luce del giorno. Appendo una coppia nuova ogni poche ore, quindi ripassa.
+quest.hallows_eve_errand_souls.title = Anime Randagie
+quest.hallows_eve_errand_souls.flavor = Qualche Anima Perduta è arrivata alla deriva dall'ultima volta che ho guardato. Liberale quando hai un minuto.
+quest.hallows_eve_errand_ghouls.title = Guardia alle Tombe
+quest.hallows_eve_errand_ghouls.flavor = Dei Ghoul Vuoti stanno di nuovo grattando sulle tombe. Rimettili giù prima che se ne vadano in giro.
+quest.hallows_eve_errand_ectoplasm.title = Lanterna Boccheggiante
+quest.hallows_eve_errand_ectoplasm.flavor = Una delle mie lanterne boccheggia. Un po' di Ectoplasma la porterebbe fino a fine notte.
+quest.hallows_eve_errand_bombs.title = Esercizio con le Bombe
+quest.hallows_eve_errand_bombs.flavor = Hai delle Bombe Lanterna in più? Lanciane qualcuna per me. Mi piace il fracasso.
+quest.hallows_eve_errand_geodes.title = Pietra Spaccata
+quest.hallows_eve_errand_geodes.flavor = Spaccami qualche Geode Maledetta. Mi piace sentirle scoppiare.
+quest.hallows_eve_errand_pumpkins.title = Zucche di Scorta
+quest.hallows_eve_errand_pumpkins.flavor = Una lanterna si è ammosciata sui gradini. Portami delle Zucche Consacrate quando passi.
 
 # ---- La bancarella del Vecchio Jack ----
 shop.hallows_eve_old_jack.title = Bancarella del Vecchio Jack
@@ -136,6 +160,7 @@ dialogue.hallows_eve_old_jack.who_are_you.text = Il Vecchio Jack. Una volta avev
 dialogue.hallows_eve_old_jack.harvest_moon.text = Vedi quella luna? Luna del Raccolto. Qualche notte all'anno, sotto di lei, i morti si agitano e le tombe si svuotano.\nSe vuoi lavorare, stanotte è la notte giusta. Io resto sveglio finché non tramonta.
 dialogue.hallows_eve_old_jack.opt.quests = Cosa c'è da fare?
 dialogue.hallows_eve_old_jack.opt.board = Cosa c'è sulla bacheca?
+dialogue.hallows_eve_old_jack.opt.errands = Hai qualche commissione?
 dialogue.hallows_eve_old_jack.opt.shop = Vediamo la tua bancarella.
 dialogue.hallows_eve_old_jack.opt.almanac = Fammi vedere l'Almanacco.
 dialogue.hallows_eve_old_jack.opt.who = Chi sei?
@@ -168,6 +193,8 @@ almanac.hallows_eve.wraiths_put_down = Spettri delle Geodi abbattuti
 
 # ---- Il Confidente di Jack, le due reputazioni (il Favore del Vecchio Jack e il Consacrato), i gradi della bacheca e le sue battute ----
 objective.hallows_eve.jack_confidant = Diventa Confidente del Vecchio Jack
+objective.hallows_eve.put_down_wraiths = Abbatti {0} Spettri delle Geodi
+objective.hallows_eve.carve_lanterns = Intaglia {0} Lanterne di Jack
 board.hallows_eve_daily.grade.night = Lavoro di Notte
 board.hallows_eve_daily.grade.day = Lavoro di Giorno
 achievement.hallows_eve_jacks_confidant.title = Confidente di Jack
@@ -175,6 +202,12 @@ achievement.hallows_eve_jacks_confidant.desc = Diventa Confidente del Vecchio Ja
 title.hallows_eve_jacks_confidant.name = Confidente di Jack
 title.hallows_eve_jacks_confidant.flavor = È diventato Confidente del Vecchio Jack.
 title.hallows_eve_jacks_confidant.display = {0}, Confidente di Jack
+
+# ---- Jack's Guest: the title the yearly achievement pays ----
+title.hallows_eve_jacks_guest.name = Ospite di Jack
+title.hallows_eve_jacks_guest.flavor = Ha partecipato alla Vigilia di Ognissanti.
+title.hallows_eve_jacks_guest.display = {0}, Ospite di Jack
+
 reputation.hallows_eve_old_jack.name = Favore del Vecchio Jack
 reputation.hallows_eve_old_jack.flavor = Il Vecchio Jack ci mette un po' a sciogliersi con la gente. Fagli qualche commissione e ogni tanto fermati a scambiare due parole.
 reputation.hallows_eve_old_jack.rank.neutral = Sconosciuto

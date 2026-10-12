@@ -57,6 +57,30 @@ quest.hallows_eve_board_geodes.title = Geodas Profundas
 quest.hallows_eve_board_geodes.flavor = Vuelven a aparecer Geodas Malditas en la piedra, sobre todo en el mineral. Abre unas cuantas por mí, y ojo con los dedos.
 quest.hallows_eve_board_harvest_moon.title = Caza de la Luna de la Cosecha
 quest.hallows_eve_board_harvest_moon.flavor = La Luna de la Cosecha está en lo alto y los Esqueletos Jack han salido en masa. Tumba a un buen puñado antes de que se ponga.
+quest.hallows_eve_board_wraiths.title = Espectros de la Mina
+quest.hallows_eve_board_wraiths.flavor = Algo con una guadaña recorre las galerías de la mina al caer la noche, allí abajo donde no llegan las antorchas. Abate a unos cuantos por mí.
+quest.hallows_eve_board_ectoplasm.title = Combustible para Faroles
+quest.hallows_eve_board_ectoplasm.flavor = A mis faroles les queda poco Ectoplasma. Las Almas Perdidas lo dejan atrás cuando las liberas, así que tráeme un buen montón.
+quest.hallows_eve_board_pumpkins.title = Calabazas Frías
+quest.hallows_eve_board_pumpkins.flavor = Los faroles piden más Calabazas Consagradas de las que da mi huerto. Recoge calabazas a mano y tráeme las frías.
+quest.hallows_eve_board_carving.title = Tallado en el Banco
+quest.hallows_eve_board_carving.flavor = Cada puerta quiere un farol, y yo no tallo más deprisa. Talla unos cuantos Faroles de Jack en un Banco de Tallado, con una calabaza y un poco de carbón cada uno.
+
+# ---- Old Jack's errands board ----
+board.hallows_eve_errands.title = Recados del Viejo Jack
+board.hallows_eve_errands.desc = Trabajillos, uno para la oscuridad y otro para la luz del día. Cuelgo un par nuevo cada pocas horas, así que vuelve a mirar.
+quest.hallows_eve_errand_souls.title = Almas Sueltas
+quest.hallows_eve_errand_souls.flavor = Unas cuantas Almas Perdidas han llegado a la deriva desde la última vez que miré. Libéralas cuando tengas un momento.
+quest.hallows_eve_errand_ghouls.title = Guardia en las Tumbas
+quest.hallows_eve_errand_ghouls.flavor = Unos Gules Descarnados vuelven a escarbar en las tumbas. Abátelos otra vez antes de que se alejen.
+quest.hallows_eve_errand_ectoplasm.title = Farol Moribundo
+quest.hallows_eve_errand_ectoplasm.flavor = Uno de mis faroles se está apagando. Un poco de Ectoplasma lo ayudaría a pasar la noche.
+quest.hallows_eve_errand_bombs.title = Práctica de Bombas
+quest.hallows_eve_errand_bombs.flavor = ¿Te sobran Bombas Farol? Lanza unas cuantas por mí. Me gusta el ruido.
+quest.hallows_eve_errand_geodes.title = Piedra Rota
+quest.hallows_eve_errand_geodes.flavor = Abre unas cuantas Geodas Malditas por mí. Me gusta oírlas reventar.
+quest.hallows_eve_errand_pumpkins.title = Calabazas de Sobra
+quest.hallows_eve_errand_pumpkins.flavor = Un farol se ha puesto blando en los escalones. Tráeme unas Calabazas Consagradas cuando pases por aquí.
 
 # ---- El puesto del Viejo Jack ----
 shop.hallows_eve_old_jack.title = Puesto del Viejo Jack
@@ -136,6 +160,7 @@ dialogue.hallows_eve_old_jack.who_are_you.text = El Viejo Jack. Tuve una granja 
 dialogue.hallows_eve_old_jack.harvest_moon.text = ¿Ves esa luna? La Luna de la Cosecha. Unas pocas noches al año los muertos se inquietan bajo ella, y las tumbas se vacían.\nSi quieres trabajo, esta es la noche. Yo estaré en pie hasta que se ponga.
 dialogue.hallows_eve_old_jack.opt.quests = ¿Qué hay que hacer?
 dialogue.hallows_eve_old_jack.opt.board = ¿Qué hay en el tablón?
+dialogue.hallows_eve_old_jack.opt.errands = ¿Tienes algún recado?
 dialogue.hallows_eve_old_jack.opt.shop = A ver tu puesto.
 dialogue.hallows_eve_old_jack.opt.almanac = Enséñame el Almanaque.
 dialogue.hallows_eve_old_jack.opt.who = ¿Quién eres?
@@ -168,6 +193,8 @@ almanac.hallows_eve.wraiths_put_down = Espectros de Geoda abatidos
 
 # ---- Confidente de Jack, las insignias del tablón y las dos reputaciones (el Favor del Viejo Jack y los Consagrados) ----
 objective.hallows_eve.jack_confidant = Conviértete en Confidente del Viejo Jack
+objective.hallows_eve.put_down_wraiths = Abate {0} Espectros de Geoda
+objective.hallows_eve.carve_lanterns = Talla {0} Faroles de Jack
 board.hallows_eve_daily.grade.night = Trabajo de Noche
 board.hallows_eve_daily.grade.day = Trabajo de Día
 achievement.hallows_eve_jacks_confidant.title = Confidente de Jack
@@ -175,6 +202,12 @@ achievement.hallows_eve_jacks_confidant.desc = Conviértete en Confidente del Vi
 title.hallows_eve_jacks_confidant.name = Confidente de Jack
 title.hallows_eve_jacks_confidant.flavor = Se convirtió en Confidente del Viejo Jack.
 title.hallows_eve_jacks_confidant.display = {0}, Confidente de Jack
+
+# ---- Jack's Guest: the title the yearly achievement pays ----
+title.hallows_eve_jacks_guest.name = Invitado de Jack
+title.hallows_eve_jacks_guest.flavor = Participó en la Noche de Ánimas.
+title.hallows_eve_jacks_guest.display = {0}, Invitado de Jack
+
 reputation.hallows_eve_old_jack.name = Favor del Viejo Jack
 reputation.hallows_eve_old_jack.flavor = Al Viejo Jack le cuesta coger confianza con la gente. Hazle los recados y párate a cruzar unas palabras con él de vez en cuando.
 reputation.hallows_eve_old_jack.rank.neutral = Forastero
