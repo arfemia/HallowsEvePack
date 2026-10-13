@@ -123,7 +123,6 @@ dialogue.harvest_feast_host.meet_arrival.opt.hail = Memnun oldum, Martha.
 dialogue.harvest_feast_host.first_words.text = Sofraya dikkat et, göründüğünden uzun.\nHer yıl tarlalar toplanınca onu burada, <color is="#ffd97a">Unutulmuş Tapınak'ta</color> kurar, kim gelirse doyururum. Şölene kadar pişecek çok yemek var. Bir çuval un taşıyabilecek gibi duruyorsun.
 dialogue.harvest_feast_host.first_words.opt.hail = Yardım etmekten memnunum.
 dialogue.harvest_feast_host.board_fresh.text = Pano hazır. Tarla da olsa mutfak da olsa, hepsi yapılmalı ve hepsi ödüyor.
-dialogue.harvest_feast_host.board_fresh.opt.board = Panoyu göster.
 dialogue.harvest_feast_host.board_fresh.opt.later = Sonra.
 dialogue.harvest_feast_host.board_fresh_friendly.text = Botlarını sil. Sana bir sandalye ayırdım.\nPanoda üzerinde adın yazılı fazladan bir iş var.
 dialogue.harvest_feast_host.board_fresh_honored.text = Ah, iyi ki geldin. Ötekiler gelmeden panodan işini seç.
@@ -162,7 +161,6 @@ dialogue.harvest_feast_host.who_are_you.text = Önemli biri değilim. Yemek piş
 dialogue.harvest_feast_host.about_feast.text = Çoğunlukla bir teşekkür. Tarlalar bize bol verdi, yapabileceğimizin en azı onu birlikte yemek.\nBir şey getirirsin, eve bir şey götürürsün. Bütün kural bu.
 dialogue.harvest_feast_host.opt.returned = Döndüm.
 dialogue.harvest_feast_host.opt.quests = Yapılacak ne var?
-dialogue.harvest_feast_host.opt.board = Panoda ne var?
 dialogue.harvest_feast_host.opt.shop = Tezgahına bakalım.
 dialogue.harvest_feast_host.opt.standing = Aramız nasıl?
 dialogue.harvest_feast_host.opt.almanac = Almanak'ı göster.

@@ -109,7 +109,6 @@ dialogue.harvest_feast_host.meet_arrival.opt.hail = Encantado de conocerte, Mart
 dialogue.harvest_feast_host.first_words.text = Cuidado con la mesa, es más larga de lo que parece.\nTodos los años, cuando la cosecha está recogida, la monto aquí, en el <color is="#ffd97a">Templo Olvidado</color>, y doy de comer a quien aparezca. Hay mucho que cocinar de aquí al banquete. Tienes pinta de poder cargar un saco de harina.
 dialogue.harvest_feast_host.first_words.opt.hail = Encantado de ayudar.
 dialogue.harvest_feast_host.board_fresh.text = El tablón está listo. Campo o cocina, todo hay que hacerlo, y todo se paga.
-dialogue.harvest_feast_host.board_fresh.opt.board = Enséñame el tablón.
 dialogue.harvest_feast_host.board_fresh.opt.later = Luego.
 dialogue.harvest_feast_host.board_fresh_friendly.text = Límpiate las botas. Te guardé una silla.\nHay un trabajo extra en el tablón con tu nombre.
 dialogue.harvest_feast_host.board_fresh_honored.text = Ah, bien, eres tú. Elige del tablón antes de que lleguen los demás.
@@ -148,7 +147,6 @@ dialogue.harvest_feast_host.who_are_you.text = Nadie importante. Cocino.\nCuando
 dialogue.harvest_feast_host.about_feast.text = Es un agradecimiento, sobre todo. Los campos nos dieron de sobra, y lo menos que podemos hacer es comerlo juntos.\nTraes algo, te llevas algo a casa. Esas son todas las reglas.
 dialogue.harvest_feast_host.opt.returned = He vuelto.
 dialogue.harvest_feast_host.opt.quests = ¿Qué hay que hacer?
-dialogue.harvest_feast_host.opt.board = ¿Qué hay en el tablón?
 dialogue.harvest_feast_host.opt.shop = A ver tu puesto.
 dialogue.harvest_feast_host.opt.standing = ¿Cómo estamos tú y yo?
 dialogue.harvest_feast_host.opt.almanac = Enséñame el Almanaque.

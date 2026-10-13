@@ -76,6 +76,7 @@ quest.hallows_eve_board_carving.flavor = Every doorstep wants a lantern, and I c
 # ---- Old Jack's errands board ----
 board.hallows_eve_errands.title = Old Jack's Errands
 board.hallows_eve_errands.desc = Odd jobs, one for the dark and one for the daylight. I pin up a fresh pair every few hours, so check back.
+board.hallows_eve_errands.pill = Errand
 quest.hallows_eve_errand_souls.title = Stray Souls
 quest.hallows_eve_errand_souls.flavor = A few Lost Souls have drifted in since I last looked. Set them free when you get a minute.
 quest.hallows_eve_errand_ghouls.title = Grave Watch
@@ -205,8 +206,6 @@ dialogue.hallows_eve_old_jack.lantern_lit.text = The Hollow Lantern's still burn
 dialogue.hallows_eve_old_jack.who_are_you.text = Old Jack. I kept a farm once, a long way from here. Then one October I didn't go home, and I've come back every October since.\nEvery year I light a Hollow Lantern to keep the dead off these steps. They burn out by November. Don't ask me about the head.
 dialogue.hallows_eve_old_jack.harvest_moon.text = See that moon? Harvest Moon. A few nights a year the dead get restless under it, and the graves empty out.\nIf you want work, tonight's the night. I'll be up till it sets.
 dialogue.hallows_eve_old_jack.opt.quests = What needs doing?
-dialogue.hallows_eve_old_jack.opt.board = What's on the board?
-dialogue.hallows_eve_old_jack.opt.errands = Got any errands?
 dialogue.hallows_eve_old_jack.opt.shop = Let's see your stall.
 dialogue.hallows_eve_old_jack.opt.standing = How do we stand?
 dialogue.hallows_eve_old_jack.opt.almanac = Show me the Almanac.

@@ -109,7 +109,6 @@ dialogue.harvest_feast_host.meet_arrival.opt.hail = Enchanté, Martha.
 dialogue.harvest_feast_host.first_words.text = Attention à la table, elle est plus longue qu'elle en a l'air.\nChaque année, quand les champs sont rentrés, je la dresse ici, dans le <color is="#ffd97a">Temple de l'Oubli</color>, et je nourris qui se présente. Il y a beaucoup à cuisiner d'ici la fête. Tu as l'air de pouvoir porter un sac de farine.
 dialogue.harvest_feast_host.first_words.opt.hail = Avec plaisir.
 dialogue.harvest_feast_host.board_fresh.text = Le tableau est garni. Aux champs ou en cuisine, tout est à faire, et tout paie.
-dialogue.harvest_feast_host.board_fresh.opt.board = Montre-moi le tableau.
 dialogue.harvest_feast_host.board_fresh.opt.later = Plus tard.
 dialogue.harvest_feast_host.board_fresh_friendly.text = Essuie tes bottes. Je t'ai gardé une chaise.\nIl y a une tâche en plus sur le tableau, à ton nom.
 dialogue.harvest_feast_host.board_fresh_honored.text = Ah, tant mieux, c'est toi. Choisis sur le tableau avant que les autres s'y mettent.
@@ -148,7 +147,6 @@ dialogue.harvest_feast_host.who_are_you.text = Personne d'important. Je cuisine.
 dialogue.harvest_feast_host.about_feast.text = C'est un remerciement, surtout. Les champs nous ont beaucoup donné, et le moins qu'on puisse faire, c'est le manger ensemble.\nTu apportes quelque chose, tu repars avec quelque chose. Il n'y a pas d'autre règle.
 dialogue.harvest_feast_host.opt.returned = Me revoilà.
 dialogue.harvest_feast_host.opt.quests = Qu'y a-t-il à faire ?
-dialogue.harvest_feast_host.opt.board = Qu'y a-t-il sur le tableau ?
 dialogue.harvest_feast_host.opt.shop = Voyons ton étal.
 dialogue.harvest_feast_host.opt.standing = On en est où, tous les deux ?
 dialogue.harvest_feast_host.opt.almanac = Montre-moi l'Almanach.

@@ -5,7 +5,7 @@ A standalone Hytale content pack of yearly events: Hallow's Eve from October 1 t
 ## Requirements
 
 - Hytale's Update 7
-- Ziggfreed's CommonLib (ZiggfreedCommon) 2.3.0 or newer
+- Ziggfreed's CommonLib (ZiggfreedCommon) 2.4.0 or newer
 - RPG Stations 1.1.1 or newer, which runs the Carving Bench
 - MMO Skill Tree 1.7.1 or newer, optional
 

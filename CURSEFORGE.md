@@ -2,7 +2,7 @@
 
 Yearly events for your Hytale server. Hallow's Eve runs from October 1 to November 12, and every January 13 is Hytale's Anniversary.
 
-Hallow's Eve brings creatures, quests, items and achievements, with a host, Old Jack, in the Forgotten Temple. It needs Ziggfreed's CommonLib 2.3.0 or newer and RPG Stations 1.1.1 or newer, on a Hytale Update 7 server. MMO Skill Tree is optional. Everything plays in nine languages.
+Hallow's Eve brings creatures, quests, items and achievements, with a host, Old Jack, in the Forgotten Temple. It needs Ziggfreed's CommonLib 2.4.0 or newer and RPG Stations 1.1.1 or newer, on a Hytale Update 7 server. MMO Skill Tree is optional. Everything plays in nine languages.
 
 [![Discord](https://img.shields.io/badge/Discord-Join%20Server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/5NFdZsUxHZ) [![Ko-fi](https://img.shields.io/badge/Ko--fi-Support-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/ziggfreed) [![Documentation](https://img.shields.io/badge/Docs-Read%20More-0ea5e9?style=for-the-badge)](https://mmo-skill-tree-docs.ziggfreed.com)
 
@@ -61,7 +61,7 @@ Add the [MMO Skill Bounty Pack](https://www.curseforge.com/hytale/mods/mmo-skill
 
 ## Install
 
-1. Run your server on Hytale's Update 7, with Ziggfreed's CommonLib (2.3.0 or newer) and RPG Stations (1.1.1 or newer).
+1. Run your server on Hytale's Update 7, with Ziggfreed's CommonLib (2.4.0 or newer) and RPG Stations (1.1.1 or newer).
 2. Drop the Seasons of Orbis zip into your server's `Mods/` folder beside them.
 3. Start the server. While a season runs, its host is in the Forgotten Temple.
 

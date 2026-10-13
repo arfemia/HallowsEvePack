@@ -109,7 +109,6 @@ dialogue.harvest_feast_host.meet_arrival.opt.hail = Рад встрече, Ма�
 dialogue.harvest_feast_host.first_words.text = Осторожно со столом, он длиннее, чем кажется.\nКаждый год, когда поля убраны, я накрываю его здесь, в <color is="#ffd97a">Забытом храме</color>, и кормлю всех, кто придёт. До пира готовить и готовить. Ты, похоже, мешок муки унесёшь.
 dialogue.harvest_feast_host.first_words.opt.hail = Рад помочь.
 dialogue.harvest_feast_host.board_fresh.text = Доска готова. В поле или на кухне, делать надо всё, и за всё платят.
-dialogue.harvest_feast_host.board_fresh.opt.board = Покажи доску.
 dialogue.harvest_feast_host.board_fresh.opt.later = Потом.
 dialogue.harvest_feast_host.board_fresh_friendly.text = Вытри сапоги. Я оставила тебе стул.\nНа доске есть лишняя работа, как раз для тебя.
 dialogue.harvest_feast_host.board_fresh_honored.text = А, хорошо, это ты. Выбирай с доски, пока другие не разобрали.
@@ -148,7 +147,6 @@ dialogue.harvest_feast_host.who_are_you.text = Никто важный. Я го�
 dialogue.harvest_feast_host.about_feast.text = Это в основном благодарность. Поля дали нам вдоволь, и меньшее, что мы можем, - съесть это вместе.\nПринёс что-то, забрал что-то домой. Вот и все правила.
 dialogue.harvest_feast_host.opt.returned = Я вернулся.
 dialogue.harvest_feast_host.opt.quests = Что нужно сделать?
-dialogue.harvest_feast_host.opt.board = Что на доске?
 dialogue.harvest_feast_host.opt.shop = Покажи свой прилавок.
 dialogue.harvest_feast_host.opt.standing = Как мы с тобой ладим?
 dialogue.harvest_feast_host.opt.almanac = Покажи Альманах.

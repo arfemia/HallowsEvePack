@@ -11,6 +11,10 @@
     "player below the rank sees them locked, with the reason. Each band has two contracts, so a band fills",
     "two slots at most.",
     "",
+    "Hosts names Martha, so her quest page (What needs doing?) lists what this board has posted beside her",
+    "own quests: a player takes a job there under this board's rules, and hands it in and collects its pay",
+    "with her or at the board, wherever they took it.",
+    "",
     "The skill slot is Optional: where nothing carries its band the board shows no gap. Grades names each",
     "band for the badge on its rows: TitleKey is its words, Color the badge's colour. Season makes the board",
     "absent while the feast is off. Its contracts' pay waits here until the player collects it",
@@ -24,6 +28,7 @@
     "TitleKey": "board.harvest_feast_daily.title",
     "FlavorKey": "board.harvest_feast_daily.desc"
   },
+  "Hosts": [ "Harvest_Feast_Host" ],
   "Icon": "Plant_Crop_Wheat_Item",
   "Order": 90,
   "Rotation": { "Period": "Daily" },

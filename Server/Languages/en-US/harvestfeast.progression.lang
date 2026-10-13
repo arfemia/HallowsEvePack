@@ -123,7 +123,6 @@ dialogue.harvest_feast_host.meet_arrival.opt.hail = Pleased to meet you, Martha.
 dialogue.harvest_feast_host.first_words.text = Mind the table, it's longer than it looks.\nEvery year when the fields are in, I set it up here in the <color is="#ffd97a">Forgotten Temple</color> and feed whoever turns up. There's a lot of cooking between now and the feast. You look like you could carry a sack of flour.
 dialogue.harvest_feast_host.first_words.opt.hail = Happy to help.
 dialogue.harvest_feast_host.board_fresh.text = Board's up. Fields or kitchen, it all needs doing, and it all pays.
-dialogue.harvest_feast_host.board_fresh.opt.board = Show me the board.
 dialogue.harvest_feast_host.board_fresh.opt.later = Later.
 dialogue.harvest_feast_host.board_fresh_friendly.text = Wipe your boots. I saved you a chair.\nThere's an extra job on the board with your name on it.
 dialogue.harvest_feast_host.board_fresh_honored.text = Oh good, it's you. Take your pick off the board before the others get to it.
@@ -162,7 +161,6 @@ dialogue.harvest_feast_host.who_are_you.text = Nobody important. I cook.\nWhen t
 dialogue.harvest_feast_host.about_feast.text = It's a thank-you, mostly. The fields gave us plenty, and the least we can do is eat it together.\nYou bring something, you take something home. That's all the rules there are.
 dialogue.harvest_feast_host.opt.returned = I'm back.
 dialogue.harvest_feast_host.opt.quests = What needs doing?
-dialogue.harvest_feast_host.opt.board = What's on the board?
 dialogue.harvest_feast_host.opt.shop = Let's see your stall.
 dialogue.harvest_feast_host.opt.standing = How do we stand?
 dialogue.harvest_feast_host.opt.almanac = Show me the Almanac.

@@ -12,7 +12,7 @@
   "ServerVersion": ">=0.7.0-pre.0 <0.8.0",
   "IncludesAssetPack": true,
   "Dependencies": {
-    "Ziggfreed:ZiggfreedCommon": ">=2.3.0",
+    "Ziggfreed:ZiggfreedCommon": ">=2.4.0",
     "Ziggfreed:RpgStations": ">=1.1.1"
   },
   "OptionalDependencies": {

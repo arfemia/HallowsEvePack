@@ -109,7 +109,6 @@ dialogue.harvest_feast_host.meet_arrival.opt.hail = Piacere di conoscerti, Marth
 dialogue.harvest_feast_host.first_words.text = Occhio alla tavola, è più lunga di quanto sembri.\nOgni anno, quando i campi sono raccolti, la apparecchio qui nel <color is="#ffd97a">Tempio Dimenticato</color> e do da mangiare a chiunque si presenti. C'è un sacco da cucinare da qui alla festa. Hai l'aria di chi sa portare un sacco di farina.
 dialogue.harvest_feast_host.first_words.opt.hail = Ti aiuto volentieri.
 dialogue.harvest_feast_host.board_fresh.text = La bacheca è pronta. Campi o cucina, c'è da fare di tutto, e tutto paga.
-dialogue.harvest_feast_host.board_fresh.opt.board = Fammi vedere la bacheca.
 dialogue.harvest_feast_host.board_fresh.opt.later = Dopo.
 dialogue.harvest_feast_host.board_fresh_friendly.text = Pulisciti gli stivali. Ti ho tenuto una sedia.\nSulla bacheca c'è un lavoro in più con il tuo nome.
 dialogue.harvest_feast_host.board_fresh_honored.text = Oh bene, sei tu. Scegli dalla bacheca prima che arrivino gli altri.
@@ -148,7 +147,6 @@ dialogue.harvest_feast_host.who_are_you.text = Nessuno d'importante. Cucino.\nQu
 dialogue.harvest_feast_host.about_feast.text = È soprattutto un grazie. I campi ci hanno dato tanto, e il minimo è mangiarlo insieme.\nPorti qualcosa, porti a casa qualcosa. Sono tutte le regole che ci sono.
 dialogue.harvest_feast_host.opt.returned = Eccomi di nuovo.
 dialogue.harvest_feast_host.opt.quests = Cosa c'è da fare?
-dialogue.harvest_feast_host.opt.board = Cosa c'è sulla bacheca?
 dialogue.harvest_feast_host.opt.shop = Vediamo la tua bancarella.
 dialogue.harvest_feast_host.opt.standing = A che punto siamo?
 dialogue.harvest_feast_host.opt.almanac = Mostrami l'Almanacco.

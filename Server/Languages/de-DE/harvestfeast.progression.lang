@@ -109,7 +109,6 @@ dialogue.harvest_feast_host.meet_arrival.opt.hail = Freut mich, Martha.
 dialogue.harvest_feast_host.first_words.text = Achte auf die Tafel, sie ist länger, als sie aussieht.\nJedes Jahr, wenn die Felder abgeerntet sind, baue ich sie hier im <color is="#ffd97a">Vergessenen Tempel</color> auf und gebe jedem zu essen, der kommt. Bis zum Fest ist noch viel zu kochen. Du siehst aus, als könntest du einen Sack Mehl tragen.
 dialogue.harvest_feast_host.first_words.opt.hail = Gern geholfen.
 dialogue.harvest_feast_host.board_fresh.text = Das Brett hängt. Feld oder Küche, alles muss getan werden, und alles wird bezahlt.
-dialogue.harvest_feast_host.board_fresh.opt.board = Zeig mir das Brett.
 dialogue.harvest_feast_host.board_fresh.opt.later = Später.
 dialogue.harvest_feast_host.board_fresh_friendly.text = Wisch dir die Stiefel ab. Ich habe dir einen Stuhl freigehalten.\nAuf dem Brett hängt eine Extra-Arbeit mit deinem Namen.
 dialogue.harvest_feast_host.board_fresh_honored.text = Ach gut, du bist es. Such dir etwas vom Brett aus, bevor es die anderen tun.
@@ -148,7 +147,6 @@ dialogue.harvest_feast_host.who_are_you.text = Niemand Wichtiges. Ich koche.\nWe
 dialogue.harvest_feast_host.about_feast.text = Es ist vor allem ein Dankeschön. Die Felder haben uns reichlich gegeben, und das Mindeste ist, es gemeinsam zu essen.\nDu bringst etwas mit, du nimmst etwas mit nach Hause. Mehr Regeln gibt es nicht.
 dialogue.harvest_feast_host.opt.returned = Ich bin zurück.
 dialogue.harvest_feast_host.opt.quests = Was ist zu tun?
-dialogue.harvest_feast_host.opt.board = Was hängt am Brett?
 dialogue.harvest_feast_host.opt.shop = Zeig mir deinen Marktstand.
 dialogue.harvest_feast_host.opt.standing = Wie stehen wir zueinander?
 dialogue.harvest_feast_host.opt.almanac = Zeig mir den Almanach.

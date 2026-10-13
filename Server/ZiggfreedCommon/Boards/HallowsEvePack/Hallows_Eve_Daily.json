@@ -14,6 +14,10 @@
     "enough to fill its two slots. Old Jack's errands, two smaller jobs on a four-hour turnover, are",
     "a board of their own, Hallows_Eve_Errands.",
     "",
+    "Hosts names Old Jack, so his quest page (What needs doing?) lists what this board has posted beside",
+    "his own quests: a player takes a job there under this board's rules, and hands it in and collects",
+    "its pay with him or at the board, wherever they took it.",
+    "",
     "The skill slot is Optional: where nothing carries its band the board shows no gap. A contract",
     "naming this board without a band is never drawn, so a companion's contract names one of these",
     "bands, or a band of its own with a slot added here. Grades names each band for the badge on its",
@@ -28,6 +32,7 @@
     "TitleKey": "board.hallows_eve_daily.title",
     "FlavorKey": "board.hallows_eve_daily.desc"
   },
+  "Hosts": [ "Hallows_Eve_Old_Jack" ],
   "Icon": "Hallows_Eve_Jack_Lantern",
   "Order": 90,
   "Rotation": { "Period": "Daily" },

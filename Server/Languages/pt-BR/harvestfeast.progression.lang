@@ -109,7 +109,6 @@ dialogue.harvest_feast_host.meet_arrival.opt.hail = Prazer em conhecer, Martha.
 dialogue.harvest_feast_host.first_words.text = Cuidado com a mesa, ela é mais comprida do que parece.\nTodo ano, quando a colheita está feita, eu monto ela aqui no <color is="#ffd97a">Templo Esquecido</color> e dou de comer a quem aparecer. Tem muita cozinha daqui até o banquete. Você parece capaz de carregar um saco de farinha.
 dialogue.harvest_feast_host.first_words.opt.hail = Com prazer.
 dialogue.harvest_feast_host.board_fresh.text = O quadro está posto. Campo ou cozinha, tudo precisa ser feito, e tudo paga.
-dialogue.harvest_feast_host.board_fresh.opt.board = Mostre-me o quadro.
 dialogue.harvest_feast_host.board_fresh.opt.later = Depois.
 dialogue.harvest_feast_host.board_fresh_friendly.text = Limpe as botas. Guardei uma cadeira para você.\nTem um serviço extra no quadro com o seu nome.
 dialogue.harvest_feast_host.board_fresh_honored.text = Ah, bom, é você. Escolha o que quiser do quadro antes que os outros cheguem.
@@ -148,7 +147,6 @@ dialogue.harvest_feast_host.who_are_you.text = Ninguém importante. Eu cozinho.\
 dialogue.harvest_feast_host.about_feast.text = É um agradecimento, na maior parte. Os campos deram muito, e o mínimo que podemos fazer é comer juntos.\nVocê traz alguma coisa, leva alguma coisa para casa. Essas são todas as regras.
 dialogue.harvest_feast_host.opt.returned = Voltei.
 dialogue.harvest_feast_host.opt.quests = O que precisa ser feito?
-dialogue.harvest_feast_host.opt.board = O que tem no quadro?
 dialogue.harvest_feast_host.opt.shop = Vamos ver a sua barraca.
 dialogue.harvest_feast_host.opt.standing = Como estamos?
 dialogue.harvest_feast_host.opt.almanac = Mostre-me o Almanaque.

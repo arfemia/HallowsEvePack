@@ -33,8 +33,9 @@
     "one answer each, shown while that daily is free to take. Then shows the lit-lantern line while",
     "this year's lantern burns (the lantern quest reads ON_COOLDOWN until it comes back next year).",
     "",
-    "THE MENU. The steady screens carry jack_menu, the one menu: his quest list, the daily board, the",
-    "errands board (Hallows_Eve_Errands, two small jobs that change every four hours), the stall,",
+    "THE MENU. The steady screens carry jack_menu, the one menu: What needs doing?, his quest list,",
+    "where the jobs his daily board and his errands board (Hallows_Eve_Daily, Hallows_Eve_Errands) post",
+    "list beside his quests, since both boards name him in Hosts, then the stall,",
     "How do we stand? (the Reputation page, shown once the player has any favor with him), the Almanac",
     "(only while the Almanac is switched on), who he is, the Harvest Moon line (only while Harvest",
     "Moon runs) and goodnight. A screen that asks something of the player carries jack_back instead:",
@@ -318,16 +319,6 @@
         "LabelKey": "dialogue.hallows_eve_old_jack.opt.quests",
         "Style": "neutral",
         "Open": "Quests"
-      },
-      {
-        "LabelKey": "dialogue.hallows_eve_old_jack.opt.board",
-        "Style": "neutral",
-        "Open": { "Type": "Board", "Board": "Hallows_Eve_Daily" }
-      },
-      {
-        "LabelKey": "dialogue.hallows_eve_old_jack.opt.errands",
-        "Style": "neutral",
-        "Open": { "Type": "Board", "Board": "Hallows_Eve_Errands" }
       },
       {
         "LabelKey": "dialogue.hallows_eve_old_jack.opt.shop",

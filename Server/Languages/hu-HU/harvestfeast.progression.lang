@@ -109,7 +109,6 @@ dialogue.harvest_feast_host.meet_arrival.opt.hail = Örvendek, Martha.
 dialogue.harvest_feast_host.first_words.text = Vigyázz az asztallal, hosszabb, mint amilyennek látszik.\nMinden évben, ha a termés a fedél alatt van, itt állítom fel a <color is="#ffd97a">Feledett Templomban</color>, és megetetek mindenkit, aki betér. Sok a főznivaló a lakomáig. Úgy nézel ki, mint aki el tud vinni egy zsák lisztet.
 dialogue.harvest_feast_host.first_words.opt.hail = Szívesen segítek.
 dialogue.harvest_feast_host.board_fresh.text = Fent a tábla. Mező vagy konyha, mind elvégzendő, és mind fizet.
-dialogue.harvest_feast_host.board_fresh.opt.board = Mutasd a táblát.
 dialogue.harvest_feast_host.board_fresh.opt.later = Később.
 dialogue.harvest_feast_host.board_fresh_friendly.text = Töröld le a csizmád. Tartottam neked egy széket.\nVan egy extra munka a táblán, a te neveddel.
 dialogue.harvest_feast_host.board_fresh_honored.text = Á, jó, te vagy az. Válassz a tábláról, mielőtt a többiek odaérnek.
@@ -148,7 +147,6 @@ dialogue.harvest_feast_host.who_are_you.text = Senki fontos. Főzök.\nHa a term
 dialogue.harvest_feast_host.about_feast.text = Leginkább köszönet. A földek bőven adtak, és a legkevesebb, hogy együtt esszük meg.\nHozol valamit, viszel haza valamit. Ennyi a szabály.
 dialogue.harvest_feast_host.opt.returned = Visszajöttem.
 dialogue.harvest_feast_host.opt.quests = Mit kell csinálni?
-dialogue.harvest_feast_host.opt.board = Mi van a táblán?
 dialogue.harvest_feast_host.opt.shop = Lássuk a standodat.
 dialogue.harvest_feast_host.opt.standing = Hogy állunk mi ketten?
 dialogue.harvest_feast_host.opt.almanac = Mutasd az Almanachot.
