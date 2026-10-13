@@ -17,7 +17,7 @@ Hallow's Eve brings creatures, quests, items and achievements, with a host, Old 
 - **Old Jack**, a pumpkin-headed host, sets up in the Forgotten Temple. His six quests end with lighting the Hollow Lantern, a keepsake with the year on it.
 - Old Jack's board posts a job for the night and one for the day, every day, beside his three dailies. Ask him "Got any errands?" for two small jobs that change every four hours.
 - After dark, away from torches, Jack Skeletons, Hollow Ghouls and Lost Souls come out, and Geode Wraiths walk the mineshafts.
-- Lantern Bombs, carved pumpkins packed with Boom Powder, in four tiers. They deal fire damage, and the stronger ones set creatures alight, slow them or throw flaming shards. A blast never hurts a player.
+- Lantern Bombs, carved pumpkins packed with Boom Powder, in four tiers. They deal fire damage, and the stronger ones set creatures alight, slow them or throw flaming shards. Your own blast never hurts you, and it hurts other players only where PvP is on.
 - The Hallowed set, the Jack Helm and the Jack Shield. Wear both for more health and less fire damage, and you glow like a lantern.
 - A Costume Wand that turns a friend into a Jack Skeleton or a Lost Soul for a few minutes.
 - Trick or treat. Knock on every character who has a conversation for you, once a day each, for sweets, apples, a pumpkin pie or a costume. On this pack alone, only Old Jack plays along.
