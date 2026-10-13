@@ -1,0 +1,31 @@
+{
+  "$Comment": "The first rung of the Headless Horseman's ladder: bring him down once during one season, in his graveyard behind Old Jack. ENCOUNTER_DEFEATED names his fight's encounter script, never a creature, so it holds through his change of form; every player the fight credits earns it at once, however many shared the kill. Each year's copy pays favor with the Hallowed and MMO Skill Tree's Mmo_Xp row in Claim, to collect on the achievements page; the row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that mod. The chain kills_hallows_eve_horseman ties the three rungs together in the book.",
+  "Parent": "Hallows_Eve_Hallowed_Base",
+  "Text": {
+    "TitleKey": "achievement.hallows_eve_horseman_down.title",
+    "FlavorKey": "achievement.hallows_eve_horseman_down.desc",
+    "TextArgs": { "Title": [ "@year" ] }
+  },
+  "Listing": {
+    "SortOrder": 60,
+    "Icon": "Hallows_Eve_Lantern_Bomb_Epic",
+    "Tags": [ "hallowed" ],
+    "Chains": [ { "Id": "kills_hallows_eve_horseman", "Tier": 1 } ]
+  },
+  "Scoring": { "Points": 10 },
+  "Criteria": {
+    "defeat-horseman": {
+      "Kind": "ENCOUNTER_DEFEATED",
+      "Target": "Hallows_Eve_Headless_Horseman_Encounter",
+      "MatchMode": "EXACT",
+      "Amount": 1
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 250 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "1000" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

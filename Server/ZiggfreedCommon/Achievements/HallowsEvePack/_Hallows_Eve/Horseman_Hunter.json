@@ -1,0 +1,31 @@
+{
+  "$Comment": "The second rung of the Headless Horseman's ladder: bring him down ten times during one season. The description's number comes from the criterion's Amount through @amount. Each year's copy pays favor with the Hallowed and MMO Skill Tree's Mmo_Xp row in Claim, to collect on the achievements page; the row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that mod.",
+  "Parent": "Hallows_Eve_Hallowed_Base",
+  "Text": {
+    "TitleKey": "achievement.hallows_eve_horseman_hunter.title",
+    "FlavorKey": "achievement.hallows_eve_horseman_hunter.desc",
+    "TextArgs": { "Title": [ "@year" ], "Flavor": [ "@amount" ] }
+  },
+  "Listing": {
+    "SortOrder": 61,
+    "Icon": "Hallows_Eve_Lantern_Bomb_Epic",
+    "Tags": [ "hallowed" ],
+    "Chains": [ { "Id": "kills_hallows_eve_horseman", "Tier": 2 } ]
+  },
+  "Scoring": { "Points": 25 },
+  "Criteria": {
+    "defeat-horseman": {
+      "Kind": "ENCOUNTER_DEFEATED",
+      "Target": "Hallows_Eve_Headless_Horseman_Encounter",
+      "MatchMode": "EXACT",
+      "Amount": 10
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 500 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "3000" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

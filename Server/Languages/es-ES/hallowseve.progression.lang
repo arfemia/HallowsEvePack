@@ -206,6 +206,17 @@ title.hallows_eve_jacks_guest.name = Invitado de Jack
 title.hallows_eve_jacks_guest.flavor = Participó en la Noche de Ánimas.
 title.hallows_eve_jacks_guest.display = {0}, Invitado de Jack
 
+# ---- The Headless Horseman's ladder and its title ----
+achievement.hallows_eve_horseman_down.title = La Caída del Jinete {0}
+achievement.hallows_eve_horseman_down.desc = Derriba al Jinete sin Cabeza en su cementerio.
+achievement.hallows_eve_horseman_hunter.title = Cazador del Jinete {0}
+achievement.hallows_eve_horseman_hunter.desc = Derriba al Jinete sin Cabeza {0} veces.
+achievement.hallows_eve_horseman_bane.title = Azote del Jinete {0}
+achievement.hallows_eve_horseman_bane.desc = Derriba al Jinete sin Cabeza {0} veces.
+title.hallows_eve_horseman_bane.name = Azote del Jinete
+title.hallows_eve_horseman_bane.flavor = Derribó al Jinete sin Cabeza una y otra vez en una misma Noche de Ánimas.
+title.hallows_eve_horseman_bane.display = {0}, Azote del Jinete
+
 reputation.hallows_eve_old_jack.name = Favor del Viejo Jack
 reputation.hallows_eve_old_jack.flavor = Al Viejo Jack le cuesta coger confianza con la gente. Hazle los recados y párate a cruzar unas palabras con él de vez en cuando.
 reputation.hallows_eve_old_jack.rank.neutral = Forastero

@@ -1,0 +1,43 @@
+{
+  "$Comment": [
+    "The top rung of the Headless Horseman's ladder: bring him down fifty times during one season.",
+    "The description's number comes from the criterion's Amount through @amount.",
+    "",
+    "Rewards.Auto pays what lands the moment it is earned: the title Hallows_Eve_Horseman_Bane (the",
+    "Title reward kind). Every year's copy names the same title, so a second year unlocks nothing new.",
+    "Rewards.Claim waits on the achievements page until the player collects it: favor with the",
+    "Hallowed, and MMO Skill Tree's Mmo_Xp row, whose own Requires (the hytale:mod_installed gate)",
+    "leaves it out on a server without that mod."
+  ],
+  "Parent": "Hallows_Eve_Hallowed_Base",
+  "Text": {
+    "TitleKey": "achievement.hallows_eve_horseman_bane.title",
+    "FlavorKey": "achievement.hallows_eve_horseman_bane.desc",
+    "TextArgs": { "Title": [ "@year" ], "Flavor": [ "@amount" ] }
+  },
+  "Listing": {
+    "SortOrder": 62,
+    "Icon": "Hallows_Eve_Lantern_Bomb_Epic",
+    "Tags": [ "hallowed" ],
+    "Chains": [ { "Id": "kills_hallows_eve_horseman", "Tier": 3 } ]
+  },
+  "Scoring": { "Points": 50 },
+  "Criteria": {
+    "defeat-horseman": {
+      "Kind": "ENCOUNTER_DEFEATED",
+      "Target": "Hallows_Eve_Headless_Horseman_Encounter",
+      "MatchMode": "EXACT",
+      "Amount": 50
+    }
+  },
+  "Rewards": {
+    "Auto": [
+      { "Kind": "Title", "Params": { "Title": "Hallows_Eve_Horseman_Bane" } }
+    ],
+    "Claim": [
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 1000 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "8000" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

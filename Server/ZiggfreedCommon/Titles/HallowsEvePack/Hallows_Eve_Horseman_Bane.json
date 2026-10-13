@@ -1,0 +1,8 @@
+{
+  "$Comment": "Horseman's Bane: the title the Horseman's Bane achievement pays, for bringing the Headless Horseman down fifty times in one Hallow's Eve. It shows beside a player's name in menus and leaderboards once they pick it. Where it sits around the name is the key title.hallows_eve_horseman_bane.display, whose {0} is the name. Enabled false hides it everywhere without taking it from anybody who earned it.",
+  "Order": 45,
+  "Text": {
+    "TitleKey": "title.hallows_eve_horseman_bane.name",
+    "FlavorKey": "title.hallows_eve_horseman_bane.flavor"
+  }
+}

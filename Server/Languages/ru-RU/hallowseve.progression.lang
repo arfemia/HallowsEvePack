@@ -206,6 +206,17 @@ title.hallows_eve_jacks_guest.name = Гость Джека
 title.hallows_eve_jacks_guest.flavor = Принял участие в Кануне Всех Святых.
 title.hallows_eve_jacks_guest.display = {0}, Гость Джека
 
+# ---- The Headless Horseman's ladder and its title ----
+achievement.hallows_eve_horseman_down.title = Всадник повержен {0}
+achievement.hallows_eve_horseman_down.desc = Одолейте Всадника без головы на его кладбище.
+achievement.hallows_eve_horseman_hunter.title = Охотник на Всадника {0}
+achievement.hallows_eve_horseman_hunter.desc = Одолейте Всадника без головы (раз: {0}).
+achievement.hallows_eve_horseman_bane.title = Погибель Всадника {0}
+achievement.hallows_eve_horseman_bane.desc = Одолейте Всадника без головы (раз: {0}).
+title.hallows_eve_horseman_bane.name = Погибель Всадника
+title.hallows_eve_horseman_bane.flavor = Раз за разом одолевал Всадника без головы за один Канун Всех Святых.
+title.hallows_eve_horseman_bane.display = {0}, Погибель Всадника
+
 reputation.hallows_eve_old_jack.name = Расположение Старого Джека
 reputation.hallows_eve_old_jack.flavor = Старый Джек не сразу теплеет к людям. Выполняйте его поручения и время от времени заходите перекинуться словом.
 reputation.hallows_eve_old_jack.rank.neutral = Незнакомец

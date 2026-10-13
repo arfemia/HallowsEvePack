@@ -132,6 +132,17 @@ title.hallows_eve_jacks_guest.name = Invité de Jack
 title.hallows_eve_jacks_guest.flavor = A pris part à la Veille de la Toussaint.
 title.hallows_eve_jacks_guest.display = {0}, Invité de Jack
 
+# ---- The Headless Horseman's ladder and its title ----
+achievement.hallows_eve_horseman_down.title = La chute du Cavalier {0}
+achievement.hallows_eve_horseman_down.desc = Abattez le Cavalier sans tête dans son cimetière.
+achievement.hallows_eve_horseman_hunter.title = Chasseur du Cavalier {0}
+achievement.hallows_eve_horseman_hunter.desc = Abattez le Cavalier sans tête {0} fois.
+achievement.hallows_eve_horseman_bane.title = Fléau du Cavalier {0}
+achievement.hallows_eve_horseman_bane.desc = Abattez le Cavalier sans tête {0} fois.
+title.hallows_eve_horseman_bane.name = Fléau du Cavalier
+title.hallows_eve_horseman_bane.flavor = A abattu le Cavalier sans tête encore et encore au cours d'une même Veille de la Toussaint.
+title.hallows_eve_horseman_bane.display = {0}, Fléau du Cavalier
+
 # ---- Réputations : la Faveur du Vieux Jack et le Sanctifié ----
 reputation.hallows_eve_old_jack.name = Faveur du Vieux Jack
 reputation.hallows_eve_old_jack.flavor = Le Vieux Jack met du temps à s'ouvrir aux gens. Faites ses commissions et passez lui dire un mot de temps en temps.

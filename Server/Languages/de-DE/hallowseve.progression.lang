@@ -205,6 +205,18 @@ title.hallows_eve_jacks_confidant.display = {0}, Jacks Vertrauter
 title.hallows_eve_jacks_guest.name = Jacks Gast
 title.hallows_eve_jacks_guest.flavor = Hat an Halloween teilgenommen.
 title.hallows_eve_jacks_guest.display = {0}, Jacks Gast
+
+# ---- The Headless Horseman's ladder and its title ----
+achievement.hallows_eve_horseman_down.title = Der Reiter fällt {0}
+achievement.hallows_eve_horseman_down.desc = Bring den Kopflosen Reiter auf seinem Friedhof zu Fall.
+achievement.hallows_eve_horseman_hunter.title = Reiterjäger {0}
+achievement.hallows_eve_horseman_hunter.desc = Bring den Kopflosen Reiter {0}-mal zu Fall.
+achievement.hallows_eve_horseman_bane.title = Schrecken des Reiters {0}
+achievement.hallows_eve_horseman_bane.desc = Bring den Kopflosen Reiter {0}-mal zu Fall.
+title.hallows_eve_horseman_bane.name = Schrecken des Reiters
+title.hallows_eve_horseman_bane.flavor = Hat den Kopflosen Reiter in einer einzigen Halloween-Saison immer wieder zu Fall gebracht.
+title.hallows_eve_horseman_bane.display = {0}, Schrecken des Reiters
+
 reputation.hallows_eve_old_jack.name = Gunst des Alten Jack
 reputation.hallows_eve_old_jack.flavor = Der Alte Jack braucht eine Weile, bis er mit Leuten warm wird. Erledig seine Besorgungen und bleib ab und zu auf ein Wort stehen.
 reputation.hallows_eve_old_jack.rank.neutral = Fremder

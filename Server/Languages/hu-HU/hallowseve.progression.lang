@@ -206,6 +206,17 @@ title.hallows_eve_jacks_guest.name = Jack Vendége
 title.hallows_eve_jacks_guest.flavor = Részt vett Mindenszentek Éjén.
 title.hallows_eve_jacks_guest.display = {0}, Jack Vendége
 
+# ---- The Headless Horseman's ladder and its title ----
+achievement.hallows_eve_horseman_down.title = A Lovas Bukása {0}
+achievement.hallows_eve_horseman_down.desc = Terítsd le a Fej Nélküli Lovast a temetőjében.
+achievement.hallows_eve_horseman_hunter.title = Lovasvadász {0}
+achievement.hallows_eve_horseman_hunter.desc = Terítsd le a Fej Nélküli Lovast {0} alkalommal.
+achievement.hallows_eve_horseman_bane.title = A Lovas Veszedelme {0}
+achievement.hallows_eve_horseman_bane.desc = Terítsd le a Fej Nélküli Lovast {0} alkalommal.
+title.hallows_eve_horseman_bane.name = A Lovas Veszedelme
+title.hallows_eve_horseman_bane.flavor = Egyetlen Mindenszentek Éje alatt újra meg újra leterítette a Fej Nélküli Lovast.
+title.hallows_eve_horseman_bane.display = {0}, a Lovas Veszedelme
+
 reputation.hallows_eve_old_jack.name = Öreg Jack Kegye
 reputation.hallows_eve_old_jack.flavor = Öreg Jack lassan melegszik fel az emberek iránt. Intézd el a megbízásait, és hébe-hóba állj meg nála egy szóra.
 reputation.hallows_eve_old_jack.rank.neutral = Idegen

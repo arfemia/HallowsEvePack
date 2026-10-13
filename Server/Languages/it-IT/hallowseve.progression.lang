@@ -206,6 +206,17 @@ title.hallows_eve_jacks_guest.name = Ospite di Jack
 title.hallows_eve_jacks_guest.flavor = Ha partecipato alla Vigilia di Ognissanti.
 title.hallows_eve_jacks_guest.display = {0}, Ospite di Jack
 
+# ---- The Headless Horseman's ladder and its title ----
+achievement.hallows_eve_horseman_down.title = La Caduta del Cavaliere {0}
+achievement.hallows_eve_horseman_down.desc = Abbatti il Cavaliere senza Testa nel suo cimitero.
+achievement.hallows_eve_horseman_hunter.title = Cacciatore del Cavaliere {0}
+achievement.hallows_eve_horseman_hunter.desc = Abbatti il Cavaliere senza Testa {0} volte.
+achievement.hallows_eve_horseman_bane.title = Flagello del Cavaliere {0}
+achievement.hallows_eve_horseman_bane.desc = Abbatti il Cavaliere senza Testa {0} volte.
+title.hallows_eve_horseman_bane.name = Flagello del Cavaliere
+title.hallows_eve_horseman_bane.flavor = Ha abbattuto il Cavaliere senza Testa più e più volte in una sola Vigilia di Ognissanti.
+title.hallows_eve_horseman_bane.display = {0}, Flagello del Cavaliere
+
 reputation.hallows_eve_old_jack.name = Favore del Vecchio Jack
 reputation.hallows_eve_old_jack.flavor = Il Vecchio Jack ci mette un po' a sciogliersi con la gente. Fagli qualche commissione e ogni tanto fermati a scambiare due parole.
 reputation.hallows_eve_old_jack.rank.neutral = Sconosciuto

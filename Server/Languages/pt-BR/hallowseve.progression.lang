@@ -206,6 +206,17 @@ title.hallows_eve_jacks_guest.name = Convidado de Jack
 title.hallows_eve_jacks_guest.flavor = Participou da Noite das Bruxas.
 title.hallows_eve_jacks_guest.display = {0}, Convidado de Jack
 
+# ---- The Headless Horseman's ladder and its title ----
+achievement.hallows_eve_horseman_down.title = A Queda do Cavaleiro {0}
+achievement.hallows_eve_horseman_down.desc = Derrube o Cavaleiro Sem Cabeça em seu cemitério.
+achievement.hallows_eve_horseman_hunter.title = Caçador do Cavaleiro {0}
+achievement.hallows_eve_horseman_hunter.desc = Derrube o Cavaleiro Sem Cabeça {0} vezes.
+achievement.hallows_eve_horseman_bane.title = Algoz do Cavaleiro {0}
+achievement.hallows_eve_horseman_bane.desc = Derrube o Cavaleiro Sem Cabeça {0} vezes.
+title.hallows_eve_horseman_bane.name = Algoz do Cavaleiro
+title.hallows_eve_horseman_bane.flavor = Derrubou o Cavaleiro Sem Cabeça uma vez atrás da outra numa mesma Noite das Bruxas.
+title.hallows_eve_horseman_bane.display = {0}, Algoz do Cavaleiro
+
 reputation.hallows_eve_old_jack.name = Favor do Velho Jack
 reputation.hallows_eve_old_jack.flavor = O Velho Jack demora a se afeiçoar às pessoas. Faça os recados dele e pare para um dedo de prosa de vez em quando.
 reputation.hallows_eve_old_jack.rank.neutral = Forasteiro

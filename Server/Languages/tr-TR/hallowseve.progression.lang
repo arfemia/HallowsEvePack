@@ -206,6 +206,17 @@ title.hallows_eve_jacks_guest.name = Jack'in Misafiri
 title.hallows_eve_jacks_guest.flavor = Cadılar Bayramı'na katıldı.
 title.hallows_eve_jacks_guest.display = {0}, Jack'in Misafiri
 
+# ---- The Headless Horseman's ladder and its title ----
+achievement.hallows_eve_horseman_down.title = Süvari'nin Düşüşü {0}
+achievement.hallows_eve_horseman_down.desc = Başsız Süvari'yi kendi mezarlığında yere ser.
+achievement.hallows_eve_horseman_hunter.title = Süvari Avcısı {0}
+achievement.hallows_eve_horseman_hunter.desc = Başsız Süvari'yi {0} kez yere ser.
+achievement.hallows_eve_horseman_bane.title = Süvari Belası {0}
+achievement.hallows_eve_horseman_bane.desc = Başsız Süvari'yi {0} kez yere ser.
+title.hallows_eve_horseman_bane.name = Süvari Belası
+title.hallows_eve_horseman_bane.flavor = Tek bir Cadılar Bayramı'nda Başsız Süvari'yi defalarca yere serdi.
+title.hallows_eve_horseman_bane.display = {0}, Süvari Belası
+
 reputation.hallows_eve_old_jack.name = Yaşlı Jack'in Teveccühü
 reputation.hallows_eve_old_jack.flavor = Yaşlı Jack'in insanlara ısınması zaman alır. Ayak işlerini gör, arada bir de durup iki laf et.
 reputation.hallows_eve_old_jack.rank.neutral = Yabancı
