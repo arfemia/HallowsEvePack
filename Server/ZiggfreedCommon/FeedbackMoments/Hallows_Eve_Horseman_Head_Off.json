@@ -1,0 +1,12 @@
+{
+  "$Comment": [
+    "What each member of the Headless Horseman's fight is told when his head flies off and his body",
+    "cannot be hurt: the line teaches them to strike the Head (his fight's",
+    "Macro_Hallows_Eve_Horseman_Head draws it). The file name is the moment id. Key is a line in this",
+    "pack's hallowseve.world.lang, written bare."
+  ],
+  "Toast": {
+    "Title": { "Key": "notify.hallows_eve_horseman_head_off" },
+    "Tone": "Warning"
+  }
+}

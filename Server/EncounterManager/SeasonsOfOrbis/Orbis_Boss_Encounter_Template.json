@@ -1,0 +1,732 @@
+{
+  "$Comment": [
+    "The base of every boss fight in this pack, run by the game's own encounter scripts. It is",
+    "Abstract, so it never runs on its own: a boss is a Variant of it (Type Variant, Reference",
+    "Orbis_Boss_Encounter_Template) that names its marker, its roles' group, its bar, its music, its",
+    "health steps, its two Claims and up to three phases. The shape is the game's own phased boss",
+    "(Example_Macro_Slot_Boss): each phase has a behavior slot (what happens while it runs) and the",
+    "next has a transition slot (when it starts), filled by macros, with _ForwardedModifiers handing",
+    "each macro its settings.",
+    "",
+    "In order. A Player sensor keeps the fight's members (the library credits and pays from them).",
+    "Intro raises the boss from SpawnMarker once a player comes within SummonPlayerRange, binds him",
+    "into the Boss slot, puts on one health step per player beyond the first (up to five) and refills",
+    "him, then makes him vulnerable, puts up the bar and the music, tells the library zc:engaged and",
+    "moves to Phase_1. Away from his arena's prefab (a console spawn on a bare world) no marker is in",
+    "reach, so after two and a half seconds the plain Spawn action raises FallbackRole beside the",
+    "script and the BossGroups sensor binds him the same way. Each phase keeps the boss bound through",
+    "a form change, runs its behavior, watches for the next phase, and ends the fight when no boss of",
+    "BossGroups is left alive in reach: the bar comes down, zc:defeated goes out and Complete pays",
+    "the two Claims (each player's first win of the day; see the Rewards files), plays the music's",
+    "ending, sends zc:reset and rests in Done. A fresh copy of the arena brings a fresh fight.",
+    "",
+    "A wipe (every player down) or an arena left empty for EmptyArenaSeconds resets it: the game's",
+    "own arena reset removes the boss once nobody watches from the death screen, Resetting clears",
+    "the bar, removes everything in SweepGroups (heads, adds), runs the boss's ResetBehavior and",
+    "tells the library zc:reset, and Intro waits for players to come back.",
+    "",
+    "Every parameter's default names the Headless Horseman's own ids, so a new boss's Variant overrides",
+    "every one of them. Keep a Variant's file name off every role's: a script and a role share one id",
+    "namespace."
+  ],
+  "Class": "EncounterManager",
+  "Type": "Abstract",
+  "StartState": "Intro",
+  "CleanupOnRemove": true,
+  "Parameters": {
+    "SpawnMarker": {
+      "Value": "Hallows_Eve_Headless_Horseman_Marker",
+      "Description": "The manual spawn marker standing in the arena's prefab that raises the boss."
+    },
+    "FallbackRole": {
+      "Value": "Hallows_Eve_Headless_Horseman_Mounted",
+      "Description": "The role raised beside the script with the plain Spawn action when no marker is in reach."
+    },
+    "BossGroups": {
+      "Value": [ "Hallows_Eve_Headless_Horseman_Group" ],
+      "TypeHint": "String",
+      "Description": "NPC groups holding the boss in every form, so a form change keeps him bound and a reset clears him."
+    },
+    "SweepGroups": {
+      "Value": [ "Hallows_Eve_Horseman_Head_Group", "Hallows_Eve_Horseman_Adds_Group" ],
+      "TypeHint": "String",
+      "Description": "NPC groups of everything else the fight raised, removed from the arena when it resets."
+    },
+    "SummonRange": {
+      "Value": 30,
+      "Description": "How far from the script's entity a spawn marker may stand to be fired."
+    },
+    "SummonPlayerRange": {
+      "Value": 30,
+      "Description": "How close a player must come to the script's entity before the boss rises."
+    },
+    "ArenaRange": {
+      "Value": 45,
+      "Description": "How far from the script's entity a player counts as in the fight (members, health steps, wipes)."
+    },
+    "CorpseRange": {
+      "Value": 55,
+      "Description": "How far the wipe check looks for a fallen player. Wider than ArenaRange."
+    },
+    "EmptyArenaSeconds": {
+      "Value": [ 15, 15 ],
+      "Description": "Seconds the arena must hold no living player before the fight resets."
+    },
+    "TargetRange": {
+      "Value": 80,
+      "Description": "How far the boss may roam and still be held in the fight. Cover the whole arena."
+    },
+    "BossBarName": {
+      "Value": "npcs.Hallows_Eve_Headless_Horseman.name",
+      "Description": "The lang key the boss bar shows, resolved on each player's own client."
+    },
+    "Music": {
+      "Value": "Track_Z1D_Goblin_Boss",
+      "Description": "The MusicContainer started for every member as the fight begins."
+    },
+    "MusicPhaseState": {
+      "Value": "AudioState_Goblin_Boss_Phase",
+      "Description": "The music's phase axis: set to Phase1 as the fight begins and Ending at the win."
+    },
+    "ScaleP2Effect": {
+      "Value": "Hallows_Eve_Horseman_Scale_Health_P2",
+      "Description": "Health step put on the boss with 2 or more players in the arena."
+    },
+    "ScaleP3Effect": {
+      "Value": "Hallows_Eve_Horseman_Scale_Health_P3",
+      "Description": "Health step put on the boss with 3 or more players in the arena."
+    },
+    "ScaleP4Effect": {
+      "Value": "Hallows_Eve_Horseman_Scale_Health_P4",
+      "Description": "Health step put on the boss with 4 or more players in the arena."
+    },
+    "ScaleP5Effect": {
+      "Value": "Hallows_Eve_Horseman_Scale_Health_P5",
+      "Description": "Health step put on the boss with 5 or more players in the arena."
+    },
+    "TopUpEffect": {
+      "Value": "Hallows_Eve_Horseman_Scale_TopUp",
+      "Description": "Refills the boss to his raised maximum before the fight begins."
+    },
+    "ScalePlayerRange": {
+      "Value": [ 0, 45 ],
+      "Description": "The distance band from the script's entity in which players are counted for the health steps."
+    },
+    "DailyReward": {
+      "Value": "",
+      "Description": "The ZigClaim reward each credited player is paid at the win (Server/Rewards). Empty pays none."
+    },
+    "ChaseReward": {
+      "Value": "",
+      "Description": "A second ZigClaim reward paid at the win, such as a chase table. Empty pays none."
+    },
+    "VictorySeconds": {
+      "Value": [ 12, 12 ],
+      "Description": "Seconds the music's ending plays after the win before the fight closes."
+    },
+    "Phase1Behavior": {
+      "Value": "$Null",
+      "Description": "Macro run while phase 1 lasts, or $Null for none."
+    },
+    "Phase2Transition": {
+      "Value": "Encounter_Macro_Transition_TargetInHealthRange",
+      "Description": "Macro that moves the fight to phase 2. A fight with fewer phases forwards it a HealthRange of [0, 0], so it never fires before the boss falls."
+    },
+    "Phase2Behavior": {
+      "Value": "$Null",
+      "Description": "Macro run while phase 2 lasts, or $Null for none."
+    },
+    "Phase3Transition": {
+      "Value": "Encounter_Macro_Transition_TargetInHealthRange",
+      "Description": "Macro that moves the fight to phase 3. A fight with fewer phases forwards it a HealthRange of [0, 0], so it never fires before the boss falls."
+    },
+    "Phase3Behavior": {
+      "Value": "$Null",
+      "Description": "Macro run while phase 3 lasts, or $Null for none."
+    },
+    "ResetBehavior": {
+      "Value": "$Null",
+      "Description": "Macro run while the fight resets, to clear the boss's own flags and slots, or $Null for none."
+    }
+  },
+  "Instructions": [
+    {
+      "$Comment": "Keeps the fight's members: the library credits and pays from them.",
+      "Continue": true,
+      "Sensor": {
+        "Type": "Player",
+        "Range": { "Compute": "ArenaRange" },
+        "Collector": {
+          "Type": "EncounterMembers"
+        }
+      },
+      "Actions": [
+        {
+          "Type": "Nothing"
+        }
+      ]
+    },
+    {
+      "Reference": "Encounter_Macro_Reset_Arena",
+      "Modify": {
+        "_ExportStates": [ "Resetting", "Intro" ],
+        "LiveFlag": "Orbis_Boss_Live",
+        "Slot": "Boss",
+        "SlotRange": { "Compute": "TargetRange" },
+        "BeaconRange": { "Compute": "TargetRange" },
+        "RemoveGroups": { "Compute": "BossGroups" },
+        "RemoveRadius": { "Compute": "TargetRange" },
+        "ArenaRange": { "Compute": "ArenaRange" },
+        "CorpseRange": { "Compute": "CorpseRange" },
+        "ResetOnEmptyArena": true,
+        "EmptyArenaSeconds": { "Compute": "EmptyArenaSeconds" },
+        "ResetTag": "Orbis_Boss_Arena_Reset",
+        "StopMusic": true,
+        "ClearWeather": false
+      }
+    },
+    {
+      "Sensor": {
+        "Type": "State",
+        "State": "Resetting"
+      },
+      "Instructions": [
+        {
+          "$Comment": "Once per reset: the bar comes down and the library hears zc:reset.",
+          "Continue": true,
+          "Sensor": {
+            "Type": "Flag",
+            "Name": "Orbis_Boss_Reset_Sent",
+            "Set": false
+          },
+          "Actions": [
+            {
+              "Type": "ClearEncounterBossBar"
+            },
+            {
+              "Type": "SignalWorldEvent",
+              "SignalId": "zc:reset"
+            },
+            {
+              "Type": "SetFlag",
+              "Name": "Orbis_Boss_Reset_Sent"
+            },
+            {
+              "Type": "SetFlag",
+              "Name": "Orbis_Boss_Settling",
+              "SetTo": false
+            }
+          ]
+        },
+        {
+          "$Comment": "Removes everything else the fight raised.",
+          "Continue": true,
+          "Sensor": {
+            "Type": "Mob",
+            "Range": { "Compute": "TargetRange" },
+            "MultiTarget": true,
+            "Filters": [
+              {
+                "Type": "NPCGroup",
+                "IncludeGroups": { "Compute": "SweepGroups" }
+              }
+            ]
+          },
+          "Actions": [
+            {
+              "Type": "ForEach",
+              "Actions": [
+                {
+                  "Type": "Remove",
+                  "UseTarget": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Reference": { "Compute": "ResetBehavior" },
+          "Interfaces": [ "Hytale.Instruction.Encounter.Phase.Behavior" ],
+          "AcceptsForward": true,
+          "Nullable": true
+        },
+        {
+          "Sensor": {
+            "Type": "Any"
+          },
+          "Actions": [
+            {
+              "Type": "Nothing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Sensor": {
+        "Type": "State",
+        "State": "Intro"
+      },
+      "Instructions": [
+        {
+          "$Comment": "Binds a boss of BossGroups into the Boss slot: the one the Spawn fallback raised, or the marker's.",
+          "Continue": true,
+          "Sensor": {
+            "Type": "Mob",
+            "Range": { "Compute": "TargetRange" },
+            "LockOnTarget": true,
+            "LockedTargetSlot": "Boss",
+            "Rebind": true,
+            "Filters": [
+              {
+                "Type": "NPCGroup",
+                "IncludeGroups": { "Compute": "BossGroups" }
+              }
+            ]
+          },
+          "Actions": [
+            {
+              "Type": "Nothing"
+            }
+          ]
+        },
+        {
+          "$Comment": "Raises the boss from the marker once a player comes near.",
+          "Continue": true,
+          "Sensor": {
+            "Type": "And",
+            "Sensors": [
+              {
+                "Type": "Not",
+                "Sensor": {
+                  "Type": "Target",
+                  "TargetSlot": "Boss",
+                  "Range": { "Compute": "TargetRange" }
+                }
+              },
+              {
+                "Type": "Player",
+                "Range": { "Compute": "SummonPlayerRange" }
+              }
+            ]
+          },
+          "Actions": [
+            {
+              "Type": "TriggerSpawners",
+              "Count": 1,
+              "Range": { "Compute": "SummonRange" },
+              "SpawnMarker": { "Compute": "SpawnMarker" },
+              "TargetSlot": "Boss",
+              "Rebind": true
+            }
+          ]
+        },
+        {
+          "Reference": "Macro_Goblin_Gobliterator_Scale_Health",
+          "Modify": {
+            "Effect": { "Compute": "ScaleP2Effect" },
+            "PlayerCount": [ 2, 99 ],
+            "PlayerRange": { "Compute": "ScalePlayerRange" },
+            "Slot": "Boss",
+            "Range": { "Compute": "TargetRange" }
+          }
+        },
+        {
+          "Reference": "Macro_Goblin_Gobliterator_Scale_Health",
+          "Modify": {
+            "Effect": { "Compute": "ScaleP3Effect" },
+            "PlayerCount": [ 3, 99 ],
+            "PlayerRange": { "Compute": "ScalePlayerRange" },
+            "Slot": "Boss",
+            "Range": { "Compute": "TargetRange" }
+          }
+        },
+        {
+          "Reference": "Macro_Goblin_Gobliterator_Scale_Health",
+          "Modify": {
+            "Effect": { "Compute": "ScaleP4Effect" },
+            "PlayerCount": [ 4, 99 ],
+            "PlayerRange": { "Compute": "ScalePlayerRange" },
+            "Slot": "Boss",
+            "Range": { "Compute": "TargetRange" }
+          }
+        },
+        {
+          "Reference": "Macro_Goblin_Gobliterator_Scale_Health",
+          "Modify": {
+            "Effect": { "Compute": "ScaleP5Effect" },
+            "PlayerCount": [ 5, 99 ],
+            "PlayerRange": { "Compute": "ScalePlayerRange" },
+            "Slot": "Boss",
+            "Range": { "Compute": "TargetRange" }
+          }
+        },
+        {
+          "$Comment": "No boss bound: any settle already started is dropped, so the next boss settles from the start.",
+          "Continue": true,
+          "Sensor": {
+            "Type": "And",
+            "Sensors": [
+              {
+                "Type": "Not",
+                "Sensor": {
+                  "Type": "Target",
+                  "TargetSlot": "Boss",
+                  "Range": { "Compute": "TargetRange" }
+                }
+              },
+              {
+                "Type": "Flag",
+                "Name": "Orbis_Boss_Settling"
+              }
+            ]
+          },
+          "Actions": [
+            {
+              "Type": "SetFlag",
+              "Name": "Orbis_Boss_Settling",
+              "SetTo": false
+            }
+          ]
+        },
+        {
+          "$Comment": "Once the boss is bound, a one-second settle, so his health steps and the refill land before the fight checks he is at full health.",
+          "Continue": true,
+          "Sensor": {
+            "Type": "And",
+            "Sensors": [
+              {
+                "Type": "Target",
+                "TargetSlot": "Boss",
+                "Range": { "Compute": "TargetRange" }
+              },
+              {
+                "Type": "Flag",
+                "Name": "Orbis_Boss_Settling",
+                "Set": false
+              }
+            ]
+          },
+          "Actions": [
+            {
+              "Type": "SetFlag",
+              "Name": "Orbis_Boss_Settling"
+            },
+            {
+              "Type": "TimerStart",
+              "Name": "Orbis_Boss_Settle",
+              "StartValueRange": [ 1, 1 ],
+              "RestartValueRange": [ 1, 1 ],
+              "Repeating": false
+            },
+            {
+              "Type": "TimerRestart",
+              "Name": "Orbis_Boss_Settle"
+            }
+          ]
+        },
+        {
+          "$Comment": "Refills the boss while his health is below its (raised) maximum.",
+          "Continue": true,
+          "Sensor": {
+            "Type": "Target",
+            "TargetSlot": "Boss",
+            "Range": { "Compute": "TargetRange" },
+            "Filters": [
+              {
+                "Type": "Stat",
+                "StatTarget": "Value",
+                "RelativeTo": "Health",
+                "Stat": "Health",
+                "RelativeToTarget": "Max",
+                "ValueRange": [ 0, 0.999 ]
+              }
+            ]
+          },
+          "Actions": [
+            {
+              "Type": "ApplyEntityEffect",
+              "EntityEffect": { "Compute": "TopUpEffect" },
+              "UseTarget": true
+            }
+          ]
+        },
+        {
+          "$Comment": "The boss is bound and settled, at full health, with a player near: the fight begins.",
+          "Sensor": {
+            "Type": "And",
+            "Sensors": [
+              {
+                "Type": "Target",
+                "TargetSlot": "Boss",
+                "Range": { "Compute": "TargetRange" },
+                "Filters": [
+                  {
+                    "Type": "Stat",
+                    "StatTarget": "Value",
+                    "RelativeTo": "Health",
+                    "Stat": "Health",
+                    "RelativeToTarget": "Max",
+                    "ValueRange": [ 0.999, 1 ]
+                  }
+                ]
+              },
+              {
+                "Type": "Player",
+                "Range": { "Compute": "SummonPlayerRange" }
+              },
+              {
+                "Type": "Flag",
+                "Name": "Orbis_Boss_Settling"
+              },
+              {
+                "Type": "Timer",
+                "Name": "Orbis_Boss_Settle",
+                "State": "Stopped"
+              }
+            ]
+          },
+          "Actions": [
+            {
+              "Type": "SetTargetNPCInvulnerable",
+              "Invulnerable": false
+            },
+            {
+              "Type": "SetFlag",
+              "Name": "Orbis_Boss_Settling",
+              "SetTo": false
+            },
+            {
+              "Type": "SetEncounterBossBar",
+              "Name": { "Compute": "BossBarName" }
+            },
+            {
+              "Type": "StartEncounterMusic",
+              "MusicContainer": { "Compute": "Music" }
+            },
+            {
+              "Type": "SetEncounterAudioState",
+              "AudioState": { "Compute": "MusicPhaseState" },
+              "Value": "Phase1"
+            },
+            {
+              "Type": "SetFlag",
+              "Name": "Orbis_Boss_Live"
+            },
+            {
+              "Type": "SetFlag",
+              "Name": "Orbis_Boss_Reset_Sent",
+              "SetTo": false
+            },
+            {
+              "Type": "SignalWorldEvent",
+              "SignalId": "zc:engaged"
+            },
+            {
+              "Type": "State",
+              "State": "Phase_1"
+            }
+          ]
+        },
+        {
+          "$Comment": "No marker in reach: after a short wait, raise the boss beside the script instead.",
+          "Sensor": {
+            "Type": "And",
+            "Sensors": [
+              {
+                "Type": "Not",
+                "Sensor": {
+                  "Type": "Target",
+                  "TargetSlot": "Boss",
+                  "Range": { "Compute": "TargetRange" }
+                }
+              },
+              {
+                "Type": "Player",
+                "Range": { "Compute": "SummonPlayerRange" }
+              }
+            ]
+          },
+          "ActionsBlocking": true,
+          "Actions": [
+            {
+              "Type": "Timeout",
+              "Delay": [ 2.5, 2.5 ]
+            },
+            {
+              "Type": "Spawn",
+              "Kind": { "Compute": "FallbackRole" },
+              "SpawnAngle": 360,
+              "DistanceRange": [ 4, 6 ],
+              "CountRange": [ 1, 1 ]
+            },
+            {
+              "Type": "Timeout",
+              "Delay": [ 5, 5 ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Sensor": {
+        "Type": "State",
+        "State": "Phase_1"
+      },
+      "Instructions": [
+        {
+          "Reference": "Macro_Orbis_Boss_Hold",
+          "Modify": {
+            "BossGroups": { "Compute": "BossGroups" },
+            "Range": { "Compute": "TargetRange" }
+          }
+        },
+        {
+          "Reference": { "Compute": "Phase1Behavior" },
+          "Interfaces": [ "Hytale.Instruction.Encounter.Phase.Behavior" ],
+          "AcceptsForward": true,
+          "Nullable": true
+        },
+        {
+          "Reference": { "Compute": "Phase2Transition" },
+          "Interfaces": [ "Hytale.Instruction.Encounter.Phase.Transition" ],
+          "AcceptsForward": true,
+          "Modify": {
+            "_ExportStates": [ "Phase_2" ]
+          }
+        },
+        {
+          "Reference": "Macro_Orbis_Boss_Defeat",
+          "Modify": {
+            "_ExportStates": [ "Complete" ],
+            "BossGroups": { "Compute": "BossGroups" },
+            "Range": { "Compute": "TargetRange" },
+            "MusicPhaseState": { "Compute": "MusicPhaseState" }
+          }
+        }
+      ]
+    },
+    {
+      "Sensor": {
+        "Type": "State",
+        "State": "Phase_2"
+      },
+      "Instructions": [
+        {
+          "Reference": "Macro_Orbis_Boss_Hold",
+          "Modify": {
+            "BossGroups": { "Compute": "BossGroups" },
+            "Range": { "Compute": "TargetRange" }
+          }
+        },
+        {
+          "Reference": { "Compute": "Phase2Behavior" },
+          "Interfaces": [ "Hytale.Instruction.Encounter.Phase.Behavior" ],
+          "AcceptsForward": true,
+          "Nullable": true
+        },
+        {
+          "Reference": { "Compute": "Phase3Transition" },
+          "Interfaces": [ "Hytale.Instruction.Encounter.Phase.Transition" ],
+          "AcceptsForward": true,
+          "Modify": {
+            "_ExportStates": [ "Phase_3" ]
+          }
+        },
+        {
+          "Reference": "Macro_Orbis_Boss_Defeat",
+          "Modify": {
+            "_ExportStates": [ "Complete" ],
+            "BossGroups": { "Compute": "BossGroups" },
+            "Range": { "Compute": "TargetRange" },
+            "MusicPhaseState": { "Compute": "MusicPhaseState" }
+          }
+        }
+      ]
+    },
+    {
+      "Sensor": {
+        "Type": "State",
+        "State": "Phase_3"
+      },
+      "Instructions": [
+        {
+          "Reference": "Macro_Orbis_Boss_Hold",
+          "Modify": {
+            "BossGroups": { "Compute": "BossGroups" },
+            "Range": { "Compute": "TargetRange" }
+          }
+        },
+        {
+          "Reference": { "Compute": "Phase3Behavior" },
+          "Interfaces": [ "Hytale.Instruction.Encounter.Phase.Behavior" ],
+          "AcceptsForward": true,
+          "Nullable": true
+        },
+        {
+          "Reference": "Macro_Orbis_Boss_Defeat",
+          "Modify": {
+            "_ExportStates": [ "Complete" ],
+            "BossGroups": { "Compute": "BossGroups" },
+            "Range": { "Compute": "TargetRange" },
+            "MusicPhaseState": { "Compute": "MusicPhaseState" }
+          }
+        }
+      ]
+    },
+    {
+      "Sensor": {
+        "Type": "State",
+        "State": "Complete"
+      },
+      "Instructions": [
+        {
+          "$Comment": "Pays the Claims first, while the won run still stands, then lets the music end and closes the run.",
+          "Sensor": {
+            "Type": "Any"
+          },
+          "ActionsBlocking": true,
+          "Actions": [
+            {
+              "Enabled": { "Compute": "!isEmpty(DailyReward)" },
+              "Type": "GrantReward",
+              "Reward": { "Compute": "DailyReward" }
+            },
+            {
+              "Enabled": { "Compute": "!isEmpty(ChaseReward)" },
+              "Type": "GrantReward",
+              "Reward": { "Compute": "ChaseReward" }
+            },
+            {
+              "Type": "Timeout",
+              "Delay": { "Compute": "VictorySeconds" }
+            },
+            {
+              "Type": "StopEncounterMusic"
+            },
+            {
+              "Type": "SignalWorldEvent",
+              "SignalId": "zc:reset"
+            },
+            {
+              "Type": "State",
+              "State": "Done"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$Comment": "The fight is won and closed; a fresh copy of the arena brings a fresh one.",
+      "Sensor": {
+        "Type": "State",
+        "State": "Done"
+      },
+      "Actions": [
+        {
+          "Type": "Nothing"
+        }
+      ]
+    }
+  ]
+}

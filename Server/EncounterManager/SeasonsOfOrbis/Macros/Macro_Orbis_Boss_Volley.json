@@ -1,0 +1,150 @@
+{
+  "$Comment": [
+    "A boss's volley, for any fight in this pack: every Interval seconds a warning ring lights under",
+    "each player near the fight and a bomb drops onto it (the game's own Gobliterator falling-burst",
+    "pattern, its player drops only). Put it in a phase's behavior slot, or inside a phase macro of",
+    "your own, with the Interaction a boss drops; that root should fall from high above the ring, so",
+    "the ring is a player's cue to move.",
+    "",
+    "Interval is the wait between volleys, BurstDuration how long each volley keeps dropping, and",
+    "DropDelay the wait between one player's drops inside it. The flag and timer names are this",
+    "macro's own bookkeeping: give each copy in one fight its own names, and clear the flags when",
+    "the fight resets so the next try starts fresh."
+  ],
+  "Class": "Instruction",
+  "Type": "Component",
+  "Interface": "Hytale.Instruction.Encounter.Phase.Behavior",
+  "Parameters": {
+    "Interval": {
+      "Value": [ 12, 12 ],
+      "Description": "Seconds between volleys, as a [min, max] range rolled each time."
+    },
+    "Interaction": {
+      "Value": "Root_Hallows_Eve_Horseman_Volley",
+      "Description": "The root interaction dropped at each player's feet. It should fall from above, so the warning ring gives the player time."
+    },
+    "TelegraphParticle": {
+      "Value": "Stalactite_Ground_Indicator",
+      "Description": "The warning ring lit on the ground under each player as the drop starts."
+    },
+    "Range": {
+      "Value": 40,
+      "Description": "How far from the fight's own entity a player may stand and still be a target."
+    },
+    "BurstDuration": {
+      "Value": [ 2, 2 ],
+      "Description": "Seconds each volley keeps dropping."
+    },
+    "DropDelay": {
+      "Value": [ 1.5, 2 ],
+      "Description": "Seconds between one player's drops inside a volley; the first falls at once."
+    },
+    "ArmedFlag": {
+      "Value": "Orbis_Volley_Armed",
+      "Description": "Flag set once the interval has started. Give each copy its own name."
+    },
+    "IntervalTimer": {
+      "Value": "Orbis_Volley_Interval",
+      "Description": "Timer holding the wait to the next volley. Give each copy its own name."
+    },
+    "VolleyFlag": {
+      "Value": "Orbis_Volley_Active",
+      "Description": "Flag that starts one volley. Give each copy its own name."
+    },
+    "RunningFlag": {
+      "Value": "Orbis_Volley_Running",
+      "Description": "Flag marking a volley in progress. Give each copy its own name."
+    },
+    "BurstTimer": {
+      "Value": "Orbis_Volley_Burst",
+      "Description": "Timer holding a volley's length. Give each copy its own name."
+    },
+    "WaveTimer": {
+      "Value": "Orbis_Volley_Wave",
+      "Description": "Timer the falling-burst macro paces its point waves with (unused here). Give each copy its own name."
+    },
+    "PlayerTimer": {
+      "Value": "Orbis_Volley_Player",
+      "Description": "Timer pacing the drops on players. Give each copy its own name."
+    }
+  },
+  "Content": {
+    "Continue": true,
+    "Sensor": {
+      "Type": "Any"
+    },
+    "Instructions": [
+      {
+        "$Comment": "Starts the wait to the first volley the first time this runs.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "Flag",
+          "Name": { "Compute": "ArmedFlag" },
+          "Set": false
+        },
+        "Actions": [
+          {
+            "Type": "SetFlag",
+            "Name": { "Compute": "ArmedFlag" }
+          },
+          {
+            "Type": "TimerStart",
+            "Name": { "Compute": "IntervalTimer" },
+            "StartValueRange": { "Compute": "Interval" },
+            "RestartValueRange": { "Compute": "Interval" },
+            "Repeating": false
+          },
+          {
+            "Type": "TimerRestart",
+            "Name": { "Compute": "IntervalTimer" }
+          }
+        ]
+      },
+      {
+        "$Comment": "Each time the wait runs out, starts a volley and the next wait.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            {
+              "Type": "Flag",
+              "Name": { "Compute": "ArmedFlag" }
+            },
+            {
+              "Type": "Timer",
+              "Name": { "Compute": "IntervalTimer" },
+              "State": "Stopped"
+            }
+          ]
+        },
+        "Actions": [
+          {
+            "Type": "SetFlag",
+            "Name": { "Compute": "VolleyFlag" }
+          },
+          {
+            "Type": "TimerRestart",
+            "Name": { "Compute": "IntervalTimer" }
+          }
+        ]
+      },
+      {
+        "Reference": "Macro_Goblin_Gobliterator_Falling_Burst",
+        "Modify": {
+          "FlagName": { "Compute": "VolleyFlag" },
+          "RunningFlag": { "Compute": "RunningFlag" },
+          "BurstTimer": { "Compute": "BurstTimer" },
+          "WaveTimer": { "Compute": "WaveTimer" },
+          "PlayerTimer": { "Compute": "PlayerTimer" },
+          "Tag": "Orbis_Boss_Volley_Point",
+          "Range": { "Compute": "Range" },
+          "TelegraphParticle": { "Compute": "TelegraphParticle" },
+          "Interaction": { "Compute": "Interaction" },
+          "BurstDuration": { "Compute": "BurstDuration" },
+          "PlayerWaveDelay": { "Compute": "DropDelay" },
+          "EnablePlayerDrops": true
+        }
+      }
+    ]
+  }
+}

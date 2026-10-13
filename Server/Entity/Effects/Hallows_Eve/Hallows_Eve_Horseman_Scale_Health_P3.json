@@ -1,0 +1,15 @@
+{
+  "$Comment": "Adds 600 to the Headless Horseman's maximum health while his fight has at least 3 players in it: his fight's script applies it as he rises, one step per player up to 5, then refills him (Hallows_Eve_Horseman_Scale_TopUp), since a higher maximum leaves his current health where it was. It stays on him for the whole fight, through his change from the saddle to his feet. Amount is the health one more player adds.",
+  "RawStatModifiers": {
+    "Health": [
+      {
+        "Amount": 600,
+        "CalculationType": "Additive",
+        "Target": "Max"
+      }
+    ]
+  },
+  "OverlapBehavior": "Ignore",
+  "Infinite": true,
+  "RemovalBehavior": "Infinite"
+}

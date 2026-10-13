@@ -1,0 +1,38 @@
+{
+  "$Comment": "Keeps a boss bound into the Boss slot whatever form he takes: each tick, any NPC of BossGroups in reach is locked into the slot. A boss who changes role mid-fight comes back as a new entity, and this is what holds the fight on him. The Orbis boss template runs it in every phase; list every form of the boss in his group.",
+  "Class": "Instruction",
+  "Type": "Component",
+  "Interface": "Hytale.Instruction.Encounter.Phase.Behavior",
+  "Parameters": {
+    "BossGroups": {
+      "Value": [ "Hallows_Eve_Headless_Horseman_Group" ],
+      "TypeHint": "String",
+      "Description": "NPC groups holding the boss in every form."
+    },
+    "Range": {
+      "Value": 80,
+      "Description": "How far from the script's entity the boss is looked for."
+    }
+  },
+  "Content": {
+    "Continue": true,
+    "Sensor": {
+      "Type": "Mob",
+      "Range": { "Compute": "Range" },
+      "LockOnTarget": true,
+      "LockedTargetSlot": "Boss",
+      "Rebind": true,
+      "Filters": [
+        {
+          "Type": "NPCGroup",
+          "IncludeGroups": { "Compute": "BossGroups" }
+        }
+      ]
+    },
+    "Actions": [
+      {
+        "Type": "Nothing"
+      }
+    ]
+  }
+}

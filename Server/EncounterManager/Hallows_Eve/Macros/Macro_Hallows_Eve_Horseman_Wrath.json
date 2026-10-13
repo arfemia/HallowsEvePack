@@ -1,0 +1,150 @@
+{
+  "$Comment": [
+    "The Headless Horseman's last phase, his wrath: his fight's third behavior slot runs it.",
+    "",
+    "As it starts, a Head still flying is taken away and he can be hurt, his wrath goes on him",
+    "(WrathEffect: harder hits, more speed, a red glow), two more Jack Skeletons rise, the music",
+    "turns to its last movement and the members are told. Then every Interval seconds a volley falls",
+    "on the players (the shared Macro_Orbis_Boss_Volley), each bomb leaving a fire patch where it",
+    "lands. Its flags are named Horseman_ and cleared by Macro_Hallows_Eve_Horseman_Reset."
+  ],
+  "Class": "Instruction",
+  "Type": "Component",
+  "Interface": "Hytale.Instruction.Encounter.Phase.Behavior",
+  "Parameters": {
+    "WrathEffect": {
+      "Value": "Hallows_Eve_Horseman_Wrath",
+      "Description": "The effect put on him for the rest of the fight."
+    },
+    "AddRole": {
+      "Value": "Hallows_Eve_Jack_Skeleton",
+      "Description": "The creature that joins him as his wrath begins."
+    },
+    "AddCount": {
+      "Value": [ 2, 2 ],
+      "Description": "How many of AddRole rise, as a [min, max] range."
+    },
+    "Interval": {
+      "Value": [ 8, 8 ],
+      "Description": "Seconds between his volleys in this phase."
+    },
+    "Interaction": {
+      "Value": "Root_Hallows_Eve_Horseman_Volley_Fire",
+      "Description": "The bomb each volley drops at a player's feet."
+    },
+    "Range": {
+      "Value": 80,
+      "Description": "How far from the script's entity the boss and the Head are looked for."
+    },
+    "VolleyRange": {
+      "Value": 45,
+      "Description": "How far from the script's entity a player may stand and still be a volley's target."
+    }
+  },
+  "Content": {
+    "Continue": true,
+    "Sensor": {
+      "Type": "Any"
+    },
+    "Instructions": [
+      {
+        "$Comment": "A Head still flying as the phase starts is taken away.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            {
+              "Type": "Target",
+              "TargetSlot": "Head",
+              "Range": { "Compute": "Range" }
+            },
+            {
+              "Type": "Flag",
+              "Name": "Horseman_P3_Armed",
+              "Set": false
+            }
+          ]
+        },
+        "Actions": [
+          {
+            "Type": "Remove"
+          }
+        ]
+      },
+      {
+        "$Comment": "As the phase starts: his wrath, his last adds, the music and the news.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            {
+              "Type": "Target",
+              "TargetSlot": "Boss",
+              "Range": { "Compute": "Range" }
+            },
+            {
+              "Type": "Flag",
+              "Name": "Horseman_P3_Armed",
+              "Set": false
+            }
+          ]
+        },
+        "Actions": [
+          {
+            "Type": "SetFlag",
+            "Name": "Horseman_P3_Armed"
+          },
+          {
+            "Type": "SetFlag",
+            "Name": "Horseman_Head_Out",
+            "SetTo": false
+          },
+          {
+            "Type": "ReleaseTarget",
+            "TargetSlot": "Head"
+          },
+          {
+            "Type": "SetTargetNPCInvulnerable",
+            "Invulnerable": false
+          },
+          {
+            "Type": "ApplyEntityEffect",
+            "EntityEffect": { "Compute": "WrathEffect" },
+            "UseTarget": true
+          },
+          {
+            "Type": "SetEncounterAudioState",
+            "AudioState": "AudioState_Goblin_Boss_Phase",
+            "Value": "Phase3"
+          },
+          {
+            "Type": "Spawn",
+            "Kind": { "Compute": "AddRole" },
+            "SpawnAngle": 360,
+            "DistanceRange": [ 4, 8 ],
+            "CountRange": { "Compute": "AddCount" }
+          },
+          {
+            "Type": "ZigFeedback",
+            "Moment": "Hallows_Eve_Horseman_Wrath"
+          }
+        ]
+      },
+      {
+        "Reference": "Macro_Orbis_Boss_Volley",
+        "Modify": {
+          "Interval": { "Compute": "Interval" },
+          "Interaction": { "Compute": "Interaction" },
+          "Range": { "Compute": "VolleyRange" },
+          "ArmedFlag": "Horseman_P3_Volley_Armed",
+          "IntervalTimer": "Horseman_P3_Volley_Interval",
+          "VolleyFlag": "Horseman_P3_Volley_Active",
+          "RunningFlag": "Horseman_P3_Volley_Running",
+          "BurstTimer": "Horseman_P3_Volley_Burst",
+          "WaveTimer": "Horseman_P3_Volley_Wave",
+          "PlayerTimer": "Horseman_P3_Volley_Player"
+        }
+      }
+    ]
+  }
+}

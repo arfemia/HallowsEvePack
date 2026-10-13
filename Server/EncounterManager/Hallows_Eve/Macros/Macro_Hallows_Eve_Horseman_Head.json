@@ -1,0 +1,386 @@
+{
+  "$Comment": [
+    "The Headless Horseman's middle phase, on foot: his fight's second behavior slot runs it.",
+    "",
+    "As it starts, two Jack Skeletons rise beside the fight and the members are told he is thrown;",
+    "he lands invulnerable from his fall and can be hurt LandingSeconds later. Every TossSeconds his",
+    "head flies off: his body cannot be hurt while it flies (it keeps fighting), and the Head",
+    "(HeadRole, raised beside the fight and bound into the Head slot) hurls small bombs. Kill the",
+    "Head and he can bleed again; leave it HeadSeconds and it flies back, removed, and he heals",
+    "(MendEffect). Each turn tells the members what happened through a feedback moment.",
+    "",
+    "Its flags and timers are named Horseman_ and cleared by Macro_Hallows_Eve_Horseman_Reset when",
+    "the fight resets."
+  ],
+  "Class": "Instruction",
+  "Type": "Component",
+  "Interface": "Hytale.Instruction.Encounter.Phase.Behavior",
+  "Parameters": {
+    "TossSeconds": {
+      "Value": [ 40, 40 ],
+      "Description": "Seconds between one head toss ending and the next starting."
+    },
+    "HeadSeconds": {
+      "Value": [ 25, 25 ],
+      "Description": "Seconds the Head may fly before it returns and heals him."
+    },
+    "LandingSeconds": {
+      "Value": [ 2, 2 ],
+      "Description": "Seconds he stays invulnerable after being thrown from the saddle."
+    },
+    "HeadRole": {
+      "Value": "Hallows_Eve_Horseman_Head",
+      "Description": "The role of the flying Head."
+    },
+    "HeadGroups": {
+      "Value": [ "Hallows_Eve_Horseman_Head_Group" ],
+      "TypeHint": "String",
+      "Description": "NPC groups holding the Head, so it can be bound and watched."
+    },
+    "MendEffect": {
+      "Value": "Hallows_Eve_Horseman_Mend",
+      "Description": "The heal he gets when the Head returns unharmed."
+    },
+    "AddRole": {
+      "Value": "Hallows_Eve_Jack_Skeleton",
+      "Description": "The creature that joins him as he is thrown."
+    },
+    "AddCount": {
+      "Value": [ 2, 2 ],
+      "Description": "How many of AddRole rise, as a [min, max] range."
+    },
+    "Range": {
+      "Value": 80,
+      "Description": "How far from the script's entity the boss and the Head are looked for."
+    }
+  },
+  "Content": {
+    "Continue": true,
+    "Sensor": {
+      "Type": "Any"
+    },
+    "Instructions": [
+      {
+        "$Comment": "As the phase starts: the landing and toss timers, his first adds and the news.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "Flag",
+          "Name": "Horseman_P2_Armed",
+          "Set": false
+        },
+        "Actions": [
+          {
+            "Type": "SetFlag",
+            "Name": "Horseman_P2_Armed"
+          },
+          {
+            "Type": "TimerStart",
+            "Name": "Horseman_Landing_Timer",
+            "StartValueRange": { "Compute": "LandingSeconds" },
+            "RestartValueRange": { "Compute": "LandingSeconds" },
+            "Repeating": false
+          },
+          {
+            "Type": "TimerRestart",
+            "Name": "Horseman_Landing_Timer"
+          },
+          {
+            "Type": "TimerStart",
+            "Name": "Horseman_Toss_Timer",
+            "StartValueRange": { "Compute": "TossSeconds" },
+            "RestartValueRange": { "Compute": "TossSeconds" },
+            "Repeating": false
+          },
+          {
+            "Type": "TimerRestart",
+            "Name": "Horseman_Toss_Timer"
+          },
+          {
+            "Type": "Spawn",
+            "Kind": { "Compute": "AddRole" },
+            "SpawnAngle": 360,
+            "DistanceRange": [ 4, 8 ],
+            "CountRange": { "Compute": "AddCount" }
+          },
+          {
+            "Type": "ZigFeedback",
+            "Moment": "Hallows_Eve_Horseman_Unhorsed"
+          }
+        ]
+      },
+      {
+        "$Comment": "He has landed: he can be hurt again.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            {
+              "Type": "Target",
+              "TargetSlot": "Boss",
+              "Range": { "Compute": "Range" }
+            },
+            {
+              "Type": "Flag",
+              "Name": "Horseman_P2_Armed"
+            },
+            {
+              "Type": "Flag",
+              "Name": "Horseman_P2_Landed",
+              "Set": false
+            },
+            {
+              "Type": "Timer",
+              "Name": "Horseman_Landing_Timer",
+              "State": "Stopped"
+            }
+          ]
+        },
+        "Actions": [
+          {
+            "Type": "SetTargetNPCInvulnerable",
+            "Invulnerable": false
+          },
+          {
+            "Type": "SetFlag",
+            "Name": "Horseman_P2_Landed"
+          }
+        ]
+      },
+      {
+        "$Comment": "Binds a flying Head into the Head slot, so the fight can tell when it falls.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "Mob",
+          "Range": { "Compute": "Range" },
+          "LockOnTarget": true,
+          "LockedTargetSlot": "Head",
+          "Rebind": true,
+          "Filters": [
+            {
+              "Type": "NPCGroup",
+              "IncludeGroups": { "Compute": "HeadGroups" }
+            }
+          ]
+        },
+        "Actions": [
+          {
+            "Type": "SetFlag",
+            "Name": "Horseman_Head_Bound"
+          }
+        ]
+      },
+      {
+        "$Comment": "Left alone too long, the Head returns: it is taken away...",
+        "Continue": true,
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            {
+              "Type": "Target",
+              "TargetSlot": "Head",
+              "Range": { "Compute": "Range" }
+            },
+            {
+              "Type": "Flag",
+              "Name": "Horseman_Head_Out"
+            },
+            {
+              "Type": "Timer",
+              "Name": "Horseman_Head_Timer",
+              "State": "Stopped"
+            }
+          ]
+        },
+        "Actions": [
+          {
+            "Type": "Remove"
+          }
+        ]
+      },
+      {
+        "$Comment": "...and he heals and can be hurt again.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            {
+              "Type": "Target",
+              "TargetSlot": "Boss",
+              "Range": { "Compute": "Range" }
+            },
+            {
+              "Type": "Flag",
+              "Name": "Horseman_Head_Out"
+            },
+            {
+              "Type": "Timer",
+              "Name": "Horseman_Head_Timer",
+              "State": "Stopped"
+            }
+          ]
+        },
+        "Actions": [
+          {
+            "Type": "ApplyEntityEffect",
+            "EntityEffect": { "Compute": "MendEffect" },
+            "UseTarget": true
+          },
+          {
+            "Type": "SetTargetNPCInvulnerable",
+            "Invulnerable": false
+          },
+          {
+            "Type": "SetFlag",
+            "Name": "Horseman_Head_Out",
+            "SetTo": false
+          },
+          {
+            "Type": "SetFlag",
+            "Name": "Horseman_Head_Bound",
+            "SetTo": false
+          },
+          {
+            "Type": "ReleaseTarget",
+            "TargetSlot": "Head"
+          },
+          {
+            "Type": "TimerRestart",
+            "Name": "Horseman_Toss_Timer"
+          },
+          {
+            "Type": "ZigFeedback",
+            "Moment": "Hallows_Eve_Horseman_Head_Returned"
+          }
+        ]
+      },
+      {
+        "$Comment": "The Head was struck down: he can be hurt again.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            {
+              "Type": "Target",
+              "TargetSlot": "Boss",
+              "Range": { "Compute": "Range" }
+            },
+            {
+              "Type": "Flag",
+              "Name": "Horseman_Head_Out"
+            },
+            {
+              "Type": "Flag",
+              "Name": "Horseman_Head_Bound"
+            },
+            {
+              "Type": "Not",
+              "Sensor": {
+                "Type": "Target",
+                "TargetSlot": "Head",
+                "Range": { "Compute": "Range" }
+              }
+            }
+          ]
+        },
+        "Actions": [
+          {
+            "Type": "SetTargetNPCInvulnerable",
+            "Invulnerable": false
+          },
+          {
+            "Type": "SetFlag",
+            "Name": "Horseman_Head_Out",
+            "SetTo": false
+          },
+          {
+            "Type": "SetFlag",
+            "Name": "Horseman_Head_Bound",
+            "SetTo": false
+          },
+          {
+            "Type": "ReleaseTarget",
+            "TargetSlot": "Head"
+          },
+          {
+            "Type": "TimerRestart",
+            "Name": "Horseman_Toss_Timer"
+          },
+          {
+            "Type": "ZigFeedback",
+            "Moment": "Hallows_Eve_Horseman_Head_Down"
+          }
+        ]
+      },
+      {
+        "$Comment": "Time for the head to fly: his body cannot be hurt, a burst of flame, and the Head rises.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            {
+              "Type": "Target",
+              "TargetSlot": "Boss",
+              "Range": { "Compute": "Range" }
+            },
+            {
+              "Type": "Flag",
+              "Name": "Horseman_P2_Landed"
+            },
+            {
+              "Type": "Flag",
+              "Name": "Horseman_Head_Out",
+              "Set": false
+            },
+            {
+              "Type": "Timer",
+              "Name": "Horseman_Toss_Timer",
+              "State": "Stopped"
+            }
+          ]
+        },
+        "Actions": [
+          {
+            "Type": "SetTargetNPCInvulnerable",
+            "Invulnerable": true
+          },
+          {
+            "Type": "SpawnParticles",
+            "PositionSource": "Sensor",
+            "ParticleSystem": "Effect_Death_Flames"
+          },
+          {
+            "Type": "Spawn",
+            "Kind": { "Compute": "HeadRole" },
+            "SpawnAngle": 360,
+            "DistanceRange": [ 2, 4 ],
+            "CountRange": [ 1, 1 ]
+          },
+          {
+            "Type": "SetFlag",
+            "Name": "Horseman_Head_Out"
+          },
+          {
+            "Type": "SetFlag",
+            "Name": "Horseman_Head_Bound",
+            "SetTo": false
+          },
+          {
+            "Type": "TimerStart",
+            "Name": "Horseman_Head_Timer",
+            "StartValueRange": { "Compute": "HeadSeconds" },
+            "RestartValueRange": { "Compute": "HeadSeconds" },
+            "Repeating": false
+          },
+          {
+            "Type": "TimerRestart",
+            "Name": "Horseman_Head_Timer"
+          },
+          {
+            "Type": "ZigFeedback",
+            "Moment": "Hallows_Eve_Horseman_Head_Off"
+          }
+        ]
+      }
+    ]
+  }
+}

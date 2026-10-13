@@ -1,6 +1,6 @@
-# Hallow's Eve pack - the calendar's words (what each event is called, and its banners) and the
-# notices for a find. Keys are written bare: the library finds each one by its tail, whatever this
-# file is called. Banners and notices print markup as text, so none of these values carries any.
+# Hallow's Eve pack - the calendar's words (what each event is called, and its banners), the
+# notices for a find, and the Headless Horseman's fight (its lines, its Claim and its graveyard).
+# Keys are written bare: the library finds each one by its tail, whatever this file is called. Banners and notices print markup as text, so none of these values carries any.
 
 # ---- Hallow's Eve ----
 calendar.hallows_eve.name = Hallow's Eve
@@ -21,3 +21,13 @@ calendar.harvest_moon.herald.end.sub = The nights go quiet again.
 # ---- Finds ----
 notify.hallows_eve_geode_found = A Cursed Geode, there in the rubble.
 notify.hallows_eve_pumpkin_found = A Hallowed Pumpkin, glowing in your pack.
+
+# ---- The Headless Horseman's fight ----
+notify.hallows_eve_horseman_unhorsed = The Horseman is thrown from the saddle!
+notify.hallows_eve_horseman_head_off = His head flies free! Strike it down and he can bleed again.
+notify.hallows_eve_horseman_head_down = The head falls. Cut him down!
+notify.hallows_eve_horseman_head_returned = His head returns to him, and his wounds close.
+notify.hallows_eve_horseman_wrath = The Horseman burns with rage!
+claim.hallows_eve_horseman_chase = The Horseman's Hoard
+dungeon.hallows_eve_graveyard.name = The Horseman's Graveyard
+dungeon.hallows_eve_graveyard.description = A walled graveyard where the Headless Horseman rides at night. Bring friends.

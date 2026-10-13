@@ -1,0 +1,24 @@
+{
+  "$Comment": "The Headless Horseman's wrath, for the last part of his fight: his own sword swings, thrown bombs and charge hit 30% harder (the volleys falling on the players are the fight's, not his, so they keep their own damage), he moves a fifth faster, and he glows red. His fight's script puts it on him when he is worn down to his last third, and it lasts until he falls. Amount is the extra damage as a fraction; HorizontalSpeedMultiplier his speed.",
+  "ApplicationEffects": {
+    "EntityTopTint": "#ff5a3c",
+    "EntityBottomTint": "#b3200f",
+    "HorizontalSpeedMultiplier": 1.2,
+    "Particles": [
+      {
+        "SystemId": "Buff_Enrage",
+        "TargetNodeName": "Chest",
+        "PositionOffset": {"X": 0, "Y": -1, "Z": 0}
+      }
+    ]
+  },
+  "OutgoingDamage": {
+    "Physical": [{"CalculationType": "Percent", "Amount": 0.3}],
+    "Elemental": [{"CalculationType": "Percent", "Amount": 0.3}],
+    "Projectile": [{"CalculationType": "Percent", "Amount": 0.3}]
+  },
+  "OverlapBehavior": "Overwrite",
+  "Infinite": true,
+  "RemovalBehavior": "Infinite",
+  "Debuff": false
+}

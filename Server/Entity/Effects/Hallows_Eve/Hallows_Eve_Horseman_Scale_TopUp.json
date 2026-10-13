@@ -1,0 +1,9 @@
+{
+  "$Comment": "Refills the Headless Horseman to his full maximum health as he rises: his fight's script applies it once his party health steps (Hallows_Eve_Horseman_Scale_Health_P2 to P5) are on, since those raise the maximum but not his current health.",
+  "StatModifiers": {
+    "Health": 100
+  },
+  "ValueType": "Percent",
+  "OverlapBehavior": "Overwrite",
+  "Duration": 0.1
+}

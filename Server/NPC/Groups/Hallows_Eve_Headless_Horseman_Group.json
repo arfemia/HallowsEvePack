@@ -1,0 +1,7 @@
+{
+  "$Comment": "The Headless Horseman in either of his forms, in the saddle and on foot. His fight's script finds him through this group: to bind him when it raises him without a spawn marker, to keep hold of him when he changes form, and to clear him away when the fight resets. Add a role id here if he gains another form.",
+  "IncludeRoles": [
+    "Hallows_Eve_Headless_Horseman_Mounted",
+    "Hallows_Eve_Headless_Horseman"
+  ]
+}

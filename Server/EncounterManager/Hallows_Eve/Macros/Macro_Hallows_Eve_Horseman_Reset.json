@@ -1,0 +1,28 @@
+{
+  "$Comment": "Clears the Headless Horseman's own bookkeeping while his fight resets (his fight's reset slot runs it), so the next try starts from his first phase: every Horseman_ flag the phase macros and his volleys set, and the Head slot. Add a flag here whenever a Horseman macro gains one.",
+  "Class": "Instruction",
+  "Type": "Component",
+  "Interface": "Hytale.Instruction.Encounter.Phase.Behavior",
+  "Parameters": {},
+  "Content": {
+    "Continue": true,
+    "Sensor": {
+      "Type": "Any"
+    },
+    "Actions": [
+      { "Type": "SetFlag", "Name": "Horseman_P2_Armed", "SetTo": false },
+      { "Type": "SetFlag", "Name": "Horseman_P2_Landed", "SetTo": false },
+      { "Type": "SetFlag", "Name": "Horseman_Head_Out", "SetTo": false },
+      { "Type": "SetFlag", "Name": "Horseman_Head_Bound", "SetTo": false },
+      { "Type": "SetFlag", "Name": "Horseman_P3_Armed", "SetTo": false },
+      { "Type": "SetFlag", "Name": "Horseman_Unhorse_GuardArmed", "SetTo": false },
+      { "Type": "SetFlag", "Name": "Horseman_P1_Volley_Armed", "SetTo": false },
+      { "Type": "SetFlag", "Name": "Horseman_P1_Volley_Active", "SetTo": false },
+      { "Type": "SetFlag", "Name": "Horseman_P1_Volley_Running", "SetTo": false },
+      { "Type": "SetFlag", "Name": "Horseman_P3_Volley_Armed", "SetTo": false },
+      { "Type": "SetFlag", "Name": "Horseman_P3_Volley_Active", "SetTo": false },
+      { "Type": "SetFlag", "Name": "Horseman_P3_Volley_Running", "SetTo": false },
+      { "Type": "ReleaseTarget", "TargetSlot": "Head" }
+    ]
+  }
+}

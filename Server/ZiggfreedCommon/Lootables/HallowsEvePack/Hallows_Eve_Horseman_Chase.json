@@ -1,0 +1,13 @@
+{
+  "$Comment": [
+    "What the Horseman's Hoard (Rewards/Hallows_Eve/Hallows_Eve_Horseman_Chase) pays. The roll has no",
+    "Chance, so it always pays and the Hoard is never empty. A roll added with a Chance (a percent from",
+    "0 to 100) is a chance on top."
+  ],
+  "Name": "Hallows_Eve_Horseman_Chase",
+  "Rolls": [
+    {
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Lantern_Bomb_Rare", "Count": 1 } ] }
+    }
+  ]
+}

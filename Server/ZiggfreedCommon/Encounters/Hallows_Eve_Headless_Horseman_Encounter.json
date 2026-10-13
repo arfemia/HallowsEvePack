@@ -1,0 +1,23 @@
+{
+  "$Comment": [
+    "The binding row for the Headless Horseman's fight (EncounterManager/Hallows_Eve/",
+    "Hallows_Eve_Headless_Horseman_Encounter.json): what the server owes for it, which the script never",
+    "describes. It names the fight (NameKey, on the bar's Records tab and every line that names it),",
+    "binds the boss the library credits through the script's Boss slot in both his forms, and keeps",
+    "the fight's records (wins, fastest win, best share, damage) on Records' Boss Fights under the",
+    "bucket hallows_eve_headless_horseman.",
+    "",
+    "It writes no Scale on purpose: his fight scales his health with the party itself, one step per",
+    "player, so a library scale here would scale him twice. No Loot either: his script pays his two",
+    "Claims. Switch the row off with Enabled false, or from mods/ziggfreedcommon/encounters.json under",
+    "the key hallows_eve_headless_horseman_encounter."
+  ],
+  "EncounterAsset": "Hallows_Eve_Headless_Horseman_Encounter",
+  "NameKey": "npcs.Hallows_Eve_Headless_Horseman.name",
+  "Subject": {
+    "TargetSlot": "Boss"
+  },
+  "Leaderboard": {
+    "Bucket": "hallows_eve_headless_horseman"
+  }
+}

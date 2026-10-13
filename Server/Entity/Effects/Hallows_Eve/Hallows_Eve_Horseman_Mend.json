@@ -1,0 +1,9 @@
+{
+  "$Comment": "What the Horseman gets back when his flying Head returns unharmed: an instant heal of 5% of his maximum health, the game's own instant-heal shape. His fight's script applies it when players leave the Head alone too long. Health is the percent of his maximum he regains.",
+  "StatModifiers": {
+    "Health": 5
+  },
+  "ValueType": "Percent",
+  "OverlapBehavior": "Overwrite",
+  "Duration": 0.1
+}

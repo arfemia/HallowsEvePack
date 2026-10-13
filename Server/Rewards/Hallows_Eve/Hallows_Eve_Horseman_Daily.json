@@ -1,0 +1,6 @@
+{
+  "$Comment": "The Headless Horseman's daily Claim: his fight's script grants it at his death, and each player who fought him finds one on their Claims tab, rolled from Hallows_Eve_Horseman_Daily and scaled by their share of the fight (ShareScaled). Diminish is left out, so the first win each day pays and later wins that day pay nothing; a roll that lands nothing never spends the day. Its row is titled with the fight's own name.",
+  "Type": "ZigClaim",
+  "Lootable": "Hallows_Eve_Horseman_Daily",
+  "ShareScaled": true
+}

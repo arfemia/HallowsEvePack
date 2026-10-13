@@ -1,0 +1,11 @@
+{
+  "$Comment": [
+    "What each member of the Headless Horseman's fight is told as his wrath begins, his last phase",
+    "(his fight's Macro_Hallows_Eve_Horseman_Wrath draws it). The file name is the moment id. Key is a",
+    "line in this pack's hallowseve.world.lang, written bare."
+  ],
+  "Toast": {
+    "Title": { "Key": "notify.hallows_eve_horseman_wrath" },
+    "Tone": "Warning"
+  }
+}

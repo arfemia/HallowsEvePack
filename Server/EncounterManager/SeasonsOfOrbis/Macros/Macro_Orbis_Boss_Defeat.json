@@ -1,0 +1,195 @@
+{
+  "$Comment": [
+    "A boss fight's defeat beat, debounced. When the Boss slot is empty and no NPC of BossGroups is",
+    "alive in reach for MissingSeconds in a row, the bar comes down, the music turns to its ending,",
+    "the slot is released, the library hears zc:defeated and the fight moves to the state Next",
+    "points at. The wait keeps a boss's change of form, which replaces him with a new entity for a",
+    "moment, from reading as his death. The library settles credit the instant the boss dies; this",
+    "beat is what takes the bar down. A boss that runs past Range alive is caught by the library as",
+    "leashed: the run counts as lost and pays nothing."
+  ],
+  "Class": "Instruction",
+  "Type": "Component",
+  "Interface": "Hytale.Instruction.Encounter.Phase.Transition",
+  "Parameters": {
+    "_ImportStates": [ "Next" ],
+    "BossGroups": {
+      "Value": [ "Hallows_Eve_Headless_Horseman_Group" ],
+      "TypeHint": "String",
+      "Description": "NPC groups holding the boss in every form."
+    },
+    "Range": {
+      "Value": 80,
+      "Description": "How far from the script's entity the boss counts as present."
+    },
+    "MissingSeconds": {
+      "Value": [ 1, 1 ],
+      "Description": "Seconds the boss must stay gone before the fight counts him as fallen."
+    },
+    "MusicPhaseState": {
+      "Value": "AudioState_Goblin_Boss_Phase",
+      "Description": "The music's phase axis, set to Ending at the beat."
+    }
+  },
+  "Content": {
+    "Continue": true,
+    "Sensor": {
+      "Type": "Any"
+    },
+    "Instructions": [
+      {
+        "$Comment": "The boss is here (bound, or of his group in reach): nothing is missing.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "Or",
+          "Sensors": [
+            {
+              "Type": "Target",
+              "TargetSlot": "Boss",
+              "Range": { "Compute": "Range" }
+            },
+            {
+              "Type": "Mob",
+              "Range": { "Compute": "Range" },
+              "Filters": [
+                {
+                  "Type": "NPCGroup",
+                  "IncludeGroups": { "Compute": "BossGroups" }
+                }
+              ]
+            }
+          ]
+        },
+        "Actions": [
+          {
+            "Type": "SetFlag",
+            "Name": "Orbis_Boss_Missing",
+            "SetTo": false
+          }
+        ]
+      },
+      {
+        "$Comment": "The boss has just gone: start the wait.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            {
+              "Type": "Not",
+              "Sensor": {
+                "Type": "Target",
+                "TargetSlot": "Boss",
+                "Range": { "Compute": "Range" }
+              }
+            },
+            {
+              "Type": "Not",
+              "Sensor": {
+                "Type": "Mob",
+                "Range": { "Compute": "Range" },
+                "Filters": [
+                  {
+                    "Type": "NPCGroup",
+                    "IncludeGroups": { "Compute": "BossGroups" }
+                  }
+                ]
+              }
+            },
+            {
+              "Type": "Flag",
+              "Name": "Orbis_Boss_Missing",
+              "Set": false
+            }
+          ]
+        },
+        "Actions": [
+          {
+            "Type": "SetFlag",
+            "Name": "Orbis_Boss_Missing"
+          },
+          {
+            "Type": "TimerStart",
+            "Name": "Orbis_Boss_Missing_Timer",
+            "StartValueRange": { "Compute": "MissingSeconds" },
+            "RestartValueRange": { "Compute": "MissingSeconds" },
+            "Repeating": false
+          },
+          {
+            "Type": "TimerRestart",
+            "Name": "Orbis_Boss_Missing_Timer"
+          }
+        ]
+      },
+      {
+        "$Comment": "Still gone once the wait is over: he has fallen.",
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            {
+              "Type": "Not",
+              "Sensor": {
+                "Type": "Target",
+                "TargetSlot": "Boss",
+                "Range": { "Compute": "Range" }
+              }
+            },
+            {
+              "Type": "Not",
+              "Sensor": {
+                "Type": "Mob",
+                "Range": { "Compute": "Range" },
+                "Filters": [
+                  {
+                    "Type": "NPCGroup",
+                    "IncludeGroups": { "Compute": "BossGroups" }
+                  }
+                ]
+              }
+            },
+            {
+              "Type": "Flag",
+              "Name": "Orbis_Boss_Missing"
+            },
+            {
+              "Type": "Timer",
+              "Name": "Orbis_Boss_Missing_Timer",
+              "State": "Stopped"
+            }
+          ]
+        },
+        "Actions": [
+          {
+            "Type": "ClearEncounterBossBar"
+          },
+          {
+            "Type": "SetEncounterAudioState",
+            "AudioState": { "Compute": "MusicPhaseState" },
+            "Value": "Ending"
+          },
+          {
+            "Type": "ReleaseTarget",
+            "TargetSlot": "Boss"
+          },
+          {
+            "Type": "SetFlag",
+            "Name": "Orbis_Boss_Missing",
+            "SetTo": false
+          },
+          {
+            "Type": "SetFlag",
+            "Name": "Orbis_Boss_Live",
+            "SetTo": false
+          },
+          {
+            "Type": "SignalWorldEvent",
+            "SignalId": "zc:defeated"
+          },
+          {
+            "Type": "ParentState",
+            "State": "Next"
+          }
+        ]
+      }
+    ]
+  }
+}

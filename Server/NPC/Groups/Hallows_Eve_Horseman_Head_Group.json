@@ -1,0 +1,4 @@
+{
+  "$Comment": "The Horseman's flying Head, a group of one. His fight's script binds the Head through this group the moment it flies, so it can tell when players have struck it down, and clears it away when the fight resets.",
+  "IncludeRoles": [ "Hallows_Eve_Horseman_Head" ]
+}
