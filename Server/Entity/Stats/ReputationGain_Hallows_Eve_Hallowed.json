@@ -1,0 +1,8 @@
+{
+  "$Comment": "How much faster a player earns favor with the Hallowed (the reputation Hallows_Eve_Hallowed) while wearing gear that raises it, in whole percent points (10 is +10%): the Jack Shield and the Flaming Jack Shield (Utility.StatModifiers, counted wherever one is equipped, main hand or utility slot; two shields, one in each, stack) and the Hallowed set's tier (ZiggfreedCommon/GearSets/HallowsEvePack/Hallows_Eve_Hallowed.json), each Additive on the Max. ziggfreed-common adds it to the global ReputationGain and multiplies every favor gain with the Hallowed (a kill, a quest, a board contract, a trick or treat) by 1 + the total, before any Cap, and past Exalted too, where each multiple of Beyond's Every pays a cache. A loss of favor is never changed, and favor already earned never moves when the gear comes off. Base Max 0, so a player wearing none of it earns the amount written; Min -100 keeps a subtractive modifier from ever turning a gain into nothing. Its tooltip line is the client.lang key itemTooltip.stats.ReputationGain_Hallows_Eve_Hallowed.",
+  "InitialValue": 0.0,
+  "Min": -100.0,
+  "Max": 0.0,
+  "Shared": false,
+  "HideFromTooltip": false
+}

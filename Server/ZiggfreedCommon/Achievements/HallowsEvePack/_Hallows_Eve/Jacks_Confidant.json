@@ -5,9 +5,9 @@
     "Earned once and kept. Favor with Old Jack carries from one Hallow's Eve to the next, so this",
     "file has no Parent: the yearly skeleton would mint a copy each year that every Revered player",
     "collects again at login for nothing. It carries no hallowed tag either, which keeps it out of",
-    "The Hallowed. REPUTATION_RANK credits every rank a player's favor has reached, gear included,",
-    "each time their favor or their gear changes and when they log in, so wearing the Jack Helm can",
-    "earn this too. Target is the rank id and Qualifier the reputation id. The criterion's TextKey",
+    "The Hallowed. REPUTATION_RANK credits every rank a player's earned favor has reached, each time",
+    "their favor changes and when they log in; the Jack Helm only speeds the climb, since it raises",
+    "each gain. Target is the rank id and Qualifier the reputation id. The criterion's TextKey",
     "words the step with Old Jack's own rank name. It pays the title Hallows_Eve_Jacks_Confidant",
     "through the Title reward kind."
   ],

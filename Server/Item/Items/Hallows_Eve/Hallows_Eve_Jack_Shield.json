@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Jack Shield, the other half of the Hallowed set. Parent is the game's shield template, so it guards, bashes and spends stamina like the game's wooden shield (the template's guard StaminaCost Value 12; the Flaming Jack Shield writes a higher one); this file changes its look, name, quality and the stats it gives (Utility.StatModifiers). The game applies those to the shield in the utility slot and the library applies them to a held one, so they count wherever the shield is equipped, main hand or utility slot, and two shields, one in each, stack. That includes its favor with the Hallowed, on the stat Reputation_Hallows_Eve_Hallowed. The set counts it only in the utility slot, never in the main hand.",
+  "$Comment": "The Jack Shield, the other half of the Hallowed set. Parent is the game's shield template, so it guards, bashes and spends stamina like the game's wooden shield (the template's guard StaminaCost Value 12; the Flaming Jack Shield writes a higher one); this file changes its look, name, quality and the stats it gives (Utility.StatModifiers). The game applies those to the shield in the utility slot and the library applies them to a held one, so they count wherever the shield is equipped, main hand or utility slot, and two shields, one in each, stack. That includes its boost to favor gained with the Hallowed, the percent on the stat ReputationGain_Hallows_Eve_Hallowed (10 is +10%). The set counts it only in the utility slot, never in the main hand.",
   "Parent": "Template_Weapon_Shield",
   "TranslationProperties": {
     "Name": "items.Hallows_Eve_Jack_Shield.name",
@@ -15,7 +15,7 @@
     "Usable": true,
     "StatModifiers": {
       "Health": [{"Amount": 4, "CalculationType": "Additive"}],
-      "Reputation_Hallows_Eve_Hallowed": [{"Amount": 100, "CalculationType": "Additive", "Target": "Max"}]
+      "ReputationGain_Hallows_Eve_Hallowed": [{"Amount": 10, "CalculationType": "Additive", "Target": "Max"}]
     }
   }
 }
