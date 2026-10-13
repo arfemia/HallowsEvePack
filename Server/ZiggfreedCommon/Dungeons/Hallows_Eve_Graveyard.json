@@ -1,0 +1,42 @@
+{
+  "$Comment": [
+    "The Headless Horseman's graveyard, the dungeon the Gravekeeper near Old Jack opens while Hallow's",
+    "Eve runs. Every area of a copy pastes Hallows_Eve/Hallows_Eve_Graveyard.prefab.json (an enclosed",
+    "night graveyard with his fight's entity, his spawn marker and a way-out pad in its entrance",
+    "room; tools/arena_markers.py writes it), so every fresh paste stages a fresh fight. The prefab's",
+    "anchor is the entrance room's floor, so EntryOffset lands an arriving party one block up, standing",
+    "on it; the Leave_Instance pad behind them takes a player back out.",
+    "",
+    "Season keeps it closed outside Hallow's Eve. Share: one party to an area, up to five players, and",
+    "four areas to a copy. Complete names his fight, so the run clears when he falls, and Rewards rolls",
+    "Hallows_Eve_Graveyard_Clear for each member present as a Claim: full the first clear each day,",
+    "half on later ones. Text names it in the reader's language (hallowseve.world.lang)."
+  ],
+  "Enabled": true,
+  "Share": {
+    "PartyLocked": true,
+    "MaxPlayers": 5,
+    "AreasPerCopy": 4
+  },
+  "Area": {
+    "Prefab": "Hallows_Eve/Hallows_Eve_Graveyard.prefab.json",
+    "EntryOffset": {
+      "Y": 1
+    }
+  },
+  "Complete": {
+    "Bosses": [ "Hallows_Eve_Headless_Horseman_Encounter" ]
+  },
+  "Rewards": {
+    "Lootable": "Hallows_Eve_Graveyard_Clear",
+    "Diminish": { "Steps": [1, 0.5], "Window": "Daily" }
+  },
+  "Copy": {
+    "EmptyCloseSeconds": 60
+  },
+  "Season": "Hallows_Eve",
+  "Text": {
+    "NameKey": "dungeon.hallows_eve_graveyard.name",
+    "DescriptionKey": "dungeon.hallows_eve_graveyard.description"
+  }
+}

@@ -308,6 +308,10 @@
       "TextKey": "dialogue.hallows_eve_old_jack.who_are_you.text",
       "IncludeOptions": [ "jack_back" ]
     },
+    "horseman": {
+      "TextKey": "dialogue.hallows_eve_old_jack.horseman.text",
+      "IncludeOptions": [ "jack_back" ]
+    },
     "harvest_moon": {
       "TextKey": "dialogue.hallows_eve_old_jack.harvest_moon.text",
       "IncludeOptions": [ "jack_back" ]
@@ -340,6 +344,11 @@
           { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Almanac", "Min": 1 }
         ],
         "Open": { "Type": "Almanac", "Event": "Hallows_Eve" }
+      },
+      {
+        "LabelKey": "dialogue.hallows_eve_old_jack.opt.horseman",
+        "Style": "neutral",
+        "Goto": "horseman"
       },
       {
         "LabelKey": "dialogue.hallows_eve_old_jack.opt.who",

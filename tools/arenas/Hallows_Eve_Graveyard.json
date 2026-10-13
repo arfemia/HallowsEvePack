@@ -1,0 +1,19 @@
+{
+  "$Comment": [
+    "The Headless Horseman's graveyard: the source prefab beside this file (an enclosed night graveyard,",
+    "64 by 110 blocks; players arrive at its anchor in the entrance room), with the fight's entity on the open",
+    "road just south of the central plaza (the script raises his Head and adds around it, so it stands",
+    "clear of the plaza's centrepiece), his spawn marker on the plaza's north side, and a vanilla",
+    "Leave_Instance pad against the entrance room's back wall, the way out. Cells count from the anchor."
+  ],
+  "Source": "tools/arenas/ziggy_halloween.prefab.zip",
+  "Output": "Server/Prefabs/Hallows_Eve/Hallows_Eve_Graveyard.prefab.json",
+  "StripSpawnMarkers": false,
+  "Encounter": { "Id": "Hallows_Eve_Headless_Horseman_Encounter", "At": [0, 1, 66] },
+  "Markers": [
+    { "Id": "Hallows_Eve_Headless_Horseman_Marker", "At": [0, 1, 46] }
+  ],
+  "Blocks": [
+    { "Name": "Leave_Instance", "At": [0, 1, -3] }
+  ]
+}

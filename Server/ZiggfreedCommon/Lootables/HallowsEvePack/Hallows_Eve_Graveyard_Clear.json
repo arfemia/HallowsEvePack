@@ -1,0 +1,21 @@
+{
+  "$Comment": [
+    "What clearing the Headless Horseman's graveyard pays each player there at the end, beside the",
+    "Horseman's own Claims: the dungeon's Rewards (Dungeons/Hallows_Eve_Graveyard.json) roll it, full",
+    "the first clear each day and half on later ones. Every roll always pays. Sweets and festival",
+    "tokens pay through the Currency reward kind."
+  ],
+  "Name": "Hallows_Eve_Graveyard_Clear",
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "10" } } ]
+      }
+    },
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "1" } } ]
+      }
+    }
+  ]
+}

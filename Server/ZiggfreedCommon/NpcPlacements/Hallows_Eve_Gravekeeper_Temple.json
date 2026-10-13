@@ -1,0 +1,40 @@
+{
+  "$Comment": [
+    "The Gravekeeper, standing near Old Jack in the Forgotten Temple while Hallow's Eve runs: press F",
+    "and you enter the Headless Horseman's graveyard (ZiggfreedCommon/Dungeons/Hallows_Eve_Graveyard.json).",
+    "Entering is no fight; the graveyard is an instance of its own, so the temple stays peaceful.",
+    "",
+    "Season makes him a guest, as it does Old Jack: he arrives when Hallow's Eve starts and leaves when",
+    "it ends. Lifecycle keeps his chunk loaded, stands him up again if something removes him, and",
+    "raises his health past anything that can be dealt. Where finds the temple by its GameplayConfig",
+    "id. Anchor is the temple's arrival spot plus an offset, on Old Jack's line a few steps further",
+    "along negative X; to move him, edit Anchor.WorldSpawn.Offset (small enough to stay off the walls)",
+    "and Yaw to turn him, then look at the spot in game. Interact.Open is what pressing F opens."
+  ],
+  "Name": "Hallows_Eve_Gravekeeper_Temple",
+  "Enabled": true,
+  "Where": {
+    "GameplayConfig": ["ForgottenTemple"]
+  },
+  "Identity": {
+    "Role": "Hallows_Eve_Gravekeeper"
+  },
+  "Anchor": {
+    "WorldSpawn": {
+      "Offset": {
+        "X": -7.5,
+        "Z": 4.5
+      },
+      "Yaw": 180.0
+    }
+  },
+  "Season": "Hallows_Eve",
+  "Lifecycle": {
+    "KeepAlive": true,
+    "Respawn": true,
+    "Fortify": true
+  },
+  "Interact": {
+    "Open": { "Type": "Dungeon", "Dungeon": "Hallows_Eve_Graveyard" }
+  }
+}

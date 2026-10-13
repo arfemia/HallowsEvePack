@@ -134,6 +134,17 @@ title.hallows_eve_jacks_guest.name = Jack's Guest
 title.hallows_eve_jacks_guest.flavor = Took part in Hallow's Eve.
 title.hallows_eve_jacks_guest.display = {0}, Jack's Guest
 
+# ---- The Headless Horseman's ladder and its title ----
+achievement.hallows_eve_horseman_down.title = The Horseman Falls {0}
+achievement.hallows_eve_horseman_down.desc = Bring down the Headless Horseman in his graveyard.
+achievement.hallows_eve_horseman_hunter.title = Horseman Hunter {0}
+achievement.hallows_eve_horseman_hunter.desc = Bring down the Headless Horseman {0} times.
+achievement.hallows_eve_horseman_bane.title = Horseman's Bane {0}
+achievement.hallows_eve_horseman_bane.desc = Bring down the Headless Horseman {0} times.
+title.hallows_eve_horseman_bane.name = Horseman's Bane
+title.hallows_eve_horseman_bane.flavor = Brought the Headless Horseman down again and again in one Hallow's Eve.
+title.hallows_eve_horseman_bane.display = {0}, Horseman's Bane
+
 # ---- Reputations: Old Jack's Favor and the Hallowed (id Hallows_Eve_Hallowed) ----
 reputation.hallows_eve_old_jack.name = Old Jack's Favor
 reputation.hallows_eve_old_jack.flavor = Old Jack takes a while to warm up to people. Do his errands and stop for a word now and then.
@@ -204,11 +215,13 @@ dialogue.hallows_eve_old_jack.ready_generic.text = That looks done to me. Let's 
 dialogue.hallows_eve_old_jack.ready_generic.opt.turnin = It's done.
 dialogue.hallows_eve_old_jack.lantern_lit.text = The Hollow Lantern's still burning. Keeps the worst of the dark off the steps.\nWhat do you need?
 dialogue.hallows_eve_old_jack.who_are_you.text = Old Jack. I kept a farm once, a long way from here. Then one October I didn't go home, and I've come back every October since.\nEvery year I light a Hollow Lantern to keep the dead off these steps. They burn out by November. Don't ask me about the head.
+dialogue.hallows_eve_old_jack.horseman.text = The Headless Horseman. He rides his own graveyard every night of Hallow's Eve, and he doesn't like visitors.\nIf you want a look, the Gravekeeper standing next to me will take you in. Bring friends. And when his head flies off, cut it down, or he can't be hurt.
 dialogue.hallows_eve_old_jack.harvest_moon.text = See that moon? Harvest Moon. A few nights a year the dead get restless under it, and the graves empty out.\nIf you want work, tonight's the night. I'll be up till it sets.
 dialogue.hallows_eve_old_jack.opt.quests = What needs doing?
 dialogue.hallows_eve_old_jack.opt.shop = Let's see your stall.
 dialogue.hallows_eve_old_jack.opt.standing = How do we stand?
 dialogue.hallows_eve_old_jack.opt.almanac = Show me the Almanac.
+dialogue.hallows_eve_old_jack.opt.horseman = Who's the rider I keep hearing about?
 dialogue.hallows_eve_old_jack.opt.who = Who are you?
 dialogue.hallows_eve_old_jack.opt.harvest = What's a Harvest Moon?
 dialogue.hallows_eve_old_jack.opt.back = Something else.
