@@ -42,7 +42,7 @@ shop.harvest_feast_offer_recipe_caesar_salad.title = Рецепт: салат «
 shop.harvest_feast_offer_recipe_caesar_salad.desc = Салат «Цезарь» от Марты, записанный для семьи.
 
 # ---- Martha's intro quest ----
-quest.harvest_feast_martha_meet.title = Ужин в Храме
+quest.harvest_feast_martha_meet.title = Ужин в храме
 quest.harvest_feast_martha_meet.flavor = Поля убраны, и я снова готовлю в Забытом храме. Туда ведут любые Врата забытого храма. Приходи, найди меня, и приходи голодным.
 objective.harvest_feast.meet_martha = Найдите Марту-повариху в Забытом храме
 
