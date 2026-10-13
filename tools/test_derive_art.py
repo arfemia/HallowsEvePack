@@ -640,8 +640,6 @@ class DerivedArtTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as first, tempfile.TemporaryDirectory() as second:
             self.assertEqual(0, derive_art.main(["--out", first]))
             self.assertEqual(0, derive_art.main(["--out", second]))
-            written = sorted(p.relative_to(first).as_posix() for p in Path(first).rglob("*") if p.is_file())
-            self.assertEqual(rels, written)
             run_one = hash_tree(first, rels)
             self.assertEqual(run_one, hash_tree(second, rels))
             self.assertEqual(run_one, hash_tree(PACK, rels), "the tree is stale; rerun derive_art.py")

@@ -1,0 +1,4 @@
+{
+  "$Comment": "One bomb of the enraged Horseman's volley, leaving a fire patch where it lands: the id his fight's script spawns at each marked spot once he is enraged. It runs Hallows_Eve_Horseman_Volley_Fire_Drop.",
+  "Interactions": ["Hallows_Eve_Horseman_Volley_Fire_Drop"]
+}

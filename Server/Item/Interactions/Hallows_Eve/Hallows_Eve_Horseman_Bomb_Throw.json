@@ -1,0 +1,10 @@
+{
+  "$Comment": "The Headless Horseman winds up for 0.6 seconds, then hurls a lantern bomb at his target (Hallows_Eve_Horseman_Bomb_Projectile). The throw carries the AimingReference tag, which is what lets him aim the arc at a moving player. RunTime is the wind-up in seconds: longer gives players more warning.",
+  "Type": "Simple",
+  "RunTime": 0.6,
+  "Next": {
+    "Type": "Projectile",
+    "Config": "Hallows_Eve_Horseman_Bomb_Projectile",
+    "Tags": {"AimingReference": []}
+  }
+}

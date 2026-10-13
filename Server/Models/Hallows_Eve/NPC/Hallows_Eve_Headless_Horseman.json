@@ -1,0 +1,34 @@
+{
+  "$Comment": "The Headless Horseman on foot: the game's Burnt Knight skeleton with its skull gone, a fire burning where his head was, and a lit jack-o'-lantern swinging from his left hand. Parent Skeleton_Burnt_Knight brings the burnt bones' texture, the hitbox and every animation; Model is this pack's copy of the Skeleton's shape with the skull's three shapes hidden (tools/derive_art.py writes it), so the animations still find every node. DefaultAttachments replaces the parent's list whole: the knight's chest piece and the ancient steel legs and gauntlets stay, and his helm and glowing eyes go, since there is no head to wear them. The flame is the Incandescent skull's own fire on the Head node. MinScale and MaxScale fix his size at a quarter again a skeleton's; Light is the lantern's glow, a model light that moves with him, each hex digit a red, green or blue level from 0 to f.",
+  "Parent": "Skeleton_Burnt_Knight",
+  "Model": "NPC/Hallows_Eve/Headless_Horseman/Headless_Horseman.blockymodel",
+  "Icon": "Icons/ModelsGenerated/Hallows_Eve_Headless_Horseman.png",
+  "MinScale": 1.25,
+  "MaxScale": 1.25,
+  "DefaultAttachments": [
+    {
+      "Model": "NPC/Undead/Skeleton/Models/Attachments/Burnt_Knight/Chest.blockymodel",
+      "Texture": "NPC/Undead/Skeleton/Models/Attachments/Burnt_Knight/Chest_Texture.png"
+    },
+    {
+      "Model": "Items/Armors/Steel/Legs.blockymodel",
+      "Texture": "Items/Armors/Steel/Legs_Ancient.png"
+    },
+    {
+      "Model": "Items/Armors/Steel/Hands.blockymodel",
+      "Texture": "Items/Armors/Steel/Hands_Ancient.png"
+    },
+    {
+      "Model": "NPC/Hallows_Eve/Headless_Horseman/Horseman_Lantern.blockymodel",
+      "Texture": "Items/Hallows_Eve/Jack_Lantern/Jack_Lantern_Texture.png"
+    }
+  ],
+  "Particles": [
+    {
+      "SystemId": "Campfire_New_Cartoon",
+      "TargetNodeName": "Head",
+      "Scale": 0.8
+    }
+  ],
+  "Light": { "Color": "#c62" }
+}

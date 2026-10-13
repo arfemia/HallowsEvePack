@@ -1,0 +1,4 @@
+{
+  "$Comment": "One bomb of the Horseman's volley, the id his fight's script spawns at each marked spot. It runs Hallows_Eve_Horseman_Volley_Drop.",
+  "Interactions": ["Hallows_Eve_Horseman_Volley_Drop"]
+}

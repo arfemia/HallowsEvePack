@@ -1,0 +1,43 @@
+{
+  "$Comment": "A boss's heavy bomb blast, for the volleys that fall on a ring marked under each player: every player within 3.5 blocks takes the game's own Fire damage, a hard shove and the game's own Burn. Like Orbis_Boss_Bomb_Burst it matches Player only, so the boss and his creatures are never hurt, and the world's PvP setting never filters it. Range is the radius in blocks; BaseDamage and Knockback.Force set how hard it hits.",
+  "Type": "Selector",
+  "Selector": {"Id": "AOECircle", "Range": 3.5},
+  "IgnoreOwner": true,
+  "Effects": {
+    "WorldSoundEventId": "SFX_Goblin_Lobber_Bomb_Death",
+    "Particles": [
+      {"SystemId": "Explosion_Medium", "TargetEntityPart": "Entity"}
+    ]
+  },
+  "HitEntityRules": [
+    {
+      "Matchers": [{"Type": "Player"}],
+      "Next": {
+        "Interactions": [
+          {"Type": "ApplyEffect", "EffectId": "Burn", "Entity": "Target"},
+          {
+            "Parent": "DamageEntityParent",
+            "DamageCalculator": {"BaseDamage": {"Fire": 20}},
+            "DamageEffects": {
+              "Knockback": {
+                "Type": "Point",
+                "VelocityConfig": {
+                  "AirResistance": 0.97,
+                  "AirResistanceMax": 0.96,
+                  "GroundResistance": 0.94,
+                  "GroundResistanceMax": 0.3,
+                  "Threshold": 3.0,
+                  "Style": "Exp"
+                },
+                "Force": 10,
+                "VelocityType": "Set"
+              },
+              "WorldParticles": [{"SystemId": "Impact_Fire", "Scale": 1.2}]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Next": {"Type": "Simple", "RunTime": 0.1}
+}

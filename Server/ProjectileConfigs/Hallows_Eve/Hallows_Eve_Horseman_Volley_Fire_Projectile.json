@@ -1,0 +1,20 @@
+{
+  "$Comment": "One bomb of the enraged Horseman's volley: the volley bomb (Parent) that also leaves a burning patch where it lands, on the ground or on a player who stayed on the ring (Orbis_Boss_Fire_Patch_Spawn, players only, 10 seconds). Both landings are restated, since a child's Interactions replace the parent's whole.",
+  "Parent": "Hallows_Eve_Horseman_Volley_Projectile",
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        "Orbis_Boss_Bomb_Burst_Heavy",
+        "Orbis_Boss_Fire_Patch_Spawn",
+        {"Type": "RemoveEntity", "Entity": "User"}
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        "Orbis_Boss_Bomb_Burst_Heavy",
+        "Orbis_Boss_Fire_Patch_Spawn",
+        {"Type": "RemoveEntity", "Entity": "User"}
+      ]
+    }
+  }
+}

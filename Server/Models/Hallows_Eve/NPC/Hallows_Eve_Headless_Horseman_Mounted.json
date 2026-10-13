@@ -1,0 +1,29 @@
+{
+  "$Comment": "The Headless Horseman in the saddle: the game's skeletal horse, saddled, with his headless burnt rider astride it holding a lit jack-o'-lantern out in front. Parent Horse_Skeleton brings the horse's look, its hitbox, its icon and every animation, its Fly ones included, which is what lets him ride the air. The rider and his lantern are attachments that hang from the horse's Saddle-Attachment node, as the game's own Saddle does, so they move with the horse; the rider holds one seated pose (tools/derive_art.py writes both). DefaultAttachments lists the saddle too, since a list here replaces the parent's whole. The flame burns where the rider's head would be: Saddle-Attachment carries it, raised by PositionOffset in blocks. MinScale and MaxScale fix his size; Light is the lantern's glow, a model light that moves with him, each hex digit a red, green or blue level from 0 to f.",
+  "Parent": "Horse_Skeleton",
+  "MinScale": 1.15,
+  "MaxScale": 1.15,
+  "DefaultAttachments": [
+    {
+      "Model": "NPC/Livestock/Horse/Models/Attachments/Saddle.blockymodel",
+      "Texture": "NPC/Livestock/Horse/Models/Attachments/Saddle_Texture.png"
+    },
+    {
+      "Model": "NPC/Hallows_Eve/Headless_Horseman/Horseman_Rider.blockymodel",
+      "Texture": "NPC/Undead/Skeleton/Models/Model_Textures/Burnt.png"
+    },
+    {
+      "Model": "NPC/Hallows_Eve/Headless_Horseman/Horseman_Rider_Lantern.blockymodel",
+      "Texture": "Items/Hallows_Eve/Jack_Lantern/Jack_Lantern_Texture.png"
+    }
+  ],
+  "Particles": [
+    {
+      "SystemId": "Campfire_New_Cartoon",
+      "TargetNodeName": "Saddle-Attachment",
+      "PositionOffset": { "Y": 0.75 },
+      "Scale": 0.8
+    }
+  ],
+  "Light": { "Color": "#c62" }
+}

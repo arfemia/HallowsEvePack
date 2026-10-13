@@ -1,0 +1,43 @@
+{
+  "$Comment": "A boss bomb's blast, shared by every boss in this pack: each player within 3 blocks takes the game's own Fire damage, a shove and the game's own Burn. The one hit rule matches Player only, so the boss who threw it and his own creatures are never hurt by it; it is a creature's blast, so the world's PvP setting never filters it. IgnoreOwner skips the thrower whatever the rule says. A boss's projectile names this blast as it lands; Orbis_Boss_Bomb_Burst_Heavy is the bigger one for falling volleys. Range is the radius in blocks; BaseDamage and Knockback.Force set how hard it hits.",
+  "Type": "Selector",
+  "Selector": {"Id": "AOECircle", "Range": 3},
+  "IgnoreOwner": true,
+  "Effects": {
+    "WorldSoundEventId": "SFX_Goblin_Lobber_Bomb_Death",
+    "Particles": [
+      {"SystemId": "Explosion_Medium", "TargetEntityPart": "Entity"}
+    ]
+  },
+  "HitEntityRules": [
+    {
+      "Matchers": [{"Type": "Player"}],
+      "Next": {
+        "Interactions": [
+          {"Type": "ApplyEffect", "EffectId": "Burn", "Entity": "Target"},
+          {
+            "Parent": "DamageEntityParent",
+            "DamageCalculator": {"BaseDamage": {"Fire": 12}},
+            "DamageEffects": {
+              "Knockback": {
+                "Type": "Point",
+                "VelocityConfig": {
+                  "AirResistance": 0.97,
+                  "AirResistanceMax": 0.96,
+                  "GroundResistance": 0.94,
+                  "GroundResistanceMax": 0.3,
+                  "Threshold": 3.0,
+                  "Style": "Exp"
+                },
+                "Force": 6,
+                "VelocityType": "Set"
+              },
+              "WorldParticles": [{"SystemId": "Impact_Fire", "Scale": 1}]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Next": {"Type": "Simple", "RunTime": 0.1}
+}

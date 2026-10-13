@@ -1,0 +1,32 @@
+{
+  "$Comment": "The Horseman's Head, flown off his shoulders mid-fight: a Variant of Template_Flying_Aggressive carrying the game's Incandescent skull's own Modify, with its look, its health and a small lantern bomb (Root_Hallows_Eve_Horseman_Head_Bomb) in place of the skull's spores. While it flies, the Horseman's body cannot be hurt; killing it is how players break that, which the fight's script watches for. It only exists inside his fight. Never burning (_CombatConfig), DropList Empty. Any key the template does not declare makes the game refuse the whole role.",
+  "Type": "Variant",
+  "Reference": "Template_Flying_Aggressive",
+  "Modify": {
+    "DeathParticles": "Effect_Death_Flames",
+    "Appearance": "Hallows_Eve_Horseman_Head",
+    "DropList": "Empty",
+    "MaxHealth": 150,
+    "IsMemory": false,
+    "NameTranslationKey": "npcs.Hallows_Eve_Horseman_Head.name",
+    "MotionFlyMinHeightAboveGround": 1,
+    "MotionFlyMaxHeightAboveGround": 5,
+    "MotionFlyMaxHorizontalSpeed": 6,
+    "MotionDesiredAltitudeCombat": [2, 4],
+    "MotionDesiredAltitudeSearch": [3, 5],
+    "ViewRange": 30,
+    "ViewSector": 360,
+    "HearingRange": 16,
+    "AlertedRange": 40,
+    "RangedAttack": "Root_Hallows_Eve_Horseman_Head_Bomb",
+    "RangedAttackDistance": 14,
+    "RangedAttackPauseRange": [3, 4],
+    "CombatRelativeSpeedChase": 0.8,
+    "CombatSeekSlowdownDistance": 5,
+    "CombatSeekStopDistance": 4,
+    "TargetRange": 30,
+    "_CombatConfig": {
+      "EntityEffects": ["Immunity_Fire"]
+    }
+  }
+}

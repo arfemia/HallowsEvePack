@@ -1,0 +1,13 @@
+{
+  "$Comment": "The Horseman's Head: a carved, burning pumpkin over a floating skull, which flies from his shoulders mid-fight. Parent Skeleton_Incandescent_Head brings the floating skull, its hitbox, its animations and the fire that burns from its Head node. DefaultAttachments replaces the parent's list whole: the skull's red eyes and singed hair go, and the Jack Helm goes on, in the copy tools/derive_art.py fits to this skull (the helm Jack Skeletons wear sits on a skeleton's head, whose shape hangs higher and further forward). MinScale and MaxScale make it a big, easy target; Light is its glow, a model light that moves with it, each hex digit a red, green or blue level from 0 to f.",
+  "Parent": "Skeleton_Incandescent_Head",
+  "MinScale": 1.4,
+  "MaxScale": 1.4,
+  "DefaultAttachments": [
+    {
+      "Model": "NPC/Hallows_Eve/Headless_Horseman/Horseman_Head_Helm.blockymodel",
+      "Texture": "Items/Hallows_Eve/Jack_Helm/Jack_Helm_Texture.png"
+    }
+  ],
+  "Light": { "Color": "#d72" }
+}

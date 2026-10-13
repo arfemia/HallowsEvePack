@@ -1,0 +1,5 @@
+{
+  "$Comment": "The Horseman's flying Head's ranged attack, the RangedAttack its role names. It runs Hallows_Eve_Horseman_Head_Bomb_Throw.",
+  "Interactions": ["Hallows_Eve_Horseman_Head_Bomb_Throw"],
+  "Tags": {"Attack": ["Ranged"]}
+}

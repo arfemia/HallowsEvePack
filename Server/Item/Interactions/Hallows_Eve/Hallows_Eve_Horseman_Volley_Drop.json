@@ -1,0 +1,10 @@
+{
+  "$Comment": "Drops one bomb of the Horseman's volley onto the spot the fight marked (Hallows_Eve_Horseman_Volley_Projectile falls from high above it). The fight's script runs this at each player's feet as it lights the warning ring there.",
+  "Type": "Simple",
+  "RunTime": 0.1,
+  "Next": {
+    "Type": "Projectile",
+    "Config": "Hallows_Eve_Horseman_Volley_Projectile",
+    "RunTime": 2
+  }
+}

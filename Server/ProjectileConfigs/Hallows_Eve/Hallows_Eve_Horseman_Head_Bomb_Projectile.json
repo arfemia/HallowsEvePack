@@ -1,0 +1,6 @@
+{
+  "$Comment": "The small lantern bomb the Horseman's flying Head spits at a player: the Horseman's own bomb with an Uncommon Lantern Bomb's look, thrown a little slower (LaunchForce), and the same burst. Parent is the Horseman's bomb, so the bursts on landing come from there.",
+  "Parent": "Hallows_Eve_Horseman_Bomb_Projectile",
+  "Model": "Hallows_Eve_Lantern_Bomb_Uncommon_Thrown",
+  "LaunchForce": 20
+}

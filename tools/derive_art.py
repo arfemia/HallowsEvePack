@@ -9,7 +9,7 @@
 
 The seed is JackoLantern01.blockymodel and JackoLantern01_Texture.png, read from tools/seed/
 (a byte copy, kept beside the tool so the pack rebuilds from its own repo) unless --seed
-names another folder. The vanilla inputs are byte copies of twelve files from the installed
+names another folder. The vanilla inputs are byte copies of fourteen files from the installed
 game's Assets.zip, kept under tools/seed/vanilla/ at their Assets.zip paths (VANILLA_FILES);
 --vendor rewrites them from the Assets.zip it is given. A rerun writes byte-identical
 files: nothing here is random, and PNGs carry no metadata.
@@ -26,9 +26,13 @@ What it writes (pack-relative):
   Common/NPC/Hallows_Eve/<Mob>/                         the Lost Soul (on the Spirit_Ember
       rig) and the Geode Wraith (on the Wraith rig): every vanilla node kept, so the vanilla
       animations still drive them, plus a recoloured texture.
+  Common/NPC/Hallows_Eve/Headless_Horseman/             the Headless Horseman: the Skeleton rig
+      with its skull hidden; the rider his mounted Model JSON hangs on vanilla's skeletal horse;
+      the lanterns he carries; and the Jack Helm as his flying Head wears it. They wear vanilla's
+      burnt skeleton texture and this pack's lantern and helm textures, so none has its own.
   Common/Icons/ItemsGenerated/Hallows_Eve_*.png         64x64 item icons from a small
       orthographic renderer at each family's vanilla IconProperties angle.
-  Common/Icons/ModelsGenerated/Hallows_Eve_*.png        128x128 model icons for the two mobs.
+  Common/Icons/ModelsGenerated/Hallows_Eve_*.png        128x128 model icons for the mobs.
 
 Format facts this relies on (reference/shared-source/release and the Hytale Blockbench plugin):
   - A node's shape is centred at position + orientation * offset, in its parent's frame,
@@ -62,6 +66,7 @@ SEED_TEXTURE = "JackoLantern01_Texture.png"
 HE_ITEMS = "Items/Hallows_Eve"      # Common/-relative, the way an item or block JSON names a file
 HE_BLOCKS = "Blocks/Hallows_Eve"
 HE_NPCS = "NPC/Hallows_Eve"
+HORSEMAN = f"{HE_NPCS}/Headless_Horseman"
 ICONS = "Common/Icons/ItemsGenerated"
 MODEL_ICONS = "Common/Icons/ModelsGenerated"
 
@@ -227,9 +232,12 @@ ESSENCE = "Resources/Ingredients/Essence.blockymodel"
 ESSENCE_TEXTURE = "Resources/Ingredients/Essence_Textures/Life_Essence_Texture.png"
 GHOUL = "NPC/Undead/Ghoul/Models/Model.blockymodel"
 GHOUL_TEXTURE = "NPC/Undead/Ghoul/Models/Texture.png"
+SKELETON = "NPC/Undead/Skeleton/Models/Model.blockymodel"
+SKELETON_BURNT_TEXTURE = "NPC/Undead/Skeleton/Models/Model_Textures/Burnt.png"
 VANILLA_FILES = tuple(f"Common/{rel}" for rel in (
     WORKBENCH, WORKBENCH_TEXTURE, WAND, WAND_TEXTURE, SPIRIT, SPIRIT_TEXTURE,
-    WRAITH, WRAITH_TEXTURE, ESSENCE, ESSENCE_TEXTURE, GHOUL, GHOUL_TEXTURE))
+    WRAITH, WRAITH_TEXTURE, ESSENCE, ESSENCE_TEXTURE, GHOUL, GHOUL_TEXTURE,
+    SKELETON, SKELETON_BURNT_TEXTURE))
 
 # --- the Cursed Geode: a scripted stone with a lit crack (64x64 texture, x, y, w, h) ---------
 
@@ -290,6 +298,37 @@ WRAITH_CRYSTALS = [
     ("Crystal_R_Shoulder", "R-Shoulder", (-2, 4, 0), (4, 11, 4), (-5, 30)),
 ]
 ANGLE_MODEL = (10, 25, 0)       # the mobs' model icons: nearly front-on, like vanilla's
+
+# --- the Headless Horseman: the vanilla Skeleton rig, headless, on foot and in the saddle -----
+# An attachment's root takes the transform of the base node it is named after (its own
+# position is ignored), and its children hang from that node's pivot plus the root's own
+# offset; so the rider and the lanterns root on nodes whose offset is zero, and the helm moves
+# by the difference between the two skulls' offsets.
+
+# The skull's three shapes, hidden: the nodes stay, so the Skeleton's animations still drive
+# the body, and the flame his Model JSON lights on the Head node burns where the head was.
+HORSEMAN_HIDDEN = ("Head", "Jaw", "Jaw-Top")
+# The rider: the Skeleton's body from the Pelvis up, without the skull, every node renamed with
+# this prefix so none binds to the horse's own Pelvis, Chest or arms, hung from the horse's
+# Saddle-Attachment (the node vanilla's Saddle hangs from) and seated on the saddle's top.
+RIDER_PREFIX = "Rider-"
+RIDER_SEAT = (0, 12, -2)        # the rider's Pelvis from Saddle-Attachment, px: on the saddle
+RIDER_POSE = [
+    # node, then turns (axis, degrees) applied in its own frame on top of its rest orientation
+    ("L-Thigh", (("y", 28), ("x", -78))),   # astride: thighs forward and out round the barrel
+    ("R-Thigh", (("y", -28), ("x", -78))),
+    ("L-Calf", (("x", 78), ("z", 12))),     # the calves hang again, feet out in the stirrups
+    ("R-Calf", (("x", 78), ("z", -12))),
+    ("R-Arm", (("x", -55),)),               # the lantern arm held out in front
+    ("R-Forearm", (("x", -25),)),
+    ("L-Arm", (("x", -35),)),               # the rein hand low at the horse's neck
+    ("L-Forearm", (("x", -40),)),
+]
+K_HORSEMAN_LANTERN = 0.5        # a 15 px jack-o'-lantern carried by its stem
+HORSEMAN_LANTERN_HANG = 6       # px from the hand's centre down to the lantern's top
+# The Horseman's Head: the Jack Helm worn on vanilla's floating Skeleton_Head, whose Head node
+# carries its shape 3 px lower and 5 px further back than the Skeleton's Head does.
+HEAD_HELM_SHIFT = (0, -3, -5)
 
 # --- the Costume Wand: the vanilla wood wand's texture, recoloured by the nodes it skins -----
 
@@ -728,6 +767,80 @@ def geode_wraith_model(wraith):
                                WRAITH_CRYSTAL_SIDE, WRAITH_CRYSTAL_TOP)
         find_node(root, parent_name).setdefault("children", []).append(crystal)
     return finish_model(root)
+
+
+def horseman_model(skeleton):
+    """The Headless Horseman on foot: the Skeleton rig whole (its animations are the Player
+    set) with the skull's shapes hidden."""
+    root = vanilla_root(skeleton)
+    for node in walk([root]):
+        if node["name"] in HORSEMAN_HIDDEN:
+            node["shape"]["visible"] = False
+    return finish_model(root)
+
+
+def horseman_rider(skeleton):
+    """The rider's root (Saddle-Attachment) holding the Skeleton's body from the Pelvis up,
+    skull removed, renamed and seated astride, before node ids are given."""
+    pelvis = copy.deepcopy(find_node(vanilla_root(skeleton), "Pelvis"))
+    neck = find_node(pelvis, "Neck")
+    neck["children"] = [c for c in neck.get("children", []) if c["name"] != "Head"]
+    for name, turns in RIDER_POSE:
+        node = find_node(pelvis, name)
+        ori = tuple(float(node["orientation"][a]) for a in "xyzw")
+        for axis, degrees in turns:
+            ori = q_mul(ori, q_axis(axis, degrees))
+        node["orientation"] = quat(ori)
+    for node in walk([pelvis]):
+        node["name"] = RIDER_PREFIX + node["name"]
+    pelvis["position"] = vec(RIDER_SEAT)
+    root = none_node("Saddle-Attachment", (0, 0, 0), (0, 0, 0, 1), True)
+    root["children"].append(pelvis)
+    return root
+
+
+def horseman_rider_model(skeleton):
+    """The rider the mounted Horseman's Model JSON attaches to vanilla's skeletal horse: he
+    rides with the horse's every move, his own limbs held in one seated pose."""
+    return finish_model(horseman_rider(skeleton))
+
+
+def lantern_body(seed_base):
+    """The jack-o'-lantern a hand carries, hanging upright from its stem."""
+    return scaled_body(seed_base, K_HORSEMAN_LANTERN, (0, 0, 0))
+
+
+def horseman_rider_lantern_model(skeleton, seed_base):
+    """The lantern the rider holds out, on its own root (Saddle-Attachment) because it wears the
+    Jack Lantern's texture: placed under his posed right hand."""
+    rider = horseman_rider(skeleton)
+    frames = node_frames(rider)
+    hand, _ = frames[id(find_node(rider, RIDER_PREFIX + "R-Hand"))]
+    root = none_node("Saddle-Attachment", (0, 0, 0), (0, 0, 0, 1), True)
+    drop = HORSEMAN_LANTERN_HANG + SEED_BODY[1] / 2 * K_HORSEMAN_LANTERN
+    hang(lantern_body(seed_base), root, node_frames(root), (hand[0], hand[1] - drop, hand[2]))
+    return finish_model(root)
+
+
+def horseman_lantern_model(seed_base):
+    """The lantern the Horseman carries on foot, from his left hand's L-Attachment, whose frame
+    is turned 90 degrees about X from the hand's: the hand's down is its +Z, so the lantern
+    turns -90 degrees about X to stand upright below the hand."""
+    root = none_node("L-Attachment", (0, 0, 0), (0, 0, 0, 1), True)
+    body = lantern_body(seed_base)
+    drop = HORSEMAN_LANTERN_HANG + SEED_BODY[1] / 2 * K_HORSEMAN_LANTERN
+    body["orientation"] = quat(q_axis("x", -90))
+    hang(body, root, node_frames(root), (0, 0, drop))
+    return finish_model(root)
+
+
+def horseman_head_helm_model(seed_base):
+    """The Jack Helm as the Horseman's Head wears it on vanilla's floating skull."""
+    model = helm_model(seed_base)
+    root = model["nodes"][0]
+    offset = root["shape"]["offset"]
+    root["shape"]["offset"] = vec(tuple(offset[a] + d for a, d in zip("xyz", HEAD_HELM_SHIFT)))
+    return model
 
 
 # =========================================================================================
@@ -1423,7 +1536,17 @@ ICON_PLAN = [
      f"{HE_NPCS}/Geode_Wraith/Geode_Wraith_Texture.png", ANGLE_MODEL, 128),
     (MODEL_ICONS, "Hallows_Eve_Hollow_Ghoul", GHOUL,
      f"{HE_NPCS}/Hollow_Ghoul/Hollow_Ghoul_Texture.png", ANGLE_MODEL, 128),
+    (MODEL_ICONS, "Hallows_Eve_Headless_Horseman", f"{HORSEMAN}/Headless_Horseman.blockymodel",
+     SKELETON_BURNT_TEXTURE, ANGLE_MODEL, 128),
 ]
+
+# The Horseman's attachments are drawn on textures no icon renders them with.
+ATTACHMENT_TEXTURES = {
+    f"{HORSEMAN}/Horseman_Rider.blockymodel": SKELETON_BURNT_TEXTURE,
+    f"{HORSEMAN}/Horseman_Rider_Lantern.blockymodel": f"{HE_ITEMS}/Jack_Lantern/Jack_Lantern_Texture.png",
+    f"{HORSEMAN}/Horseman_Lantern.blockymodel": f"{HE_ITEMS}/Jack_Lantern/Jack_Lantern_Texture.png",
+    f"{HORSEMAN}/Horseman_Head_Helm.blockymodel": f"{HE_ITEMS}/Jack_Helm/Jack_Helm_Texture.png",
+}
 
 
 def build(seed_dir):
@@ -1442,6 +1565,12 @@ def build(seed_dir):
         f"{HE_BLOCKS}/Carving_Bench/Carving_Bench.blockymodel": bench_model(vanilla[WORKBENCH], seed_base),
         f"{HE_NPCS}/Lost_Soul/Lost_Soul.blockymodel": lost_soul_model(vanilla[SPIRIT]),
         f"{HE_NPCS}/Geode_Wraith/Geode_Wraith.blockymodel": geode_wraith_model(vanilla[WRAITH]),
+        f"{HORSEMAN}/Headless_Horseman.blockymodel": horseman_model(vanilla[SKELETON]),
+        f"{HORSEMAN}/Horseman_Rider.blockymodel": horseman_rider_model(vanilla[SKELETON]),
+        f"{HORSEMAN}/Horseman_Rider_Lantern.blockymodel": horseman_rider_lantern_model(
+            vanilla[SKELETON], seed_base),
+        f"{HORSEMAN}/Horseman_Lantern.blockymodel": horseman_lantern_model(seed_base),
+        f"{HORSEMAN}/Horseman_Head_Helm.blockymodel": horseman_head_helm_model(seed_base),
     }
     images = {f"{HE_ITEMS}/{name}": paint.rgba for name, paint in textures(seed_texture).items()}
     images[f"{HE_ITEMS}/Cursed_Geode/Cursed_Geode_Texture.png"] = geode_texture()
@@ -1461,6 +1590,7 @@ def build(seed_dir):
         outputs[f"Common/{name}"] = data
         with Image.open(io.BytesIO(data)) as image:
             texture_rgba[name] = np.array(image.convert("RGBA"))
+    texture_rgba[SKELETON_BURNT_TEXTURE] = vanilla[SKELETON_BURNT_TEXTURE]
     rigs = dict(models)
     rigs[WAND] = vanilla[WAND]
     rigs[ESSENCE] = vanilla[ESSENCE]
@@ -1477,6 +1607,8 @@ def validate(models, texture_rgba):
     pairs = {name: sorted({t for _, _, m, t, _, _ in ICON_PLAN if m == name}) for name in models}
     pairs[f"{HE_ITEMS}/Lantern_Bomb/Lantern_Bomb_Center.blockymodel"] = pairs[
         f"{HE_ITEMS}/Lantern_Bomb/Lantern_Bomb.blockymodel"]
+    for name, texture in ATTACHMENT_TEXTURES.items():
+        pairs[name] = [texture]
     for name, model in models.items():
         nodes = list(walk(model["nodes"]))
         if len(nodes) > 255:

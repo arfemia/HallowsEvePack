@@ -1,0 +1,54 @@
+{
+  "$Comment": "A boss's lingering fire patch: the fire trap's flames on the ground, and every second each player standing in it takes 3 damage and the game's own Burn. TargetTypes Player keeps the boss and his creatures out of it. Orbis_Boss_Fire_Patch_Spawn sets its size and how long it lasts; the flames are cancelled just before it goes. Amount is each tick's damage, Interval the seconds between ticks.",
+  "Effects": [
+    {
+      "Type": "PlayVfx",
+      "Event": "VOLUME_CREATE",
+      "Interval": 0.0,
+      "Delay": 0.0,
+      "ParticleSystem": "Fire_AoE_Spawn",
+      "Offset": {"X": 0.0, "Y": 0.2, "Z": 0.0},
+      "Anchor": "Volume",
+      "Scale": 1.0,
+      "Rotation": {"X": 0.0, "Y": 0.0, "Z": 0.0},
+      "Duration": 0.0
+    },
+    {
+      "Type": "PlayVfx",
+      "Event": "VOLUME_CREATE",
+      "Interval": 0.0,
+      "Delay": 0.0,
+      "ParticleSystem": "Fire_AoE2",
+      "Offset": {"X": 0.0, "Y": 0.2, "Z": 0.0},
+      "Anchor": "Volume",
+      "Scale": 1.0,
+      "Rotation": {"X": 0.0, "Y": 0.0, "Z": 0.0},
+      "Duration": 0.0
+    },
+    {
+      "Type": "DamageEntity",
+      "Event": "TICK",
+      "Interval": 1.0,
+      "Delay": 0.0,
+      "Mode": "Flat",
+      "Amount": 3.0
+    },
+    {
+      "Type": "EntityEffect",
+      "Event": "TICK",
+      "Interval": 1.0,
+      "Delay": 0.0,
+      "Effect": "Burn",
+      "Mode": "Apply",
+      "Duration": -1.0
+    },
+    {
+      "Type": "CancelParticles",
+      "Event": "VOLUME_CREATE",
+      "Interval": 0.0,
+      "Delay": 9.8,
+      "ParticleSystems": ["Fire_AoE2"]
+    }
+  ],
+  "TargetTypes": ["Player"]
+}

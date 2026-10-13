@@ -1,0 +1,13 @@
+{
+  "$Comment": "Leaves a boss's fire patch where a bomb lands: a flat cylinder 1.5 blocks across the ground, burning for 10 seconds (the Orbis_Boss_Fire_Patch volume). A projectile names this in its ProjectileMiss, which runs when it hits the ground; RequireHitLocation leaves nothing when there is no ground under it. Radius is in blocks, LifetimeS in seconds.",
+  "Type": "SpawnTriggerVolume",
+  "EffectAsset": "Orbis_Boss_Fire_Patch",
+  "Shape": {
+    "Type": "Cylinder",
+    "Radius": 1.5,
+    "Height": 1,
+    "Center": {"Y": -0.2}
+  },
+  "LifetimeS": 10,
+  "RequireHitLocation": true
+}

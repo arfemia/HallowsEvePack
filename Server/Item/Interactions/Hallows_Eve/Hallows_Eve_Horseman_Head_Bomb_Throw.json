@@ -1,0 +1,10 @@
+{
+  "$Comment": "The Horseman's flying Head winds up for 0.8 seconds, then spits a small lantern bomb at its target (Hallows_Eve_Horseman_Head_Bomb_Projectile), aimed through the AimingReference tag. RunTime is the wind-up in seconds.",
+  "Type": "Simple",
+  "RunTime": 0.8,
+  "Next": {
+    "Type": "Projectile",
+    "Config": "Hallows_Eve_Horseman_Head_Bomb_Projectile",
+    "Tags": {"AimingReference": []}
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "$Comment": "The lantern bomb the Headless Horseman hurls at a player, in the saddle or on foot: a Rare Lantern Bomb's look on a lobbed arc that bursts where it lands (the shared Orbis_Boss_Bomb_Burst, which hurts players only). It bursts on striking a creature (ProjectileHit) or the ground (ProjectileMiss), and after 5 seconds in any case. The throw that launches it is tagged AimingReference, so the Horseman aims the arc at his target from LaunchForce and Gravity: more Gravity lobs it higher and shorter.",
+  "Model": "Hallows_Eve_Lantern_Bomb_Rare_Thrown",
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 15,
+    "TerminalVelocityAir": 30,
+    "TerminalVelocityWater": 15,
+    "RotationMode": "None",
+    "Bounciness": 0.0,
+    "SticksVertically": false
+  },
+  "LaunchForce": 22,
+  "SpawnOffset": {"X": 0.0, "Y": 0.2, "Z": 0.5},
+  "Interactions": {
+    "ProjectileSpawn": {
+      "Cooldown": {"Cooldown": 0},
+      "Interactions": [
+        {"Type": "Simple", "RunTime": 5},
+        "Orbis_Boss_Bomb_Burst",
+        {"Type": "RemoveEntity", "Entity": "User"}
+      ]
+    },
+    "ProjectileHit": {
+      "Cooldown": {"Cooldown": 0},
+      "Rules": {"Interrupting": ["ProjectileSpawn"]},
+      "Interactions": [
+        "Orbis_Boss_Bomb_Burst",
+        {"Type": "RemoveEntity", "Entity": "User"}
+      ]
+    },
+    "ProjectileMiss": {
+      "Cooldown": {"Cooldown": 0},
+      "Rules": {"Interrupting": ["ProjectileSpawn"]},
+      "Interactions": [
+        "Orbis_Boss_Bomb_Burst",
+        {"Type": "RemoveEntity", "Entity": "User"}
+      ]
+    }
+  }
+}

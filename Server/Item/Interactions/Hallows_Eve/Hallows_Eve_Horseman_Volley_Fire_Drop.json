@@ -1,0 +1,10 @@
+{
+  "$Comment": "Drops one bomb of the enraged Horseman's volley onto the spot the fight marked: the volley bomb that also leaves a fire patch (Hallows_Eve_Horseman_Volley_Fire_Projectile).",
+  "Type": "Simple",
+  "RunTime": 0.1,
+  "Next": {
+    "Type": "Projectile",
+    "Config": "Hallows_Eve_Horseman_Volley_Fire_Projectile",
+    "RunTime": 2
+  }
+}
