@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Common Lantern Bomb's blast: every creature within 3 blocks of the bomb takes damage and a shove. Players are never hurt: the one hit rule matches only an entity that is not a player, and with no plain HitEntity a player matches nothing. IgnoreOwner also keeps the thrower out. All damage is the game's own Fire, credited to the thrower, so a creature's fire resistance softens it. The Hit tag marks every hit as a Lantern Bomb's, which a mod that rewards bomb damage can key on. Range is the radius in blocks; BaseDamage and Knockback.Force set how hard it hits.",
+  "$Comment": "The Common Lantern Bomb's blast: every creature within 3 blocks of the bomb takes damage and a shove, and so does any other player there. The one hit rule has no Matchers, so it takes every entity in range but the thrower: IgnoreOwner skips the bomb's owner, the player who threw it. Another player is hurt only where the world allows PvP, by the game's own check, and never in the Forgotten Temple, where no player takes damage. All damage is the game's own Fire, credited to the thrower, so a creature's fire resistance softens it. The Hit tag marks every hit as a Lantern Bomb's, which a mod that rewards bomb damage can key on. Range is the radius in blocks; BaseDamage and Knockback.Force set how hard it hits.",
   "Tags": {"Hit": ["Hallows_Eve_Lantern_Bomb"]},
   "Type": "Selector",
   "Selector": {"Id": "AOECircle", "Range": 3},
@@ -13,7 +13,7 @@
   },
   "HitEntityRules": [
     {
-      "Matchers": [{"Type": "Player", "Invert": true}],
+      "Matchers": [],
       "Next": {
         "Interactions": [
           {

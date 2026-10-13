@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Epic Lantern Bomb's blast: every creature within 4.5 blocks of the bomb takes damage, a shove, the game's own burning (Hallows_Eve_Lantern_Burn: Burn carrying the Lantern Bomb tag, so the burn counts as the blast's) and Slow, and then four flaming shards fly out (Hallows_Eve_Lantern_Shard_Projectile and its three siblings) and burst where they land. The last step waits a tenth of a second, as the other tiers' blasts do, so the blast's hits land before the bomb is removed. Players are never hurt: the one hit rule matches only an entity that is not a player, and with no plain HitEntity a player matches nothing. IgnoreOwner also keeps the thrower out. All damage is the game's own Fire, credited to the thrower, so a creature's fire resistance softens it. The Hit tag marks every hit as a Lantern Bomb's, which a mod that rewards bomb damage can key on. Range is the radius in blocks; BaseDamage and Knockback.Force set how hard it hits.",
+  "$Comment": "The Epic Lantern Bomb's blast: every creature within 4.5 blocks of the bomb takes damage, a shove, the game's own burning (Hallows_Eve_Lantern_Burn: Burn carrying the Lantern Bomb tag, so the burn counts as the blast's) and Slow, and then four flaming shards fly out (Hallows_Eve_Lantern_Shard_Projectile and its three siblings) and burst where they land. The last step waits a tenth of a second, as the other tiers' blasts do, so the blast's hits land before the bomb is removed. The blast hits any other player in range too: the one hit rule has no Matchers, so it takes every entity in range but the thrower, since IgnoreOwner skips the bomb's owner, the player who threw it. Another player is hurt only where the world allows PvP, by the game's own check, and never in the Forgotten Temple, where no player takes damage. The shards' own burst (Hallows_Eve_Lantern_Shard_Burst) hits by the same rule. All damage is the game's own Fire, credited to the thrower, so a creature's fire resistance softens it. The Hit tag marks every hit as a Lantern Bomb's, which a mod that rewards bomb damage can key on. Range is the radius in blocks; BaseDamage and Knockback.Force set how hard it hits.",
   "Tags": {"Hit": ["Hallows_Eve_Lantern_Bomb"]},
   "Type": "Selector",
   "Selector": {"Id": "AOECircle", "Range": 4.5},
@@ -11,7 +11,7 @@
   },
   "HitEntityRules": [
     {
-      "Matchers": [{"Type": "Player", "Invert": true}],
+      "Matchers": [],
       "Next": {
         "Interactions": [
           {"Type": "ApplyEffect", "EffectId": "Hallows_Eve_Lantern_Burn", "Entity": "Target"},
