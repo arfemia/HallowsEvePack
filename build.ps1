@@ -45,7 +45,7 @@ try {
     $files = Get-ChildItem -Path $pack -Recurse -File -Force | Where-Object {
         $rel = $_.FullName.Substring($pack.Length + 1).Replace('\', '/')
         $top = ($rel -split '/')[0]
-        ($_.Name -notin $excludeNames) -and ($_.Extension -ne '.zip') -and ($top -notin $excludeDirs)
+        ($_.Name -notin $excludeNames) -and ($_.Extension -ne '.zip') -and ($top -notin $excludeDirs) -and ($rel -notmatch '(^|/)\.claude/')
     }
     # Emit a directory entry for every ancestor path (once) before writing each file,
     # so the zip reports real directories to Java's ZipFileSystem.
