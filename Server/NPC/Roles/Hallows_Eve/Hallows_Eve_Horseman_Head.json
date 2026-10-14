@@ -6,7 +6,7 @@
     "DeathParticles": "Effect_Death_Flames",
     "Appearance": "Hallows_Eve_Horseman_Head",
     "DropList": "Empty",
-    "MaxHealth": 150,
+    "MaxHealth": 300,
     "IsMemory": false,
     "NameTranslationKey": "npcs.Hallows_Eve_Horseman_Head.name",
     "MotionFlyMinHeightAboveGround": 1,
