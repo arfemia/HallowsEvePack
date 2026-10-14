@@ -1,5 +1,5 @@
 {
-  "$Comment": "The second rung of the Headless Horseman's ladder: bring him down ten times during one season. The description's number comes from the criterion's Amount through @amount. Each year's copy pays favor with the Hallowed and MMO Skill Tree's Mmo_Xp row in Claim, to collect on the achievements page; the row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that mod.",
+  "$Comment": "The second rung of the Headless Horseman's ladder: bring him down ten times during one season. The description's number comes from the criterion's Amount through @amount. Each year's copy pays favor with the Hallowed and MMO Skill Tree's Mmo_Xp row in Claim, to collect on the achievements page; the row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that mod. It carries no hallowed tag on purpose: The Hallowed counts only the ladder's first rung, The Horseman Falls, so this rung and Horseman's Bane stay a ladder of their own.",
   "Parent": "Hallows_Eve_Hallowed_Base",
   "Text": {
     "TitleKey": "achievement.hallows_eve_horseman_hunter.title",
@@ -9,7 +9,6 @@
   "Listing": {
     "SortOrder": 61,
     "Icon": "Hallows_Eve_Lantern_Bomb_Epic",
-    "Tags": [ "hallowed" ],
     "Chains": [ { "Id": "kills_hallows_eve_horseman", "Tier": 2 } ]
   },
   "Scoring": { "Points": 25 },

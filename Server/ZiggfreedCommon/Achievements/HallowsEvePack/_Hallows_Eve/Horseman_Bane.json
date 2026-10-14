@@ -7,7 +7,10 @@
     "Title reward kind). Every year's copy names the same title, so a second year unlocks nothing new.",
     "Rewards.Claim waits on the achievements page until the player collects it: favor with the",
     "Hallowed, and MMO Skill Tree's Mmo_Xp row, whose own Requires (the hytale:mod_installed gate)",
-    "leaves it out on a server without that mod."
+    "leaves it out on a server without that mod.",
+    "",
+    "It carries no hallowed tag on purpose: The Hallowed counts only the ladder's first rung, The",
+    "Horseman Falls, so this rung and Horseman Hunter stay a ladder of their own."
   ],
   "Parent": "Hallows_Eve_Hallowed_Base",
   "Text": {
@@ -18,7 +21,6 @@
   "Listing": {
     "SortOrder": 62,
     "Icon": "Hallows_Eve_Lantern_Bomb_Epic",
-    "Tags": [ "hallowed" ],
     "Chains": [ { "Id": "kills_hallows_eve_horseman", "Tier": 3 } ]
   },
   "Scoring": { "Points": 50 },
