@@ -1,0 +1,4 @@
+# Server/Item/
+
+- A throw or crack chain is one Serial in the game's own order: the projectile (or the spend) first and the credit beside it, with the bomb spent last, or the payout inside the spend's Next. A Parallel forks the spend, and on the last item the engine's item-change check ends the throw still waiting on the client.
+- Every Lantern Bomb blast hits through one HitEntityRules rule with `"Matchers": []` (the key is required; empty matches every entity) and no plain HitEntity, so other players are hit too: the engine's PvP check spares them where the world's IsPvpEnabled is off, and the Forgotten Temple blocks all player damage. `IgnoreOwner: true` is what spares the thrower: it skips the chain's owner, which for a projectile is the player who threw it (the acting projectile is always skipped). The Shattering bomb's shard burst (`Hallows_Eve_Lantern_Shard_Burst`) uses the same rule (R361). A boss's bombs are the opposite (the pack's root router).
