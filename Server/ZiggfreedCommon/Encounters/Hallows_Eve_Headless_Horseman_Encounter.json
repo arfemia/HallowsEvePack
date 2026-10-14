@@ -9,13 +9,15 @@
     "is never ranked against a party of five.",
     "",
     "Participation decides each player's share of his daily Claim. A player's score is every point of",
-    "damage they deal his body (DamageDealt), every point they take while in the fight (DamageTaken),",
-    "and every second they spend in it (Presence), each times its weight; their share is that score",
-    "against the top player's. His body cannot be hurt while his head flies, and damage to the head",
-    "and the Jack Skeletons counts nothing, so time in the fight carries most of the score: a player",
-    "who stayed the whole fight cutting heads down or holding off skeletons reads close to the top,",
-    "and a player who arrived late or left early reads less. Raise Presence to flatten the shares",
-    "further, lower it to reward damage more.",
+    "damage they deal his body (DamageDealt, the server rule's 1.0), every point they deal his Head and",
+    "his Jack Skeletons (DamageToAdds), every point they take while in the fight (DamageTaken) and every",
+    "second they spend in it (Presence), each times its weight; their share is that score against the",
+    "top player's. His body cannot be hurt while his head flies, so the Head and the skeletons weigh",
+    "the most: in a three-minute fight for three, a player who only cuts heads down and kills",
+    "skeletons reads close to the top, a member who stands in the graveyard and fights nothing about a",
+    "quarter, and one who walks in for the last minute and fights nothing less again, still above the",
+    "server rule's MinShare. Raise DamageToAdds to pay the head work more, raise Presence to flatten",
+    "the shares, lower it to reward damage more.",
     "",
     "Feedback names his own notices, the three Hallows_Eve_Horseman_* moments under FeedbackMoments:",
     "a banner as the fight begins, a toast with each player's share when he falls, and a toast after",
@@ -33,8 +35,9 @@
     "TargetSlot": "Boss"
   },
   "Participation": {
-    "DamageTaken": 1.0,
-    "Presence": 20.0
+    "DamageTaken": 0.5,
+    "Presence": 2.0,
+    "DamageToAdds": 2.5
   },
   "Leaderboard": {
     "Bucket": "hallows_eve_headless_horseman",

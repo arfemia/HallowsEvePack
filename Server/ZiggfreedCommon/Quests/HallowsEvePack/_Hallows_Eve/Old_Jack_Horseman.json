@@ -13,7 +13,9 @@
     "report-back step to Old Jack, and he stands in the Forgotten Temple for the whole season.",
     "",
     "Requires opens it once a player has finished Lanterns in the Temple, or Pumpkin Patch for a",
-    "player who went straight to Old Jack's questline. With no Repeat it pays once per player, ever.",
+    "player who went straight to Old Jack's questline. Repeat.PerRun brings it back once in each",
+    "Hallow's Eve (Times is how often one run takes it), so a returning player rides against him again",
+    "next October; one left unfinished when the event ends waits for the next.",
     "",
     "The Mmo_Xp row is MMO Skill Tree's: Defense XP for the fight, paid only where that mod runs. Its",
     "own Requires, the hytale:mod_installed gate, leaves the row out on a server without it, unpaid and",
@@ -28,6 +30,9 @@
   "Listing": {
     "Icon": "Furniture_Village_Tombstone",
     "SortOrder": 70
+  },
+  "Repeat": {
+    "PerRun": { "Event": "Hallows_Eve", "Times": 1 }
   },
   "Requires": {
     "AnyOf": [
