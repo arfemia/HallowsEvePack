@@ -5,6 +5,8 @@
     "Season hides every quest built on it while the feast is off; a child that writes its own Requires",
     "(the quest before it) keeps it, since Season is a leaf of its own. Hidden keeps each quest off open",
     "lists, so it is offered only at the host, and RequirePrerequisites keeps a locked one out of sight.",
+    "MainLine makes the host's questline main quests (a list shows them first, with a gold bar and a",
+    "star); a quest that repeats reads as daily or repeatable whatever this says.",
     "Npc binds them all to the host (the role Harvest_Feast_Host), who takes the hand-ins, and",
     "CompletionDialogue sends a finished quest back to the host's conversation.",
     "",
@@ -17,7 +19,7 @@
   "Name": "Harvest_Feast_Quest_Base",
   "Abstract": true,
   "Season": "Harvest_Feast",
-  "Listing": { "Hidden": true, "RequirePrerequisites": true },
+  "Listing": { "Hidden": true, "RequirePrerequisites": true, "MainLine": true },
   "Flow": { "AutoAccept": false, "AutoTrack": true, "HideLockedSteps": true },
   "Npc": { "ViewId": "Harvest_Feast_Host", "TurnInId": "giver" },
   "CompletionDialogue": "Harvest_Feast_Host"
