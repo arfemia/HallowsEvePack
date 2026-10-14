@@ -25,6 +25,13 @@
     "a wipe that says how his head works. His script sends no phase beats, so PhaseChanged is left",
     "to the library and never shows.",
     "",
+    "Progression.Feats names one feat, Lanterns_Only: the fight holds it while every hit a player lands",
+    "on his body, mounted or on foot, comes from a Lantern Bomb, its blast, its shards or its burn, which",
+    "all carry the Hit tag Hallows_Eve_Lantern_Bomb. His Head and the Jack Skeletons are his fight's adds,",
+    "so they may be hit with anything. One other hit on his body from anyone breaks it for the whole fight,",
+    "and it needs at least one bomb hit. When he falls with it held, every player the fight credits earns",
+    "ENCOUNTER_FEAT with the Qualifier Lanterns_Only, which the By Lantern Light achievement counts.",
+    "",
     "It writes no Scale on purpose: his fight scales his health with the party itself, one step per",
     "player, so a library scale here would scale him twice. No Loot either: his script pays his two",
     "Claims. Switch the row off with Enabled false, or from mods/ziggfreedcommon/encounters.json under",
@@ -43,6 +50,13 @@
   "Leaderboard": {
     "Bucket": "hallows_eve_headless_horseman",
     "ByPartySize": true
+  },
+  "Progression": {
+    "Feats": {
+      "Lanterns_Only": {
+        "Subject": { "OnlyHitTags": [ "Hallows_Eve_Lantern_Bomb" ] }
+      }
+    }
   },
   "Feedback": {
     "Engaged": "Hallows_Eve_Horseman_Engaged",

@@ -1,0 +1,41 @@
+{
+  "$Comment": [
+    "Bring down the Headless Horseman during one season with nothing but Lantern Bombs hitting his body.",
+    "ENCOUNTER_FEAT names his fight's encounter script and the feat Lanterns_Only, which his binding row",
+    "(ZiggfreedCommon/Encounters/Hallows_Eve_Headless_Horseman_Encounter.json) defines: every hit any player",
+    "lands on his body must come from a Lantern Bomb's blast, shards or burn, while his Head and the Jack",
+    "Skeletons may be hit with anything. One sword swing on his body from anyone breaks it for that fight.",
+    "Every player the win credits earns it at once.",
+    "",
+    "Each year's copy pays MMO Skill Tree's Mmo_Xp row in Claim, Artillery XP, to collect on the",
+    "achievements page; the row's own Requires, the hytale:mod_installed gate, leaves it out on a server",
+    "without that mod. It carries no hallowed tag, so The Hallowed never waits on it."
+  ],
+  "Parent": "Hallows_Eve_Hallowed_Base",
+  "Text": {
+    "TitleKey": "achievement.hallows_eve_by_lantern_light.title",
+    "FlavorKey": "achievement.hallows_eve_by_lantern_light.desc",
+    "TextArgs": { "Title": [ "@year" ] }
+  },
+  "Listing": {
+    "SortOrder": 66,
+    "Icon": "Hallows_Eve_Lantern_Bomb_Rare"
+  },
+  "Scoring": { "Points": 25 },
+  "Criteria": {
+    "bomb-down-horseman": {
+      "Kind": "ENCOUNTER_FEAT",
+      "Target": "Hallows_Eve_Headless_Horseman_Encounter",
+      "MatchMode": "EXACT",
+      "Qualifier": "Lanterns_Only",
+      "Amount": 1,
+      "TextKey": "objective.hallows_eve.bomb_down_horseman"
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "ARTILLERY", "Amount": "3000" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

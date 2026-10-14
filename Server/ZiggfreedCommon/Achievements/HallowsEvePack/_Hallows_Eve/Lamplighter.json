@@ -1,0 +1,46 @@
+{
+  "$Comment": [
+    "Bring down the Headless Horseman on Hard Mode during one season with nothing but Lantern Bombs hitting",
+    "his body. ENCOUNTER_FEAT names his hard fight's encounter script, Hallows_Eve_Headless_Horseman_Encounter_Hard,",
+    "and the feat Lanterns_Only, which that fight's binding row defines under Progression.Feats exactly as",
+    "his normal fight's row does: every hit any player lands on his body must come from a Lantern Bomb's",
+    "blast, shards or burn, while his Head and the Jack Skeletons may be hit with anything. Every player the",
+    "win credits earns it at once.",
+    "",
+    "Rewards.Auto pays what lands the moment it is earned: the title Hallows_Eve_Lamplighter (the Title",
+    "reward kind). Every year's copy names the same title, so a second year unlocks nothing new.",
+    "Rewards.Claim waits on the achievements page until the player collects it: MMO Skill Tree's Mmo_Xp",
+    "row, Artillery XP, whose own Requires (the hytale:mod_installed gate) leaves it out on a server",
+    "without that mod. It carries no hallowed tag, so The Hallowed never waits on it."
+  ],
+  "Parent": "Hallows_Eve_Hallowed_Base",
+  "Text": {
+    "TitleKey": "achievement.hallows_eve_lamplighter.title",
+    "FlavorKey": "achievement.hallows_eve_lamplighter.desc",
+    "TextArgs": { "Title": [ "@year" ] }
+  },
+  "Listing": {
+    "SortOrder": 67,
+    "Icon": "Hallows_Eve_Lantern_Bomb_Epic"
+  },
+  "Scoring": { "Points": 50 },
+  "Criteria": {
+    "bomb-down-horseman-hard": {
+      "Kind": "ENCOUNTER_FEAT",
+      "Target": "Hallows_Eve_Headless_Horseman_Encounter_Hard",
+      "MatchMode": "EXACT",
+      "Qualifier": "Lanterns_Only",
+      "Amount": 1,
+      "TextKey": "objective.hallows_eve.bomb_down_horseman_hard"
+    }
+  },
+  "Rewards": {
+    "Auto": [
+      { "Kind": "Title", "Params": { "Title": "Hallows_Eve_Lamplighter" } }
+    ],
+    "Claim": [
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "ARTILLERY", "Amount": "5000" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

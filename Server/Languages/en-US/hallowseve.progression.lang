@@ -61,6 +61,8 @@ objective.hallows_eve.jack_confidant = Become Old Jack's Confidant
 objective.hallows_eve.put_down_wraiths = Put down {0} Geode Wraiths
 objective.hallows_eve.carve_lanterns = Carve {0} Jack Lanterns
 objective.hallows_eve.bring_down_horseman = Bring down the Headless Horseman
+objective.hallows_eve.bomb_down_horseman = Bring down the Headless Horseman with only Lantern Bombs
+objective.hallows_eve.bomb_down_horseman_hard = Bring down the Headless Horseman on the hard ride with only Lantern Bombs
 
 # ---- Old Jack's board ----
 board.hallows_eve_daily.title = Old Jack's Board
@@ -160,6 +162,13 @@ title.hallows_eve_horseman_bane.flavor = Brought the Headless Horseman down agai
 title.hallows_eve_horseman_bane.display = {0}, Horseman's Bane
 achievement.hallows_eve_off_with_his_head.title = Off With His Head {0}
 achievement.hallows_eve_off_with_his_head.desc = Cut down the Horseman's head {0} times.
+achievement.hallows_eve_by_lantern_light.title = By Lantern Light {0}
+achievement.hallows_eve_by_lantern_light.desc = Bring down the Headless Horseman with nothing but Lantern Bombs hitting him. His Head and the Jack Skeletons can be hit with anything.
+achievement.hallows_eve_lamplighter.title = Lamplighter {0}
+achievement.hallows_eve_lamplighter.desc = Bring down the Headless Horseman on the hard ride with nothing but Lantern Bombs hitting him. His Head and the Jack Skeletons can be hit with anything.
+title.hallows_eve_lamplighter.name = Lamplighter
+title.hallows_eve_lamplighter.flavor = Brought the Headless Horseman down on the hard ride with nothing but Lantern Bombs.
+title.hallows_eve_lamplighter.display = {0} the Lamplighter
 
 # ---- Reputations: Old Jack's Favor and the Hallowed (id Hallows_Eve_Hallowed) ----
 reputation.hallows_eve_old_jack.name = Old Jack's Favor
