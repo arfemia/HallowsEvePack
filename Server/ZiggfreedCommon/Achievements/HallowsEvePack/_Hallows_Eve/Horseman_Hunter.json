@@ -8,7 +8,7 @@
   },
   "Listing": {
     "SortOrder": 61,
-    "Icon": "Hallows_Eve_Lantern_Bomb_Epic",
+    "Icon": "Hallows_Eve_Horseman_Gauntlets",
     "Chains": [ { "Id": "kills_hallows_eve_horseman", "Tier": 2 } ]
   },
   "Scoring": { "Points": 25 },

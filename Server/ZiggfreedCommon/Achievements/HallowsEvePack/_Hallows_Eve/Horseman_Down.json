@@ -8,7 +8,7 @@
   },
   "Listing": {
     "SortOrder": 60,
-    "Icon": "Hallows_Eve_Lantern_Bomb_Epic",
+    "Icon": "Hallows_Eve_Horseman_Breastplate",
     "Tags": [ "hallowed" ],
     "Chains": [ { "Id": "kills_hallows_eve_horseman", "Tier": 1 } ]
   },

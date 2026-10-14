@@ -20,7 +20,7 @@
   },
   "Listing": {
     "SortOrder": 62,
-    "Icon": "Hallows_Eve_Lantern_Bomb_Epic",
+    "Icon": "Hallows_Eve_Horseman_Greaves",
     "Chains": [ { "Id": "kills_hallows_eve_horseman", "Tier": 3 } ]
   },
   "Scoring": { "Points": 50 },

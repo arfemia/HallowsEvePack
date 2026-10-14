@@ -38,10 +38,13 @@
     "list beside his quests, since both boards name him in Hosts, then the stall, What are the",
     "sweets for? (what Hallow Sweets buy and how they are earned, with the stall one press away),",
     "How do we stand? (the Reputation page, shown once the player has any favor with him), the Almanac",
-    "(only while the Almanac is switched on), who he is, the Harvest Moon line (only while Harvest",
-    "Moon runs) and goodnight. A screen that asks something of the player carries jack_back instead:",
-    "back to the menu, or goodnight. Chrome words the exit row the page adds to a screen with no",
-    "goodnight of its own. The trick-or-treat line is not here: the DialogueExtensions file",
+    "(only while the Almanac is switched on), the rider (where to find the Headless Horseman and how",
+    "to beat him; once the player has beaten him, horseman_beaten instead, read off the Almanac's",
+    "Horseman_Down tally as the ziggfreedcommon:counter key hallows_eve/horseman_down, so with the",
+    "Almanac or the stat store switched off the first line stays), who he is, the Harvest Moon line",
+    "(only while Harvest Moon runs) and goodnight. A screen that asks something of the player carries",
+    "jack_back instead: back to the menu, or goodnight. Chrome words the exit row the page adds to a",
+    "screen with no goodnight of its own. The trick-or-treat line is not here: the DialogueExtensions file",
     "Hallows_Eve_Trick_Or_Treat adds it to every conversation, this one included.",
     "",
     "The greeting's memory is kept per world family, ForgottenTemple, the one place he stands."
@@ -324,6 +327,10 @@
       "TextKey": "dialogue.hallows_eve_old_jack.horseman.text",
       "IncludeOptions": [ "jack_back" ]
     },
+    "horseman_beaten": {
+      "TextKey": "dialogue.hallows_eve_old_jack.horseman_beaten.text",
+      "IncludeOptions": [ "jack_back" ]
+    },
     "harvest_moon": {
       "TextKey": "dialogue.hallows_eve_old_jack.harvest_moon.text",
       "IncludeOptions": [ "jack_back" ]
@@ -365,7 +372,20 @@
       {
         "LabelKey": "dialogue.hallows_eve_old_jack.opt.horseman",
         "Style": "neutral",
+        "Conditions": [
+          { "Type": "Not", "Of": [
+            { "Type": "Factor", "Factor": "ziggfreedcommon:counter", "Param": "hallows_eve/horseman_down", "Min": 1 }
+          ] }
+        ],
         "Goto": "horseman"
+      },
+      {
+        "LabelKey": "dialogue.hallows_eve_old_jack.opt.horseman",
+        "Style": "neutral",
+        "Conditions": [
+          { "Type": "Factor", "Factor": "ziggfreedcommon:counter", "Param": "hallows_eve/horseman_down", "Min": 1 }
+        ],
+        "Goto": "horseman_beaten"
       },
       {
         "LabelKey": "dialogue.hallows_eve_old_jack.opt.who",
