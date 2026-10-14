@@ -1,0 +1,35 @@
+{
+  "$Comment": [
+    "A founder's badge: bring down the Headless Horseman during Hallow's Eve 2026, his first year. The",
+    "calendar_year condition passes only while that year's run is on, so after it nobody can earn",
+    "this. It has no Parent and no hallowed tag, so it is one achievement for good and The Hallowed",
+    "never waits on it. It pays nothing and gives no title: the badge is the reward.",
+    "",
+    "To retire it once that season is over, set Enabled false, and in Listing add Feat true and",
+    "LegacySince naming the release it stops in. Whoever earned it keeps it among their feats with",
+    "that version beside it, and nobody else sees it sitting locked."
+  ],
+  "Text": {
+    "TitleKey": "achievement.hallows_eve_first_ride.title",
+    "FlavorKey": "achievement.hallows_eve_first_ride.desc"
+  },
+  "Listing": {
+    "Category": "Seasons",
+    "Subcategory": "Hallows_Eve",
+    "SortOrder": 121,
+    "Icon": "Furniture_Human_Ruins_Lantern"
+  },
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:calendar_year", "Param": "Hallows_Eve", "Min": 2026, "Max": 2026 }
+    ]
+  },
+  "Criteria": {
+    "defeat-horseman": {
+      "Kind": "ENCOUNTER_DEFEATED",
+      "Target": "Hallows_Eve_Headless_Horseman_Encounter",
+      "MatchMode": "EXACT",
+      "Amount": 1
+    }
+  }
+}

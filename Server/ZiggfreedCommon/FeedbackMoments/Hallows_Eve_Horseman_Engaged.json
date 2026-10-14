@@ -1,0 +1,27 @@
+{
+  "$Comment": [
+    "What the members of the Headless Horseman's fight see as he rises and the fight begins: a big",
+    "banner, his line and, under it, the two things that win the fight. His binding row points its",
+    "Engaged beat here (ZiggfreedCommon/Encounters/Hallows_Eve_Headless_Horseman_Encounter.json,",
+    "Feedback.Engaged). Keys are lines in this pack's hallowseve.world.lang, written bare.",
+    "",
+    "The moment fires once per member. The banner always reaches the members (ToParticipants) and",
+    "anyone else standing within RadiusBlocks of them, which keeps it inside this one graveyard: the",
+    "graveyards of one copy share a world but stand far further apart than this. MinSecondsBetween",
+    "folds the members' fires into one banner. It is kept per world, so it stays short: a long one",
+    "would swallow the banner of another party whose fight begins in the same copy moments later."
+  ],
+  "Broadcast": {
+    "Title": {
+      "Key": "notify.hallows_eve_horseman_engaged"
+    },
+    "Secondary": {
+      "Key": "notify.hallows_eve_horseman_engaged.sub"
+    },
+    "Major": true,
+    "ToParticipants": true,
+    "SameWorldOnly": true,
+    "RadiusBlocks": 96.0,
+    "MinSecondsBetween": 5
+  }
+}

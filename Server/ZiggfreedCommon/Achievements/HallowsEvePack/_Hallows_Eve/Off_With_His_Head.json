@@ -1,0 +1,38 @@
+{
+  "$Comment": [
+    "Cut down the Headless Horseman's flying head ten times during one season. KILL_ENTITY names the",
+    "Head's own role, Hallows_Eve_Horseman_Head, which only his fight raises, and counts for the player",
+    "who lands the killing blow; a head that flies back to him unharmed counts for nobody. The",
+    "description's number comes from the criterion's Amount through @amount.",
+    "",
+    "Each year's copy pays favor with the Hallowed and MMO Skill Tree's Mmo_Xp row in Claim, to collect",
+    "on the achievements page; the row's own Requires, the hytale:mod_installed gate, leaves it out on",
+    "a server without that mod. It carries no hallowed tag, so The Hallowed never waits on it."
+  ],
+  "Parent": "Hallows_Eve_Hallowed_Base",
+  "Text": {
+    "TitleKey": "achievement.hallows_eve_off_with_his_head.title",
+    "FlavorKey": "achievement.hallows_eve_off_with_his_head.desc",
+    "TextArgs": { "Title": [ "@year" ], "Flavor": [ "@amount" ] }
+  },
+  "Listing": {
+    "SortOrder": 63,
+    "Icon": "Hallows_Eve_Burning_Jack_Helm"
+  },
+  "Scoring": { "Points": 25 },
+  "Criteria": {
+    "cut-down-head": {
+      "Kind": "KILL_ENTITY",
+      "Target": "Hallows_Eve_Horseman_Head",
+      "MatchMode": "EXACT",
+      "Amount": 10
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 250 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "2000" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

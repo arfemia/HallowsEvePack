@@ -5,7 +5,22 @@
     "describes. It names the fight (NameKey, on the bar's Records tab and every line that names it),",
     "binds the boss the library credits through the script's Boss slot in both his forms, and keeps",
     "the fight's records (wins, fastest win, best share, damage) on Records' Boss Fights under the",
-    "bucket hallows_eve_headless_horseman.",
+    "bucket hallows_eve_headless_horseman, split by how many fought him (ByPartySize), so a solo win",
+    "is never ranked against a party of five.",
+    "",
+    "Participation decides each player's share of his daily Claim. A player's score is every point of",
+    "damage they deal his body (DamageDealt), every point they take while in the fight (DamageTaken),",
+    "and every second they spend in it (Presence), each times its weight; their share is that score",
+    "against the top player's. His body cannot be hurt while his head flies, and damage to the head",
+    "and the Jack Skeletons counts nothing, so time in the fight carries most of the score: a player",
+    "who stayed the whole fight cutting heads down or holding off skeletons reads close to the top,",
+    "and a player who arrived late or left early reads less. Raise Presence to flatten the shares",
+    "further, lower it to reward damage more.",
+    "",
+    "Feedback names his own notices, the three Hallows_Eve_Horseman_* moments under FeedbackMoments:",
+    "a banner as the fight begins, a toast with each player's share when he falls, and a toast after",
+    "a wipe that says how his head works. His script sends no phase beats, so PhaseChanged is left",
+    "to the library and never shows.",
     "",
     "It writes no Scale on purpose: his fight scales his health with the party itself, one step per",
     "player, so a library scale here would scale him twice. No Loot either: his script pays his two",
@@ -17,7 +32,17 @@
   "Subject": {
     "TargetSlot": "Boss"
   },
+  "Participation": {
+    "DamageTaken": 1.0,
+    "Presence": 20.0
+  },
   "Leaderboard": {
-    "Bucket": "hallows_eve_headless_horseman"
+    "Bucket": "hallows_eve_headless_horseman",
+    "ByPartySize": true
+  },
+  "Feedback": {
+    "Engaged": "Hallows_Eve_Horseman_Engaged",
+    "Defeated": "Hallows_Eve_Horseman_Defeated",
+    "Wiped": "Hallows_Eve_Horseman_Wiped"
   }
 }

@@ -1,0 +1,17 @@
+{
+  "$Comment": [
+    "What each player who fought the Headless Horseman sees when the fight is lost: everyone fell or",
+    "left, and he waits at full health for the next try. His binding row points its Wiped beat here",
+    "(Feedback.Wiped). The second line is the lesson most first fights miss: his head has to be cut",
+    "down, or he cannot be hurt. A quiet Info toast, since the screen already went grey."
+  ],
+  "Toast": {
+    "Title": {
+      "Key": "notify.hallows_eve_horseman_wiped"
+    },
+    "Secondary": {
+      "Key": "notify.hallows_eve_horseman_wiped.sub"
+    },
+    "Tone": "Info"
+  }
+}

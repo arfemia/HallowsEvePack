@@ -1,0 +1,58 @@
+{
+  "$Comment": [
+    "Old Jack's side quest: go into the Horseman's Graveyard through the Gravekeeper beside him and",
+    "bring the Headless Horseman down, then report back. It is offered only on Old Jack's quest list",
+    "(his \"What needs doing?\"), never by a line of his conversation; while it is being carried, his",
+    "conversation opens on his rider line, which says where the Gravekeeper stands and how the head",
+    "works, and once it is done he asks for the hand-in. The _Hallows_Eve folder makes the id",
+    "hallows_eve_old_jack_horseman.",
+    "",
+    "ENCOUNTER_DEFEATED names his fight's script, never a creature, so it holds through his change of",
+    "form, and every player the fight credits counts the win, however many fought; only players",
+    "carrying the quest when he falls move it. Npc.TurnInId, which the Parent sets, adds the",
+    "report-back step to Old Jack, and he stands in the Forgotten Temple for the whole season.",
+    "",
+    "Requires opens it once a player has finished Lanterns in the Temple, or Pumpkin Patch for a",
+    "player who went straight to Old Jack's questline. With no Repeat it pays once per player, ever.",
+    "",
+    "The Mmo_Xp row is MMO Skill Tree's: Defense XP for the fight, paid only where that mod runs. Its",
+    "own Requires, the hytale:mod_installed gate, leaves the row out on a server without it, unpaid and",
+    "unshown, and the rest of the quest pays."
+  ],
+  "Name": "Old_Jack_Horseman",
+  "Parent": "Hallows_Eve_Quest_Base",
+  "Text": {
+    "TitleKey": "quest.hallows_eve_old_jack_horseman.title",
+    "FlavorKey": "quest.hallows_eve_old_jack_horseman.flavor"
+  },
+  "Listing": {
+    "Icon": "Furniture_Village_Tombstone",
+    "SortOrder": 70
+  },
+  "Requires": {
+    "AnyOf": [
+      { "Quests": [ "hallows_eve_old_jack_meet" ] },
+      { "Quests": [ "hallows_eve_old_jack_1" ] }
+    ]
+  },
+  "Objectives": {
+    "bring_down_horseman": {
+      "Kind": "ENCOUNTER_DEFEATED",
+      "Target": "Hallows_Eve_Headless_Horseman_Encounter",
+      "MatchMode": "EXACT",
+      "Amount": 1,
+      "TextKey": "objective.hallows_eve.bring_down_horseman",
+      "Order": 1
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Chain_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 250 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 250 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 150 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "2500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

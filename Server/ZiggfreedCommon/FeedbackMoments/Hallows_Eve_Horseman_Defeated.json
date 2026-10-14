@@ -1,0 +1,26 @@
+{
+  "$Comment": [
+    "What each player who fought the Headless Horseman sees the instant he falls: his own headline,",
+    "and under it the library's share line, which ships translated in every language the library",
+    "does. His binding row points its Defeated beat here (Feedback.Defeated).",
+    "",
+    "The moment fires once per credited player and carries 'share' (that player's share of the fight",
+    "as whole percent points, the top player reading 100, which is what their daily Claim's rolls were",
+    "scaled by) and 'seconds' (how long the fight took). What their rolls put in their Claims lists",
+    "itself as rows under the headline on the in-page toast. Gold Reward tone and the game's own",
+    "discovery sting, as the library's own defeat moment has."
+  ],
+  "Toast": {
+    "Title": {
+      "Key": "notify.hallows_eve_horseman_defeated"
+    },
+    "Secondary": {
+      "Key": "ziggfreedcommon.feedback.encounter.defeated.share",
+      "Args": ["share", "seconds"]
+    },
+    "Tone": "Reward"
+  },
+  "Sound": {
+    "Id": "SFX_Discovery_Z2_Short"
+  }
+}

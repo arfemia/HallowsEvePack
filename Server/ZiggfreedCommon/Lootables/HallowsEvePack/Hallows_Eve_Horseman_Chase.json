@@ -3,7 +3,8 @@
     "What the Horseman's Hoard (Rewards/Hallows_Eve/Hallows_Eve_Horseman_Chase) pays. Every roll is",
     "read on its own: the first has no Chance, so it always pays and the Hoard is never empty; the",
     "three after it are the chances at his own pieces of ancient steel, each raising the Fire damage",
-    "its wearer deals. Chance is a percent from 0 to 100."
+    "its wearer deals; the last two are pieces of his graveyard to build with, a tombstone and a ruins",
+    "lantern like the ones that stand in it, which no recipe makes. Chance is a percent from 0 to 100."
   ],
   "Name": "Hallows_Eve_Horseman_Chase",
   "Rolls": [
@@ -21,6 +22,14 @@
     {
       "Chance": { "Base": 5.0 },
       "Grants": { "Items": [ { "Item": "Hallows_Eve_Horseman_Greaves", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 10.0 },
+      "Grants": { "Items": [ { "Item": "Furniture_Village_Tombstone", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 10.0 },
+      "Grants": { "Items": [ { "Item": "Furniture_Human_Ruins_Lantern", "Count": 1 } ] }
     }
   ]
 }

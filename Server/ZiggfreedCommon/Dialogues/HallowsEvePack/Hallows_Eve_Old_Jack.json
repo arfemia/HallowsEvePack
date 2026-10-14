@@ -26,7 +26,9 @@
     "one screen per kind of work: active_pumpkins (Pumpkin Patch, Pumpkin Rounds), active_bombs",
     "(Lantern Work), active_night (Ghouls on the Steps, Ectoplasm Run, Restless Souls, and The Hollow",
     "Lantern, whose skeletons, Ectoplasm and pumpkin all come from the night) and active_stone (Cursed",
-    "Stone, Geodes for Jack). An offer's answer takes its quest and goes straight to that screen, so",
+    "Stone, Geodes for Jack). The Rider, his side quest, has no offer line (it is taken from his quest",
+    "list) and its Active screen is his rider line, horseman. An offer's answer takes its quest and",
+    "goes straight to that screen, so",
     "the player hears what to do and where the moment they take it. Pumpkin Patch and the lantern",
     "quest have hand-in lines of their own; the rest share",
     "ready_generic, which opens his quest list for the hand-in. The three dailies share daily_offer,",
@@ -101,6 +103,7 @@
       "hallows_eve_old_jack_4": { "Offerable": "souls_offer", "Active": "active_night", "Ready": "ready_generic" },
       "hallows_eve_old_jack_5": { "Offerable": "geodes_offer", "Active": "active_stone", "Ready": "ready_generic" },
       "hallows_eve_old_jack_lantern": { "Offerable": "lantern_offer", "Active": "active_night", "Ready": "lantern_ready" },
+      "hallows_eve_old_jack_horseman": { "Active": "horseman", "Ready": "ready_generic" },
       "hallows_eve_jack_daily_souls": { "Offerable": "daily_offer", "Active": "active_night", "Ready": "ready_generic" },
       "hallows_eve_jack_daily_pumpkins": { "Offerable": "daily_offer", "Active": "active_pumpkins", "Ready": "ready_generic" },
       "hallows_eve_jack_daily_geodes": { "Offerable": "daily_offer", "Active": "active_stone", "Ready": "ready_generic" }

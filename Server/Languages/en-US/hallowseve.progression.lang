@@ -25,6 +25,8 @@ quest.hallows_eve_old_jack_5.title = Cursed Stone
 quest.hallows_eve_old_jack_5.flavor = Break stone this month, any stone, and now and then a Cursed Geode falls out of it. Crack a few open; there's good in them, under the curse.
 quest.hallows_eve_old_jack_lantern.title = The Hollow Lantern
 quest.hallows_eve_old_jack_lantern.flavor = Every year the Hollow Lantern goes out, and somebody has to light it again. Knock down the skeletons wearing my face, then bring me what the lantern needs.
+quest.hallows_eve_old_jack_horseman.title = The Rider
+quest.hallows_eve_old_jack_horseman.flavor = The Headless Horseman rides his graveyard every night, and I'd sleep better if somebody knocked him off that horse. The Gravekeeper next to me will take you in. Bring friends, and cut his head down when it flies off.
 
 # ---- Old Jack's dailies ----
 quest.hallows_eve_jack_daily_souls.title = Restless Souls
@@ -58,6 +60,7 @@ objective.hallows_eve.attend = Take part in Hallow's Eve
 objective.hallows_eve.jack_confidant = Become Old Jack's Confidant
 objective.hallows_eve.put_down_wraiths = Put down {0} Geode Wraiths
 objective.hallows_eve.carve_lanterns = Carve {0} Jack Lanterns
+objective.hallows_eve.bring_down_horseman = Bring down the Headless Horseman
 
 # ---- Old Jack's board ----
 board.hallows_eve_daily.title = Old Jack's Board
@@ -155,6 +158,8 @@ achievement.hallows_eve_horseman_bane.desc = Bring down the Headless Horseman {0
 title.hallows_eve_horseman_bane.name = Horseman's Bane
 title.hallows_eve_horseman_bane.flavor = Brought the Headless Horseman down again and again in one Hallow's Eve.
 title.hallows_eve_horseman_bane.display = {0}, Horseman's Bane
+achievement.hallows_eve_off_with_his_head.title = Off With His Head {0}
+achievement.hallows_eve_off_with_his_head.desc = Cut down the Horseman's head {0} times.
 
 # ---- Reputations: Old Jack's Favor and the Hallowed (id Hallows_Eve_Hallowed) ----
 reputation.hallows_eve_old_jack.name = Old Jack's Favor
@@ -251,6 +256,8 @@ achievement.hallows_eve_lantern_keeper.title = Lantern Keeper
 achievement.hallows_eve_lantern_keeper.desc = Light the Hollow Lantern in {0} seasons.
 achievement.hallows_eve_first_lanterns.title = First Lanterns
 achievement.hallows_eve_first_lanterns.desc = Light the Hollow Lantern in the first season.
+achievement.hallows_eve_first_ride.title = First Ride
+achievement.hallows_eve_first_ride.desc = Bring down the Headless Horseman in his first Hallow's Eve.
 title.hallows_eve_keeper_of_lanterns.name = Keeper of Lanterns
 title.hallows_eve_keeper_of_lanterns.flavor = Lit the Hollow Lantern with Old Jack, year after year.
 title.hallows_eve_keeper_of_lanterns.display = {0}, Keeper of Lanterns
