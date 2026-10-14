@@ -31,3 +31,4 @@ notify.hallows_eve_horseman_wrath = The Horseman burns with rage!
 claim.hallows_eve_horseman_chase = The Horseman's Hoard
 dungeon.hallows_eve_graveyard.name = The Horseman's Graveyard
 dungeon.hallows_eve_graveyard.description = A walled graveyard where the Headless Horseman rides at night. Bring friends.
+dungeon.hallows_eve_graveyard.goal = Defeat the Headless Horseman. When his head flies off, cut it down, or he can't be hurt.

@@ -10,7 +10,8 @@
     "Season keeps it closed outside Hallow's Eve. Share: one party to an area, up to five players, and",
     "four areas to a copy. Complete names his fight, so the run clears when he falls, and Rewards rolls",
     "Hallows_Eve_Graveyard_Clear for each member present as a Claim: full the first clear each day,",
-    "half on later ones. Text names it in the reader's language (hallowseve.world.lang)."
+    "half on later ones. Text names it in the reader's language (hallowseve.world.lang), and its GoalKey",
+    "is the line each player reads as they arrive: what to do there, and how his fight is won."
   ],
   "Enabled": true,
   "Share": {
@@ -37,6 +38,7 @@
   "Season": "Hallows_Eve",
   "Text": {
     "NameKey": "dungeon.hallows_eve_graveyard.name",
-    "DescriptionKey": "dungeon.hallows_eve_graveyard.description"
+    "DescriptionKey": "dungeon.hallows_eve_graveyard.description",
+    "GoalKey": "dungeon.hallows_eve_graveyard.goal"
   }
 }
