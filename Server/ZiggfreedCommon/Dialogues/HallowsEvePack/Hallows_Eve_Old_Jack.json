@@ -35,7 +35,8 @@
     "",
     "THE MENU. The steady screens carry jack_menu, the one menu: What needs doing?, his quest list,",
     "where the jobs his daily board and his errands board (Hallows_Eve_Daily, Hallows_Eve_Errands) post",
-    "list beside his quests, since both boards name him in Hosts, then the stall,",
+    "list beside his quests, since both boards name him in Hosts, then the stall, What are the",
+    "sweets for? (what Hallow Sweets buy and how they are earned, with the stall one press away),",
     "How do we stand? (the Reputation page, shown once the player has any favor with him), the Almanac",
     "(only while the Almanac is switched on), who he is, the Harvest Moon line (only while Harvest",
     "Moon runs) and goodnight. A screen that asks something of the player carries jack_back instead:",
@@ -304,6 +305,17 @@
       ],
       "IncludeOptions": [ "jack_back" ]
     },
+    "sweets": {
+      "TextKey": "dialogue.hallows_eve_old_jack.sweets.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.hallows_eve_old_jack.opt.shop",
+          "Style": "neutral",
+          "Open": { "Type": "Shop", "Shop": "Hallows_Eve_Old_Jack" }
+        }
+      ],
+      "IncludeOptions": [ "jack_back" ]
+    },
     "who_are_you": {
       "TextKey": "dialogue.hallows_eve_old_jack.who_are_you.text",
       "IncludeOptions": [ "jack_back" ]
@@ -328,6 +340,11 @@
         "LabelKey": "dialogue.hallows_eve_old_jack.opt.shop",
         "Style": "neutral",
         "Open": { "Type": "Shop", "Shop": "Hallows_Eve_Old_Jack" }
+      },
+      {
+        "LabelKey": "dialogue.hallows_eve_old_jack.opt.sweets",
+        "Style": "neutral",
+        "Goto": "sweets"
       },
       {
         "LabelKey": "dialogue.hallows_eve_old_jack.opt.standing",
