@@ -1,7 +1,7 @@
 {
   "Group": "Ziggfreed",
   "Name": "SeasonsOfOrbis",
-  "Version": "1.1.0",
+  "Version": "1.2.0",
   "Description": "Seasons of Orbis, yearly events for any server running Ziggfreed's CommonLib and RPG Stations: Hallow's Eve with Old Jack from October 1 to November 12 and Harvest Feast with Martha the Cook from November 20 to December 1, each with quests, a daily board and a stall in the Forgotten Temple, plus Hytale's Anniversary every January 13. Festival Favor and Festival Tokens carry over from season to season; MMO Skill Tree is optional and adds skill XP.",
   "Authors": [
     {
