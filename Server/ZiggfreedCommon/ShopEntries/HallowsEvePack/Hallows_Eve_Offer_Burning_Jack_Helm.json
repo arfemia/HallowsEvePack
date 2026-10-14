@@ -1,12 +1,15 @@
 {
-  "$Comment": "The Burning Jack Helm, the charred and sturdier Jack Helm, for players at the top of either reputation: Revered with the Hallowed (Hallows_Eve_Hallowed) or Jack's Own with Old Jack. AnyOf opens it on either route, and the lock line names both; a locked offer still shows on the shelf, so a player can see what to work towards. Gear favor counts toward each rank. Priced well above the plain helm, so sweets saved over the years have somewhere to go. Named by the item's own keys.",
+  "$Comment": "The Burning Jack Helm, the charred and sturdier Jack Helm, for players at the top of either reputation: Revered with the Hallowed (Hallows_Eve_Hallowed) or Jack's Own with Old Jack. AnyOf opens it on either route, and the lock line names both; a locked offer still shows on the shelf, so a player can see what to work towards. Gear favor counts toward each rank. It is an upgrade: the player trades in a plain Jack Helm (Cost.Items) and pays sweets on top (Cost.Currencies), and with Combine left out both are charged. Together they come to 600 sweets' worth, the Jack Helm counted at its own price on this stall (120), so sweets saved over the years still have somewhere to go. Only a helm carried in the bag, storage or hotbar is taken, never one worn on the head, so a player wearing the plain helm takes it off before buying. The Horseman's Hoard sometimes pays one too. Named by the item's own keys; the flavor is the description that names both of its sets.",
   "Parent": "Hallows_Eve_Offer_Base",
   "Text": {
     "TitleKey": "items.Hallows_Eve_Burning_Jack_Helm.name",
-    "FlavorKey": "items.Hallows_Eve_Burning_Jack_Helm.description"
+    "FlavorKey": "items.Hallows_Eve_Burning_Jack_Helm.description_flaming_set"
   },
   "Listing": { "Category": "gear", "SortOrder": 30 },
-  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 600 } },
+  "Cost": {
+    "Currencies": { "Hallows_Eve_Sweets": 480 },
+    "Items": [ { "Item": "Hallows_Eve_Jack_Helm", "Count": 1 } ]
+  },
   "Requires": {
     "AnyOf": [
       { "Factors": [ { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Hallows_Eve_Hallowed/Revered", "Min": 1 } ] },

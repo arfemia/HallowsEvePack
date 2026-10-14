@@ -1,17 +1,47 @@
 {
-  "$Comment": "The Hallowed set: a Jack Helm worn and a Jack Shield in the utility slot. Members holds both helms (the Jack Helm and the Burning Jack Helm) and both shields (the Jack Shield and the Flaming Jack Shield), so any helm with any shield completes it. Its one tier asks for exactly that, Armor 1 and Utility 1, so a shield carried in the main hand never counts. While it holds, the tier adds Health, raises every gain of favor with the Hallowed reputation by a percent (the stat ReputationGain_Hallows_Eve_Hallowed, 10 is +10%, on top of the shield's own) and puts on the set's effect, Hallows_Eve_Hallowed_Set, which carries the glow and the fire ward, and its Badge, Hallows_Eve_Hallowed_Badge, the set's one tile on the buff bar. Raise or lower the Amount to tune the set; under Parent the Bonuses list replaces whole, so restate the tier you keep. The text keys live in hallowseve.items.lang.",
+  "$Comment": "The Hallowed set: the Jack pieces and the Headless Horseman's armour. Members holds both helms (the Jack Helm and the Burning Jack Helm), both shields (the Jack Shield and the Flaming Jack Shield) and the Horseman's Breastplate, Gauntlets and Greaves in their plain and flaming forms, so every piece counts here and trading a plain piece up for its charred or flaming twin never loses a tier. The first tier asks for Armor 1 and Utility 1: any member worn in an armour slot (a helm or a piece of the Horseman's armour) with a member shield in the utility slot, so a shield carried in the main hand never counts. While it holds, it adds Health, raises every gain of favor with the Hallowed reputation by a percent (the stat ReputationGain_Hallows_Eve_Hallowed, 10 is +10%, on top of the shield's own) and puts on the set's effect, Hallows_Eve_Hallowed_Set, which carries the glow and the fire ward, and its Badge, Hallows_Eve_Hallowed_Badge, the set's one tile on the buff bar. The second tier asks for four members in armour slots (Armor 4: a helm and the Horseman's three pieces), and the third for those four with a member shield in the utility slot (Armor 4 and Utility 1). Every tier whose minimums hold applies, so a full set wears all three at once. The second and third add Health and the library's Fire stats: DamageBonus_Fire in whole percent points (5 is +5% to the Fire damage the wearer deals) and DamageBonusFlat_Fire in damage points added to each Fire hit before the percent. Keep the first tier first: MMO Skill Tree's layer (Mmo_Hallows_Eve_Hallowed.json) joins the tier that asks Armor 1 and Utility 1, and the engine files each tier's modifiers by its position. The Flaming Hallowed set (Hallows_Eve_Flaming_Hallowed.json) stacks its own tiers on top of these for the flaming pieces. Raise or lower an Amount to tune the set; under Parent the Bonuses list replaces whole, so restate every tier you keep. The text keys live in hallowseve.items.lang.",
   "Text": {"TitleKey": "gearset.hallows_eve_hallowed.title"},
-  "Members": ["Hallows_Eve_Jack_Helm", "Hallows_Eve_Jack_Shield", "Hallows_Eve_Burning_Jack_Helm", "Hallows_Eve_Flaming_Jack_Shield"],
+  "Members": [
+    "Hallows_Eve_Jack_Helm",
+    "Hallows_Eve_Jack_Shield",
+    "Hallows_Eve_Burning_Jack_Helm",
+    "Hallows_Eve_Flaming_Jack_Shield",
+    "Hallows_Eve_Horseman_Breastplate",
+    "Hallows_Eve_Horseman_Gauntlets",
+    "Hallows_Eve_Horseman_Greaves",
+    "Hallows_Eve_Flaming_Horseman_Breastplate",
+    "Hallows_Eve_Flaming_Horseman_Gauntlets",
+    "Hallows_Eve_Flaming_Horseman_Greaves"
+  ],
   "Bonuses": [
     {
       "Armor": 1,
       "Utility": 1,
-      "Text": {"TitleKey": "gearset.hallows_eve_hallowed.tier_full"},
+      "Text": {"TitleKey": "gearset.hallows_eve_hallowed.tier_pair"},
       "Effect": "Hallows_Eve_Hallowed_Set",
       "Badge": "Hallows_Eve_Hallowed_Badge",
       "StatModifiers": {
         "Health": [{"Amount": 10, "CalculationType": "Additive"}],
         "ReputationGain_Hallows_Eve_Hallowed": [{"Amount": 10, "CalculationType": "Additive", "Target": "Max"}]
+      }
+    },
+    {
+      "Armor": 4,
+      "Text": {"TitleKey": "gearset.hallows_eve_hallowed.tier_armor"},
+      "StatModifiers": {
+        "Health": [{"Amount": 5, "CalculationType": "Additive"}],
+        "DamageBonus_Fire": [{"Amount": 5, "CalculationType": "Additive"}],
+        "DamageBonusFlat_Fire": [{"Amount": 1, "CalculationType": "Additive"}]
+      }
+    },
+    {
+      "Armor": 4,
+      "Utility": 1,
+      "Text": {"TitleKey": "gearset.hallows_eve_hallowed.tier_armor_shield"},
+      "StatModifiers": {
+        "Health": [{"Amount": 5, "CalculationType": "Additive"}],
+        "DamageBonus_Fire": [{"Amount": 5, "CalculationType": "Additive"}],
+        "DamageBonusFlat_Fire": [{"Amount": 1, "CalculationType": "Additive"}]
       }
     }
   ]

@@ -233,7 +233,7 @@ dialogue.hallows_eve_old_jack.lantern_lit.text = The Hollow Lantern's still burn
 dialogue.hallows_eve_old_jack.sweets.text = Sweets are what I pay in, and my own wares take them, from a Lantern Bomb to a head like mine.\nI pay them for my jobs and the work on my board. Ask anybody you talk to for a trick or treat and you'll get a few. Beat the <b>Headless Horseman</b> in his <color is="#ffd97a">graveyard</color> and you'll find some waiting for you too.
 dialogue.hallows_eve_old_jack.who_are_you.text = Old Jack. I kept a farm once, a long way from here. Then one October I didn't go home, and I've come back every October since.\nEvery year I light a Hollow Lantern to keep the dead off these steps. They burn out by November. Don't ask me about the head.
 dialogue.hallows_eve_old_jack.horseman.text = The Headless Horseman. He rides his own graveyard every night of Hallow's Eve, and he doesn't like visitors.\nIf you want a look, the Gravekeeper standing next to me will take you in. Bring friends. And when his head flies off, cut it down, or he can't be hurt.
-dialogue.hallows_eve_old_jack.horseman_beaten.text = So you've beaten him. It won't keep him down: he's back in the saddle every time somebody goes in.\nGo after the <b>Headless Horseman</b> again. Your first win each day leaves his Hoard under Claims in your menu, and now and then there's a piece of his old armour in it.
+dialogue.hallows_eve_old_jack.horseman_beaten.text = So you've beaten him. It won't keep him down: he's back in the saddle every time somebody goes in.\nGo after the <b>Headless Horseman</b> again. Your first win each day leaves his daily Claim and his Hoard under Claims in your menu, now and then with a piece of his old armour, or one that's still burning.
 dialogue.hallows_eve_old_jack.harvest_moon.text = See that moon? Harvest Moon. A few nights a year the dead get restless under it, and the graves empty out.\nIf you want work, tonight's the night. I'll be up till it sets.
 dialogue.hallows_eve_old_jack.opt.quests = What needs doing?
 dialogue.hallows_eve_old_jack.opt.shop = Let's see your stall.
@@ -293,11 +293,14 @@ almanac.hallows_eve.source.festival_favor = Sold at the festival stalls to those
 almanac.hallows_eve.source.bomb_rare = Always in the Horseman's Hoard, and sometimes in his daily Claim. Also dropped by the night's creatures, found inside Cursed Geodes, carved at a Carving Bench, or bought at Old Jack's stall.
 almanac.hallows_eve.source.bomb_epic_horseman = Rarely dropped by Geode Wraiths or found inside Cursed Geodes and the Hallowed's cache, and sometimes in the Headless Horseman's daily Claim. You can also carve one at a Carving Bench, or buy a couple a day at Old Jack's stall.
 almanac.hallows_eve.source.hoard = Sometimes in the Horseman's Hoard, paid for your first win over him each day.
+almanac.hallows_eve.source.horseman_daily = Found now and then in the Headless Horseman's daily Claim, paid for your first win over him each day.
+almanac.hallows_eve.source.burning_helm_trade = Bought at Old Jack's stall by trading in a Jack Helm from your bag, once the Hallowed revere you or Old Jack trusts you completely. Sometimes found in the Horseman's Hoard.
+almanac.hallows_eve.source.flaming_shield_trade = Bought at Old Jack's stall by trading in a Jack Shield from your bag, once the Hallowed hold you in the highest regard. Sometimes found in the Horseman's Hoard.
 
 # ---- The Almanac page's Headless Horseman banner and his Hoard ----
 almanac.hallows_eve.horseman.line = The Gravekeeper next to Old Jack takes you in. Bring friends.
 almanac.hallows_eve.horseman.button = Boss fight records
-almanac.hallows_eve.hoard.line = Your first win over the Headless Horseman each day leaves his Hoard under Claims in your menu: always a Spectral Lantern Bomb, and sometimes a piece of his armour, a Tombstone or a Lost Civilization Lantern.
+almanac.hallows_eve.hoard.line = Your first win over the Horseman each day leaves his Hoard under Claims in your menu: always a Spectral Lantern Bomb, sometimes a piece of the Flaming Hallowed set, a Tombstone or a Lost Civilization Lantern. His plain armour comes in his daily Claim.
 
 # ---- Book breadcrumb ----
 achievement.category.seasons.hallows_eve = Hallow's Eve

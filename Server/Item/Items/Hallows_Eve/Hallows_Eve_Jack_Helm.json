@@ -1,8 +1,8 @@
 {
-  "$Comment": "The Jack Helm, one half of the Hallowed set (ZiggfreedCommon/GearSets/HallowsEvePack/Hallows_Eve_Hallowed.json). A head armor piece on the iron helm's pattern: CosmeticsToHide clears ears, hair, beard and face accessories so nothing pokes through the pumpkin. Its own stats ride the native Armor block, and the set adds its bonus on top while the Jack Shield sits in the utility slot. Light is the warm glow the helm gives off in the hand or on the ground; the set's effect carries the wearer's glow. While it is worn, every gain of favor with Old Jack is raised by the percent on the stat ReputationGain_Hallows_Eve_Old_Jack (Armor.StatModifiers, 10 is +10%); raise or lower that Amount to tune it.",
+  "$Comment": "The Jack Helm, the helm of the Hallowed set (ZiggfreedCommon/GearSets/HallowsEvePack/Hallows_Eve_Hallowed.json). A head armor piece on the iron helm's pattern: CosmeticsToHide clears ears, hair, beard and face accessories so nothing pokes through the pumpkin. Its own stats ride the native Armor block, and the set adds its bonus on top while the Jack Shield sits in the utility slot. Light is the warm glow the helm gives off in the hand or on the ground; the set's effect carries the wearer's glow. While it is worn, every gain of favor with Old Jack is raised by the percent on the stat ReputationGain_Hallows_Eve_Old_Jack (Armor.StatModifiers, 10 is +10%); raise or lower that Amount to tune it.",
   "TranslationProperties": {
     "Name": "items.Hallows_Eve_Jack_Helm.name",
-    "Description": "items.Hallows_Eve_Jack_Helm.description"
+    "Description": "items.Hallows_Eve_Jack_Helm.description_hallowed_set"
   },
   "Quality": "Rare",
   "ItemLevel": 20,

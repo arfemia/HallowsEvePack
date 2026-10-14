@@ -2,9 +2,13 @@
   "$Comment": [
     "What the Horseman's Hoard (Rewards/Hallows_Eve/Hallows_Eve_Horseman_Chase) pays. Every roll is",
     "read on its own: the first has no Chance, so it always pays and the Hoard is never empty; the",
-    "three after it are the chances at his own pieces of ancient steel, each raising the Fire damage",
-    "its wearer deals; the last two are pieces of his graveyard to build with, a tombstone and a ruins",
-    "lantern like the ones that stand in it, which no recipe makes. Chance is a percent from 0 to 100."
+    "five after it are the chances at the Flaming Hallowed set's pieces (the Burning Jack Helm, the",
+    "Horseman's flaming breastplate, gauntlets and greaves, and the Flaming Jack Shield), the only",
+    "place his three flaming pieces come from; the last two are pieces of his graveyard to build",
+    "with, a tombstone and a ruins lantern like the ones that stand in it, which no recipe makes. His",
+    "plain armour pays from his daily Claim (Hallows_Eve_Horseman_Daily.json). The Almanac's Hoard",
+    "grid (ZiggfreedCommon/Almanac/HallowsEvePack/Hallows_Eve.json) lists what this table pays, so",
+    "change the two together. Chance is a percent from 0 to 100."
   ],
   "Name": "Hallows_Eve_Horseman_Chase",
   "Rolls": [
@@ -13,15 +17,23 @@
     },
     {
       "Chance": { "Base": 5.0 },
-      "Grants": { "Items": [ { "Item": "Hallows_Eve_Horseman_Breastplate", "Count": 1 } ] }
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Burning_Jack_Helm", "Count": 1 } ] }
     },
     {
       "Chance": { "Base": 5.0 },
-      "Grants": { "Items": [ { "Item": "Hallows_Eve_Horseman_Gauntlets", "Count": 1 } ] }
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Flaming_Horseman_Breastplate", "Count": 1 } ] }
     },
     {
       "Chance": { "Base": 5.0 },
-      "Grants": { "Items": [ { "Item": "Hallows_Eve_Horseman_Greaves", "Count": 1 } ] }
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Flaming_Horseman_Gauntlets", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 5.0 },
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Flaming_Horseman_Greaves", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 5.0 },
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Flaming_Jack_Shield", "Count": 1 } ] }
     },
     {
       "Chance": { "Base": 10.0 },

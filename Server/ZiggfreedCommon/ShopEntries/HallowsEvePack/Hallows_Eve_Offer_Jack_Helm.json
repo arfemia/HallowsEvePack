@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Jack Helm, one half of the Hallowed set. Named by the item's own keys.",
+  "$Comment": "The Jack Helm, the helm of the Hallowed set. Named by the item's own keys.",
   "Parent": "Hallows_Eve_Offer_Base",
   "Text": {
     "TitleKey": "items.Hallows_Eve_Jack_Helm.name",

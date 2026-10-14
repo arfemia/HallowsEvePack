@@ -1,11 +1,11 @@
 {
-  "$Comment": "The Horseman's Gauntlets, one of the three pieces the Horseman's Hoard can pay (ZiggfreedCommon/Lootables/HallowsEvePack/Hallows_Eve_Horseman_Chase.json): the ancient steel gloves that held his lantern. The game's ancient steel gauntlets, field for field, with their recipe left out (they are never crafted), twice their durability (150), and one thing more: DamageBonus_Fire, Ziggfreed's CommonLib's stat for Fire damage the wearer deals, in whole percent points, so a Lantern Bomb or any fire weapon hits 5% harder with them on. Light is the ember glow they give off. An Armor block written here replaces a parent's whole, so the file restates every leaf rather than naming a parent.",
+  "$Comment": "The Horseman's Gauntlets, one of the three plain pieces of his armour his daily Claim can pay (ZiggfreedCommon/Lootables/HallowsEvePack/Hallows_Eve_Horseman_Daily.json): the ancient steel gloves that held his lantern. A member of the Hallowed set (ZiggfreedCommon/GearSets/HallowsEvePack/Hallows_Eve_Hallowed.json). The game's ancient steel gauntlets model, with their recipe left out (they are never crafted) and their stats a step below the iron gauntlets', the way the Jack Helm sits below the iron helm, and one thing more: DamageBonus_Fire, Ziggfreed's CommonLib's stat for Fire damage the wearer deals, in whole percent points, so a Lantern Bomb or any fire weapon hits 3% harder with them on. Their flaming twin, Hallows_Eve_Flaming_Horseman_Gauntlets, is the Hoard's stronger copy on the same model. Light is the ember glow they give off. An Armor block written here replaces a parent's whole, so the file restates every leaf rather than naming a parent.",
   "TranslationProperties": {
     "Name": "items.Hallows_Eve_Horseman_Gauntlets.name",
     "Description": "items.Hallows_Eve_Horseman_Gauntlets.description"
   },
-  "Quality": "Epic",
-  "ItemLevel": 30,
+  "Quality": "Rare",
+  "ItemLevel": 20,
   "PlayerAnimationsId": "Block",
   "ItemSoundSetId": "ISS_Armor_Heavy",
   "Categories": ["Items.Armors"],
@@ -22,15 +22,15 @@
     "ArmorSlot": "Hands",
     "BaseDamageResistance": 0,
     "DamageResistance": {
-      "Physical": [{"Amount": 0.04, "CalculationType": "Percent"}],
-      "Projectile": [{"Amount": 0.04, "CalculationType": "Percent"}]
+      "Physical": [{"Amount": 0.03, "CalculationType": "Percent"}],
+      "Projectile": [{"Amount": 0.03, "CalculationType": "Percent"}]
     },
     "StatModifiers": {
-      "Health": [{"Amount": 7, "CalculationType": "Additive"}],
-      "DamageBonus_Fire": [{"Amount": 5, "CalculationType": "Additive"}]
+      "Health": [{"Amount": 5, "CalculationType": "Additive"}],
+      "DamageBonus_Fire": [{"Amount": 3, "CalculationType": "Additive"}]
     }
   },
-  "MaxDurability": 150,
+  "MaxDurability": 100,
   "DurabilityLossOnHit": 0.5,
   "Tags": {"Type": ["Armor"], "Family": ["Hallows_Eve"]}
 }

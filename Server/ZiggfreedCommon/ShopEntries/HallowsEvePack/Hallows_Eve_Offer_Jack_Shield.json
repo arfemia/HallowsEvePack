@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Jack Shield, the other half of the Hallowed set, open to everyone at the stall like the Jack Helm. Lighting the Hollow Lantern pays one shield a year, and the Carving Bench's Hallowed Carving makes one during the event, so the stall's copy is for a spare or a second hand. Named by the item's own keys.",
+  "$Comment": "The Jack Shield, the shield of the Hallowed set, open to everyone at the stall like the Jack Helm. Lighting the Hollow Lantern pays one shield a year, and the Carving Bench's Hallowed Carving makes one during the event, so the stall's copy is for a spare or a second hand. Named by the item's own keys.",
   "Parent": "Hallows_Eve_Offer_Base",
   "Text": {
     "TitleKey": "items.Hallows_Eve_Jack_Shield.name",
