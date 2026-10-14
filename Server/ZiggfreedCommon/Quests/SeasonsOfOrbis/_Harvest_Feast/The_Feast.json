@@ -1,8 +1,12 @@
 {
   "$Comment": [
     "The yearly feast: once the questline is done, bring the host a pumpkin pie, some cooked meat and",
-    "carrots, and sit down to the feast. Finishing it earns that year's keepsake achievement,",
-    "harvest_feast_keepsake, which hands over a plate with the year on it.",
+    "carrots, and sit down to the feast. Its pay holds that year's keepsake, a plate with the year on",
+    "it, collected with the rest at the host. The first Claim row is the plate: StackNameArg @run reads",
+    "as the label of the Harvest Feast run this quest is paid for, which for a yearly event is its year,",
+    "and StackNameKey, keepsake.harvest_feast_plate.name,",
+    "is stamped into every plate handed over and read back from the item, so never rename that key.",
+    "Finishing it also earns that year's keepsake achievement, harvest_feast_keepsake, for its points.",
     "",
     "Repeat.PerRun brings this one quest back once in each year's run of Harvest Feast: a run pays it",
     "once, a forced or moved run cannot pay it twice, and a feast left unfinished when the run ends waits",
@@ -53,6 +57,8 @@
   },
   "Rewards": {
     "Claim": [
+      { "Kind": "Item", "Params": { "Item": "Deco_Plate", "Count": "1",
+        "StackNameKey": "keepsake.harvest_feast_plate.name", "StackNameArg": "@run" } },
       { "Kind": "Lootable", "Params": { "Lootable": "Harvest_Feast_Feast_Pay" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 500 } },
       { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 400 } },

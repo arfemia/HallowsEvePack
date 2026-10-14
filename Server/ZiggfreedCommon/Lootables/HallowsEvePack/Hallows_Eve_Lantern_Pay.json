@@ -1,7 +1,7 @@
 {
   "$Comment": [
-    "What lighting the Hollow Lantern pays, once a year. The Hollow Lantern itself is not here:",
-    "the yearly keepsake achievement hands it over, so it can carry the year.",
+    "What lighting the Hollow Lantern pays, once a year. The Hollow Lantern itself is not here: it is",
+    "the quest's own first Claim row, whose StackNameArg @run names it for the year's run.",
     "",
     "The first roll always pays sweets and a Jack Shield, so everyone who lights the lantern can",
     "finish the Hallowed set; Old Jack's stall sells more shields to anyone.",

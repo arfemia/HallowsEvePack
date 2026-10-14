@@ -1,0 +1,103 @@
+{
+  "Name": "Hallows_Eve_Gravekeeper",
+  "$Comment": [
+    "The Gravekeeper's conversation, what pressing F on him opens in the Forgotten Temple while",
+    "Hallow's Eve runs. He is one of the Hallowed and keeps the Headless Horseman's graveyard for them,",
+    "so his own lines name neither Old Jack nor Hallow's Eve as his reason to be there; only the ember",
+    "line, shown to a player on Old Jack's errand, names Jack. He never contracts: I am, it is, does",
+    "not. That keeps him apart from Old Jack, who always does.",
+    "",
+    "HOW A SCREEN IS PICKED. First is walked top to bottom, then Fallback. The ember line comes first,",
+    "while the player carries Old Jack's hard step (hallows_eve_old_jack_horseman_hard): it says the",
+    "ember only drops on the hard ride. Then the hard ride's introduction, once per character",
+    "(OnceId hard_open), for a player who has finished The Rider (hallows_eve_old_jack_horseman).",
+    "Every other visit opens on menu.",
+    "",
+    "THE MENU. gk_menu is on every screen a visit opens on: take me in (the normal graveyard), take me",
+    "on the hard ride (the hard graveyard, shown only to a player who has finished The Rider; this",
+    "condition is the hard graveyard's only gate, since the dungeon itself asks for nothing but its",
+    "season, so no other line or press-F may open it), who he is, and goodnight. Each way in is the Dungeon destination, which sends the player in with their",
+    "party and closes this page as they go, or says why it refused. The who screen carries gk_back:",
+    "back to the menu, or goodnight. The trick-or-treat line is not here: the DialogueExtensions file",
+    "Hallows_Eve_Trick_Or_Treat adds it to every conversation, this one included, and its favor goes",
+    "to the Hallowed, his own people."
+  ],
+  "Header": [ "ActiveObjective" ],
+  "Chrome": { "FarewellKey": "dialogue.hallows_eve_gravekeeper.opt.farewell" },
+  "Start": {
+    "First": [
+      {
+        "Node": "ember",
+        "When": [
+          { "Type": "QuestState", "Quest": "hallows_eve_old_jack_horseman_hard", "State": "ACTIVE" }
+        ]
+      },
+      {
+        "Node": "hard_open",
+        "When": [
+          { "Type": "Requires", "Requires": { "Quests": [ "hallows_eve_old_jack_horseman" ] } }
+        ],
+        "Once": true,
+        "OnceId": "hard_open"
+      }
+    ],
+    "Fallback": "menu"
+  },
+  "Nodes": {
+    "menu": {
+      "TextKey": "dialogue.hallows_eve_gravekeeper.menu.text",
+      "IncludeOptions": [ "gk_menu" ]
+    },
+    "hard_open": {
+      "TextKey": "dialogue.hallows_eve_gravekeeper.hard_open.text",
+      "IncludeOptions": [ "gk_menu" ]
+    },
+    "ember": {
+      "TextKey": "dialogue.hallows_eve_gravekeeper.ember.text",
+      "IncludeOptions": [ "gk_menu" ]
+    },
+    "who": {
+      "TextKey": "dialogue.hallows_eve_gravekeeper.who.text",
+      "IncludeOptions": [ "gk_back" ]
+    }
+  },
+  "Fragments": {
+    "gk_menu": [
+      {
+        "LabelKey": "dialogue.hallows_eve_gravekeeper.opt.enter",
+        "Style": "accept",
+        "Open": { "Type": "Dungeon", "Dungeon": "Hallows_Eve_Graveyard" }
+      },
+      {
+        "LabelKey": "dialogue.hallows_eve_gravekeeper.opt.enter_hard",
+        "Style": "accept",
+        "Conditions": [
+          { "Type": "Requires", "Requires": { "Quests": [ "hallows_eve_old_jack_horseman" ] } }
+        ],
+        "Open": { "Type": "Dungeon", "Dungeon": "Hallows_Eve_Graveyard_Hard" }
+      },
+      {
+        "LabelKey": "dialogue.hallows_eve_gravekeeper.opt.who",
+        "Style": "neutral",
+        "Goto": "who"
+      },
+      {
+        "LabelKey": "dialogue.hallows_eve_gravekeeper.opt.farewell",
+        "Style": "farewell",
+        "Close": true
+      }
+    ],
+    "gk_back": [
+      {
+        "LabelKey": "dialogue.hallows_eve_gravekeeper.opt.back",
+        "Style": "neutral",
+        "Goto": "menu"
+      },
+      {
+        "LabelKey": "dialogue.hallows_eve_gravekeeper.opt.farewell",
+        "Style": "farewell",
+        "Close": true
+      }
+    ]
+  }
+}

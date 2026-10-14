@@ -1,7 +1,7 @@
 {
   "$Comment": [
-    "What sitting down to the feast pays, once a year. The plate with the year on it is not here: the",
-    "yearly keepsake achievement hands it over, so it can carry the year.",
+    "What sitting down to the feast pays, once a year. The plate with the year on it is not here: it is",
+    "the quest's own first Claim row, whose StackNameArg @run names it for the year's run.",
     "",
     "The first roll always pays festival tokens and two meat pies to take home, the feast's leftovers.",
     "The second roll is a chance on top; Chance is a percent from 0 to 100. Favor rides the quest's own",

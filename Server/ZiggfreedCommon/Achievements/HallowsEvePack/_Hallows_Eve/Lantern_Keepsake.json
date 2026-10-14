@@ -6,9 +6,9 @@
     "copy and @year in the title reads as that year. Feat files it with the feats, earned only.",
     "The hallowed tag counts it toward The Hallowed, and season_keepsake toward the Seasons of Orbis",
     "ladder, which counts each season's keepsake once: that tag goes on a season's yearly keepsake",
-    "and on nothing else. The reward is a Claim, like every achievement reward but a title or a",
-    "token: the lantern waits on the achievements page until the player collects it, so a full bag",
-    "never costs anyone the year's keepsake."
+    "and on nothing else. It pays nothing itself: the Hollow Lantern is The Hollow Lantern quest's own",
+    "pay (Quests/HallowsEvePack/_Hallows_Eve/Old_Jack_Lantern.json), collected at Old Jack with the",
+    "rest, so a player never has to visit the achievements page for the year's keepsake."
   ],
   "Parent": "Hallows_Eve_Hallowed_Base",
   "Text": {
@@ -30,18 +30,5 @@
       "MatchMode": "EXACT",
       "Amount": 1
     }
-  },
-  "Rewards": {
-    "Claim": [
-      {
-        "Kind": "Item",
-        "Params": {
-          "Item": "Hallows_Eve_Hollow_Lantern",
-          "Count": "1",
-          "StackNameKey": "keepsake.hallows_eve_hollow_lantern.name",
-          "StackNameArg": "@year"
-        }
-      }
-    ]
   }
 }

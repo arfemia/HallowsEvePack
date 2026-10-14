@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Gravekeeper: a still, invulnerable lantern wraith who stands near Old Jack in the Forgotten Temple while Hallow's Eve runs and sends whoever presses F into the Headless Horseman's graveyard. Press F runs ZigPlacementInteract, which opens what the placement standing him authored under Interact (NpcPlacements/Hallows_Eve_Gravekeeper_Temple.json opens the Dungeon destination for Hallows_Eve_Graveyard); the Open on that action is the same destination for a Gravekeeper nothing placed, such as one spawned by command. The press-F prompt under Hint is read literally by the engine, which is why this is a full role body rather than a Variant of the library's quest-giver template. BusyStates is left out on purpose: entering is per player, so a second player is never turned away while the first is on the way in. Appearance is the game's own lantern wraith; NameTranslationKey and Hint are in this pack's npcs.lang.",
+  "$Comment": "The Gravekeeper: a still, invulnerable lantern wraith who stands near Old Jack in the Forgotten Temple while Hallow's Eve runs, talks, and sends whoever asks into the Headless Horseman's graveyard. Press F runs ZigPlacementInteract, which opens what the placement standing him authored under Interact (NpcPlacements/Hallows_Eve_Gravekeeper_Temple.json opens his conversation, Dialogues/HallowsEvePack/Hallows_Eve_Gravekeeper.json); the Dialogue on that action is the same conversation for a Gravekeeper nothing placed, such as one spawned by command. This is a full role body rather than a Variant of the library's quest-giver template because the template's worn armour and stance are not his. Hint is the library's shared talk prompt (npcs.Zig_QuestGiver.hint), read literally by the engine. BusyStates is left out on purpose: a conversation is per player, so a second player is never turned away while the first is talking. Appearance is the game's own lantern wraith; NameTranslationKey is in this pack's npcs.lang.",
   "Type": "Generic",
   "StartState": "Idle",
   "DefaultNPCAttitude": "Ignore",
@@ -93,7 +93,7 @@
       {
         "Continue": true,
         "Sensor": { "Type": "Any" },
-        "Actions": [ { "Type": "SetInteractable", "Interactable": true, "Hint": "npcs.Hallows_Eve_Gravekeeper.hint" } ]
+        "Actions": [ { "Type": "SetInteractable", "Interactable": true, "Hint": "npcs.Zig_QuestGiver.hint" } ]
       },
       {
         "Sensor": { "Type": "HasInteracted" },
@@ -102,7 +102,7 @@
             "Sensor": { "Type": "Not", "Sensor": { "Type": "State", "State": "$Interaction" } },
             "Actions": [
               { "Type": "LockOnInteractionTarget" },
-              { "Type": "ZigPlacementInteract", "Open": { "Type": "Dungeon", "Dungeon": "Hallows_Eve_Graveyard" } },
+              { "Type": "ZigPlacementInteract", "Dialogue": "Hallows_Eve_Gravekeeper" },
               { "Type": "State", "State": "$Interaction" }
             ]
           }

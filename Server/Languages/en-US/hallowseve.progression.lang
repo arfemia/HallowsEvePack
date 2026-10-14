@@ -1,6 +1,6 @@
-# Hallow's Eve progression: Old Jack's questline, dailies, board and stall, his conversation and
-# the trick-or-treat line, the season's achievements and titles, its two reputations (Old Jack's
-# Favor and the Hallowed, id Hallows_Eve_Hallowed) and its Almanac page.
+# Hallow's Eve progression: Old Jack's questline, dailies, board and stall, his conversation, the
+# Gravekeeper's conversation and the trick-or-treat line, the season's achievements and titles, its
+# two reputations (Old Jack's Favor and the Hallowed, id Hallows_Eve_Hallowed) and its Almanac page.
 # Keys are written bare: the library finds each one by its tail, whatever this file is called.
 # Numbers ride {0} and come from the content files, so a retune never touches a translation.
 
@@ -14,19 +14,19 @@ quest.category.hallows_eve = Hallow's Eve
 quest.hallows_eve_old_jack_meet.title = Lanterns in the Temple
 quest.hallows_eve_old_jack_meet.flavor = It's the season again, so I'm back in the Forgotten Temple with my lanterns. Any Forgotten Temple Gateway will get you there. Come and find me. I could use a hand.
 quest.hallows_eve_old_jack_1.title = Pumpkin Patch
-quest.hallows_eve_old_jack_1.flavor = Pick a pumpkin this month and now and then one comes up cold and glowing. Bring me a few of those Hallowed ones.
+quest.hallows_eve_old_jack_1.flavor = My lanterns are carved from Hallowed Pumpkins, and I'm running low. Pick pumpkins by hand and bring me the cold, glowing ones.
 quest.hallows_eve_old_jack_2.title = Lantern Work
-quest.hallows_eve_old_jack_2.flavor = Any pumpkin packed with powder makes a fine Lantern Bomb. Throw a few at something that has it coming, then tell me how they burned.
+quest.hallows_eve_old_jack_2.flavor = A pumpkin packed with powder keeps the dead back better than any lantern. Throw a few Lantern Bombs, then tell me how they burned.
 quest.hallows_eve_old_jack_3.title = Ghouls on the Steps
-quest.hallows_eve_old_jack_3.flavor = Hollow Ghouls crawl out of the old graves after dark, hungry. Put a few back in the ground before they reach the temple steps.
+quest.hallows_eve_old_jack_3.flavor = My lanterns keep the ghouls off the steps, but only just. Put a few Hollow Ghouls back in the ground after dark.
 quest.hallows_eve_old_jack_4.title = Ectoplasm Run
-quest.hallows_eve_old_jack_4.flavor = The Lost Souls drift about until somebody lets them go. Set a few free and bring me the Ectoplasm they leave behind; my lanterns drink the stuff.
+quest.hallows_eve_old_jack_4.flavor = Ectoplasm is what burns in my lanterns, and a Lost Soul leaves some behind when it's set free. Free a few and bring it to me.
 quest.hallows_eve_old_jack_5.title = Cursed Stone
-quest.hallows_eve_old_jack_5.flavor = Break stone this month, any stone, and now and then a Cursed Geode falls out of it. Crack a few open; there's good in them, under the curse.
+quest.hallows_eve_old_jack_5.flavor = Stone gives up Cursed Geodes this time of year, if you break enough of it. Crack a few open and keep whatever falls out.
 quest.hallows_eve_old_jack_lantern.title = The Hollow Lantern
-quest.hallows_eve_old_jack_lantern.flavor = Every year the Hollow Lantern goes out, and somebody has to light it again. Knock down the skeletons wearing my face, then bring me what the lantern needs.
+quest.hallows_eve_old_jack_lantern.flavor = I've got the Horseman's ember. Now your Hollow Lantern wants a Hallowed Pumpkin, some Ectoplasm, and the skeletons wearing my face knocked flat.
 quest.hallows_eve_old_jack_horseman.title = The Rider
-quest.hallows_eve_old_jack_horseman.flavor = The Headless Horseman rides his graveyard every night, and I'd sleep better if somebody knocked him off that horse. The Gravekeeper next to me will take you in. Bring friends, and cut his head down when it flies off.
+quest.hallows_eve_old_jack_horseman.flavor = The Gravekeeper beside me knows the way into the Horseman's graveyard. Go in with friends and knock him out of the saddle.
 quest.hallows_eve_old_jack_horseman_hard.title = Fire for the Lantern
 quest.hallows_eve_old_jack_horseman_hard.flavor = Your lantern wants a flame that won't go out, and the Horseman carries one. Ask the Gravekeeper for the hard ride, beat him, and bring me his ember.
 
@@ -89,7 +89,7 @@ quest.hallows_eve_board_wraiths.flavor = Something with a scythe walks the mines
 quest.hallows_eve_board_ectoplasm.title = Lantern Fuel
 quest.hallows_eve_board_ectoplasm.flavor = My lanterns are running low on Ectoplasm. The Lost Souls leave it behind when you set them free, so bring me a good lot of it.
 quest.hallows_eve_board_pumpkins.title = Cold Pumpkins
-quest.hallows_eve_board_pumpkins.flavor = The lanterns want more Hallowed Pumpkins than my patch gives me. Pick pumpkins by hand and bring me the cold ones.
+quest.hallows_eve_board_pumpkins.flavor = The lanterns want more Hallowed Pumpkins than I can find on my own. Pick pumpkins by hand and bring me the cold ones.
 quest.hallows_eve_board_carving.title = Bench Carving
 quest.hallows_eve_board_carving.flavor = Every doorstep wants a lantern, and I can only carve so fast. Carve some Jack Lanterns at a Carving Bench, a pumpkin and a bit of charcoal apiece.
 
@@ -106,7 +106,7 @@ quest.hallows_eve_errand_ectoplasm.flavor = One of my lanterns is guttering. A l
 quest.hallows_eve_errand_bombs.title = Bomb Practice
 quest.hallows_eve_errand_bombs.flavor = Got some Lantern Bombs going spare? Throw a few for me. I like the noise.
 quest.hallows_eve_errand_geodes.title = Cracked Stone
-quest.hallows_eve_errand_geodes.flavor = Crack some Cursed Geodes open for me. I like to hear them pop.
+quest.hallows_eve_errand_geodes.flavor = Crack some Cursed Geodes open while you're out. Somebody has to.
 quest.hallows_eve_errand_pumpkins.title = Spare Pumpkins
 quest.hallows_eve_errand_pumpkins.flavor = A lantern's gone soft on the steps. Bring me some Hallowed Pumpkins when you're passing.
 
@@ -135,11 +135,11 @@ achievement.hallows_eve_geode_cracker.desc = Crack {0} Cursed Geodes.
 achievement.hallows_eve_jacks_guest.title = Jack's Guest {0}
 achievement.hallows_eve_jacks_guest.desc = Take part in Hallow's Eve.
 achievement.hallows_eve_the_hallowed.title = The Hallowed {0}
-achievement.hallows_eve_the_hallowed.desc = Earn all of this year's Hallow's Eve achievements.
+achievement.hallows_eve_the_hallowed.desc = Earn every achievement on this list during one Hallow's Eve.
 
 # ---- The Hallowed title ----
 title.hallows_eve_hallowed.name = The Hallowed
-title.hallows_eve_hallowed.flavor = Earned all of one year's Hallow's Eve achievements.
+title.hallows_eve_hallowed.flavor = Earned every achievement The Hallowed asks for in one Hallow's Eve.
 title.hallows_eve_hallowed.display = {0} the Hallowed
 
 # ---- Jack's Confidant: the achievement and its title ----
@@ -190,7 +190,7 @@ reputation.hallows_eve_old_jack.earn.board = Take contracts from his board.
 reputation.hallows_eve_old_jack.earn.talk = Stop by for a word once a day.
 reputation.hallows_eve_old_jack.earn.gear = Wear a Jack Helm, and everything you do for him earns more favor while you have it on.
 reputation.hallows_eve_hallowed.name = The Hallowed
-reputation.hallows_eve_hallowed.flavor = The Hallowed keep the dead where they belong. Put down what climbs out of the graves at night and they take notice.
+reputation.hallows_eve_hallowed.flavor = The Hallowed see that the dead get their rest, and the Gravekeeper at the Horseman's graveyard is one of them. Put down what climbs out of the graves at night and they take notice.
 factor.hallows_eve_hallowed.friendly = Friendly with the Hallowed
 factor.hallows_eve_hallowed.honored = Honored with the Hallowed
 factor.hallows_eve_hallowed.revered = Revered with the Hallowed
@@ -212,11 +212,11 @@ almanac.hallows_eve.geodes_cracked = Cursed Geodes cracked
 # ---- Old Jack's conversation ----
 dialogue.hallows_eve_old_jack.first_words.text = Don't mind the head. It's a pumpkin, and it's been on there a long while.\nI'm Old Jack. Every autumn the dead get restless, so I come back to the <color is="#ffd97a">Forgotten Temple</color> with my lanterns. I could use a pair of hands that aren't carved.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Pleased to meet you, Jack.
-dialogue.hallows_eve_old_jack.meet.text = You found the place, then. Good.\nI'm Old Jack. Everybody who finds me gets a <b>welcome</b>, and you haven't had yours yet.
+dialogue.hallows_eve_old_jack.meet.text = You found the place, then. Don't mind the head, it's a pumpkin.\nI'm Old Jack. The dead get restless this time of year, and my lanterns keep them off these steps. Everybody who finds me gets a <b>welcome</b>, and you haven't had yours yet.
 dialogue.hallows_eve_old_jack.meet.opt.accept = Thanks, Jack.
-dialogue.hallows_eve_old_jack.board_fresh.text = There's fresh work on my board, some for the dark and some for the daylight. It pays in Hallow Sweets, and my stall takes those.
+dialogue.hallows_eve_old_jack.board_fresh.text = There's fresh work on my board, some for the dark and some for the daylight. Ask me what needs doing. It pays in sweets, and my stall takes those.
 dialogue.hallows_eve_old_jack.menu.text = The lanterns are lit and the ghouls are out walking. What do you need?
-dialogue.hallows_eve_old_jack.patch_offer.text = Pick a pumpkin this month and every so often one comes up cold to the touch, glowing a little. <b>Hallowed Pumpkins</b>, I call those.\nBring me a few. My lanterns won't stay lit without them.
+dialogue.hallows_eve_old_jack.patch_offer.text = See the lanterns on these steps? Every one of them started as a pumpkin that came up cold to the touch, glowing a little. <b>Hallowed Pumpkins</b>, I call those.\nBring me a few and I'll carve some more.
 dialogue.hallows_eve_old_jack.patch_offer.opt.accept = I'll find you some pumpkins.
 dialogue.hallows_eve_old_jack.patch_ready.text = <b>Hallowed Pumpkins</b>. Cold as a cellar step.\nI've put a few Lantern Bombs in with your pay. Go and see how they burn.
 dialogue.hallows_eve_old_jack.patch_ready.opt.turnin = Here are the pumpkins.
@@ -226,7 +226,7 @@ dialogue.hallows_eve_old_jack.ghouls_offer.text = <b>Hollow Ghouls</b> crawl out
 dialogue.hallows_eve_old_jack.ghouls_offer.opt.accept = I'll deal with the ghouls.
 dialogue.hallows_eve_old_jack.souls_offer.text = Poor things, the <b>Lost Souls</b>. They drift about until somebody lets them go.\nSet a few free and bring me the <b>Ectoplasm</b> they leave behind. My lanterns drink the stuff.
 dialogue.hallows_eve_old_jack.souls_offer.opt.accept = I'll set them free.
-dialogue.hallows_eve_old_jack.geodes_offer.text = Break stone this month, any stone, and now and then a <b>Cursed Geode</b> falls out of it.\nCrack a few open. There's good in them, under the curse.
+dialogue.hallows_eve_old_jack.geodes_offer.text = A <b>Cursed Geode</b> is a lump of stone with something bright moving inside. Ugly things.\nCrack a few open. There's good in them, under the curse.
 dialogue.hallows_eve_old_jack.geodes_offer.opt.accept = I'll crack some open.
 dialogue.hallows_eve_old_jack.rider_offer.text = You've heard the hooves at night? That's the <b>Headless Horseman</b>, riding his graveyard.\nI'd sleep better if somebody knocked him off that horse.
 dialogue.hallows_eve_old_jack.rider_offer.opt.accept = I'll knock him off it.
@@ -235,32 +235,32 @@ dialogue.hallows_eve_old_jack.ember_offer.opt.accept = I'll bring you the ember.
 dialogue.hallows_eve_old_jack.active_ember.text = He only gives that ember up on the hard ride. Ask the <color is="#ffd97a">Gravekeeper</color> for the <b>hard ride</b>, and bring more friends than last time.\nWhen he falls, the <b>ember</b> drops for whoever I sent after it.
 dialogue.hallows_eve_old_jack.ember_ready.text = That's his fire, all right. Burned through your pocket, by the look of it.\nI'll keep it safe till your lantern's ready. Then we light it.
 dialogue.hallows_eve_old_jack.ember_ready.opt.turnin = Here's the ember.
-dialogue.hallows_eve_old_jack.daily_offer.text = I've a few small jobs that come round every day. Take what you like.
+dialogue.hallows_eve_old_jack.daily_offer.text = I've got a few small jobs that come round every day. Take what you like.
 dialogue.hallows_eve_old_jack.daily_offer.opt.souls = I'll see to the souls.
 dialogue.hallows_eve_old_jack.daily_offer.opt.pumpkins = I'll bring pumpkins.
 dialogue.hallows_eve_old_jack.daily_offer.opt.geodes = I'll crack some geodes.
-dialogue.hallows_eve_old_jack.lantern_offer.text = Every year the <b>Hollow Lantern</b> goes out, and every year somebody has to light it again.\nSome of the skeletons out there wear my face. Knock a few <b>Jack Skeletons</b> down, then bring me a <b>Hallowed Pumpkin</b> and some <b>Ectoplasm</b> to fill it.
+dialogue.hallows_eve_old_jack.lantern_offer.text = Your errands are done, and I've got the Horseman's ember. So this year we light a <b>Hollow Lantern</b> for you.\nSome of the skeletons out there wear my face, and I don't care for it. Knock a few <b>Jack Skeletons</b> down, then bring me a <b>Hallowed Pumpkin</b> to carve and some <b>Ectoplasm</b> to burn in it.
 dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Let's light it.
-dialogue.hallows_eve_old_jack.lantern_ready.text = A <b>Hallowed Pumpkin</b>, and <b>Ectoplasm</b> to fill it. The skeletons with my face are down in the grass where they belong.\nThere. The Hollow Lantern's lit, and it's yours to keep. Take the shield too, it goes with the helm. Come back next year and we'll light another.
+dialogue.hallows_eve_old_jack.lantern_ready.text = A <b>Hallowed Pumpkin</b>, and <b>Ectoplasm</b> to burn in it. The skeletons with my face are down in the grass where they belong.\nThere. The ember took. Your Hollow Lantern's lit, and it's yours to keep. Take this shield as well: my stall sells the helm, and the Horseman wears the rest of the set. Come back next year and we'll light another.
 dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = Here's the pumpkin, and the Ectoplasm.
 dialogue.hallows_eve_old_jack.active_pumpkins.text = Pumpkins grow wild in the <color is="#ffd97a">autumn woods</color>, and the <color is="#ffd97a">Kweebecs</color> keep them in their gardens. Pick them by hand and every so often there's a <b>Hallowed Pumpkin</b> among them. The <b>Jack Skeletons</b> drop them too, after dark.
-dialogue.hallows_eve_old_jack.active_bombs.text = Throw the <b>Lantern Bombs</b> from your pay at anything that has it coming. Run short and my stall has more, and the <b>Jack Skeletons</b> drop a few after dark.
+dialogue.hallows_eve_old_jack.active_bombs.text = Throw the <b>Lantern Bombs</b> from your pay at whatever comes for you after dark. Run short and my stall has more, and the <b>Jack Skeletons</b> drop a few.
 dialogue.hallows_eve_old_jack.active_night.text = The dead walk after dark, out in the wild and away from any torch. Gone by dawn.\nA <b>Lost Soul</b> leaves <b>Ectoplasm</b> when you set it free, and a <b>Jack Skeleton</b> sometimes drops a <b>Hallowed Pumpkin</b>.
 dialogue.hallows_eve_old_jack.active_stone.text = Break <b>stone</b>, <b>ore</b> most of all, and now and then a <b>Cursed Geode</b> falls out. Hold one in your hand and crack it open.
 dialogue.hallows_eve_old_jack.ready_generic.text = That looks done to me. Let's see it.
 dialogue.hallows_eve_old_jack.ready_generic.opt.turnin = It's done.
-dialogue.hallows_eve_old_jack.lantern_lit.text = The Hollow Lantern's still burning. Keeps the worst of the dark off the steps.\nWhat do you need?
-dialogue.hallows_eve_old_jack.sweets.text = Sweets are what I pay in, and my own wares take them, from a Lantern Bomb to a head like mine.\nI pay them for my jobs and the work on my board. Ask anybody you talk to for a trick or treat and you'll get a few. Beat the <b>Headless Horseman</b> in his <color is="#ffd97a">graveyard</color> and you'll find some waiting for you too.
-dialogue.hallows_eve_old_jack.who_are_you.text = Old Jack. I kept a farm once, a long way from here. Then one October I didn't go home, and I've come back every October since.\nEvery year I light a Hollow Lantern to keep the dead off these steps. They burn out by November. Don't ask me about the head.
-dialogue.hallows_eve_old_jack.horseman.text = The Headless Horseman. He rides his own graveyard every night of Hallow's Eve, and he doesn't like visitors.\nIf you want a look, the Gravekeeper standing next to me will take you in. Bring friends. And when his head flies off, cut it down, or he can't be hurt.
-dialogue.hallows_eve_old_jack.horseman_beaten.text = So you've beaten him. It won't keep him down: he's back in the saddle every time somebody goes in.\nGo after the <b>Headless Horseman</b> again. Your first win each day leaves his daily Claim and his Hoard under Claims in your menu, now and then with a piece of his old armour, or one that's still burning.
+dialogue.hallows_eve_old_jack.lantern_lit.text = That's this year's Hollow Lantern lit. Set it out somewhere the dead can see it.\nWhat do you need?
+dialogue.hallows_eve_old_jack.sweets.text = My stall takes them for everything on it, from a Lantern Bomb to a head like mine.\nI pay them for my jobs and the work on my board. Ask anybody you talk to for a trick or treat and you'll get a few. Beat the <b>Headless Horseman</b> in his <color is="#ffd97a">graveyard</color> and you'll find some waiting for you too.
+dialogue.hallows_eve_old_jack.who_are_you.text = Old Jack. I kept a farm once, a long way from here. Then one October I didn't go home, and I've come back every October since.\nMy lanterns keep the dead off these steps, and every year I light a Hollow Lantern with anybody who sees my errands through. Don't ask me about the head.
+dialogue.hallows_eve_old_jack.horseman.text = The <b>Headless Horseman</b>. He rides his own graveyard every night of Hallow's Eve, and he's the one thing out there my lanterns don't frighten.\nThe <color is="#ffd97a">Gravekeeper</color> next to me will take you in. Bring friends, and when his head flies off, cut it down, or he can't be hurt.
+dialogue.hallows_eve_old_jack.horseman_beaten.text = So you knocked him off that horse. It won't keep him down: he's back in the saddle every time somebody goes in.\nGo after the <b>Headless Horseman</b> again if you like. Your first win each day leaves his daily Claim and his Hoard under Claims in your menu, now and then with a piece of his old armour, or one that's still burning.
 dialogue.hallows_eve_old_jack.harvest_moon.text = See that moon? Harvest Moon. A few nights a year the dead get restless under it, and the graves empty out.\nIf you want work, tonight's the night. I'll be up till it sets.
 dialogue.hallows_eve_old_jack.opt.quests = What needs doing?
 dialogue.hallows_eve_old_jack.opt.shop = Let's see your stall.
 dialogue.hallows_eve_old_jack.opt.sweets = What are the sweets for?
 dialogue.hallows_eve_old_jack.opt.standing = How do we stand?
 dialogue.hallows_eve_old_jack.opt.almanac = Show me the Almanac.
-dialogue.hallows_eve_old_jack.opt.horseman = Who's the rider I keep hearing about?
+dialogue.hallows_eve_old_jack.opt.horseman = Tell me about the Horseman.
 dialogue.hallows_eve_old_jack.opt.who = Who are you?
 dialogue.hallows_eve_old_jack.opt.harvest = What's a Harvest Moon?
 dialogue.hallows_eve_old_jack.opt.back = Something else.
@@ -268,6 +268,17 @@ dialogue.hallows_eve_old_jack.opt.farewell = Goodnight, Jack.
 
 # ---- Trick-or-treat, the line every conversation gets ----
 dialogue.hallows_eve_trick_or_treat.opt.knock = Trick or treat.
+
+# ---- The Gravekeeper's conversation (he never contracts) ----
+dialogue.hallows_eve_gravekeeper.menu.text = The Horseman's <color is="#ffd97a">graveyard</color> is behind me, and he is riding it tonight. Nothing in there rests while he does.\nSay the word and I will take you in. Bring friends.
+dialogue.hallows_eve_gravekeeper.who.text = I keep this graveyard so the dead in it can rest. I am one of the <b>Hallowed</b>, and we put down whatever will not.\nThe dead stir under a full moon, and on Hallow's Eve they hardly sleep at all. The <b>Headless Horseman</b> never rests, so somebody has to keep knocking him down.
+dialogue.hallows_eve_gravekeeper.hard_open.text = You knocked him off his horse. He has not forgotten it.\nThere is a <b>hard ride</b> now, for anyone who comes back. He hits harder on it, and what he drops there, he drops nowhere else.
+dialogue.hallows_eve_gravekeeper.ember.text = Jack sent you for <b>the Horseman's Ember</b>. He only carries it on the <b>hard ride</b>.\nWhen he falls, it drops for every one of you Jack sent after it. Nobody else will find it.
+dialogue.hallows_eve_gravekeeper.opt.enter = Take me in.
+dialogue.hallows_eve_gravekeeper.opt.enter_hard = Take me on the hard ride.
+dialogue.hallows_eve_gravekeeper.opt.who = Who are you?
+dialogue.hallows_eve_gravekeeper.opt.back = Something else.
+dialogue.hallows_eve_gravekeeper.opt.farewell = Goodnight.
 
 # ---- Achievements across the years, and the Keeper of Lanterns title ----
 achievement.hallows_eve_old_friend.title = Old Friend

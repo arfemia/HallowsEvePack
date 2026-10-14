@@ -24,7 +24,7 @@ notify.hallows_eve_pumpkin_found = A Hallowed Pumpkin, glowing in your pack.
 
 # ---- The Headless Horseman's fight ----
 notify.hallows_eve_horseman_unhorsed = The Horseman is thrown from the saddle!
-notify.hallows_eve_horseman_head_off = His head flies free! Strike it down and he can bleed again.
+notify.hallows_eve_horseman_head_off = His head flies free! Cut it down and he can be hurt again.
 notify.hallows_eve_horseman_head_down = The head falls. Cut him down!
 notify.hallows_eve_horseman_head_returned = His head returns to him, and his wounds close.
 notify.hallows_eve_horseman_wrath = The Horseman burns with rage!

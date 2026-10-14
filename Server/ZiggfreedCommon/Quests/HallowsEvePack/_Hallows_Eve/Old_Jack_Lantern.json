@@ -1,7 +1,11 @@
 {
   "$Comment": [
-    "The last step of Old Jack's questline: light the Hollow Lantern. Finishing it earns that year's",
-    "keepsake achievement, hallows_eve_lantern_keepsake, which hands over the Hollow Lantern itself.",
+    "The last step of Old Jack's questline: light the Hollow Lantern. Its pay holds the Hollow Lantern",
+    "itself, collected at Old Jack with the rest. The first Claim row is the lantern: StackNameArg @run",
+    "reads as the label of the Hallow's Eve run this quest is paid for, which for a yearly event is its",
+    "year, and StackNameKey, keepsake.hallows_eve_hollow_lantern.name, is stamped into every lantern",
+    "handed over and read back from the item, so never rename that key. Finishing it also earns that",
+    "year's keepsake achievement, hallows_eve_lantern_keepsake, for its points.",
     "",
     "Repeat.PerRun brings this one quest back once in each Hallow's Eve (Times is how often one run",
     "takes it), so a returning player lights a new lantern next October and earns that year's",
@@ -67,6 +71,8 @@
   },
   "Rewards": {
     "Claim": [
+      { "Kind": "Item", "Params": { "Item": "Hallows_Eve_Hollow_Lantern", "Count": "1",
+        "StackNameKey": "keepsake.hallows_eve_hollow_lantern.name", "StackNameArg": "@run" } },
       { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Lantern_Pay" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 500 } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 100 } },
