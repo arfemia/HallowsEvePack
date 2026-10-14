@@ -34,6 +34,16 @@ quest.hallows_eve_jack_daily_pumpkins.flavor = The lanterns burn through Hallowe
 quest.hallows_eve_jack_daily_geodes.title = Geodes for Jack
 quest.hallows_eve_jack_daily_geodes.flavor = Crack a couple of Cursed Geodes for me. My hands are too stiff for it these days.
 
+# ---- What Old Jack's quests pay: the name on the quest, and the line under it on hover ----
+lootable.hallows_eve_meet_pay.title = Old Jack's Welcome
+lootable.hallows_eve_meet_pay.flavor = A few sweets to say hello.
+lootable.hallows_eve_chain_pay.title = Old Jack's Pay
+lootable.hallows_eve_chain_pay.flavor = What Old Jack pays for each job he gives you.
+lootable.hallows_eve_daily_pay.title = Old Jack's Daily Pay
+lootable.hallows_eve_daily_pay.flavor = What Old Jack pays for a day's work.
+lootable.hallows_eve_lantern_pay.title = Old Jack's Thanks
+lootable.hallows_eve_lantern_pay.flavor = What Old Jack gives each year for lighting the Hollow Lantern.
+
 # ---- Steps worded for this pack ----
 objective.hallows_eve.meet_jack = Find Old Jack in the Forgotten Temple
 objective.hallows_eve.throw_bombs = Throw {0} Lantern Bombs

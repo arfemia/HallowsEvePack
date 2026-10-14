@@ -8,9 +8,17 @@
     "throws can start the moment the step before it is claimed. The last pays festival tokens, which",
     "every season pays. Sweets and tokens pay through the Currency reward kind, since a counter",
     "wallet has no item to hand over. A companion mod adds rolls of its own with a file that names",
-    "this table in ContributesTo."
+    "this table in ContributesTo.",
+    "",
+    "Text names the reward on a quest (Old Jack's Pay instead of Loot Bundle) and gives its hover a",
+    "line; ListContents has the hover list what this table pays, a companion mod's rolls included."
   ],
   "Name": "Hallows_Eve_Chain_Pay",
+  "Text": {
+    "TitleKey": "lootable.hallows_eve_chain_pay.title",
+    "FlavorKey": "lootable.hallows_eve_chain_pay.flavor"
+  },
+  "ListContents": true,
   "Rolls": [
     {
       "Grants": {

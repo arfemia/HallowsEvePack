@@ -3,9 +3,18 @@
     "What each of Old Jack's three dailies pays. Every roll is read on its own: the first and the",
     "last always pay, the two between are chances on top. Chance is a percent from 0 to 100. Sweets",
     "and festival tokens (what every season pays) pay through the Currency reward kind; a companion",
-    "mod adds rolls with a file naming this table in ContributesTo."
+    "mod adds rolls with a file naming this table in ContributesTo.",
+    "",
+    "Text names the reward on a quest (Old Jack's Daily Pay instead of Loot Bundle) and gives its",
+    "hover a line; ListContents has the hover list what this table pays, a companion mod's rolls",
+    "included."
   ],
   "Name": "Hallows_Eve_Daily_Pay",
+  "Text": {
+    "TitleKey": "lootable.hallows_eve_daily_pay.title",
+    "FlavorKey": "lootable.hallows_eve_daily_pay.flavor"
+  },
+  "ListContents": true,
   "Rolls": [
     {
       "Grants": {

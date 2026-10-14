@@ -6,9 +6,18 @@
     "The first roll always pays sweets and a Jack Shield, so everyone who lights the lantern can",
     "finish the Hallowed set; Old Jack's stall sells more shields to anyone.",
     "The second roll is a chance on top; Chance is a percent from 0 to 100. The last always pays",
-    "festival tokens, which every season pays, through the Currency reward kind."
+    "festival tokens, which every season pays, through the Currency reward kind.",
+    "",
+    "Text names the reward on the quest (Old Jack's Thanks instead of Loot Bundle) and gives its",
+    "hover a line; ListContents has the hover list what this table pays, a companion mod's rolls",
+    "included."
   ],
   "Name": "Hallows_Eve_Lantern_Pay",
+  "Text": {
+    "TitleKey": "lootable.hallows_eve_lantern_pay.title",
+    "FlavorKey": "lootable.hallows_eve_lantern_pay.flavor"
+  },
+  "ListContents": true,
   "Rolls": [
     {
       "Grants": {

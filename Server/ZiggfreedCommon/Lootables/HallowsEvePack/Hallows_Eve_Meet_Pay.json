@@ -5,9 +5,18 @@
     "pays this table through its Claim bucket: the sweets wait in the quest until the player collects",
     "them, and collecting them at Old Jack leads straight on to Pumpkin Patch's offer. A companion mod",
     "adds its own rolls to this table with a file of its own that names it in ContributesTo, so",
-    "nothing here has to change."
+    "nothing here has to change.",
+    "",
+    "Text names the reward on the quest (Old Jack's Welcome instead of Loot Bundle) and gives its",
+    "hover a line; ListContents has the hover list what this table pays, a companion mod's rolls",
+    "included."
   ],
   "Name": "Hallows_Eve_Meet_Pay",
+  "Text": {
+    "TitleKey": "lootable.hallows_eve_meet_pay.title",
+    "FlavorKey": "lootable.hallows_eve_meet_pay.flavor"
+  },
+  "ListContents": true,
   "Rolls": [
     {
       "Grants": {
