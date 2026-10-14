@@ -1,5 +1,5 @@
 {
-  "$Comment": "Hallow's Eve in the Almanac: the season's name and picture, its yearly keepsake, and the tallies it keeps. The file name is the calendar event id. Each stat line counts one kind of moment; LiveOnly false keeps the every-season tally running all year, for the bombs and geodes a player still holds after the event. Hero.Composition is the banner at the top of the season's page: each item's own icon drawn at X and Y (pixels from the top-left of the 962 x 240 plate) and Size (a square side up to 128; 64, 96 and 128 read best), over the Background colour. Keep the plate left of about x 450 clear for the title, status and dates. Gradient paints the sky from its Top colour down to its Bottom one in place of the flat Background, and Glow lays a soft round light under the items, its square box placed by X, Y and Size the way an item's is. Sections lays out the page below its top in the order written: the tallies, the Headless Horseman's banner and his Hoard's grid, the season's items grid, the keepsake shelf, the achievements and the links. The banner is a 906 wide plate Height tall, composed the way the top is (Composition, items placed by X, Y and Size on that plate), with its title and line on the left (keep the plate left of about x 440 clear for them) and its button on the right (keep x 660 and beyond clear): it points players to the Gravekeeper next to Old Jack, and its button opens Records, where his fight's records sit under Boss Fights. A grid (Collection.Items, at most 45, nine a row) shows items a player can find; a Hidden one shows '?' until the player has held it once, and SourceKey is the tooltip line saying where it comes from. The Hoard's grid lists what the Horseman's Hoard pays (ZiggfreedCommon/Lootables/HallowsEvePack/Hallows_Eve_Horseman_Chase.json), so change the two together. Add, drop or reorder a slot here; an item the server does not have is left out. Horseman_Down counts his fight's wins (ENCOUNTER_DEFEATED names the fight's script) and Old Jack's rider line reads it as the ziggfreedcommon:counter key hallows_eve/horseman_down; Horseman_Heads counts the flying heads a player kills.",
+  "$Comment": "Hallow's Eve in the Almanac: the season's name and picture, its yearly keepsake, and the tallies it keeps. The file name is the calendar event id. Each stat line counts one kind of moment; LiveOnly false keeps the every-season tally running all year, for the bombs and geodes a player still holds after the event. Hero.Composition is the banner at the top of the season's page: each item's own icon drawn at X and Y (pixels from the top-left of the 962 x 240 plate) and Size (a square side up to 128; 64, 96 and 128 read best), over the Background colour. Keep the plate left of about x 450 clear for the title, status and dates. Gradient paints the sky from its Top colour down to its Bottom one in place of the flat Background, and Glow lays a soft round light under the items, its square box placed by X, Y and Size the way an item's is. Sections lays out the page below its top in the order written: the tallies, the Headless Horseman's banner and his Hoard's grid, the season's items grid, the keepsake shelf, the achievements and the links. The banner is a 906 wide plate Height tall, composed the way the top is (Composition, pictures placed by X, Y and Size on that plate), with its title and line on the left (keep the plate left of x 584 clear for them): it points players to the Gravekeeper next to Old Jack. A picture names an Item, or an Npc role whose portrait it draws instead (the still of the model the role wears, up to Size 128), here the Horseman himself among his armour. A banner's button would sit on its right (x 662 to 882), where he stands, so this one has none. A grid (Collection.Items, at most 45, nine a row) shows items a player can find; a Hidden one shows '?' until the player has held it once, and SourceKey is the tooltip line saying where it comes from. The Hoard's grid lists what the Horseman's Hoard pays (ZiggfreedCommon/Lootables/HallowsEvePack/Hallows_Eve_Horseman_Chase.json), so change the two together; its button opens Records, where his fight's records sit under Boss Fights. Add, drop or reorder a slot here; an item the server does not have is left out. Horseman_Down counts his fight's wins (ENCOUNTER_DEFEATED names the fight's script) and Old Jack's rider line reads it as the ziggfreedcommon:counter key hallows_eve/horseman_down; Horseman_Heads counts the flying heads a player kills.",
   "Text": {
     "TitleKey": "almanac.hallows_eve.title",
     "FlavorKey": "almanac.hallows_eve.flavor"
@@ -33,22 +33,19 @@
         "Height": 140,
         "Composition": {
           "Gradient": { "Top": "#0B0E1C", "Bottom": "#3A1A14" },
-          "Glow": { "Color": "#D2691E", "X": 432, "Y": -64, "Size": 240 },
+          "Glow": { "Color": "#D2691E", "X": 615, "Y": -60, "Size": 260 },
           "Items": [
-            { "Item": "Furniture_Village_Tombstone", "X": 556, "Y": 4, "Size": 104 },
-            { "Item": "Hallows_Eve_Horseman_Gauntlets", "X": 446, "Y": 30, "Size": 64 },
-            { "Item": "Hallows_Eve_Horseman_Greaves", "X": 588, "Y": 50, "Size": 72 },
-            { "Item": "Hallows_Eve_Horseman_Breastplate", "X": 484, "Y": 8, "Size": 112 },
-            { "Item": "Hallows_Eve_Lantern_Bomb_Rare", "X": 548, "Y": 78, "Size": 56 }
+            { "Item": "Furniture_Village_Tombstone", "X": 588, "Y": 40, "Size": 88 },
+            { "Item": "Hallows_Eve_Horseman_Breastplate", "X": 630, "Y": 22, "Size": 72 },
+            { "Npc": "Hallows_Eve_Headless_Horseman", "X": 681, "Y": 6, "Size": 128 },
+            { "Item": "Hallows_Eve_Horseman_Gauntlets", "X": 790, "Y": 14, "Size": 56 },
+            { "Item": "Hallows_Eve_Horseman_Greaves", "X": 806, "Y": 58, "Size": 72 },
+            { "Item": "Hallows_Eve_Lantern_Bomb_Rare", "X": 770, "Y": 96, "Size": 40 }
           ]
         },
         "Text": {
           "TitleKey": "npcs.Hallows_Eve_Headless_Horseman.name",
           "FlavorKey": "almanac.hallows_eve.horseman.line"
-        },
-        "Button": {
-          "TextKey": "almanac.hallows_eve.horseman.button",
-          "Destination": { "Type": "Records" }
         }
       }
     },
@@ -62,8 +59,14 @@
           { "Item": "Hallows_Eve_Lantern_Bomb_Rare", "SourceKey": "almanac.hallows_eve.source.bomb_rare" },
           { "Item": "Hallows_Eve_Horseman_Breastplate", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.hoard" },
           { "Item": "Hallows_Eve_Horseman_Gauntlets", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.hoard" },
-          { "Item": "Hallows_Eve_Horseman_Greaves", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.hoard" }
-        ]
+          { "Item": "Hallows_Eve_Horseman_Greaves", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.hoard" },
+          { "Item": "Furniture_Village_Tombstone", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.hoard" },
+          { "Item": "Furniture_Human_Ruins_Lantern", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.hoard" }
+        ],
+        "Button": {
+          "TextKey": "almanac.hallows_eve.horseman.button",
+          "Destination": { "Type": "Records" }
+        }
       }
     },
     {

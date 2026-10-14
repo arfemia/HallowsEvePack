@@ -290,7 +290,7 @@ almanac.hallows_eve.source.hoard = Sometimes in the Horseman's Hoard, paid for y
 # ---- The Almanac page's Headless Horseman banner and his Hoard ----
 almanac.hallows_eve.horseman.line = The Gravekeeper next to Old Jack takes you in. Bring friends.
 almanac.hallows_eve.horseman.button = Boss fight records
-almanac.hallows_eve.hoard.line = Your first win over the Headless Horseman each day leaves his Hoard under Claims in your menu: always a Spectral Lantern Bomb, and sometimes a piece of his armour.
+almanac.hallows_eve.hoard.line = Your first win over the Headless Horseman each day leaves his Hoard under Claims in your menu: always a Spectral Lantern Bomb, and sometimes a piece of his armour, a Tombstone or a Lost Civilization Lantern.
 
 # ---- Book breadcrumb ----
 achievement.category.seasons.hallows_eve = Hallow's Eve
