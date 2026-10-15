@@ -6,7 +6,8 @@
     "Cap is the most favor earning can reach: Exalted's floor, so Jack's Own is as far as it goes.",
     "Ranks renames the library's ranks for Old Jack alone; a rank left out keeps the library's name.",
     "Order places him on the Reputation page. Favor comes from the Reputation rewards on his quests",
-    "and board contracts and from his daily board line. The Jack Helm and the Burning Jack Helm raise",
+    "and board contracts, from his daily board line, and from the Horseman's Hoard on the normal ride",
+    "(Lootables/HallowsEvePack/Hallows_Eve_Horseman_Chase.json). The Jack Helm and the Burning Jack Helm raise",
     "each of those gains by a percent while worn, through the stat ReputationGain_Hallows_Eve_Old_Jack",
     "(Entity/Stats), which the library finds by this file's id; the Cap still applies. Earn lists",
     "the ways to earn favor, one lang key a line, for the How to earn block on the Reputation page."
@@ -30,6 +31,7 @@
       "reputation.hallows_eve_old_jack.earn.quests",
       "reputation.hallows_eve_old_jack.earn.board",
       "reputation.hallows_eve_old_jack.earn.talk",
+      "reputation.hallows_eve_old_jack.earn.horseman",
       "reputation.hallows_eve_old_jack.earn.gear"
     ]
   }

@@ -1,0 +1,29 @@
+{
+  "$Comment": [
+    "Defense XP added to the Horseman's Hoard (the Hallows_Eve_Horseman_Chase table), paid with it for",
+    "the first win on the normal ride each day, on a server running MMO Skill Tree, beside",
+    "Old Jack's Favor, which that table pays itself. The hard ride's Hoard pays double",
+    "(Mmo_Hallows_Eve_Horseman_Chase_Hard.json).",
+    "",
+    "ContributesTo folds this roll into that table without touching its file, so the table's own pay",
+    "is tuned there alone. Requires takes this file out on a server without MMO Skill Tree, so the",
+    "table pays exactly what its own file says there; always write it with Min 1. A roll with no",
+    "Chance always pays, and Amount is XP before any boost."
+  ],
+  "Name": "Mmo_Hallows_Eve_Horseman_Chase",
+  "ContributesTo": "Hallows_Eve_Horseman_Chase",
+  "Requires": {
+    "Factors": [
+      { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 }
+    ]
+  },
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [
+          { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "4000" } }
+        ]
+      }
+    }
+  ]
+}

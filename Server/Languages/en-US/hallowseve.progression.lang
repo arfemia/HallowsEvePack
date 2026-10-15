@@ -191,6 +191,7 @@ factor.hallows_eve_old_jack.exalted = Jack's Own with Old Jack
 reputation.hallows_eve_old_jack.earn.quests = Do his errands and his daily jobs.
 reputation.hallows_eve_old_jack.earn.board = Take contracts from his board.
 reputation.hallows_eve_old_jack.earn.talk = Stop by for a word once a day.
+reputation.hallows_eve_old_jack.earn.horseman = Beat the Headless Horseman on the normal ride. Your first win each day earns his favor, collected with the Horseman's Hoard.
 reputation.hallows_eve_old_jack.earn.gear = Wear a Jack Helm, and everything you do for him earns more favor while you have it on.
 reputation.hallows_eve_hallowed.name = The Hallowed
 reputation.hallows_eve_hallowed.flavor = The Hallowed see that the dead get their rest, and the Gravekeeper at the Horseman's graveyard is one of them. Put down what climbs out of the graves at night and they take notice.
@@ -201,6 +202,7 @@ factor.hallows_eve_hallowed.exalted = Exalted with the Hallowed
 reputation.hallows_eve_hallowed.earn.kills = Put down the creatures that crawl out at night.
 reputation.hallows_eve_hallowed.earn.jack = Old Jack's daily jobs and board contracts count too.
 reputation.hallows_eve_hallowed.earn.treats = Ask everyone you talk to for a trick or treat, once a day each.
+reputation.hallows_eve_hallowed.earn.horseman = Beat the Headless Horseman on the hard ride. Your first hard win each day earns their favor, collected with his Hoard.
 reputation.hallows_eve_hallowed.earn.gear = Carry a Jack Shield, and you earn their favor faster while it is equipped.
 notify.hallows_eve_hallowed_cache = A cache from the Hallowed, for keeping the dead down.
 
@@ -320,8 +322,8 @@ almanac.hallows_eve.source.jack_shield = Carved at a Carving Bench, or bought at
 almanac.hallows_eve.source.burning_helm = Sold at Old Jack's shop once the Hallowed revere you or Old Jack trusts you completely.
 almanac.hallows_eve.source.flaming_shield = Sold at Old Jack's shop once the Hallowed hold you in the highest regard.
 almanac.hallows_eve.source.stall = Sold at Old Jack's shop.
-almanac.hallows_eve.source.grave_candle = Sold at Old Jack's shop. The Gravekeeper burns them to open the Headless Horseman's graveyard for your party.
-almanac.hallows_eve.source.burning_grave_candle = Sold at Old Jack's shop once he counts you a Regular. The Gravekeeper burns them to open the Headless Horseman's hard ride for your party.
+almanac.hallows_eve.source.grave_candle = Sold at Old Jack's shop, and given back by the Horseman's Hoard: sometimes one after your first win each day, and a few after your first hard win. The Gravekeeper burns them to open his graveyard for your party, and once Old Jack counts you a Regular he trades a Burning Grave Candle for a handful.
+almanac.hallows_eve.source.burning_grave_candle = Sold at Old Jack's shop once he counts you a Regular, or traded there for a handful of Grave Candles. The Gravekeeper burns them to open the Headless Horseman's hard ride for your party.
 almanac.hallows_eve.source.stall_or_lab = Sold at Old Jack's shop as your standing grows, or built at the Goblin Tinkerer's Workbench in the goblin lab.
 almanac.hallows_eve.source.festival_stall = Sold on the festival shelf at Old Jack's shop.
 almanac.hallows_eve.source.keepsake = Old Jack's keepsake, given once a year when you finish his story.
@@ -330,7 +332,8 @@ almanac.hallows_eve.source.bomb_rare = Always in the Horseman's Hoard, and somet
 almanac.hallows_eve.source.bomb_epic_horseman = Rarely dropped by Geode Wraiths or found inside Cursed Geodes and the Hallowed's cache, and sometimes in the Headless Horseman's daily Claim. You can also carve one at a Carving Bench, or buy a couple a day at Old Jack's shop.
 almanac.hallows_eve.source.hoard = Sometimes in the Horseman's Hoard, paid for your first win over him each day.
 almanac.hallows_eve.source.hoard_hard = Only in the Horseman's Hoard on the hard ride, paid for your first hard win over him each day. Once you've finished The Rider, ask the Gravekeeper for the hard ride.
-almanac.hallows_eve.source.eternal_candle = Rarely in the Horseman's Hoard, paid for your first win over him each day, and far more often on the hard ride. Carry it and the Gravekeeper opens his graveyard for your party without burning a Grave Candle.
+almanac.hallows_eve.source.hoard_normal = Only in the Horseman's Hoard on the normal ride, paid for your first win over him there each day.
+almanac.hallows_eve.source.eternal_candle = Now and then in the Horseman's Hoard on the hard ride, paid for your first hard win over him each day. Carry it and the Gravekeeper opens his normal graveyard for your party without burning a Grave Candle.
 almanac.hallows_eve.source.horseman_daily = Found now and then in the Headless Horseman's daily Claim, paid for your first win over him each day.
 almanac.hallows_eve.source.burning_helm_trade = Bought at Old Jack's shop by trading in a Jack Helm from your bag, once the Hallowed revere you or Old Jack trusts you completely. Sometimes found in the Horseman's Hoard.
 almanac.hallows_eve.source.flaming_shield_trade = Bought at Old Jack's shop by trading in a Jack Shield from your bag, once the Hallowed hold you in the highest regard. Sometimes found in the Horseman's Hoard.
@@ -338,7 +341,7 @@ almanac.hallows_eve.source.flaming_shield_trade = Bought at Old Jack's shop by t
 # ---- The Almanac page's Headless Horseman banner and his Hoard ----
 almanac.hallows_eve.horseman.line = The Gravekeeper next to Old Jack takes you in. Bring friends.
 almanac.hallows_eve.horseman.button = Boss fight records
-almanac.hallows_eve.hoard.line = Your first win each day leaves his Hoard in the chest where he falls, and under Claims: always a Spectral Lantern Bomb, sometimes a piece of the Flaming Hallowed set, a Tombstone or a Lost Civilization Lantern, and once in a while an Eternal Candle. His plain armour comes in his daily Claim.
+almanac.hallows_eve.hoard.line = Your first win each day leaves his Hoard in the chest where he falls, and under Claims: a Spectral Lantern Bomb and favor with Old Jack, and sometimes a Grave Candle, a piece of the Flaming Hallowed set, a Tombstone or a Lost Civilization Lantern. The hard ride's Hoard holds a few Grave Candles and the Hallowed's favor, better odds at the flaming pieces, his flaming breastplate and, once in a while, an Eternal Candle. His plain armour comes in his daily Claim.
 
 # ---- Book breadcrumb ----
 achievement.category.seasons.hallows_eve = Hallow's Eve

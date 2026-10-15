@@ -13,7 +13,8 @@
     "Exalted's floor, Beyond's Rewards wait for the player to collect them on the Reputation page: here",
     "the loot table Hallows_Eve_Hallowed_Cache. Its ranks open offers at Old Jack's stall: Friendly the",
     "Spyglass and the Goblin Repair Kits, Honored the Scrap Glider, Revered the Burning Jack Helm and",
-    "Exalted the Flaming Jack Shield.",
+    "Exalted the Flaming Jack Shield. The Horseman's Hoard on the hard ride pays this favor for the first",
+    "hard win each day (Lootables/HallowsEvePack/Hallows_Eve_Horseman_Chase_Hard.json).",
     "Earn lists the ways to earn favor, one lang key a line, for the How to earn block on the",
     "Reputation page."
   ],
@@ -35,6 +36,7 @@
       "reputation.hallows_eve_hallowed.earn.kills",
       "reputation.hallows_eve_hallowed.earn.jack",
       "reputation.hallows_eve_hallowed.earn.treats",
+      "reputation.hallows_eve_hallowed.earn.horseman",
       "reputation.hallows_eve_hallowed.earn.gear"
     ]
   }

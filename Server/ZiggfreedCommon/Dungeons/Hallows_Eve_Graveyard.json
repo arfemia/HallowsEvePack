@@ -24,7 +24,7 @@
     "way-in label, which shows it, with it.",
     "",
     "Keys lists items that open the gate without being spent: a player carrying an Eternal Candle",
-    "(Hallows_Eve_Eternal_Candle, a rare roll in the Horseman's Hoard) anywhere in the bag, storage or",
+    "(Hallows_Eve_Eternal_Candle, a rare roll in the Horseman's Hoard on the hard ride) anywhere in the bag, storage or",
     "hotbar opens an area for their party, keeps it, and burns no Grave Candle even holding some. The",
     "confirm screen then shows the Eternal Candle and says it is not used up. Only this graveyard names",
     "it; the hard graveyard has no Keys, so the hard ride always takes its candle. Add an item id to",
