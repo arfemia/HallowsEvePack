@@ -1,0 +1,12 @@
+{
+  "$Comment": "The Headless Horseman's fire ward: every form of him (mounted, on foot and his flying Head, normal and hard) carries it through its combat config's EntityEffects, so fire hurts him at half. A Lantern Bomb's blast and its burn both deal Fire, so both land at half. It is the game's Immunity_Fire with a smaller Amount, and since it is not Immunity_Fire itself, burns still catch on him. Amount is the share of Fire damage he shrugs off (0.5 is half; 1 would make him immune again).",
+  "Infinite": true,
+  "DamageResistance": {
+    "Fire": [
+      {
+        "Amount": 0.5,
+        "CalculationType": "Percent"
+      }
+    ]
+  }
+}

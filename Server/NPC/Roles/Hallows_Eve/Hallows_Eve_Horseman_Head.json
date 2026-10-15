@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Horseman's Head, flown off his shoulders mid-fight: a Variant of Template_Flying_Aggressive carrying the game's Incandescent skull's own Modify, with its look, its health and a small lantern bomb (Root_Hallows_Eve_Horseman_Head_Bomb) in place of the skull's spores. While it flies, the Horseman's body cannot be hurt; killing it is how players break that, which the fight's script watches for. It only exists inside his fight. Never burning (_CombatConfig), DropList Empty. Any key the template does not declare makes the game refuse the whole role.",
+  "$Comment": "The Horseman's Head, flown off his shoulders mid-fight: a Variant of Template_Flying_Aggressive carrying the game's Incandescent skull's own Modify, with its look, its health and a small lantern bomb (Root_Hallows_Eve_Horseman_Head_Bomb) in place of the skull's spores. While it flies, the Horseman's body cannot be hurt; killing it is how players break that, which the fight's script watches for. It only exists inside his fight. Fire hurts it at half (Hallows_Eve_Horseman_Fire_Ward in _CombatConfig), DropList Empty. Any key the template does not declare makes the game refuse the whole role.",
   "Type": "Variant",
   "Reference": "Template_Flying_Aggressive",
   "Modify": {
@@ -26,7 +26,7 @@
     "CombatSeekStopDistance": 4,
     "TargetRange": 30,
     "_CombatConfig": {
-      "EntityEffects": ["Immunity_Fire"]
+      "EntityEffects": ["Hallows_Eve_Horseman_Fire_Ward"]
     }
   }
 }

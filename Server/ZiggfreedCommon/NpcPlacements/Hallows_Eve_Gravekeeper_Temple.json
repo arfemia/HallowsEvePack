@@ -11,7 +11,9 @@
     "raises his health past anything that can be dealt. Where finds the temple by its GameplayConfig",
     "id. Anchor is the temple's arrival spot plus an offset, on Old Jack's line a few steps further",
     "along negative X; to move him, edit Anchor.WorldSpawn.Offset (small enough to stay off the walls)",
-    "and Yaw to turn him, then look at the spot in game. Interact.Dialogue is what pressing F opens."
+    "and Yaw to turn him, then look at the spot in game. Identity.Role is his role, which gives him his",
+    "look and the library's quest-giver body. Interact.Dialogue is what pressing F opens; it wins over",
+    "the quest list that role opens for a Gravekeeper nothing placed."
   ],
   "Name": "Hallows_Eve_Gravekeeper_Temple",
   "Enabled": true,

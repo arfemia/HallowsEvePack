@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Headless Horseman in the saddle: the game's skeletal horse, saddled, with his headless burnt rider astride it holding a lit jack-o'-lantern out in front. Parent Horse_Skeleton brings the horse's look, its hitbox, its icon and every animation, its Fly ones included, which is what lets him ride the air. The rider and his lantern are attachments that hang from the horse's Saddle-Attachment node, as the game's own Saddle does, so they move with the horse; the rider holds one seated pose (tools/derive_art.py writes both). DefaultAttachments lists the saddle too, since a list here replaces the parent's whole. The flame burns where the rider's head would be: Saddle-Attachment carries it, raised by PositionOffset in blocks. MinScale and MaxScale fix his size; Light is the lantern's glow, a model light that moves with him, each hex digit a red, green or blue level from 0 to f.",
+  "$Comment": "The Headless Horseman in the saddle: the game's skeletal horse, saddled, with his headless burnt rider astride it holding a lit jack-o'-lantern out in front. Parent Horse_Skeleton brings the horse's look, its hitbox, its icon and every animation. He rides the air on his role's flying movement, and while airborne the game plays the horse's Fly sets, which on the horse are a glide with its legs held still; AnimationSets here replaces just those four sets (a set named here replaces the parent's set of that name, the rest still come from the horse), so the horse walks while he hovers (FlyIdle), gallops while he flies (Fly and FlyFast) and walks backward when he backs off (FlyBackward), with no hoof sounds in the air. Point a set at another of the horse's animations, or change its Speed, to retune his stride. The rider and his lantern are attachments that hang from the horse's Saddle-Attachment node, as the game's own Saddle does, so they move with the horse; the rider holds one seated pose (tools/derive_art.py writes both). DefaultAttachments lists the saddle too, since a list here replaces the parent's whole. The flame burns where the rider's head would be: Saddle-Attachment carries it, raised by PositionOffset in blocks. MinScale and MaxScale fix his size; Light is the lantern's glow, a model light that moves with him, each hex digit a red, green or blue level from 0 to f.",
   "Parent": "Horse_Skeleton",
   "MinScale": 1.15,
   "MaxScale": 1.15,
@@ -17,6 +17,36 @@
       "Texture": "Items/Hallows_Eve/Jack_Lantern/Jack_Lantern_Texture.png"
     }
   ],
+  "AnimationSets": {
+    "FlyIdle": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Horse/Animations/Default/Walk.blockyanim"
+        }
+      ]
+    },
+    "Fly": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Horse/Animations/Default/Run.blockyanim"
+        }
+      ]
+    },
+    "FlyFast": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Horse/Animations/Default/Run.blockyanim"
+        }
+      ]
+    },
+    "FlyBackward": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Horse/Animations/Default/Walk_Backward.blockyanim"
+        }
+      ]
+    }
+  },
   "Particles": [
     {
       "SystemId": "Campfire_New_Cartoon",
