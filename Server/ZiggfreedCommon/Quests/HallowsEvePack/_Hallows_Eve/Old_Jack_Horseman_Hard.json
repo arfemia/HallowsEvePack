@@ -1,0 +1,81 @@
+{
+  "$Comment": [
+    "Fire for the Lantern, the step of Old Jack's questline before the Hollow Lantern: ask the",
+    "Gravekeeper for the hard ride, bring the Headless Horseman down there, and bring Jack the",
+    "Horseman's Ember, which lights the lantern. The _Hallows_Eve folder makes the id",
+    "hallows_eve_old_jack_horseman_hard. Jack offers it on his ember_offer screen; while it is carried",
+    "his conversation opens on active_ember, and with the ember in the bag on ember_ready, where the",
+    "player hands it in.",
+    "",
+    "beat_hard counts a win over his hard fight's script (ENCOUNTER_DEFEATED, so it holds through his",
+    "change of form, for every player the fight credits). bring_ember comes after it (Order 2): a TURN_IN",
+    "handed in to Jack (TurnInNpcId giver, so no report-back step is added). Its Drop pays the step's",
+    "own Target, the Hallows_Eve_Horseman_Ember, to each credited player whose step is open when that",
+    "same win lands, Count at a time and never more than the step still needs, as a Claim collected on",
+    "the graveyard's results screen. Encounters names the fight whose win drops it; Chance is from 0",
+    "to 1.",
+    "",
+    "Requires opens it once a player has finished all five of Jack's errands and The Rider, and",
+    "collected each one's pay. Repeat.PerRun brings it back once in each Hallow's Eve, like The Rider",
+    "and the Hollow Lantern, which asks for it. Its Listing puts it on the hallows_eve_old_jack ladder",
+    "at Tier 7, after The Rider and before the Hollow Lantern; the Parent makes it a main quest.",
+    "",
+    "The Mmo_Xp row is MMO Skill Tree's: Defense XP for the fight, paid only where that mod runs. Its",
+    "own Requires, the hytale:mod_installed gate, leaves the row out on a server without it, unpaid and",
+    "unshown, and the rest of the quest pays."
+  ],
+  "Name": "Old_Jack_Horseman_Hard",
+  "Parent": "Hallows_Eve_Quest_Base",
+  "Text": {
+    "TitleKey": "quest.hallows_eve_old_jack_horseman_hard.title",
+    "FlavorKey": "quest.hallows_eve_old_jack_horseman_hard.flavor"
+  },
+  "Listing": {
+    "Icon": "Hallows_Eve_Horseman_Ember",
+    "SortOrder": 56,
+    "Chains": [ { "Id": "hallows_eve_old_jack", "Tier": 7 } ]
+  },
+  "Repeat": {
+    "PerRun": { "Event": "Hallows_Eve", "Times": 1 }
+  },
+  "Requires": {
+    "Quests": [
+      "hallows_eve_old_jack_1", "hallows_eve_old_jack_2", "hallows_eve_old_jack_3",
+      "hallows_eve_old_jack_4", "hallows_eve_old_jack_5", "hallows_eve_old_jack_horseman"
+    ]
+  },
+  "Objectives": {
+    "beat_hard": {
+      "Kind": "ENCOUNTER_DEFEATED",
+      "Target": "Hallows_Eve_Headless_Horseman_Encounter_Hard",
+      "MatchMode": "EXACT",
+      "Amount": 1,
+      "TextKey": "objective.hallows_eve.bring_down_horseman_hard",
+      "Order": 1
+    },
+    "bring_ember": {
+      "Kind": "TURN_IN",
+      "Target": "Hallows_Eve_Horseman_Ember",
+      "MatchMode": "EXACT",
+      "Amount": 1,
+      "TextKey": "objective.hallows_eve.bring_ember",
+      "Order": 2,
+      "TurnInNpcId": "giver",
+      "Drop": {
+        "Encounters": [ "Hallows_Eve_Headless_Horseman_Encounter_Hard" ],
+        "Chance": 1,
+        "Count": 1
+      }
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Chain_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 300 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 300 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 200 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "4000" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

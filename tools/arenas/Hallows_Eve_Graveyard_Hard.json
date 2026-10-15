@@ -1,0 +1,20 @@
+{
+  "$Comment": [
+    "The Headless Horseman's hard graveyard: the same source prefab and the same cells as",
+    "Hallows_Eve_Graveyard.json beside this file, with his hard fight's entity",
+    "(Hallows_Eve_Headless_Horseman_Encounter_Hard) on the open road south of the central plaza, his",
+    "hard spawn marker on the plaza's north side, and a vanilla Leave_Instance pad against the entrance",
+    "room's back wall, the way out. Move a cell in both specs together, so the two graveyards stay one",
+    "place. Cells count from the anchor."
+  ],
+  "Source": "tools/arenas/ziggy_halloween.prefab.zip",
+  "Output": "Server/Prefabs/Hallows_Eve/Hallows_Eve_Graveyard_Hard.prefab.json",
+  "StripSpawnMarkers": false,
+  "Encounter": { "Id": "Hallows_Eve_Headless_Horseman_Encounter_Hard", "At": [0, 1, 66] },
+  "Markers": [
+    { "Id": "Hallows_Eve_Headless_Horseman_Hard_Marker", "At": [0, 1, 46] }
+  ],
+  "Blocks": [
+    { "Name": "Leave_Instance", "At": [0, 1, -3] }
+  ]
+}

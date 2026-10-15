@@ -1,0 +1,47 @@
+{
+  "$Comment": [
+    "What the Horseman's Hoard on the hard ride (Rewards/Hallows_Eve/Hallows_Eve_Horseman_Chase_Hard)",
+    "pays. Every roll is read on its own: the first has no Chance, so it always pays two Spectral",
+    "Lantern Bombs and the Hoard is never empty; then the Horseman's flaming breastplate, which pays",
+    "from here and nowhere else; then the rest of the Flaming Hallowed set's pieces (the Burning Jack",
+    "Helm, his flaming gauntlets and greaves, and the Flaming Jack Shield) at twice the normal Hoard's",
+    "odds; the last two are the tombstone and the ruins lantern from his graveyard, which no recipe",
+    "makes. The normal Hoard is Hallows_Eve_Horseman_Chase.json beside this file, and the Almanac's",
+    "Hoard grid (ZiggfreedCommon/Almanac/HallowsEvePack/Hallows_Eve.json) lists what both pay, so",
+    "change them together. Chance is a percent from 0 to 100."
+  ],
+  "Name": "Hallows_Eve_Horseman_Chase_Hard",
+  "Rolls": [
+    {
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Lantern_Bomb_Rare", "Count": 2 } ] }
+    },
+    {
+      "Chance": { "Base": 10.0 },
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Flaming_Horseman_Breastplate", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 10.0 },
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Burning_Jack_Helm", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 10.0 },
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Flaming_Horseman_Gauntlets", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 10.0 },
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Flaming_Horseman_Greaves", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 10.0 },
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Flaming_Jack_Shield", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 15.0 },
+      "Grants": { "Items": [ { "Item": "Furniture_Village_Tombstone", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 15.0 },
+      "Grants": { "Items": [ { "Item": "Furniture_Human_Ruins_Lantern", "Count": 1 } ] }
+    }
+  ]
+}

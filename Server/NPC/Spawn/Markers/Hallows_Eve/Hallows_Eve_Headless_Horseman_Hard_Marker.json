@@ -1,0 +1,17 @@
+{
+  "$Comment": "The spot the Headless Horseman rides in from on the hard ride, in the saddle (Hallows_Eve_Headless_Horseman_Mounted_HM): Hallows_Eve_Headless_Horseman_Marker's twin, standing in his hard graveyard's prefab beside his hard fight's own entity. ManualTrigger means it never spawns him on its own: only his hard fight's script raises him, when players come near, and only while his last spawn is gone. RealtimeRespawn and RealtimeRespawnTime are the respawn form every marker must write; a marker that only fires on request never reads them. DeactivationDistance and DeactivationTime are wide so he is never packed back into the marker mid-fight.",
+  "Model": "NPC_Spawn_Marker",
+  "NPCs": [
+    {
+      "Name": "Hallows_Eve_Headless_Horseman_Mounted_HM",
+      "Weight": 100,
+      "RealtimeRespawnTime": 10
+    }
+  ],
+  "ExclusionRadius": 0,
+  "RealtimeRespawn": true,
+  "MaxDropHeight": 4,
+  "DeactivationDistance": 128,
+  "DeactivationTime": 150,
+  "ManualTrigger": true
+}

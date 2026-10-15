@@ -1,0 +1,19 @@
+{
+  "$Comment": "The Horseman's Ember, the quest item Old Jack asks for in Fire for the Lantern (hallows_eve_old_jack_horseman_hard): when the Headless Horseman falls on the hard ride, the quest step's own Drop pays it to each player the fight credits whose step is open, as a Claim they collect on the graveyard's results screen, and the player hands it to Jack. It wears the game's own fire essence (model, texture and icon) and its warm Light, so it needs no art of its own; Epic quality sets its frame apart from the essence. MaxStack 1, since the quest asks for one. It stays in the bag on death (DropOnDeath is left at its default, false), so a player who falls after the win keeps it.",
+  "TranslationProperties": {
+    "Name": "items.Hallows_Eve_Horseman_Ember.name",
+    "Description": "items.Hallows_Eve_Horseman_Ember.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Ingredient_Fire_Essence.png",
+  "Quality": "Epic",
+  "Categories": ["Items.Ingredients"],
+  "Model": "Resources/Ingredients/Essence.blockymodel",
+  "Texture": "Resources/Ingredients/Essence_Textures/Fire_Essence_Texture.png",
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {"Scale": 0.6, "Rotation": [0, 0, 0], "Translation": [0, -13]},
+  "Tags": {"Type": ["Ingredient"]},
+  "Scale": 0.8,
+  "Light": {"Color": "#310", "Radius": 1},
+  "ItemSoundSetId": "ISS_Items_Gems",
+  "MaxStack": 1
+}

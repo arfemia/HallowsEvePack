@@ -1,5 +1,5 @@
 {
-  "$Comment": "The first rung of the Headless Horseman's ladder: bring him down once during one season, in his graveyard behind Old Jack. ENCOUNTER_DEFEATED names his fight's encounter script, never a creature, so it holds through his change of form; every player the fight credits earns it at once, however many shared the kill. Each year's copy pays favor with the Hallowed and MMO Skill Tree's Mmo_Xp row in Claim, to collect on the achievements page; the row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that mod. The chain kills_hallows_eve_horseman ties the three rungs together in the book.",
+  "$Comment": "The first rung of the Headless Horseman's ladder: bring him down once during one season, in his graveyard behind Old Jack. ENCOUNTER_DEFEATED names his fight's encounter script, never a creature, so it holds through his change of form, and MatchMode PREFIX lets his hard ride (Hallows_Eve_Headless_Horseman_Encounter_Hard) count too; every player the fight credits earns it at once, however many shared the kill. Each year's copy pays favor with the Hallowed and MMO Skill Tree's Mmo_Xp row in Claim, to collect on the achievements page; the row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that mod. The chain kills_hallows_eve_horseman ties the three rungs together in the book.",
   "Parent": "Hallows_Eve_Hallowed_Base",
   "Text": {
     "TitleKey": "achievement.hallows_eve_horseman_down.title",
@@ -17,7 +17,7 @@
     "defeat-horseman": {
       "Kind": "ENCOUNTER_DEFEATED",
       "Target": "Hallows_Eve_Headless_Horseman_Encounter",
-      "MatchMode": "EXACT",
+      "MatchMode": "PREFIX",
       "Amount": 1
     }
   },

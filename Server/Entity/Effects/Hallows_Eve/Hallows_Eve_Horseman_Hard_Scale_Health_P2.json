@@ -1,0 +1,15 @@
+{
+  "$Comment": "Adds 1080 to the Headless Horseman's maximum health on the hard ride while his hard fight has at least 2 players in it: the hard twin of Hallows_Eve_Horseman_Scale_Health_P2. His hard fight's script applies it as he rises, one step per player up to 5, then refills him (Hallows_Eve_Horseman_Scale_TopUp). It stays on him for the whole fight, through his change from the saddle to his feet. Amount is the health one more player adds.",
+  "RawStatModifiers": {
+    "Health": [
+      {
+        "Amount": 1080,
+        "CalculationType": "Additive",
+        "Target": "Max"
+      }
+    ]
+  },
+  "OverlapBehavior": "Ignore",
+  "Infinite": true,
+  "RemovalBehavior": "Infinite"
+}

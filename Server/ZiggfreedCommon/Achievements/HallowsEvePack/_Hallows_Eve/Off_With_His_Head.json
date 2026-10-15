@@ -1,7 +1,8 @@
 {
   "$Comment": [
     "Cut down the Headless Horseman's flying head ten times during one season. KILL_ENTITY names the",
-    "Head's own role, Hallows_Eve_Horseman_Head, which only his fight raises, and counts for the player",
+    "Head's own role, Hallows_Eve_Horseman_Head (PREFIX, so the hard ride's Hallows_Eve_Horseman_Head_HM",
+    "counts too), which only his fight raises, and counts for the player",
     "who lands the killing blow; a head that flies back to him unharmed counts for nobody. The",
     "description's number comes from the criterion's Amount through @amount.",
     "",
@@ -24,7 +25,7 @@
     "cut-down-head": {
       "Kind": "KILL_ENTITY",
       "Target": "Hallows_Eve_Horseman_Head",
-      "MatchMode": "EXACT",
+      "MatchMode": "PREFIX",
       "Amount": 10
     }
   },

@@ -1,0 +1,35 @@
+{
+  "$Comment": "The Headless Horseman in the saddle on the hard ride, the form his hard fight (Hallows_Eve_Headless_Horseman_Encounter_Hard) opens with: Hallows_Eve_Headless_Horseman_Mounted written out again, as the game writes its own hard bosses, with more health, a bomb every 2 to 3 seconds, the hard name and the Hallows_Eve_Horseman_Hard_Mode effect, which makes what he throws hit harder. The hard fight swaps him to Hallows_Eve_Headless_Horseman_HM on foot and his health carries across, so MaxHealth here must equal that role's. Never burning, never shoved, DropList Empty since his reward is the Claims his fight pays. Any key the template does not declare makes the game refuse the whole role.",
+  "Type": "Variant",
+  "Reference": "Template_Flying_Aggressive",
+  "Modify": {
+    "DeathParticles": "Effect_Death_Flames",
+    "Appearance": "Hallows_Eve_Headless_Horseman_Mounted",
+    "DropList": "Empty",
+    "MaxHealth": 2160,
+    "IsMemory": false,
+    "NameTranslationKey": "npcs.Hallows_Eve_Headless_Horseman_HM.name",
+    "MotionFlyMinHeightAboveGround": 1,
+    "MotionFlyMaxHeightAboveGround": 6,
+    "MotionFlyMaxHorizontalSpeed": 9,
+    "MotionDesiredAltitudeCombat": [1, 3],
+    "MotionDesiredAltitudeSearch": [3, 6],
+    "ViewRange": 40,
+    "ViewSector": 360,
+    "HearingRange": 16,
+    "AlertedRange": 40,
+    "CombatBehaviorDistance": 30,
+    "CombatRelativeSpeedChase": 1,
+    "RangedAttack": "Root_Hallows_Eve_Horseman_Bomb",
+    "RangedAttackDistance": 18,
+    "RangedAttackAimingRange": [0.5, 0.5],
+    "RangedAttackPauseRange": [2, 3],
+    "CombatSeekSlowdownDistance": 5,
+    "CombatSeekStopDistance": 3,
+    "TargetRange": 30,
+    "KnockbackScale": 0,
+    "_CombatConfig": {
+      "EntityEffects": ["Immunity_Fire", "Hallows_Eve_Horseman_Hard_Mode"]
+    }
+  }
+}

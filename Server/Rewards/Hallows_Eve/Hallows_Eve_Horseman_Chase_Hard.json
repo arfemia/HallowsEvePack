@@ -1,0 +1,8 @@
+{
+  "$Comment": "The Horseman's Hoard on the hard ride, his hard fight's chase Claim: granted beside his hard daily Claim, rolled from Hallows_Eve_Horseman_Chase_Hard, which always pays something. It is not scaled by share (ShareScaled false), so everyone who fought him rolls the same odds, and Diminish pays the first hard win each day only. It is counted under the hard fight's own script and this reward's own id, apart from the normal Hoard, so a player can collect both on one day. TitleKey titles its row on the Claims tab (claim.hallows_eve_horseman_chase_hard in hallowseve.world.lang).",
+  "Type": "ZigClaim",
+  "Lootable": "Hallows_Eve_Horseman_Chase_Hard",
+  "Diminish": { "Steps": [1, 0], "Window": "Daily" },
+  "ShareScaled": false,
+  "TitleKey": "claim.hallows_eve_horseman_chase_hard"
+}

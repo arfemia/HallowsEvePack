@@ -1,0 +1,22 @@
+{
+  "$Comment": [
+    "What clearing the Headless Horseman's hard graveyard pays each player there at the end, beside",
+    "his hard Claims: the dungeon's Rewards (Dungeons/Hallows_Eve_Graveyard_Hard.json) roll it, full",
+    "the first hard clear each day and half on later ones, counted apart from the normal graveyard's",
+    "clear (Hallows_Eve_Graveyard_Clear.json). Every roll always pays. Sweets and festival tokens pay",
+    "through the Currency reward kind."
+  ],
+  "Name": "Hallows_Eve_Graveyard_Clear_Hard",
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "20" } } ]
+      }
+    },
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "2" } } ]
+      }
+    }
+  ]
+}

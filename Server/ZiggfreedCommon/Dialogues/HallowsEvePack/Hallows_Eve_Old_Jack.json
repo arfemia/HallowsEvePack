@@ -26,11 +26,12 @@
     "one screen per kind of work: active_pumpkins (Pumpkin Patch, Pumpkin Rounds), active_bombs",
     "(Lantern Work), active_night (Ghouls on the Steps, Ectoplasm Run, Restless Souls, and The Hollow",
     "Lantern, whose skeletons, Ectoplasm and pumpkin all come from the night) and active_stone (Cursed",
-    "Stone, Geodes for Jack). The Rider, his side quest, has no offer line (it is taken from his quest",
-    "list) and its Active screen is his rider line, horseman. An offer's answer takes its quest and",
-    "goes straight to that screen, so",
-    "the player hears what to do and where the moment they take it. Pumpkin Patch and the lantern",
-    "quest have hand-in lines of their own; the rest share",
+    "Stone, Geodes for Jack). The Rider is offered on rider_offer beside his errands, and its Active",
+    "screen is his rider line, horseman; Fire for the Lantern, the hard ride for the Horseman's Ember,",
+    "has ember_offer and active_ember, which sends the player to the Gravekeeper for the hard ride. An",
+    "offer's answer takes its quest and goes straight to that screen, so the player hears what to do",
+    "and where the moment they take it. Pumpkin Patch, Fire for the Lantern (ember_ready) and the",
+    "lantern quest have hand-in lines of their own; the rest share",
     "ready_generic, which opens his quest list for the hand-in. The three dailies share daily_offer,",
     "one answer each, shown while that daily is free to take. Then shows the lit-lantern line while",
     "this year's lantern burns (the lantern quest reads ON_COOLDOWN until it comes back next year).",
@@ -102,8 +103,9 @@
       "hallows_eve_old_jack_3": { "Offerable": "ghouls_offer", "Active": "active_night", "Ready": "ready_generic" },
       "hallows_eve_old_jack_4": { "Offerable": "souls_offer", "Active": "active_night", "Ready": "ready_generic" },
       "hallows_eve_old_jack_5": { "Offerable": "geodes_offer", "Active": "active_stone", "Ready": "ready_generic" },
-      "hallows_eve_old_jack_lantern": { "Offerable": "lantern_offer", "Active": "active_night", "Ready": "lantern_ready" },
       "hallows_eve_old_jack_horseman": { "Active": "horseman", "Ready": "ready_generic" },
+      "hallows_eve_old_jack_horseman_hard": { "Offerable": "ember_offer", "Active": "active_ember", "Ready": "ember_ready" },
+      "hallows_eve_old_jack_lantern": { "Offerable": "lantern_offer", "Active": "active_night", "Ready": "lantern_ready" },
       "hallows_eve_jack_daily_souls": { "Offerable": "daily_offer", "Active": "active_night", "Ready": "ready_generic" },
       "hallows_eve_jack_daily_pumpkins": { "Offerable": "daily_offer", "Active": "active_pumpkins", "Ready": "ready_generic" },
       "hallows_eve_jack_daily_geodes": { "Offerable": "daily_offer", "Active": "active_stone", "Ready": "ready_generic" }
@@ -261,6 +263,47 @@
       ],
       "IncludeOptions": [ "jack_back" ]
     },
+    "rider_offer": {
+      "TextKey": "dialogue.hallows_eve_old_jack.rider_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.hallows_eve_old_jack.rider_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "hallows_eve_old_jack_horseman" }, { "Goto": "horseman" } ]
+        }
+      ],
+      "IncludeOptions": [ "jack_back" ]
+    },
+    "ember_offer": {
+      "TextKey": "dialogue.hallows_eve_old_jack.ember_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.hallows_eve_old_jack.ember_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "hallows_eve_old_jack_horseman_hard" }, { "Goto": "active_ember" } ]
+        }
+      ],
+      "IncludeOptions": [ "jack_back" ]
+    },
+    "active_ember": {
+      "TextKey": "dialogue.hallows_eve_old_jack.active_ember.text",
+      "IncludeOptions": [ "jack_menu" ]
+    },
+    "ember_ready": {
+      "TextKey": "dialogue.hallows_eve_old_jack.ember_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.hallows_eve_old_jack.ember_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "hallows_eve_old_jack_horseman_hard" } ],
+          "Do": [
+            { "TurnIn": "hallows_eve_old_jack_horseman_hard" },
+            { "Open": { "Type": "Quests", "Highlight": "hallows_eve_old_jack_horseman_hard" } }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "jack_back" ]
+    },
     "lantern_offer": {
       "TextKey": "dialogue.hallows_eve_old_jack.lantern_offer.text",
       "Options": [
@@ -376,8 +419,21 @@
         "LabelKey": "dialogue.hallows_eve_old_jack.opt.horseman",
         "Style": "neutral",
         "Conditions": [
+          { "Type": "QuestState", "Quest": "hallows_eve_old_jack_1", "States": [ "COMPLETED", "ON_COOLDOWN" ] },
+          { "Type": "QuestState", "Quest": "hallows_eve_old_jack_horseman", "State": "NOT_STARTED" }
+        ],
+        "Goto": "rider_offer"
+      },
+      {
+        "LabelKey": "dialogue.hallows_eve_old_jack.opt.horseman",
+        "Style": "neutral",
+        "Conditions": [
           { "Type": "Not", "Of": [
             { "Type": "Factor", "Factor": "ziggfreedcommon:counter", "Param": "hallows_eve/horseman_down", "Min": 1 }
+          ] },
+          { "Type": "Not", "Of": [
+            { "Type": "QuestState", "Quest": "hallows_eve_old_jack_1", "States": [ "COMPLETED", "ON_COOLDOWN" ] },
+            { "Type": "QuestState", "Quest": "hallows_eve_old_jack_horseman", "State": "NOT_STARTED" }
           ] }
         ],
         "Goto": "horseman"
@@ -386,7 +442,11 @@
         "LabelKey": "dialogue.hallows_eve_old_jack.opt.horseman",
         "Style": "neutral",
         "Conditions": [
-          { "Type": "Factor", "Factor": "ziggfreedcommon:counter", "Param": "hallows_eve/horseman_down", "Min": 1 }
+          { "Type": "Factor", "Factor": "ziggfreedcommon:counter", "Param": "hallows_eve/horseman_down", "Min": 1 },
+          { "Type": "Not", "Of": [
+            { "Type": "QuestState", "Quest": "hallows_eve_old_jack_1", "States": [ "COMPLETED", "ON_COOLDOWN" ] },
+            { "Type": "QuestState", "Quest": "hallows_eve_old_jack_horseman", "State": "NOT_STARTED" }
+          ] }
         ],
         "Goto": "horseman_beaten"
       },

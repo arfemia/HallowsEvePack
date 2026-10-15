@@ -1,7 +1,9 @@
 {
-  "$Comment": "The Headless Horseman in either of his forms, in the saddle and on foot. His fight's script finds him through this group: to bind him when it raises him without a spawn marker, to keep hold of him when he changes form, and to clear him away when the fight resets. Add a role id here if he gains another form.",
+  "$Comment": "The Headless Horseman in each of his forms, in the saddle and on foot, on the normal ride and the hard one (the _HM roles). Both of his fights' scripts find him through this group: to bind him when it raises him without a spawn marker, to keep hold of him when he changes form, and to clear him away when the fight resets. Each graveyard runs one fight, so one group serves both. Add a role id here if he gains another form.",
   "IncludeRoles": [
     "Hallows_Eve_Headless_Horseman_Mounted",
-    "Hallows_Eve_Headless_Horseman"
+    "Hallows_Eve_Headless_Horseman",
+    "Hallows_Eve_Headless_Horseman_Mounted_HM",
+    "Hallows_Eve_Headless_Horseman_HM"
   ]
 }

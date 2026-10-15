@@ -80,6 +80,10 @@
       "Value": "npcs.Hallows_Eve_Headless_Horseman.name",
       "Description": "The lang key the boss bar shows, resolved on each player's own client."
     },
+    "BossBarHardMode": {
+      "Value": false,
+      "Description": "True marks the boss bar as a hard fight, the game's own hard-mode bar. A hard Variant of a boss sets it."
+    },
     "Music": {
       "Value": "Track_Z1D_Goblin_Boss",
       "Description": "The MusicContainer started for every member as the fight begins."
@@ -498,7 +502,8 @@
             },
             {
               "Type": "SetEncounterBossBar",
-              "Name": { "Compute": "BossBarName" }
+              "Name": { "Compute": "BossBarName" },
+              "HardMode": { "Compute": "BossBarHardMode" }
             },
             {
               "Type": "StartEncounterMusic",

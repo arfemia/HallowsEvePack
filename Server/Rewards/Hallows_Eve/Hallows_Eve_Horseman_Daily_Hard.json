@@ -1,0 +1,6 @@
+{
+  "$Comment": "The Headless Horseman's hard daily Claim: his hard fight's script grants it at his death, and each player who fought him finds one on their Claims tab, rolled from Hallows_Eve_Horseman_Daily_Hard and scaled by their share of the fight (ShareScaled). Diminish is left out, so the first hard win each day pays and later hard wins that day pay nothing; a roll that lands nothing never spends the day. It is counted under the hard fight's own script and this reward's own id, so it never spends the normal fight's daily Claim, and a player can collect both on one day. Its row is titled with the hard fight's own name.",
+  "Type": "ZigClaim",
+  "Lootable": "Hallows_Eve_Horseman_Daily_Hard",
+  "ShareScaled": true
+}

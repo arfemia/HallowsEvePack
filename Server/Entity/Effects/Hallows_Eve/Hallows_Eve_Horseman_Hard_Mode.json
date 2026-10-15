@@ -1,0 +1,12 @@
+{
+  "$Comment": "The Headless Horseman's hard ride, carried by each of his hard forms through its combat config's EntityEffects (Hallows_Eve_Headless_Horseman_Mounted_HM, CAE_Hallows_Eve_Headless_Horseman_HM, Hallows_Eve_Horseman_Head_HM), the way the game's hard Gobliterator carries Gobliterator_Hard_Mode: his own sword swings, his charge and every bomb he or his Head throws hit 40% harder. The volleys falling on the players are the fight's, not his, so they keep their own damage. It adds to his wrath (Hallows_Eve_Horseman_Wrath) in his last phase. Amount is the extra damage as a fraction.",
+  "OutgoingDamage": {
+    "Physical": [{"CalculationType": "Percent", "Amount": 0.4}],
+    "Elemental": [{"CalculationType": "Percent", "Amount": 0.4}],
+    "Projectile": [{"CalculationType": "Percent", "Amount": 0.4}]
+  },
+  "OverlapBehavior": "Ignore",
+  "Infinite": true,
+  "RemovalBehavior": "Infinite",
+  "Debuff": false
+}

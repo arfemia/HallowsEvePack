@@ -1,0 +1,48 @@
+{
+  "$Comment": [
+    "The binding row for the Headless Horseman's hard ride (EncounterManager/Hallows_Eve/",
+    "Hallows_Eve_Headless_Horseman_Encounter_Hard.json), the twin of his normal fight's row beside this",
+    "file. It names the fight with his hard name (NameKey, on the bar's Records tab and every line that",
+    "names it), binds the boss the library credits through the script's Boss slot in both his forms,",
+    "and keeps the hard fight's records on Records' Boss Fights under a bucket of their own,",
+    "hallows_eve_headless_horseman_hard, split by how many fought him (ByPartySize), so a hard win is",
+    "never ranked against a normal one.",
+    "",
+    "Participation and Feedback are the normal row's, so a share of his hard daily Claim is earned the",
+    "same way and the same banner and toasts teach the fight: damage to his body (DamageDealt, the",
+    "server rule's 1.0), to his Head and his Jack Skeletons (DamageToAdds), damage taken (DamageTaken)",
+    "and every second in the fight (Presence), each times its weight. Change a weight in both rows",
+    "together.",
+    "",
+    "Progression.Feats names the feat Lanterns_Only: a hard win where every hit on him came from a",
+    "Lantern Bomb, which the hard ride's Lamplighter achievement counts.",
+    "",
+    "It writes no Scale (his hard fight scales his health with the party itself) and no Loot (his hard",
+    "script pays his two hard Claims). Switch the row off with Enabled false, or from",
+    "mods/ziggfreedcommon/encounters.json under the key hallows_eve_headless_horseman_encounter_hard."
+  ],
+  "EncounterAsset": "Hallows_Eve_Headless_Horseman_Encounter_Hard",
+  "NameKey": "npcs.Hallows_Eve_Headless_Horseman_HM.name",
+  "Subject": {
+    "TargetSlot": "Boss"
+  },
+  "Participation": {
+    "DamageTaken": 0.5,
+    "Presence": 2.0,
+    "DamageToAdds": 2.5
+  },
+  "Leaderboard": {
+    "Bucket": "hallows_eve_headless_horseman_hard",
+    "ByPartySize": true
+  },
+  "Feedback": {
+    "Engaged": "Hallows_Eve_Horseman_Engaged",
+    "Defeated": "Hallows_Eve_Horseman_Defeated",
+    "Wiped": "Hallows_Eve_Horseman_Wiped"
+  },
+  "Progression": {
+    "Feats": {
+      "Lanterns_Only": { "Subject": { "OnlyHitTags": [ "Hallows_Eve_Lantern_Bomb" ] } }
+    }
+  }
+}

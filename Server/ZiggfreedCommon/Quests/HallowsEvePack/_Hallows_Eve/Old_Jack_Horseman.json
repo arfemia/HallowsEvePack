@@ -1,11 +1,13 @@
 {
   "$Comment": [
-    "Old Jack's side quest: go into the Horseman's Graveyard through the Gravekeeper beside him and",
-    "bring the Headless Horseman down, then report back. It is offered only on Old Jack's quest list",
-    "(his \"What needs doing?\"), never by a line of his conversation; while it is being carried, his",
-    "conversation opens on his rider line, which says where the Gravekeeper stands and how the head",
-    "works, and once it is done he asks for the hand-in. The _Hallows_Eve folder makes the id",
-    "hallows_eve_old_jack_horseman.",
+    "A step of Old Jack's questline: go into the Horseman's Graveyard through the Gravekeeper beside",
+    "him and bring the Headless Horseman down, then report back. He offers it beside his five errands,",
+    "on his rider_offer screen and on his quest list (his \"What needs doing?\"); while it is being",
+    "carried, his conversation opens on his rider line, which says where the Gravekeeper stands and",
+    "how the head works, and once it is done he asks for the hand-in. Its Listing puts it on the",
+    "hallows_eve_old_jack ladder after the errands (Tier 6), before the hard ride (Fire for the",
+    "Lantern, Tier 7), which asks for it, and the Hollow Lantern; the Parent makes it a main quest.",
+    "The _Hallows_Eve folder makes the id hallows_eve_old_jack_horseman.",
     "",
     "ENCOUNTER_DEFEATED names his fight's script, never a creature, so it holds through his change of",
     "form, and every player the fight credits counts the win, however many fought; only players",
@@ -29,7 +31,8 @@
   },
   "Listing": {
     "Icon": "Furniture_Village_Tombstone",
-    "SortOrder": 70
+    "SortOrder": 52,
+    "Chains": [ { "Id": "hallows_eve_old_jack", "Tier": 6 } ]
   },
   "Repeat": {
     "PerRun": { "Event": "Hallows_Eve", "Times": 1 }

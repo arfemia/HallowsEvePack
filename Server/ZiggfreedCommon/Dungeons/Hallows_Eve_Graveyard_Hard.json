@@ -1,0 +1,48 @@
+{
+  "$Comment": [
+    "The Headless Horseman's hard graveyard, the hard ride: the twin of Hallows_Eve_Graveyard.json",
+    "beside this file, with his hard fight in it. Every area of a copy pastes",
+    "Hallows_Eve/Hallows_Eve_Graveyard_Hard.prefab.json, the same night graveyard with his hard fight's",
+    "entity, his hard spawn marker and a way-out pad in its entrance room (tools/arena_markers.py writes",
+    "it from tools/arenas/Hallows_Eve_Graveyard_Hard.json), so every fresh paste stages a fresh hard",
+    "fight. EntryOffset lands an arriving party one block up, standing on the entrance room's floor.",
+    "",
+    "Whoever opens this dungeon decides who may enter it; the file asks nothing of the player, so it",
+    "stays free of any quest. Season keeps it closed outside Hallow's Eve. Share: one party to an area,",
+    "up to five players, and four areas to a copy. Complete names his hard fight, the script its prefab",
+    "runs, so the run clears when he falls, and Rewards rolls Hallows_Eve_Graveyard_Clear_Hard for each",
+    "member present as a Claim: full the first hard clear each day, half on later ones. Difficulty",
+    "files its runs and their returns under Hard, apart from the normal graveyard's. Text names it in",
+    "the reader's language (hallowseve.world.lang), and its GoalKey is the line each player reads as",
+    "they arrive."
+  ],
+  "Enabled": true,
+  "Share": {
+    "PartyLocked": true,
+    "MaxPlayers": 5,
+    "AreasPerCopy": 4
+  },
+  "Area": {
+    "Prefab": "Hallows_Eve/Hallows_Eve_Graveyard_Hard.prefab.json",
+    "EntryOffset": {
+      "Y": 1
+    }
+  },
+  "Complete": {
+    "Bosses": [ "Hallows_Eve_Headless_Horseman_Encounter_Hard" ]
+  },
+  "Rewards": {
+    "Lootable": "Hallows_Eve_Graveyard_Clear_Hard",
+    "Diminish": { "Steps": [1, 0.5], "Window": "Daily" }
+  },
+  "Copy": {
+    "EmptyCloseSeconds": 60
+  },
+  "Difficulty": "Hard",
+  "Season": "Hallows_Eve",
+  "Text": {
+    "NameKey": "dungeon.hallows_eve_graveyard_hard.name",
+    "DescriptionKey": "dungeon.hallows_eve_graveyard_hard.description",
+    "GoalKey": "dungeon.hallows_eve_graveyard_hard.goal"
+  }
+}

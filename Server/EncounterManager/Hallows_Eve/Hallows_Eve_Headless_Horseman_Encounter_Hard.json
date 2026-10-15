@@ -1,0 +1,89 @@
+{
+  "$Comment": [
+    "The Headless Horseman's hard ride: the same fight as Hallows_Eve_Headless_Horseman_Encounter, a",
+    "Variant of this pack's Orbis_Boss_Encounter_Template, with his hard forms and faster timings, the",
+    "way the game's own Gobliterator has a hard script beside its normal one. It runs in his hard",
+    "graveyard (Prefabs/Hallows_Eve/Hallows_Eve_Graveyard_Hard.prefab.json), where he rises from",
+    "Hallows_Eve_Headless_Horseman_Hard_Marker.",
+    "",
+    "What is harder lives in three places. His _HM roles carry more health (2160 against 1200, his",
+    "Head 450 against 300), quicker bomb throws and the Hallows_Eve_Horseman_Hard_Mode effect, which",
+    "makes everything he and his Head throw or swing hit 40% harder. His health steps are the _Hard_",
+    "Scale effects, 1080 per player beyond the first. And _ForwardedModifiers below tightens the",
+    "phases: a volley every 8 seconds from the start, each bomb leaving a fire patch; his head flies",
+    "every 28 seconds and returns after 20; his wrath's burning volleys fall every 6 seconds. The",
+    "bar shows the game's hard-mode style (BossBarHardMode) and his hard name.",
+    "",
+    "A win pays its own two Claims, Hallows_Eve_Horseman_Daily_Hard and Hallows_Eve_Horseman_Chase_Hard,",
+    "counted apart from the normal fight's, so a player can collect both on the same day. The binding",
+    "row ZiggfreedCommon/Encounters/Hallows_Eve_Headless_Horseman_Encounter_Hard.json names the fight",
+    "and keeps its records apart. This file's name is not a role's: a script named after a role",
+    "replaces it."
+  ],
+  "Class": "EncounterManager",
+  "Type": "Variant",
+  "Reference": "Orbis_Boss_Encounter_Template",
+  "Modify": {
+    "SpawnMarker": "Hallows_Eve_Headless_Horseman_Hard_Marker",
+    "FallbackRole": "Hallows_Eve_Headless_Horseman_Mounted_HM",
+    "BossGroups": [ "Hallows_Eve_Headless_Horseman_Group" ],
+    "SweepGroups": [ "Hallows_Eve_Horseman_Head_Group", "Hallows_Eve_Horseman_Adds_Group" ],
+    "BossBarName": "npcs.Hallows_Eve_Headless_Horseman_HM.name",
+    "BossBarHardMode": true,
+    "Music": "Track_Z1D_Goblin_Boss",
+    "ScaleP2Effect": "Hallows_Eve_Horseman_Hard_Scale_Health_P2",
+    "ScaleP3Effect": "Hallows_Eve_Horseman_Hard_Scale_Health_P3",
+    "ScaleP4Effect": "Hallows_Eve_Horseman_Hard_Scale_Health_P4",
+    "ScaleP5Effect": "Hallows_Eve_Horseman_Hard_Scale_Health_P5",
+    "TopUpEffect": "Hallows_Eve_Horseman_Scale_TopUp",
+    "DailyReward": "Hallows_Eve_Horseman_Daily_Hard",
+    "ChaseReward": "Hallows_Eve_Horseman_Chase_Hard",
+    "Phase1Behavior": "Macro_Orbis_Boss_Volley",
+    "Phase2Transition": "Macro_Goblin_Gobliterator_Transition_OnHealth",
+    "Phase2Behavior": "Macro_Hallows_Eve_Horseman_Head",
+    "Phase3Transition": "Encounter_Macro_Transition_TargetInHealthRange",
+    "Phase3Behavior": "Macro_Hallows_Eve_Horseman_Wrath",
+    "ResetBehavior": "Macro_Hallows_Eve_Horseman_Reset",
+    "_ForwardedModifiers": {
+      "Phase1Behavior": {
+        "Interval": [ 8, 8 ],
+        "Interaction": "Root_Hallows_Eve_Horseman_Volley_Fire",
+        "Range": 45,
+        "DropDelay": [ 1.2, 1.5 ],
+        "ArmedFlag": "Horseman_P1_Volley_Armed",
+        "IntervalTimer": "Horseman_P1_Volley_Interval",
+        "VolleyFlag": "Horseman_P1_Volley_Active",
+        "RunningFlag": "Horseman_P1_Volley_Running",
+        "BurstTimer": "Horseman_P1_Volley_Burst",
+        "WaveTimer": "Horseman_P1_Volley_Wave",
+        "PlayerTimer": "Horseman_P1_Volley_Player"
+      },
+      "Phase2Transition": {
+        "HealthRange": [ 0, 0.66 ],
+        "NextRole": "Hallows_Eve_Headless_Horseman_HM",
+        "MusicPhase": "Phase2",
+        "Invulnerable": true,
+        "GuardInteraction": true,
+        "GuardTimeout": [ 6, 6 ],
+        "GuardFlag": "Horseman_Unhorse_GuardArmed",
+        "GuardTimer": "Horseman_Unhorse_GuardTimer",
+        "Slot": "Boss",
+        "RoleGroups": [ "Hallows_Eve_Headless_Horseman_Group" ],
+        "Range": 80
+      },
+      "Phase2Behavior": {
+        "TossSeconds": [ 28, 28 ],
+        "HeadSeconds": [ 20, 20 ],
+        "HeadRole": "Hallows_Eve_Horseman_Head_HM"
+      },
+      "Phase3Transition": {
+        "HealthRange": [ 0, 0.33 ],
+        "Slot": "Boss",
+        "Range": 80
+      },
+      "Phase3Behavior": {
+        "Interval": [ 6, 6 ]
+      }
+    }
+  }
+}

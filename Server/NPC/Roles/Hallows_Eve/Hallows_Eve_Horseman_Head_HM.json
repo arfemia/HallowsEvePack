@@ -1,0 +1,32 @@
+{
+  "$Comment": "The Horseman's Head on the hard ride: Hallows_Eve_Horseman_Head written out again, as the game writes its own hard bosses, with more health, a bomb every 2.5 to 3 seconds and the Hallows_Eve_Horseman_Hard_Mode effect, which makes its bombs hit harder. His hard fight raises it in place of the normal Head (Phase2Behavior's HeadRole), and while it flies his body cannot be hurt. Never burning, DropList Empty. Any key the template does not declare makes the game refuse the whole role.",
+  "Type": "Variant",
+  "Reference": "Template_Flying_Aggressive",
+  "Modify": {
+    "DeathParticles": "Effect_Death_Flames",
+    "Appearance": "Hallows_Eve_Horseman_Head",
+    "DropList": "Empty",
+    "MaxHealth": 450,
+    "IsMemory": false,
+    "NameTranslationKey": "npcs.Hallows_Eve_Horseman_Head.name",
+    "MotionFlyMinHeightAboveGround": 1,
+    "MotionFlyMaxHeightAboveGround": 5,
+    "MotionFlyMaxHorizontalSpeed": 6,
+    "MotionDesiredAltitudeCombat": [2, 4],
+    "MotionDesiredAltitudeSearch": [3, 5],
+    "ViewRange": 30,
+    "ViewSector": 360,
+    "HearingRange": 16,
+    "AlertedRange": 40,
+    "RangedAttack": "Root_Hallows_Eve_Horseman_Head_Bomb",
+    "RangedAttackDistance": 14,
+    "RangedAttackPauseRange": [2.5, 3],
+    "CombatRelativeSpeedChase": 0.8,
+    "CombatSeekSlowdownDistance": 5,
+    "CombatSeekStopDistance": 4,
+    "TargetRange": 30,
+    "_CombatConfig": {
+      "EntityEffects": ["Immunity_Fire", "Hallows_Eve_Horseman_Hard_Mode"]
+    }
+  }
+}

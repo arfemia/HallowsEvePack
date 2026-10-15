@@ -6,7 +6,14 @@
     "Repeat.PerRun brings this one quest back once in each Hallow's Eve (Times is how often one run",
     "takes it), so a returning player lights a new lantern next October and earns that year's",
     "keepsake without walking the whole questline again. A lantern left unfinished when the event",
-    "ends waits for the next one. The steps before it never come back.",
+    "ends waits for the next one. The five errands never come back; The Rider and Fire for the Lantern",
+    "come back each year with it.",
+    "",
+    "Requires opens it once Fire for the Lantern (hallows_eve_old_jack_horseman_hard, the hard ride and",
+    "the Horseman's Ember) is finished and collected, and its Listing puts it last on the",
+    "hallows_eve_old_jack ladder (Tier 8). To open it after The Rider, without the hard ride, write",
+    "Requires as { \"Quests\": [ \"hallows_eve_old_jack_5\", \"hallows_eve_old_jack_horseman\" ] }: The",
+    "Rider alone opens straight after Lanterns in the Temple, so naming it alone would skip the errands.",
     "",
     "The two Mmo_Xp rows are MMO Skill Tree's, paid only where that mod runs: Defense XP for the",
     "skeletons and the souls the Ectoplasm comes from, and Harvesting XP for the pumpkin, at the rate a",
@@ -22,13 +29,13 @@
   "Listing": {
     "Icon": "Hallows_Eve_Hollow_Lantern",
     "SortOrder": 60,
-    "Chains": [ { "Id": "hallows_eve_old_jack", "Tier": 6 } ]
+    "Chains": [ { "Id": "hallows_eve_old_jack", "Tier": 8 } ]
   },
   "Repeat": {
     "PerRun": { "Event": "Hallows_Eve", "Times": 1 }
   },
   "Requires": {
-    "Quests": [ "hallows_eve_old_jack_5" ]
+    "Quests": [ "hallows_eve_old_jack_horseman_hard" ]
   },
   "Objectives": {
     "knock_down_skeletons": {

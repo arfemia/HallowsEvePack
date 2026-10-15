@@ -16,7 +16,7 @@
     "defeat-horseman": {
       "Kind": "ENCOUNTER_DEFEATED",
       "Target": "Hallows_Eve_Headless_Horseman_Encounter",
-      "MatchMode": "EXACT",
+      "MatchMode": "PREFIX",
       "Amount": 10
     }
   },
