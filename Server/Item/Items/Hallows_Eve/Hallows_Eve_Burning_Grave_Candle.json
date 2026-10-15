@@ -1,0 +1,20 @@
+{
+  "$Comment": "The Burning Grave Candle, the price of the Headless Horseman's hard ride: the Gravekeeper burns one to open the hard graveyard for a party, and Old Jack sells them at his stall once he counts the player a Regular (ShopEntries/HallowsEvePack/Hallows_Eve_Offer_Burning_Grave_Candle.json). Hallows_Eve_Graveyard_Hard.json names it in its EntryCost, so change the count there. The plain Grave Candle (Hallows_Eve_Grave_Candle.json beside this file) opens the normal graveyard. A plain item that only sits in the bag: no BlockType, so it can never be placed, and no recipe. It wears the game's own dark temple candles (their model, texture and icon), three dark candles burning together, so it reads apart from the single plain one; Rare quality frames it apart too, and the faint Light is its glow in the hand or on the ground. MaxStack is how many fit in one slot; DropOnDeath false keeps it in the bag when its owner falls.",
+  "TranslationProperties": {
+    "Name": "items.Hallows_Eve_Burning_Grave_Candle.name",
+    "Description": "items.Hallows_Eve_Burning_Grave_Candle.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Furniture_Temple_Dark_Candle.png",
+  "IconProperties": {"Scale": 0.4, "Rotation": [22.5, 45, 22.5], "Translation": [1.67, -27.13]},
+  "Quality": "Rare",
+  "Categories": ["Items.Ingredients"],
+  "Model": "Blocks/Decorative_Sets/Temple_Dark/Candle.blockymodel",
+  "Texture": "Blocks/Decorative_Sets/Temple_Dark/Candle_Texture.png",
+  "PlayerAnimationsId": "Item",
+  "Tags": {"Type": ["Ingredient"]},
+  "Scale": 1.0,
+  "Light": {"Color": "#531", "Radius": 1},
+  "ItemSoundSetId": "ISS_Blocks_Wood",
+  "MaxStack": 25,
+  "DropOnDeath": false
+}

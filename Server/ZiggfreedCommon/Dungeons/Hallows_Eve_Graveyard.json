@@ -11,7 +11,17 @@
     "four areas to a copy. Complete names his fight, so the run clears when he falls, and Rewards rolls",
     "Hallows_Eve_Graveyard_Clear for each member present as a Claim: full the first clear each day,",
     "half on later ones. Text names it in the reader's language (hallowseve.world.lang), and its GoalKey",
-    "is the line each player reads as they arrive: what to do there, and how his fight is won."
+    "is the line each player reads as they arrive: what to do there, and how his fight is won.",
+    "",
+    "EntryCost is the price of going in: one Grave Candle (Old Jack sells them at his stall), taken from",
+    "whoever opens an area for their party; partymates who follow into that fight walk in free. Confirm",
+    "is left out, so it is on: before anything is spent, the player opening the area sees CommonLib's",
+    "confirm screen, built like the game's portal summon screen, with the graveyard's name and",
+    "description, the candle, how many they hold and how many it takes, and a button whose words are",
+    "ConfirmKey's (\"Light the Candle\"); it burns the candle, sends the party in and plays the game's",
+    "portal sound and sparkle, and closing the screen spends nothing. With none, the button is off and",
+    "the HintKey line says where to buy them. Change Count to change the price, and the Gravekeeper's",
+    "way-in label, which shows it, with it."
   ],
   "Enabled": true,
   "Share": {
@@ -31,6 +41,11 @@
   "Rewards": {
     "Lootable": "Hallows_Eve_Graveyard_Clear",
     "Diminish": { "Steps": [1, 0.5], "Window": "Daily" }
+  },
+  "EntryCost": {
+    "Items": [ { "Item": "Hallows_Eve_Grave_Candle", "Count": 1 } ],
+    "HintKey": "dungeon.hallows_eve_graveyard.cost_hint",
+    "ConfirmKey": "dungeon.hallows_eve_graveyard.confirm"
   },
   "Copy": {
     "EmptyCloseSeconds": 60

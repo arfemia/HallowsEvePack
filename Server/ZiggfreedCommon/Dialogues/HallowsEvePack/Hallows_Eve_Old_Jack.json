@@ -27,8 +27,11 @@
     "(Lantern Work), active_night (Ghouls on the Steps, Ectoplasm Run, Restless Souls, and The Hollow",
     "Lantern, whose skeletons, Ectoplasm and pumpkin all come from the night) and active_stone (Cursed",
     "Stone, Geodes for Jack). The Rider is offered on rider_offer beside his errands, and its Active",
-    "screen is his rider line, horseman; Fire for the Lantern, the hard ride for the Horseman's Ember,",
-    "has ember_offer and active_ember, which sends the player to the Gravekeeper for the hard ride. An",
+    "screen is his rider line, horseman. Both say the Gravekeeper's gate wants a Grave Candle and that",
+    "Jack sells them, since The Rider's first step is buying one, and horseman carries the stall one",
+    "press away; Fire for the Lantern, the hard ride for the Horseman's Ember,",
+    "has ember_offer and active_ember, which send the player to the Gravekeeper for the hard ride and",
+    "say its gate wants a Burning Grave Candle, sold at the stall once Jack counts them a Regular. An",
     "offer's answer takes its quest and goes straight to that screen, so the player hears what to do",
     "and where the moment they take it. Pumpkin Patch, Fire for the Lantern (ember_ready) and the",
     "lantern quest have hand-in lines of their own; the rest share",
@@ -371,6 +374,13 @@
     },
     "horseman": {
       "TextKey": "dialogue.hallows_eve_old_jack.horseman.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.hallows_eve_old_jack.opt.shop",
+          "Style": "neutral",
+          "Open": { "Type": "Shop", "Shop": "Hallows_Eve_Old_Jack" }
+        }
+      ],
       "IncludeOptions": [ "jack_back" ]
     },
     "horseman_beaten": {

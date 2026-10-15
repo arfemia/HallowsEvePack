@@ -1,0 +1,14 @@
+{
+  "$Comment": "A Burning Grave Candle, what the Gravekeeper burns to open the Headless Horseman's hard ride (Hallows_Eve_Graveyard_Hard.json's EntryCost). Requires opens it once Old Jack counts the player a Regular (Friendly with Old Jack's Favor); a locked offer still shows on the shelf with its lock line, so a player can see what to work towards. No purchase limit and no rotation. SortOrder 6 puts it straight after the plain Grave Candle on the lanterns shelf. Cost is the price in Hallow Sweets. Named by the item's own keys.",
+  "Parent": "Hallows_Eve_Offer_Base",
+  "Text": {
+    "TitleKey": "items.Hallows_Eve_Burning_Grave_Candle.name",
+    "FlavorKey": "items.Hallows_Eve_Burning_Grave_Candle.description"
+  },
+  "Listing": { "Category": "lights", "SortOrder": 6 },
+  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 60 } },
+  "Requires": { "Factors": [ { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Hallows_Eve_Old_Jack/Friendly", "Min": 1 } ] },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Hallows_Eve_Burning_Grave_Candle", "Count": 1 } }
+  ]
+}

@@ -93,6 +93,8 @@
           { "Item": "Hallows_Eve_Horseman_Breastplate", "SourceKey": "almanac.hallows_eve.source.horseman_daily" },
           { "Item": "Hallows_Eve_Horseman_Gauntlets", "SourceKey": "almanac.hallows_eve.source.horseman_daily" },
           { "Item": "Hallows_Eve_Horseman_Greaves", "SourceKey": "almanac.hallows_eve.source.horseman_daily" },
+          { "Item": "Hallows_Eve_Grave_Candle", "SourceKey": "almanac.hallows_eve.source.grave_candle" },
+          { "Item": "Hallows_Eve_Burning_Grave_Candle", "SourceKey": "almanac.hallows_eve.source.burning_grave_candle" },
           { "Item": "Hallows_Eve_Costume_Wand", "SourceKey": "almanac.hallows_eve.source.stall" },
           { "Item": "Hallows_Eve_Hollow_Lantern", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.keepsake" },
           { "Item": "Halloween_Basket_Pumpkin", "SourceKey": "almanac.hallows_eve.source.festival_stall" },

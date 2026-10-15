@@ -1,0 +1,19 @@
+{
+  "$Comment": "The Grave Candle, the price of the Headless Horseman's graveyard: the Gravekeeper burns one to open the gate for a party, and Old Jack sells them at his stall (ShopEntries/HallowsEvePack/Hallows_Eve_Offer_Grave_Candle.json). Hallows_Eve_Graveyard.json under ZiggfreedCommon/Dungeons names it in its EntryCost, so change the count there; the hard ride takes the Burning Grave Candle (Hallows_Eve_Burning_Grave_Candle.json beside this file) instead. A plain item that only sits in the bag: no BlockType, so it can never be placed, and no recipe. It wears the game's own Human Ruins candle (its model, texture and icon), a single dark candle, so it needs no art of its own. MaxStack is how many fit in one slot; DropOnDeath false keeps it in the bag when its owner falls.",
+  "TranslationProperties": {
+    "Name": "items.Hallows_Eve_Grave_Candle.name",
+    "Description": "items.Hallows_Eve_Grave_Candle.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Furniture_Human_Ruins_Candle.png",
+  "IconProperties": {"Scale": 0.5, "Rotation": [25, 0, 0], "Translation": [0, -21.6]},
+  "Quality": "Uncommon",
+  "Categories": ["Items.Ingredients"],
+  "Model": "Blocks/Decorative_Sets/Human_Ruins/Candle.blockymodel",
+  "Texture": "Blocks/Decorative_Sets/Human_Ruins/Candle_Texture.png",
+  "PlayerAnimationsId": "Item",
+  "Tags": {"Type": ["Ingredient"]},
+  "Scale": 1.0,
+  "ItemSoundSetId": "ISS_Blocks_Wood",
+  "MaxStack": 25,
+  "DropOnDeath": false
+}

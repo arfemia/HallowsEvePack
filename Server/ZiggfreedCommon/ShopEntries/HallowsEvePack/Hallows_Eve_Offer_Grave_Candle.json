@@ -1,0 +1,13 @@
+{
+  "$Comment": "A Grave Candle, what the Gravekeeper burns to open the Headless Horseman's graveyard (Hallows_Eve_Graveyard.json's EntryCost; the hard ride takes a Burning Grave Candle, Hallows_Eve_Offer_Burning_Grave_Candle.json beside this file). Always on the stall: no purchase limit and no rotation, since every party's ride needs one. SortOrder 5 puts it first on the lanterns shelf, where a player sent here by Old Jack or the Gravekeeper looks first. Cost is the price in Hallow Sweets. Named by the item's own keys.",
+  "Parent": "Hallows_Eve_Offer_Base",
+  "Text": {
+    "TitleKey": "items.Hallows_Eve_Grave_Candle.name",
+    "FlavorKey": "items.Hallows_Eve_Grave_Candle.description"
+  },
+  "Listing": { "Category": "lights", "SortOrder": 5 },
+  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 20 } },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Hallows_Eve_Grave_Candle", "Count": 1 } }
+  ]
+}
