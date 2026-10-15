@@ -24,7 +24,7 @@ Hallow's Eve brings creatures, quests, items and achievements, with a host, Old 
 - A Costume Wand that turns a friend into a Jack Skeleton or a Lost Soul for a few minutes.
 - Trick or treat. Knock on every character who has a conversation for you, once a day each, for sweets, apples, a pumpkin pie or a costume. On this pack alone, only Old Jack plays along.
 - Cursed Geodes turn up while you mine, and pumpkins you pick by hand sometimes come up Hallowed.
-- Old Jack's stall takes Hallow Sweets for bombs, the Jack set, the Costume Wand, Halloween decorations and the game's own Halloween Broomstick. Raise your standing and he sells five of Update 7's gadgets too, like the Spyglass and the Hookshot, and at the highest ranks the Burning Jack Helm and Flaming Jack Shield.
+- Old Jack's shop takes Hallow Sweets for bombs, the Jack set, the Costume Wand, Halloween decorations and the game's own Halloween Broomstick. Raise your standing and he sells five of Update 7's gadgets too, like the Spyglass and the Hookshot, and at the highest ranks the Burning Jack Helm and Flaming Jack Shield.
 - Two reputations, Old Jack's Favor and the Hallowed. His quests and jobs raise both, and putting down the night's creatures raises the Hallowed.
 - The Carving Bench. Craft it at a Workbench and carve lanterns, the Jack Helm and Lantern Bombs on it all year.
 - Harvest Moon, October 28 to November 1. About twice the creatures come out at night, and geodes and Hallowed Pumpkins come in pairs.
@@ -33,7 +33,7 @@ Hallow's Eve brings creatures, quests, items and achievements, with a host, Old 
 ## Every season
 
 - Festival Favor, a reputation every season shares, and Festival Tokens, a wallet that keeps from one season to the next. Old Jack's quests and board jobs pay both.
-- The Festival Shelf at Old Jack's stall sells by season for Festival Tokens. High Festival Favor opens the Goblin Plushie and the Carved Kweebec Figure, found nowhere else.
+- The Festival Shelf at Old Jack's shop sells by season for Festival Tokens. High Festival Favor opens the Goblin Plushie and the Carved Kweebec Figure, found nowhere else.
 - Achievements for keepsakes from different seasons, up to Seasons of Orbis and the title "Friend of the Seasons".
 - An Almanac page for each season with your keepsakes, your lifetime tallies and every item to find, with where it comes from.
 
@@ -45,8 +45,8 @@ From 2027, the day Hytale came out gets a banner and an Almanac page. Be on the 
 
 1. Log in while a season runs. A banner marks it, and a quest in your log, Lanterns in the Temple, sends you to Old Jack in the Forgotten Temple.
 2. Press F on him to hand it in. It gives you an Objective Book, which opens your quests, achievements and the Almanac.
-3. Ask him "What needs doing?" for his quests, board jobs and errands in one list, or open his stall. Once he knows you, "How do we stand?" shows your reputation.
-4. Head out after dark for the creatures, then spend your sweets and tokens at his stall.
+3. Ask him "What needs doing?" for his quests, board jobs and errands in one list, or open his shop. Once he knows you, "How do we stand?" shows your reputation.
+4. Head out after dark for the creatures, then spend your sweets and tokens at his shop.
 5. When the season ends he leaves, and everything you earned stays with you. An unfinished quest waits for next year.
 
 ## With MMO Skill Tree
@@ -59,7 +59,7 @@ Add the [MMO Skill Bounty Pack](https://www.curseforge.com/hytale/mods/mmo-skill
 
 - Nothing to place. Each event starts and ends by date (UTC), and its host sets up on their own.
 - To switch Hallow's Eve off, add `"Hallows_Eve": { "Enabled": false }` to `mods/ziggfreedcommon/calendar.json` and run `/zigcalendar reload`. Every event has its own switch there, and the same file can move an event's dates. Nothing anyone earned is lost.
-- The Festival Shelf can also open all year as a stall of its own: switch it on in `mods/ziggfreedcommon/shops.json`.
+- The Festival Shelf can also open all year as a shop of its own: switch it on in `mods/ziggfreedcommon/shops.json`.
 - The Horseman's Graveyard is a CommonLib dungeon: switch it off or change how many players share it in `mods/ziggfreedcommon/dungeons.json`. `/zigdungeon enter Hallows_Eve_Graveyard` takes you in alone while Hallow's Eve runs.
 
 ## Install

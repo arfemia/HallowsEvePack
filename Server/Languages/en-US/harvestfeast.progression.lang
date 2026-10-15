@@ -1,5 +1,5 @@
 # Harvest Feast progression: Martha's intro quest, her questline, the yearly feast and the dailies, the
-# feast board and the feast stall, her conversation, the season's achievements and titles, her
+# feast board and the feast shop, her conversation, the season's achievements and titles, her
 # reputation and the Almanac page, the shared meal and the invitation tour, and the feast's villagers.
 # Keys are written bare: the library finds each one by its tail, whatever this file is called. A quest,
 # a contract or an achievement takes its words from the keys its id spells (quest.<id>.title and
@@ -29,8 +29,8 @@ quest.harvest_feast_board_pies.flavor = Every seat at the table wants a slice. B
 quest.harvest_feast_board_roast.title = Fire Pit
 quest.harvest_feast_board_roast.flavor = Cook a pile of meat over an open fire. The smell alone brings people to the table.
 
-# ---- The feast stall ----
-shop.harvest_feast_host.title = The Feast Stall
+# ---- The feast shop ----
+shop.harvest_feast_host.title = The Feast Shop
 shop.harvest_feast_host.desc = Recipes from my own book, popcorn by the bag, and a few things for the house.
 shop.harvest_feast_host.category.kitchen = Kitchen
 shop.harvest_feast_host.category.decor = Decorations
@@ -106,15 +106,15 @@ almanac.harvest_feast.errands = Errands run for Martha
 almanac.harvest_feast.source.bake_pumpkin = Bake it at a cooking bench from the recipe Martha gives you.
 almanac.harvest_feast.source.errands = A treat now and then from Martha's errands.
 almanac.harvest_feast.source.feast = Served at the Feast itself, once a year.
-almanac.harvest_feast.source.popcorn = From Martha's story, her board and the shared meal, or bought at her stall.
+almanac.harvest_feast.source.popcorn = From Martha's story, her board and the shared meal, or bought at her shop.
 almanac.harvest_feast.source.bread = Shared at the daily meal, and part of Martha's story.
 almanac.harvest_feast.source.story = Martha gives it to you during her story.
-almanac.harvest_feast.source.stall = Sold at Martha's stall.
-almanac.harvest_feast.source.stall_favor = Sold at Martha's stall as your standing with her grows.
-almanac.harvest_feast.source.seeds = From the Feast and Martha's errands, or bought at her stall.
+almanac.harvest_feast.source.stall = Sold at Martha's shop.
+almanac.harvest_feast.source.stall_favor = Sold at Martha's shop as your standing with her grows.
+almanac.harvest_feast.source.seeds = From the Feast and Martha's errands, or bought at her shop.
 almanac.harvest_feast.source.keepsake = The Feast's keepsake, given once a year when you sit down to the Feast.
-almanac.harvest_feast.source.winter = Sold on the festival shelf at Martha's stall while the feast runs.
-almanac.harvest_feast.source.festival_favor = Sold at the festival stalls to those high in Festival Favor.
+almanac.harvest_feast.source.winter = Sold on the festival shelf at Martha's shop while the feast runs.
+almanac.harvest_feast.source.festival_favor = Sold at the festival shops to those high in Festival Favor.
 
 # ---- Martha's conversation ----
 dialogue.harvest_feast_host.off_season.text = The feast's over for this year, and the table's packed away.\nCome back when the fields are in.
@@ -161,7 +161,7 @@ dialogue.harvest_feast_host.who_are_you.text = Nobody important. I cook.\nWhen t
 dialogue.harvest_feast_host.about_feast.text = It's a thank-you, mostly. The fields gave us plenty, and the least we can do is eat it together.\nYou bring something, you take something home. That's all the rules there are.
 dialogue.harvest_feast_host.opt.returned = I'm back.
 dialogue.harvest_feast_host.opt.quests = What needs doing?
-dialogue.harvest_feast_host.opt.shop = Let's see your stall.
+dialogue.harvest_feast_host.opt.shop = Let's see your shop.
 dialogue.harvest_feast_host.opt.standing = How do we stand?
 dialogue.harvest_feast_host.opt.almanac = Show me the Almanac.
 dialogue.harvest_feast_host.opt.who = Who are you?
