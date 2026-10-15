@@ -232,7 +232,7 @@ dialogue.hallows_eve_old_jack.rider_offer.text = You've heard the hooves at nigh
 dialogue.hallows_eve_old_jack.rider_offer.opt.accept = I'll knock him off it.
 dialogue.hallows_eve_old_jack.ember_offer.text = You've seen my errands through, and you've had the Horseman off his horse. That's near enough everything.\nYour <b>Hollow Lantern</b> wants a flame that won't go out, and only the Horseman carries one. Take it off him and bring me <b>the Horseman's Ember</b>.
 dialogue.hallows_eve_old_jack.ember_offer.opt.accept = I'll bring you the ember.
-dialogue.hallows_eve_old_jack.active_ember.text = He only gives that ember up on the hard ride. Ask the <color is="#ffd97a">Gravekeeper</color> for the <b>hard ride</b>, and bring more friends than last time.\nWhen he falls, the <b>ember</b> drops for whoever I sent after it.
+dialogue.hallows_eve_old_jack.active_ember.text = He only gives that ember up on the hard ride. Ask the <color is="#ffd97a">Gravekeeper</color> for the <b>hard ride</b>, and bring more friends than last time.\nOnce he's down, the <b>ember</b> waits in the chest where he fell, for whoever I sent after it. Miss the chest and it waits under Claims in your menu.
 dialogue.hallows_eve_old_jack.ember_ready.text = That's his fire, all right. Burned through your pocket, by the look of it.\nI'll keep it safe till your lantern's ready. Then we light it.
 dialogue.hallows_eve_old_jack.ember_ready.opt.turnin = Here's the ember.
 dialogue.hallows_eve_old_jack.daily_offer.text = I've got a few small jobs that come round every day. Take what you like.
@@ -253,7 +253,7 @@ dialogue.hallows_eve_old_jack.lantern_lit.text = That's this year's Hollow Lante
 dialogue.hallows_eve_old_jack.sweets.text = My stall takes them for everything on it, from a Lantern Bomb to a head like mine.\nI pay them for my jobs and the work on my board. Ask anybody you talk to for a trick or treat and you'll get a few. Beat the <b>Headless Horseman</b> in his <color is="#ffd97a">graveyard</color> and you'll find some waiting for you too.
 dialogue.hallows_eve_old_jack.who_are_you.text = Old Jack. I kept a farm once, a long way from here. Then one October I didn't go home, and I've come back every October since.\nMy lanterns keep the dead off these steps, and every year I light a Hollow Lantern with anybody who sees my errands through. Don't ask me about the head.
 dialogue.hallows_eve_old_jack.horseman.text = The <b>Headless Horseman</b>. He rides his own graveyard every night of Hallow's Eve, and he's the one thing out there my lanterns don't frighten.\nThe <color is="#ffd97a">Gravekeeper</color> next to me will take you in. Bring friends, and when his head flies off, cut it down, or he can't be hurt.
-dialogue.hallows_eve_old_jack.horseman_beaten.text = So you knocked him off that horse. It won't keep him down: he's back in the saddle every time somebody goes in.\nGo after the <b>Headless Horseman</b> again if you like. Your first win each day leaves his daily Claim and his Hoard under Claims in your menu, now and then with a piece of his old armour, or one that's still burning.
+dialogue.hallows_eve_old_jack.horseman_beaten.text = So you knocked him off that horse. It won't keep him down: he's back in the saddle every time somebody goes in.\nGo after the <b>Headless Horseman</b> again if you like. Your first win each day leaves his daily Claim and his Hoard in the chest where he falls, now and then with a piece of his old armour, or one that's still burning. Whatever you leave in it waits under Claims in your menu.
 dialogue.hallows_eve_old_jack.harvest_moon.text = See that moon? Harvest Moon. A few nights a year the dead get restless under it, and the graves empty out.\nIf you want work, tonight's the night. I'll be up till it sets.
 dialogue.hallows_eve_old_jack.opt.quests = What needs doing?
 dialogue.hallows_eve_old_jack.opt.shop = Let's see your stall.
@@ -273,7 +273,7 @@ dialogue.hallows_eve_trick_or_treat.opt.knock = Trick or treat.
 dialogue.hallows_eve_gravekeeper.menu.text = The Horseman's <color is="#ffd97a">graveyard</color> is behind me, and he is riding it tonight. Nothing in there rests while he does.\nSay the word and I will take you in. Bring friends.
 dialogue.hallows_eve_gravekeeper.who.text = I keep this graveyard so the dead in it can rest. I am one of the <b>Hallowed</b>, and we put down whatever will not.\nThe dead stir under a full moon, and on Hallow's Eve they hardly sleep at all. The <b>Headless Horseman</b> never rests, so somebody has to keep knocking him down.
 dialogue.hallows_eve_gravekeeper.hard_open.text = You knocked him off his horse. He has not forgotten it.\nThere is a <b>hard ride</b> now, for anyone who comes back. He hits harder on it, and what he drops there, he drops nowhere else.
-dialogue.hallows_eve_gravekeeper.ember.text = Jack sent you for <b>the Horseman's Ember</b>. He only carries it on the <b>hard ride</b>.\nWhen he falls, it drops for every one of you Jack sent after it. Nobody else will find it.
+dialogue.hallows_eve_gravekeeper.ember.text = Jack sent you for <b>the Horseman's Ember</b>. He only carries it on the <b>hard ride</b>.\nOnce he is down, it waits in the chest where he fell for every one of you Jack sent after it. Nobody else will find it. Miss the chest and it waits under Claims in your menu.
 dialogue.hallows_eve_gravekeeper.opt.enter = Take me in.
 dialogue.hallows_eve_gravekeeper.opt.enter_hard = Take me on the hard ride.
 dialogue.hallows_eve_gravekeeper.opt.who = Who are you?
@@ -332,7 +332,7 @@ almanac.hallows_eve.source.flaming_shield_trade = Bought at Old Jack's stall by 
 # ---- The Almanac page's Headless Horseman banner and his Hoard ----
 almanac.hallows_eve.horseman.line = The Gravekeeper next to Old Jack takes you in. Bring friends.
 almanac.hallows_eve.horseman.button = Boss fight records
-almanac.hallows_eve.hoard.line = Your first win over the Horseman each day leaves his Hoard under Claims in your menu: always a Spectral Lantern Bomb, sometimes a piece of the Flaming Hallowed set, a Tombstone or a Lost Civilization Lantern. His plain armour comes in his daily Claim.
+almanac.hallows_eve.hoard.line = Your first win each day leaves his Hoard in the chest where he falls, and under Claims: always a Spectral Lantern Bomb, sometimes a piece of the Flaming Hallowed set, a Tombstone or a Lost Civilization Lantern. His plain armour comes in his daily Claim.
 
 # ---- Book breadcrumb ----
 achievement.category.seasons.hallows_eve = Hallow's Eve
