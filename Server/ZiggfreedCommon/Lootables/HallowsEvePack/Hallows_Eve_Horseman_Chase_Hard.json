@@ -5,8 +5,10 @@
     "Lantern Bombs and the Hoard is never empty; then the Horseman's flaming breastplate, which pays",
     "from here and nowhere else; then the rest of the Flaming Hallowed set's pieces (the Burning Jack",
     "Helm, his flaming gauntlets and greaves, and the Flaming Jack Shield) at twice the normal Hoard's",
-    "odds; the last two are the tombstone and the ruins lantern from his graveyard, which no recipe",
-    "makes. The normal Hoard is Hallows_Eve_Horseman_Chase.json beside this file, and the Almanac's",
+    "odds; then the Eternal Candle (Item/Items/Hallows_Eve/Hallows_Eve_Eternal_Candle.json), which",
+    "opens his normal graveyard without burning a Grave Candle and is never used up, at five times the",
+    "normal Hoard's odds; the last two are the tombstone and the ruins lantern from his graveyard,",
+    "which no recipe makes. The normal Hoard is Hallows_Eve_Horseman_Chase.json beside this file, and the Almanac's",
     "Hoard grid (ZiggfreedCommon/Almanac/HallowsEvePack/Hallows_Eve.json) lists what both pay, so",
     "change them together. Chance is a percent from 0 to 100."
   ],
@@ -34,6 +36,10 @@
     {
       "Chance": { "Base": 10.0 },
       "Grants": { "Items": [ { "Item": "Hallows_Eve_Flaming_Jack_Shield", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 25.0 },
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Eternal_Candle", "Count": 1 } ] }
     },
     {
       "Chance": { "Base": 15.0 },

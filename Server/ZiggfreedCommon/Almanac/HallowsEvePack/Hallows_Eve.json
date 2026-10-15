@@ -62,6 +62,7 @@
           { "Item": "Hallows_Eve_Flaming_Horseman_Gauntlets", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.hoard" },
           { "Item": "Hallows_Eve_Flaming_Horseman_Greaves", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.hoard" },
           { "Item": "Hallows_Eve_Flaming_Jack_Shield", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.flaming_shield_trade" },
+          { "Item": "Hallows_Eve_Eternal_Candle", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.eternal_candle" },
           { "Item": "Furniture_Village_Tombstone", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.hoard" },
           { "Item": "Furniture_Human_Ruins_Lantern", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.hoard" }
         ],

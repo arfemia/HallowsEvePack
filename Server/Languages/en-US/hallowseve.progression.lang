@@ -120,6 +120,8 @@ shop.hallows_eve_old_jack.category.gear = Gear
 shop.hallows_eve_offer_harvest_moon_bundle.title = Harvest Moon Bundle
 shop.hallows_eve_offer_harvest_moon_bundle.desc = Shattering and Spectral Lantern Bombs, sold only while the Harvest Moon is up.
 shop.hallows_eve_offer_spyglass.desc = Look through it in the Guttering Hollows to pinpoint the location of a Voidtaken beast.
+shop.hallows_eve_offer_sell_eternal_candle.title = Sell a Spare Eternal Candle
+shop.hallows_eve_offer_sell_eternal_candle.desc = One Eternal Candle is all you need to open the Horseman's graveyard. Bring Old Jack a spare and he'll pay you for it.
 
 # ---- Achievements ----
 achievement.hallows_eve_lantern_keepsake.title = Hollow Lantern {0}
@@ -271,7 +273,7 @@ dialogue.hallows_eve_old_jack.opt.farewell = Goodnight, Jack.
 dialogue.hallows_eve_trick_or_treat.opt.knock = Trick or treat.
 
 # ---- The Gravekeeper's conversation (he never contracts) ----
-dialogue.hallows_eve_gravekeeper.menu.text = The Horseman's <color is="#ffd97a">graveyard</color> is behind me, and he is riding it tonight. Nothing in there rests while he does.\nThe gate opens only when I burn a <b>Grave Candle</b> at it, and once it is open, your whole party may follow you in. Old Jack sells them at his stall. Say the word and I will take you in. Bring friends.
+dialogue.hallows_eve_gravekeeper.menu.text = The Horseman's <color is="#ffd97a">graveyard</color> is behind me, and he is riding it tonight. Nothing in there rests while he does.\nThe gate opens only when I burn a <b>Grave Candle</b> at it, and once it is open, your whole party may follow you in. Old Jack sells them at his shop. An <b>Eternal Candle</b> opens it as well, and that one I give back. Say the word and I will take you in. Bring friends.
 dialogue.hallows_eve_gravekeeper.who.text = I keep this graveyard so the dead in it can rest. I am one of the <b>Hallowed</b>, and we put down whatever will not.\nThe dead stir under a full moon, and on Hallow's Eve they hardly sleep at all. The <b>Headless Horseman</b> never rests, so somebody has to keep knocking him down.
 dialogue.hallows_eve_gravekeeper.hard_open.text = You knocked him off his horse. He has not forgotten it.\nThere is a <b>hard ride</b> now, for anyone who comes back. He hits harder on it, and what he drops there, he drops nowhere else. For that gate I burn a <b>Burning Grave Candle</b>, and Old Jack sells those once he counts you a Regular.
 dialogue.hallows_eve_gravekeeper.ember.text = Jack sent you for <b>the Horseman's Ember</b>. He only carries it on the <b>hard ride</b>, and for that gate I burn a <b>Burning Grave Candle</b>. Jack sells those once he counts you a Regular.\nOnce he is down, it waits in the chest where he fell for every one of you Jack sent after it. Nobody else will find it. Miss the chest and it waits under Claims in your menu.
@@ -328,6 +330,7 @@ almanac.hallows_eve.source.bomb_rare = Always in the Horseman's Hoard, and somet
 almanac.hallows_eve.source.bomb_epic_horseman = Rarely dropped by Geode Wraiths or found inside Cursed Geodes and the Hallowed's cache, and sometimes in the Headless Horseman's daily Claim. You can also carve one at a Carving Bench, or buy a couple a day at Old Jack's stall.
 almanac.hallows_eve.source.hoard = Sometimes in the Horseman's Hoard, paid for your first win over him each day.
 almanac.hallows_eve.source.hoard_hard = Only in the Horseman's Hoard on the hard ride, paid for your first hard win over him each day. Once you've finished The Rider, ask the Gravekeeper for the hard ride.
+almanac.hallows_eve.source.eternal_candle = Rarely in the Horseman's Hoard, paid for your first win over him each day, and far more often on the hard ride. Carry it and the Gravekeeper opens his graveyard for your party without burning a Grave Candle.
 almanac.hallows_eve.source.horseman_daily = Found now and then in the Headless Horseman's daily Claim, paid for your first win over him each day.
 almanac.hallows_eve.source.burning_helm_trade = Bought at Old Jack's stall by trading in a Jack Helm from your bag, once the Hallowed revere you or Old Jack trusts you completely. Sometimes found in the Horseman's Hoard.
 almanac.hallows_eve.source.flaming_shield_trade = Bought at Old Jack's stall by trading in a Jack Shield from your bag, once the Hallowed hold you in the highest regard. Sometimes found in the Horseman's Hoard.
@@ -335,7 +338,7 @@ almanac.hallows_eve.source.flaming_shield_trade = Bought at Old Jack's stall by 
 # ---- The Almanac page's Headless Horseman banner and his Hoard ----
 almanac.hallows_eve.horseman.line = The Gravekeeper next to Old Jack takes you in. Bring friends.
 almanac.hallows_eve.horseman.button = Boss fight records
-almanac.hallows_eve.hoard.line = Your first win each day leaves his Hoard in the chest where he falls, and under Claims: always a Spectral Lantern Bomb, sometimes a piece of the Flaming Hallowed set, a Tombstone or a Lost Civilization Lantern. His plain armour comes in his daily Claim.
+almanac.hallows_eve.hoard.line = Your first win each day leaves his Hoard in the chest where he falls, and under Claims: always a Spectral Lantern Bomb, sometimes a piece of the Flaming Hallowed set, a Tombstone or a Lost Civilization Lantern, and once in a while an Eternal Candle. His plain armour comes in his daily Claim.
 
 # ---- Book breadcrumb ----
 achievement.category.seasons.hallows_eve = Hallow's Eve
