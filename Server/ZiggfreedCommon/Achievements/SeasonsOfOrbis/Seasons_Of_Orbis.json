@@ -14,7 +14,10 @@
     "Rewards: the title Seasons_Of_Orbis_Every_Season (the Title reward kind) lands the moment it is",
     "earned, the one thing an achievement pays on unlock. The game's Harvest Trophy, the festival tokens",
     "and the Festival Favor are Claims, waiting on the achievements page until the player collects them,",
-    "so a full bag never costs anyone the trophy.",
+    "so a full bag never costs anyone the trophy. One Claim row is MMO Skill Tree's Mmo_Boost_Token,",
+    "double XP in every skill for an hour, which the player starts when it suits them; its own Requires,",
+    "the hytale:mod_installed gate, leaves that row out on a server without that mod, unpaid and unshown.",
+    "Add any new Claim row at the end.",
     "",
     "Keep this file's name: it is the id every player's progress on it is filed under. Filed under",
     "Seasons with no subcategory, which is where the Almanac looks for its banner."
@@ -44,7 +47,9 @@
     "Claim": [
       { "Kind": "Item", "Params": { "Item": "Deco_Trophy_Harvest", "Count": 1 } },
       { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "100" } },
-      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 6000 } }
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 6000 } },
+      { "Kind": "Mmo_Boost_Token", "Params": { "Skill": "ALL", "Multiplier": "2.0", "DurationMinutes": "60" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
     ]
   }
 }

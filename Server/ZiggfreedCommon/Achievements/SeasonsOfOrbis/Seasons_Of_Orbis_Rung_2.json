@@ -8,7 +8,10 @@
     "the last one is kept. The description's number comes from TextArgs, so keep it equal to Needs.",
     "",
     "Rewards: the festival tokens and the Festival Favor are Claims, waiting on the achievements page",
-    "until the player collects them. A title is the one thing an achievement pays the moment it is earned."
+    "until the player collects them. A title is the one thing an achievement pays the moment it is earned.",
+    "One Claim row is MMO Skill Tree's Mmo_Boost_Token, half again as much XP in every skill for an",
+    "hour, which the player starts when it suits them; its own Requires, the hytale:mod_installed gate,",
+    "leaves that row out on a server without that mod, unpaid and unshown. Add any new Claim row at the end."
   ],
   "Text": {
     "TitleKey": "achievement.seasons_of_orbis_rung_2.title",
@@ -31,7 +34,9 @@
   "Rewards": {
     "Claim": [
       { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "50" } },
-      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 3000 } }
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 3000 } },
+      { "Kind": "Mmo_Boost_Token", "Params": { "Skill": "ALL", "Multiplier": "1.5", "DurationMinutes": "60" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
     ]
   }
 }
