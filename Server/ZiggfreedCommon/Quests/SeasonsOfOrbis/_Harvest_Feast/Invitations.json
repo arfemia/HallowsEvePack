@@ -7,6 +7,9 @@
     "character can be asked once a day. No Target means whoever the player is talking to. Npc.TurnInId,",
     "from the base, adds the report-back step to the host once enough people are asked.",
     "",
+    "Listing.MainLine is false here: the tour is a side errand, so it reads as a side quest while the",
+    "host's questline stays main quests.",
+    "",
     "Repeat.PerRun brings it back once in each run of the feast: a run pays it once, a forced or moved run",
     "cannot pay it twice, and a tour left unfinished when the run ends waits for the next one with its",
     "invitations kept. It pays through Harvest_Feast_Invitations_Pay, with favor with the host and",
@@ -18,7 +21,7 @@
   ],
   "Name": "Invitations",
   "Parent": "Harvest_Feast_Quest_Base",
-  "Listing": { "Icon": "Food_Pie_Apple", "Category": "misc", "SortOrder": 100 },
+  "Listing": { "Icon": "Food_Pie_Apple", "Category": "misc", "SortOrder": 100, "MainLine": false },
   "Requires": { "Quests": [ "harvest_feast_host_1" ] },
   "Repeat": {
     "PerRun": { "Event": "Harvest_Feast", "Times": 1 }
