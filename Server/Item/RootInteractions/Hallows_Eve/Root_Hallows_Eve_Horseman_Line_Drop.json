@@ -1,0 +1,4 @@
+{
+  "$Comment": "One bomb of the Headless Horseman's bomb pass, the id his flight in the saddle (Hallows_Eve_Horseman_Ride, LineDrop) spawns at each ringed spot along the row. It runs Hallows_Eve_Horseman_Line_Drop.",
+  "Interactions": ["Hallows_Eve_Horseman_Line_Drop"]
+}

@@ -20,10 +20,11 @@
     "the two Claims (each player's first win of the day; see the Rewards files), plays the music's",
     "ending, sends zc:reset and rests in Done. A fresh copy of the arena brings a fresh fight.",
     "",
-    "A wipe (every player down) or an arena left empty for EmptyArenaSeconds resets it: the game's",
-    "own arena reset removes the boss once nobody watches from the death screen, Resetting clears",
-    "the bar, removes everything in SweepGroups (heads, adds), runs the boss's ResetBehavior and",
-    "tells the library zc:reset, and Intro waits for players to come back.",
+    "A wipe (every player down) or an arena left empty for EmptyArenaSeconds resets it: Resetting",
+    "clears the bar, removes everything in SweepGroups (heads, adds) and runs the boss's",
+    "ResetBehavior, the game's own arena reset removes the boss once nobody watches from the death",
+    "screen, and only then, back in Intro, the library hears zc:reset (sent any earlier, the library",
+    "would bind the departing boss again before he is gone). Intro waits for players to come back.",
     "",
     "Every parameter's default names the Headless Horseman's own ids, so a new boss's Variant overrides",
     "every one of them. Keep a Variant's file name off every role's: a script and a role share one id",
@@ -196,7 +197,7 @@
       },
       "Instructions": [
         {
-          "$Comment": "Once per reset: the bar comes down and the library hears zc:reset.",
+          "$Comment": "Once per reset: the bar comes down, and zc:reset is owed to the library once the boss is gone (Intro sends it).",
           "Continue": true,
           "Sensor": {
             "Type": "Flag",
@@ -208,8 +209,8 @@
               "Type": "ClearEncounterBossBar"
             },
             {
-              "Type": "SignalWorldEvent",
-              "SignalId": "zc:reset"
+              "Type": "SetFlag",
+              "Name": "Orbis_Boss_Reset_Owed"
             },
             {
               "Type": "SetFlag",
@@ -272,6 +273,25 @@
         "State": "Intro"
       },
       "Instructions": [
+        {
+          "$Comment": "Back from a reset, with the arena's boss removed: now the library hears zc:reset, once.",
+          "Continue": true,
+          "Sensor": {
+            "Type": "Flag",
+            "Name": "Orbis_Boss_Reset_Owed"
+          },
+          "Actions": [
+            {
+              "Type": "SignalWorldEvent",
+              "SignalId": "zc:reset"
+            },
+            {
+              "Type": "SetFlag",
+              "Name": "Orbis_Boss_Reset_Owed",
+              "SetTo": false
+            }
+          ]
+        },
         {
           "$Comment": "Binds a boss of BossGroups into the Boss slot: the one the Spawn fallback raised, or the marker's.",
           "Continue": true,

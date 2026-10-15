@@ -1,0 +1,10 @@
+{
+  "$Comment": "Drops one bomb of the Horseman's bomb pass onto a spot his flight ringed (Hallows_Eve_Horseman_Line_Projectile falls from high above it, about two seconds). His Ride runs this at every ring of the row in the same moment it lights them, the way his volleys drop onto their rings.",
+  "Type": "Simple",
+  "RunTime": 0.1,
+  "Next": {
+    "Type": "Projectile",
+    "Config": "Hallows_Eve_Horseman_Line_Projectile",
+    "RunTime": 2
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "$Comment": "One bomb of the Horseman's volley, falling straight down onto a ring marked under a player (the game's falling stalactite does the same): it appears 25 blocks above the ring, pointed down, and drops at 13 blocks a second, so a player has about two seconds to step off the ring. It bursts as the heavy boss bomb (Orbis_Boss_Bomb_Burst_Heavy, players only) on whatever it strikes. Hallows_Eve_Horseman_Volley_Fire_Projectile is the same bomb leaving a fire patch.",
-  "Model": "Hallows_Eve_Lantern_Bomb_Epic_Thrown",
+  "$Comment": "One bomb of the Horseman's volley, falling straight down onto a ring marked under a player (the game's falling stalactite does the same): it appears 25 blocks above the ring, pointed down, and drops at 13 blocks a second, so a player has about two seconds to step off the ring. It is drawn three times a Lantern Bomb's size (its own model, Hallows_Eve_Horseman_Volley_Bomb), which changes nothing it hits. It bursts as the heavy boss bomb (Orbis_Boss_Bomb_Burst_Heavy, players only) on whatever it strikes. Hallows_Eve_Horseman_Volley_Fire_Projectile is the same bomb leaving a fire patch.",
+  "Model": "Hallows_Eve_Horseman_Volley_Bomb",
   "SpawnRotationOffset": {"Pitch": -90, "Roll": 0},
   "Physics": {
     "Type": "Standard",

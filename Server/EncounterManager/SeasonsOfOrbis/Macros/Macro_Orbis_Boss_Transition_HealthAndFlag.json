@@ -1,0 +1,66 @@
+{
+  "$Comment": [
+    "A phase transition for any fight in this pack that waits on two things: the boss in the Slot",
+    "worn into HealthRange, and the Flag a phase macro sets once its own beat has played. It is the",
+    "game's own Encounter_Macro_Transition_TargetInHealthRange with that flag added, so a boss worn",
+    "down fast still shows the phase's mechanic before the next phase starts.",
+    "",
+    "Name it in a transition slot (Phase2Transition or Phase3Transition) and forward it the flag",
+    "the matching behavior macro sets. Clear that flag in the boss's ResetBehavior so the next try",
+    "waits for it again."
+  ],
+  "Class": "Instruction",
+  "Type": "Component",
+  "Interface": "Hytale.Instruction.Encounter.Phase.Transition",
+  "Parameters": {
+    "_ImportStates": [ "Next" ],
+    "Slot": {
+      "Value": "Boss",
+      "Description": "Marked target slot holding the boss."
+    },
+    "Range": {
+      "Value": 100,
+      "Description": "Search range for the slot's boss."
+    },
+    "HealthRange": {
+      "Value": [ 0, 0.5 ],
+      "Description": "Fires when the boss's health over his maximum falls inside this range and the flag is set."
+    },
+    "Flag": {
+      "Value": "Orbis_Boss_Phase_Ready",
+      "Description": "The flag a phase macro sets once the boss may move on. The transition waits until it is set."
+    }
+  },
+  "Content": {
+    "Sensor": {
+      "Type": "And",
+      "Sensors": [
+        {
+          "Type": "Flag",
+          "Name": { "Compute": "Flag" }
+        },
+        {
+          "Type": "Target",
+          "Range": { "Compute": "Range" },
+          "TargetSlot": { "Compute": "Slot" },
+          "Filters": [
+            {
+              "Type": "Stat",
+              "StatTarget": "Value",
+              "RelativeTo": "Health",
+              "Stat": "Health",
+              "RelativeToTarget": "Max",
+              "ValueRange": { "Compute": "HealthRange" }
+            }
+          ]
+        }
+      ]
+    },
+    "Actions": [
+      {
+        "Type": "ParentState",
+        "State": "Next"
+      }
+    ]
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Headless Horseman's wrath, for the last part of his fight: his own sword swings, thrown bombs and charge hit 30% harder (the volleys falling on the players are the fight's, not his, so they keep their own damage), he moves a fifth faster, and he glows red. His fight's script puts it on him when he is worn down to his last third, and it lasts until he falls. Amount is the extra damage as a fraction; HorizontalSpeedMultiplier his speed.",
+  "$Comment": "The Headless Horseman's wrath, for the last part of his fight: his own sword swings, slam and charge hit 30% harder (the volleys falling on the players are the fight's, not his, so they keep their own damage), he moves a fifth faster, and he glows red. His fight's script puts it on him when he is worn down to his last third, and it lasts until he falls. Amount is the extra damage as a fraction; HorizontalSpeedMultiplier his speed.",
   "ApplicationEffects": {
     "EntityTopTint": "#ff5a3c",
     "EntityBottomTint": "#b3200f",

@@ -1,0 +1,20 @@
+{
+  "$Comment": "The Headless Horseman's falling volley bomb: an Epic Lantern Bomb's look drawn three times its size, so a player looking up sees it coming. It is the boss's own model, written whole rather than as a child of the players' Hallows_Eve_Lantern_Bomb_Epic_Thrown, so retuning one never changes the other. MinScale and MaxScale set the drawn size (the volley projectiles' UseModelScale honours them). The engine scales the HitBox by the same factor, so the HitBox here is a third of the thrown bomb's and the bomb still strikes the ground and players exactly where the smaller one did; the blast and the warning ring are the projectile's and the fight's, untouched by this file.",
+  "Model": "Items/Hallows_Eve/Lantern_Bomb/Lantern_Bomb_Center.blockymodel",
+  "Texture": "Items/Hallows_Eve/Lantern_Bomb/Lantern_Bomb_Epic_Texture.png",
+  "EyeHeight": 0.05,
+  "HitBox": {"Max": {"X": 0.05, "Y": 0.05, "Z": 0.05}, "Min": {"X": -0.05, "Y": -0.05, "Z": -0.05}},
+  "MinScale": 3,
+  "MaxScale": 3,
+  "Particles": [{"SystemId": "Fuse_Bomb", "TargetNodeName": "Fuse_Lit"}],
+  "AnimationSets": {
+    "Idle": {
+      "Animations": [
+        {
+          "Animation": "Items/Animations/Spin_Pitch/Spin_Pitch_Down.blockyanim",
+          "SoundEventId": "SFX_Bomb_Fuse"
+        }
+      ]
+    }
+  }
+}

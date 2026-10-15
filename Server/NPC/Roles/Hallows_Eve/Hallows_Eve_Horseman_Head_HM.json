@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Horseman's Head on the hard ride: Hallows_Eve_Horseman_Head written out again, as the game writes its own hard bosses, with more health, a bomb every 2.5 to 3 seconds and the Hallows_Eve_Horseman_Hard_Mode effect, which makes its bombs hit harder. His hard fight raises it in place of the normal Head (Phase2Behavior's HeadRole), and while it flies his body cannot be hurt. Fire hurts it at half (Hallows_Eve_Horseman_Fire_Ward), DropList Empty. Any key the template does not declare makes the game refuse the whole role.",
+  "$Comment": "The Horseman's Head on the hard ride: Hallows_Eve_Horseman_Head written out again, as the game writes its own hard bosses, with more health and the Hallows_Eve_Horseman_Hard_Mode effect. Like the normal Head it throws nothing (an empty RangedAttack switches the template's ranged attack off). His hard fight raises it in place of the normal Head (Phase2Behavior's HeadRole), and while it flies his body cannot be hurt. Fire hurts it at half (Hallows_Eve_Horseman_Fire_Ward), DropList Empty. Any key the template does not declare makes the game refuse the whole role.",
   "Type": "Variant",
   "Reference": "Template_Flying_Aggressive",
   "Modify": {
@@ -18,9 +18,8 @@
     "ViewSector": 360,
     "HearingRange": 16,
     "AlertedRange": 40,
-    "RangedAttack": "Root_Hallows_Eve_Horseman_Head_Bomb",
+    "RangedAttack": "",
     "RangedAttackDistance": 14,
-    "RangedAttackPauseRange": [2.5, 3],
     "CombatRelativeSpeedChase": 0.8,
     "CombatSeekSlowdownDistance": 5,
     "CombatSeekStopDistance": 4,

@@ -1,5 +1,5 @@
 {
-  "$Comment": "How the Headless Horseman fights on foot: the game's Burnt Praetorian's combat evaluator with his shield and summoning taken out (his left hand holds a lantern, and the fight itself brings his Jack Skeletons) and a lantern bomb in their place. Each tick the evaluator scores the actions in the current ActionSet and runs the best: Charge rushes a target 5 to 15 blocks off at most every 8 seconds; Bomb hurls Root_Hallows_Eve_Horseman_Bomb at a target 5 to 16 blocks off at most every 6 seconds; BackOff steps away to strafe after a run of hits; between those he swings his longsword (BasicAttacks: left, right and an overhead chop, Physical damage before armour). EntityEffects gives him his fire ward (Hallows_Eve_Horseman_Fire_Ward), so Fire, a Lantern Bomb's blast and burn included, hurts him at half. Tune damage in each swing's BaseDamage and pacing in each action's TimeSinceLastUsed SwitchPoint (seconds).",
+  "$Comment": "How the Headless Horseman fights on foot (his role Hallows_Eve_Headless_Horseman, on Hallows_Eve_Template_Horseman_Foot, the pack's copy of the game's Gobliterator boss template): the Burnt Praetorian's sword swings, the Feastmaster's ring slam and the Gobliterator's dash, and nothing thrown. Each tick the evaluator scores the actions in its one ActionSet and runs the best: Charge rushes a target 5 to 15 blocks off at most every 8 seconds, with the template's telegraph (half a second locked on, a second's glowing, screeching wind-up, then a straight charge in a roar of flame that any block stops with a stun); Slam (Root_Hallows_Eve_Horseman_Slam) closes to within 4 blocks at most every 15 seconds, lights a ring round him and blasts every player inside it about 1.2 seconds later; PickTarget picks whom to swing at, with no off-hand item (OffhandSlot -1, since his left hand holds a lantern, not a shield); between those he swings his longsword (BasicAttacks: left, right and an overhead chop, Physical damage before armour). The template has no strafe state, so there is no back-off action. EntityEffects gives him his fire ward (Hallows_Eve_Horseman_Fire_Ward), so Fire, a Lantern Bomb's blast and burn included, hurts him at half. Tune damage in each swing's BaseDamage and the slam's own file, and pacing in each action's TimeSinceLastUsed SwitchPoint (seconds).",
   "Type": "CombatActionEvaluator",
   "EntityEffects": ["Hallows_Eve_Horseman_Fire_Ward"],
   "TargetMemoryDuration": 10,
@@ -14,27 +14,10 @@
     "MinRunUtility": 0.5,
     "MinActionUtility": 0.01,
     "AvailableActions": {
-      "Default": {
-        "Type": "State",
-        "Description": "Change to the Default state",
-        "State": "Combat",
-        "SubState": "Default",
-        "PostExecuteDistanceRange": [2.25, 3.4],
-        "Target": "Hostile",
-        "WeightCoefficient": 1.25,
-        "Conditions": [
-          {"Type": "Randomiser", "MinValue": 0.9, "MaxValue": 1},
-          {"Type": "TimeSinceLastUsed", "Curve": {"Type": "Switch", "SwitchPoint": 10}},
-          {"Type": "TargetStatPercent", "Stat": "Stamina", "Curve": "InverseExponential"},
-          {
-            "Type": "TargetDistance",
-            "Curve": {"ResponseCurve": "SimpleDescendingLogistic", "XRange": [0, 10]}
-          }
-        ]
-      },
       "PickTarget": {
         "Type": "SelectBasicAttackTarget",
         "Description": "Select a target",
+        "OffhandSlot": -1,
         "Conditions": [
           {
             "Type": "TargetDistance",
@@ -43,27 +26,9 @@
           {"Type": "TimeSinceLastUsed", "Curve": {"Type": "Switch", "SwitchPoint": 3}}
         ]
       },
-      "BackOff": {
-        "Type": "State",
-        "Description": "Change to the strafe state",
-        "State": "Combat",
-        "SubState": "Strafe",
-        "PostExecuteDistanceRange": [6, 8],
-        "Target": "Hostile",
-        "WeightCoefficient": 1.25,
-        "Conditions": [
-          {
-            "Type": "RecentSustainedDamage",
-            "Sources": ["Combat"],
-            "Curve": {"ResponseCurve": "InverseExponential", "XRange": [0, 3]}
-          },
-          {"Type": "Randomiser", "MinValue": 0.6, "MaxValue": 1},
-          {"Type": "TimeSinceLastUsed", "Curve": {"Type": "Switch", "SwitchPoint": 10}}
-        ]
-      },
       "Charge": {
         "Type": "State",
-        "Description": "Charges towards the target",
+        "Description": "Locks on, winds up and charges at the target",
         "Target": "Hostile",
         "State": "Combat",
         "SubState": "Charge",
@@ -77,22 +42,17 @@
           }
         ]
       },
-      "Bomb": {
+      "Slam": {
         "Type": "Ability",
-        "Description": "Hurls a lantern bomb at a target out of reach",
+        "Description": "Rings the ground around him, then slams it",
         "Target": "Hostile",
-        "OffhandSlot": -1,
-        "Ability": "Root_Hallows_Eve_Horseman_Bomb",
-        "AttackDistanceRange": [5, 16],
-        "PostExecuteDistanceRange": [4, 8],
-        "ChargeFor": 0,
+        "Ability": "Root_Hallows_Eve_Horseman_Slam",
+        "AttackDistanceRange": [0, 4],
+        "PostExecuteDistanceRange": [2.25, 2.25],
+        "FailureTimeout": 3,
         "WeightCoefficient": 1.25,
         "Conditions": [
-          {"Type": "TimeSinceLastUsed", "Curve": {"Type": "Switch", "SwitchPoint": 6}},
-          {
-            "Type": "TargetDistance",
-            "Curve": {"ResponseCurve": "Linear", "XRange": [5, 16]}
-          }
+          {"Type": "TimeSinceLastUsed", "Curve": {"Type": "Switch", "SwitchPoint": 15}}
         ]
       }
     },
@@ -204,47 +164,7 @@
           "Timeout": 0.001,
           "CooldownRange": [0.001, 0.001]
         },
-        "Actions": ["PickTarget", "Charge", "Bomb", "BackOff"]
-      },
-      "Strafe": {
-        "BasicAttacks": {
-          "Attacks": ["Root_NPC_Skeleton_Burnt_Praetorian_Attack"],
-          "InteractionVars": {
-            "Sword_Swing_Left_Damage": {
-              "Interactions": [
-                {
-                  "Parent": "Skeleton_Burnt_Sword_Swing_Damage",
-                  "DamageCalculator": {"Type": "Absolute", "BaseDamage": {"Physical": 12}, "RandomPercentageModifier": 0},
-                  "DamageEffects": {"WorldSoundEventId": "SFX_Sword_T2_Impact", "LocalSoundEventId": "SFX_Sword_T2_Impact"}
-                }
-              ]
-            },
-            "Sword_Swing_Right_Damage": {
-              "Interactions": [
-                {
-                  "Parent": "Skeleton_Burnt_Sword_Swing_Damage",
-                  "DamageCalculator": {"Type": "Absolute", "BaseDamage": {"Physical": 12}, "RandomPercentageModifier": 0},
-                  "DamageEffects": {"WorldSoundEventId": "SFX_Sword_T2_Impact", "LocalSoundEventId": "SFX_Sword_T2_Impact"}
-                }
-              ]
-            },
-            "Sword_Swing_Down_Damage": {
-              "Interactions": [
-                {
-                  "Parent": "Skeleton_Burnt_Sword_Swing_Damage",
-                  "DamageCalculator": {"Type": "Absolute", "BaseDamage": {"Physical": 16}, "RandomPercentageModifier": 0},
-                  "DamageEffects": {"WorldSoundEventId": "SFX_Sword_T2_Impact", "LocalSoundEventId": "SFX_Sword_T2_Impact"}
-                }
-              ]
-            }
-          },
-          "Randomise": false,
-          "UseProjectedDistance": true,
-          "MaxRange": 4,
-          "Timeout": 0.001,
-          "CooldownRange": [0.001, 0.001]
-        },
-        "Actions": ["PickTarget", "Charge", "Bomb", "Default"]
+        "Actions": ["PickTarget", "Charge", "Slam"]
       }
     }
   }

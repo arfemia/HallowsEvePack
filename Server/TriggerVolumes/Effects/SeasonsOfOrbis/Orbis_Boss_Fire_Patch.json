@@ -1,5 +1,5 @@
 {
-  "$Comment": "A boss's lingering fire patch: the fire trap's flames on the ground, and every second each player standing in it takes 3 damage and the game's own Burn. TargetTypes Player keeps the boss and his creatures out of it. Orbis_Boss_Fire_Patch_Spawn sets its size and how long it lasts; the flames are cancelled just before it goes. Amount is each tick's damage, Interval the seconds between ticks.",
+  "$Comment": "A boss's lingering fire patch: the fire trap's flames on the ground, and every second each player standing in it is set burning with the game's own Burn, so all its harm is Fire damage (Burn's own ticks) and fire resistance, the resistance potion included, cuts it. A volume's DamageEntity tick always deals Environment damage, which no fire resistance touches, so the patch has none. TargetTypes Player keeps the boss and his creatures out of it. Orbis_Boss_Fire_Patch_Spawn sets its size and how long it lasts; the flames are cancelled just before it goes. Interval is the seconds between Burn refreshes; Burn's own file sets its damage and how long it lingers after a player steps out.",
   "Effects": [
     {
       "Type": "PlayVfx",
@@ -24,14 +24,6 @@
       "Scale": 1.0,
       "Rotation": {"X": 0.0, "Y": 0.0, "Z": 0.0},
       "Duration": 0.0
-    },
-    {
-      "Type": "DamageEntity",
-      "Event": "TICK",
-      "Interval": 1.0,
-      "Delay": 0.0,
-      "Mode": "Flat",
-      "Amount": 3.0
     },
     {
       "Type": "EntityEffect",

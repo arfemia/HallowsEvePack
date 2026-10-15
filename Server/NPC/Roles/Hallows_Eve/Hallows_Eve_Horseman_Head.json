@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Horseman's Head, flown off his shoulders mid-fight: a Variant of Template_Flying_Aggressive carrying the game's Incandescent skull's own Modify, with its look, its health and a small lantern bomb (Root_Hallows_Eve_Horseman_Head_Bomb) in place of the skull's spores. While it flies, the Horseman's body cannot be hurt; killing it is how players break that, which the fight's script watches for. It only exists inside his fight. Fire hurts it at half (Hallows_Eve_Horseman_Fire_Ward in _CombatConfig), DropList Empty. Any key the template does not declare makes the game refuse the whole role.",
+  "$Comment": "The Horseman's Head, flown off his shoulders mid-fight: a Variant of Template_Flying_Aggressive carrying the game's Incandescent skull's own Modify, with its look and its health. It circles the players and throws nothing: RangedAttack is empty, which switches off the template's whole ranged attack (its Enabled reads !isEmpty(RangedAttack)), since nothing in this fight is thrown at a player without a warning ring. While it flies, the Horseman's body cannot be hurt; killing it is how players break that, which the fight's script watches for. It only exists inside his fight. Fire hurts it at half (Hallows_Eve_Horseman_Fire_Ward in _CombatConfig), DropList Empty. Any key the template does not declare makes the game refuse the whole role.",
   "Type": "Variant",
   "Reference": "Template_Flying_Aggressive",
   "Modify": {
@@ -18,9 +18,8 @@
     "ViewSector": 360,
     "HearingRange": 16,
     "AlertedRange": 40,
-    "RangedAttack": "Root_Hallows_Eve_Horseman_Head_Bomb",
+    "RangedAttack": "",
     "RangedAttackDistance": 14,
-    "RangedAttackPauseRange": [3, 4],
     "CombatRelativeSpeedChase": 0.8,
     "CombatSeekSlowdownDistance": 5,
     "CombatSeekStopDistance": 4,

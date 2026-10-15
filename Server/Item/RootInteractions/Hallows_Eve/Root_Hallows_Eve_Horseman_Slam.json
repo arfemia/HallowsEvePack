@@ -1,0 +1,5 @@
+{
+  "$Comment": "The Headless Horseman's ring slam on foot, the id his combat evaluators' Slam action names (CAE_Hallows_Eve_Headless_Horseman and _HM). It runs Hallows_Eve_Horseman_Slam.",
+  "Interactions": ["Hallows_Eve_Horseman_Slam"],
+  "Tags": {"Attack": ["Melee"]}
+}

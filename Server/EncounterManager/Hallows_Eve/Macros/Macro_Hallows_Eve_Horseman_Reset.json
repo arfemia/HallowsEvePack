@@ -14,6 +14,7 @@
       { "Type": "SetFlag", "Name": "Horseman_P2_Landed", "SetTo": false },
       { "Type": "SetFlag", "Name": "Horseman_Head_Out", "SetTo": false },
       { "Type": "SetFlag", "Name": "Horseman_Head_Bound", "SetTo": false },
+      { "Type": "SetFlag", "Name": "Horseman_Head_Flown", "SetTo": false },
       { "Type": "SetFlag", "Name": "Horseman_P3_Armed", "SetTo": false },
       { "Type": "SetFlag", "Name": "Horseman_Unhorse_GuardArmed", "SetTo": false },
       { "Type": "SetFlag", "Name": "Horseman_P1_Volley_Armed", "SetTo": false },

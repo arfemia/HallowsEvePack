@@ -1,0 +1,501 @@
+{
+  "$Comment": [
+    "The Headless Horseman on foot, the template both his foot roles are Variants of",
+    "(Hallows_Eve_Headless_Horseman and _HM). It is a copy of the game's own boss template",
+    "Template_Boss_Goblin_Gobliterator, kept to its combat-evaluator core and the Gobliterator's",
+    "telegraphed dash, with his own sounds and nothing of the Gobliterator's machinery: no saw",
+    "sounds, no hit sound of its own (his model's Hurt set has the skeleton's), no beacons to the",
+    "Gobliterator's group, no club-slam, out-of-control or slow-tracking states, which his combat",
+    "evaluator never picks.",
+    "",
+    "The combat evaluator (_CombatConfig on each Variant) picks his actions and drives the Combat",
+    "sub-states. .Default aims, keeps DesiredAttackDistanceRange and fires the picked ability.",
+    ".Charge is his dash: half a second locked on at 10 degrees, then a one-second wind-up he cannot",
+    "be knocked out of, in which he plays his model's DashPrepare set (the wind-up screech), kicks",
+    "up dust and glows (Hallows_Eve_Horseman_Dash_Glow, with a warning marker on the ground ahead",
+    "of him); then he launches with a burst of flame (SFX_Staff_Flame_Fireball_Launch) and charges",
+    "20 blocks a second for CombatChargeDistance, roaring like a torch while he runs",
+    "(Hallows_Eve_Horseman_Dash_Loop). A player he runs through takes",
+    "CombatChargeHitEntityInteraction and the dash ends; his own creatures are never hit. Any block",
+    "in his path stops him and stuns him for a second (.Stunned, with the game's",
+    "Goblin_Feastmaster_Stunned, under which he takes more physical damage for a few seconds); no",
+    "block is ever broken. A miss leaves him a second to recover (.ChargeEnd). His model must carry",
+    "the five sets this file plays: DashPrepare, Dash, DashImpact, DashMiss and DashCrash.",
+    "",
+    "Every parameter's default is the normal Horseman's; a Variant overrides what differs. Any key",
+    "a Variant names that this file does not declare makes the game refuse the whole role."
+  ],
+  "Type": "Abstract",
+  "Appearance": { "Compute": "Appearance" },
+  "AttitudeGroup": { "Compute": "AttitudeGroup" },
+  "BreathesInWater": true,
+  "BusyStates": [ "Combat", "Alerted" ],
+  "DeathAnimationTime": 1.5,
+  "DeathParticles": "Effect_Death_Flames",
+  "DefaultNPCAttitude": "Ignore",
+  "DefaultPlayerAttitude": { "Compute": "DefaultPlayerAttitude" },
+  "DisableDamageGroups": { "Compute": "DisableDamageGroups" },
+  "DropDeathItemsInstantly": false,
+  "DropList": "Empty",
+  "HotbarItems": { "Compute": "Weapons" },
+  "HotbarSize": 3,
+  "Invulnerable": { "Compute": "Invulnerable" },
+  "IsMemory": false,
+  "KnockbackScale": 0.0,
+  "MaxHealth": { "Compute": "MaxHealth" },
+  "NameTranslationKey": { "Compute": "NameTranslationKey" },
+  "SeparationDistance": 2,
+  "SeparationDistanceTarget": 0.5,
+  "SeparationFarRadiusTarget": 7,
+  "SeparationNearRadiusTarget": 2,
+  "SeparationWeight": 1,
+  "StartState": "Idle",
+  "Instructions": [
+    {
+      "$Comment": "No health regeneration, from the moment he appears.",
+      "Continue": true,
+      "Sensor": { "Type": "Any", "Once": true },
+      "Actions": [
+        { "Type": "SetHealthRegen", "EnableRegen": false }
+      ]
+    },
+    {
+      "$Comment": "Idle: stand still and watch for hostiles.",
+      "Sensor": { "Type": "State", "State": "Idle" },
+      "Instructions": [
+        {
+          "$Comment": "If hit, react and engage at once.",
+          "Reference": "Component_Instruction_Damage_Check",
+          "Modify": {
+            "_ExportStates": [ "Combat", "Idle" ],
+            "AlertedRange": { "Compute": "AlertedRange" }
+          }
+        },
+        {
+          "$Comment": "A hostile within detection range: become Alerted.",
+          "Sensor": {
+            "Reference": "Component_Sensor_Standard_Detection",
+            "Modify": {
+              "ViewRange": { "Compute": "ViewRange" },
+              "ViewSector": { "Compute": "ViewSector" },
+              "HearingRange": { "Compute": "HearingRange" },
+              "AbsoluteDetectionRange": { "Compute": "AbsoluteDetectionRange" },
+              "ThroughWalls": false,
+              "Attitudes": [ "Hostile" ]
+            }
+          },
+          "Actions": [
+            { "Type": "State", "State": "Alerted" }
+          ]
+        }
+      ]
+    },
+    {
+      "$Comment": "Alerted: play the alerted animation once, watch the target, then Combat.Default after AlertedTime.",
+      "Sensor": { "Type": "State", "State": "Alerted" },
+      "Instructions": [
+        {
+          "Continue": true,
+          "Sensor": { "Type": "Any", "Once": true },
+          "Actions": [
+            { "Type": "PlayAnimation", "Slot": "Status", "Animation": "Alerted" }
+          ]
+        },
+        {
+          "Continue": true,
+          "Sensor": {
+            "Type": "Target",
+            "Range": { "Compute": "AlertedRange" },
+            "Filters": [ { "Type": "LineOfSight" } ]
+          },
+          "HeadMotion": { "Type": "Watch" }
+        },
+        {
+          "$Comment": "Hit while Alerted: straight to combat.",
+          "Sensor": { "Type": "Damage", "Combat": true },
+          "Actions": [
+            { "Type": "AddToHostileTargetMemory" },
+            { "Type": "State", "ClearHeadMotion": false, "ClearBodyMotion": false, "State": "Combat.Default" }
+          ]
+        },
+        {
+          "Sensor": { "Type": "Target", "Range": { "Compute": "AlertedRange" } },
+          "ActionsBlocking": true,
+          "Actions": [
+            { "Type": "Timeout", "Delay": { "Compute": "AlertedTime" } },
+            { "Type": "State", "ClearHeadMotion": false, "ClearBodyMotion": false, "State": "Combat.Default" }
+          ]
+        },
+        {
+          "$Comment": "Lost the target while Alerted: back to Idle.",
+          "Actions": [
+            { "Type": "State", "State": "Idle" }
+          ]
+        }
+      ]
+    },
+    {
+      "$Comment": "Combat: the combat evaluator picks actions and drives these sub-states.",
+      "Sensor": { "Type": "State", "State": "Combat" },
+      "Instructions": [
+        {
+          "Sensor": {
+            "Type": "Or",
+            "Sensors": [
+              {
+                "Reference": "Component_Sensor_Standard_Detection",
+                "Modify": {
+                  "ViewRange": { "Compute": "ViewRange" },
+                  "ViewSector": { "Compute": "ViewSector" },
+                  "HearingRange": { "Compute": "HearingRange" },
+                  "AbsoluteDetectionRange": { "Compute": "AbsoluteDetectionRange" },
+                  "ThroughWalls": false,
+                  "Attitudes": [ "Hostile" ]
+                }
+              },
+              { "Type": "HasHostileTargetMemory" }
+            ]
+          },
+          "Instructions": [
+            {
+              "$Comment": "Copy the evaluator's picked target into the LockedTarget slot.",
+              "Continue": true,
+              "Sensor": { "Type": "Target", "TargetSlot": "CAETargetSlot" },
+              "Actions": [
+                { "Type": "SetMarkedTarget" }
+              ]
+            },
+            {
+              "Continue": true,
+              "Sensor": { "Type": "Damage", "Combat": true },
+              "Actions": [
+                { "Type": "AddToHostileTargetMemory" }
+              ]
+            },
+            {
+              "$Comment": "Default sub-state: aim, keep the attack distance, fire the picked ability.",
+              "TreeMode": true,
+              "Sensor": { "Type": "State", "State": ".Default" },
+              "Instructions": [
+                {
+                  "Sensor": { "Type": "CombatActionEvaluator", "TargetInRange": true },
+                  "HeadMotion": { "Type": "Aim", "HitProbability": 1 },
+                  "BodyMotion": {
+                    "Type": "MaintainDistance",
+                    "DesiredDistanceRange": { "Compute": "DesiredAttackDistanceRange" },
+                    "MoveThreshold": 0.2,
+                    "RelativeForwardsSpeed": { "Compute": "CombatMovingRelativeSpeed" },
+                    "RelativeBackwardsSpeed": { "Compute": "CombatBackwardsRelativeSpeed" }
+                  },
+                  "Actions": [
+                    { "Type": "CombatAbility" }
+                  ]
+                }
+              ]
+            },
+            {
+              "$Comment": "Stunned: a block stopped his dash. A second's stagger, open to physical hits.",
+              "Sensor": { "Type": "State", "IgnoreMissingSetState": true, "State": ".Stunned" },
+              "BodyMotion": { "Type": "Nothing" },
+              "ActionsBlocking": true,
+              "Actions": [
+                { "Type": "PlayAnimation", "Animation": "DashCrash", "Slot": "Action" },
+                { "Type": "ApplyEntityEffect", "EntityEffect": "Goblin_Feastmaster_Stunned", "Once": true, "UseTarget": false },
+                { "Type": "Timeout", "Delay": [ 1, 1 ] },
+                { "Type": "PlayAnimation", "Slot": "Action" },
+                { "Type": "State", "State": ".Default" }
+              ]
+            },
+            {
+              "$Comment": "ChargeEnd: a second's recovery after a dash.",
+              "Sensor": { "Type": "State", "IgnoreMissingSetState": true, "State": ".ChargeEnd" },
+              "Instructions": [
+                {
+                  "Continue": true,
+                  "Sensor": { "Type": "Target" },
+                  "HeadMotion": { "Type": "Aim" }
+                },
+                {
+                  "ActionsBlocking": true,
+                  "Actions": [
+                    { "Type": "Timeout", "Delay": [ 1, 1 ] },
+                    { "Type": "State", "State": ".Default" }
+                  ]
+                }
+              ]
+            },
+            {
+              "$Comment": "Charge: his telegraphed dash at the target.",
+              "Sensor": { "Type": "State", "IgnoreMissingSetState": true, "State": ".Charge" },
+              "Instructions": [
+                {
+                  "Sensor": {
+                    "Type": "Or",
+                    "Sensors": [
+                      { "Type": "CombatActionEvaluator", "TargetInRange": true },
+                      { "Type": "CombatActionEvaluator", "TargetInRange": false }
+                    ]
+                  },
+                  "Instructions": [
+                    {
+                      "Continue": true,
+                      "Sensor": { "Type": "Target", "Range": { "Compute": "CombatChargeTargetDistance" } },
+                      "BodyMotion": {
+                        "Type": "Charge",
+                        "ClearOnceOnStateChange": true,
+                        "RelativeTurnSpeed": 1,
+                        "LockedOnToleranceAngle": 10,
+                        "LockedOnDurationRange": [ 0.5, 0.5 ],
+                        "WindingUpDurationRange": [ 1, 1 ],
+                        "PostChargeDurationRange": [ 0, 0 ],
+                        "WindingUpUninterruptable": true,
+                        "WindingUpRelativeTurnSpeed": 1,
+                        "ChargeRelativeSpeed": 0,
+                        "ChargeDistanceRange": { "Compute": "CombatChargeDistance" },
+                        "ChargeAbsoluteSpeed": 20,
+                        "IgnoredBlockSetTriggers": false,
+                        "EntityStopsCharge": false,
+                        "KnockbackThreshold": 1000000,
+                        "ClimbSlope": 2,
+                        "DropSlope": 2,
+                        "HorizontalSkipGapWidth": 2.5,
+                        "NPCCollisionInteraction": "",
+                        "PlayerCollisionInteraction": { "Compute": "CombatChargeHitEntityInteraction" }
+                      },
+                      "HeadMotion": { "Type": "Aim", "RelativeTurnSpeed": 0.5 }
+                    },
+                    {
+                      "Sensor": { "Type": "ChargeState", "States": [ "LostTarget" ] }
+                    },
+                    {
+                      "$Comment": "Aiming: back to .Default if no lock comes within a second.",
+                      "Sensor": { "Type": "ChargeState", "States": [ "Aiming" ] },
+                      "ActionsBlocking": true,
+                      "Actions": [
+                        { "Type": "Timeout", "Delay": [ 1, 1 ] },
+                        { "Type": "State", "State": ".Default" }
+                      ]
+                    },
+                    {
+                      "$Comment": "WindingUp: the screech, the dust and the glow, once.",
+                      "Sensor": { "Type": "ChargeState", "States": [ "WindingUp" ] },
+                      "Instructions": [
+                        {
+                          "Sensor": { "Type": "Any", "Once": true },
+                          "Actions": [
+                            { "Type": "PlayAnimation", "Animation": "DashPrepare", "Slot": "Action" },
+                            { "Type": "SpawnParticles", "ParticleSystem": "Goblin_Feastmaster_StampedePrepare" },
+                            { "Type": "ApplyEntityEffect", "UseTarget": false, "EntityEffect": "Hallows_Eve_Horseman_Dash_Glow" }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "$Comment": "Launch: a burst of flame, once.",
+                      "Sensor": { "Type": "ChargeState", "Once": true, "States": [ "Launch" ] },
+                      "Actions": [
+                        { "Type": "PlaySound", "SoundEventId": "SFX_Staff_Flame_Fireball_Launch" }
+                      ]
+                    },
+                    {
+                      "$Comment": "Charging: the roaring flame, kept up every tick he runs.",
+                      "Continue": true,
+                      "Sensor": { "Type": "ChargeState", "States": [ "Charging" ] },
+                      "Actions": [
+                        { "Type": "ApplyEntityEffect", "UseTarget": false, "EntityEffect": "Hallows_Eve_Horseman_Dash_Loop" }
+                      ]
+                    },
+                    {
+                      "$Comment": "Charging: the sprint and the dust, once.",
+                      "Continue": true,
+                      "Sensor": { "Type": "ChargeState", "Once": true, "States": [ "Charging" ] },
+                      "Actions": [
+                        { "Type": "PlayAnimation", "Animation": "Dash", "Slot": "Action" },
+                        { "Type": "SpawnParticles", "ParticleSystem": "Goblin_Feastmaster_Stampede" }
+                      ]
+                    },
+                    {
+                      "$Comment": "Obstructed: a block stopped him, so he is stunned.",
+                      "Sensor": { "Type": "ChargeState", "Once": true, "States": [ "Obstructed" ] },
+                      "Actions": [
+                        { "Type": "State", "State": ".Stunned" }
+                      ]
+                    },
+                    {
+                      "$Comment": "Hit a player: the impact, the hit, and the dash ends.",
+                      "Continue": true,
+                      "Sensor": { "Type": "ChargeEntityCollisions", "GetNPCs": false, "GetPlayers": true },
+                      "Actions": [
+                        { "Type": "PlayAnimation", "Animation": "DashImpact", "Slot": "Action" },
+                        { "Type": "EntityHitInteraction", "Interaction": { "Compute": "CombatChargeHitEntityInteraction" } },
+                        { "Type": "State", "State": ".ChargeEnd" }
+                      ]
+                    },
+                    {
+                      "$Comment": "Missed: the recovery.",
+                      "Sensor": { "Type": "ChargeState", "Once": true, "States": [ "Finished" ] },
+                      "ActionsBlocking": true,
+                      "Actions": [
+                        { "Type": "PlayAnimation", "Animation": "DashMiss", "Slot": "Action" },
+                        { "Type": "State", "State": ".ChargeEnd" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "$Comment": "No evaluator target: clear the status animation and return to .Default.",
+                  "Actions": [
+                    { "Type": "PlayAnimation", "Slot": "Status" },
+                    { "Type": "State", "State": ".Default" }
+                  ]
+                }
+              ]
+            },
+            {
+              "$Comment": "Chase to close distance. Exit slots fall back to Idle.",
+              "Reference": "Component_Instruction_Intelligent_Chase",
+              "Modify": {
+                "_ExportStates": [ "Idle", "Idle", "Idle" ],
+                "ViewRange": { "Compute": "AlertedRange" },
+                "HearingRange": { "Compute": "HearingRange" },
+                "RelativeSpeed": { "Compute": "ChaseRelativeSpeed" }
+              }
+            }
+          ]
+        },
+        {
+          "$Comment": "Fallback to Idle.",
+          "Actions": [
+            { "Type": "State", "State": "Idle" }
+          ]
+        }
+      ]
+    }
+  ],
+  "Parameters": {
+    "Appearance": {
+      "Value": "Hallows_Eve_Headless_Horseman",
+      "Description": "Model to be used. It must carry the DashPrepare, Dash, DashImpact, DashMiss and DashCrash animation sets."
+    },
+    "ViewRange": {
+      "Value": 32,
+      "Description": "The range from which the target will be seen. If zero, sight is disabled."
+    },
+    "ViewSector": {
+      "Value": 360,
+      "Description": "The view sector within which the target needs to be to be seen."
+    },
+    "HearingRange": {
+      "Value": 16,
+      "Description": "The range from which the target will be heard. If zero, hearing is disabled."
+    },
+    "AbsoluteDetectionRange": {
+      "Value": 4,
+      "Description": "The range at which a target is always detected. If zero, absolute detection is disabled."
+    },
+    "AlertedRange": {
+      "Value": 40,
+      "Description": "The range within which a player can be seen or sensed once he is alerted."
+    },
+    "AlertedTime": {
+      "Value": [ 0.2, 0.2 ],
+      "Description": "How long he waits in the Alerted state before combat."
+    },
+    "MaxSpeed": {
+      "Value": 4,
+      "Description": "Maximum walking speed."
+    },
+    "RunThreshold": {
+      "Value": 1,
+      "Description": "Relative speed at which the run animation is used. 1 disables run animations."
+    },
+    "MaxHealth": {
+      "Value": 1200,
+      "Description": "Max health. A foot role must match the mounted role it is swapped in from, since health carries across."
+    },
+    "Weapons": {
+      "Value": [ "Weapon_Longsword_Praetorian_NPC" ],
+      "TypeHint": "String",
+      "Description": "Main-hand items."
+    },
+    "DesiredAttackDistanceRange": {
+      "Value": [ 3, 3 ],
+      "Description": "Distance he keeps from his target while attacking in .Default."
+    },
+    "ChaseRelativeSpeed": {
+      "Value": 0.67,
+      "Description": "Relative chasing speed when pursuing a target out of attack range."
+    },
+    "CombatMovingRelativeSpeed": {
+      "Value": 0.5,
+      "Description": "Relative speed while moving to keep the attack distance."
+    },
+    "CombatBackwardsRelativeSpeed": {
+      "Value": 0.4,
+      "Description": "Relative speed when backing away from the target."
+    },
+    "AttitudeGroup": {
+      "Value": "Empty",
+      "Description": "Attitude group."
+    },
+    "DefaultPlayerAttitude": {
+      "Value": "Hostile",
+      "Description": "Default attitude towards players."
+    },
+    "DisableDamageGroups": {
+      "Value": [ "Skeleton" ],
+      "TypeHint": "String",
+      "Description": "Groups he takes no damage from."
+    },
+    "Invulnerable": {
+      "Value": false,
+      "Description": "Whether he starts invulnerable. His fight's script sets and clears invulnerability itself."
+    },
+    "NameTranslationKey": {
+      "Value": "npcs.Hallows_Eve_Headless_Horseman.name",
+      "Description": "Translation key for his display name."
+    },
+    "CombatChargeTargetDistance": {
+      "Value": 30,
+      "Description": "The furthest a target may be for him to dash at it.",
+      "TypeHint": "Double"
+    },
+    "CombatChargeDistance": {
+      "Value": [ 20, 25 ],
+      "Description": "How far each dash runs, in blocks."
+    },
+    "CombatChargeHitEntityInteraction": {
+      "Value": "Root_NPC_Skeleton_Burnt_Praetorian_Charge_Hit",
+      "Description": "The interaction a player he runs through takes.",
+      "TypeHint": "String"
+    }
+  },
+  "StateTransitions": [
+    {
+      "$Comment": "Clear the status animation when leaving Alerted.",
+      "States": [ { "To": [], "From": [ "Alerted" ] } ],
+      "Actions": [
+        { "Type": "PlayAnimation", "Slot": "Status" }
+      ]
+    },
+    {
+      "$Comment": "Release the target and reset instructions when entering Idle.",
+      "States": [ { "To": [ "Idle" ], "From": [] } ],
+      "Actions": [
+        { "Type": "ReleaseTarget" },
+        { "Type": "ResetInstructions" }
+      ]
+    }
+  ],
+  "MotionControllerList": [
+    {
+      "Type": "Walk",
+      "MaxWalkSpeed": { "Compute": "MaxSpeed" },
+      "Gravity": 10,
+      "RunThreshold": { "Compute": "RunThreshold" },
+      "MaxFallSpeed": 15,
+      "MaxRotationSpeed": 360,
+      "Acceleration": 10
+    }
+  ]
+}

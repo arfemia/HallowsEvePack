@@ -3,19 +3,26 @@
     "The Headless Horseman's middle phase, on foot: his fight's second behavior slot runs it.",
     "",
     "As it starts, two Jack Skeletons rise beside the fight and the members are told he is thrown;",
-    "he lands invulnerable from his fall and can be hurt LandingSeconds later. Every TossSeconds his",
-    "head flies off: his body cannot be hurt while it flies (it keeps fighting), and the Head",
-    "(HeadRole, raised beside the fight and bound into the Head slot) hurls small bombs. Kill the",
-    "Head and he can bleed again; leave it HeadSeconds and it flies back, removed, and he heals",
-    "(MendEffect). Each turn tells the members what happened through a feedback moment.",
+    "he lands invulnerable from his fall and can be hurt LandingSeconds later. FirstTossSeconds after",
+    "he is thrown his head flies off for the first time, and TossSeconds after each flight ends it",
+    "flies again: his body cannot be hurt while it flies (it keeps fighting), and the Head (HeadRole,",
+    "raised beside the fight and bound into the Head slot) circles the players. Kill the Head and he",
+    "can bleed again; leave it HeadSeconds and it flies back, removed, and he heals (MendEffect).",
+    "Each turn tells the members what happened through a feedback moment.",
     "",
-    "Its flags and timers are named Horseman_ and cleared by Macro_Hallows_Eve_Horseman_Reset when",
-    "the fight resets."
+    "When a flight ends, either way, it sets Horseman_Head_Flown: his fight's phase 3 transition",
+    "(Macro_Orbis_Boss_Transition_HealthAndFlag) waits on it, so his head always flies before his",
+    "wrath. Its flags and timers are named Horseman_ and cleared by Macro_Hallows_Eve_Horseman_Reset",
+    "when the fight resets."
   ],
   "Class": "Instruction",
   "Type": "Component",
   "Interface": "Hytale.Instruction.Encounter.Phase.Behavior",
   "Parameters": {
+    "FirstTossSeconds": {
+      "Value": 6,
+      "Description": "Seconds from his fall from the saddle to his head's first flight, one number. Keep it under TossSeconds."
+    },
     "TossSeconds": {
       "Value": [ 40, 40 ],
       "Description": "Seconds between one head toss ending and the next starting."
@@ -85,6 +92,7 @@
             "Name": "Horseman_Landing_Timer"
           },
           {
+            "$Comment": "A timer starts only once in the script's life, so every fight re-arms it with TimerRestart (TossSeconds) and then sets it to FirstTossSeconds for the first flight.",
             "Type": "TimerStart",
             "Name": "Horseman_Toss_Timer",
             "StartValueRange": { "Compute": "TossSeconds" },
@@ -94,6 +102,11 @@
           {
             "Type": "TimerRestart",
             "Name": "Horseman_Toss_Timer"
+          },
+          {
+            "Type": "TimerModify",
+            "Name": "Horseman_Toss_Timer",
+            "SetValue": { "Compute": "FirstTossSeconds" }
           },
           {
             "Type": "Spawn",
@@ -240,6 +253,10 @@
             "SetTo": false
           },
           {
+            "Type": "SetFlag",
+            "Name": "Horseman_Head_Flown"
+          },
+          {
             "Type": "ReleaseTarget",
             "TargetSlot": "Head"
           },
@@ -296,6 +313,10 @@
             "Type": "SetFlag",
             "Name": "Horseman_Head_Bound",
             "SetTo": false
+          },
+          {
+            "Type": "SetFlag",
+            "Name": "Horseman_Head_Flown"
           },
           {
             "Type": "ReleaseTarget",

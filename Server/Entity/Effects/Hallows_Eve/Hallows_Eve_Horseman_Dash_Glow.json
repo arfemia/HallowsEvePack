@@ -1,0 +1,20 @@
+{
+  "$Comment": "The Headless Horseman's glow as he winds up his dash on foot (Hallows_Eve_Template_Horseman_Foot puts it on him as the one-second wind-up starts): the game's own charge highlight (Saw_Charge_VFX, the yellow sheen its Gobliterator wears before a dash) and the Gobliterator's warning marker on the ground just ahead of him, without that effect's saw sparks. Duration covers the wind-up and the first moments of the dash; Scale and PositionOffset place the marker (Z ahead, Y down from his origin).",
+  "ApplicationEffects": {
+    "Particles": [
+      {
+        "SystemId": "Gobliterator_Saw_Charge_Warning",
+        "Scale": 2.5,
+        "TargetEntityPart": "Entity",
+        "TargetNodeName": "Origin",
+        "PositionOffset": {"Y": -1, "Z": 1}
+      }
+    ],
+    "ModelVFXId": "Saw_Charge_VFX"
+  },
+  "OverlapBehavior": "Overwrite",
+  "Infinite": false,
+  "Debuff": false,
+  "Duration": 2,
+  "RemovalBehavior": "Duration"
+}

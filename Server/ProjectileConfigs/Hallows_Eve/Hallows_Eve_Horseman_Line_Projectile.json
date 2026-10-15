@@ -1,0 +1,18 @@
+{
+  "$Comment": "One bomb of the Headless Horseman's bomb pass: the volley bomb (Parent, the same fall from 25 blocks up onto a ring, about two seconds) with the lighter boss blast, Orbis_Boss_Bomb_Burst (3 blocks, players only), since the row's rings stand 4 blocks apart and a player caught between two takes both. Both landings are restated, since a child's Interactions replace the parent's whole.",
+  "Parent": "Hallows_Eve_Horseman_Volley_Projectile",
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        "Orbis_Boss_Bomb_Burst",
+        {"Type": "RemoveEntity", "Entity": "User"}
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        "Orbis_Boss_Bomb_Burst",
+        {"Type": "RemoveEntity", "Entity": "User"}
+      ]
+    }
+  }
+}

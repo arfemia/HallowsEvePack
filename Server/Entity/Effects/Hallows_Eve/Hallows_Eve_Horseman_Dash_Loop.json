@@ -1,0 +1,10 @@
+{
+  "$Comment": "The roar of flame while the Headless Horseman dashes on foot: Hallows_Eve_Template_Horseman_Foot puts it on him every tick he is charging, the way the game's Gobliterator keeps its own charge loop going, so the sound lasts exactly as long as the dash. WorldSoundEventId is the sound; Duration only needs to outlast one tick.",
+  "ApplicationEffects": {
+    "WorldSoundEventId": "SFX_Staff_Flame_Flamethrower"
+  },
+  "OverlapBehavior": "Overwrite",
+  "Infinite": false,
+  "Duration": 0.25,
+  "RemovalBehavior": "Duration"
+}

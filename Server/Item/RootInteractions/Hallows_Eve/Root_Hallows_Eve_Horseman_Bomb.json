@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Headless Horseman's ranged attack, the id his roles name: in the saddle as RangedAttack, on foot as his combat evaluator's Bomb ability. It runs Hallows_Eve_Horseman_Bomb_Throw.",
+  "$Comment": "The Headless Horseman's aimed bomb, thrown only on the hard ride and only in the saddle: Hallows_Eve_Headless_Horseman_Mounted_HM names it as RangedAttack, after a 3 second aim at his target. It runs Hallows_Eve_Horseman_Bomb_Throw.",
   "Interactions": ["Hallows_Eve_Horseman_Bomb_Throw"],
   "Tags": {"Attack": ["Ranged"]}
 }

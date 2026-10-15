@@ -1,0 +1,11 @@
+{
+  "$Comment": "The Headless Horseman's glow as he winds up a swoop in the saddle: the game's own charge highlight (Saw_Charge_VFX, the yellow sheen its Gobliterator wears before a dash), with none of that effect's ground marker or saw sparks, since he winds up in the air. His Ride (Hallows_Eve_Horseman_Ride) puts it on him as the one-second wind-up starts; Duration carries it a little past the launch.",
+  "ApplicationEffects": {
+    "ModelVFXId": "Saw_Charge_VFX"
+  },
+  "OverlapBehavior": "Overwrite",
+  "Infinite": false,
+  "Debuff": false,
+  "Duration": 1.5,
+  "RemovalBehavior": "Duration"
+}
