@@ -17,3 +17,6 @@ effect.hallows_eve_costume_lost_soul.name = Lost Soul Costume
 
 # The Lantern Bombs' burn, named like the game's own Burn.
 effect.hallows_eve_lantern_burn.name = Burn
+
+# The Fire Resistance Potion's buff, shown when a player hovers its icon.
+effect.hallows_eve_fire_resistance.name = Fire Resistance

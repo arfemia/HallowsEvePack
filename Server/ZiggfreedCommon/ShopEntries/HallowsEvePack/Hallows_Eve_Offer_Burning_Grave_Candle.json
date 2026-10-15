@@ -1,11 +1,11 @@
 {
-  "$Comment": "A Burning Grave Candle, what the Gravekeeper burns to open the Headless Horseman's hard ride (Hallows_Eve_Graveyard_Hard.json's EntryCost). Requires opens it once Old Jack counts the player a Regular (Friendly with Old Jack's Favor); a locked offer still shows on the shelf with its lock line, so a player can see what to work towards. No purchase limit and no rotation. SortOrder 6 puts it straight after the plain Grave Candle on the lanterns shelf. Cost is the price in Hallow Sweets. Named by the item's own keys.",
+  "$Comment": "A Burning Grave Candle, what the Gravekeeper burns to open the Headless Horseman's hard ride (Hallows_Eve_Graveyard_Hard.json's EntryCost). Requires opens it once Old Jack counts the player a Regular (Friendly with Old Jack's Favor); a locked offer still shows on the shelf with its lock line, so a player can see what to work towards. No purchase limit and no rotation. SortOrder 7 puts it after the two plain Grave Candle offers on the lanterns shelf, and the same candle for Life Essence (Hallows_Eve_Offer_Burning_Grave_Candle_Life_Essence.json, SortOrder 8, behind the same lock) sits straight after it where the bounty pack runs. Cost is the price in Hallow Sweets. Named by the item's own keys.",
   "Parent": "Hallows_Eve_Offer_Base",
   "Text": {
     "TitleKey": "items.Hallows_Eve_Burning_Grave_Candle.name",
     "FlavorKey": "items.Hallows_Eve_Burning_Grave_Candle.description"
   },
-  "Listing": { "Category": "lights", "SortOrder": 6 },
+  "Listing": { "Category": "lights", "SortOrder": 7 },
   "Cost": { "Currencies": { "Hallows_Eve_Sweets": 60 } },
   "Requires": { "Factors": [ { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Hallows_Eve_Old_Jack/Friendly", "Min": 1 } ] },
   "Rewards": [

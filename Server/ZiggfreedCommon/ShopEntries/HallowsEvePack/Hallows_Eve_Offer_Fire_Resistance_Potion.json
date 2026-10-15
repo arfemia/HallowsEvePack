@@ -1,0 +1,13 @@
+{
+  "$Comment": "The Fire Resistance Potion (Item/Items/Hallows_Eve/Hallows_Eve_Fire_Resistance_Potion.json): drunk, it halves Fire damage for three minutes, for a player heading into the Headless Horseman's graveyard. Open to everyone: no Requires, no purchase limit and no rotation. SortOrder 5 puts it first on the gear shelf, ahead of the Jack Helm (10). Cost is the price in Hallow Sweets; the reward's Count is how many potions each purchase hands over. Named by the item's own keys.",
+  "Parent": "Hallows_Eve_Offer_Base",
+  "Text": {
+    "TitleKey": "items.Hallows_Eve_Fire_Resistance_Potion.name",
+    "FlavorKey": "items.Hallows_Eve_Fire_Resistance_Potion.description"
+  },
+  "Listing": { "Category": "gear", "SortOrder": 5 },
+  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 15 } },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Hallows_Eve_Fire_Resistance_Potion", "Count": 1 } }
+  ]
+}

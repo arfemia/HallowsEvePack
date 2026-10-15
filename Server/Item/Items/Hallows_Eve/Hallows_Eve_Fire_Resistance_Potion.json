@@ -1,0 +1,37 @@
+{
+  "$Comment": "The Fire Resistance Potion, sold at Old Jack's stall (ShopEntries/HallowsEvePack/Hallows_Eve_Offer_Fire_Resistance_Potion.json) for the Headless Horseman's fire. Parent is the game's Potion_Template, so it drinks like every game potion: hold the use button in Adventure mode and one is spent, with the template's drink animation and sounds; in Creative the same button places it as a bottle on a block, as a game potion does. This file changes only its name, quality, look and what drinking it does. InteractionVars.Effect is the one var it replaces (the rest come from the template): it applies Hallows_Eve_Fire_Resistance (Entity/Effects/Hallows_Eve/), which halves Fire damage for three minutes, so tune the strength and the time there. The look is the game's orange potion bottle, field for field from Potion_Regen_Stamina (its icon, the Orange bottle texture, particle colour and light), so it needs no art of its own. MaxStack is how many fit in one slot (10, like the game's potions); DropOnDeath true drops them where their owner falls, as the game's potions do.",
+  "Parent": "Potion_Template",
+  "TranslationProperties": {
+    "Name": "items.Hallows_Eve_Fire_Resistance_Potion.name",
+    "Description": "items.Hallows_Eve_Fire_Resistance_Potion.description"
+  },
+  "Quality": "Uncommon",
+  "Icon": "Icons/ItemsGenerated/Potion_Regen_Stamina.png",
+  "InteractionVars": {
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Hallows_Eve_Fire_Resistance"
+        }
+      ]
+    }
+  },
+  "BlockType": {
+    "CustomModel": "Items/Consumables/Potions/Potion.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Potions/Potion_Textures/Orange.png",
+        "Weight": 1
+      }
+    ],
+    "BlockParticleSetId": "GlassMagic",
+    "ParticleColor": "#f7972b",
+    "Light": {
+      "Color": "#532"
+    },
+    "TextureComputedColor": "#BAA988"
+  },
+  "MaxStack": 10,
+  "DropOnDeath": true
+}
