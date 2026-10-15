@@ -4,9 +4,9 @@
     "Hallows_Eve_Headless_Horseman_Encounter_Hard.json), the twin of his normal fight's row beside this",
     "file. It names the fight with his hard name (NameKey, on the bar's Records tab and every line that",
     "names it), binds the boss the library credits through the script's Boss slot in both his forms,",
-    "and keeps the hard fight's records on Records' Boss Fights under a bucket of their own,",
-    "hallows_eve_headless_horseman_hard, split by how many fought him (ByPartySize), so a hard win is",
-    "never ranked against a normal one.",
+    "and keeps the hard fight's records under a bucket of their own, hallows_eve_headless_horseman_hard,",
+    "a boss of its own on Records' Bosses tab in the Seasonal group (Leaderboard Group), split by how",
+    "many fought him (ByPartySize), so a hard win is never ranked against a normal one.",
     "",
     "Participation and Feedback are the normal row's, so a share of his hard daily Claim is earned the",
     "same way and the same banner and toasts teach the fight: damage to his body (DamageDealt, the",
@@ -33,7 +33,8 @@
   },
   "Leaderboard": {
     "Bucket": "hallows_eve_headless_horseman_hard",
-    "ByPartySize": true
+    "ByPartySize": true,
+    "Group": "Seasonal"
   },
   "Feedback": {
     "Engaged": "Hallows_Eve_Horseman_Engaged",

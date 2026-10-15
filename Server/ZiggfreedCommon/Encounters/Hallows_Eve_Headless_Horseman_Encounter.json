@@ -4,9 +4,9 @@
     "Hallows_Eve_Headless_Horseman_Encounter.json): what the server owes for it, which the script never",
     "describes. It names the fight (NameKey, on the bar's Records tab and every line that names it),",
     "binds the boss the library credits through the script's Boss slot in both his forms, and keeps",
-    "the fight's records (wins, fastest win, best share, damage) on Records' Boss Fights under the",
-    "bucket hallows_eve_headless_horseman, split by how many fought him (ByPartySize), so a solo win",
-    "is never ranked against a party of five.",
+    "the fight's records under the bucket hallows_eve_headless_horseman, a boss on Records' Bosses tab",
+    "in the Seasonal group (Leaderboard Group), split by how many fought him (ByPartySize), so each",
+    "party size from solo to five can be ranked on its own.",
     "",
     "Participation decides each player's share of his daily Claim. A player's score is every point of",
     "damage they deal his body (DamageDealt, the server rule's 1.0), every point they deal his Head and",
@@ -49,7 +49,8 @@
   },
   "Leaderboard": {
     "Bucket": "hallows_eve_headless_horseman",
-    "ByPartySize": true
+    "ByPartySize": true,
+    "Group": "Seasonal"
   },
   "Progression": {
     "Feats": {
