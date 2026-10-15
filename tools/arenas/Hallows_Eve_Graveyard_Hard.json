@@ -5,7 +5,9 @@
     "(Hallows_Eve_Headless_Horseman_Encounter_Hard) on the open road south of the central plaza, his",
     "hard spawn marker on the plaza's north side, and a vanilla Leave_Instance pad against the entrance",
     "room's back wall, the way out. Move a cell in both specs together, so the two graveyards stay one",
-    "place. Cells count from the anchor."
+    "place. Cells count from the anchor. His flight in the saddle (Hallows_Eve_Horseman_Ride) measures",
+    "its swings and fountain laps from his spawn marker, 7 cells north of the fountain's centre, as",
+    "Hallows_Eve_Graveyard.json says."
   ],
   "Source": "tools/arenas/ziggy_halloween.prefab.zip",
   "Output": "Server/Prefabs/Hallows_Eve/Hallows_Eve_Graveyard_Hard.prefab.json",

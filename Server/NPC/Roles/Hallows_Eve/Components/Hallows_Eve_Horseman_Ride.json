@@ -1,0 +1,757 @@
+{
+  "$Comment": [
+    "How the Headless Horseman flies in the saddle, phase 1 of his fight. Both mounted roles",
+    "(Hallows_Eve_Headless_Horseman_Mounted and _Mounted_HM) name this file in",
+    "CombatAdditionalBehaviorComponent, the hook Template_Flying_Aggressive runs ahead of its own",
+    "combat moves on every tick he is fighting. It only ever picks where he flies and lets the",
+    "template go on after it, so the template keeps aiming and throwing his lantern bombs the whole",
+    "time.",
+    "",
+    "He loops through three moves. Dive: he flies straight back at his target and down into his",
+    "role's MotionDesiredAltitudeCombat band (1 to 3 blocks up), until he is within DiveReach of",
+    "the player or DiveTimeLimit runs out. Engage: for EngageTime he fights low with the template's",
+    "own chase, where a sword reaches him. Swing: he breaks off for SwingTime, flying at full speed",
+    "between random points 7 to 9 blocks up on an oval round the graveyard's fountain, about 12",
+    "blocks out along the road and 9 across it, so every leg stays inside the road's barrier walls",
+    "and above the fountain's brazier, then dives again.",
+    "",
+    "One to three of his break-offs are laps of the fountain instead (Lap_1 to Lap_8 below, eight",
+    "points 7 blocks from its centre and 7 blocks up, round in order for LapTime, about one or two",
+    "laps), and he keeps throwing bombs while he laps. His first break-off once FirstLapAfter has",
+    "passed since he started fighting is always a lap, so every ride sees one. After it, each time",
+    "LapGap passes, his next break-off may be a second and then a third lap, each an even chance",
+    "(ExtraLapWeight against ExtraSwingWeight), and never more than three in the ride.",
+    "",
+    "Every point is an Offset from where he spawned (his leash point, read through the Leash",
+    "sensor), and his spawn marker stands on the plaza's north side, 7 blocks north of the fountain's",
+    "centre (tools/arenas/Hallows_Eve_Graveyard.json and _Hard.json). Move that marker and these",
+    "offsets move with it, so change them together. Offsets read X east, Y up from the floor, Z",
+    "south. The timers, flags and the Lap_Point slot are this file's own names. Raised beside his",
+    "fight's script away from the graveyard, he loops the same shapes around that spot."
+  ],
+  "Type": "Component",
+  "Class": "Instruction",
+  "Interface": "Hytale.Instruction.Combat",
+  "DefaultState": ".Dive",
+  "Parameters": {
+    "DiveReach": {
+      "Value": 4,
+      "Description": "How close to his target a dive must bring him before he fights low."
+    },
+    "DiveTimeLimit": {
+      "Value": [ 4, 4 ],
+      "Description": "Seconds a dive may take before he fights low wherever he is."
+    },
+    "DiveSpeed": {
+      "Value": 1,
+      "Description": "His speed on a dive, relative to his role's MotionFlyMaxHorizontalSpeed."
+    },
+    "EngageTime": {
+      "Value": [ 6, 9 ],
+      "Description": "Seconds he fights low over his target after each dive before he breaks off."
+    },
+    "SwingTime": {
+      "Value": [ 4, 6 ],
+      "Description": "Seconds each high swing lasts before he dives back."
+    },
+    "SwingLegTime": {
+      "Value": [ 1.5, 2.5 ],
+      "Description": "Seconds he flies toward one random point of the swing oval before picking another."
+    },
+    "SwingSpeed": {
+      "Value": 1,
+      "Description": "His speed on a swing, relative to his role's MotionFlyMaxHorizontalSpeed."
+    },
+    "LapTime": {
+      "Value": [ 5, 10 ],
+      "Description": "Seconds a fountain lap lasts; at full speed one lap takes about 5."
+    },
+    "LapSpeed": {
+      "Value": 1,
+      "Description": "His speed around the fountain, relative to his role's MotionFlyMaxHorizontalSpeed."
+    },
+    "LapPointReach": {
+      "Value": 3,
+      "Description": "How close he must come to one lap point before he turns for the next."
+    },
+    "FirstLapAfter": {
+      "Value": [ 20, 20 ],
+      "Description": "Seconds after he starts fighting before a break-off becomes his first fountain lap, which always comes."
+    },
+    "LapGap": {
+      "Value": [ 15, 25 ],
+      "Description": "Seconds after one lap's turn before the next break-off rolls for another lap."
+    },
+    "ExtraLapWeight": {
+      "Value": 1,
+      "Description": "The odds of the second and third laps: this weight against ExtraSwingWeight."
+    },
+    "ExtraSwingWeight": {
+      "Value": 1,
+      "Description": "The odds that a second or third lap is a plain swing instead."
+    }
+  },
+  "Content": {
+    "Continue": true,
+    "Instructions": [
+      {
+        "$Comment": "Once, the first time he fights: his opening dive gets its DiveTimeLimit, and the clock to his first fountain lap starts.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "Flag",
+          "Name": "Hallows_Eve_Horseman_Ride_Started",
+          "Set": false
+        },
+        "Actions": [
+          {
+            "Type": "SetFlag",
+            "Name": "Hallows_Eve_Horseman_Ride_Started"
+          },
+          {
+            "Type": "TimerStart",
+            "Name": "Hallows_Eve_Horseman_Dive",
+            "StartValueRange": { "Compute": "DiveTimeLimit" },
+            "RestartValueRange": { "Compute": "DiveTimeLimit" }
+          },
+          {
+            "Type": "TimerStart",
+            "Name": "Hallows_Eve_Horseman_Lap_Wait",
+            "StartValueRange": { "Compute": "FirstLapAfter" },
+            "RestartValueRange": { "Compute": "LapGap" }
+          }
+        ]
+      },
+      {
+        "$Comment": "Dive: straight back at his target and down into sword reach.",
+        "Sensor": {
+          "Type": "State",
+          "State": ".Dive"
+        },
+        "Instructions": [
+          {
+            "$Comment": "In reach, or the dive took too long: fight low for EngageTime.",
+            "Sensor": {
+              "Type": "Or",
+              "Sensors": [
+                {
+                  "Type": "Target",
+                  "Range": { "Compute": "DiveReach" }
+                },
+                {
+                  "Type": "Timer",
+                  "Name": "Hallows_Eve_Horseman_Dive",
+                  "State": "Stopped"
+                }
+              ]
+            },
+            "Actions": [
+              {
+                "Type": "TimerStart",
+                "Name": "Hallows_Eve_Horseman_Engage",
+                "StartValueRange": { "Compute": "EngageTime" },
+                "RestartValueRange": { "Compute": "EngageTime" }
+              },
+              {
+                "Type": "State",
+                "State": ".Engage"
+              }
+            ]
+          },
+          {
+            "$Comment": "DesiredAltitudeWeight 1 holds him to the role's MotionDesiredAltitudeCombat band as he closes.",
+            "Sensor": {
+              "Type": "Target"
+            },
+            "BodyMotion": {
+              "Type": "Seek",
+              "DesiredAltitudeWeight": 1,
+              "RelativeSpeed": { "Compute": "DiveSpeed" },
+              "SlowDownDistance": 5,
+              "StopDistance": 2.5
+            }
+          }
+        ]
+      },
+      {
+        "$Comment": "Engage: no move of his own here, so the template's chase holds him low over his target. When EngageTime runs out he breaks off: a fountain lap when one is due, else a swing.",
+        "Sensor": {
+          "Type": "State",
+          "State": ".Engage"
+        },
+        "Instructions": [
+          {
+            "$Comment": "His first lap, always, at the first break-off once FirstLapAfter has passed.",
+            "Sensor": {
+              "Type": "And",
+              "Sensors": [
+                {
+                  "Type": "Timer",
+                  "Name": "Hallows_Eve_Horseman_Engage",
+                  "State": "Stopped"
+                },
+                {
+                  "Type": "Flag",
+                  "Name": "Hallows_Eve_Horseman_Lap_1",
+                  "Set": false
+                },
+                {
+                  "Type": "Timer",
+                  "Name": "Hallows_Eve_Horseman_Lap_Wait",
+                  "State": "Stopped"
+                }
+              ]
+            },
+            "Actions": [
+              {
+                "Type": "SetFlag",
+                "Name": "Hallows_Eve_Horseman_Lap_1"
+              },
+              {
+                "Type": "TimerStart",
+                "Name": "Hallows_Eve_Horseman_Lap_Wait",
+                "StartValueRange": { "Compute": "LapGap" },
+                "RestartValueRange": { "Compute": "LapGap" }
+              },
+              {
+                "Type": "TimerStart",
+                "Name": "Hallows_Eve_Horseman_Lap",
+                "StartValueRange": { "Compute": "LapTime" },
+                "RestartValueRange": { "Compute": "LapTime" }
+              },
+              {
+                "Type": "State",
+                "State": ".Lap_1"
+              }
+            ]
+          },
+          {
+            "$Comment": "The roll for a second lap, at the first break-off once LapGap has passed since the first: an even chance of a lap, else a swing.",
+            "Sensor": {
+              "Type": "And",
+              "Sensors": [
+                {
+                  "Type": "Timer",
+                  "Name": "Hallows_Eve_Horseman_Engage",
+                  "State": "Stopped"
+                },
+                {
+                  "Type": "Flag",
+                  "Name": "Hallows_Eve_Horseman_Lap_1"
+                },
+                {
+                  "Type": "Flag",
+                  "Name": "Hallows_Eve_Horseman_Lap_2",
+                  "Set": false
+                },
+                {
+                  "Type": "Timer",
+                  "Name": "Hallows_Eve_Horseman_Lap_Wait",
+                  "State": "Stopped"
+                }
+              ]
+            },
+            "Actions": [
+              {
+                "Type": "SetFlag",
+                "Name": "Hallows_Eve_Horseman_Lap_2"
+              },
+              {
+                "Type": "TimerStart",
+                "Name": "Hallows_Eve_Horseman_Lap_Wait",
+                "StartValueRange": { "Compute": "LapGap" },
+                "RestartValueRange": { "Compute": "LapGap" }
+              },
+              {
+                "Type": "TimerStart",
+                "Name": "Hallows_Eve_Horseman_Lap",
+                "StartValueRange": { "Compute": "LapTime" },
+                "RestartValueRange": { "Compute": "LapTime" }
+              },
+              {
+                "Type": "TimerStart",
+                "Name": "Hallows_Eve_Horseman_Swing",
+                "StartValueRange": { "Compute": "SwingTime" },
+                "RestartValueRange": { "Compute": "SwingTime" }
+              },
+              {
+                "Type": "Random",
+                "Actions": [
+                  {
+                    "Weight": { "Compute": "ExtraLapWeight" },
+                    "Action": {
+                      "Type": "State",
+                      "State": ".Lap_1"
+                    }
+                  },
+                  {
+                    "Weight": { "Compute": "ExtraSwingWeight" },
+                    "Action": {
+                      "Type": "State",
+                      "State": ".Swing"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "$Comment": "The roll for a third and last lap, LapGap after the second roll, the same even chance.",
+            "Sensor": {
+              "Type": "And",
+              "Sensors": [
+                {
+                  "Type": "Timer",
+                  "Name": "Hallows_Eve_Horseman_Engage",
+                  "State": "Stopped"
+                },
+                {
+                  "Type": "Flag",
+                  "Name": "Hallows_Eve_Horseman_Lap_2"
+                },
+                {
+                  "Type": "Flag",
+                  "Name": "Hallows_Eve_Horseman_Lap_3",
+                  "Set": false
+                },
+                {
+                  "Type": "Timer",
+                  "Name": "Hallows_Eve_Horseman_Lap_Wait",
+                  "State": "Stopped"
+                }
+              ]
+            },
+            "Actions": [
+              {
+                "Type": "SetFlag",
+                "Name": "Hallows_Eve_Horseman_Lap_3"
+              },
+              {
+                "Type": "TimerStart",
+                "Name": "Hallows_Eve_Horseman_Lap",
+                "StartValueRange": { "Compute": "LapTime" },
+                "RestartValueRange": { "Compute": "LapTime" }
+              },
+              {
+                "Type": "TimerStart",
+                "Name": "Hallows_Eve_Horseman_Swing",
+                "StartValueRange": { "Compute": "SwingTime" },
+                "RestartValueRange": { "Compute": "SwingTime" }
+              },
+              {
+                "Type": "Random",
+                "Actions": [
+                  {
+                    "Weight": { "Compute": "ExtraLapWeight" },
+                    "Action": {
+                      "Type": "State",
+                      "State": ".Lap_1"
+                    }
+                  },
+                  {
+                    "Weight": { "Compute": "ExtraSwingWeight" },
+                    "Action": {
+                      "Type": "State",
+                      "State": ".Swing"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "$Comment": "Otherwise a swing.",
+            "Sensor": {
+              "Type": "Timer",
+              "Name": "Hallows_Eve_Horseman_Engage",
+              "State": "Stopped"
+            },
+            "Actions": [
+              {
+                "Type": "TimerStart",
+                "Name": "Hallows_Eve_Horseman_Swing",
+                "StartValueRange": { "Compute": "SwingTime" },
+                "RestartValueRange": { "Compute": "SwingTime" }
+              },
+              {
+                "Type": "State",
+                "State": ".Swing"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$Comment": "Swing: high and fast between random points on an oval round the fountain's centre (about 12 blocks out along the road, 9 across it, 7 to 9 blocks up), then dive.",
+        "Sensor": {
+          "Type": "State",
+          "State": ".Swing"
+        },
+        "Instructions": [
+          {
+            "Sensor": {
+              "Type": "Timer",
+              "Name": "Hallows_Eve_Horseman_Swing",
+              "State": "Stopped"
+            },
+            "Actions": [
+              {
+                "Type": "TimerStart",
+                "Name": "Hallows_Eve_Horseman_Dive",
+                "StartValueRange": { "Compute": "DiveTimeLimit" },
+                "RestartValueRange": { "Compute": "DiveTimeLimit" }
+              },
+              {
+                "Type": "State",
+                "State": ".Dive"
+              }
+            ]
+          },
+          {
+            "$Comment": "Every SwingLegTime a fresh random point. DesiredAltitudeWeight 0 lets the point's own height win over his low combat band.",
+            "Type": "Random",
+            "ExecuteFor": { "Compute": "SwingLegTime" },
+            "Instructions": [
+              {
+                "Sensor": {
+                  "Type": "AdjustPosition",
+                  "Sensor": { "Type": "Leash", "Range": 0.1 },
+                  "Offset": [ 0, 8, -5 ]
+                },
+                "BodyMotion": {
+                  "Type": "Seek",
+                  "DesiredAltitudeWeight": 0,
+                  "RelativeSpeed": { "Compute": "SwingSpeed" },
+                  "SlowDownDistance": 2,
+                  "StopDistance": 1
+                }
+              },
+              {
+                "Sensor": {
+                  "Type": "AdjustPosition",
+                  "Sensor": { "Type": "Leash", "Range": 0.1 },
+                  "Offset": [ 8.5, 7, -1.5 ]
+                },
+                "BodyMotion": {
+                  "Type": "Seek",
+                  "DesiredAltitudeWeight": 0,
+                  "RelativeSpeed": { "Compute": "SwingSpeed" },
+                  "SlowDownDistance": 2,
+                  "StopDistance": 1
+                }
+              },
+              {
+                "Sensor": {
+                  "Type": "AdjustPosition",
+                  "Sensor": { "Type": "Leash", "Range": 0.1 },
+                  "Offset": [ 9, 9, 7 ]
+                },
+                "BodyMotion": {
+                  "Type": "Seek",
+                  "DesiredAltitudeWeight": 0,
+                  "RelativeSpeed": { "Compute": "SwingSpeed" },
+                  "SlowDownDistance": 2,
+                  "StopDistance": 1
+                }
+              },
+              {
+                "Sensor": {
+                  "Type": "AdjustPosition",
+                  "Sensor": { "Type": "Leash", "Range": 0.1 },
+                  "Offset": [ 8.5, 7, 15.5 ]
+                },
+                "BodyMotion": {
+                  "Type": "Seek",
+                  "DesiredAltitudeWeight": 0,
+                  "RelativeSpeed": { "Compute": "SwingSpeed" },
+                  "SlowDownDistance": 2,
+                  "StopDistance": 1
+                }
+              },
+              {
+                "Sensor": {
+                  "Type": "AdjustPosition",
+                  "Sensor": { "Type": "Leash", "Range": 0.1 },
+                  "Offset": [ 0, 8, 19 ]
+                },
+                "BodyMotion": {
+                  "Type": "Seek",
+                  "DesiredAltitudeWeight": 0,
+                  "RelativeSpeed": { "Compute": "SwingSpeed" },
+                  "SlowDownDistance": 2,
+                  "StopDistance": 1
+                }
+              },
+              {
+                "Sensor": {
+                  "Type": "AdjustPosition",
+                  "Sensor": { "Type": "Leash", "Range": 0.1 },
+                  "Offset": [ -8.5, 7, 15.5 ]
+                },
+                "BodyMotion": {
+                  "Type": "Seek",
+                  "DesiredAltitudeWeight": 0,
+                  "RelativeSpeed": { "Compute": "SwingSpeed" },
+                  "SlowDownDistance": 2,
+                  "StopDistance": 1
+                }
+              },
+              {
+                "Sensor": {
+                  "Type": "AdjustPosition",
+                  "Sensor": { "Type": "Leash", "Range": 0.1 },
+                  "Offset": [ -9, 9, 7 ]
+                },
+                "BodyMotion": {
+                  "Type": "Seek",
+                  "DesiredAltitudeWeight": 0,
+                  "RelativeSpeed": { "Compute": "SwingSpeed" },
+                  "SlowDownDistance": 2,
+                  "StopDistance": 1
+                }
+              },
+              {
+                "Sensor": {
+                  "Type": "AdjustPosition",
+                  "Sensor": { "Type": "Leash", "Range": 0.1 },
+                  "Offset": [ -8.5, 7, -1.5 ]
+                },
+                "BodyMotion": {
+                  "Type": "Seek",
+                  "DesiredAltitudeWeight": 0,
+                  "RelativeSpeed": { "Compute": "SwingSpeed" },
+                  "SlowDownDistance": 2,
+                  "StopDistance": 1
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$Comment": "Lap_1 to Lap_8: round the fountain clockwise seen from above, north, east, south, west, 7 blocks from its centre and 7 up, until LapTime runs out, then dive. Each lap point is stored in the Lap_Point slot so the next instruction can tell when he reaches it.",
+        "Sensor": {
+          "Type": "State",
+          "State": ".Lap_1"
+        },
+        "Instructions": [
+          {
+            "Sensor": { "Type": "Timer", "Name": "Hallows_Eve_Horseman_Lap", "State": "Stopped" },
+            "Actions": [
+              { "Type": "TimerStart", "Name": "Hallows_Eve_Horseman_Dive", "StartValueRange": { "Compute": "DiveTimeLimit" }, "RestartValueRange": { "Compute": "DiveTimeLimit" } },
+              { "Type": "State", "State": ".Dive" }
+            ]
+          },
+          {
+            "Continue": true,
+            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 0, 7, 0 ] },
+            "Actions": [ { "Type": "StorePosition", "Slot": "Hallows_Eve_Horseman_Lap_Point" } ]
+          },
+          {
+            "Sensor": { "Type": "ReadPosition", "Slot": "Hallows_Eve_Horseman_Lap_Point", "Range": { "Compute": "LapPointReach" } },
+            "Actions": [ { "Type": "State", "State": ".Lap_2" } ]
+          },
+          {
+            "Sensor": { "Type": "ReadPosition", "Slot": "Hallows_Eve_Horseman_Lap_Point", "Range": 200 },
+            "BodyMotion": { "Type": "Seek", "DesiredAltitudeWeight": 0, "RelativeSpeed": { "Compute": "LapSpeed" }, "SlowDownDistance": 2, "StopDistance": 1 }
+          }
+        ]
+      },
+      {
+        "Sensor": {
+          "Type": "State",
+          "State": ".Lap_2"
+        },
+        "Instructions": [
+          {
+            "Sensor": { "Type": "Timer", "Name": "Hallows_Eve_Horseman_Lap", "State": "Stopped" },
+            "Actions": [
+              { "Type": "TimerStart", "Name": "Hallows_Eve_Horseman_Dive", "StartValueRange": { "Compute": "DiveTimeLimit" }, "RestartValueRange": { "Compute": "DiveTimeLimit" } },
+              { "Type": "State", "State": ".Dive" }
+            ]
+          },
+          {
+            "Continue": true,
+            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 5, 7, 2 ] },
+            "Actions": [ { "Type": "StorePosition", "Slot": "Hallows_Eve_Horseman_Lap_Point" } ]
+          },
+          {
+            "Sensor": { "Type": "ReadPosition", "Slot": "Hallows_Eve_Horseman_Lap_Point", "Range": { "Compute": "LapPointReach" } },
+            "Actions": [ { "Type": "State", "State": ".Lap_3" } ]
+          },
+          {
+            "Sensor": { "Type": "ReadPosition", "Slot": "Hallows_Eve_Horseman_Lap_Point", "Range": 200 },
+            "BodyMotion": { "Type": "Seek", "DesiredAltitudeWeight": 0, "RelativeSpeed": { "Compute": "LapSpeed" }, "SlowDownDistance": 2, "StopDistance": 1 }
+          }
+        ]
+      },
+      {
+        "Sensor": {
+          "Type": "State",
+          "State": ".Lap_3"
+        },
+        "Instructions": [
+          {
+            "Sensor": { "Type": "Timer", "Name": "Hallows_Eve_Horseman_Lap", "State": "Stopped" },
+            "Actions": [
+              { "Type": "TimerStart", "Name": "Hallows_Eve_Horseman_Dive", "StartValueRange": { "Compute": "DiveTimeLimit" }, "RestartValueRange": { "Compute": "DiveTimeLimit" } },
+              { "Type": "State", "State": ".Dive" }
+            ]
+          },
+          {
+            "Continue": true,
+            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 7, 7, 7 ] },
+            "Actions": [ { "Type": "StorePosition", "Slot": "Hallows_Eve_Horseman_Lap_Point" } ]
+          },
+          {
+            "Sensor": { "Type": "ReadPosition", "Slot": "Hallows_Eve_Horseman_Lap_Point", "Range": { "Compute": "LapPointReach" } },
+            "Actions": [ { "Type": "State", "State": ".Lap_4" } ]
+          },
+          {
+            "Sensor": { "Type": "ReadPosition", "Slot": "Hallows_Eve_Horseman_Lap_Point", "Range": 200 },
+            "BodyMotion": { "Type": "Seek", "DesiredAltitudeWeight": 0, "RelativeSpeed": { "Compute": "LapSpeed" }, "SlowDownDistance": 2, "StopDistance": 1 }
+          }
+        ]
+      },
+      {
+        "Sensor": {
+          "Type": "State",
+          "State": ".Lap_4"
+        },
+        "Instructions": [
+          {
+            "Sensor": { "Type": "Timer", "Name": "Hallows_Eve_Horseman_Lap", "State": "Stopped" },
+            "Actions": [
+              { "Type": "TimerStart", "Name": "Hallows_Eve_Horseman_Dive", "StartValueRange": { "Compute": "DiveTimeLimit" }, "RestartValueRange": { "Compute": "DiveTimeLimit" } },
+              { "Type": "State", "State": ".Dive" }
+            ]
+          },
+          {
+            "Continue": true,
+            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 5, 7, 12 ] },
+            "Actions": [ { "Type": "StorePosition", "Slot": "Hallows_Eve_Horseman_Lap_Point" } ]
+          },
+          {
+            "Sensor": { "Type": "ReadPosition", "Slot": "Hallows_Eve_Horseman_Lap_Point", "Range": { "Compute": "LapPointReach" } },
+            "Actions": [ { "Type": "State", "State": ".Lap_5" } ]
+          },
+          {
+            "Sensor": { "Type": "ReadPosition", "Slot": "Hallows_Eve_Horseman_Lap_Point", "Range": 200 },
+            "BodyMotion": { "Type": "Seek", "DesiredAltitudeWeight": 0, "RelativeSpeed": { "Compute": "LapSpeed" }, "SlowDownDistance": 2, "StopDistance": 1 }
+          }
+        ]
+      },
+      {
+        "Sensor": {
+          "Type": "State",
+          "State": ".Lap_5"
+        },
+        "Instructions": [
+          {
+            "Sensor": { "Type": "Timer", "Name": "Hallows_Eve_Horseman_Lap", "State": "Stopped" },
+            "Actions": [
+              { "Type": "TimerStart", "Name": "Hallows_Eve_Horseman_Dive", "StartValueRange": { "Compute": "DiveTimeLimit" }, "RestartValueRange": { "Compute": "DiveTimeLimit" } },
+              { "Type": "State", "State": ".Dive" }
+            ]
+          },
+          {
+            "Continue": true,
+            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 0, 7, 14 ] },
+            "Actions": [ { "Type": "StorePosition", "Slot": "Hallows_Eve_Horseman_Lap_Point" } ]
+          },
+          {
+            "Sensor": { "Type": "ReadPosition", "Slot": "Hallows_Eve_Horseman_Lap_Point", "Range": { "Compute": "LapPointReach" } },
+            "Actions": [ { "Type": "State", "State": ".Lap_6" } ]
+          },
+          {
+            "Sensor": { "Type": "ReadPosition", "Slot": "Hallows_Eve_Horseman_Lap_Point", "Range": 200 },
+            "BodyMotion": { "Type": "Seek", "DesiredAltitudeWeight": 0, "RelativeSpeed": { "Compute": "LapSpeed" }, "SlowDownDistance": 2, "StopDistance": 1 }
+          }
+        ]
+      },
+      {
+        "Sensor": {
+          "Type": "State",
+          "State": ".Lap_6"
+        },
+        "Instructions": [
+          {
+            "Sensor": { "Type": "Timer", "Name": "Hallows_Eve_Horseman_Lap", "State": "Stopped" },
+            "Actions": [
+              { "Type": "TimerStart", "Name": "Hallows_Eve_Horseman_Dive", "StartValueRange": { "Compute": "DiveTimeLimit" }, "RestartValueRange": { "Compute": "DiveTimeLimit" } },
+              { "Type": "State", "State": ".Dive" }
+            ]
+          },
+          {
+            "Continue": true,
+            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ -5, 7, 12 ] },
+            "Actions": [ { "Type": "StorePosition", "Slot": "Hallows_Eve_Horseman_Lap_Point" } ]
+          },
+          {
+            "Sensor": { "Type": "ReadPosition", "Slot": "Hallows_Eve_Horseman_Lap_Point", "Range": { "Compute": "LapPointReach" } },
+            "Actions": [ { "Type": "State", "State": ".Lap_7" } ]
+          },
+          {
+            "Sensor": { "Type": "ReadPosition", "Slot": "Hallows_Eve_Horseman_Lap_Point", "Range": 200 },
+            "BodyMotion": { "Type": "Seek", "DesiredAltitudeWeight": 0, "RelativeSpeed": { "Compute": "LapSpeed" }, "SlowDownDistance": 2, "StopDistance": 1 }
+          }
+        ]
+      },
+      {
+        "Sensor": {
+          "Type": "State",
+          "State": ".Lap_7"
+        },
+        "Instructions": [
+          {
+            "Sensor": { "Type": "Timer", "Name": "Hallows_Eve_Horseman_Lap", "State": "Stopped" },
+            "Actions": [
+              { "Type": "TimerStart", "Name": "Hallows_Eve_Horseman_Dive", "StartValueRange": { "Compute": "DiveTimeLimit" }, "RestartValueRange": { "Compute": "DiveTimeLimit" } },
+              { "Type": "State", "State": ".Dive" }
+            ]
+          },
+          {
+            "Continue": true,
+            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ -7, 7, 7 ] },
+            "Actions": [ { "Type": "StorePosition", "Slot": "Hallows_Eve_Horseman_Lap_Point" } ]
+          },
+          {
+            "Sensor": { "Type": "ReadPosition", "Slot": "Hallows_Eve_Horseman_Lap_Point", "Range": { "Compute": "LapPointReach" } },
+            "Actions": [ { "Type": "State", "State": ".Lap_8" } ]
+          },
+          {
+            "Sensor": { "Type": "ReadPosition", "Slot": "Hallows_Eve_Horseman_Lap_Point", "Range": 200 },
+            "BodyMotion": { "Type": "Seek", "DesiredAltitudeWeight": 0, "RelativeSpeed": { "Compute": "LapSpeed" }, "SlowDownDistance": 2, "StopDistance": 1 }
+          }
+        ]
+      },
+      {
+        "Sensor": {
+          "Type": "State",
+          "State": ".Lap_8"
+        },
+        "Instructions": [
+          {
+            "Sensor": { "Type": "Timer", "Name": "Hallows_Eve_Horseman_Lap", "State": "Stopped" },
+            "Actions": [
+              { "Type": "TimerStart", "Name": "Hallows_Eve_Horseman_Dive", "StartValueRange": { "Compute": "DiveTimeLimit" }, "RestartValueRange": { "Compute": "DiveTimeLimit" } },
+              { "Type": "State", "State": ".Dive" }
+            ]
+          },
+          {
+            "Continue": true,
+            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ -5, 7, 2 ] },
+            "Actions": [ { "Type": "StorePosition", "Slot": "Hallows_Eve_Horseman_Lap_Point" } ]
+          },
+          {
+            "Sensor": { "Type": "ReadPosition", "Slot": "Hallows_Eve_Horseman_Lap_Point", "Range": { "Compute": "LapPointReach" } },
+            "Actions": [ { "Type": "State", "State": ".Lap_1" } ]
+          },
+          {
+            "Sensor": { "Type": "ReadPosition", "Slot": "Hallows_Eve_Horseman_Lap_Point", "Range": 200 },
+            "BodyMotion": { "Type": "Seek", "DesiredAltitudeWeight": 0, "RelativeSpeed": { "Compute": "LapSpeed" }, "SlowDownDistance": 2, "StopDistance": 1 }
+          }
+        ]
+      }
+    ]
+  }
+}

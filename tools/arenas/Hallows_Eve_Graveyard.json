@@ -4,7 +4,10 @@
     "64 by 110 blocks; players arrive at its anchor in the entrance room), with the fight's entity on the open",
     "road just south of the central plaza (the script raises his Head and adds around it, so it stands",
     "clear of the plaza's centrepiece), his spawn marker on the plaza's north side, and a vanilla",
-    "Leave_Instance pad against the entrance room's back wall, the way out. Cells count from the anchor."
+    "Leave_Instance pad against the entrance room's back wall, the way out. Cells count from the anchor.",
+    "His spawn marker sits 7 cells north of the fountain's centre (X 0, Z 53), and his flight in the saddle",
+    "(Server/NPC/Roles/Hallows_Eve/Components/Hallows_Eve_Horseman_Ride.json) measures its swings and",
+    "fountain laps from where he spawns, so move the marker and those offsets together."
   ],
   "Source": "tools/arenas/ziggy_halloween.prefab.zip",
   "Output": "Server/Prefabs/Hallows_Eve/Hallows_Eve_Graveyard.prefab.json",

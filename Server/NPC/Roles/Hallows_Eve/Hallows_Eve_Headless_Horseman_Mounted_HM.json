@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Headless Horseman in the saddle on the hard ride, the form his hard fight (Hallows_Eve_Headless_Horseman_Encounter_Hard) opens with: Hallows_Eve_Headless_Horseman_Mounted written out again, as the game writes its own hard bosses, with more health, a bomb every 2 to 3 seconds, the hard name and the Hallows_Eve_Horseman_Hard_Mode effect, which makes what he throws hit harder. The hard fight swaps him to Hallows_Eve_Headless_Horseman_HM on foot and his health carries across, so MaxHealth here must equal that role's. Fire hurts him at half (Hallows_Eve_Horseman_Fire_Ward), never shoved, DropList Empty since his reward is the Claims his fight pays. Any key the template does not declare makes the game refuse the whole role.",
+  "$Comment": "The Headless Horseman in the saddle on the hard ride, the form his hard fight (Hallows_Eve_Headless_Horseman_Encounter_Hard) opens with: Hallows_Eve_Headless_Horseman_Mounted written out again, as the game writes its own hard bosses, with more health, a bomb every 2 to 3 seconds, the hard name and the Hallows_Eve_Horseman_Hard_Mode effect, which makes what he throws hit harder. He flies the same way, through the same Hallows_Eve_Horseman_Ride (CombatAdditionalBehaviorComponent): dives to fight low (1 to 3 blocks up), wide high swings around the graveyard and one to three laps of its fountain, turning on the nearest player every 4 to 6 seconds unless his target is within TargetRange. The hard fight swaps him to Hallows_Eve_Headless_Horseman_HM on foot and his health carries across, so MaxHealth here must equal that role's. Fire hurts him at half (Hallows_Eve_Horseman_Fire_Ward), never shoved, DropList Empty since his reward is the Claims his fight pays. Any key the template does not declare makes the game refuse the whole role.",
   "Type": "Variant",
   "Reference": "Template_Flying_Aggressive",
   "Modify": {
@@ -26,7 +26,9 @@
     "RangedAttackPauseRange": [2, 3],
     "CombatSeekSlowdownDistance": 5,
     "CombatSeekStopDistance": 3,
-    "TargetRange": 30,
+    "CombatAdditionalBehaviorComponent": "Hallows_Eve_Horseman_Ride",
+    "TargetSwitchTimer": [4, 6],
+    "TargetRange": 6,
     "KnockbackScale": 0,
     "_CombatConfig": {
       "EntityEffects": ["Hallows_Eve_Horseman_Fire_Ward", "Hallows_Eve_Horseman_Hard_Mode"]
