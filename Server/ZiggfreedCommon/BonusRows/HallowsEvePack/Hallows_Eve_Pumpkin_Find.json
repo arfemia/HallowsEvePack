@@ -1,13 +1,14 @@
 {
   "$Comment": [
     "The pumpkin patch: while Hallow's Eve runs, a pumpkin harvested by hand sometimes comes with a",
-    "Hallowed Pumpkin, straight into the bag beside the harvest. The patch itself is the game's own",
-    "pumpkins, grown or found all year; only this find is seasonal. The file name is the row's id.",
+    "Hallowed Pumpkin, landing beside the harvest with the game's own pickup notice. The patch itself is",
+    "the game's own pumpkins, grown or found all year; only this find is seasonal. The file name is the",
+    "row's id.",
     "",
     "When names PickupItem, the moment a hand harvest lands, on the harvested stack's item id",
     "Plant_Crop_Pumpkin_Item. Chance is the row's own odds as a percent (20 is one harvest in five).",
     "The season rides on each roll's Conditions: calendar_live reads 1 only while the event runs. The",
-    "first roll is the find and carries the toast's Cue; the second adds one more on Harvest Moon",
+    "first roll is the find and carries the find's sound (its Cue); the second adds one more on Harvest Moon",
     "nights. A server owner retunes or switches off this row by its id in",
     "mods/ziggfreedcommon/bonus-rows.json."
   ],
