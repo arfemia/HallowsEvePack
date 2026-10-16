@@ -53,7 +53,7 @@ From 2027, the day Hytale came out gets a banner and an Almanac page. Be on the 
 
 ## With MMO Skill Tree
 
-Install MMO Skill Tree 1.7.1 or newer and Hallow's Eve trains your skills. Old Jack's quests, jobs and the season's achievements pay XP in the skill the work trains: Defense for the fights, Harvesting for the pumpkins, Mining for the geodes and Artillery for the bombs. The Horseman pays Defense XP for each day's first win and for clearing his graveyard. Without it, the rest of each season plays the same.
+Install MMO Skill Tree 1.7.2 or newer and Hallow's Eve trains your skills. Old Jack's quests, jobs and the season's achievements pay XP in the skill the work trains: Defense for the fights, Harvesting for the pumpkins, Mining for the geodes and Artillery for the bombs. The Horseman pays Defense XP for each day's first win and for clearing his graveyard. Without it, the rest of each season plays the same.
 
 Add the [MMO Skill Bounty Pack](https://www.curseforge.com/hytale/mods/mmo-skill-tree-bounty-board-pack-rich-customizable) and its Daily board posts a haunt contract each day of Hallow's Eve.
 
