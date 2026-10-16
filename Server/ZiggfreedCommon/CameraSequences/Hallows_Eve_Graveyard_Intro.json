@@ -1,0 +1,55 @@
+{
+  "$Comment": [
+    "The Headless Horseman's graveyard intro: the camera sweep each player watches as they arrive in",
+    "either graveyard (both dungeon files name it as Area.IntroCamera, and both prefabs share one layout).",
+    "Positions are blocks from the prefab's anchor, the entrance room's floor block; +Z runs south into",
+    "the graveyard, the fountain sits near Z 53, his spawn marker at Z 46 and his fight's entity at Z 66,",
+    "and the black sky is at Y 33, so keep the camera between Y 3 and Y 30.",
+    "",
+    "The shot cuts to a high view over the entrance gate looking down the graveyard, glides south over",
+    "the graves toward the fountain, drifts while looking at his ground, then sweeps back down to just",
+    "outside the entrance room's door (Z 5), holds a moment and cuts back to the player's own eyes behind",
+    "it, about 5.6 seconds in all. The cut keeps the camera from flying through the closed door. Movement",
+    "is held while it plays and comes back the moment the view does. Lengthen a keyframe's Seconds to",
+    "slow that part down."
+  ],
+  "LockInput": true,
+  "HidePlayer": true,
+  "Keyframes": [
+    {
+      "Position": { "X": 0.5, "Y": 22, "Z": 12 },
+      "LookAt": { "X": 0.5, "Y": 2, "Z": 52 },
+      "Seconds": 0.05,
+      "Easing": "Linear"
+    },
+    {
+      "Position": { "X": 0.5, "Y": 16, "Z": 34 },
+      "LookAt": { "X": 0.5, "Y": 1, "Z": 62 },
+      "Seconds": 2.5,
+      "Easing": "SineInOut"
+    },
+    {
+      "Position": { "X": 0.5, "Y": 13, "Z": 42 },
+      "LookAt": { "X": 0.5, "Y": 2, "Z": 66 },
+      "Seconds": 1.0,
+      "Easing": "Linear"
+    },
+    {
+      "Position": { "X": 0.5, "Y": 3, "Z": 8.5 },
+      "LookAt": { "X": 0.5, "Y": 2, "Z": 40 },
+      "Seconds": 1.6,
+      "Easing": "SineInOut"
+    },
+    {
+      "Position": { "X": 0.5, "Y": 3, "Z": 8.5 },
+      "LookAt": { "X": 0.5, "Y": 2, "Z": 40 },
+      "Seconds": 0.4,
+      "Easing": "Linear"
+    },
+    {
+      "ToPlayer": true,
+      "Seconds": 0.05,
+      "Easing": "Linear"
+    }
+  ]
+}

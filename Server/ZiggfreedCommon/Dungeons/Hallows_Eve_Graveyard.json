@@ -8,6 +8,9 @@
     "anchor is the entrance room's floor, so EntryOffset lands an arriving party one block up, standing",
     "on it; the Leave_Instance pad behind them takes a player back out. EntryYaw 180 turns them to face",
     "south, into the graveyard, with the pad and the entrance room's back wall behind them (yaw 0 faces north).",
+    "IntroCamera plays Hallows_Eve_Graveyard_Intro (ZiggfreedCommon/CameraSequences/) as each player",
+    "arrives: a short sweep over the graves toward his fight, their movement held until the view is back.",
+    "Remove the line to arrive with no intro.",
     "",
     "Season keeps it closed outside Hallow's Eve. Share: one party to an area, up to five players, and",
     "four areas to a copy. Complete names his fight, so the run clears when he falls, and Rewards rolls",
@@ -43,7 +46,8 @@
     "EntryOffset": {
       "Y": 1
     },
-    "EntryYaw": 180
+    "EntryYaw": 180,
+    "IntroCamera": "Hallows_Eve_Graveyard_Intro"
   },
   "Complete": {
     "Bosses": [ "Hallows_Eve_Headless_Horseman_Encounter" ]

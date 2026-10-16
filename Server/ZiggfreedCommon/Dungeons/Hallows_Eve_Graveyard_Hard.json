@@ -7,6 +7,8 @@
     "it from tools/arenas/Hallows_Eve_Graveyard_Hard.json), so every fresh paste stages a fresh hard",
     "fight. EntryOffset lands an arriving party one block up, standing on the entrance room's floor, and",
     "EntryYaw 180 turns them to face south, into the graveyard, away from the back wall and its way-out pad.",
+    "IntroCamera plays the normal graveyard's sweep, Hallows_Eve_Graveyard_Intro, since both share one",
+    "layout: each arriving player watches it with their movement held until the view is back.",
     "",
     "Whoever opens this dungeon decides who may enter it; the file names no quest the player must have",
     "done, so it stays free of any quest. Season keeps it closed outside Hallow's Eve. Share: one party",
@@ -39,7 +41,8 @@
     "EntryOffset": {
       "Y": 1
     },
-    "EntryYaw": 180
+    "EntryYaw": 180,
+    "IntroCamera": "Hallows_Eve_Graveyard_Intro"
   },
   "Complete": {
     "Bosses": [ "Hallows_Eve_Headless_Horseman_Encounter_Hard" ]
