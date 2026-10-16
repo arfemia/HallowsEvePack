@@ -10,9 +10,6 @@ calendar.harvest_feast.herald.start.sub = Martha, a Szakács megteríti az aszta
 calendar.harvest_feast.herald.end = Az Aratási Lakoma véget ért
 calendar.harvest_feast.herald.end.sub = Az asztalt jövő évig elpakolták.
 
-# ---- Finds ----
-notify.harvest_feast_spice_found = Egy csipet fűszer, a tök mellé bújtatva.
-
 # ---- Costumes ----
 # A costume's buff-bar tile name. Its effect's Name is this key in full
 # (harvestfeast.world.effect...), because the client reads an effect's Name exactly as written.

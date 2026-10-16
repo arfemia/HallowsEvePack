@@ -10,9 +10,6 @@ calendar.harvest_feast.herald.start.sub = Марта-повариха накры
 calendar.harvest_feast.herald.end = Праздник урожая закончился
 calendar.harvest_feast.herald.end.sub = Стол убран до следующего года.
 
-# ---- Finds ----
-notify.harvest_feast_spice_found = Щепотка специй, спрятанная в тыкве.
-
 # ---- Costumes ----
 # A costume's buff-bar tile name. Its effect's Name is this key in full
 # (harvestfeast.world.effect...), because the client reads an effect's Name exactly as written.

@@ -10,9 +10,6 @@ calendar.harvest_feast.herald.start.sub = Martha die Köchin deckt die Tafel im 
 calendar.harvest_feast.herald.end = Das Erntefest ist vorbei
 calendar.harvest_feast.herald.end.sub = Die Tafel ist bis nächstes Jahr abgeräumt.
 
-# ---- Finds ----
-notify.harvest_feast_spice_found = Eine Prise Gewürz, beim Kürbis versteckt.
-
 # ---- Costumes ----
 # A costume's buff-bar tile name. Its effect's Name is this key in full
 # (harvestfeast.world.effect...), because the client reads an effect's Name exactly as written.

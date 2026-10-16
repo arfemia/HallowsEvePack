@@ -20,7 +20,6 @@ calendar.harvest_moon.herald.end.sub = The nights go quiet again.
 
 # ---- Finds ----
 notify.hallows_eve_geode_found = A Cursed Geode, there in the rubble.
-notify.hallows_eve_pumpkin_found = A Hallowed Pumpkin, glowing in your pack.
 
 # ---- The Headless Horseman's fight ----
 notify.hallows_eve_horseman_unhorsed = The Horseman is thrown from the saddle!
