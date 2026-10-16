@@ -36,11 +36,12 @@ claim.hallows_eve_horseman_chase = Süvari'nin Hazinesi
 claim.hallows_eve_horseman_chase_hard = Süvari'nin Hazinesi (Zor)
 dungeon.hallows_eve_graveyard.name = Süvari'nin Mezarlığı
 dungeon.hallows_eve_graveyard.description = Başsız Süvari'nin geceleri dolaştığı surlu bir mezarlık. Arkadaşlarını getir.
-dungeon.hallows_eve_graveyard.goal = Başsız Süvari'yi yen. Başı uçunca onu yere ser, yoksa Süvari yaralanamaz.
+dungeon.hallows_eve_graveyard.goal = Başsız Süvari'yi uyandırmak için çeşmenin etrafındaki dört Jack İskeletini öldür, sonra onu yen. Başı uçunca onu yere ser, yoksa Süvari yaralanamaz.
 dungeon.hallows_eve_graveyard_hard.name = Süvari'nin Mezarlığı (Zor)
 dungeon.hallows_eve_graveyard_hard.description = Başsız Süvari burada daha hırçın sürer ve başka hiçbir yerde düşürmediği şeyleri düşürür. Daha çok arkadaş getir.
-dungeon.hallows_eve_graveyard_hard.goal = Başsız Süvari'yi zor sürüşte yen. Başı uçunca onu yere ser, yoksa Süvari yaralanamaz.
+dungeon.hallows_eve_graveyard_hard.goal = Başsız Süvari'yi uyandırmak için çeşmenin etrafındaki dört Jack İskeletini öldür, sonra onu zor sürüşte yen. Başı uçunca onu yere ser, yoksa Süvari yaralanamaz.
 dungeon.hallows_eve_graveyard.cost_hint = Yaşlı Jack, Mezar Mumlarını Unutulmuş Tapınak'taki dükkanında satar.
 dungeon.hallows_eve_graveyard_hard.cost_hint = Yaşlı Jack, seni Müdavim saydığında Yanan Mezar Mumlarını Unutulmuş Tapınak'taki dükkanında satar.
 dungeon.hallows_eve_graveyard.confirm = Mumu Yak
+dungeon.hallows_eve_graveyard.chest = Ödülün, onun düştüğü yerdeki sandıkta seni bekliyor.
 

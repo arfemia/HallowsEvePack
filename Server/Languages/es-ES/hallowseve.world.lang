@@ -36,11 +36,12 @@ claim.hallows_eve_horseman_chase = El Botín del Jinete
 claim.hallows_eve_horseman_chase_hard = El Botín del Jinete (Difícil)
 dungeon.hallows_eve_graveyard.name = El Cementerio del Jinete
 dungeon.hallows_eve_graveyard.description = Un cementerio amurallado donde el Jinete sin Cabeza cabalga de noche. Trae amigos.
-dungeon.hallows_eve_graveyard.goal = Derrota al Jinete sin Cabeza. Cuando su cabeza salga volando, derríbala, o no se le podrá herir.
+dungeon.hallows_eve_graveyard.goal = Mata a los cuatro Esqueletos Jack que rodean la fuente para despertar al Jinete sin Cabeza y derrótalo. Cuando su cabeza salga volando, derríbala, o no se le podrá herir.
 dungeon.hallows_eve_graveyard_hard.name = El Cementerio del Jinete (Difícil)
 dungeon.hallows_eve_graveyard_hard.description = El Jinete sin Cabeza cabalga con más furia aquí, y suelta cosas que no suelta en ningún otro sitio. Trae más amigos.
-dungeon.hallows_eve_graveyard_hard.goal = Derrota al Jinete sin Cabeza en la cabalgata difícil. Cuando su cabeza salga volando, derríbala, o no se le podrá herir.
+dungeon.hallows_eve_graveyard_hard.goal = Mata a los cuatro Esqueletos Jack que rodean la fuente para despertar al Jinete sin Cabeza y derrótalo en la cabalgata difícil. Cuando su cabeza salga volando, derríbala, o no se le podrá herir.
 dungeon.hallows_eve_graveyard.cost_hint = El Viejo Jack vende Velas Sepulcrales en su tienda del Templo Olvidado.
 dungeon.hallows_eve_graveyard_hard.cost_hint = El Viejo Jack vende Velas Sepulcrales Ardientes en su tienda del Templo Olvidado, cuando te considera un Asiduo.
 dungeon.hallows_eve_graveyard.confirm = Encender la Vela
+dungeon.hallows_eve_graveyard.chest = Tu recompensa te espera en el cofre donde cayó.
 
