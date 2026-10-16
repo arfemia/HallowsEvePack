@@ -15,6 +15,8 @@ A spec (tools/arenas/<Name>.json) names:
                      (an exit pad), replacing whatever the source had in that cell
   Points             [{"Name": <label>, "Tags": [<tag>, ...], "At": [x, y, z]}]: tagged points
                      an encounter's Points sensor finds (where a health pack drops)
+  Containers         [{"At": [x, y, z], "Droplist": <Server/Drops id>}]: a container block the
+                     source already holds in that cell (a chest), stocked from that drop list
 
 "At" is a block cell counted from the prefab's anchor (the cell a party arrives above), the way
 the dungeon's EntryOffset counts: an entity stands on the floor of that cell, at its centre.
@@ -22,6 +24,9 @@ The entities carry no UUID, so every paste of the prefab stages a fresh fight. T
 the dev test arena's (the encounter entity and the spawn marker entity a runtime paste keeps).
 A point is the game's own prefab point (a Transform and a Point component, the shape its
 builder tools save): a paste registers it as a live point and places no entity.
+A container's drop list is the game's own prefab chest fill, the Droplist key on the block's
+ItemContainerBlock component (vanilla's Goblin_Thief_Chest prefab): each paste places a fresh
+container, and the game's stash rolls the list into it as it lands, so every paste is restocked.
 A rerun writes byte-identical files.
 """
 import argparse
@@ -105,6 +110,23 @@ def place(entity, name_key, ident, at, prefab):
     return out
 
 
+def stock(blocks, container, prefab):
+    """Name a drop list on the container block in cell `container["At"]` (counted from the anchor)."""
+    ax, ay, az = anchor(prefab)
+    at = container["At"]
+    cell = (at[0] + ax, at[1] + ay, at[2] + az)
+    for block in blocks:
+        if (block["x"], block["y"], block["z"]) != cell:
+            continue
+        state = block.get("components", {}).get("Components", {}).get("ItemContainerBlock")
+        if state is None:
+            break
+        rest = {k: v for k, v in state.items() if k != "Droplist"}
+        block["components"]["Components"]["ItemContainerBlock"] = {"Droplist": container["Droplist"], **rest}
+        return
+    raise ValueError(f"Containers: no container block at cell {at} (source cell {list(cell)})")
+
+
 def build(spec):
     prefab = load_source(PACK / spec["Source"])
     ax, ay, az = anchor(prefab)
@@ -123,6 +145,8 @@ def build(spec):
         x, y, z = (block["At"][0] + ax, block["At"][1] + ay, block["At"][2] + az)
         blocks = [b for b in blocks if (b["x"], b["y"], b["z"]) != (x, y, z)]
         blocks.append({"x": x, "y": y, "z": z, "name": block["Name"]})
+    for container in spec.get("Containers", []):
+        stock(blocks, container, prefab)
     prefab["blocks"] = blocks
     return (json.dumps(prefab, separators=(",", ":"), ensure_ascii=False) + "\n").encode("utf-8")
 

@@ -10,7 +10,10 @@
     "fountain laps from where he spawns, so move the marker and those offsets together.",
     "The six Orbis_Boss_Health_Pack points are where his fight's health packs may drop: 4 cells over",
     "open ground (no grave, wall or fountain under them), two north of the plaza, one either side of",
-    "the fountain and two south of it, so a pack falls straight to the floor."
+    "the fountain and two south of it, so a pack falls straight to the floor.",
+    "Containers stocks the source's hidden chest, in a sealed treasure room inside the west rock reached",
+    "down a cobwebbed shaft, from Server/Drops/Hallows_Eve/Hallows_Eve_Drop_Graveyard_Chest.json: every",
+    "paste places it full again, and the first player to open it takes what it holds."
   ],
   "Source": "tools/arenas/ziggy_halloween.prefab.zip",
   "Output": "Server/Prefabs/Hallows_Eve/Hallows_Eve_Graveyard.prefab.json",
@@ -29,5 +32,8 @@
     { "Name": "Health Pack Fountain East", "Tags": ["Orbis_Boss_Health_Pack"], "At": [8, 5, 56] },
     { "Name": "Health Pack South West", "Tags": ["Orbis_Boss_Health_Pack"], "At": [-4, 5, 64] },
     { "Name": "Health Pack South East", "Tags": ["Orbis_Boss_Health_Pack"], "At": [4, 5, 64] }
+  ],
+  "Containers": [
+    { "At": [-25, 1, 46], "Droplist": "Hallows_Eve_Drop_Graveyard_Chest" }
   ]
 }
