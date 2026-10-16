@@ -6,9 +6,16 @@
     "",
     "Keep it a table that always pays: no Chance, no Conditions and no Costume row. A costume paid",
     "from here never rolls a fallback of its own, and a roll that lands nothing tells nobody. Sweets",
-    "pay through the Currency reward kind, since a counter wallet has no item to hand over."
+    "pay through the Currency reward kind, since a counter wallet has no item to hand over.",
+    "",
+    "Text names this table wherever a reward paying it is shown (Something Sweet) and gives its hover",
+    "a line."
   ],
   "Name": "Hallows_Eve_Treats",
+  "Text": {
+    "TitleKey": "lootable.hallows_eve_treats.title",
+    "FlavorKey": "lootable.hallows_eve_treats.flavor"
+  },
   "Rolls": [
     {
       "Grants": {

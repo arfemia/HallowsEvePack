@@ -9,9 +9,16 @@
     "Sweets pay through the Currency reward kind. The tricks put a costume on the player through",
     "the Costume reward kind; the player takes it off with /zigcostume off. A player already in a",
     "costume, or under a transformation, keeps their look and gets a treat instead: each trick names",
-    "Hallows_Eve_Treats as its FallbackLootable, and that table pays whenever the costume cannot go on."
+    "Hallows_Eve_Treats as its FallbackLootable, and that table pays whenever the costume cannot go on.",
+    "",
+    "Text names what the knock paid where the receipt heads its rows (Trick or Treat instead of Loot",
+    "Bundle), and gives the table a line wherever a reward paying it is hovered."
   ],
   "Name": "Hallows_Eve_Trick_Or_Treat",
+  "Text": {
+    "TitleKey": "lootable.hallows_eve_trick_or_treat.title",
+    "FlavorKey": "lootable.hallows_eve_trick_or_treat.flavor"
+  },
   "Rolls": [
     {
       "Grants": {

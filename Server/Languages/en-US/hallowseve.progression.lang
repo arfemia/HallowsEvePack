@@ -38,7 +38,7 @@ quest.hallows_eve_jack_daily_pumpkins.flavor = The lanterns burn through Hallowe
 quest.hallows_eve_jack_daily_geodes.title = Geodes for Jack
 quest.hallows_eve_jack_daily_geodes.flavor = Crack a couple of Cursed Geodes for me. My hands are too stiff for it these days.
 
-# ---- What Old Jack's quests pay: the name on the quest, and the line under it on hover ----
+# ---- What Hallow's Eve's loot tables pay: the name on the reward, and the line under it on hover ----
 lootable.hallows_eve_meet_pay.title = Old Jack's Welcome
 lootable.hallows_eve_meet_pay.flavor = A few sweets to say hello.
 lootable.hallows_eve_chain_pay.title = Old Jack's Pay
@@ -47,6 +47,18 @@ lootable.hallows_eve_daily_pay.title = Old Jack's Daily Pay
 lootable.hallows_eve_daily_pay.flavor = What Old Jack pays for a day's work.
 lootable.hallows_eve_lantern_pay.title = Old Jack's Thanks
 lootable.hallows_eve_lantern_pay.flavor = What Old Jack gives each year for lighting the Hollow Lantern.
+lootable.hallows_eve_board_pay.title = Old Jack's Extras
+lootable.hallows_eve_board_pay.flavor = A bit extra on top of what the job pays, for anyone who works my board.
+lootable.hallows_eve_board_sweets.title = The Candy Jar
+lootable.hallows_eve_board_sweets.flavor = However many I can grab in one hand.
+lootable.hallows_eve_hallowed_cache.title = Hallowed Cache
+lootable.hallows_eve_hallowed_cache.flavor = The Hallowed leave this for you each time you climb another step past Exalted with them. Don't ask me where they get it.
+lootable.hallows_eve_trick_or_treat.title = Trick or Treat
+lootable.hallows_eve_trick_or_treat.flavor = Knock and see what you get. Treats, mostly.
+lootable.hallows_eve_treats.title = Something Sweet
+lootable.hallows_eve_treats.flavor = What you get when the trick won't take.
+lootable.hallows_eve_geode_crack.title = Cracked Geode
+lootable.hallows_eve_geode_crack.flavor = Whatever falls out of a Cursed Geode when you crack it. Crystal every time, and better when you're lucky.
 
 # ---- Steps worded for this pack ----
 objective.hallows_eve.meet_jack = Find Old Jack in the Forgotten Temple
@@ -74,7 +86,6 @@ board.hallows_eve_daily.title = Old Jack's Board
 board.hallows_eve_daily.desc = Work for the dark and work for the daylight. My regulars get a bit more. Collect your pay before I pack up. Miss me, and what you've earned still waits in your Objective Book.
 board.hallows_eve_daily.grade.night = Night Work
 board.hallows_eve_daily.grade.day = Day Work
-reward.lootable.hallows_eve_board_pay = Old Jack's Extras
 quest.hallows_eve_board_souls.title = Soul Sweep
 quest.hallows_eve_board_souls.flavor = Souls are thick around the temple tonight. Set a good many of them free before morning.
 quest.hallows_eve_board_ghouls.title = Ghoul Cull

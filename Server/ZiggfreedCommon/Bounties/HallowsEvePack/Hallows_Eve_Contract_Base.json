@@ -15,8 +15,8 @@
     "with the event, and a job finished but not collected by then shows Collect in the player's",
     "Objective Book instead, so its pay never waits a year for the board to come back.",
     "The list is the board's pay table (a sweets bonus of none to twelve, a chance at a Cursed Geode or",
-    "an Epic Lantern Bomb, and a festival token; its NameKey gives the row its own name on the reward",
-    "panels in place of the generic loot bundle), a flat ten Hallow Sweets shown as a row of its own so",
+    "an Epic Lantern Bomb, and a festival token; the table's own Text names the row on the reward",
+    "panels, and hovering it lists what the table pays), a flat ten Hallow Sweets shown as a row of its own so",
     "the player sees it before taking the job (the Currency reward), favor with Old Jack and the",
     "Hallowed, and Festival Favor, which every season's work pays (the Reputation rewards; Amount is how",
     "much). An errand, half a board job, writes its own smaller amounts. A child that writes",
@@ -37,7 +37,7 @@
   "Boards": [ { "Board": "Hallows_Eve_Daily", "Difficulty": "Hallows_Eve_Night", "Weight": 1 } ],
   "Rewards": {
     "Claim": [
-      { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay", "NameKey": "reward.lootable.hallows_eve_board_pay" } },
+      { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } },
       { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": 10 } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 50 } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 25 } },

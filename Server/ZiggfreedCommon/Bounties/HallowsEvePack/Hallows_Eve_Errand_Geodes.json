@@ -19,7 +19,7 @@
   },
   "Rewards": {
     "Claim": [
-      { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay", "NameKey": "reward.lootable.hallows_eve_board_pay" } },
+      { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Board_Pay" } },
       { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": 5 } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 25 } },
       { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 12 } },

@@ -11,15 +11,24 @@
     "",
     "A companion mod adds its own rolls to this table with a file of its own that names it in",
     "ContributesTo, so nothing here has to change. The table pays whenever a geode is cracked, in",
-    "season or out, since the geode itself is an ordinary item once found."
+    "season or out, since the geode itself is an ordinary item once found.",
+    "",
+    "Text names this table wherever a reward paying it is shown (Cracked Geode) and gives its hover a",
+    "line; the hover then lists what this table pays. HideInPreview keeps the rare Epic Lantern Bomb",
+    "out of that list, which then ends saying there are a few more rare finds; the roll pays the same."
   ],
   "Name": "Hallows_Eve_Geode_Crack",
+  "Text": {
+    "TitleKey": "lootable.hallows_eve_geode_crack.title",
+    "FlavorKey": "lootable.hallows_eve_geode_crack.flavor"
+  },
   "Rolls": [
     {
       "Grants": { "Items": [ { "Item": "Ingredient_Crystal_Purple", "Count": 1, "CountMax": 3 } ] }
     },
     {
       "Chance": { "Base": 5.0 },
+      "HideInPreview": true,
       "Grants": { "Items": [ { "Item": "Hallows_Eve_Lantern_Bomb_Epic", "Count": 1 } ] }
     }
   ],

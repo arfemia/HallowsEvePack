@@ -5,9 +5,16 @@
     "12 times in 13, so with the draw that pays nothing the bonus runs from none to twelve. To move the",
     "top of the range, add or take away entries here and keep Hallows_Eve_Board_Pay's Chance at N / (N",
     "+ 1) for N entries. Sweets pay through the Currency reward kind, since a counter wallet has no item",
-    "to hand over."
+    "to hand over.",
+    "",
+    "Text names this bonus where the board pay's hover lists what it pays (The Candy Jar), and",
+    "gives it a line wherever it is shown on its own."
   ],
   "Name": "Hallows_Eve_Board_Sweets",
+  "Text": {
+    "TitleKey": "lootable.hallows_eve_board_sweets.title",
+    "FlavorKey": "lootable.hallows_eve_board_sweets.flavor"
+  },
   "Pool": {
     "Entries": [
       { "Weight": 1, "Grants": { "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "1" } } ] } },

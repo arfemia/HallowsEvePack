@@ -5,9 +5,16 @@
     "table. Every roll is read on its own: the first always pays and plays the moment",
     "Hallows_Eve_Hallowed_Cache (a toast and a sound), so the cache never lands unannounced; the",
     "second is a chance on top. Chance is a percent from 0 to 100. Sweets pay through the Currency",
-    "reward kind, since a counter wallet has no item to hand over."
+    "reward kind, since a counter wallet has no item to hand over.",
+    "",
+    "Text names the reward on the Hallowed's Reputation page and in the notice that pays it (Hallowed",
+    "Cache instead of Loot Bundle) and gives its hover a line; the hover then lists what this table pays."
   ],
   "Name": "Hallows_Eve_Hallowed_Cache",
+  "Text": {
+    "TitleKey": "lootable.hallows_eve_hallowed_cache.title",
+    "FlavorKey": "lootable.hallows_eve_hallowed_cache.flavor"
+  },
   "Rolls": [
     {
       "Grants": {

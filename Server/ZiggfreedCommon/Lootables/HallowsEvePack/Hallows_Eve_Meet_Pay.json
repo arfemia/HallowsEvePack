@@ -8,15 +8,13 @@
     "nothing here has to change.",
     "",
     "Text names the reward on the quest (Old Jack's Welcome instead of Loot Bundle) and gives its",
-    "hover a line; ListContents has the hover list what this table pays, a companion mod's rolls",
-    "included."
+    "hover a line; the hover then lists what this table pays, a companion mod's rolls included."
   ],
   "Name": "Hallows_Eve_Meet_Pay",
   "Text": {
     "TitleKey": "lootable.hallows_eve_meet_pay.title",
     "FlavorKey": "lootable.hallows_eve_meet_pay.flavor"
   },
-  "ListContents": true,
   "Rolls": [
     {
       "Grants": {

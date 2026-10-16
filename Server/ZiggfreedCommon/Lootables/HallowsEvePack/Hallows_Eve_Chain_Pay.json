@@ -11,14 +11,13 @@
     "this table in ContributesTo.",
     "",
     "Text names the reward on a quest (Old Jack's Pay instead of Loot Bundle) and gives its hover a",
-    "line; ListContents has the hover list what this table pays, a companion mod's rolls included."
+    "line; the hover then lists what this table pays, a companion mod's rolls included."
   ],
   "Name": "Hallows_Eve_Chain_Pay",
   "Text": {
     "TitleKey": "lootable.hallows_eve_chain_pay.title",
     "FlavorKey": "lootable.hallows_eve_chain_pay.flavor"
   },
-  "ListContents": true,
   "Rolls": [
     {
       "Grants": {

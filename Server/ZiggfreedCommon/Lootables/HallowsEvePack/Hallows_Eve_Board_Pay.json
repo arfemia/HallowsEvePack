@@ -11,9 +11,18 @@
     "",
     "Sweets and festival tokens (what every season pays) pay through the Currency reward kind, since",
     "a counter wallet has no item to hand over. A companion mod adds its own rolls to this table with",
-    "a file of its own that names it in ContributesTo, so nothing here has to change."
+    "a file of its own that names it in ContributesTo, so nothing here has to change.",
+    "",
+    "Text names the reward on every job that pays this table (Old Jack's Extras instead of Loot",
+    "Bundle) and gives its hover a line; the hover then lists what this table pays, a companion mod's",
+    "rolls included. HideInPreview keeps the rare Epic Lantern Bomb out of that list, which then ends",
+    "saying there are a few more rare finds; the roll pays the same."
   ],
   "Name": "Hallows_Eve_Board_Pay",
+  "Text": {
+    "TitleKey": "lootable.hallows_eve_board_pay.title",
+    "FlavorKey": "lootable.hallows_eve_board_pay.flavor"
+  },
   "Rolls": [
     {
       "Chance": { "Base": 92.3077 },
@@ -27,6 +36,7 @@
     },
     {
       "Chance": { "Base": 5.0 },
+      "HideInPreview": true,
       "Grants": { "Items": [ { "Item": "Hallows_Eve_Lantern_Bomb_Epic", "Count": 1 } ] }
     },
     {

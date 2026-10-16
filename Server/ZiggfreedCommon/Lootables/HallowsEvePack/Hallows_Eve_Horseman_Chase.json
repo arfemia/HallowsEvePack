@@ -13,7 +13,10 @@
     "favor instead of Old Jack's; Mmo_Hallows_Eve_Horseman_Chase.json adds Defense XP where MMO Skill",
     "Tree runs. His plain armour pays from his daily Claim (Hallows_Eve_Horseman_Daily.json). The",
     "Almanac's Hoard grid (ZiggfreedCommon/Almanac/HallowsEvePack/Hallows_Eve.json) lists what this",
-    "table and the hard one pay, so change them together. Chance is a percent from 0 to 100."
+    "table and the hard one pay, so change them together. Chance is a percent from 0 to 100.",
+    "HideInPreview on the four Flaming pieces keeps them out of any list of what this table pays (a",
+    "reward paying it lists its contents on hover); the Hoard itself lands as a Claim of what it",
+    "rolled, and the rolls pay the same either way."
   ],
   "Name": "Hallows_Eve_Horseman_Chase",
   "Rolls": [
@@ -26,18 +29,22 @@
     },
     {
       "Chance": { "Base": 5.0 },
+      "HideInPreview": true,
       "Grants": { "Items": [ { "Item": "Hallows_Eve_Burning_Jack_Helm", "Count": 1 } ] }
     },
     {
       "Chance": { "Base": 5.0 },
+      "HideInPreview": true,
       "Grants": { "Items": [ { "Item": "Hallows_Eve_Flaming_Horseman_Gauntlets", "Count": 1 } ] }
     },
     {
       "Chance": { "Base": 5.0 },
+      "HideInPreview": true,
       "Grants": { "Items": [ { "Item": "Hallows_Eve_Flaming_Horseman_Greaves", "Count": 1 } ] }
     },
     {
       "Chance": { "Base": 5.0 },
+      "HideInPreview": true,
       "Grants": { "Items": [ { "Item": "Hallows_Eve_Flaming_Jack_Shield", "Count": 1 } ] }
     },
     {
