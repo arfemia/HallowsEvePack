@@ -30,7 +30,7 @@ quest.harvest_feast_board_roast.title = Ateş Çukuru
 quest.harvest_feast_board_roast.flavor = Açık ateşte bir yığın et pişir. Koku bile insanları sofraya getirir.
 
 # ---- The feast stall ----
-shop.harvest_feast_host.title = Şölen Tezgahı
+shop.harvest_feast_host.title = Şölen Dükkanı
 shop.harvest_feast_host.desc = Kendi defterimden tarifler, torba torba patlamış mısır ve ev için birkaç şey.
 shop.harvest_feast_host.category.kitchen = Mutfak
 shop.harvest_feast_host.category.decor = Süsler
@@ -106,15 +106,15 @@ almanac.harvest_feast.errands = Martha için yapılan ayak işleri
 almanac.harvest_feast.source.bake_pumpkin = Martha'nın verdiği tarifle yemek tezgahında pişirilir.
 almanac.harvest_feast.source.errands = Martha'nın ayak işlerinden arada bir çıkan bir ikram.
 almanac.harvest_feast.source.feast = Yılda bir kez Şölen'in kendisinde sunulur.
-almanac.harvest_feast.source.popcorn = Martha'nın hikâyesinden, panosundan ve ortak yemekten gelir ya da tezgahından satın alınır.
+almanac.harvest_feast.source.popcorn = Martha'nın hikâyesinden, panosundan ve ortak yemekten gelir ya da dükkanından satın alınır.
 almanac.harvest_feast.source.bread = Günlük ortak yemekte paylaşılır, Martha'nın hikâyesinin de parçasıdır.
 almanac.harvest_feast.source.story = Martha hikâyesi sırasında sana verir.
-almanac.harvest_feast.source.stall = Martha'nın tezgahında satılır.
-almanac.harvest_feast.source.stall_favor = Martha nezdindeki itibarın yükseldikçe Martha'nın tezgahında satılır.
-almanac.harvest_feast.source.seeds = Şölen'den ve Martha'nın ayak işlerinden gelir ya da tezgahından satın alınır.
+almanac.harvest_feast.source.stall = Martha'nın dükkanında satılır.
+almanac.harvest_feast.source.stall_favor = Martha nezdindeki itibarın yükseldikçe Martha'nın dükkanında satılır.
+almanac.harvest_feast.source.seeds = Şölen'den ve Martha'nın ayak işlerinden gelir ya da dükkanından satın alınır.
 almanac.harvest_feast.source.keepsake = Şölen'in hatırası, Şölen sofrasına oturduğunda yılda bir kez verilir.
-almanac.harvest_feast.source.winter = Şölen sürerken Martha'nın tezgahındaki şenlik rafında satılır.
-almanac.harvest_feast.source.festival_favor = Şenlik Teveccühü yüksek olanlara şenlik tezgahlarında satılır.
+almanac.harvest_feast.source.winter = Şölen sürerken Martha'nın dükkanındaki şenlik rafında satılır.
+almanac.harvest_feast.source.festival_favor = Şenlik Teveccühü yüksek olanlara şenlik dükkanlarında satılır.
 
 # ---- Martha's conversation ----
 dialogue.harvest_feast_host.off_season.text = Bu yılın şöleni bitti, sofra da kaldırıldı.\nTarlalar toplanınca yine gel.
@@ -161,7 +161,7 @@ dialogue.harvest_feast_host.who_are_you.text = Önemli biri değilim. Yemek piş
 dialogue.harvest_feast_host.about_feast.text = Çoğunlukla bir teşekkür. Tarlalar bize bol verdi, yapabileceğimizin en azı onu birlikte yemek.\nBir şey getirirsin, eve bir şey götürürsün. Bütün kural bu.
 dialogue.harvest_feast_host.opt.returned = Döndüm.
 dialogue.harvest_feast_host.opt.quests = Yapılacak ne var?
-dialogue.harvest_feast_host.opt.shop = Tezgahına bakalım.
+dialogue.harvest_feast_host.opt.shop = Dükkanına bakalım.
 dialogue.harvest_feast_host.opt.standing = Aramız nasıl?
 dialogue.harvest_feast_host.opt.almanac = Almanak'ı göster.
 dialogue.harvest_feast_host.opt.who = Sen kimsin?

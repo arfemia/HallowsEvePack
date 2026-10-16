@@ -6,23 +6,28 @@
 # ---- Il portafoglio ----
 currency.hallows_eve_sweets.name = Dolcetti di Ognissanti
 currency.hallows_eve_sweets.amount = {0, number} {0, plural, one {Dolcetto di Ognissanti} other {Dolcetti di Ognissanti}}
+currency.hallows_eve_sweets.description = Spendili nel negozio del Vecchio Jack nel Tempio Dimenticato.
 quest.category.hallows_eve = Vigilia di Ognissanti
 
 # ---- La serie di missioni del Vecchio Jack ----
 quest.hallows_eve_old_jack_meet.title = Lanterne nel Tempio
 quest.hallows_eve_old_jack_meet.flavor = È tornata la stagione, quindi sono di nuovo nel Tempio Dimenticato con le mie lanterne. Ci arrivi da un Portale del Tempio Dimenticato qualsiasi. Vieni a cercarmi. Una mano mi farebbe comodo.
 quest.hallows_eve_old_jack_1.title = Campo di Zucche
-quest.hallows_eve_old_jack_1.flavor = Raccogli zucche questo mese e ogni tanto ne spunta una fredda e luminosa. Portamene qualcuna di quelle Consacrate.
+quest.hallows_eve_old_jack_1.flavor = Le mie lanterne sono intagliate da Zucche Consacrate, e ne sto finendo. Raccogli le zucche a mano e portami quelle fredde e luminose.
 quest.hallows_eve_old_jack_2.title = Lanterne all'Opera
-quest.hallows_eve_old_jack_2.flavor = Qualunque zucca piena di polvere nera fa una bella Bomba Lanterna. Tirane qualcuna contro qualcosa che se l'è cercata, poi dimmi come hanno bruciato.
+quest.hallows_eve_old_jack_2.flavor = Una zucca piena di polvere tiene indietro i morti meglio di qualsiasi lanterna. Tira qualche Bomba Lanterna, poi dimmi come hanno bruciato.
 quest.hallows_eve_old_jack_3.title = Ghoul sui Gradini
-quest.hallows_eve_old_jack_3.flavor = Col buio i Ghoul Vuoti strisciano fuori dalle vecchie tombe, affamati. Rimettine qualcuno sottoterra prima che arrivino ai gradini del tempio.
+quest.hallows_eve_old_jack_3.flavor = Le mie lanterne tengono i ghoul lontani dai gradini, ma per un soffio. Rimetti sottoterra qualche Ghoul Vuoto dopo il tramonto.
 quest.hallows_eve_old_jack_4.title = Corsa all'Ectoplasma
-quest.hallows_eve_old_jack_4.flavor = Le Anime Perdute vagano finché qualcuno non le lascia andare. Liberane qualcuna e portami l'Ectoplasma che si lasciano dietro; le mie lanterne se lo bevono.
+quest.hallows_eve_old_jack_4.flavor = L'Ectoplasma è ciò che brucia nelle mie lanterne, e un'Anima Perduta ne lascia un po' quando viene liberata. Liberane qualcuna e portamelo.
 quest.hallows_eve_old_jack_5.title = Pietra Maledetta
-quest.hallows_eve_old_jack_5.flavor = Rompi la pietra questo mese, una pietra qualunque, e ogni tanto ne salta fuori una Geode Maledetta. Spaccane qualcuna; c'è del buono dentro, sotto la maledizione.
+quest.hallows_eve_old_jack_5.flavor = In questa stagione la pietra cede Geodi Maledette, se ne rompi abbastanza. Spaccane qualcuna e tieni quello che ne esce.
 quest.hallows_eve_old_jack_lantern.title = La Lanterna Cava
-quest.hallows_eve_old_jack_lantern.flavor = Ogni anno la Lanterna Cava si spegne, e qualcuno deve riaccenderla. Butta giù gli scheletri con la mia faccia, poi portami quello che serve alla lanterna.
+quest.hallows_eve_old_jack_lantern.flavor = Ho la brace del Cavaliere. Ora la tua Lanterna Cava vuole una Zucca Consacrata, un po' di Ectoplasma, e gli scheletri con la mia faccia stesi a terra.
+quest.hallows_eve_old_jack_horseman.title = Il Cavaliere
+quest.hallows_eve_old_jack_horseman.flavor = Il Custode del Cimitero qui accanto conosce la strada per il cimitero del Cavaliere, ma non apre il cancello senza una Candela Funebre, e quelle le vendo nel mio negozio. Comprane una, entra con degli amici e disarcionalo.
+quest.hallows_eve_old_jack_horseman_hard.title = Fuoco per la Lanterna
+quest.hallows_eve_old_jack_horseman_hard.flavor = La tua lanterna vuole una fiamma che non si spenga, e il Cavaliere ne porta una. Chiedi al Custode del Cimitero la cavalcata difficile, battilo e portami la sua brace.
 
 # ---- Le giornaliere del Vecchio Jack ----
 quest.hallows_eve_jack_daily_souls.title = Anime Inquiete
@@ -31,6 +36,28 @@ quest.hallows_eve_jack_daily_pumpkins.title = Giro delle Zucche
 quest.hallows_eve_jack_daily_pumpkins.flavor = Le lanterne consumano le Zucche Consacrate più in fretta di quanto riesco a intagliarle. Portamene qualcun'altra prima che faccia buio.
 quest.hallows_eve_jack_daily_geodes.title = Geodi per Jack
 quest.hallows_eve_jack_daily_geodes.flavor = Spaccami un paio di Geodi Maledette. Ormai ho le mani troppo rigide per farlo.
+
+# ---- What Hallow's Eve's loot tables pay: the name on the reward, and the line under it on hover ----
+lootable.hallows_eve_meet_pay.title = Il Benvenuto del Vecchio Jack
+lootable.hallows_eve_meet_pay.flavor = Qualche dolcetto per dire ciao.
+lootable.hallows_eve_chain_pay.title = La Paga del Vecchio Jack
+lootable.hallows_eve_chain_pay.flavor = Quello che il Vecchio Jack paga per ogni lavoro che ti dà.
+lootable.hallows_eve_daily_pay.title = La Paga Giornaliera del Vecchio Jack
+lootable.hallows_eve_daily_pay.flavor = Quello che il Vecchio Jack paga per una giornata di lavoro.
+lootable.hallows_eve_lantern_pay.title = I Ringraziamenti del Vecchio Jack
+lootable.hallows_eve_lantern_pay.flavor = Quello che il Vecchio Jack dà ogni anno per aver acceso la Lanterna Cava.
+lootable.hallows_eve_board_pay.title = Gli Extra del Vecchio Jack
+lootable.hallows_eve_board_pay.flavor = Un po' in più oltre alla paga del lavoro, per chi lavora con la mia bacheca.
+lootable.hallows_eve_board_sweets.title = Il Barattolo dei Dolci
+lootable.hallows_eve_board_sweets.flavor = Quanti ne riesco ad afferrare con una mano.
+lootable.hallows_eve_hallowed_cache.title = Scorta dei Consacrati
+lootable.hallows_eve_hallowed_cache.flavor = I Consacrati la lasciano per te ogni volta che sali un altro gradino oltre Osannato con loro. Non chiedermi dove la prendano.
+lootable.hallows_eve_trick_or_treat.title = Dolcetto o Scherzetto
+lootable.hallows_eve_trick_or_treat.flavor = Bussa e vedi cosa ricevi. Dolcetti, per lo più.
+lootable.hallows_eve_treats.title = Qualcosa di Dolce
+lootable.hallows_eve_treats.flavor = Quello che ricevi quando lo scherzetto non attacca.
+lootable.hallows_eve_geode_crack.title = Geode Spaccata
+lootable.hallows_eve_geode_crack.flavor = Quello che cade da una Geode Maledetta quando la spacchi. Cristallo ogni volta, e meglio se sei fortunato.
 
 # ---- Passi formulati per questo pacchetto ----
 objective.hallows_eve.meet_jack = Trova il Vecchio Jack nel Tempio Dimenticato
@@ -62,13 +89,14 @@ quest.hallows_eve_board_wraiths.flavor = Qualcosa con una falce cammina nelle mi
 quest.hallows_eve_board_ectoplasm.title = Combustibile per Lanterne
 quest.hallows_eve_board_ectoplasm.flavor = Alle mie lanterne manca l'Ectoplasma. Le Anime Perdute lo lasciano indietro quando le liberi, quindi portamene una bella scorta.
 quest.hallows_eve_board_pumpkins.title = Zucche Fredde
-quest.hallows_eve_board_pumpkins.flavor = Le lanterne vogliono più Zucche Consacrate di quante ne dia il mio campo. Raccogli le zucche a mano e portami quelle fredde.
+quest.hallows_eve_board_pumpkins.flavor = Le lanterne vogliono più Zucche Consacrate di quante riesca a trovarne da solo. Raccogli le zucche a mano e portami quelle fredde.
 quest.hallows_eve_board_carving.title = Intaglio al Banco
 quest.hallows_eve_board_carving.flavor = Ogni soglia vuole una lanterna, e io più in fretta di così non intaglio. Intaglia qualche Lanterna di Jack a un Banco da Intaglio, una zucca e un po' di carbone per ciascuna.
 
 # ---- Old Jack's errands board ----
 board.hallows_eve_errands.title = Commissioni del Vecchio Jack
 board.hallows_eve_errands.desc = Lavoretti, uno per il buio e uno per la luce del giorno. Appendo una coppia nuova ogni poche ore, quindi ripassa.
+board.hallows_eve_errands.pill = Commissione
 quest.hallows_eve_errand_souls.title = Anime Randagie
 quest.hallows_eve_errand_souls.flavor = Qualche Anima Perduta è arrivata alla deriva dall'ultima volta che ho guardato. Liberale quando hai un minuto.
 quest.hallows_eve_errand_ghouls.title = Guardia alle Tombe
@@ -78,12 +106,12 @@ quest.hallows_eve_errand_ectoplasm.flavor = Una delle mie lanterne boccheggia. U
 quest.hallows_eve_errand_bombs.title = Esercizio con le Bombe
 quest.hallows_eve_errand_bombs.flavor = Hai delle Bombe Lanterna in più? Lanciane qualcuna per me. Mi piace il fracasso.
 quest.hallows_eve_errand_geodes.title = Pietra Spaccata
-quest.hallows_eve_errand_geodes.flavor = Spaccami qualche Geode Maledetta. Mi piace sentirle scoppiare.
+quest.hallows_eve_errand_geodes.flavor = Spacca qualche Geode Maledetta mentre sei in giro. Qualcuno deve pur farlo.
 quest.hallows_eve_errand_pumpkins.title = Zucche di Scorta
 quest.hallows_eve_errand_pumpkins.flavor = Una lanterna si è ammosciata sui gradini. Portami delle Zucche Consacrate quando passi.
 
-# ---- La bancarella del Vecchio Jack ----
-shop.hallows_eve_old_jack.title = Bancarella del Vecchio Jack
+# ---- Il negozio del Vecchio Jack ----
+shop.hallows_eve_old_jack.title = Negozio del Vecchio Jack
 shop.hallows_eve_old_jack.desc = Bombe Lanterna, lanterne e qualche stranezza di stagione.
 shop.hallows_eve_old_jack.category.bombs = Bombe Lanterna
 shop.hallows_eve_old_jack.category.lights = Lanterne
@@ -91,6 +119,8 @@ shop.hallows_eve_old_jack.category.gear = Equipaggiamento
 shop.hallows_eve_offer_harvest_moon_bundle.title = Pacchetto della Luna del Raccolto
 shop.hallows_eve_offer_harvest_moon_bundle.desc = Bombe Lanterna Frantumanti e Spettrali, in vendita solo finché la Luna del Raccolto è alta.
 shop.hallows_eve_offer_spyglass.desc = Guardaci dentro nelle Cavità Tremolanti per individuare dove si trova una bestia Divorata dal Vuoto.
+shop.hallows_eve_offer_sell_eternal_candle.title = Vendi una Candela Eterna di Scorta
+shop.hallows_eve_offer_sell_eternal_candle.desc = Basta una Candela Eterna per aprire il cimitero del Cavaliere. Porta al Vecchio Jack una di scorta e te la pagherà.
 
 # ---- Obiettivi ----
 achievement.hallows_eve_lantern_keepsake.title = Lanterna Cava {0}
@@ -107,11 +137,11 @@ achievement.hallows_eve_geode_cracker.desc = Spacca {0} Geodi Maledette.
 achievement.hallows_eve_jacks_guest.title = Ospite di Jack {0}
 achievement.hallows_eve_jacks_guest.desc = Partecipa alla Vigilia di Ognissanti.
 achievement.hallows_eve_the_hallowed.title = Il Consacrato {0}
-achievement.hallows_eve_the_hallowed.desc = Ottieni tutti gli obiettivi della Vigilia di Ognissanti di quest'anno.
+achievement.hallows_eve_the_hallowed.desc = Ottieni ogni obiettivo di questo elenco durante una sola Vigilia di Ognissanti.
 
 # ---- Il titolo del Consacrato ----
 title.hallows_eve_hallowed.name = Il Consacrato
-title.hallows_eve_hallowed.flavor = Ottenuti tutti gli obiettivi della Vigilia di Ognissanti in un solo anno.
+title.hallows_eve_hallowed.flavor = Ottenuto ogni obiettivo che i Consacrati chiedono in una sola Vigilia di Ognissanti.
 title.hallows_eve_hallowed.display = {0} il Consacrato
 
 # ---- La pagina dell'Almanacco ----
@@ -125,11 +155,11 @@ almanac.hallows_eve.geodes_cracked = Geodi Maledette spaccate
 # ---- La conversazione del Vecchio Jack ----
 dialogue.hallows_eve_old_jack.first_words.text = Non badare alla testa. È una zucca, e sta lì sopra da un bel pezzo.\nSono il Vecchio Jack. Ogni autunno i morti si agitano, così torno al <color is="#ffd97a">Tempio Dimenticato</color> con le mie lanterne. Mi farebbe comodo un paio di mani che non siano intagliate.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Piacere di conoscerti, Jack.
-dialogue.hallows_eve_old_jack.meet.text = Hai trovato il posto, allora. Bene.\nSono il Vecchio Jack. Tutti quelli che mi trovano ricevono un <b>benvenuto</b>, e tu il tuo non l'hai ancora avuto.
+dialogue.hallows_eve_old_jack.meet.text = Hai trovato il posto, allora. Non badare alla testa, è una zucca.\nSono il Vecchio Jack. Questo periodo dell'anno i morti si agitano, e le mie lanterne li tengono lontani da questi gradini. Tutti quelli che mi trovano ricevono un <b>benvenuto</b>, e tu il tuo non l'hai ancora avuto.
 dialogue.hallows_eve_old_jack.meet.opt.accept = Grazie, Jack.
-dialogue.hallows_eve_old_jack.board_fresh.text = C'è lavoro nuovo sulla mia bacheca, un po' da fare col buio e un po' alla luce del giorno. Paga in Dolcetti di Ognissanti, e la mia bancarella li accetta.
+dialogue.hallows_eve_old_jack.board_fresh.text = C'è lavoro nuovo sulla mia bacheca, un po' da fare col buio e un po' alla luce del giorno. Chiedimi cosa c'è da fare. Paga in dolcetti, e il mio negozio li accetta.
 dialogue.hallows_eve_old_jack.menu.text = Le lanterne sono accese e i ghoul vanno in giro. Che ti serve?
-dialogue.hallows_eve_old_jack.patch_offer.text = Raccogli zucche questo mese e ogni tanto ne spunta una fredda al tatto, che brilla un po'. <b>Zucche Consacrate</b>, le chiamo io.\nPortamene qualcuna. Senza quelle le mie lanterne non restano accese.
+dialogue.hallows_eve_old_jack.patch_offer.text = Vedi le lanterne su questi gradini? Ognuna è nata da una zucca fredda al tatto, che brillava un po'. <b>Zucche Consacrate</b>, le chiamo io.\nPortamene qualcuna e ne intaglierò altre.
 dialogue.hallows_eve_old_jack.patch_offer.opt.accept = Ti trovo qualche zucca.
 dialogue.hallows_eve_old_jack.patch_ready.text = <b>Zucche Consacrate</b>. Fredde come uno scalino di cantina.\nTi ho messo qualche Bomba Lanterna insieme alla paga. Va' a vedere come bruciano.
 dialogue.hallows_eve_old_jack.patch_ready.opt.turnin = Ecco le zucche.
@@ -139,27 +169,39 @@ dialogue.hallows_eve_old_jack.ghouls_offer.text = I <b>Ghoul Vuoti</b> striscian
 dialogue.hallows_eve_old_jack.ghouls_offer.opt.accept = Ci penso io ai ghoul.
 dialogue.hallows_eve_old_jack.souls_offer.text = Poverine, le <b>Anime Perdute</b>. Vagano finché qualcuno non le lascia andare.\nLiberane qualcuna e portami l'<b>Ectoplasma</b> che si lasciano dietro. Le mie lanterne se lo bevono.
 dialogue.hallows_eve_old_jack.souls_offer.opt.accept = Le libero io.
-dialogue.hallows_eve_old_jack.geodes_offer.text = Rompi la pietra questo mese, una pietra qualunque, e ogni tanto ne salta fuori una <b>Geode Maledetta</b>.\nSpaccane qualcuna. C'è del buono dentro, sotto la maledizione.
+dialogue.hallows_eve_old_jack.geodes_offer.text = Una <b>Geode Maledetta</b> è un pezzo di pietra con dentro qualcosa di luminoso che si muove. Brutte cose.\nSpaccane qualcuna. C'è del buono dentro, sotto la maledizione.
 dialogue.hallows_eve_old_jack.geodes_offer.opt.accept = Ne spacco qualcuna.
+dialogue.hallows_eve_old_jack.rider_offer.text = Hai sentito gli zoccoli di notte? Quello è il <b>Cavaliere senza Testa</b>, che cavalca nel suo cimitero.\nDormirei meglio se qualcuno lo buttasse giù da quel cavallo. Il <color is="#ffd97a">Custode del Cimitero</color> qui accanto non apre il cancello finché non ci ha bruciato davanti una <b>Candela Funebre</b>, e quelle le vendo nel mio negozio. Comprane una, poi va' a prenderlo.
+dialogue.hallows_eve_old_jack.rider_offer.opt.accept = Lo butto giù io.
+dialogue.hallows_eve_old_jack.ember_offer.text = Hai portato a termine le mie commissioni, e hai disarcionato il Cavaliere. È quasi tutto.\nLa tua <b>Lanterna Cava</b> vuole una fiamma che non si spenga, e solo il Cavaliere ne porta una. Prendigliela e portami <b>la Brace del Cavaliere</b>. La porta solo nella cavalcata difficile, e il Custode del Cimitero non apre quel cancello senza una <b>Candela Funebre Ardente</b>. Le vendo quando ti considero un Habitué.
+dialogue.hallows_eve_old_jack.ember_offer.opt.accept = Ti porto la brace.
+dialogue.hallows_eve_old_jack.active_ember.text = Quella brace la cede solo nella cavalcata difficile. Chiedi al <color is="#ffd97a">Custode del Cimitero</color> la <b>cavalcata difficile</b>, e porta più amici dell'ultima volta. Il suo cancello vuole una <b>Candela Funebre Ardente</b>, e le vendo quando ti considero un Habitué.\nQuando è a terra, la <b>brace</b> aspetta nel forziere dove è caduto, per chiunque abbia mandato a prenderla. Se perdi il forziere, aspetta sotto Ricompense nel tuo menu.
+dialogue.hallows_eve_old_jack.ember_ready.text = Sì, è il suo fuoco. Ti ha bruciato la tasca, a quanto vedo.\nLa tengo al sicuro finché la tua lanterna non è pronta. Poi la accendiamo.
+dialogue.hallows_eve_old_jack.ember_ready.opt.turnin = Ecco la brace.
 dialogue.hallows_eve_old_jack.daily_offer.text = Ho qualche lavoretto che si ripresenta ogni giorno. Prendi quello che ti va.
 dialogue.hallows_eve_old_jack.daily_offer.opt.souls = Mi occupo io delle anime.
 dialogue.hallows_eve_old_jack.daily_offer.opt.pumpkins = Ti porto delle zucche.
 dialogue.hallows_eve_old_jack.daily_offer.opt.geodes = Spacco qualche geode.
-dialogue.hallows_eve_old_jack.lantern_offer.text = Ogni anno la <b>Lanterna Cava</b> si spegne, e ogni anno qualcuno deve riaccenderla.\nAlcuni degli scheletri là fuori hanno la mia faccia. Butta giù qualche <b>Scheletro Jack</b>, poi portami una <b>Zucca Consacrata</b> e un po' di <b>Ectoplasma</b> per riempirla.
+dialogue.hallows_eve_old_jack.lantern_offer.text = Le tue commissioni sono finite, e io ho la brace del Cavaliere. Quindi quest'anno accendiamo una <b>Lanterna Cava</b> per te.\nAlcuni degli scheletri là fuori hanno la mia faccia, e non mi piace. Butta giù qualche <b>Scheletro Jack</b>, poi portami una <b>Zucca Consacrata</b> da intagliare e un po' di <b>Ectoplasma</b> da bruciarci dentro.
 dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Accendiamola.
-dialogue.hallows_eve_old_jack.lantern_ready.text = Una <b>Zucca Consacrata</b>, e <b>Ectoplasma</b> per riempirla. Gli scheletri con la mia faccia stanno stesi nell'erba, dove devono stare.\nEcco. La Lanterna Cava è accesa, e te la puoi tenere. Prendi anche lo scudo, fa il paio con l'elmo. Torna l'anno prossimo e ne accendiamo un'altra.
+dialogue.hallows_eve_old_jack.lantern_ready.text = Una <b>Zucca Consacrata</b>, e <b>Ectoplasma</b> da bruciarci dentro. Gli scheletri con la mia faccia stanno stesi nell'erba, dove devono stare.\nEcco. La brace ha preso. La tua Lanterna Cava è accesa, e te la puoi tenere. Prendi anche questo scudo: il mio negozio vende l'elmo, e il Cavaliere porta il resto del set. Torna l'anno prossimo e ne accendiamo un'altra.
 dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = Ecco la zucca, e l'Ectoplasma.
 dialogue.hallows_eve_old_jack.active_pumpkins.text = Le zucche crescono selvatiche nei <color is="#ffd97a">boschi autunnali</color>, e i <color is="#ffd97a">Kweebec</color> le tengono nei loro orti. Raccoglile a mano e ogni tanto in mezzo spunta una <b>Zucca Consacrata</b>. Col buio ne lasciano cadere anche gli <b>Scheletri Jack</b>.
-dialogue.hallows_eve_old_jack.active_bombs.text = Tira le <b>Bombe Lanterna</b> che hai avuto come paga contro qualunque cosa se la sia cercata. Se resti senza, alla mia bancarella ne trovi altre, e col buio gli <b>Scheletri Jack</b> ne lasciano cadere qualcuna.
+dialogue.hallows_eve_old_jack.active_bombs.text = Tira le <b>Bombe Lanterna</b> che hai avuto come paga contro qualunque cosa ti venga addosso col buio. Se resti senza, il mio negozio ne ha altre, e gli <b>Scheletri Jack</b> ne lasciano cadere qualcuna.
 dialogue.hallows_eve_old_jack.active_night.text = I morti camminano col buio, là fuori nelle terre selvagge, lontano da ogni torcia. All'alba se ne sono andati.\nUn'<b>Anima Perduta</b> lascia dell'<b>Ectoplasma</b> quando la liberi, e a volte uno <b>Scheletro Jack</b> lascia cadere una <b>Zucca Consacrata</b>.
 dialogue.hallows_eve_old_jack.active_stone.text = Rompi la <b>pietra</b>, soprattutto il <b>minerale</b>, e ogni tanto ne salta fuori una <b>Geode Maledetta</b>. Tienine una in mano e spaccala.
 dialogue.hallows_eve_old_jack.ready_generic.text = Mi sembra fatto. Fammi vedere.
 dialogue.hallows_eve_old_jack.ready_generic.opt.turnin = Fatto.
-dialogue.hallows_eve_old_jack.lantern_lit.text = La Lanterna Cava brucia ancora. Tiene lontano dai gradini il peggio del buio.\nChe ti serve?
-dialogue.hallows_eve_old_jack.who_are_you.text = Il Vecchio Jack. Una volta avevo una fattoria, lontano da qui. Poi un ottobre non sono tornato a casa, e da allora torno ogni ottobre.\nOgni anno accendo una Lanterna Cava per tenere i morti lontani da questi gradini. Entro novembre si spengono. Non chiedermi della testa.
+dialogue.hallows_eve_old_jack.lantern_lit.text = La Lanterna Cava di quest'anno è accesa. Mettila dove i morti possano vederla.\nChe ti serve?
+dialogue.hallows_eve_old_jack.sweets.text = Il mio negozio li accetta per tutto quello che vende, da una Bomba Lanterna a una testa come la mia.\nLi pago per i miei lavori e per il lavoro sulla mia bacheca. Chiedi dolcetto o scherzetto a chiunque incontri e ne riceverai qualcuno. Batti il <b>Cavaliere senza Testa</b> nel suo <color is="#ffd97a">cimitero</color> e ne troverai qualcuno ad aspettarti anche lì.
+dialogue.hallows_eve_old_jack.horseman.text = Il <b>Cavaliere senza Testa</b>. Cavalca nel suo cimitero ogni notte della Vigilia di Ognissanti. È fuoco per metà, quindi le mie Bombe Lanterna gli fanno solo metà del male, ma mordono lo stesso.\nIl <color is="#ffd97a">Custode del Cimitero</color> accanto a me tiene il cancello. Ti porta dentro quando ci ha bruciato davanti una <b>Candela Funebre</b>, e quelle le vendo nel mio negozio. Paga chi entra per primo, e il resto del gruppo lo segue gratis. Porta degli amici, e quando la sua testa vola via, abbattila, o non si può ferire.
+dialogue.hallows_eve_old_jack.horseman_beaten.text = Quindi l'hai disarcionato. Non lo terrà a terra: torna in sella ogni volta che qualcuno entra.\nVa' a cercare di nuovo il <b>Cavaliere senza Testa</b>, se vuoi. La tua prima vittoria di ogni giorno lascia la sua ricompensa giornaliera e il suo Tesoro nel forziere dove cade, ogni tanto con un pezzo della sua vecchia armatura, o di una che brucia ancora. Quello che lasci nel forziere aspetta sotto Ricompense nel tuo menu.
+dialogue.hallows_eve_old_jack.who_are_you.text = Il Vecchio Jack. Una volta avevo una fattoria, lontano da qui. Poi un ottobre non sono tornato a casa, e da allora torno ogni ottobre.\nLe mie lanterne tengono i morti lontani da questi gradini, e ogni anno accendo una Lanterna Cava con chiunque porti a termine le mie commissioni. Non chiedermi della testa.
 dialogue.hallows_eve_old_jack.harvest_moon.text = Vedi quella luna? Luna del Raccolto. Qualche notte all'anno, sotto di lei, i morti si agitano e le tombe si svuotano.\nSe vuoi lavorare, stanotte è la notte giusta. Io resto sveglio finché non tramonta.
 dialogue.hallows_eve_old_jack.opt.quests = Cosa c'è da fare?
-dialogue.hallows_eve_old_jack.opt.shop = Vediamo la tua bancarella.
+dialogue.hallows_eve_old_jack.opt.shop = Vediamo il tuo negozio.
+dialogue.hallows_eve_old_jack.opt.sweets = A cosa servono i dolcetti?
+dialogue.hallows_eve_old_jack.opt.horseman = Parlami del Cavaliere.
 dialogue.hallows_eve_old_jack.opt.almanac = Fammi vedere l'Almanacco.
 dialogue.hallows_eve_old_jack.opt.who = Chi sei?
 dialogue.hallows_eve_old_jack.opt.harvest = Cos'è una Luna del Raccolto?
@@ -169,6 +211,17 @@ dialogue.hallows_eve_old_jack.opt.farewell = Buonanotte, Jack.
 # ---- Dolcetto o scherzetto, la battuta che ogni conversazione riceve, e il suo avviso ----
 dialogue.hallows_eve_trick_or_treat.opt.knock = Dolcetto o scherzetto.
 
+# ---- The Gravekeeper's conversation (he never contracts) ----
+dialogue.hallows_eve_gravekeeper.menu.text = Il <color is="#ffd97a">cimitero</color> del Cavaliere è dietro di me, e stanotte lui lo sta cavalcando. Là dentro niente riposa finché lui cavalca.\nIl cancello si apre solo quando ci brucio davanti una <b>Candela Funebre</b>, e una volta aperto, tutto il tuo gruppo può seguirti dentro. Il Vecchio Jack le vende nel suo negozio. Anche una <b>Candela Eterna</b> lo apre, e quella te la restituisco. Dimmi la parola e ti porto dentro. Porta degli amici.
+dialogue.hallows_eve_gravekeeper.who.text = Custodisco questo cimitero perché i morti che ci sono possano riposare. Sono uno dei <b>Consacrati</b>, e noi abbattiamo ciò che non riposa.\nI morti si agitano sotto la luna piena, e nella Vigilia di Ognissanti non dormono quasi per niente. Il <b>Cavaliere senza Testa</b> non riposa mai, quindi qualcuno deve continuare ad abbatterlo.
+dialogue.hallows_eve_gravekeeper.hard_open.text = Lo hai disarcionato. Non lo ha dimenticato.\nOra c'è una <b>cavalcata difficile</b>, per chi torna. Lì colpisce più forte, e quello che lascia lì non lo lascia da nessun'altra parte. Per quel cancello brucio una <b>Candela Funebre Ardente</b>, e il Vecchio Jack le vende quando ti considera un Habitué.
+dialogue.hallows_eve_gravekeeper.ember.text = Jack ti ha mandato per <b>la Brace del Cavaliere</b>. La porta solo nella <b>cavalcata difficile</b>, e per quel cancello brucio una <b>Candela Funebre Ardente</b>. Jack le vende quando ti considera un Habitué.\nQuando è a terra, aspetta nel forziere dove è caduto per ognuno di voi che Jack ha mandato a prenderla. Nessun altro la troverà. Se perdi il forziere, aspetta sotto Ricompense nel tuo menu.
+dialogue.hallows_eve_gravekeeper.opt.enter = Portami dentro. (1 Candela Funebre)
+dialogue.hallows_eve_gravekeeper.opt.enter_hard = Portami nella cavalcata difficile. (1 Candela Funebre Ardente)
+dialogue.hallows_eve_gravekeeper.opt.who = Chi sei?
+dialogue.hallows_eve_gravekeeper.opt.back = Qualcos'altro.
+dialogue.hallows_eve_gravekeeper.opt.farewell = Buonanotte.
+
 # ---- Achievements across the years, and the Keeper of Lanterns title ----
 achievement.hallows_eve_old_friend.title = Vecchio Amico
 achievement.hallows_eve_old_friend.desc = Partecipa a {0} Vigilie di Ognissanti.
@@ -176,9 +229,23 @@ achievement.hallows_eve_lantern_keeper.title = Custode della Lanterna
 achievement.hallows_eve_lantern_keeper.desc = Accendi la Lanterna Cava in {0} stagioni.
 achievement.hallows_eve_first_lanterns.title = Prime Lanterne
 achievement.hallows_eve_first_lanterns.desc = Accendi la Lanterna Cava nella prima stagione.
+achievement.hallows_eve_first_ride.title = Prima Cavalcata
+achievement.hallows_eve_first_ride.desc = Abbatti il Cavaliere senza Testa nella sua prima Vigilia di Ognissanti.
 title.hallows_eve_keeper_of_lanterns.name = Custode delle Lanterne
 title.hallows_eve_keeper_of_lanterns.flavor = Ha acceso la Lanterna Cava con il Vecchio Jack, anno dopo anno.
 title.hallows_eve_keeper_of_lanterns.display = {0}, Custode delle Lanterne
+
+# ---- The set achievements: wearing the Hallowed and Flaming Hallowed Sets ----
+achievement.hallows_eve_hallowed_armour.title = Armatura Consacrata
+achievement.hallows_eve_hallowed_armour.desc = Indossa un Elmo di Jack e l'armatura del Cavaliere senza Testa.
+achievement.hallows_eve_fully_hallowed.title = Del Tutto Consacrato
+achievement.hallows_eve_fully_hallowed.desc = Indossa l'intero Set Consacrato, con uno Scudo di Jack nella mano secondaria.
+achievement.hallows_eve_flaming_armour.title = Armatura Fiammeggiante
+achievement.hallows_eve_flaming_armour.desc = Indossa l'Elmo di Jack Ardente e l'armatura fiammeggiante del Cavaliere senza Testa.
+achievement.hallows_eve_fully_ablaze.title = Del Tutto in Fiamme
+achievement.hallows_eve_fully_ablaze.desc = Indossa l'intero Set Consacrato Fiammeggiante, con lo Scudo di Jack Fiammeggiante nella mano secondaria.
+objective.hallows_eve.wear_hallowed = Indossa {0} pezzi del Set Consacrato
+objective.hallows_eve.wear_flaming_hallowed = Indossa {0} pezzi del Set Consacrato Fiammeggiante
 
 # ---- The stall's decorations shelf ----
 shop.hallows_eve_old_jack.category.decor = Decorazioni
@@ -188,11 +255,19 @@ shop.hallows_eve_offer_pumpkin_cute.title = Zucca di Halloween Carina
 # ---- More Almanac tallies ----
 almanac.hallows_eve.skeletons_knocked_down = Scheletri Jack abbattuti
 almanac.hallows_eve.wraiths_put_down = Spettri delle Geodi abbattuti
+almanac.hallows_eve.horseman_down = Cavaliere senza Testa abbattuto
+almanac.hallows_eve.horseman_heads = Teste del Cavaliere abbattute
 
 # ---- Il Confidente di Jack, le due reputazioni (il Favore del Vecchio Jack e il Consacrato), i gradi della bacheca e le sue battute ----
 objective.hallows_eve.jack_confidant = Diventa Confidente del Vecchio Jack
 objective.hallows_eve.put_down_wraiths = Abbatti {0} Spettri delle Geodi
 objective.hallows_eve.carve_lanterns = Intaglia {0} Lanterne di Jack
+objective.hallows_eve.bring_down_horseman = Abbatti il Cavaliere senza Testa
+objective.hallows_eve.buy_grave_candle = Compra una Candela Funebre nel negozio del Vecchio Jack
+objective.hallows_eve.bomb_down_horseman = Abbatti il Cavaliere senza Testa solo con Bombe Lanterna
+objective.hallows_eve.bomb_down_horseman_hard = Abbatti il Cavaliere senza Testa nella cavalcata difficile solo con Bombe Lanterna
+objective.hallows_eve.bring_down_horseman_hard = Abbatti il Cavaliere senza Testa nella cavalcata difficile
+objective.hallows_eve.bring_ember = Porta la Brace del Cavaliere
 board.hallows_eve_daily.grade.night = Lavoro di Notte
 board.hallows_eve_daily.grade.day = Lavoro di Giorno
 achievement.hallows_eve_jacks_confidant.title = Confidente di Jack
@@ -216,6 +291,15 @@ achievement.hallows_eve_horseman_bane.desc = Abbatti il Cavaliere senza Testa {0
 title.hallows_eve_horseman_bane.name = Flagello del Cavaliere
 title.hallows_eve_horseman_bane.flavor = Ha abbattuto il Cavaliere senza Testa più e più volte in una sola Vigilia di Ognissanti.
 title.hallows_eve_horseman_bane.display = {0}, Flagello del Cavaliere
+achievement.hallows_eve_off_with_his_head.title = Giù la Testa {0}
+achievement.hallows_eve_off_with_his_head.desc = Abbatti la testa del Cavaliere {0} volte.
+achievement.hallows_eve_by_lantern_light.title = Alla Luce della Lanterna {0}
+achievement.hallows_eve_by_lantern_light.desc = Abbatti il Cavaliere senza Testa colpendolo solo con Bombe Lanterna. La sua Testa e gli Scheletri Jack si possono colpire con qualsiasi cosa.
+achievement.hallows_eve_lamplighter.title = Lampionaio {0}
+achievement.hallows_eve_lamplighter.desc = Abbatti il Cavaliere senza Testa nella cavalcata difficile colpendolo solo con Bombe Lanterna. La sua Testa e gli Scheletri Jack si possono colpire con qualsiasi cosa.
+title.hallows_eve_lamplighter.name = Lampionaio
+title.hallows_eve_lamplighter.flavor = Ha abbattuto il Cavaliere senza Testa nella cavalcata difficile solo con Bombe Lanterna.
+title.hallows_eve_lamplighter.display = {0} il Lampionaio
 
 reputation.hallows_eve_old_jack.name = Favore del Vecchio Jack
 reputation.hallows_eve_old_jack.flavor = Il Vecchio Jack ci mette un po' a sciogliersi con la gente. Fagli qualche commissione e ogni tanto fermati a scambiare due parole.
@@ -230,9 +314,10 @@ factor.hallows_eve_old_jack.exalted = il rango di Uno di Jack presso il Vecchio 
 reputation.hallows_eve_old_jack.earn.quests = Sbriga le sue commissioni e i suoi lavori giornalieri.
 reputation.hallows_eve_old_jack.earn.board = Prendi i contratti dalla sua bacheca.
 reputation.hallows_eve_old_jack.earn.talk = Passa a scambiare due parole una volta al giorno.
-reputation.hallows_eve_old_jack.earn.gear = Indossa un Elmo di Jack. Finché ce l'hai in testa, aumenta il suo favore.
+reputation.hallows_eve_old_jack.earn.horseman = Batti il Cavaliere senza Testa nella cavalcata normale. La tua prima vittoria di ogni giorno ti guadagna il suo favore, che si ritira con il Tesoro del Cavaliere.
+reputation.hallows_eve_old_jack.earn.gear = Indossa un Elmo di Jack, e tutto ciò che fai per lui ti guadagna più favore finché ce l'hai in testa.
 reputation.hallows_eve_hallowed.name = I Consacrati
-reputation.hallows_eve_hallowed.flavor = I Consacrati tengono i morti al loro posto. Abbatti ciò che di notte risale dalle tombe e loro se ne accorgono.
+reputation.hallows_eve_hallowed.flavor = I Consacrati badano che i morti riposino, e il Custode del Cimitero del Cavaliere è uno di loro. Abbatti ciò che di notte risale dalle tombe e loro se ne accorgono.
 factor.hallows_eve_hallowed.friendly = il rango di Amichevole presso i Consacrati
 factor.hallows_eve_hallowed.honored = il rango di Onorato presso i Consacrati
 factor.hallows_eve_hallowed.revered =il rango di Riverito presso i Consacrati
@@ -240,7 +325,8 @@ factor.hallows_eve_hallowed.exalted = il rango di Osannato presso i Consacrati
 reputation.hallows_eve_hallowed.earn.kills = Abbatti le creature che di notte strisciano fuori.
 reputation.hallows_eve_hallowed.earn.jack = Contano anche i lavori giornalieri del Vecchio Jack e i contratti della sua bacheca.
 reputation.hallows_eve_hallowed.earn.treats = Chiedi dolcetto o scherzetto a tutti quelli con cui parli, una volta al giorno a ciascuno.
-reputation.hallows_eve_hallowed.earn.gear = Porta uno Scudo di Jack. Finché è equipaggiato, aumenta il loro favore.
+reputation.hallows_eve_hallowed.earn.horseman = Batti il Cavaliere senza Testa nella cavalcata difficile. La tua prima vittoria difficile di ogni giorno ti guadagna il loro favore, che si ritira con il suo Tesoro.
+reputation.hallows_eve_hallowed.earn.gear = Porta uno Scudo di Jack, e guadagni il loro favore più in fretta finché è equipaggiato.
 notify.hallows_eve_hallowed_cache = Una scorta dai Consacrati, per aver tenuto i morti sottoterra.
 dialogue.hallows_eve_old_jack.opt.standing = Come stanno le cose tra noi?
 achievement.category.seasons.hallows_eve = Vigilia di Ognissanti
@@ -249,16 +335,32 @@ achievement.category.seasons.hallows_eve = Vigilia di Ognissanti
 almanac.hallows_eve.source.pumpkin = Ogni tanto spunta quando raccogli le zucche a mano, e la lasciano cadere gli Scheletri Jack.
 almanac.hallows_eve.source.geode = Si trova nella pietra e nel minerale che scavi, e la lasciano cadere gli Spettri delle Geodi.
 almanac.hallows_eve.source.ectoplasm = Lo lasciano cadere le Anime Perdute, e si trova dentro le Geodi Maledette.
-almanac.hallows_eve.source.bombs = Le lasciano cadere le creature della notte, si trovano dentro le Geodi Maledette, si intagliano a un Banco da Intaglio o si comprano alla bancarella del Vecchio Jack.
-almanac.hallows_eve.source.bomb_epic = La lasciano cadere di rado gli Spettri delle Geodi, o si trova dentro le Geodi Maledette e nella scorta dei Consacrati. Puoi anche intagliarne una a un Banco da Intaglio, o comprarne un paio al giorno alla bancarella del Vecchio Jack.
+almanac.hallows_eve.source.bombs = Le lasciano cadere le creature della notte, si trovano dentro le Geodi Maledette, si intagliano a un Banco da Intaglio o si comprano nel negozio del Vecchio Jack.
+almanac.hallows_eve.source.bomb_epic = La lasciano cadere di rado gli Spettri delle Geodi, o si trova dentro le Geodi Maledette e nella scorta dei Consacrati. Puoi anche intagliarne una a un Banco da Intaglio, o comprarne un paio al giorno nel negozio del Vecchio Jack.
 almanac.hallows_eve.source.trick_or_treat = Si riceve quando fai dolcetto o scherzetto.
 almanac.hallows_eve.source.workbench = Si costruisce a un Banco da Lavoro, in qualsiasi periodo dell'anno.
-almanac.hallows_eve.source.carved = Si intaglia a un Banco da Intaglio, o si compra alla bancarella del Vecchio Jack.
-almanac.hallows_eve.source.jack_shield = Si intaglia a un Banco da Intaglio, o si compra alla bancarella del Vecchio Jack.
-almanac.hallows_eve.source.burning_helm = In vendita alla bancarella del Vecchio Jack quando i Consacrati ti venerano o il Vecchio Jack ti considera un Confidente.
-almanac.hallows_eve.source.flaming_shield = In vendita alla bancarella del Vecchio Jack quando i Consacrati ti tengono nella massima stima.
-almanac.hallows_eve.source.stall = In vendita alla bancarella del Vecchio Jack.
-almanac.hallows_eve.source.stall_or_lab = In vendita alla bancarella del Vecchio Jack man mano che cresce la tua stima, o si costruisce al Banco da Lavoro dell'Inventore Goblin nel laboratorio goblin.
-almanac.hallows_eve.source.festival_stall = In vendita sullo scaffale delle feste della bancarella del Vecchio Jack.
+almanac.hallows_eve.source.carved = Si intaglia a un Banco da Intaglio, o si compra nel negozio del Vecchio Jack.
+almanac.hallows_eve.source.jack_shield = Si intaglia a un Banco da Intaglio, o si compra nel negozio del Vecchio Jack.
+almanac.hallows_eve.source.burning_helm = In vendita nel negozio del Vecchio Jack quando i Consacrati ti venerano o il Vecchio Jack ti considera un Confidente.
+almanac.hallows_eve.source.flaming_shield = In vendita nel negozio del Vecchio Jack quando i Consacrati ti tengono nella massima stima.
+almanac.hallows_eve.source.stall = In vendita nel negozio del Vecchio Jack.
+almanac.hallows_eve.source.grave_candle = In vendita nel negozio del Vecchio Jack, e restituita dal Tesoro del Cavaliere: a volte una dopo la tua prima vittoria di ogni giorno, e qualcuna dopo la tua prima vittoria difficile. Il Custode del Cimitero le brucia per aprire il suo cimitero al tuo gruppo, e quando il Vecchio Jack ti considera un Habitué ti dà una Candela Funebre Ardente in cambio di una manciata.
+almanac.hallows_eve.source.burning_grave_candle = In vendita nel negozio del Vecchio Jack quando ti considera un Habitué, o scambiata lì con una manciata di Candele Funebri. Il Custode del Cimitero le brucia per aprire la cavalcata difficile del Cavaliere senza Testa al tuo gruppo.
+almanac.hallows_eve.source.stall_or_lab = In vendita nel negozio del Vecchio Jack man mano che cresce la tua stima, o si costruisce al Banco da Lavoro dell'Inventore Goblin nel laboratorio goblin.
+almanac.hallows_eve.source.festival_stall = In vendita sullo scaffale delle feste del negozio del Vecchio Jack.
 almanac.hallows_eve.source.keepsake = Il ricordo del Vecchio Jack, che ricevi una volta all'anno quando finisci la sua storia.
-almanac.hallows_eve.source.festival_favor = In vendita alle bancarelle delle feste a chi ha un alto Favore delle Feste.
+almanac.hallows_eve.source.festival_favor = In vendita nei negozi delle feste a chi ha un alto Favore delle Feste.
+almanac.hallows_eve.source.bomb_rare = Sempre nel Tesoro del Cavaliere, e a volte nella sua ricompensa giornaliera. La lasciano cadere anche le creature della notte, si trova dentro le Geodi Maledette, si intaglia a un Banco da Intaglio o si compra nel negozio del Vecchio Jack.
+almanac.hallows_eve.source.bomb_epic_horseman = La lasciano cadere di rado gli Spettri delle Geodi, o si trova dentro le Geodi Maledette e nella scorta dei Consacrati, e a volte nella ricompensa giornaliera del Cavaliere senza Testa. Puoi anche intagliarne una a un Banco da Intaglio, o comprarne un paio al giorno nel negozio del Vecchio Jack.
+almanac.hallows_eve.source.hoard = A volte nel Tesoro del Cavaliere, pagato per la tua prima vittoria su di lui di ogni giorno.
+almanac.hallows_eve.source.hoard_hard = Solo nel Tesoro del Cavaliere nella cavalcata difficile, pagato per la tua prima vittoria difficile su di lui di ogni giorno. Quando hai finito Il Cavaliere, chiedi al Custode del Cimitero la cavalcata difficile.
+almanac.hallows_eve.source.hoard_normal = Solo nel Tesoro del Cavaliere nella cavalcata normale, pagato per la tua prima vittoria su di lui lì di ogni giorno.
+almanac.hallows_eve.source.eternal_candle = Ogni tanto nel Tesoro del Cavaliere nella cavalcata difficile, pagata per la tua prima vittoria difficile su di lui di ogni giorno. Portala con te e il Custode del Cimitero apre il suo cimitero normale al tuo gruppo senza bruciare una Candela Funebre.
+almanac.hallows_eve.source.horseman_daily = Si trova ogni tanto nella ricompensa giornaliera del Cavaliere senza Testa, pagata per la tua prima vittoria su di lui di ogni giorno.
+almanac.hallows_eve.source.burning_helm_trade = Si compra nel negozio del Vecchio Jack scambiando un Elmo di Jack dalla tua borsa, quando i Consacrati ti venerano o il Vecchio Jack si fida di te completamente. A volte si trova nel Tesoro del Cavaliere.
+almanac.hallows_eve.source.flaming_shield_trade = Si compra nel negozio del Vecchio Jack scambiando uno Scudo di Jack dalla tua borsa, quando i Consacrati ti tengono nella massima stima. A volte si trova nel Tesoro del Cavaliere.
+
+# ---- The Almanac page's Headless Horseman banner and his Hoard ----
+almanac.hallows_eve.horseman.line = Il Custode del Cimitero accanto al Vecchio Jack ti porta dentro. Porta degli amici.
+almanac.hallows_eve.horseman.button = Record degli scontri con i boss
+almanac.hallows_eve.hoard.line = La tua prima vittoria di ogni giorno lascia il suo Tesoro nel forziere dove cade, e sotto Ricompense: una Bomba Lanterna Spettrale e il favore del Vecchio Jack, e a volte una Candela Funebre, un pezzo del set Consacrato Fiammeggiante, una Lapide o una Lanterna della Civiltà Perduta. Il Tesoro della cavalcata difficile contiene qualche Candela Funebre e il favore dei Consacrati, migliori probabilità per i pezzi fiammeggianti, la sua corazza fiammeggiante e, ogni tanto, una Candela Eterna. La sua armatura normale arriva con la sua ricompensa giornaliera.

@@ -1,2 +1,4 @@
 # Seasons of Orbis - client-namespace additions, it-IT: the item-tooltip label of each stat this pack ships,
 # itemTooltip.stats.<StatId>, loaded as client.<key>. {value} is the client's own placeholder.
+itemTooltip.stats.ReputationGain_Hallows_Eve_Old_Jack = Guadagno di Favore del Vecchio Jack: {value}%
+itemTooltip.stats.ReputationGain_Hallows_Eve_Hallowed = Guadagno di Favore dei Consacrati: {value}%

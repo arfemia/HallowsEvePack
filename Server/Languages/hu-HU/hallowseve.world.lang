@@ -20,3 +20,26 @@ calendar.harvest_moon.herald.end.sub = Az éjszakák újra elcsendesednek.
 
 # ---- Leletek ----
 notify.hallows_eve_geode_found = Egy Átkozott Geoda, ott a törmelékben.
+
+# ---- The Headless Horseman's fight ----
+notify.hallows_eve_horseman_unhorsed = A Lovast kidobta a nyereg!
+notify.hallows_eve_horseman_head_off = Elrepül a feje! Vágd le, és újra megsebezhető.
+notify.hallows_eve_horseman_head_down = A fej lehull. Vágd le őt!
+notify.hallows_eve_horseman_head_returned = A feje visszatér hozzá, és a sebei bezárulnak.
+notify.hallows_eve_horseman_wrath = A Lovas lángol a dühtől!
+notify.hallows_eve_horseman_engaged = A Fej Nélküli Lovas vágtat!
+notify.hallows_eve_horseman_engaged.sub = Ne lépj a világító körökre. Amikor elrepül a feje, vágd le.
+notify.hallows_eve_horseman_defeated = A Fej Nélküli Lovas elesik!
+notify.hallows_eve_horseman_wiped = A Lovas vágtat tovább.
+notify.hallows_eve_horseman_wiped.sub = Vágd le a fejét, amikor elrepül. Amíg szabadon van, nem sebezhető, és ha visszatér hozzá, meggyógyul.
+claim.hallows_eve_horseman_chase = A Lovas Kincse
+claim.hallows_eve_horseman_chase_hard = A Lovas Kincse (Nehéz)
+dungeon.hallows_eve_graveyard.name = A Lovas Temetője
+dungeon.hallows_eve_graveyard.description = Fallal körülvett temető, ahol a Fej Nélküli Lovas éjjel vágtat. Hozz barátokat.
+dungeon.hallows_eve_graveyard.goal = Győzd le a Fej Nélküli Lovast. Amikor elrepül a feje, vágd le, különben nem sebezhető.
+dungeon.hallows_eve_graveyard_hard.name = A Lovas Temetője (Nehéz)
+dungeon.hallows_eve_graveyard_hard.description = A Fej Nélküli Lovas itt keményebben vágtat, és olyat ejt, amit sehol máshol. Hozz még több barátot.
+dungeon.hallows_eve_graveyard_hard.goal = Győzd le a Fej Nélküli Lovast a nehéz lovaglásnál. Amikor elrepül a feje, vágd le, különben nem sebezhető.
+dungeon.hallows_eve_graveyard.cost_hint = Öreg Jack Sírgyertyát árul a boltjában a Feledett Templomban.
+dungeon.hallows_eve_graveyard_hard.cost_hint = Öreg Jack Égő Sírgyertyát árul a boltjában a Feledett Templomban, ha már Törzsvendégnek tart.
+dungeon.hallows_eve_graveyard.confirm = Gyújtsd meg a gyertyát

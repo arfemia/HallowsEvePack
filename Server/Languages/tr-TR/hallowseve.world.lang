@@ -21,3 +21,26 @@ calendar.harvest_moon.herald.end.sub = Geceler yeniden sakinleşiyor.
 # ---- Buluntular ----
 notify.hallows_eve_geode_found = Bir Lanetli Jeot, şurada molozun içinde.
 
+# ---- Başsız Süvari'nin dövüşü ----
+notify.hallows_eve_horseman_unhorsed = Süvari eyerden fırladı!
+notify.hallows_eve_horseman_head_off = Başı uçtu! Onu yere ser, yeniden yaralanabilsin.
+notify.hallows_eve_horseman_head_down = Baş yere düştü. Süvari'yi yere ser!
+notify.hallows_eve_horseman_head_returned = Başı ona geri döndü, yaraları kapanıyor.
+notify.hallows_eve_horseman_wrath = Süvari öfkeden yanıyor!
+notify.hallows_eve_horseman_engaged = Başsız Süvari geliyor!
+notify.hallows_eve_horseman_engaged.sub = Parlayan halkalardan uzak dur. Başı uçunca onu yere ser.
+notify.hallows_eve_horseman_defeated = Başsız Süvari düştü!
+notify.hallows_eve_horseman_wiped = Süvari yoluna devam ediyor.
+notify.hallows_eve_horseman_wiped.sub = Başı uçunca onu yere ser. Baş serbestken Süvari yaralanamaz, ona geri dönerse de iyileşir.
+claim.hallows_eve_horseman_chase = Süvari'nin Hazinesi
+claim.hallows_eve_horseman_chase_hard = Süvari'nin Hazinesi (Zor)
+dungeon.hallows_eve_graveyard.name = Süvari'nin Mezarlığı
+dungeon.hallows_eve_graveyard.description = Başsız Süvari'nin geceleri dolaştığı surlu bir mezarlık. Arkadaşlarını getir.
+dungeon.hallows_eve_graveyard.goal = Başsız Süvari'yi yen. Başı uçunca onu yere ser, yoksa Süvari yaralanamaz.
+dungeon.hallows_eve_graveyard_hard.name = Süvari'nin Mezarlığı (Zor)
+dungeon.hallows_eve_graveyard_hard.description = Başsız Süvari burada daha hırçın sürer ve başka hiçbir yerde düşürmediği şeyleri düşürür. Daha çok arkadaş getir.
+dungeon.hallows_eve_graveyard_hard.goal = Başsız Süvari'yi zor sürüşte yen. Başı uçunca onu yere ser, yoksa Süvari yaralanamaz.
+dungeon.hallows_eve_graveyard.cost_hint = Yaşlı Jack, Mezar Mumlarını Unutulmuş Tapınak'taki dükkanında satar.
+dungeon.hallows_eve_graveyard_hard.cost_hint = Yaşlı Jack, seni Müdavim saydığında Yanan Mezar Mumlarını Unutulmuş Tapınak'taki dükkanında satar.
+dungeon.hallows_eve_graveyard.confirm = Mumu Yak
+

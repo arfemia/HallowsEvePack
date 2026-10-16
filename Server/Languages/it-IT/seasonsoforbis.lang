@@ -14,11 +14,11 @@ reputation.seasons_of_orbis_festival.rank.festival_tier_3 = Osannato IV
 currency.seasons_of_orbis_festival_token.name = Gettone delle Feste
 
 # ---- The festival shelf ----
-shop.seasons_of_orbis_festival_stall.title = Bancarella delle Feste
+shop.seasons_of_orbis_festival_stall.title = Negozio delle Feste
 shop.seasons_of_orbis_festival_stall.desc = Decorazioni delle feste di ogni stagione, in cambio di gettoni delle feste.
 shop.seasons_of_orbis_festival_stall.category.festival = Scaffale delle Feste
 # Not used by the pack itself: the words for a server owner's Almanac link that opens the stall all year.
-almanac.seasons_of_orbis.link.festival_stall = Visita la bancarella delle feste
+almanac.seasons_of_orbis.link.festival_stall = Visita il negozio delle feste
 
 # ---- The Seasons of Orbis ladder ----
 achievement.seasons_of_orbis_rung_1.title = Di Stagione in Stagione

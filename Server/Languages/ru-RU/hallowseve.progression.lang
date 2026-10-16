@@ -6,23 +6,28 @@
 # ---- Кошелёк ----
 currency.hallows_eve_sweets.name = Сладости Кануна
 currency.hallows_eve_sweets.amount = {0, number} {0, plural, one {Сладость Кануна} few {Сладости Кануна} many {Сладостей Кануна} other {Сладости Кануна}}
+currency.hallows_eve_sweets.description = Тратьте их в лавке Старого Джека в Забытом храме.
 quest.category.hallows_eve = Канун Всех Святых
 
 # ---- Цепочка квестов Старого Джека ----
 quest.hallows_eve_old_jack_meet.title = Фонари в храме
 quest.hallows_eve_old_jack_meet.flavor = Снова пришёл сезон, так что я опять в Забытом храме со своими фонарями. Туда ведут любые Врата забытого храма. Приходи, найди меня. Помощь мне не помешает.
 quest.hallows_eve_old_jack_1.title = Тыквенная грядка
-quest.hallows_eve_old_jack_1.flavor = Сорвёшь тыкву в этом месяце, и нет-нет да попадётся холодная, светящаяся. Принеси мне несколько таких, Освящённых.
+quest.hallows_eve_old_jack_1.flavor = Мои фонари вырезаны из Освящённых тыкв, а запас у меня на исходе. Собирай тыквы руками и неси мне холодные, светящиеся.
 quest.hallows_eve_old_jack_2.title = Фонарное дело
-quest.hallows_eve_old_jack_2.flavor = Из любой тыквы, набитой порохом, выходит славная Фонарная бомба. Брось парочку во что-нибудь, что напросилось, потом расскажи, как горели.
+quest.hallows_eve_old_jack_2.flavor = Тыква, набитая порохом, держит мертвецов лучше любого фонаря. Брось парочку Фонарных бомб, потом расскажи, как горели.
 quest.hallows_eve_old_jack_3.title = Упыри на ступенях
-quest.hallows_eve_old_jack_3.flavor = Как стемнеет, из старых могил вылезают Полые упыри, голодные. Уложи парочку обратно в землю, пока не добрались до ступеней храма.
+quest.hallows_eve_old_jack_3.flavor = Мои фонари держат упырей подальше от ступеней, но еле-еле. Уложи парочку Полых упырей обратно в землю, когда стемнеет.
 quest.hallows_eve_old_jack_4.title = Поход за эктоплазмой
-quest.hallows_eve_old_jack_4.flavor = Заблудшие души так и бродят, пока кто-нибудь их не отпустит. Освободи парочку и принеси мне Эктоплазму, что после них остаётся; мои фонари эту штуку пьют.
+quest.hallows_eve_old_jack_4.flavor = В моих фонарях горит Эктоплазма, а Заблудшая душа оставляет её, когда её отпускаешь. Освободи парочку и принеси мне.
 quest.hallows_eve_old_jack_5.title = Проклятый камень
-quest.hallows_eve_old_jack_5.flavor = Ломай в этом месяце камень, любой камень, и нет-нет да выпадет из него Проклятая жеода. Расколи парочку; в них есть кое-что хорошее, под проклятием.
+quest.hallows_eve_old_jack_5.flavor = В эту пору камень отдаёт Проклятые жеоды, если наломать его достаточно. Расколи парочку и оставь себе, что выпадет.
 quest.hallows_eve_old_jack_lantern.title = Полый фонарь
-quest.hallows_eve_old_jack_lantern.flavor = Каждый год Полый фонарь гаснет, и кому-то надо зажечь его снова. Повали скелетов с моим лицом, потом принеси мне, что нужно фонарю.
+quest.hallows_eve_old_jack_lantern.flavor = Уголёк Всадника у меня есть. Теперь твоему Полому фонарю нужны Освящённая тыква, немного Эктоплазмы и поваленные скелеты с моим лицом.
+quest.hallows_eve_old_jack_horseman.title = Всадник
+quest.hallows_eve_old_jack_horseman.flavor = Смотритель кладбища рядом со мной знает дорогу на кладбище Всадника, но врата без Могильной свечи не откроет, а свечи продаются в моей лавке. Купи одну, иди с друзьями и выбей его из седла.
+quest.hallows_eve_old_jack_horseman_hard.title = Огонь для фонаря
+quest.hallows_eve_old_jack_horseman_hard.flavor = Твоему фонарю нужно пламя, которое не гаснет, и у Всадника оно есть. Попроси Смотрителя кладбища о сложной скачке, одолей его и принеси мне его уголёк.
 
 # ---- Ежедневные задания Старого Джека ----
 quest.hallows_eve_jack_daily_souls.title = Неупокоенные души
@@ -31,6 +36,28 @@ quest.hallows_eve_jack_daily_pumpkins.title = Тыквенный обход
 quest.hallows_eve_jack_daily_pumpkins.flavor = Фонари сжигают Освящённые тыквы быстрей, чем я успеваю их вырезать. Принеси ещё несколько до темноты.
 quest.hallows_eve_jack_daily_geodes.title = Жеоды для Джека
 quest.hallows_eve_jack_daily_geodes.flavor = Расколи для меня пару Проклятых жеод. Руки у меня нынче для этого не гнутся.
+
+# ---- Что платят таблицы добычи Кануна: название награды и строка под ней при наведении ----
+lootable.hallows_eve_meet_pay.title = Приветствие Старого Джека
+lootable.hallows_eve_meet_pay.flavor = Несколько сладостей, чтобы поздороваться.
+lootable.hallows_eve_chain_pay.title = Плата Старого Джека
+lootable.hallows_eve_chain_pay.flavor = Что Старый Джек платит за каждое дело, что даёт тебе.
+lootable.hallows_eve_daily_pay.title = Дневная плата Старого Джека
+lootable.hallows_eve_daily_pay.flavor = Что Старый Джек платит за день работы.
+lootable.hallows_eve_lantern_pay.title = Благодарность Старого Джека
+lootable.hallows_eve_lantern_pay.flavor = Что Старый Джек дарит каждый год за то, что зажжён Полый фонарь.
+lootable.hallows_eve_board_pay.title = Добавка от Старого Джека
+lootable.hallows_eve_board_pay.flavor = Немного сверху к плате за дело, для всякого, кто работает с моей доски.
+lootable.hallows_eve_board_sweets.title = Банка со сладостями
+lootable.hallows_eve_board_sweets.flavor = Сколько влезет в одну горсть.
+lootable.hallows_eve_hallowed_cache.title = Тайник Освящённых
+lootable.hallows_eve_hallowed_cache.flavor = Освящённые оставляют это тебе каждый раз, когда ты поднимаешься ещё на ступень выше «Превознесения». Не спрашивай, где они это берут.
+lootable.hallows_eve_trick_or_treat.title = Сладость или гадость
+lootable.hallows_eve_trick_or_treat.flavor = Постучи и посмотри, что достанется. Чаще сладости.
+lootable.hallows_eve_treats.title = Что-нибудь сладкое
+lootable.hallows_eve_treats.flavor = Что достаётся, когда гадость не вышла.
+lootable.hallows_eve_geode_crack.title = Расколотая жеода
+lootable.hallows_eve_geode_crack.flavor = Всё, что выпадает из Проклятой жеоды, когда её раскалываешь. Кристалл всякий раз, а при удаче и получше.
 
 # ---- Шаги, сформулированные для этого пака ----
 objective.hallows_eve.meet_jack = Найдите Старого Джека в Забытом храме
@@ -43,6 +70,12 @@ objective.hallows_eve.free_souls = Освободите Заблудшие ду�
 objective.hallows_eve.bring_ectoplasm = Принесите Эктоплазму: {0}
 objective.hallows_eve.knock_down_skeletons = Повалите Скелетов-Джеков: {0}
 objective.hallows_eve.attend = Примите участие в Кануне Всех Святых
+objective.hallows_eve.bring_down_horseman = Одолейте Всадника без головы
+objective.hallows_eve.buy_grave_candle = Купите Могильную свечу в лавке Старого Джека
+objective.hallows_eve.bomb_down_horseman = Одолейте Всадника без головы только Фонарными бомбами
+objective.hallows_eve.bomb_down_horseman_hard = Одолейте Всадника без головы на сложной скачке только Фонарными бомбами
+objective.hallows_eve.bring_down_horseman_hard = Одолейте Всадника без головы на сложной скачке
+objective.hallows_eve.bring_ember = Принесите уголёк Всадника
 
 # ---- Доска Старого Джека ----
 board.hallows_eve_daily.title = Доска Старого Джека
@@ -62,13 +95,14 @@ quest.hallows_eve_board_wraiths.flavor = После темноты по шахт
 quest.hallows_eve_board_ectoplasm.title = Топливо для фонарей
 quest.hallows_eve_board_ectoplasm.flavor = В моих фонарях кончается Эктоплазма. Заблудшие души оставляют её, когда их отпускаешь, так что принеси мне её побольше.
 quest.hallows_eve_board_pumpkins.title = Холодные тыквы
-quest.hallows_eve_board_pumpkins.flavor = Фонарям нужно больше Освящённых тыкв, чем даёт моя грядка. Собирай тыквы руками и неси мне холодные.
+quest.hallows_eve_board_pumpkins.flavor = Фонарям нужно больше Освящённых тыкв, чем я способен найти сам. Собирай тыквы руками и неси мне холодные.
 quest.hallows_eve_board_carving.title = Резьба на верстаке
 quest.hallows_eve_board_carving.flavor = На каждое крыльцо нужен фонарь, а я режу не так быстро. Вырежи несколько Фонарей Джека на Верстаке резчика: на каждый по тыкве и кусочку угля.
 
 # ---- Old Jack's errands board ----
 board.hallows_eve_errands.title = Поручения Старого Джека
 board.hallows_eve_errands.desc = Мелкие дела, одно для тьмы и одно для дня. Каждые несколько часов я вешаю новую пару, так что заглядывай.
+board.hallows_eve_errands.pill = Поручение
 quest.hallows_eve_errand_souls.title = Бродячие души
 quest.hallows_eve_errand_souls.flavor = Несколько Заблудших душ забрели сюда с тех пор, как я смотрел в последний раз. Отпусти их, когда будет минутка.
 quest.hallows_eve_errand_ghouls.title = Ночной дозор на кладбище
@@ -78,12 +112,12 @@ quest.hallows_eve_errand_ectoplasm.flavor = Один из моих фонаре�
 quest.hallows_eve_errand_bombs.title = Бомбовая практика
 quest.hallows_eve_errand_bombs.flavor = Остались лишние Фонарные бомбы? Брось парочку для меня. Мне нравится шум.
 quest.hallows_eve_errand_geodes.title = Треснувший камень
-quest.hallows_eve_errand_geodes.flavor = Расколи для меня несколько Проклятых жеод. Люблю слушать, как они лопаются.
+quest.hallows_eve_errand_geodes.flavor = Расколи несколько Проклятых жеод, пока бродишь где-нибудь. Кому-то же надо.
 quest.hallows_eve_errand_pumpkins.title = Запасные тыквы
 quest.hallows_eve_errand_pumpkins.flavor = Фонарь на ступенях раскис. Принеси мне Освящённых тыкв, когда будешь проходить мимо.
 
 # ---- Прилавок Старого Джека ----
-shop.hallows_eve_old_jack.title = Прилавок Старого Джека
+shop.hallows_eve_old_jack.title = Лавка Старого Джека
 shop.hallows_eve_old_jack.desc = Фонарные бомбы, фонари и кое-какие диковинки к сезону.
 shop.hallows_eve_old_jack.category.bombs = Фонарные бомбы
 shop.hallows_eve_old_jack.category.lights = Фонари
@@ -91,6 +125,8 @@ shop.hallows_eve_old_jack.category.gear = Снаряжение
 shop.hallows_eve_offer_harvest_moon_bundle.title = Набор Урожайной луны
 shop.hallows_eve_offer_harvest_moon_bundle.desc = Осколочные и Призрачные фонарные бомбы, продаются, только пока в небе Урожайная луна.
 shop.hallows_eve_offer_spyglass.desc = Посмотрите в неё в Гаснущих Низинах, чтобы найти место, где бродит зверь, взятый пустотой.
+shop.hallows_eve_offer_sell_eternal_candle.title = Продать запасную Вечную свечу
+shop.hallows_eve_offer_sell_eternal_candle.desc = Чтобы открыть кладбище Всадника, хватит одной Вечной свечи. Принеси Старому Джеку запасную, и он заплатит.
 
 # ---- Достижения ----
 achievement.hallows_eve_lantern_keepsake.title = Полый фонарь {0}
@@ -107,11 +143,11 @@ achievement.hallows_eve_geode_cracker.desc = Расколите Прокляты
 achievement.hallows_eve_jacks_guest.title = Гость Джека {0}
 achievement.hallows_eve_jacks_guest.desc = Примите участие в Кануне Всех Святых.
 achievement.hallows_eve_the_hallowed.title = Освящённый {0}
-achievement.hallows_eve_the_hallowed.desc = Получите все достижения Кануна Всех Святых этого года.
+achievement.hallows_eve_the_hallowed.desc = Получите все достижения из этого списка за один Канун Всех Святых.
 
 # ---- Титул «Освящённый» ----
 title.hallows_eve_hallowed.name = Освящённый
-title.hallows_eve_hallowed.flavor = Получены все достижения Кануна Всех Святых одного года.
+title.hallows_eve_hallowed.flavor = Получил все достижения, которых ждут Освящённые, за один Канун Всех Святых.
 title.hallows_eve_hallowed.display = {0} из Освящённых
 
 # ---- Страница Альманаха ----
@@ -125,11 +161,11 @@ almanac.hallows_eve.geodes_cracked = Расколото Проклятых же�
 # ---- Разговор со Старым Джеком ----
 dialogue.hallows_eve_old_jack.first_words.text = Не обращай внимания на голову. Это тыква, и сидит она там уже давненько.\nЯ Старый Джек. Каждую осень мертвецам не лежится, вот я и возвращаюсь в <color is="#ffd97a">Забытый храм</color> со своими фонарями. Мне бы не помешала пара рук, которые никто не вырезал.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Приятно познакомиться, Джек.
-dialogue.hallows_eve_old_jack.meet.text = Значит, нашёл дорогу. Хорошо.\nЯ Старый Джек. Каждому, кто меня находит, положено <b>приветствие</b>, а ты своё ещё не получил.
+dialogue.hallows_eve_old_jack.meet.text = Значит, нашёл дорогу. Не обращай внимания на голову, это тыква.\nЯ Старый Джек. В эту пору мертвецам не лежится, и мои фонари не пускают их на эти ступени. Каждому, кто меня находит, положено <b>приветствие</b>, а ты своё ещё не получил.
 dialogue.hallows_eve_old_jack.meet.opt.accept = Спасибо, Джек.
-dialogue.hallows_eve_old_jack.board_fresh.text = На моей доске свежая работа, кое-что впотьмах, кое-что при свете дня. Плачу Сладостями Кануна, а на моём прилавке они в ходу.
+dialogue.hallows_eve_old_jack.board_fresh.text = На моей доске свежая работа, кое-что впотьмах, кое-что при свете дня. Спроси, что нужно сделать. Плачу сладостями, а в моей лавке они в ходу.
 dialogue.hallows_eve_old_jack.menu.text = Фонари зажжены, а упыри вышли погулять. Что тебе нужно?
-dialogue.hallows_eve_old_jack.patch_offer.text = Сорвёшь тыкву в этом месяце, и нет-нет да попадётся холодная на ощупь, чуть светящаяся. <b>Освящённые тыквы</b>, так я их зову.\nПринеси мне несколько. Без них мои фонари гаснут.
+dialogue.hallows_eve_old_jack.patch_offer.text = Видишь фонари на этих ступенях? Каждый начинался с тыквы, холодной на ощупь и чуть светящейся. <b>Освящённые тыквы</b>, так я их зову.\nПринеси мне несколько, и я вырежу ещё.
 dialogue.hallows_eve_old_jack.patch_offer.opt.accept = Найду тебе тыкв.
 dialogue.hallows_eve_old_jack.patch_ready.text = <b>Освящённые тыквы</b>. Холодные, как ступенька в погребе.\nЯ положил парочку Фонарных бомб к твоей плате. Иди посмотри, как горят.
 dialogue.hallows_eve_old_jack.patch_ready.opt.turnin = Вот тыквы.
@@ -139,27 +175,39 @@ dialogue.hallows_eve_old_jack.ghouls_offer.text = <b>Полые упыри</b> �
 dialogue.hallows_eve_old_jack.ghouls_offer.opt.accept = Разберусь с упырями.
 dialogue.hallows_eve_old_jack.souls_offer.text = Бедняжки, эти <b>Заблудшие души</b>. Бродят, пока кто-нибудь их не отпустит.\nОсвободи парочку и принеси мне <b>Эктоплазму</b>, что после них остаётся. Мои фонари эту штуку пьют.
 dialogue.hallows_eve_old_jack.souls_offer.opt.accept = Я их освобожу.
-dialogue.hallows_eve_old_jack.geodes_offer.text = Ломай в этом месяце камень, любой камень, и нет-нет да выпадет из него <b>Проклятая жеода</b>.\nРасколи парочку. В них есть кое-что хорошее, под проклятием.
+dialogue.hallows_eve_old_jack.geodes_offer.text = <b>Проклятая жеода</b> - это кусок камня, внутри которого шевелится что-то яркое. Уродины.\nРасколи парочку. В них есть кое-что хорошее, под проклятием.
 dialogue.hallows_eve_old_jack.geodes_offer.opt.accept = Расколю несколько.
+dialogue.hallows_eve_old_jack.rider_offer.text = Слышал по ночам копыта? Это <b>Всадник без головы</b> скачет по своему кладбищу.\nЯ бы спал спокойнее, если бы кто-нибудь выбил его из седла. <color is="#ffd97a">Смотритель кладбища</color> рядом со мной не откроет врата, пока не сожжёт у них <b>Могильную свечу</b>, а свечи продаются в моей лавке. Купи одну и иди за ним.
+dialogue.hallows_eve_old_jack.rider_offer.opt.accept = Я выбью его из седла.
+dialogue.hallows_eve_old_jack.ember_offer.text = Мои поручения ты выполнил, и Всадника ты из седла выбивал. Это почти всё.\nТвоему <b>Полому фонарю</b> нужно пламя, которое не гаснет, а оно есть только у Всадника. Отними его и принеси мне <b>уголёк Всадника</b>. Он носит его лишь на сложной скачке, а Смотритель кладбища не откроет те врата без <b>Пылающей могильной свечи</b>. Я продаю такие, когда сочту тебя Завсегдатаем.
+dialogue.hallows_eve_old_jack.ember_offer.opt.accept = Я принесу уголёк.
+dialogue.hallows_eve_old_jack.active_ember.text = Этот уголёк он отдаёт только на сложной скачке. Попроси у <color is="#ffd97a">Смотрителя кладбища</color> <b>сложную скачку</b> и приведи друзей больше, чем в прошлый раз. Его врата потребуют <b>Пылающую могильную свечу</b>, а я продаю такие, когда сочту тебя Завсегдатаем.\nКак только он падёт, <b>уголёк</b> ждёт в сундуке, где он упал, для каждого, кого я за ним послал. Пропустишь сундук, и он будет ждать в разделе «Награды» твоего меню.
+dialogue.hallows_eve_old_jack.ember_ready.text = Да, это его огонь. Карман, судя по всему, прожёг насквозь.\nЯ сберегу его, пока твой фонарь не будет готов. Тогда и зажжём.
+dialogue.hallows_eve_old_jack.ember_ready.opt.turnin = Вот уголёк.
 dialogue.hallows_eve_old_jack.daily_offer.text = Есть у меня несколько мелких дел, каждый день по новой. Бери, что приглянется.
 dialogue.hallows_eve_old_jack.daily_offer.opt.souls = Займусь душами.
 dialogue.hallows_eve_old_jack.daily_offer.opt.pumpkins = Принесу тыкв.
 dialogue.hallows_eve_old_jack.daily_offer.opt.geodes = Расколю несколько жеод.
-dialogue.hallows_eve_old_jack.lantern_offer.text = Каждый год <b>Полый фонарь</b> гаснет, и каждый год кому-то приходится зажигать его снова.\nНекоторые скелеты там ходят с моим лицом. Повали парочку <b>Скелетов-Джеков</b>, потом принеси мне <b>Освящённую тыкву</b> и немного <b>Эктоплазмы</b>, чтобы его наполнить.
+dialogue.hallows_eve_old_jack.lantern_offer.text = Поручения ты выполнил, и уголёк Всадника у меня есть. Так что в этом году мы зажжём для тебя <b>Полый фонарь</b>.\nНекоторые скелеты там ходят с моим лицом, а мне это не по душе. Повали парочку <b>Скелетов-Джеков</b>, потом принеси мне <b>Освящённую тыкву</b>, чтобы вырезать, и немного <b>Эктоплазмы</b>, чтобы горело внутри.
 dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Давай зажжём.
-dialogue.hallows_eve_old_jack.lantern_ready.text = <b>Освящённая тыква</b>, и <b>Эктоплазма</b>, чтобы её наполнить. Скелеты с моим лицом лежат в траве, где им и место.\nВот так. Полый фонарь горит, и он твой насовсем. Щит тоже возьми, он к шлему в пару. Приходи в следующем году, зажжём ещё один.
+dialogue.hallows_eve_old_jack.lantern_ready.text = <b>Освящённая тыква</b>, и <b>Эктоплазма</b>, чтобы горело внутри. Скелеты с моим лицом лежат в траве, где им и место.\nВот так. Уголёк схватился. Твой Полый фонарь горит, и он твой насовсем. Щит тоже возьми: шлем продаётся в моей лавке, а остальной комплект носит Всадник. Приходи в следующем году, зажжём ещё один.
 dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = Вот тыква, и Эктоплазма.
 dialogue.hallows_eve_old_jack.active_pumpkins.text = Тыквы растут сами по себе в <color is="#ffd97a">осенних лесах</color>, а <color is="#ffd97a">квибеки</color> держат их на своих грядках. Собирай их руками, и нет-нет да попадётся среди них <b>Освящённая тыква</b>. А как стемнеет, их роняют ещё и <b>Скелеты-Джеки</b>.
-dialogue.hallows_eve_old_jack.active_bombs.text = Бросай <b>Фонарные бомбы</b>, что получил в уплату, во всё, что напросилось. Кончатся, на моём прилавке есть ещё, да и <b>Скелеты-Джеки</b> роняют парочку, как стемнеет.
+dialogue.hallows_eve_old_jack.active_bombs.text = Бросай <b>Фонарные бомбы</b>, что получил в уплату, во всё, что нападёт на тебя после темноты. Кончатся, в моей лавке есть ещё, да и <b>Скелеты-Джеки</b> роняют парочку.
 dialogue.hallows_eve_old_jack.active_night.text = Как стемнеет, мертвецы бродят в глуши, подальше от любого факела. К рассвету их уже нет.\nОсвободишь <b>Заблудшую душу</b>, и после неё останется <b>Эктоплазма</b>, а <b>Скелет-Джек</b> иной раз роняет <b>Освящённую тыкву</b>.
 dialogue.hallows_eve_old_jack.active_stone.text = Ломай <b>камень</b>, особенно <b>руду</b>, и нет-нет да выпадет <b>Проклятая жеода</b>. Возьми её в руку и расколи.
 dialogue.hallows_eve_old_jack.ready_generic.text = По-моему, готово. Показывай.
 dialogue.hallows_eve_old_jack.ready_generic.opt.turnin = Готово.
-dialogue.hallows_eve_old_jack.lantern_lit.text = Полый фонарь ещё горит. Держит самую темень подальше от ступеней.\nЧто тебе нужно?
-dialogue.hallows_eve_old_jack.who_are_you.text = Старый Джек. Держал когда-то ферму, далеко отсюда. Потом однажды в октябре я не вернулся домой, и с тех пор прихожу сюда каждый октябрь.\nКаждый год я зажигаю Полый фонарь, чтобы мертвецы не совались на эти ступени. К ноябрю он выгорает. Про голову не спрашивай.
+dialogue.hallows_eve_old_jack.lantern_lit.text = Вот и Полый фонарь этого года зажжён. Поставь его там, где мертвецы его увидят.\nЧто тебе нужно?
+dialogue.hallows_eve_old_jack.sweets.text = В моей лавке их берут за всё, что там есть, от Фонарной бомбы до такой головы, как у меня.\nЯ плачу ими за свои дела и за работу с моей доски. Попроси «Сладость или гадость» у любого, с кем говоришь, и получишь несколько. Одолей <b>Всадника без головы</b> на его <color is="#ffd97a">кладбище</color>, и тебя тоже будут ждать.
+dialogue.hallows_eve_old_jack.who_are_you.text = Старый Джек. Держал когда-то ферму, далеко отсюда. Потом однажды в октябре я не вернулся домой, и с тех пор прихожу сюда каждый октябрь.\nМои фонари не пускают мертвецов на эти ступени, и каждый год я зажигаю Полый фонарь с тем, кто доведёт мои поручения до конца. Про голову не спрашивай.
+dialogue.hallows_eve_old_jack.horseman.text = <b>Всадник без головы</b>. Он скачет по своему кладбищу каждую ночь Кануна Всех Святых. Сам он наполовину огонь, так что мои Фонарные бомбы вредят ему вполовину, но всё равно жалят.\nВрата стережёт <color is="#ffd97a">Смотритель кладбища</color> рядом со мной. Он впустит тебя, когда сожжёт у них <b>Могильную свечу</b>, а свечи продаются в моей лавке. Платит тот, кто входит первым, остальные из группы идут следом даром. Приведи друзей, и когда его голова слетит, руби её, иначе его не ранить.
+dialogue.hallows_eve_old_jack.horseman_beaten.text = Значит, ты выбил его из седла. Надолго это его не уложит: он возвращается в седло каждый раз, когда кто-нибудь входит.\nИди за <b>Всадником без головы</b> снова, если хочешь. Первая победа за день оставляет его ежедневную награду и его Клад в сундуке, где он падает, иногда вместе с частью его старых доспехов или тех, что ещё горят. Всё, что оставишь в нём, ждёт в разделе «Награды» твоего меню.
 dialogue.hallows_eve_old_jack.harvest_moon.text = Видишь луну? Урожайная луна. Несколько ночей в году мертвецам под ней не лежится, и могилы пустеют.\nХочешь работы, сегодня самая ночь. Я не лягу, пока она не зайдёт.
 dialogue.hallows_eve_old_jack.opt.quests = Что нужно сделать?
-dialogue.hallows_eve_old_jack.opt.shop = Покажи свой прилавок.
+dialogue.hallows_eve_old_jack.opt.shop = Покажи свою лавку.
+dialogue.hallows_eve_old_jack.opt.sweets = Зачем нужны сладости?
+dialogue.hallows_eve_old_jack.opt.horseman = Расскажи про Всадника.
 dialogue.hallows_eve_old_jack.opt.almanac = Покажи Альманах.
 dialogue.hallows_eve_old_jack.opt.who = Кто ты?
 dialogue.hallows_eve_old_jack.opt.harvest = Что за Урожайная луна?
@@ -169,6 +217,17 @@ dialogue.hallows_eve_old_jack.opt.farewell = Доброй ночи, Джек.
 # ---- «Сладость или гадость»: реплика, которую получает каждый разговор, и её уведомление ----
 dialogue.hallows_eve_trick_or_treat.opt.knock = Сладость или гадость.
 
+# ---- Разговор со Смотрителем кладбища (он никогда не берёт поручений) ----
+dialogue.hallows_eve_gravekeeper.menu.text = <color is="#ffd97a">Кладбище</color> Всадника у меня за спиной, и сегодня ночью он скачет по нему. Пока он скачет, там ничто не знает покоя.\nВрата открываются, только когда я сожгу у них <b>Могильную свечу</b>, и тогда вся твоя группа может войти следом. Старый Джек продаёт их в своей лавке. <b>Вечная свеча</b> тоже открывает их, и её я возвращаю. Скажи слово, и я проведу тебя. Приведи друзей.
+dialogue.hallows_eve_gravekeeper.who.text = Я стерегу это кладбище, чтобы мёртвые в нём покоились. Я один из <b>Освящённых</b>, и мы укладываем тех, кто не желает.\nМёртвые шевелятся под полной луной, а в Канун Всех Святых почти не спят. <b>Всадник без головы</b> не знает покоя, так что кому-то приходится сбивать его снова и снова.
+dialogue.hallows_eve_gravekeeper.hard_open.text = Ты выбил его из седла. Он этого не забыл.\nТеперь есть <b>сложная скачка</b>, для тех, кто вернётся. На ней он бьёт сильнее, а что роняет там, не роняет нигде больше. Для тех врат я сжигаю <b>Пылающую могильную свечу</b>, и Старый Джек продаёт такие, когда сочтёт тебя Завсегдатаем.
+dialogue.hallows_eve_gravekeeper.ember.text = Джек послал тебя за <b>угольком Всадника</b>. Он носит его только на <b>сложной скачке</b>, и для тех врат я сжигаю <b>Пылающую могильную свечу</b>. Джек продаёт такие, когда сочтёт тебя Завсегдатаем.\nКак только он падёт, уголёк ждёт в сундуке, где он упал, для каждого, кого Джек за ним послал. Больше никто его не найдёт. Пропустишь сундук, и он будет ждать в разделе «Награды» твоего меню.
+dialogue.hallows_eve_gravekeeper.opt.enter = Проведи меня. (1 Могильная свеча)
+dialogue.hallows_eve_gravekeeper.opt.enter_hard = Проведи меня на сложную скачку. (1 Пылающая могильная свеча)
+dialogue.hallows_eve_gravekeeper.opt.who = Кто ты?
+dialogue.hallows_eve_gravekeeper.opt.back = Кое-что другое.
+dialogue.hallows_eve_gravekeeper.opt.farewell = Доброй ночи.
+
 # ---- Achievements across the years, and the Keeper of Lanterns title ----
 achievement.hallows_eve_old_friend.title = Старый друг
 achievement.hallows_eve_old_friend.desc = Примите участие в Кануне Всех Святых (сезонов: {0}).
@@ -176,9 +235,23 @@ achievement.hallows_eve_lantern_keeper.title = Хранитель фонарей
 achievement.hallows_eve_lantern_keeper.desc = Зажгите Полый фонарь (сезонов: {0}).
 achievement.hallows_eve_first_lanterns.title = Первые фонари
 achievement.hallows_eve_first_lanterns.desc = Зажгите Полый фонарь в первый сезон.
+achievement.hallows_eve_first_ride.title = Первая скачка
+achievement.hallows_eve_first_ride.desc = Одолейте Всадника без головы в его первый Канун Всех Святых.
 title.hallows_eve_keeper_of_lanterns.name = Хранитель фонарей
 title.hallows_eve_keeper_of_lanterns.flavor = Год за годом зажигал Полый фонарь вместе со Старым Джеком.
 title.hallows_eve_keeper_of_lanterns.display = {0}, Хранитель фонарей
+
+# ---- Достижения за комплекты: Освящённый и Огненный Освящённый комплекты ----
+achievement.hallows_eve_hallowed_armour.title = Освящённые доспехи
+achievement.hallows_eve_hallowed_armour.desc = Наденьте Шлем Джека и доспехи Всадника без головы.
+achievement.hallows_eve_fully_hallowed.title = Весь Освящённый
+achievement.hallows_eve_fully_hallowed.desc = Наденьте весь Освящённый комплект со Щитом Джека во второй руке.
+achievement.hallows_eve_flaming_armour.title = Огненные доспехи
+achievement.hallows_eve_flaming_armour.desc = Наденьте Пылающий шлем Джека и огненные доспехи Всадника без головы.
+achievement.hallows_eve_fully_ablaze.title = Весь в огне
+achievement.hallows_eve_fully_ablaze.desc = Наденьте весь Огненный Освящённый комплект с Огненным щитом Джека во второй руке.
+objective.hallows_eve.wear_hallowed = Наденьте предметов Освящённого комплекта: {0}
+objective.hallows_eve.wear_flaming_hallowed = Наденьте предметов Огненного Освящённого комплекта: {0}
 
 # ---- The stall's decorations shelf ----
 shop.hallows_eve_old_jack.category.decor = Украшения
@@ -188,6 +261,8 @@ shop.hallows_eve_offer_pumpkin_cute.title = Милая тыква на Хэлл�
 # ---- More Almanac tallies ----
 almanac.hallows_eve.skeletons_knocked_down = Повалено Скелетов-Джеков
 almanac.hallows_eve.wraiths_put_down = Уложено Призраков жеоды
+almanac.hallows_eve.horseman_down = Всадник без головы повержен
+almanac.hallows_eve.horseman_heads = Срублено голов Всадника
 
 # ---- Расположение Старого Джека и Освящённые: репутации, значки доски и «Наперсник Джека» ----
 objective.hallows_eve.jack_confidant = Станьте наперсником Старого Джека
@@ -216,6 +291,15 @@ achievement.hallows_eve_horseman_bane.desc = Одолейте Всадника �
 title.hallows_eve_horseman_bane.name = Погибель Всадника
 title.hallows_eve_horseman_bane.flavor = Раз за разом одолевал Всадника без головы за один Канун Всех Святых.
 title.hallows_eve_horseman_bane.display = {0}, Погибель Всадника
+achievement.hallows_eve_off_with_his_head.title = Долой его голову {0}
+achievement.hallows_eve_off_with_his_head.desc = Срубите голову Всадника (раз: {0}).
+achievement.hallows_eve_by_lantern_light.title = При свете фонаря {0}
+achievement.hallows_eve_by_lantern_light.desc = Одолейте Всадника без головы, пока по нему бьют только Фонарные бомбы. Голову и Скелетов-Джеков можно бить чем угодно.
+achievement.hallows_eve_lamplighter.title = Фонарщик {0}
+achievement.hallows_eve_lamplighter.desc = Одолейте Всадника без головы на сложной скачке, пока по нему бьют только Фонарные бомбы. Голову и Скелетов-Джеков можно бить чем угодно.
+title.hallows_eve_lamplighter.name = Фонарщик
+title.hallows_eve_lamplighter.flavor = Одолел Всадника без головы на сложной скачке одними Фонарными бомбами.
+title.hallows_eve_lamplighter.display = {0}, Фонарщик
 
 reputation.hallows_eve_old_jack.name = Расположение Старого Джека
 reputation.hallows_eve_old_jack.flavor = Старый Джек не сразу теплеет к людям. Выполняйте его поручения и время от времени заходите перекинуться словом.
@@ -230,9 +314,10 @@ factor.hallows_eve_old_jack.exalted = ранг «Свой человек» у С
 reputation.hallows_eve_old_jack.earn.quests = Выполняйте его поручения и ежедневные задания.
 reputation.hallows_eve_old_jack.earn.board = Берите контракты с его доски.
 reputation.hallows_eve_old_jack.earn.talk = Заходите раз в день перекинуться словом.
-reputation.hallows_eve_old_jack.earn.gear = Носите Шлем Джека. Пока он на вас, он даёт прибавку к расположению Старого Джека.
+reputation.hallows_eve_old_jack.earn.horseman = Одолейте Всадника без головы на обычной скачке. Первая победа за день приносит его расположение, его забирают вместе с Кладом Всадника.
+reputation.hallows_eve_old_jack.earn.gear = Носите Шлем Джека, и всё, что вы делаете для него, приносит больше расположения, пока шлем на вас.
 reputation.hallows_eve_hallowed.name = Освящённые
-reputation.hallows_eve_hallowed.flavor = Освящённые держат мёртвых там, где им место. Укладывайте обратно то, что по ночам вылезает из могил, и они это заметят.
+reputation.hallows_eve_hallowed.flavor = Освящённые следят, чтобы мёртвые обрели покой, и Смотритель кладбища Всадника - один из них. Укладывайте обратно то, что по ночам вылезает из могил, и они это заметят.
 factor.hallows_eve_hallowed.friendly = ранг «Дружелюбие» у Освящённых
 factor.hallows_eve_hallowed.honored = ранг «Уважение» у Освящённых
 factor.hallows_eve_hallowed.revered = ранг «Почтение» у Освящённых
@@ -240,7 +325,8 @@ factor.hallows_eve_hallowed.exalted = ранг «Превознесение» у
 reputation.hallows_eve_hallowed.earn.kills = Укладывайте обратно тварей, что выползают по ночам.
 reputation.hallows_eve_hallowed.earn.jack = Ежедневные задания и контракты с доски Старого Джека тоже идут в зачёт.
 reputation.hallows_eve_hallowed.earn.treats = Говорите «Сладость или гадость» всем, с кем разговариваете, каждому раз в день.
-reputation.hallows_eve_hallowed.earn.gear = Возьмите Щит Джека. Пока он экипирован, он даёт прибавку к расположению Освящённых.
+reputation.hallows_eve_hallowed.earn.horseman = Одолейте Всадника без головы на сложной скачке. Первая сложная победа за день приносит их расположение, его забирают вместе с Кладом Всадника.
+reputation.hallows_eve_hallowed.earn.gear = Возьмите Щит Джека, и расположение Освящённых будет расти быстрее, пока он экипирован.
 notify.hallows_eve_hallowed_cache = Тайник от Освящённых за то, что не даёте мёртвым подняться.
 dialogue.hallows_eve_old_jack.opt.standing = Как мы с тобой ладим?
 achievement.category.seasons.hallows_eve = Канун Всех Святых
@@ -249,16 +335,32 @@ achievement.category.seasons.hallows_eve = Канун Всех Святых
 almanac.hallows_eve.source.pumpkin = Нет-нет да попадается, когда собираете тыквы руками, а ещё их роняют Скелеты-Джеки.
 almanac.hallows_eve.source.geode = Попадаются в камне и руде, которые вы добываете, а ещё их роняют Призраки жеоды.
 almanac.hallows_eve.source.ectoplasm = Остаётся после Заблудших душ, а ещё лежит внутри Проклятых жеод.
-almanac.hallows_eve.source.bombs = Падают с ночных тварей, лежат внутри Проклятых жеод, вырезаются на Верстаке резчика или продаются на прилавке Старого Джека.
-almanac.hallows_eve.source.bomb_epic = Редко падает с Призраков жеоды или лежит внутри Проклятых жеод и в тайнике Освящённых. Ещё её можно вырезать на Верстаке резчика или купить пару в день на прилавке Старого Джека.
+almanac.hallows_eve.source.bombs = Падают с ночных тварей, лежат внутри Проклятых жеод, вырезаются на Верстаке резчика или продаются в лавке Старого Джека.
+almanac.hallows_eve.source.bomb_epic = Редко падает с Призраков жеоды или лежит внутри Проклятых жеод и в тайнике Освящённых. Ещё её можно вырезать на Верстаке резчика или купить пару в день в лавке Старого Джека.
 almanac.hallows_eve.source.trick_or_treat = Раздают, когда вы просите «Сладость или гадость».
 almanac.hallows_eve.source.workbench = Делается на Верстаке в любое время года.
-almanac.hallows_eve.source.carved = Вырезается на Верстаке резчика или продаётся на прилавке Старого Джека.
-almanac.hallows_eve.source.jack_shield = Вырезается на Верстаке резчика или продаётся на прилавке Старого Джека.
-almanac.hallows_eve.source.burning_helm = Продаётся на прилавке Старого Джека, когда Освящённые вас чтят на уровне «Почтение» или Старый Джек доверяет вам до конца.
-almanac.hallows_eve.source.flaming_shield = Продаётся на прилавке Старого Джека, когда Освящённые ценят вас выше всех, на уровне «Превознесение».
-almanac.hallows_eve.source.stall = Продаётся на прилавке Старого Джека.
-almanac.hallows_eve.source.stall_or_lab = Продаётся на прилавке Старого Джека по мере того, как растёт ваше расположение, или создаётся на верстаке гоблина-мастера в гоблинской лаборатории.
-almanac.hallows_eve.source.festival_stall = Продаётся на праздничной полке прилавка Старого Джека.
+almanac.hallows_eve.source.carved = Вырезается на Верстаке резчика или продаётся в лавке Старого Джека.
+almanac.hallows_eve.source.jack_shield = Вырезается на Верстаке резчика или продаётся в лавке Старого Джека.
+almanac.hallows_eve.source.burning_helm = Продаётся в лавке Старого Джека, когда Освящённые вас чтят на уровне «Почтение» или Старый Джек доверяет вам до конца.
+almanac.hallows_eve.source.flaming_shield = Продаётся в лавке Старого Джека, когда Освящённые ценят вас выше всех, на уровне «Превознесение».
+almanac.hallows_eve.source.stall = Продаётся в лавке Старого Джека.
+almanac.hallows_eve.source.grave_candle = Продаётся в лавке Старого Джека, а Клад Всадника возвращает часть: иногда одну после первой победы за день и несколько после первой сложной победы. Смотритель кладбища сжигает их, чтобы открыть своё кладбище для вашей группы, а когда Старый Джек сочтёт вас Завсегдатаем, он обменяет Пылающую могильную свечу на горсть.
+almanac.hallows_eve.source.burning_grave_candle = Продаётся в лавке Старого Джека, когда он сочтёт вас Завсегдатаем, или обменивается там на горсть Могильных свечей. Смотритель кладбища сжигает их, чтобы открыть для вашей группы сложную скачку Всадника без головы.
+almanac.hallows_eve.source.stall_or_lab = Продаётся в лавке Старого Джека по мере того, как растёт ваше расположение, или создаётся на верстаке гоблина-мастера в гоблинской лаборатории.
+almanac.hallows_eve.source.festival_stall = Продаётся на праздничной полке лавки Старого Джека.
 almanac.hallows_eve.source.keepsake = Памятный подарок Старого Джека, раз в год за прохождение его истории.
-almanac.hallows_eve.source.festival_favor = Продаётся на праздничных прилавках тем, у кого высокое расположение праздников.
+almanac.hallows_eve.source.festival_favor = Продаётся в праздничных лавках тем, у кого высокое расположение праздников.
+almanac.hallows_eve.source.bomb_rare = Всегда есть в Кладе Всадника, а иногда в его ежедневной награде. Ещё падает с ночных тварей, лежит внутри Проклятых жеод, вырезается на Верстаке резчика или продаётся в лавке Старого Джека.
+almanac.hallows_eve.source.bomb_epic_horseman = Редко падает с Призраков жеоды или лежит внутри Проклятых жеод и в тайнике Освящённых, а иногда выпадает в ежедневной награде Всадника без головы. Ещё её можно вырезать на Верстаке резчика или купить пару в день в лавке Старого Джека.
+almanac.hallows_eve.source.hoard = Иногда в Кладе Всадника, что выдаётся за первую победу над ним за день.
+almanac.hallows_eve.source.hoard_hard = Только в Кладе Всадника на сложной скачке, что выдаётся за первую сложную победу над ним за день. Закончив «Всадника», попросите у Смотрителя кладбища сложную скачку.
+almanac.hallows_eve.source.hoard_normal = Только в Кладе Всадника на обычной скачке, что выдаётся за первую победу над ним там за день.
+almanac.hallows_eve.source.eternal_candle = Время от времени в Кладе Всадника на сложной скачке, что выдаётся за первую сложную победу над ним за день. Носите её с собой, и Смотритель кладбища откроет обычное кладбище для вашей группы без Могильной свечи.
+almanac.hallows_eve.source.horseman_daily = Время от времени в ежедневной награде Всадника без головы, что выдаётся за первую победу над ним за день.
+almanac.hallows_eve.source.burning_helm_trade = Покупается в лавке Старого Джека в обмен на Шлем Джека из вашей сумки, когда Освящённые вас чтят или Старый Джек доверяет вам до конца. Иногда лежит в Кладе Всадника.
+almanac.hallows_eve.source.flaming_shield_trade = Покупается в лавке Старого Джека в обмен на Щит Джека из вашей сумки, когда Освящённые ценят вас выше всех. Иногда лежит в Кладе Всадника.
+
+# ---- Баннер Всадника без головы и его Клад на странице Альманаха ----
+almanac.hallows_eve.horseman.line = Смотритель кладбища рядом со Старым Джеком проведёт вас. Приведите друзей.
+almanac.hallows_eve.horseman.button = Записи о боях с боссами
+almanac.hallows_eve.hoard.line = Первая победа за день оставляет его Клад в сундуке, где он падает, и в разделе «Награды»: Призрачную фонарную бомбу и расположение Старого Джека, а иногда Могильную свечу, часть Огненного Освящённого комплекта, Надгробие или Фонарь утерянной цивилизации. В Кладе сложной скачки несколько Могильных свечей и расположение Освящённых, шансы на огненные предметы выше, там его огненный нагрудник и иногда Вечная свеча. Его обычные доспехи выдаются в ежедневной награде.

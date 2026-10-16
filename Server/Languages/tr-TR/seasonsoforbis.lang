@@ -14,11 +14,11 @@ reputation.seasons_of_orbis_festival.rank.festival_tier_3 = Yüce IV
 currency.seasons_of_orbis_festival_token.name = Şenlik Jetonu
 
 # ---- The festival shelf ----
-shop.seasons_of_orbis_festival_stall.title = Şenlik Tezgahı
+shop.seasons_of_orbis_festival_stall.title = Şenlik Dükkanı
 shop.seasons_of_orbis_festival_stall.desc = Her sezonun şenliğinden süsler, şenlik jetonlarıyla.
 shop.seasons_of_orbis_festival_stall.category.festival = Şenlik Rafı
 # Not used by the pack itself: the words for a server owner's Almanac link that opens the stall all year.
-almanac.seasons_of_orbis.link.festival_stall = Şenlik tezgahını ziyaret et
+almanac.seasons_of_orbis.link.festival_stall = Şenlik dükkanını ziyaret et
 
 # ---- The Seasons of Orbis ladder ----
 achievement.seasons_of_orbis_rung_1.title = Sezondan Sezona

@@ -20,3 +20,26 @@ calendar.harvest_moon.herald.end.sub = Les nuits redeviennent calmes.
 
 # ---- Trouvailles ----
 notify.hallows_eve_geode_found = Une Géode Maudite, là, dans les gravats.
+
+# ---- The Headless Horseman's fight ----
+notify.hallows_eve_horseman_unhorsed = Le Cavalier est jeté à bas de sa selle !
+notify.hallows_eve_horseman_head_off = Sa tête s'envole ! Abattez-la et il pourra de nouveau être blessé.
+notify.hallows_eve_horseman_head_down = La tête tombe. Abattez-le !
+notify.hallows_eve_horseman_head_returned = Sa tête lui revient, et ses blessures se referment.
+notify.hallows_eve_horseman_wrath = Le Cavalier brûle de rage !
+notify.hallows_eve_horseman_engaged = Le Cavalier sans tête charge !
+notify.hallows_eve_horseman_engaged.sub = Restez hors des anneaux lumineux. Quand sa tête s'envole, abattez-la.
+notify.hallows_eve_horseman_defeated = Le Cavalier sans tête tombe !
+notify.hallows_eve_horseman_wiped = Le Cavalier chevauche toujours.
+notify.hallows_eve_horseman_wiped.sub = Abattez sa tête quand elle s'envole. Il ne peut pas être blessé tant qu'elle est libre, et si elle le rejoint, il guérit.
+claim.hallows_eve_horseman_chase = Le Trésor du Cavalier
+claim.hallows_eve_horseman_chase_hard = Le Trésor du Cavalier (Difficile)
+dungeon.hallows_eve_graveyard.name = Le Cimetière du Cavalier
+dungeon.hallows_eve_graveyard.description = Un cimetière muré où le Cavalier sans tête chevauche la nuit. Venez avec des amis.
+dungeon.hallows_eve_graveyard.goal = Vainquez le Cavalier sans tête. Quand sa tête s'envole, abattez-la, sinon il ne peut pas être blessé.
+dungeon.hallows_eve_graveyard_hard.name = Le Cimetière du Cavalier (Difficile)
+dungeon.hallows_eve_graveyard_hard.description = Le Cavalier sans tête chevauche plus durement ici, et lâche des choses qu'il ne lâche nulle part ailleurs. Venez avec plus d'amis.
+dungeon.hallows_eve_graveyard_hard.goal = Vainquez le Cavalier sans tête sur la chevauchée difficile. Quand sa tête s'envole, abattez-la, sinon il ne peut pas être blessé.
+dungeon.hallows_eve_graveyard.cost_hint = Le Vieux Jack vend des Bougies de Tombe dans sa boutique du Temple de l'Oubli.
+dungeon.hallows_eve_graveyard_hard.cost_hint = Le Vieux Jack vend des Bougies de Tombe Ardentes dans sa boutique du Temple de l'Oubli, quand il vous compte parmi les Habitués.
+dungeon.hallows_eve_graveyard.confirm = Allumer la bougie

@@ -7,23 +7,28 @@
 # ---- Le porte-monnaie ----
 currency.hallows_eve_sweets.name = Friandises de la Toussaint
 currency.hallows_eve_sweets.amount = {0, number} {0, plural, one {Friandise de la Toussaint} other {Friandises de la Toussaint}}
+currency.hallows_eve_sweets.description = Dépensez-les dans la boutique du Vieux Jack, au Temple de l'Oubli.
 quest.category.hallows_eve = Veille de la Toussaint
 
 # ---- La suite de quêtes du Vieux Jack ----
 quest.hallows_eve_old_jack_meet.title = Lanternes dans le temple
 quest.hallows_eve_old_jack_meet.flavor = C'est de nouveau la saison, alors me revoilà au Temple de l'Oubli avec mes lanternes. N'importe quelle Entrée du Temple de l'Oubli t'y mènera. Viens me trouver. J'aurais bien besoin d'un coup de main.
 quest.hallows_eve_old_jack_1.title = Champ de citrouilles
-quest.hallows_eve_old_jack_1.flavor = Cueille une citrouille ce mois-ci et de temps en temps, y en a une qui sort froide et luisante. Rapporte-m'en quelques-unes, de ces sanctifiées.
+quest.hallows_eve_old_jack_1.flavor = Mes lanternes sont sculptées dans des Citrouilles Sanctifiées, et j'en manque. Cueille des citrouilles à la main et rapporte-moi les froides, celles qui luisent.
 quest.hallows_eve_old_jack_2.title = Travail de lanternes
-quest.hallows_eve_old_jack_2.flavor = N'importe quelle citrouille bourrée de poudre, ça fait une belle Bombe-Lanterne. Lances-en quelques-unes sur quelque chose qui l'a bien cherché, puis dis-moi comment elles ont brûlé.
+quest.hallows_eve_old_jack_2.flavor = Une citrouille bourrée de poudre tient les morts à distance mieux que n'importe quelle lanterne. Lance quelques Bombes-Lanternes, puis dis-moi comment elles ont brûlé.
 quest.hallows_eve_old_jack_3.title = Goules sur les marches
-quest.hallows_eve_old_jack_3.flavor = Les Goules Creuses rampent hors des vieilles tombes à la nuit tombée, affamées. Renvoies-en quelques-unes sous terre avant qu'elles atteignent les marches du temple.
+quest.hallows_eve_old_jack_3.flavor = Mes lanternes gardent les goules loin des marches, mais de justesse. Renvoie quelques Goules Creuses sous terre après la tombée de la nuit.
 quest.hallows_eve_old_jack_4.title = Tournée d'ectoplasme
-quest.hallows_eve_old_jack_4.flavor = Les Âmes Perdues flottent çà et là jusqu'à ce que quelqu'un les laisse partir. Libères-en quelques-unes et rapporte-moi l'Ectoplasme qu'elles laissent derrière elles ; mes lanternes boivent ça.
+quest.hallows_eve_old_jack_4.flavor = C'est l'Ectoplasme qui brûle dans mes lanternes, et une Âme Perdue en laisse quand on la libère. Libères-en quelques-unes et apporte-le-moi.
 quest.hallows_eve_old_jack_5.title = Pierre maudite
-quest.hallows_eve_old_jack_5.flavor = Brise de la pierre ce mois-ci, n'importe laquelle, et de temps en temps une Géode Maudite en tombe. Casses-en quelques-unes ; y a du bon dedans, sous la malédiction.
+quest.hallows_eve_old_jack_5.flavor = La pierre rend des Géodes Maudites à cette époque de l'année, si tu en brises assez. Casses-en quelques-unes et garde ce qui en tombe.
 quest.hallows_eve_old_jack_lantern.title = La Lanterne Creuse
-quest.hallows_eve_old_jack_lantern.flavor = Chaque année, la Lanterne Creuse s'éteint, et quelqu'un doit la rallumer. Fais tomber les squelettes qui portent ma figure, puis rapporte-moi ce qu'il faut à la lanterne.
+quest.hallows_eve_old_jack_lantern.flavor = J'ai la braise du Cavalier. Maintenant, ta Lanterne Creuse veut une Citrouille Sanctifiée, de l'Ectoplasme, et les squelettes à ma figure mis à plat.
+quest.hallows_eve_old_jack_horseman.title = Le Chevaucheur
+quest.hallows_eve_old_jack_horseman.flavor = Le Gardien du Cimetière à côté de moi connaît le chemin du cimetière du Cavalier, mais il n'ouvrira pas la grille sans une Bougie de Tombe, et je les vends dans ma boutique. Achètes-en une, entre avec des amis et fais-le tomber de sa selle.
+quest.hallows_eve_old_jack_horseman_hard.title = Du feu pour la lanterne
+quest.hallows_eve_old_jack_horseman_hard.flavor = Ta lanterne veut une flamme qui ne s'éteint pas, et le Cavalier en porte une. Demande au Gardien du Cimetière la chevauchée difficile, bats-le, et rapporte-moi sa braise.
 
 # ---- Les quotidiennes du Vieux Jack ----
 quest.hallows_eve_jack_daily_souls.title = Âmes agitées
@@ -32,6 +37,28 @@ quest.hallows_eve_jack_daily_pumpkins.title = Tournée des citrouilles
 quest.hallows_eve_jack_daily_pumpkins.flavor = Les lanternes brûlent les Citrouilles Sanctifiées plus vite que j'arrive à les sculpter. Rapporte-m'en encore quelques-unes avant la nuit.
 quest.hallows_eve_jack_daily_geodes.title = Géodes pour Jack
 quest.hallows_eve_jack_daily_geodes.flavor = Casse-moi deux ou trois Géodes Maudites. J'ai les mains trop raides pour ça, ces temps-ci.
+
+# ---- What Hallow's Eve's loot tables pay: the name on the reward, and the line under it on hover ----
+lootable.hallows_eve_meet_pay.title = Accueil du Vieux Jack
+lootable.hallows_eve_meet_pay.flavor = Quelques friandises pour dire bonjour.
+lootable.hallows_eve_chain_pay.title = Paie du Vieux Jack
+lootable.hallows_eve_chain_pay.flavor = Ce que le Vieux Jack paie pour chaque travail qu'il vous donne.
+lootable.hallows_eve_daily_pay.title = Paie quotidienne du Vieux Jack
+lootable.hallows_eve_daily_pay.flavor = Ce que le Vieux Jack paie pour une journée de travail.
+lootable.hallows_eve_lantern_pay.title = Remerciements du Vieux Jack
+lootable.hallows_eve_lantern_pay.flavor = Ce que le Vieux Jack offre chaque année pour avoir allumé la Lanterne Creuse.
+lootable.hallows_eve_board_pay.title = Suppléments du Vieux Jack
+lootable.hallows_eve_board_pay.flavor = Un petit supplément en plus de ce que paie le travail, pour quiconque fait mon tableau.
+lootable.hallows_eve_board_sweets.title = Le Bocal de Bonbons
+lootable.hallows_eve_board_sweets.flavor = Autant que j'en peux attraper d'une main.
+lootable.hallows_eve_hallowed_cache.title = Réserve des Sanctifiés
+lootable.hallows_eve_hallowed_cache.flavor = Les Sanctifiés te laissent ça chaque fois que tu montes d'un cran de plus au-delà d'Exalté avec eux. Me demande pas où ils le trouvent.
+lootable.hallows_eve_trick_or_treat.title = Des bonbons ou un sort
+lootable.hallows_eve_trick_or_treat.flavor = Frappe et vois ce que tu reçois. Des bonbons, surtout.
+lootable.hallows_eve_treats.title = Quelque chose de sucré
+lootable.hallows_eve_treats.flavor = Ce que tu reçois quand le sort ne prend pas.
+lootable.hallows_eve_geode_crack.title = Géode Cassée
+lootable.hallows_eve_geode_crack.flavor = Tout ce qui tombe d'une Géode Maudite quand tu la casses. Du cristal à chaque fois, et mieux quand tu as de la chance.
 
 # ---- Étapes formulées pour ce pack ----
 objective.hallows_eve.meet_jack = Trouvez le Vieux Jack dans le Temple de l'Oubli
@@ -47,6 +74,12 @@ objective.hallows_eve.attend = Participez à la Veille de la Toussaint
 objective.hallows_eve.jack_confidant = Devenez le Confident du Vieux Jack
 objective.hallows_eve.put_down_wraiths = Abattez {0} Spectres de Géode
 objective.hallows_eve.carve_lanterns = Sculptez {0} Lanternes de Jack
+objective.hallows_eve.bring_down_horseman = Abattez le Cavalier sans tête
+objective.hallows_eve.buy_grave_candle = Achetez une Bougie de Tombe dans la boutique du Vieux Jack
+objective.hallows_eve.bomb_down_horseman = Abattez le Cavalier sans tête avec des Bombes-Lanternes seulement
+objective.hallows_eve.bomb_down_horseman_hard = Abattez le Cavalier sans tête sur la chevauchée difficile avec des Bombes-Lanternes seulement
+objective.hallows_eve.bring_down_horseman_hard = Abattez le Cavalier sans tête sur la chevauchée difficile
+objective.hallows_eve.bring_ember = Rapportez la Braise du Cavalier
 
 # ---- Le tableau du Vieux Jack ----
 board.hallows_eve_daily.title = Tableau du Vieux Jack
@@ -68,13 +101,14 @@ quest.hallows_eve_board_wraiths.flavor = Quelque chose avec une faux arpente les
 quest.hallows_eve_board_ectoplasm.title = Carburant de lanterne
 quest.hallows_eve_board_ectoplasm.flavor = Mes lanternes manquent d'Ectoplasme. Les Âmes Perdues en laissent derrière elles quand on les libère, alors rapporte-m'en une bonne quantité.
 quest.hallows_eve_board_pumpkins.title = Citrouilles froides
-quest.hallows_eve_board_pumpkins.flavor = Les lanternes veulent plus de Citrouilles Sanctifiées que mon carré ne m'en donne. Cueille des citrouilles à la main et rapporte-moi les froides.
+quest.hallows_eve_board_pumpkins.flavor = Les lanternes veulent plus de Citrouilles Sanctifiées que je peux en trouver tout seul. Cueille des citrouilles à la main et rapporte-moi les froides.
 quest.hallows_eve_board_carving.title = Sculpture à l'établi
 quest.hallows_eve_board_carving.flavor = Chaque seuil veut sa lanterne, et je sculpte pas plus vite que ça. Sculpte des Lanternes de Jack à un Établi de Sculpture, une citrouille et un peu de charbon de bois chacune.
 
 # ---- Old Jack's errands board ----
 board.hallows_eve_errands.title = Commissions du Vieux Jack
 board.hallows_eve_errands.desc = De petits boulots, un pour l'ombre et un pour le jour. J'épingle une nouvelle paire toutes les quelques heures, alors repasse.
+board.hallows_eve_errands.pill = Commission
 quest.hallows_eve_errand_souls.title = Âmes errantes
 quest.hallows_eve_errand_souls.flavor = Quelques Âmes Perdues ont dérivé jusqu'ici depuis mon dernier tour. Libère-les quand tu as une minute.
 quest.hallows_eve_errand_ghouls.title = Veille des tombes
@@ -84,12 +118,12 @@ quest.hallows_eve_errand_ectoplasm.flavor = Une de mes lanternes vacille. Un peu
 quest.hallows_eve_errand_bombs.title = Séance de tir
 quest.hallows_eve_errand_bombs.flavor = Des Bombes-Lanternes en trop ? Lances-en quelques-unes pour moi. J'aime le bruit.
 quest.hallows_eve_errand_geodes.title = Pierre fendue
-quest.hallows_eve_errand_geodes.flavor = Ouvre-moi quelques Géodes Maudites. J'aime les entendre éclater.
+quest.hallows_eve_errand_geodes.flavor = Casse quelques Géodes Maudites pendant que tu es dehors. Il faut bien que quelqu'un le fasse.
 quest.hallows_eve_errand_pumpkins.title = Citrouilles de rechange
 quest.hallows_eve_errand_pumpkins.flavor = Une lanterne s'est ramollie sur les marches. Rapporte-moi des Citrouilles Sanctifiées si tu passes par là.
 
-# ---- L'étal du Vieux Jack ----
-shop.hallows_eve_old_jack.title = Étal du Vieux Jack
+# ---- La boutique du Vieux Jack ----
+shop.hallows_eve_old_jack.title = Boutique du Vieux Jack
 shop.hallows_eve_old_jack.desc = Des Bombes-Lanternes, des lanternes et quelques bricoles pour la saison.
 shop.hallows_eve_old_jack.category.bombs = Bombes-Lanternes
 shop.hallows_eve_old_jack.category.lights = Lanternes
@@ -97,6 +131,8 @@ shop.hallows_eve_old_jack.category.gear = Équipement
 shop.hallows_eve_offer_harvest_moon_bundle.title = Lot de la Lune des Moissons
 shop.hallows_eve_offer_harvest_moon_bundle.desc = Des Bombes-Lanternes Fracassantes et Spectrales, vendues seulement tant que la Lune des Moissons est levée.
 shop.hallows_eve_offer_spyglass.desc = Regardez à travers dans les Antres Vacillants pour repérer l'emplacement d'une bête corrompue du Néant.
+shop.hallows_eve_offer_sell_eternal_candle.title = Vendre une Bougie Éternelle en trop
+shop.hallows_eve_offer_sell_eternal_candle.desc = Une seule Bougie Éternelle suffit pour ouvrir le cimetière du Cavalier. Apportez-en une en trop au Vieux Jack et il vous la paiera.
 
 # ---- Succès ----
 achievement.hallows_eve_lantern_keepsake.title = Lanterne Creuse {0}
@@ -113,11 +149,11 @@ achievement.hallows_eve_geode_cracker.desc = Cassez {0} Géodes Maudites.
 achievement.hallows_eve_jacks_guest.title = Invité de Jack {0}
 achievement.hallows_eve_jacks_guest.desc = Participez à la Veille de la Toussaint.
 achievement.hallows_eve_the_hallowed.title = Le Sanctifié {0}
-achievement.hallows_eve_the_hallowed.desc = Obtenez tous les succès de la Veille de la Toussaint de cette année.
+achievement.hallows_eve_the_hallowed.desc = Obtenez tous les succès de cette liste pendant une même Veille de la Toussaint.
 
 # ---- Le titre Sanctifié ----
 title.hallows_eve_hallowed.name = Le Sanctifié
-title.hallows_eve_hallowed.flavor = A obtenu tous les succès de la Veille de la Toussaint d'une même année.
+title.hallows_eve_hallowed.flavor = A obtenu chaque succès que demandent les Sanctifiés en une seule Veille de la Toussaint.
 title.hallows_eve_hallowed.display = {0} le Sanctifié
 
 # ---- Le Confident de Jack : le succès et son titre ----
@@ -142,6 +178,15 @@ achievement.hallows_eve_horseman_bane.desc = Abattez le Cavalier sans tête {0} 
 title.hallows_eve_horseman_bane.name = Fléau du Cavalier
 title.hallows_eve_horseman_bane.flavor = A abattu le Cavalier sans tête encore et encore au cours d'une même Veille de la Toussaint.
 title.hallows_eve_horseman_bane.display = {0}, Fléau du Cavalier
+achievement.hallows_eve_off_with_his_head.title = Qu'on lui coupe la tête {0}
+achievement.hallows_eve_off_with_his_head.desc = Abattez la tête du Cavalier {0} fois.
+achievement.hallows_eve_by_lantern_light.title = À la lueur des lanternes {0}
+achievement.hallows_eve_by_lantern_light.desc = Abattez le Cavalier sans tête en ne le touchant qu'avec des Bombes-Lanternes. Sa Tête et les Squelettes Jack peuvent être touchés avec n'importe quoi.
+achievement.hallows_eve_lamplighter.title = Allumeur de lanternes {0}
+achievement.hallows_eve_lamplighter.desc = Abattez le Cavalier sans tête sur la chevauchée difficile en ne le touchant qu'avec des Bombes-Lanternes. Sa Tête et les Squelettes Jack peuvent être touchés avec n'importe quoi.
+title.hallows_eve_lamplighter.name = Allumeur de lanternes
+title.hallows_eve_lamplighter.flavor = A abattu le Cavalier sans tête sur la chevauchée difficile avec rien que des Bombes-Lanternes.
+title.hallows_eve_lamplighter.display = {0} l'Allumeur de lanternes
 
 # ---- Réputations : la Faveur du Vieux Jack et le Sanctifié ----
 reputation.hallows_eve_old_jack.name = Faveur du Vieux Jack
@@ -157,9 +202,10 @@ factor.hallows_eve_old_jack.exalted = le rang Un des siens auprès du Vieux Jack
 reputation.hallows_eve_old_jack.earn.quests = Faites ses commissions et ses tâches quotidiennes.
 reputation.hallows_eve_old_jack.earn.board = Prenez des contrats sur son tableau.
 reputation.hallows_eve_old_jack.earn.talk = Passez lui dire un mot une fois par jour.
-reputation.hallows_eve_old_jack.earn.gear = Portez un Heaume de Jack. Il augmente sa faveur tant que vous l'avez sur la tête.
+reputation.hallows_eve_old_jack.earn.horseman = Battez le Cavalier sans tête sur la chevauchée normale. Votre première victoire de chaque jour vaut sa faveur, à récupérer avec le Trésor du Cavalier.
+reputation.hallows_eve_old_jack.earn.gear = Portez un Heaume de Jack, et tout ce que vous faites pour lui rapporte plus de faveur tant que vous l'avez sur la tête.
 reputation.hallows_eve_hallowed.name = Les Sanctifiés
-reputation.hallows_eve_hallowed.flavor = Les Sanctifiés gardent les morts à leur place. Abattez ce qui sort des tombes la nuit et ils le remarquent.
+reputation.hallows_eve_hallowed.flavor = Les Sanctifiés veillent à ce que les morts trouvent le repos, et le Gardien du Cimetière, dans le cimetière du Cavalier, est l'un d'eux. Abattez ce qui sort des tombes la nuit et ils le remarquent.
 factor.hallows_eve_hallowed.friendly = le rang Amical auprès des Sanctifiés
 factor.hallows_eve_hallowed.honored = le rang Honoré auprès des Sanctifiés
 factor.hallows_eve_hallowed.revered = le rang Révéré auprès des Sanctifiés
@@ -167,7 +213,8 @@ factor.hallows_eve_hallowed.exalted = le rang Exalté auprès des Sanctifiés
 reputation.hallows_eve_hallowed.earn.kills = Abattez les créatures qui sortent de terre la nuit.
 reputation.hallows_eve_hallowed.earn.jack = Les quotidiennes du Vieux Jack et les contrats de son tableau comptent aussi.
 reputation.hallows_eve_hallowed.earn.treats = Demandez des bonbons ou un sort à chaque personne à qui vous parlez, une fois par jour pour chacune.
-reputation.hallows_eve_hallowed.earn.gear = Tenez un Bouclier de Jack. Il augmente leur faveur tant qu'il est équipé.
+reputation.hallows_eve_hallowed.earn.horseman = Battez le Cavalier sans tête sur la chevauchée difficile. Votre première victoire difficile de chaque jour vaut leur faveur, à récupérer avec son Trésor.
+reputation.hallows_eve_hallowed.earn.gear = Tenez un Bouclier de Jack, et vous gagnez leur faveur plus vite tant qu'il est équipé.
 notify.hallows_eve_hallowed_cache = Une réserve des Sanctifiés, pour avoir gardé les morts sous terre.
 
 # ---- La page de l'Almanach ----
@@ -177,15 +224,17 @@ almanac.hallows_eve.bombs_thrown = Bombes-Lanternes lancées
 almanac.hallows_eve.ghouls_felled = Goules Creuses abattues
 almanac.hallows_eve.souls_freed = Âmes Perdues libérées
 almanac.hallows_eve.geodes_cracked = Géodes Maudites cassées
+almanac.hallows_eve.horseman_down = Cavalier sans tête abattu
+almanac.hallows_eve.horseman_heads = Têtes du Cavalier abattues
 
 # ---- La conversation du Vieux Jack ----
 dialogue.hallows_eve_old_jack.first_words.text = Fais pas attention à la tête. C'est une citrouille, et elle est là-dessus depuis un bon moment.\nMoi, c'est le Vieux Jack. Chaque automne, les morts s'agitent, alors je reviens au <color is="#ffd97a">Temple de l'Oubli</color> avec mes lanternes. J'aurais bien besoin d'une paire de mains qui sont pas sculptées.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Un plaisir de te rencontrer, Jack.
-dialogue.hallows_eve_old_jack.meet.text = Tu as trouvé l'endroit, alors. Bien.\nMoi, c'est le Vieux Jack. Tous ceux qui me trouvent ont droit à un <b>accueil</b>, et t'as pas encore eu le tien.
+dialogue.hallows_eve_old_jack.meet.text = Tu as trouvé l'endroit, alors. Fais pas attention à la tête, c'est une citrouille.\nMoi, c'est le Vieux Jack. Les morts s'agitent à cette époque de l'année, et mes lanternes les tiennent loin de ces marches. Tous ceux qui me trouvent ont droit à un <b>accueil</b>, et t'as pas encore eu le tien.
 dialogue.hallows_eve_old_jack.meet.opt.accept = Merci, Jack.
-dialogue.hallows_eve_old_jack.board_fresh.text = Y a du nouveau sur mon tableau, un peu pour la nuit, un peu pour le jour. Ça paie en Friandises de la Toussaint, et mon étal les prend.
+dialogue.hallows_eve_old_jack.board_fresh.text = Y a du nouveau sur mon tableau, un peu pour la nuit, un peu pour le jour. Demande-moi ce qu'il y a à faire. Ça paie en friandises, et ma boutique les prend.
 dialogue.hallows_eve_old_jack.menu.text = Les lanternes sont allumées et les goules se baladent. Qu'est-ce qu'il te faut ?
-dialogue.hallows_eve_old_jack.patch_offer.text = Cueille une citrouille ce mois-ci et de temps en temps, y en a une qui sort froide au toucher, un peu luisante. Des <b>Citrouilles Sanctifiées</b>, c'est comme ça que je les appelle.\nRapporte-m'en quelques-unes. Sans elles, mes lanternes restent pas allumées.
+dialogue.hallows_eve_old_jack.patch_offer.text = Tu vois les lanternes sur ces marches ? Chacune a commencé comme une citrouille froide au toucher, qui luit un peu. Des <b>Citrouilles Sanctifiées</b>, c'est comme ça que je les appelle.\nRapporte-m'en quelques-unes et j'en sculpterai d'autres.
 dialogue.hallows_eve_old_jack.patch_offer.opt.accept = Je vais te trouver des citrouilles.
 dialogue.hallows_eve_old_jack.patch_ready.text = Des <b>Citrouilles Sanctifiées</b>. Froides comme une marche de cave.\nJ'ai mis quelques Bombes-Lanternes avec ta paie. Va voir comment elles brûlent.
 dialogue.hallows_eve_old_jack.patch_ready.opt.turnin = Voilà les citrouilles.
@@ -195,33 +244,56 @@ dialogue.hallows_eve_old_jack.ghouls_offer.text = Les <b>Goules Creuses</b> ramp
 dialogue.hallows_eve_old_jack.ghouls_offer.opt.accept = Je m'occupe des goules.
 dialogue.hallows_eve_old_jack.souls_offer.text = Pauvres choses, les <b>Âmes Perdues</b>. Elles flottent çà et là jusqu'à ce que quelqu'un les laisse partir.\nLibères-en quelques-unes et rapporte-moi l'<b>Ectoplasme</b> qu'elles laissent derrière elles. Mes lanternes boivent ça.
 dialogue.hallows_eve_old_jack.souls_offer.opt.accept = Je vais les libérer.
-dialogue.hallows_eve_old_jack.geodes_offer.text = Brise de la pierre ce mois-ci, n'importe laquelle, et de temps en temps une <b>Géode Maudite</b> en tombe.\nCasses-en quelques-unes. Y a du bon dedans, sous la malédiction.
+dialogue.hallows_eve_old_jack.geodes_offer.text = Une <b>Géode Maudite</b>, c'est un bloc de pierre avec quelque chose de brillant qui bouge dedans. Des choses laides.\nCasses-en quelques-unes. Y a du bon dedans, sous la malédiction.
 dialogue.hallows_eve_old_jack.geodes_offer.opt.accept = J'en casserai quelques-unes.
-dialogue.hallows_eve_old_jack.daily_offer.text = J'ai quelques petits boulots qui reviennent tous les jours. Prends ce qui te plaît.
+dialogue.hallows_eve_old_jack.rider_offer.text = Tu as entendu les sabots, la nuit ? C'est le <b>Cavalier sans tête</b>, qui chevauche dans son cimetière.\nJe dormirais mieux si quelqu'un le faisait tomber de ce cheval. Le <color is="#ffd97a">Gardien du Cimetière</color> à côté de moi n'ouvrira pas la grille avant d'y avoir brûlé une <b>Bougie de Tombe</b>, et je les vends dans ma boutique. Achètes-en une, puis va le chercher.
+dialogue.hallows_eve_old_jack.rider_offer.opt.accept = Je vais le faire tomber.
+dialogue.hallows_eve_old_jack.ember_offer.text = Tu as mené mes commissions à bien, et tu as fait tomber le Cavalier de son cheval. C'est presque tout.\nTa <b>Lanterne Creuse</b> veut une flamme qui ne s'éteint pas, et seul le Cavalier en porte une. Prends-la-lui et rapporte-moi <b>la Braise du Cavalier</b>. Il ne la porte que sur la chevauchée difficile, et le Gardien du Cimetière n'ouvrira pas cette grille sans une <b>Bougie de Tombe Ardente</b>. J'en vends dès que je te compte parmi les Habitués.
+dialogue.hallows_eve_old_jack.ember_offer.opt.accept = Je t'apporterai la braise.
+dialogue.hallows_eve_old_jack.active_ember.text = Il ne lâche cette braise que sur la chevauchée difficile. Demande au <color is="#ffd97a">Gardien du Cimetière</color> la <b>chevauchée difficile</b>, et amène plus d'amis que la dernière fois. Sa grille demande une <b>Bougie de Tombe Ardente</b>, et j'en vends dès que je te compte parmi les Habitués.\nUne fois qu'il est à terre, la <b>braise</b> attend dans le coffre où il est tombé, pour quiconque j'ai envoyé la chercher. Si tu rates le coffre, elle attend sous « À réclamer » dans ton menu.
+dialogue.hallows_eve_old_jack.ember_ready.text = C'est bien son feu, ça. Elle a percé ta poche, on dirait.\nJe la garde en sécurité jusqu'à ce que ta lanterne soit prête. Ensuite, on l'allume.
+dialogue.hallows_eve_old_jack.ember_ready.opt.turnin = Voilà la braise.
+dialogue.hallows_eve_old_jack.daily_offer.text = J'ai quelques petits boulots qui reviennent chaque jour. Prends ce qui te plaît.
 dialogue.hallows_eve_old_jack.daily_offer.opt.souls = Je m'occupe des âmes.
 dialogue.hallows_eve_old_jack.daily_offer.opt.pumpkins = J'apporterai des citrouilles.
 dialogue.hallows_eve_old_jack.daily_offer.opt.geodes = Je casserai quelques géodes.
-dialogue.hallows_eve_old_jack.lantern_offer.text = Chaque année, la <b>Lanterne Creuse</b> s'éteint, et chaque année quelqu'un doit la rallumer.\nCertains squelettes là-dehors portent ma figure. Fais tomber quelques <b>Squelettes Jack</b>, puis rapporte-moi une <b>Citrouille Sanctifiée</b> et de l'<b>Ectoplasme</b> pour la remplir.
+dialogue.hallows_eve_old_jack.lantern_offer.text = Tes commissions sont faites, et j'ai la braise du Cavalier. Alors cette année, on allume une <b>Lanterne Creuse</b> pour toi.\nCertains squelettes là-dehors portent ma figure, et ça me plaît pas. Fais tomber quelques <b>Squelettes Jack</b>, puis rapporte-moi une <b>Citrouille Sanctifiée</b> à sculpter et de l'<b>Ectoplasme</b> à y brûler.
 dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Allumons-la.
-dialogue.hallows_eve_old_jack.lantern_ready.text = Une <b>Citrouille Sanctifiée</b>, et de l'<b>Ectoplasme</b> pour la remplir. Les squelettes à ma figure sont couchés dans l'herbe, à leur place.\nVoilà. La Lanterne Creuse est allumée, et elle est à toi. Prends le bouclier aussi, il va avec le heaume. Reviens l'an prochain et on en allumera une autre.
+dialogue.hallows_eve_old_jack.lantern_ready.text = Une <b>Citrouille Sanctifiée</b>, et de l'<b>Ectoplasme</b> à y brûler. Les squelettes à ma figure sont couchés dans l'herbe, à leur place.\nVoilà. La braise a pris. Ta Lanterne Creuse est allumée, et elle est à toi. Prends ce bouclier aussi : ma boutique vend le heaume, et le Cavalier porte le reste de la panoplie. Reviens l'an prochain et on en allumera une autre.
 dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = Voilà la citrouille, et l'Ectoplasme.
 dialogue.hallows_eve_old_jack.active_pumpkins.text = Les citrouilles poussent à l'état sauvage dans les <color is="#ffd97a">bois d'automne</color>, et les <color is="#ffd97a">Kweebecs</color> en cultivent dans leurs jardins. Cueille-les à la main et de temps en temps, y a une <b>Citrouille Sanctifiée</b> dans le lot. Les <b>Squelettes Jack</b> en lâchent aussi, une fois la nuit tombée.
-dialogue.hallows_eve_old_jack.active_bombs.text = Les <b>Bombes-Lanternes</b> de ta paie, lance-les sur tout ce qui l'a bien cherché. Si t'es à court, mon étal en a d'autres, et les <b>Squelettes Jack</b> en lâchent quelques-unes une fois la nuit tombée.
+dialogue.hallows_eve_old_jack.active_bombs.text = Lance les <b>Bombes-Lanternes</b> de ta paie sur tout ce qui vient te chercher à la nuit tombée. Si t'es à court, ma boutique en a d'autres, et les <b>Squelettes Jack</b> en lâchent quelques-unes.
 dialogue.hallows_eve_old_jack.active_night.text = Les morts marchent à la nuit tombée, en pleine nature, loin de toute torche. Disparus à l'aube.\nUne <b>Âme Perdue</b> laisse de l'<b>Ectoplasme</b> quand tu la libères, et un <b>Squelette Jack</b> lâche parfois une <b>Citrouille Sanctifiée</b>.
 dialogue.hallows_eve_old_jack.active_stone.text = Brise de la <b>pierre</b>, du <b>minerai</b> surtout, et de temps en temps une <b>Géode Maudite</b> en tombe. Prends-en une en main et casse-la.
 dialogue.hallows_eve_old_jack.ready_generic.text = Ça m'a l'air fait. Voyons ça.
 dialogue.hallows_eve_old_jack.ready_generic.opt.turnin = C'est fait.
-dialogue.hallows_eve_old_jack.lantern_lit.text = La Lanterne Creuse brûle toujours. Ça garde le pire du noir loin des marches.\nQu'est-ce qu'il te faut ?
-dialogue.hallows_eve_old_jack.who_are_you.text = Le Vieux Jack. J'avais une ferme, autrefois, loin d'ici. Et puis un octobre, je suis pas rentré chez moi, et je reviens chaque octobre depuis.\nChaque année, j'allume une Lanterne Creuse pour garder les morts loin de ces marches. En novembre, elles sont éteintes. Me demande pas pour la tête.
+dialogue.hallows_eve_old_jack.lantern_lit.text = Voilà la Lanterne Creuse de cette année, allumée. Pose-la quelque part où les morts peuvent la voir.\nQu'est-ce qu'il te faut ?
+dialogue.hallows_eve_old_jack.who_are_you.text = Le Vieux Jack. J'avais une ferme, autrefois, loin d'ici. Et puis un octobre, je suis pas rentré chez moi, et je reviens chaque octobre depuis.\nMes lanternes gardent les morts loin de ces marches, et chaque année j'allume une Lanterne Creuse avec quiconque mène mes commissions à bien. Me demande pas pour la tête.
 dialogue.hallows_eve_old_jack.harvest_moon.text = Tu vois cette lune ? La Lune des Moissons. Quelques nuits par an, les morts s'agitent sous elle, et les tombes se vident.\nSi tu veux du travail, c'est la bonne nuit. Je reste debout jusqu'à ce qu'elle se couche.
 dialogue.hallows_eve_old_jack.opt.quests = Qu'est-ce qu'il y a à faire ?
-dialogue.hallows_eve_old_jack.opt.shop = Voyons ton étal.
+dialogue.hallows_eve_old_jack.sweets.text = Ma boutique les prend pour tout ce qu'elle vend, d'une Bombe-Lanterne à une tête comme la mienne.\nJe les paie pour mes travaux et pour le travail de mon tableau. Demande des bonbons ou un sort à tous ceux à qui tu parles et tu en auras quelques-unes. Bats le <b>Cavalier sans tête</b> dans son <color is="#ffd97a">cimetière</color> et tu en trouveras qui t'attendent aussi.
+dialogue.hallows_eve_old_jack.horseman.text = Le <b>Cavalier sans tête</b>. Il chevauche son propre cimetière chaque nuit de la Veille de la Toussaint. Il est à moitié fait de feu, alors mes Bombes-Lanternes ne lui font que la moitié des dégâts, mais elles mordent quand même.\nLe <color is="#ffd97a">Gardien du Cimetière</color> à côté de moi garde la grille. Il te fera entrer dès qu'il y aura brûlé une <b>Bougie de Tombe</b>, et je les vends dans ma boutique. Celui qui entre le premier paie, et le reste du groupe suit gratis. Viens avec des amis, et quand sa tête s'envole, abats-la, sinon on ne peut pas le blesser.
+dialogue.hallows_eve_old_jack.horseman_beaten.text = Alors tu l'as fait tomber de ce cheval. Ça ne le tiendra pas à terre : il est de retour en selle chaque fois que quelqu'un entre.\nVa chercher de nouveau le <b>Cavalier sans tête</b> si tu veux. Ta première victoire de chaque jour laisse sa récompense quotidienne à réclamer et son Trésor dans le coffre où il tombe, avec de temps en temps une pièce de sa vieille armure, ou une qui brûle encore. Tout ce que tu laisses dedans attend sous « À réclamer » dans ton menu.
+dialogue.hallows_eve_old_jack.opt.shop = Voyons ta boutique.
 dialogue.hallows_eve_old_jack.opt.standing = On en est où, tous les deux ?
+dialogue.hallows_eve_old_jack.opt.sweets = À quoi servent les friandises ?
+dialogue.hallows_eve_old_jack.opt.horseman = Parle-moi du Cavalier.
 dialogue.hallows_eve_old_jack.opt.almanac = Montre-moi l'Almanach.
 dialogue.hallows_eve_old_jack.opt.who = Qui es-tu ?
 dialogue.hallows_eve_old_jack.opt.harvest = C'est quoi, une Lune des Moissons ?
 dialogue.hallows_eve_old_jack.opt.back = Autre chose.
 dialogue.hallows_eve_old_jack.opt.farewell = Bonne nuit, Jack.
+
+# ---- The Gravekeeper's conversation ----
+dialogue.hallows_eve_gravekeeper.menu.text = Le <color is="#ffd97a">cimetière</color> du Cavalier est derrière moi, et il le chevauche cette nuit. Rien là-dedans ne repose tant qu'il le fait.\nLa grille ne s'ouvre que lorsque je brûle une <b>Bougie de Tombe</b> devant elle, et une fois ouverte, tout votre groupe peut vous suivre. Le Vieux Jack les vend dans sa boutique. Une <b>Bougie Éternelle</b> l'ouvre aussi, et celle-là, je vous la rends. Dites un mot et je vous fais entrer. Venez avec des amis.
+dialogue.hallows_eve_gravekeeper.who.text = Je garde ce cimetière pour que les morts qui y sont puissent reposer. Je suis l'un des <b>Sanctifiés</b>, et nous abattons ce qui ne repose pas.\nLes morts s'agitent sous la pleine lune, et la Veille de la Toussaint, ils ne dorment presque pas. Le <b>Cavalier sans tête</b> ne repose jamais, alors il faut bien que quelqu'un continue de l'abattre.
+dialogue.hallows_eve_gravekeeper.hard_open.text = Vous l'avez fait tomber de son cheval. Il ne l'a pas oublié.\nIl existe maintenant une <b>chevauchée difficile</b>, pour quiconque revient. Il frappe plus fort, et ce qu'il y lâche, il ne le lâche nulle part ailleurs. Pour cette grille, je brûle une <b>Bougie de Tombe Ardente</b>, et le Vieux Jack en vend dès qu'il vous compte parmi les Habitués.
+dialogue.hallows_eve_gravekeeper.ember.text = Jack vous a envoyé chercher <b>la Braise du Cavalier</b>. Il ne la porte que sur la <b>chevauchée difficile</b>, et pour cette grille je brûle une <b>Bougie de Tombe Ardente</b>. Jack en vend dès qu'il vous compte parmi les Habitués.\nUne fois à terre, elle attend dans le coffre où il est tombé, pour chacun de ceux que Jack a envoyés la chercher. Personne d'autre ne la trouvera. Si vous ratez le coffre, elle attend sous « À réclamer » dans votre menu.
+dialogue.hallows_eve_gravekeeper.opt.enter = Faites-moi entrer. (1 Bougie de Tombe)
+dialogue.hallows_eve_gravekeeper.opt.enter_hard = Faites-moi entrer pour la chevauchée difficile. (1 Bougie de Tombe Ardente)
+dialogue.hallows_eve_gravekeeper.opt.who = Qui êtes-vous ?
+dialogue.hallows_eve_gravekeeper.opt.back = Autre chose.
+dialogue.hallows_eve_gravekeeper.opt.farewell = Bonne nuit.
 
 # ---- Bonbons ou un sort, la réplique de chaque conversation, et son avis ----
 dialogue.hallows_eve_trick_or_treat.opt.knock = Des bonbons ou un sort.
@@ -237,6 +309,20 @@ title.hallows_eve_keeper_of_lanterns.name = Gardien des Lanternes
 title.hallows_eve_keeper_of_lanterns.flavor = A allumé la Lanterne Creuse avec le Vieux Jack, année après année.
 title.hallows_eve_keeper_of_lanterns.display = {0}, Gardien des Lanternes
 
+# ---- Hallowed Set achievements and steps ----
+achievement.hallows_eve_first_ride.title = Première chevauchée
+achievement.hallows_eve_first_ride.desc = Abattez le Cavalier sans tête lors de votre première Veille de la Toussaint.
+achievement.hallows_eve_hallowed_armour.title = Armure Sanctifiée
+achievement.hallows_eve_hallowed_armour.desc = Portez un Heaume de Jack et l'armure du Cavalier sans tête.
+achievement.hallows_eve_fully_hallowed.title = Entièrement Sanctifié
+achievement.hallows_eve_fully_hallowed.desc = Portez toute la Panoplie Sanctifiée, un Bouclier de Jack dans la main secondaire.
+achievement.hallows_eve_flaming_armour.title = Armure Enflammée
+achievement.hallows_eve_flaming_armour.desc = Portez le Heaume de Jack Ardent et l'armure enflammée du Cavalier sans tête.
+achievement.hallows_eve_fully_ablaze.title = Entièrement en flammes
+achievement.hallows_eve_fully_ablaze.desc = Portez toute la Panoplie Sanctifiée Enflammée, le Bouclier de Jack Enflammé dans la main secondaire.
+objective.hallows_eve.wear_hallowed = Portez {0} pièces de la Panoplie Sanctifiée
+objective.hallows_eve.wear_flaming_hallowed = Portez {0} pièces de la Panoplie Sanctifiée Enflammée
+
 # ---- The stall's decorations shelf ----
 shop.hallows_eve_old_jack.category.decor = Décorations
 shop.hallows_eve_offer_pumpkin_scary.title = Citrouille d'Halloween effrayante
@@ -251,16 +337,30 @@ achievement.category.seasons.hallows_eve = Veille de la Toussaint
 almanac.hallows_eve.source.pumpkin = Se trouve de temps en temps quand vous cueillez des citrouilles à la main, et lâchée par les Squelettes Jack.
 almanac.hallows_eve.source.geode = Se trouve dans la pierre et le minerai que vous minez, et lâchée par les Spectres de Géode.
 almanac.hallows_eve.source.ectoplasm = Lâché par les Âmes Perdues, et trouvé dans les Géodes Maudites.
-almanac.hallows_eve.source.bombs = Lâchées par les créatures de la nuit, trouvées dans les Géodes Maudites, sculptées à un Établi de Sculpture ou achetées à l'étal du Vieux Jack.
-almanac.hallows_eve.source.bomb_epic = Rarement lâchée par les Spectres de Géode, ou trouvée dans les Géodes Maudites et la réserve des Sanctifiés. Vous pouvez aussi en sculpter une à un Établi de Sculpture, ou en acheter quelques-unes par jour à l'étal du Vieux Jack.
+almanac.hallows_eve.source.bombs = Lâchées par les créatures de la nuit, trouvées dans les Géodes Maudites, sculptées à un Établi de Sculpture ou achetées dans la boutique du Vieux Jack.
+almanac.hallows_eve.source.bomb_epic = Rarement lâchée par les Spectres de Géode, ou trouvée dans les Géodes Maudites et la réserve des Sanctifiés. Vous pouvez aussi en sculpter une à un Établi de Sculpture, ou en acheter quelques-unes par jour dans la boutique du Vieux Jack.
 almanac.hallows_eve.source.trick_or_treat = Donnés quand vous réclamez des bonbons ou un sort.
 almanac.hallows_eve.source.workbench = Fabriqué à un Établi, en toute saison.
-almanac.hallows_eve.source.carved = Sculpté à un Établi de Sculpture, ou acheté à l'étal du Vieux Jack.
-almanac.hallows_eve.source.jack_shield = Sculpté à un Établi de Sculpture, ou acheté à l'étal du Vieux Jack.
-almanac.hallows_eve.source.burning_helm = Vendu à l'étal du Vieux Jack quand les Sanctifiés vous révèrent ou que le Vieux Jack vous fait entièrement confiance.
-almanac.hallows_eve.source.flaming_shield = Vendu à l'étal du Vieux Jack quand les Sanctifiés vous tiennent en la plus haute estime.
-almanac.hallows_eve.source.stall = Vendu à l'étal du Vieux Jack.
-almanac.hallows_eve.source.stall_or_lab = Vendu à l'étal du Vieux Jack à mesure que grandit votre réputation, ou fabriqué à l'Établi du bricoleur gobelin dans le laboratoire gobelin.
-almanac.hallows_eve.source.festival_stall = Vendu sur l'étagère du festival de l'étal du Vieux Jack.
+almanac.hallows_eve.source.carved = Sculpté à un Établi de Sculpture, ou acheté dans la boutique du Vieux Jack.
+almanac.hallows_eve.source.jack_shield = Sculpté à un Établi de Sculpture, ou acheté dans la boutique du Vieux Jack.
+almanac.hallows_eve.source.burning_helm = Vendu dans la boutique du Vieux Jack quand les Sanctifiés vous révèrent ou que le Vieux Jack vous fait entièrement confiance.
+almanac.hallows_eve.source.flaming_shield = Vendu dans la boutique du Vieux Jack quand les Sanctifiés vous tiennent en la plus haute estime.
+almanac.hallows_eve.source.stall = Vendu dans la boutique du Vieux Jack.
+almanac.hallows_eve.source.stall_or_lab = Vendu dans la boutique du Vieux Jack à mesure que grandit votre réputation, ou fabriqué à l'Établi du bricoleur gobelin dans le laboratoire gobelin.
+almanac.hallows_eve.source.festival_stall = Vendu sur l'étagère du festival de la boutique du Vieux Jack.
 almanac.hallows_eve.source.keepsake = Souvenir du Vieux Jack, offert une fois par an quand vous terminez son histoire.
-almanac.hallows_eve.source.festival_favor = Vendu aux étals du festival à ceux qui ont beaucoup de Faveur du festival.
+almanac.hallows_eve.source.festival_favor = Vendu dans les boutiques du festival à ceux qui ont beaucoup de Faveur du festival.
+almanac.hallows_eve.source.grave_candle = Vendue dans la boutique du Vieux Jack, et rendue par le Trésor du Cavalier : parfois une après votre première victoire de chaque jour, et quelques-unes après votre première victoire difficile. Le Gardien du Cimetière les brûle pour ouvrir son cimetière à votre groupe, et dès que le Vieux Jack vous compte parmi les Habitués, il échange une Bougie de Tombe Ardente contre une poignée.
+almanac.hallows_eve.source.burning_grave_candle = Vendue dans la boutique du Vieux Jack dès qu'il vous compte parmi les Habitués, ou échangée là contre une poignée de Bougies de Tombe. Le Gardien du Cimetière les brûle pour ouvrir la chevauchée difficile du Cavalier sans tête à votre groupe.
+almanac.hallows_eve.source.bomb_rare = Toujours dans le Trésor du Cavalier, et parfois dans sa récompense quotidienne à réclamer. Aussi lâchée par les créatures de la nuit, trouvée dans les Géodes Maudites, sculptée à un Établi de Sculpture, ou achetée dans la boutique du Vieux Jack.
+almanac.hallows_eve.source.bomb_epic_horseman = Rarement lâchée par les Spectres de Géode ou trouvée dans les Géodes Maudites et la réserve des Sanctifiés, et parfois dans la récompense quotidienne à réclamer du Cavalier sans tête. Vous pouvez aussi en sculpter une à un Établi de Sculpture, ou en acheter quelques-unes par jour dans la boutique du Vieux Jack.
+almanac.hallows_eve.source.hoard = Parfois dans le Trésor du Cavalier, versé pour votre première victoire sur lui chaque jour.
+almanac.hallows_eve.source.hoard_hard = Uniquement dans le Trésor du Cavalier de la chevauchée difficile, versé pour votre première victoire difficile sur lui chaque jour. Une fois Le Chevaucheur terminé, demandez la chevauchée difficile au Gardien du Cimetière.
+almanac.hallows_eve.source.hoard_normal = Uniquement dans le Trésor du Cavalier de la chevauchée normale, versé pour votre première victoire sur lui là-bas chaque jour.
+almanac.hallows_eve.source.eternal_candle = De temps en temps dans le Trésor du Cavalier de la chevauchée difficile, versée pour votre première victoire difficile sur lui chaque jour. Portez-la et le Gardien du Cimetière ouvre son cimetière normal à votre groupe sans brûler de Bougie de Tombe.
+almanac.hallows_eve.source.horseman_daily = Se trouve de temps en temps dans la récompense quotidienne à réclamer du Cavalier sans tête, versée pour votre première victoire sur lui chaque jour.
+almanac.hallows_eve.source.burning_helm_trade = Acheté dans la boutique du Vieux Jack en échangeant un Heaume de Jack de votre sac, dès que les Sanctifiés vous révèrent ou que le Vieux Jack vous fait entièrement confiance. Se trouve parfois dans le Trésor du Cavalier.
+almanac.hallows_eve.source.flaming_shield_trade = Acheté dans la boutique du Vieux Jack en échangeant un Bouclier de Jack de votre sac, dès que les Sanctifiés vous tiennent en la plus haute estime. Se trouve parfois dans le Trésor du Cavalier.
+almanac.hallows_eve.horseman.line = Le Gardien du Cimetière à côté du Vieux Jack vous fait entrer. Venez avec des amis.
+almanac.hallows_eve.horseman.button = Records des combats de boss
+almanac.hallows_eve.hoard.line = Votre première victoire de chaque jour laisse son Trésor dans le coffre où il tombe, et sous « À réclamer » : une Bombe-Lanterne Spectrale et la faveur du Vieux Jack, et parfois une Bougie de Tombe, une pièce de la Panoplie Sanctifiée Enflammée, une Pierre tombale ou une Lanterne de civilisation perdue. Le Trésor de la chevauchée difficile contient quelques Bougies de Tombe et la faveur des Sanctifiés, de meilleures chances pour les pièces enflammées, son plastron enflammé et, de temps en temps, une Bougie Éternelle. Son armure simple vient dans sa récompense quotidienne à réclamer.

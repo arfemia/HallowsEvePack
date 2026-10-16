@@ -21,3 +21,26 @@ calendar.harvest_moon.herald.end.sub = As noites voltam a ficar quietas.
 # ---- Achados ----
 notify.hallows_eve_geode_found = Um Geodo Amaldiçoado, ali no entulho.
 
+# ---- The Headless Horseman's fight ----
+notify.hallows_eve_horseman_unhorsed = O Cavaleiro é arremessado da sela!
+notify.hallows_eve_horseman_head_off = A cabeça dele voa longe! Derrube-a e ele volta a poder ser ferido.
+notify.hallows_eve_horseman_head_down = A cabeça cai. Derrube-o!
+notify.hallows_eve_horseman_head_returned = A cabeça volta para ele, e as feridas se fecham.
+notify.hallows_eve_horseman_wrath = O Cavaleiro arde de raiva!
+notify.hallows_eve_horseman_engaged = O Cavaleiro Sem Cabeça cavalga!
+notify.hallows_eve_horseman_engaged.sub = Fique longe dos anéis brilhantes. Quando a cabeça dele voar, derrube-a.
+notify.hallows_eve_horseman_defeated = O Cavaleiro Sem Cabeça cai!
+notify.hallows_eve_horseman_wiped = O Cavaleiro continua cavalgando.
+notify.hallows_eve_horseman_wiped.sub = Derrube a cabeça dele quando ela voar. Ele não pode ser ferido enquanto ela estiver solta, e se ela voltar para ele, ele se cura.
+claim.hallows_eve_horseman_chase = O Tesouro do Cavaleiro
+claim.hallows_eve_horseman_chase_hard = O Tesouro do Cavaleiro (Difícil)
+dungeon.hallows_eve_graveyard.name = O Cemitério do Cavaleiro
+dungeon.hallows_eve_graveyard.description = Um cemitério murado onde o Cavaleiro Sem Cabeça cavalga à noite. Traga amigos.
+dungeon.hallows_eve_graveyard.goal = Derrote o Cavaleiro Sem Cabeça. Quando a cabeça dele voar, derrube-a, ou ele não pode ser ferido.
+dungeon.hallows_eve_graveyard_hard.name = O Cemitério do Cavaleiro (Difícil)
+dungeon.hallows_eve_graveyard_hard.description = O Cavaleiro Sem Cabeça cavalga mais forte aqui, e solta coisas que não solta em nenhum outro lugar. Traga mais amigos.
+dungeon.hallows_eve_graveyard_hard.goal = Derrote o Cavaleiro Sem Cabeça na cavalgada difícil. Quando a cabeça dele voar, derrube-a, ou ele não pode ser ferido.
+dungeon.hallows_eve_graveyard.cost_hint = O Velho Jack vende Velas Funerárias na loja dele no Templo Esquecido.
+dungeon.hallows_eve_graveyard_hard.cost_hint = O Velho Jack vende Velas Funerárias Ardentes na loja dele no Templo Esquecido, quando te considera Freguês.
+dungeon.hallows_eve_graveyard.confirm = Acender a Vela
+

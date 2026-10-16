@@ -1,10 +1,18 @@
 # Mindenszentek Éje csomag - a Megszentelt szett szövegei. A kulcsok csupaszok: a könyvtár a végük
 # alapján talál rájuk, bárhogy is hívják ezt a fájlt. A szett értesítése felugró üzenet, így egyik érték sem hordoz jelölést.
 gearset.hallows_eve_hallowed.title = Megszentelt Szett
-gearset.hallows_eve_hallowed.tier_full = Sisak a fejen, pajzs a kézben: egy kicsivel több életerő, a tűz kevésbé mar, világítasz, mint egy lámpás, és a hírneved is nő egy kicsit a Megszentelteknél.
+gearset.hallows_eve_hallowed.tier_full = Sisak a fejen, pajzs a kézben: egy kicsivel több életerő, a tűz kevésbé mar, világítasz, mint egy lámpás, és egy kicsit gyorsabban szerzed a Megszentelt kegyét.
+gearset.hallows_eve_hallowed.tier_pair = A szett egy darabja a testeden, Jack-pajzs a kezedben: egy kicsivel több életerő, a tűz kevésbé mar, világítasz, mint egy lámpás, és egy kicsit gyorsabban szerzed a Megszentelt kegyét.
+gearset.hallows_eve_hallowed.tier_armor = Sisak, mellvért, páncélkesztyű és lábszárvédő a testeden: egy kicsivel több életerő, és ami lángra lobban miattad, forróbban ég.
+gearset.hallows_eve_hallowed.tier_armor_shield = Mind a négy a testeden, pajzs a kezedben: megint több életerő, és a tüzed még forróbban ég.
+gearset.hallows_eve_flaming_hallowed.title = Lángoló Megszentelt Szett
+gearset.hallows_eve_flaming_hallowed.tier_armor = Égő sisak és lángoló páncél a testeden: több életerő, és ami lángra lobban miattad, sokkal forróbban ég.
+gearset.hallows_eve_flaming_hallowed.tier_armor_shield = Mind a négy a testeden, a Lángoló Jack-pajzs a kezedben: megint több életerő, és a tüzed még forróbban ég.
 
 # A jelmezek nevei, amelyek a jelmez ikonja fölé húzott egérnél jelennek meg. Az effekt JSON a teljes
 # kulcsot írja ki (hallowseve.items.effect...), mert a kliens az effekt Name mezőjét szó szerint olvassa.
 effect.hallows_eve_costume_jack.name = Jack-csontváz Jelmez
 effect.hallows_eve_costume_lost_soul.name = Elveszett Lélek Jelmez
 effect.hallows_eve_lantern_burn.name = Égés
+
+effect.hallows_eve_fire_resistance.name = Tűzállóság

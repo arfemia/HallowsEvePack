@@ -6,23 +6,28 @@
 # ---- Cüzdan ----
 currency.hallows_eve_sweets.name = Cadı Şekeri
 currency.hallows_eve_sweets.amount = {0, number} {0, plural, one {Cadı Şekeri} other {Cadı Şekeri}}
+currency.hallows_eve_sweets.description = Onları Unutulmuş Tapınak'taki Yaşlı Jack'in dükkanında harca.
 quest.category.hallows_eve = Cadılar Bayramı
 
 # ---- Yaşlı Jack'in görev zinciri ----
 quest.hallows_eve_old_jack_meet.title = Tapınakta Fenerler
 quest.hallows_eve_old_jack_meet.flavor = Yine mevsimi geldi, ben de Unutulmuş Tapınak'a fenerlerimle döndüm. Herhangi bir Unutulmuş Tapınak Geçidi seni oraya götürür. Gel de beni bul. Bir çift el daha işime yarar.
 quest.hallows_eve_old_jack_1.title = Bal Kabağı Bostanı
-quest.hallows_eve_old_jack_1.flavor = Bu ay bal kabağı topla, arada bir soğuk ve parlayan bir tane çıkar. O Kutsanmışlardan birkaçını bana getir.
+quest.hallows_eve_old_jack_1.flavor = Fenerlerimi Kutsanmış Bal Kabaklarından oyuyorum ve stokum azalıyor. Kabakları elle topla, bana soğuk, parlayan olanları getir.
 quest.hallows_eve_old_jack_2.title = Fener İşi
-quest.hallows_eve_old_jack_2.flavor = Barutla doldurulmuş herhangi bir bal kabağı iyi bir Fener Bombası olur. Hak eden bir şeye birkaç tane fırlat, sonra nasıl yandıklarını anlat bana.
+quest.hallows_eve_old_jack_2.flavor = Barutla doldurulmuş bir bal kabağı ölüleri her fenerden iyi geri tutar. Birkaç Fener Bombası at, sonra nasıl yandıklarını anlat bana.
 quest.hallows_eve_old_jack_3.title = Basamaklarda Gulyabaniler
-quest.hallows_eve_old_jack_3.flavor = Karanlık çökünce Oyuk Gulyabaniler eski mezarlardan aç karnına sürünerek çıkar. Tapınak basamaklarına varmadan birkaçını toprağa geri yolla.
+quest.hallows_eve_old_jack_3.flavor = Fenerlerim gulyabanileri basamaklardan uzak tutuyor, ama zar zor. Karanlık çökünce birkaç Oyuk Gulyabani'yi toprağa geri yolla.
 quest.hallows_eve_old_jack_4.title = Ektoplazma Seferi
-quest.hallows_eve_old_jack_4.flavor = Kayıp Ruhlar, biri onları salıverene kadar ortalıkta süzülür. Birkaçını serbest bırak, geride bıraktıkları Ektoplazma'yı bana getir; fenerlerim onu içer.
+quest.hallows_eve_old_jack_4.flavor = Fenerlerimde yanan şey Ektoplazma, bir Kayıp Ruh da serbest kalınca biraz geride bırakır. Birkaçını serbest bırak, onu bana getir.
 quest.hallows_eve_old_jack_5.title = Lanetli Taş
-quest.hallows_eve_old_jack_5.flavor = Bu ay taş kır, hangi taş olursa olsun, arada bir içinden bir Lanetli Jeot düşer. Birkaçını kırıp aç; lanetin altında, içlerinde iyi şeyler var.
+quest.hallows_eve_old_jack_5.flavor = Yılın bu zamanı yeterince taş kırarsan taş Lanetli Jeot verir. Birkaçını kırıp aç, içinden ne düşerse sende kalsın.
 quest.hallows_eve_old_jack_lantern.title = Oyuk Fener
-quest.hallows_eve_old_jack_lantern.flavor = Her yıl Oyuk Fener söner, birinin de onu yeniden yakması gerekir. Benim yüzümü takmış iskeletleri yere ser, sonra fenerin neye ihtiyacı varsa getir bana.
+quest.hallows_eve_old_jack_lantern.flavor = Süvari'nin közü bende. Şimdi Oyuk Fener'in bir Kutsanmış Bal Kabağı ve biraz Ektoplazma istiyor, bir de benim yüzümü takan iskeletlerin yere serilmesini.
+quest.hallows_eve_old_jack_horseman.title = Binici
+quest.hallows_eve_old_jack_horseman.flavor = Yanımdaki Mezar Bekçisi Süvari'nin mezarlığına giden yolu bilir, ama Mezar Mumu olmadan kapıyı açmaz, onları da dükkanımda ben satarım. Bir tane al, arkadaşlarınla gir ve onu eyerden düşür.
+quest.hallows_eve_old_jack_horseman_hard.title = Fener İçin Ateş
+quest.hallows_eve_old_jack_horseman_hard.flavor = Fenerin sönmeyen bir alev istiyor, Süvari de taşıyor. Mezar Bekçisi'nden zor sürüşü iste, onu yen ve bana közünü getir.
 
 # ---- Yaşlı Jack'in günlükleri ----
 quest.hallows_eve_jack_daily_souls.title = Huzursuz Ruhlar
@@ -31,6 +36,28 @@ quest.hallows_eve_jack_daily_pumpkins.title = Bal Kabağı Turu
 quest.hallows_eve_jack_daily_pumpkins.flavor = Fenerler Kutsanmış Bal Kabaklarını benim oyabildiğimden hızlı yakıp bitiriyor. Hava kararmadan birkaç tane daha getir.
 quest.hallows_eve_jack_daily_geodes.title = Jack İçin Jeotlar
 quest.hallows_eve_jack_daily_geodes.flavor = Benim için birkaç Lanetli Jeot kır. Ellerim bu aralar o iş için fazla tutuk.
+
+# ---- Yaşlı Jack'in ödülleri ----
+lootable.hallows_eve_meet_pay.title = Yaşlı Jack'in Karşılaması
+lootable.hallows_eve_meet_pay.flavor = Merhaba demek için birkaç şeker.
+lootable.hallows_eve_chain_pay.title = Yaşlı Jack'in Ücreti
+lootable.hallows_eve_chain_pay.flavor = Yaşlı Jack'in verdiği her iş için ödediği.
+lootable.hallows_eve_daily_pay.title = Yaşlı Jack'in Günlük Ücreti
+lootable.hallows_eve_daily_pay.flavor = Yaşlı Jack'in bir günlük iş için ödediği.
+lootable.hallows_eve_lantern_pay.title = Yaşlı Jack'in Teşekkürü
+lootable.hallows_eve_lantern_pay.flavor = Yaşlı Jack'in Oyuk Fener'i yaktığın için her yıl verdiği.
+lootable.hallows_eve_board_pay.title = Yaşlı Jack'in Ekstraları
+lootable.hallows_eve_board_pay.flavor = Panomda çalışan herkese, işin ödediğinin üstüne biraz fazlası.
+lootable.hallows_eve_board_sweets.title = Şeker Kavanozu
+lootable.hallows_eve_board_sweets.flavor = Bir elime sığdırabildiğim kadar.
+lootable.hallows_eve_hallowed_cache.title = Kutsanmış Zula
+lootable.hallows_eve_hallowed_cache.flavor = Kutsanmışlar, onlarla Yüce'nin ötesinde bir basamak daha çıktığın her seferde bunu senin için bırakır. Nereden bulduklarını bana sorma.
+lootable.hallows_eve_trick_or_treat.title = Şeker mi, Şaka mı
+lootable.hallows_eve_trick_or_treat.flavor = Kapıyı çal, ne çıkacağına bak. Çoğunlukla şeker.
+lootable.hallows_eve_treats.title = Tatlı Bir Şey
+lootable.hallows_eve_treats.flavor = Şaka tutmadığında eline geçen.
+lootable.hallows_eve_geode_crack.title = Kırık Jeot
+lootable.hallows_eve_geode_crack.flavor = Bir Lanetli Jeot'u kırınca içinden ne düşerse. Her seferinde kristal, şanslıysan daha iyisi.
 
 # ---- Bu paket için yazılmış adımlar ----
 objective.hallows_eve.meet_jack = Unutulmuş Tapınak'ta Yaşlı Jack'i bul
@@ -43,6 +70,12 @@ objective.hallows_eve.free_souls = {0} Kayıp Ruh serbest bırak
 objective.hallows_eve.bring_ectoplasm = {0} Ektoplazma getir
 objective.hallows_eve.knock_down_skeletons = {0} Jack İskeleti yere ser
 objective.hallows_eve.attend = Cadılar Bayramı'na katıl
+objective.hallows_eve.bring_down_horseman = Başsız Süvari'yi yere ser
+objective.hallows_eve.buy_grave_candle = Yaşlı Jack'in dükkanından bir Mezar Mumu satın al
+objective.hallows_eve.bomb_down_horseman = Başsız Süvari'yi yalnızca Fener Bombalarıyla yere ser
+objective.hallows_eve.bomb_down_horseman_hard = Başsız Süvari'yi zor sürüşte yalnızca Fener Bombalarıyla yere ser
+objective.hallows_eve.bring_down_horseman_hard = Başsız Süvari'yi zor sürüşte yere ser
+objective.hallows_eve.bring_ember = Süvari'nin Közü'nü getir
 
 # ---- Yaşlı Jack'in panosu ----
 board.hallows_eve_daily.title = Yaşlı Jack'in Panosu
@@ -62,13 +95,14 @@ quest.hallows_eve_board_wraiths.flavor = Elinde tırpan olan bir şey hava karar
 quest.hallows_eve_board_ectoplasm.title = Fener Yakıtı
 quest.hallows_eve_board_ectoplasm.flavor = Fenerlerimin Ektoplazması azalıyor. Kayıp Ruhlar serbest kalınca onu geride bırakır, o yüzden bana bolca getir.
 quest.hallows_eve_board_pumpkins.title = Soğuk Kabaklar
-quest.hallows_eve_board_pumpkins.flavor = Fenerler, bahçemin verdiğinden fazla Kutsanmış Bal Kabağı istiyor. Kabakları elle topla, bana soğuk olanları getir.
+quest.hallows_eve_board_pumpkins.flavor = Fenerler, tek başıma bulabildiğimden fazla Kutsanmış Bal Kabağı istiyor. Kabakları elle topla, bana soğuk olanları getir.
 quest.hallows_eve_board_carving.title = Tezgahta Oyma
 quest.hallows_eve_board_carving.flavor = Her kapı eşiği bir fener ister, ben de ancak bu kadar hızlı oyabilirim. Oyma Tezgahında birkaç Jack Feneri oy, her biri için bir kabak ve azıcık odun kömürü.
 
 # ---- Old Jack's errands board ----
 board.hallows_eve_errands.title = Yaşlı Jack'in Ayak İşleri
 board.hallows_eve_errands.desc = Ufak tefek işler, biri karanlık için, biri gün ışığı için. Birkaç saatte bir yeni bir çift asıyorum, o yüzden arada uğra.
+board.hallows_eve_errands.pill = Ayak İşi
 quest.hallows_eve_errand_souls.title = Başıboş Ruhlar
 quest.hallows_eve_errand_souls.flavor = Ben son baktığımdan beri birkaç Kayıp Ruh buraya sürüklenmiş. Bir dakikan olunca onları serbest bırak.
 quest.hallows_eve_errand_ghouls.title = Mezar Nöbeti
@@ -78,12 +112,12 @@ quest.hallows_eve_errand_ectoplasm.flavor = Fenerlerimden biri titreyip sönmek 
 quest.hallows_eve_errand_bombs.title = Bomba Talimi
 quest.hallows_eve_errand_bombs.flavor = Elinde artan Fener Bombası var mı? Benim için birkaçını at. Gürültüsünü severim.
 quest.hallows_eve_errand_geodes.title = Çatlak Taş
-quest.hallows_eve_errand_geodes.flavor = Benim için birkaç Lanetli Jeot kır. Patlayışlarını dinlemeyi severim.
+quest.hallows_eve_errand_geodes.flavor = Dışarıdayken birkaç Lanetli Jeot kır. Birinin yapması gerek.
 quest.hallows_eve_errand_pumpkins.title = Yedek Kabaklar
 quest.hallows_eve_errand_pumpkins.flavor = Basamaktaki bir fener çürüyüp çökmüş. Yoldan geçerken bana birkaç Kutsanmış Bal Kabağı getir.
 
 # ---- Yaşlı Jack'in tezgahı ----
-shop.hallows_eve_old_jack.title = Yaşlı Jack'in Tezgahı
+shop.hallows_eve_old_jack.title = Yaşlı Jack'in Dükkanı
 shop.hallows_eve_old_jack.desc = Fener Bombaları, fenerler ve sezona uygun birkaç tuhaf şey.
 shop.hallows_eve_old_jack.category.bombs = Fener Bombaları
 shop.hallows_eve_old_jack.category.lights = Fenerler
@@ -91,6 +125,8 @@ shop.hallows_eve_old_jack.category.gear = Teçhizat
 shop.hallows_eve_offer_harvest_moon_bundle.title = Hasat Ayı Paketi
 shop.hallows_eve_offer_harvest_moon_bundle.desc = Parçalayıcı ve Hayalet Fener Bombaları, yalnızca Hasat Ayı gökteyken satılır.
 shop.hallows_eve_offer_spyglass.desc = Bir Boşluk yaratığının yerini bulmak için Sönük Oyuklar'da bununla bak.
+shop.hallows_eve_offer_sell_eternal_candle.title = Yedek Bir Ebedi Mum Sat
+shop.hallows_eve_offer_sell_eternal_candle.desc = Süvari'nin mezarlığını açmak için tek bir Ebedi Mum yeter. Yaşlı Jack'e yedek bir tane getir, sana parasını öder.
 
 # ---- Başarımlar ----
 achievement.hallows_eve_lantern_keepsake.title = Oyuk Fener {0}
@@ -107,11 +143,11 @@ achievement.hallows_eve_geode_cracker.desc = {0} Lanetli Jeot kır.
 achievement.hallows_eve_jacks_guest.title = Jack'in Misafiri {0}
 achievement.hallows_eve_jacks_guest.desc = Cadılar Bayramı'na katıl.
 achievement.hallows_eve_the_hallowed.title = Kutsanmış {0}
-achievement.hallows_eve_the_hallowed.desc = Bu yılın tüm Cadılar Bayramı başarımlarını kazan.
+achievement.hallows_eve_the_hallowed.desc = Bu listedeki her başarımı tek bir Cadılar Bayramı'nda kazan.
 
 # ---- Kutsanmış unvanı ----
 title.hallows_eve_hallowed.name = Kutsanmış
-title.hallows_eve_hallowed.flavor = Bir yılın tüm Cadılar Bayramı başarımlarını kazanmış.
+title.hallows_eve_hallowed.flavor = Kutsanmışların istediği her başarımı tek bir Cadılar Bayramı'nda kazandı.
 title.hallows_eve_hallowed.display = Kutsanmış {0}
 
 # ---- Almanak sayfası ----
@@ -125,11 +161,11 @@ almanac.hallows_eve.geodes_cracked = Kırılan Lanetli Jeotlar
 # ---- Yaşlı Jack'in sohbeti ----
 dialogue.hallows_eve_old_jack.first_words.text = Kafaya takılma. Bal kabağı o, uzun zamandır da orada.\nBen Yaşlı Jack. Her sonbahar ölüler huzursuzlanır, ben de <color is="#ffd97a">Unutulmuş Tapınak'a</color> fenerlerimle dönerim. Oyulmamış bir çift el işime yarar.
 dialogue.hallows_eve_old_jack.first_words.opt.hail = Tanıştığımıza memnun oldum, Jack.
-dialogue.hallows_eve_old_jack.meet.text = Demek yeri buldun. Güzel.\nBen Yaşlı Jack. Beni bulan herkes bir <b>hoş geldin</b> alır, sen daha seninkini almadın.
+dialogue.hallows_eve_old_jack.meet.text = Demek yeri buldun. Kafaya takılma, bal kabağı o.\nBen Yaşlı Jack. Yılın bu zamanı ölüler huzursuzlanır, fenerlerim de onları bu basamaklardan uzak tutar. Beni bulan herkes bir <b>hoş geldin</b> alır, sen daha seninkini almadın.
 dialogue.hallows_eve_old_jack.meet.opt.accept = Sağ ol, Jack.
-dialogue.hallows_eve_old_jack.board_fresh.text = Panomda yeni iş var, kimi karanlık için, kimi gün ışığı için. Ücretini Cadı Şekeriyle alırsın, tezgahımda da o geçer.
+dialogue.hallows_eve_old_jack.board_fresh.text = Panomda yeni iş var, kimi karanlık için, kimi gün ışığı için. Ne yapılması gerektiğini bana sor. Ücretini şekerle alırsın, dükkanımda da o geçer.
 dialogue.hallows_eve_old_jack.menu.text = Fenerler yandı, gulyabaniler de gezmeye çıktı. Ne lazım?
-dialogue.hallows_eve_old_jack.patch_offer.text = Bu ay bal kabağı topla, arada bir dokununca soğuk, hafif parlayan bir tane çıkar. Ben onlara <b>Kutsanmış Bal Kabağı</b> derim.\nBirkaç tane getir bana. Onlar olmadan fenerlerim yanık kalmaz.
+dialogue.hallows_eve_old_jack.patch_offer.text = Şu basamaklardaki fenerleri görüyor musun? Hepsi, dokununca soğuk, hafif parlayan bir bal kabağı olarak başladı. Ben onlara <b>Kutsanmış Bal Kabağı</b> derim.\nBirkaç tane getir bana, ben de biraz daha oyayım.
 dialogue.hallows_eve_old_jack.patch_offer.opt.accept = Sana birkaç bal kabağı bulurum.
 dialogue.hallows_eve_old_jack.patch_ready.text = <b>Kutsanmış Bal Kabakları</b>. Kiler basamağı gibi soğuk.\nÜcretinin yanına birkaç Fener Bombası koydum. Git, nasıl yandıklarını gör.
 dialogue.hallows_eve_old_jack.patch_ready.opt.turnin = İşte bal kabakları.
@@ -139,28 +175,40 @@ dialogue.hallows_eve_old_jack.ghouls_offer.text = <b>Oyuk Gulyabaniler</b> karan
 dialogue.hallows_eve_old_jack.ghouls_offer.opt.accept = Gulyabanileri ben hallederim.
 dialogue.hallows_eve_old_jack.souls_offer.text = Zavallı şeyler şu <b>Kayıp Ruhlar</b>. Biri onları salıverene kadar ortalıkta süzülürler.\nBirkaçını serbest bırak, geride bıraktıkları <b>Ektoplazma'yı</b> bana getir. Fenerlerim onu içer.
 dialogue.hallows_eve_old_jack.souls_offer.opt.accept = Onları serbest bırakırım.
-dialogue.hallows_eve_old_jack.geodes_offer.text = Bu ay taş kır, hangi taş olursa olsun, arada bir içinden bir <b>Lanetli Jeot</b> düşer.\nBirkaçını kırıp aç. Lanetin altında, içlerinde iyi şeyler var.
+dialogue.hallows_eve_old_jack.geodes_offer.text = <b>Lanetli Jeot</b>, içinde parlak bir şeyin kıpırdadığı bir taş yumrusu. Çirkin şeyler.\nBirkaçını kırıp aç. Lanetin altında, içlerinde iyi şeyler var.
 dialogue.hallows_eve_old_jack.geodes_offer.opt.accept = Birkaçını kırıp açarım.
+dialogue.hallows_eve_old_jack.rider_offer.text = Geceleri nal seslerini duydun mu? O, mezarlığında dolaşan <b>Başsız Süvari</b>.\nBiri onu o attan düşürse daha rahat uyurum. Yanımdaki <color is="#ffd97a">Mezar Bekçisi</color>, orada bir <b>Mezar Mumu</b> yakmadan kapıyı açmaz, onları da dükkanımda ben satarım. Bir tane al, sonra git ve onu yakala.
+dialogue.hallows_eve_old_jack.rider_offer.opt.accept = Onu attan düşürürüm.
+dialogue.hallows_eve_old_jack.ember_offer.text = Ayak işlerimi sonuna kadar gördün, Süvari'yi de attan düşürdün. Hemen hemen her şey bu.\nSenin <b>Oyuk Fener'in</b> sönmeyen bir alev istiyor, onu da yalnızca Süvari taşır. Onu ondan al ve bana <b>Süvari'nin Közü'nü</b> getir. Onu yalnızca zor sürüşte taşır, Mezar Bekçisi de <b>Yanan Mezar Mumu</b> olmadan o kapıyı açmaz. Seni Müdavim saydığımda onları ben satarım.
+dialogue.hallows_eve_old_jack.ember_offer.opt.accept = Sana közü getiririm.
+dialogue.hallows_eve_old_jack.active_ember.text = O közü yalnızca zor sürüşte verir. <color is="#ffd97a">Mezar Bekçisi'nden</color> <b>zor sürüşü</b> iste ve geçen seferden daha çok arkadaş getir. Kapısı bunun için bir <b>Yanan Mezar Mumu</b> ister, onları da seni Müdavim saydığımda ben satarım.\nO düştüğünde <b>köz</b>, düştüğü yerdeki sandıkta, onun peşine gönderdiğim herkes için bekler. Sandığı kaçırırsan menündeki Alınacaklar sekmesinde bekler.
+dialogue.hallows_eve_old_jack.ember_ready.text = Evet, bu onun ateşi. Cebini yakmış, görünene bakılırsa.\nFenerin hazır olana kadar onu güvende tutarım. Sonra yakarız.
+dialogue.hallows_eve_old_jack.ember_ready.opt.turnin = İşte köz.
 dialogue.hallows_eve_old_jack.daily_offer.text = Her gün yeniden çıkan birkaç ufak işim var. İstediğini al.
 dialogue.hallows_eve_old_jack.daily_offer.opt.souls = Ruhlarla ben ilgilenirim.
 dialogue.hallows_eve_old_jack.daily_offer.opt.pumpkins = Bal kabağı getiririm.
 dialogue.hallows_eve_old_jack.daily_offer.opt.geodes = Birkaç jeot kırarım.
-dialogue.hallows_eve_old_jack.lantern_offer.text = Her yıl <b>Oyuk Fener</b> söner, her yıl da birinin onu yeniden yakması gerekir.\nDışarıdaki iskeletlerin bazıları benim yüzümü takıyor. Birkaç <b>Jack İskeleti</b> yere ser, sonra bana bir <b>Kutsanmış Bal Kabağı</b> ve onu dolduracak kadar <b>Ektoplazma</b> getir.
+dialogue.hallows_eve_old_jack.lantern_offer.text = Ayak işlerin bitti, Süvari'nin közü de bende. Bu yıl senin için bir <b>Oyuk Fener</b> yakıyoruz.\nDışarıdaki iskeletlerin bazıları benim yüzümü takıyor, hoşuma gitmiyor. Birkaç <b>Jack İskeleti</b> yere ser, sonra bana oymam için bir <b>Kutsanmış Bal Kabağı</b> ve içinde yakmak için biraz <b>Ektoplazma</b> getir.
 dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Hadi yakalım.
-dialogue.hallows_eve_old_jack.lantern_ready.text = Bir <b>Kutsanmış Bal Kabağı</b>, bir de onu dolduracak <b>Ektoplazma</b>. Benim yüzümü taşıyan iskeletler ait oldukları yerde, çimenlerde yatıyor.\nOldu. Oyuk Fener yandı, artık senin. Kalkanı da al, miğferle takım olur. Seneye gel, bir tane daha yakarız.
+dialogue.hallows_eve_old_jack.lantern_ready.text = Bir <b>Kutsanmış Bal Kabağı</b>, bir de içinde yakmak için <b>Ektoplazma</b>. Benim yüzümü taşıyan iskeletler ait oldukları yerde, çimenlerde yatıyor.\nOldu. Köz tuttu. Oyuk Fener'in yandı, artık senin. Bu kalkanı da al: miğferi dükkanım satar, setin geri kalanını da Süvari giyer. Seneye gel, bir tane daha yakarız.
 dialogue.hallows_eve_old_jack.lantern_ready.opt.turnin = İşte bal kabağı, bir de Ektoplazma.
 dialogue.hallows_eve_old_jack.active_pumpkins.text = Bal kabakları <color is="#ffd97a">sonbahar ormanlarında</color> kendiliğinden yetişir, <color is="#ffd97a">Kweebecler</color> de bahçelerinde yetiştirir. Elle topla, arada bir aralarından bir <b>Kutsanmış Bal Kabağı</b> çıkar. Karanlık çökünce <b>Jack İskeletleri</b> de bunlardan düşürür.
-dialogue.hallows_eve_old_jack.active_bombs.text = Ücretinden çıkan <b>Fener Bombalarını</b> hak eden ne varsa ona fırlat. Biterse tezgahımda daha var, karanlık çökünce <b>Jack İskeletleri</b> de birkaç tane düşürür.
+dialogue.hallows_eve_old_jack.active_bombs.text = Ücretinden çıkan <b>Fener Bombalarını</b> karanlık çökünce üstüne gelen her şeye fırlat. Biterse dükkanımda daha var, <b>Jack İskeletleri</b> de birkaç tane düşürür.
 dialogue.hallows_eve_old_jack.active_night.text = Karanlık çökünce ölüler dolaşır, dışarıda yabanda, her meşaleden uzakta. Şafak sökünce yok olurlar.\nSerbest bıraktığın her <b>Kayıp Ruh</b> geride <b>Ektoplazma</b> bırakır, bir <b>Jack İskeleti</b> de bazen bir <b>Kutsanmış Bal Kabağı</b> düşürür.
 dialogue.hallows_eve_old_jack.active_stone.text = <b>Taş</b> kır, en çok da <b>cevher</b>, arada bir içinden bir <b>Lanetli Jeot</b> düşer. Birini eline al ve kırıp aç.
 dialogue.hallows_eve_old_jack.ready_generic.text = Bana bitmiş gibi görünüyor. Bir bakalım.
 dialogue.hallows_eve_old_jack.ready_generic.opt.turnin = Bitti.
-dialogue.hallows_eve_old_jack.lantern_lit.text = Oyuk Fener hâlâ yanıyor. Karanlığın en kötüsünü basamaklardan uzak tutuyor.\nNe lazım?
-dialogue.hallows_eve_old_jack.who_are_you.text = Yaşlı Jack. Bir zamanlar buradan çok uzakta bir çiftliğim vardı. Sonra bir ekimde eve dönmedim, o günden beri her ekim geri geliyorum.\nÖlüleri bu basamaklardan uzak tutmak için her yıl bir Oyuk Fener yakarım. Kasıma kadar sönüp giderler. Bana kafayı sorma.
+dialogue.hallows_eve_old_jack.lantern_lit.text = Bu yılın Oyuk Fener'i yandı. Ölülerin görebileceği bir yere koy.\nNe lazım?
+dialogue.hallows_eve_old_jack.sweets.text = Dükkanım üstündeki her şey için onları kabul eder, bir Fener Bombasından benimki gibi bir kafaya kadar.\nİşlerimin ve panomdaki işin ücretini onlarla ödüyorum. Konuştuğun herkesten şeker mi şaka mı iste, birkaç tane verirler. <b>Başsız Süvari'yi</b> <color is="#ffd97a">mezarlığında</color> yenersen seni bekleyen birkaç tane bulursun.
+dialogue.hallows_eve_old_jack.who_are_you.text = Yaşlı Jack. Bir zamanlar buradan çok uzakta bir çiftliğim vardı. Sonra bir ekimde eve dönmedim, o günden beri her ekim geri geliyorum.\nFenerlerim ölüleri bu basamaklardan uzak tutar, her yıl da ayak işlerimi sonuna kadar görenle bir Oyuk Fener yakarım. Bana kafayı sorma.
+dialogue.hallows_eve_old_jack.horseman.text = <b>Başsız Süvari</b>. Cadılar Bayramı'nın her gecesi kendi mezarlığında dolaşır. Kendisi yarı ateş, bu yüzden Fener Bombalarım ona yalnızca yarı zarar verir, yine de ısırır.\nYanımdaki <color is="#ffd97a">Mezar Bekçisi</color> kapıyı tutar. Orada bir <b>Mezar Mumu</b> yaktığında seni içeri alır, onları da dükkanımda ben satarım. İlk giren öder, partinin geri kalanı bedava girer. Arkadaşlarını getir, başı uçunca da onu yere ser, yoksa yaralanamaz.
+dialogue.hallows_eve_old_jack.horseman_beaten.text = Demek onu o attan düşürdün. Onu yerde tutmaz: biri içeri girdikçe yine eyerde.\nİstersen <b>Başsız Süvari'nin</b> peşine yeniden düş. Her günün ilk zaferi, düştüğü yerdeki sandıkta günlük ödülünü ve Hazinesini bırakır, ara sıra eski zırhından bir parçayla, ya da hâlâ yanan bir parçayla. Sandıkta bıraktığın her şey menündeki Alınacaklar sekmesinde bekler.
 dialogue.hallows_eve_old_jack.harvest_moon.text = Şu aya baktın mı? Hasat Ayı. Yılda birkaç gece ölüler onun altında huzursuzlanır, mezarlar da boşalır.\nİş istiyorsan, bu gece o gece. Ben ay batana kadar ayaktayım.
 dialogue.hallows_eve_old_jack.opt.quests = Yapılacak ne var?
-dialogue.hallows_eve_old_jack.opt.shop = Tezgahına bakalım.
+dialogue.hallows_eve_old_jack.opt.shop = Dükkanına bakalım.
+dialogue.hallows_eve_old_jack.opt.sweets = Şekerler ne işe yarıyor?
 dialogue.hallows_eve_old_jack.opt.almanac = Almanak'ı göster.
+dialogue.hallows_eve_old_jack.opt.horseman = Süvari'yi anlat.
 dialogue.hallows_eve_old_jack.opt.who = Sen kimsin?
 dialogue.hallows_eve_old_jack.opt.harvest = Hasat Ayı nedir?
 dialogue.hallows_eve_old_jack.opt.back = Başka bir şey.
@@ -169,6 +217,17 @@ dialogue.hallows_eve_old_jack.opt.farewell = İyi geceler, Jack.
 # ---- Şeker mi şaka mı, her sohbetin aldığı satır ve bildirimi ----
 dialogue.hallows_eve_trick_or_treat.opt.knock = Şeker mi, şaka mı?
 
+# ---- Mezar Bekçisi, Süvari'nin mezarlığının kapısında ----
+dialogue.hallows_eve_gravekeeper.menu.text = Süvari'nin <color is="#ffd97a">mezarlığı</color> arkamda, bu gece de onda dolaşıyor. O dolaşırken orada hiçbir şey dinlenmez.\nKapı yalnızca orada bir <b>Mezar Mumu</b> yaktığımda açılır, açıldığında da bütün partin seninle içeri girebilir. Yaşlı Jack onları dükkanında satar. Bir <b>Ebedi Mum</b> da onu açar, onu da geri veririm. Söyle, seni içeri alayım. Arkadaşlarını getir.
+dialogue.hallows_eve_gravekeeper.who.text = Bu mezarlığı, içindeki ölüler dinlensin diye bekliyorum. Ben <b>Kutsanmışlardan</b> biriyim, dinlenmeyeni yere sermek bizim işimiz.\nÖlüler dolunayda kıpırdar, Cadılar Bayramı'nda ise neredeyse hiç uyumaz. <b>Başsız Süvari</b> hiç dinlenmez, bu yüzden birinin onu yere sermeye devam etmesi gerek.
+dialogue.hallows_eve_gravekeeper.hard_open.text = Onu attan düşürdün. O bunu unutmadı.\nGeri gelen herkes için artık bir <b>zor sürüş</b> var. Orada daha sert vurur, orada düşürdüğünü başka hiçbir yerde düşürmez. O kapı için bir <b>Yanan Mezar Mumu</b> yakarım, Yaşlı Jack da seni Müdavim saydığında onları satar.
+dialogue.hallows_eve_gravekeeper.ember.text = Jack seni <b>Süvari'nin Közü</b> için gönderdi. Onu yalnızca <b>zor sürüşte</b> taşır, o kapı için de bir <b>Yanan Mezar Mumu</b> yakarım. Jack seni Müdavim saydığında onları satar.\nO düştüğünde köz, düştüğü yerdeki sandıkta, Jack'in onun peşine gönderdiği her biriniz için bekler. Başka kimse onu bulamaz. Sandığı kaçırırsan menündeki Alınacaklar sekmesinde bekler.
+dialogue.hallows_eve_gravekeeper.opt.enter = Beni içeri al. (1 Mezar Mumu)
+dialogue.hallows_eve_gravekeeper.opt.enter_hard = Beni zor sürüşe al. (1 Yanan Mezar Mumu)
+dialogue.hallows_eve_gravekeeper.opt.who = Sen kimsin?
+dialogue.hallows_eve_gravekeeper.opt.back = Başka bir şey.
+dialogue.hallows_eve_gravekeeper.opt.farewell = İyi geceler.
+
 # ---- Achievements across the years, and the Keeper of Lanterns title ----
 achievement.hallows_eve_old_friend.title = Eski Dost
 achievement.hallows_eve_old_friend.desc = {0} Cadılar Bayramı'na katıl.
@@ -176,9 +235,23 @@ achievement.hallows_eve_lantern_keeper.title = Fener Bekçisi
 achievement.hallows_eve_lantern_keeper.desc = {0} sezonda Oyuk Fener'i yak.
 achievement.hallows_eve_first_lanterns.title = İlk Fenerler
 achievement.hallows_eve_first_lanterns.desc = İlk sezonda Oyuk Fener'i yak.
+achievement.hallows_eve_first_ride.title = İlk Sürüş
+achievement.hallows_eve_first_ride.desc = Başsız Süvari'yi ilk Cadılar Bayramı'nda yere ser.
 title.hallows_eve_keeper_of_lanterns.name = Fener Bekçisi
 title.hallows_eve_keeper_of_lanterns.flavor = Yaşlı Jack ile Oyuk Fener'i yıllar boyunca yaktı.
 title.hallows_eve_keeper_of_lanterns.display = {0}, Fener Bekçisi
+
+# ---- Kutsanmış set başarımları ----
+achievement.hallows_eve_hallowed_armour.title = Kutsanmış Zırh
+achievement.hallows_eve_hallowed_armour.desc = Bir Jack Miğferi ve Başsız Süvari'nin zırhını tak.
+achievement.hallows_eve_fully_hallowed.title = Tam Kutsanmış
+achievement.hallows_eve_fully_hallowed.desc = Kutsanmış Setin tamamını tak, sol elinde bir Jack Kalkanı.
+achievement.hallows_eve_flaming_armour.title = Alevli Zırh
+achievement.hallows_eve_flaming_armour.desc = Yanan Jack Miğferi'ni ve Başsız Süvari'nin alevli zırhını tak.
+achievement.hallows_eve_fully_ablaze.title = Baştan Aşağı Alev
+achievement.hallows_eve_fully_ablaze.desc = Alevli Kutsanmış Setin tamamını tak, sol elinde Alevli Jack Kalkanı.
+objective.hallows_eve.wear_hallowed = Kutsanmış Setten {0} parça tak
+objective.hallows_eve.wear_flaming_hallowed = Alevli Kutsanmış Setten {0} parça tak
 
 # ---- The stall's decorations shelf ----
 shop.hallows_eve_old_jack.category.decor = Süsler
@@ -188,6 +261,8 @@ shop.hallows_eve_offer_pumpkin_cute.title = Sevimli Cadılar Bayramı Bal Kabağ
 # ---- More Almanac tallies ----
 almanac.hallows_eve.skeletons_knocked_down = Yere serilen Jack İskeletleri
 almanac.hallows_eve.wraiths_put_down = Alt edilen Jeot Hortlakları
+almanac.hallows_eve.horseman_down = Yere serilen Başsız Süvari
+almanac.hallows_eve.horseman_heads = Yere serilen Süvari başları
 
 # ---- Jack'in Sırdaşı, Yaşlı Jack'in panosunun dereceleri ve iki itibar: Yaşlı Jack'in Teveccühü ve Kutsanmış ----
 objective.hallows_eve.jack_confidant = Yaşlı Jack'in Sırdaşı ol
@@ -216,6 +291,15 @@ achievement.hallows_eve_horseman_bane.desc = Başsız Süvari'yi {0} kez yere se
 title.hallows_eve_horseman_bane.name = Süvari Belası
 title.hallows_eve_horseman_bane.flavor = Tek bir Cadılar Bayramı'nda Başsız Süvari'yi defalarca yere serdi.
 title.hallows_eve_horseman_bane.display = {0}, Süvari Belası
+achievement.hallows_eve_off_with_his_head.title = Kellesini Uçur {0}
+achievement.hallows_eve_off_with_his_head.desc = Süvari'nin başını {0} kez yere ser.
+achievement.hallows_eve_by_lantern_light.title = Fener Işığında {0}
+achievement.hallows_eve_by_lantern_light.desc = Başsız Süvari'yi ona yalnızca Fener Bombaları isabet ederek yere ser. Başına ve Jack İskeletlerine her şeyle vurabilirsin.
+achievement.hallows_eve_lamplighter.title = Fenerci {0}
+achievement.hallows_eve_lamplighter.desc = Başsız Süvari'yi zor sürüşte ona yalnızca Fener Bombaları isabet ederek yere ser. Başına ve Jack İskeletlerine her şeyle vurabilirsin.
+title.hallows_eve_lamplighter.name = Fenerci
+title.hallows_eve_lamplighter.flavor = Başsız Süvari'yi zor sürüşte yalnızca Fener Bombalarıyla yere serdi.
+title.hallows_eve_lamplighter.display = {0}, Fenerci
 
 reputation.hallows_eve_old_jack.name = Yaşlı Jack'in Teveccühü
 reputation.hallows_eve_old_jack.flavor = Yaşlı Jack'in insanlara ısınması zaman alır. Ayak işlerini gör, arada bir de durup iki laf et.
@@ -230,9 +314,10 @@ factor.hallows_eve_old_jack.exalted = Yaşlı Jack nezdinde Jack'in Yakını rü
 reputation.hallows_eve_old_jack.earn.quests = Ayak işlerini ve günlük işlerini gör.
 reputation.hallows_eve_old_jack.earn.board = Panosundan sözleşme al.
 reputation.hallows_eve_old_jack.earn.talk = Günde bir kez uğrayıp iki laf et.
-reputation.hallows_eve_old_jack.earn.gear = Bir Jack Miğferi tak. Başında olduğu sürece teveccühünü artırır.
+reputation.hallows_eve_old_jack.earn.horseman = Başsız Süvari'yi normal sürüşte yen. Her günün ilk zaferi onun teveccühünü kazandırır, Süvari'nin Hazinesi ile toplanır.
+reputation.hallows_eve_old_jack.earn.gear = Bir Jack Miğferi tak, onun için yaptığın her şey başındayken daha çok teveccüh kazandırır.
 reputation.hallows_eve_hallowed.name = Kutsanmışlar
-reputation.hallows_eve_hallowed.flavor = Kutsanmışlar ölüleri ait oldukları yerde tutar. Geceleri mezarlardan tırmanıp çıkanları yere ser, onlar da fark eder.
+reputation.hallows_eve_hallowed.flavor = Kutsanmışlar ölülerin huzur bulmasını sağlar, Süvari'nin mezarlığındaki Mezar Bekçisi de onlardan biridir. Geceleri mezarlardan tırmanıp çıkanları yere ser, onlar da fark eder.
 factor.hallows_eve_hallowed.friendly = Kutsanmışlar nezdinde Dostane rütbesi
 factor.hallows_eve_hallowed.honored = Kutsanmışlar nezdinde Saygın rütbesi
 factor.hallows_eve_hallowed.revered = Kutsanmışlar nezdinde Muhterem rütbesi
@@ -240,7 +325,8 @@ factor.hallows_eve_hallowed.exalted = Kutsanmışlar nezdinde Yüce rütbesi
 reputation.hallows_eve_hallowed.earn.kills = Geceleri sürünüp çıkan yaratıkları yere ser.
 reputation.hallows_eve_hallowed.earn.jack = Yaşlı Jack'in günlük işleri ve pano sözleşmeleri de sayılır.
 reputation.hallows_eve_hallowed.earn.treats = Konuştuğun herkese, her birine günde bir kez, şeker mi şaka mı diye sor.
-reputation.hallows_eve_hallowed.earn.gear = Bir Jack Kalkanı taşı. Elinde olduğu sürece onların teveccühünü artırır.
+reputation.hallows_eve_hallowed.earn.horseman = Başsız Süvari'yi zor sürüşte yen. Her günün ilk zor zaferi onların teveccühünü kazandırır, Hazinesi ile toplanır.
+reputation.hallows_eve_hallowed.earn.gear = Bir Jack Kalkanı taşı, kuşandığın sürece onların teveccühünü daha hızlı kazanırsın.
 notify.hallows_eve_hallowed_cache = Kutsanmışlardan bir zula, ölüleri yerin altında tuttuğun için.
 dialogue.hallows_eve_old_jack.opt.standing = Aramız nasıl?
 
@@ -250,16 +336,32 @@ achievement.category.seasons.hallows_eve = Cadılar Bayramı
 almanac.hallows_eve.source.pumpkin = Elle bal kabağı toplarken arada bir çıkar, Jack İskeletleri de düşürür.
 almanac.hallows_eve.source.geode = Kazdığın taş ve cevherden çıkar, Jeot Hortlakları da düşürür.
 almanac.hallows_eve.source.ectoplasm = Kayıp Ruhlar düşürür, Lanetli Jeotların içinden de çıkar.
-almanac.hallows_eve.source.bombs = Gecenin yaratıkları düşürür, Lanetli Jeotların içinden çıkar, Oyma Tezgahında oyulur ya da Yaşlı Jack'in tezgahından satın alınır.
-almanac.hallows_eve.source.bomb_epic = Jeot Hortlakları nadiren düşürür, Lanetli Jeotların ve Kutsanmışların zulasının içinden de nadiren çıkar. Oyma Tezgahında da oyabilir ya da Yaşlı Jack'in tezgahından günde birkaç tane satın alabilirsin.
+almanac.hallows_eve.source.bombs = Gecenin yaratıkları düşürür, Lanetli Jeotların içinden çıkar, Oyma Tezgahında oyulur ya da Yaşlı Jack'in dükkanından satın alınır.
+almanac.hallows_eve.source.bomb_epic = Jeot Hortlakları nadiren düşürür, Lanetli Jeotların ve Kutsanmışların zulasının içinden de nadiren çıkar. Oyma Tezgahında da oyabilir ya da Yaşlı Jack'in dükkanından günde birkaç tane satın alabilirsin.
 almanac.hallows_eve.source.trick_or_treat = Şeker mi, şaka mı diye dolaşırken verilir.
 almanac.hallows_eve.source.workbench = Yılın her günü Çalışma Tezgahında yapılır.
-almanac.hallows_eve.source.carved = Oyma Tezgahında oyulur ya da Yaşlı Jack'in tezgahından satın alınır.
-almanac.hallows_eve.source.jack_shield = Oyma Tezgahında oyulur ya da Yaşlı Jack'in tezgahından satın alınır.
-almanac.hallows_eve.source.burning_helm = Kutsanmışlar nezdinde Muhterem olunca ya da Yaşlı Jack sana tamamen güvenince Yaşlı Jack'in tezgahında satılır.
-almanac.hallows_eve.source.flaming_shield = Kutsanmışlar seni en yüksek saygıyla andığında Yaşlı Jack'in tezgahında satılır.
-almanac.hallows_eve.source.stall = Yaşlı Jack'in tezgahında satılır.
-almanac.hallows_eve.source.stall_or_lab = İtibarın yükseldikçe Yaşlı Jack'in tezgahında satılır ya da goblin laboratuvarındaki Goblin Tamircisinin Tezgahı'nda yapılır.
-almanac.hallows_eve.source.festival_stall = Yaşlı Jack'in tezgahındaki şenlik rafında satılır.
+almanac.hallows_eve.source.carved = Oyma Tezgahında oyulur ya da Yaşlı Jack'in dükkanından satın alınır.
+almanac.hallows_eve.source.jack_shield = Oyma Tezgahında oyulur ya da Yaşlı Jack'in dükkanından satın alınır.
+almanac.hallows_eve.source.burning_helm = Kutsanmışlar nezdinde Muhterem olunca ya da Yaşlı Jack sana tamamen güvenince Yaşlı Jack'in dükkanında satılır.
+almanac.hallows_eve.source.flaming_shield = Kutsanmışlar seni en yüksek saygıyla andığında Yaşlı Jack'in dükkanında satılır.
+almanac.hallows_eve.source.stall = Yaşlı Jack'in dükkanında satılır.
+almanac.hallows_eve.source.grave_candle = Yaşlı Jack'in dükkanında satılır, Süvari'nin Hazinesi de geri verir: her günün ilk zaferinden sonra bazen bir tane, ilk zor zaferinden sonra birkaç tane. Mezar Bekçisi onları partin için mezarlığını açmak üzere yakar, Yaşlı Jack da seni Müdavim saydığında bir avuç karşılığında bir Yanan Mezar Mumu verir.
+almanac.hallows_eve.source.burning_grave_candle = Yaşlı Jack seni Müdavim saydığında dükkanında satılır, ya da orada bir avuç Mezar Mumu karşılığında verilir. Mezar Bekçisi onları partin için Başsız Süvari'nin zor sürüşünü açmak üzere yakar.
+almanac.hallows_eve.source.stall_or_lab = İtibarın yükseldikçe Yaşlı Jack'in dükkanında satılır ya da goblin laboratuvarındaki Goblin Tamircisinin Tezgahı'nda yapılır.
+almanac.hallows_eve.source.festival_stall = Yaşlı Jack'in dükkanındaki şenlik rafında satılır.
 almanac.hallows_eve.source.keepsake = Yaşlı Jack'in hatırası, hikâyesini bitirdiğinde yılda bir kez verilir.
-almanac.hallows_eve.source.festival_favor = Şenlik Teveccühü yüksek olanlara şenlik tezgahlarında satılır.
+almanac.hallows_eve.source.festival_favor = Şenlik Teveccühü yüksek olanlara şenlik dükkanlarında satılır.
+almanac.hallows_eve.source.bomb_rare = Her zaman Süvari'nin Hazinesi'nde, bazen de günlük ödülünde. Ayrıca gecenin yaratıkları düşürür, Lanetli Jeotların içinden çıkar, Oyma Tezgahında oyulur ya da Yaşlı Jack'in dükkanından satın alınır.
+almanac.hallows_eve.source.bomb_epic_horseman = Jeot Hortlakları nadiren düşürür, Lanetli Jeotların ve Kutsanmışların zulasının içinden de nadiren çıkar, bazen de Başsız Süvari'nin günlük ödülünde bulunur. Oyma Tezgahında da oyabilir ya da Yaşlı Jack'in dükkanından günde birkaç tane satın alabilirsin.
+almanac.hallows_eve.source.hoard = Bazen Süvari'nin Hazinesi'nde, ona karşı her günün ilk zaferin için verilir.
+almanac.hallows_eve.source.hoard_hard = Yalnızca zor sürüşteki Süvari'nin Hazinesi'nde, ona karşı her günün ilk zor zaferin için verilir. Binici'yi bitirdiğinde Mezar Bekçisi'nden zor sürüşü iste.
+almanac.hallows_eve.source.hoard_normal = Yalnızca normal sürüşteki Süvari'nin Hazinesi'nde, orada ona karşı her günün ilk zaferin için verilir.
+almanac.hallows_eve.source.eternal_candle = Ara sıra zor sürüşteki Süvari'nin Hazinesi'nde, ona karşı her günün ilk zor zaferin için verilir. Yanında taşırsan Mezar Bekçisi, bir Mezar Mumu yakmadan normal mezarlığını partin için açar.
+almanac.hallows_eve.source.horseman_daily = Ara sıra Başsız Süvari'nin günlük ödülünde bulunur, ona karşı her günün ilk zaferin için verilir.
+almanac.hallows_eve.source.burning_helm_trade = Çantandaki bir Jack Miğferi karşılığında Yaşlı Jack'in dükkanından alınır, Kutsanmışlar seni muhterem sayınca ya da Yaşlı Jack sana tamamen güvenince. Bazen Süvari'nin Hazinesi'nde bulunur.
+almanac.hallows_eve.source.flaming_shield_trade = Çantandaki bir Jack Kalkanı karşılığında Yaşlı Jack'in dükkanından alınır, Kutsanmışlar seni en yüksek saygıyla andığında. Bazen Süvari'nin Hazinesi'nde bulunur.
+
+# ---- Süvari'nin sayfası ----
+almanac.hallows_eve.horseman.line = Yaşlı Jack'in yanındaki Mezar Bekçisi seni içeri alır. Arkadaşlarını getir.
+almanac.hallows_eve.horseman.button = Patron dövüşü rekorları
+almanac.hallows_eve.hoard.line = Her günün ilk zaferi, Hazinesini düştüğü yerdeki sandıkta ve Alınacaklar sekmesinde bırakır: bir Hayalet Fener Bombası ve Yaşlı Jack'in teveccühü, bazen de bir Mezar Mumu, Alevli Kutsanmış setten bir parça, bir Mezar Taşı ya da bir Kayıp Medeniyet Feneri. Zor sürüşün Hazinesi birkaç Mezar Mumu ve Kutsanmışların teveccühünü, alevli parçalar için daha iyi şansı, alevli göğüslüğünü ve ara sıra bir Ebedi Mum içerir. Sade zırhı günlük ödülünde gelir.

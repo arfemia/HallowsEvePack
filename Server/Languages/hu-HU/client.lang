@@ -1,2 +1,4 @@
 # Seasons of Orbis - client-namespace additions, hu-HU: the item-tooltip label of each stat this pack ships,
 # itemTooltip.stats.<StatId>, loaded as client.<key>. {value} is the client's own placeholder.
+itemTooltip.stats.ReputationGain_Hallows_Eve_Old_Jack = Öreg Jack Kegyszerzés: {value}%
+itemTooltip.stats.ReputationGain_Hallows_Eve_Hallowed = Megszentelt Kegyszerzés: {value}%

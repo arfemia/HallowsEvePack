@@ -2,9 +2,16 @@
 # encuentra cada una por su final, se llame como se llame este archivo. El aviso del conjunto es un toast, así que
 # ningún valor lleva marcado.
 gearset.hallows_eve_hallowed.title = Conjunto Consagrado
-gearset.hallows_eve_hallowed.tier_full = Yelmo puesto y escudo en mano: un poco más de salud, el fuego muerde menos, brillas como un farol y tu reputación con los Consagrados sube un poco.
+gearset.hallows_eve_hallowed.tier_full = Yelmo puesto y escudo en mano: un poco más de salud, el fuego muerde menos, brillas como un farol y ganas favor con los Consagrados un poco más deprisa.
+gearset.hallows_eve_hallowed.tier_pair = Una pieza del conjunto puesta y un Escudo de Jack en mano: un poco más de salud, el fuego muerde menos, brillas como un farol y ganas favor con los Consagrados un poco más deprisa.
+gearset.hallows_eve_hallowed.tier_armor = Yelmo, coraza, guanteletes y grebas puestos: un poco más de salud, y todo lo que prendas arde con más fuerza.
+gearset.hallows_eve_hallowed.tier_armor_shield = Las cuatro piezas puestas y escudo en mano: más salud aún, y tu fuego arde con más fuerza todavía.
+gearset.hallows_eve_flaming_hallowed.title = Conjunto Consagrado Llameante
+gearset.hallows_eve_flaming_hallowed.tier_armor = Yelmo ardiente y armadura llameante puestos: más salud, y todo lo que prendas arde con mucha más fuerza.
+gearset.hallows_eve_flaming_hallowed.tier_armor_shield = Las cuatro piezas puestas y el Escudo Llameante de Jack en mano: más salud aún, y tu fuego arde con más fuerza todavía.
 
 effect.hallows_eve_costume_jack.name = Disfraz de Esqueleto Jack
 effect.hallows_eve_costume_lost_soul.name = Disfraz de Alma Perdida
 effect.hallows_eve_lantern_burn.name = Quemadura
+effect.hallows_eve_fire_resistance.name = Resistencia al Fuego
 

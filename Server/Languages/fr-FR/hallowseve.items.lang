@@ -2,10 +2,19 @@
 # trouve chacune par sa fin, quel que soit le nom de ce fichier. L'avis de la panoplie est un toast, donc aucune
 # valeur ne porte de balise.
 gearset.hallows_eve_hallowed.title = Panoplie Sanctifiée
-gearset.hallows_eve_hallowed.tier_full = Heaume sur la tête et bouclier en main : un peu plus de santé, le feu mord moins, tu brilles comme une lanterne et ta réputation auprès des Sanctifiés reçoit un coup de pouce.
+gearset.hallows_eve_hallowed.tier_full = Heaume sur la tête et bouclier en main : un peu plus de santé, le feu mord moins, tu brilles comme une lanterne et tu gagnes la faveur des Sanctifiés un peu plus vite.
+gearset.hallows_eve_hallowed.tier_pair = Une pièce de la panoplie sur le dos et un Bouclier de Jack en main : un peu plus de santé, le feu mord moins, tu brilles comme une lanterne et tu gagnes la faveur des Sanctifiés un peu plus vite.
+gearset.hallows_eve_hallowed.tier_armor = Heaume, plastron, gantelets et jambières sur toi : un peu plus de santé, et tout ce que tu enflammes brûle plus fort.
+gearset.hallows_eve_hallowed.tier_armor_shield = Les quatre sur toi et le bouclier en main : encore plus de santé, et ton feu brûle plus fort encore.
+gearset.hallows_eve_flaming_hallowed.title = Panoplie Sanctifiée Enflammée
+gearset.hallows_eve_flaming_hallowed.tier_armor = Heaume ardent et armure enflammée sur toi : plus de santé, et tout ce que tu enflammes brûle beaucoup plus fort.
+gearset.hallows_eve_flaming_hallowed.tier_armor_shield = Les quatre sur toi et le Bouclier de Jack Enflammé en main : encore plus de santé, et ton feu brûle plus fort encore.
 
 # The costumes' names, shown when a player hovers the costume's icon. The effect JSON spells the full
 # key (hallowseve.items.effect...), because the client reads an effect's Name exactly as written.
 effect.hallows_eve_costume_jack.name = Costume de Squelette Jack
 effect.hallows_eve_costume_lost_soul.name = Costume d'Âme Perdue
 effect.hallows_eve_lantern_burn.name = Brûlure
+
+# The Fire Resistance Potion's buff, shown when a player hovers its icon.
+effect.hallows_eve_fire_resistance.name = Résistance au feu

@@ -20,3 +20,26 @@ calendar.harvest_moon.herald.end.sub = Le notti tornano tranquille.
 
 # ---- Ritrovamenti ----
 notify.hallows_eve_geode_found = Una Geode Maledetta, lì tra le macerie.
+
+# ---- Il combattimento del Cavaliere senza Testa ----
+notify.hallows_eve_horseman_unhorsed = Il Cavaliere è sbalzato di sella!
+notify.hallows_eve_horseman_head_off = La sua testa vola via! Abbattila e potrà essere ferito di nuovo.
+notify.hallows_eve_horseman_head_down = La testa cade. Abbattilo!
+notify.hallows_eve_horseman_head_returned = La testa torna da lui, e le sue ferite si chiudono.
+notify.hallows_eve_horseman_wrath = Il Cavaliere brucia di rabbia!
+notify.hallows_eve_horseman_engaged = Il Cavaliere senza Testa cavalca!
+notify.hallows_eve_horseman_engaged.sub = Stai lontano dagli anelli luminosi. Quando la sua testa vola via, abbattila.
+notify.hallows_eve_horseman_defeated = Il Cavaliere senza Testa cade!
+notify.hallows_eve_horseman_wiped = Il Cavaliere cavalca ancora.
+notify.hallows_eve_horseman_wiped.sub = Abbatti la sua testa quando vola via. Non si può ferire finché è libera, e se torna da lui, si cura.
+claim.hallows_eve_horseman_chase = Il Tesoro del Cavaliere
+claim.hallows_eve_horseman_chase_hard = Il Tesoro del Cavaliere (Difficile)
+dungeon.hallows_eve_graveyard.name = Il Cimitero del Cavaliere
+dungeon.hallows_eve_graveyard.description = Un cimitero cintato dove il Cavaliere senza Testa cavalca di notte. Porta degli amici.
+dungeon.hallows_eve_graveyard.goal = Sconfiggi il Cavaliere senza Testa. Quando la sua testa vola via, abbattila, o non si può ferire.
+dungeon.hallows_eve_graveyard_hard.name = Il Cimitero del Cavaliere (Difficile)
+dungeon.hallows_eve_graveyard_hard.description = Qui il Cavaliere senza Testa cavalca più forte, e lascia cose che non lascia da nessun'altra parte. Porta più amici.
+dungeon.hallows_eve_graveyard_hard.goal = Sconfiggi il Cavaliere senza Testa nella cavalcata difficile. Quando la sua testa vola via, abbattila, o non si può ferire.
+dungeon.hallows_eve_graveyard.cost_hint = Il Vecchio Jack vende Candele Funebri nel suo negozio nel Tempio Dimenticato.
+dungeon.hallows_eve_graveyard_hard.cost_hint = Il Vecchio Jack vende Candele Funebri Ardenti nel suo negozio nel Tempio Dimenticato, quando ti considera un Habitué.
+dungeon.hallows_eve_graveyard.confirm = Accendi la Candela

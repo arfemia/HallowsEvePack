@@ -14,11 +14,11 @@ reputation.seasons_of_orbis_festival.rank.festival_tier_3 = Exalté IV
 currency.seasons_of_orbis_festival_token.name = Jeton de festival
 
 # ---- The festival shelf ----
-shop.seasons_of_orbis_festival_stall.title = Étal du festival
+shop.seasons_of_orbis_festival_stall.title = Boutique du festival
 shop.seasons_of_orbis_festival_stall.desc = Des décorations du festival de chaque saison, contre des jetons de festival.
 shop.seasons_of_orbis_festival_stall.category.festival = Étagère du festival
 # Not used by the pack itself: the words for a server owner's Almanac link that opens the stall all year.
-almanac.seasons_of_orbis.link.festival_stall = Visiter l'étal du festival
+almanac.seasons_of_orbis.link.festival_stall = Visiter la boutique du festival
 
 # ---- The Seasons of Orbis ladder ----
 achievement.seasons_of_orbis_rung_1.title = De saison en saison
