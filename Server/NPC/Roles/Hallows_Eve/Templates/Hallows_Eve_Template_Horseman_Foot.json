@@ -11,7 +11,7 @@
     "The combat evaluator (_CombatConfig on each Variant) picks his actions and drives the Combat",
     "sub-states. .Default aims, keeps DesiredAttackDistanceRange and fires the picked ability.",
     ".Charge is his dash: half a second locked on at 10 degrees, then a one-second wind-up he cannot",
-    "be knocked out of, in which he plays his model's DashPrepare set (the wind-up screech), kicks",
+    "be knocked out of, in which he plays his model's DashPrepare set (the wind-up war cry), kicks",
     "up dust and glows (Hallows_Eve_Horseman_Dash_Glow, with a warning marker on the ground ahead",
     "of him); then he launches with a burst of flame (SFX_Staff_Flame_Fireball_Launch) and charges",
     "20 blocks a second for CombatChargeDistance, roaring like a torch while he runs",
@@ -277,7 +277,7 @@
                       ]
                     },
                     {
-                      "$Comment": "WindingUp: the screech, the dust and the glow, once.",
+                      "$Comment": "WindingUp: the war cry, the dust and the glow, once.",
                       "Sensor": { "Type": "ChargeState", "States": [ "WindingUp" ] },
                       "Instructions": [
                         {

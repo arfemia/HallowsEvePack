@@ -1,0 +1,21 @@
+{
+  "$Comment": "Takes the Headless Horseman's shield (Hallows_Eve_Horseman_Invulnerable) off him, the way the game's Feastmaster loses its feeding shield (Dungeon_Feastmaster_Clear_Shield). His fight's script runs it where he stands (Root_Hallows_Eve_Horseman_Clear_Shield): the Selector finds every creature within Range of that spot, players never, and clears the shield from each, so only he, the one wearing it, changes. Range only needs to reach him from where he stood a moment before. EntityEffectId names the effect it clears: change it with the script's ShieldEffect.",
+  "Type": "Selector",
+  "RunTime": 0.1,
+  "Selector": {"Id": "AOECircle", "Range": 3},
+  "IgnoreOwner": true,
+  "HitEntityRules": [
+    {
+      "Matchers": [{"Type": "Player", "Invert": true}],
+      "Next": {
+        "Interactions": [
+          {
+            "Type": "ClearEntityEffect",
+            "EntityEffectId": "Hallows_Eve_Horseman_Invulnerable",
+            "Entity": "Target"
+          }
+        ]
+      }
+    }
+  ]
+}

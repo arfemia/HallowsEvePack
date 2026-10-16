@@ -2,11 +2,12 @@
   "$Comment": [
     "The Headless Horseman's last phase, his wrath: his fight's third behavior slot runs it.",
     "",
-    "As it starts, a Head still flying is taken away and he can be hurt, his wrath goes on him",
-    "(WrathEffect: harder hits, more speed, a red glow), two more Jack Skeletons rise, the music",
-    "turns to its last movement and the members are told. Then every Interval seconds a volley falls",
-    "on the players (the shared Macro_Orbis_Boss_Volley), each bomb leaving a fire patch where it",
-    "lands. Its flags are named Horseman_ and cleared by Macro_Hallows_Eve_Horseman_Reset."
+    "As it starts, a Head still flying is taken away and he can be hurt (ShieldClear takes off the",
+    "shield he wears while it flies), his wrath goes on him (WrathEffect: harder hits, more speed,",
+    "a red glow), two more Jack Skeletons rise, the music turns to its last movement and the",
+    "members are told. Then every Interval seconds a volley falls on the players (the shared",
+    "Macro_Orbis_Boss_Volley), each bomb leaving a fire patch where it lands. Its flags are named",
+    "Horseman_ and cleared by Macro_Hallows_Eve_Horseman_Reset."
   ],
   "Class": "Instruction",
   "Type": "Component",
@@ -39,6 +40,10 @@
     "VolleyRange": {
       "Value": 45,
       "Description": "How far from the script's entity a player may stand and still be a volley's target."
+    },
+    "ShieldClear": {
+      "Value": "Root_Hallows_Eve_Horseman_Clear_Shield",
+      "Description": "The interaction run where he stands to take off the shield a flying Head left on him."
     }
   },
   "Content": {
@@ -72,7 +77,7 @@
         ]
       },
       {
-        "$Comment": "As the phase starts: his wrath, his last adds, the music and the news.",
+        "$Comment": "As the phase starts: no shield, his wrath, his last adds, the music and the news.",
         "Continue": true,
         "Sensor": {
           "Type": "And",
@@ -106,6 +111,12 @@
           {
             "Type": "SetTargetNPCInvulnerable",
             "Invulnerable": false
+          },
+          {
+            "Type": "SpawnInteraction",
+            "PositionSource": "Sensor",
+            "Interaction": { "Compute": "ShieldClear" },
+            "OrientationSource": "Absolute"
           },
           {
             "Type": "ApplyEntityEffect",

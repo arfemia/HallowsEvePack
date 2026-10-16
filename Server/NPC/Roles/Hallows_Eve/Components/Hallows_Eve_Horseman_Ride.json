@@ -23,7 +23,7 @@
     "Lap: eight points 7 blocks from the fountain's centre and 7 blocks up, round in order for",
     "LapTime, about one or two laps. Swoop: the game's own Charge on a flier, shaped like its",
     "Gobliterator's dash: half a second locked on to his target, then a one-second wind-up in which",
-    "he rears, screeches and glows (Hallows_Eve_Horseman_Swoop_Glow) while a warning ring",
+    "his horse rears and screams and he glows (Hallows_Eve_Horseman_Swoop_Glow) while a warning ring",
     "(Feastmaster_Slam_Warning) lights on the ground where his target stands, then he charges at 20",
     "blocks a second straight down through that spot, which a wind-up that never turns",
     "(WindingUpRelativeTurnSpeed 0) keeps true, until the ground stops him, and fights low from",
@@ -467,7 +467,7 @@
         ]
       },
       {
-        "$Comment": "Swoop: the game's Charge on his flier. LockedOn 0.5 s at 10 degrees, then a 1 s wind-up that never turns (rearing, screech, glow, and a ring where his target stands), then 20 blocks a second down through that spot until the ground stops him; then he fights low. Its charge states follow the Charge in this list, as the game's own bosses lay theirs out.",
+        "$Comment": "Swoop: the game's Charge on his flier. LockedOn 0.5 s at 10 degrees, then a 1 s wind-up that never turns (rearing, a horse's scream, glow, and a ring where his target stands), then 20 blocks a second down through that spot until the ground stops him; then he fights low. Its charge states follow the Charge in this list, as the game's own bosses lay theirs out.",
         "Sensor": {
           "Type": "State",
           "State": ".Swoop"
@@ -517,7 +517,7 @@
                 ]
               },
               {
-                "$Comment": "WindingUp: he rears and screeches, glows, and a ring lights on the ground where his target stands, the spot he will charge through.",
+                "$Comment": "WindingUp: his horse rears and screams (its Alerted neigh with the game's horse scream, SFX_Horse_Death, over it), he glows, and a ring lights on the ground where his target stands, the spot he will charge through.",
                 "Sensor": { "Type": "ChargeState", "States": [ "WindingUp" ] },
                 "Instructions": [
                   {
@@ -525,7 +525,7 @@
                     "Sensor": { "Type": "Any", "Once": true },
                     "Actions": [
                       { "Type": "PlayAnimation", "Animation": "Alerted", "Slot": "Action" },
-                      { "Type": "PlaySound", "SoundEventId": "SFX_Hedera_Scream" },
+                      { "Type": "PlaySound", "SoundEventId": "SFX_Horse_Death" },
                       { "Type": "ApplyEntityEffect", "UseTarget": false, "EntityEffect": "Hallows_Eve_Horseman_Swoop_Glow" }
                     ]
                   },

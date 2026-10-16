@@ -1,0 +1,23 @@
+{
+  "$Comment": "The shield the Headless Horseman wears while his head is flying and nothing can hurt him: the game's own boss shield, the look its Feastmaster wears while it feeds (Dungeon_Feastmaster_Invulnerable), a glowing bubble round him, a ring of shields turning about it and a tint over his body. His fight's script puts it on him as his head flies off (Macro_Hallows_Eve_Horseman_Head, ShieldEffect) and takes it off with Root_Hallows_Eve_Horseman_Clear_Shield when the head is cut down or flies back, when his wrath begins and when the fight resets. It only changes how he looks: the script makes him invulnerable on its own. Duration is a backstop in case nothing takes it off, so keep it a little over the longest HeadSeconds. Scale sizes the bubble and the ring, and PositionOffset Y lifts each from his feet to about his middle.",
+  "ApplicationEffects": {
+    "EntityBottomTint": "#d6d64f",
+    "Particles": [
+      {
+        "SystemId": "Dungeon_Feastmaster_State_Invulnerable",
+        "TargetEntityPart": "Entity",
+        "Scale": 0.6,
+        "PositionOffset": {"Y": 1.15}
+      },
+      {
+        "SystemId": "Dungeon_Feastmaster_State_Protected",
+        "TargetEntityPart": "Entity",
+        "Scale": 0.6,
+        "PositionOffset": {"Y": 0.9}
+      }
+    ]
+  },
+  "OverlapBehavior": "Overwrite",
+  "Debuff": false,
+  "Duration": 30
+}

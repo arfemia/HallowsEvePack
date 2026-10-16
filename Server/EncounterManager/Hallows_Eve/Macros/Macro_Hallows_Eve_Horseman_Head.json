@@ -5,9 +5,11 @@
     "As it starts, two Jack Skeletons rise beside the fight and the members are told he is thrown;",
     "he lands invulnerable from his fall and can be hurt LandingSeconds later. FirstTossSeconds after",
     "he is thrown his head flies off for the first time, and TossSeconds after each flight ends it",
-    "flies again: his body cannot be hurt while it flies (it keeps fighting), and the Head (HeadRole,",
-    "raised beside the fight and bound into the Head slot) circles the players. Kill the Head and he",
-    "can bleed again; leave it HeadSeconds and it flies back, removed, and he heals (MendEffect).",
+    "flies again: his body cannot be hurt while it flies (it keeps fighting) and wears a shield to",
+    "show it (ShieldEffect, the game's Feastmaster shield), and the Head (HeadRole, raised beside the",
+    "fight and bound into the Head slot) circles the players. Kill the Head and he can bleed again;",
+    "leave it HeadSeconds and it flies back, removed, and he heals (MendEffect). Either way",
+    "ShieldClear, run where he stands, takes the shield off; his wrath and a reset take it off too.",
     "Each turn tells the members what happened through a feedback moment.",
     "",
     "When a flight ends, either way, it sets Horseman_Head_Flown: his fight's phase 3 transition",
@@ -47,6 +49,14 @@
     "MendEffect": {
       "Value": "Hallows_Eve_Horseman_Mend",
       "Description": "The heal he gets when the Head returns unharmed."
+    },
+    "ShieldEffect": {
+      "Value": "Hallows_Eve_Horseman_Invulnerable",
+      "Description": "The shield he wears while the Head flies, so players can see he cannot be hurt."
+    },
+    "ShieldClear": {
+      "Value": "Root_Hallows_Eve_Horseman_Clear_Shield",
+      "Description": "The interaction run where he stands to take ShieldEffect off him when a flight ends. It names the effect it clears, so change the two together."
     },
     "AddRole": {
       "Value": "Hallows_Eve_Jack_Skeleton",
@@ -211,7 +221,7 @@
         ]
       },
       {
-        "$Comment": "...and he heals and can be hurt again.",
+        "$Comment": "...and he heals, his shield comes off and he can be hurt again.",
         "Continue": true,
         "Sensor": {
           "Type": "And",
@@ -243,6 +253,12 @@
             "Invulnerable": false
           },
           {
+            "Type": "SpawnInteraction",
+            "PositionSource": "Sensor",
+            "Interaction": { "Compute": "ShieldClear" },
+            "OrientationSource": "Absolute"
+          },
+          {
             "Type": "SetFlag",
             "Name": "Horseman_Head_Out",
             "SetTo": false
@@ -271,7 +287,7 @@
         ]
       },
       {
-        "$Comment": "The Head was struck down: he can be hurt again.",
+        "$Comment": "The Head was struck down: his shield comes off and he can be hurt again.",
         "Continue": true,
         "Sensor": {
           "Type": "And",
@@ -305,6 +321,12 @@
             "Invulnerable": false
           },
           {
+            "Type": "SpawnInteraction",
+            "PositionSource": "Sensor",
+            "Interaction": { "Compute": "ShieldClear" },
+            "OrientationSource": "Absolute"
+          },
+          {
             "Type": "SetFlag",
             "Name": "Horseman_Head_Out",
             "SetTo": false
@@ -333,7 +355,7 @@
         ]
       },
       {
-        "$Comment": "Time for the head to fly: his body cannot be hurt, a burst of flame, and the Head rises.",
+        "$Comment": "Time for the head to fly: his body cannot be hurt and wears his shield, a burst of flame, and the Head rises.",
         "Continue": true,
         "Sensor": {
           "Type": "And",
@@ -363,6 +385,11 @@
           {
             "Type": "SetTargetNPCInvulnerable",
             "Invulnerable": true
+          },
+          {
+            "Type": "ApplyEntityEffect",
+            "EntityEffect": { "Compute": "ShieldEffect" },
+            "UseTarget": true
           },
           {
             "Type": "SpawnParticles",

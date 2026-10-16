@@ -61,7 +61,7 @@
         "PlayerTimer": "Horseman_P1_Volley_Player"
       },
       "Phase2Transition": {
-        "HealthRange": [ 0, 0.66 ],
+        "HealthRange": [ 0, 0.6 ],
         "NextRole": "Hallows_Eve_Headless_Horseman_HM",
         "MusicPhase": "Phase2",
         "Invulnerable": true,

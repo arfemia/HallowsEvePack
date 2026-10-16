@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Headless Horseman on foot: the game's Burnt Knight skeleton with its skull gone, a fire burning where his head was, and a lit jack-o'-lantern swinging from his left hand. Parent Skeleton_Burnt_Knight brings the burnt bones' texture, the hitbox and every animation; Model is this pack's copy of the Skeleton's shape with the skull's three shapes hidden (tools/derive_art.py writes it), so the animations still find every node. DefaultAttachments replaces the parent's list whole: the knight's chest piece and the ancient steel legs and gauntlets stay, and his helm and glowing eyes go, since there is no head to wear them. The flame is the Incandescent skull's own fire on the Head node. AnimationSets adds only the five sets his dash plays (his roles stand on Hallows_Eve_Template_Horseman_Foot, whose charge asks for DashPrepare, Dash, DashImpact, DashMiss and DashCrash), pointed at the skeleton's own animations; every other set still comes from the parent. DashPrepare carries his wind-up screech (SFX_Hedera_Scream). MinScale and MaxScale fix his size at a quarter again a skeleton's; Light is the lantern's glow, a model light that moves with him, each hex digit a red, green or blue level from 0 to f.",
+  "$Comment": "The Headless Horseman on foot: the game's Burnt Knight skeleton with its skull gone, a fire burning where his head was, and a lit jack-o'-lantern swinging from his left hand. Parent Skeleton_Burnt_Knight brings the burnt bones' texture, the hitbox and every animation; Model is this pack's copy of the Skeleton's shape with the skull's three shapes hidden (tools/derive_art.py writes it), so the animations still find every node. DefaultAttachments replaces the parent's list whole: the knight's chest piece and the ancient steel legs and gauntlets stay, and his helm and glowing eyes go, since there is no head to wear them. The flame is the Incandescent skull's own fire on the Head node. AnimationSets adds only the five sets his dash plays (his roles stand on Hallows_Eve_Template_Horseman_Foot, whose charge asks for DashPrepare, Dash, DashImpact, DashMiss and DashCrash), pointed at the skeleton's own animations; every other set still comes from the parent. DashPrepare carries his wind-up war cry (SFX_Skeleton_Elite_Downstrike_Charging, the cry the game's elite skeleton gives as it winds up its charged downstrike). MinScale and MaxScale fix his size at a quarter again a skeleton's; Light is the lantern's glow, a model light that moves with him, each hex digit a red, green or blue level from 0 to f.",
   "Parent": "Skeleton_Burnt_Knight",
   "Model": "NPC/Hallows_Eve/Headless_Horseman/Headless_Horseman.blockymodel",
   "Icon": "Icons/ModelsGenerated/Hallows_Eve_Headless_Horseman.png",
@@ -29,7 +29,7 @@
         {
           "Animation": "NPC/Undead/Skeleton/Animations/Default/Alerted.blockyanim",
           "Looping": false,
-          "SoundEventId": "SFX_Hedera_Scream"
+          "SoundEventId": "SFX_Skeleton_Elite_Downstrike_Charging"
         }
       ]
     },

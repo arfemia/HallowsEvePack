@@ -1,0 +1,4 @@
+{
+  "$Comment": "Takes the Headless Horseman's shield off him, the id his fight's script spawns where he stands when his head stops flying (Macro_Hallows_Eve_Horseman_Head, ShieldClear), when his wrath begins and when the fight resets. It runs Hallows_Eve_Horseman_Clear_Shield.",
+  "Interactions": ["Hallows_Eve_Horseman_Clear_Shield"]
+}
