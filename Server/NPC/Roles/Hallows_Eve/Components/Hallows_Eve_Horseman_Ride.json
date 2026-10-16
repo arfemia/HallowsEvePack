@@ -8,20 +8,22 @@
     "template's own chase flies him. On the hard ride the template keeps aiming and throwing his",
     "bomb throughout.",
     "",
-    "He loops through these moves. Dive: he flies straight back at his target and down into his",
-    "role's MotionDesiredAltitudeCombat band (1 to 3 blocks up), until he is within DiveReach of",
-    "the player or DiveTimeLimit runs out. Engage: for EngageTime he fights low with the template's",
-    "own chase, where a sword reaches him. Then he breaks off, and the first of these that is due",
-    "wins: his first fountain lap (FirstLapAfter into the ride, always), a bomb pass (FirstLineAfter,",
-    "then every LineGap), a second or third lap (each LapGap after the last, an even chance against",
-    "a swing, never more than three), else a swing. Swing: for SwingTime he flies at full speed",
-    "between random points 7 to 9 blocks up on an oval round the graveyard's fountain, about 12",
-    "blocks out along the road and 9 across it, inside the road's barrier walls and above the",
-    "fountain's brazier. When a swing, a lap or a bomb pass ends (Break_End) he dives again, unless",
-    "a swoop is due (FirstSwoopAfter, then every SwoopGap) and his target is within SwoopRange.",
+    "He loops through these moves. Dive: he flies straight at a point 2 blocks above his target, so",
+    "he comes down on one line from wherever he is instead of dropping low early and skimming the",
+    "graves and the fountain, until he is within DiveReach of the player or DiveTimeLimit runs out.",
+    "Engage: for EngageTime he fights low with the template's own chase, in his role's",
+    "MotionDesiredAltitudeCombat band (1 to 3 blocks up), where a sword reaches him. Then he breaks",
+    "off, and the first of these that is due wins: his first fountain lap (FirstLapAfter into the",
+    "ride, always), a bomb pass (FirstLineAfter, then every LineGap), a second or third lap (each",
+    "LapGap after the last, an even chance against a swing, never more than three), else a swing.",
+    "Swing: for SwingTime he flies at full speed between random points 8 or 9 blocks up on an oval",
+    "round the graveyard's fountain, about 12 blocks out along the road and 6.5 to 9 across it, at",
+    "least 4 blocks inside the road's barrier walls and well above the fountain's brazier (its top is",
+    "6 blocks up). When a swing, a lap or a bomb pass ends (Break_End) he dives again, unless a swoop",
+    "is due (FirstSwoopAfter, then every SwoopGap) and his target is within SwoopRange.",
     "",
-    "Lap: eight points 7 blocks from the fountain's centre and 7 blocks up, round in order for",
-    "LapTime, about one or two laps. Swoop: the game's own Charge on a flier, shaped like its",
+    "Lap: eight points 7 blocks from the fountain's centre and 8 blocks up, 2 over its brazier, round",
+    "in order for LapTime, about one or two laps. Swoop: the game's own Charge on a flier, shaped like its",
     "Gobliterator's dash: half a second locked on to his target, then a one-second wind-up in which",
     "his horse rears and screams and he glows (Hallows_Eve_Horseman_Swoop_Glow) while a warning ring",
     "(Feastmaster_Slam_Warning) lights on the ground where his target stands, then he charges at 20",
@@ -29,7 +31,7 @@
     "(WindingUpRelativeTurnSpeed 0) keeps true, until the ground stops him, and fights low from",
     "there. A player in his path takes the Burnt Praetorian's charge hit; his own creatures never",
     "do (no NPCCollisionInteraction). If he cannot lock on within SwoopLockLimit he dives instead.",
-    "Bomb pass: he flies to a point 7 blocks above the road 12 blocks north or south of his target",
+    "Bomb pass: he flies to a point 8 blocks above the road 12 blocks north or south of his target",
     "(an even chance), and as he starts his pass to the far end a row of six warning rings",
     "(Stalactite_Ground_Indicator) lights along the road through where his target stood, 4 blocks",
     "apart, with a bomb (LineDrop) falling onto each that lands about 2 seconds later, as he thunders",
@@ -37,9 +39,14 @@
     "one move: the rings come from where he and his target are, so they stay in step with no",
     "message between script and role, and the arena needs no extra tagged points.",
     "",
-    "Caught on something low (the fountain's brazier, a wall) while he dives, fights low, swings or",
-    "passes, for ClimbTime he flies at a point 10 blocks above the fountain's centre, up and away",
-    "from whatever held him, then carries on over it.",
+    "Unstick: his flight stops dead against any block it touches and never slides along it, so when",
+    "he touches one (the fountain's pillar, a barrier wall, a gravestone) in any move but a swoop, he",
+    "spends UnstickTime on the way out the game gives its own flying hunters when they stick: a",
+    "Wander, which tests the directions round him and flies off along the clearest, toward his",
+    "combat band. Then he carries on with the move he was in, whose timers kept running. It starts",
+    "only when no unstick is running, so a second touch picks a fresh direction. It waits on the",
+    "blocked flag his flight sets on each touch, not on a path-finding state, which the Wander",
+    "leaves as it was and so could keep him wandering.",
     "",
     "A timer starts only once in an NPC's life (TimerStart does nothing after that), so every move",
     "here arms its timer with a TimerStart and a TimerRestart together; TimerRestart draws from the",
@@ -152,9 +159,9 @@
       "Value": "Root_Hallows_Eve_Horseman_Line_Drop",
       "Description": "The root interaction dropped onto each ring of a bomb pass. It should fall from high above, about 2 seconds."
     },
-    "ClimbTime": {
+    "UnstickTime": {
       "Value": [ 1, 1 ],
-      "Description": "Seconds he climbs toward the point above the fountain when something blocks him."
+      "Description": "Seconds he spends flying clear of a block he touched before he carries on with his move."
     }
   },
   "Content": {
@@ -177,30 +184,47 @@
         ]
       },
       {
-        "$Comment": "Dive: straight back at his target and down into sword reach.",
+        "$Comment": "Unstick, armed: his flight touched a block (the blocked flag) in any move but a swoop, and no unstick is running.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            { "Type": "Eval", "Expression": "blocked" },
+            { "Type": "Timer", "Name": "Hallows_Eve_Horseman_Unstick", "State": "Stopped" },
+            { "Type": "Not", "Sensor": { "Type": "State", "State": ".Swoop" } }
+          ]
+        },
+        "Actions": [
+          { "Type": "TimerStart", "Name": "Hallows_Eve_Horseman_Unstick", "StartValueRange": { "Compute": "UnstickTime" }, "RestartValueRange": { "Compute": "UnstickTime" } },
+          { "Type": "TimerRestart", "Name": "Hallows_Eve_Horseman_Unstick" }
+        ]
+      },
+      {
+        "$Comment": "Unstick, running: the template's own stuck move (its Chase state's Wander), testing up to 8 directions a tick and flying the clearest at full speed for its 1 second walk, toward his combat band. Every other move waits for it.",
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            { "Type": "Timer", "Name": "Hallows_Eve_Horseman_Unstick", "State": "Running" },
+            { "Type": "Not", "Sensor": { "Type": "State", "State": ".Swoop" } }
+          ]
+        },
+        "BodyMotion": {
+          "Type": "Wander",
+          "DesiredAltitudeWeight": 1,
+          "RelativeSpeed": 1,
+          "MinWalkTime": 1,
+          "MaxWalkTime": 1,
+          "MaxHeadingChange": 180,
+          "TestsPerTick": 8
+        }
+      },
+      {
+        "$Comment": "Dive: straight at a point just above his target, into sword reach.",
         "Sensor": {
           "Type": "State",
           "State": ".Dive"
         },
         "Instructions": [
-          {
-            "$Comment": "Blocked: rise for ClimbTime.",
-            "Continue": true,
-            "Sensor": { "Type": "Or", "Sensors": [ { "Type": "Eval", "Expression": "blocked" }, { "Type": "Nav", "NavStates": [ "Blocked", "Aborted", "Defer" ] } ] },
-            "Actions": [
-              { "Type": "TimerStart", "Name": "Hallows_Eve_Horseman_Climb", "StartValueRange": { "Compute": "ClimbTime" }, "RestartValueRange": { "Compute": "ClimbTime" } },
-              { "Type": "TimerRestart", "Name": "Hallows_Eve_Horseman_Climb" }
-            ]
-          },
-          {
-            "Sensor": { "Type": "Timer", "Name": "Hallows_Eve_Horseman_Climb", "State": "Running" },
-            "Instructions": [
-              {
-                "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 0, 10, 7 ] },
-                "BodyMotion": { "Type": "Seek", "DesiredAltitudeWeight": 0, "RelativeSpeed": 1, "SlowDownDistance": 1, "StopDistance": 0.5 }
-              }
-            ]
-          },
           {
             "$Comment": "In reach, or the dive took too long: fight low for EngageTime.",
             "Sensor": {
@@ -217,46 +241,25 @@
             ]
           },
           {
-            "$Comment": "DesiredAltitudeWeight 1 holds him to the role's MotionDesiredAltitudeCombat band as he closes.",
-            "Sensor": {
-              "Type": "Target"
-            },
+            "$Comment": "A point 2 blocks above his target's feet, inside the combat band he fights in. DesiredAltitudeWeight 0 lets that point's height steer him, so he holds his height until the line brings him down instead of sinking into the band at once.",
+            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Target" }, "Offset": [ 0, 2, 0 ] },
             "BodyMotion": {
               "Type": "Seek",
-              "DesiredAltitudeWeight": 1,
+              "DesiredAltitudeWeight": 0,
               "RelativeSpeed": { "Compute": "DiveSpeed" },
-              "SlowDownDistance": 5,
-              "StopDistance": 2.5
+              "SlowDownDistance": 4,
+              "StopDistance": 1
             }
           }
         ]
       },
       {
-        "$Comment": "Engage: no move of his own unless blocked, so the template's chase holds him low over his target. When EngageTime runs out he breaks off: the first that is due of his first lap, a bomb pass, a second or third lap roll, else a swing.",
+        "$Comment": "Engage: no move of his own, so the template's chase holds him low over his target. When EngageTime runs out he breaks off: the first that is due of his first lap, a bomb pass, a second or third lap roll, else a swing.",
         "Sensor": {
           "Type": "State",
           "State": ".Engage"
         },
         "Instructions": [
-          {
-            "$Comment": "Blocked: rise for ClimbTime.",
-            "Continue": true,
-            "Sensor": { "Type": "Or", "Sensors": [ { "Type": "Eval", "Expression": "blocked" }, { "Type": "Nav", "NavStates": [ "Blocked", "Aborted", "Defer" ] } ] },
-            "Actions": [
-              { "Type": "TimerStart", "Name": "Hallows_Eve_Horseman_Climb", "StartValueRange": { "Compute": "ClimbTime" }, "RestartValueRange": { "Compute": "ClimbTime" } },
-              { "Type": "TimerRestart", "Name": "Hallows_Eve_Horseman_Climb" }
-            ]
-          },
-          {
-            "Continue": true,
-            "Sensor": { "Type": "Timer", "Name": "Hallows_Eve_Horseman_Climb", "State": "Running" },
-            "Instructions": [
-              {
-                "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 0, 10, 7 ] },
-                "BodyMotion": { "Type": "Seek", "DesiredAltitudeWeight": 0, "RelativeSpeed": 1, "SlowDownDistance": 1, "StopDistance": 0.5 }
-              }
-            ]
-          },
           {
             "$Comment": "His first lap, always, at the first break-off once FirstLapAfter has passed.",
             "Sensor": {
@@ -366,33 +369,15 @@
         ]
       },
       {
-        "$Comment": "Swing: high and fast between random points on an oval round the fountain's centre (about 12 blocks out along the road, 9 across it, 7 to 9 blocks up), until SwingTime runs out (then Break_End).",
+        "$Comment": "Swing: high and fast between random points on an oval round the fountain's centre (about 12 blocks out along the road, 6.5 to 9 across it, 8 or 9 blocks up), until SwingTime runs out (then Break_End). The four corner points sit 6.5 blocks to either side of the road's middle, 4 blocks short of its barrier walls, so a full-speed arrival has room to turn.",
         "Sensor": {
           "Type": "State",
           "State": ".Swing"
         },
         "Instructions": [
           {
-            "$Comment": "Blocked: rise for ClimbTime.",
-            "Continue": true,
-            "Sensor": { "Type": "Or", "Sensors": [ { "Type": "Eval", "Expression": "blocked" }, { "Type": "Nav", "NavStates": [ "Blocked", "Aborted", "Defer" ] } ] },
-            "Actions": [
-              { "Type": "TimerStart", "Name": "Hallows_Eve_Horseman_Climb", "StartValueRange": { "Compute": "ClimbTime" }, "RestartValueRange": { "Compute": "ClimbTime" } },
-              { "Type": "TimerRestart", "Name": "Hallows_Eve_Horseman_Climb" }
-            ]
-          },
-          {
             "Sensor": { "Type": "Timer", "Name": "Hallows_Eve_Horseman_Swing", "State": "Stopped" },
             "Actions": [ { "Type": "State", "State": ".Break_End" } ]
-          },
-          {
-            "Sensor": { "Type": "Timer", "Name": "Hallows_Eve_Horseman_Climb", "State": "Running" },
-            "Instructions": [
-              {
-                "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 0, 10, 7 ] },
-                "BodyMotion": { "Type": "Seek", "DesiredAltitudeWeight": 0, "RelativeSpeed": 1, "SlowDownDistance": 1, "StopDistance": 0.5 }
-              }
-            ]
           },
           {
             "$Comment": "Every SwingLegTime a fresh random point. DesiredAltitudeWeight 0 lets the point's own height win over his low combat band.",
@@ -404,7 +389,7 @@
                 "BodyMotion": { "Type": "Seek", "DesiredAltitudeWeight": 0, "RelativeSpeed": { "Compute": "SwingSpeed" }, "SlowDownDistance": 2, "StopDistance": 1 }
               },
               {
-                "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 8.5, 7, -1.5 ] },
+                "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 6.5, 8, -1.5 ] },
                 "BodyMotion": { "Type": "Seek", "DesiredAltitudeWeight": 0, "RelativeSpeed": { "Compute": "SwingSpeed" }, "SlowDownDistance": 2, "StopDistance": 1 }
               },
               {
@@ -412,7 +397,7 @@
                 "BodyMotion": { "Type": "Seek", "DesiredAltitudeWeight": 0, "RelativeSpeed": { "Compute": "SwingSpeed" }, "SlowDownDistance": 2, "StopDistance": 1 }
               },
               {
-                "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 8.5, 7, 15.5 ] },
+                "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 6.5, 8, 15.5 ] },
                 "BodyMotion": { "Type": "Seek", "DesiredAltitudeWeight": 0, "RelativeSpeed": { "Compute": "SwingSpeed" }, "SlowDownDistance": 2, "StopDistance": 1 }
               },
               {
@@ -420,7 +405,7 @@
                 "BodyMotion": { "Type": "Seek", "DesiredAltitudeWeight": 0, "RelativeSpeed": { "Compute": "SwingSpeed" }, "SlowDownDistance": 2, "StopDistance": 1 }
               },
               {
-                "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ -8.5, 7, 15.5 ] },
+                "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ -6.5, 8, 15.5 ] },
                 "BodyMotion": { "Type": "Seek", "DesiredAltitudeWeight": 0, "RelativeSpeed": { "Compute": "SwingSpeed" }, "SlowDownDistance": 2, "StopDistance": 1 }
               },
               {
@@ -428,7 +413,7 @@
                 "BodyMotion": { "Type": "Seek", "DesiredAltitudeWeight": 0, "RelativeSpeed": { "Compute": "SwingSpeed" }, "SlowDownDistance": 2, "StopDistance": 1 }
               },
               {
-                "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ -8.5, 7, -1.5 ] },
+                "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ -6.5, 8, -1.5 ] },
                 "BodyMotion": { "Type": "Seek", "DesiredAltitudeWeight": 0, "RelativeSpeed": { "Compute": "SwingSpeed" }, "SlowDownDistance": 2, "StopDistance": 1 }
               }
             ]
@@ -570,7 +555,7 @@
         ]
       },
       {
-        "$Comment": "Bomb pass, first leg: as it begins, the row's centre (7 above where his target stands) and its two ends 12 blocks north and south of it are stored; he flies to the end the coin chose, then starts the pass.",
+        "$Comment": "Bomb pass, first leg: as it begins, the row's centre (8 above where his target stands) and its two ends 12 blocks north and south of it are stored; he flies to the end the coin chose, then starts the pass.",
         "Sensor": {
           "Type": "State",
           "State": ".Line_Approach"
@@ -582,7 +567,7 @@
             "Instructions": [
               {
                 "Continue": true,
-                "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Target" }, "Offset": [ 0, 7, 0 ] },
+                "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Target" }, "Offset": [ 0, 8, 0 ] },
                 "Actions": [ { "Type": "StorePosition", "Slot": "Hallows_Eve_Horseman_Line_Mid" } ]
               },
               {
@@ -591,12 +576,12 @@
                 "Instructions": [
                   {
                     "Continue": true,
-                    "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Target" }, "Offset": [ 0, 7, -12 ] },
+                    "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Target" }, "Offset": [ 0, 8, -12 ] },
                     "Actions": [ { "Type": "StorePosition", "Slot": "Hallows_Eve_Horseman_Line_Start" } ]
                   },
                   {
                     "Continue": true,
-                    "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Target" }, "Offset": [ 0, 7, 12 ] },
+                    "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Target" }, "Offset": [ 0, 8, 12 ] },
                     "Actions": [ { "Type": "StorePosition", "Slot": "Hallows_Eve_Horseman_Line_End" } ]
                   }
                 ]
@@ -607,12 +592,12 @@
                 "Instructions": [
                   {
                     "Continue": true,
-                    "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Target" }, "Offset": [ 0, 7, 12 ] },
+                    "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Target" }, "Offset": [ 0, 8, 12 ] },
                     "Actions": [ { "Type": "StorePosition", "Slot": "Hallows_Eve_Horseman_Line_Start" } ]
                   },
                   {
                     "Continue": true,
-                    "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Target" }, "Offset": [ 0, 7, -12 ] },
+                    "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Target" }, "Offset": [ 0, 8, -12 ] },
                     "Actions": [ { "Type": "StorePosition", "Slot": "Hallows_Eve_Horseman_Line_End" } ]
                   }
                 ]
@@ -621,15 +606,6 @@
                 "Continue": true,
                 "Actions": [ { "Type": "SetFlag", "Name": "Hallows_Eve_Horseman_Line_Set" } ]
               }
-            ]
-          },
-          {
-            "$Comment": "Blocked: rise for ClimbTime.",
-            "Continue": true,
-            "Sensor": { "Type": "Or", "Sensors": [ { "Type": "Eval", "Expression": "blocked" }, { "Type": "Nav", "NavStates": [ "Blocked", "Aborted", "Defer" ] } ] },
-            "Actions": [
-              { "Type": "TimerStart", "Name": "Hallows_Eve_Horseman_Climb", "StartValueRange": { "Compute": "ClimbTime" }, "RestartValueRange": { "Compute": "ClimbTime" } },
-              { "Type": "TimerRestart", "Name": "Hallows_Eve_Horseman_Climb" }
             ]
           },
           {
@@ -644,15 +620,6 @@
             "Actions": [
               { "Type": "TimerRestart", "Name": "Hallows_Eve_Horseman_Line_Leg" },
               { "Type": "State", "State": ".Line_Pass" }
-            ]
-          },
-          {
-            "Sensor": { "Type": "Timer", "Name": "Hallows_Eve_Horseman_Climb", "State": "Running" },
-            "Instructions": [
-              {
-                "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 0, 10, 7 ] },
-                "BodyMotion": { "Type": "Seek", "DesiredAltitudeWeight": 0, "RelativeSpeed": 1, "SlowDownDistance": 1, "StopDistance": 0.5 }
-              }
             ]
           },
           {
@@ -763,15 +730,6 @@
             ]
           },
           {
-            "$Comment": "Blocked: rise for ClimbTime.",
-            "Continue": true,
-            "Sensor": { "Type": "Or", "Sensors": [ { "Type": "Eval", "Expression": "blocked" }, { "Type": "Nav", "NavStates": [ "Blocked", "Aborted", "Defer" ] } ] },
-            "Actions": [
-              { "Type": "TimerStart", "Name": "Hallows_Eve_Horseman_Climb", "StartValueRange": { "Compute": "ClimbTime" }, "RestartValueRange": { "Compute": "ClimbTime" } },
-              { "Type": "TimerRestart", "Name": "Hallows_Eve_Horseman_Climb" }
-            ]
-          },
-          {
             "$Comment": "At the far end, or the pass took too long: the break-off ends.",
             "Sensor": {
               "Type": "Or",
@@ -783,22 +741,13 @@
             "Actions": [ { "Type": "State", "State": ".Break_End" } ]
           },
           {
-            "Sensor": { "Type": "Timer", "Name": "Hallows_Eve_Horseman_Climb", "State": "Running" },
-            "Instructions": [
-              {
-                "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 0, 10, 7 ] },
-                "BodyMotion": { "Type": "Seek", "DesiredAltitudeWeight": 0, "RelativeSpeed": 1, "SlowDownDistance": 1, "StopDistance": 0.5 }
-              }
-            ]
-          },
-          {
             "Sensor": { "Type": "ReadPosition", "Slot": "Hallows_Eve_Horseman_Line_End", "Range": 200 },
             "BodyMotion": { "Type": "Seek", "DesiredAltitudeWeight": 0, "RelativeSpeed": { "Compute": "LineSpeed" }, "SlowDownDistance": 2, "StopDistance": 1 }
           }
         ]
       },
       {
-        "$Comment": "Lap_1 to Lap_8: round the fountain clockwise seen from above, north, east, south, west, 7 blocks from its centre and 7 up, until LapTime runs out (then Break_End). Each lap point is stored in the Lap_Point slot so the next instruction can tell when he reaches it.",
+        "$Comment": "Lap_1 to Lap_8: round the fountain clockwise seen from above, north, east, south, west, 7 blocks from its centre and 8 up, until LapTime runs out (then Break_End). Each lap point is stored in the Lap_Point slot so the next instruction can tell when he reaches it.",
         "Sensor": { "Type": "State", "State": ".Lap_1" },
         "Instructions": [
           {
@@ -807,7 +756,7 @@
           },
           {
             "Continue": true,
-            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 0, 7, 0 ] },
+            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 0, 8, 0 ] },
             "Actions": [ { "Type": "StorePosition", "Slot": "Hallows_Eve_Horseman_Lap_Point" } ]
           },
           {
@@ -829,7 +778,7 @@
           },
           {
             "Continue": true,
-            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 5, 7, 2 ] },
+            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 5, 8, 2 ] },
             "Actions": [ { "Type": "StorePosition", "Slot": "Hallows_Eve_Horseman_Lap_Point" } ]
           },
           {
@@ -851,7 +800,7 @@
           },
           {
             "Continue": true,
-            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 7, 7, 7 ] },
+            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 7, 8, 7 ] },
             "Actions": [ { "Type": "StorePosition", "Slot": "Hallows_Eve_Horseman_Lap_Point" } ]
           },
           {
@@ -873,7 +822,7 @@
           },
           {
             "Continue": true,
-            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 5, 7, 12 ] },
+            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 5, 8, 12 ] },
             "Actions": [ { "Type": "StorePosition", "Slot": "Hallows_Eve_Horseman_Lap_Point" } ]
           },
           {
@@ -895,7 +844,7 @@
           },
           {
             "Continue": true,
-            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 0, 7, 14 ] },
+            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 0, 8, 14 ] },
             "Actions": [ { "Type": "StorePosition", "Slot": "Hallows_Eve_Horseman_Lap_Point" } ]
           },
           {
@@ -917,7 +866,7 @@
           },
           {
             "Continue": true,
-            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ -5, 7, 12 ] },
+            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ -5, 8, 12 ] },
             "Actions": [ { "Type": "StorePosition", "Slot": "Hallows_Eve_Horseman_Lap_Point" } ]
           },
           {
@@ -939,7 +888,7 @@
           },
           {
             "Continue": true,
-            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ -7, 7, 7 ] },
+            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ -7, 8, 7 ] },
             "Actions": [ { "Type": "StorePosition", "Slot": "Hallows_Eve_Horseman_Lap_Point" } ]
           },
           {
@@ -961,7 +910,7 @@
           },
           {
             "Continue": true,
-            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ -5, 7, 2 ] },
+            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ -5, 8, 2 ] },
             "Actions": [ { "Type": "StorePosition", "Slot": "Hallows_Eve_Horseman_Lap_Point" } ]
           },
           {
