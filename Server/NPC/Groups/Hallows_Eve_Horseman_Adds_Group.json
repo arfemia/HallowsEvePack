@@ -1,4 +1,4 @@
 {
-  "$Comment": "The creatures that come to the Headless Horseman's side mid-fight: the Jack Skeletons. His fight's script clears every one of them in his arena when the fight resets, so the next try starts clean. Add a role id here if he calls another kind.",
+  "$Comment": "The creatures that guard the Headless Horseman's fountain before he rises and come to his side mid-fight: the Jack Skeletons. His fight waits for every one of them in his arena to die before he rises (Macro_Orbis_Boss_Guards), and clears them all when the fight resets, so the next try starts clean. Add a role id here if he calls another kind.",
   "IncludeRoles": [ "Hallows_Eve_Jack_Skeleton" ]
 }

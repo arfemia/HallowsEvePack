@@ -1,0 +1,290 @@
+{
+  "$Comment": [
+    "A guard wave a boss's fight raises before the boss: the Orbis boss template runs it in Intro when a",
+    "Variant names it as GuardWave, and the boss rises only once the wave is cleared. The shape is the",
+    "game's own blocking wave (Macro_Void_Anomaly_Wave): the wave claims Orbis_Boss_Guards_Pending",
+    "before anything spawns, and lowers it once none of its creatures is left alive, so the boss never",
+    "rises over an unspawned wave.",
+    "",
+    "In order. A player comes within PlayerRange of the script's entity and Delay starts (long enough",
+    "for an arrival's intro camera to end). Then two rows of Role rise, measured from the script's",
+    "entity toward the way it faces (north for an entity placed unturned): NearCount spread evenly",
+    "across NearAngle degrees NearDistance blocks out, and FarCount across FarAngle degrees FarDistance",
+    "blocks out. Once one is seen and none of Groups is left alive within Range, the wave is done and",
+    "the boss may rise. If none is ever seen (every spot blocked), the wave lets the boss rise after",
+    "WatchSeconds, so a failed spawn never holds the fight.",
+    "",
+    "Its flags and timers are named Orbis_Boss_Guards_; the template clears the flags when the fight",
+    "resets, so a wipe or a reset raises the wave again. The defaults are the Headless Horseman's: four",
+    "Jack Skeletons, one at each corner of his graveyard's fountain, whose centre stands 13 blocks",
+    "north of his fight's entity."
+  ],
+  "Class": "Instruction",
+  "Type": "Component",
+  "Interface": "Hytale.Instruction.Encounter.Phase.Behavior",
+  "Parameters": {
+    "Role": {
+      "Value": "Hallows_Eve_Jack_Skeleton",
+      "Description": "The creature the wave raises."
+    },
+    "Groups": {
+      "Value": [ "Hallows_Eve_Horseman_Adds_Group" ],
+      "TypeHint": "String",
+      "Description": "NPC groups holding Role: while one of them lives within Range, the boss waits. Keep them in the fight's SweepGroups too, so a reset clears them."
+    },
+    "PlayerRange": {
+      "Value": 80,
+      "Description": "How close to the script's entity a player must come to start the wave. Cover the arrival point to raise it as players arrive."
+    },
+    "Delay": {
+      "Value": [ 8, 8 ],
+      "Description": "Seconds from the first player in PlayerRange to the wave rising."
+    },
+    "NearCount": {
+      "Value": [ 2, 2 ],
+      "Description": "How many rise in the near row."
+    },
+    "NearAngle": {
+      "Value": 74,
+      "Description": "Degrees the near row spreads across, centred on the way the script's entity faces."
+    },
+    "NearDistance": {
+      "Value": [ 10, 10 ],
+      "Description": "Blocks from the script's entity to the near row."
+    },
+    "FarCount": {
+      "Value": [ 2, 2 ],
+      "Description": "How many rise in the far row."
+    },
+    "FarAngle": {
+      "Value": 37,
+      "Description": "Degrees the far row spreads across, centred on the way the script's entity faces."
+    },
+    "FarDistance": {
+      "Value": [ 19, 19 ],
+      "Description": "Blocks from the script's entity to the far row."
+    },
+    "Range": {
+      "Value": 80,
+      "Description": "How far from the script's entity a living guard keeps the boss waiting. Cover the whole arena."
+    },
+    "WatchSeconds": {
+      "Value": [ 3, 3 ],
+      "Description": "Seconds the wave waits to see a guard before it lets the boss rise anyway."
+    }
+  },
+  "Content": {
+    "Continue": true,
+    "Sensor": {
+      "Type": "Any"
+    },
+    "Instructions": [
+      {
+        "$Comment": "Until the wave is done it holds the boss: claimed before anything spawns.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "Flag",
+          "Name": "Orbis_Boss_Guards_Done",
+          "Set": false
+        },
+        "Actions": [
+          {
+            "Type": "SetFlag",
+            "Name": "Orbis_Boss_Guards_Pending"
+          }
+        ]
+      },
+      {
+        "$Comment": "A player arrives: the wait before the wave rises starts.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            {
+              "Type": "Flag",
+              "Name": "Orbis_Boss_Guards_Done",
+              "Set": false
+            },
+            {
+              "Type": "Flag",
+              "Name": "Orbis_Boss_Guards_Waiting",
+              "Set": false
+            },
+            {
+              "Type": "Player",
+              "Range": { "Compute": "PlayerRange" }
+            }
+          ]
+        },
+        "Actions": [
+          {
+            "Type": "SetFlag",
+            "Name": "Orbis_Boss_Guards_Waiting"
+          },
+          {
+            "$Comment": "A timer starts only once in the script's life, so every wave re-arms it with TimerRestart.",
+            "Type": "TimerStart",
+            "Name": "Orbis_Boss_Guards_Delay",
+            "StartValueRange": { "Compute": "Delay" },
+            "RestartValueRange": { "Compute": "Delay" },
+            "Repeating": false
+          },
+          {
+            "Type": "TimerRestart",
+            "Name": "Orbis_Boss_Guards_Delay"
+          }
+        ]
+      },
+      {
+        "$Comment": "The wait is over: both rows rise, and the watch for them starts.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            {
+              "Type": "Flag",
+              "Name": "Orbis_Boss_Guards_Waiting"
+            },
+            {
+              "Type": "Flag",
+              "Name": "Orbis_Boss_Guards_Up",
+              "Set": false
+            },
+            {
+              "Type": "Timer",
+              "Name": "Orbis_Boss_Guards_Delay",
+              "State": "Stopped"
+            }
+          ]
+        },
+        "Actions": [
+          {
+            "Type": "Spawn",
+            "Kind": { "Compute": "Role" },
+            "SpawnDirection": 0,
+            "SpawnAngle": { "Compute": "NearAngle" },
+            "FanOut": true,
+            "DistanceRange": { "Compute": "NearDistance" },
+            "CountRange": { "Compute": "NearCount" },
+            "DelayRange": [ 0, 0 ]
+          },
+          {
+            "Type": "Spawn",
+            "Kind": { "Compute": "Role" },
+            "SpawnDirection": 0,
+            "SpawnAngle": { "Compute": "FarAngle" },
+            "FanOut": true,
+            "DistanceRange": { "Compute": "FarDistance" },
+            "CountRange": { "Compute": "FarCount" },
+            "DelayRange": [ 0, 0 ]
+          },
+          {
+            "Type": "SetFlag",
+            "Name": "Orbis_Boss_Guards_Up"
+          },
+          {
+            "Type": "TimerStart",
+            "Name": "Orbis_Boss_Guards_Watch",
+            "StartValueRange": { "Compute": "WatchSeconds" },
+            "RestartValueRange": { "Compute": "WatchSeconds" },
+            "Repeating": false
+          },
+          {
+            "Type": "TimerRestart",
+            "Name": "Orbis_Boss_Guards_Watch"
+          }
+        ]
+      },
+      {
+        "$Comment": "A guard is seen standing.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            {
+              "Type": "Flag",
+              "Name": "Orbis_Boss_Guards_Up"
+            },
+            {
+              "Type": "Flag",
+              "Name": "Orbis_Boss_Guards_Seen",
+              "Set": false
+            },
+            {
+              "Type": "Mob",
+              "Range": { "Compute": "Range" },
+              "Filters": [
+                {
+                  "Type": "NPCGroup",
+                  "IncludeGroups": { "Compute": "Groups" }
+                }
+              ]
+            }
+          ]
+        },
+        "Actions": [
+          {
+            "Type": "SetFlag",
+            "Name": "Orbis_Boss_Guards_Seen"
+          }
+        ]
+      },
+      {
+        "$Comment": "None left alive (or none ever seen once the watch runs out): the wave is done and the boss may rise.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            {
+              "Type": "Flag",
+              "Name": "Orbis_Boss_Guards_Up"
+            },
+            {
+              "Type": "Flag",
+              "Name": "Orbis_Boss_Guards_Done",
+              "Set": false
+            },
+            {
+              "Type": "Or",
+              "Sensors": [
+                {
+                  "Type": "Flag",
+                  "Name": "Orbis_Boss_Guards_Seen"
+                },
+                {
+                  "Type": "Timer",
+                  "Name": "Orbis_Boss_Guards_Watch",
+                  "State": "Stopped"
+                }
+              ]
+            },
+            {
+              "Type": "Not",
+              "Sensor": {
+                "Type": "Mob",
+                "Range": { "Compute": "Range" },
+                "Filters": [
+                  {
+                    "Type": "NPCGroup",
+                    "IncludeGroups": { "Compute": "Groups" }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "Actions": [
+          {
+            "Type": "SetFlag",
+            "Name": "Orbis_Boss_Guards_Done"
+          },
+          {
+            "Type": "SetFlag",
+            "Name": "Orbis_Boss_Guards_Pending",
+            "SetTo": false
+          }
+        ]
+      }
+    ]
+  }
+}

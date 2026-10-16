@@ -4,7 +4,9 @@
     "Variant of this pack's Orbis_Boss_Encounter_Template, with his hard forms and faster timings, the",
     "way the game's own Gobliterator has a hard script beside its normal one. It runs in his hard",
     "graveyard (Prefabs/Hallows_Eve/Hallows_Eve_Graveyard_Hard.prefab.json), where he rises from",
-    "Hallows_Eve_Headless_Horseman_Hard_Marker.",
+    "Hallows_Eve_Headless_Horseman_Hard_Marker once the four Jack Skeletons guarding the fountain are",
+    "dead, the same GuardWave as the normal ride (the same creature; the hard graveyard's Mob Scaling",
+    "band makes them tougher).",
     "",
     "What is harder lives in three places. His _HM roles carry more health (2376 against 1100, his",
     "Head 450 against 300), the Hallows_Eve_Horseman_Hard_Mode effect, which makes everything he",
@@ -48,6 +50,7 @@
     "Phase3Transition": "Macro_Orbis_Boss_Transition_HealthAndFlag",
     "Phase3Behavior": "Macro_Hallows_Eve_Horseman_Wrath",
     "ResetBehavior": "Macro_Hallows_Eve_Horseman_Reset",
+    "GuardWave": "Macro_Orbis_Boss_Guards",
     "HealthPacks": false,
     "_ForwardedModifiers": {
       "Phase1Behavior": {

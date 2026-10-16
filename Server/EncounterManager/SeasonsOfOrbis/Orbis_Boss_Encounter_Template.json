@@ -19,12 +19,16 @@
     "BossGroups is left alive in reach: the bar comes down, zc:defeated goes out and Complete pays",
     "the two Claims (each player's first win of the day; see the Rewards files), plays the music's",
     "ending, sends zc:reset and rests in Done. A fresh copy of the arena brings a fresh fight.",
+    "With a GuardWave macro named (Macro_Orbis_Boss_Guards), Intro first raises a wave of guards as",
+    "players arrive, and the boss rises only once none of them is left alive, the game's own blocking",
+    "wave (Macro_Void_Anomaly_Wave): the wave holds Orbis_Boss_Guards_Pending until it is cleared.",
     "With HealthPacks true, the game's health packs drop on the arena's tagged points from the",
     "fight's start to the win, the way its Feastmaster's do (Macro_Health_Pack_Spawn, every",
     "HealthPackInterval seconds); the points come with the arena's prefab.",
     "",
     "A wipe (every player down) or an arena left empty for EmptyArenaSeconds resets it: Resetting",
-    "clears the bar, removes everything in SweepGroups (heads, adds) and runs the boss's",
+    "clears the bar, removes everything in SweepGroups (heads, adds, guards), clears the guard wave's",
+    "flags so it rises again, and runs the boss's",
     "ResetBehavior, the game's own arena reset removes the boss once nobody watches from the death",
     "screen, and only then, back in Intro, the library hears zc:reset (sent any earlier, the library",
     "would bind the departing boss again before he is gone). Intro waits for players to come back.",
@@ -156,6 +160,10 @@
       "Value": [ 1, 1 ],
       "Description": "How many tagged points get a pack each time, rolled each time."
     },
+    "GuardWave": {
+      "Value": "$Null",
+      "Description": "Macro run in Intro before the boss rises, such as Macro_Orbis_Boss_Guards: a wave players clear first. While it holds Orbis_Boss_Guards_Pending the boss does not rise. $Null for none, and the boss rises as players come near."
+    },
     "Phase1Behavior": {
       "Value": "$Null",
       "Description": "Macro run while phase 1 lasts, or $Null for none."
@@ -266,6 +274,32 @@
               "Type": "SetFlag",
               "Name": "Orbis_Boss_HealthPack_Active",
               "SetTo": false
+            },
+            {
+              "$Comment": "The guard wave's flags (Macro_Orbis_Boss_Guards), so Intro raises the wave again.",
+              "Type": "SetFlag",
+              "Name": "Orbis_Boss_Guards_Pending",
+              "SetTo": false
+            },
+            {
+              "Type": "SetFlag",
+              "Name": "Orbis_Boss_Guards_Done",
+              "SetTo": false
+            },
+            {
+              "Type": "SetFlag",
+              "Name": "Orbis_Boss_Guards_Waiting",
+              "SetTo": false
+            },
+            {
+              "Type": "SetFlag",
+              "Name": "Orbis_Boss_Guards_Up",
+              "SetTo": false
+            },
+            {
+              "Type": "SetFlag",
+              "Name": "Orbis_Boss_Guards_Seen",
+              "SetTo": false
             }
           ]
         },
@@ -361,7 +395,15 @@
           ]
         },
         {
-          "$Comment": "Raises the boss from the marker once a player comes near.",
+          "$Comment": "The guard wave, if the fight has one: it claims Orbis_Boss_Guards_Pending before the boss's rise below is checked, and lowers it once the wave is cleared.",
+          "Continue": true,
+          "Reference": { "Compute": "GuardWave" },
+          "Interfaces": [ "Hytale.Instruction.Encounter.Phase.Behavior" ],
+          "AcceptsForward": true,
+          "Nullable": true
+        },
+        {
+          "$Comment": "Raises the boss from the marker once a player comes near and no guard wave holds him.",
           "Continue": true,
           "Sensor": {
             "Type": "And",
@@ -377,6 +419,11 @@
               {
                 "Type": "Player",
                 "Range": { "Compute": "SummonPlayerRange" }
+              },
+              {
+                "Type": "Flag",
+                "Name": "Orbis_Boss_Guards_Pending",
+                "Set": false
               }
             ]
           },
@@ -605,7 +652,7 @@
           ]
         },
         {
-          "$Comment": "No marker in reach: after a short wait, raise the boss beside the script instead.",
+          "$Comment": "No marker in reach: after a short wait, raise the boss beside the script instead (once no guard wave holds him).",
           "Sensor": {
             "Type": "And",
             "Sensors": [
@@ -620,6 +667,11 @@
               {
                 "Type": "Player",
                 "Range": { "Compute": "SummonPlayerRange" }
+              },
+              {
+                "Type": "Flag",
+                "Name": "Orbis_Boss_Guards_Pending",
+                "Set": false
               }
             ]
           },

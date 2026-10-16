@@ -1,8 +1,11 @@
 {
   "$Comment": [
     "The Headless Horseman's fight, a Variant of this pack's Orbis_Boss_Encounter_Template (its",
-    "comment tells the whole flow). He rises from Hallows_Eve_Headless_Horseman_Marker when players",
-    "come near, in the saddle, with one health step per player beyond the first.",
+    "comment tells the whole flow). As players arrive (8 seconds on, once the intro camera is done),",
+    "four Jack Skeletons rise at the corners of the graveyard's fountain (GuardWave,",
+    "Macro_Orbis_Boss_Guards; its Parameters place them). Once all four are dead he rises from",
+    "Hallows_Eve_Headless_Horseman_Marker when players come near, in the saddle, with one health step",
+    "per player beyond the first. A wipe or a reset raises the four again.",
     "",
     "Phase 1, the Ride: he dives low at a player, swings wide, laps the fountain, swoops through a",
     "ringed spot and passes over the plaza dropping a ringed row of bombs (his mounted role and",
@@ -52,6 +55,7 @@
     "Phase3Transition": "Macro_Orbis_Boss_Transition_HealthAndFlag",
     "Phase3Behavior": "Macro_Hallows_Eve_Horseman_Wrath",
     "ResetBehavior": "Macro_Hallows_Eve_Horseman_Reset",
+    "GuardWave": "Macro_Orbis_Boss_Guards",
     "HealthPacks": true,
     "HealthPackInterval": [ 80, 180 ],
     "_ForwardedModifiers": {
