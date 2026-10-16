@@ -1,5 +1,5 @@
 {
-  "$Comment": "What the chest hidden in the Headless Horseman's graveyards holds, rolled fresh into it each time a party's graveyard is pasted (tools/arenas/ names it on the chest): one or two Common Lantern Bombs every time, and a Grave Candle when its Choice's Weight, its chance out of 100, comes up.",
+  "$Comment": "What the chest hidden in the Headless Horseman's graveyards holds, rolled fresh into it each time a party's graveyard is pasted (tools/arenas/ names it on the chest): two or three Uncommon Lantern Bombs every time, then each Choice below on its own when its Weight, its chance out of 100, comes up: a Rare and an Epic Lantern Bomb, and a Grave Candle. Keep the candle a chance, never certain: the chest refills every run, so a sure candle would make the gate free.",
   "Container": {
     "Type": "Multiple",
     "Containers": [
@@ -7,12 +7,26 @@
         "Type": "Choice",
         "Weight": 100,
         "Containers": [
-          { "Type": "Single", "Item": { "ItemId": "Hallows_Eve_Lantern_Bomb_Common", "QuantityMin": 1, "QuantityMax": 2 } }
+          { "Type": "Single", "Item": { "ItemId": "Hallows_Eve_Lantern_Bomb_Uncommon", "QuantityMin": 2, "QuantityMax": 3 } }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 35,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Hallows_Eve_Lantern_Bomb_Rare", "QuantityMin": 1, "QuantityMax": 1 } }
         ]
       },
       {
         "Type": "Choice",
         "Weight": 10,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Hallows_Eve_Lantern_Bomb_Epic", "QuantityMin": 1, "QuantityMax": 1 } }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 25,
         "Containers": [
           { "Type": "Single", "Item": { "ItemId": "Hallows_Eve_Grave_Candle", "QuantityMin": 1, "QuantityMax": 1 } }
         ]
