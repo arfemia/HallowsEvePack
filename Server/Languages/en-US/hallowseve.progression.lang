@@ -298,6 +298,18 @@ title.hallows_eve_keeper_of_lanterns.name = Keeper of Lanterns
 title.hallows_eve_keeper_of_lanterns.flavor = Lit the Hollow Lantern with Old Jack, year after year.
 title.hallows_eve_keeper_of_lanterns.display = {0}, Keeper of Lanterns
 
+# ---- The set achievements: wearing the Hallowed and Flaming Hallowed Sets ----
+achievement.hallows_eve_hallowed_armour.title = Hallowed Armour
+achievement.hallows_eve_hallowed_armour.desc = Wear a Jack Helm and the Headless Horseman's armour.
+achievement.hallows_eve_fully_hallowed.title = Fully Hallowed
+achievement.hallows_eve_fully_hallowed.desc = Wear the whole Hallowed Set, a Jack Shield in your off hand.
+achievement.hallows_eve_flaming_armour.title = Flaming Armour
+achievement.hallows_eve_flaming_armour.desc = Wear the Burning Jack Helm and the Headless Horseman's flaming armour.
+achievement.hallows_eve_fully_ablaze.title = Fully Ablaze
+achievement.hallows_eve_fully_ablaze.desc = Wear the whole Flaming Hallowed Set, the Flaming Jack Shield in your off hand.
+objective.hallows_eve.wear_hallowed = Wear {0} pieces of the Hallowed Set
+objective.hallows_eve.wear_flaming_hallowed = Wear {0} pieces of the Flaming Hallowed Set
+
 # ---- The shop's decorations shelf ----
 shop.hallows_eve_old_jack.category.decor = Decorations
 shop.hallows_eve_offer_pumpkin_scary.title = Scary Halloween Pumpkin

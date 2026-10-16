@@ -1,0 +1,34 @@
+{
+  "$Comment": [
+    "Wear the whole Flaming Hallowed Set: its four armour pieces with the Flaming Jack Shield in the",
+    "utility slot. GEAR_SET_TIER counts a set's bonus tier coming on as gear goes on, its amount the",
+    "number of pieces that tier takes, so Amount 5 is met the moment the set's five-piece tier",
+    "(GearSets/HallowsEvePack/Hallows_Eve_Flaming_Hallowed.json) comes on. Logging in already dressed",
+    "counts nothing: the pieces have to go on.",
+    "",
+    "Earned once and kept, like Flaming Armour, the first rung of the chain",
+    "wear_hallows_eve_flaming_hallowed: no Parent, no hallowed tag, and nothing paid but its points.",
+    "The criterion's TextKey words the step, since the shared sentence names the set by its raw id."
+  ],
+  "Text": {
+    "TitleKey": "achievement.hallows_eve_fully_ablaze.title",
+    "FlavorKey": "achievement.hallows_eve_fully_ablaze.desc"
+  },
+  "Listing": {
+    "Category": "Seasons",
+    "Subcategory": "Hallows_Eve",
+    "SortOrder": 143,
+    "Icon": "Hallows_Eve_Flaming_Jack_Shield",
+    "Chains": [ { "Id": "wear_hallows_eve_flaming_hallowed", "Tier": 2 } ]
+  },
+  "Scoring": { "Points": 50 },
+  "Criteria": {
+    "wear-the-set": {
+      "Kind": "GEAR_SET_TIER",
+      "Target": "Hallows_Eve_Flaming_Hallowed",
+      "MatchMode": "EXACT",
+      "Amount": 5,
+      "TextKey": "objective.hallows_eve.wear_flaming_hallowed"
+    }
+  }
+}

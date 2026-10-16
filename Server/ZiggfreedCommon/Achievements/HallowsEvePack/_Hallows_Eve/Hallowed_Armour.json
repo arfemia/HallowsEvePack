@@ -1,0 +1,36 @@
+{
+  "$Comment": [
+    "Wear the Hallowed Set's four armour pieces at once: a Jack Helm (or the Burning Jack Helm) with the",
+    "Horseman's breastplate, gauntlets and greaves, plain or flaming. GEAR_SET_TIER counts a set's bonus",
+    "tier coming on as gear goes on, its amount the number of pieces that tier takes, so Amount 4 is",
+    "met the moment the set's four-piece tier (GearSets/HallowsEvePack/Hallows_Eve_Hallowed.json) comes",
+    "on, or its five-piece one. Logging in already dressed counts nothing: the pieces have to go on.",
+    "",
+    "Earned once and kept. The set carries from one Hallow's Eve to the next, so this file has no",
+    "Parent: the yearly skeleton would ask for the same armour every year. It carries no hallowed",
+    "tag, so The Hallowed never waits on it. It pays nothing but its points. The chain",
+    "wear_hallows_eve_hallowed ties it to Fully Hallowed, the whole set with the shield. The",
+    "criterion's TextKey words the step, since the shared sentence names the set by its raw id."
+  ],
+  "Text": {
+    "TitleKey": "achievement.hallows_eve_hallowed_armour.title",
+    "FlavorKey": "achievement.hallows_eve_hallowed_armour.desc"
+  },
+  "Listing": {
+    "Category": "Seasons",
+    "Subcategory": "Hallows_Eve",
+    "SortOrder": 140,
+    "Icon": "Hallows_Eve_Horseman_Breastplate",
+    "Chains": [ { "Id": "wear_hallows_eve_hallowed", "Tier": 1 } ]
+  },
+  "Scoring": { "Points": 10 },
+  "Criteria": {
+    "wear-the-set": {
+      "Kind": "GEAR_SET_TIER",
+      "Target": "Hallows_Eve_Hallowed",
+      "MatchMode": "EXACT",
+      "Amount": 4,
+      "TextKey": "objective.hallows_eve.wear_hallowed"
+    }
+  }
+}
