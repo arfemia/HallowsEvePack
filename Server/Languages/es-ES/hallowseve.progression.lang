@@ -1,4 +1,4 @@
-# Progresión de la Noche de Ánimas: la cadena de misiones del Viejo Jack, sus diarias, su tablón y su puesto, su
+# Progresión de la Noche de Ánimas: la cadena de misiones del Viejo Jack, sus diarias, su tablón y su tienda, su
 # conversación y la línea de truco o trato, los logros y el título de la temporada, y su página del Almanaque.
 # Las claves van sin prefijo: la biblioteca encuentra cada una por su final, se llame como se llame este archivo.
 # Los números van en {0} y salen de los archivos de contenido, así que un reajuste nunca toca una traducción.
@@ -110,7 +110,7 @@ quest.hallows_eve_errand_geodes.flavor = Abre unas cuantas Geodas Malditas mient
 quest.hallows_eve_errand_pumpkins.title = Calabazas de Sobra
 quest.hallows_eve_errand_pumpkins.flavor = Un farol se ha puesto blando en los escalones. Tráeme unas Calabazas Consagradas cuando pases por aquí.
 
-# ---- El puesto del Viejo Jack ----
+# ---- La tienda del Viejo Jack ----
 shop.hallows_eve_old_jack.title = Tienda del Viejo Jack
 shop.hallows_eve_old_jack.desc = Bombas Farol, faroles y alguna que otra rareza para la temporada.
 shop.hallows_eve_old_jack.category.bombs = Bombas Farol

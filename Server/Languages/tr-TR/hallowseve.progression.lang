@@ -1,4 +1,4 @@
-# Cadılar Bayramı ilerlemesi: Yaşlı Jack'in görev zinciri, günlükleri, panosu ve tezgahı, sohbeti ve
+# Cadılar Bayramı ilerlemesi: Yaşlı Jack'in görev zinciri, günlükleri, panosu ve dükkanı, sohbeti ve
 # şeker mi şaka mı satırı, sezonun başarımları ve unvanı, ve Almanak sayfası.
 # Anahtarlar çıplak yazılır: kütüphane her birini kuyruğundan bulur, bu dosyanın adı ne olursa olsun.
 # Sayılar {0} ile gelir ve içerik dosyalarından okunur, böylece bir yeniden ayar hiçbir çeviriye dokunmaz.
@@ -116,7 +116,7 @@ quest.hallows_eve_errand_geodes.flavor = Dışarıdayken birkaç Lanetli Jeot k�
 quest.hallows_eve_errand_pumpkins.title = Yedek Kabaklar
 quest.hallows_eve_errand_pumpkins.flavor = Basamaktaki bir fener çürüyüp çökmüş. Yoldan geçerken bana birkaç Kutsanmış Bal Kabağı getir.
 
-# ---- Yaşlı Jack'in tezgahı ----
+# ---- Yaşlı Jack'in dükkanı ----
 shop.hallows_eve_old_jack.title = Yaşlı Jack'in Dükkanı
 shop.hallows_eve_old_jack.desc = Fener Bombaları, fenerler ve sezona uygun birkaç tuhaf şey.
 shop.hallows_eve_old_jack.category.bombs = Fener Bombaları

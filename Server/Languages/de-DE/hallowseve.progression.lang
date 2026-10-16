@@ -1,4 +1,4 @@
-# Halloween-Fortschritt: die Questreihe des Alten Jack, Tagesaufgaben, Tafel und Marktstand, sein Gespräch und
+# Halloween-Fortschritt: die Questreihe des Alten Jack, Tagesaufgaben, Tafel und Laden, sein Gespräch und
 # die Süßes-oder-Saures-Zeile, die Erfolge und der Titel der Saison und ihre Almanach-Seite.
 # Die Schlüssel stehen ohne Präfix: die Bibliothek findet jeden an seinem Ende, egal wie diese Datei heißt.
 # Zahlen kommen über {0} aus den Inhaltsdateien, also berührt eine Neuabstimmung nie eine Übersetzung.
@@ -118,7 +118,7 @@ quest.hallows_eve_errand_geodes.flavor = Knack ein paar Verfluchte Geoden auf, w
 quest.hallows_eve_errand_pumpkins.title = Ersatzkürbisse
 quest.hallows_eve_errand_pumpkins.flavor = Auf den Stufen ist eine Laterne weich geworden. Bring mir ein paar Geweihte Kürbisse, wenn du vorbeikommst.
 
-# ---- Der Marktstand des Alten Jack ----
+# ---- Der Laden des Alten Jack ----
 shop.hallows_eve_old_jack.title = Laden des Alten Jack
 shop.hallows_eve_old_jack.desc = Laternenbomben, Laternen und ein paar seltsame Dinge für die Saison.
 shop.hallows_eve_old_jack.category.bombs = Laternenbomben
