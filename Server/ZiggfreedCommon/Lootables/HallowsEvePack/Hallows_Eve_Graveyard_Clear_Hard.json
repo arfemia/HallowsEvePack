@@ -10,12 +10,12 @@
   "Rolls": [
     {
       "Grants": {
-        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "20" } } ]
+        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "60" } } ]
       }
     },
     {
       "Grants": {
-        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "2" } } ]
+        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "6" } } ]
       }
     }
   ]

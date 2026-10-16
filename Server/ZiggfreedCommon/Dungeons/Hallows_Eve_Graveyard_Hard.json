@@ -14,7 +14,9 @@
     "done, so it stays free of any quest. Season keeps it closed outside Hallow's Eve. Share: one party",
     "to an area, up to five players, and four areas to a copy. Complete names his hard fight, the script its prefab",
     "runs, so the run clears when he falls, and Rewards rolls Hallows_Eve_Graveyard_Clear_Hard for each",
-    "member present as a Claim: full the first hard clear each day, half on later ones. Difficulty",
+    "member present as a Claim: full the first hard clear each day, half on later ones. InChest puts",
+    "that Claim in the chest he leaves where he fell, as on the normal graveyard, with ChestKey's line",
+    "under the clear's banner (the normal graveyard's own). Difficulty",
     "files its runs and their returns under Hard, apart from the normal graveyard's. Text names it in",
     "the reader's language (hallowseve.world.lang), and its GoalKey is the line each player reads as",
     "they arrive.",
@@ -49,7 +51,8 @@
   },
   "Rewards": {
     "Lootable": "Hallows_Eve_Graveyard_Clear_Hard",
-    "Diminish": { "Steps": [1, 0.5], "Window": "Daily" }
+    "Diminish": { "Steps": [1, 0.5], "Window": "Daily" },
+    "InChest": true
   },
   "EntryCost": {
     "Items": [ { "Item": "Hallows_Eve_Burning_Grave_Candle", "Count": 1 } ],
@@ -64,6 +67,7 @@
   "Text": {
     "NameKey": "dungeon.hallows_eve_graveyard_hard.name",
     "DescriptionKey": "dungeon.hallows_eve_graveyard_hard.description",
-    "GoalKey": "dungeon.hallows_eve_graveyard_hard.goal"
+    "GoalKey": "dungeon.hallows_eve_graveyard_hard.goal",
+    "ChestKey": "dungeon.hallows_eve_graveyard.chest"
   }
 }

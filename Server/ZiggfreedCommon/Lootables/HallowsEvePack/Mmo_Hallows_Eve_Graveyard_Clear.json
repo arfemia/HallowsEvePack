@@ -20,7 +20,7 @@
     {
       "Grants": {
         "Rewards": [
-          { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "500" } }
+          { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "1500" } }
         ]
       }
     }

@@ -2,8 +2,8 @@
   "$Comment": [
     "Defense XP added to the hard graveyard's clear Claim (the Hallows_Eve_Graveyard_Clear_Hard table,",
     "which Dungeons/Hallows_Eve_Graveyard_Hard.json rolls for each member present at a hard clear), on a",
-    "server running MMO Skill Tree. The dungeon's Claim is the smaller one beside the boss's hard daily",
-    "Claim (Mmo_Hallows_Eve_Horseman_Daily_Hard), and the dungeon's Diminish halves it on later clears.",
+    "server running MMO Skill Tree. The dungeon's Claim pays beside the boss's hard daily Claim",
+    "(Mmo_Hallows_Eve_Horseman_Daily_Hard), and the dungeon's Diminish halves it on later clears.",
     "",
     "ContributesTo folds this roll into that table without touching its file, so the table's own pay",
     "is tuned there alone. Requires takes this file out on a server without MMO Skill Tree, so the",
@@ -21,7 +21,7 @@
     {
       "Grants": {
         "Rewards": [
-          { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "850" } }
+          { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "2500" } }
         ]
       }
     }

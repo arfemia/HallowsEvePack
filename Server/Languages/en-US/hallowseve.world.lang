@@ -43,3 +43,4 @@ dungeon.hallows_eve_graveyard_hard.goal = Defeat the Headless Horseman on the ha
 dungeon.hallows_eve_graveyard.cost_hint = Old Jack sells Grave Candles at his shop in the Forgotten Temple.
 dungeon.hallows_eve_graveyard_hard.cost_hint = Old Jack sells Burning Grave Candles at his shop in the Forgotten Temple, once he counts you a Regular.
 dungeon.hallows_eve_graveyard.confirm = Light the Candle
+dungeon.hallows_eve_graveyard.chest = Your reward waits in the chest where he fell.
