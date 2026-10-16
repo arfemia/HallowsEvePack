@@ -2,8 +2,11 @@
   "$Comment": [
     "What clearing the Headless Horseman's graveyard pays each player there at the end, beside the",
     "Horseman's own Claims: the dungeon's Rewards (Dungeons/Hallows_Eve_Graveyard.json) roll it, full",
-    "the first clear each day and half on later ones. Every roll always pays. Sweets and festival",
-    "tokens pay through the Currency reward kind."
+    "the first clear each day and half on later ones: the pool still draws in full, then every",
+    "quantity halves, a leftover half paying by chance.",
+    "Every roll in Rolls always pays: Sweets and festival tokens through the Currency reward kind, then",
+    "fire essence and Ectoplasm, Count to CountMax an even pick. Pool draws Rolls.Base times from",
+    "Entries, each as likely as its Weight against the rest, repeats allowed."
   ],
   "Name": "Hallows_Eve_Graveyard_Clear",
   "Rolls": [
@@ -16,6 +19,23 @@
       "Grants": {
         "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "3" } } ]
       }
+    },
+    {
+      "Grants": { "Items": [ { "Item": "Ingredient_Fire_Essence", "Count": 5, "CountMax": 8 } ] }
+    },
+    {
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Ectoplasm", "Count": 3, "CountMax": 4 } ] }
     }
-  ]
+  ],
+  "Pool": {
+    "Rolls": { "Base": 3 },
+    "Entries": [
+      { "Weight": 30, "Grants": { "Items": [ { "Item": "Hallows_Eve_Cursed_Geode", "Count": 2 } ] } },
+      { "Weight": 30, "Grants": { "Items": [ { "Item": "Hallows_Eve_Lantern_Bomb_Uncommon", "Count": 3 } ] } },
+      { "Weight": 20, "Grants": { "Items": [ { "Item": "Hallows_Eve_Lantern_Bomb_Rare", "Count": 2 } ] } },
+      { "Weight": 15, "Grants": { "Items": [ { "Item": "Hallows_Eve_Fire_Resistance_Potion", "Count": 2 } ] } },
+      { "Weight": 10, "Grants": { "Items": [ { "Item": "Hallows_Eve_Grave_Candle", "Count": 3 } ] } },
+      { "Weight": 5, "Grants": { "Items": [ { "Item": "Hallows_Eve_Lantern_Bomb_Epic", "Count": 1 } ] } }
+    ]
+  }
 }
