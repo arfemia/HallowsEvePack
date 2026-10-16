@@ -7,7 +7,10 @@
     "Leave_Instance pad against the entrance room's back wall, the way out. Cells count from the anchor.",
     "His spawn marker sits 7 cells north of the fountain's centre (X 0, Z 53), and his flight in the saddle",
     "(Server/NPC/Roles/Hallows_Eve/Components/Hallows_Eve_Horseman_Ride.json) measures its swings and",
-    "fountain laps from where he spawns, so move the marker and those offsets together."
+    "fountain laps from where he spawns, so move the marker and those offsets together.",
+    "The six Orbis_Boss_Health_Pack points are where his fight's health packs may drop: 4 cells over",
+    "open ground (no grave, wall or fountain under them), two north of the plaza, one either side of",
+    "the fountain and two south of it, so a pack falls straight to the floor."
   ],
   "Source": "tools/arenas/ziggy_halloween.prefab.zip",
   "Output": "Server/Prefabs/Hallows_Eve/Hallows_Eve_Graveyard.prefab.json",
@@ -18,5 +21,13 @@
   ],
   "Blocks": [
     { "Name": "Leave_Instance", "At": [0, 1, -3] }
+  ],
+  "Points": [
+    { "Name": "Health Pack North West", "Tags": ["Orbis_Boss_Health_Pack"], "At": [-4, 5, 42] },
+    { "Name": "Health Pack North East", "Tags": ["Orbis_Boss_Health_Pack"], "At": [4, 5, 42] },
+    { "Name": "Health Pack Fountain West", "Tags": ["Orbis_Boss_Health_Pack"], "At": [-8, 5, 50] },
+    { "Name": "Health Pack Fountain East", "Tags": ["Orbis_Boss_Health_Pack"], "At": [8, 5, 56] },
+    { "Name": "Health Pack South West", "Tags": ["Orbis_Boss_Health_Pack"], "At": [-4, 5, 64] },
+    { "Name": "Health Pack South East", "Tags": ["Orbis_Boss_Health_Pack"], "At": [4, 5, 64] }
   ]
 }

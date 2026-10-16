@@ -2,8 +2,9 @@
   "$Comment": [
     "The Headless Horseman's graveyard, the dungeon the Gravekeeper near Old Jack opens while Hallow's",
     "Eve runs. Every area of a copy pastes Hallows_Eve/Hallows_Eve_Graveyard.prefab.json (an enclosed",
-    "night graveyard with his fight's entity, his spawn marker and a way-out pad in its entrance",
-    "room; tools/arena_markers.py writes it), so every fresh paste stages a fresh fight. The prefab's",
+    "night graveyard with his fight's entity, his spawn marker, the points his health packs drop on",
+    "and a way-out pad in its entrance room; tools/arena_markers.py writes it), so every fresh paste",
+    "stages a fresh fight. The prefab's",
     "anchor is the entrance room's floor, so EntryOffset lands an arriving party one block up, standing",
     "on it; the Leave_Instance pad behind them takes a player back out. EntryYaw 180 turns them to face",
     "south, into the graveyard, with the pad and the entrance room's back wall behind them (yaw 0 faces north).",

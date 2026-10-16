@@ -6,15 +6,17 @@
     "graveyard (Prefabs/Hallows_Eve/Hallows_Eve_Graveyard_Hard.prefab.json), where he rises from",
     "Hallows_Eve_Headless_Horseman_Hard_Marker.",
     "",
-    "What is harder lives in three places. His _HM roles carry more health (2160 against 1200, his",
+    "What is harder lives in three places. His _HM roles carry more health (2376 against 1100, his",
     "Head 450 against 300), the Hallows_Eve_Horseman_Hard_Mode effect, which makes everything he",
     "swings or throws hit 40% harder, and in the saddle a lantern bomb he aims at a player for 3",
     "seconds before he throws it, the one bomb of the fight thrown straight at someone. His health",
     "steps are the _Hard_Scale effects, 1080 per player beyond the first. And _ForwardedModifiers",
     "below tightens the phases: a volley every 4 seconds from the start, each bomb leaving a fire",
-    "patch; his head first flies 6 seconds after his fall, then every 28 seconds, and returns after",
-    "20; his wrath, which waits until his head has flown once, brings burning volleys every 6",
-    "seconds. The bar shows the game's hard-mode style (BossBarHardMode) and his hard name.",
+    "patch; he is thrown at 54.55% (1296 of 2376 solo, so the saddle holds 1080 of it); his head",
+    "first flies 6 seconds after his fall, then every 28 seconds, and returns after 20; his wrath,",
+    "at 30% (713 solo) and only once his head has flown, brings burning volleys every 6 seconds.",
+    "No health packs fall on this ride. The bar shows the game's hard-mode style (BossBarHardMode)",
+    "and his hard name.",
     "",
     "A win pays its own two Claims, Hallows_Eve_Horseman_Daily_Hard and Hallows_Eve_Horseman_Chase_Hard,",
     "counted apart from the normal fight's, so a player can collect both on the same day. The binding",
@@ -46,6 +48,7 @@
     "Phase3Transition": "Macro_Orbis_Boss_Transition_HealthAndFlag",
     "Phase3Behavior": "Macro_Hallows_Eve_Horseman_Wrath",
     "ResetBehavior": "Macro_Hallows_Eve_Horseman_Reset",
+    "HealthPacks": false,
     "_ForwardedModifiers": {
       "Phase1Behavior": {
         "Interval": [ 4, 4 ],
@@ -61,7 +64,7 @@
         "PlayerTimer": "Horseman_P1_Volley_Player"
       },
       "Phase2Transition": {
-        "HealthRange": [ 0, 0.6 ],
+        "HealthRange": [ 0, 0.5455 ],
         "NextRole": "Hallows_Eve_Headless_Horseman_HM",
         "MusicPhase": "Phase2",
         "Invulnerable": true,
@@ -79,7 +82,7 @@
         "HeadRole": "Hallows_Eve_Horseman_Head_HM"
       },
       "Phase3Transition": {
-        "HealthRange": [ 0, 0.33 ],
+        "HealthRange": [ 0, 0.3 ],
         "Flag": "Horseman_Head_Flown",
         "Slot": "Boss",
         "Range": 80

@@ -410,7 +410,7 @@
       "Description": "Relative speed at which the run animation is used. 1 disables run animations."
     },
     "MaxHealth": {
-      "Value": 1200,
+      "Value": 1100,
       "Description": "Max health. A foot role must match the mounted role it is swapped in from, since health carries across."
     },
     "Weapons": {

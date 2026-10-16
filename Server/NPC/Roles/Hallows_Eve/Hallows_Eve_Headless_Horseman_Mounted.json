@@ -6,7 +6,7 @@
     "DeathParticles": "Effect_Death_Flames",
     "Appearance": "Hallows_Eve_Headless_Horseman_Mounted",
     "DropList": "Empty",
-    "MaxHealth": 1200,
+    "MaxHealth": 1100,
     "IsMemory": false,
     "NameTranslationKey": "npcs.Hallows_Eve_Headless_Horseman.name",
     "MotionFlyMinHeightAboveGround": 1,

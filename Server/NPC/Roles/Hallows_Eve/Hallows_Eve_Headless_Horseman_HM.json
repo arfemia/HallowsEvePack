@@ -4,7 +4,7 @@
   "Reference": "Hallows_Eve_Template_Horseman_Foot",
   "Modify": {
     "DisableDamageGroups": ["Skeleton"],
-    "MaxHealth": 2160,
+    "MaxHealth": 2376,
     "MaxSpeed": 4,
     "DesiredAttackDistanceRange": [3, 3],
     "RunThreshold": 1,

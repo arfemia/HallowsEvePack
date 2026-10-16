@@ -13,11 +13,15 @@ A spec (tools/arenas/<Name>.json) names:
   Markers            [{"Id": <spawn marker id>, "At": [x, y, z]}]: manual spawn markers
   Blocks             [{"Name": <block id>, "At": [x, y, z]}]: blocks set into the arena
                      (an exit pad), replacing whatever the source had in that cell
+  Points             [{"Name": <label>, "Tags": [<tag>, ...], "At": [x, y, z]}]: tagged points
+                     an encounter's Points sensor finds (where a health pack drops)
 
 "At" is a block cell counted from the prefab's anchor (the cell a party arrives above), the way
 the dungeon's EntryOffset counts: an entity stands on the floor of that cell, at its centre.
 The entities carry no UUID, so every paste of the prefab stages a fresh fight. Their shape is
 the dev test arena's (the encounter entity and the spawn marker entity a runtime paste keeps).
+A point is the game's own prefab point (a Transform and a Point component, the shape its
+builder tools save): a paste registers it as a live point and places no entity.
 A rerun writes byte-identical files.
 """
 import argparse
@@ -60,6 +64,14 @@ MARKER_ENTITY = {
     }
 }
 
+POINT_ENTITY = {
+    "Components": {
+        "Transform": {"Position": {"X": 0.0, "Y": 0.0, "Z": 0.0},
+                      "Rotation": {"Pitch": 0.0, "Yaw": 0.0, "Roll": 0.0}},
+        "Point": {"Name": "", "Tags": {}},
+    }
+}
+
 
 def load_source(path):
     if path.suffix == ".zip":
@@ -81,6 +93,10 @@ def place(entity, name_key, ident, at, prefab):
     comps = out["Components"]
     ax, ay, az = anchor(prefab)
     comps["Transform"]["Position"] = {"X": at[0] + ax + 0.5, "Y": float(at[1] + ay), "Z": at[2] + az + 0.5}
+    if name_key == "Point":
+        comps["Point"]["Name"] = ident["Name"]
+        comps["Point"]["Tags"] = {tag: "Empty" for tag in ident["Tags"]}
+        return out
     comps["Nameplate"]["Text"] = ident
     if name_key == "EncounterManager":
         comps["EncounterManager"]["EncounterId"] = ident
@@ -99,6 +115,8 @@ def build(spec):
     entities.append(place(ENCOUNTER_ENTITY, "EncounterManager", encounter["Id"], encounter["At"], prefab))
     for marker in spec.get("Markers", []):
         entities.append(place(MARKER_ENTITY, "SpawnMarker", marker["Id"], marker["At"], prefab))
+    for point in spec.get("Points", []):
+        entities.append(place(POINT_ENTITY, "Point", point, point["At"], prefab))
     prefab["entities"] = entities
     blocks = prefab.get("blocks", [])
     for block in spec.get("Blocks", []):

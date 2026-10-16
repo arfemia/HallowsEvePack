@@ -19,6 +19,9 @@
     "BossGroups is left alive in reach: the bar comes down, zc:defeated goes out and Complete pays",
     "the two Claims (each player's first win of the day; see the Rewards files), plays the music's",
     "ending, sends zc:reset and rests in Done. A fresh copy of the arena brings a fresh fight.",
+    "With HealthPacks true, the game's health packs drop on the arena's tagged points from the",
+    "fight's start to the win, the way its Feastmaster's do (Macro_Health_Pack_Spawn, every",
+    "HealthPackInterval seconds); the points come with the arena's prefab.",
     "",
     "A wipe (every player down) or an arena left empty for EmptyArenaSeconds resets it: Resetting",
     "clears the bar, removes everything in SweepGroups (heads, adds) and runs the boss's",
@@ -129,6 +132,30 @@
       "Value": [ 12, 12 ],
       "Description": "Seconds the music's ending plays after the win before the fight closes."
     },
+    "HealthPacks": {
+      "Value": false,
+      "Description": "True drops the game's health packs (the Feastmaster's pickups) on the arena's tagged points from the fight's start until the win or a reset. A player who walks into one heals."
+    },
+    "HealthPackTag": {
+      "Value": "Orbis_Boss_Health_Pack",
+      "Description": "The point tag the arena's prefab carries wherever a health pack may drop (its points, written by tools/arena_markers.py)."
+    },
+    "HealthPackRange": {
+      "Value": 45,
+      "Description": "How far from the script's entity the tagged points are looked for."
+    },
+    "HealthPackInteraction": {
+      "Value": "Root_Health_Pack_Spawn",
+      "Description": "The root interaction run at a chosen point: the game's own health pack, which falls to the ground there and waits 20 seconds for a player."
+    },
+    "HealthPackInterval": {
+      "Value": [ 40, 90 ],
+      "Description": "Seconds between drops, rolled each time; the first comes one full interval after the fight begins. The Feastmaster's own is 40 to 90."
+    },
+    "HealthPackSpawnCount": {
+      "Value": [ 1, 1 ],
+      "Description": "How many tagged points get a pack each time, rolled each time."
+    },
     "Phase1Behavior": {
       "Value": "$Null",
       "Description": "Macro run while phase 1 lasts, or $Null for none."
@@ -170,6 +197,20 @@
           "Type": "Nothing"
         }
       ]
+    },
+    {
+      "$Comment": "Health packs, the Feastmaster's way: while Orbis_Boss_HealthPack_Active is set (the fight's start sets it when HealthPacks is true; the win and a reset clear it), a pack drops on a random point tagged HealthPackTag every HealthPackInterval seconds.",
+      "Reference": "Macro_Health_Pack_Spawn",
+      "Modify": {
+        "FlagName": "Orbis_Boss_HealthPack_Active",
+        "RunningFlag": "Orbis_Boss_HealthPack_Running",
+        "SpawnTimer": "Orbis_Boss_HealthPack_Timer",
+        "Tag": { "Compute": "HealthPackTag" },
+        "Range": { "Compute": "HealthPackRange" },
+        "Interaction": { "Compute": "HealthPackInteraction" },
+        "Interval": { "Compute": "HealthPackInterval" },
+        "SpawnCount": { "Compute": "HealthPackSpawnCount" }
+      }
     },
     {
       "Reference": "Encounter_Macro_Reset_Arena",
@@ -219,6 +260,11 @@
             {
               "Type": "SetFlag",
               "Name": "Orbis_Boss_Settling",
+              "SetTo": false
+            },
+            {
+              "Type": "SetFlag",
+              "Name": "Orbis_Boss_HealthPack_Active",
               "SetTo": false
             }
           ]
@@ -539,6 +585,11 @@
               "Name": "Orbis_Boss_Live"
             },
             {
+              "Enabled": { "Compute": "HealthPacks" },
+              "Type": "SetFlag",
+              "Name": "Orbis_Boss_HealthPack_Active"
+            },
+            {
               "Type": "SetFlag",
               "Name": "Orbis_Boss_Reset_Sent",
               "SetTo": false
@@ -712,6 +763,11 @@
           },
           "ActionsBlocking": true,
           "Actions": [
+            {
+              "Type": "SetFlag",
+              "Name": "Orbis_Boss_HealthPack_Active",
+              "SetTo": false
+            },
             {
               "Enabled": { "Compute": "!isEmpty(DailyReward)" },
               "Type": "GrantReward",
