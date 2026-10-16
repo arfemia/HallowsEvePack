@@ -14,28 +14,30 @@ Hallow's Eve brings creatures, quests, items and achievements, with a host, Old 
 
 ## Hallow's Eve, October 1 to November 12
 
-- **Old Jack**, a pumpkin-headed host, sets up in the Forgotten Temple. His six quests end with lighting the Hollow Lantern, a keepsake with the year on it.
+- **Old Jack**, a pumpkin-headed host, sets up in the Forgotten Temple. His story runs through eight quests, out to the Horseman's graveyard and back, and ends with lighting the Hollow Lantern, a keepsake with the year on it.
 - Old Jack's board posts a job for the night and one for the day, every day, beside his three dailies and two small errands that change every four hours. Ask him "What needs doing?" and one list shows them all. Take them, hand them in and collect your pay at Jack.
-- **The Headless Horseman** rides his own graveyard. Press F on the Gravekeeper beside Old Jack to go in, alone or with up to four friends, and he gets tougher with each of you. He fights from the saddle, then on foot, and his head flies off: he can't be hurt until you cut it down. Ask Old Jack about the rider for a hint.
-- Your first win each day pays his daily Claim and the Horseman's Hoard: Hallow Sweets, Ectoplasm, Festival Tokens, a Spectral Lantern Bomb, and sometimes his Breastplate, Gauntlets or Greaves. Each piece makes your Fire damage 5% stronger, Lantern Bombs included.
+- **The Headless Horseman** rides his own graveyard. Buy a Grave Candle at Old Jack's shop and the Gravekeeper beside him burns it to let you in, alone or with up to four friends, and the Horseman gets tougher with each of you. He fights from the saddle, then on foot, and his head flies off: he can't be hurt until you cut it down. Ask Old Jack about the Horseman for a hint.
+- Finish Old Jack's quest The Rider and the Gravekeeper takes you on the hard ride, for a Burning Grave Candle. There he has about twice the health and hits harder. He pays better for it.
+- Your first win each day pays his daily Claim and the Horseman's Hoard, waiting in a chest where he falls: Hallow Sweets, Ectoplasm, Festival Tokens, a Spectral Lantern Bomb and favor with Old Jack, a Grave Candle back half the time, and sometimes his armour or a piece of the Flaming Hallowed set. The hard ride's Hoard is the only place to find his Flaming Breastplate and the Eternal Candle, which opens the normal graveyard without ever burning down.
 - After dark, away from torches, Jack Skeletons, Hollow Ghouls and Lost Souls come out, and Geode Wraiths walk the mineshafts.
 - Lantern Bombs, carved pumpkins packed with Boom Powder, in four tiers. They deal fire damage, and the stronger ones set creatures alight, slow them or throw flaming shards. Your own blast never hurts you, and it hurts other players only where PvP is on.
-- The Hallowed set, the Jack Helm and the Jack Shield. Wear both for more health and less fire damage, and you glow like a lantern.
+- The Hallowed set: the Jack Helm and Jack Shield, with the Horseman's armour. Any piece with a shield in your off hand gives more health and less fire damage, and you glow like a lantern. Wear all four armour pieces and your fire hits harder.
+- The Flaming Hallowed set, the burning and flaming version of each piece, hits harder again. Both Jack Shields cut the fire damage you take, and Old Jack sells a Fire Resistance Potion that halves it for three minutes.
 - A Costume Wand that turns a friend into a Jack Skeleton or a Lost Soul for a few minutes.
-- Trick or treat. Knock on every character who has a conversation for you, once a day each, for sweets, apples, a pumpkin pie or a costume. On this pack alone, only Old Jack plays along.
+- Trick or treat. Knock on every character who has a conversation for you, once a day each, for sweets, apples, a pumpkin pie or a costume. On this pack alone, Old Jack and the Gravekeeper play along.
 - Cursed Geodes turn up while you mine, and pumpkins you pick by hand sometimes come up Hallowed.
-- Old Jack's shop takes Hallow Sweets for bombs, the Jack set, the Costume Wand, Halloween decorations and the game's own Halloween Broomstick. Raise your standing and he sells five of Update 7's gadgets too, like the Spyglass and the Hookshot, and at the highest ranks the Burning Jack Helm and Flaming Jack Shield.
+- Old Jack's shop takes Hallow Sweets for bombs, Grave Candles, the Jack set, the Costume Wand, Halloween decorations and the game's own Halloween Broomstick. Raise your standing and he sells five of Update 7's gadgets too, like the Spyglass and the Hookshot, and at the highest ranks he trades your Jack Helm and Jack Shield up to the Burning Jack Helm and Flaming Jack Shield.
 - Two reputations, Old Jack's Favor and the Hallowed. His quests and jobs raise both, and putting down the night's creatures raises the Hallowed.
 - The Carving Bench. Craft it at a Workbench and carve lanterns, the Jack Helm and Lantern Bombs on it all year.
 - Harvest Moon, October 28 to November 1. About twice the creatures come out at night, and geodes and Hallowed Pumpkins come in pairs.
-- Ten achievements each year, the last of them The Hallowed and its title, plus more that span the years. The Hallowed asks for one win over the Horseman. Horseman Hunter and Horseman's Bane, for 10 and 50 wins in one Hallow's Eve, are a ladder of their own, with the title "Horseman's Bane" at the top.
+- Thirteen achievements each year, the last of them The Hallowed and its title, plus more that span the years and four for wearing the sets. The Hallowed asks for one win over the Horseman. Horseman Hunter and Horseman's Bane, for 10 and 50 wins in one Hallow's Eve, are a ladder of their own, with the title "Horseman's Bane" at the top. Bring him down with nothing but Lantern Bombs for By Lantern Light, or for Lamplighter and its title on the hard ride.
 
 ## Every season
 
 - Festival Favor, a reputation every season shares, and Festival Tokens, a wallet that keeps from one season to the next. Old Jack's quests and board jobs pay both.
 - The Festival Shelf at Old Jack's shop sells by season for Festival Tokens. High Festival Favor opens the Goblin Plushie and the Carved Kweebec Figure, found nowhere else.
 - Achievements for keepsakes from different seasons, up to Seasons of Orbis and the title "Friend of the Seasons".
-- An Almanac page for each season with your keepsakes, your lifetime tallies and every item to find, with where it comes from.
+- An Almanac page for each season with your keepsakes, your lifetime tallies and every item to find, with where it comes from. Hallow's Eve's shows the Horseman's Hoard and how often the whole server has brought him down.
 
 ## Hytale's Anniversary, January 13
 
@@ -51,7 +53,7 @@ From 2027, the day Hytale came out gets a banner and an Almanac page. Be on the 
 
 ## With MMO Skill Tree
 
-Install MMO Skill Tree 1.7.1 or newer and Hallow's Eve trains your skills. Old Jack's quests, jobs and the season's achievements pay XP in the skill the work trains: Defense for the fights, Harvesting for the pumpkins, Mining for the geodes and Artillery for the bombs. Without it, the rest of each season plays the same.
+Install MMO Skill Tree 1.7.1 or newer and Hallow's Eve trains your skills. Old Jack's quests, jobs and the season's achievements pay XP in the skill the work trains: Defense for the fights, Harvesting for the pumpkins, Mining for the geodes and Artillery for the bombs. The Horseman pays Defense XP for each day's first win and for clearing his graveyard. Without it, the rest of each season plays the same.
 
 Add the [MMO Skill Bounty Pack](https://www.curseforge.com/hytale/mods/mmo-skill-tree-bounty-board-pack-rich-customizable) and its Daily board posts a haunt contract each day of Hallow's Eve.
 
@@ -60,7 +62,7 @@ Add the [MMO Skill Bounty Pack](https://www.curseforge.com/hytale/mods/mmo-skill
 - Nothing to place. Each event starts and ends by date (UTC), and its host sets up on their own.
 - To switch Hallow's Eve off, add `"Hallows_Eve": { "Enabled": false }` to `mods/ziggfreedcommon/calendar.json` and run `/zigcalendar reload`. Every event has its own switch there, and the same file can move an event's dates. Nothing anyone earned is lost.
 - The Festival Shelf can also open all year as a shop of its own: switch it on in `mods/ziggfreedcommon/shops.json`.
-- The Horseman's Graveyard is a CommonLib dungeon: switch it off or change how many players share it in `mods/ziggfreedcommon/dungeons.json`. `/zigdungeon enter Hallows_Eve_Graveyard` takes you in alone while Hallow's Eve runs.
+- The Horseman's Graveyard and its hard ride are CommonLib dungeons, `Hallows_Eve_Graveyard` and `Hallows_Eve_Graveyard_Hard`: switch either off or change how many players share it in `mods/ziggfreedcommon/dungeons.json`. `/zigdungeon enter Hallows_Eve_Graveyard` takes you in alone while Hallow's Eve runs, without spending a candle.
 
 ## Install
 
