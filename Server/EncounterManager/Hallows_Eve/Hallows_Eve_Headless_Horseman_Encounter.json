@@ -26,6 +26,18 @@
     "seconds (HealthPackInterval), half as often as the Feastmaster's 40 to 90. His death pays each",
     "credited player the Hallows_Eve_Horseman_Daily Claim and a roll on Hallows_Eve_Horseman_Chase.",
     "",
+    "The fight's reach. The graveyard runs 110 blocks from the entrance room's back wall to its far",
+    "wall, and this script stands on the road south of the plaza, 61 and a half blocks from the",
+    "entrance room's door and about 50 from the far wall's corners. ArenaRange 61 (who is in the",
+    "fight, the wipe and empty-graveyard checks, the music) and ScalePlayerRange (the health steps)",
+    "count a player anywhere in the graveyard and nobody in the entrance room; only the outermost",
+    "graves by the north wall, past the road's fences, sit just outside it. CorpseRange 70 finds a",
+    "fallen player anywhere in the graveyard, and both kinds of volley reach every player in the fight",
+    "(the Range and VolleyRange forwarded below). LeashRange 57 holds him four blocks inside that: past",
+    "it the fight calls him back (Macro_Orbis_Boss_Hold) and he turns back toward the plaza, so he",
+    "never follows a player into the entrance room. No one sphere fits the graveyard exactly, so move",
+    "the script's cell in tools/arenas/Hallows_Eve_Graveyard.json and these numbers together.",
+    "",
     "Tune a phase's numbers in _ForwardedModifiers below (the transitions' HealthRange, the first",
     "volley's Interval), the health packs in HealthPackInterval, or the phase macros' own",
     "Parameters. The binding row",
@@ -58,11 +70,15 @@
     "GuardWave": "Macro_Orbis_Boss_Guards",
     "HealthPacks": true,
     "HealthPackInterval": [ 80, 180 ],
+    "ArenaRange": 61,
+    "CorpseRange": 70,
+    "ScalePlayerRange": [ 0, 61 ],
+    "LeashRange": 57,
     "_ForwardedModifiers": {
       "Phase1Behavior": {
         "Interval": [ 6, 6 ],
         "Interaction": "Root_Hallows_Eve_Horseman_Volley",
-        "Range": 45,
+        "Range": 61,
         "ArmedFlag": "Horseman_P1_Volley_Armed",
         "IntervalTimer": "Horseman_P1_Volley_Interval",
         "VolleyFlag": "Horseman_P1_Volley_Active",
@@ -89,6 +105,9 @@
         "Flag": "Horseman_Head_Flown",
         "Slot": "Boss",
         "Range": 80
+      },
+      "Phase3Behavior": {
+        "VolleyRange": 61
       }
     }
   }

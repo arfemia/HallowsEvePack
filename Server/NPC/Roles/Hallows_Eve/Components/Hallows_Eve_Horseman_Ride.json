@@ -48,6 +48,14 @@
     "blocked flag his flight sets on each touch, not on a path-finding state, which the Wander",
     "leaves as it was and so could keep him wandering.",
     "",
+    "Return: his fight holds him to his arena. When he strays past its LeashRange, his fight's script",
+    "(Macro_Orbis_Boss_Hold) notifies him with Orbis_Boss_Leash, and in any move but a swoop he breaks",
+    "off and flies back at full speed to the point 8 blocks above where he spawned, then swings round",
+    "the fountain before he dives again, by when he may have turned on a nearer player",
+    "(TargetSwitchTimer). That is how he turns back at the graveyard's entrance end instead of",
+    "following a player into the entrance room. His health is untouched; only his fight's reset",
+    "restores it.",
+    "",
     "A timer starts only once in an NPC's life (TimerStart does nothing after that), so every move",
     "here arms its timer with a TimerStart and a TimerRestart together; TimerRestart draws from the",
     "RestartValueRange its first TimerStart gave. Every point is an Offset from where he spawned",
@@ -162,6 +170,18 @@
     "UnstickTime": {
       "Value": [ 1, 1 ],
       "Description": "Seconds he spends flying clear of a block he touched before he carries on with his move."
+    },
+    "ReturnSpeed": {
+      "Value": 1,
+      "Description": "His speed flying back over the plaza when his fight calls him back, relative to his role's MotionFlyMaxHorizontalSpeed."
+    },
+    "ReturnReach": {
+      "Value": 4,
+      "Description": "How close to the point above his spawn he must come before the return ends in a swing."
+    },
+    "ReturnTimeLimit": {
+      "Value": [ 6, 6 ],
+      "Description": "Seconds a return may take before he swings from wherever he is."
     }
   },
   "Content": {
@@ -181,6 +201,22 @@
           { "Type": "TimerStart", "Name": "Hallows_Eve_Horseman_Lap_Wait", "StartValueRange": { "Compute": "FirstLapAfter" }, "RestartValueRange": { "Compute": "LapGap" } },
           { "Type": "TimerStart", "Name": "Hallows_Eve_Horseman_Swoop_Wait", "StartValueRange": { "Compute": "FirstSwoopAfter" }, "RestartValueRange": { "Compute": "SwoopGap" } },
           { "Type": "TimerStart", "Name": "Hallows_Eve_Horseman_Line_Wait", "StartValueRange": { "Compute": "FirstLineAfter" }, "RestartValueRange": { "Compute": "LineGap" } }
+        ]
+      },
+      {
+        "$Comment": "Called back: his fight's script notifies him with Orbis_Boss_Leash while he is past its LeashRange. In any move but a swoop (a charge already launched runs its course) he breaks off and returns. The message is only read here, so one that comes while he is already returning is left to lapse.",
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            { "Type": "Not", "Sensor": { "Type": "State", "State": ".Return" } },
+            { "Type": "Not", "Sensor": { "Type": "State", "State": ".Swoop" } },
+            { "Type": "Beacon", "Message": "Orbis_Boss_Leash", "Range": 100 }
+          ]
+        },
+        "Actions": [
+          { "Type": "TimerStart", "Name": "Hallows_Eve_Horseman_Return", "StartValueRange": { "Compute": "ReturnTimeLimit" }, "RestartValueRange": { "Compute": "ReturnTimeLimit" } },
+          { "Type": "TimerRestart", "Name": "Hallows_Eve_Horseman_Return" },
+          { "Type": "State", "State": ".Return" }
         ]
       },
       {
@@ -217,6 +253,38 @@
           "MaxHeadingChange": 180,
           "TestsPerTick": 8
         }
+      },
+      {
+        "$Comment": "Return: at full speed to the point 8 blocks above where he spawned (the first lap point, on the plaza's north side), then a swing round the fountain before he dives again, by when he may have turned on a nearer player. Out of time (ReturnTimeLimit) he swings from wherever he is.",
+        "Sensor": {
+          "Type": "State",
+          "State": ".Return"
+        },
+        "Instructions": [
+          {
+            "Continue": true,
+            "Sensor": { "Type": "AdjustPosition", "Sensor": { "Type": "Leash", "Range": 0.1 }, "Offset": [ 0, 8, 0 ] },
+            "Actions": [ { "Type": "StorePosition", "Slot": "Hallows_Eve_Horseman_Return_Point" } ]
+          },
+          {
+            "Sensor": {
+              "Type": "Or",
+              "Sensors": [
+                { "Type": "ReadPosition", "Slot": "Hallows_Eve_Horseman_Return_Point", "Range": { "Compute": "ReturnReach" } },
+                { "Type": "Timer", "Name": "Hallows_Eve_Horseman_Return", "State": "Stopped" }
+              ]
+            },
+            "Actions": [
+              { "Type": "TimerStart", "Name": "Hallows_Eve_Horseman_Swing", "StartValueRange": { "Compute": "SwingTime" }, "RestartValueRange": { "Compute": "SwingTime" } },
+              { "Type": "TimerRestart", "Name": "Hallows_Eve_Horseman_Swing" },
+              { "Type": "State", "State": ".Swing" }
+            ]
+          },
+          {
+            "Sensor": { "Type": "ReadPosition", "Slot": "Hallows_Eve_Horseman_Return_Point", "Range": 200 },
+            "BodyMotion": { "Type": "Seek", "DesiredAltitudeWeight": 0, "RelativeSpeed": { "Compute": "ReturnSpeed" }, "SlowDownDistance": 2, "StopDistance": 1 }
+          }
+        ]
       },
       {
         "$Comment": "Dive: straight at a point just above his target, into sword reach.",

@@ -20,6 +20,12 @@
     "No health packs fall on this ride. The bar shows the game's hard-mode style (BossBarHardMode)",
     "and his hard name.",
     "",
+    "Its reach is the normal fight's, since both graveyards are one place (that file tells the",
+    "distances): ArenaRange 61 and ScalePlayerRange count everyone in the graveyard and nobody in the",
+    "entrance room, CorpseRange 70 finds a fallen player anywhere in it, both kinds of volley reach",
+    "every player in the fight, and LeashRange 57 calls him back before he can follow anyone into the",
+    "entrance room. Change these with the normal fight's.",
+    "",
     "A win pays its own two Claims, Hallows_Eve_Horseman_Daily_Hard and Hallows_Eve_Horseman_Chase_Hard,",
     "counted apart from the normal fight's, so a player can collect both on the same day. The binding",
     "row ZiggfreedCommon/Encounters/Hallows_Eve_Headless_Horseman_Encounter_Hard.json names the fight",
@@ -52,11 +58,15 @@
     "ResetBehavior": "Macro_Hallows_Eve_Horseman_Reset",
     "GuardWave": "Macro_Orbis_Boss_Guards",
     "HealthPacks": false,
+    "ArenaRange": 61,
+    "CorpseRange": 70,
+    "ScalePlayerRange": [ 0, 61 ],
+    "LeashRange": 57,
     "_ForwardedModifiers": {
       "Phase1Behavior": {
         "Interval": [ 4, 4 ],
         "Interaction": "Root_Hallows_Eve_Horseman_Volley_Fire",
-        "Range": 45,
+        "Range": 61,
         "DropDelay": [ 1.2, 1.5 ],
         "ArmedFlag": "Horseman_P1_Volley_Armed",
         "IntervalTimer": "Horseman_P1_Volley_Interval",
@@ -91,7 +101,8 @@
         "Range": 80
       },
       "Phase3Behavior": {
-        "Interval": [ 6, 6 ]
+        "Interval": [ 6, 6 ],
+        "VolleyRange": 61
       }
     }
   }

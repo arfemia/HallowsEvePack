@@ -1,5 +1,18 @@
 {
-  "$Comment": "Keeps a boss bound into the Boss slot whatever form he takes: each tick, any NPC of BossGroups in reach is locked into the slot. A boss who changes role mid-fight comes back as a new entity, and this is what holds the fight on him. The Orbis boss template runs it in every phase; list every form of the boss in his group.",
+  "$Comment": [
+    "Keeps a boss bound into the Boss slot whatever form he takes, and holds him to his arena. Each",
+    "tick, any NPC of BossGroups in reach is locked into the slot: a boss who changes role mid-fight",
+    "comes back as a new entity, and this is what holds the fight on him. The Orbis boss template runs",
+    "it in every phase; list every form of the boss in his group.",
+    "",
+    "The leash: while the bound boss stands farther than LeashRange from the script's entity, the",
+    "script notifies him with LeashMessage (the game's Notify, straight to the Boss slot, carrying the",
+    "script's entity as the sender), every tick until he is back inside it. His roles answer it by",
+    "turning back toward the fight, so he never follows a player out of it; a role that does not listen",
+    "for the message ignores it. Nothing here touches his health: only the fight's reset does. Keep",
+    "LeashRange a few blocks inside the fight's ArenaRange and well inside Range, past which the",
+    "library reads him as gone."
+  ],
   "Class": "Instruction",
   "Type": "Component",
   "Interface": "Hytale.Instruction.Encounter.Phase.Behavior",
@@ -12,26 +25,73 @@
     "Range": {
       "Value": 80,
       "Description": "How far from the script's entity the boss is looked for."
+    },
+    "LeashRange": {
+      "Value": 41,
+      "Description": "How far from the script's entity the boss may go before he is called back toward it."
+    },
+    "LeashMessage": {
+      "Value": "Orbis_Boss_Leash",
+      "Description": "The message the boss is notified with while he is past LeashRange. His roles listen for it by this name."
     }
   },
   "Content": {
     "Continue": true,
     "Sensor": {
-      "Type": "Mob",
-      "Range": { "Compute": "Range" },
-      "LockOnTarget": true,
-      "LockedTargetSlot": "Boss",
-      "Rebind": true,
-      "Filters": [
-        {
-          "Type": "NPCGroup",
-          "IncludeGroups": { "Compute": "BossGroups" }
-        }
-      ]
+      "Type": "Any"
     },
-    "Actions": [
+    "Instructions": [
       {
-        "Type": "Nothing"
+        "$Comment": "Binds any boss of BossGroups in reach into the Boss slot.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "Mob",
+          "Range": { "Compute": "Range" },
+          "LockOnTarget": true,
+          "LockedTargetSlot": "Boss",
+          "Rebind": true,
+          "Filters": [
+            {
+              "Type": "NPCGroup",
+              "IncludeGroups": { "Compute": "BossGroups" }
+            }
+          ]
+        },
+        "Actions": [
+          {
+            "Type": "Nothing"
+          }
+        ]
+      },
+      {
+        "$Comment": "The bound boss is past LeashRange: call him back. The message lasts a second and is sent again each tick he stays out.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            {
+              "Type": "Target",
+              "TargetSlot": "Boss",
+              "Range": { "Compute": "Range" }
+            },
+            {
+              "Type": "Not",
+              "Sensor": {
+                "Type": "Target",
+                "TargetSlot": "Boss",
+                "Range": { "Compute": "LeashRange" }
+              }
+            }
+          ]
+        },
+        "Actions": [
+          {
+            "Type": "Notify",
+            "Message": { "Compute": "LeashMessage" },
+            "UseTargetSlot": "Boss",
+            "ExpirationTime": 1
+          }
+        ]
       }
     ]
   }

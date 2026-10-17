@@ -5,6 +5,8 @@
     "road just south of the central plaza (the script raises his Head and adds around it, so it stands",
     "clear of the plaza's centrepiece), his spawn marker on the plaza's north side, and a vanilla",
     "Leave_Instance pad against the entrance room's back wall, the way out. Cells count from the anchor.",
+    "His fight's reach and leash (ArenaRange, LeashRange and the rest, in both his fights' scripts) are",
+    "measured from the fight's entity, so move them with its cell.",
     "His spawn marker sits 7 cells north of the fountain's centre (X 0, Z 53), and his flight in the saddle",
     "(Server/NPC/Roles/Hallows_Eve/Components/Hallows_Eve_Horseman_Ride.json) measures its swings and",
     "fountain laps from where he spawns, so move the marker and those offsets together.",

@@ -15,7 +15,9 @@
     "moves to Phase_1. Away from his arena's prefab (a console spawn on a bare world) no marker is in",
     "reach, so after two and a half seconds the plain Spawn action raises FallbackRole beside the",
     "script and the BossGroups sensor binds him the same way. Each phase keeps the boss bound through",
-    "a form change, runs its behavior, watches for the next phase, and ends the fight when no boss of",
+    "a form change, calls him back toward the script whenever he strays past LeashRange (his roles",
+    "answer Macro_Orbis_Boss_Hold's Orbis_Boss_Leash by turning back, and his health is untouched),",
+    "runs its behavior, watches for the next phase, and ends the fight when no boss of",
     "BossGroups is left alive in reach: the bar comes down, zc:defeated goes out and Complete pays",
     "the two Claims (each player's first win of the day; see the Rewards files), plays the music's",
     "ending, sends zc:reset and rests in Done. A fresh copy of the arena brings a fresh fight.",
@@ -83,6 +85,10 @@
     "TargetRange": {
       "Value": 80,
       "Description": "How far the boss may roam and still be held in the fight. Cover the whole arena."
+    },
+    "LeashRange": {
+      "Value": 41,
+      "Description": "How far from the script's entity the boss may go before the fight calls him back (Macro_Orbis_Boss_Hold notifies him with Orbis_Boss_Leash, and his roles turn him back toward the fight). Keep it a few blocks inside ArenaRange, so he never follows a player out of the fight."
     },
     "BossBarName": {
       "Value": "npcs.Hallows_Eve_Headless_Horseman.name",
@@ -706,7 +712,8 @@
           "Reference": "Macro_Orbis_Boss_Hold",
           "Modify": {
             "BossGroups": { "Compute": "BossGroups" },
-            "Range": { "Compute": "TargetRange" }
+            "Range": { "Compute": "TargetRange" },
+            "LeashRange": { "Compute": "LeashRange" }
           }
         },
         {
@@ -744,7 +751,8 @@
           "Reference": "Macro_Orbis_Boss_Hold",
           "Modify": {
             "BossGroups": { "Compute": "BossGroups" },
-            "Range": { "Compute": "TargetRange" }
+            "Range": { "Compute": "TargetRange" },
+            "LeashRange": { "Compute": "LeashRange" }
           }
         },
         {
@@ -782,7 +790,8 @@
           "Reference": "Macro_Orbis_Boss_Hold",
           "Modify": {
             "BossGroups": { "Compute": "BossGroups" },
-            "Range": { "Compute": "TargetRange" }
+            "Range": { "Compute": "TargetRange" },
+            "LeashRange": { "Compute": "LeashRange" }
           }
         },
         {

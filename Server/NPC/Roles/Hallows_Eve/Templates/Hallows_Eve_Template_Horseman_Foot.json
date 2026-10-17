@@ -22,6 +22,13 @@
     "block is ever broken. A miss leaves him a second to recover (.ChargeEnd). His model must carry",
     "the five sets this file plays: DashPrepare, Dash, DashImpact, DashMiss and DashCrash.",
     "",
+    ".Return is how his fight holds him to his arena. When he strays past its LeashRange, his",
+    "fight's script (Macro_Orbis_Boss_Hold) notifies him with Orbis_Boss_Leash, and unless he is",
+    "mid-dash or stunned he walks back toward the fight until he is within ReturnRange of it (or",
+    "ReturnTimeLimit runs out), then fights again. That is how he turns back at the graveyard's",
+    "entrance end instead of following a player into the entrance room. His health is untouched;",
+    "only his fight's reset restores it.",
+    "",
     "Every parameter's default is the normal Horseman's; a Variant overrides what differs. Any key",
     "a Variant names that this file does not declare makes the game refuse the whole role."
   ],
@@ -138,6 +145,57 @@
       "$Comment": "Combat: the combat evaluator picks actions and drives these sub-states.",
       "Sensor": { "Type": "State", "State": "Combat" },
       "Instructions": [
+        {
+          "$Comment": "Called back: his fight's script notifies him with Orbis_Boss_Leash while he is past its LeashRange, sending its own entity. Unless he is mid-dash or stunned, he notes where the fight stands and turns back. The message is only read here, so one that comes while he is already returning is left to lapse.",
+          "Sensor": {
+            "Type": "And",
+            "Sensors": [
+              { "Type": "Not", "Sensor": { "Type": "State", "State": ".Return" } },
+              { "Type": "Not", "Sensor": { "Type": "State", "IgnoreMissingSetState": true, "State": ".Charge" } },
+              { "Type": "Not", "Sensor": { "Type": "State", "IgnoreMissingSetState": true, "State": ".Stunned" } },
+              { "Type": "Beacon", "Message": "Orbis_Boss_Leash", "Range": 100 }
+            ]
+          },
+          "Actions": [
+            { "Type": "StorePosition", "Slot": "Hallows_Eve_Horseman_Fight" },
+            { "Type": "TimerStart", "Name": "Hallows_Eve_Horseman_Return", "StartValueRange": { "Compute": "ReturnTimeLimit" }, "RestartValueRange": { "Compute": "ReturnTimeLimit" } },
+            { "Type": "TimerRestart", "Name": "Hallows_Eve_Horseman_Return" },
+            { "Type": "State", "State": ".Return" }
+          ]
+        },
+        {
+          "$Comment": "Return: he walks back toward his fight until he is within ReturnRange of it, or ReturnTimeLimit runs out, then fights again from there. He swings at no one on the way.",
+          "Sensor": { "Type": "State", "State": ".Return" },
+          "Instructions": [
+            {
+              "Sensor": {
+                "Type": "Or",
+                "Sensors": [
+                  { "Type": "ReadPosition", "Slot": "Hallows_Eve_Horseman_Fight", "Range": { "Compute": "ReturnRange" } },
+                  { "Type": "Timer", "Name": "Hallows_Eve_Horseman_Return", "State": "Stopped" }
+                ]
+              },
+              "Actions": [
+                { "Type": "State", "State": ".Default" }
+              ]
+            },
+            {
+              "Sensor": { "Type": "ReadPosition", "Slot": "Hallows_Eve_Horseman_Fight", "Range": 200 },
+              "BodyMotion": {
+                "Type": "Seek",
+                "SlowDownDistance": 1,
+                "StopDistance": 0.5,
+                "RelativeSpeed": { "Compute": "ReturnSpeed" },
+                "UsePathfinder": true
+              }
+            },
+            {
+              "Actions": [
+                { "Type": "State", "State": ".Default" }
+              ]
+            }
+          ]
+        },
         {
           "Sensor": {
             "Type": "Or",
@@ -468,6 +526,18 @@
       "Value": "Root_NPC_Skeleton_Burnt_Praetorian_Charge_Hit",
       "Description": "The interaction a player he runs through takes.",
       "TypeHint": "String"
+    },
+    "ReturnRange": {
+      "Value": 50,
+      "Description": "How close to his fight's entity he walks back, once his fight calls him back, before he fights again. Keep it inside the fight's LeashRange."
+    },
+    "ReturnSpeed": {
+      "Value": 1,
+      "Description": "His walking speed on the way back, relative to MaxSpeed."
+    },
+    "ReturnTimeLimit": {
+      "Value": [ 5, 5 ],
+      "Description": "Seconds the walk back may take before he fights again from wherever he is."
     }
   },
   "StateTransitions": [
