@@ -144,6 +144,7 @@
     "Skeletons_Knocked_Down": {
       "Kind": "KILL_ENTITY",
       "Target": "Hallows_Eve_Jack_Skeleton",
+      "Targets": [ "Hallows_Eve_Jack_Skeleton_Archer" ],
       "MatchMode": "EXACT",
       "TextKey": "almanac.hallows_eve.skeletons_knocked_down",
       "Icon": "Hallows_Eve_Jack_Helm",

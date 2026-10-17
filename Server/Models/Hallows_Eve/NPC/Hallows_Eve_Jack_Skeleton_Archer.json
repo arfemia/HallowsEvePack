@@ -1,0 +1,24 @@
+{
+  "$Comment": "A Jack Archer's look: the game's Burnt Skeleton Archer, scorched bones, chest, legs and quiver, under the same Jack Helm a Jack Skeleton wears (Hallows_Eve_Jack_Skeleton.json beside this file). Parent Skeleton brings the body, its animations and its hitbox. DefaultAttachments replaces the parent's list whole, so the archer's own hood and the skull's glowing eyes are left out on purpose: the helm's carved face is the face. Light is the pumpkin's glow, the Jack Skeleton's own; each hex digit is a red, green or blue level from 0 to f.",
+  "Parent": "Skeleton",
+  "Texture": "NPC/Undead/Skeleton/Models/Model_Textures/Burnt.png",
+  "DefaultAttachments": [
+    {
+      "Model": "Items/Hallows_Eve/Jack_Helm/Jack_Helm.blockymodel",
+      "Texture": "Items/Hallows_Eve/Jack_Helm/Jack_Helm_Texture.png"
+    },
+    {
+      "Model": "NPC/Undead/Skeleton/Models/Attachments/Burnt_Archer/Chest.blockymodel",
+      "Texture": "NPC/Undead/Skeleton/Models/Attachments/Burnt_Archer/Chest_Texture.png"
+    },
+    {
+      "Model": "NPC/Undead/Skeleton/Models/Attachments/Burnt_Archer/Legs.blockymodel",
+      "Texture": "NPC/Undead/Skeleton/Models/Attachments/Burnt_Archer/Legs_Texture.png"
+    },
+    {
+      "Model": "Items/Back/Quiver.blockymodel",
+      "Texture": "Items/Back/Quiver_Texture.png"
+    }
+  ],
+  "Light": { "Color": "#962" }
+}

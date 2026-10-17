@@ -1,0 +1,35 @@
+{
+  "$Comment": "A Jack Archer: the game's Burnt Skeleton Archer under a carved pumpkin, a shortbow skeleton that keeps its distance and shoots. It is a Variant of Template_Intelligent rather than of Skeleton_Burnt_Archer because a Variant's Modify reaches only the Parameters its immediate Reference declares; so this Modify is Skeleton_Burnt_Archer's own, with the look, the drop list and the nameplate changed, its Memories leaves replaced by IsMemory false, and the values that file computes written in place. Any key the template does not declare makes the game refuse the whole role, and the creature never spawns. Its id keeps Skeleton in it, so the game's Skeleton group (every role named *Skeleton*) holds it: skeletons treat it as one of their own, and no skeleton's blow hurts it (DisableDamageGroups). It drops what a Jack Skeleton drops (Hallows_Eve_Drop_Jack_Skeleton). It never spawns in the wild: only the Headless Horseman's hard fight raises it, in the waves around his fountain, which is why it is in Hallows_Eve_Horseman_Adds_Group. A kill pays Hallowed favor (it is in Hallows_Eve_Event_Mobs).",
+  "Type": "Variant",
+  "Reference": "Template_Intelligent",
+  "Modify": {
+    "DisableDamageGroups": ["Skeleton"],
+    "DeathParticles": "Effect_Death_Bones",
+    "MaxHealth": 74,
+    "HearingRange": 8,
+    "ViewSector": 270,
+    "WakingPeriod": [0, 24],
+    "DropList": "Hallows_Eve_Drop_Jack_Skeleton",
+    "Appearance": "Hallows_Eve_Jack_Skeleton_Archer",
+    "Weapons": ["Weapon_Shortbow_Iron_Rusty"],
+    "FlockArray": ["Hallows_Eve_Jack_Skeleton_Archer"],
+    "FollowPatrolPath": false,
+    "Patrol": false,
+    "WanderRadius": 3,
+    "Attack": "Skeleton_Burnt_Archer_Bow_Shoot",
+    "CombatBackOffAfterAttack": false,
+    "AttackDistance": 15,
+    "CombatFleeIfTooCloseDistance": 4,
+    "DesiredAttackDistanceRange": [5, 14.5],
+    "CombatBehaviorDistance": 15,
+    "TargetRange": 15,
+    "LeashMinPlayerDistance": 18,
+    "ApplySeparation": false,
+    "_CombatConfig": {
+      "EntityEffects": ["Immunity_Fire"]
+    },
+    "IsMemory": false,
+    "BreathesInWater": true,
+    "NameTranslationKey": "npcs.Hallows_Eve_Jack_Skeleton_Archer.name"
+  }
+}

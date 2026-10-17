@@ -1,0 +1,326 @@
+{
+  "$Comment": [
+    "Adds that rise as a boss's health falls: the Orbis boss template runs it through all three phases",
+    "when a Variant names it as FightWaves. Each of the four steps raises one wave (ziggfreed-common's",
+    "Zc_Wave_Rise: a near row of Role and a far row of FarRole, measured from the script's entity toward",
+    "the way it faces) the first time the boss in Slot falls inside its health range, a fraction of his",
+    "maximum, whatever form he is in. Nothing waits on these waves: they join the fight and stay until",
+    "they are killed or the fight resets.",
+    "",
+    "Each step fires once per try: its flag (Orbis_Boss_Fight_Wave_First to _Fourth) keeps it from",
+    "firing again, so a boss healed above a step and brought below it again raises no second wave. The",
+    "template clears the four flags when the fight resets, so every try raises them again. Give a step",
+    "a HealthRange of [0, 0] and it never fires before the boss falls. The defaults are the Headless",
+    "Horseman's hard ride: three Jack Skeletons on the plaza south of his fountain and two Jack Archers",
+    "at its north corners, at 80, 60, 40 and 20 percent of his health."
+  ],
+  "Class": "Instruction",
+  "Type": "Component",
+  "Interface": "Hytale.Instruction.Encounter.Phase.Behavior",
+  "Parameters": {
+    "Role": {
+      "Value": "Hallows_Eve_Jack_Skeleton",
+      "Description": "The creature each wave's near row raises."
+    },
+    "FarRole": {
+      "Value": "Hallows_Eve_Jack_Skeleton_Archer",
+      "Description": "The creature each wave's far row raises. Give it Role for waves of one kind."
+    },
+    "NearCount": {
+      "Value": [ 3, 3 ],
+      "Description": "How many rise in each near row, as a [min, max] range of 1 or more."
+    },
+    "NearAngle": {
+      "Value": 90,
+      "Description": "Degrees the near row spreads across, centred on the way the script's entity faces."
+    },
+    "NearDistance": {
+      "Value": [ 7, 7 ],
+      "Description": "Blocks from the script's entity to the near row."
+    },
+    "FarCount": {
+      "Value": [ 2, 2 ],
+      "Description": "How many rise in each far row, as a [min, max] range of 1 or more."
+    },
+    "FarAngle": {
+      "Value": 37,
+      "Description": "Degrees the far row spreads across, centred on the way the script's entity faces."
+    },
+    "FarDistance": {
+      "Value": [ 19, 19 ],
+      "Description": "Blocks from the script's entity to the far row."
+    },
+    "Slot": {
+      "Value": "Boss",
+      "Description": "The target slot holding the boss whose health is watched."
+    },
+    "Range": {
+      "Value": 80,
+      "Description": "How far from the script's entity the boss is looked for. Cover the whole arena."
+    },
+    "FirstHealth": {
+      "Value": [ 0, 0.8 ],
+      "Description": "The first wave rises once the boss's health, as a fraction of his maximum, falls inside this range."
+    },
+    "SecondHealth": {
+      "Value": [ 0, 0.6 ],
+      "Description": "The same for the second wave."
+    },
+    "ThirdHealth": {
+      "Value": [ 0, 0.4 ],
+      "Description": "The same for the third wave."
+    },
+    "FourthHealth": {
+      "Value": [ 0, 0.2 ],
+      "Description": "The same for the fourth wave."
+    },
+    "Signal": {
+      "Value": "zc:wave:fight",
+      "Description": "The beat sent to the library as each wave rises: zc:wave, or zc:wave:<label>."
+    },
+    "Moment": {
+      "Value": "",
+      "Description": "The FeedbackMoment each member is shown as a wave rises. Empty shows nothing."
+    }
+  },
+  "Content": {
+    "Continue": true,
+    "Sensor": {
+      "Type": "Any"
+    },
+    "Instructions": [
+      {
+        "$Comment": "The first step.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            {
+              "Type": "Flag",
+              "Name": "Orbis_Boss_Fight_Wave_First",
+              "Set": false
+            },
+            {
+              "Type": "Target",
+              "TargetSlot": { "Compute": "Slot" },
+              "Range": { "Compute": "Range" },
+              "Filters": [
+                {
+                  "Type": "Stat",
+                  "StatTarget": "Value",
+                  "RelativeTo": "Health",
+                  "Stat": "Health",
+                  "RelativeToTarget": "Max",
+                  "ValueRange": { "Compute": "FirstHealth" }
+                }
+              ]
+            }
+          ]
+        },
+        "Instructions": [
+          {
+            "Continue": true,
+            "Reference": "Zc_Wave_Rise",
+            "Modify": {
+              "Role": { "Compute": "Role" },
+              "FarRole": { "Compute": "FarRole" },
+              "NearCount": { "Compute": "NearCount" },
+              "NearAngle": { "Compute": "NearAngle" },
+              "NearDistance": { "Compute": "NearDistance" },
+              "FarCount": { "Compute": "FarCount" },
+              "FarAngle": { "Compute": "FarAngle" },
+              "FarDistance": { "Compute": "FarDistance" },
+              "Signal": { "Compute": "Signal" },
+              "Moment": { "Compute": "Moment" }
+            }
+          },
+          {
+            "Sensor": {
+              "Type": "Any"
+            },
+            "Actions": [
+              {
+                "Type": "SetFlag",
+                "Name": "Orbis_Boss_Fight_Wave_First"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$Comment": "The second step.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            {
+              "Type": "Flag",
+              "Name": "Orbis_Boss_Fight_Wave_Second",
+              "Set": false
+            },
+            {
+              "Type": "Target",
+              "TargetSlot": { "Compute": "Slot" },
+              "Range": { "Compute": "Range" },
+              "Filters": [
+                {
+                  "Type": "Stat",
+                  "StatTarget": "Value",
+                  "RelativeTo": "Health",
+                  "Stat": "Health",
+                  "RelativeToTarget": "Max",
+                  "ValueRange": { "Compute": "SecondHealth" }
+                }
+              ]
+            }
+          ]
+        },
+        "Instructions": [
+          {
+            "Continue": true,
+            "Reference": "Zc_Wave_Rise",
+            "Modify": {
+              "Role": { "Compute": "Role" },
+              "FarRole": { "Compute": "FarRole" },
+              "NearCount": { "Compute": "NearCount" },
+              "NearAngle": { "Compute": "NearAngle" },
+              "NearDistance": { "Compute": "NearDistance" },
+              "FarCount": { "Compute": "FarCount" },
+              "FarAngle": { "Compute": "FarAngle" },
+              "FarDistance": { "Compute": "FarDistance" },
+              "Signal": { "Compute": "Signal" },
+              "Moment": { "Compute": "Moment" }
+            }
+          },
+          {
+            "Sensor": {
+              "Type": "Any"
+            },
+            "Actions": [
+              {
+                "Type": "SetFlag",
+                "Name": "Orbis_Boss_Fight_Wave_Second"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$Comment": "The third step.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            {
+              "Type": "Flag",
+              "Name": "Orbis_Boss_Fight_Wave_Third",
+              "Set": false
+            },
+            {
+              "Type": "Target",
+              "TargetSlot": { "Compute": "Slot" },
+              "Range": { "Compute": "Range" },
+              "Filters": [
+                {
+                  "Type": "Stat",
+                  "StatTarget": "Value",
+                  "RelativeTo": "Health",
+                  "Stat": "Health",
+                  "RelativeToTarget": "Max",
+                  "ValueRange": { "Compute": "ThirdHealth" }
+                }
+              ]
+            }
+          ]
+        },
+        "Instructions": [
+          {
+            "Continue": true,
+            "Reference": "Zc_Wave_Rise",
+            "Modify": {
+              "Role": { "Compute": "Role" },
+              "FarRole": { "Compute": "FarRole" },
+              "NearCount": { "Compute": "NearCount" },
+              "NearAngle": { "Compute": "NearAngle" },
+              "NearDistance": { "Compute": "NearDistance" },
+              "FarCount": { "Compute": "FarCount" },
+              "FarAngle": { "Compute": "FarAngle" },
+              "FarDistance": { "Compute": "FarDistance" },
+              "Signal": { "Compute": "Signal" },
+              "Moment": { "Compute": "Moment" }
+            }
+          },
+          {
+            "Sensor": {
+              "Type": "Any"
+            },
+            "Actions": [
+              {
+                "Type": "SetFlag",
+                "Name": "Orbis_Boss_Fight_Wave_Third"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$Comment": "The fourth step.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            {
+              "Type": "Flag",
+              "Name": "Orbis_Boss_Fight_Wave_Fourth",
+              "Set": false
+            },
+            {
+              "Type": "Target",
+              "TargetSlot": { "Compute": "Slot" },
+              "Range": { "Compute": "Range" },
+              "Filters": [
+                {
+                  "Type": "Stat",
+                  "StatTarget": "Value",
+                  "RelativeTo": "Health",
+                  "Stat": "Health",
+                  "RelativeToTarget": "Max",
+                  "ValueRange": { "Compute": "FourthHealth" }
+                }
+              ]
+            }
+          ]
+        },
+        "Instructions": [
+          {
+            "Continue": true,
+            "Reference": "Zc_Wave_Rise",
+            "Modify": {
+              "Role": { "Compute": "Role" },
+              "FarRole": { "Compute": "FarRole" },
+              "NearCount": { "Compute": "NearCount" },
+              "NearAngle": { "Compute": "NearAngle" },
+              "NearDistance": { "Compute": "NearDistance" },
+              "FarCount": { "Compute": "FarCount" },
+              "FarAngle": { "Compute": "FarAngle" },
+              "FarDistance": { "Compute": "FarDistance" },
+              "Signal": { "Compute": "Signal" },
+              "Moment": { "Compute": "Moment" }
+            }
+          },
+          {
+            "Sensor": {
+              "Type": "Any"
+            },
+            "Actions": [
+              {
+                "Type": "SetFlag",
+                "Name": "Orbis_Boss_Fight_Wave_Fourth"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

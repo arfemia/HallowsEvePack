@@ -45,6 +45,7 @@
     "knock_down_skeletons": {
       "Kind": "KILL_ENTITY",
       "Target": "Hallows_Eve_Jack_Skeleton",
+      "Targets": [ "Hallows_Eve_Jack_Skeleton_Archer" ],
       "MatchMode": "EXACT",
       "Amount": 5,
       "TextKey": "objective.hallows_eve.knock_down_skeletons",

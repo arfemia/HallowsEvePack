@@ -1,4 +1,4 @@
 {
-  "$Comment": "The creatures that guard the Headless Horseman's fountain before he rises and come to his side mid-fight: the Jack Skeletons. His fight waits for every one of them in his arena to die before he rises (Macro_Orbis_Boss_Guards), and clears them all when the fight resets, so the next try starts clean. Add a role id here if he calls another kind.",
-  "IncludeRoles": [ "Hallows_Eve_Jack_Skeleton" ]
+  "$Comment": "The creatures that guard the Headless Horseman's fountain before he rises and come to his side mid-fight: the Jack Skeletons, and on his hard ride the Jack Archers in its waves. His fight waits for every one of them in his arena to die before he rises (Macro_Orbis_Boss_Guards on the normal ride, each wave of Zc_Wave_Chain on the hard one), and clears them all when the fight resets, so the next try starts clean. Add a role id here if he calls another kind.",
+  "IncludeRoles": [ "Hallows_Eve_Jack_Skeleton", "Hallows_Eve_Jack_Skeleton_Archer" ]
 }

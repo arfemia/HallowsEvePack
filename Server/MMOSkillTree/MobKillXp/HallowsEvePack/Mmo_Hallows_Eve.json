@@ -1,17 +1,20 @@
 {
   "$Comment": [
-    "Kill XP for Hallow's Eve's four creatures, on a server running MMO Skill Tree. Only that mod reads",
+    "Kill XP for Hallow's Eve's creatures, on a server running MMO Skill Tree. Only that mod reads",
     "this folder, so without it the file is never loaded.",
     "",
     "A pattern is matched as a substring of the creature's role id and the longest match wins, so each",
     "row names one role by its whole id and reaches only that role, ahead of the shorter patterns MMO",
-    "Skill Tree ships (Ghoul, Skeleton, Wraith) the other three would otherwise fall to. Without its row",
-    "a Lost Soul would fall to the plain fallback. The value is the XP a kill is worth before any boost."
+    "Skill Tree ships (Ghoul, Skeleton, Wraith) the others would otherwise fall to; the Jack Archer's",
+    "row is longer than the Jack Skeleton's, whose id its own begins with. Without its row a Lost Soul",
+    "would fall to the plain fallback. The value is the XP a kill is worth before any boost: a Jack",
+    "Skeleton or a Jack Archer is worth twice the plain skeleton of its kind."
   ],
   "Name": "Mmo_Hallows_Eve",
   "Payload": {
     "Hallows_Eve_Lost_Soul": 130,
     "Hallows_Eve_Jack_Skeleton": 130,
+    "Hallows_Eve_Jack_Skeleton_Archer": 170,
     "Hallows_Eve_Hollow_Ghoul": 250,
     "Hallows_Eve_Geode_Wraith": 250
   }

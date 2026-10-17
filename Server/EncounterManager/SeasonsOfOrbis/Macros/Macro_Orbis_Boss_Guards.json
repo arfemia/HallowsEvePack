@@ -15,9 +15,10 @@
     "WatchSeconds, so a failed spawn never holds the fight.",
     "",
     "Its flags and timers are named Orbis_Boss_Guards_; the template clears the flags when the fight",
-    "resets, so a wipe or a reset raises the wave again. The defaults are the Headless Horseman's: four",
-    "Jack Skeletons, one at each corner of his graveyard's fountain, whose centre stands 13 blocks",
-    "north of his fight's entity."
+    "resets, so a wipe or a reset raises the wave again. The defaults are the Headless Horseman's normal",
+    "ride: four Jack Skeletons, one at each corner of his graveyard's fountain, whose centre stands 13",
+    "blocks north of his fight's entity. His hard ride fills the same slot with ziggfreed-common's",
+    "Zc_Wave_Chain instead, a chain of waves."
   ],
   "Class": "Instruction",
   "Type": "Component",

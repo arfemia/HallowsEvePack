@@ -24,13 +24,16 @@
     "With a GuardWave macro named (Macro_Orbis_Boss_Guards), Intro first raises a wave of guards as",
     "players arrive, and the boss rises only once none of them is left alive, the game's own blocking",
     "wave (Macro_Void_Anomaly_Wave): the wave holds Orbis_Boss_Guards_Pending until it is cleared.",
+    "ziggfreed-common's Zc_Wave_Chain fills the same slot with a chain of waves, given",
+    "Orbis_Boss_Guards_Pending as its PendingFlag. With a FightWaves macro named",
+    "(Macro_Orbis_Boss_Fight_Waves), every phase also raises adds as the boss's health falls.",
     "With HealthPacks true, the game's health packs drop on the arena's tagged points from the",
     "fight's start to the win, the way its Feastmaster's do (Macro_Health_Pack_Spawn, every",
     "HealthPackInterval seconds); the points come with the arena's prefab.",
     "",
     "A wipe (every player down) or an arena left empty for EmptyArenaSeconds resets it: Resetting",
     "clears the bar, removes everything in SweepGroups (heads, adds, guards), clears the guard wave's",
-    "flags so it rises again, and runs the boss's",
+    "and the fight waves' flags so they rise again, and runs the boss's",
     "ResetBehavior, the game's own arena reset removes the boss once nobody watches from the death",
     "screen, and only then, back in Intro, the library hears zc:reset (sent any earlier, the library",
     "would bind the departing boss again before he is gone). Intro waits for players to come back.",
@@ -168,7 +171,11 @@
     },
     "GuardWave": {
       "Value": "$Null",
-      "Description": "Macro run in Intro before the boss rises, such as Macro_Orbis_Boss_Guards: a wave players clear first. While it holds Orbis_Boss_Guards_Pending the boss does not rise. $Null for none, and the boss rises as players come near."
+      "Description": "Macro run in Intro before the boss rises, such as Macro_Orbis_Boss_Guards or Zc_Wave_Chain: waves players clear first. While it holds Orbis_Boss_Guards_Pending the boss does not rise. $Null for none, and the boss rises as players come near."
+    },
+    "FightWaves": {
+      "Value": "$Null",
+      "Description": "Macro run through every phase, such as Macro_Orbis_Boss_Fight_Waves: adds that rise as the boss's health falls. Its Orbis_Boss_Fight_Wave_ flags are cleared when the fight resets. $Null for none."
     },
     "Phase1Behavior": {
       "Value": "$Null",
@@ -305,6 +312,27 @@
             {
               "Type": "SetFlag",
               "Name": "Orbis_Boss_Guards_Seen",
+              "SetTo": false
+            },
+            {
+              "$Comment": "The fight waves' flags (Macro_Orbis_Boss_Fight_Waves), so the next try raises them again.",
+              "Type": "SetFlag",
+              "Name": "Orbis_Boss_Fight_Wave_First",
+              "SetTo": false
+            },
+            {
+              "Type": "SetFlag",
+              "Name": "Orbis_Boss_Fight_Wave_Second",
+              "SetTo": false
+            },
+            {
+              "Type": "SetFlag",
+              "Name": "Orbis_Boss_Fight_Wave_Third",
+              "SetTo": false
+            },
+            {
+              "Type": "SetFlag",
+              "Name": "Orbis_Boss_Fight_Wave_Fourth",
               "SetTo": false
             }
           ]
@@ -723,6 +751,14 @@
           "Nullable": true
         },
         {
+          "$Comment": "The fight waves, if the fight has them: adds that rise as the boss's health falls, in every phase.",
+          "Continue": true,
+          "Reference": { "Compute": "FightWaves" },
+          "Interfaces": [ "Hytale.Instruction.Encounter.Phase.Behavior" ],
+          "AcceptsForward": true,
+          "Nullable": true
+        },
+        {
           "Reference": { "Compute": "Phase2Transition" },
           "Interfaces": [ "Hytale.Instruction.Encounter.Phase.Transition" ],
           "AcceptsForward": true,
@@ -762,6 +798,13 @@
           "Nullable": true
         },
         {
+          "Continue": true,
+          "Reference": { "Compute": "FightWaves" },
+          "Interfaces": [ "Hytale.Instruction.Encounter.Phase.Behavior" ],
+          "AcceptsForward": true,
+          "Nullable": true
+        },
+        {
           "Reference": { "Compute": "Phase3Transition" },
           "Interfaces": [ "Hytale.Instruction.Encounter.Phase.Transition" ],
           "AcceptsForward": true,
@@ -796,6 +839,13 @@
         },
         {
           "Reference": { "Compute": "Phase3Behavior" },
+          "Interfaces": [ "Hytale.Instruction.Encounter.Phase.Behavior" ],
+          "AcceptsForward": true,
+          "Nullable": true
+        },
+        {
+          "Continue": true,
+          "Reference": { "Compute": "FightWaves" },
           "Interfaces": [ "Hytale.Instruction.Encounter.Phase.Behavior" ],
           "AcceptsForward": true,
           "Nullable": true
