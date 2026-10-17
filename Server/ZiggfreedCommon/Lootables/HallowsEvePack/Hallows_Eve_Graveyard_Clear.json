@@ -4,9 +4,11 @@
     "Horseman's own Claims: the dungeon's Rewards (Dungeons/Hallows_Eve_Graveyard.json) roll it, full",
     "the first clear each day and half on later ones: the pool still draws in full, then every",
     "quantity halves, a leftover half paying by chance.",
-    "Every roll in Rolls always pays: Sweets and festival tokens through the Currency reward kind, then",
-    "fire essence and Ectoplasm, Count to CountMax an even pick. Pool draws Rolls.Base times from",
-    "Entries, each as likely as its Weight against the rest, repeats allowed."
+    "Every roll in Rolls always pays: Sweets and festival tokens through the Currency reward kind,",
+    "favor with Old Jack, the Hallowed and Festival Favor through the Reputation kind (a board job's",
+    "pay; a later clear halves it too), then fire essence and Ectoplasm, Count to CountMax an even",
+    "pick. Pool draws Rolls.Base times from Entries, each as likely as its Weight against the rest,",
+    "repeats allowed."
   ],
   "Name": "Hallows_Eve_Graveyard_Clear",
   "Rolls": [
@@ -18,6 +20,21 @@
     {
       "Grants": {
         "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "3" } } ]
+      }
+    },
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 50 } } ]
+      }
+    },
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 25 } } ]
+      }
+    },
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 30 } } ]
       }
     },
     {

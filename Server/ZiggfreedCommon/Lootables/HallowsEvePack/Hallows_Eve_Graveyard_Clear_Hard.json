@@ -4,9 +4,9 @@
     "his hard Claims, in the normal clear's shape (Hallows_Eve_Graveyard_Clear.json): the dungeon's",
     "Rewards (Dungeons/Hallows_Eve_Graveyard_Hard.json) roll it, full the first hard clear each day and",
     "half on later ones, counted apart from the normal clears: the pool still draws in full, then every",
-    "quantity halves, a leftover half paying by chance. Every roll in Rolls always pays, Count to",
-    "CountMax an even pick. Pool draws Rolls.Base times from Entries, each as likely as its Weight",
-    "against the rest, repeats allowed."
+    "quantity halves, a leftover half paying by chance. Every roll in Rolls always pays, the three",
+    "favors at twice the normal clear's, Count to CountMax an even pick. Pool draws Rolls.Base times",
+    "from Entries, each as likely as its Weight against the rest, repeats allowed."
   ],
   "Name": "Hallows_Eve_Graveyard_Clear_Hard",
   "Rolls": [
@@ -18,6 +18,21 @@
     {
       "Grants": {
         "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "6" } } ]
+      }
+    },
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 100 } } ]
+      }
+    },
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 50 } } ]
+      }
+    },
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 60 } } ]
       }
     },
     {

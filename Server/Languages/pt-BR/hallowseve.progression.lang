@@ -304,7 +304,7 @@ reputation.hallows_eve_old_jack.earn.quests = Faça os recados e os serviços di
 reputation.hallows_eve_old_jack.earn.board = Pegue contratos do quadro dele.
 reputation.hallows_eve_old_jack.earn.talk = Dê uma passada para um dedo de prosa, uma vez por dia.
 reputation.hallows_eve_old_jack.earn.gear = Use um Elmo de Jack, e tudo o que você faz por ele rende mais favor enquanto você o estiver usando.
-reputation.hallows_eve_old_jack.earn.horseman = Vença o Cavaleiro Sem Cabeça na cavalgada normal. Sua primeira vitória do dia rende o favor dele, recebido junto com o Tesouro do Cavaleiro.
+reputation.hallows_eve_old_jack.earn.horseman = Limpe o cemitério do Cavaleiro Sem Cabeça em qualquer cavalgada, e o baú paga o favor dele, metade nas outras vezes no mesmo dia. Sua primeira vitória normal do dia rende mais com o Tesouro do Cavaleiro.
 reputation.hallows_eve_hallowed.name = Os Consagrados
 reputation.hallows_eve_hallowed.flavor = Os Consagrados cuidam para que os mortos descansem, e o Coveiro do cemitério do Cavaleiro é um deles. Derrube o que sai das covas à noite e eles reparam.
 factor.hallows_eve_hallowed.friendly = nível Amistoso com os Consagrados
@@ -315,7 +315,7 @@ reputation.hallows_eve_hallowed.earn.kills = Abata as criaturas que saem rasteja
 reputation.hallows_eve_hallowed.earn.jack = Os serviços diários e os contratos do quadro do Velho Jack também contam.
 reputation.hallows_eve_hallowed.earn.treats = Peça doces ou travessuras a todos com quem você conversar, uma vez por dia a cada um.
 reputation.hallows_eve_hallowed.earn.gear = Leve um Escudo de Jack, e você ganha o favor deles mais rápido enquanto ele estiver equipado.
-reputation.hallows_eve_hallowed.earn.horseman = Vença o Cavaleiro Sem Cabeça na cavalgada difícil. Sua primeira vitória difícil do dia rende o favor deles, recebido junto com o Tesouro dele.
+reputation.hallows_eve_hallowed.earn.horseman = Limpe o cemitério do Cavaleiro Sem Cabeça em qualquer cavalgada, e o baú paga o favor deles, metade nas outras vezes no mesmo dia. Sua primeira vitória difícil do dia rende mais com o Tesouro dele.
 notify.hallows_eve_hallowed_cache = Um agrado dos Consagrados, por manter os mortos debaixo da terra.
 dialogue.hallows_eve_old_jack.opt.standing = Em que pé estamos?
 
