@@ -22,7 +22,7 @@ Hallow's Eve brings creatures, quests, items and achievements, with a host, Old 
 - After dark, away from torches, Jack Skeletons, Hollow Ghouls and Lost Souls come out, and Geode Wraiths walk the mineshafts.
 - Lantern Bombs, carved pumpkins packed with Boom Powder, in four tiers. They deal fire damage, and the stronger ones set creatures alight, slow them or throw flaming shards. Your own blast never hurts you, and it hurts other players only where PvP is on.
 - The Hallowed set: the Jack Helm and Jack Shield, with the Horseman's armour. Any piece with a shield in your off hand gives more health and less fire damage, and you glow like a lantern. Wear all four armour pieces and your fire hits harder.
-- The Flaming Hallowed set, the burning and flaming version of each piece, hits harder again. Both Jack Shields cut the fire damage you take, and Old Jack sells a Fire Resistance Potion that halves it for three minutes.
+- The Flaming Hallowed set, the burning and flaming version of each piece, hits harder again. Both Jack Shields cut the fire damage you take, and Old Jack sells a Fire Resistance Potion that cuts it by about a third for three minutes, once he trusts you.
 - A Costume Wand that turns a friend into a Jack Skeleton or a Lost Soul for a few minutes.
 - Trick or treat. Knock on every character who has a conversation for you, once a day each, for sweets, apples, a pumpkin pie or a costume. On this pack alone, Old Jack and the Gravekeeper play along.
 - Cursed Geodes turn up while you mine, and pumpkins you pick by hand sometimes come up Hallowed.

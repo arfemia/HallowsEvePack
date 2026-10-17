@@ -1,5 +1,5 @@
 {
-  "$Comment": "What the Fire Resistance Potion (Item/Items/Hallows_Eve/Hallows_Eve_Fire_Resistance_Potion.json) puts on whoever drinks it: for Duration seconds (180, three minutes) DamageResistance takes Amount (0.5, half) off every Fire hit: burning (the game's Burn, and the burn a Lantern Bomb or a boss's fire patch leaves) and the Headless Horseman's bomb blasts and volleys all deal Fire. A fire patch's own tick is Environment damage, so only its burn is halved. It is the shape of the Horseman's own Hallows_Eve_Horseman_Fire_Ward with a timer in place of Infinite. Percent resistances from every effect and armour piece add up before they apply, so with the Hallowed set's ward on as well the two together take off more than either alone; 1 would make the drinker immune. OverlapBehavior Overwrite starts the timer over when a second potion goes down, as the game's own potions do. StatusEffectIcon shows the potion's own orange bottle on the buff bar, and Name is the line shown when a player hovers it (a key in hallowseve.items.lang). If you change Duration or Amount, change the potion's description in items.lang to match.",
+  "$Comment": "What the Fire Resistance Potion (Item/Items/Hallows_Eve/Hallows_Eve_Fire_Resistance_Potion.json) puts on whoever drinks it: for Duration seconds (180, three minutes) DamageResistance takes Amount (0.35, 35%) off every Fire hit: burning (the game's Burn, and the burn a Lantern Bomb or a boss's fire patch leaves) and the Headless Horseman's bomb blasts and volleys all deal Fire. A fire patch's own tick is Environment damage, so only its burn is cut. It is the shape of the Horseman's own Hallows_Eve_Horseman_Fire_Ward with a timer in place of Infinite. Percent resistances from every effect and armour piece add up before they apply, so with the Hallowed set's ward on as well the two together take off more than either alone; 1 would make the drinker immune. OverlapBehavior Overwrite starts the timer over when a second potion goes down, as the game's own potions do. StatusEffectIcon shows the potion's own orange bottle on the buff bar, and Name is the line shown when a player hovers it (a key in hallowseve.items.lang). If you change Duration or Amount, change the potion's description in items.lang to match.",
   "Name": "hallowseve.items.effect.hallows_eve_fire_resistance.name",
   "StatusEffectIcon": "Icons/ItemsGenerated/Potion_Regen_Stamina.png",
   "Duration": 180,
@@ -9,7 +9,7 @@
   "DamageResistance": {
     "Fire": [
       {
-        "Amount": 0.5,
+        "Amount": 0.35,
         "CalculationType": "Percent"
       }
     ]
