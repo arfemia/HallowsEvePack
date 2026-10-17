@@ -32,15 +32,23 @@
     "and it needs at least one bomb hit. When he falls with it held, every player the fight credits earns",
     "ENCOUNTER_FEAT with the Qualifier Lanterns_Only, which the By Lantern Light achievement counts.",
     "",
-    "It writes no Scale on purpose: his fight scales his health with the party itself, one step per",
-    "player, so a library scale here would scale him twice. No Loot either: his script pays his two",
-    "Claims. Switch the row off with Enabled false, or from mods/ziggfreedcommon/encounters.json under",
-    "the key hallows_eve_headless_horseman_encounter."
+    "Scale holds only Companion, with Health and Damage on: where MMO Mob Scaling runs, it scales him",
+    "with the level his adds read in the graveyard (1 to 10), his health bar and his own hits both, read",
+    "once as the fight begins. At the bottom of the band he is exactly his own 1100 plus the party's",
+    "steps, and he grows only as a strong group lifts the level; his Head stays an ordinary add. Write",
+    "no other Scale leaf: his fight scales his health with the party itself, one step per player, and",
+    "a library scale beside the companion's would count the party twice. Without Mob Scaling the",
+    "switches do nothing. No Loot either: his script pays his two Claims. Switch the row off with",
+    "Enabled false, or from mods/ziggfreedcommon/encounters.json under the key",
+    "hallows_eve_headless_horseman_encounter."
   ],
   "EncounterAsset": "Hallows_Eve_Headless_Horseman_Encounter",
   "NameKey": "npcs.Hallows_Eve_Headless_Horseman.name",
   "Subject": {
     "TargetSlot": "Boss"
+  },
+  "Scale": {
+    "Companion": { "Health": true, "Damage": true }
   },
   "Participation": {
     "DamageTaken": 0.5,

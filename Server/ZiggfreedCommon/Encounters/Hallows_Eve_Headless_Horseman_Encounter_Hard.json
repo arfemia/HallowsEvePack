@@ -17,14 +17,21 @@
     "Progression.Feats names the feat Lanterns_Only: a hard win where every hit on him came from a",
     "Lantern Bomb, which the hard ride's Lamplighter achievement counts.",
     "",
-    "It writes no Scale (his hard fight scales his health with the party itself) and no Loot (his hard",
-    "script pays his two hard Claims). Switch the row off with Enabled false, or from",
-    "mods/ziggfreedcommon/encounters.json under the key hallows_eve_headless_horseman_encounter_hard."
+    "Scale holds only Companion, as on the normal row: where MMO Mob Scaling runs, it scales him with",
+    "the level his adds read in the hard graveyard (15 to 25), health and hits both, read once as the",
+    "fight begins, so at 15 he is exactly his own 2376 plus the party's steps and he grows only as a",
+    "strong group lifts the level. Write no other Scale leaf (his hard fight scales his health with the",
+    "party itself) and no Loot (his hard script pays his two hard Claims). Switch the row off with",
+    "Enabled false, or from mods/ziggfreedcommon/encounters.json under the key",
+    "hallows_eve_headless_horseman_encounter_hard."
   ],
   "EncounterAsset": "Hallows_Eve_Headless_Horseman_Encounter_Hard",
   "NameKey": "npcs.Hallows_Eve_Headless_Horseman_HM.name",
   "Subject": {
     "TargetSlot": "Boss"
+  },
+  "Scale": {
+    "Companion": { "Health": true, "Damage": true }
   },
   "Participation": {
     "DamageTaken": 0.5,
