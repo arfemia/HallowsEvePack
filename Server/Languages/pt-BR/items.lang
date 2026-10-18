@@ -31,7 +31,7 @@ Hallows_Eve_Grave_Candle.description = Uma vela preta que o Coveiro queima para 
 Hallows_Eve_Burning_Grave_Candle.name = Vela Funerária Ardente
 Hallows_Eve_Burning_Grave_Candle.description = Velas pretas que nunca param de queimar. O Coveiro queima uma para abrir o portão da cavalgada difícil do Cavaleiro Sem Cabeça, e o portão fica aberto para o seu grupo inteiro. O Velho Jack as vende na loja dele quando te considera Freguês, e troca uma por um punhado de Velas Funerárias.
 Hallows_Eve_Fire_Resistance_Potion.name = Poção de Resistência ao Fogo
-Hallows_Eve_Fire_Resistance_Potion.description = Beba e o fogo te faz cerca de um terço a menos de estrago por três minutos.
+Hallows_Eve_Fire_Resistance_Potion.description = Concede:\n\n• <color is="#ffffff">Resistência ao Fogo</color>: <color is="#ffffff">35%</color> menos dano de fogo\n\nDuração: <color is="#ffffff">3:00</color>\n\n<i>Tem gosto de fumaça e abóbora queimada.</i>
 Hallows_Eve_Eternal_Candle.name = Vela Eterna
 Hallows_Eve_Eternal_Candle.description = Uma vela que nunca se consome. Leve-a e o Coveiro abre o cemitério do Cavaleiro Sem Cabeça para o seu grupo inteiro sem queimar uma Vela Funerária, e você fica com ela. A cavalgada difícil ainda pede uma Vela Funerária Ardente. O Velho Jack compra uma sobressalente na loja dele.
 Hallows_Eve_Ecto_Lantern.name = Lanterna Ectoplásmica

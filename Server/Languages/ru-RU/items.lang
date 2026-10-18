@@ -31,7 +31,7 @@ Hallows_Eve_Grave_Candle.description = Чёрная свеча, которую �
 Hallows_Eve_Burning_Grave_Candle.name = Пылающая могильная свеча
 Hallows_Eve_Burning_Grave_Candle.description = Чёрные свечи, что никогда не перестают гореть. Смотритель кладбища сжигает одну, чтобы открыть врата на сложную скачку Всадника без головы, и врата остаются открытыми для всей вашей группы. Старый Джек продаёт их в своей лавке, когда сочтёт вас Завсегдатаем, и меняет одну на горсть Могильных свечей.
 Hallows_Eve_Fire_Resistance_Potion.name = Зелье огнестойкости
-Hallows_Eve_Fire_Resistance_Potion.description = Выпейте, и три минуты огонь будет вредить вам примерно на треть меньше.
+Hallows_Eve_Fire_Resistance_Potion.description = Даёт:\n\n• <color is="#ffffff">Огнестойкость</color>: на <color is="#ffffff">35%</color> меньше урона от огня\n\nДлительность: <color is="#ffffff">3:00</color>\n\n<i>На вкус как дым и жжёная тыква.</i>
 Hallows_Eve_Eternal_Candle.name = Вечная свеча
 Hallows_Eve_Eternal_Candle.description = Свеча, что никогда не сгорает. Носите её с собой, и Смотритель кладбища откроет кладбище Всадника без головы для всей вашей группы без Могильной свечи, а она останется у вас. Для сложной скачки всё равно нужна Пылающая могильная свеча. Запасную Старый Джек скупает в своей лавке.
 Hallows_Eve_Ecto_Lantern.name = Эктофонарь

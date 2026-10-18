@@ -2,7 +2,7 @@
 
 Yearly events for your Hytale server. Hallow's Eve runs from October 1 to November 12, and every January 13 is Hytale's Anniversary.
 
-Hallow's Eve brings creatures, quests, items and achievements, with a host, Old Jack, in the Forgotten Temple. It needs Ziggfreed's CommonLib 2.4.0 or newer and RPG Stations 1.1.1 or newer, on a Hytale Update 7 server. MMO Skill Tree is optional. Everything plays in nine languages.
+Hallow's Eve brings creatures, quests, items and achievements, with a host, Old Jack, in the Forgotten Temple. It needs Ziggfreed's CommonLib 2.5.0 or newer and RPG Stations 1.1.1 or newer, on a Hytale Update 7 server. MMO Skill Tree is optional. Everything plays in nine languages.
 
 [![Discord](https://img.shields.io/badge/Discord-Join%20Server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/5NFdZsUxHZ) [![Ko-fi](https://img.shields.io/badge/Ko--fi-Support-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/ziggfreed) [![Documentation](https://img.shields.io/badge/Docs-Read%20More-0ea5e9?style=for-the-badge)](https://mmo-skill-tree-docs.ziggfreed.com)
 
@@ -58,16 +58,19 @@ Install MMO Skill Tree 1.7.2 or newer and Hallow's Eve trains your skills. Old J
 
 Add the [MMO Skill Bounty Pack](https://www.curseforge.com/hytale/mods/mmo-skill-tree-bounty-board-pack-rich-customizable) and its Daily board posts a haunt contract each day of Hallow's Eve.
 
+Add [MMO Mob Scaling](https://www.curseforge.com/hytale/mods/mmo-mob-scaling) and the Horseman grows with his graveyard's level, the same as his skeletons, so a stronger group meets a tougher Horseman.
+
 ## For server owners
 
 - Nothing to place. Each event starts and ends by date (UTC), and its host sets up on their own.
+- Want a host somewhere else? Give their placement a `Where` naming another world in `mods/ziggfreedcommon/npc-placements.json`, and their shop, boards and quests go with them.
 - To switch Hallow's Eve off, add `"Hallows_Eve": { "Enabled": false }` to `mods/ziggfreedcommon/calendar.json` and run `/zigcalendar reload`. Every event has its own switch there, and the same file can move an event's dates. Nothing anyone earned is lost.
 - The Festival Shelf can also open all year as a shop of its own: switch it on in `mods/ziggfreedcommon/shops.json`.
 - The Horseman's Graveyard and its hard ride are CommonLib dungeons, `Hallows_Eve_Graveyard` and `Hallows_Eve_Graveyard_Hard`: switch either off or change how many players share it in `mods/ziggfreedcommon/dungeons.json`. `/zigdungeon enter Hallows_Eve_Graveyard` takes you in alone while Hallow's Eve runs, without spending a candle.
 
 ## Install
 
-1. Run your server on Hytale's Update 7, with Ziggfreed's CommonLib (2.4.0 or newer) and RPG Stations (1.1.1 or newer).
+1. Run your server on Hytale's Update 7, with Ziggfreed's CommonLib (2.5.0 or newer) and RPG Stations (1.1.1 or newer).
 2. Drop the Seasons of Orbis zip into your server's `Mods/` folder beside them.
 3. Start the server. While a season runs, its host is in the Forgotten Temple.
 
@@ -81,6 +84,7 @@ Coming later this year: Harvest Feast, the next season.
 - [RPG Stations](https://www.curseforge.com/hytale/mods/rpg-stations) (required)
 - [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree) (optional)
 - [MMO Skill Bounty Pack](https://www.curseforge.com/hytale/mods/mmo-skill-tree-bounty-board-pack-rich-customizable)
+- [MMO Mob Scaling](https://www.curseforge.com/hytale/mods/mmo-mob-scaling)
 - [Documentation](https://mmo-skill-tree-docs.ziggfreed.com)
 - [Patch notes for every version](https://github.com/arfemia/HallowsEvePack/tree/main/patch-notes)
 - [Discord](https://discord.gg/5NFdZsUxHZ)

@@ -32,7 +32,7 @@ Hallows_Eve_Grave_Candle.description = Una vela negra que el Sepulturero quema p
 Hallows_Eve_Burning_Grave_Candle.name = Vela Sepulcral Ardiente
 Hallows_Eve_Burning_Grave_Candle.description = Velas negras que nunca dejan de arder. El Sepulturero quema una para abrir la verja de la cabalgata difícil del Jinete sin Cabeza, y la verja queda abierta para todo tu grupo. El Viejo Jack las vende en su tienda cuando te considera un Asiduo, y cambia una por un puñado de Velas Sepulcrales.
 Hallows_Eve_Fire_Resistance_Potion.name = Poción de Resistencia al Fuego
-Hallows_Eve_Fire_Resistance_Potion.description = Bébela y el fuego te hace cerca de un tercio menos de daño durante tres minutos.
+Hallows_Eve_Fire_Resistance_Potion.description = Otorga:\n\n• <color is="#ffffff">Resistencia al Fuego</color>: <color is="#ffffff">35%</color> menos de daño de fuego\n\nDuración: <color is="#ffffff">3:00</color>\n\n<i>Sabe a humo y a calabaza quemada.</i>
 Hallows_Eve_Eternal_Candle.name = Vela Eterna
 Hallows_Eve_Eternal_Candle.description = Una vela que nunca se consume. Llévala encima y el Sepulturero abre el cementerio del Jinete sin Cabeza para todo tu grupo sin quemar una Vela Sepulcral, y tú te la quedas. La cabalgata difícil sigue pidiendo una Vela Sepulcral Ardiente. El Viejo Jack compra una de sobra en su tienda.
 Hallows_Eve_Ecto_Lantern.name = Farol de Ectoplasma

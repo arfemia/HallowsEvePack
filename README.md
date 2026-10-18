@@ -5,7 +5,7 @@ A standalone Hytale content pack of yearly events: Hallow's Eve from October 1 t
 ## Requirements
 
 - Hytale's Update 7
-- Ziggfreed's CommonLib (ZiggfreedCommon) 2.4.0 or newer
+- Ziggfreed's CommonLib (ZiggfreedCommon) 2.5.0 or newer
 - RPG Stations 1.1.1 or newer, which runs the Carving Bench
 - MMO Skill Tree 1.7.2 or newer, optional
 
@@ -48,6 +48,7 @@ Server owners switch any event off, or move its days, in `mods/ziggfreedcommon/c
 
 - **With MMO Skill Tree** (1.7.2+), Hallow's Eve trains skills: Lantern Bombs train Artillery, Old Jack's rewards and the cracked geodes pay skill XP, the Horseman pays Defense XP, his board posts a Skill job every day that pays favor like his own, the Hallowed set adds luck and Artillery damage, the Carving Bench trains Crafting, and Harvest Moon lifts Harvesting and Artillery XP. The pack never needs MMO Skill Tree.
 - **With the MMO Skill Bounty Pack** (1.3.0+), the Daily bounty board posts a haunt contract each day of Hallow's Eve, and Old Jack also sells both candles for Life Essence.
+- **With MMO Mob Scaling** (1.2.4+), the Headless Horseman grows with his graveyard's level, the same as his skeletons.
 
 Harvest Feast, the next season, comes later this year. What changed in each version is in [patch-notes/](patch-notes/).
 
