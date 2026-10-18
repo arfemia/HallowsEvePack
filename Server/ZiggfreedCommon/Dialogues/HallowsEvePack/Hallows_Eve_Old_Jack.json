@@ -1,8 +1,9 @@
 {
   "Name": "Hallows_Eve_Old_Jack",
   "$Comment": [
-    "Old Jack's conversation, everything he says at the Forgotten Temple while Hallow's Eve runs.",
-    "He contracts everything he says: I'm, it's, don't.",
+    "Old Jack's conversation, everything he says while Hallow's Eve runs, wherever his placement",
+    "stands him (the Forgotten Temple, unless a server owner moves him). He contracts everything he",
+    "says: I'm, it's, don't.",
     "",
     "HOW A SCREEN IS PICKED. Start is walked in a fixed order: First (top to bottom), then a quest",
     "that is READY to hand in, then one he can OFFER, then one that is ACTIVE, then Then, then",
@@ -53,33 +54,35 @@
     "screen with no goodnight of its own. The trick-or-treat line is not here: the DialogueExtensions file",
     "Hallows_Eve_Trick_Or_Treat adds it to every conversation, this one included.",
     "",
-    "The greeting's memory is kept per world family, ForgottenTemple, the one place he stands."
+    "No line asks which world the player is in, so the welcome, the greeting and Pumpkin Patch's offer",
+    "play wherever he stands: the conversation is reached only through him (his placement's Interact),",
+    "and Season keeps him standing only while the event runs. The greeting's memory carries no Where,",
+    "so it is kept once per player, the same in every world, and its ResetWithQuest files it under his",
+    "meet quest (Lanterns in the Temple): it is forgotten whenever that quest is reset, so a player who",
+    "starts the questline over hears his first words again. It can be written before that quest starts."
   ],
   "Header": [ "ActiveObjective" ],
   "Chrome": { "FarewellKey": "dialogue.hallows_eve_old_jack.opt.farewell" },
   "Memories": {
-    "old_jack_greeted": { "Where": { "GameplayConfig": [ "ForgottenTemple" ] } }
+    "old_jack_greeted": { "ResetWithQuest": "hallows_eve_old_jack_meet" }
   },
   "Start": {
     "First": [
       {
         "Node": "meet",
         "When": [
-          { "Type": "World", "Where": { "GameplayConfig": [ "ForgottenTemple" ] } },
           { "Type": "QuestState", "Quest": "hallows_eve_old_jack_meet", "State": "ACTIVE" }
         ]
       },
       {
         "Node": "first_words",
         "When": [
-          { "Type": "World", "Where": { "GameplayConfig": [ "ForgottenTemple" ] } },
           { "Type": "NotRemembered", "Memory": "old_jack_greeted" }
         ]
       },
       {
         "Node": "patch_offer",
         "When": [
-          { "Type": "World", "Where": { "GameplayConfig": [ "ForgottenTemple" ] } },
           { "Type": "QuestState", "Quest": "hallows_eve_old_jack_meet", "States": [ "COMPLETED_UNCLAIMED", "COMPLETED" ] },
           { "Type": "QuestState", "Quest": "hallows_eve_old_jack_1", "State": "NOT_STARTED" }
         ],

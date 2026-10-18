@@ -1,8 +1,9 @@
 {
   "Name": "Harvest_Feast_Host",
   "$Comment": [
-    "Martha the Cook's conversation, everything she says in the Forgotten Temple while Harvest Feast",
-    "runs. She contracts everything: I'm, it's, don't.",
+    "Martha the Cook's conversation, everything she says while Harvest Feast runs, wherever her placement",
+    "stands her (the Forgotten Temple, unless a server owner moves her). She contracts everything: I'm,",
+    "it's, don't.",
     "",
     "HOW A SCREEN IS PICKED. Start is walked in a fixed order: First (top to bottom), then a quest that is",
     "READY to hand in, then one she can OFFER, then one that is ACTIVE, then Then, then Fallback.",
@@ -44,11 +45,16 @@
     "included), the stall, How do we stand? (it opens the Reputation page, and shows once the player has",
     "any favor with her), the Almanac (only while the Almanac is switched on), two lore lines and goodbye.",
     "",
-    "The greeting's memory is kept per world family, ForgottenTemple, the one place she stands."
+    "No line asks which world the player is in, so the arrival line, the greeting and Wheat for the Ovens'",
+    "offer play wherever she stands: the conversation is reached only through her (her placement's",
+    "Interact), and Season keeps her standing only while the feast runs. The greeting's memory carries no",
+    "Where, so it is kept once per player, the same in every world, and its ResetWithQuest files it under",
+    "her meet quest (Supper in the Temple): it is forgotten whenever that quest is reset, so a player who",
+    "starts the questline over hears her first words again. It can be written before that quest starts."
   ],
   "Header": [ "ActiveObjective" ],
   "Memories": {
-    "feast_host_greeted": { "Where": { "GameplayConfig": [ "ForgottenTemple" ] } }
+    "feast_host_greeted": { "ResetWithQuest": "harvest_feast_martha_meet" }
   },
   "Start": {
     "First": [
@@ -61,21 +67,18 @@
       {
         "Node": "meet_arrival",
         "When": [
-          { "Type": "World", "Where": { "GameplayConfig": [ "ForgottenTemple" ] } },
           { "Type": "QuestState", "Quest": "harvest_feast_martha_meet", "State": "ACTIVE" }
         ]
       },
       {
         "Node": "first_words",
         "When": [
-          { "Type": "World", "Where": { "GameplayConfig": [ "ForgottenTemple" ] } },
           { "Type": "NotRemembered", "Memory": "feast_host_greeted" }
         ]
       },
       {
         "Node": "wheat_offer",
         "When": [
-          { "Type": "World", "Where": { "GameplayConfig": [ "ForgottenTemple" ] } },
           { "Type": "QuestState", "Quest": "harvest_feast_martha_meet", "States": [ "COMPLETED_UNCLAIMED", "COMPLETED" ] },
           { "Type": "QuestState", "Quest": "harvest_feast_host_1", "State": "NOT_STARTED" }
         ],

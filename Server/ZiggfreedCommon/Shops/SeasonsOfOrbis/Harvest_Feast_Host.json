@@ -2,8 +2,9 @@
   "$Comment": [
     "The feast stall. Season makes the stall, and every offer naming it, absent while the feast is off.",
     "Order 90 keeps it behind a server's everyday storefronts, so a shop block or a conversation line that",
-    "opens the first storefront never lands here. Where keeps the stall in the Forgotten Temple: anywhere",
-    "else it is left out of every list and opens closed.",
+    "opens the first storefront never lands here. It carries no Where, so it opens in any world and follows",
+    "Martha wherever a server stands her: players reach it through her, and Season closes it while the feast",
+    "is off.",
     "",
     "Everything here is priced in festival tokens, the currency every season shares. Includes carries the",
     "festival shelf (Seasons_Of_Orbis_Festival_Stall) beside the host's own goods: the offers every",
@@ -25,6 +26,5 @@
   "Categories": {
     "kitchen": { "TitleKey": "shop.harvest_feast_host.category.kitchen" },
     "decor": { "TitleKey": "shop.harvest_feast_host.category.decor" }
-  },
-  "Where": { "GameplayConfig": [ "ForgottenTemple" ] }
+  }
 }

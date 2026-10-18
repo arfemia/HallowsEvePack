@@ -20,8 +20,9 @@
     "absent while the feast is off. Its contracts' pay waits here until the player collects it",
     "(Rewards.Claim); a job left uncollected when the feast ends shows Collect in the player's Objective",
     "Book instead, since a contract whose board is gone is collected anywhere. Order 90 keeps",
-    "it behind a server's everyday boards. Where keeps it in the Forgotten Temple: anywhere else it is left",
-    "out of every list and opens closed."
+    "it behind a server's everyday boards. It carries no Where, so it opens in any world and follows Martha",
+    "wherever a server stands her: players reach it through her quest page (Hosts), and Season closes it",
+    "while the feast is off."
   ],
   "Season": "Harvest_Feast",
   "Text": {
@@ -44,6 +45,5 @@
     "Harvest_Feast_Kitchen": { "TitleKey": "board.harvest_feast_daily.grade.kitchen", "Color": "#ffb74d" },
     "Harvest_Feast_Skill": { "TitleKey": "board.harvest_feast_daily.grade.skill", "Color": "#c08a3a" }
   },
-  "Currencies": [ "Seasons_Of_Orbis_Festival_Token" ],
-  "Where": { "GameplayConfig": [ "ForgottenTemple" ] }
+  "Currencies": [ "Seasons_Of_Orbis_Festival_Token" ]
 }

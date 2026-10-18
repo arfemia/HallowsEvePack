@@ -14,8 +14,9 @@
     "wears Bounty. Season makes the board absent while the event is off; an errand left uncollected",
     "when the event ends shows Collect in the player's Objective Book instead. Order 91 sorts it",
     "straight after the daily board, so an errand the daily board also posted would list under that",
-    "one. Where keeps it in the Forgotten Temple: anywhere else it is left out of every list and",
-    "opens closed."
+    "one. It carries no Where, so it opens in any world and follows Old Jack wherever a server",
+    "stands him: players reach it through his quest page (Hosts), and Season closes it while the",
+    "event is off."
   ],
   "Text": {
     "TitleKey": "board.hallows_eve_errands.title",
@@ -35,6 +36,5 @@
     "Hallows_Eve_Day": { "TitleKey": "board.hallows_eve_daily.grade.day" }
   },
   "Currencies": [ "Hallows_Eve_Sweets" ],
-  "Where": { "GameplayConfig": [ "ForgottenTemple" ] },
   "Season": "Hallows_Eve"
 }

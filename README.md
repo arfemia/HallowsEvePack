@@ -13,7 +13,7 @@ A standalone Hytale content pack of yearly events: Hallow's Eve from October 1 t
 
 1. Install Ziggfreed's CommonLib and RPG Stations.
 2. Drop the `SeasonsOfOrbis-<version>.zip` into your server's `Mods/` folder beside them.
-3. Start the server. While a season runs, its host is in the Forgotten Temple.
+3. Start the server. While a season runs, its host is in the Forgotten Temple. A host takes its shop, boards and quests along when its placement's `Where` names another world in `mods/ziggfreedcommon/npc-placements.json`.
 
 ## Hallow's Eve
 
