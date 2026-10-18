@@ -11,7 +11,9 @@
     "Parent: the yearly skeleton would ask for the same armour every year. It carries no hallowed",
     "tag, so The Hallowed never waits on it. It pays nothing but its points. The chain",
     "wear_hallows_eve_flaming_hallowed ties it to Fully Ablaze, the whole set with the shield. The",
-    "criterion's TextKey words the step, since the shared sentence names the set by its raw id."
+    "criterion's TextKey words the step from this pack's own lang file. Without it the shared",
+    "sentence names the set by its title and reads much the same; the key keeps the pack's own",
+    "wording in every language."
   ],
   "Text": {
     "TitleKey": "achievement.hallows_eve_flaming_armour.title",

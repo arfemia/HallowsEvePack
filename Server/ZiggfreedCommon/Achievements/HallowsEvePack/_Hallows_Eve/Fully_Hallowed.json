@@ -8,7 +8,8 @@
     "",
     "Earned once and kept, like Hallowed Armour, the first rung of the chain wear_hallows_eve_hallowed:",
     "no Parent, no hallowed tag, and nothing paid but its points. The criterion's TextKey words the",
-    "step, since the shared sentence names the set by its raw id."
+    "step from this pack's own lang file. Without it the shared sentence names the set by its title",
+    "and reads much the same; the key keeps the pack's own wording in every language."
   ],
   "Text": {
     "TitleKey": "achievement.hallows_eve_fully_hallowed.title",
