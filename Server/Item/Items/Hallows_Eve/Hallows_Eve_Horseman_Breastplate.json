@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Horseman's Breastplate, one of the three plain pieces of his armour his daily Claim can pay (ZiggfreedCommon/Lootables/HallowsEvePack/Hallows_Eve_Horseman_Daily.json): the ancient steel he rides in, still warm. A member of the Hallowed set (ZiggfreedCommon/GearSets/HallowsEvePack/Hallows_Eve_Hallowed.json). The game's ancient steel breastplate model, with its recipe left out (it is never crafted) and its stats a step below the iron breastplate's, the way the Jack Helm sits below the iron helm, and one thing more: DamageBonus_Fire, Ziggfreed's CommonLib's stat for Fire damage the wearer deals, in whole percent points, so a Lantern Bomb or any fire weapon hits 3% harder with it on. Its flaming twin, Hallows_Eve_Flaming_Horseman_Breastplate, is the Hoard's stronger copy on the same model. Light is the ember glow it gives off. An Armor block written here replaces a parent's whole, so the file restates every leaf rather than naming a parent.",
+  "$Comment": "The Horseman's Breastplate, one of the three plain pieces of his armour his daily Claim can pay (ZiggfreedCommon/Lootables/HallowsEvePack/Hallows_Eve_Horseman_Daily.json): the ancient steel he rides in, still warm. A member of the Hallowed set (ZiggfreedCommon/GearSets/HallowsEvePack/Hallows_Eve_Hallowed.json). The game's ancient steel breastplate model, with its recipe left out (it is never crafted) and its stats a step below the iron breastplate's, the way the Jack Helm sits below the iron helm, and one thing more: DamageBonus_Fire, Ziggfreed's CommonLib's stat for Fire damage the wearer deals, in whole percent points, so a Lantern Bomb or any fire weapon hits 3% harder with it on. Its flaming twin, Hallows_Eve_Flaming_Horseman_Breastplate, is the Hoard's stronger copy on the same model. Light is the ember glow it gives off. An Armor block written here replaces a parent's whole, so the file restates every leaf rather than naming a parent. Tags.ZigLevel asks for Defense 20 to wear it (the best level the player ever reached), behind MMO Skill Tree's Gear levels switch (Tags.ZigLevelFeature); gear a player already had when gear levels arrived keeps working for them, and a server owner frees or retunes it with a ZigLevel group gate in mods/ziggfreedcommon/use-gates.json.",
   "TranslationProperties": {
     "Name": "items.Hallows_Eve_Horseman_Breastplate.name",
     "Description": "items.Hallows_Eve_Horseman_Breastplate.description"
@@ -33,5 +33,5 @@
   },
   "MaxDurability": 100,
   "DurabilityLossOnHit": 0.5,
-  "Tags": {"Type": ["Armor"], "Family": ["Hallows_Eve"]}
+  "Tags": {"Type": ["Armor"], "Family": ["Hallows_Eve"], "ZigLevel": ["Defense:20"], "ZigLevelFeature": ["mmoskilltree:Gear_Levels"]}
 }
