@@ -68,3 +68,9 @@ achievement.hytale_anniversary_2036.title = Hytale's Tenth Anniversary
 title.hytale_anniversary_ever_present.name = The Ever-Present
 title.hytale_anniversary_ever_present.flavor = Was here for Hytale's anniversary.
 title.hytale_anniversary_ever_present.display = {0} the Ever-Present
+
+# ---- The full moon: the moon itself, and a full moon outside Hallow's Eve with its banner ----
+calendar.seasons_of_orbis_full_moon.name = Full Moon
+calendar.seasons_of_orbis_restless_moon.name = Restless Moon
+calendar.seasons_of_orbis_restless_moon.herald.start = The full moon rises
+calendar.seasons_of_orbis_restless_moon.herald.start.sub = The dead are restless. The Gravekeeper keeps watch in the Forgotten Temple.

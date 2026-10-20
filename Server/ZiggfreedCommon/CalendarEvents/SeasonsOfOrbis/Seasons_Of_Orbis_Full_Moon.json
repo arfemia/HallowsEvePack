@@ -1,0 +1,24 @@
+{
+  "$Comment": [
+    "The full moon, the game's own: live while the default world's moon is in phase 0 (full) or 1 (the",
+    "night after), the way a world spawn's MoonPhaseRange reads it. The moon turns over at midday and",
+    "a cycle is five game days, so it is live two game days in five: on the game's default day length,",
+    "about an hour and a half of every four real hours. The file name is the event id.",
+    "",
+    "It is a condition, not a run: it has no dates, no FirstYear, no attendance and no Almanac page,",
+    "and nothing in the pack names it in a Season leaf directly. Seasons_Of_Orbis_Restless_Moon (a",
+    "full moon outside Hallow's Eve) is built on it, so an October full moon changes nothing. It has",
+    "no Herald; Restless Moon carries the banner. Write World to follow another world's moon instead",
+    "of the default world's.",
+    "",
+    "A server owner switches it off in mods/ziggfreedcommon/calendar.json, which takes the",
+    "Gravekeeper's full moon visits and the Hallowed's full moon favor with it.",
+    "/zigcalendar status Seasons_Of_Orbis_Full_Moon shows what the server reads;",
+    "/zigcalendar force on Seasons_Of_Orbis_Full_Moon raises it until",
+    "/zigcalendar force clear Seasons_Of_Orbis_Full_Moon."
+  ],
+  "Moon": { "MoonPhaseRange": [0, 1] },
+  "Presentation": {
+    "TitleKey": "calendar.seasons_of_orbis_full_moon.name"
+  }
+}

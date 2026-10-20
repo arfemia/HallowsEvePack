@@ -1,0 +1,43 @@
+{
+  "$Comment": [
+    "The Gravekeeper on a full moon outside Hallow's Eve, on the same spot near Old Jack in the",
+    "Forgotten Temple that his Hallow's Eve placement uses (Hallows_Eve_Gravekeeper_Temple.json).",
+    "Pressing F opens his full moon conversation",
+    "(Dialogues/HallowsEvePack/Hallows_Eve_Gravekeeper_Restless.json), which greets the player and says",
+    "who he is; it opens no graveyard. The temple stays peaceful.",
+    "",
+    "Season makes him a guest: Seasons_Of_Orbis_Restless_Moon is live while the moon is full and",
+    "Hallow's Eve is not running (CalendarEvents/SeasonsOfOrbis/Seasons_Of_Orbis_Restless_Moon.json),",
+    "so he arrives as the moon rises and leaves as it sets, and when Hallow's Eve starts on a full moon",
+    "this placement hands him over to the Hallow's Eve one. Both are the same character, since neither",
+    "writes an Identity.NpcId. Lifecycle keeps his chunk loaded, stands him up again if something",
+    "removes him, and raises his health past anything that can be dealt. Where and Anchor match the",
+    "Hallow's Eve placement; move both together."
+  ],
+  "Name": "Hallows_Eve_Gravekeeper_Restless_Temple",
+  "Enabled": true,
+  "Where": {
+    "GameplayConfig": ["ForgottenTemple"]
+  },
+  "Identity": {
+    "Role": "Hallows_Eve_Gravekeeper"
+  },
+  "Anchor": {
+    "WorldSpawn": {
+      "Offset": {
+        "X": -7.5,
+        "Z": 4.5
+      },
+      "Yaw": 180.0
+    }
+  },
+  "Season": "Seasons_Of_Orbis_Restless_Moon",
+  "Lifecycle": {
+    "KeepAlive": true,
+    "Respawn": true,
+    "Fortify": true
+  },
+  "Interact": {
+    "Dialogue": "Hallows_Eve_Gravekeeper_Restless"
+  }
+}

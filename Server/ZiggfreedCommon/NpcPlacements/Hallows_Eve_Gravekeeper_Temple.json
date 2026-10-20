@@ -13,7 +13,11 @@
     "along negative X; to move him, edit Anchor.WorldSpawn.Offset (small enough to stay off the walls)",
     "and Yaw to turn him, then look at the spot in game. Identity.Role is his role, which gives him his",
     "look and the library's quest-giver body. Interact.Dialogue is what pressing F opens; it wins over",
-    "the quest list that role opens for a Gravekeeper nothing placed."
+    "the quest list that role opens for a Gravekeeper nothing placed.",
+    "",
+    "On a full moon outside Hallow's Eve he stands on this same spot through his other placement,",
+    "Hallows_Eve_Gravekeeper_Restless_Temple.json, with a conversation of its own. The two Seasons never",
+    "hold at once, so he is never there twice; move both Anchors together."
   ],
   "Name": "Hallows_Eve_Gravekeeper_Temple",
   "Enabled": true,

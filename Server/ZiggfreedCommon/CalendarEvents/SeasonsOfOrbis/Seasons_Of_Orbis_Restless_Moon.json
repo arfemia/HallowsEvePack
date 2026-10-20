@@ -1,0 +1,28 @@
+{
+  "$Comment": [
+    "The Restless Moon: a full moon (Seasons_Of_Orbis_Full_Moon) while Hallow's Eve is not running.",
+    "The file name is the event id. It is a condition, not a run, so it has no dates, attendance or",
+    "Almanac page. During Hallow's Eve it is never live, so an October full moon belongs to Old Jack's",
+    "season and changes nothing.",
+    "",
+    "Content for a full moon outside Hallow's Eve names it in its Season leaf: the Gravekeeper's full",
+    "moon placement (NpcPlacements/Hallows_Eve_Gravekeeper_Restless_Temple.json) and the Hallowed's",
+    "Undead kill row (Reputations/HallowsEvePack/Hallows_Eve_Hallowed.json).",
+    "",
+    "Herald.Start is the banner as the moon rises, telling players where the Gravekeeper keeps watch.",
+    "OncePerDay shows it to each player at most once a day, counted in UTC since no Clock is written,",
+    "however many full moons the day holds; a player who joins while it is up sees it then. There is",
+    "no End banner, so the moon sets quietly."
+  ],
+  "Live": { "AllOf": [ "Seasons_Of_Orbis_Full_Moon" ], "NoneOf": [ "Hallows_Eve" ] },
+  "Presentation": {
+    "TitleKey": "calendar.seasons_of_orbis_restless_moon.name"
+  },
+  "Herald": {
+    "OncePerDay": true,
+    "Start": {
+      "TitleKey": "calendar.seasons_of_orbis_restless_moon.herald.start",
+      "SubtitleKey": "calendar.seasons_of_orbis_restless_moon.herald.start.sub"
+    }
+  }
+}

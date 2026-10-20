@@ -8,7 +8,8 @@
     "Temple while the feast runs (NpcPlacements/Harvest_Feast_Miller_Temple.json, _Weaver_Temple and",
     "_Shepherd_Temple), each with a conversation of their own, so there is always somebody to ask.",
     "Dialogues.Exclude keeps the line out of the seasons' hosts' conversations: nobody invites the cook to",
-    "the cook's own table.",
+    "the cook's own table. It also leaves out the Gravekeeper's full moon conversation, since he keeps",
+    "watch over the dead on those nights and never comes to the feast.",
     "",
     "The QuestState condition shows the line only while the tour is carried. Once with Period Daily and",
     "PerConversation true is spent with the character asked and nobody else, so one walk can ask several",
@@ -20,7 +21,7 @@
     "it out everywhere, set Enabled false in a file of the same name."
   ],
   "Season": "Harvest_Feast",
-  "Dialogues": { "Exclude": [ "Harvest_Feast_Host", "Hallows_Eve_Old_Jack" ] },
+  "Dialogues": { "Exclude": [ "Harvest_Feast_Host", "Hallows_Eve_Old_Jack", "Hallows_Eve_Gravekeeper_Restless" ] },
   "Options": [
     {
       "LabelKey": "dialogue.harvest_feast_invitation.opt.invite",

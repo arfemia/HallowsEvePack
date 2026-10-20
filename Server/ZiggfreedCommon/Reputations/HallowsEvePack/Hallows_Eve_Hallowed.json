@@ -7,7 +7,11 @@
     "",
     "Kills pays Amount favor for each creature put down whose role is in one of the listed NPC",
     "groups; Hallows_Eve_Event_Mobs (NPC/Groups) holds the season's four night creatures and the",
-    "Horseman's Jack Archers. The Jack",
+    "Horseman's Jack Archers. The Undead row counts the game's own Undead group (its skeletons and",
+    "zombies, and any other mod's undead that joins it) only while its Season,",
+    "Seasons_Of_Orbis_Restless_Moon, is live: a full moon outside Hallow's Eve, so during Hallow's",
+    "Eve only the season's creatures pay.",
+    "The Jack",
     "Shield, the Flaming Jack Shield and the Hallowed set raise every gain of this favor by a percent",
     "while worn, through the stat ReputationGain_Hallows_Eve_Hallowed (Entity/Stats), which the library",
     "finds by this file's id. With no Cap, favor keeps climbing past Exalted, and each time earned favor passes another multiple of Every above",
@@ -28,7 +32,8 @@
   "Icon": "Hallows_Eve_Hollow_Lantern",
   "Order": 20,
   "Kills": [
-    { "NPCGroups": [ "Hallows_Eve_Event_Mobs" ], "Amount": 2 }
+    { "NPCGroups": [ "Hallows_Eve_Event_Mobs" ], "Amount": 2 },
+    { "NPCGroups": [ "Undead" ], "Amount": 1, "Season": "Seasons_Of_Orbis_Restless_Moon" }
   ],
   "Beyond": {
     "Every": 5000,
@@ -37,6 +42,7 @@
   "Earn": {
     "Lines": [
       "reputation.hallows_eve_hallowed.earn.kills",
+      "reputation.hallows_eve_hallowed.earn.full_moon",
       "reputation.hallows_eve_hallowed.earn.jack",
       "reputation.hallows_eve_hallowed.earn.treats",
       "reputation.hallows_eve_hallowed.earn.horseman",
