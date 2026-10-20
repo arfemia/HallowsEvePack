@@ -104,6 +104,8 @@ quest.hallows_eve_board_pumpkins.title = Citrouilles froides
 quest.hallows_eve_board_pumpkins.flavor = Les lanternes veulent plus de Citrouilles Sanctifiées que je peux en trouver tout seul. Cueille des citrouilles à la main et rapporte-moi les froides.
 quest.hallows_eve_board_carving.title = Sculpture à l'établi
 quest.hallows_eve_board_carving.flavor = Chaque seuil veut sa lanterne, et je sculpte pas plus vite que ça. Sculpte des Lanternes de Jack à un Établi de Sculpture, une citrouille et un peu de charbon de bois chacune.
+quest.hallows_eve_board_skeletons.title = Os qui cliquettent
+quest.hallows_eve_board_skeletons.flavor = Les squelettes qui portent ma tête sont de nouveau dehors la nuit, à cliqueter partout où les torches n'éclairent pas. Fais-en tomber un bon paquet pour moi.
 
 # ---- Old Jack's errands board ----
 board.hallows_eve_errands.title = Commissions du Vieux Jack
@@ -113,6 +115,8 @@ quest.hallows_eve_errand_souls.title = Âmes errantes
 quest.hallows_eve_errand_souls.flavor = Quelques Âmes Perdues ont dérivé jusqu'ici depuis mon dernier tour. Libère-les quand tu as une minute.
 quest.hallows_eve_errand_ghouls.title = Veille des tombes
 quest.hallows_eve_errand_ghouls.flavor = Des Goules Creuses grattent encore les tombes. Remets-les à terre avant qu'elles s'éloignent.
+quest.hallows_eve_errand_skeletons.title = Os en liberté
+quest.hallows_eve_errand_skeletons.flavor = Quelques Squelettes Jack se sont échappés cette nuit. Fais-les tomber si tu sors après la tombée du jour.
 quest.hallows_eve_errand_ectoplasm.title = Lanterne vacillante
 quest.hallows_eve_errand_ectoplasm.flavor = Une de mes lanternes vacille. Un peu d'Ectoplasme lui ferait passer la nuit.
 quest.hallows_eve_errand_bombs.title = Séance de tir

@@ -92,6 +92,8 @@ quest.hallows_eve_board_pumpkins.title = Calabazas Frías
 quest.hallows_eve_board_pumpkins.flavor = Los faroles piden más Calabazas Consagradas de las que puedo encontrar yo solo. Recoge calabazas a mano y tráeme las frías.
 quest.hallows_eve_board_carving.title = Tallado en el Banco
 quest.hallows_eve_board_carving.flavor = Cada puerta quiere un farol, y yo no tallo más deprisa. Talla unos cuantos Faroles de Jack en un Banco de Tallado, con una calabaza y un poco de carbón cada uno.
+quest.hallows_eve_board_skeletons.title = Huesos Traqueteantes
+quest.hallows_eve_board_skeletons.flavor = Los esqueletos con mi cara han vuelto a salir de noche, traqueteando donde no llegan las antorchas. Tumba a unos cuantos por mí.
 
 # ---- Old Jack's errands board ----
 board.hallows_eve_errands.title = Recados del Viejo Jack
@@ -101,6 +103,8 @@ quest.hallows_eve_errand_souls.title = Almas Sueltas
 quest.hallows_eve_errand_souls.flavor = Unas cuantas Almas Perdidas han llegado a la deriva desde la última vez que miré. Libéralas cuando tengas un momento.
 quest.hallows_eve_errand_ghouls.title = Guardia en las Tumbas
 quest.hallows_eve_errand_ghouls.flavor = Unos Gules Descarnados vuelven a escarbar en las tumbas. Abátelos otra vez antes de que se alejen.
+quest.hallows_eve_errand_skeletons.title = Huesos Sueltos
+quest.hallows_eve_errand_skeletons.flavor = Unos Esqueletos Jack se soltaron anoche. Túmbalos si sales de noche.
 quest.hallows_eve_errand_ectoplasm.title = Farol Moribundo
 quest.hallows_eve_errand_ectoplasm.flavor = Uno de mis faroles se está apagando. Un poco de Ectoplasma lo ayudaría a pasar la noche.
 quest.hallows_eve_errand_bombs.title = Práctica de Bombas

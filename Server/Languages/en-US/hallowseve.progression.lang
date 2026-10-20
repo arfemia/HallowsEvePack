@@ -104,6 +104,8 @@ quest.hallows_eve_board_pumpkins.title = Cold Pumpkins
 quest.hallows_eve_board_pumpkins.flavor = The lanterns want more Hallowed Pumpkins than I can find on my own. Pick pumpkins by hand and bring me the cold ones.
 quest.hallows_eve_board_carving.title = Bench Carving
 quest.hallows_eve_board_carving.flavor = Every doorstep wants a lantern, and I can only carve so fast. Carve some Jack Lanterns at a Carving Bench, a pumpkin and a bit of charcoal apiece.
+quest.hallows_eve_board_skeletons.title = Rattling Bones
+quest.hallows_eve_board_skeletons.flavor = The skeletons wearing my face are out after dark again, rattling about wherever the torches don't reach. Knock a good few of them flat for me.
 
 # ---- Old Jack's errands board ----
 board.hallows_eve_errands.title = Old Jack's Errands
@@ -113,6 +115,8 @@ quest.hallows_eve_errand_souls.title = Stray Souls
 quest.hallows_eve_errand_souls.flavor = A few Lost Souls have drifted in since I last looked. Set them free when you get a minute.
 quest.hallows_eve_errand_ghouls.title = Grave Watch
 quest.hallows_eve_errand_ghouls.flavor = Some Hollow Ghouls are pawing at the graves again. Put them back down before they wander off.
+quest.hallows_eve_errand_skeletons.title = Loose Bones
+quest.hallows_eve_errand_skeletons.flavor = A few Jack Skeletons got loose last night. Knock them down when you're out after dark.
 quest.hallows_eve_errand_ectoplasm.title = Guttering Lantern
 quest.hallows_eve_errand_ectoplasm.flavor = One of my lanterns is guttering. A little Ectoplasm would see it through the night.
 quest.hallows_eve_errand_bombs.title = Bomb Practice

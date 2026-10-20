@@ -92,6 +92,8 @@ quest.hallows_eve_board_pumpkins.title = Zucche Fredde
 quest.hallows_eve_board_pumpkins.flavor = Le lanterne vogliono più Zucche Consacrate di quante riesca a trovarne da solo. Raccogli le zucche a mano e portami quelle fredde.
 quest.hallows_eve_board_carving.title = Intaglio al Banco
 quest.hallows_eve_board_carving.flavor = Ogni soglia vuole una lanterna, e io più in fretta di così non intaglio. Intaglia qualche Lanterna di Jack a un Banco da Intaglio, una zucca e un po' di carbone per ciascuna.
+quest.hallows_eve_board_skeletons.title = Ossa Sonanti
+quest.hallows_eve_board_skeletons.flavor = Gli scheletri con la mia faccia sono di nuovo fuori dopo il tramonto, a far rumore dove le torce non arrivano. Buttane giù un bel po' per me.
 
 # ---- Old Jack's errands board ----
 board.hallows_eve_errands.title = Commissioni del Vecchio Jack
@@ -101,6 +103,8 @@ quest.hallows_eve_errand_souls.title = Anime Randagie
 quest.hallows_eve_errand_souls.flavor = Qualche Anima Perduta è arrivata alla deriva dall'ultima volta che ho guardato. Liberale quando hai un minuto.
 quest.hallows_eve_errand_ghouls.title = Guardia alle Tombe
 quest.hallows_eve_errand_ghouls.flavor = Dei Ghoul Vuoti stanno di nuovo grattando sulle tombe. Rimettili giù prima che se ne vadano in giro.
+quest.hallows_eve_errand_skeletons.title = Ossa Sciolte
+quest.hallows_eve_errand_skeletons.flavor = Qualche Scheletro Jack è scappato ieri notte. Buttalo giù quando sei fuori dopo il tramonto.
 quest.hallows_eve_errand_ectoplasm.title = Lanterna Boccheggiante
 quest.hallows_eve_errand_ectoplasm.flavor = Una delle mie lanterne boccheggia. Un po' di Ectoplasma la porterebbe fino a fine notte.
 quest.hallows_eve_errand_bombs.title = Esercizio con le Bombe

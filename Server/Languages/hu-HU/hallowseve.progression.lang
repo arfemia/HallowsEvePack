@@ -92,6 +92,8 @@ quest.hallows_eve_board_pumpkins.title = Hideg Tökök
 quest.hallows_eve_board_pumpkins.flavor = A lámpások több Megszentelt Tököt kérnek, mint amennyit egyedül találok. Szedj tököt kézzel, és hozd el nekem a hidegeket.
 quest.hallows_eve_board_carving.title = Padon Faragva
 quest.hallows_eve_board_carving.flavor = Minden küszöbre jár egy lámpás, én meg csak olyan gyorsan faragok, amilyen gyorsan tudok. Faragj Jack-lámpásokat egy Faragópadon, darabonként egy tökből és egy kis faszénből.
+quest.hallows_eve_board_skeletons.title = Zörgő Csontok
+quest.hallows_eve_board_skeletons.flavor = Az én arcomat viselő csontvázak sötétedés után megint kint járnak, és zörögnek mindenhol, ahová a fáklyák fénye nem ér. Verj le belőlük egy jó párat nekem.
 
 # ---- Old Jack's errands board ----
 board.hallows_eve_errands.title = Öreg Jack Apró Munkái
@@ -101,6 +103,8 @@ quest.hallows_eve_errand_souls.title = Kósza Lelkek
 quest.hallows_eve_errand_souls.flavor = Pár Elveszett Lélek idesodródott, mióta utoljára körülnéztem. Szabadítsd fel őket, ha lesz egy perced.
 quest.hallows_eve_errand_ghouls.title = Sírőrség
 quest.hallows_eve_errand_ghouls.flavor = Néhány Kongó Ghúl megint a síroknál kaparász. Tedd vissza őket, mielőtt elkóborolnak.
+quest.hallows_eve_errand_skeletons.title = Elszabadult Csontok
+quest.hallows_eve_errand_skeletons.flavor = Néhány Jack-csontváz elszabadult az éjjel. Verd le őket, ha sötétedés után kint jársz.
 quest.hallows_eve_errand_ectoplasm.title = Pislákoló Lámpás
 quest.hallows_eve_errand_ectoplasm.flavor = Az egyik lámpásom pislákol. Egy kis Ektoplazma átvinné az éjszakán.
 quest.hallows_eve_errand_bombs.title = Bombagyakorlat

@@ -100,6 +100,8 @@ quest.hallows_eve_board_pumpkins.title = Kalte Kürbisse
 quest.hallows_eve_board_pumpkins.flavor = Die Laternen wollen mehr Geweihte Kürbisse, als ich allein finde. Pflück Kürbisse von Hand und bring mir die kalten.
 quest.hallows_eve_board_carving.title = Schnitzbank-Arbeit
 quest.hallows_eve_board_carving.flavor = Vor jede Tür gehört eine Laterne, und ich schnitze nun mal nicht schneller. Schnitze ein paar Jack-Laternen an einer Schnitzbank, jede aus einem Kürbis und einem Stück Holzkohle.
+quest.hallows_eve_board_skeletons.title = Klappernde Knochen
+quest.hallows_eve_board_skeletons.flavor = Die Skelette mit meinem Gesicht sind nach Einbruch der Dunkelheit wieder unterwegs und klappern überall, wo keine Fackel hinreicht. Hau mir ein paar davon um.
 
 # ---- Old Jack's errands board ----
 board.hallows_eve_errands.title = Besorgungen des Alten Jack
@@ -109,6 +111,8 @@ quest.hallows_eve_errand_souls.title = Streunende Seelen
 quest.hallows_eve_errand_souls.flavor = Ein paar Verlorene Seelen sind hergetrieben, seit ich zuletzt geschaut habe. Befrei sie, wenn du eine Minute hast.
 quest.hallows_eve_errand_ghouls.title = Grabwache
 quest.hallows_eve_errand_ghouls.flavor = Ein paar Hollow-Ghule scharren schon wieder an den Gräbern. Leg sie wieder hin, bevor sie davonstreunen.
+quest.hallows_eve_errand_skeletons.title = Lose Knochen
+quest.hallows_eve_errand_skeletons.flavor = Ein paar Jack-Skelette sind letzte Nacht ausgebüxt. Hau sie um, wenn du nach Einbruch der Dunkelheit draußen bist.
 quest.hallows_eve_errand_ectoplasm.title = Flackernde Laterne
 quest.hallows_eve_errand_ectoplasm.flavor = Eine meiner Laternen flackert. Ein bisschen Ektoplasma bringt sie durch die Nacht.
 quest.hallows_eve_errand_bombs.title = Bombenübung

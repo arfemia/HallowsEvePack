@@ -98,6 +98,8 @@ quest.hallows_eve_board_pumpkins.title = Soğuk Kabaklar
 quest.hallows_eve_board_pumpkins.flavor = Fenerler, tek başıma bulabildiğimden fazla Kutsanmış Bal Kabağı istiyor. Kabakları elle topla, bana soğuk olanları getir.
 quest.hallows_eve_board_carving.title = Tezgahta Oyma
 quest.hallows_eve_board_carving.flavor = Her kapı eşiği bir fener ister, ben de ancak bu kadar hızlı oyabilirim. Oyma Tezgahında birkaç Jack Feneri oy, her biri için bir kabak ve azıcık odun kömürü.
+quest.hallows_eve_board_skeletons.title = Takırdayan Kemikler
+quest.hallows_eve_board_skeletons.flavor = Yüzümü takan iskeletler karanlık basınca yine ortada, meşalelerin ulaşmadığı her yerde takırdıyor. Birkaçını benim için yere ser.
 
 # ---- Old Jack's errands board ----
 board.hallows_eve_errands.title = Yaşlı Jack'in Ayak İşleri
@@ -107,6 +109,8 @@ quest.hallows_eve_errand_souls.title = Başıboş Ruhlar
 quest.hallows_eve_errand_souls.flavor = Ben son baktığımdan beri birkaç Kayıp Ruh buraya sürüklenmiş. Bir dakikan olunca onları serbest bırak.
 quest.hallows_eve_errand_ghouls.title = Mezar Nöbeti
 quest.hallows_eve_errand_ghouls.flavor = Birkaç Oyuk Gulyabani yine mezarları eşeliyor. Başlarını alıp gitmeden onları yerlerine geri yatır.
+quest.hallows_eve_errand_skeletons.title = Başıboş Kemikler
+quest.hallows_eve_errand_skeletons.flavor = Birkaç Jack İskeleti dün gece başıboş kaldı. Karanlıkta dışarı çıktığında onları yere ser.
 quest.hallows_eve_errand_ectoplasm.title = Titreyen Fener
 quest.hallows_eve_errand_ectoplasm.flavor = Fenerlerimden biri titreyip sönmek üzere. Azıcık Ektoplazma onu geceden çıkarır.
 quest.hallows_eve_errand_bombs.title = Bomba Talimi

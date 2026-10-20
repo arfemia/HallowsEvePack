@@ -92,6 +92,8 @@ quest.hallows_eve_board_pumpkins.title = Abóboras Frias
 quest.hallows_eve_board_pumpkins.flavor = As lanternas querem mais Abóboras Consagradas do que eu consigo achar sozinho. Colhe abóbora com as mãos e me traz as frias.
 quest.hallows_eve_board_carving.title = Entalhe na Bancada
 quest.hallows_eve_board_carving.flavor = Toda porta quer uma lanterna, e eu não entalho mais rápido que isso. Entalha umas Lanternas de Jack numa Bancada de Entalhe, uma abóbora e um pouco de carvão pra cada.
+quest.hallows_eve_board_skeletons.title = Ossos Sacudindo
+quest.hallows_eve_board_skeletons.flavor = Os esqueletos com a minha cara saíram de novo depois do escuro, sacudindo por onde as tochas não alcançam. Derruba uns bons pra mim.
 
 # ---- Old Jack's errands board ----
 board.hallows_eve_errands.title = Recados do Velho Jack
@@ -101,6 +103,8 @@ quest.hallows_eve_errand_souls.title = Almas Perdidas por Aí
 quest.hallows_eve_errand_souls.flavor = Umas Almas Perdidas vieram vagando desde a última vez que olhei. Liberta elas quando tiver um minuto.
 quest.hallows_eve_errand_ghouls.title = Vigia das Covas
 quest.hallows_eve_errand_ghouls.flavor = Uns Carniçais Ocos estão fuçando as covas de novo. Abate eles antes que saiam andando.
+quest.hallows_eve_errand_skeletons.title = Ossos Soltos
+quest.hallows_eve_errand_skeletons.flavor = Uns Esqueletos de Jack escaparam ontem à noite. Derruba eles quando estiver na rua depois do escuro.
 quest.hallows_eve_errand_ectoplasm.title = Lanterna Bruxuleando
 quest.hallows_eve_errand_ectoplasm.flavor = Uma das minhas lanternas tá bruxuleando. Um pouco de Ectoplasma faria ela passar a noite.
 quest.hallows_eve_errand_bombs.title = Treino de Bombas
