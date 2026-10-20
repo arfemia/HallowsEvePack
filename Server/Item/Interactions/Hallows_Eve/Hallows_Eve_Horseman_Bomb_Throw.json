@@ -1,10 +1,11 @@
 {
-  "$Comment": "The Headless Horseman winds up for 0.6 seconds, then hurls a lantern bomb at his target (Hallows_Eve_Horseman_Bomb_Projectile). The throw carries the AimingReference tag, which is what lets him aim the arc at a moving player. RunTime is the wind-up in seconds: longer gives players more warning.",
+  "$Comment": "The Headless Horseman winds up for 0.6 seconds, then hurls a lantern bomb at his target (Hallows_Eve_Horseman_Bomb_Projectile). The throw carries the AimingReference tag, which is what lets him aim the arc at a moving player. RunTime is the wind-up in seconds: longer gives players more warning. Lifetime is the longest the bomb can stay in the world, in seconds: the game removes it then even if he died or changed form mid-flight, so keep it above the bomb's 5-second fuse.",
   "Type": "Simple",
   "RunTime": 0.6,
   "Next": {
     "Type": "Projectile",
     "Config": "Hallows_Eve_Horseman_Bomb_Projectile",
+    "Lifetime": 8,
     "Tags": {"AimingReference": []}
   }
 }
