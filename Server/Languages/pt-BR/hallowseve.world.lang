@@ -40,8 +40,8 @@ dungeon.hallows_eve_graveyard.goal = Mate os quatro Esqueletos de Jack ao redor 
 dungeon.hallows_eve_graveyard_hard.name = O Cemitério do Cavaleiro (Difícil)
 dungeon.hallows_eve_graveyard_hard.description = O Cavaleiro Sem Cabeça cavalga mais forte aqui, e solta coisas que não solta em nenhum outro lugar. Traga mais amigos.
 dungeon.hallows_eve_graveyard_hard.goal = Enfrente as ondas de esqueletos ao redor da fonte para acordar o Cavaleiro Sem Cabeça, depois derrote-o na cavalgada difícil. Quando a cabeça dele voar, derrube-a, ou ele não pode ser ferido.
-dungeon.hallows_eve_graveyard.cost_hint = O Velho Jack vende Velas Funerárias na loja dele no Templo Esquecido.
-dungeon.hallows_eve_graveyard_hard.cost_hint = O Velho Jack vende Velas Funerárias Ardentes na loja dele no Templo Esquecido, quando te considera Freguês.
+dungeon.hallows_eve_graveyard.cost_hint = O Velho Jack vende Velas Funerárias na loja dele no Templo Esquecido, quando te considera Freguês.
+dungeon.hallows_eve_graveyard_hard.cost_hint = O Velho Jack vende Velas Funerárias Ardentes na loja dele no Templo Esquecido, quando você é De Confiança com ele.
 dungeon.hallows_eve_graveyard.confirm = Acender a Vela
 dungeon.hallows_eve_graveyard.chest = Sua recompensa espera no baú onde ele caiu.
 

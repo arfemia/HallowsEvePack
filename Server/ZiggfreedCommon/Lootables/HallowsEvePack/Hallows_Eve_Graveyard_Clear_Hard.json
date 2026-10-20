@@ -12,7 +12,7 @@
   "Rolls": [
     {
       "Grants": {
-        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "90" } } ]
+        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Hallows_Eve_Sweets", "Amount": "120" } } ]
       }
     },
     {

@@ -27,9 +27,9 @@ Hallows_Eve_Hollow_Lantern.description = Eine bleiche Laterne, die der Alte Jack
 Hallows_Eve_Horseman_Ember.name = Glut des Reiters
 Hallows_Eve_Horseman_Ember.description = Eine Kohle aus dem eigenen Feuer des Kopflosen Reiters, und sie kühlt nie ab. Der Alte Jack will sie für deine Hollow-Laterne.
 Hallows_Eve_Grave_Candle.name = Grabkerze
-Hallows_Eve_Grave_Candle.description = Eine schwarze Kerze, die der Grabwächter verbrennt, um das Tor zum Friedhof des Kopflosen Reiters zu öffnen, und das Tor bleibt für deine ganze Gruppe offen. Der Alte Jack verkauft sie in seinem Laden, und der Hort des Reiters gibt manche zurück.
+Hallows_Eve_Grave_Candle.description = Eine schwarze Kerze, die der Grabwächter verbrennt, um das Tor zum Friedhof des Kopflosen Reiters zu öffnen, und das Tor bleibt für deine ganze Gruppe offen. Der Alte Jack verkauft sie in seinem Laden, sobald er dich als Stammgast zählt, und der Hort des Reiters gibt manche zurück.
 Hallows_Eve_Burning_Grave_Candle.name = Brennende Grabkerze
-Hallows_Eve_Burning_Grave_Candle.description = Schwarze Kerzen, die nie aufhören zu brennen. Der Grabwächter verbrennt eine, um das Tor zum schweren Ritt des Kopflosen Reiters zu öffnen, und das Tor bleibt für deine ganze Gruppe offen. Der Alte Jack verkauft sie in seinem Laden, sobald er dich als Stammgast zählt, und tauscht eine gegen eine Handvoll Grabkerzen.
+Hallows_Eve_Burning_Grave_Candle.description = Schwarze Kerzen, die nie aufhören zu brennen. Der Grabwächter verbrennt eine, um das Tor zum schweren Ritt des Kopflosen Reiters zu öffnen, und das Tor bleibt für deine ganze Gruppe offen. Der Alte Jack verkauft sie in seinem Laden, sobald du bei ihm Bewährt bist, und tauscht eine gegen eine Handvoll Grabkerzen.
 Hallows_Eve_Fire_Resistance_Potion.name = Feuerresistenztrank
 Hallows_Eve_Fire_Resistance_Potion.description = Gewährt:\n\n• <color is="#ffffff">Feuerresistenz</color>: <color is="#ffffff">35%</color> weniger Feuerschaden\n\nDauer: <color is="#ffffff">3:00</color>\n\n<i>Er schmeckt nach Rauch und verbranntem Kürbis.</i>
 Hallows_Eve_Eternal_Candle.name = Ewige Kerze

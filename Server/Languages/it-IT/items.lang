@@ -27,9 +27,9 @@ Hallows_Eve_Hollow_Lantern.description = Una lanterna pallida che il Vecchio Jac
 Hallows_Eve_Horseman_Ember.name = La Brace del Cavaliere
 Hallows_Eve_Horseman_Ember.description = Un tizzone del fuoco stesso del Cavaliere senza Testa, che non si raffredda mai. Il Vecchio Jack la vuole per la tua Lanterna Cava.
 Hallows_Eve_Grave_Candle.name = Candela Funebre
-Hallows_Eve_Grave_Candle.description = Una candela nera che il Custode del Cimitero brucia per aprire il cancello del cimitero del Cavaliere senza Testa, e il cancello resta aperto per tutto il tuo gruppo. Il Vecchio Jack le vende nel suo negozio, e il Tesoro del Cavaliere ne restituisce qualcuna.
+Hallows_Eve_Grave_Candle.description = Una candela nera che il Custode del Cimitero brucia per aprire il cancello del cimitero del Cavaliere senza Testa, e il cancello resta aperto per tutto il tuo gruppo. Il Vecchio Jack le vende nel suo negozio quando ti considera un Habitué, e il Tesoro del Cavaliere ne restituisce qualcuna.
 Hallows_Eve_Burning_Grave_Candle.name = Candela Funebre Ardente
-Hallows_Eve_Burning_Grave_Candle.description = Candele nere che non smettono mai di bruciare. Il Custode del Cimitero ne brucia una per aprire il cancello della cavalcata difficile del Cavaliere senza Testa, e il cancello resta aperto per tutto il tuo gruppo. Il Vecchio Jack le vende nel suo negozio quando ti considera un Habitué, e ne dà una in cambio di una manciata di Candele Funebri.
+Hallows_Eve_Burning_Grave_Candle.description = Candele nere che non smettono mai di bruciare. Il Custode del Cimitero ne brucia una per aprire il cancello della cavalcata difficile del Cavaliere senza Testa, e il cancello resta aperto per tutto il tuo gruppo. Il Vecchio Jack le vende nel suo negozio quando per lui sei Fidato, e ne dà una in cambio di una manciata di Candele Funebri.
 Hallows_Eve_Fire_Resistance_Potion.name = Pozione di Resistenza al Fuoco
 Hallows_Eve_Fire_Resistance_Potion.description = Concede:\n\n• <color is="#ffffff">Resistenza al Fuoco</color>: <color is="#ffffff">35%</color> di danni da fuoco in meno\n\nDurata: <color is="#ffffff">3:00</color>\n\n<i>Sa di fumo e di zucca bruciata.</i>
 Hallows_Eve_Eternal_Candle.name = Candela Eterna

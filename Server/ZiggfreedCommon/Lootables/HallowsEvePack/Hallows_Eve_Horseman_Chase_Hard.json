@@ -7,7 +7,7 @@
     "Burning Grave Candle at Old Jack's shop (Hallows_Eve_Offer_Burning_Grave_Candle_Trade.json); then",
     "the Horseman's flaming breastplate, which pays from here and nowhere else; then the rest of the",
     "Flaming Hallowed set's pieces (the Burning Jack Helm, his flaming gauntlets and greaves, and the",
-    "Flaming Jack Shield) at twice the normal Hoard's odds; then the Eternal Candle",
+    "Flaming Jack Shield) at three times the normal Hoard's odds; then the Eternal Candle",
     "(Item/Items/Hallows_Eve/Hallows_Eve_Eternal_Candle.json), which opens his normal graveyard without",
     "burning a Grave Candle and is never used up, and pays from here and nowhere else; the last always",
     "pays the Hallowed's favor (the normal Hoard pays Old Jack's instead).",
@@ -25,23 +25,23 @@
       "Grants": { "Items": [ { "Item": "Hallows_Eve_Grave_Candle", "Count": 1, "CountMax": 4 } ] }
     },
     {
-      "Chance": { "Base": 10.0 },
+      "Chance": { "Base": 15.0 },
       "Grants": { "Items": [ { "Item": "Hallows_Eve_Flaming_Horseman_Breastplate", "Count": 1 } ] }
     },
     {
-      "Chance": { "Base": 10.0 },
+      "Chance": { "Base": 15.0 },
       "Grants": { "Items": [ { "Item": "Hallows_Eve_Burning_Jack_Helm", "Count": 1 } ] }
     },
     {
-      "Chance": { "Base": 10.0 },
+      "Chance": { "Base": 15.0 },
       "Grants": { "Items": [ { "Item": "Hallows_Eve_Flaming_Horseman_Gauntlets", "Count": 1 } ] }
     },
     {
-      "Chance": { "Base": 10.0 },
+      "Chance": { "Base": 15.0 },
       "Grants": { "Items": [ { "Item": "Hallows_Eve_Flaming_Horseman_Greaves", "Count": 1 } ] }
     },
     {
-      "Chance": { "Base": 10.0 },
+      "Chance": { "Base": 15.0 },
       "Grants": { "Items": [ { "Item": "Hallows_Eve_Flaming_Jack_Shield", "Count": 1 } ] }
     },
     {

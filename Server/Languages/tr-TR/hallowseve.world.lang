@@ -40,8 +40,8 @@ dungeon.hallows_eve_graveyard.goal = Başsız Süvari'yi uyandırmak için çeş
 dungeon.hallows_eve_graveyard_hard.name = Süvari'nin Mezarlığı (Zor)
 dungeon.hallows_eve_graveyard_hard.description = Başsız Süvari burada daha hırçın sürer ve başka hiçbir yerde düşürmediği şeyleri düşürür. Daha çok arkadaş getir.
 dungeon.hallows_eve_graveyard_hard.goal = Çeşmenin etrafındaki iskelet dalgalarını püskürt, Başsız Süvari uyansın; sonra onu zor sürüşte yen. Başı uçunca başı yere ser, yoksa ona zarar verilemez.
-dungeon.hallows_eve_graveyard.cost_hint = Yaşlı Jack, Mezar Mumlarını Unutulmuş Tapınak'taki dükkanında satar.
-dungeon.hallows_eve_graveyard_hard.cost_hint = Yaşlı Jack, seni Müdavim saydığında Yanan Mezar Mumlarını Unutulmuş Tapınak'taki dükkanında satar.
+dungeon.hallows_eve_graveyard.cost_hint = Yaşlı Jack, seni Müdavim saydığında Mezar Mumlarını Unutulmuş Tapınak'taki dükkanında satar.
+dungeon.hallows_eve_graveyard_hard.cost_hint = Yaşlı Jack, seni Güvenilir saydığında Yanan Mezar Mumlarını Unutulmuş Tapınak'taki dükkanında satar.
 dungeon.hallows_eve_graveyard.confirm = Mumu Yak
 dungeon.hallows_eve_graveyard.chest = Ödülün, onun düştüğü yerdeki sandıkta seni bekliyor.
 
