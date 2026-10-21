@@ -1,0 +1,34 @@
+{
+  "$Comment": "The void bomb the Voidtaken Horseman hurls at a player from the saddle: the Headless Horseman's own aimed lob (Parent, Hallows_Eve_Horseman_Bomb_Projectile: the same arc, launch force and 5-second fuse) drawn as the game's void blast (the Void Eye's Eye_Void_Blast model). It bursts on striking a creature (ProjectileHit) or the ground (ProjectileMiss), and after 5 seconds in any case, as the shared void blast (Orbis_Boss_Void_Bomb_Burst, players only), and where it bursts it sets the ground burning (Orbis_Boss_Fire_Patch_Spawn, players only, 10 seconds). All three landings are restated, since a child's Interactions replace the parent's whole.",
+  "Parent": "Hallows_Eve_Horseman_Bomb_Projectile",
+  "Model": "Eye_Void_Blast",
+  "Interactions": {
+    "ProjectileSpawn": {
+      "Cooldown": {"Cooldown": 0},
+      "Interactions": [
+        {"Type": "Simple", "RunTime": 5},
+        "Orbis_Boss_Void_Bomb_Burst",
+        "Orbis_Boss_Fire_Patch_Spawn",
+        {"Type": "RemoveEntity", "Entity": "User"}
+      ]
+    },
+    "ProjectileHit": {
+      "Cooldown": {"Cooldown": 0},
+      "Rules": {"Interrupting": ["ProjectileSpawn"]},
+      "Interactions": [
+        "Orbis_Boss_Void_Bomb_Burst",
+        "Orbis_Boss_Fire_Patch_Spawn",
+        {"Type": "RemoveEntity", "Entity": "User"}
+      ]
+    },
+    "ProjectileMiss": {
+      "Cooldown": {"Cooldown": 0},
+      "Rules": {"Interrupting": ["ProjectileSpawn"]},
+      "Interactions": [
+        "Orbis_Boss_Void_Bomb_Burst",
+        "Orbis_Boss_Fire_Patch_Spawn",
+        {"Type": "RemoveEntity", "Entity": "User"}
+      ]
+    }
+  }
+}

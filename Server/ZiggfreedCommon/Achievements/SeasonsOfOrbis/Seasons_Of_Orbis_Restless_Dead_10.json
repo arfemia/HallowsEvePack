@@ -1,0 +1,57 @@
+{
+  "$Comment": [
+    "The first rung of the restless graveyard's ladder: reach the tenth wave in one run of the restless graveyard",
+    "(Dungeons/Seasons_Of_Orbis_Restless_Graveyard.json), the full moon's endless run.",
+    "",
+    "Requires reads the run's best wave: ziggfreedcommon:counter with the Param Dungeon_Best_Wave on the",
+    "dungeon's own line (dungeon:@ and its id), ziggfreed-common's stat for the most waves a player cleared in",
+    "one run, the number on Records' Endless Runs tab. Min is the wave, and the description's number comes",
+    "from TextArgs, so keep the two equal. The criterion is a run of the graveyard that ends for the player",
+    "(INSTANCE_ROUND_ENDED on the dungeon's round, qualified by its id), counted only while Requires passes.",
+    "The library counts a run's end for the players still in the graveyard before it counts their best wave,",
+    "so a player there when their best run ends earns it as their next run ends; one who walked out between",
+    "waves has their best wave counted as they leave, and earns it as that run ends.",
+    "Factors/SeasonsOfOrbis/Seasons_Of_Orbis_Restless_Best_Wave.json names the best wave in the lock line a",
+    "player below it reads.",
+    "",
+    "Earned once and kept: the graveyard opens on every full moon, so this has no Occurrence. Listing files",
+    "it under Seasons in a subcategory of its own, Restless_Graveyard, beside the ladder the Almanac's banner",
+    "walks; Chains draws its three rungs as one ladder. Rewards.Claim waits on the achievements page until",
+    "the player collects it: favor with the Hallowed, and MMO Skill Tree's Mmo_Xp row, whose own Requires",
+    "(the hytale:mod_installed gate) leaves it out on a server without that mod."
+  ],
+  "Text": {
+    "TitleKey": "achievement.seasons_of_orbis_restless_dead_10.title",
+    "FlavorKey": "achievement.seasons_of_orbis_restless_dead.desc",
+    "TextArgs": { "Flavor": [ "10" ] }
+  },
+  "Listing": {
+    "Category": "Seasons",
+    "Subcategory": "Restless_Graveyard",
+    "SortOrder": 10,
+    "Icon": "Ingredient_Bone_Fragment",
+    "Chains": [ { "Id": "seasons_of_orbis_restless_dead", "Tier": 1 } ]
+  },
+  "Scoring": { "Points": 10 },
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:counter", "Param": "Dungeon_Best_Wave/dungeon:@Seasons_Of_Orbis_Restless_Graveyard", "Min": 10 }
+    ]
+  },
+  "Criteria": {
+    "finish-a-run": {
+      "Kind": "INSTANCE_ROUND_ENDED",
+      "Target": "dungeon:",
+      "Qualifier": "Seasons_Of_Orbis_Restless_Graveyard",
+      "Amount": 1,
+      "TextKey": "objective.seasons_of_orbis.restless_graveyard_run"
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 250 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "1000" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

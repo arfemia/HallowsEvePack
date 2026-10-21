@@ -1,0 +1,19 @@
+{
+  "$Comment": "One void bomb of the Voidtaken Horseman's bomb pass: the Headless Horseman's volley bomb (Parent, the same fall from 25 blocks up onto a ring, about two seconds) drawn as the game's void blast (the Void Eye's Eye_Void_Blast model), bursting as the shared void blast, Orbis_Boss_Void_Bomb_Burst (3 blocks, players only), since the row's rings stand 4 blocks apart and a player caught between two takes both. Both landings are restated, since a child's Interactions replace the parent's whole.",
+  "Parent": "Hallows_Eve_Horseman_Volley_Projectile",
+  "Model": "Eye_Void_Blast",
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        "Orbis_Boss_Void_Bomb_Burst",
+        {"Type": "RemoveEntity", "Entity": "User"}
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        "Orbis_Boss_Void_Bomb_Burst",
+        {"Type": "RemoveEntity", "Entity": "User"}
+      ]
+    }
+  }
+}

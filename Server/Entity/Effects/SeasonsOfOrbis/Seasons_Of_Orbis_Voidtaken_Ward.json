@@ -1,0 +1,23 @@
+{
+  "$Comment": "The Voidtaken Horseman's void ward, carried through his role's combat config (EntityEffects): the void he rides out of glows around him (the game's own Dungeon_Goblin_Void_Glow, as its shrouded figure wears it), and Void hurts him at half. It is the Headless Horseman's fire ward turned to the void, the same look on him with the void's light instead of his flames. Amount is the share of Void damage he shrugs off (0.5 is half).",
+  "Infinite": true,
+  "OverlapBehavior": "Ignore",
+  "RemovalBehavior": "Complete",
+  "ApplicationEffects": {
+    "Particles": [
+      {
+        "SystemId": "Dungeon_Goblin_Void_Glow",
+        "TargetEntityPart": "Entity",
+        "TargetNodeName": "Origin"
+      }
+    ]
+  },
+  "DamageResistance": {
+    "Void": [
+      {
+        "Amount": 0.5,
+        "CalculationType": "Percent"
+      }
+    ]
+  }
+}

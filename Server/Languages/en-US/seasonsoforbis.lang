@@ -1,5 +1,6 @@
 # Seasons of Orbis across the seasons: Festival Favor, the festival token, the Seasons of Orbis
-# ladder and the festival shelf every season's host carries; and Hytale's Anniversary, a one-day event.
+# ladder and the festival shelf every season's host carries; Hytale's Anniversary, a one-day event; and the
+# full moon, with the restless graveyard the Gravekeeper opens under it.
 # Keys are written bare: the library finds each one by its tail, whatever this file is called.
 # Numbers ride {0} and come from the content files, so a retune never touches a translation.
 
@@ -74,3 +75,20 @@ calendar.seasons_of_orbis_full_moon.name = Full Moon
 calendar.seasons_of_orbis_restless_moon.name = Restless Moon
 calendar.seasons_of_orbis_restless_moon.herald.start = The full moon rises
 calendar.seasons_of_orbis_restless_moon.herald.start.sub = The dead are restless. The Gravekeeper keeps watch in the Forgotten Temple.
+
+# ---- The restless graveyard: the full moon's endless run, its Voidtaken Horseman, its best wave and its achievements ----
+dungeon.seasons_of_orbis_restless_graveyard.name = The Restless Graveyard
+dungeon.seasons_of_orbis_restless_graveyard.description = The Horseman's graveyard under a full moon, when the dead won't stay down. They come in waves that never end, and the Voidtaken Horseman rides with every fifth.
+dungeon.seasons_of_orbis_restless_graveyard.goal = Hold off the waves of the dead for as long as you can. Every fifth wave, the Voidtaken Horseman rides. Each wave you clear adds to your chest: walk out between waves to keep it, or stay until your whole party falls.
+dungeon.seasons_of_orbis_restless_graveyard.cost_hint = Skeletons drop bone fragments when you put them down.
+dungeon.seasons_of_orbis_restless_graveyard.confirm = Burn the Bones
+notify.seasons_of_orbis_voidtaken_rides = The Voidtaken Horseman rides!
+notify.seasons_of_orbis_voidtaken_rides.sub = Keep off the glowing rings. He comes back stronger every time.
+factor.seasons_of_orbis_restless_graveyard.best_wave = a best wave in the Restless Graveyard of
+# The header of its own corner of the Seasons achievements, beside the ladder.
+achievement.category.seasons.restless_graveyard = The Restless Graveyard
+achievement.seasons_of_orbis_restless_dead_10.title = Laid to Rest
+achievement.seasons_of_orbis_restless_dead_20.title = Gravewarden
+achievement.seasons_of_orbis_restless_dead_30.title = The Longest Night
+achievement.seasons_of_orbis_restless_dead.desc = Reach wave {0} in one run of the Restless Graveyard.
+objective.seasons_of_orbis.restless_graveyard_run = Finish a run of the Restless Graveyard

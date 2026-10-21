@@ -1,0 +1,4 @@
+{
+  "$Comment": "One void bomb of the Voidtaken Horseman's bomb pass, the id his flight in the saddle (Seasons_Of_Orbis_Voidtaken_Ride, which hands it to the Horseman's ride as LineDrop) spawns at each ringed spot along the row. It runs Seasons_Of_Orbis_Voidtaken_Line_Drop.",
+  "Interactions": ["Seasons_Of_Orbis_Voidtaken_Line_Drop"]
+}

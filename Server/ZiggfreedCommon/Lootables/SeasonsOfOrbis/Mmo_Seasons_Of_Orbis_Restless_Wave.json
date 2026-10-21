@@ -1,0 +1,29 @@
+{
+  "$Comment": [
+    "Defense XP added to what one cleared wave of the restless dead banks in the restless graveyard (the",
+    "Seasons_Of_Orbis_Restless_Wave table), on a server running MMO Skill Tree.",
+    "",
+    "ContributesTo folds this roll into that table without touching its file, so the table's own pay",
+    "is tuned there alone. Requires takes this file out on a server without MMO Skill Tree, so the",
+    "table pays exactly what its own file says there; always write it with Min 1. A roll with no",
+    "Chance always pays, and Amount is XP before any boost. The run rolls the table once per cleared wave,",
+    "so keep Amount small: ten waves pay it ten times. The dungeon pays the first run each day in full and",
+    "later ones half, and that halving reaches this roll too."
+  ],
+  "Name": "Mmo_Seasons_Of_Orbis_Restless_Wave",
+  "ContributesTo": "Seasons_Of_Orbis_Restless_Wave",
+  "Requires": {
+    "Factors": [
+      { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 }
+    ]
+  },
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [
+          { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "150" } }
+        ]
+      }
+    }
+  ]
+}

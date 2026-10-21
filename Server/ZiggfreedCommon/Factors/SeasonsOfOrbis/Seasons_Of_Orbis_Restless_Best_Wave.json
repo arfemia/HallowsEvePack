@@ -1,0 +1,9 @@
+{
+  "$Comment": "Names the restless graveyard's best wave for lock lines, so an achievement gated on it reads 'Requires a best wave in the Restless Graveyard of 10 (currently 6)' instead of the generic line. The gate is ziggfreedcommon:counter with the Param below: Dungeon_Best_Wave, ziggfreed-common's stat for the most waves a player cleared in one endless run, on the line it keeps for this dungeon at normal difficulty (dungeon:@ and the dungeon's id). The Keys entry spells that Param exactly as the gates write it and points at a full lang key: the lang file's name, a dot, then the key as written in seasonsoforbis.lang.",
+  "Factor": "ziggfreedcommon:counter",
+  "ParamNames": {
+    "Keys": {
+      "Dungeon_Best_Wave/dungeon:@Seasons_Of_Orbis_Restless_Graveyard": "seasonsoforbis.factor.seasons_of_orbis_restless_graveyard.best_wave"
+    }
+  }
+}

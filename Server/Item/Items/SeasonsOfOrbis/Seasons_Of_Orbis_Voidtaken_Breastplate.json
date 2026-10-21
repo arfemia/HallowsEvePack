@@ -1,0 +1,37 @@
+{
+  "$Comment": "The Voidtaken Breastplate, one of the three pieces of the Voidtaken Horseman's armour each of his boss waves in the restless graveyard has a small chance to bank (ZiggfreedCommon/Lootables/SeasonsOfOrbis/Seasons_Of_Orbis_Restless_Boss_Wave.json): the Horseman's own ancient steel, gone cold in the void. The game's ancient steel breastplate model and texture, the Headless Horseman's breastplate's own (Hallows_Eve_Horseman_Breastplate), with no recipe (it is never crafted), the same stats a step below the iron breastplate's, and one thing more: DamageBonus_Void, Ziggfreed's CommonLib's stat for Void damage the wearer deals, in whole percent points, so any void weapon hits 3% harder with it on. Light is the void's violet glow it gives off, where the Horseman's gives off his ember. An Armor block written here replaces a parent's whole, so the file restates every leaf rather than naming a parent. Tags.ZigLevel asks for Defense 20 to wear it (the best level the player ever reached), behind MMO Skill Tree's Gear levels switch (Tags.ZigLevelFeature); a server owner frees or retunes it with a ZigLevel group gate in mods/ziggfreedcommon/use-gates.json.",
+  "TranslationProperties": {
+    "Name": "items.Seasons_Of_Orbis_Voidtaken_Breastplate.name",
+    "Description": "items.Seasons_Of_Orbis_Voidtaken_Breastplate.description"
+  },
+  "Quality": "Rare",
+  "ItemLevel": 20,
+  "PlayerAnimationsId": "Block",
+  "ItemSoundSetId": "ISS_Armor_Heavy",
+  "Categories": ["Items.Armors"],
+  "Icon": "Icons/ItemsGenerated/Armor_Steel_Ancient_Chest.png",
+  "IconProperties": {"Rotation": [22.5, 45, 22.5], "Scale": 0.5, "Translation": [4.8, -18]},
+  "Model": "Items/Armors/Steel/Chest.blockymodel",
+  "Texture": "Items/Armors/Steel/Chest_Ancient.png",
+  "Light": {"Color": "#63c"},
+  "Interactions": {
+    "Primary": {"Interactions": [{"Type": "EquipItem"}]},
+    "Secondary": {"Interactions": [{"Type": "EquipItem"}]}
+  },
+  "Armor": {
+    "ArmorSlot": "Chest",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": ["Overtop"],
+    "DamageResistance": {
+      "Physical": [{"Amount": 0.07, "CalculationType": "Percent"}],
+      "Projectile": [{"Amount": 0.07, "CalculationType": "Percent"}]
+    },
+    "StatModifiers": {
+      "Health": [{"Amount": 12, "CalculationType": "Additive"}],
+      "DamageBonus_Void": [{"Amount": 3, "CalculationType": "Additive"}]
+    }
+  },
+  "MaxDurability": 100,
+  "DurabilityLossOnHit": 0.5,
+  "Tags": {"Type": ["Armor"], "Family": ["Seasons_Of_Orbis"], "ZigLevel": ["Defense:20"], "ZigLevelFeature": ["mmoskilltree:Gear_Levels"]}
+}

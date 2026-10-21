@@ -1,0 +1,31 @@
+{
+  "$Comment": [
+    "The restless graveyard, the full moon's endless run: the Headless Horseman's source prefab beside this",
+    "file (the same enclosed night graveyard, 64 by 110 blocks; players arrive at its anchor in the entrance",
+    "room), with the run's entity on the open road just south of the central plaza, the Voidtaken Horseman's",
+    "spawn marker on the plaza's north side, and a vanilla Leave_Instance pad against the entrance room's back",
+    "wall, the way out. Cells count from the anchor, and they are the Horseman's graveyard's own",
+    "(Hallows_Eve_Graveyard.json), so the waves rise on spots his hard ride already proved open floor.",
+    "The run's reach (Range and PlayerRange in its script, EncounterManager/SeasonsOfOrbis/",
+    "Seasons_Of_Orbis_Restless_Graveyard_Encounter.json) and its waves' spawn rows are measured from the run's",
+    "entity, so move them with its cell. The Voidtaken rides the Horseman's flight in the saddle",
+    "(Hallows_Eve_Horseman_Ride), which measures its swings and fountain laps from where he spawns, so his",
+    "marker keeps the Horseman's cell, 7 north of the fountain's centre.",
+    "Containers stocks the source's hidden chest, in the sealed treasure room inside the west rock reached",
+    "down a cobwebbed shaft, from Server/Drops/SeasonsOfOrbis/Seasons_Of_Orbis_Drop_Restless_Graveyard_Chest.json:",
+    "every paste places it full again, and the first player to open it takes what it holds."
+  ],
+  "Source": "tools/arenas/ziggy_halloween.prefab.zip",
+  "Output": "Server/Prefabs/SeasonsOfOrbis/Seasons_Of_Orbis_Restless_Graveyard.prefab.json",
+  "StripSpawnMarkers": false,
+  "Encounter": { "Id": "Seasons_Of_Orbis_Restless_Graveyard_Encounter", "At": [0, 1, 66] },
+  "Markers": [
+    { "Id": "Seasons_Of_Orbis_Voidtaken_Horseman_Marker", "At": [0, 1, 46] }
+  ],
+  "Blocks": [
+    { "Name": "Leave_Instance", "At": [0, 1, -3] }
+  ],
+  "Containers": [
+    { "At": [-25, 1, 46], "Droplist": "Seasons_Of_Orbis_Drop_Restless_Graveyard_Chest" }
+  ]
+}

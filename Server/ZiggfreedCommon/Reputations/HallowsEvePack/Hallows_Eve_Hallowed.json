@@ -21,7 +21,9 @@
     "Exalted the Flaming Jack Shield. The Horseman's Hoard on the hard ride pays this favor for the first",
     "hard win each day (Lootables/HallowsEvePack/Hallows_Eve_Horseman_Chase_Hard.json), and every clear",
     "of his graveyard pays it on either ride (Lootables/HallowsEvePack/Hallows_Eve_Graveyard_Clear.json",
-    "and _Clear_Hard.json).",
+    "and _Clear_Hard.json). On a full moon outside Hallow's Eve, every wave cleared in the restless",
+    "graveyard pays it, the Voidtaken Horseman's waves the most",
+    "(Lootables/SeasonsOfOrbis/Seasons_Of_Orbis_Restless_Wave.json and _Boss_Wave.json).",
     "Earn lists the ways to earn favor, one lang key a line, for the How to earn block on the",
     "Reputation page."
   ],
@@ -43,6 +45,7 @@
     "Lines": [
       "reputation.hallows_eve_hallowed.earn.kills",
       "reputation.hallows_eve_hallowed.earn.full_moon",
+      "reputation.hallows_eve_hallowed.earn.restless_graveyard",
       "reputation.hallows_eve_hallowed.earn.jack",
       "reputation.hallows_eve_hallowed.earn.treats",
       "reputation.hallows_eve_hallowed.earn.horseman",

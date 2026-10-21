@@ -1,0 +1,5 @@
+{
+  "$Comment": "The Voidtaken Horseman's aimed void bomb, thrown from the saddle: Seasons_Of_Orbis_Voidtaken_Horseman_Mounted names it as RangedAttack, after a 2 second aim at his target. It runs Seasons_Of_Orbis_Voidtaken_Bomb_Throw.",
+  "Interactions": ["Seasons_Of_Orbis_Voidtaken_Bomb_Throw"],
+  "Tags": {"Attack": ["Ranged"]}
+}

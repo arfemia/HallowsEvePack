@@ -1,0 +1,37 @@
+{
+  "$Comment": "The Voidtaken Horseman, the restless graveyard's boss wave every fifth wave of its endless run: the Headless Horseman in the saddle as the void took him, his own look (Appearance Hallows_Eve_Headless_Horseman_Mounted, the horse walking and galloping as he flies) wrapped in the void's glow, a Variant of Template_Flying_Aggressive like the Horseman's mounted forms. He flies the Horseman's ride with the void in it (Seasons_Of_Orbis_Voidtaken_Ride, CombatAdditionalBehaviorComponent, which runs Hallows_Eve_Horseman_Ride with void bombs on its bomb pass): dives to fight low (1 to 3 blocks up), wide high swings, laps of the fountain, swoops through a ringed spot and bomb passes, turning on the nearest player every 4 to 6 seconds unless his target is within TargetRange. MotionFlyMaxHeightAboveGround must clear the highest of the ride's points (laps and bomb passes 8 up, swings 8 or 9). Between moves he hurls a void bomb (Root_Seasons_Of_Orbis_Voidtaken_Bomb) at a player within 18 blocks, but only after aiming at them for 2 seconds (RangedAttackAimingRange, the game's own flier aim tell), then waits 3 to 4 seconds (RangedAttackPauseRange); it bursts in the void and leaves the ground burning, hurting players only. He has no party health steps: each return the run's ramp makes him tougher (the dungeon's Run.Endless.Ramp, per return). Nothing calls him back toward the plaza (the run sends no Orbis_Boss_Leash), so he follows his target anywhere in the graveyard. The void hurts him at half (Seasons_Of_Orbis_Voidtaken_Ward in _CombatConfig, which also gives him his glow), he is never shoved (KnockbackScale 0), dies in the void (DeathParticles Effect_Death_Void) and drops nothing (DropList Empty): his reward is what each boss wave banks into the run's chest. Any key the template does not declare makes the game refuse the whole role.",
+  "Type": "Variant",
+  "Reference": "Template_Flying_Aggressive",
+  "Modify": {
+    "DeathParticles": "Effect_Death_Void",
+    "Appearance": "Hallows_Eve_Headless_Horseman_Mounted",
+    "DropList": "Empty",
+    "MaxHealth": 1100,
+    "IsMemory": false,
+    "NameTranslationKey": "npcs.Seasons_Of_Orbis_Voidtaken_Horseman.name",
+    "MotionFlyMinHeightAboveGround": 1,
+    "MotionFlyMaxHeightAboveGround": 11,
+    "MotionFlyMaxHorizontalSpeed": 9,
+    "MotionDesiredAltitudeCombat": [1, 3],
+    "MotionDesiredAltitudeSearch": [3, 6],
+    "ViewRange": 40,
+    "ViewSector": 360,
+    "HearingRange": 16,
+    "AlertedRange": 40,
+    "CombatBehaviorDistance": 30,
+    "CombatRelativeSpeedChase": 1,
+    "RangedAttack": "Root_Seasons_Of_Orbis_Voidtaken_Bomb",
+    "RangedAttackDistance": 18,
+    "RangedAttackAimingRange": [2, 2],
+    "RangedAttackPauseRange": [3, 4],
+    "CombatSeekSlowdownDistance": 5,
+    "CombatSeekStopDistance": 3,
+    "CombatAdditionalBehaviorComponent": "Seasons_Of_Orbis_Voidtaken_Ride",
+    "TargetSwitchTimer": [4, 6],
+    "TargetRange": 6,
+    "KnockbackScale": 0,
+    "_CombatConfig": {
+      "EntityEffects": ["Seasons_Of_Orbis_Voidtaken_Ward"]
+    }
+  }
+}

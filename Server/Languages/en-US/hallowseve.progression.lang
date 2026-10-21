@@ -216,6 +216,7 @@ factor.hallows_eve_hallowed.revered = Revered with the Hallowed
 factor.hallows_eve_hallowed.exalted = Exalted with the Hallowed
 reputation.hallows_eve_hallowed.earn.kills = Put down the creatures that crawl out at night.
 reputation.hallows_eve_hallowed.earn.full_moon = Outside Hallow's Eve, put down skeletons and zombies under a full moon.
+reputation.hallows_eve_hallowed.earn.restless_graveyard = On a full moon outside Hallow's Eve, every wave you clear in the Gravekeeper's Restless Graveyard earns their favor, half on later runs that day.
 reputation.hallows_eve_hallowed.earn.jack = Old Jack's daily jobs and board contracts count too.
 reputation.hallows_eve_hallowed.earn.treats = Ask everyone you talk to for a trick or treat, once a day each.
 reputation.hallows_eve_hallowed.earn.horseman = Clear the Headless Horseman's graveyard on either ride, and its chest pays their favor, half on later clears that day. Your first hard win each day earns more with his Hoard.
@@ -292,12 +293,13 @@ dialogue.hallows_eve_trick_or_treat.opt.knock = Trick or treat.
 
 # ---- The Gravekeeper's conversation (he never contracts) ----
 dialogue.hallows_eve_gravekeeper.menu.text = The Horseman's <color is="#ffd97a">graveyard</color> is behind me, and he is riding it tonight. Nothing in there rests while he does.\nThe gate opens only when I burn a <b>Grave Candle</b> at it, and once it is open, your whole party may follow you in. Old Jack sells them at his shop, once he counts you a Regular. An <b>Eternal Candle</b> opens it as well, and that one I give back. Say the word and I will take you in. Bring friends.
-dialogue.hallows_eve_gravekeeper.restless.text = The moon is full, and the dead do not rest under it. I keep watch here until it wanes.\nPut down any <b>skeletons</b> or <b>zombies</b> you meet while it is up, and the Hallowed will take notice.
+dialogue.hallows_eve_gravekeeper.restless.text = The moon is full, and the dead do not rest under it. The <color is="#ffd97a">graveyard</color> behind me fills with them in waves that never end, each worse than the last, and every fifth wave the <b>Voidtaken Horseman</b> rides through it.\nBurn five <b>bone fragments</b> at the gate and I will take your party in. An <b>Eternal Candle</b> opens it as well, and that one I give back. Walk out between waves, or stay until you all fall: either way you keep what you have earned. Out here, put down any <b>skeletons</b> or <b>zombies</b> you meet while the moon is up, and the Hallowed will take notice.
 dialogue.hallows_eve_gravekeeper.who.text = I keep this graveyard so the dead in it can rest. I am one of the <b>Hallowed</b>, and we put down whatever will not.\nThe dead stir under a full moon, and on Hallow's Eve they hardly sleep at all. The <b>Headless Horseman</b> never rests, so somebody has to keep knocking him down.
 dialogue.hallows_eve_gravekeeper.hard_open.text = You knocked him off his horse. He has not forgotten it.\nThere is a <b>hard ride</b> now, for anyone who comes back. He hits harder on it, and what he drops there, he drops nowhere else. For that gate I burn a <b>Burning Grave Candle</b>, and Old Jack sells those once you're Trusted with him.
 dialogue.hallows_eve_gravekeeper.ember.text = Jack sent you for <b>the Horseman's Ember</b>. He only carries it on the <b>hard ride</b>, and for that gate I burn a <b>Burning Grave Candle</b>. Jack sells those once you're Trusted with him.\nOnce he is down, it waits in the chest where he fell for every one of you Jack sent after it. Nobody else will find it. Miss the chest and it waits under Claims in your menu.
 dialogue.hallows_eve_gravekeeper.opt.enter = Take me in. (1 Grave Candle)
 dialogue.hallows_eve_gravekeeper.opt.enter_hard = Take me on the hard ride. (1 Burning Grave Candle)
+dialogue.hallows_eve_gravekeeper.opt.enter_restless = Lay the restless dead to rest. (5 Bone Fragments)
 dialogue.hallows_eve_gravekeeper.opt.who = Who are you?
 dialogue.hallows_eve_gravekeeper.opt.back = Something else.
 dialogue.hallows_eve_gravekeeper.opt.farewell = Goodnight.

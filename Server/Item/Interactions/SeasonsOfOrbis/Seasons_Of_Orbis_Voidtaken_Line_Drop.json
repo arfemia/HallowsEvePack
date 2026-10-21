@@ -1,0 +1,11 @@
+{
+  "$Comment": "Drops one void bomb of the Voidtaken Horseman's bomb pass onto a spot his flight ringed (Seasons_Of_Orbis_Voidtaken_Line_Projectile falls from high above it, about two seconds). His ride runs this at every ring of the row in the same moment it lights them. Lifetime is the longest the bomb can stay in the world, in seconds, so one whose blast never finished never lingers; keep it above the two-second fall.",
+  "Type": "Simple",
+  "RunTime": 0.1,
+  "Next": {
+    "Type": "Projectile",
+    "Config": "Seasons_Of_Orbis_Voidtaken_Line_Projectile",
+    "Lifetime": 6,
+    "RunTime": 2
+  }
+}

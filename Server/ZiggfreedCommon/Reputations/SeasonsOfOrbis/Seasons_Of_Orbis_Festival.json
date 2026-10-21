@@ -19,8 +19,9 @@
     "",
     "Favor comes from the Reputation rewards on every season's quests and board jobs and on the",
     "Seasons of Orbis ladder, so each quest card says how much, and from every clear of Hallow's Eve's",
-    "graveyard (Lootables/HallowsEvePack/Hallows_Eve_Graveyard_Clear.json and _Clear_Hard.json). Order",
-    "5 puts it above the seasons' own reputations on the Reputation page."
+    "graveyard (Lootables/HallowsEvePack/Hallows_Eve_Graveyard_Clear.json and _Clear_Hard.json) and every",
+    "wave cleared in the full moon's restless graveyard (Lootables/SeasonsOfOrbis/Seasons_Of_Orbis_Restless_Wave.json",
+    "and _Boss_Wave.json). Order 5 puts it above the seasons' own reputations on the Reputation page."
   ],
   "Text": {
     "TitleKey": "reputation.seasons_of_orbis_festival.name",

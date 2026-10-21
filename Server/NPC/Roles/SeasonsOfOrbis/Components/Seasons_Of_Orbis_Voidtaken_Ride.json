@@ -1,0 +1,37 @@
+{
+  "$Comment": [
+    "How the Voidtaken Horseman flies in the saddle: the Headless Horseman's own ride",
+    "(Hallows_Eve/Components/Hallows_Eve_Horseman_Ride.json, its comment tells every move), with the void in",
+    "place of his fire. His role (Seasons_Of_Orbis_Voidtaken_Horseman_Mounted) names this file in",
+    "CombatAdditionalBehaviorComponent, the hook Template_Flying_Aggressive runs ahead of its own combat moves",
+    "on every tick he is fighting.",
+    "",
+    "It references the Horseman's ride whole and changes one of its parameters through Modify: LineDrop, the",
+    "bomb his bomb pass drops onto each ring, is the void bomb (Root_Seasons_Of_Orbis_Voidtaken_Line_Drop),",
+    "so the row bursts in the void. Every other move, timing and flight point is the Horseman's, measured",
+    "from where he spawned; the Voidtaken's marker keeps the Horseman's spot on the plaza's north side, so",
+    "the same moves fit the same graveyard. Retune a move for him alone by naming that parameter in Modify",
+    "below; change it in the Horseman's file to move both."
+  ],
+  "Type": "Component",
+  "Class": "Instruction",
+  "Interface": "Hytale.Instruction.Combat",
+  "Parameters": {
+    "LineDrop": {
+      "Value": "Root_Seasons_Of_Orbis_Voidtaken_Line_Drop",
+      "Description": "The root interaction dropped onto each ring of a bomb pass. It should fall from high above, about 2 seconds."
+    }
+  },
+  "Content": {
+    "Continue": true,
+    "Instructions": [
+      {
+        "Continue": true,
+        "Reference": "Hallows_Eve_Horseman_Ride",
+        "Modify": {
+          "LineDrop": { "Compute": "LineDrop" }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "$Comment": "A boss's void bomb blast, shared by every boss in this pack that throws the void instead of fire: each player within 3 blocks takes Void damage (ziggfreed-common's Void cause) and a shove, in a burst of the game's own void impact. The one hit rule matches Player only, so the boss who threw it and his own creatures are never hurt by it; it is a creature's blast, so the world's PvP setting never filters it. IgnoreOwner skips the thrower whatever the rule says. It is Orbis_Boss_Bomb_Burst with the void in place of fire and no Burn; a bomb that also sets the ground alight names Orbis_Boss_Fire_Patch_Spawn beside it. Range is the radius in blocks; BaseDamage and Knockback.Force set how hard it hits.",
+  "Type": "Selector",
+  "Selector": {"Id": "AOECircle", "Range": 3},
+  "IgnoreOwner": true,
+  "Effects": {
+    "WorldSoundEventId": "SFX_Goblin_Lobber_Bomb_Death",
+    "Particles": [
+      {"SystemId": "VoidImpact", "TargetEntityPart": "Entity"}
+    ]
+  },
+  "HitEntityRules": [
+    {
+      "Matchers": [{"Type": "Player"}],
+      "Next": {
+        "Interactions": [
+          {
+            "Parent": "DamageEntityParent",
+            "DamageCalculator": {"BaseDamage": {"Void": 12}},
+            "DamageEffects": {
+              "Knockback": {
+                "Type": "Point",
+                "VelocityConfig": {
+                  "AirResistance": 0.97,
+                  "AirResistanceMax": 0.96,
+                  "GroundResistance": 0.94,
+                  "GroundResistanceMax": 0.3,
+                  "Threshold": 3.0,
+                  "Style": "Exp"
+                },
+                "Force": 6,
+                "VelocityType": "Set"
+              },
+              "WorldParticles": [{"SystemId": "VoidImpact", "Scale": 1}]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Next": {"Type": "Simple", "RunTime": 0.1}
+}

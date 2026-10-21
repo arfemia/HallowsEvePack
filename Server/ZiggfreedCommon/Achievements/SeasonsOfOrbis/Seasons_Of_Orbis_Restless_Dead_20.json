@@ -1,0 +1,46 @@
+{
+  "$Comment": [
+    "The second rung of the restless graveyard's ladder: reach the twentieth wave in one run of the restless",
+    "graveyard.",
+    "It reads the run's best wave the way the first rung does (Seasons_Of_Orbis_Restless_Dead_10.json tells",
+    "how): Requires' Min is the wave, and the description's number comes from TextArgs, so keep the two",
+    "equal. Earned once and kept, filed beside the other rungs in the Restless_Graveyard subcategory.",
+    "Rewards.Claim waits on the achievements page until the player collects it: favor with the Hallowed, and",
+    "MMO Skill Tree's Mmo_Xp row, whose own Requires (the hytale:mod_installed gate) leaves it out on a server",
+    "without that mod."
+  ],
+  "Text": {
+    "TitleKey": "achievement.seasons_of_orbis_restless_dead_20.title",
+    "FlavorKey": "achievement.seasons_of_orbis_restless_dead.desc",
+    "TextArgs": { "Flavor": [ "20" ] }
+  },
+  "Listing": {
+    "Category": "Seasons",
+    "Subcategory": "Restless_Graveyard",
+    "SortOrder": 20,
+    "Icon": "Seasons_Of_Orbis_Voidtaken_Gauntlets",
+    "Chains": [ { "Id": "seasons_of_orbis_restless_dead", "Tier": 2 } ]
+  },
+  "Scoring": { "Points": 25 },
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:counter", "Param": "Dungeon_Best_Wave/dungeon:@Seasons_Of_Orbis_Restless_Graveyard", "Min": 20 }
+    ]
+  },
+  "Criteria": {
+    "finish-a-run": {
+      "Kind": "INSTANCE_ROUND_ENDED",
+      "Target": "dungeon:",
+      "Qualifier": "Seasons_Of_Orbis_Restless_Graveyard",
+      "Amount": 1,
+      "TextKey": "objective.seasons_of_orbis.restless_graveyard_run"
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 500 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "3000" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

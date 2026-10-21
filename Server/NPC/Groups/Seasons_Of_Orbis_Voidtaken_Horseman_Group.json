@@ -1,0 +1,6 @@
+{
+  "$Comment": "The Voidtaken Horseman, the restless graveyard's boss wave. The run's script (Seasons_Of_Orbis_Restless_Graveyard_Encounter) names this group in its Groups, so a boss wave stands until he falls and he is cleared away with the rest when the run ends. Add a role id here if he gains another form.",
+  "IncludeRoles": [
+    "Seasons_Of_Orbis_Voidtaken_Horseman_Mounted"
+  ]
+}

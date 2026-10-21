@@ -1,0 +1,99 @@
+{
+  "$Comment": [
+    "The restless graveyard, the dungeon the Gravekeeper opens on a full moon outside Hallow's Eve: the",
+    "Headless Horseman's graveyard on a night the dead will not stay down, run as an endless wave run. Every",
+    "area of a copy pastes SeasonsOfOrbis/Seasons_Of_Orbis_Restless_Graveyard.prefab.json (the Horseman's",
+    "night graveyard with the run's entity, the Voidtaken Horseman's spawn marker and a way-out pad in its",
+    "entrance room; tools/arena_markers.py writes it), so every fresh paste stages a fresh run. EntryOffset",
+    "lands an arriving party one block up, standing on the entrance room's floor, and EntryYaw 180 turns them",
+    "to face south, into the graveyard. IntroCamera plays the Horseman's graveyard's own sweep",
+    "(Hallows_Eve_Graveyard_Intro), since both share one layout.",
+    "",
+    "Season keeps it closed except on a full moon outside Hallow's Eve (Seasons_Of_Orbis_Restless_Moon); on",
+    "Hallow's Eve the Horseman's own graveyards stand instead. Share: one party to an area, up to five players,",
+    "and four areas to a copy.",
+    "",
+    "Run.Endless makes it a run that never runs out (ziggfreed-common's DungeonEndless): one run per visit,",
+    "its reach the difficulty. The script's four band slots take turns, BandWaves (2) waves each, every",
+    "BossEvery-th wave (5, 10, 15 and on) is the Voidtaken Horseman, and once every band has had its turn the",
+    "waves come again one size bigger, up to Sizes.Max (three rises at once). Ramp makes each wave tougher:",
+    "8% more health and 4% more damage a wave on its creatures, and the Horseman a quarter more health and a",
+    "tenth more damage each time he returns, both held to Max (four times the first wave). The run lasts until",
+    "every member is down at once or everyone has left. A breather between waves (the script's Breather) lets",
+    "the party walk out the way they came in.",
+    "",
+    "Chest is what each cleared wave banks for every member standing in the graveyard:",
+    "Seasons_Of_Orbis_Restless_Wave for a wave of the dead, Seasons_Of_Orbis_Restless_Boss_Wave for a",
+    "Voidtaken wave. A member who leaves collects theirs on the Claims tab as they go; the rest find theirs in",
+    "a chest where they came in once the run ends. Rewards.Diminish counts each run once a day: the first run",
+    "each day pays in full, later ones half, the halving reaching every banked roll. Nothing in Complete",
+    "clears an endless run, so it names none, and its best wave goes on Records' Endless Runs tab",
+    "(ziggfreed-common's Dungeon_Best_Wave), which the restless graveyard's achievements read.",
+    "",
+    "EntryCost is the price of going in: Count bone fragments (Ingredient_Bone_Fragment, which skeletons",
+    "drop), burned at the gate by whoever opens an area for their party; partymates who follow walk in free.",
+    "Confirm is left out, so it is on: the player opening the area first sees CommonLib's confirm screen with",
+    "the graveyard's name and description, the fragments, how many they hold and how many it takes, and a",
+    "button whose words are ConfirmKey's; closing the screen spends nothing, and with too few the HintKey line",
+    "says where to find them. Keys lets an Eternal Candle (Hallows_Eve_Eternal_Candle) open the gate without",
+    "being spent, as it opens the Horseman's graveyard. Change Count to change the price, and the",
+    "Gravekeeper's way-in label, which shows it, with it. Text names it in the reader's language",
+    "(seasonsoforbis.lang), and its GoalKey is the line each player reads as they arrive."
+  ],
+  "Enabled": true,
+  "Share": {
+    "PartyLocked": true,
+    "MaxPlayers": 5,
+    "AreasPerCopy": 4
+  },
+  "Area": {
+    "Prefab": "SeasonsOfOrbis/Seasons_Of_Orbis_Restless_Graveyard.prefab.json",
+    "EntryOffset": {
+      "Y": 1
+    },
+    "EntryYaw": 180,
+    "IntroCamera": "Hallows_Eve_Graveyard_Intro"
+  },
+  "Run": {
+    "Endless": {
+      "BossEvery": 5,
+      "BandWaves": 2,
+      "Bands": {
+        "Bones": { "Slot": 1 },
+        "Rotten": { "Slot": 2 },
+        "Void": { "Slot": 3 },
+        "Restless": { "Slot": 4 }
+      },
+      "Sizes": { "Max": 3, "Every": 1 },
+      "Ramp": {
+        "HealthPerWave": 0.08,
+        "DamagePerWave": 0.04,
+        "HealthPerReturn": 0.25,
+        "DamagePerReturn": 0.1,
+        "Max": 4.0
+      },
+      "Chest": {
+        "PerWave": "Seasons_Of_Orbis_Restless_Wave",
+        "PerBossWave": "Seasons_Of_Orbis_Restless_Boss_Wave"
+      }
+    }
+  },
+  "Rewards": {
+    "Diminish": { "Steps": [1, 0.5], "Window": "Daily" }
+  },
+  "EntryCost": {
+    "Items": [ { "Item": "Ingredient_Bone_Fragment", "Count": 5 } ],
+    "Keys": [ "Hallows_Eve_Eternal_Candle" ],
+    "HintKey": "dungeon.seasons_of_orbis_restless_graveyard.cost_hint",
+    "ConfirmKey": "dungeon.seasons_of_orbis_restless_graveyard.confirm"
+  },
+  "Copy": {
+    "EmptyCloseSeconds": 60
+  },
+  "Season": "Seasons_Of_Orbis_Restless_Moon",
+  "Text": {
+    "NameKey": "dungeon.seasons_of_orbis_restless_graveyard.name",
+    "DescriptionKey": "dungeon.seasons_of_orbis_restless_graveyard.description",
+    "GoalKey": "dungeon.seasons_of_orbis_restless_graveyard.goal"
+  }
+}

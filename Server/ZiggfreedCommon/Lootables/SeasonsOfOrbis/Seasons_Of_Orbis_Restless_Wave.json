@@ -1,0 +1,41 @@
+{
+  "$Comment": [
+    "What one cleared wave of the restless dead banks into each member's chest in the restless graveyard",
+    "(Dungeons/Seasons_Of_Orbis_Restless_Graveyard.json, Run.Endless.Chest.PerWave): the run rolls it once",
+    "for every wave a member stood through, and the whole run's rolls land as one Claim when they leave or",
+    "when the run ends. The first run each day pays in full and later ones half, the dungeon's",
+    "Rewards.Diminish: the pool still draws in full, then every quantity halves, a leftover half paying by",
+    "chance. Its Voidtaken waves bank Seasons_Of_Orbis_Restless_Boss_Wave instead.",
+    "Every roll in Rolls always pays: a festival token through the Currency reward kind, then favor with the",
+    "Hallowed and Festival Favor through the Reputation kind. Pool draws Rolls.Base times from Entries, each",
+    "as likely as its Weight against the rest, repeats allowed: Void Essence, one to three. Keep each roll",
+    "small, since a long run rolls it many times; Mmo_Seasons_Of_Orbis_Restless_Wave.json adds Defense XP",
+    "where MMO Skill Tree runs."
+  ],
+  "Name": "Seasons_Of_Orbis_Restless_Wave",
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "1" } } ]
+      }
+    },
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 10 } } ]
+      }
+    },
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 5 } } ]
+      }
+    }
+  ],
+  "Pool": {
+    "Rolls": { "Base": 1 },
+    "Entries": [
+      { "Weight": 55, "Grants": { "Items": [ { "Item": "Ingredient_Void_Essence", "Count": 1 } ] } },
+      { "Weight": 30, "Grants": { "Items": [ { "Item": "Ingredient_Void_Essence", "Count": 2 } ] } },
+      { "Weight": 15, "Grants": { "Items": [ { "Item": "Ingredient_Void_Essence", "Count": 3 } ] } }
+    ]
+  }
+}

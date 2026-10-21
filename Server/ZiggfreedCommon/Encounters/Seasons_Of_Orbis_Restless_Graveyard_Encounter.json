@@ -1,0 +1,25 @@
+{
+  "$Comment": [
+    "The binding row for the restless graveyard's endless run (EncounterManager/SeasonsOfOrbis/",
+    "Seasons_Of_Orbis_Restless_Graveyard_Encounter.json): what the server owes for it, which the script never",
+    "describes. Without a row the library keeps no run for an endless script and nothing rises, so this file",
+    "is what wakes the waves. NameKey names the run by the one who rides through it, the Voidtaken Horseman,",
+    "the same name his boss bar shows.",
+    "",
+    "Subject is left to its Boss slot, which the run never fills: an endless run has no one boss to credit,",
+    "scale or pay. Its pay is the dungeon's, banked per cleared wave (Dungeons/",
+    "Seasons_Of_Orbis_Restless_Graveyard.json, Run.Endless.Chest), and its records are the dungeon's best",
+    "wave on Records' Endless Runs tab, so the row names no Loot and no Leaderboard.",
+    "",
+    "Scale.Adds grows every creature the run raises with the party standing in it: a quarter more health for",
+    "each player beyond the first, up to double for a party of five, so a wave holds the same for a party as",
+    "it does alone. The dungeon's ramp grows them wave by wave on top of it, and Mob Scaling, where it runs,",
+    "on top of that. Switch the row off with Enabled false, or from mods/ziggfreedcommon/encounters.json under",
+    "the key seasons_of_orbis_restless_graveyard_encounter."
+  ],
+  "EncounterAsset": "Seasons_Of_Orbis_Restless_Graveyard_Encounter",
+  "NameKey": "npcs.Seasons_Of_Orbis_Voidtaken_Horseman.name",
+  "Scale": {
+    "Adds": { "HealthPerMember": 0.25, "MaxHealthMultiplier": 2.0 }
+  }
+}

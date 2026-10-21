@@ -1,0 +1,55 @@
+{
+  "$Comment": [
+    "What one cleared Voidtaken wave banks into each member's chest in the restless graveyard",
+    "(Dungeons/Seasons_Of_Orbis_Restless_Graveyard.json, Run.Endless.Chest.PerBossWave): the run rolls it",
+    "once for every time a member stood through the Voidtaken Horseman's return, every fifth wave, and it",
+    "lands in the same Claim as the run's other waves, under the same daily halving (the dungeon's",
+    "Rewards.Diminish).",
+    "Every roll is read on its own. The first three always pay: festival tokens through the Currency reward",
+    "kind, then favor with the Hallowed and Festival Favor through the Reputation kind. The three after them",
+    "are his chase, a chance at each piece of his armour (the Voidtaken Breastplate, Gauntlets and Greaves,",
+    "which raise the Void damage the wearer deals); Chance is a percent from 0 to 100. Pool draws Rolls.Base",
+    "times from Entries, each as likely as its Weight against the rest, repeats allowed: Void Essence, two to",
+    "four, and now and then a Voidheart. Mmo_Seasons_Of_Orbis_Restless_Boss_Wave.json adds Defense XP where",
+    "MMO Skill Tree runs."
+  ],
+  "Name": "Seasons_Of_Orbis_Restless_Boss_Wave",
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "3" } } ]
+      }
+    },
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 50 } } ]
+      }
+    },
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 25 } } ]
+      }
+    },
+    {
+      "Chance": { "Base": 5.0 },
+      "Grants": { "Items": [ { "Item": "Seasons_Of_Orbis_Voidtaken_Breastplate", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 5.0 },
+      "Grants": { "Items": [ { "Item": "Seasons_Of_Orbis_Voidtaken_Gauntlets", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 5.0 },
+      "Grants": { "Items": [ { "Item": "Seasons_Of_Orbis_Voidtaken_Greaves", "Count": 1 } ] }
+    }
+  ],
+  "Pool": {
+    "Rolls": { "Base": 2 },
+    "Entries": [
+      { "Weight": 50, "Grants": { "Items": [ { "Item": "Ingredient_Void_Essence", "Count": 2 } ] } },
+      { "Weight": 30, "Grants": { "Items": [ { "Item": "Ingredient_Void_Essence", "Count": 3 } ] } },
+      { "Weight": 15, "Grants": { "Items": [ { "Item": "Ingredient_Void_Essence", "Count": 4 } ] } },
+      { "Weight": 5, "Grants": { "Items": [ { "Item": "Ingredient_Voidheart", "Count": 1 } ] } }
+    ]
+  }
+}

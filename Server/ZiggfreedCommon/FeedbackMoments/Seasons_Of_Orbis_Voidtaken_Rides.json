@@ -1,0 +1,25 @@
+{
+  "$Comment": [
+    "What the members of a restless graveyard run see as the Voidtaken Horseman rides out on a boss wave:",
+    "a big banner, his line and, under it, what to watch for. The run's boss wave",
+    "(EncounterManager/SeasonsOfOrbis/Macros/Macro_Seasons_Of_Orbis_Voidtaken_Rise.json, Moment) fires it",
+    "once per member. Keys are lines in this pack's seasonsoforbis.lang, written bare.",
+    "",
+    "The banner always reaches the members (ToParticipants) and anyone else standing within RadiusBlocks",
+    "of them, which keeps it inside this one graveyard: the graveyards of one copy share a world but stand",
+    "far further apart than this. MinSecondsBetween folds the members' fires into one banner."
+  ],
+  "Broadcast": {
+    "Title": {
+      "Key": "notify.seasons_of_orbis_voidtaken_rides"
+    },
+    "Secondary": {
+      "Key": "notify.seasons_of_orbis_voidtaken_rides.sub"
+    },
+    "Major": true,
+    "ToParticipants": true,
+    "SameWorldOnly": true,
+    "RadiusBlocks": 96.0,
+    "MinSecondsBetween": 5
+  }
+}
