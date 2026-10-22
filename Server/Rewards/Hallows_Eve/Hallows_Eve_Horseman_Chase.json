@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Horseman's Hoard, the Headless Horseman's chase Claim: granted beside his daily Claim, rolled from Hallows_Eve_Horseman_Chase, which always pays something. It is not scaled by share (ShareScaled false), so everyone who fought him rolls the same odds, and Diminish pays the first win each day only. TitleKey titles its row on the Claims tab (claim.hallows_eve_horseman_chase in hallowseve.world.lang).",
+  "$Comment": "The Horseman's Hoard, the Headless Horseman's chase Claim: granted beside his daily Claim, rolled from Hallows_Eve_Horseman_Chase, which always pays something. It is not scaled by share (ShareScaled false), so everyone who fought him rolls the same odds, and Diminish pays the first win each day only. TitleKey titles its row on the Claims tab (claim.hallows_eve_horseman_chase in hallowseve.world.lang), where players see it as his Boss Kill; the ids keep the Hoard's name, since saved Claims are filed under them.",
   "Type": "ZigClaim",
   "Lootable": "Hallows_Eve_Horseman_Chase",
   "Diminish": { "Steps": [1, 0], "Window": "Daily" },

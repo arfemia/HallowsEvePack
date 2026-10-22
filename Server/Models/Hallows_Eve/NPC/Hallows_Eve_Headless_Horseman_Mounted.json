@@ -1,16 +1,34 @@
 {
-  "$Comment": "The Headless Horseman in the saddle: the game's skeletal horse, saddled, with his headless burnt rider astride it holding a lit jack-o'-lantern out in front. Parent Horse_Skeleton brings the horse's look, its hitbox, its icon and every animation. He rides the air on his role's flying movement, and while airborne the game plays the horse's Fly sets, which on the horse are a glide with its legs held still; AnimationSets here replaces just those four sets (a set named here replaces the parent's set of that name, the rest still come from the horse), so the horse walks while he hovers (FlyIdle), gallops while he flies (Fly and FlyFast) and walks backward when he backs off (FlyBackward), with no hoof sounds in the air. Point a set at another of the horse's animations, or change its Speed, to retune his stride. The rider and his lantern are attachments that hang from the horse's Saddle-Attachment node, as the game's own Saddle does, so they move with the horse; the rider holds one seated pose (tools/derive_art.py writes both). DefaultAttachments lists the saddle too, since a list here replaces the parent's whole. The flame burns where the rider's head would be: Saddle-Attachment carries it, raised by PositionOffset in blocks, and it is kept small and low because the campfire's smoke and sparks rise well above the flame itself, which reads as something hanging over him. MinScale and MaxScale fix his size; Light is the lantern's glow, a model light that moves with him, each hex digit a red, green or blue level from 0 to f.",
-  "Parent": "Horse_Skeleton",
+  "$Comment": "The Headless Horseman in the saddle: a living black horse in black barding with a rotted tail, his headless rider astride it in the Horseman's armour with a fire in his neck, holding a lit jack-o'-lantern out in front. Parent Horse brings the game's living horse: its shape, hitbox and every animation. Texture swaps its coat for his black horse's (NPC/Hallows_Eve/Headless_Horseman/Horse/, painted on the horse's own layout). RandomAttachmentSets is empty so the horse's random mane never goes on (the barding covers the neck, and a second tail would sit inside his own), as the game's Burnt Knight clears its parent's set. DefaultAttachments replaces the parent's list whole: the barding (it brings its own saddle), the rotted tail, the rider, his collar chest, legs and hands, and his lantern. The rider and his armour hang from the horse's Saddle-Attachment node, as the game's own saddle does, so they move with the horse; tools/derive_art.py writes the rider in one seated pose and wears the armour on him, the armour in its plain textures here (Hallows_Eve_Headless_Horseman_Mounted_HM is this model in gold for the hard ride). He rides the air on his role's flying movement, and while airborne the game plays the horse's Fly sets, which on the horse are a glide with its legs held still; AnimationSets replaces just those four sets (a set named here replaces the parent's set of that name, the rest still come from the horse), so the horse walks while he hovers (FlyIdle), gallops while he flies (Fly and FlyFast) and walks backward when he backs off (FlyBackward), with no hoof sounds in the air. Point a set at another of the horse's animations, or change its Speed, to retune his stride. The flame burns green on the rider's collar chest's Fire node, the green ember in his neck hole, kept small because the fire's smoke and sparks rise well above the flame itself: Fire_Green is the game's green campfire (the emerald brazier's), and Color tints it toward the ember's own green, the way the game's Goblin Miner tints its candle flame; change Color to retint it, or SystemId to Campfire_New_Cartoon for an orange fire. MinScale and MaxScale fix his size; Light is the green glow of the fire in his neck, a model light that moves with him, each hex digit a red, green or blue level from 0 to f.",
+  "Parent": "Horse",
+  "Texture": "NPC/Hallows_Eve/Headless_Horseman/Horse/Texture_black_horse.png",
   "MinScale": 1.15,
   "MaxScale": 1.15,
+  "RandomAttachmentSets": {},
   "DefaultAttachments": [
     {
-      "Model": "NPC/Livestock/Horse/Models/Attachments/Saddle.blockymodel",
-      "Texture": "NPC/Livestock/Horse/Models/Attachments/Saddle_Texture.png"
+      "Model": "NPC/Hallows_Eve/Headless_Horseman/Horse/Armor.blockymodel",
+      "Texture": "NPC/Hallows_Eve/Headless_Horseman/Horse/Armor_black.png"
+    },
+    {
+      "Model": "NPC/Hallows_Eve/Headless_Horseman/Horse/Mane.blockymodel",
+      "Texture": "NPC/Hallows_Eve/Headless_Horseman/Horse/Mane_rotted_green.png"
     },
     {
       "Model": "NPC/Hallows_Eve/Headless_Horseman/Horseman_Rider.blockymodel",
       "Texture": "NPC/Undead/Skeleton/Models/Model_Textures/Burnt.png"
+    },
+    {
+      "Model": "NPC/Hallows_Eve/Headless_Horseman/Horseman_Rider_Chest.blockymodel",
+      "Texture": "Items/Hallows_Eve/Horseman_Armor/Chest_Texture.png"
+    },
+    {
+      "Model": "NPC/Hallows_Eve/Headless_Horseman/Horseman_Rider_Legs.blockymodel",
+      "Texture": "Items/Hallows_Eve/Horseman_Armor/Legs_Texture.png"
+    },
+    {
+      "Model": "NPC/Hallows_Eve/Headless_Horseman/Horseman_Rider_Hands.blockymodel",
+      "Texture": "Items/Hallows_Eve/Horseman_Armor/Hands_Texture.png"
     },
     {
       "Model": "NPC/Hallows_Eve/Headless_Horseman/Horseman_Rider_Lantern.blockymodel",
@@ -49,11 +67,11 @@
   },
   "Particles": [
     {
-      "SystemId": "Campfire_New_Cartoon",
-      "TargetNodeName": "Saddle-Attachment",
-      "PositionOffset": { "Y": 0.45 },
-      "Scale": 0.55
+      "SystemId": "Fire_Green",
+      "TargetNodeName": "Fire",
+      "Scale": 0.55,
+      "Color": "#d1ff7f"
     }
   ],
-  "Light": { "Color": "#c62" }
+  "Light": { "Color": "#8c4" }
 }

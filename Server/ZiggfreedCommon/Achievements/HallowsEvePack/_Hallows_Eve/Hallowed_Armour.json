@@ -1,8 +1,9 @@
 {
   "$Comment": [
-    "Wear the Hallowed Set's four armour pieces at once: a Jack Helm (or the Burning Jack Helm) with the",
-    "Horseman's breastplate, gauntlets and greaves, plain or flaming. GEAR_SET_TIER counts a set's bonus",
-    "tier coming on as gear goes on, its amount the number of pieces that tier takes, so Amount 4 is",
+    "Wear the Hallowed Set's four armour pieces at once: a helm (the Jack Helm, the Burning Jack Helm or",
+    "the Horseman's Helm) with the Horseman's breastplate, gauntlets and greaves, plain or flaming.",
+    "GEAR_SET_TIER counts a set's bonus tier coming on as gear goes on, its amount the number of",
+    "pieces that tier takes, so Amount 4 is",
     "met the moment the set's four-piece tier (GearSets/HallowsEvePack/Hallows_Eve_Hallowed.json) comes",
     "on, or its five-piece one. Logging in already dressed counts nothing: the pieces have to go on.",
     "",

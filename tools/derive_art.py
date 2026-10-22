@@ -27,12 +27,20 @@ What it writes (pack-relative):
       rig) and the Geode Wraith (on the Wraith rig): every vanilla node kept, so the vanilla
       animations still drive them, plus a recoloured texture.
   Common/NPC/Hallows_Eve/Headless_Horseman/             the Headless Horseman: the Skeleton rig
-      with its skull hidden; the rider his mounted Model JSON hangs on vanilla's skeletal horse;
-      the lanterns he carries; and the Jack Helm as his flying Head wears it. They wear vanilla's
-      burnt skeleton texture and this pack's lantern and helm textures, so none has its own.
+      with its skull hidden; the rider his mounted Model JSON hangs on his black horse, and the
+      rider's armour; the lanterns he carries; and the Jack Helm as his flying Head wears it. They
+      wear vanilla's burnt skeleton texture and this pack's lantern, helm and armour textures, so
+      none has its own.
   Common/Icons/ItemsGenerated/Hallows_Eve_*.png         64x64 item icons from a small
       orthographic renderer at each family's vanilla IconProperties angle.
   Common/Icons/ModelsGenerated/Hallows_Eve_*.png        128x128 model icons for the mobs.
+
+What it reads from the pack and never writes: the artist's hand-made Headless Horseman art, copied
+into Common/ as it came. Common/Items/Hallows_Eve/Horseman_Armor/ holds his armour
+(the chest, the collar chest, hands, legs and helm, each with a plain and a gold texture), which
+the chase set and the Horseman wear; the rider's armour and the set's icons derive from it.
+Common/NPC/Hallows_Eve/Headless_Horseman/Horse/ holds his black horse's texture, barding and
+rotted tail, which his mounted Model JSON names directly. Replace those files to change his look.
 
 Format facts this relies on (reference/shared-source/release and the Hytale Blockbench plugin):
   - A node's shape is centred at position + orientation * offset, in its parent's frame,
@@ -205,6 +213,7 @@ ANGLE_BLOCK = (22.5, 45, 22.5)          # Deco/Deco_Halloween_Pumpkin_Scary.json
 ANGLE_WAND = (45, 90, 0)                # Weapon/Wand/Weapon_Wand_Wood.json
 ANGLE_ESSENCE = (0, 0, 0)               # Ingredient/Ingredient_Life_Essence.json
 ANGLE_CRYSTAL = (34.315, 29.815, 22.5)  # Ingredient/Crystal/Ingredient_Crystal_Purple.json
+ANGLE_ARMOR = (22.5, 45, 22.5)          # Armor/Iron/Armor_Iron_Chest.json, and its hands, legs and head
 
 # --- quality colours: Server/Item/Qualities/<Quality>.json TextColor ------------------------
 
@@ -234,10 +243,11 @@ GHOUL = "NPC/Undead/Ghoul/Models/Model.blockymodel"
 GHOUL_TEXTURE = "NPC/Undead/Ghoul/Models/Texture.png"
 SKELETON = "NPC/Undead/Skeleton/Models/Model.blockymodel"
 SKELETON_BURNT_TEXTURE = "NPC/Undead/Skeleton/Models/Model_Textures/Burnt.png"
+PLAYER = "Characters/Player.blockymodel"
 VANILLA_FILES = tuple(f"Common/{rel}" for rel in (
     WORKBENCH, WORKBENCH_TEXTURE, WAND, WAND_TEXTURE, SPIRIT, SPIRIT_TEXTURE,
     WRAITH, WRAITH_TEXTURE, ESSENCE, ESSENCE_TEXTURE, GHOUL, GHOUL_TEXTURE,
-    SKELETON, SKELETON_BURNT_TEXTURE))
+    SKELETON, SKELETON_BURNT_TEXTURE, PLAYER))
 
 # --- the Cursed Geode: a scripted stone with a lit crack (64x64 texture, x, y, w, h) ---------
 
@@ -300,13 +310,14 @@ WRAITH_CRYSTALS = [
 ANGLE_MODEL = (10, 25, 0)       # the mobs' model icons: nearly front-on, like vanilla's
 
 # --- the Headless Horseman: the vanilla Skeleton rig, headless, on foot and in the saddle -----
-# An attachment's root takes the transform of the base node it is named after (its own
-# position is ignored), and its children hang from that node's pivot plus the root's own
-# offset; so the rider and the lanterns root on nodes whose offset is zero, and the helm moves
-# by the difference between the two skulls' offsets.
+# An attachment's piece node takes the place of the base node it is named after: its children
+# hang from that base node's centre in the base node's turn, and the piece's own position,
+# offset and turn are dropped (graft() below gives the vanilla evidence). The rider and the
+# lanterns root on nodes whose offset is zero, where a node's centre and pivot are one point.
+# HEAD_HELM_SHIFT below rides the helm's root offset, which that rule drops.
 
 # The skull's three shapes, hidden: the nodes stay, so the Skeleton's animations still drive
-# the body, and the flame his Model JSON lights on the Head node burns where the head was.
+# the body; the flame burns in his neck, on the Fire node of the collar chest he wears.
 HORSEMAN_HIDDEN = ("Head", "Jaw", "Jaw-Top")
 # The rider: the Skeleton's body from the Pelvis up, without the skull, every node renamed with
 # this prefix so none binds to the horse's own Pelvis, Chest or arms, hung from the horse's
@@ -329,6 +340,52 @@ HORSEMAN_LANTERN_HANG = 6       # px from the hand's centre down to the lantern'
 # The Horseman's Head: the Jack Helm worn on vanilla's floating Skeleton_Head, whose Head node
 # carries its shape 3 px lower and 5 px further back than the Skeleton's Head does.
 HEAD_HELM_SHIFT = (0, -3, -5)
+
+# --- the Horseman's armour: hand-made art, read from the pack (see the module notes) ----------
+HORSEMAN_ARMOR = f"{HE_ITEMS}/Horseman_Armor"
+ARMOR_CHEST = f"{HORSEMAN_ARMOR}/Headless_Horseman_Chest.blockymodel"
+ARMOR_COLLAR_CHEST = f"{HORSEMAN_ARMOR}/Headless_Horseman_Collar_Chest.blockymodel"
+ARMOR_HANDS = f"{HORSEMAN_ARMOR}/Headless_Horseman_Hands.blockymodel"
+ARMOR_LEGS = f"{HORSEMAN_ARMOR}/Headless_Horseman_Legs.blockymodel"
+ARMOR_HELM = f"{HORSEMAN_ARMOR}/Headless_Horseman_Head.blockymodel"
+CHEST_TEXTURES = (f"{HORSEMAN_ARMOR}/Chest_Texture.png", f"{HORSEMAN_ARMOR}/Chest_Texture_Gold.png")
+# Each model's textures: the plain one first, then the gold one the Flaming pieces and the hard
+# ride wear. Both chests share one texture.
+ARMOR_TEXTURES = {
+    ARMOR_CHEST: CHEST_TEXTURES,
+    ARMOR_COLLAR_CHEST: CHEST_TEXTURES,
+    ARMOR_HANDS: (f"{HORSEMAN_ARMOR}/Hands_Texture.png", f"{HORSEMAN_ARMOR}/Hands_Texture_Gold.png"),
+    ARMOR_LEGS: (f"{HORSEMAN_ARMOR}/Legs_Texture.png", f"{HORSEMAN_ARMOR}/Legs_Texture_Gold.png"),
+    ARMOR_HELM: (f"{HORSEMAN_ARMOR}/Head_Texture.png", f"{HORSEMAN_ARMOR}/Head_Texture_Gold.png"),
+}
+PLAIN, GOLD = 0, 1
+# The rider wears what the Horseman wears on foot: the collar chest (its Fire node is where his
+# Model JSONs light the flame in his neck), the legs and the hands, each worn on the seated rider.
+RIDER_ARMOR = [
+    # derived model, the armour it is worn from, the prefix of its holder nodes
+    (f"{HORSEMAN}/Horseman_Rider_Chest.blockymodel", ARMOR_COLLAR_CHEST, "Rider-Chest-"),
+    (f"{HORSEMAN}/Horseman_Rider_Legs.blockymodel", ARMOR_LEGS, "Rider-Legs-"),
+    (f"{HORSEMAN}/Horseman_Rider_Hands.blockymodel", ARMOR_HANDS, "Rider-Hands-"),
+]
+# The chase set's icons: each piece worn on vanilla's player rig, drawn the way vanilla draws its
+# own armour icons (the whole chest and helm, but one glove and one leg, the right ones).
+ARMOR_ICONS = [
+    # icon id, armour model, texture (PLAIN or GOLD)
+    ("Hallows_Eve_Horseman_Breastplate", ARMOR_CHEST, PLAIN),
+    ("Hallows_Eve_Horseman_Gauntlets", ARMOR_HANDS, PLAIN),
+    ("Hallows_Eve_Horseman_Greaves", ARMOR_LEGS, PLAIN),
+    ("Hallows_Eve_Horseman_Helm", ARMOR_HELM, PLAIN),
+    ("Hallows_Eve_Flaming_Horseman_Breastplate", ARMOR_COLLAR_CHEST, GOLD),
+    ("Hallows_Eve_Flaming_Horseman_Gauntlets", ARMOR_HANDS, GOLD),
+    ("Hallows_Eve_Flaming_Horseman_Greaves", ARMOR_LEGS, GOLD),
+    ("Hallows_Eve_Flaming_Horseman_Helm", ARMOR_HELM, GOLD),
+]
+ARMOR_ICON_PIECES = {ARMOR_HANDS: "R-", ARMOR_LEGS: "R-"}   # name prefix of the pieces drawn
+
+
+def worn(model):
+    """The `rigs` key of an armour model as an icon draws it, worn on the player rig."""
+    return f"{model}#worn"
 
 # --- the Costume Wand: the vanilla wood wand's texture, recoloured by the nodes it skins -----
 
@@ -841,6 +898,73 @@ def horseman_head_helm_model(seed_base):
     offset = root["shape"]["offset"]
     root["shape"]["offset"] = vec(tuple(offset[a] + d for a, d in zip("xyz", HEAD_HELM_SHIFT)))
     return model
+
+
+def is_piece(node):
+    return bool(((node.get("shape") or {}).get("settings") or {}).get("isPiece"))
+
+
+def graft(attachment, base_root, base_name, prefix, keep=None):
+    """An attachment worn on a rig ahead of time, the way the client wears it: a model whose root
+    stands for `base_root` (and shares its frame).
+
+    The client binds each piece node (settings.isPiece), at any depth, to the base node of the same
+    name and hangs the piece's children from that base node's centre (position plus turned offset)
+    in the base node's turn; the piece's own position, offset and turn are dropped. Only that way
+    does vanilla's iron helm hold its crest above the head, and the armour's pauldrons sit on the
+    shoulders and its boots on the feet. A piece the base lacks stays an ordinary node where it is,
+    as every held weapon's Origin_Projectile does. Here each bound piece becomes a plain holder node
+    at its base node's centre and turn, straight under the root, named `prefix` plus the piece's
+    name (numbered when a name repeats), holding copies of the piece's children; nothing copied stays
+    a piece, so none of it binds to the model the result is worn on. `base_name` maps a piece's name
+    to its base node's; `keep`, when given, keeps only the bound pieces whose name it accepts."""
+    frames = node_frames(base_root)
+    base = {n["name"]: n for n in walk([base_root])}
+    root = none_node(base_root["name"], (0, 0, 0), (0, 0, 0, 1), True)
+    seen = {}
+
+    def visit(node, holder):
+        target = base.get(base_name(node["name"])) if is_piece(node) else None
+        if target is not None:
+            holder = None
+            if keep is None or keep(node["name"]):
+                name = prefix + node["name"]
+                seen[name] = seen.get(name, 0) + 1
+                if seen[name] > 1:
+                    name += str(seen[name])
+                centre, ori = frames[id(target)]
+                holder = none_node(name, centre, ori, False)
+                root["children"].append(holder)
+        elif holder is not None:
+            kept = {k: copy.deepcopy(v) for k, v in node.items() if k not in ("id", "children")}
+            settings = (kept.get("shape") or {}).get("settings")
+            if settings is not None and "isPiece" in settings:
+                settings["isPiece"] = False
+            kept["children"] = []
+            holder["children"].append(kept)
+            holder = kept
+        elif keep is None:
+            raise ValueError(f"{node['name']}: not a piece the rig has, and under no piece that is")
+        for child in node.get("children", []):
+            visit(child, holder)
+
+    for node in attachment["nodes"]:
+        visit(node, None)
+    return finish_model(root)
+
+
+def rider_armor_model(skeleton, armor, prefix):
+    """A piece of the Horseman's armour as the rider wears it: worn on the seated rider, whose
+    nodes carry RIDER_PREFIX, under the same Saddle-Attachment root as the rider himself."""
+    return graft(armor, horseman_rider(skeleton), lambda name: RIDER_PREFIX + name, prefix)
+
+
+def armor_icon_model(player, armor_name, armor):
+    """A piece of the Horseman's armour worn on vanilla's player rig, for its icon: the pieces
+    ARMOR_ICON_PIECES names for it (one glove, one leg), or all of it."""
+    side = ARMOR_ICON_PIECES.get(armor_name)
+    keep = (lambda name: name.startswith(side)) if side else None
+    return graft(armor, vanilla_root(player), lambda name: name, "", keep)
 
 
 # =========================================================================================
@@ -1538,22 +1662,39 @@ ICON_PLAN = [
      f"{HE_NPCS}/Hollow_Ghoul/Hollow_Ghoul_Texture.png", ANGLE_MODEL, 128),
     (MODEL_ICONS, "Hallows_Eve_Headless_Horseman", f"{HORSEMAN}/Headless_Horseman.blockymodel",
      SKELETON_BURNT_TEXTURE, ANGLE_MODEL, 128),
+    *[(ICONS, icon, worn(model), ARMOR_TEXTURES[model][tier], ANGLE_ARMOR, 64)
+      for icon, model, tier in ARMOR_ICONS],
 ]
 
-# The Horseman's attachments are drawn on textures no icon renders them with.
+# Models drawn on textures no icon renders them with: the Horseman's attachments, and the
+# hand-made armour itself, checked against both its textures.
 ATTACHMENT_TEXTURES = {
-    f"{HORSEMAN}/Horseman_Rider.blockymodel": SKELETON_BURNT_TEXTURE,
-    f"{HORSEMAN}/Horseman_Rider_Lantern.blockymodel": f"{HE_ITEMS}/Jack_Lantern/Jack_Lantern_Texture.png",
-    f"{HORSEMAN}/Horseman_Lantern.blockymodel": f"{HE_ITEMS}/Jack_Lantern/Jack_Lantern_Texture.png",
-    f"{HORSEMAN}/Horseman_Head_Helm.blockymodel": f"{HE_ITEMS}/Jack_Helm/Jack_Helm_Texture.png",
+    f"{HORSEMAN}/Horseman_Rider.blockymodel": (SKELETON_BURNT_TEXTURE,),
+    f"{HORSEMAN}/Horseman_Rider_Lantern.blockymodel": (f"{HE_ITEMS}/Jack_Lantern/Jack_Lantern_Texture.png",),
+    f"{HORSEMAN}/Horseman_Lantern.blockymodel": (f"{HE_ITEMS}/Jack_Lantern/Jack_Lantern_Texture.png",),
+    f"{HORSEMAN}/Horseman_Head_Helm.blockymodel": (f"{HE_ITEMS}/Jack_Helm/Jack_Helm_Texture.png",),
+    **{rider: ARMOR_TEXTURES[armor] for rider, armor, _ in RIDER_ARMOR},
+    **ARMOR_TEXTURES,
 }
 
 
-def build(seed_dir):
-    """Returns ({pack-relative path: bytes}, {Common/-relative model path: model dict, the two
-    vanilla rigs an icon renders from included}, {Common/-relative texture path: rgba})."""
+def load_armor(art_dir):
+    """The hand-made armour from the pack: ({model path: model dict}, {texture path: rgba})."""
+    models = {rel: json.loads((art_dir / rel).read_text(encoding="utf-8-sig")) for rel in ARMOR_TEXTURES}
+    textures = {}
+    for rel in sorted({t for pair in ARMOR_TEXTURES.values() for t in pair}):
+        with Image.open(art_dir / rel) as image:
+            textures[rel] = np.array(image.convert("RGBA"))
+    return models, textures
+
+
+def build(seed_dir, art_dir=PACK / "Common"):
+    """Returns ({pack-relative path: bytes}, {Common/-relative model path: model dict, the vanilla
+    rigs an icon renders from, the hand-made armour and its worn icon models included},
+    {Common/-relative texture path: rgba}). The hand-made armour is read from `art_dir`."""
     seed_base, seed_texture = load_seed(seed_dir)
     vanilla = load_vanilla(seed_dir)
+    armor, armor_textures = load_armor(art_dir)
     models = {
         f"{HE_ITEMS}/Lantern_Bomb/Lantern_Bomb.blockymodel": bomb_model(seed_base, center=False),
         f"{HE_ITEMS}/Lantern_Bomb/Lantern_Bomb_Center.blockymodel": bomb_model(seed_base, center=True),
@@ -1571,6 +1712,8 @@ def build(seed_dir):
             vanilla[SKELETON], seed_base),
         f"{HORSEMAN}/Horseman_Lantern.blockymodel": horseman_lantern_model(seed_base),
         f"{HORSEMAN}/Horseman_Head_Helm.blockymodel": horseman_head_helm_model(seed_base),
+        **{rider: rider_armor_model(vanilla[SKELETON], armor[source], prefix)
+           for rider, source, prefix in RIDER_ARMOR},
     }
     images = {f"{HE_ITEMS}/{name}": paint.rgba for name, paint in textures(seed_texture).items()}
     images[f"{HE_ITEMS}/Cursed_Geode/Cursed_Geode_Texture.png"] = geode_texture()
@@ -1591,10 +1734,14 @@ def build(seed_dir):
         with Image.open(io.BytesIO(data)) as image:
             texture_rgba[name] = np.array(image.convert("RGBA"))
     texture_rgba[SKELETON_BURNT_TEXTURE] = vanilla[SKELETON_BURNT_TEXTURE]
+    texture_rgba.update(armor_textures)
     rigs = dict(models)
     rigs[WAND] = vanilla[WAND]
     rigs[ESSENCE] = vanilla[ESSENCE]
     rigs[GHOUL] = vanilla[GHOUL]
+    rigs.update(armor)
+    for name, model in armor.items():
+        rigs[worn(name)] = armor_icon_model(vanilla[PLAYER], name, model)
     for folder, icon, model_name, texture_name, angles, size in ICON_PLAN:
         outputs[f"{folder}/{icon}.png"] = icon_png(rigs[model_name], texture_rgba[texture_name], angles, size)
     return dict(sorted(outputs.items())), rigs, texture_rgba
@@ -1607,8 +1754,8 @@ def validate(models, texture_rgba):
     pairs = {name: sorted({t for _, _, m, t, _, _ in ICON_PLAN if m == name}) for name in models}
     pairs[f"{HE_ITEMS}/Lantern_Bomb/Lantern_Bomb_Center.blockymodel"] = pairs[
         f"{HE_ITEMS}/Lantern_Bomb/Lantern_Bomb.blockymodel"]
-    for name, texture in ATTACHMENT_TEXTURES.items():
-        pairs[name] = [texture]
+    for name, textures in ATTACHMENT_TEXTURES.items():
+        pairs[name] = list(textures)
     for name, model in models.items():
         nodes = list(walk(model["nodes"]))
         if len(nodes) > 255:

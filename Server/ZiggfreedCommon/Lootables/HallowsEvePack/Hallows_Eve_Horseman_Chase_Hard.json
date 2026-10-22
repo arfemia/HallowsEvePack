@@ -1,16 +1,19 @@
 {
   "$Comment": [
-    "What the Horseman's Hoard on the hard ride (Rewards/Hallows_Eve/Hallows_Eve_Horseman_Chase_Hard)",
-    "pays for the first hard win each day. Every roll is read on its own: the first has no Chance, so",
-    "it always pays two Spectral Lantern Bombs and the Hoard is never empty; the next always pays 1 to",
-    "4 Grave Candles (Count to CountMax, drawn evenly), for the normal graveyard or ten at a time for a",
-    "Burning Grave Candle at Old Jack's shop (Hallows_Eve_Offer_Burning_Grave_Candle_Trade.json); then",
+    "What the Horseman's Hoard on the hard ride (Rewards/Hallows_Eve/Hallows_Eve_Horseman_Chase_Hard),",
+    "which players see as his Boss Kill Claim on the hard ride, pays for the first hard win each day.",
+    "Every roll is read on its own: the first has no Chance, so it always pays two Spectral Lantern",
+    "Bombs and the Hoard is never empty; the next always pays 1 to 4 Grave Candles (Count to CountMax,",
+    "drawn evenly), for the normal graveyard or ten at a time for a Burning Grave Candle at Old Jack's",
+    "shop (Hallows_Eve_Offer_Burning_Grave_Candle_Trade.json); then the plain pieces of his armour (the",
+    "Horseman's Breastplate, Gauntlets, Greaves and Helm) at better odds than the normal Hoard's; then",
     "the Horseman's flaming breastplate, which pays from here and nowhere else; then the rest of the",
-    "Flaming Hallowed set's pieces (the Burning Jack Helm, his flaming gauntlets and greaves, and the",
-    "Flaming Jack Shield) at three times the normal Hoard's odds; then the Eternal Candle",
+    "Flaming Hallowed set's pieces (the Burning Jack Helm, his flaming gauntlets, greaves and helm, and",
+    "the Flaming Jack Shield) at three times the normal Hoard's odds; then the Eternal Candle",
     "(Item/Items/Hallows_Eve/Hallows_Eve_Eternal_Candle.json), which opens his normal graveyard without",
     "burning a Grave Candle and is never used up, and pays from here and nowhere else; the last always",
-    "pays the Hallowed's favor (the normal Hoard pays Old Jack's instead).",
+    "pays the Hallowed's favor (the normal Hoard pays Old Jack's instead). The Hoard is not scaled by",
+    "each player's share of the fight, so everyone who fought him rolls these odds.",
     "Mmo_Hallows_Eve_Horseman_Chase_Hard.json adds Defense XP where MMO Skill Tree runs. The graveyard's",
     "tombstone and ruins lantern pay only from the normal Hoard, Hallows_Eve_Horseman_Chase.json beside",
     "this file, and the Almanac's Hoard grid (ZiggfreedCommon/Almanac/HallowsEvePack/Hallows_Eve.json)",
@@ -23,6 +26,22 @@
     },
     {
       "Grants": { "Items": [ { "Item": "Hallows_Eve_Grave_Candle", "Count": 1, "CountMax": 4 } ] }
+    },
+    {
+      "Chance": { "Base": 25.0 },
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Horseman_Breastplate", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 25.0 },
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Horseman_Gauntlets", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 25.0 },
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Horseman_Greaves", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 25.0 },
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Horseman_Helm", "Count": 1 } ] }
     },
     {
       "Chance": { "Base": 15.0 },
@@ -39,6 +58,10 @@
     {
       "Chance": { "Base": 15.0 },
       "Grants": { "Items": [ { "Item": "Hallows_Eve_Flaming_Horseman_Greaves", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 15.0 },
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Flaming_Horseman_Helm", "Count": 1 } ] }
     },
     {
       "Chance": { "Base": 15.0 },
