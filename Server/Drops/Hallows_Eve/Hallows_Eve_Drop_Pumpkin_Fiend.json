@@ -1,0 +1,15 @@
+{
+  "$Comment": "What a Pumpkin Fiend drops, the wild one and the Hatchling his pumpkins raise in the Headless Horseman's graveyard alike: now and then a Hallowed Pumpkin, the pumpkin Old Jack wants for his lanterns, one kill in ten (Weight is its chance out of 100). Every branch ends in a concrete Single, which the game's validator needs.",
+  "Container": {
+    "Type": "Multiple",
+    "Containers": [
+      {
+        "Type": "Choice",
+        "Weight": 10,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Hallows_Eve_Hallowed_Pumpkin", "QuantityMin": 1, "QuantityMax": 1 } }
+        ]
+      }
+    ]
+  }
+}

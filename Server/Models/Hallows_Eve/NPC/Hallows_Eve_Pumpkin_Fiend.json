@@ -1,0 +1,21 @@
+{
+  "$Comment": "A Pumpkin Fiend's look: a carved, glowing pumpkin on a body of vines, built the way the game builds its Christmas saplings. Parent Kweebec_Sapling brings the sapling's every animation, and its attacks play the sapling's own spear animations (Kweebec_Spear, named by Root_Hallows_Eve_Pumpkin_Fiend_Attack), so Model keeps the sapling's core node names (Pelvis, Belly, Chest, Head, the arms and hands, and both legs: L-Thigh, L-Calf and L-Foot at the front left, R-Thigh, R-Calf and R-Foot at the front right) and the pumpkin, its stem and leaves hang from Head as child nodes. Its two back legs (L-Thigh2 and L-Thigh4 and the nodes under them) have no sapling node to drive them, so they stay still while the front two walk. Texture is drawn on this model's own layout. DefaultAttachments replaces the parent's list whole: it is empty because the sapling's eyes, mouth and eyebrows have no attachment points on a pumpkin, whose carved face is the face. HitBox covers the pumpkin and the body up to its stem, about a block and a half; EyeHeight sits at the carved eyes. Light is the pumpkin's glow, the same as a Jack Skeleton's; each hex digit is a red, green or blue level from 0 to f. With no Icon of its own it shows the Kweebec Sapling's wherever a creature is listed, as the Christmas saplings do.",
+  "Parent": "Kweebec_Sapling",
+  "Model": "NPC/Hallows_Eve/Pumpkin_Fiend/Pumpkin_Fiend.blockymodel",
+  "Texture": "NPC/Hallows_Eve/Pumpkin_Fiend/Pumpkin_Fiend_Texture.png",
+  "EyeHeight": 1.1,
+  "HitBox": {
+    "Max": {
+      "X": 0.35,
+      "Y": 1.5,
+      "Z": 0.35
+    },
+    "Min": {
+      "X": -0.35,
+      "Y": 0,
+      "Z": -0.35
+    }
+  },
+  "DefaultAttachments": [],
+  "Light": { "Color": "#962" }
+}

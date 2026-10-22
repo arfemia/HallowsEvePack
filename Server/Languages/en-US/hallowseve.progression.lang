@@ -80,6 +80,7 @@ objective.hallows_eve.bomb_down_horseman = Bring down the Headless Horseman with
 objective.hallows_eve.bomb_down_horseman_hard = Bring down the Headless Horseman on the hard ride with only Lantern Bombs
 objective.hallows_eve.bring_down_horseman_hard = Bring down the Headless Horseman on the hard ride
 objective.hallows_eve.bring_ember = Bring the Horseman's Ember
+objective.hallows_eve.squash_fiends = Squash {0} Pumpkin Fiends
 
 # ---- Old Jack's board ----
 board.hallows_eve_daily.title = Old Jack's Board
@@ -106,6 +107,8 @@ quest.hallows_eve_board_carving.title = Bench Carving
 quest.hallows_eve_board_carving.flavor = Every doorstep wants a lantern, and I can only carve so fast. Carve some Jack Lanterns at a Carving Bench, a pumpkin and a bit of charcoal apiece.
 quest.hallows_eve_board_skeletons.title = Rattling Bones
 quest.hallows_eve_board_skeletons.flavor = The skeletons wearing my face are out after dark again, rattling about wherever the torches don't reach. Knock a good few of them flat for me.
+quest.hallows_eve_board_fiends.title = Weeding the Patch
+quest.hallows_eve_board_fiends.flavor = Pumpkin Fiends are crawling about the autumn woods after dark, where the wild pumpkins grow. Squash a good few of them for me before they take root.
 
 # ---- Old Jack's errands board ----
 board.hallows_eve_errands.title = Old Jack's Errands
@@ -117,6 +120,8 @@ quest.hallows_eve_errand_ghouls.title = Grave Watch
 quest.hallows_eve_errand_ghouls.flavor = Some Hollow Ghouls are pawing at the graves again. Put them back down before they wander off.
 quest.hallows_eve_errand_skeletons.title = Loose Bones
 quest.hallows_eve_errand_skeletons.flavor = A few Jack Skeletons got loose last night. Knock them down when you're out after dark.
+quest.hallows_eve_errand_fiends.title = Bad Seeds
+quest.hallows_eve_errand_fiends.flavor = A few Pumpkin Fiends have sprouted in the autumn woods. Squash them when you're out after dark.
 quest.hallows_eve_errand_ectoplasm.title = Guttering Lantern
 quest.hallows_eve_errand_ectoplasm.flavor = One of my lanterns is guttering. A little Ectoplasm would see it through the night.
 quest.hallows_eve_errand_bombs.title = Bomb Practice
@@ -337,7 +342,7 @@ almanac.hallows_eve.horseman_down = Headless Horseman brought down
 almanac.hallows_eve.horseman_heads = Horseman's heads cut down
 
 # ---- The Almanac page's items: where each comes from ----
-almanac.hallows_eve.source.pumpkin = Found now and then when you pick pumpkins by hand, and dropped by Jack Skeletons.
+almanac.hallows_eve.source.pumpkin = Found now and then when you pick pumpkins by hand, and dropped by Jack Skeletons and Pumpkin Fiends.
 almanac.hallows_eve.source.geode = Found in the rock and ore you mine, and dropped by Geode Wraiths.
 almanac.hallows_eve.source.ectoplasm = Dropped by Lost Souls, and found inside Cursed Geodes.
 almanac.hallows_eve.source.bombs = Dropped by the night's creatures, found inside Cursed Geodes, carved at a Carving Bench, or bought at Old Jack's shop.

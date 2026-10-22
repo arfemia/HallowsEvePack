@@ -1,10 +1,12 @@
 {
-  "$Comment": "The creatures Hallow's Eve brings out at night, and the Jack Archers that rise beside the Jack Skeletons on the Headless Horseman's hard ride. The Hallowed reputation's (Hallows_Eve_Hallowed) Kills table (ZiggfreedCommon/Reputations/HallowsEvePack/Hallows_Eve_Hallowed.json) pays favor for each one put down. No reputation group names this group, so it changes nothing about how they treat a player. Add a role id here and its kills count too.",
+  "$Comment": "The creatures Hallow's Eve brings out at night, the Jack Archers that rise beside the Jack Skeletons on the Headless Horseman's hard ride, and the Pumpkin Fiend Hatchlings his pumpkins hatch in his fight. The Hallowed reputation's (Hallows_Eve_Hallowed) Kills table (ZiggfreedCommon/Reputations/HallowsEvePack/Hallows_Eve_Hallowed.json) pays favor for each one put down. No reputation group names this group, so it changes nothing about how they treat a player. Add a role id here and its kills count too.",
   "IncludeRoles": [
     "Hallows_Eve_Hollow_Ghoul",
     "Hallows_Eve_Jack_Skeleton",
     "Hallows_Eve_Jack_Skeleton_Archer",
     "Hallows_Eve_Lost_Soul",
-    "Hallows_Eve_Geode_Wraith"
+    "Hallows_Eve_Geode_Wraith",
+    "Hallows_Eve_Pumpkin_Fiend",
+    "Hallows_Eve_Pumpkin_Fiend_Hatchling"
   ]
 }

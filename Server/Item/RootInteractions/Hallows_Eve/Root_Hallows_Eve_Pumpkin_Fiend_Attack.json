@@ -1,0 +1,28 @@
+{
+  "$Comment": "A Pumpkin Fiend's attack, the id its role names as Attack. It is the game's Skeleton Fighter attack (Root_NPC_Skeleton_Fighter_Attack) with the Kweebec Razorleaf's three spear moves in its chain: the left swing, the right swing and the stab, each playing the Kweebec Sapling's own spear animations (Kweebec_Spear), which fit the fiend because its model keeps the sapling's node names. Each swing in a row takes the next move. The hit lands through the role's Melee_Damage, so the fiend's damage is tuned on its role. A fiend stunned by a hit (Hit_Interrupt_Stunned) does not start an attack.",
+  "Interactions": [
+    {
+      "Type": "EffectCondition",
+      "Entity": "User",
+      "EntityEffectIds": [ "Hit_Interrupt_Stunned" ],
+      "Match": "None",
+      "Next": {
+        "Type": "Serial",
+        "Interactions": [
+          "Hit_Interrupt_Begin_Protected_Attack",
+          {
+            "Type": "Chaining",
+            "ChainId": "Slashes",
+            "ChainingAllowance": 15,
+            "Next": [
+              "Kweebec_Sapling_Razorleaf_Spear_Swing_Left",
+              "Kweebec_Sapling_Razorleaf_Spear_Swing_Right",
+              "Kweebec_Sapling_Razorleaf_Spear_Stab"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "Tags": { "Attack": [ "Melee" ] }
+}
