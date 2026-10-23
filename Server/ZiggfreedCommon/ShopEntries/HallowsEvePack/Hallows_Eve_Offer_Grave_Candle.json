@@ -1,12 +1,12 @@
 {
-  "$Comment": "A Grave Candle, what the Gravekeeper burns to open the Headless Horseman's graveyard (Hallows_Eve_Graveyard.json's EntryCost; the hard ride takes a Burning Grave Candle, Hallows_Eve_Offer_Burning_Grave_Candle.json beside this file). Requires opens it once Old Jack counts the player a Regular (Friendly with Old Jack's Favor); a locked offer still shows on the shelf with its lock line, and a friend without the rank still follows a party in free. Keep the lock the same as Hallows_Eve_Offer_Grave_Candle_Life_Essence.json's, and a rank below the Burning Grave Candle's (Trusted). No purchase limit and no rotation, since every party's ride needs one. SortOrder 5 puts it first on the lanterns shelf, where a player sent here by Old Jack or the Gravekeeper looks first; the same candle for Life Essence (Hallows_Eve_Offer_Grave_Candle_Life_Essence.json, SortOrder 6) sits straight after it. Cost is the price in Hallow Sweets: raise or lower the number to tune how often a party can ride. Named by the item's own keys.",
+  "$Comment": "A Grave Candle, what the Gravekeeper burns to open the Headless Horseman's graveyard (Hallows_Eve_Graveyard.json's EntryCost; the hard ride takes a Burning Grave Candle, Hallows_Eve_Offer_Burning_Grave_Candle.json beside this file). Requires opens it once Old Jack counts the player a Regular (Friendly with Old Jack's Favor); a locked offer still shows on the shelf with its lock line, and a friend without the rank still follows a party in free. Keep the lock a rank below the Burning Grave Candle's Sweets offer (Trusted). No purchase limit and no rotation, since every party's ride needs one. SortOrder 5 puts it first on the lanterns shelf, where a player sent here by Old Jack or the Gravekeeper looks first. It is the candle's only offer. Cost is the price in Hallow Sweets: raise or lower the number to tune how often a party can ride. Named by the item's own keys.",
   "Parent": "Hallows_Eve_Offer_Base",
   "Text": {
     "TitleKey": "items.Hallows_Eve_Grave_Candle.name",
     "FlavorKey": "items.Hallows_Eve_Grave_Candle.description"
   },
   "Listing": { "Category": "lights", "SortOrder": 5 },
-  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 25 } },
+  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 18 } },
   "Requires": { "Factors": [ { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Hallows_Eve_Old_Jack/Friendly", "Min": 1 } ] },
   "Rewards": [
     { "Kind": "Item", "Params": { "Item": "Hallows_Eve_Grave_Candle", "Count": 1 } }
