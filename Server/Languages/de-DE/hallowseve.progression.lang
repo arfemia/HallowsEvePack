@@ -78,6 +78,7 @@ objective.hallows_eve.bomb_down_horseman = Bring den Kopflosen Reiter nur mit La
 objective.hallows_eve.bomb_down_horseman_hard = Bring den Kopflosen Reiter auf dem schweren Ritt nur mit Laternenbomben zu Fall
 objective.hallows_eve.bring_down_horseman_hard = Bring den Kopflosen Reiter auf dem schweren Ritt zu Fall
 objective.hallows_eve.bring_ember = Bring die Glut des Reiters
+objective.hallows_eve.squash_fiends = Zerquetsche {0} Kürbisunholde
 
 # ---- Die Tafel des Alten Jack ----
 board.hallows_eve_daily.title = Tafel des Alten Jack
@@ -102,6 +103,8 @@ quest.hallows_eve_board_carving.title = Schnitzbank-Arbeit
 quest.hallows_eve_board_carving.flavor = Vor jede Tür gehört eine Laterne, und ich schnitze nun mal nicht schneller. Schnitze ein paar Jack-Laternen an einer Schnitzbank, jede aus einem Kürbis und einem Stück Holzkohle.
 quest.hallows_eve_board_skeletons.title = Klappernde Knochen
 quest.hallows_eve_board_skeletons.flavor = Die Skelette mit meinem Gesicht sind nach Einbruch der Dunkelheit wieder unterwegs und klappern überall, wo keine Fackel hinreicht. Hau mir ein paar davon um.
+quest.hallows_eve_board_fiends.title = Unkraut jäten
+quest.hallows_eve_board_fiends.flavor = Kürbisunholde kriechen nach Einbruch der Dunkelheit durch die Herbstwälder, dort, wo die wilden Kürbisse wachsen. Zerquetsch mir eine ordentliche Menge davon, bevor sie Wurzeln schlagen.
 
 # ---- Old Jack's errands board ----
 board.hallows_eve_errands.title = Besorgungen des Alten Jack
@@ -121,6 +124,8 @@ quest.hallows_eve_errand_geodes.title = Gesprungener Stein
 quest.hallows_eve_errand_geodes.flavor = Knack ein paar Verfluchte Geoden auf, wenn du unterwegs bist. Irgendwer muss es tun.
 quest.hallows_eve_errand_pumpkins.title = Ersatzkürbisse
 quest.hallows_eve_errand_pumpkins.flavor = Auf den Stufen ist eine Laterne weich geworden. Bring mir ein paar Geweihte Kürbisse, wenn du vorbeikommst.
+quest.hallows_eve_errand_fiends.title = Schlechte Saat
+quest.hallows_eve_errand_fiends.flavor = In den Herbstwäldern sind ein paar Kürbisunholde aufgegangen. Zerquetsch sie, wenn du nach Einbruch der Dunkelheit draußen bist.
 
 # ---- Der Laden des Alten Jack ----
 shop.hallows_eve_old_jack.title = Laden des Alten Jack
@@ -133,6 +138,8 @@ shop.hallows_eve_offer_harvest_moon_bundle.desc = Splitternde und Spektrale Late
 shop.hallows_eve_offer_spyglass.desc = Schau in den Verlöschenden Höhlen hindurch, um den Ort eines leerenbesessenen Untiers zu bestimmen.
 shop.hallows_eve_offer_sell_eternal_candle.title = Eine übrige Ewige Kerze verkaufen
 shop.hallows_eve_offer_sell_eternal_candle.desc = Eine Ewige Kerze reicht, um den Friedhof des Reiters zu öffnen. Bring dem Alten Jack eine übrige, und er zahlt dir dafür.
+shop.hallows_eve_offer_sell_horsemans_reins.title = Übrige Zügel des Reiters verkaufen
+shop.hallows_eve_offer_sell_horsemans_reins.desc = Ein Paar Zügel des Reiters reicht, um sein Pferd zu rufen. Bring dem Alten Jack ein übriges Paar, und er zahlt dir dafür.
 
 # ---- Erfolge ----
 achievement.hallows_eve_lantern_keepsake.title = Hollow-Laterne {0}
@@ -208,7 +215,7 @@ dialogue.hallows_eve_old_jack.lantern_lit.text = Das ist die Hollow-Laterne dies
 dialogue.hallows_eve_old_jack.sweets.text = Mein Laden nimmt sie für alles, was darauf liegt, von der Laternenbombe bis zu einem Kopf wie meinem.\nIch zahl sie für meine Arbeiten und für die Arbeit an meiner Tafel. Frag jeden, mit dem du sprichst, nach Süßem oder Saurem, und du kriegst ein paar. Besiege den <b>Kopflosen Reiter</b> auf seinem <color is="#ffd97a">Friedhof</color>, dann wartet auch dort welche auf dich.
 dialogue.hallows_eve_old_jack.who_are_you.text = Der Alte Jack. Ich hatte mal einen Hof, weit weg von hier. Dann bin ich eines Oktobers nicht heimgegangen, und seitdem komm ich jeden Oktober wieder.\nMeine Laternen halten die Toten von diesen Stufen fern, und jedes Jahr zünd ich mit jedem eine Hollow-Laterne an, der meine Besorgungen zu Ende bringt. Frag mich nicht nach dem Kopf.
 dialogue.hallows_eve_old_jack.horseman.text = Der <b>Kopflose Reiter</b>. Er reitet jede Nacht an Halloween über seinen eigenen Friedhof. Er ist selbst halb Feuer, also tun ihm meine Laternenbomben nur halb so viel Schaden, aber sie beißen trotzdem.\nDer <color is="#ffd97a">Grabwächter</color> neben mir hält das Tor. Er nimmt dich mit hinein, sobald er eine <b>Grabkerze</b> daran verbrannt hat, und die verkauf ich in meinem Laden, sobald ich dich als Stammgast zähle. Wer zuerst hineingeht, zahlt, und der Rest der Gruppe folgt umsonst. Nimm Freunde mit, und wenn sein Kopf davonfliegt, fäll ihn, sonst ist er nicht zu verletzen.
-dialogue.hallows_eve_old_jack.horseman_beaten.text = Du hast ihn also vom Pferd geholt. Lange hält ihn das nicht unten: Er sitzt jedes Mal wieder im Sattel, wenn jemand hineingeht.\nJag den <b>Kopflosen Reiter</b> ruhig noch einmal. Dein erster Sieg am Tag lässt seine tägliche Abholung und seinen Hort in der Truhe zurück, wo er fällt, hin und wieder mit einem Stück seiner alten Rüstung oder einem, das noch brennt. Was du darin liegen lässt, wartet unter Abholungen in deinem Menü.
+dialogue.hallows_eve_old_jack.horseman_beaten.text = Du hast ihn also vom Pferd geholt. Lange hält ihn das nicht unten: Er sitzt jedes Mal wieder im Sattel, wenn jemand hineingeht.\nJag den <b>Kopflosen Reiter</b> ruhig noch einmal. Dein erster Sieg am Tag lässt zwei Abholungen in der Truhe zurück, wo er fällt: seine tägliche Abholung und seine Bosskill-Abholung, in der hin und wieder ein Stück seiner alten Rüstung liegt, oder eins, das noch brennt. Was du darin liegen lässt, wartet unter Abholungen in deinem Menü.
 dialogue.hallows_eve_old_jack.harvest_moon.text = Siehst du den Mond? Erntemond. Ein paar Nächte im Jahr werden die Toten unter ihm unruhig, und die Gräber leeren sich.\nWenn du Arbeit willst, ist heute die Nacht. Ich bleib wach, bis er untergeht.
 dialogue.hallows_eve_old_jack.opt.quests = Was gibt's zu tun?
 dialogue.hallows_eve_old_jack.opt.shop = Zeig mal deinen Laden.
@@ -249,11 +256,11 @@ title.hallows_eve_keeper_of_lanterns.display = {0}, Hüter der Laternen
 
 # ---- Die Set-Erfolge: das Geweihte und das Flammende Geweihte Set tragen ----
 achievement.hallows_eve_hallowed_armour.title = Geweihte Rüstung
-achievement.hallows_eve_hallowed_armour.desc = Trag einen Jack-Helm und die Rüstung des Kopflosen Reiters.
+achievement.hallows_eve_hallowed_armour.desc = Trag die Rüstung des Kopflosen Reiters mit seinem Helm oder einem Jack-Helm.
 achievement.hallows_eve_fully_hallowed.title = Ganz geweiht
 achievement.hallows_eve_fully_hallowed.desc = Trag das ganze Geweihte Set, einen Jack-Schild in der Nebenhand.
 achievement.hallows_eve_flaming_armour.title = Flammende Rüstung
-achievement.hallows_eve_flaming_armour.desc = Trag den Brennenden Jack-Helm und die flammende Rüstung des Kopflosen Reiters.
+achievement.hallows_eve_flaming_armour.desc = Trag die flammende Rüstung des Kopflosen Reiters mit seinem flammenden Helm oder dem Brennenden Jack-Helm.
 achievement.hallows_eve_fully_ablaze.title = Ganz in Flammen
 achievement.hallows_eve_fully_ablaze.desc = Trag das ganze Flammende Geweihte Set, den Flammenden Jack-Schild in der Nebenhand.
 objective.hallows_eve.wear_hallowed = Trage {0} Teile des Geweihten Sets
@@ -318,7 +325,7 @@ factor.hallows_eve_old_jack.exalted = den Rang Jacks Familie beim Alten Jack
 reputation.hallows_eve_old_jack.earn.quests = Erledige seine Besorgungen und seine Tagesaufgaben.
 reputation.hallows_eve_old_jack.earn.board = Nimm Aufträge von seiner Tafel an.
 reputation.hallows_eve_old_jack.earn.talk = Schau einmal am Tag auf ein Wort bei ihm vorbei.
-reputation.hallows_eve_old_jack.earn.horseman = Räum den Friedhof des Kopflosen Reiters auf einem der beiden Ritte leer, und seine Truhe zahlt dir seine Gunst aus, bei weiteren Siegen am selben Tag die Hälfte. Dein erster normaler Sieg am Tag bringt mit dem Hort des Reiters mehr ein.
+reputation.hallows_eve_old_jack.earn.horseman = Räum den Friedhof des Kopflosen Reiters auf einem der beiden Ritte leer, und seine Truhe zahlt dir seine Gunst aus, bei weiteren Siegen am selben Tag die Hälfte. Dein erster normaler Sieg am Tag bringt mit seiner Bosskill-Abholung mehr ein.
 reputation.hallows_eve_old_jack.earn.gear = Trag einen Jack-Helm, und alles, was du für ihn tust, bringt mehr Gunst, solange du ihn aufhast.
 reputation.hallows_eve_hallowed.name = Die Geweihten
 reputation.hallows_eve_hallowed.flavor = Die Geweihten sehen zu, dass die Toten ihre Ruhe bekommen, und der Grabwächter am Friedhof des Reiters ist einer von ihnen. Streck nieder, was nachts aus den Gräbern klettert, und sie werden auf dich aufmerksam.
@@ -329,14 +336,14 @@ factor.hallows_eve_hallowed.exalted = den Rang Ehrfürchtig bei den Geweihten
 reputation.hallows_eve_hallowed.earn.kills = Streck die Kreaturen nieder, die nachts herauskriechen.
 reputation.hallows_eve_hallowed.earn.jack = Die Tagesaufgaben des Alten Jack und die Aufträge an seiner Tafel zählen auch.
 reputation.hallows_eve_hallowed.earn.treats = Frag alle, mit denen du sprichst, nach Süßem oder Saurem, jeden einmal am Tag.
-reputation.hallows_eve_hallowed.earn.horseman = Räum den Friedhof des Kopflosen Reiters auf einem der beiden Ritte leer, und seine Truhe zahlt dir ihre Gunst aus, bei weiteren Siegen am selben Tag die Hälfte. Dein erster schwerer Sieg am Tag bringt mit seinem Hort mehr ein.
+reputation.hallows_eve_hallowed.earn.horseman = Räum den Friedhof des Kopflosen Reiters auf einem der beiden Ritte leer, und seine Truhe zahlt dir ihre Gunst aus, bei weiteren Siegen am selben Tag die Hälfte. Dein erster schwerer Sieg am Tag bringt mit seiner Bosskill-Abholung mehr ein.
 reputation.hallows_eve_hallowed.earn.gear = Führ einen Jack-Schild, und du verdienst ihre Gunst schneller, solange er ausgerüstet ist.
 notify.hallows_eve_hallowed_cache = Ein Vorrat von den Geweihten, weil du die Toten unter der Erde hältst.
 dialogue.hallows_eve_old_jack.opt.standing = Wie stehen wir zueinander?
 achievement.category.seasons.hallows_eve = Halloween
 
 # ---- The Almanac page's items: where each comes from ----
-almanac.hallows_eve.source.pumpkin = Hin und wieder dabei, wenn du Kürbisse von Hand erntest, und von Jack-Skeletten fallen gelassen.
+almanac.hallows_eve.source.pumpkin = Hin und wieder dabei, wenn du Kürbisse von Hand erntest, und von Jack-Skeletten und Kürbisunholden fallen gelassen.
 almanac.hallows_eve.source.geode = Steckt im Stein und Erz, das du abbaust, und wird von Geodengespenstern fallen gelassen.
 almanac.hallows_eve.source.ectoplasm = Wird von Verlorenen Seelen fallen gelassen und steckt in Verfluchten Geoden.
 almanac.hallows_eve.source.bombs = Wird von den Kreaturen der Nacht fallen gelassen, steckt in Verfluchten Geoden, wird an einer Schnitzbank geschnitzt oder im Laden des Alten Jack gekauft.
@@ -348,22 +355,24 @@ almanac.hallows_eve.source.jack_shield = Wird an einer Schnitzbank geschnitzt od
 almanac.hallows_eve.source.burning_helm = Wird im Laden des Alten Jack verkauft, sobald die Geweihten dich respektieren oder der Alte Jack dir voll vertraut.
 almanac.hallows_eve.source.flaming_shield = Wird im Laden des Alten Jack verkauft, sobald die Geweihten dich in höchsten Ehren halten.
 almanac.hallows_eve.source.stall = Wird im Laden des Alten Jack verkauft.
-almanac.hallows_eve.source.grave_candle = Wird im Laden des Alten Jack verkauft, sobald er dich als Stammgast zählt, und vom Hort des Reiters zurückgegeben: manchmal eine nach deinem ersten Sieg am Tag und ein paar nach deinem ersten schweren Sieg. Der Grabwächter verbrennt sie, um seinen Friedhof für deine Gruppe zu öffnen, und sobald du beim Alten Jack Bewährt bist, tauscht er eine Brennende Grabkerze gegen eine Handvoll.
+almanac.hallows_eve.source.grave_candle = Wird im Laden des Alten Jack verkauft, sobald er dich als Stammgast zählt, und von der Bosskill-Abholung des Reiters zurückgegeben: manchmal eine nach deinem ersten Sieg am Tag und ein paar nach deinem ersten schweren Sieg. Der Grabwächter verbrennt sie, um seinen Friedhof für deine Gruppe zu öffnen, und sobald du beim Alten Jack Bewährt bist, tauscht er eine Brennende Grabkerze gegen eine Handvoll.
 almanac.hallows_eve.source.burning_grave_candle = Wird im Laden des Alten Jack verkauft, sobald du bei ihm Bewährt bist, oder dort gegen eine Handvoll Grabkerzen getauscht. Der Grabwächter verbrennt sie, um den schweren Ritt des Kopflosen Reiters für deine Gruppe zu öffnen.
 almanac.hallows_eve.source.stall_or_lab = Wird im Laden des Alten Jack verkauft, wenn dein Ansehen wächst, oder an der Goblin-Tüftlerwerkbank im Goblin-Labor hergestellt.
 almanac.hallows_eve.source.festival_stall = Wird im Festivalregal im Laden des Alten Jack verkauft.
 almanac.hallows_eve.source.keepsake = Das Andenken des Alten Jack, einmal im Jahr geschenkt, wenn du seine Geschichte abschließt.
 almanac.hallows_eve.source.festival_favor = Wird in den Festival-Läden an alle verkauft, die viel Festivalgunst haben.
-almanac.hallows_eve.source.bomb_rare = Immer im Hort des Reiters und manchmal in seiner täglichen Abholung. Wird außerdem von den Kreaturen der Nacht fallen gelassen, steckt in Verfluchten Geoden, wird an einer Schnitzbank geschnitzt oder im Laden des Alten Jack gekauft.
+almanac.hallows_eve.source.bomb_rare = Immer in der Bosskill-Abholung des Reiters und manchmal in seiner täglichen Abholung. Wird außerdem von den Kreaturen der Nacht fallen gelassen, steckt in Verfluchten Geoden, wird an einer Schnitzbank geschnitzt oder im Laden des Alten Jack gekauft.
 almanac.hallows_eve.source.bomb_epic_horseman = Wird selten von Geodengespenstern fallen gelassen oder steckt in Verfluchten Geoden und im Vorrat der Geweihten, und manchmal in der täglichen Abholung des Kopflosen Reiters. Du kannst sie auch an einer Schnitzbank schnitzen oder im Laden des Alten Jack ein paar am Tag kaufen.
-almanac.hallows_eve.source.hoard = Manchmal im Hort des Reiters, ausgezahlt für deinen ersten Sieg über ihn am Tag.
-almanac.hallows_eve.source.hoard_hard = Nur im Hort des Reiters auf dem schweren Ritt, ausgezahlt für deinen ersten schweren Sieg über ihn am Tag. Hast du Der Reiter abgeschlossen, bitte den Grabwächter um den schweren Ritt.
-almanac.hallows_eve.source.hoard_normal = Nur im Hort des Reiters auf dem normalen Ritt, ausgezahlt für deinen ersten Sieg über ihn dort am Tag.
-almanac.hallows_eve.source.eternal_candle = Hin und wieder im Hort des Reiters auf dem schweren Ritt, ausgezahlt für deinen ersten schweren Sieg über ihn am Tag. Trägst du sie bei dir, öffnet der Grabwächter seinen normalen Friedhof für deine Gruppe, ohne eine Grabkerze zu verbrennen.
-almanac.hallows_eve.source.burning_helm_trade = Wird im Laden des Alten Jack gekauft, indem du einen Jack-Helm aus deiner Tasche eintauschst, sobald die Geweihten dich respektieren oder der Alte Jack dir voll vertraut. Manchmal im Hort des Reiters zu finden.
-almanac.hallows_eve.source.flaming_shield_trade = Wird im Laden des Alten Jack gekauft, indem du einen Jack-Schild aus deiner Tasche eintauschst, sobald die Geweihten dich in höchsten Ehren halten. Manchmal im Hort des Reiters zu finden.
+almanac.hallows_eve.source.hoard = Manchmal in der Bosskill-Abholung des Reiters, ausgezahlt für deinen ersten Sieg über ihn am Tag.
+almanac.hallows_eve.source.hoard_hard = Nur in der Bosskill-Abholung des Reiters auf dem schweren Ritt, ausgezahlt für deinen ersten schweren Sieg über ihn am Tag. Hast du Der Reiter abgeschlossen, bitte den Grabwächter um den schweren Ritt.
+almanac.hallows_eve.source.hoard_normal = Nur in der Bosskill-Abholung des Reiters auf dem normalen Ritt, ausgezahlt für deinen ersten Sieg über ihn dort am Tag.
+almanac.hallows_eve.source.eternal_candle = Hin und wieder in der Bosskill-Abholung des Reiters auf dem schweren Ritt, ausgezahlt für deinen ersten schweren Sieg über ihn am Tag. Trägst du sie bei dir, öffnet der Grabwächter seinen normalen Friedhof für deine Gruppe, ohne eine Grabkerze zu verbrennen.
+almanac.hallows_eve.source.steed_trophy = Hin und wieder in der Bosskill-Abholung des Reiters, auf dem schweren Ritt öfter, ausgezahlt für deinen ersten Sieg über ihn am Tag. Stell sie als Block auf.
+almanac.hallows_eve.source.reins = Nur auf Servern mit der Mod Alec's Tamework: sehr selten in der Bosskill-Abholung des Reiters und hin und wieder auf dem schweren Ritt. Sie bringen dir sein schwarzes Pferd. Halte sie und klicke rechts, um deine Liste zu öffnen, drücke Beschwören, um dein Pferd zu rufen, und drücke dann F zum Reiten.
+almanac.hallows_eve.source.burning_helm_trade = Wird im Laden des Alten Jack gekauft, indem du einen Jack-Helm aus deiner Tasche eintauschst, sobald die Geweihten dich respektieren oder der Alte Jack dir voll vertraut. Manchmal in der Bosskill-Abholung des Reiters zu finden.
+almanac.hallows_eve.source.flaming_shield_trade = Wird im Laden des Alten Jack gekauft, indem du einen Jack-Schild aus deiner Tasche eintauschst, sobald die Geweihten dich in höchsten Ehren halten. Manchmal in der Bosskill-Abholung des Reiters zu finden.
 
-# ---- Das Banner des Kopflosen Reiters auf der Almanach-Seite und sein Hort ----
+# ---- Das Banner des Kopflosen Reiters auf der Almanach-Seite und seine Bosskill-Abholung ----
 almanac.hallows_eve.horseman.line = Der Grabwächter neben dem Alten Jack führt dich hinein. Nimm Freunde mit.
 almanac.hallows_eve.horseman.button = Bosskampf-Rekorde
-almanac.hallows_eve.hoard.line = Dein erster Sieg am Tag lässt seinen Hort in der Truhe zurück, wo er fällt, und unter Abholungen: eine Spektrale Laternenbombe und Gunst beim Alten Jack, und manchmal eine Grabkerze, ein Teil des Flammenden Geweihten Sets, ein Grabstein oder eine Laterne der Verlorenen Zivilisation. Der Hort des schweren Ritts enthält ein paar Grabkerzen und die Gunst der Geweihten, bessere Chancen auf die flammenden Teile, seine flammende Brustplatte und hin und wieder eine Ewige Kerze. Seine einfache Rüstung kommt mit seiner täglichen Abholung.
+almanac.hallows_eve.hoard.line = Dein erster Sieg am Tag lässt seine Bosskill-Abholung in der Truhe zurück, wo er fällt, und unter Abholungen: eine Spektrale Laternenbombe und Gunst beim Alten Jack, und manchmal eine Grabkerze, ein Teil seiner Rüstung, ein Teil des Flammenden Geweihten Sets, eine winzige Trophäe seines Pferdes, ein Grabstein oder eine Laterne der Verlorenen Zivilisation. Auf dem schweren Ritt enthält sie ein paar Grabkerzen und die Gunst der Geweihten, bessere Chancen auf seine Rüstung, die flammenden Teile und die Trophäe, seine flammende Brustplatte und hin und wieder eine Ewige Kerze. Auf Servern mit der Mod Alec's Tamework kann sie auch seine Zügel enthalten, und sein schwarzes Pferd gleich mit.

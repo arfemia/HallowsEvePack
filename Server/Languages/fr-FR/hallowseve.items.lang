@@ -7,7 +7,7 @@ gearset.hallows_eve_hallowed.tier_pair = Une pièce de la panoplie sur le dos et
 gearset.hallows_eve_hallowed.tier_armor = Heaume, plastron, gantelets et jambières sur toi : un peu plus de santé, et tout ce que tu enflammes brûle plus fort.
 gearset.hallows_eve_hallowed.tier_armor_shield = Les quatre sur toi et le bouclier en main : encore plus de santé, et ton feu brûle plus fort encore.
 gearset.hallows_eve_flaming_hallowed.title = Panoplie Sanctifiée Enflammée
-gearset.hallows_eve_flaming_hallowed.tier_armor = Heaume ardent et armure enflammée sur toi : plus de santé, et tout ce que tu enflammes brûle beaucoup plus fort.
+gearset.hallows_eve_flaming_hallowed.tier_armor = Un Heaume de Jack Ardent ou le Heaume Enflammé du Cavalier, avec son armure enflammée sur toi : plus de santé, et tout ce que tu enflammes brûle beaucoup plus fort.
 gearset.hallows_eve_flaming_hallowed.tier_armor_shield = Les quatre sur toi et le Bouclier de Jack Enflammé en main : encore plus de santé, et ton feu brûle plus fort encore.
 
 # The costumes' names, shown when a player hovers the costume's icon. The effect JSON spells the full

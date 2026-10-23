@@ -94,6 +94,8 @@ quest.hallows_eve_board_carving.title = Intaglio al Banco
 quest.hallows_eve_board_carving.flavor = Ogni soglia vuole una lanterna, e io più in fretta di così non intaglio. Intaglia qualche Lanterna di Jack a un Banco da Intaglio, una zucca e un po' di carbone per ciascuna.
 quest.hallows_eve_board_skeletons.title = Ossa Sonanti
 quest.hallows_eve_board_skeletons.flavor = Gli scheletri con la mia faccia sono di nuovo fuori dopo il tramonto, a far rumore dove le torce non arrivano. Buttane giù un bel po' per me.
+quest.hallows_eve_board_fiends.title = Pulizia dell'Orto
+quest.hallows_eve_board_fiends.flavor = I Diavoletti Zucca strisciano nei boschi d'autunno dopo il tramonto, dove crescono le zucche selvatiche. Schiacciane un bel po' per me prima che mettano radici.
 
 # ---- Old Jack's errands board ----
 board.hallows_eve_errands.title = Commissioni del Vecchio Jack
@@ -113,6 +115,8 @@ quest.hallows_eve_errand_geodes.title = Pietra Spaccata
 quest.hallows_eve_errand_geodes.flavor = Spacca qualche Geode Maledetta mentre sei in giro. Qualcuno deve pur farlo.
 quest.hallows_eve_errand_pumpkins.title = Zucche di Scorta
 quest.hallows_eve_errand_pumpkins.flavor = Una lanterna si è ammosciata sui gradini. Portami delle Zucche Consacrate quando passi.
+quest.hallows_eve_errand_fiends.title = Semi Cattivi
+quest.hallows_eve_errand_fiends.flavor = Qualche Diavoletto Zucca è spuntato nei boschi d'autunno. Schiacciali quando sei fuori dopo il tramonto.
 
 # ---- Il negozio del Vecchio Jack ----
 shop.hallows_eve_old_jack.title = Negozio del Vecchio Jack
@@ -125,6 +129,8 @@ shop.hallows_eve_offer_harvest_moon_bundle.desc = Bombe Lanterna Frantumanti e S
 shop.hallows_eve_offer_spyglass.desc = Guardaci dentro nelle Cavità Tremolanti per individuare dove si trova una bestia Divorata dal Vuoto.
 shop.hallows_eve_offer_sell_eternal_candle.title = Vendi una Candela Eterna di Scorta
 shop.hallows_eve_offer_sell_eternal_candle.desc = Basta una Candela Eterna per aprire il cimitero del Cavaliere. Porta al Vecchio Jack una di scorta e te la pagherà.
+shop.hallows_eve_offer_sell_horsemans_reins.title = Vendi delle Redini del Cavaliere di Scorta
+shop.hallows_eve_offer_sell_horsemans_reins.desc = Un paio di Redini del Cavaliere basta per chiamare il suo cavallo. Porta al Vecchio Jack un paio di scorta e te lo pagherà.
 
 # ---- Obiettivi ----
 achievement.hallows_eve_lantern_keepsake.title = Lanterna Cava {0}
@@ -199,7 +205,7 @@ dialogue.hallows_eve_old_jack.ready_generic.opt.turnin = Fatto.
 dialogue.hallows_eve_old_jack.lantern_lit.text = La Lanterna Cava di quest'anno è accesa. Mettila dove i morti possano vederla.\nChe ti serve?
 dialogue.hallows_eve_old_jack.sweets.text = Il mio negozio li accetta per tutto quello che vende, da una Bomba Lanterna a una testa come la mia.\nLi pago per i miei lavori e per il lavoro sulla mia bacheca. Chiedi dolcetto o scherzetto a chiunque incontri e ne riceverai qualcuno. Batti il <b>Cavaliere senza Testa</b> nel suo <color is="#ffd97a">cimitero</color> e ne troverai qualcuno ad aspettarti anche lì.
 dialogue.hallows_eve_old_jack.horseman.text = Il <b>Cavaliere senza Testa</b>. Cavalca nel suo cimitero ogni notte della Vigilia di Ognissanti. È fuoco per metà, quindi le mie Bombe Lanterna gli fanno solo metà del male, ma mordono lo stesso.\nIl <color is="#ffd97a">Custode del Cimitero</color> accanto a me tiene il cancello. Ti porta dentro quando ci ha bruciato davanti una <b>Candela Funebre</b>, e quelle le vendo nel mio negozio quando ti considero un Habitué. Paga chi entra per primo, e il resto del gruppo lo segue gratis. Porta degli amici, e quando la sua testa vola via, abbattila, o non si può ferire.
-dialogue.hallows_eve_old_jack.horseman_beaten.text = Quindi l'hai disarcionato. Non lo terrà a terra: torna in sella ogni volta che qualcuno entra.\nVa' a cercare di nuovo il <b>Cavaliere senza Testa</b>, se vuoi. La tua prima vittoria di ogni giorno lascia la sua ricompensa giornaliera e il suo Tesoro nel forziere dove cade, ogni tanto con un pezzo della sua vecchia armatura, o di una che brucia ancora. Quello che lasci nel forziere aspetta sotto Ricompense nel tuo menu.
+dialogue.hallows_eve_old_jack.horseman_beaten.text = Quindi l'hai disarcionato. Non lo terrà a terra: torna in sella ogni volta che qualcuno entra.\nVa' a cercare di nuovo il <b>Cavaliere senza Testa</b>, se vuoi. La tua prima vittoria di ogni giorno lascia due Ricompense nel forziere dove cade: la sua ricompensa giornaliera e la sua Ricompensa Boss, che ogni tanto contiene un pezzo della sua vecchia armatura, o di una che brucia ancora. Quello che lasci nel forziere aspetta sotto Ricompense nel tuo menu.
 dialogue.hallows_eve_old_jack.who_are_you.text = Il Vecchio Jack. Una volta avevo una fattoria, lontano da qui. Poi un ottobre non sono tornato a casa, e da allora torno ogni ottobre.\nLe mie lanterne tengono i morti lontani da questi gradini, e ogni anno accendo una Lanterna Cava con chiunque porti a termine le mie commissioni. Non chiedermi della testa.
 dialogue.hallows_eve_old_jack.harvest_moon.text = Vedi quella luna? Luna del Raccolto. Qualche notte all'anno, sotto di lei, i morti si agitano e le tombe si svuotano.\nSe vuoi lavorare, stanotte è la notte giusta. Io resto sveglio finché non tramonta.
 dialogue.hallows_eve_old_jack.opt.quests = Cosa c'è da fare?
@@ -241,11 +247,11 @@ title.hallows_eve_keeper_of_lanterns.display = {0}, Custode delle Lanterne
 
 # ---- The set achievements: wearing the Hallowed and Flaming Hallowed Sets ----
 achievement.hallows_eve_hallowed_armour.title = Armatura Consacrata
-achievement.hallows_eve_hallowed_armour.desc = Indossa un Elmo di Jack e l'armatura del Cavaliere senza Testa.
+achievement.hallows_eve_hallowed_armour.desc = Indossa l'armatura del Cavaliere senza Testa con il suo elmo o un Elmo di Jack.
 achievement.hallows_eve_fully_hallowed.title = Del Tutto Consacrato
 achievement.hallows_eve_fully_hallowed.desc = Indossa l'intero Set Consacrato, con uno Scudo di Jack nella mano secondaria.
 achievement.hallows_eve_flaming_armour.title = Armatura Fiammeggiante
-achievement.hallows_eve_flaming_armour.desc = Indossa l'Elmo di Jack Ardente e l'armatura fiammeggiante del Cavaliere senza Testa.
+achievement.hallows_eve_flaming_armour.desc = Indossa l'armatura fiammeggiante del Cavaliere senza Testa con il suo elmo fiammeggiante o l'Elmo di Jack Ardente.
 achievement.hallows_eve_fully_ablaze.title = Del Tutto in Fiamme
 achievement.hallows_eve_fully_ablaze.desc = Indossa l'intero Set Consacrato Fiammeggiante, con lo Scudo di Jack Fiammeggiante nella mano secondaria.
 objective.hallows_eve.wear_hallowed = Indossa {0} pezzi del Set Consacrato
@@ -272,6 +278,7 @@ objective.hallows_eve.bomb_down_horseman = Abbatti il Cavaliere senza Testa solo
 objective.hallows_eve.bomb_down_horseman_hard = Abbatti il Cavaliere senza Testa nella cavalcata difficile solo con Bombe Lanterna
 objective.hallows_eve.bring_down_horseman_hard = Abbatti il Cavaliere senza Testa nella cavalcata difficile
 objective.hallows_eve.bring_ember = Porta la Brace del Cavaliere
+objective.hallows_eve.squash_fiends = Schiaccia {0} Diavoletti Zucca
 board.hallows_eve_daily.grade.night = Lavoro di Notte
 board.hallows_eve_daily.grade.day = Lavoro di Giorno
 achievement.hallows_eve_jacks_confidant.title = Confidente di Jack
@@ -318,7 +325,7 @@ factor.hallows_eve_old_jack.exalted = il rango di Uno di Jack presso il Vecchio 
 reputation.hallows_eve_old_jack.earn.quests = Sbriga le sue commissioni e i suoi lavori giornalieri.
 reputation.hallows_eve_old_jack.earn.board = Prendi i contratti dalla sua bacheca.
 reputation.hallows_eve_old_jack.earn.talk = Passa a scambiare due parole una volta al giorno.
-reputation.hallows_eve_old_jack.earn.horseman = Ripulisci il cimitero del Cavaliere senza Testa in una delle due cavalcate, e il suo forziere paga il suo favore, la metà nelle ripuliture successive dello stesso giorno. La tua prima vittoria normale di ogni giorno rende di più con il Tesoro del Cavaliere.
+reputation.hallows_eve_old_jack.earn.horseman = Ripulisci il cimitero del Cavaliere senza Testa in una delle due cavalcate, e il suo forziere paga il suo favore, la metà nelle ripuliture successive dello stesso giorno. La tua prima vittoria normale di ogni giorno rende di più con la sua Ricompensa Boss.
 reputation.hallows_eve_old_jack.earn.gear = Indossa un Elmo di Jack, e tutto ciò che fai per lui ti guadagna più favore finché ce l'hai in testa.
 reputation.hallows_eve_hallowed.name = I Consacrati
 reputation.hallows_eve_hallowed.flavor = I Consacrati badano che i morti riposino, e il Custode del Cimitero del Cavaliere è uno di loro. Abbatti ciò che di notte risale dalle tombe e loro se ne accorgono.
@@ -329,14 +336,14 @@ factor.hallows_eve_hallowed.exalted = il rango di Osannato presso i Consacrati
 reputation.hallows_eve_hallowed.earn.kills = Abbatti le creature che di notte strisciano fuori.
 reputation.hallows_eve_hallowed.earn.jack = Contano anche i lavori giornalieri del Vecchio Jack e i contratti della sua bacheca.
 reputation.hallows_eve_hallowed.earn.treats = Chiedi dolcetto o scherzetto a tutti quelli con cui parli, una volta al giorno a ciascuno.
-reputation.hallows_eve_hallowed.earn.horseman = Ripulisci il cimitero del Cavaliere senza Testa in una delle due cavalcate, e il suo forziere paga il loro favore, la metà nelle ripuliture successive dello stesso giorno. La tua prima vittoria difficile di ogni giorno rende di più con il suo Tesoro.
+reputation.hallows_eve_hallowed.earn.horseman = Ripulisci il cimitero del Cavaliere senza Testa in una delle due cavalcate, e il suo forziere paga il loro favore, la metà nelle ripuliture successive dello stesso giorno. La tua prima vittoria difficile di ogni giorno rende di più con la sua Ricompensa Boss.
 reputation.hallows_eve_hallowed.earn.gear = Porta uno Scudo di Jack, e guadagni il loro favore più in fretta finché è equipaggiato.
 notify.hallows_eve_hallowed_cache = Una scorta dai Consacrati, per aver tenuto i morti sottoterra.
 dialogue.hallows_eve_old_jack.opt.standing = Come stanno le cose tra noi?
 achievement.category.seasons.hallows_eve = Vigilia di Ognissanti
 
 # ---- The Almanac page's items: where each comes from ----
-almanac.hallows_eve.source.pumpkin = Ogni tanto spunta quando raccogli le zucche a mano, e la lasciano cadere gli Scheletri Jack.
+almanac.hallows_eve.source.pumpkin = Ogni tanto spunta quando raccogli le zucche a mano, e la lasciano cadere gli Scheletri Jack e i Diavoletti Zucca.
 almanac.hallows_eve.source.geode = Si trova nella pietra e nel minerale che scavi, e la lasciano cadere gli Spettri delle Geodi.
 almanac.hallows_eve.source.ectoplasm = Lo lasciano cadere le Anime Perdute, e si trova dentro le Geodi Maledette.
 almanac.hallows_eve.source.bombs = Le lasciano cadere le creature della notte, si trovano dentro le Geodi Maledette, si intagliano a un Banco da Intaglio o si comprano nel negozio del Vecchio Jack.
@@ -348,22 +355,24 @@ almanac.hallows_eve.source.jack_shield = Si intaglia a un Banco da Intaglio, o s
 almanac.hallows_eve.source.burning_helm = In vendita nel negozio del Vecchio Jack quando i Consacrati ti venerano o il Vecchio Jack ti considera un Confidente.
 almanac.hallows_eve.source.flaming_shield = In vendita nel negozio del Vecchio Jack quando i Consacrati ti tengono nella massima stima.
 almanac.hallows_eve.source.stall = In vendita nel negozio del Vecchio Jack.
-almanac.hallows_eve.source.grave_candle = In vendita nel negozio del Vecchio Jack quando ti considera un Habitué, e restituita dal Tesoro del Cavaliere: a volte una dopo la tua prima vittoria di ogni giorno, e qualcuna dopo la tua prima vittoria difficile. Il Custode del Cimitero le brucia per aprire il suo cimitero al tuo gruppo, e quando per il Vecchio Jack sei Fidato ti dà una Candela Funebre Ardente in cambio di una manciata.
+almanac.hallows_eve.source.grave_candle = In vendita nel negozio del Vecchio Jack quando ti considera un Habitué, e restituita dalla Ricompensa Boss del Cavaliere: a volte una dopo la tua prima vittoria di ogni giorno, e qualcuna dopo la tua prima vittoria difficile. Il Custode del Cimitero le brucia per aprire il suo cimitero al tuo gruppo, e quando per il Vecchio Jack sei Fidato ti dà una Candela Funebre Ardente in cambio di una manciata.
 almanac.hallows_eve.source.burning_grave_candle = In vendita nel negozio del Vecchio Jack quando per lui sei Fidato, o scambiata lì con una manciata di Candele Funebri. Il Custode del Cimitero le brucia per aprire la cavalcata difficile del Cavaliere senza Testa al tuo gruppo.
 almanac.hallows_eve.source.stall_or_lab = In vendita nel negozio del Vecchio Jack man mano che cresce la tua stima, o si costruisce al Banco da Lavoro dell'Inventore Goblin nel laboratorio goblin.
 almanac.hallows_eve.source.festival_stall = In vendita sullo scaffale delle feste del negozio del Vecchio Jack.
 almanac.hallows_eve.source.keepsake = Il ricordo del Vecchio Jack, che ricevi una volta all'anno quando finisci la sua storia.
 almanac.hallows_eve.source.festival_favor = In vendita nei negozi delle feste a chi ha un alto Favore delle Feste.
-almanac.hallows_eve.source.bomb_rare = Sempre nel Tesoro del Cavaliere, e a volte nella sua ricompensa giornaliera. La lasciano cadere anche le creature della notte, si trova dentro le Geodi Maledette, si intaglia a un Banco da Intaglio o si compra nel negozio del Vecchio Jack.
+almanac.hallows_eve.source.bomb_rare = Sempre nella Ricompensa Boss del Cavaliere, e a volte nella sua ricompensa giornaliera. La lasciano cadere anche le creature della notte, si trova dentro le Geodi Maledette, si intaglia a un Banco da Intaglio o si compra nel negozio del Vecchio Jack.
 almanac.hallows_eve.source.bomb_epic_horseman = La lasciano cadere di rado gli Spettri delle Geodi, o si trova dentro le Geodi Maledette e nella scorta dei Consacrati, e a volte nella ricompensa giornaliera del Cavaliere senza Testa. Puoi anche intagliarne una a un Banco da Intaglio, o comprarne un paio al giorno nel negozio del Vecchio Jack.
-almanac.hallows_eve.source.hoard = A volte nel Tesoro del Cavaliere, pagato per la tua prima vittoria su di lui di ogni giorno.
-almanac.hallows_eve.source.hoard_hard = Solo nel Tesoro del Cavaliere nella cavalcata difficile, pagato per la tua prima vittoria difficile su di lui di ogni giorno. Quando hai finito Il Cavaliere, chiedi al Custode del Cimitero la cavalcata difficile.
-almanac.hallows_eve.source.hoard_normal = Solo nel Tesoro del Cavaliere nella cavalcata normale, pagato per la tua prima vittoria su di lui lì di ogni giorno.
-almanac.hallows_eve.source.eternal_candle = Ogni tanto nel Tesoro del Cavaliere nella cavalcata difficile, pagata per la tua prima vittoria difficile su di lui di ogni giorno. Portala con te e il Custode del Cimitero apre il suo cimitero normale al tuo gruppo senza bruciare una Candela Funebre.
-almanac.hallows_eve.source.burning_helm_trade = Si compra nel negozio del Vecchio Jack scambiando un Elmo di Jack dalla tua borsa, quando i Consacrati ti venerano o il Vecchio Jack si fida di te completamente. A volte si trova nel Tesoro del Cavaliere.
-almanac.hallows_eve.source.flaming_shield_trade = Si compra nel negozio del Vecchio Jack scambiando uno Scudo di Jack dalla tua borsa, quando i Consacrati ti tengono nella massima stima. A volte si trova nel Tesoro del Cavaliere.
+almanac.hallows_eve.source.hoard = A volte nella Ricompensa Boss del Cavaliere, pagata per la tua prima vittoria su di lui di ogni giorno.
+almanac.hallows_eve.source.hoard_hard = Solo nella Ricompensa Boss del Cavaliere nella cavalcata difficile, pagata per la tua prima vittoria difficile su di lui di ogni giorno. Quando hai finito Il Cavaliere, chiedi al Custode del Cimitero la cavalcata difficile.
+almanac.hallows_eve.source.hoard_normal = Solo nella Ricompensa Boss del Cavaliere nella cavalcata normale, pagata per la tua prima vittoria su di lui lì di ogni giorno.
+almanac.hallows_eve.source.eternal_candle = Ogni tanto nella Ricompensa Boss del Cavaliere nella cavalcata difficile, pagata per la tua prima vittoria difficile su di lui di ogni giorno. Portala con te e il Custode del Cimitero apre il suo cimitero normale al tuo gruppo senza bruciare una Candela Funebre.
+almanac.hallows_eve.source.steed_trophy = Ogni tanto nella Ricompensa Boss del Cavaliere, e più spesso nella cavalcata difficile, pagata per la tua prima vittoria su di lui di ogni giorno. Si piazza come blocco.
+almanac.hallows_eve.source.reins = Solo sui server con la mod Alec's Tamework: molto di rado nella Ricompensa Boss del Cavaliere, e ogni tanto nella cavalcata difficile. Ti portano il suo cavallo nero. Tienile in mano e fai clic destro per aprire il tuo elenco, premi Summon per chiamare il tuo cavallo, poi premi F per montarlo.
+almanac.hallows_eve.source.burning_helm_trade = Si compra nel negozio del Vecchio Jack scambiando un Elmo di Jack dalla tua borsa, quando i Consacrati ti venerano o il Vecchio Jack si fida di te completamente. A volte si trova nella Ricompensa Boss del Cavaliere.
+almanac.hallows_eve.source.flaming_shield_trade = Si compra nel negozio del Vecchio Jack scambiando uno Scudo di Jack dalla tua borsa, quando i Consacrati ti tengono nella massima stima. A volte si trova nella Ricompensa Boss del Cavaliere.
 
 # ---- The Almanac page's Headless Horseman banner and his Hoard ----
 almanac.hallows_eve.horseman.line = Il Custode del Cimitero accanto al Vecchio Jack ti porta dentro. Porta degli amici.
 almanac.hallows_eve.horseman.button = Record degli scontri con i boss
-almanac.hallows_eve.hoard.line = La tua prima vittoria di ogni giorno lascia il suo Tesoro nel forziere dove cade, e sotto Ricompense: una Bomba Lanterna Spettrale e il favore del Vecchio Jack, e a volte una Candela Funebre, un pezzo del set Consacrato Fiammeggiante, una Lapide o una Lanterna della Civiltà Perduta. Il Tesoro della cavalcata difficile contiene qualche Candela Funebre e il favore dei Consacrati, migliori probabilità per i pezzi fiammeggianti, la sua corazza fiammeggiante e, ogni tanto, una Candela Eterna. La sua armatura normale arriva con la sua ricompensa giornaliera.
+almanac.hallows_eve.hoard.line = La tua prima vittoria di ogni giorno lascia la sua Ricompensa Boss nel forziere dove cade, e sotto Ricompense: una Bomba Lanterna Spettrale e il favore del Vecchio Jack, e a volte una Candela Funebre, un pezzo della sua armatura, un pezzo del Set Consacrato Fiammeggiante, un minuscolo trofeo del suo cavallo, una Lapide o una Lanterna della Civiltà Perduta. Nella cavalcata difficile contiene qualche Candela Funebre e il favore dei Consacrati, migliori probabilità per la sua armatura, i pezzi fiammeggianti e il trofeo, la sua corazza fiammeggiante e, ogni tanto, una Candela Eterna. Sui server con la mod Alec's Tamework può contenere anche le sue Redini, e con loro il suo cavallo nero.

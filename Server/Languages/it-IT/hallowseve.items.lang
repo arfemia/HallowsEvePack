@@ -6,7 +6,7 @@ gearset.hallows_eve_hallowed.tier_pair = Un pezzo del set indosso e uno Scudo di
 gearset.hallows_eve_hallowed.tier_armor = Elmo, corazza, guanti e schinieri indosso: un po' più di salute, e tutto ciò a cui dai fuoco brucia più forte.
 gearset.hallows_eve_hallowed.tier_armor_shield = Tutti e quattro indosso e scudo in mano: ancora più salute, e il tuo fuoco brucia ancora più forte.
 gearset.hallows_eve_flaming_hallowed.title = Set Consacrato Fiammeggiante
-gearset.hallows_eve_flaming_hallowed.tier_armor = Elmo ardente e armatura fiammeggiante indosso: più salute, e tutto ciò a cui dai fuoco brucia molto più forte.
+gearset.hallows_eve_flaming_hallowed.tier_armor = Un Elmo di Jack Ardente o l'Elmo Fiammeggiante del Cavaliere, con la sua armatura fiammeggiante indosso: più salute, e tutto ciò a cui dai fuoco brucia molto più forte.
 gearset.hallows_eve_flaming_hallowed.tier_armor_shield = Tutti e quattro indosso e lo Scudo di Jack Fiammeggiante in mano: ancora più salute, e il tuo fuoco brucia ancora più forte.
 
 # I nomi dei costumi, mostrati quando il giocatore passa sull'icona del costume. Il JSON dell'effetto scrive la chiave
