@@ -1,0 +1,26 @@
+{
+  "$Comment": "Gives the Horseman's Reins their right-click where Alec's Tamework runs: held, a right-click opens the player's Horseman's Steed roster (Tamework's TameworkCommand interaction, OpenSelectionMenu, with the Reins' command-item file, Server/Tamework/Items/Commands/Hallows_Eve_Horsemans_Reins.json, named as ConfigId). Patchwork, which Tamework carries, applies this at startup to a generated copy of the Reins' item file and never edits the file itself. The item stays plain everywhere else, because an item naming Tamework's interaction would stop a server without Tamework at boot; When keeps a server that runs Patchwork alone, without Tamework, from adding it too.",
+  "Id": "Hallows_Eve_Horsemans_Reins_Patch",
+  "Target": "Server/Item/Items/Hallows_Eve/Hallows_Eve_Horsemans_Reins.json",
+  "Priority": 0,
+  "Enabled": true,
+  "When": { "ModInstalled": "Alechilles:Alec's Tamework!" },
+  "Operations": [
+    {
+      "Id": "add-roster-right-click",
+      "Op": "Add",
+      "Path": "/Interactions",
+      "Value": {
+        "Secondary": {
+          "Interactions": [
+            {
+              "Type": "TameworkCommand",
+              "ConfigId": "Hallows_Eve_Horsemans_Reins",
+              "CommandId": "OpenSelectionMenu"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

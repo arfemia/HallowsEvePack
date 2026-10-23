@@ -1,0 +1,38 @@
+{
+  "$Comment": [
+    "The Horseman's Reins added to the Horseman's Hoard on the hard ride (the",
+    "Hallows_Eve_Horseman_Chase_Hard table, which players see as his Boss Kill Claim on the hard ride)",
+    "for the first hard win each day, on a server running Alec's Tamework, at far better odds than the",
+    "normal ride's (Hallows_Eve_Horsemans_Reins_Chase.json, where the roll is explained).",
+    "",
+    "Requires takes this file out on a server without Tamework; always write it with Min 1. Chance is a",
+    "percent from 0 to 100, so 5 is 1 in 20. The roll pays the Reins item and runs Tamework's grant as",
+    "the server console when the Claim is collected, putting one Horseman's Steed in the collecting",
+    "player's roster; keep the command the same as the normal ride's."
+  ],
+  "Name": "Hallows_Eve_Horsemans_Reins_Chase_Hard",
+  "ContributesTo": "Hallows_Eve_Horseman_Chase_Hard",
+  "Requires": {
+    "Factors": [
+      { "Factor": "hytale:mod_installed", "Param": "Alechilles:Alec's Tamework!", "Min": 1 }
+    ]
+  },
+  "Rolls": [
+    {
+      "Chance": { "Base": 5 },
+      "Grants": {
+        "Items": [ { "Item": "Hallows_Eve_Horsemans_Reins", "Count": 1 } ],
+        "Rewards": [
+          {
+            "Kind": "Command",
+            "Params": {
+              "Command": "tw bonded grant {uuid} SeasonsOfOrbis:Hallows_Eve_Horsemans_Reins Hallows_Eve_Horsemans_Steed",
+              "NameKey": "reward.hallows_eve_horsemans_steed",
+              "Icon": "Hallows_Eve_Horsemans_Steed_Trophy"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

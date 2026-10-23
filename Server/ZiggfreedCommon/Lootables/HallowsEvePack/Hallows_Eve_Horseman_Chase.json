@@ -7,17 +7,19 @@
     "the chances at the plain pieces of his armour (the Horseman's Breastplate, Gauntlets, Greaves and",
     "Helm, members of the Hallowed set); the five after those are the chances at the Flaming Hallowed",
     "set's pieces (the Burning Jack Helm, the Horseman's flaming gauntlets, greaves and helm, and the",
-    "Flaming Jack Shield); then two pieces of his graveyard to build with, a tombstone and a ruins",
+    "Flaming Jack Shield); then the Horseman's Steed Trophy, a tiny figure of his horse to place as a",
+    "block, on every server; then two pieces of his graveyard to build with, a tombstone and a ruins",
     "lantern like the ones that stand in it, which no recipe makes and which pay from this Hoard alone;",
     "the last always pays Old Jack's Favor, so the normal ride is a way toward the Regular rank that",
     "opens the hard ride. The hard ride's Hoard (Hallows_Eve_Horseman_Chase_Hard.json) pays more Grave",
-    "Candles, his armour and the Flaming pieces at better odds, his flaming breastplate and the Eternal",
-    "Candle, and the Hallowed's favor instead of Old Jack's; Mmo_Hallows_Eve_Horseman_Chase.json adds",
-    "Defense XP where MMO Skill Tree runs. The Hoard is not scaled by each player's share of the fight,",
+    "Candles, his armour, the Flaming pieces and the trophy at better odds, his flaming breastplate and",
+    "the Eternal Candle, and the Hallowed's favor instead of Old Jack's; Mmo_Hallows_Eve_Horseman_Chase.json",
+    "adds Defense XP where MMO Skill Tree runs, and Hallows_Eve_Horsemans_Reins_Chase.json the Horseman's",
+    "Reins where Alec's Tamework runs. The Hoard is not scaled by each player's share of the fight,",
     "so everyone who fought him rolls these odds. The Almanac's Hoard grid",
     "(ZiggfreedCommon/Almanac/HallowsEvePack/Hallows_Eve.json) lists what this table and the hard one",
     "pay, so change them together. Chance is a percent from 0 to 100. HideInPreview on the five",
-    "Flaming pieces keeps them out of any list of what this table pays (a reward paying it lists its",
+    "Flaming pieces and the trophy keeps them out of any list of what this table pays (a reward paying it lists its",
     "contents on hover); the Hoard itself lands as a Claim of what it rolled, and the rolls pay the same",
     "either way."
   ],
@@ -70,6 +72,11 @@
       "Chance": { "Base": 5.0 },
       "HideInPreview": true,
       "Grants": { "Items": [ { "Item": "Hallows_Eve_Flaming_Jack_Shield", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 2.0 },
+      "HideInPreview": true,
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Horsemans_Steed_Trophy", "Count": 1 } ] }
     },
     {
       "Chance": { "Base": 20.0 },

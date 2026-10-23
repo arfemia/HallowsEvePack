@@ -1,0 +1,17 @@
+{
+  "$Comment": "The Horseman's Steed, the black horse a player rides once the Horseman's Reins are theirs: his mounted model's horse with no rider on it. Parent Horse brings the game's living horse: its shape, hitbox, size and every animation, so it walks, runs and carries a rider as any horse does. Texture swaps its coat for his black horse's (NPC/Hallows_Eve/Headless_Horseman/Horse/, painted on the horse's own layout, the same coat his mounted model wears). RandomAttachmentSets is empty so the horse's random mane never goes on (the barding covers the neck, and a second tail would sit inside his own). DefaultAttachments replaces the parent's list whole: the barding (it brings its own saddle) and the rotted tail. Icon is its portrait, drawn by tools/derive_art.py.",
+  "Parent": "Horse",
+  "Texture": "NPC/Hallows_Eve/Headless_Horseman/Horse/Texture_black_horse.png",
+  "Icon": "Icons/ModelsGenerated/Hallows_Eve_Horsemans_Steed.png",
+  "RandomAttachmentSets": {},
+  "DefaultAttachments": [
+    {
+      "Model": "NPC/Hallows_Eve/Headless_Horseman/Horse/Armor.blockymodel",
+      "Texture": "NPC/Hallows_Eve/Headless_Horseman/Horse/Armor_black.png"
+    },
+    {
+      "Model": "NPC/Hallows_Eve/Headless_Horseman/Horse/Mane.blockymodel",
+      "Texture": "NPC/Hallows_Eve/Headless_Horseman/Horse/Mane_rotted_green.png"
+    }
+  ]
+}

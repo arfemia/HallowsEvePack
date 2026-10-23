@@ -11,10 +11,13 @@
     "Flaming Hallowed set's pieces (the Burning Jack Helm, his flaming gauntlets, greaves and helm, and",
     "the Flaming Jack Shield) at three times the normal Hoard's odds; then the Eternal Candle",
     "(Item/Items/Hallows_Eve/Hallows_Eve_Eternal_Candle.json), which opens his normal graveyard without",
-    "burning a Grave Candle and is never used up, and pays from here and nowhere else; the last always",
-    "pays the Hallowed's favor (the normal Hoard pays Old Jack's instead). The Hoard is not scaled by",
-    "each player's share of the fight, so everyone who fought him rolls these odds.",
-    "Mmo_Hallows_Eve_Horseman_Chase_Hard.json adds Defense XP where MMO Skill Tree runs. The graveyard's",
+    "burning a Grave Candle and is never used up, and pays from here and nowhere else; then the",
+    "Horseman's Steed Trophy, a tiny figure of his horse to place as a block, on every server, at three",
+    "times the normal Hoard's odds; the last always pays the Hallowed's favor (the normal Hoard pays Old",
+    "Jack's instead). The Hoard is not scaled by each player's share of the fight, so everyone who",
+    "fought him rolls these odds. Mmo_Hallows_Eve_Horseman_Chase_Hard.json adds Defense XP where MMO",
+    "Skill Tree runs, and Hallows_Eve_Horsemans_Reins_Chase_Hard.json the Horseman's Reins where Alec's",
+    "Tamework runs. The graveyard's",
     "tombstone and ruins lantern pay only from the normal Hoard, Hallows_Eve_Horseman_Chase.json beside",
     "this file, and the Almanac's Hoard grid (ZiggfreedCommon/Almanac/HallowsEvePack/Hallows_Eve.json)",
     "lists what both pay, so change them together. Chance is a percent from 0 to 100."
@@ -70,6 +73,10 @@
     {
       "Chance": { "Base": 10.0 },
       "Grants": { "Items": [ { "Item": "Hallows_Eve_Eternal_Candle", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 6.0 },
+      "Grants": { "Items": [ { "Item": "Hallows_Eve_Horsemans_Steed_Trophy", "Count": 1 } ] }
     },
     {
       "Grants": {

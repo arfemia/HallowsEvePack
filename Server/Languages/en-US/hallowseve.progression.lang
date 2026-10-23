@@ -142,6 +142,8 @@ shop.hallows_eve_offer_harvest_moon_bundle.desc = Shattering and Spectral Lanter
 shop.hallows_eve_offer_spyglass.desc = Look through it in the Guttering Hollows to pinpoint the location of a Voidtaken beast.
 shop.hallows_eve_offer_sell_eternal_candle.title = Sell a Spare Eternal Candle
 shop.hallows_eve_offer_sell_eternal_candle.desc = One Eternal Candle is all you need to open the Horseman's graveyard. Bring Old Jack a spare and he'll pay you for it.
+shop.hallows_eve_offer_sell_horsemans_reins.title = Sell Spare Horseman's Reins
+shop.hallows_eve_offer_sell_horsemans_reins.desc = One pair of the Horseman's Reins is all you need to call his horse. Bring Old Jack a spare pair and he'll pay you for it.
 
 # ---- Achievements ----
 achievement.hallows_eve_lantern_keepsake.title = Hollow Lantern {0}
@@ -366,13 +368,15 @@ almanac.hallows_eve.source.hoard = Sometimes in the Horseman's Boss Kill Claim, 
 almanac.hallows_eve.source.hoard_hard = Only in the Horseman's Boss Kill Claim on the hard ride, paid for your first hard win over him each day. Once you've finished The Rider, ask the Gravekeeper for the hard ride.
 almanac.hallows_eve.source.hoard_normal = Only in the Horseman's Boss Kill Claim on the normal ride, paid for your first win over him there each day.
 almanac.hallows_eve.source.eternal_candle = Now and then in the Horseman's Boss Kill Claim on the hard ride, paid for your first hard win over him each day. Carry it and the Gravekeeper opens his normal graveyard for your party without burning a Grave Candle.
+almanac.hallows_eve.source.steed_trophy = Once in a while in the Horseman's Boss Kill Claim, and more often on the hard ride, paid for your first win over him each day. Place it as a block.
+almanac.hallows_eve.source.reins = Only on servers with the Alec's Tamework mod: very rarely in the Horseman's Boss Kill Claim, and now and then on the hard ride. They bring you his black horse. Hold them and right-click to open your roster, press Summon to call your horse, then press F to ride it.
 almanac.hallows_eve.source.burning_helm_trade = Bought at Old Jack's shop by trading in a Jack Helm from your bag, once the Hallowed revere you or Old Jack trusts you completely. Sometimes found in the Horseman's Boss Kill Claim.
 almanac.hallows_eve.source.flaming_shield_trade = Bought at Old Jack's shop by trading in a Jack Shield from your bag, once the Hallowed hold you in the highest regard. Sometimes found in the Horseman's Boss Kill Claim.
 
 # ---- The Almanac page's Headless Horseman banner and his Boss Kill Claim ----
 almanac.hallows_eve.horseman.line = The Gravekeeper next to Old Jack takes you in. Bring friends.
 almanac.hallows_eve.horseman.button = Boss fight records
-almanac.hallows_eve.hoard.line = Your first win each day leaves his Boss Kill Claim in the chest where he falls, and under Claims: a Spectral Lantern Bomb and favor with Old Jack, and sometimes a Grave Candle, a piece of his armour, a piece of the Flaming Hallowed set, a Tombstone or a Lost Civilization Lantern. On the hard ride it holds a few Grave Candles and the Hallowed's favor, better odds at his armour and the flaming pieces, his flaming breastplate and, once in a while, an Eternal Candle.
+almanac.hallows_eve.hoard.line = Your first win each day leaves his Boss Kill Claim in the chest where he falls, and under Claims: a Spectral Lantern Bomb and favor with Old Jack, and sometimes a Grave Candle, a piece of his armour, a piece of the Flaming Hallowed set, a tiny trophy of his horse, a Tombstone or a Lost Civilization Lantern. On the hard ride it holds a few Grave Candles and the Hallowed's favor, better odds at his armour, the flaming pieces and the trophy, his flaming breastplate and, once in a while, an Eternal Candle. On servers with the Alec's Tamework mod, it can also hold his Reins, and his black horse with them.
 
 # ---- Book breadcrumb ----
 achievement.category.seasons.hallows_eve = Hallow's Eve

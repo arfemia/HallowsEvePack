@@ -9,7 +9,7 @@
 
 The seed is JackoLantern01.blockymodel and JackoLantern01_Texture.png, read from tools/seed/
 (a byte copy, kept beside the tool so the pack rebuilds from its own repo) unless --seed
-names another folder. The vanilla inputs are byte copies of fourteen files from the installed
+names another folder. The vanilla inputs are byte copies of eighteen files from the installed
 game's Assets.zip, kept under tools/seed/vanilla/ at their Assets.zip paths (VANILLA_FILES);
 --vendor rewrites them from the Assets.zip it is given. A rerun writes byte-identical
 files: nothing here is random, and PNGs carry no metadata.
@@ -23,6 +23,12 @@ What it writes (pack-relative):
       Cursed Geode.
   Common/Blocks/Hallows_Eve/Carving_Bench/              the Carving Bench: the vanilla
       Workbench rig with carving props on it, and its 128x128 atlas.
+  Common/Blocks/Hallows_Eve/Steed_Trophy/               the Horseman's Steed Trophy: the vanilla
+      horse rig wearing his black horse's barding and rotted tail, shrunk onto a small plinth,
+      and its 512x256 atlas (the horse's coat, the barding's and the tail's textures side by
+      side, the plinth painted below the tail's), since a block wears one texture.
+  Common/Items/Hallows_Eve/Horsemans_Reins/             the Horseman's Reins' texture: the vanilla
+      leather strap's, turned black with rotted-green highlights (the item wears the strap model).
   Common/NPC/Hallows_Eve/<Mob>/                         the Lost Soul (on the Spirit_Ember
       rig) and the Geode Wraith (on the Wraith rig): every vanilla node kept, so the vanilla
       animations still drive them, plus a recoloured texture.
@@ -33,14 +39,16 @@ What it writes (pack-relative):
       none has its own.
   Common/Icons/ItemsGenerated/Hallows_Eve_*.png         64x64 item icons from a small
       orthographic renderer at each family's vanilla IconProperties angle.
-  Common/Icons/ModelsGenerated/Hallows_Eve_*.png        128x128 model icons for the mobs.
+  Common/Icons/ModelsGenerated/Hallows_Eve_*.png        128x128 model icons for the mobs and the
+      Horseman's Steed (drawn full size on the Steed Trophy's atlas).
 
 What it reads from the pack and never writes: the artist's hand-made Headless Horseman art, copied
 into Common/ as it came. Common/Items/Hallows_Eve/Horseman_Armor/ holds his armour
 (the chest, the collar chest, hands, legs and helm, each with a plain and a gold texture), which
 the chase set and the Horseman wear; the rider's armour and the set's icons derive from it.
 Common/NPC/Hallows_Eve/Headless_Horseman/Horse/ holds his black horse's texture, barding and
-rotted tail, which his mounted Model JSON names directly. Replace those files to change his look.
+rotted tail, which his mounted Model JSON and the steed's name directly, and which the Steed
+Trophy is baked from. Replace those files to change his look.
 
 Format facts this relies on (reference/shared-source/release and the Hytale Blockbench plugin):
   - A node's shape is centred at position + orientation * offset, in its parent's frame,
@@ -214,6 +222,8 @@ ANGLE_WAND = (45, 90, 0)                # Weapon/Wand/Weapon_Wand_Wood.json
 ANGLE_ESSENCE = (0, 0, 0)               # Ingredient/Ingredient_Life_Essence.json
 ANGLE_CRYSTAL = (34.315, 29.815, 22.5)  # Ingredient/Crystal/Ingredient_Crystal_Purple.json
 ANGLE_ARMOR = (22.5, 45, 22.5)          # Armor/Iron/Armor_Iron_Chest.json, and its hands, legs and head
+ANGLE_REINS = (60, 30, 0)               # from above, so the two flat straps show their faces, as the
+                                        # game's own leather strap icon draws them
 
 # --- quality colours: Server/Item/Qualities/<Quality>.json TextColor ------------------------
 
@@ -244,10 +254,13 @@ GHOUL_TEXTURE = "NPC/Undead/Ghoul/Models/Texture.png"
 SKELETON = "NPC/Undead/Skeleton/Models/Model.blockymodel"
 SKELETON_BURNT_TEXTURE = "NPC/Undead/Skeleton/Models/Model_Textures/Burnt.png"
 PLAYER = "Characters/Player.blockymodel"
+HORSE = "NPC/Livestock/Horse/Models/Model.blockymodel"
+STRAP = "Resources/Materials/Strap_Leather.blockymodel"
+STRAP_TEXTURE = "Resources/Materials/Strap_Leather_Texture.png"
 VANILLA_FILES = tuple(f"Common/{rel}" for rel in (
     WORKBENCH, WORKBENCH_TEXTURE, WAND, WAND_TEXTURE, SPIRIT, SPIRIT_TEXTURE,
     WRAITH, WRAITH_TEXTURE, ESSENCE, ESSENCE_TEXTURE, GHOUL, GHOUL_TEXTURE,
-    SKELETON, SKELETON_BURNT_TEXTURE, PLAYER))
+    SKELETON, SKELETON_BURNT_TEXTURE, PLAYER, HORSE, STRAP, STRAP_TEXTURE))
 
 # --- the Cursed Geode: a scripted stone with a lit crack (64x64 texture, x, y, w, h) ---------
 
@@ -381,6 +394,32 @@ ARMOR_ICONS = [
     ("Hallows_Eve_Flaming_Horseman_Helm", ARMOR_HELM, GOLD),
 ]
 ARMOR_ICON_PIECES = {ARMOR_HANDS: "R-", ARMOR_LEGS: "R-"}   # name prefix of the pieces drawn
+
+# --- the Horseman's Steed Trophy: his black horse, tiny, on a plinth, as one placeable block ---
+# A block wears one texture, so the horse's coat, its barding's texture and its tail's sit side by
+# side on one atlas and the barding and tail are worn on the horse rig ahead of time (graft), their
+# faces moved onto their part of the atlas. The hand-made horse art is read from the pack.
+HORSE_ART = f"{HORSEMAN}/Horse"
+HORSE_COAT = f"{HORSE_ART}/Texture_black_horse.png"
+HORSE_BARDING = f"{HORSE_ART}/Armor.blockymodel"
+HORSE_BARDING_TEXTURE = f"{HORSE_ART}/Armor_black.png"
+HORSE_TAIL = f"{HORSE_ART}/Mane.blockymodel"
+HORSE_TAIL_TEXTURE = f"{HORSE_ART}/Mane_rotted_green.png"
+STEED_TROPHY = f"{HE_BLOCKS}/Steed_Trophy/Steed_Trophy.blockymodel"
+STEED_TROPHY_TEXTURE = f"{HE_BLOCKS}/Steed_Trophy/Steed_Trophy_Texture.png"
+STEED_PORTRAIT = f"{HORSE_ART}#steed"   # the `rigs` key of the full-size steed its model icon draws
+TROPHY_ATLAS = (512, 256)               # width, height
+TROPHY_COAT_AT = (0, 0)                 # the coat's 224x256 texture
+TROPHY_BARDING_AT = (224, 0)            # the barding's 160x192
+TROPHY_TAIL_AT = (384, 0)               # the tail's 128x96
+TROPHY_PLINTH_TOP_AT = (384, 96)        # the plinth's top and bottom, painted to its size (<= 32x32)
+TROPHY_PLINTH_SIDE_AT = (384, 128)      # its four sides: a 32x4 strip, gold along the top row
+K_TROPHY = 0.125                        # the horse rig is about 177 px tall: 1/8 stands it ~0.7 block high
+TROPHY_PLINTH_HEIGHT = 3                # px; block models are 32 px to the block
+TROPHY_PLINTH_MARGIN = 4                # px of plinth left around the horse, in all
+
+# --- the Horseman's Reins: the vanilla leather strap model, on a black leather texture ---------
+REINS_TEXTURE = f"{HE_ITEMS}/Horsemans_Reins/Horsemans_Reins_Texture.png"
 
 
 def worn(model):
@@ -967,6 +1006,71 @@ def armor_icon_model(player, armor_name, armor):
     return graft(armor, vanilla_root(player), lambda name: name, "", keep)
 
 
+def scale_tree(root, k):
+    """Uniformly scales a subtree by k about its parent's origin: every position, offset and
+    stretch is multiplied by k, so every `settings.size` stays the integer it was."""
+    for node in walk([root]):
+        node["position"] = vec([float(node["position"][a]) * k for a in "xyz"])
+        shape = node.get("shape")
+        if not shape:
+            continue
+        shape["offset"] = vec([float(shape.get("offset", {}).get(a, 0)) * k for a in "xyz"])
+        if shape.get("type") in ("box", "quad"):
+            shape["stretch"] = vec([float(shape.get("stretch", {}).get(a, 1)) * k for a in "xyz"])
+
+
+def extent(nodes):
+    """(min, max) corners in model px of every visible face under `nodes`."""
+    corners = np.array([c for face in collect_faces({"nodes": nodes}) for c in face[0]])
+    return corners.min(axis=0), corners.max(axis=0)
+
+
+def steed_rig(horse, barding, tail):
+    """The Horseman's black horse as one model on the trophy's atlas: the vanilla horse rig whole,
+    his barding and rotted tail worn on it the way the client wears them (graft), their faces moved
+    to their part of the atlas. Nothing in it stays a piece, since a block binds to no rig."""
+    horse_root = vanilla_root(horse)
+    if any(float(horse_root["position"][a]) for a in "xyz") or float(horse_root["orientation"]["w"]) != 1:
+        raise ValueError("the horse rig's root is expected at the origin, unturned")
+    holders = []
+    for attachment, prefix, (dx, dy) in ((barding, "Barding-", TROPHY_BARDING_AT),
+                                         (tail, "Tail-", TROPHY_TAIL_AT)):
+        worn_root = graft(attachment, copy.deepcopy(horse_root), lambda name: name, prefix)["nodes"][0]
+        for holder in worn_root.get("children", []):
+            shift_uv(holder, dx, dy)
+            holders.append(holder)
+    horse_root.setdefault("children", []).extend(holders)
+    for node in walk([horse_root]):
+        node.pop("id", None)
+        settings = (node.get("shape") or {}).get("settings")
+        if settings is not None and settings.get("isPiece"):
+            settings["isPiece"] = False
+    return horse_root
+
+
+def steed_trophy_model(horse, barding, tail):
+    """The Horseman's Steed Trophy: his black horse (steed_rig) shrunk by K_TROPHY and stood on a
+    plinth whose size follows the horse's, at the block's centre. Returns the model and the
+    plinth's (width, height, depth) in px, which the atlas paints the plinth's top to."""
+    horse_root = steed_rig(horse, barding, tail)
+    scale_tree(horse_root, K_TROPHY)
+    lo, hi = extent([horse_root])
+    width = int(math.ceil(hi[0] - lo[0])) + TROPHY_PLINTH_MARGIN
+    depth = int(math.ceil(hi[2] - lo[2])) + TROPHY_PLINTH_MARGIN
+    width, depth = width + width % 2, depth + depth % 2
+    plinth = (width, TROPHY_PLINTH_HEIGHT, depth)
+    if width > 32 or depth > 32:
+        raise ValueError(f"the plinth {plinth} outgrows its 32x32 paint; lower K_TROPHY")
+    horse_root["position"] = vec((-(lo[0] + hi[0]) / 2, TROPHY_PLINTH_HEIGHT - lo[1], -(lo[2] + hi[2]) / 2))
+    top, side = TROPHY_PLINTH_TOP_AT, TROPHY_PLINTH_SIDE_AT
+    faces = {"top": top, "bottom": top, "front": side, "back": side, "left": side, "right": side}
+    root = none_node("Steed_Trophy", (0, 0, 0), (0, 0, 0, 1), False)
+    root["children"].append(box_node("Plinth", (0, TROPHY_PLINTH_HEIGHT / 2, 0), (0, 0, 0, 1),
+                                     plinth, (1, 1, 1), faces))
+    root["children"].append(horse_root)
+    return finish_model(root), plinth
+
+
 # =========================================================================================
 # Textures
 # =========================================================================================
@@ -1405,6 +1509,52 @@ def geode_wraith_texture(texture):
     return rgba
 
 
+def reins_texture(texture):
+    """The Horseman's Reins: the vanilla leather strap's shading on black leather, its brightest
+    edges going the rotted green of his horse's tail."""
+    rgba = texture.astype(np.float64) / 255.0
+    opaque = rgba[..., 3] > 0
+    lum = luminance(rgba[..., :3])
+    lo, hi = float(lum[opaque].min()), float(lum[opaque].max())
+    colour = ramp((lum - lo) / max(hi - lo, 1e-6),
+                  [(0.0, "#141116"), (0.5, "#2d2831"), (0.8, "#4b4452"), (1.0, "#86a85e")])
+    rgba[..., :3] = np.where(opaque[..., None], colour, rgba[..., :3])
+    return rgba
+
+
+def paste(atlas, rgba, at):
+    """Copies an RGBA uint8 texture onto a float atlas with its top-left corner at `at`."""
+    x, y = at
+    h, w = rgba.shape[:2]
+    if y + h > atlas.shape[0] or x + w > atlas.shape[1]:
+        raise ValueError(f"a {w}x{h} texture at {at} runs off the {atlas.shape[1]}x{atlas.shape[0]} atlas")
+    atlas[y:y + h, x:x + w] = rgba.astype(np.float64) / 255.0
+
+
+def steed_trophy_texture(coat, barding, tail, plinth):
+    """The Steed Trophy's atlas: the horse's coat, its barding's and its tail's textures side by
+    side, and below the tail's the plinth: a black stone top `plinth` sized, edged in gold, and a
+    side strip with the gold edge along its top row."""
+    rgba = np.zeros((TROPHY_ATLAS[1], TROPHY_ATLAS[0], 4))
+    paste(rgba, coat, TROPHY_COAT_AT)
+    paste(rgba, barding, TROPHY_BARDING_AT)
+    paste(rgba, tail, TROPHY_TAIL_AT)
+    width, _, depth = plinth
+    x, y = TROPHY_PLINTH_TOP_AT
+    ys, xs = np.mgrid[y:y + depth, x:x + width]
+    stone = ramp(0.6 * hash01(xs // 2, ys // 2, 70) + 0.4 * hash01(xs, ys, 71),
+                 [(0.0, "#121013"), (1.0, "#2b252a")])
+    edge = (xs == x) | (xs == x + width - 1) | (ys == y) | (ys == y + depth - 1)
+    rgba[y:y + depth, x:x + width, :3] = np.where(edge[..., None], hex_rgb("#c9973a"), stone)
+    rgba[y:y + depth, x:x + width, 3] = 1.0
+    x, y = TROPHY_PLINTH_SIDE_AT
+    strip = ["#e2b457", "#1f1a1e", "#191518", "#0f0c0e"]
+    for row, colour in enumerate(strip):
+        rgba[y + row, x:x + 32, :3] = hex_rgb(colour)
+    rgba[y:y + len(strip), x:x + 32, 3] = 1.0
+    return rgba
+
+
 def png_bytes(image):
     buffer = io.BytesIO()
     image.save(buffer, format="PNG", compress_level=9)
@@ -1654,6 +1804,8 @@ ICON_PLAN = [
      f"{HE_ITEMS}/Ectoplasm/Ectoplasm_Texture.png", ANGLE_ESSENCE, 64),
     (ICONS, "Hallows_Eve_Carving_Bench", f"{HE_BLOCKS}/Carving_Bench/Carving_Bench.blockymodel",
      f"{HE_BLOCKS}/Carving_Bench/Carving_Bench_Texture.png", ANGLE_BLOCK, 64),
+    (ICONS, "Hallows_Eve_Horsemans_Steed_Trophy", STEED_TROPHY, STEED_TROPHY_TEXTURE, ANGLE_BLOCK, 64),
+    (ICONS, "Hallows_Eve_Horsemans_Reins", STRAP, REINS_TEXTURE, ANGLE_REINS, 64),
     (MODEL_ICONS, "Hallows_Eve_Lost_Soul", f"{HE_NPCS}/Lost_Soul/Lost_Soul.blockymodel",
      f"{HE_NPCS}/Lost_Soul/Lost_Soul_Texture.png", ANGLE_MODEL, 128),
     (MODEL_ICONS, "Hallows_Eve_Geode_Wraith", f"{HE_NPCS}/Geode_Wraith/Geode_Wraith.blockymodel",
@@ -1662,6 +1814,7 @@ ICON_PLAN = [
      f"{HE_NPCS}/Hollow_Ghoul/Hollow_Ghoul_Texture.png", ANGLE_MODEL, 128),
     (MODEL_ICONS, "Hallows_Eve_Headless_Horseman", f"{HORSEMAN}/Headless_Horseman.blockymodel",
      SKELETON_BURNT_TEXTURE, ANGLE_MODEL, 128),
+    (MODEL_ICONS, "Hallows_Eve_Horsemans_Steed", STEED_PORTRAIT, STEED_TROPHY_TEXTURE, ANGLE_MODEL, 128),
     *[(ICONS, icon, worn(model), ARMOR_TEXTURES[model][tier], ANGLE_ARMOR, 64)
       for icon, model, tier in ARMOR_ICONS],
 ]
@@ -1688,6 +1841,17 @@ def load_armor(art_dir):
     return models, textures
 
 
+def load_horse(art_dir):
+    """The hand-made black horse art from the pack: ({model path: model dict}, {texture path: rgba})."""
+    models = {rel: json.loads((art_dir / rel).read_text(encoding="utf-8-sig"))
+              for rel in (HORSE_BARDING, HORSE_TAIL)}
+    textures = {}
+    for rel in (HORSE_COAT, HORSE_BARDING_TEXTURE, HORSE_TAIL_TEXTURE):
+        with Image.open(art_dir / rel) as image:
+            textures[rel] = np.array(image.convert("RGBA"))
+    return models, textures
+
+
 def build(seed_dir, art_dir=PACK / "Common"):
     """Returns ({pack-relative path: bytes}, {Common/-relative model path: model dict, the vanilla
     rigs an icon renders from, the hand-made armour and its worn icon models included},
@@ -1695,6 +1859,8 @@ def build(seed_dir, art_dir=PACK / "Common"):
     seed_base, seed_texture = load_seed(seed_dir)
     vanilla = load_vanilla(seed_dir)
     armor, armor_textures = load_armor(art_dir)
+    horse_art, horse_textures = load_horse(art_dir)
+    trophy, plinth = steed_trophy_model(vanilla[HORSE], horse_art[HORSE_BARDING], horse_art[HORSE_TAIL])
     models = {
         f"{HE_ITEMS}/Lantern_Bomb/Lantern_Bomb.blockymodel": bomb_model(seed_base, center=False),
         f"{HE_ITEMS}/Lantern_Bomb/Lantern_Bomb_Center.blockymodel": bomb_model(seed_base, center=True),
@@ -1714,6 +1880,7 @@ def build(seed_dir, art_dir=PACK / "Common"):
         f"{HORSEMAN}/Horseman_Head_Helm.blockymodel": horseman_head_helm_model(seed_base),
         **{rider: rider_armor_model(vanilla[SKELETON], armor[source], prefix)
            for rider, source, prefix in RIDER_ARMOR},
+        STEED_TROPHY: trophy,
     }
     images = {f"{HE_ITEMS}/{name}": paint.rgba for name, paint in textures(seed_texture).items()}
     images[f"{HE_ITEMS}/Cursed_Geode/Cursed_Geode_Texture.png"] = geode_texture()
@@ -1724,6 +1891,10 @@ def build(seed_dir, art_dir=PACK / "Common"):
     images[f"{HE_NPCS}/Lost_Soul/Lost_Soul_Texture.png"] = soul_texture(vanilla[SPIRIT_TEXTURE])
     images[f"{HE_NPCS}/Geode_Wraith/Geode_Wraith_Texture.png"] = geode_wraith_texture(vanilla[WRAITH_TEXTURE])
     images[f"{HE_NPCS}/Hollow_Ghoul/Hollow_Ghoul_Texture.png"] = hollow_ghoul_texture(vanilla[GHOUL_TEXTURE])
+    images[STEED_TROPHY_TEXTURE] = steed_trophy_texture(
+        horse_textures[HORSE_COAT], horse_textures[HORSE_BARDING_TEXTURE], horse_textures[HORSE_TAIL_TEXTURE],
+        plinth)
+    images[REINS_TEXTURE] = reins_texture(vanilla[STRAP_TEXTURE])
     outputs = {}
     for name, model in models.items():
         outputs[f"Common/{name}"] = (json.dumps(model, indent=2) + "\n").encode("utf-8")
@@ -1739,6 +1910,8 @@ def build(seed_dir, art_dir=PACK / "Common"):
     rigs[WAND] = vanilla[WAND]
     rigs[ESSENCE] = vanilla[ESSENCE]
     rigs[GHOUL] = vanilla[GHOUL]
+    rigs[STRAP] = vanilla[STRAP]
+    rigs[STEED_PORTRAIT] = finish_model(steed_rig(vanilla[HORSE], horse_art[HORSE_BARDING], horse_art[HORSE_TAIL]))
     rigs.update(armor)
     for name, model in armor.items():
         rigs[worn(name)] = armor_icon_model(vanilla[PLAYER], name, model)

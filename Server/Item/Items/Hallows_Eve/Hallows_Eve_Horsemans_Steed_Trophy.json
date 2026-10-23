@@ -1,0 +1,34 @@
+{
+  "$Comment": "The Horseman's Steed Trophy: a tiny figure of the Headless Horseman's black horse in its barding, on a black plinth edged in gold, to place as a block. It drops on every server, with or without Alec's Tamework, as its own roll in his Boss Kill Claim: Hallows_Eve_Horseman_Chase.json and Hallows_Eve_Horseman_Chase_Hard.json under ZiggfreedCommon/Lootables/HallowsEvePack, so change its odds there. It places like the game's statues and plush figures (a model block that turns to face you, standing on the block below), and breaks back into the item by hand. tools/derive_art.py builds its model from the horse his mounted model rides, shrunk and stood on the plinth, with the coat, barding and tail textures on one atlas, since a block wears one texture; it draws the icon too.",
+  "TranslationProperties": {
+    "Name": "items.Hallows_Eve_Horsemans_Steed_Trophy.name",
+    "Description": "items.Hallows_Eve_Horsemans_Steed_Trophy.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Hallows_Eve_Horsemans_Steed_Trophy.png",
+  "Quality": "Epic",
+  "Categories": ["Blocks.Deco"],
+  "Interactions": {"Primary": "Block_Primary", "Secondary": "Block_Secondary"},
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Hallows_Eve/Steed_Trophy/Steed_Trophy.blockymodel",
+    "CustomModelTexture": [
+      {"Texture": "Blocks/Hallows_Eve/Steed_Trophy/Steed_Trophy_Texture.png", "Weight": 1}
+    ],
+    "HitboxType": "Plant_Large",
+    "VariantRotation": "NESW",
+    "Flags": {},
+    "Support": {"Down": [{"FaceType": "Full"}]},
+    "Gathering": {"Breaking": {"GatherType": "Woods"}},
+    "BlockParticleSetId": "Stone",
+    "BlockSoundSetId": "Stone",
+    "PhysicalMaterialId": "Stone",
+    "TextureComputedColor": "#1B171A"
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {"Scale": 0.6, "Rotation": [22.5, 45.0, 22.5], "Translation": [-1.0, -15.0]},
+  "Tags": {"Type": ["Deco"]},
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "MaxStack": 25
+}

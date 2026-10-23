@@ -16,6 +16,7 @@
     "Ziggfreed:RpgStations": ">=1.1.1"
   },
   "OptionalDependencies": {
-    "Ziggfreed:MMOSkillTree": "*"
+    "Ziggfreed:MMOSkillTree": "*",
+    "Alechilles:Alec's Tamework!": ">=5.0.0 <6.0.0"
   }
 }
