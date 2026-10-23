@@ -2,7 +2,7 @@
 
 Yearly events for your Hytale server. Hallow's Eve runs from October 1 to November 12, and every January 13 is Hytale's Anniversary.
 
-Hallow's Eve brings creatures, quests, items and achievements, with a host, Old Jack, in the Forgotten Temple. It needs Ziggfreed's CommonLib 2.5.0 or newer and RPG Stations 1.1.1 or newer, on a Hytale Update 7 server. MMO Skill Tree is optional. Everything plays in nine languages.
+Hallow's Eve brings creatures, quests, items and achievements, with a host, Old Jack, in the Forgotten Temple. It needs Ziggfreed's CommonLib 2.5.1 or newer and RPG Stations 1.1.1 or newer, on a Hytale Update 7 server. MMO Skill Tree and Alec's Tamework are optional. Everything plays in nine languages.
 
 [![Discord](https://img.shields.io/badge/Discord-Join%20Server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/5NFdZsUxHZ) [![Ko-fi](https://img.shields.io/badge/Ko--fi-Support-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/ziggfreed) [![Documentation](https://img.shields.io/badge/Docs-Read%20More-0ea5e9?style=for-the-badge)](https://mmo-skill-tree-docs.ziggfreed.com)
 
@@ -16,11 +16,11 @@ Hallow's Eve brings creatures, quests, items and achievements, with a host, Old 
 
 - **Old Jack**, a pumpkin-headed host, sets up in the Forgotten Temple. His story runs through eight quests, out to the Horseman's graveyard and back, and ends with lighting the Hollow Lantern, a keepsake with the year on it.
 - Old Jack's board posts a job for the night and one for the day, every day, beside his three dailies and two small errands that change every four hours. Ask him "What needs doing?" and one list shows them all. Take them, hand them in and collect your pay at Jack.
-- **The Headless Horseman** rides his own graveyard. Buy a Grave Candle at Old Jack's shop once he counts you a Regular, and the Gravekeeper beside him burns it to let you in, alone or with up to four friends, and the Horseman gets tougher with each of you. Four Jack Skeletons guard his fountain until you put them down. He fights from the saddle, then on foot, and his head flies off: he can't be hurt until you cut it down. Ask Old Jack about the Horseman for a hint. Die in his graveyard and you keep your items.
-- Finish Old Jack's quest The Rider and the Gravekeeper takes you on the hard ride, for a Burning Grave Candle that Old Jack sells once you're Trusted with him. There he waits behind three waves of Jack Skeletons and Jack Archers, and more waves rise as his health falls. He has about twice the health and hits harder. He pays better for it.
+- **The Headless Horseman** rides his own graveyard. Buy a Grave Candle at Old Jack's shop once he counts you a Regular, and the Gravekeeper beside him burns it to let you in, alone or with up to four friends, and the Horseman gets tougher with each of you. Four Jack Skeletons guard his fountain until you put them down. He fights from the saddle, then on foot, and his head flies off: he can't be hurt until you cut it down. As his health falls, his pumpkins hatch Pumpkin Fiends. Ask Old Jack about the Horseman for a hint. Die in his graveyard and you keep your items.
+- Finish Old Jack's quest The Rider and the Gravekeeper takes you on the hard ride, for a Burning Grave Candle that Old Jack sells once you're Trusted with him. There he waits behind three waves of Jack Skeletons and Jack Archers, and as his health falls his pumpkins hatch five Pumpkin Fiends at a time, with two more Jack Archers. He has about twice the health and hits harder. He pays better for it.
 - Every clear leaves a chest where he falls, with Hallow Sweets, Festival Tokens, Essence of Fire, Ectoplasm, a few random finds like Lantern Bombs or Fire Resistance Potions, and favor with Old Jack, the Hallowed and Festival Favor. A later clear the same day pays half.
-- Your first win each day adds his daily Claim and his Boss Kill Claim to that chest: Hallow Sweets, Ectoplasm, Festival Tokens, a Spectral Lantern Bomb and favor with Old Jack, a Grave Candle back half the time, and sometimes a piece of his armour or of the Flaming Hallowed set. All his armour comes from the Boss Kill Claim, and the hard ride's is the only place to find his Flaming Breastplate and the Eternal Candle, which opens the normal graveyard without ever burning down.
-- After dark, away from torches, Jack Skeletons, Hollow Ghouls and Lost Souls come out, and Geode Wraiths walk the mineshafts.
+- Your first win each day adds his daily Claim and his Boss Kill Claim to that chest: Hallow Sweets, Ectoplasm, Festival Tokens, a Spectral Lantern Bomb and favor with Old Jack, a Grave Candle back half the time, and sometimes a piece of his armour or of the Flaming Hallowed set. All his armour comes from the Boss Kill Claim, and the hard ride's is the only place to find his Flaming Breastplate and the Eternal Candle, which opens the normal graveyard without ever burning down. Once in a while the Boss Kill Claim holds the Horseman's Steed Trophy, a tiny figure of his black horse that you place as a block.
+- After dark, away from torches, Jack Skeletons, Hollow Ghouls and Lost Souls come out, Pumpkin Fiends roam the autumn forests in small packs, and Geode Wraiths walk the mineshafts.
 - Lantern Bombs, carved pumpkins packed with Boom Powder, in four tiers. They deal fire damage, and the stronger ones set creatures alight, slow them or throw flaming shards. Your own blast never hurts you, and it hurts other players only where PvP is on.
 - The Hallowed set: the Jack Helm and Jack Shield, with the Horseman's armour. Any piece with a shield in your off hand gives more health and less fire damage, and you glow like a lantern. Wear all four armour pieces and your fire hits harder.
 - The Flaming Hallowed set, the burning and flaming version of each piece, hits harder again. Both Jack Shields cut the fire damage you take, and Old Jack sells a Fire Resistance Potion that cuts it by about a third for three minutes, once he trusts you.
@@ -60,6 +60,12 @@ Add the [MMO Skill Bounty Pack](https://www.curseforge.com/hytale/mods/mmo-skill
 
 Add [MMO Mob Scaling](https://www.curseforge.com/hytale/mods/mmo-mob-scaling) and the Horseman grows with his graveyard's level, the same as his skeletons, so a stronger group meets a tougher Horseman.
 
+## With Alec's Tamework
+
+Install [Alec's Tamework](https://www.curseforge.com/hytale/mods/alecs-tamework) 5 and the Headless Horseman's Boss Kill Claim can drop the Horseman's Reins, which make his black barded horse yours to ride. They're very rare on the normal ride and 1 in 20 on the hard one. Right-click with the Reins to call your horse from your roster, then press F to ride. Only you can ride it. Old Jack buys a spare pair for Hallow Sweets.
+
+Without Tamework the Reins never drop, and the Almanac leaves them out.
+
 ## For server owners
 
 - Nothing to place. Each event starts and ends by date (UTC), and its host sets up on their own.
@@ -70,7 +76,7 @@ Add [MMO Mob Scaling](https://www.curseforge.com/hytale/mods/mmo-mob-scaling) an
 
 ## Install
 
-1. Run your server on Hytale's Update 7, with Ziggfreed's CommonLib (2.5.0 or newer) and RPG Stations (1.1.1 or newer).
+1. Run your server on Hytale's Update 7, with Ziggfreed's CommonLib (2.5.1 or newer) and RPG Stations (1.1.1 or newer).
 2. Drop the Seasons of Orbis zip into your server's `Mods/` folder beside them.
 3. Start the server. While a season runs, its host is in the Forgotten Temple.
 
@@ -83,6 +89,7 @@ Coming later this year: Harvest Feast, the next season.
 - [Ziggfreed's CommonLib](https://www.curseforge.com/hytale/mods/ziggfreeds-commonlib) (required)
 - [RPG Stations](https://www.curseforge.com/hytale/mods/rpg-stations) (required)
 - [MMO Skill Tree](https://www.curseforge.com/hytale/mods/mmo-skill-tree) (optional)
+- [Alec's Tamework](https://www.curseforge.com/hytale/mods/alecs-tamework) (optional)
 - [MMO Skill Bounty Pack](https://www.curseforge.com/hytale/mods/mmo-skill-tree-bounty-board-pack-rich-customizable)
 - [MMO Mob Scaling](https://www.curseforge.com/hytale/mods/mmo-mob-scaling)
 - [Documentation](https://mmo-skill-tree-docs.ziggfreed.com)
