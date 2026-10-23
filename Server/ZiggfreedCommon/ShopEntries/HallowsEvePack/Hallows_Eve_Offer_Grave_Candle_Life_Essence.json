@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Grave Candle again, priced in Life Essence: a second way to pay for the Headless Horseman's graveyard for a player who has essence to spare and no sweets. Life Essence is the bounty pack's wallet (Ziggfreed:MMOSkillBountyPack), not this pack's, so Requires carries that pack's hytale:mod_installed gate at the top level, Min 1: on a server without the bounty pack the library leaves this file out at load (one drop line for the ShopEntries store, no warning) and the stall shows only the Sweets offer. Beside it sits the Sweets offer's own lock, reputation_rank: it opens once Old Jack counts the player a Regular (Friendly with Old Jack's Favor), and a locked offer still shows on the shelf with its lock line; keep the two offers' locks the same. Life Essence is item-backed, so the price is taken as Ingredient_Life_Essence from the bag. SortOrder 6 sits it straight after the Sweets offer (Hallows_Eve_Offer_Grave_Candle.json, SortOrder 5) on the lanterns shelf. No purchase limit and no rotation, like the Sweets offer. Cost is the price in Life Essence. Named by the item's own keys.",
+  "$Comment": "The Grave Candle again, priced in Life Essence: a second way to pay for the Headless Horseman's graveyard for a player who has essence to spare and no sweets. Life Essence is item-backed (Currencies/MMOSkillTree/Life_Essence.json, taken as Ingredient_Life_Essence from the bag), so the offer works on every server. Requires is the Sweets offer's own lock, reputation_rank: it opens once Old Jack counts the player a Regular (Friendly with Old Jack's Favor), and a locked offer still shows on the shelf with its lock line; keep the two offers' locks the same. SortOrder 6 sits it straight after the Sweets offer (Hallows_Eve_Offer_Grave_Candle.json, SortOrder 5) on the lanterns shelf. No purchase limit and no rotation, like the Sweets offer. Cost is the price in Life Essence. Named by the item's own keys.",
   "Parent": "Hallows_Eve_Offer_Base",
   "Text": {
     "TitleKey": "items.Hallows_Eve_Grave_Candle.name",
@@ -7,12 +7,7 @@
   },
   "Listing": { "Category": "lights", "SortOrder": 6 },
   "Cost": { "Currencies": { "Life_Essence": 250 } },
-  "Requires": {
-    "Factors": [
-      { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillBountyPack", "Min": 1 },
-      { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Hallows_Eve_Old_Jack/Friendly", "Min": 1 }
-    ]
-  },
+  "Requires": { "Factors": [ { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Hallows_Eve_Old_Jack/Friendly", "Min": 1 } ] },
   "Rewards": [
     { "Kind": "Item", "Params": { "Item": "Hallows_Eve_Grave_Candle", "Count": 1 } }
   ]

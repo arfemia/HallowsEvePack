@@ -1,6 +1,6 @@
 {
   "$Comment": [
-    "One of Old Jack's three dailies, open once the first step of his questline is done.",
+    "One of Old Jack's four dailies, open once the first step of his questline is done.",
     "Repeat.Reset with Period Daily is a calendar daily: it comes back at midnight UTC, not a fixed",
     "number of hours after the last one. Each daily pays through Hallows_Eve_Daily_Pay, so retuning",
     "the pay is one edit there.",

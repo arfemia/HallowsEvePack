@@ -1,0 +1,15 @@
+{
+  "$Comment": "Life essence: an item-backed wallet, so a player's balance IS how many Ingredient_Life_Essence they are carrying. That means it can be dropped, traded and stored like any other item, and whatever this world already does with items on death applies to it. It needs no Icon and no name key of its own: with Backing authored, both come from the backing item. This pack ships it so Old Jack's candle offers can price in Life Essence on any server; The MMO Skill Tree family ships the same wallet at this same path and id (its Bounty pack, or MMO Skill Tree itself in later versions), and the copy that loads last wins, so keep every field here identical to theirs. It sits in their MMOSkillTree folder, not this pack's own, because it is their wallet, copied.",
+  "Backing": {
+    "Item": "Ingredient_Life_Essence"
+  },
+  "Color": "#a7e0a7",
+  "Cap": 0,
+  "Meta": {
+    "mmoskilltree": {
+      "ShowOnSidebar": true,
+      "ShowOnMasteryPage": true,
+      "XpConversionPercent": 0
+    }
+  }
+}

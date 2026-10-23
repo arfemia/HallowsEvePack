@@ -1,11 +1,11 @@
 {
-  "$Comment": "A Pumpkin Fiend Hatchling: the Pumpkin Fiend the Headless Horseman's pumpkins hatch in his graveyard as his health falls (his fights' FightWaves raise it). Players see the same creature: the same look (Hallows_Eve_Pumpkin_Fiend), the same nameplate and the same fight as the wild Hallows_Eve_Pumpkin_Fiend, whose comment says how it is built. It has an id of its own so that only the fight's own fiends are in Hallows_Eve_Horseman_Adds_Group: his fight waits for that group to die before he rises and removes it when the fight resets, and a wild fiend must never hold or be swept by a fight. Like every season creature here it is a Variant of the vanilla template carrying the vanilla creature's Modify, never a Variant of the wild fiend, so this Modify is that file's, word for word: change the two together. It never spawns in the wild. A kill pays Hallowed favor (it is in Hallows_Eve_Event_Mobs) and counts for Old Jack's fiend jobs.",
+  "$Comment": "A Pumpkin Fiend Hatchling: the Pumpkin Fiend the Headless Horseman's pumpkins hatch in his graveyard as his health falls, on the normal ride (that fight's FightWaves raise it; the hard ride raises Hallows_Eve_Pumpkin_Fiend_Hatchling_HM instead). Players see the same creature: the same look (Hallows_Eve_Pumpkin_Fiend), the same nameplate and the same fight as the wild Hallows_Eve_Pumpkin_Fiend, whose comment says how it is built, with twice its health (MaxHealth 60 against 30), so the fiends in his fight last long enough to matter. It has an id of its own so that only the fight's own fiends are in Hallows_Eve_Horseman_Adds_Group: his fight waits for that group to die before he rises and removes it when the fight resets, and a wild fiend must never hold or be swept by a fight. Like every season creature here it is a Variant of the vanilla template carrying the vanilla creature's Modify, never a Variant of the wild fiend, so this Modify is that file's and the hard Hatchling's word for word except MaxHealth and FlockArray: change the three together. It never spawns in the wild. A kill pays Hallowed favor (it is in Hallows_Eve_Event_Mobs) and counts for Old Jack's fiend jobs.",
   "Type": "Variant",
   "Reference": "Template_Intelligent",
   "Modify": {
     "DisableDamageGroups": ["Self", "Skeleton"],
     "DeathParticles": "Effect_Death_Medium",
-    "MaxHealth": 30,
+    "MaxHealth": 60,
     "MaxSpeed": 6,
     "ChaseRelativeSpeed": 1,
     "HearingRange": 10,
