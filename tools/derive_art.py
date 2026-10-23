@@ -18,6 +18,8 @@ What it writes (pack-relative):
   Common/Items/Hallows_Eve/<Model>/<Model>.blockymodel  seven item models, each a vanilla
       rig around seed or scripted geometry; scaling goes through `shape.stretch`, so every
       `settings.size` stays an integer and the UVs stay locked to it.
+  Common/Items/Hallows_Eve/Horseman_Breastplate/        the chest both Horseman's Breastplates wear
+      on a player: his collar chest with its high collar and cape cut away (PLAYER_CHEST_CUT).
   Common/Items/Hallows_Eve/<Model>/*_Texture.png        Pillow/numpy textures: variants of
       the seed texture, recolours of the vanilla wand and essence textures, and the painted
       Cursed Geode.
@@ -45,9 +47,7 @@ What it writes (pack-relative):
 What it reads from the pack and never writes: the artist's hand-made Headless Horseman art, copied
 into Common/ as it came. Common/Items/Hallows_Eve/Horseman_Armor/ holds his armour (the collar
 chest, hands, legs and helm, each with a plain and a gold texture), which the Horseman and the
-chase set wear, and Horseman_Armor/Breastplates/ the artist's export of the chest and the collar
-chest for a player, their collar lowered to a mantle, which the two Breastplates wear in those
-textures (the Horseman keeps his own); the rider's armour and the set's icons derive from them.
+chase set wear; the rider's armour, the Breastplates' chest and the set's icons derive from it.
 Common/NPC/Hallows_Eve/Headless_Horseman/Horse/ holds his black horse's texture, barding and
 rotted tail, which his mounted Model JSON and the steed's name directly, and which the Steed
 Trophy is baked from. Replace those files to change his look.
@@ -359,24 +359,27 @@ HEAD_HELM_SHIFT = (0, -3, -5)
 # --- the Horseman's armour: hand-made art, read from the pack (see the module notes) ----------
 HORSEMAN_ARMOR = f"{HE_ITEMS}/Horseman_Armor"
 ARMOR_COLLAR_CHEST = f"{HORSEMAN_ARMOR}/Headless_Horseman_Collar_Chest.blockymodel"
-# The Breastplates' chests: the artist's export for a player (see the module notes).
-BREASTPLATE_CHEST = f"{HORSEMAN_ARMOR}/Breastplates/Headless_Horseman_Chest.blockymodel"
-BREASTPLATE_COLLAR_CHEST = f"{HORSEMAN_ARMOR}/Breastplates/Headless_Horseman_Collar_Chest.blockymodel"
 ARMOR_HANDS = f"{HORSEMAN_ARMOR}/Headless_Horseman_Hands.blockymodel"
 ARMOR_LEGS = f"{HORSEMAN_ARMOR}/Headless_Horseman_Legs.blockymodel"
 ARMOR_HELM = f"{HORSEMAN_ARMOR}/Headless_Horseman_Head.blockymodel"
 CHEST_TEXTURES = (f"{HORSEMAN_ARMOR}/Chest_Texture.png", f"{HORSEMAN_ARMOR}/Chest_Texture_Gold.png")
 # Each model's textures: the plain one first, then the gold one the Flaming pieces and the hard
-# ride wear. Every chest shares one texture.
+# ride wear.
 ARMOR_TEXTURES = {
     ARMOR_COLLAR_CHEST: CHEST_TEXTURES,
-    BREASTPLATE_CHEST: CHEST_TEXTURES,
-    BREASTPLATE_COLLAR_CHEST: CHEST_TEXTURES,
     ARMOR_HANDS: (f"{HORSEMAN_ARMOR}/Hands_Texture.png", f"{HORSEMAN_ARMOR}/Hands_Texture_Gold.png"),
     ARMOR_LEGS: (f"{HORSEMAN_ARMOR}/Legs_Texture.png", f"{HORSEMAN_ARMOR}/Legs_Texture_Gold.png"),
     ARMOR_HELM: (f"{HORSEMAN_ARMOR}/Head_Texture.png", f"{HORSEMAN_ARMOR}/Head_Texture_Gold.png"),
 }
 PLAIN, GOLD = 0, 1
+# The chest both Breastplates wear on a player, in their two textures: the collar chest with these
+# subtrees cut whole. His high collar is built to fill a headless neck (its plates, the Fire node
+# and the collar's back), so on a player it swallows the chin; the three cape panels hang to the
+# heels. What is left is his plate, emblem, pauldrons and skirt.
+PLAYER_CHEST = f"{HE_ITEMS}/Horseman_Breastplate/Horseman_Breastplate.blockymodel"
+PLAYER_CHEST_CUT = ("Collar", "Cape2", "Cape5", "Cape6")
+# Every model a chase-set piece wears, with its two textures.
+WORN_TEXTURES = {**ARMOR_TEXTURES, PLAYER_CHEST: CHEST_TEXTURES}
 # The rider wears what the Horseman wears on foot: the collar chest (its Fire node is where his
 # Model JSONs light the flame in his neck), the legs and the hands, each worn on the seated rider.
 RIDER_ARMOR = [
@@ -389,11 +392,11 @@ RIDER_ARMOR = [
 # own armour icons (the whole chest and helm, but one glove and one leg, the right ones).
 ARMOR_ICONS = [
     # icon id, armour model, texture (PLAIN or GOLD)
-    ("Hallows_Eve_Horseman_Breastplate", BREASTPLATE_CHEST, PLAIN),
+    ("Hallows_Eve_Horseman_Breastplate", PLAYER_CHEST, PLAIN),
     ("Hallows_Eve_Horseman_Gauntlets", ARMOR_HANDS, PLAIN),
     ("Hallows_Eve_Horseman_Greaves", ARMOR_LEGS, PLAIN),
     ("Hallows_Eve_Horseman_Helm", ARMOR_HELM, PLAIN),
-    ("Hallows_Eve_Flaming_Horseman_Breastplate", BREASTPLATE_COLLAR_CHEST, GOLD),
+    ("Hallows_Eve_Flaming_Horseman_Breastplate", PLAYER_CHEST, GOLD),
     ("Hallows_Eve_Flaming_Horseman_Gauntlets", ARMOR_HANDS, GOLD),
     ("Hallows_Eve_Flaming_Horseman_Greaves", ARMOR_LEGS, GOLD),
     ("Hallows_Eve_Flaming_Horseman_Helm", ARMOR_HELM, GOLD),
@@ -1001,6 +1004,32 @@ def rider_armor_model(skeleton, armor, prefix):
     """A piece of the Horseman's armour as the rider wears it: worn on the seated rider, whose
     nodes carry RIDER_PREFIX, under the same Saddle-Attachment root as the rider himself."""
     return graft(armor, horseman_rider(skeleton), lambda name: RIDER_PREFIX + name, prefix)
+
+
+def player_chest_model(collar_chest):
+    """The Breastplates' chest: the collar chest with PLAYER_CHEST_CUT's subtrees cut whole. Every
+    other node stays as the artist made it, renumbered depth first across its roots."""
+    model = copy.deepcopy(collar_chest)
+    cut = set()
+
+    def keep(nodes):
+        kept = []
+        for node in nodes:
+            if node["name"] in PLAYER_CHEST_CUT:
+                cut.add(node["name"])
+                continue
+            if "children" in node:
+                node["children"] = keep(node["children"])
+            kept.append(node)
+        return kept
+
+    model["nodes"] = keep(model["nodes"])
+    missing = sorted(set(PLAYER_CHEST_CUT) - cut)
+    if missing:
+        raise ValueError(f"the collar chest has no {', '.join(missing)} to cut")
+    for number, node in enumerate(walk(model["nodes"]), 1):
+        node["id"] = str(number)
+    return model
 
 
 def armor_icon_model(player, armor_name, armor):
@@ -1820,19 +1849,19 @@ ICON_PLAN = [
     (MODEL_ICONS, "Hallows_Eve_Headless_Horseman", f"{HORSEMAN}/Headless_Horseman.blockymodel",
      SKELETON_BURNT_TEXTURE, ANGLE_MODEL, 128),
     (MODEL_ICONS, "Hallows_Eve_Horsemans_Steed", STEED_PORTRAIT, STEED_TROPHY_TEXTURE, ANGLE_MODEL, 128),
-    *[(ICONS, icon, worn(model), ARMOR_TEXTURES[model][tier], ANGLE_ARMOR, 64)
+    *[(ICONS, icon, worn(model), WORN_TEXTURES[model][tier], ANGLE_ARMOR, 64)
       for icon, model, tier in ARMOR_ICONS],
 ]
 
 # Models drawn on textures no icon renders them with: the Horseman's attachments, and the
-# hand-made armour itself, checked against both its textures.
+# armour itself (hand-made, and the Breastplates' cut chest), checked against both its textures.
 ATTACHMENT_TEXTURES = {
     f"{HORSEMAN}/Horseman_Rider.blockymodel": (SKELETON_BURNT_TEXTURE,),
     f"{HORSEMAN}/Horseman_Rider_Lantern.blockymodel": (f"{HE_ITEMS}/Jack_Lantern/Jack_Lantern_Texture.png",),
     f"{HORSEMAN}/Horseman_Lantern.blockymodel": (f"{HE_ITEMS}/Jack_Lantern/Jack_Lantern_Texture.png",),
     f"{HORSEMAN}/Horseman_Head_Helm.blockymodel": (f"{HE_ITEMS}/Jack_Helm/Jack_Helm_Texture.png",),
     **{rider: ARMOR_TEXTURES[armor] for rider, armor, _ in RIDER_ARMOR},
-    **ARMOR_TEXTURES,
+    **WORN_TEXTURES,
 }
 
 
@@ -1885,6 +1914,7 @@ def build(seed_dir, art_dir=PACK / "Common"):
         f"{HORSEMAN}/Horseman_Head_Helm.blockymodel": horseman_head_helm_model(seed_base),
         **{rider: rider_armor_model(vanilla[SKELETON], armor[source], prefix)
            for rider, source, prefix in RIDER_ARMOR},
+        PLAYER_CHEST: player_chest_model(armor[ARMOR_COLLAR_CHEST]),
         STEED_TROPHY: trophy,
     }
     images = {f"{HE_ITEMS}/{name}": paint.rgba for name, paint in textures(seed_texture).items()}
@@ -1919,7 +1949,7 @@ def build(seed_dir, art_dir=PACK / "Common"):
     rigs[STEED_PORTRAIT] = finish_model(steed_rig(vanilla[HORSE], horse_art[HORSE_BARDING], horse_art[HORSE_TAIL]))
     rigs.update(armor)
     for name in dict.fromkeys(model for _, model, _ in ARMOR_ICONS):   # the armour an icon draws
-        rigs[worn(name)] = armor_icon_model(vanilla[PLAYER], name, armor[name])
+        rigs[worn(name)] = armor_icon_model(vanilla[PLAYER], name, rigs[name])
     for folder, icon, model_name, texture_name, angles, size in ICON_PLAN:
         outputs[f"{folder}/{icon}.png"] = icon_png(rigs[model_name], texture_rgba[texture_name], angles, size)
     return dict(sorted(outputs.items())), rigs, texture_rgba
