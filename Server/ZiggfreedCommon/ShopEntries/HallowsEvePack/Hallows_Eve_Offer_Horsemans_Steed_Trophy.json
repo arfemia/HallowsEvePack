@@ -1,0 +1,14 @@
+{
+  "$Comment": "The Horseman's Steed Trophy, the tiny figure of his black horse placed as a block, for Hallow Sweets and Festival Tokens together: a sure way to one for a player his Boss Kill Claim has not paid it to. Requires opens it once Old Jack counts the player a Confidant (Revered with Old Jack's Favor), a rank above the Burning Grave Candle's Trusted; a locked offer still shows on the shelf with its lock line. SortOrder 70 puts it last on the decorations shelf, after the Halloween Wagon. No purchase limit and no rotation. Cost is the price: Hallow Sweets and Festival Tokens, the cross-season currency every season pays, charged together. Named by the item's own keys.",
+  "Parent": "Hallows_Eve_Offer_Base",
+  "Text": {
+    "TitleKey": "items.Hallows_Eve_Horsemans_Steed_Trophy.name",
+    "FlavorKey": "items.Hallows_Eve_Horsemans_Steed_Trophy.description"
+  },
+  "Listing": { "Category": "decor", "SortOrder": 70 },
+  "Cost": { "Currencies": { "Hallows_Eve_Sweets": 250, "Seasons_Of_Orbis_Festival_Token": 85 } },
+  "Requires": { "Factors": [ { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Hallows_Eve_Old_Jack/Revered", "Min": 1 } ] },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Hallows_Eve_Horsemans_Steed_Trophy", "Count": 1 } }
+  ]
+}
