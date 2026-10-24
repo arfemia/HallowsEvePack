@@ -1,0 +1,34 @@
+{
+  "$Comment": "The Headless Horseman in the saddle on the hard ride: Hallows_Eve_Headless_Horseman_Mounted with the rider's armour in its gold textures, the same gold his Flaming chase pieces wear, so the hard ride shows at a glance. Parent brings everything else: the black horse, its barding and rotted tail, the flying strides, the green flame in his neck, his size and his green glow. DefaultAttachments replaces the parent's list whole, so it restates every attachment: the barding, the tail, the rider and his lantern as they were, and his collar chest, legs and hands in gold. Hallows_Eve_Headless_Horseman_Mounted_HM (the role) names it as its Appearance.",
+  "Parent": "Hallows_Eve_Headless_Horseman_Mounted",
+  "DefaultAttachments": [
+    {
+      "Model": "NPC/Hallows_Eve/Headless_Horseman/Horse/Armor.blockymodel",
+      "Texture": "NPC/Hallows_Eve/Headless_Horseman/Horse/Armor_black.png"
+    },
+    {
+      "Model": "NPC/Hallows_Eve/Headless_Horseman/Horse/Mane.blockymodel",
+      "Texture": "NPC/Hallows_Eve/Headless_Horseman/Horse/Mane_rotted_green.png"
+    },
+    {
+      "Model": "NPC/Hallows_Eve/Headless_Horseman/Horseman_Rider.blockymodel",
+      "Texture": "NPC/Undead/Skeleton/Models/Model_Textures/Burnt.png"
+    },
+    {
+      "Model": "NPC/Hallows_Eve/Headless_Horseman/Horseman_Rider_Chest.blockymodel",
+      "Texture": "Items/Hallows_Eve/Horseman_Armor/Chest_Texture_Gold.png"
+    },
+    {
+      "Model": "NPC/Hallows_Eve/Headless_Horseman/Horseman_Rider_Legs.blockymodel",
+      "Texture": "Items/Hallows_Eve/Horseman_Armor/Legs_Texture_Gold.png"
+    },
+    {
+      "Model": "NPC/Hallows_Eve/Headless_Horseman/Horseman_Rider_Hands.blockymodel",
+      "Texture": "Items/Hallows_Eve/Horseman_Armor/Hands_Texture_Gold.png"
+    },
+    {
+      "Model": "NPC/Hallows_Eve/Headless_Horseman/Horseman_Rider_Lantern.blockymodel",
+      "Texture": "Items/Hallows_Eve/Jack_Lantern/Jack_Lantern_Texture.png"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "$Comment": "The Horseman's Reins' roster in Alec's Tamework: the one family in it holds the Horseman's Steed (the role Hallows_Eve_Horsemans_Steed). Only Tamework reads this folder; on a server without it the file sits unread. A player owns at most one steed (MaximumOwned 1) and has at most one out (MaximumActive 1). No time limit on a ride and no waits (the three 0s): Tamework still puts it away when its owner logs out or changes world, and SUMMON calls it back. Features: the Boss Kill Claim gives the steed through Tamework's grant command (Provision), the Reins' roster calls it out, puts it away and brings it back for free if it dies (Summon, Dismiss, Revive), and no capture item can put a horse into it (Capture). NameKey names the family in the roster panel (npcs.lang). The Reins' command-item file (Server/Tamework/Items/Commands/) and the Claim's grant command name RosterId exactly, so change all three together.",
+  "Priority": 0,
+  "RosterId": "SeasonsOfOrbis:Hallows_Eve_Horsemans_Reins",
+  "FamilyId": "SeasonsOfOrbis:Hallows_Eve_Horsemans_Steed",
+  "NameKey": "npcs.Hallows_Eve_Horsemans_Steed.family",
+  "AllowedRoles": [ "Hallows_Eve_Horsemans_Steed" ],
+  "MaximumOwned": 1,
+  "MaximumActive": 1,
+  "SessionDurationSeconds": 0,
+  "SummonCooldownSeconds": 0,
+  "ReviveCooldownSeconds": 0,
+  "Features": {
+    "Capture": false,
+    "Provision": true,
+    "Summon": true,
+    "Dismiss": true,
+    "Revive": true
+  }
+}

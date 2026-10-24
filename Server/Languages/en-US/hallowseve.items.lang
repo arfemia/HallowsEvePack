@@ -7,7 +7,7 @@ gearset.hallows_eve_hallowed.tier_pair = A piece of the set on and a Jack Shield
 gearset.hallows_eve_hallowed.tier_armor = Helm, breastplate, gauntlets and greaves on: a little more health, and anything you set alight burns hotter.
 gearset.hallows_eve_hallowed.tier_armor_shield = All four on and shield in hand: more health again, and your fire burns hotter still.
 gearset.hallows_eve_flaming_hallowed.title = Flaming Hallowed Set
-gearset.hallows_eve_flaming_hallowed.tier_armor = Burning helm and flaming armour on: more health, and anything you set alight burns a lot hotter.
+gearset.hallows_eve_flaming_hallowed.tier_armor = A Burning Jack Helm or the Flaming Horseman's Helm, with his flaming armour on: more health, and anything you set alight burns a lot hotter.
 gearset.hallows_eve_flaming_hallowed.tier_armor_shield = All four on and the Flaming Jack Shield in hand: more health again, and your fire burns hotter still.
 
 # The costumes' names, shown when a player hovers the costume's icon. The effect JSON spells the full

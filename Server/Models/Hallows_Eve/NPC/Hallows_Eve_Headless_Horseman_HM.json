@@ -1,0 +1,22 @@
+{
+  "$Comment": "The Headless Horseman on foot on the hard ride: Hallows_Eve_Headless_Horseman in his armour's gold textures, the same gold his Flaming chase pieces wear, so the hard ride shows at a glance. Parent brings everything else: the headless skeleton, his dash animations, the green flame in his neck, his size and his green glow. DefaultAttachments replaces the parent's list whole, so it restates every piece: the collar chest, legs and hands in gold, and the lantern as it was. Hallows_Eve_Headless_Horseman_HM (the role) names it as its Appearance.",
+  "Parent": "Hallows_Eve_Headless_Horseman",
+  "DefaultAttachments": [
+    {
+      "Model": "Items/Hallows_Eve/Horseman_Armor/Headless_Horseman_Collar_Chest.blockymodel",
+      "Texture": "Items/Hallows_Eve/Horseman_Armor/Chest_Texture_Gold.png"
+    },
+    {
+      "Model": "Items/Hallows_Eve/Horseman_Armor/Headless_Horseman_Legs.blockymodel",
+      "Texture": "Items/Hallows_Eve/Horseman_Armor/Legs_Texture_Gold.png"
+    },
+    {
+      "Model": "Items/Hallows_Eve/Horseman_Armor/Headless_Horseman_Hands.blockymodel",
+      "Texture": "Items/Hallows_Eve/Horseman_Armor/Hands_Texture_Gold.png"
+    },
+    {
+      "Model": "NPC/Hallows_Eve/Headless_Horseman/Horseman_Lantern.blockymodel",
+      "Texture": "Items/Hallows_Eve/Jack_Lantern/Jack_Lantern_Texture.png"
+    }
+  ]
+}

@@ -36,6 +36,8 @@ quest.hallows_eve_jack_daily_pumpkins.title = Tökszedő Kör
 quest.hallows_eve_jack_daily_pumpkins.flavor = A lámpások gyorsabban égetik el a Megszentelt Tököket, mint ahogy ki tudom faragni őket. Hozz még párat sötétedés előtt.
 quest.hallows_eve_jack_daily_geodes.title = Geodák Jacknek
 quest.hallows_eve_jack_daily_geodes.flavor = Törj fel nekem pár Átkozott Geodát. A kezem mostanában már túl merev hozzá.
+quest.hallows_eve_jack_daily_horseman.title = Újra a Nyeregben
+quest.hallows_eve_jack_daily_horseman.flavor = Megint a nyeregben ül, mint minden éjjel. Vigyél egy Sírgyertyát a Sírőrnek, és told le arról a lóról újra. A sima lovaglást, értsd jól, nem a nehezet.
 
 # ---- What Hallow's Eve's loot tables pay: the name on the reward, and the line under it on hover ----
 lootable.hallows_eve_meet_pay.title = Öreg Jack Üdvözlése
@@ -69,6 +71,7 @@ objective.hallows_eve.put_down_ghouls = Teríts le {0} Kongó Ghúlt
 objective.hallows_eve.free_souls = Szabadíts fel {0} Elveszett Lelket
 objective.hallows_eve.bring_ectoplasm = Hozz {0} Ektoplazmát
 objective.hallows_eve.knock_down_skeletons = Verj le {0} Jack-csontvázat
+objective.hallows_eve.squash_fiends = Taposs el {0} Tökszörnyet
 objective.hallows_eve.attend = Vegyél részt Mindenszentek Éjén
 
 # ---- Öreg Jack táblája ----
@@ -94,6 +97,8 @@ quest.hallows_eve_board_carving.title = Padon Faragva
 quest.hallows_eve_board_carving.flavor = Minden küszöbre jár egy lámpás, én meg csak olyan gyorsan faragok, amilyen gyorsan tudok. Faragj Jack-lámpásokat egy Faragópadon, darabonként egy tökből és egy kis faszénből.
 quest.hallows_eve_board_skeletons.title = Zörgő Csontok
 quest.hallows_eve_board_skeletons.flavor = Az én arcomat viselő csontvázak sötétedés után megint kint járnak, és zörögnek mindenhol, ahová a fáklyák fénye nem ér. Verj le belőlük egy jó párat nekem.
+quest.hallows_eve_board_fiends.title = Gyomlálás
+quest.hallows_eve_board_fiends.flavor = Sötétedés után Tökszörnyek kúsznak az őszi erdőben, ott, ahol a vadtökök teremnek. Taposs el belőlük jó párat nekem, mielőtt gyökeret vernek.
 
 # ---- Old Jack's errands board ----
 board.hallows_eve_errands.title = Öreg Jack Apró Munkái
@@ -105,6 +110,8 @@ quest.hallows_eve_errand_ghouls.title = Sírőrség
 quest.hallows_eve_errand_ghouls.flavor = Néhány Kongó Ghúl megint a síroknál kaparász. Tedd vissza őket, mielőtt elkóborolnak.
 quest.hallows_eve_errand_skeletons.title = Elszabadult Csontok
 quest.hallows_eve_errand_skeletons.flavor = Néhány Jack-csontváz elszabadult az éjjel. Verd le őket, ha sötétedés után kint jársz.
+quest.hallows_eve_errand_fiends.title = Rossz Magok
+quest.hallows_eve_errand_fiends.flavor = Pár Tökszörny kikelt az őszi erdőben. Taposd el őket, ha sötétedés után kint jársz.
 quest.hallows_eve_errand_ectoplasm.title = Pislákoló Lámpás
 quest.hallows_eve_errand_ectoplasm.flavor = Az egyik lámpásom pislákol. Egy kis Ektoplazma átvinné az éjszakán.
 quest.hallows_eve_errand_bombs.title = Bombagyakorlat
@@ -125,6 +132,8 @@ shop.hallows_eve_offer_harvest_moon_bundle.desc = Szilánkszóró és Kísértet
 shop.hallows_eve_offer_spyglass.desc = Nézz át rajta a Pislákoló Üregekben, hogy megtudd, hol van egy Ürességmegszállta fenevad.
 shop.hallows_eve_offer_sell_eternal_candle.title = Adj el egy Tartalék Örök Gyertyát
 shop.hallows_eve_offer_sell_eternal_candle.desc = Egyetlen Örök Gyertya elég a Lovas temetőjének kinyitásához. Hozz Öreg Jacknek egy tartalékot, és fizet érte.
+shop.hallows_eve_offer_sell_horsemans_reins.title = Adj el egy Tartalék Lovas-gyeplőt
+shop.hallows_eve_offer_sell_horsemans_reins.desc = A Lovas-gyeplő egy párja elég a lova hívásához. Hozz Öreg Jacknek egy tartalék párt, és fizet érte.
 
 # ---- Teljesítmények ----
 achievement.hallows_eve_lantern_keepsake.title = Vájt Lámpás {0}
@@ -186,6 +195,7 @@ dialogue.hallows_eve_old_jack.daily_offer.text = Van pár apró munkám, ami min
 dialogue.hallows_eve_old_jack.daily_offer.opt.souls = Gondoskodom a lelkekről.
 dialogue.hallows_eve_old_jack.daily_offer.opt.pumpkins = Hozok tököt.
 dialogue.hallows_eve_old_jack.daily_offer.opt.geodes = Feltörök pár geodát.
+dialogue.hallows_eve_old_jack.daily_offer.opt.horseman = Megint lelököm a Lovast.
 dialogue.hallows_eve_old_jack.lantern_offer.text = A megbízásaid kész, és megvan a Lovas parazsa. Így idén meggyújtunk neked egy <b>Vájt Lámpást</b>.\nOdakint némelyik csontváz az én arcomat viseli, és nem szeretem. Verj le pár <b>Jack-csontvázat</b>, aztán hozz nekem egy <b>Megszentelt Tököt</b> faragni és egy kis <b>Ektoplazmát</b>, hogy égjen benne.
 dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Gyújtsuk meg.
 dialogue.hallows_eve_old_jack.lantern_ready.text = Egy <b>Megszentelt Tök</b>, és <b>Ektoplazma</b>, hogy égjen benne. Az arcomat viselő csontvázak lent fekszenek a fűben, ahová valók.\nÍgy. A parázs megfogant. Ég a Vájt Lámpásod, és a tiéd, megtarthatod. Vidd a pajzsot is: a boltom árulja a sisakot, a többit a Lovas viseli. Gyere vissza jövőre, és gyújtunk egy másikat.
@@ -200,7 +210,7 @@ dialogue.hallows_eve_old_jack.lantern_lit.text = Ez az idei Vájt Lámpás, megg
 dialogue.hallows_eve_old_jack.sweets.text = A boltom mindenre elfogadja, ami benne van, a Lámpásbombától az olyan fejig, mint az enyém.\nA munkáimért és a táblám munkájáért ezzel fizetek. Kérj csokit vagy csalunk-ot bárkitől, akivel beszélsz, és kapsz párat. Győzd le a <b>Fej Nélküli Lovast</b> a <color is="#ffd97a">temetőjében</color>, és ott is vár néhány.
 dialogue.hallows_eve_old_jack.who_are_you.text = Öreg Jack. Volt egyszer egy tanyám, messze innen. Aztán egy októberben nem mentem haza, és azóta minden októberben visszajövök.\nA lámpásaim távol tartják a holtakat ettől a lépcsőtől, és minden évben meggyújtok egy Vájt Lámpást mindenkivel, aki végigviszi a megbízásaimat. A fejről ne kérdezz.
 dialogue.hallows_eve_old_jack.horseman.text = A <b>Fej Nélküli Lovas</b>. Mindenszentek Éjének minden éjszakáján a saját temetőjében vágtat. Félig maga is tűz, így a Lámpásbombáim csak fele kárt okoznak neki, de még így is harapnak.\nA mellettem álló <color is="#ffd97a">Sírőr</color> őrzi a kaput. Bevisz, ha elégetett előtte egy <b>Sírgyertyát</b>, és azt akkor árulom a boltomban, ha már Törzsvendégnek tartalak. Aki először megy be, az fizet, a csapat többi tagja ingyen követi. Hozz barátokat, és amikor elrepül a feje, vágd le, különben nem sebezhető.
-dialogue.hallows_eve_old_jack.horseman_beaten.text = Szóval lelökted arról a lóról. Nem tartja lent: újra a nyeregben ül, valahányszor valaki bemegy.\nMenj utána a <b>Fej Nélküli Lovasnak</b> megint, ha kedved tartja. Az első napi győzelmed a napi jutalmát és a Kincsét abban a ládában hagyja, ahol elesik, néha egy darab régi páncéljával, vagy olyannal, ami még ég. Amit benne hagysz, a menüd Átvehetők része alatt vár.
+dialogue.hallows_eve_old_jack.horseman_beaten.text = Szóval lelökted arról a lóról. Nem tartja lent: újra a nyeregben ül, valahányszor valaki bemegy.\nMenj utána a <b>Fej Nélküli Lovasnak</b> megint, ha kedved tartja. Az első napi győzelmed két Átvehetőt hagy abban a ládában, ahol elesik: a napi Átvehetőjét és a Boss-legyőzés Átvehetőjét, amelyben néha ott egy darab régi páncéljából, a nehéz lovaglásnál pedig olyanból, ami még ég. Amit benne hagysz, a menüd Átvehetők része alatt vár.
 dialogue.hallows_eve_old_jack.harvest_moon.text = Látod azt a holdat? Aratási Hold. Évente pár éjszakán nyugtalanná válnak alatta a holtak, és kiürülnek a sírok.\nHa munkát akarsz, ma éjjel van itt az ideje. Én fent leszek, amíg le nem nyugszik.
 dialogue.hallows_eve_old_jack.opt.quests = Mit kell csinálni?
 dialogue.hallows_eve_old_jack.opt.shop = Lássuk a boltodat.
@@ -241,11 +251,11 @@ title.hallows_eve_keeper_of_lanterns.display = {0}, a Lámpások Őre
 
 # ---- The set achievements: wearing the Hallowed and Flaming Hallowed Sets ----
 achievement.hallows_eve_hallowed_armour.title = Megszentelt Páncél
-achievement.hallows_eve_hallowed_armour.desc = Viselj Jack-sisakot és a Fej Nélküli Lovas páncélját.
+achievement.hallows_eve_hallowed_armour.desc = Viseld a Fej Nélküli Lovas páncélját a sisakjával vagy egy Jack-sisakkal.
 achievement.hallows_eve_fully_hallowed.title = Teljesen Megszentelt
 achievement.hallows_eve_fully_hallowed.desc = Viseld a teljes Megszentelt Szettet, Jack-pajzzsal a másik kezedben.
 achievement.hallows_eve_flaming_armour.title = Lángoló Páncél
-achievement.hallows_eve_flaming_armour.desc = Viseld az Égő Jack-sisakot és a Fej Nélküli Lovas lángoló páncélját.
+achievement.hallows_eve_flaming_armour.desc = Viseld a Fej Nélküli Lovas lángoló páncélját a lángoló sisakjával vagy az Égő Jack-sisakkal.
 achievement.hallows_eve_fully_ablaze.title = Teljesen Lángoló
 achievement.hallows_eve_fully_ablaze.desc = Viseld a teljes Lángoló Megszentelt Szettet, a Lángoló Jack-pajzzsal a másik kezedben.
 objective.hallows_eve.wear_hallowed = Viselj {0} darabot a Megszentelt Szettből
@@ -318,7 +328,7 @@ factor.hallows_eve_old_jack.exalted = Jack Embere rang Öreg Jacknél
 reputation.hallows_eve_old_jack.earn.quests = Intézd el a megbízásait és a napi feladatait.
 reputation.hallows_eve_old_jack.earn.board = Vállalj megbízásokat a táblájáról.
 reputation.hallows_eve_old_jack.earn.talk = Naponta egyszer állj meg nála egy szóra.
-reputation.hallows_eve_old_jack.earn.horseman = Tisztítsd meg a Fej Nélküli Lovas temetőjét bármelyik lovaglásnál, és a ládája a kegyét adja, aznap a későbbi teljesítéseknél a felét. Az első napi normál győzelmed többet ér a Lovas Kincsével.
+reputation.hallows_eve_old_jack.earn.horseman = Tisztítsd meg a Fej Nélküli Lovas temetőjét bármelyik lovaglásnál, és a ládája a kegyét adja, aznap a későbbi teljesítéseknél a felét. Az első napi normál győzelmed többet ér a Lovas Boss-legyőzés Átvehetőjével.
 reputation.hallows_eve_old_jack.earn.gear = Viselj Jack-sisakot, és minden, amit érte teszel, több kegyet hoz, amíg rajtad van.
 reputation.hallows_eve_hallowed.name = A Megszenteltek
 reputation.hallows_eve_hallowed.flavor = A Megszenteltek gondoskodnak róla, hogy a holtak megkapják a nyugalmukat, és a Sírőr a Lovas temetőjénél is közülük való. Teríts le, ami éjjel kimászik a sírokból, és felfigyelnek rád.
@@ -329,14 +339,14 @@ factor.hallows_eve_hallowed.exalted = Magasztalt rang a Megszentelteknél
 reputation.hallows_eve_hallowed.earn.kills = Teríts le a lényeket, amelyek éjjel előmásznak.
 reputation.hallows_eve_hallowed.earn.jack = Öreg Jack napi feladatai és táblás megbízásai is beleszámítanak.
 reputation.hallows_eve_hallowed.earn.treats = Mondd mindenkinek, akivel beszélsz, hogy csokit vagy csalunk, mindegyiküknek naponta egyszer.
-reputation.hallows_eve_hallowed.earn.horseman = Tisztítsd meg a Fej Nélküli Lovas temetőjét bármelyik lovaglásnál, és a ládája a kegyüket adja, aznap a későbbi teljesítéseknél a felét. Az első napi nehéz győzelmed többet ér a Kincsével.
+reputation.hallows_eve_hallowed.earn.horseman = Tisztítsd meg a Fej Nélküli Lovas temetőjét bármelyik lovaglásnál, és a ládája a kegyüket adja, aznap a későbbi teljesítéseknél a felét. Az első napi nehéz győzelmed többet ér a Boss-legyőzés Átvehetőjével.
 reputation.hallows_eve_hallowed.earn.gear = Tarts a kezedben egy Jack-pajzsot, és gyorsabban szerzed a kegyüket, amíg fel van szerelve.
 notify.hallows_eve_hallowed_cache = Egy csomag a Megszenteltektől, amiért lent tartod a holtakat.
 dialogue.hallows_eve_old_jack.opt.standing = Hogy állunk mi ketten?
 achievement.category.seasons.hallows_eve = Mindenszentek Éje
 
 # ---- The Almanac page's items: where each comes from ----
-almanac.hallows_eve.source.pumpkin = Hébe-hóba akad, amikor kézzel szedsz tököt, és a Jack-csontvázak is ejtik.
+almanac.hallows_eve.source.pumpkin = Hébe-hóba akad, amikor kézzel szedsz tököt, és a Jack-csontvázak meg a Tökszörnyek is ejtik.
 almanac.hallows_eve.source.geode = A kibányászott kőben és ércben akad, és a Geodalidércek ejtik.
 almanac.hallows_eve.source.ectoplasm = Az Elveszett Lelkek ejtik, és Átkozott Geodákban található.
 almanac.hallows_eve.source.bombs = Az éjszaka lényei ejtik, Átkozott Geodákban található, Faragópadon faragható, vagy megvehető Öreg Jack boltjában.
@@ -348,23 +358,24 @@ almanac.hallows_eve.source.jack_shield = Faragópadon faragható, vagy megvehet�
 almanac.hallows_eve.source.burning_helm = Öreg Jack boltjában kapható, amint a Megszenteltek nagyra becsülnek, vagy Öreg Jack teljesen megbízik benned.
 almanac.hallows_eve.source.flaming_shield = Öreg Jack boltjában kapható, amint a Megszenteltek a legnagyobb becsben tartanak.
 almanac.hallows_eve.source.stall = Öreg Jack boltjában kapható.
-almanac.hallows_eve.source.grave_candle = Öreg Jack boltjában kapható, ha már Törzsvendégnek tart, és a Lovas Kincse visszaad belőle: néha egyet az első napi győzelmed után, és párat az első nehéz győzelmed után. A Sírőr elégeti őket, hogy kinyissa a temetőjét a csapatodnak, és ha Öreg Jack már Megbízhatónak tart, egy Égő Sírgyertyát cserél egy maréknyiért.
+almanac.hallows_eve.source.grave_candle = Öreg Jack boltjában kapható, ha már Törzsvendégnek tart, és a Lovas Boss-legyőzés Átvehetője visszaad belőle: néha egyet az első napi győzelmed után, és párat az első nehéz győzelmed után. A Sírőr elégeti őket, hogy kinyissa a temetőjét a csapatodnak, és ha Öreg Jack már Megbízhatónak tart, egy Égő Sírgyertyát cserél egy maréknyiért.
 almanac.hallows_eve.source.burning_grave_candle = Öreg Jack boltjában kapható, ha már Megbízhatónak tart, vagy ott cserélhető egy maréknyi Sírgyertyáért. A Sírőr elégeti őket, hogy kinyissa a Fej Nélküli Lovas nehéz lovaglását a csapatodnak.
 almanac.hallows_eve.source.stall_or_lab = Öreg Jack boltjában kapható, ahogy nő a becsülésed, vagy elkészíthető a goblin ezermester munkapadján a goblin laborban.
 almanac.hallows_eve.source.festival_stall = A fesztiválpolcon kapható Öreg Jack boltjában.
 almanac.hallows_eve.source.keepsake = Öreg Jack emléktárgya, évente egyszer kapod, amikor végigviszed a történetét.
 almanac.hallows_eve.source.festival_favor = A fesztiválboltokban kapható azoknak, akiknek magas a Fesztiválkegyük.
-almanac.hallows_eve.source.bomb_rare = Mindig ott van a Lovas Kincsében, és néha a napi jutalmában is. Az éjszaka lényei is ejtik, Átkozott Geodákban található, Faragópadon faragható, vagy megvehető Öreg Jack boltjában.
+almanac.hallows_eve.source.bomb_rare = Mindig ott van a Lovas Boss-legyőzés Átvehetőjében, és néha a napi jutalmában is. Az éjszaka lényei is ejtik, Átkozott Geodákban található, Faragópadon faragható, vagy megvehető Öreg Jack boltjában.
 almanac.hallows_eve.source.bomb_epic_horseman = A Geodalidércek ritkán ejtik, és Átkozott Geodákban meg a Megszenteltek csomagjában is akad, néha pedig a Fej Nélküli Lovas napi jutalmában. Faraghatsz is egyet Faragópadon, vagy vehetsz naponta párat Öreg Jack boltjában.
-almanac.hallows_eve.source.hoard = Néha ott van a Lovas Kincsében, amelyet az első napi győzelmedért kapsz felette.
-almanac.hallows_eve.source.hoard_hard = Csak a Lovas Kincsében van a nehéz lovaglásnál, amelyet az első nehéz napi győzelmedért kapsz felette. Ha végigvitted A Lovaglót, kérd a Sírőrtől a nehéz lovaglást.
-almanac.hallows_eve.source.hoard_normal = Csak a Lovas Kincsében van a normál lovaglásnál, amelyet az első ottani napi győzelmedért kapsz felette.
-almanac.hallows_eve.source.eternal_candle = Hébe-hóba ott van a Lovas Kincsében a nehéz lovaglásnál, amelyet az első nehéz napi győzelmedért kapsz felette. Ha nálad van, a Sírőr Sírgyertya elégetése nélkül kinyitja a normál temetőjét a csapatodnak.
-almanac.hallows_eve.source.horseman_daily = Hébe-hóba a Fej Nélküli Lovas napi jutalmában akad, amelyet az első napi győzelmedért kapsz felette.
-almanac.hallows_eve.source.burning_helm_trade = Öreg Jack boltjában vehető, ha beváltasz egy Jack-sisakot a zsákodból, amint a Megszenteltek nagyra becsülnek, vagy Öreg Jack teljesen megbízik benned. Néha a Lovas Kincsében is akad.
-almanac.hallows_eve.source.flaming_shield_trade = Öreg Jack boltjában vehető, ha beváltasz egy Jack-pajzsot a zsákodból, amint a Megszenteltek a legnagyobb becsben tartanak. Néha a Lovas Kincsében is akad.
+almanac.hallows_eve.source.hoard = Néha ott van a Lovas Boss-legyőzés Átvehetőjében, amelyet az első napi győzelmedért kapsz felette.
+almanac.hallows_eve.source.hoard_hard = Csak a Lovas Boss-legyőzés Átvehetőjében van a nehéz lovaglásnál, amelyet az első nehéz napi győzelmedért kapsz felette. Ha végigvitted A Lovaglót, kérd a Sírőrtől a nehéz lovaglást.
+almanac.hallows_eve.source.hoard_normal = Csak a Lovas Boss-legyőzés Átvehetőjében van a normál lovaglásnál, amelyet az első ottani napi győzelmedért kapsz felette.
+almanac.hallows_eve.source.eternal_candle = Hébe-hóba ott van a Lovas Boss-legyőzés Átvehetőjében a nehéz lovaglásnál, amelyet az első nehéz napi győzelmedért kapsz felette. Ha nálad van, a Sírőr Sírgyertya elégetése nélkül kinyitja a normál temetőjét a csapatodnak.
+almanac.hallows_eve.source.steed_trophy = Időnként ott van a Lovas Boss-legyőzés Átvehetőjében, a nehéz lovaglásnál gyakrabban, amelyet az első napi győzelmedért kapsz felette. Öreg Jack is árul egyet. Blokkként lehet lerakni.
+almanac.hallows_eve.source.reins = Csak az Alec's Tamework modot futtató szervereken: nagyon ritkán a Lovas Boss-legyőzés Átvehetőjében, és hébe-hóba a nehéz lovaglásnál. Ezzel jön hozzád a fekete lova. Tartsd a kezedben, és kattints jobb gombbal a listád megnyitásához, nyomd meg a Summon gombot a lovad hívásához, aztán az F-fel lovagolhatsz rajta.
+almanac.hallows_eve.source.burning_helm_trade = Öreg Jack boltjában vehető, ha beváltasz egy Jack-sisakot a zsákodból, amint a Megszenteltek nagyra becsülnek, vagy Öreg Jack teljesen megbízik benned. Néha a Lovas Boss-legyőzés Átvehetőjében is akad.
+almanac.hallows_eve.source.flaming_shield_trade = Öreg Jack boltjában vehető, ha beváltasz egy Jack-pajzsot a zsákodból, amint a Megszenteltek a legnagyobb becsben tartanak. Néha a Lovas Boss-legyőzés Átvehetőjében is akad.
 
 # ---- The Almanac page's Headless Horseman banner and his Hoard ----
 almanac.hallows_eve.horseman.line = Az Öreg Jack melletti Sírőr bevisz. Hozz barátokat.
 almanac.hallows_eve.horseman.button = Főellenség-harc rekordok
-almanac.hallows_eve.hoard.line = Az első napi győzelmed a Kincsét abban a ládában hagyja, ahol elesik, és az Átvehetők alatt: egy Kísérteties Lámpásbombát és Öreg Jack kegyét, néha pedig egy Sírgyertyát, egy darabot a Lángoló Megszentelt szettből, egy Sírkövet vagy egy Elveszett Civilizáció Lámpását. A nehéz lovaglás Kincse néhány Sírgyertyát és a Megszenteltek kegyét tartalmazza, jobb esélyt a lángoló darabokra, a lángoló mellvértjét, és időnként egy Örök Gyertyát. A sima páncélja a napi jutalmában jön.
+almanac.hallows_eve.hoard.line = Az első napi győzelmed a Boss-legyőzés Átvehetőjét hagyja abban a ládában, ahol elesik, és az Átvehetők alatt: egy Kísérteties Lámpásbombát és Öreg Jack kegyét, néha pedig egy Sírgyertyát, egy darabot a páncéljából, egy Égő Jack-sisakot, egy Lángoló Jack-pajzsot, egy apró trófeát a lováról, egy Sírkövet vagy egy Elveszett Civilizáció Lámpását. A nehéz lovaglásnál néhány Sírgyertya és a Megszenteltek kegye van benne, jobb esély a páncéljára, az Égő Jack-sisakra, a Lángoló Jack-pajzsra és a trófeára, a lángoló páncélja, és időnként egy Örök Gyertya. Az Alec's Tamework modot futtató szervereken a Gyeplőjét is tartalmazhatja, vele a fekete lovát.

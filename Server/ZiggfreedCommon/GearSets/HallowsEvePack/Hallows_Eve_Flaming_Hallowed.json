@@ -1,12 +1,13 @@
 {
-  "$Comment": "The Flaming Hallowed set: the Burning Jack Helm, the Headless Horseman's three flaming pieces and the Flaming Jack Shield, all five paid by the Horseman's Hoard (ZiggfreedCommon/Lootables/HallowsEvePack/Hallows_Eve_Horseman_Chase.json). Each of them is also a member of the Hallowed set (Hallows_Eve_Hallowed.json), so a player in the full flaming set gets every Hallowed tier as well, and these tiers stack on top. The first tier asks for the helm and the three armour pieces worn (Armor 4); the second asks for those four with the Flaming Jack Shield in the utility slot (Armor 4 and Utility 1), so a shield carried in the main hand never counts. Both add Health and the library's Fire stats: DamageBonus_Fire in whole percent points (10 is +10% to the Fire damage the wearer deals) and DamageBonusFlat_Fire in damage points added to each Fire hit before the percent. It names no Effect and no Badge, so its tile on the buff bar is one of the library's default gear-set slots. Raise or lower an Amount to tune the set; under Parent the Bonuses list replaces whole, so restate every tier you keep. The text keys live in hallowseve.items.lang.",
+  "$Comment": "The Flaming Hallowed set: the Burning Jack Helm, the Headless Horseman's flaming helm and three flaming pieces, and the Flaming Jack Shield, all six paid by the Horseman's Hoard on the hard ride (ZiggfreedCommon/Lootables/HallowsEvePack/Hallows_Eve_Horseman_Chase_Hard.json); his normal ride's Hoard (Hallows_Eve_Horseman_Chase.json) pays only the two Jack pieces, which Old Jack's shop also trades. Each of them is also a member of the Hallowed set (Hallows_Eve_Hallowed.json), so a player in the full flaming set gets every Hallowed tier as well, and these tiers stack on top. Armor counts the members worn in armour slots, one per slot, so the two helms share the head slot and either counts there. The first tier asks for a helm and the three armour pieces worn (Armor 4); the second asks for those four with the Flaming Jack Shield in the utility slot (Armor 4 and Utility 1), so a shield carried in the main hand never counts. Both add Health and the library's Fire stats: DamageBonus_Fire in whole percent points (10 is +10% to the Fire damage the wearer deals) and DamageBonusFlat_Fire in damage points added to each Fire hit before the percent. It names no Effect and no Badge, so its tile on the buff bar is one of the library's default gear-set slots. Raise or lower an Amount to tune the set; under Parent the Bonuses list replaces whole, so restate every tier you keep. The text keys live in hallowseve.items.lang.",
   "Text": {"TitleKey": "gearset.hallows_eve_flaming_hallowed.title"},
   "Members": [
     "Hallows_Eve_Burning_Jack_Helm",
     "Hallows_Eve_Flaming_Horseman_Breastplate",
     "Hallows_Eve_Flaming_Horseman_Gauntlets",
     "Hallows_Eve_Flaming_Horseman_Greaves",
-    "Hallows_Eve_Flaming_Jack_Shield"
+    "Hallows_Eve_Flaming_Jack_Shield",
+    "Hallows_Eve_Flaming_Horseman_Helm"
   ],
   "Bonuses": [
     {

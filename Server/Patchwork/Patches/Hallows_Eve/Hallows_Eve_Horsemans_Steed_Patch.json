@@ -1,0 +1,33 @@
+{
+  "$Comment": "Hands the Horseman's Steed's F to Alec's Tamework, so only its owner can ride it. Patchwork, which Tamework carries, applies this at startup to a generated copy of the steed's template (Server/NPC/Roles/Hallows_Eve/Templates/Hallows_Eve_Template_Horsemans_Steed.json, the pack's copy of the game's Template_Livestock, whose only Variant is the steed) and never edits the file itself; When keeps a server that runs Patchwork alone, without Tamework, from applying it. The first operation empties the template's interaction list down to its first step, which locks onto the player looking at the steed (the game's petting, feeding, harvesting and anyone-can-ride mount branches go). The second is Tamework's TameworkInteractionBridge macro: it adds Tamework's prompt (it shows the ride prompt to the owner alone) and, when F is pressed, Tamework's interaction, which runs the Mount entry in Server/Tamework/Interactions/Hallows_Eve_Horsemans_Steed.json (named by ConfigId) with its owner check. On a server without Tamework the template is the game's own, and nobody has a steed to ride.",
+  "Id": "Hallows_Eve_Horsemans_Steed_Patch",
+  "Target": "Server/NPC/Roles/Hallows_Eve/Templates/Hallows_Eve_Template_Horsemans_Steed.json",
+  "Priority": 0,
+  "Enabled": true,
+  "When": { "ModInstalled": "Alechilles:Alec's Tamework!" },
+  "Operations": [
+    {
+      "Id": "keep-only-the-target-lock",
+      "Op": "Replace",
+      "Path": "/InteractionInstruction/Instructions",
+      "Value": [
+        {
+          "Continue": true,
+          "Actions": [
+            { "Type": "LockOnInteractionTarget", "TargetSlot": "InteractionTarget" }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "owner-only-ride",
+      "Op": "Macro",
+      "Macro": "TameworkInteractionBridge",
+      "Path": "/InteractionInstruction/Instructions",
+      "Position": "End",
+      "Options": {
+        "ActionFields": { "ConfigId": "Hallows_Eve_Horsemans_Steed" }
+      }
+    }
+  ]
+}

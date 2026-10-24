@@ -1,0 +1,21 @@
+{
+  "$Comment": "What pressing F on the Horseman's Steed does where Alec's Tamework runs: its owner gets on, and nobody else can. Only Tamework reads this folder; on a server without it the file sits unread. The steed's Patchwork patch (Server/Patchwork/Patches/Hallows_Eve/Hallows_Eve_Horsemans_Steed_Patch.json) hands the steed's F to Tamework and names this file (its file name is the ConfigId there); RoleIds also picks it for the role. The one entry is Tamework's Mount preset: it seats the rider at the role's MountAnchor, as the game's tamed horse does. The owner check is Requires All PlayerIsOwner, which Tamework asks of this steed whatever its server settings say; the preset's own RequireOwner follows the server's /tw settings instead, so it is kept true only to read right. RequireCrouching false lets you mount standing, RequireMountable reads the role's IsMountable, and RequireTamed false leaves the owner check alone in charge. PromptHint is the game's own mount prompt.",
+  "Enabled": true,
+  "Priority": 100,
+  "RoleIds": [ "Hallows_Eve_Horsemans_Steed" ],
+  "Interactions": [
+    {
+      "Type": "Mount",
+      "RequireTamed": false,
+      "RequireOwner": true,
+      "RequireMountable": true,
+      "RequireCrouching": false,
+      "PromptHint": "server.interactionHints.mount",
+      "Requires": {
+        "All": {
+          "PlayerIsOwner": true
+        }
+      }
+    }
+  ]
+}

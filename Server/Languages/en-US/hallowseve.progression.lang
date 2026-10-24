@@ -37,6 +37,8 @@ quest.hallows_eve_jack_daily_pumpkins.title = Pumpkin Rounds
 quest.hallows_eve_jack_daily_pumpkins.flavor = The lanterns burn through Hallowed Pumpkins faster than I can carve them. Bring me a few more before dark.
 quest.hallows_eve_jack_daily_geodes.title = Geodes for Jack
 quest.hallows_eve_jack_daily_geodes.flavor = Crack a couple of Cursed Geodes for me. My hands are too stiff for it these days.
+quest.hallows_eve_jack_daily_horseman.title = Back in the Saddle
+quest.hallows_eve_jack_daily_horseman.flavor = He's back in the saddle, same as every night. Take a Grave Candle to the Gravekeeper and knock him off that horse again. The ordinary ride, mind, not the hard one.
 
 # ---- What Hallow's Eve's loot tables pay: the name on the reward, and the line under it on hover ----
 lootable.hallows_eve_meet_pay.title = Old Jack's Welcome
@@ -80,6 +82,7 @@ objective.hallows_eve.bomb_down_horseman = Bring down the Headless Horseman with
 objective.hallows_eve.bomb_down_horseman_hard = Bring down the Headless Horseman on the hard ride with only Lantern Bombs
 objective.hallows_eve.bring_down_horseman_hard = Bring down the Headless Horseman on the hard ride
 objective.hallows_eve.bring_ember = Bring the Horseman's Ember
+objective.hallows_eve.squash_fiends = Squash {0} Pumpkin Fiends
 
 # ---- Old Jack's board ----
 board.hallows_eve_daily.title = Old Jack's Board
@@ -106,6 +109,8 @@ quest.hallows_eve_board_carving.title = Bench Carving
 quest.hallows_eve_board_carving.flavor = Every doorstep wants a lantern, and I can only carve so fast. Carve some Jack Lanterns at a Carving Bench, a pumpkin and a bit of charcoal apiece.
 quest.hallows_eve_board_skeletons.title = Rattling Bones
 quest.hallows_eve_board_skeletons.flavor = The skeletons wearing my face are out after dark again, rattling about wherever the torches don't reach. Knock a good few of them flat for me.
+quest.hallows_eve_board_fiends.title = Weeding the Patch
+quest.hallows_eve_board_fiends.flavor = Pumpkin Fiends are crawling about the autumn woods after dark, where the wild pumpkins grow. Squash a good few of them for me before they take root.
 
 # ---- Old Jack's errands board ----
 board.hallows_eve_errands.title = Old Jack's Errands
@@ -117,6 +122,8 @@ quest.hallows_eve_errand_ghouls.title = Grave Watch
 quest.hallows_eve_errand_ghouls.flavor = Some Hollow Ghouls are pawing at the graves again. Put them back down before they wander off.
 quest.hallows_eve_errand_skeletons.title = Loose Bones
 quest.hallows_eve_errand_skeletons.flavor = A few Jack Skeletons got loose last night. Knock them down when you're out after dark.
+quest.hallows_eve_errand_fiends.title = Bad Seeds
+quest.hallows_eve_errand_fiends.flavor = A few Pumpkin Fiends have sprouted in the autumn woods. Squash them when you're out after dark.
 quest.hallows_eve_errand_ectoplasm.title = Guttering Lantern
 quest.hallows_eve_errand_ectoplasm.flavor = One of my lanterns is guttering. A little Ectoplasm would see it through the night.
 quest.hallows_eve_errand_bombs.title = Bomb Practice
@@ -137,6 +144,8 @@ shop.hallows_eve_offer_harvest_moon_bundle.desc = Shattering and Spectral Lanter
 shop.hallows_eve_offer_spyglass.desc = Look through it in the Guttering Hollows to pinpoint the location of a Voidtaken beast.
 shop.hallows_eve_offer_sell_eternal_candle.title = Sell a Spare Eternal Candle
 shop.hallows_eve_offer_sell_eternal_candle.desc = One Eternal Candle is all you need to open the Horseman's graveyard. Bring Old Jack a spare and he'll pay you for it.
+shop.hallows_eve_offer_sell_horsemans_reins.title = Sell Spare Horseman's Reins
+shop.hallows_eve_offer_sell_horsemans_reins.desc = One pair of the Horseman's Reins is all you need to call his horse. Bring Old Jack a spare pair and he'll pay you for it.
 
 # ---- Achievements ----
 achievement.hallows_eve_lantern_keepsake.title = Hollow Lantern {0}
@@ -206,7 +215,7 @@ factor.hallows_eve_old_jack.exalted = Jack's Own with Old Jack
 reputation.hallows_eve_old_jack.earn.quests = Do his errands and his daily jobs.
 reputation.hallows_eve_old_jack.earn.board = Take contracts from his board.
 reputation.hallows_eve_old_jack.earn.talk = Stop by for a word once a day.
-reputation.hallows_eve_old_jack.earn.horseman = Clear the Headless Horseman's graveyard on either ride, and its chest pays his favor, half on later clears that day. Your first normal win each day earns more with the Horseman's Hoard.
+reputation.hallows_eve_old_jack.earn.horseman = Clear the Headless Horseman's graveyard on either ride, and its chest pays his favor, half on later clears that day. Your first normal win each day earns more with his Boss Kill Claim.
 reputation.hallows_eve_old_jack.earn.gear = Wear a Jack Helm, and everything you do for him earns more favor while you have it on.
 reputation.hallows_eve_hallowed.name = The Hallowed
 reputation.hallows_eve_hallowed.flavor = The Hallowed see that the dead get their rest, and the Gravekeeper at the Horseman's graveyard is one of them. Put down what climbs out of the graves at night and they take notice.
@@ -219,7 +228,7 @@ reputation.hallows_eve_hallowed.earn.full_moon = Outside Hallow's Eve, put down 
 reputation.hallows_eve_hallowed.earn.restless_graveyard = On a full moon outside Hallow's Eve, every wave you clear in the Gravekeeper's Restless Graveyard earns their favor, half on later runs that day.
 reputation.hallows_eve_hallowed.earn.jack = Old Jack's daily jobs and board contracts count too.
 reputation.hallows_eve_hallowed.earn.treats = Ask everyone you talk to for a trick or treat, once a day each.
-reputation.hallows_eve_hallowed.earn.horseman = Clear the Headless Horseman's graveyard on either ride, and its chest pays their favor, half on later clears that day. Your first hard win each day earns more with his Hoard.
+reputation.hallows_eve_hallowed.earn.horseman = Clear the Headless Horseman's graveyard on either ride, and its chest pays their favor, half on later clears that day. Your first hard win each day earns more with his Boss Kill Claim.
 reputation.hallows_eve_hallowed.earn.gear = Carry a Jack Shield, and you earn their favor faster while it is equipped.
 notify.hallows_eve_hallowed_cache = A cache from the Hallowed, for keeping the dead down.
 
@@ -261,6 +270,7 @@ dialogue.hallows_eve_old_jack.daily_offer.text = I've got a few small jobs that 
 dialogue.hallows_eve_old_jack.daily_offer.opt.souls = I'll see to the souls.
 dialogue.hallows_eve_old_jack.daily_offer.opt.pumpkins = I'll bring pumpkins.
 dialogue.hallows_eve_old_jack.daily_offer.opt.geodes = I'll crack some geodes.
+dialogue.hallows_eve_old_jack.daily_offer.opt.horseman = I'll knock the Horseman down again.
 dialogue.hallows_eve_old_jack.lantern_offer.text = Your errands are done, and I've got the Horseman's ember. So this year we light a <b>Hollow Lantern</b> for you.\nSome of the skeletons out there wear my face, and I don't care for it. Knock a few <b>Jack Skeletons</b> down, then bring me a <b>Hallowed Pumpkin</b> to carve and some <b>Ectoplasm</b> to burn in it.
 dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Let's light it.
 dialogue.hallows_eve_old_jack.lantern_ready.text = A <b>Hallowed Pumpkin</b>, and <b>Ectoplasm</b> to burn in it. The skeletons with my face are down in the grass where they belong.\nThere. The ember took. Your Hollow Lantern's lit, and it's yours to keep. Take this shield as well: my shop sells the helm, and the Horseman wears the rest of the set. Come back next year and we'll light another.
@@ -275,7 +285,7 @@ dialogue.hallows_eve_old_jack.lantern_lit.text = That's this year's Hollow Lante
 dialogue.hallows_eve_old_jack.sweets.text = My shop takes them for everything on it, from a Lantern Bomb to a head like mine.\nI pay them for my jobs and the work on my board. Ask anybody you talk to for a trick or treat and you'll get a few. Beat the <b>Headless Horseman</b> in his <color is="#ffd97a">graveyard</color> and you'll find some waiting for you too.
 dialogue.hallows_eve_old_jack.who_are_you.text = Old Jack. I kept a farm once, a long way from here. Then one October I didn't go home, and I've come back every October since.\nMy lanterns keep the dead off these steps, and every year I light a Hollow Lantern with anybody who sees my errands through. Don't ask me about the head.
 dialogue.hallows_eve_old_jack.horseman.text = The <b>Headless Horseman</b>. He rides his own graveyard every night of Hallow's Eve. He's half fire himself, so my Lantern Bombs only do him half the harm, but they still bite.\nThe <color is="#ffd97a">Gravekeeper</color> next to me keeps the gate. He'll take you in once he's burned a <b>Grave Candle</b> at it, and I sell those at my shop once I count you a Regular. Whoever goes in first pays, and the rest of the party follows free. Bring friends, and when his head flies off, cut it down, or he can't be hurt.
-dialogue.hallows_eve_old_jack.horseman_beaten.text = So you knocked him off that horse. It won't keep him down: he's back in the saddle every time somebody goes in.\nGo after the <b>Headless Horseman</b> again if you like. Your first win each day leaves his daily Claim and his Hoard in the chest where he falls, now and then with a piece of his old armour, or one that's still burning. Whatever you leave in it waits under Claims in your menu.
+dialogue.hallows_eve_old_jack.horseman_beaten.text = So you knocked him off that horse. It won't keep him down: he's back in the saddle every time somebody goes in.\nGo after the <b>Headless Horseman</b> again if you like. Your first win each day leaves two Claims in the chest where he falls: his daily Claim, and his Boss Kill Claim, which now and then holds a piece of his old armour, or on the hard ride one that's still burning. Whatever you leave in it waits under Claims in your menu.
 dialogue.hallows_eve_old_jack.harvest_moon.text = See that moon? Harvest Moon. A few nights a year the dead get restless under it, and the graves empty out.\nIf you want work, tonight's the night. I'll be up till it sets.
 dialogue.hallows_eve_old_jack.opt.quests = What needs doing?
 dialogue.hallows_eve_old_jack.opt.shop = Let's see your shop.
@@ -319,11 +329,11 @@ title.hallows_eve_keeper_of_lanterns.display = {0}, Keeper of Lanterns
 
 # ---- The set achievements: wearing the Hallowed and Flaming Hallowed Sets ----
 achievement.hallows_eve_hallowed_armour.title = Hallowed Armour
-achievement.hallows_eve_hallowed_armour.desc = Wear a Jack Helm and the Headless Horseman's armour.
+achievement.hallows_eve_hallowed_armour.desc = Wear the Headless Horseman's armour with his helm or a Jack Helm.
 achievement.hallows_eve_fully_hallowed.title = Fully Hallowed
 achievement.hallows_eve_fully_hallowed.desc = Wear the whole Hallowed Set, a Jack Shield in your off hand.
 achievement.hallows_eve_flaming_armour.title = Flaming Armour
-achievement.hallows_eve_flaming_armour.desc = Wear the Burning Jack Helm and the Headless Horseman's flaming armour.
+achievement.hallows_eve_flaming_armour.desc = Wear the Headless Horseman's flaming armour with his flaming helm or the Burning Jack Helm.
 achievement.hallows_eve_fully_ablaze.title = Fully Ablaze
 achievement.hallows_eve_fully_ablaze.desc = Wear the whole Flaming Hallowed Set, the Flaming Jack Shield in your off hand.
 objective.hallows_eve.wear_hallowed = Wear {0} pieces of the Hallowed Set
@@ -341,7 +351,7 @@ almanac.hallows_eve.horseman_down = Headless Horseman brought down
 almanac.hallows_eve.horseman_heads = Horseman's heads cut down
 
 # ---- The Almanac page's items: where each comes from ----
-almanac.hallows_eve.source.pumpkin = Found now and then when you pick pumpkins by hand, and dropped by Jack Skeletons.
+almanac.hallows_eve.source.pumpkin = Found now and then when you pick pumpkins by hand, and dropped by Jack Skeletons and Pumpkin Fiends.
 almanac.hallows_eve.source.geode = Found in the rock and ore you mine, and dropped by Geode Wraiths.
 almanac.hallows_eve.source.ectoplasm = Dropped by Lost Souls, and found inside Cursed Geodes.
 almanac.hallows_eve.source.bombs = Dropped by the night's creatures, found inside Cursed Geodes, carved at a Carving Bench, or bought at Old Jack's shop.
@@ -353,26 +363,27 @@ almanac.hallows_eve.source.jack_shield = Carved at a Carving Bench, or bought at
 almanac.hallows_eve.source.burning_helm = Sold at Old Jack's shop once the Hallowed revere you or Old Jack trusts you completely.
 almanac.hallows_eve.source.flaming_shield = Sold at Old Jack's shop once the Hallowed hold you in the highest regard.
 almanac.hallows_eve.source.stall = Sold at Old Jack's shop.
-almanac.hallows_eve.source.grave_candle = Sold at Old Jack's shop once he counts you a Regular, and given back by the Horseman's Hoard: sometimes one after your first win each day, and a few after your first hard win. The Gravekeeper burns them to open his graveyard for your party, and once you're Trusted with Old Jack he trades a Burning Grave Candle for a handful.
+almanac.hallows_eve.source.grave_candle = Sold at Old Jack's shop once he counts you a Regular, and given back by the Horseman's Boss Kill Claim: sometimes one after your first win each day, and a few after your first hard win. The Gravekeeper burns them to open his graveyard for your party, and once you're Trusted with Old Jack he trades a Burning Grave Candle for a handful.
 almanac.hallows_eve.source.burning_grave_candle = Sold at Old Jack's shop once you're Trusted with him, or traded there for a handful of Grave Candles. The Gravekeeper burns them to open the Headless Horseman's hard ride for your party.
 almanac.hallows_eve.source.stall_or_lab = Sold at Old Jack's shop as your standing grows, or built at the Goblin Tinkerer's Workbench in the goblin lab.
 almanac.hallows_eve.source.festival_stall = Sold on the festival shelf at Old Jack's shop.
 almanac.hallows_eve.source.keepsake = Old Jack's keepsake, given once a year when you finish his story.
 almanac.hallows_eve.source.festival_favor = Sold at the festival shops to those high in Festival Favor.
-almanac.hallows_eve.source.bomb_rare = Always in the Horseman's Hoard, and sometimes in his daily Claim. Also dropped by the night's creatures, found inside Cursed Geodes, carved at a Carving Bench, or bought at Old Jack's shop.
+almanac.hallows_eve.source.bomb_rare = Always in the Horseman's Boss Kill Claim, and sometimes in his daily Claim. Also dropped by the night's creatures, found inside Cursed Geodes, carved at a Carving Bench, or bought at Old Jack's shop.
 almanac.hallows_eve.source.bomb_epic_horseman = Rarely dropped by Geode Wraiths or found inside Cursed Geodes and the Hallowed's cache, and sometimes in the Headless Horseman's daily Claim. You can also carve one at a Carving Bench, or buy a couple a day at Old Jack's shop.
-almanac.hallows_eve.source.hoard = Sometimes in the Horseman's Hoard, paid for your first win over him each day.
-almanac.hallows_eve.source.hoard_hard = Only in the Horseman's Hoard on the hard ride, paid for your first hard win over him each day. Once you've finished The Rider, ask the Gravekeeper for the hard ride.
-almanac.hallows_eve.source.hoard_normal = Only in the Horseman's Hoard on the normal ride, paid for your first win over him there each day.
-almanac.hallows_eve.source.eternal_candle = Now and then in the Horseman's Hoard on the hard ride, paid for your first hard win over him each day. Carry it and the Gravekeeper opens his normal graveyard for your party without burning a Grave Candle.
-almanac.hallows_eve.source.horseman_daily = Found now and then in the Headless Horseman's daily Claim, paid for your first win over him each day.
-almanac.hallows_eve.source.burning_helm_trade = Bought at Old Jack's shop by trading in a Jack Helm from your bag, once the Hallowed revere you or Old Jack trusts you completely. Sometimes found in the Horseman's Hoard.
-almanac.hallows_eve.source.flaming_shield_trade = Bought at Old Jack's shop by trading in a Jack Shield from your bag, once the Hallowed hold you in the highest regard. Sometimes found in the Horseman's Hoard.
+almanac.hallows_eve.source.hoard = Sometimes in the Horseman's Boss Kill Claim, paid for your first win over him each day.
+almanac.hallows_eve.source.hoard_hard = Only in the Horseman's Boss Kill Claim on the hard ride, paid for your first hard win over him each day. Once you've finished The Rider, ask the Gravekeeper for the hard ride.
+almanac.hallows_eve.source.hoard_normal = Only in the Horseman's Boss Kill Claim on the normal ride, paid for your first win over him there each day.
+almanac.hallows_eve.source.eternal_candle = Now and then in the Horseman's Boss Kill Claim on the hard ride, paid for your first hard win over him each day. Carry it and the Gravekeeper opens his normal graveyard for your party without burning a Grave Candle.
+almanac.hallows_eve.source.steed_trophy = Once in a while in the Horseman's Boss Kill Claim, and more often on the hard ride, paid for your first win over him each day. Old Jack also sells one. Place it as a block.
+almanac.hallows_eve.source.reins = Only on servers with the Alec's Tamework mod: very rarely in the Horseman's Boss Kill Claim, and now and then on the hard ride. They bring you his black horse. Hold them and right-click to open your roster, press Summon to call your horse, then press F to ride it.
+almanac.hallows_eve.source.burning_helm_trade = Bought at Old Jack's shop by trading in a Jack Helm from your bag, once the Hallowed revere you or Old Jack trusts you completely. Sometimes found in the Horseman's Boss Kill Claim.
+almanac.hallows_eve.source.flaming_shield_trade = Bought at Old Jack's shop by trading in a Jack Shield from your bag, once the Hallowed hold you in the highest regard. Sometimes found in the Horseman's Boss Kill Claim.
 
-# ---- The Almanac page's Headless Horseman banner and his Hoard ----
+# ---- The Almanac page's Headless Horseman banner and his Boss Kill Claim ----
 almanac.hallows_eve.horseman.line = The Gravekeeper next to Old Jack takes you in. Bring friends.
 almanac.hallows_eve.horseman.button = Boss fight records
-almanac.hallows_eve.hoard.line = Your first win each day leaves his Hoard in the chest where he falls, and under Claims: a Spectral Lantern Bomb and favor with Old Jack, and sometimes a Grave Candle, a piece of the Flaming Hallowed set, a Tombstone or a Lost Civilization Lantern. The hard ride's Hoard holds a few Grave Candles and the Hallowed's favor, better odds at the flaming pieces, his flaming breastplate and, once in a while, an Eternal Candle. His plain armour comes in his daily Claim.
+almanac.hallows_eve.hoard.line = Your first win each day leaves his Boss Kill Claim in the chest where he falls, and under Claims: a Spectral Lantern Bomb and favor with Old Jack, and sometimes a Grave Candle, a piece of his armour, a Burning Jack Helm, a Flaming Jack Shield, a tiny trophy of his horse, a Tombstone or a Lost Civilization Lantern. On the hard ride it holds a few Grave Candles and the Hallowed's favor, better odds at his armour, the Burning Jack Helm, the Flaming Jack Shield and the trophy, his flaming armour and, once in a while, an Eternal Candle. On servers with the Alec's Tamework mod, it can also hold his Reins, and his black horse with them.
 
 # ---- Book breadcrumb ----
 achievement.category.seasons.hallows_eve = Hallow's Eve

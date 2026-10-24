@@ -1,0 +1,28 @@
+{
+  "$Comment": [
+    "Pumpkin Fiends after dark while Hallow's Eve runs, in pumpkin country: the autumn forests of the",
+    "first zone (Env_Zone1_Autumn), where the game grows its wild pumpkins thickest. When the event",
+    "starts, the calendar writes Spawn as the game's own world-spawn rule Hallows_Eve_Fiends; when it",
+    "ends, the calendar rewrites that rule with every moon phase at zero, so nothing new spawns. A rule",
+    "is never removed. They come in small packs (Flock). Harvest_Moon_Fiend_Spawns.json names the same",
+    "Rule at a higher Priority and takes over on Harvest Moon nights.",
+    "",
+    "The night, the dawn clear-out and the light gate match the Hallows_Eve_Night rule, read by the",
+    "game's own NPC/Spawn/World codec: DayTimeRange 19 to 5 is the night, Despawn clears what is still",
+    "out at dawn, and LightRanges keeps them away from anywhere a torch or a lantern lights. One rule",
+    "per creature and environment: no other rule in this pack names this role. To spread them to more",
+    "of the places pumpkins grow, add an environment here and in the Harvest Moon file together."
+  ],
+  "Event": "Hallows_Eve",
+  "Rule": "Hallows_Eve_Fiends",
+  "Priority": 0,
+  "Spawn": {
+    "Environments": [ "Env_Zone1_Autumn" ],
+    "NPCs": [
+      { "Id": "Hallows_Eve_Pumpkin_Fiend", "Weight": 6, "SpawnBlockSet": "Soil", "Flock": { "Size": [2, 3] } }
+    ],
+    "DayTimeRange": [19, 5],
+    "Despawn": { "DayTimeRange": [5, 19] },
+    "LightRanges": { "Light": [0, 8] }
+  }
+}

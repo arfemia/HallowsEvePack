@@ -1,6 +1,6 @@
 {
   "$Comment": [
-    "What each of Old Jack's three dailies pays. Every roll is read on its own: the first and the",
+    "What each of Old Jack's four dailies pays. Every roll is read on its own: the first and the",
     "last always pay, the two between are chances on top. Chance is a percent from 0 to 100. Sweets",
     "and festival tokens (what every season pays) pay through the Currency reward kind; a companion",
     "mod adds rolls with a file naming this table in ContributesTo.",

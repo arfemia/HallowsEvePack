@@ -32,6 +32,8 @@ quest.hallows_eve_old_jack_horseman_hard.flavor = Sua lanterna quer uma chama qu
 # ---- As diárias do Velho Jack ----
 quest.hallows_eve_jack_daily_souls.title = Almas Inquietas
 quest.hallows_eve_jack_daily_souls.flavor = Mais Almas Perdidas chegaram vagando ontem à noite. Liberta algumas antes que elas se instalem de vez.
+quest.hallows_eve_jack_daily_horseman.title = De Volta à Sela
+quest.hallows_eve_jack_daily_horseman.flavor = Ele está de volta à sela, como toda noite. Leva uma Vela Funerária ao Coveiro e derruba ele daquele cavalo de novo. A cavalgada comum, entendeu, não a difícil.
 quest.hallows_eve_jack_daily_pumpkins.title = Ronda das Abóboras
 quest.hallows_eve_jack_daily_pumpkins.flavor = As lanternas consomem Abóboras Consagradas mais rápido do que eu dou conta de entalhar. Me traz mais umas antes de escurecer.
 quest.hallows_eve_jack_daily_geodes.title = Geodos para Jack
@@ -94,6 +96,8 @@ quest.hallows_eve_board_carving.title = Entalhe na Bancada
 quest.hallows_eve_board_carving.flavor = Toda porta quer uma lanterna, e eu não entalho mais rápido que isso. Entalha umas Lanternas de Jack numa Bancada de Entalhe, uma abóbora e um pouco de carvão pra cada.
 quest.hallows_eve_board_skeletons.title = Ossos Sacudindo
 quest.hallows_eve_board_skeletons.flavor = Os esqueletos com a minha cara saíram de novo depois do escuro, sacudindo por onde as tochas não alcançam. Derruba uns bons pra mim.
+quest.hallows_eve_board_fiends.title = Capinando o Canteiro
+quest.hallows_eve_board_fiends.flavor = Demônios de Abóbora andam rastejando pelos bosques de outono depois do escuro, onde as abóboras selvagens crescem. Esmaga uns bons pra mim antes que criem raiz.
 
 # ---- Old Jack's errands board ----
 board.hallows_eve_errands.title = Recados do Velho Jack
@@ -105,6 +109,8 @@ quest.hallows_eve_errand_ghouls.title = Vigia das Covas
 quest.hallows_eve_errand_ghouls.flavor = Uns Carniçais Ocos estão fuçando as covas de novo. Abate eles antes que saiam andando.
 quest.hallows_eve_errand_skeletons.title = Ossos Soltos
 quest.hallows_eve_errand_skeletons.flavor = Uns Esqueletos de Jack escaparam ontem à noite. Derruba eles quando estiver na rua depois do escuro.
+quest.hallows_eve_errand_fiends.title = Sementes Ruins
+quest.hallows_eve_errand_fiends.flavor = Uns Demônios de Abóbora brotaram nos bosques de outono. Esmaga eles quando estiver na rua depois do escuro.
 quest.hallows_eve_errand_ectoplasm.title = Lanterna Bruxuleando
 quest.hallows_eve_errand_ectoplasm.flavor = Uma das minhas lanternas tá bruxuleando. Um pouco de Ectoplasma faria ela passar a noite.
 quest.hallows_eve_errand_bombs.title = Treino de Bombas
@@ -125,6 +131,8 @@ shop.hallows_eve_offer_harvest_moon_bundle.desc = Bombas-Lanterna Estilhaçadora
 shop.hallows_eve_offer_spyglass.desc = Observe através dela nas Grotas Gotejantes para localizar uma besta apossada do Vazio.
 shop.hallows_eve_offer_sell_eternal_candle.title = Venda uma Vela Eterna Sobressalente
 shop.hallows_eve_offer_sell_eternal_candle.desc = Uma Vela Eterna é tudo o que você precisa para abrir o cemitério do Cavaleiro. Traga uma sobressalente ao Velho Jack e ele paga por ela.
+shop.hallows_eve_offer_sell_horsemans_reins.title = Venda Rédeas do Cavaleiro Sobressalentes
+shop.hallows_eve_offer_sell_horsemans_reins.desc = Um par das Rédeas do Cavaleiro é tudo o que você precisa para chamar o cavalo dele. Traga um par sobressalente ao Velho Jack e ele paga por ele.
 
 # ---- Conquistas ----
 achievement.hallows_eve_lantern_keepsake.title = Lanterna Oca {0}
@@ -183,6 +191,7 @@ dialogue.hallows_eve_old_jack.daily_offer.text = Tenho uns serviços pequenos qu
 dialogue.hallows_eve_old_jack.daily_offer.opt.souls = Deixa as almas comigo.
 dialogue.hallows_eve_old_jack.daily_offer.opt.pumpkins = Vou trazer abóboras.
 dialogue.hallows_eve_old_jack.daily_offer.opt.geodes = Vou quebrar uns geodos.
+dialogue.hallows_eve_old_jack.daily_offer.opt.horseman = Vou derrubar o Cavaleiro de novo.
 dialogue.hallows_eve_old_jack.lantern_offer.text = Seus recados tão feitos, e eu tenho a brasa do Cavaleiro. Então este ano a gente acende uma <b>Lanterna Oca</b> pra você.\nAlguns dos esqueletos lá fora usam a minha cara, e eu não gosto disso. Derruba uns <b>Esqueletos de Jack</b>, depois me traz uma <b>Abóbora Consagrada</b> pra entalhar e um pouco de <b>Ectoplasma</b> pra queimar nela.
 dialogue.hallows_eve_old_jack.lantern_offer.opt.accept = Vamos acender.
 dialogue.hallows_eve_old_jack.lantern_ready.text = Uma <b>Abóbora Consagrada</b>, e <b>Ectoplasma</b> pra queimar nela. Os esqueletos com a minha cara tão caídos na grama, que é o lugar deles.\nPronto. A brasa pegou. A sua Lanterna Oca tá acesa, e é sua pra guardar. Leva este escudo também: minha loja vende o elmo, e o Cavaleiro usa o resto do conjunto. Volta ano que vem que a gente acende outra.
@@ -201,7 +210,7 @@ dialogue.hallows_eve_old_jack.sweets.text = Minha loja aceita eles por tudo o qu
 dialogue.hallows_eve_old_jack.who_are_you.text = Velho Jack. Já tive uma fazenda, longe daqui. Aí num outubro eu não voltei pra casa, e desde então volto todo outubro.\nMinhas lanternas mantêm os mortos longe destes degraus, e todo ano eu acendo uma Lanterna Oca com quem leva meus recados até o fim. Não me pergunta da cabeça.
 dialogue.hallows_eve_old_jack.harvest_moon.text = Tá vendo aquela lua? Lua da Colheita. Umas noites por ano os mortos ficam inquietos debaixo dela, e as covas se esvaziam.\nSe quer serviço, a noite é hoje. Eu fico acordado até ela se pôr.
 dialogue.hallows_eve_old_jack.horseman.text = O <b>Cavaleiro Sem Cabeça</b>. Ele cavalga no próprio cemitério toda noite da Noite das Bruxas. É meio fogo ele mesmo, então minhas Bombas-Lanterna só fazem metade do estrago nele, mas ainda mordem.\nO <color is="#ffd97a">Coveiro</color> ao meu lado guarda o portão. Ele leva você pra dentro depois de queimar uma <b>Vela Funerária</b> nele, e eu vendo essas na minha loja quando te considero Freguês. Quem entra primeiro paga, e o resto do grupo entra de graça. Leva amigos, e quando a cabeça dele voar, derruba ela, senão ele não pode ser ferido.
-dialogue.hallows_eve_old_jack.horseman_beaten.text = Então você derrubou ele daquele cavalo. Não vai segurar ele no chão: ele volta pra sela toda vez que alguém entra.\nVai atrás do <b>Cavaleiro Sem Cabeça</b> de novo, se quiser. Sua primeira vitória do dia deixa o Resgate diário dele e o Tesouro dele no baú onde ele cai, de vez em quando com uma peça da armadura velha dele, ou uma que ainda queima. O que você deixar nele espera em Resgates no seu menu.
+dialogue.hallows_eve_old_jack.horseman_beaten.text = Então você derrubou ele daquele cavalo. Não vai segurar ele no chão: ele volta pra sela toda vez que alguém entra.\nVai atrás do <b>Cavaleiro Sem Cabeça</b> de novo, se quiser. Sua primeira vitória do dia deixa dois Resgates no baú onde ele cai: o Resgate diário dele e o Resgate de Chefe Derrotado, que de vez em quando traz uma peça da armadura velha dele, e na cavalgada difícil uma que ainda queima. O que você deixar nele espera em Resgates no seu menu.
 dialogue.hallows_eve_old_jack.opt.quests = O que precisa ser feito?
 dialogue.hallows_eve_old_jack.opt.shop = Vamos ver sua loja.
 dialogue.hallows_eve_old_jack.opt.sweets = Pra que servem os doces?
@@ -230,11 +239,11 @@ title.hallows_eve_keeper_of_lanterns.display = {0}, Guardião das Lanternas
 
 # ---- The set achievements: wearing the Hallowed and Flaming Hallowed Sets ----
 achievement.hallows_eve_hallowed_armour.title = Armadura Consagrada
-achievement.hallows_eve_hallowed_armour.desc = Use um Elmo de Jack e a armadura do Cavaleiro Sem Cabeça.
+achievement.hallows_eve_hallowed_armour.desc = Use a armadura do Cavaleiro Sem Cabeça com o elmo dele ou um Elmo de Jack.
 achievement.hallows_eve_fully_hallowed.title = Totalmente Consagrado
 achievement.hallows_eve_fully_hallowed.desc = Use o Conjunto Consagrado inteiro, com um Escudo de Jack na mão secundária.
 achievement.hallows_eve_flaming_armour.title = Armadura Flamejante
-achievement.hallows_eve_flaming_armour.desc = Use o Elmo de Jack Ardente e a armadura flamejante do Cavaleiro Sem Cabeça.
+achievement.hallows_eve_flaming_armour.desc = Use a armadura flamejante do Cavaleiro Sem Cabeça com o elmo flamejante dele ou o Elmo de Jack Ardente.
 achievement.hallows_eve_fully_ablaze.title = Totalmente em Chamas
 achievement.hallows_eve_fully_ablaze.desc = Use o Conjunto Consagrado Flamejante inteiro, com o Escudo de Jack Flamejante na mão secundária.
 objective.hallows_eve.wear_hallowed = Use {0} peças do Conjunto Consagrado
@@ -261,6 +270,7 @@ objective.hallows_eve.bomb_down_horseman = Derrube o Cavaleiro Sem Cabeça só c
 objective.hallows_eve.bomb_down_horseman_hard = Derrube o Cavaleiro Sem Cabeça na cavalgada difícil só com Bombas-Lanterna
 objective.hallows_eve.bring_down_horseman_hard = Derrube o Cavaleiro Sem Cabeça na cavalgada difícil
 objective.hallows_eve.bring_ember = Traga a Brasa do Cavaleiro
+objective.hallows_eve.squash_fiends = Esmague {0} Demônios de Abóbora
 board.hallows_eve_daily.grade.night = Serviço Noturno
 board.hallows_eve_daily.grade.day = Serviço Diurno
 achievement.hallows_eve_jacks_confidant.title = Confidente de Jack
@@ -308,7 +318,7 @@ reputation.hallows_eve_old_jack.earn.quests = Faça os recados e os serviços di
 reputation.hallows_eve_old_jack.earn.board = Pegue contratos do quadro dele.
 reputation.hallows_eve_old_jack.earn.talk = Dê uma passada para um dedo de prosa, uma vez por dia.
 reputation.hallows_eve_old_jack.earn.gear = Use um Elmo de Jack, e tudo o que você faz por ele rende mais favor enquanto você o estiver usando.
-reputation.hallows_eve_old_jack.earn.horseman = Limpe o cemitério do Cavaleiro Sem Cabeça em qualquer cavalgada, e o baú paga o favor dele, metade nas outras vezes no mesmo dia. Sua primeira vitória normal do dia rende mais com o Tesouro do Cavaleiro.
+reputation.hallows_eve_old_jack.earn.horseman = Limpe o cemitério do Cavaleiro Sem Cabeça em qualquer cavalgada, e o baú paga o favor dele, metade nas outras vezes no mesmo dia. Sua primeira vitória normal do dia rende mais com o Resgate de Chefe Derrotado dele.
 reputation.hallows_eve_hallowed.name = Os Consagrados
 reputation.hallows_eve_hallowed.flavor = Os Consagrados cuidam para que os mortos descansem, e o Coveiro do cemitério do Cavaleiro é um deles. Derrube o que sai das covas à noite e eles reparam.
 factor.hallows_eve_hallowed.friendly = nível Amistoso com os Consagrados
@@ -319,7 +329,7 @@ reputation.hallows_eve_hallowed.earn.kills = Abata as criaturas que saem rasteja
 reputation.hallows_eve_hallowed.earn.jack = Os serviços diários e os contratos do quadro do Velho Jack também contam.
 reputation.hallows_eve_hallowed.earn.treats = Peça doces ou travessuras a todos com quem você conversar, uma vez por dia a cada um.
 reputation.hallows_eve_hallowed.earn.gear = Leve um Escudo de Jack, e você ganha o favor deles mais rápido enquanto ele estiver equipado.
-reputation.hallows_eve_hallowed.earn.horseman = Limpe o cemitério do Cavaleiro Sem Cabeça em qualquer cavalgada, e o baú paga o favor deles, metade nas outras vezes no mesmo dia. Sua primeira vitória difícil do dia rende mais com o Tesouro dele.
+reputation.hallows_eve_hallowed.earn.horseman = Limpe o cemitério do Cavaleiro Sem Cabeça em qualquer cavalgada, e o baú paga o favor deles, metade nas outras vezes no mesmo dia. Sua primeira vitória difícil do dia rende mais com o Resgate de Chefe Derrotado dele.
 notify.hallows_eve_hallowed_cache = Um agrado dos Consagrados, por manter os mortos debaixo da terra.
 dialogue.hallows_eve_old_jack.opt.standing = Em que pé estamos?
 
@@ -337,7 +347,7 @@ dialogue.hallows_eve_gravekeeper.opt.farewell = Boa noite.
 achievement.category.seasons.hallows_eve = Noite das Bruxas
 
 # ---- The Almanac page's items: where each comes from ----
-almanac.hallows_eve.source.pumpkin = Aparece de vez em quando ao colher abóboras com as mãos, e os Esqueletos de Jack deixam cair algumas.
+almanac.hallows_eve.source.pumpkin = Aparece de vez em quando ao colher abóboras com as mãos, e os Esqueletos de Jack e os Demônios de Abóbora deixam cair algumas.
 almanac.hallows_eve.source.geode = Aparece na pedra e no minério que você quebra, e as Assombrações de Geodo deixam cair alguns.
 almanac.hallows_eve.source.ectoplasm = As Almas Perdidas deixam cair, e também vem dentro dos Geodos Amaldiçoados.
 almanac.hallows_eve.source.bombs = As criaturas da noite deixam cair, vêm dentro dos Geodos Amaldiçoados, são entalhadas numa Bancada de Entalhe ou compradas na loja do Velho Jack.
@@ -349,23 +359,24 @@ almanac.hallows_eve.source.jack_shield = Entalhado numa Bancada de Entalhe, ou c
 almanac.hallows_eve.source.burning_helm = Vendido na loja do Velho Jack quando os Consagrados reverenciam você ou o Velho Jack confia totalmente em você.
 almanac.hallows_eve.source.flaming_shield = Vendido na loja do Velho Jack quando os Consagrados têm você na mais alta conta.
 almanac.hallows_eve.source.stall = Vendido na loja do Velho Jack.
-almanac.hallows_eve.source.grave_candle = Vendida na loja do Velho Jack quando ele te considera Freguês, e devolvida pelo Tesouro do Cavaleiro: às vezes uma depois da sua primeira vitória do dia, e algumas depois da sua primeira vitória difícil. O Coveiro as queima para abrir o cemitério para o seu grupo, e quando você é De Confiança com o Velho Jack, ele troca uma Vela Funerária Ardente por um punhado.
+almanac.hallows_eve.source.grave_candle = Vendida na loja do Velho Jack quando ele te considera Freguês, e devolvida pelo Resgate de Chefe Derrotado do Cavaleiro: às vezes uma depois da sua primeira vitória do dia, e algumas depois da sua primeira vitória difícil. O Coveiro as queima para abrir o cemitério para o seu grupo, e quando você é De Confiança com o Velho Jack, ele troca uma Vela Funerária Ardente por um punhado.
 almanac.hallows_eve.source.burning_grave_candle = Vendida na loja do Velho Jack quando você é De Confiança com ele, ou trocada lá por um punhado de Velas Funerárias. O Coveiro as queima para abrir a cavalgada difícil do Cavaleiro Sem Cabeça para o seu grupo.
 almanac.hallows_eve.source.stall_or_lab = Vendido na loja do Velho Jack conforme sua posição cresce, ou montado na Bancada de Trabalho do Goblin Inventor, no laboratório goblin.
 almanac.hallows_eve.source.festival_stall = Vendido na Prateleira do Festival da loja do Velho Jack.
 almanac.hallows_eve.source.keepsake = Lembrança do Velho Jack, dada uma vez por ano quando você termina a história dele.
 almanac.hallows_eve.source.festival_favor = Vendido nas lojas do festival a quem tem muito Favor do Festival.
-almanac.hallows_eve.source.bomb_rare = Sempre no Tesouro do Cavaleiro, e às vezes no Resgate diário dele. Também deixada pelas criaturas da noite, encontrada dentro de Geodos Amaldiçoados, entalhada numa Bancada de Entalhe ou comprada na loja do Velho Jack.
+almanac.hallows_eve.source.bomb_rare = Sempre no Resgate de Chefe Derrotado do Cavaleiro, e às vezes no Resgate diário dele. Também deixada pelas criaturas da noite, encontrada dentro de Geodos Amaldiçoados, entalhada numa Bancada de Entalhe ou comprada na loja do Velho Jack.
 almanac.hallows_eve.source.bomb_epic_horseman = Raramente deixada pelas Assombrações de Geodo ou encontrada dentro dos Geodos Amaldiçoados e do agrado dos Consagrados, e às vezes no Resgate diário do Cavaleiro Sem Cabeça. Você também pode entalhar uma numa Bancada de Entalhe, ou comprar algumas por dia na loja do Velho Jack.
-almanac.hallows_eve.source.hoard = Às vezes no Tesouro do Cavaleiro, pago pela sua primeira vitória sobre ele a cada dia.
-almanac.hallows_eve.source.hoard_hard = Só no Tesouro do Cavaleiro na cavalgada difícil, pago pela sua primeira vitória difícil sobre ele a cada dia. Depois de concluir A Cavalgada, peça ao Coveiro a cavalgada difícil.
-almanac.hallows_eve.source.hoard_normal = Só no Tesouro do Cavaleiro na cavalgada normal, pago pela sua primeira vitória sobre ele lá a cada dia.
-almanac.hallows_eve.source.eternal_candle = De vez em quando no Tesouro do Cavaleiro na cavalgada difícil, paga pela sua primeira vitória difícil sobre ele a cada dia. Leve-a e o Coveiro abre o cemitério normal dele para o seu grupo sem queimar uma Vela Funerária.
-almanac.hallows_eve.source.horseman_daily = Aparece de vez em quando no Resgate diário do Cavaleiro Sem Cabeça, pago pela sua primeira vitória sobre ele a cada dia.
-almanac.hallows_eve.source.burning_helm_trade = Comprado na loja do Velho Jack trocando um Elmo de Jack do seu inventário, quando os Consagrados reverenciam você ou o Velho Jack confia totalmente em você. Às vezes aparece no Tesouro do Cavaleiro.
-almanac.hallows_eve.source.flaming_shield_trade = Comprado na loja do Velho Jack trocando um Escudo de Jack do seu inventário, quando os Consagrados têm você na mais alta conta. Às vezes aparece no Tesouro do Cavaleiro.
+almanac.hallows_eve.source.hoard = Às vezes no Resgate de Chefe Derrotado do Cavaleiro, pago pela sua primeira vitória sobre ele a cada dia.
+almanac.hallows_eve.source.hoard_hard = Só no Resgate de Chefe Derrotado do Cavaleiro na cavalgada difícil, pago pela sua primeira vitória difícil sobre ele a cada dia. Depois de concluir A Cavalgada, peça ao Coveiro a cavalgada difícil.
+almanac.hallows_eve.source.hoard_normal = Só no Resgate de Chefe Derrotado do Cavaleiro na cavalgada normal, pago pela sua primeira vitória sobre ele lá a cada dia.
+almanac.hallows_eve.source.eternal_candle = De vez em quando no Resgate de Chefe Derrotado do Cavaleiro na cavalgada difícil, paga pela sua primeira vitória difícil sobre ele a cada dia. Leve-a e o Coveiro abre o cemitério normal dele para o seu grupo sem queimar uma Vela Funerária.
+almanac.hallows_eve.source.burning_helm_trade = Comprado na loja do Velho Jack trocando um Elmo de Jack do seu inventário, quando os Consagrados reverenciam você ou o Velho Jack confia totalmente em você. Às vezes aparece no Resgate de Chefe Derrotado do Cavaleiro.
+almanac.hallows_eve.source.flaming_shield_trade = Comprado na loja do Velho Jack trocando um Escudo de Jack do seu inventário, quando os Consagrados têm você na mais alta conta. Às vezes aparece no Resgate de Chefe Derrotado do Cavaleiro.
+almanac.hallows_eve.source.steed_trophy = De vez em quando no Resgate de Chefe Derrotado do Cavaleiro, e com mais frequência na cavalgada difícil, pago pela sua primeira vitória sobre ele a cada dia. O Velho Jack também vende uma. Coloque como bloco.
+almanac.hallows_eve.source.reins = Só em servidores com o mod Alec's Tamework: muito raramente no Resgate de Chefe Derrotado do Cavaleiro, e de vez em quando na cavalgada difícil. Elas trazem o cavalo preto dele para você. Segure-as e clique com o botão direito para abrir sua lista, aperte Invocar para chamar seu cavalo, e depois aperte F para montar.
 
 # ---- The Almanac page's Headless Horseman banner and his Hoard ----
 almanac.hallows_eve.horseman.line = O Coveiro ao lado do Velho Jack leva você lá. Leve amigos.
 almanac.hallows_eve.horseman.button = Recordes de lutas de chefe
-almanac.hallows_eve.hoard.line = Sua primeira vitória do dia deixa o Tesouro dele no baú onde ele cai, e em Resgates: uma Bomba-Lanterna Espectral e favor com o Velho Jack, e às vezes uma Vela Funerária, uma peça do conjunto Consagrado Flamejante, uma Lápide ou uma Lanterna da Civilização Perdida. O Tesouro da cavalgada difícil traz algumas Velas Funerárias e o favor dos Consagrados, mais chance das peças flamejantes, o peitoral flamejante dele e, de vez em quando, uma Vela Eterna. A armadura comum dele vem no Resgate diário.
+almanac.hallows_eve.hoard.line = Sua primeira vitória do dia deixa o Resgate de Chefe Derrotado dele no baú onde ele cai, e em Resgates: uma Bomba-Lanterna Espectral e favor com o Velho Jack, e às vezes uma Vela Funerária, uma peça da armadura dele, um Elmo de Jack Ardente, um Escudo de Jack Flamejante, um minúsculo troféu do cavalo dele, uma Lápide ou uma Lanterna da Civilização Perdida. Na cavalgada difícil ele traz algumas Velas Funerárias e o favor dos Consagrados, mais chance da armadura dele, do Elmo de Jack Ardente, do Escudo de Jack Flamejante e do troféu, a armadura flamejante dele e, de vez em quando, uma Vela Eterna. Em servidores com o mod Alec's Tamework, ele também pode trazer as Rédeas dele, e o cavalo preto junto.

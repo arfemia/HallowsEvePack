@@ -10,9 +10,10 @@
     "Each step fires once per try: its flag (Orbis_Boss_Fight_Wave_First to _Fourth) keeps it from",
     "firing again, so a boss healed above a step and brought below it again raises no second wave. The",
     "template clears the four flags when the fight resets, so every try raises them again. Give a step",
-    "a HealthRange of [0, 0] and it never fires before the boss falls. The defaults are the Headless",
-    "Horseman's hard ride: three Jack Skeletons on the plaza south of his fountain and two Jack Archers",
-    "at its north corners, at 80, 60, 40 and 20 percent of his health."
+    "a HealthRange of [0, 0] and it never fires before the boss falls. The defaults raise three Jack",
+    "Skeletons on the plaza south of the Headless Horseman's fountain and two Jack Archers at its north",
+    "corners, at 80, 60, 40 and 20 percent of his health; each of his rides forwards its own make-up",
+    "(Pumpkin Fiends on both, beside Jack Archers on the hard one)."
   ],
   "Class": "Instruction",
   "Type": "Component",

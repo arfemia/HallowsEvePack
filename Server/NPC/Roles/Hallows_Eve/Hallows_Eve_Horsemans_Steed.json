@@ -1,0 +1,116 @@
+{
+  "$Comment": "The Horseman's Steed: his black barded horse as a player's own mount. It never spawns in the world: on a server running Alec's Tamework, the Horseman's Reins drop puts one in the player's Tamework roster (ZiggfreedCommon/Lootables/HallowsEvePack/Hallows_Eve_Horsemans_Reins_Chase.json runs /tw bonded grant with this role), and the Reins call it out and put it away (Server/Tamework/). A Variant of Hallows_Eve_Template_Horsemans_Steed, the pack's copy of the game's Template_Livestock (see that file for why it is a copy), carrying the game's tamed horse's own Modify (Tamed_Horse): IsMountable and its MountAnchor seat the rider as on any tamed horse. With Tamework, Server/Patchwork/Patches/Hallows_Eve/Hallows_Eve_Horsemans_Steed_Patch.json swaps the template's interactions for Tamework's, so F rides it only for its owner (Server/Tamework/Interactions/Hallows_Eve_Horsemans_Steed.json). Where it differs from the tamed horse: its Appearance (Hallows_Eve_Horsemans_Steed, his horse without a rider), its own name, FlockArray empty so it never joins or brings a herd, and DropList Empty, since Tamework revives it rather than it being farmed. Any key the template does not declare makes the game refuse the whole role.",
+  "Type": "Variant",
+  "Reference": "Hallows_Eve_Template_Horsemans_Steed",
+  "Modify": {
+    "Appearance": "Hallows_Eve_Horsemans_Steed",
+    "AttitudeGroup": "PreyBig",
+    "FlockArray": [],
+    "AttractiveItemSet": [
+      "Tool_Feedbag",
+      "Plant_Crop_Carrot_Item"
+    ],
+    "FollowItemDistance": [ 2.5, 3 ],
+    "DropList": "Empty",
+    "MaxHealth": 124,
+    "MaxSpeed": 10,
+    "ViewRange": 15,
+    "ViewSector": 350,
+    "HearingRange": 12,
+    "AlertedRange": 20,
+    "AlertedActionRange": 4,
+    "AbsoluteDetectionRange": 2,
+    "AttackWhenStartled": true,
+    "Attack": "Root_NPC_Attack_Melee",
+    "ProduceItem": "Ingredient_Poop",
+    "IsMountable": true,
+    "MountAnchorX": 0,
+    "MountAnchorY": 1.6,
+    "MountAnchorZ": 0,
+    "IsMemory": true,
+    "MemoriesNameOverride": "Horse",
+    "NameTranslationKey": "npcs.Hallows_Eve_Horsemans_Steed.name",
+    "_InteractionVars": {
+      "Melee_Start": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Simple",
+            "$Comment": "Sets animations and delay before hit",
+            "Effects": {
+              "ItemPlayerAnimationsId": "Cow_Default",
+              "ItemAnimationId": "Kick"
+            },
+            "RunTime": 0.167
+          }
+        ]
+      },
+      "Melee_Selector": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Selector_Left",
+            "$Comment": "Sets Hit shape and padding to allow effect to play and wait till animation is over",
+            "RunTime": 0.083,
+            "Selector": {
+              "Id": "Stab",
+              "TestLineOfSight": true,
+              "ExtendTop": 0,
+              "ExtendBottom": 1,
+              "ExtendLeft": 0.5,
+              "ExtendRight": 0.5,
+              "StartDistance": 0.25,
+              "EndDistance": 2.5,
+              "YawOffset": 180
+            },
+            "Next": {
+              "Type": "Simple",
+              "$Comment": "Pad the interaction length",
+              "RunTime": 0.167
+            }
+          }
+        ]
+      },
+      "Melee_Damage": {
+        "Interactions": [
+          {
+            "$Comment": "When NPC overrides the InteractionVars, this info in Template not applicable anymore",
+            "Parent": "NPC_Livestock_Kick_Damage",
+            "DamageCalculator": {
+              "Type": "Absolute",
+              "BaseDamage": {
+                "Physical": 30
+              },
+              "RandomPercentageModifier": 0.1
+            },
+            "DamageEffects": {
+              "Knockback": {
+                "Type": "Force",
+                "VelocityConfig": {
+                  "AirResistance": 0.97,
+                  "AirResistanceMax": 0.96,
+                  "GroundResistance": 0.94,
+                  "GroundResistanceMax": 0.3,
+                  "Threshold": 3,
+                  "Style": "Exp"
+                },
+                "Direction": {
+                  "X": 0,
+                  "Y": 1,
+                  "Z": 2
+                },
+                "Force": 7,
+                "VelocityType": "Set"
+              },
+              "WorldSoundEventId": "SFX_Unarmed_Impact",
+              "LocalSoundEventId": "SFX_Unarmed_Impact",
+              "WorldParticles": [
+                {
+                  "SystemId": "Impact_Sword_Basic"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

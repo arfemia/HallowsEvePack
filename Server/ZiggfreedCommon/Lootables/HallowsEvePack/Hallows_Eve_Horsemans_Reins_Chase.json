@@ -1,0 +1,44 @@
+{
+  "$Comment": [
+    "The Horseman's Reins added to the Horseman's Hoard (the Hallows_Eve_Horseman_Chase table, which",
+    "players see as his Boss Kill Claim) for the first win on the normal ride each day, on a server",
+    "running Alec's Tamework. The hard ride's Hoard has its own, at far better odds",
+    "(Hallows_Eve_Horsemans_Reins_Chase_Hard.json).",
+    "",
+    "ContributesTo folds this roll into that table without touching its file. Requires takes this file",
+    "out on a server without Tamework, so there are no Reins there; always write it with Min 1. Chance",
+    "is a percent from 0 to 100, so 0.04 is 1 in 2,500. The one roll pays the Reins item and runs",
+    "Tamework's grant as the server console when the Claim is collected: {uuid} is the player who",
+    "collects it, and it puts one Horseman's Steed in that player's Tamework roster (the roster id and",
+    "the role must match Server/Tamework/BondedCompanions/Rosters/Hallows_Eve_Horsemans_Reins.json).",
+    "The roster holds one steed, so a second drop pays a second Reins and Tamework refuses the second",
+    "steed, which only the console log shows; Old Jack buys the spare pair back",
+    "(ShopEntries/HallowsEvePack/Hallows_Eve_Offer_Sell_Horsemans_Reins.json). NameKey and Icon are how",
+    "the Claim shows the steed."
+  ],
+  "Name": "Hallows_Eve_Horsemans_Reins_Chase",
+  "ContributesTo": "Hallows_Eve_Horseman_Chase",
+  "Requires": {
+    "Factors": [
+      { "Factor": "hytale:mod_installed", "Param": "Alechilles:Alec's Tamework!", "Min": 1 }
+    ]
+  },
+  "Rolls": [
+    {
+      "Chance": { "Base": 0.04 },
+      "Grants": {
+        "Items": [ { "Item": "Hallows_Eve_Horsemans_Reins", "Count": 1 } ],
+        "Rewards": [
+          {
+            "Kind": "Command",
+            "Params": {
+              "Command": "tw bonded grant {uuid} SeasonsOfOrbis:Hallows_Eve_Horsemans_Reins Hallows_Eve_Horsemans_Steed",
+              "NameKey": "reward.hallows_eve_horsemans_steed",
+              "Icon": "Hallows_Eve_Horsemans_Steed_Trophy"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

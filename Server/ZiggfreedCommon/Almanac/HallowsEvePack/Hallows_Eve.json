@@ -1,5 +1,5 @@
 {
-  "$Comment": "Hallow's Eve in the Almanac: the season's name and picture, its yearly keepsake, and the tallies it keeps. The file name is the calendar event id. Each stat line counts one kind of moment; LiveOnly false keeps the every-season tally running all year, for the bombs and geodes a player still holds after the event. Hero.Composition is the banner at the top of the season's page: each item's own icon drawn at X and Y (pixels from the top-left of the 962 x 240 plate) and Size (a square side up to 128; 64, 96 and 128 read best), over the Background colour. Keep the plate left of about x 450 clear for the title, status and dates. Gradient paints the sky from its Top colour down to its Bottom one in place of the flat Background, and Glow lays a soft round light under the items, its square box placed by X, Y and Size the way an item's is. Sections lays out the page below its top in the order written: the tallies, the Headless Horseman's banner and his Hoard's grid, the season's items grid, the keepsake shelf, the achievements and the links. The banner is a 906 wide plate Height tall, composed the way the top is (Composition, pictures placed by X, Y and Size on that plate), with its title and line on the left (keep the plate left of x 584 clear for them): it points players to the Gravekeeper next to Old Jack. A picture names an Item, or an Npc role whose portrait it draws instead (the still of the model the role wears, up to Size 128), here the Horseman himself among his armour. A banner's button would sit on its right (x 662 to 882), where he stands, so this one has none. A grid (Collection.Items, at most 45, nine a row) shows items a player can find; a Hidden one shows '?' until the player has held it once, and SourceKey is the tooltip line saying where it comes from. The Hoard's grid lists what the Horseman's Hoard pays (ZiggfreedCommon/Lootables/HallowsEvePack/Hallows_Eve_Horseman_Chase.json) and his hard ride's Hoard (Hallows_Eve_Horseman_Chase_Hard.json beside it), the Grave Candle included: the flaming breastplate and the Eternal Candle pay only on the hard ride and the tombstone and the ruins lantern only on the normal one, and their SourceKeys say so, so change them together; its button opens Records, where his fight's records sit on the Bosses tab, under Seasonal. Add, drop or reorder a slot here; an item the server does not have is left out. Horseman_Down counts his fight's wins (ENCOUNTER_DEFEATED names the fight's script) and Old Jack's rider line reads it as the ziggfreedcommon:counter key hallows_eve/horseman_down; Horseman_Heads counts the flying heads a player kills.",
+  "$Comment": "Hallow's Eve in the Almanac: the season's name and picture, its yearly keepsake, and the tallies it keeps. The file name is the calendar event id. Each stat line counts one kind of moment; LiveOnly false keeps the every-season tally running all year, for the bombs and geodes a player still holds after the event. Hero.Composition is the banner at the top of the season's page: each item's own icon drawn at X and Y (pixels from the top-left of the 962 x 240 plate) and Size (a square side up to 128; 64, 96 and 128 read best), over the Background colour. Keep the plate left of about x 450 clear for the title, status and dates. Gradient paints the sky from its Top colour down to its Bottom one in place of the flat Background, and Glow lays a soft round light under the items, its square box placed by X, Y and Size the way an item's is. Sections lays out the page below its top in the order written: the tallies, the Headless Horseman's banner and his Hoard's grid, the season's items grid, the keepsake shelf, the achievements and the links. The banner is a 906 wide plate Height tall, composed the way the top is (Composition, pictures placed by X, Y and Size on that plate), with its title and line on the left (keep the plate left of x 584 clear for them): it points players to the Gravekeeper next to Old Jack. A picture names an Item, or an Npc role whose portrait it draws instead (the still of the model the role wears, up to Size 128), here the Horseman himself among his armour. A banner's button would sit on its right (x 662 to 882), where he stands, so this one has none. A grid (Collection.Items, at most 45, nine a row) shows items a player can find; a Hidden one shows '?' until the player has held it once, and SourceKey is the tooltip line saying where it comes from. The Hoard's grid lists what the Horseman's Hoard pays (ZiggfreedCommon/Lootables/HallowsEvePack/Hallows_Eve_Horseman_Chase.json) and his hard ride's Hoard (Hallows_Eve_Horseman_Chase_Hard.json beside it), the Grave Candle and all his armour included; its heading is that Claim's own title (claim.hallows_eve_horseman_chase, which players read as his Boss Kill). His flaming breastplate, gauntlets, greaves and helm and the Eternal Candle pay only on the hard ride, the tombstone and the ruins lantern only on the normal one, the Horseman's Steed Trophy on both and the Horseman's Reins only where Alec's Tamework runs (Hallows_Eve_Horsemans_Reins_Chase.json and _Chase_Hard.json), and their SourceKeys say so, so change them together; the Reins slot carries the same Tamework Requires as those two files (always Min 1), so the grid leaves it out on a server without Tamework; its button opens Records, where his fight's records sit on the Bosses tab, under Seasonal. Add, drop or reorder a slot here; an item the server does not have is left out. Horseman_Down counts his fight's wins (ENCOUNTER_DEFEATED names the fight's script) and Old Jack's rider line reads it as the ziggfreedcommon:counter key hallows_eve/horseman_down; Horseman_Heads counts the flying heads a player kills.",
   "Text": {
     "TitleKey": "almanac.hallows_eve.title",
     "FlavorKey": "almanac.hallows_eve.flavor"
@@ -58,12 +58,28 @@
         "Items": [
           { "Item": "Hallows_Eve_Lantern_Bomb_Rare", "SourceKey": "almanac.hallows_eve.source.bomb_rare" },
           { "Item": "Hallows_Eve_Grave_Candle", "SourceKey": "almanac.hallows_eve.source.grave_candle" },
+          { "Item": "Hallows_Eve_Horseman_Breastplate", "SourceKey": "almanac.hallows_eve.source.hoard" },
+          { "Item": "Hallows_Eve_Horseman_Gauntlets", "SourceKey": "almanac.hallows_eve.source.hoard" },
+          { "Item": "Hallows_Eve_Horseman_Greaves", "SourceKey": "almanac.hallows_eve.source.hoard" },
+          { "Item": "Hallows_Eve_Horseman_Helm", "SourceKey": "almanac.hallows_eve.source.hoard" },
           { "Item": "Hallows_Eve_Burning_Jack_Helm", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.burning_helm_trade" },
           { "Item": "Hallows_Eve_Flaming_Horseman_Breastplate", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.hoard_hard" },
-          { "Item": "Hallows_Eve_Flaming_Horseman_Gauntlets", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.hoard" },
-          { "Item": "Hallows_Eve_Flaming_Horseman_Greaves", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.hoard" },
+          { "Item": "Hallows_Eve_Flaming_Horseman_Gauntlets", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.hoard_hard" },
+          { "Item": "Hallows_Eve_Flaming_Horseman_Greaves", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.hoard_hard" },
+          { "Item": "Hallows_Eve_Flaming_Horseman_Helm", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.hoard_hard" },
           { "Item": "Hallows_Eve_Flaming_Jack_Shield", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.flaming_shield_trade" },
           { "Item": "Hallows_Eve_Eternal_Candle", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.eternal_candle" },
+          { "Item": "Hallows_Eve_Horsemans_Steed_Trophy", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.steed_trophy" },
+          {
+            "Item": "Hallows_Eve_Horsemans_Reins",
+            "Hidden": true,
+            "SourceKey": "almanac.hallows_eve.source.reins",
+            "Requires": {
+              "Factors": [
+                { "Factor": "hytale:mod_installed", "Param": "Alechilles:Alec's Tamework!", "Min": 1 }
+              ]
+            }
+          },
           { "Item": "Furniture_Village_Tombstone", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.hoard_normal" },
           { "Item": "Furniture_Human_Ruins_Lantern", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.hoard_normal" }
         ],
@@ -92,9 +108,10 @@
           { "Item": "Hallows_Eve_Jack_Shield", "SourceKey": "almanac.hallows_eve.source.jack_shield" },
           { "Item": "Hallows_Eve_Burning_Jack_Helm", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.burning_helm_trade" },
           { "Item": "Hallows_Eve_Flaming_Jack_Shield", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.flaming_shield_trade" },
-          { "Item": "Hallows_Eve_Horseman_Breastplate", "SourceKey": "almanac.hallows_eve.source.horseman_daily" },
-          { "Item": "Hallows_Eve_Horseman_Gauntlets", "SourceKey": "almanac.hallows_eve.source.horseman_daily" },
-          { "Item": "Hallows_Eve_Horseman_Greaves", "SourceKey": "almanac.hallows_eve.source.horseman_daily" },
+          { "Item": "Hallows_Eve_Horseman_Breastplate", "SourceKey": "almanac.hallows_eve.source.hoard" },
+          { "Item": "Hallows_Eve_Horseman_Gauntlets", "SourceKey": "almanac.hallows_eve.source.hoard" },
+          { "Item": "Hallows_Eve_Horseman_Greaves", "SourceKey": "almanac.hallows_eve.source.hoard" },
+          { "Item": "Hallows_Eve_Horseman_Helm", "SourceKey": "almanac.hallows_eve.source.hoard" },
           { "Item": "Hallows_Eve_Grave_Candle", "SourceKey": "almanac.hallows_eve.source.grave_candle" },
           { "Item": "Hallows_Eve_Burning_Grave_Candle", "SourceKey": "almanac.hallows_eve.source.burning_grave_candle" },
           { "Item": "Hallows_Eve_Fire_Resistance_Potion", "SourceKey": "almanac.hallows_eve.source.stall" },

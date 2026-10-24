@@ -36,8 +36,13 @@
     "offer's answer takes its quest and goes straight to that screen, so the player hears what to do",
     "and where the moment they take it. Pumpkin Patch, Fire for the Lantern (ember_ready) and the",
     "lantern quest have hand-in lines of their own; the rest share",
-    "ready_generic, which opens his quest list for the hand-in. The three dailies share daily_offer,",
-    "one answer each, shown while that daily is free to take. Then shows the lit-lantern line while",
+    "ready_generic, which opens his quest list for the hand-in. The four dailies share daily_offer,",
+    "one answer each, shown while that daily is free to take and the player meets its prerequisite:",
+    "each answer carries a Requires condition naming the same quest its daily's own Requires does",
+    "(Pumpkin Patch for three of them, The Rider for Back in the Saddle), so the screen never offers",
+    "a daily the quest would refuse, whichever daily brought the player to it. Back in the Saddle,",
+    "the daily ride against the Horseman, has The Rider's Active screen, horseman. Then shows the",
+    "lit-lantern line while",
     "this year's lantern burns (the lantern quest reads ON_COOLDOWN until it comes back next year).",
     "",
     "THE MENU. The steady screens carry jack_menu, the one menu: What needs doing?, his quest list,",
@@ -114,7 +119,8 @@
       "hallows_eve_old_jack_lantern": { "Offerable": "lantern_offer", "Active": "active_night", "Ready": "lantern_ready" },
       "hallows_eve_jack_daily_souls": { "Offerable": "daily_offer", "Active": "active_night", "Ready": "ready_generic" },
       "hallows_eve_jack_daily_pumpkins": { "Offerable": "daily_offer", "Active": "active_pumpkins", "Ready": "ready_generic" },
-      "hallows_eve_jack_daily_geodes": { "Offerable": "daily_offer", "Active": "active_stone", "Ready": "ready_generic" }
+      "hallows_eve_jack_daily_geodes": { "Offerable": "daily_offer", "Active": "active_stone", "Ready": "ready_generic" },
+      "hallows_eve_jack_daily_horseman": { "Offerable": "daily_offer", "Active": "horseman", "Ready": "ready_generic" }
     },
     "Then": [
       {
@@ -342,20 +348,38 @@
         {
           "LabelKey": "dialogue.hallows_eve_old_jack.daily_offer.opt.souls",
           "Style": "accept",
-          "Conditions": [ { "Type": "QuestState", "Quest": "hallows_eve_jack_daily_souls", "State": "NOT_STARTED" } ],
+          "Conditions": [
+            { "Type": "QuestState", "Quest": "hallows_eve_jack_daily_souls", "State": "NOT_STARTED" },
+            { "Type": "Requires", "Requires": { "Quests": [ "hallows_eve_old_jack_1" ] } }
+          ],
           "Do": [ { "Accept": "hallows_eve_jack_daily_souls" }, { "Goto": "active_night" } ]
         },
         {
           "LabelKey": "dialogue.hallows_eve_old_jack.daily_offer.opt.pumpkins",
           "Style": "accept",
-          "Conditions": [ { "Type": "QuestState", "Quest": "hallows_eve_jack_daily_pumpkins", "State": "NOT_STARTED" } ],
+          "Conditions": [
+            { "Type": "QuestState", "Quest": "hallows_eve_jack_daily_pumpkins", "State": "NOT_STARTED" },
+            { "Type": "Requires", "Requires": { "Quests": [ "hallows_eve_old_jack_1" ] } }
+          ],
           "Do": [ { "Accept": "hallows_eve_jack_daily_pumpkins" }, { "Goto": "active_pumpkins" } ]
         },
         {
           "LabelKey": "dialogue.hallows_eve_old_jack.daily_offer.opt.geodes",
           "Style": "accept",
-          "Conditions": [ { "Type": "QuestState", "Quest": "hallows_eve_jack_daily_geodes", "State": "NOT_STARTED" } ],
+          "Conditions": [
+            { "Type": "QuestState", "Quest": "hallows_eve_jack_daily_geodes", "State": "NOT_STARTED" },
+            { "Type": "Requires", "Requires": { "Quests": [ "hallows_eve_old_jack_1" ] } }
+          ],
           "Do": [ { "Accept": "hallows_eve_jack_daily_geodes" }, { "Goto": "active_stone" } ]
+        },
+        {
+          "LabelKey": "dialogue.hallows_eve_old_jack.daily_offer.opt.horseman",
+          "Style": "accept",
+          "Conditions": [
+            { "Type": "QuestState", "Quest": "hallows_eve_jack_daily_horseman", "State": "NOT_STARTED" },
+            { "Type": "Requires", "Requires": { "Quests": [ "hallows_eve_old_jack_horseman" ] } }
+          ],
+          "Do": [ { "Accept": "hallows_eve_jack_daily_horseman" }, { "Goto": "horseman" } ]
         }
       ],
       "IncludeOptions": [ "jack_back" ]

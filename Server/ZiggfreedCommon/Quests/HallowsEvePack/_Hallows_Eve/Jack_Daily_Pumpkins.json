@@ -1,5 +1,5 @@
 {
-  "$Comment": "One of Old Jack's three dailies: Hallowed Pumpkins handed in at the giver. A TURN_IN step is handed in where it is, so no report-back step is added. The Mmo_Xp row is MMO Skill Tree's: Harvesting XP, the skill the pumpkins come from, paid only where that mod runs. Its own Requires, the hytale:mod_installed gate, leaves the row out on a server without it, unpaid and unshown, and the rest of the quest pays.",
+  "$Comment": "One of Old Jack's four dailies: Hallowed Pumpkins handed in at the giver. A TURN_IN step is handed in where it is, so no report-back step is added. The Mmo_Xp row is MMO Skill Tree's: Harvesting XP, the skill the pumpkins come from, paid only where that mod runs. Its own Requires, the hytale:mod_installed gate, leaves the row out on a server without it, unpaid and unshown, and the rest of the quest pays.",
   "Name": "Jack_Daily_Pumpkins",
   "Parent": "Hallows_Eve_Quest_Base",
   "Text": {

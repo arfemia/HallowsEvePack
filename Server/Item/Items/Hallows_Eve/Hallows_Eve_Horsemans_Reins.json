@@ -1,0 +1,18 @@
+{
+  "$Comment": "The Horseman's Reins: the Headless Horseman's black horse as a player's own mount, through Alec's Tamework. They drop only where Tamework runs, from his Boss Kill Claim (ZiggfreedCommon/Lootables/HallowsEvePack/Hallows_Eve_Horsemans_Reins_Chase.json and _Chase_Hard.json, very rarely on the normal ride and now and then on the hard one; change the odds there), and the same roll puts the Horseman's Steed in the player's Tamework roster. Held, a right-click opens that roster, where SUMMON calls the steed and DISMISS puts it away; F rides it, for its owner only. This file is a plain item on every server: Server/Patchwork/Patches/Hallows_Eve/Hallows_Eve_Horsemans_Reins_Patch.json gives it the right-click only where Tamework runs, since an item naming Tamework's interaction would stop a server without it at boot, and Server/Tamework/Items/Commands/Hallows_Eve_Horsemans_Reins.json ties it to the roster. Old Jack buys a spare pair back for Hallow Sweets where Tamework runs (ZiggfreedCommon/ShopEntries/HallowsEvePack/Hallows_Eve_Offer_Sell_Horsemans_Reins.json). It wears the game's leather strap model on this pack's black texture (tools/derive_art.py draws the texture and the icon). Legendary quality frames the prize; MaxStack 1 keeps each in its own slot, and DropOnDeath false keeps it in the bag, since the Reins are the only way to call the steed.",
+  "TranslationProperties": {
+    "Name": "items.Hallows_Eve_Horsemans_Reins.name",
+    "Description": "items.Hallows_Eve_Horsemans_Reins.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Hallows_Eve_Horsemans_Reins.png",
+  "IconProperties": {"Scale": 0.67, "Translation": [1.3, -7.1], "Rotation": [17.06, 74.435, 73.31]},
+  "Quality": "Legendary",
+  "Categories": ["Items.Tools"],
+  "Model": "Resources/Materials/Strap_Leather.blockymodel",
+  "Texture": "Items/Hallows_Eve/Horsemans_Reins/Horsemans_Reins_Texture.png",
+  "PlayerAnimationsId": "Item",
+  "Tags": {"Type": ["Tool"]},
+  "ItemSoundSetId": "ISS_Armor_Leather",
+  "MaxStack": 1,
+  "DropOnDeath": false
+}

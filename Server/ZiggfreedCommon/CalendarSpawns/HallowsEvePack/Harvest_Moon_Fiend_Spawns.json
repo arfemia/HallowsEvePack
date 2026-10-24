@@ -1,0 +1,21 @@
+{
+  "$Comment": [
+    "Harvest Moon's Pumpkin Fiends: the Hallows_Eve_Fiends rule rewritten with a higher weight while",
+    "Harvest Moon runs. Same Rule as Hallows_Eve_Fiend_Spawns.json, so it rewrites that rule rather than",
+    "adding a second; Priority 10 beats that file's 0, and the Hallow's Eve body takes the rule back when",
+    "Harvest Moon ends. Keep the environment, the pack size and the times the same as that file; change",
+    "only the weight, and keep it above that file's."
+  ],
+  "Event": "Harvest_Moon",
+  "Rule": "Hallows_Eve_Fiends",
+  "Priority": 10,
+  "Spawn": {
+    "Environments": [ "Env_Zone1_Autumn" ],
+    "NPCs": [
+      { "Id": "Hallows_Eve_Pumpkin_Fiend", "Weight": 12, "SpawnBlockSet": "Soil", "Flock": { "Size": [2, 3] } }
+    ],
+    "DayTimeRange": [19, 5],
+    "Despawn": { "DayTimeRange": [5, 19] },
+    "LightRanges": { "Light": [0, 8] }
+  }
+}

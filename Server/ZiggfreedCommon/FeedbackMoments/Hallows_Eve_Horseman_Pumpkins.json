@@ -1,0 +1,12 @@
+{
+  "$Comment": [
+    "What each member of the Headless Horseman's fight is told when his pumpkins hatch Pumpkin Fiends",
+    "as his health falls (his fights' FightWaves, Macro_Orbis_Boss_Fight_Waves, draw it as each wave",
+    "rises, on both rides). The file name is the moment id. Key is a line in this pack's",
+    "hallowseve.world.lang, written bare."
+  ],
+  "Toast": {
+    "Title": { "Key": "notify.hallows_eve_horseman_pumpkins" },
+    "Tone": "Warning"
+  }
+}

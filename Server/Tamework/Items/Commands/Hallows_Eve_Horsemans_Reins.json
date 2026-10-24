@@ -1,0 +1,27 @@
+{
+  "$Comment": "Makes the Horseman's Reins Alec's Tamework's way to reach the Horseman's Steed. Only Tamework reads this folder; on a server without it the file sits unread. RosterStorage BondedCompanions with BondedRosterId makes the Reins open the player's own roster of that name (Server/Tamework/BondedCompanions/Rosters/Hallows_Eve_Horsemans_Reins.json), where SUMMON calls the steed and DISMISS puts it away; the right-click that opens it is the Reins' Patchwork patch (Server/Patchwork/Patches/Hallows_Eve/). Links are off (LinkEnabled false): a roster needs none. Tamework opens the roster only for an item with at least one command, so CommandList holds one, Calm, which settles the steed back to grazing (SetState Idle, the state the game's horse rests in); its label is a key in items.lang. HotswapHudEnabled false keeps Tamework's command strip off the screen while the Reins are held, since there is nothing to switch between.",
+  "Enabled": true,
+  "HotswapHudEnabled": false,
+  "ItemIds": [ "Hallows_Eve_Horsemans_Reins" ],
+  "RosterStorage": "BondedCompanions",
+  "BondedRosterId": "SeasonsOfOrbis:Hallows_Eve_Horsemans_Reins",
+  "MembershipMode": "LinkedOnly",
+  "LinkEnabled": false,
+  "LinkUseTogglesMembership": false,
+  "RequireTamed": true,
+  "RequireOwner": true,
+  "AllowedRoles": {
+    "Mode": "Allowlist",
+    "Allowlist": [ "Hallows_Eve_Horsemans_Steed" ]
+  },
+  "CommandList": [
+    {
+      "Id": "Calm",
+      "DisplayName": "items.Hallows_Eve_Horsemans_Reins.command_calm",
+      "Default": true,
+      "Steps": [
+        { "Type": "SetState", "State": "Idle" }
+      ]
+    }
+  ]
+}

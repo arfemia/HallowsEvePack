@@ -6,7 +6,7 @@ gearset.hallows_eve_hallowed.tier_pair = Ein Teil des Sets am Körper und ein Ja
 gearset.hallows_eve_hallowed.tier_armor = Helm, Brustplatte, Handschuhe und Beinschienen an: etwas mehr Gesundheit, und alles, was du in Brand setzt, brennt heißer.
 gearset.hallows_eve_hallowed.tier_armor_shield = Alle vier an und Schild in der Hand: noch mehr Gesundheit, und dein Feuer brennt noch heißer.
 gearset.hallows_eve_flaming_hallowed.title = Flammendes Geweihtes Set
-gearset.hallows_eve_flaming_hallowed.tier_armor = Brennender Helm und flammende Rüstung an: mehr Gesundheit, und alles, was du in Brand setzt, brennt viel heißer.
+gearset.hallows_eve_flaming_hallowed.tier_armor = Ein Brennender Jack-Helm oder der Flammende Helm des Reiters, dazu seine flammende Rüstung an: mehr Gesundheit, und alles, was du in Brand setzt, brennt viel heißer.
 gearset.hallows_eve_flaming_hallowed.tier_armor_shield = Alle vier an und den Flammenden Jack-Schild in der Hand: noch mehr Gesundheit, und dein Feuer brennt noch heißer.
 
 # The costumes' names, shown when a player hovers the costume's icon. The effect JSON spells the full

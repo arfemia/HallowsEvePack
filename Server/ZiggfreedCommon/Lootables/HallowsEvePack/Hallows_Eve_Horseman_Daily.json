@@ -1,13 +1,13 @@
 {
   "$Comment": [
     "What the Headless Horseman's daily Claim (Rewards/Hallows_Eve/Hallows_Eve_Horseman_Daily) pays.",
-    "Every roll is read on its own: the first three always pay, the rest are chances on top, two at",
-    "Lantern Bombs and then one each at the plain pieces of his armour (the Horseman's Breastplate,",
-    "Gauntlets and Greaves, members of the Hallowed set). Their flaming twins pay from his Hoard",
-    "(Hallows_Eve_Horseman_Chase.json). The Claim keeps each roll a player wins with a chance equal to",
-    "their share of the fight. Chance is a percent from 0 to 100. Sweets and festival tokens pay",
-    "through the Currency reward kind; a companion mod adds rolls with a file naming this table in",
-    "ContributesTo."
+    "Every roll is read on its own: the first three always pay, the last two are chances on top at",
+    "Lantern Bombs. His plain armour pays from his second table instead, the one players see as his",
+    "Boss Kill Claim (Hallows_Eve_Horseman_Chase.json), and his flaming armour only from the hard",
+    "ride's (Hallows_Eve_Horseman_Chase_Hard.json). The Claim keeps each roll a player",
+    "wins with a chance equal to their share of the fight. Chance is a percent from 0 to 100. Sweets",
+    "and festival tokens pay through the Currency reward kind; a companion mod adds rolls with a file",
+    "naming this table in ContributesTo."
   ],
   "Name": "Hallows_Eve_Horseman_Daily",
   "Rolls": [
@@ -31,18 +31,6 @@
     {
       "Chance": { "Base": 10.0 },
       "Grants": { "Items": [ { "Item": "Hallows_Eve_Lantern_Bomb_Epic", "Count": 1 } ] }
-    },
-    {
-      "Chance": { "Base": 15.0 },
-      "Grants": { "Items": [ { "Item": "Hallows_Eve_Horseman_Breastplate", "Count": 1 } ] }
-    },
-    {
-      "Chance": { "Base": 15.0 },
-      "Grants": { "Items": [ { "Item": "Hallows_Eve_Horseman_Gauntlets", "Count": 1 } ] }
-    },
-    {
-      "Chance": { "Base": 15.0 },
-      "Grants": { "Items": [ { "Item": "Hallows_Eve_Horseman_Greaves", "Count": 1 } ] }
     }
   ]
 }

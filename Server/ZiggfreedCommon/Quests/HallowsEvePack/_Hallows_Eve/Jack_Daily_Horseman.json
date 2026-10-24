@@ -1,0 +1,63 @@
+{
+  "$Comment": [
+    "One of Old Jack's four dailies: bring the Headless Horseman down on his normal ride once a day.",
+    "The _Hallows_Eve folder makes the id hallows_eve_jack_daily_horseman. Requires opens it once a",
+    "player has finished The Rider (hallows_eve_old_jack_horseman) and collected its pay, so it",
+    "follows a first win over him. Old Jack offers it on his daily_offer screen beside the other",
+    "three, and while it is carried his conversation opens on his rider line, horseman, which says",
+    "where the Gravekeeper stands and that his gate wants a Grave Candle from the stall.",
+    "",
+    "ENCOUNTER_DEFEATED names his fight's script, never a creature, so it holds through his change of",
+    "form. MatchMode EXACT on the normal ride's script keeps a win on the hard ride",
+    "(Hallows_Eve_Headless_Horseman_Encounter_Hard) from counting; MatchMode PREFIX would let either",
+    "ride count, as the Horseman_Down achievement does. Every player the fight credits counts the win,",
+    "but only those carrying this quest when he falls. The step reuses The Rider's wording.",
+    "Npc.TurnInId, which the Parent sets, adds the report-back step to Old Jack, so it is handed in to",
+    "him like the others.",
+    "",
+    "Repeat.Reset with Period Daily is a calendar daily: it comes back at midnight UTC, not a fixed",
+    "number of hours after the last one. Each daily pays through Hallows_Eve_Daily_Pay, so retuning",
+    "that pay is one edit there; the favor rows are this file's own, and Amount is how much.",
+    "",
+    "The Mmo_Xp row is MMO Skill Tree's: Defense XP for the fight, paid only where that mod runs. Its",
+    "own Requires, the hytale:mod_installed gate, leaves the row out on a server without it, unpaid and",
+    "unshown, and the rest of the quest pays."
+  ],
+  "Name": "Jack_Daily_Horseman",
+  "Parent": "Hallows_Eve_Quest_Base",
+  "Text": {
+    "TitleKey": "quest.hallows_eve_jack_daily_horseman.title",
+    "FlavorKey": "quest.hallows_eve_jack_daily_horseman.flavor"
+  },
+  "Listing": {
+    "Icon": "Hallows_Eve_Horseman_Helm",
+    "SortOrder": 140
+  },
+  "Repeat": {
+    "Reset": { "Period": "Daily" },
+    "CooldownFrom": "Complete"
+  },
+  "Requires": {
+    "Quests": [ "hallows_eve_old_jack_horseman" ]
+  },
+  "Objectives": {
+    "bring_down_horseman": {
+      "Kind": "ENCOUNTER_DEFEATED",
+      "Target": "Hallows_Eve_Headless_Horseman_Encounter",
+      "MatchMode": "EXACT",
+      "Amount": 1,
+      "TextKey": "objective.hallows_eve.bring_down_horseman",
+      "Order": 1
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Hallows_Eve_Daily_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Old_Jack", "Amount": 150 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Hallows_Eve_Hallowed", "Amount": 10 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 40 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "1500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}
