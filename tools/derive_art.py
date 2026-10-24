@@ -47,7 +47,9 @@ What it writes (pack-relative):
 What it reads from the pack and never writes: the artist's hand-made Headless Horseman art, copied
 into Common/ as it came. Common/Items/Hallows_Eve/Horseman_Armor/ holds his armour (the collar
 chest, hands, legs and helm, each with a plain and a gold texture), which the Horseman and the
-chase set wear; the rider's armour, the Breastplates' chest and the set's icons derive from it.
+chase set wear, and Horseman_Armor/Player/ the artist's exports of a piece made to fit a player
+(the legs), which the chase set wears in place of the Horseman's own; the rider's armour, the
+Breastplates' chest and the set's icons derive from them.
 Common/NPC/Hallows_Eve/Headless_Horseman/Horse/ holds his black horse's texture, barding and
 rotted tail, which his mounted Model JSON and the steed's name directly, and which the Steed
 Trophy is baked from. Replace those files to change his look.
@@ -362,6 +364,8 @@ ARMOR_COLLAR_CHEST = f"{HORSEMAN_ARMOR}/Headless_Horseman_Collar_Chest.blockymod
 ARMOR_HANDS = f"{HORSEMAN_ARMOR}/Headless_Horseman_Hands.blockymodel"
 ARMOR_LEGS = f"{HORSEMAN_ARMOR}/Headless_Horseman_Legs.blockymodel"
 ARMOR_HELM = f"{HORSEMAN_ARMOR}/Headless_Horseman_Head.blockymodel"
+# The Greaves' legs: the artist's export made to fit a player (see the module notes).
+PLAYER_LEGS = f"{HORSEMAN_ARMOR}/Player/Headless_Horseman_Legs.blockymodel"
 CHEST_TEXTURES = (f"{HORSEMAN_ARMOR}/Chest_Texture.png", f"{HORSEMAN_ARMOR}/Chest_Texture_Gold.png")
 # Each model's textures: the plain one first, then the gold one the Flaming pieces and the hard
 # ride wear.
@@ -369,6 +373,7 @@ ARMOR_TEXTURES = {
     ARMOR_COLLAR_CHEST: CHEST_TEXTURES,
     ARMOR_HANDS: (f"{HORSEMAN_ARMOR}/Hands_Texture.png", f"{HORSEMAN_ARMOR}/Hands_Texture_Gold.png"),
     ARMOR_LEGS: (f"{HORSEMAN_ARMOR}/Legs_Texture.png", f"{HORSEMAN_ARMOR}/Legs_Texture_Gold.png"),
+    PLAYER_LEGS: (f"{HORSEMAN_ARMOR}/Legs_Texture.png", f"{HORSEMAN_ARMOR}/Legs_Texture_Gold.png"),
     ARMOR_HELM: (f"{HORSEMAN_ARMOR}/Head_Texture.png", f"{HORSEMAN_ARMOR}/Head_Texture_Gold.png"),
 }
 PLAIN, GOLD = 0, 1
@@ -394,14 +399,14 @@ ARMOR_ICONS = [
     # icon id, armour model, texture (PLAIN or GOLD)
     ("Hallows_Eve_Horseman_Breastplate", PLAYER_CHEST, PLAIN),
     ("Hallows_Eve_Horseman_Gauntlets", ARMOR_HANDS, PLAIN),
-    ("Hallows_Eve_Horseman_Greaves", ARMOR_LEGS, PLAIN),
+    ("Hallows_Eve_Horseman_Greaves", PLAYER_LEGS, PLAIN),
     ("Hallows_Eve_Horseman_Helm", ARMOR_HELM, PLAIN),
     ("Hallows_Eve_Flaming_Horseman_Breastplate", PLAYER_CHEST, GOLD),
     ("Hallows_Eve_Flaming_Horseman_Gauntlets", ARMOR_HANDS, GOLD),
-    ("Hallows_Eve_Flaming_Horseman_Greaves", ARMOR_LEGS, GOLD),
+    ("Hallows_Eve_Flaming_Horseman_Greaves", PLAYER_LEGS, GOLD),
     ("Hallows_Eve_Flaming_Horseman_Helm", ARMOR_HELM, GOLD),
 ]
-ARMOR_ICON_PIECES = {ARMOR_HANDS: "R-", ARMOR_LEGS: "R-"}   # name prefix of the pieces drawn
+ARMOR_ICON_PIECES = {ARMOR_HANDS: "R-", PLAYER_LEGS: "R-"}   # name prefix of the pieces drawn
 
 # --- the Horseman's Steed Trophy: his black horse, tiny, on a plinth, as one placeable block ---
 # A block wears one texture, so the horse's coat, its barding's texture and its tail's sit side by
