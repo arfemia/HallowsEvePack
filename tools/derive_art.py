@@ -48,7 +48,8 @@ What it reads from the pack and never writes: the artist's hand-made Headless Ho
 into Common/ as it came. Common/Items/Hallows_Eve/Horseman_Armor/ holds his armour (the collar
 chest, hands, legs and helm, each with a plain and a gold texture), which the Horseman and the
 chase set wear, and Horseman_Armor/Player/ the artist's exports of a piece made to fit a player
-(the legs), which the chase set wears in place of the Horseman's own; the rider's armour, the
+(the legs, with their own plain and gold textures), which the chase set wears in place of the
+Horseman's own; the rider's armour, the
 Breastplates' chest and the set's icons derive from them.
 Common/NPC/Hallows_Eve/Headless_Horseman/Horse/ holds his black horse's texture, barding and
 rotted tail, which his mounted Model JSON and the steed's name directly, and which the Steed
@@ -373,7 +374,7 @@ ARMOR_TEXTURES = {
     ARMOR_COLLAR_CHEST: CHEST_TEXTURES,
     ARMOR_HANDS: (f"{HORSEMAN_ARMOR}/Hands_Texture.png", f"{HORSEMAN_ARMOR}/Hands_Texture_Gold.png"),
     ARMOR_LEGS: (f"{HORSEMAN_ARMOR}/Legs_Texture.png", f"{HORSEMAN_ARMOR}/Legs_Texture_Gold.png"),
-    PLAYER_LEGS: (f"{HORSEMAN_ARMOR}/Legs_Texture.png", f"{HORSEMAN_ARMOR}/Legs_Texture_Gold.png"),
+    PLAYER_LEGS: (f"{HORSEMAN_ARMOR}/Player/Legs_Texture.png", f"{HORSEMAN_ARMOR}/Player/Legs_Texture_Gold.png"),
     ARMOR_HELM: (f"{HORSEMAN_ARMOR}/Head_Texture.png", f"{HORSEMAN_ARMOR}/Head_Texture_Gold.png"),
 }
 PLAIN, GOLD = 0, 1
