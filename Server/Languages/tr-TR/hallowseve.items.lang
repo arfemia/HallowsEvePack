@@ -1,7 +1,6 @@
 # Cadılar Bayramı paketi - Kutsanmış setin sözcükleri. Anahtarlar çıplak yazılır: kütüphane her birini
 # kuyruğundan bulur, bu dosyanın adı ne olursa olsun. Setin bildirimi bir toast'tur, bu yüzden hiçbir değer biçimlendirme taşımaz.
 gearset.hallows_eve_hallowed.title = Kutsanmış Set
-gearset.hallows_eve_hallowed.tier_full = Miğfer başta, kalkan elde: biraz daha fazla can, ateş de daha az yakıyor, bir fener gibi parlıyorsun ve Kutsanmışların teveccühünü biraz daha hızlı kazanıyorsun.
 gearset.hallows_eve_hallowed.tier_pair = Setten bir parça üstünde, elinde de bir Jack Kalkanı: biraz daha fazla can, ateş daha az yakıyor, bir fener gibi parlıyorsun ve Kutsanmışların teveccühünü biraz daha hızlı kazanıyorsun.
 gearset.hallows_eve_hallowed.tier_armor = Miğfer, göğüslük, eldiven ve dizlik üstünde: biraz daha fazla can, ateşe verdiğin her şey daha sıcak yanıyor.
 gearset.hallows_eve_hallowed.tier_armor_shield = Dördü de üstünde, kalkan da elde: yine biraz daha fazla can, ateşin daha da sıcak yanıyor.

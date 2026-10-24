@@ -1,23 +1,21 @@
 {
   "$Comment": [
-    "The Gravekeeper, standing near Old Jack in the Forgotten Temple while Hallow's Eve runs. Pressing F",
-    "opens his conversation (Dialogues/HallowsEvePack/Hallows_Eve_Gravekeeper.json), whose answers send",
-    "the player into the Headless Horseman's graveyard, the normal one or the hard one",
-    "(ZiggfreedCommon/Dungeons/). Entering is no fight; the graveyard is an instance of its own, so the",
-    "temple stays peaceful.",
+    "The Gravekeeper, standing near Old Jack in the Forgotten Temple while Hallow's Eve runs and on every",
+    "full moon outside it. Pressing F opens his conversation (Dialogues/HallowsEvePack/Hallows_Eve_Gravekeeper.json),",
+    "whose answers send the player into a graveyard (ZiggfreedCommon/Dungeons/): during Hallow's Eve the",
+    "Headless Horseman's, the normal one or the hard one, and on a full moon the restless one. Entering is",
+    "no fight; each graveyard is an instance of its own, so the temple stays peaceful.",
     "",
-    "Season makes him a guest, as it does Old Jack: he arrives when Hallow's Eve starts and leaves when",
-    "it ends. Lifecycle keeps his chunk loaded, stands him up again if something removes him, and",
-    "raises his health past anything that can be dealt. Where finds the temple by its GameplayConfig",
-    "id. Anchor is the temple's arrival spot plus an offset, on Old Jack's line a few steps further",
-    "along negative X; to move him, edit Anchor.WorldSpawn.Offset (small enough to stay off the walls)",
-    "and Yaw to turn him, then look at the spot in game. Identity.Role is his role, which gives him his",
-    "look and the library's quest-giver body. Interact.Dialogue is what pressing F opens; it wins over",
-    "the quest list that role opens for a Gravekeeper nothing placed.",
-    "",
-    "On a full moon outside Hallow's Eve he stands on this same spot through his other placement,",
-    "Hallows_Eve_Gravekeeper_Restless_Temple.json, with a conversation of its own. The two Seasons never",
-    "hold at once, so he is never there twice; move both Anchors together."
+    "Season makes him a guest: Seasons_Of_Orbis_Gravekeeper_Nights is live while Hallow's Eve runs or the",
+    "Restless Moon is up (CalendarEvents/SeasonsOfOrbis/), so he arrives when either starts and leaves when",
+    "neither holds, and when Hallow's Eve starts on a full moon he simply stays. Lifecycle keeps his chunk",
+    "loaded, stands him up again if something removes him, and raises his health past anything that can be",
+    "dealt. Where finds the temple by its GameplayConfig id. Anchor is the temple's arrival spot plus an",
+    "offset, on Old Jack's line a few steps further along negative X; to move him, edit",
+    "Anchor.WorldSpawn.Offset (small enough to stay off the walls) and Yaw to turn him, then look at the spot",
+    "in game. Identity.Role is his role, which gives him his look and the library's quest-giver body.",
+    "Interact.Dialogue is what pressing F opens; it wins over the quest list that role opens for a",
+    "Gravekeeper nothing placed."
   ],
   "Name": "Hallows_Eve_Gravekeeper_Temple",
   "Enabled": true,
@@ -36,7 +34,7 @@
       "Yaw": 180.0
     }
   },
-  "Season": "Hallows_Eve",
+  "Season": "Seasons_Of_Orbis_Gravekeeper_Nights",
   "Lifecycle": {
     "KeepAlive": true,
     "Respawn": true,

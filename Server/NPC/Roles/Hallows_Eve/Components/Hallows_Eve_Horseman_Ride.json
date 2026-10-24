@@ -1,7 +1,7 @@
 {
   "$Comment": [
-    "How the Headless Horseman flies in the saddle, phase 1 of his fight. Both mounted roles",
-    "(Hallows_Eve_Headless_Horseman_Mounted and _Mounted_HM) name this file in",
+    "How the Headless Horseman flies in the saddle, phase 1 of his fight. His mounted role",
+    "(Hallows_Eve_Headless_Horseman_Mounted, whose hard form _Mounted_HM inherits it) names this file in",
     "CombatAdditionalBehaviorComponent, the hook Template_Flying_Aggressive runs ahead of its own",
     "combat moves on every tick he is fighting. The first instruction to set a body motion in a tick",
     "wins, so a move set here overrides the template's, and where this file sets none (Engage) the",

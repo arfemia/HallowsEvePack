@@ -20,9 +20,10 @@
     "not open floor is skipped, so a wave whose spots are partly blocked comes out smaller; check the rows",
     "in the graveyard after moving them.",
     "",
-    "BossWave is Macro_Seasons_Of_Orbis_Voidtaken_Rise: the Voidtaken Horseman rides out of his marker on",
-    "the plaza's north side with his name on the boss bar, and a banner tells the party. Each return he is",
-    "tougher by the dungeon's Ramp, and the bands' creatures by every wave.",
+    "BossWave is the library's own, Zc_Boss_Wave_Rise (its comment tells how it works): the Voidtaken",
+    "Horseman rides out of his marker on the plaza's north side (SpawnMarker, within 30 blocks of the",
+    "script's entity) with his name on the boss bar (BarName), and a banner tells the party (Moment). Each",
+    "return he is tougher by the dungeon's Ramp, and the bands' creatures by every wave.",
     "",
     "Groups holds everything the slots raise: the game's Undead (its skeletons and zombies) and Void groups and",
     "the Voidtaken's own. Range 70 counts a creature anywhere in the graveyard and its entrance room as",
@@ -41,7 +42,6 @@
     "Band2": "Zc_Wave_Rise",
     "Band3": "Zc_Wave_Rise",
     "Band4": "Zc_Wave_Rise",
-    "BossWave": "Macro_Seasons_Of_Orbis_Voidtaken_Rise",
     "Groups": [ "Undead", "Void", "Seasons_Of_Orbis_Voidtaken_Horseman_Group" ],
     "Range": 70,
     "PlayerRange": 61,
@@ -88,6 +88,11 @@
         "FarCount": [ 2, 2 ],
         "FarAngle": 37,
         "FarDistance": [ 18, 20 ]
+      },
+      "BossWave": {
+        "SpawnMarker": "Seasons_Of_Orbis_Voidtaken_Horseman_Marker",
+        "BarName": "npcs.Seasons_Of_Orbis_Voidtaken_Horseman.name",
+        "Moment": "Seasons_Of_Orbis_Voidtaken_Rides"
       }
     }
   }

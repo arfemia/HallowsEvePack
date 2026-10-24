@@ -1,7 +1,6 @@
 # Halloween-Paket - die Worte des Geweihten Sets. Die Schlüssel stehen ohne Präfix: die Bibliothek findet
 # jeden an seinem Ende, egal wie diese Datei heißt. Die Meldung des Sets ist ein Toast, also trägt kein Wert Markup.
 gearset.hallows_eve_hallowed.title = Geweihtes Set
-gearset.hallows_eve_hallowed.tier_full = Helm auf und Schild in der Hand: etwas mehr Gesundheit, Feuer setzt dir weniger zu, du leuchtest wie eine Laterne, und du gewinnst bei den Geweihten etwas schneller Gunst.
 gearset.hallows_eve_hallowed.tier_pair = Ein Teil des Sets am Körper und ein Jack-Schild in der Hand: etwas mehr Gesundheit, Feuer setzt dir weniger zu, du leuchtest wie eine Laterne, und du gewinnst bei den Geweihten etwas schneller Gunst.
 gearset.hallows_eve_hallowed.tier_armor = Helm, Brustplatte, Handschuhe und Beinschienen an: etwas mehr Gesundheit, und alles, was du in Brand setzt, brennt heißer.
 gearset.hallows_eve_hallowed.tier_armor_shield = Alle vier an und Schild in der Hand: noch mehr Gesundheit, und dein Feuer brennt noch heißer.

@@ -1,44 +1,63 @@
 {
   "Name": "Hallows_Eve_Gravekeeper",
   "$Comment": [
-    "The Gravekeeper's conversation, what pressing F on him opens in the Forgotten Temple while",
-    "Hallow's Eve runs. He is one of the Hallowed and keeps the Headless Horseman's graveyard for them,",
-    "so his own lines name neither Old Jack nor Hallow's Eve as his reason to be there: Jack comes up",
-    "only as the man who sells the candles his gate burns, and on the ember line, shown to a player on",
-    "Old Jack's errand, as the one who sent them. He never contracts: I am, it is, does not. That keeps",
-    "him apart from Old Jack, who always does.",
+    "The Gravekeeper's conversation, what pressing F on him opens in the Forgotten Temple. He stands there",
+    "while Hallow's Eve runs and on a full moon outside it (his placement's Season,",
+    "Seasons_Of_Orbis_Gravekeeper_Nights), and this one conversation serves both: each night's lines show",
+    "while that night is live, read through ziggfreedcommon:calendar_live, Hallows_Eve or",
+    "Seasons_Of_Orbis_Restless_Moon. The two are never live at once (the Restless Moon is a full moon while",
+    "Hallow's Eve is not running), so a visit only ever sees one night's lines. He is one of the Hallowed and",
+    "keeps the graveyards for them, so his own lines name neither Old Jack nor Hallow's Eve as his reason to",
+    "be there: Jack comes up only as the man who sells the candles his gate burns, and on the ember line,",
+    "shown to a player on Old Jack's errand, as the one who sent them. He never contracts: I am, it is, does",
+    "not. That keeps him apart from Old Jack, who always does.",
     "",
-    "HOW A SCREEN IS PICKED. First is walked top to bottom, then Fallback. The ember line comes first,",
-    "while the player carries Old Jack's hard step (hallows_eve_old_jack_horseman_hard): it says the",
-    "ember only drops on the hard ride. Then the hard ride's introduction, once per character",
-    "(OnceId hard_open), for a player who has finished The Rider (hallows_eve_old_jack_horseman).",
-    "Every other visit opens on menu.",
+    "HOW A SCREEN IS PICKED. First is walked top to bottom, then Fallback. On a full moon he opens on",
+    "restless: the dead are restless under the full moon, putting down skeletons and zombies while it is up",
+    "earns favor with the Hallowed (the Undead row in Reputations/HallowsEvePack/Hallows_Eve_Hallowed.json),",
+    "and the graveyard behind him will not stay quiet: what it costs to go in and what waits there. It",
+    "comes first, so nothing of Hallow's Eve opens on a full moon and the hard ride's introduction waits for",
+    "Hallow's Eve. During Hallow's Eve the ember line comes first, while the player carries Old Jack's hard",
+    "step (hallows_eve_old_jack_horseman_hard): it says the ember only drops on the hard ride. Then the hard",
+    "ride's introduction, once per character (OnceId hard_open), for a player who has finished The Rider",
+    "(hallows_eve_old_jack_horseman). Every other visit opens on menu.",
     "",
-    "THE MENU. gk_menu is on every screen a visit opens on: take me in (the normal graveyard), take me",
-    "on the hard ride (the hard graveyard, shown only to a player who has finished The Rider; this",
-    "condition is the hard graveyard's only quest gate, since the dungeon itself asks only for its",
-    "season and its candle, so no other line or press-F may open it), who he is, and goodnight. Each",
-    "way in is the Dungeon destination, which sends the player in with their party, or says why it",
-    "refused. The who screen carries gk_back: back to the menu, or goodnight. The trick-or-treat line",
-    "is not here: the DialogueExtensions file Hallows_Eve_Trick_Or_Treat adds it to every",
-    "conversation, this one included, and its favor goes to the Hallowed, his own people.",
+    "THE LINES. gk_menu is on every screen a visit opens on, each way in shown only on its own night. During",
+    "Hallow's Eve: take me in (the Horseman's graveyard) and take me on the hard ride (the hard graveyard,",
+    "shown only to a player who has finished The Rider; this condition is the hard graveyard's only quest",
+    "gate, since the dungeon itself asks only for its season and its candle, so no other line or press-F may",
+    "open it). On a full moon: lay the restless dead to rest (the restless graveyard, an endless run of the",
+    "dead with the Voidtaken Horseman every fifth wave). On both: who he is, and goodnight. Each way in is",
+    "the Dungeon destination, which sends the player in with their party, or says why it refused. The who",
+    "screen carries gk_back: back to the night's opening screen (menu or restless, each on its own night),",
+    "or goodnight. To add a line for one night, gate it the same way. The trick-or-treat line is not here:",
+    "the DialogueExtensions file Hallows_Eve_Trick_Or_Treat adds it to every conversation during Hallow's",
+    "Eve, this one included, and its favor goes to the Hallowed, his own people. Harvest Feast's",
+    "invitation line leaves this conversation out by name, since he never comes to the feast.",
     "",
-    "THE PRICE. Each graveyard's EntryCost (ZiggfreedCommon/Dungeons) takes its candle from whoever",
-    "opens an area for their party: a Grave Candle for the graveyard, a Burning Grave Candle for the",
-    "hard ride. The menu line says the gate wants a Grave Candle and the hard ride's introduction and",
-    "the ember line name the Burning one, each saying Old Jack sells it; each way-in label shows its",
-    "price. Option labels take no number from the file, so a changed count is written into both labels",
-    "in every language. Picking a way in opens CommonLib's confirm screen in this page's place (the",
-    "dungeon's EntryCost.Confirm, built like the game's portal summon screen): the graveyard's name and",
-    "description, the candle, how many the player holds and how many it takes, and Light the Candle,",
-    "which burns it and sends the party in. With too few, the button is off and the screen says where",
-    "Old Jack sells them, and nothing is spent. A partymate following into a graveyard their party",
-    "already holds skips the screen and walks in free."
+    "THE PRICE. Each graveyard's EntryCost (ZiggfreedCommon/Dungeons) takes its price from whoever opens an",
+    "area for their party: a Grave Candle for the Horseman's graveyard, a Burning Grave Candle for the hard",
+    "ride, five bone fragments for the restless graveyard, and an Eternal Candle opens the Horseman's and",
+    "the restless one without being spent. The menu line says the gate wants a Grave Candle, the hard",
+    "ride's introduction and the ember line name the Burning one, each saying Old Jack sells it, and the",
+    "restless line names the fragments; each way-in label shows its price. Option labels take no number",
+    "from the file, so a changed count is written into the label and its screen's text in every language.",
+    "Picking a way in opens CommonLib's confirm screen in this page's place (the dungeon's",
+    "EntryCost.Confirm, built like the game's portal summon screen): the graveyard's name and description,",
+    "the price, how many the player holds and how many it takes, and the button that pays and sends the",
+    "party in. With too few, the button is off and nothing is spent. A partymate following into a",
+    "graveyard their party already holds skips the screen and walks in free."
   ],
   "Header": [ "ActiveObjective" ],
   "Chrome": { "FarewellKey": "dialogue.hallows_eve_gravekeeper.opt.farewell" },
   "Start": {
     "First": [
+      {
+        "Node": "restless",
+        "When": [
+          { "Type": "Factor", "Factor": "ziggfreedcommon:calendar_live", "Param": "Seasons_Of_Orbis_Restless_Moon", "Min": 1 }
+        ]
+      },
       {
         "Node": "ember",
         "When": [
@@ -61,6 +80,10 @@
       "TextKey": "dialogue.hallows_eve_gravekeeper.menu.text",
       "IncludeOptions": [ "gk_menu" ]
     },
+    "restless": {
+      "TextKey": "dialogue.hallows_eve_gravekeeper.restless.text",
+      "IncludeOptions": [ "gk_menu" ]
+    },
     "hard_open": {
       "TextKey": "dialogue.hallows_eve_gravekeeper.hard_open.text",
       "IncludeOptions": [ "gk_menu" ]
@@ -79,15 +102,27 @@
       {
         "LabelKey": "dialogue.hallows_eve_gravekeeper.opt.enter",
         "Style": "accept",
+        "Conditions": [
+          { "Type": "Factor", "Factor": "ziggfreedcommon:calendar_live", "Param": "Hallows_Eve", "Min": 1 }
+        ],
         "Open": { "Type": "Dungeon", "Dungeon": "Hallows_Eve_Graveyard" }
       },
       {
         "LabelKey": "dialogue.hallows_eve_gravekeeper.opt.enter_hard",
         "Style": "accept",
         "Conditions": [
+          { "Type": "Factor", "Factor": "ziggfreedcommon:calendar_live", "Param": "Hallows_Eve", "Min": 1 },
           { "Type": "Requires", "Requires": { "Quests": [ "hallows_eve_old_jack_horseman" ] } }
         ],
         "Open": { "Type": "Dungeon", "Dungeon": "Hallows_Eve_Graveyard_Hard" }
+      },
+      {
+        "LabelKey": "dialogue.hallows_eve_gravekeeper.opt.enter_restless",
+        "Style": "accept",
+        "Conditions": [
+          { "Type": "Factor", "Factor": "ziggfreedcommon:calendar_live", "Param": "Seasons_Of_Orbis_Restless_Moon", "Min": 1 }
+        ],
+        "Open": { "Type": "Dungeon", "Dungeon": "Seasons_Of_Orbis_Restless_Graveyard" }
       },
       {
         "LabelKey": "dialogue.hallows_eve_gravekeeper.opt.who",
@@ -104,7 +139,18 @@
       {
         "LabelKey": "dialogue.hallows_eve_gravekeeper.opt.back",
         "Style": "neutral",
+        "Conditions": [
+          { "Type": "Factor", "Factor": "ziggfreedcommon:calendar_live", "Param": "Hallows_Eve", "Min": 1 }
+        ],
         "Goto": "menu"
+      },
+      {
+        "LabelKey": "dialogue.hallows_eve_gravekeeper.opt.back",
+        "Style": "neutral",
+        "Conditions": [
+          { "Type": "Factor", "Factor": "ziggfreedcommon:calendar_live", "Param": "Seasons_Of_Orbis_Restless_Moon", "Min": 1 }
+        ],
+        "Goto": "restless"
       },
       {
         "LabelKey": "dialogue.hallows_eve_gravekeeper.opt.farewell",

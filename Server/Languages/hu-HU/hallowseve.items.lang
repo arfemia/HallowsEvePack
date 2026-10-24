@@ -1,7 +1,6 @@
 # Mindenszentek Éje csomag - a Megszentelt szett szövegei. A kulcsok csupaszok: a könyvtár a végük
 # alapján talál rájuk, bárhogy is hívják ezt a fájlt. A szett értesítése felugró üzenet, így egyik érték sem hordoz jelölést.
 gearset.hallows_eve_hallowed.title = Megszentelt Szett
-gearset.hallows_eve_hallowed.tier_full = Sisak a fejen, pajzs a kézben: egy kicsivel több életerő, a tűz kevésbé mar, világítasz, mint egy lámpás, és egy kicsit gyorsabban szerzed a Megszentelt kegyét.
 gearset.hallows_eve_hallowed.tier_pair = A szett egy darabja a testeden, Jack-pajzs a kezedben: egy kicsivel több életerő, a tűz kevésbé mar, világítasz, mint egy lámpás, és egy kicsit gyorsabban szerzed a Megszentelt kegyét.
 gearset.hallows_eve_hallowed.tier_armor = Sisak, mellvért, páncélkesztyű és lábszárvédő a testeden: egy kicsivel több életerő, és ami lángra lobban miattad, forróbban ég.
 gearset.hallows_eve_hallowed.tier_armor_shield = Mind a négy a testeden, pajzs a kezedben: megint több életerő, és a tüzed még forróbban ég.

@@ -1,0 +1,25 @@
+{
+  "$Comment": [
+    "Artillery XP for the Lantern Bombs, on a server running MMO Skill Tree: one row on the Artillery",
+    "track's own table, beside the rows MMO Skill Tree ships for it. Requires takes this file out on a",
+    "server without MMO Skill Tree, where there is no Artillery track to pay; always write it with Min 1.",
+    "",
+    "A thrown bomb bursts after it leaves the hand, so by the time it lands the thrower may hold",
+    "something else, or nothing once the stack runs out. A tag: row ties the hit to the Hit tag every",
+    "blast and shard carries instead of to whatever is in hand, so every hit the burst lands trains",
+    "Artillery and takes Artillery's damage bonuses (the MMO layer of the Hallowed set raises them). A",
+    "tag: row is checked before cause: rows, so the bursts' Fire damage pays Artillery and never a",
+    "school's Fire row. The value is the XP each hit pays. The bombs in hand need no row: every tier's id",
+    "contains Bomb, which MMO Skill Tree's own Artillery table already covers."
+  ],
+  "Requires": {
+    "Factors": [
+      { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 }
+    ]
+  },
+  "Track": "Artillery",
+  "When": { "Kind": "Mmo_Skill_Xp" },
+  "Rows": {
+    "tag:Hallows_Eve_Lantern_Bomb": 12
+  }
+}

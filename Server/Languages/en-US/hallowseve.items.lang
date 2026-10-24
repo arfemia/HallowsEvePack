@@ -2,7 +2,6 @@
 # bare: the library finds each gear-set key by its tail, whatever this file is called. A set's notice is
 # a toast, so no value carries markup.
 gearset.hallows_eve_hallowed.title = Hallowed Set
-gearset.hallows_eve_hallowed.tier_full = Helm on and shield in hand: a little more health, fire bites less, you glow like a lantern, and you earn favor with the Hallowed a little faster.
 gearset.hallows_eve_hallowed.tier_pair = A piece of the set on and a Jack Shield in hand: a little more health, fire bites less, you glow like a lantern, and you earn favor with the Hallowed a little faster.
 gearset.hallows_eve_hallowed.tier_armor = Helm, breastplate, gauntlets and greaves on: a little more health, and anything you set alight burns hotter.
 gearset.hallows_eve_hallowed.tier_armor_shield = All four on and shield in hand: more health again, and your fire burns hotter still.

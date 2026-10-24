@@ -1,0 +1,17 @@
+{
+  "$Comment": [
+    "The Gravekeeper's nights: live while Hallow's Eve runs or the Restless Moon is up (a full moon",
+    "outside Hallow's Eve, Seasons_Of_Orbis_Restless_Moon.json). The file name is the event id. It is a",
+    "condition, not a run, so it has no dates, attendance, Almanac page or banner; Hallow's Eve and the",
+    "Restless Moon carry their own banners.",
+    "",
+    "It is the Season of the Gravekeeper's one placement (NpcPlacements/Hallows_Eve_Gravekeeper_Temple.json),",
+    "so he stands at his Temple spot on both kinds of night and is gone otherwise. When Hallow's Eve starts",
+    "on a full moon the event stays live and he stays put; his conversation",
+    "(Dialogues/HallowsEvePack/Hallows_Eve_Gravekeeper.json) shows each night's lines while that night is",
+    "live. Switching Hallow's Eve or the full moon off in mods/ziggfreedcommon/calendar.json takes that",
+    "kind of night away from him; /zigcalendar status Seasons_Of_Orbis_Gravekeeper_Nights shows what the",
+    "server reads."
+  ],
+  "Live": { "AnyOf": [ "Hallows_Eve", "Seasons_Of_Orbis_Restless_Moon" ] }
+}

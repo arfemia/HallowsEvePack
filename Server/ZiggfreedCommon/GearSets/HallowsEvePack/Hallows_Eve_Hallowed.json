@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Hallowed set: the Jack pieces and the Headless Horseman's armour. Members holds four helms (the Jack Helm, the Burning Jack Helm, and the Horseman's Helm in its plain and flaming forms), both shields (the Jack Shield and the Flaming Jack Shield) and the Horseman's Breastplate, Gauntlets and Greaves in their plain and flaming forms, so every piece counts here and trading a plain piece up for its charred or flaming twin never loses a tier. Armor counts the members worn in armour slots, one per slot, so the helms share the head slot and any one of them counts there. The first tier asks for Armor 1 and Utility 1: any member worn in an armour slot (a helm or a piece of the Horseman's armour) with a member shield in the utility slot, so a shield carried in the main hand never counts. While it holds, it adds Health, raises every gain of favor with the Hallowed reputation by a percent (the stat ReputationGain_Hallows_Eve_Hallowed, 10 is +10%, on top of the shield's own) and puts on the set's effect, Hallows_Eve_Hallowed_Set, which carries the glow and the fire ward, and its Badge, Hallows_Eve_Hallowed_Badge, the set's one tile on the buff bar. The second tier asks for four members in armour slots (Armor 4: a helm and the Horseman's three pieces), and the third for those four with a member shield in the utility slot (Armor 4 and Utility 1). Every tier whose minimums hold applies, so a full set wears all three at once. The second and third add Health and the library's Fire stats: DamageBonus_Fire in whole percent points (5 is +5% to the Fire damage the wearer deals) and DamageBonusFlat_Fire in damage points added to each Fire hit before the percent. Keep the first tier first: MMO Skill Tree's layer (Mmo_Hallows_Eve_Hallowed.json) joins the tier that asks Armor 1 and Utility 1, and the engine files each tier's modifiers by its position. The Flaming Hallowed set (Hallows_Eve_Flaming_Hallowed.json) stacks its own tiers on top of these for the flaming pieces. Raise or lower an Amount to tune the set; under Parent the Bonuses list replaces whole, so restate every tier you keep. The text keys live in hallowseve.items.lang.",
+  "$Comment": "The Hallowed set: the Jack pieces and the Headless Horseman's armour. Members holds four helms (the Jack Helm, the Burning Jack Helm, and the Horseman's Helm in its plain and flaming forms), both shields (the Jack Shield and the Flaming Jack Shield) and the Horseman's Breastplate, Gauntlets and Greaves in their plain and flaming forms, so every piece counts here and trading a plain piece up for its charred or flaming twin never loses a tier. Armor counts the members worn in armour slots, one per slot, so the helms share the head slot and any one of them counts there. The first tier asks for Armor 1 and Utility 1: any member worn in an armour slot (a helm or a piece of the Horseman's armour) with a member shield in the utility slot, so a shield carried in the main hand never counts. While it holds, it adds Health, raises every gain of favor with the Hallowed reputation by a percent (the stat ReputationGain_Hallows_Eve_Hallowed, 10 is +10%, on top of the shield's own) and puts on the set's effect, Hallows_Eve_Hallowed_Set, which carries the glow and the fire ward, and its Badge, Hallows_Eve_Hallowed_Badge, the set's one tile on the buff bar. The second tier asks for four members in armour slots (Armor 4: a helm and the Horseman's three pieces), and the third for those four with a member shield in the utility slot (Armor 4 and Utility 1). Every tier whose minimums hold applies, so a full set wears all three at once. The second and third add Health and the library's Fire stat DamageBonus_Fire, in whole percent points (8 is +8% to the Fire damage the wearer deals). Keep the first tier first: MMO Skill Tree's layer (Mmo_Hallows_Eve_Hallowed.json) joins the tier that asks Armor 1 and Utility 1, and the engine files each tier's modifiers by its position. The Flaming Hallowed set (Hallows_Eve_Flaming_Hallowed.json) stacks its own tiers on top of these for the flaming pieces. Raise or lower an Amount to tune the set; under Parent the Bonuses list replaces whole, so restate every tier you keep. The text keys live in hallowseve.items.lang.",
   "Text": {"TitleKey": "gearset.hallows_eve_hallowed.title"},
   "Members": [
     "Hallows_Eve_Jack_Helm",
@@ -32,8 +32,7 @@
       "Text": {"TitleKey": "gearset.hallows_eve_hallowed.tier_armor"},
       "StatModifiers": {
         "Health": [{"Amount": 5, "CalculationType": "Additive"}],
-        "DamageBonus_Fire": [{"Amount": 5, "CalculationType": "Additive"}],
-        "DamageBonusFlat_Fire": [{"Amount": 1, "CalculationType": "Additive"}]
+        "DamageBonus_Fire": [{"Amount": 8, "CalculationType": "Additive"}]
       }
     },
     {
@@ -42,8 +41,7 @@
       "Text": {"TitleKey": "gearset.hallows_eve_hallowed.tier_armor_shield"},
       "StatModifiers": {
         "Health": [{"Amount": 5, "CalculationType": "Additive"}],
-        "DamageBonus_Fire": [{"Amount": 5, "CalculationType": "Additive"}],
-        "DamageBonusFlat_Fire": [{"Amount": 1, "CalculationType": "Additive"}]
+        "DamageBonus_Fire": [{"Amount": 8, "CalculationType": "Additive"}]
       }
     }
   ]

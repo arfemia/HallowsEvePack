@@ -1,9 +1,9 @@
 {
   "$Comment": [
     "What the members of a restless graveyard run see as the Voidtaken Horseman rides out on a boss wave:",
-    "a big banner, his line and, under it, what to watch for. The run's boss wave",
-    "(EncounterManager/SeasonsOfOrbis/Macros/Macro_Seasons_Of_Orbis_Voidtaken_Rise.json, Moment) fires it",
-    "once per member. Keys are lines in this pack's seasonsoforbis.lang, written bare.",
+    "a big banner, his line and, under it, what to watch for. The run's boss wave (ziggfreed-common's",
+    "Zc_Boss_Wave_Rise, named by EncounterManager/SeasonsOfOrbis/Seasons_Of_Orbis_Restless_Graveyard_Encounter.json",
+    "as its Moment) fires it once per member. Keys are lines in this pack's seasonsoforbis.lang, written bare.",
     "",
     "The banner always reaches the members (ToParticipants) and anyone else standing within RadiusBlocks",
     "of them, which keeps it inside this one graveyard: the graveyards of one copy share a world but stand",
