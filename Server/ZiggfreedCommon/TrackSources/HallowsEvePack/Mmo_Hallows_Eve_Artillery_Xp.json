@@ -9,8 +9,8 @@
     "blast and shard carries instead of to whatever is in hand, so every hit the burst lands trains",
     "Artillery and takes Artillery's damage bonuses (the MMO layer of the Hallowed set raises them). A",
     "tag: row is checked before cause: rows, so the bursts' Fire damage pays Artillery and never a",
-    "school's Fire row. The value is the XP each hit pays. The bombs in hand need no row: every tier's id",
-    "contains Bomb, which MMO Skill Tree's own Artillery table already covers."
+    "school's Fire row. The value is the XP each hit pays. The bombs in hand need no row: each tier",
+    "carries the game's Bomb weapon Family, which MMO Skill Tree's own Artillery table already covers."
   ],
   "Requires": {
     "Factors": [
