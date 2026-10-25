@@ -1,0 +1,27 @@
+{
+  "$Comment": [
+    "Harvest Moon nights lift Harvesting and Artillery XP for everyone, on a server running MMO Skill",
+    "Tree: the hytale:mod_installed condition in Requires leaves the file out without it.",
+    "",
+    "A standing boost: nobody starts it and it keeps no timer. It lifts every gain in the skills it names",
+    "while the rest of its Requires passes, and it counts as a server boost, so the cap in",
+    "mods/ziggfreedcommon/boost-settings.json bounds it like any other boost.",
+    "",
+    "Tracks.Ids names the skills. Percent is how much more XP they earn: 25 is a quarter more.",
+    "ziggfreedcommon:calendar_live reads 1 only while that calendar event runs, so this boost needs both",
+    "Hallow's Eve and its Harvest Moon running. Text.TitleKey names it on the Boosts page; its words are",
+    "in hallowseve.mmo.lang. To change or switch it off, write this id in mods/ziggfreedcommon/boosts.json",
+    "({ \"Mmo_Hallows_Eve_Harvest_Moon\": { \"Enabled\": false } })."
+  ],
+  "Text": { "TitleKey": "boostrule.mmo_hallows_eve_harvest_moon.title" },
+  "Standing": true,
+  "Tracks": { "Ids": [ "HARVESTING", "ARTILLERY" ] },
+  "Percent": 25,
+  "Requires": {
+    "Factors": [
+      { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 },
+      { "Factor": "ziggfreedcommon:calendar_live", "Param": "Hallows_Eve", "Min": 1 },
+      { "Factor": "ziggfreedcommon:calendar_live", "Param": "Harvest_Moon", "Min": 1 }
+    ]
+  }
+}
