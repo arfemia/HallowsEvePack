@@ -1,8 +1,0 @@
-{
-  "$Comment": "How much faster a player earns favor with Old Jack while wearing gear that raises it, in whole percent points (10 is +10%). An item names this stat in its own StatModifiers (the Jack Helm and the Burning Jack Helm, in Armor.StatModifiers), Additive on the Max; ziggfreed-common adds it to the global ReputationGain and multiplies every favor gain from Old Jack (a quest, a board contract, a daily) by 1 + the total, before the reputation's Cap. A loss of favor is never changed, and favor already earned never moves when the gear comes off. The id is ReputationGain_ and the reputation's group id, which is how the library finds it. Base Max 0, so a player wearing none of it earns the amount written; Min -100 keeps a subtractive modifier from ever turning a gain into nothing. Its tooltip line is the client.lang key itemTooltip.stats.ReputationGain_Hallows_Eve_Old_Jack.",
-  "InitialValue": 0.0,
-  "Min": -100.0,
-  "Max": 0.0,
-  "Shared": false,
-  "HideFromTooltip": false
-}

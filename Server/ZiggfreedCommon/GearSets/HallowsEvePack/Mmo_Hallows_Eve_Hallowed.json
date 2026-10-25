@@ -11,7 +11,8 @@
     "where these stats do not exist and its line would name a bonus nobody gets; always write it with",
     "Min 1.",
     "",
-    "MMO_Luck takes whole percent points (5 is 5%), the luck every skill's lucky rolls read.",
+    "GatherYield and KillYield take whole percent points (5 is +5 on a find's chance): the luck every",
+    "gathering find and every kill find rolls with, together the luck every skill's lucky rolls read.",
     "MMO_Damage_ARTILLERY takes whole percent points too (12 is +12%) on every Artillery hit: one dealt",
     "with an Artillery weapon in hand, and a Lantern Bomb's burst wherever it lands, since the burst's",
     "Hit tag routes it to Artillery (TrackSources/HallowsEvePack/Mmo_Hallows_Eve_Artillery_Xp.json).",
@@ -30,7 +31,8 @@
       "Utility": 1,
       "Text": { "TitleKey": "gearset.mmo_hallows_eve_hallowed.tier_full" },
       "StatModifiers": {
-        "MMO_Luck": [ { "Amount": 5, "CalculationType": "Additive" } ],
+        "GatherYield": [ { "Amount": 5, "CalculationType": "Additive" } ],
+        "KillYield": [ { "Amount": 5, "CalculationType": "Additive" } ],
         "MMO_Damage_ARTILLERY": [ { "Amount": 12, "CalculationType": "Additive" } ]
       }
     }

@@ -10,7 +10,7 @@
     "either ride (Lootables/HallowsEvePack/Hallows_Eve_Graveyard_Clear.json and _Clear_Hard.json), and",
     "from the Horseman's Hoard on the normal ride",
     "(Lootables/HallowsEvePack/Hallows_Eve_Horseman_Chase.json). The Jack Helm and the Burning Jack Helm raise",
-    "each of those gains by a percent while worn, through the stat ReputationGain_Hallows_Eve_Old_Jack",
+    "each of those gains by a percent while worn, through the stat TrackGain_Hallows_Eve_Old_Jack",
     "(Entity/Stats), which the library finds by this file's id; the Cap still applies. Earn lists",
     "the ways to earn favor, one lang key a line, for the How to earn block on the Reputation page."
   ],
