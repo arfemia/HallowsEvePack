@@ -133,6 +133,8 @@ shop.hallows_eve_offer_sell_eternal_candle.title = Venda uma Vela Eterna Sobress
 shop.hallows_eve_offer_sell_eternal_candle.desc = Uma Vela Eterna é tudo o que você precisa para abrir o cemitério do Cavaleiro. Traga uma sobressalente ao Velho Jack e ele paga por ela.
 shop.hallows_eve_offer_sell_horsemans_reins.title = Venda Rédeas do Cavaleiro Sobressalentes
 shop.hallows_eve_offer_sell_horsemans_reins.desc = Um par das Rédeas do Cavaleiro é tudo o que você precisa para chamar o cavalo dele. Traga um par sobressalente ao Velho Jack e ele paga por ele.
+shop.hallows_eve_offer_burning_grave_candle_friendly.title = Vela Funerária Ardente (preço de Freguês)
+shop.hallows_eve_offer_burning_grave_candle_friendly.desc = O preço do Velho Jack antes de ele confiar em você. Quando você for De Confiança com ele, a mesma vela fica bem ao lado desta por menos.
 
 # ---- Conquistas ----
 achievement.hallows_eve_lantern_keepsake.title = Lanterna Oca {0}

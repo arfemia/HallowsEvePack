@@ -1,9 +1,9 @@
 {
-  "$Comment": "The Burning Grave Candle early, at full price: what the Gravekeeper burns to open the Headless Horseman's hard ride, sold once Old Jack counts the player a Regular (Friendly with Old Jack's Favor), the plain Grave Candle's rank, for Hallow Sweets and Life Essence together. Once he counts them Trusted (Honored), Hallows_Eve_Offer_Burning_Grave_Candle.json sells the same candle for Sweets alone at a discount, and Hallows_Eve_Offer_Burning_Grave_Candle_Trade.json for ten Grave Candles; this offer stays on the shelf beside them. Both prices come from wallets: Life Essence is item-backed (Currencies/MMOSkillTree/Life_Essence.json, taken as Ingredient_Life_Essence from the bag), so the offer works on every server. SortOrder 7 shares the Sweets offer's place on the lanterns shelf and follows it by id. No purchase limit and no rotation. Keep its Sweets above the Trusted offer's, so trust earns the discount. Named by the item's own keys.",
+  "$Comment": "The Burning Grave Candle early, at full price: what the Gravekeeper burns to open the Headless Horseman's hard ride, sold once Old Jack counts the player a Regular (Friendly with Old Jack's Favor), the plain Grave Candle's rank, for Hallow Sweets and Life Essence together. Once he counts them Trusted (Honored), Hallows_Eve_Offer_Burning_Grave_Candle.json sells the same candle for Sweets alone at a discount, and Hallows_Eve_Offer_Burning_Grave_Candle_Trade.json for ten Grave Candles; this offer stays on the shelf beside them. Both prices come from wallets: Life Essence is item-backed (Currencies/MMOSkillTree/Life_Essence.json, taken as Ingredient_Life_Essence from the bag), so the offer works on every server. SortOrder 7 shares the Sweets offer's place on the lanterns shelf and follows it by id. No purchase limit and no rotation. Keep its Sweets above the Trusted offer's, so trust earns the discount. Named by its own keys (shop.hallows_eve_offer_burning_grave_candle_friendly.title and .desc in hallowseve.progression.lang), which tell a Trusted player the same candle beside it costs less.",
   "Parent": "Hallows_Eve_Offer_Base",
   "Text": {
-    "TitleKey": "items.Hallows_Eve_Burning_Grave_Candle.name",
-    "FlavorKey": "items.Hallows_Eve_Burning_Grave_Candle.description"
+    "TitleKey": "shop.hallows_eve_offer_burning_grave_candle_friendly.title",
+    "FlavorKey": "shop.hallows_eve_offer_burning_grave_candle_friendly.desc"
   },
   "Listing": { "Category": "lights", "SortOrder": 7 },
   "Cost": { "Currencies": { "Hallows_Eve_Sweets": 150, "Life_Essence": 500 } },

@@ -29,7 +29,7 @@ Hallows_Eve_Horseman_Ember.description = Başsız Süvari'nin kendi ateşinden b
 Hallows_Eve_Grave_Candle.name = Mezar Mumu
 Hallows_Eve_Grave_Candle.description = Mezar Bekçisi'nin Başsız Süvari'nin mezarlığının kapısını açmak için yaktığı kara bir mum; kapı bütün partin için açık kalır. Yaşlı Jack seni Müdavim saydığında bunları dükkanında satar, Süvari'nin Boss Zaferi ödülü de bir kısmını geri verir.
 Hallows_Eve_Burning_Grave_Candle.name = Yanan Mezar Mumu
-Hallows_Eve_Burning_Grave_Candle.description = Hiç sönmeyen kara mumlar. Mezar Bekçisi, Başsız Süvari'nin zor sürüşünün kapısını açmak için birini yakar; kapı bütün partin için açık kalır. Yaşlı Jack seni Güvenilir saydıktan sonra bunları dükkanında satar, bir avuç Mezar Mumuna karşılık da bir tane verir.
+Hallows_Eve_Burning_Grave_Candle.description = Hiç sönmeyen kara mumlar. Mezar Bekçisi, Başsız Süvari'nin zor sürüşünün kapısını açmak için birini yakar; kapı bütün partin için açık kalır. Yaşlı Jack seni Müdavim saydığında bunları dükkanında satar, Güvenilir saydığında daha ucuza verir, on Mezar Mumuna karşılık da bir tane verir.
 Hallows_Eve_Fire_Resistance_Potion.name = Ateş Direnci İksiri
 Hallows_Eve_Fire_Resistance_Potion.description = Verir:\n\n• <color is="#ffffff">Ateş Direnci</color>: <color is="#ffffff">35%</color> daha az ateş hasarı\n\nSüre: <color is="#ffffff">3:00</color>\n\n<i>Tadı duman ve yanık kabak gibi.</i>
 Hallows_Eve_Eternal_Candle.name = Ebedi Mum

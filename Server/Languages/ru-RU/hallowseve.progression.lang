@@ -140,6 +140,8 @@ shop.hallows_eve_offer_sell_eternal_candle.title = Продать запасну
 shop.hallows_eve_offer_sell_eternal_candle.desc = Чтобы открыть кладбище Всадника, хватит одной Вечной свечи. Принеси Старому Джеку запасную, и он заплатит.
 shop.hallows_eve_offer_sell_horsemans_reins.title = Продать запасные Поводья Всадника
 shop.hallows_eve_offer_sell_horsemans_reins.desc = Чтобы призвать его коня, хватит одной пары Поводьев Всадника. Принеси Старому Джеку запасную пару, и он заплатит.
+shop.hallows_eve_offer_burning_grave_candle_friendly.title = Пылающая могильная свеча (цена для Завсегдатаев)
+shop.hallows_eve_offer_burning_grave_candle_friendly.desc = Цена Старого Джека, пока он вам не доверяет. Когда он сочтёт вас Доверенным, та же свеча будет рядом дешевле.
 
 # ---- Достижения ----
 achievement.hallows_eve_lantern_keepsake.title = Полый фонарь {0}

@@ -1,0 +1,14 @@
+{
+  "$Comment": "The Grave Candle again, priced in Life Essence alone: a second way to pay for the Headless Horseman's graveyard for a player with essence to spare and no Sweets, set high so the Sweets offer stays the usual way. Life Essence is an item-backed wallet this pack ships (Currencies/MMOSkillTree/Life_Essence.json), taken as Ingredient_Life_Essence from the bag, so the offer works on every server. Requires is the Sweets offer's own lock: it opens once Old Jack counts the player a Regular (Friendly with Old Jack's Favor), and a locked offer still shows on the shelf with its lock line; keep the two offers' locks the same. SortOrder 6 sits it straight after the Sweets offer (Hallows_Eve_Offer_Grave_Candle.json, SortOrder 5) on the lanterns shelf. No purchase limit and no rotation, like the Sweets offer. Cost is the price in Life Essence. Named by the item's own keys.",
+  "Parent": "Hallows_Eve_Offer_Base",
+  "Text": {
+    "TitleKey": "items.Hallows_Eve_Grave_Candle.name",
+    "FlavorKey": "items.Hallows_Eve_Grave_Candle.description"
+  },
+  "Listing": { "Category": "lights", "SortOrder": 6 },
+  "Cost": { "Currencies": { "Life_Essence": 500 } },
+  "Requires": { "Factors": [ { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Hallows_Eve_Old_Jack/Friendly", "Min": 1 } ] },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Hallows_Eve_Grave_Candle", "Count": 1 } }
+  ]
+}

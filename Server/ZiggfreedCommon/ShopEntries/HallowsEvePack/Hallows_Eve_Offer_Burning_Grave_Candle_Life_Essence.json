@@ -1,0 +1,17 @@
+{
+  "$Comment": "The Burning Grave Candle again, priced in Life Essence and Fire Essence with no Sweets: a second way to pay for the Headless Horseman's hard ride, set high so the Sweets offers stay the usual way. Life Essence is an item-backed wallet this pack ships (Currencies/MMOSkillTree/Life_Essence.json), taken as Ingredient_Life_Essence from the bag; Fire Essence is an item price (Cost.Items, Ingredient_Fire_Essence from the bag, storage or hotbar), so the offer works on every server. Requires is the Trusted Sweets offer's own lock: it opens once Old Jack counts the player Trusted (Honored with Old Jack's Favor), and a locked offer still shows on the shelf with its lock line. Keep the lock the same as Hallows_Eve_Offer_Burning_Grave_Candle.json's and Hallows_Eve_Offer_Burning_Grave_Candle_Trade.json's (the trade shares SortOrder 8 and follows this offer by id). SortOrder 8 sits it straight after the two Sweets offers (SortOrder 7) on the lanterns shelf. No purchase limit and no rotation. Cost is the price: raise or lower the Life Essence and the Fire Essence Count. Named by the item's own keys.",
+  "Parent": "Hallows_Eve_Offer_Base",
+  "Text": {
+    "TitleKey": "items.Hallows_Eve_Burning_Grave_Candle.name",
+    "FlavorKey": "items.Hallows_Eve_Burning_Grave_Candle.description"
+  },
+  "Listing": { "Category": "lights", "SortOrder": 8 },
+  "Cost": {
+    "Currencies": { "Life_Essence": 1500 },
+    "Items": [ { "Item": "Ingredient_Fire_Essence", "Count": 2 } ]
+  },
+  "Requires": { "Factors": [ { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Hallows_Eve_Old_Jack/Honored", "Min": 1 } ] },
+  "Rewards": [
+    { "Kind": "Item", "Params": { "Item": "Hallows_Eve_Burning_Grave_Candle", "Count": 1 } }
+  ]
+}
