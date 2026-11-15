@@ -125,7 +125,7 @@
           { "Item": "Deco_Scarecrow", "SourceKey": "almanac.hallows_eve.source.stall" },
           { "Item": "Halloween_Wagon", "SourceKey": "almanac.hallows_eve.source.stall" },
           { "Item": "Halloween_Broomstick", "SourceKey": "almanac.hallows_eve.source.stall" },
-          { "Item": "Tool_Spyglass", "SourceKey": "almanac.hallows_eve.source.stall_or_lab" },
+          { "Item": "Tool_Spyglass_Scrap", "SourceKey": "almanac.hallows_eve.source.stall_or_lab" },
           { "Item": "Tool_Repair_Kit_Goblin", "SourceKey": "almanac.hallows_eve.source.stall_or_lab" },
           { "Item": "Scrap_Hook", "SourceKey": "almanac.hallows_eve.source.stall_or_lab" },
           { "Item": "Glider_Scrap", "Hidden": true, "SourceKey": "almanac.hallows_eve.source.stall_or_lab" },
