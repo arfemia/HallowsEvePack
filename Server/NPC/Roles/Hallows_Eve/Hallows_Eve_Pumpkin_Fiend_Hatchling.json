@@ -35,10 +35,8 @@
             },
             "DamageEffects": {
               "Knockback": {
-                "Type": "Directional",
-                "Force": 0.5,
-                "RelativeX": 0,
-                "RelativeZ": -1,
+                "Type": "Angled",
+                "Force": 0,
                 "VelocityY": 1,
                 "VelocityType": "Set"
               }
