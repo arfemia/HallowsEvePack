@@ -21,7 +21,7 @@
             "DamageCalculator": {"BaseDamage": {"Fire": 20}},
             "DamageEffects": {
               "Knockback": {
-                "Type": "Point",
+                "Type": "Radial",
                 "VelocityConfig": {
                   "AirResistance": 0.97,
                   "AirResistanceMax": 0.96,
