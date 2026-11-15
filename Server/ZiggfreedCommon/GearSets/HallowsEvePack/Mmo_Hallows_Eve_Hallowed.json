@@ -4,19 +4,24 @@
     "set instead of making a set of its own, so the player still sees one Hallowed set: one notice,",
     "one entry, one look. The set's name, members and look stay that file's, so this file names none.",
     "",
-    "Its one tier asks exactly what the set's first tier asks, a piece of the set worn and a Jack",
+    "Its first tier asks exactly what the set's first tier asks, a piece of the set worn and a Jack",
     "Shield in the utility slot (Armor 1 and Utility 1), so it joins that tier: its stats apply beside the set's,",
-    "and its line follows the set's line in the same notice. A tier asking for something else would",
-    "be added as a tier of its own. Requires takes this file out on a server without MMO Skill Tree,",
-    "where these stats do not exist and its line would name a bonus nobody gets; always write it with",
-    "Min 1.",
+    "and its line follows the set's line in the same notice. Its second tier asks the same pieces but",
+    "binds its stats with While, and a bound tier never joins another, so it is added as a tier of its",
+    "own with a notice line of its own (tier_artillery). A tier asking for something else would be added",
+    "the same way. Requires takes this file out on a server without MMO Skill Tree, since these are the",
+    "skills' half of the set; always write it with Min 1.",
     "",
     "GatherYield and KillYield take whole percent points (5 is +5 on a find's chance): the luck every",
     "gathering find and every kill find rolls with, together the luck every skill's lucky rolls read.",
-    "MMO_Damage_ARTILLERY takes whole percent points too (12 is +12%) on every Artillery hit: one dealt",
-    "with an Artillery weapon in hand, and a Lantern Bomb's burst wherever it lands, since the burst's",
-    "Hit tag routes it to Artillery (TrackSources/HallowsEvePack/Mmo_Hallows_Eve_Artillery_Xp.json).",
-    "Both are Additive on purpose: these channels have a base of zero, so a Multiplicative entry",
+    "DamageBonus, CommonLib's every-type damage stat, takes whole percent points too (12 is +12%) on",
+    "every hit dealt while a bomb or a gun is in hand: the second tier's While is CommonLib's ZigHolding",
+    "on the item Families the Artillery skill trains (ItemTag:Family=Bomb, ItemTag:Family=Gun), which",
+    "every Lantern Bomb carries through its Parent. It reads the hand, not the hit, so a bomb's burst",
+    "counts only while a bomb or a gun is still in hand. It names no MMO Skill Tree condition on purpose:",
+    "this pack depends on MMO Skill Tree only optionally, and a condition nobody registered fails the",
+    "file's read before Requires can drop it.",
+    "All three are Additive on purpose: these channels have a base of zero, so a Multiplicative entry",
     "computes nothing."
   ],
   "Joins": "Hallows_Eve_Hallowed",
@@ -32,8 +37,16 @@
       "Text": { "TitleKey": "gearset.mmo_hallows_eve_hallowed.tier_full" },
       "StatModifiers": {
         "GatherYield": [ { "Amount": 5, "CalculationType": "Additive" } ],
-        "KillYield": [ { "Amount": 5, "CalculationType": "Additive" } ],
-        "MMO_Damage_ARTILLERY": [ { "Amount": 12, "CalculationType": "Additive" } ]
+        "KillYield": [ { "Amount": 5, "CalculationType": "Additive" } ]
+      }
+    },
+    {
+      "Armor": 1,
+      "Utility": 1,
+      "Text": { "TitleKey": "gearset.mmo_hallows_eve_hallowed.tier_artillery" },
+      "While": [ { "Id": "ZigHolding", "Items": [ "ItemTag:Family=Bomb", "ItemTag:Family=Gun" ] } ],
+      "StatModifiers": {
+        "DamageBonus": [ { "Amount": 12, "CalculationType": "Additive" } ]
       }
     }
   ]
