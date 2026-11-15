@@ -146,6 +146,8 @@ shop.hallows_eve_offer_sell_eternal_candle.title = Sell a Spare Eternal Candle
 shop.hallows_eve_offer_sell_eternal_candle.desc = One Eternal Candle is all you need to open the Horseman's graveyard. Bring Old Jack a spare and he'll pay you for it.
 shop.hallows_eve_offer_sell_horsemans_reins.title = Sell Spare Horseman's Reins
 shop.hallows_eve_offer_sell_horsemans_reins.desc = One pair of the Horseman's Reins is all you need to call his horse. Bring Old Jack a spare pair and he'll pay you for it.
+shop.hallows_eve_offer_burning_grave_candle_friendly.title = Burning Grave Candle (Regular's Price)
+shop.hallows_eve_offer_burning_grave_candle_friendly.desc = Old Jack's price before he trusts you. Once you're Trusted with him, the same candle sits beside this one for less.
 
 # ---- Achievements ----
 achievement.hallows_eve_lantern_keepsake.title = Hollow Lantern {0}

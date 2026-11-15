@@ -29,7 +29,7 @@ Hallows_Eve_Horseman_Ember.description = A coal from the Headless Horseman's own
 Hallows_Eve_Grave_Candle.name = Grave Candle
 Hallows_Eve_Grave_Candle.description = A black candle the Gravekeeper burns to open the gate to the Headless Horseman's graveyard, and the gate stays open for your whole party. Old Jack sells them at his shop once he counts you a Regular, and the Horseman's Boss Kill Claim gives some back.
 Hallows_Eve_Burning_Grave_Candle.name = Burning Grave Candle
-Hallows_Eve_Burning_Grave_Candle.description = Black candles that never stop burning. The Gravekeeper burns one to open the gate for the Headless Horseman's hard ride, and the gate stays open for your whole party. Old Jack sells them at his shop once you're Trusted with him, and trades one for a handful of Grave Candles.
+Hallows_Eve_Burning_Grave_Candle.description = Black candles that never stop burning. The Gravekeeper burns one to open the gate for the Headless Horseman's hard ride, and the gate stays open for your whole party. Old Jack sells them at his shop once he counts you a Regular, for less once you're Trusted with him, and trades one for ten Grave Candles.
 Hallows_Eve_Fire_Resistance_Potion.name = Fire Resistance Potion
 Hallows_Eve_Fire_Resistance_Potion.description = Grants:\n\n• <color is="#ffffff">Fire Resistance</color>: <color is="#ffffff">35%</color> less fire damage\n\nDuration: <color is="#ffffff">3:00</color>\n\n<i>It tastes of smoke and burnt pumpkin.</i>
 Hallows_Eve_Eternal_Candle.name = Eternal Candle

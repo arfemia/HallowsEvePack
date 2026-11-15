@@ -133,6 +133,8 @@ shop.hallows_eve_offer_sell_eternal_candle.title = Vender una Vela Eterna de Sob
 shop.hallows_eve_offer_sell_eternal_candle.desc = Una Vela Eterna basta para abrir el cementerio del Jinete. Llévale una de sobra al Viejo Jack y te la pagará.
 shop.hallows_eve_offer_sell_horsemans_reins.title = Vender unas Riendas del Jinete de Sobra
 shop.hallows_eve_offer_sell_horsemans_reins.desc = Un par de Riendas del Jinete basta para llamar a su caballo. Llévale un par de sobra al Viejo Jack y te lo pagará.
+shop.hallows_eve_offer_burning_grave_candle_friendly.title = Vela Sepulcral Ardiente (precio de Asiduo)
+shop.hallows_eve_offer_burning_grave_candle_friendly.desc = El precio del Viejo Jack antes de que confíe en ti. Cuando te considere De Confianza, la misma vela estará justo al lado por menos.
 
 # ---- Logros ----
 achievement.hallows_eve_lantern_keepsake.title = Farol de Ánimas {0}

@@ -142,6 +142,8 @@ shop.hallows_eve_offer_sell_eternal_candle.title = Eine übrige Ewige Kerze verk
 shop.hallows_eve_offer_sell_eternal_candle.desc = Eine Ewige Kerze reicht, um den Friedhof des Reiters zu öffnen. Bring dem Alten Jack eine übrige, und er zahlt dir dafür.
 shop.hallows_eve_offer_sell_horsemans_reins.title = Übrige Zügel des Reiters verkaufen
 shop.hallows_eve_offer_sell_horsemans_reins.desc = Ein Paar Zügel des Reiters reicht, um sein Pferd zu rufen. Bring dem Alten Jack ein übriges Paar, und er zahlt dir dafür.
+shop.hallows_eve_offer_burning_grave_candle_friendly.title = Brennende Grabkerze (Preis für Stammgäste)
+shop.hallows_eve_offer_burning_grave_candle_friendly.desc = Der Preis des Alten Jack, bevor er dir vertraut. Sobald du bei ihm Bewährt bist, liegt dieselbe Kerze gleich daneben für weniger.
 
 # ---- Erfolge ----
 achievement.hallows_eve_lantern_keepsake.title = Hollow-Laterne {0}

@@ -133,6 +133,8 @@ shop.hallows_eve_offer_sell_eternal_candle.title = Vendi una Candela Eterna di S
 shop.hallows_eve_offer_sell_eternal_candle.desc = Basta una Candela Eterna per aprire il cimitero del Cavaliere. Porta al Vecchio Jack una di scorta e te la pagherà.
 shop.hallows_eve_offer_sell_horsemans_reins.title = Vendi delle Redini del Cavaliere di Scorta
 shop.hallows_eve_offer_sell_horsemans_reins.desc = Un paio di Redini del Cavaliere basta per chiamare il suo cavallo. Porta al Vecchio Jack un paio di scorta e te lo pagherà.
+shop.hallows_eve_offer_burning_grave_candle_friendly.title = Candela Funebre Ardente (prezzo da Habitué)
+shop.hallows_eve_offer_burning_grave_candle_friendly.desc = Il prezzo del Vecchio Jack prima che si fidi di te. Quando per lui sei Fidato, la stessa candela è proprio accanto a questa per meno.
 
 # ---- Obiettivi ----
 achievement.hallows_eve_lantern_keepsake.title = Lanterna Cava {0}

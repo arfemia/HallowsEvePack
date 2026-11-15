@@ -29,7 +29,7 @@ Hallows_Eve_Horseman_Ember.description = Eine Kohle aus dem eigenen Feuer des Ko
 Hallows_Eve_Grave_Candle.name = Grabkerze
 Hallows_Eve_Grave_Candle.description = Eine schwarze Kerze, die der Grabwächter verbrennt, um das Tor zum Friedhof des Kopflosen Reiters zu öffnen, und das Tor bleibt für deine ganze Gruppe offen. Der Alte Jack verkauft sie in seinem Laden, sobald er dich als Stammgast zählt, und die Bosskill-Abholung des Reiters gibt manche zurück.
 Hallows_Eve_Burning_Grave_Candle.name = Brennende Grabkerze
-Hallows_Eve_Burning_Grave_Candle.description = Schwarze Kerzen, die nie aufhören zu brennen. Der Grabwächter verbrennt eine, um das Tor zum schweren Ritt des Kopflosen Reiters zu öffnen, und das Tor bleibt für deine ganze Gruppe offen. Der Alte Jack verkauft sie in seinem Laden, sobald du bei ihm Bewährt bist, und tauscht eine gegen eine Handvoll Grabkerzen.
+Hallows_Eve_Burning_Grave_Candle.description = Schwarze Kerzen, die nie aufhören zu brennen. Der Grabwächter verbrennt eine, um das Tor zum schweren Ritt des Kopflosen Reiters zu öffnen, und das Tor bleibt für deine ganze Gruppe offen. Der Alte Jack verkauft sie in seinem Laden, sobald er dich als Stammgast zählt, günstiger, sobald du bei ihm Bewährt bist, und tauscht eine gegen zehn Grabkerzen.
 Hallows_Eve_Fire_Resistance_Potion.name = Feuerresistenztrank
 Hallows_Eve_Fire_Resistance_Potion.description = Gewährt:\n\n• <color is="#ffffff">Feuerresistenz</color>: <color is="#ffffff">35%</color> weniger Feuerschaden\n\nDauer: <color is="#ffffff">3:00</color>\n\n<i>Er schmeckt nach Rauch und verbranntem Kürbis.</i>
 Hallows_Eve_Eternal_Candle.name = Ewige Kerze

@@ -140,6 +140,8 @@ shop.hallows_eve_offer_sell_eternal_candle.title = Yedek Bir Ebedi Mum Sat
 shop.hallows_eve_offer_sell_eternal_candle.desc = Süvari'nin mezarlığını açmak için tek bir Ebedi Mum yeter. Yaşlı Jack'e yedek bir tane getir, sana parasını öder.
 shop.hallows_eve_offer_sell_horsemans_reins.title = Yedek Süvari Dizginlerini Sat
 shop.hallows_eve_offer_sell_horsemans_reins.desc = Atını çağırmak için bir çift Süvari Dizgini yeter. Yaşlı Jack'e yedek bir çift getir, sana parasını öder.
+shop.hallows_eve_offer_burning_grave_candle_friendly.title = Yanan Mezar Mumu (Müdavim fiyatı)
+shop.hallows_eve_offer_burning_grave_candle_friendly.desc = Yaşlı Jack'in sana güvenmeden önceki fiyatı. Seni Güvenilir saydığında aynı mum hemen yanında daha ucuza durur.
 
 # ---- Başarımlar ----
 achievement.hallows_eve_lantern_keepsake.title = Oyuk Fener {0}

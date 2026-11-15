@@ -134,6 +134,8 @@ shop.hallows_eve_offer_sell_eternal_candle.title = Adj el egy Tartalék Örök G
 shop.hallows_eve_offer_sell_eternal_candle.desc = Egyetlen Örök Gyertya elég a Lovas temetőjének kinyitásához. Hozz Öreg Jacknek egy tartalékot, és fizet érte.
 shop.hallows_eve_offer_sell_horsemans_reins.title = Adj el egy Tartalék Lovas-gyeplőt
 shop.hallows_eve_offer_sell_horsemans_reins.desc = A Lovas-gyeplő egy párja elég a lova hívásához. Hozz Öreg Jacknek egy tartalék párt, és fizet érte.
+shop.hallows_eve_offer_burning_grave_candle_friendly.title = Égő Sírgyertya (törzsvendég ár)
+shop.hallows_eve_offer_burning_grave_candle_friendly.desc = Öreg Jack ára, mielőtt megbízna benned. Ha már Megbízhatónak tart, ugyanez a gyertya ott van mellette olcsóbban.
 
 # ---- Teljesítmények ----
 achievement.hallows_eve_lantern_keepsake.title = Vájt Lámpás {0}

@@ -29,7 +29,7 @@ Hallows_Eve_Horseman_Ember.description = Egy darab parázs a Fej Nélküli Lovas
 Hallows_Eve_Grave_Candle.name = Sírgyertya
 Hallows_Eve_Grave_Candle.description = Fekete gyertya, amelyet a Sírőr eléget, hogy kinyissa a kaput a Fej Nélküli Lovas temetője felé, és a kapu az egész csapatodnak nyitva marad. Öreg Jack a boltjában árulja, ha már Törzsvendégnek tart, és a Lovas Boss-legyőzés Átvehetője is visszaad belőle párat.
 Hallows_Eve_Burning_Grave_Candle.name = Égő Sírgyertya
-Hallows_Eve_Burning_Grave_Candle.description = Fekete gyertyák, amelyek sosem szűnnek meg égni. A Sírőr egyet eléget, hogy kinyissa a kaput a Fej Nélküli Lovas nehéz lovaglásához, és a kapu az egész csapatodnak nyitva marad. Öreg Jack a boltjában árulja, ha már Megbízhatónak tart, és egyet cserél egy maréknyi Sírgyertyáért.
+Hallows_Eve_Burning_Grave_Candle.description = Fekete gyertyák, amelyek sosem szűnnek meg égni. A Sírőr egyet eléget, hogy kinyissa a kaput a Fej Nélküli Lovas nehéz lovaglásához, és a kapu az egész csapatodnak nyitva marad. Öreg Jack a boltjában árulja, ha már Törzsvendégnek tart, olcsóbban, ha már Megbízhatónak tart, és egyet cserél tíz Sírgyertyáért.
 Hallows_Eve_Fire_Resistance_Potion.name = Tűzállósági Bájital
 Hallows_Eve_Fire_Resistance_Potion.description = Ad:\n\n• <color is="#ffffff">Tűzállóság</color>: <color is="#ffffff">35%</color>-kal kevesebb tűzkár\n\nIdőtartam: <color is="#ffffff">3:00</color>\n\n<i>Füst és égett tök íze van.</i>
 Hallows_Eve_Eternal_Candle.name = Örök Gyertya

@@ -146,6 +146,8 @@ shop.hallows_eve_offer_sell_eternal_candle.title = Vendre une Bougie Éternelle 
 shop.hallows_eve_offer_sell_eternal_candle.desc = Une seule Bougie Éternelle suffit pour ouvrir le cimetière du Cavalier. Apportez-en une en trop au Vieux Jack et il vous la paiera.
 shop.hallows_eve_offer_sell_horsemans_reins.title = Vendre des Rênes du Cavalier en trop
 shop.hallows_eve_offer_sell_horsemans_reins.desc = Une seule paire de Rênes du Cavalier suffit pour appeler son cheval. Apportez-en une paire en trop au Vieux Jack et il vous la paiera.
+shop.hallows_eve_offer_burning_grave_candle_friendly.title = Bougie de Tombe Ardente (prix des Habitués)
+shop.hallows_eve_offer_burning_grave_candle_friendly.desc = Le prix du Vieux Jack avant qu'il vous fasse confiance. Dès que vous êtes « De confiance » auprès de lui, la même bougie vous attend juste à côté pour moins cher.
 
 # ---- Succès ----
 achievement.hallows_eve_lantern_keepsake.title = Lanterne Creuse {0}
