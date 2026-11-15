@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Horseman's Steed: his black barded horse as a player's own mount. It never spawns in the world: on a server running Alec's Tamework, the Horseman's Reins drop puts one in the player's Tamework roster (ZiggfreedCommon/Lootables/HallowsEvePack/Hallows_Eve_Horsemans_Reins_Chase.json runs /tw bonded grant with this role), and the Reins call it out and put it away (Server/Tamework/). A Variant of Hallows_Eve_Template_Horsemans_Steed, the pack's copy of the game's Template_Livestock (see that file for why it is a copy), carrying the game's tamed horse's own Modify (Tamed_Horse): IsMountable and its MountAnchor seat the rider as on any tamed horse. With Tamework, Server/Patchwork/Patches/Hallows_Eve/Hallows_Eve_Horsemans_Steed_Patch.json swaps the template's interactions for Tamework's, so F rides it only for its owner (Server/Tamework/Interactions/Hallows_Eve_Horsemans_Steed.json). Where it differs from the tamed horse: its Appearance (Hallows_Eve_Horsemans_Steed, his horse without a rider), its own name, FlockArray empty so it never joins or brings a herd, and DropList Empty, since Tamework revives it rather than it being farmed. Any key the template does not declare makes the game refuse the whole role.",
+  "$Comment": "The Horseman's Steed: his black barded horse as a player's own mount. It never spawns in the world: on a server running Alec's Tamework, the Horseman's Reins drop puts one in the player's Tamework roster (ZiggfreedCommon/Lootables/HallowsEvePack/Hallows_Eve_Horsemans_Reins_Chase.json runs /tw bonded grant with this role), and the Reins call it out and put it away (Server/Tamework/). A Variant of Hallows_Eve_Template_Horsemans_Steed, the pack's copy of the game's Template_Livestock (see that file for why it is a copy), carrying the game's tamed horse's own Modify (Tamed_Horse): IsMountable seats the rider on the model's mount node (Mount-Attachment, which its Parent Horse model carries) as on any tamed horse. With Tamework, Server/Patchwork/Patches/Hallows_Eve/Hallows_Eve_Horsemans_Steed_Patch.json swaps the template's interactions for Tamework's, so F rides it only for its owner (Server/Tamework/Interactions/Hallows_Eve_Horsemans_Steed.json). Where it differs from the tamed horse: its Appearance (Hallows_Eve_Horsemans_Steed, his horse without a rider), its own name, FlockArray empty so it never joins or brings a herd, and DropList Empty, since Tamework revives it rather than it being farmed. Any key the template does not declare makes the game refuse the whole role.",
   "Type": "Variant",
   "Reference": "Hallows_Eve_Template_Horsemans_Steed",
   "Modify": {
@@ -24,9 +24,6 @@
     "Attack": "Root_NPC_Attack_Melee",
     "ProduceItem": "Ingredient_Poop",
     "IsMountable": true,
-    "MountAnchorX": 0,
-    "MountAnchorY": 1.6,
-    "MountAnchorZ": 0,
     "IsMemory": true,
     "MemoriesNameOverride": "Horse",
     "NameTranslationKey": "npcs.Hallows_Eve_Horsemans_Steed.name",

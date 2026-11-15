@@ -298,14 +298,9 @@
       "Value": false,
       "Description": "Whether this NPC can be mounted."
     },
-    "MountAnchorX": {
-      "Value": 0
-    },
-    "MountAnchorY": {
-      "Value": 0
-    },
-    "MountAnchorZ": {
-      "Value": 0
+    "MountAnchorNodeName": {
+      "Value": "Mount-Attachment",
+      "Description": "The node in the model that the rider sits on."
     },
     "MountMovementConfig": {
       "Value": "Mount"
@@ -2532,9 +2527,7 @@
               },
               {
                 "Type": "Mount",
-                "AnchorX": { "Compute": "MountAnchorX" },
-                "AnchorY": { "Compute": "MountAnchorY" },
-                "AnchorZ": { "Compute": "MountAnchorZ" },
+                "AnchorNodeName": { "Compute": "MountAnchorNodeName" },
                 "MovementConfig": { "Compute": "MountMovementConfig" }
               }
             ]
