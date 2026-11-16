@@ -1,8 +1,8 @@
 # Seasons of Orbis
 
-Yearly events for your Hytale server. Hallow's Eve runs from October 1 to November 12, and every January 13 is Hytale's Anniversary.
+Yearly events for your Hytale server. Hallow's Eve runs from October 1 to November 12, Harvest Feast from November 20 to December 1, and every January 13 is Hytale's Anniversary.
 
-Hallow's Eve brings creatures, quests, items and achievements, with a host, Old Jack, in the Forgotten Temple. It needs Ziggfreed's CommonLib 2.5.1 or newer and RPG Stations 1.1.1 or newer, on a Hytale Update 7 server. MMO Skill Tree and Alec's Tamework are optional. Everything plays in nine languages.
+Each season brings a host to the Forgotten Temple with quests, a daily board, a shop and achievements: Old Jack for Hallow's Eve, Martha the Cook for Harvest Feast. The pack needs Ziggfreed's CommonLib 2.5.1 or newer and RPG Stations 1.1.1 or newer, on a Hytale Update 7 server. MMO Skill Tree and Alec's Tamework are optional. Everything plays in nine languages.
 
 [![Discord](https://img.shields.io/badge/Discord-Join%20Server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/5NFdZsUxHZ) [![Ko-fi](https://img.shields.io/badge/Ko--fi-Support-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/ziggfreed) [![Documentation](https://img.shields.io/badge/Docs-Read%20More-0ea5e9?style=for-the-badge)](https://mmo-skill-tree-docs.ziggfreed.com)
 
@@ -33,10 +33,23 @@ Hallow's Eve brings creatures, quests, items and achievements, with a host, Old 
 - Harvest Moon, October 28 to November 1. About twice the creatures come out at night, and geodes and Hallowed Pumpkins come in pairs.
 - Thirteen achievements each year, the last of them The Hallowed and its title, plus more that span the years and four for wearing the sets. The Hallowed asks for one win over the Horseman. Horseman Hunter and Horseman's Bane, for 10 and 50 wins in one Hallow's Eve, are a ladder of their own, with the title "Horseman's Bane" at the top. Bring him down with nothing but Lantern Bombs for By Lantern Light, or for Lamplighter and its title on the hard ride.
 
+## Harvest Feast, November 20 to December 1
+
+- **Martha the Cook** sets up a long table in the Forgotten Temple. A quest in your log, Supper in the Temple, sends you to her through any Forgotten Temple Gateway.
+- Her four quests run from Wheat for the Ovens to The Long Table. The Turkey Hunt hands you the pumpkin pie recipe and turns you into a turkey for three minutes. In The First Pie you bake one at a Chef's Stove.
+- The Long Table is the feast itself, and it comes back every year. Bring a pumpkin pie, some cooked meat and a basket of carrots, sit down, and take home a Feast Plate with the year on it and two Meat Pies.
+- Three dailies: Turkey Run, Bread for the Morning and Roast for the Table. The Shared Table comes round every day too. Roast a vegetable over a fire and share it at her table.
+- The Guest List, once a feast. Invite three people to the feast, then tell Martha who's coming. Tomas the Miller, Elsie the Weaver and Bram the Shepherd stand around the temple, so there's always somebody to ask.
+- The Feast Board posts a Field job and a Kitchen job every day, turkeys and wild wheat out in the fields, pies and roast in the kitchen. Get to know Martha and a second of each opens up.
+- Wild Turkeys roam the first zone's autumn woods, forests and plains by day, in small flocks. You can tame them too. Pumpkins you pick by hand sometimes come with Spices, which a pumpkin pie needs.
+- Martha's shop takes Festival Tokens: the Apple Pie, Meat Pie and Caesar Salad recipes, popcorn, corn seeds and autumn leaves. Its Festival Shelf has the winter decorations, from a Winter Stocking to a Snowman.
+- Favor at the Feast runs from Newcomer to Head of the Table, which has its own achievement and title.
+- Five achievements each year. A Seat at the Table, Turkey Chaser, Full Baskets and Feast Plate, and The Full Table for earning the other four, with the title "of the Full Table".
+
 ## Every season
 
-- Festival Favor, a reputation every season shares, and Festival Tokens, a wallet that keeps from one season to the next. Old Jack's quests and board jobs pay both.
-- The Festival Shelf at Old Jack's shop sells by season for Festival Tokens. High Festival Favor opens the Goblin Plushie and the Carved Kweebec Figure, found nowhere else.
+- Festival Favor, a reputation every season shares, and Festival Tokens, a wallet that keeps from one season to the next. Old Jack's and Martha's quests and board jobs pay both.
+- The Festival Shelf at each host's shop sells by season for Festival Tokens. High Festival Favor opens the Goblin Plushie and the Carved Kweebec Figure, found nowhere else.
 - Achievements for keepsakes from different seasons, up to Seasons of Orbis and the title "Friend of the Seasons".
 - An Almanac page for each season with your keepsakes, your lifetime tallies and every item to find, with where it comes from. Hallow's Eve's shows what the Horseman's Boss Kill Claim pays and how often the whole server has brought him down.
 
@@ -46,15 +59,15 @@ From 2027, the day Hytale came out gets a banner and an Almanac page. Be on the 
 
 ## How it works
 
-1. Log in while a season runs. A banner marks it, and a quest in your log, Lanterns in the Temple, sends you to Old Jack in the Forgotten Temple.
-2. Press F on him to hand it in. It gives you an Objective Book, which opens your quests, achievements and the Almanac.
-3. Ask him "What needs doing?" for his quests, board jobs and errands in one list, or open his shop. Once he knows you, "How do we stand?" shows your reputation.
-4. Head out after dark for the creatures, then spend your sweets and tokens at his shop.
-5. When the season ends he leaves, and everything you earned stays with you. An unfinished quest waits for next year.
+1. Log in while a season runs. A banner marks it, and a quest in your log sends you to its host in the Forgotten Temple: Lanterns in the Temple to Old Jack, or Supper in the Temple to Martha the Cook.
+2. Press F on the host to hand it in. Old Jack's also gives you an Objective Book, which opens your quests, achievements and the Almanac.
+3. Ask "What needs doing?" for the host's quests and board jobs in one list, or open their shop. Once they know you, "How do we stand?" shows your reputation.
+4. Head out for the season's work, Old Jack's creatures after dark or Martha's turkeys and crops by day, then spend what you earn at the host's shop.
+5. When the season ends the host leaves, and everything you earned stays with you. An unfinished quest waits for next year.
 
 ## With MMO Skill Tree
 
-Install MMO Skill Tree 1.7.2 or newer and Hallow's Eve trains your skills. Old Jack's quests, jobs and the season's achievements pay XP in the skill the work trains: Defense for the fights, Harvesting for the pumpkins, Mining for the geodes and Artillery for the bombs. The Horseman pays Defense XP for each day's first win and for clearing his graveyard. Without it, the rest of each season plays the same.
+Install MMO Skill Tree 1.7.2 or newer and both seasons train your skills. Old Jack's quests, jobs and the season's achievements pay XP in the skill the work trains: Defense for the fights, Harvesting for the pumpkins, Mining for the geodes and Artillery for the bombs. The Horseman pays Defense XP for each day's first win and for clearing his graveyard. During Harvest Feast, Martha's quests and jobs pay Harvesting, Defense, Crafting and Acrobatics XP, her board posts a Skill job every day, and Harvesting XP runs a quarter higher for everyone while the feast does. Without it, the rest of each season plays the same.
 
 Add the [MMO Skill Bounty Pack](https://www.curseforge.com/hytale/mods/mmo-skill-tree-bounty-board-pack-rich-customizable) and its Daily board posts a haunt contract each day of Hallow's Eve.
 
@@ -79,8 +92,6 @@ Without Tamework the Reins never drop, and the Almanac leaves them out.
 1. Run your server on Hytale's Update 7, with Ziggfreed's CommonLib (2.5.1 or newer) and RPG Stations (1.1.1 or newer).
 2. Drop the Seasons of Orbis zip into your server's `Mods/` folder beside them.
 3. Start the server. While a season runs, its host is in the Forgotten Temple.
-
-Coming later this year: Harvest Feast, the next season.
 
 ## Links & Support
 
