@@ -21,7 +21,8 @@
     "Quests holds one row per quest: the intro, the questline, then the rest, so the questline wins a tie",
     "with a daily. The intro's row brings the arrival line back for a player whose quest log was full when",
     "the intro tried to arm: its answer for them takes the quest and hands it in. Then shows the",
-    "after-feast line once this year's feast is done.",
+    "after-feast line once this year's feast is done (The Long Table reads ON_COOLDOWN until it comes back",
+    "next year, so the line takes that state beside COMPLETED).",
     "",
     "THE BOARD LINE AND FAVOR. The board line comes in four wordings, one per band of favor with Martha,",
     "highest first, so the first that applies is the player's own rank: Revered, Honored, Friendly, then",
@@ -153,7 +154,7 @@
       {
         "Node": "feast_done",
         "When": [
-          { "Type": "QuestState", "Quest": "harvest_feast_the_feast", "State": "COMPLETED" }
+          { "Type": "QuestState", "Quest": "harvest_feast_the_feast", "States": [ "COMPLETED", "ON_COOLDOWN" ] }
         ]
       }
     ],
