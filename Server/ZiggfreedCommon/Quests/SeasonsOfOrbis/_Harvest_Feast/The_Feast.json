@@ -35,6 +35,7 @@
       "Target": "Food_Pie_Pumpkin",
       "MatchMode": "EXACT",
       "Amount": 1,
+      "TextKey": "objective.harvest_feast.bring_pie",
       "Order": 1,
       "TurnInNpcId": "giver"
     },
@@ -43,6 +44,7 @@
       "Target": "Food_Wildmeat_Cooked",
       "MatchMode": "EXACT",
       "Amount": 4,
+      "TextKey": "objective.harvest_feast.bring_roast",
       "Order": 1,
       "TurnInNpcId": "giver"
     },

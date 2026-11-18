@@ -69,6 +69,8 @@ objective.harvest_feast.attend = Participa en el Banquete de la Cosecha
 objective.harvest_feast.bring_down_turkeys = Abate {0} Pavos Silvestres
 objective.harvest_feast.bring_pies = Trae {0} Pasteles de Calabaza
 objective.harvest_feast.bring_carrots = Trae {0} Zanahorias
+objective.harvest_feast.bring_pie = Trae un Pastel de Calabaza
+objective.harvest_feast.bring_roast = Trae {0} de Carne Silvestre Cocinada
 
 # ---- Achievements ----
 achievement.category.seasons.harvest_feast = Banquete de la Cosecha

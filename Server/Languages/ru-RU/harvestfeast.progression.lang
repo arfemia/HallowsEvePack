@@ -69,6 +69,8 @@ objective.harvest_feast.attend = Примите участие в Праздни
 objective.harvest_feast.bring_down_turkeys = Добудьте диких индюков: {0}
 objective.harvest_feast.bring_pies = Принесите тыквенные пироги: {0}
 objective.harvest_feast.bring_carrots = Принесите морковь: {0}
+objective.harvest_feast.bring_pie = Принесите тыквенный пирог
+objective.harvest_feast.bring_roast = Принесите приготовленное мясо дичи: {0}
 
 # ---- Achievements ----
 achievement.category.seasons.harvest_feast = Праздник урожая

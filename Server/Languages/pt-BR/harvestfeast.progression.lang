@@ -69,6 +69,8 @@ objective.harvest_feast.attend = Esteja aqui para a Festa da Colheita
 objective.harvest_feast.bring_down_turkeys = Abata {0} Perus Selvagens
 objective.harvest_feast.bring_pies = Traga {0} Tortas de Abóbora
 objective.harvest_feast.bring_carrots = Traga {0} Cenouras
+objective.harvest_feast.bring_pie = Traga uma Torta de Abóbora
+objective.harvest_feast.bring_roast = Traga {0} de Carne Selvagem Assada
 
 # ---- Achievements ----
 achievement.category.seasons.harvest_feast = Festa da Colheita

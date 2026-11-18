@@ -69,6 +69,8 @@ objective.harvest_feast.attend = Hasat Şöleni'nde burada ol
 objective.harvest_feast.bring_down_turkeys = {0} Yabani Hindi alt et
 objective.harvest_feast.bring_pies = {0} Bal Kabaklı Turta getir
 objective.harvest_feast.bring_carrots = {0} Havuç getir
+objective.harvest_feast.bring_pie = Bir Bal Kabaklı Turta getir
+objective.harvest_feast.bring_roast = {0} Pişmiş Et getir
 
 # ---- Achievements ----
 achievement.category.seasons.harvest_feast = Hasat Şöleni

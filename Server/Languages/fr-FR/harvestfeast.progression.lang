@@ -69,6 +69,8 @@ objective.harvest_feast.attend = Participez à la Fête des Moissons
 objective.harvest_feast.bring_down_turkeys = Abattez {0} Dindes sauvages
 objective.harvest_feast.bring_pies = Rapportez {0} Tartes à la citrouille
 objective.harvest_feast.bring_carrots = Rapportez {0} Carottes
+objective.harvest_feast.bring_pie = Rapportez une Tarte à la citrouille
+objective.harvest_feast.bring_roast = Rapportez {0} portions de Viande sauvage cuite
 
 # ---- Achievements ----
 achievement.category.seasons.harvest_feast = Fête des Moissons

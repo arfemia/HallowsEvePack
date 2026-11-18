@@ -69,6 +69,8 @@ objective.harvest_feast.attend = Sei zum Erntefest dabei
 objective.harvest_feast.bring_down_turkeys = Strecke {0} Wilde Truthähne nieder
 objective.harvest_feast.bring_pies = Bringe {0} Kürbiskuchen
 objective.harvest_feast.bring_carrots = Bringe {0} Karotten
+objective.harvest_feast.bring_pie = Bringe einen Kürbiskuchen
+objective.harvest_feast.bring_roast = Bringe {0} Gegartes Fleisch
 
 # ---- Achievements ----
 achievement.category.seasons.harvest_feast = Erntefest

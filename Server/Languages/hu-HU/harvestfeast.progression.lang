@@ -69,6 +69,8 @@ objective.harvest_feast.attend = Légy itt az Aratási Lakomán
 objective.harvest_feast.bring_down_turkeys = Teríts le {0} Vadpulykát
 objective.harvest_feast.bring_pies = Hozz {0} Tökpitét
 objective.harvest_feast.bring_carrots = Hozz {0} Sárgarépát
+objective.harvest_feast.bring_pie = Hozz egy Tökpitét
+objective.harvest_feast.bring_roast = Hozz {0} Főtt Húst
 
 # ---- Achievements ----
 achievement.category.seasons.harvest_feast = Aratási Lakoma
