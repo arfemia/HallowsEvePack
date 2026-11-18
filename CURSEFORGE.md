@@ -60,7 +60,7 @@ From 2027, the day Hytale came out gets a banner and an Almanac page. Be on the 
 ## How it works
 
 1. Log in while a season runs. A banner marks it, and a quest in your log sends you to its host in the Forgotten Temple: Lanterns in the Temple to Old Jack, or Supper in the Temple to Martha the Cook.
-2. Press F on the host to hand it in. Old Jack's also gives you an Objective Book, which opens your quests, achievements and the Almanac.
+2. Press F on the host to hand it in. Old Jack's and Martha's both give you an Objective Book, which opens your quests, achievements and the Almanac.
 3. Ask "What needs doing?" for the host's quests and board jobs in one list, or open their shop. Once they know you, "How do we stand?" shows your reputation.
 4. Head out for the season's work, Old Jack's creatures after dark or Martha's turkeys and crops by day, then spend what you earn at the host's shop.
 5. When the season ends the host leaves, and everything you earned stays with you. An unfinished quest waits for next year.

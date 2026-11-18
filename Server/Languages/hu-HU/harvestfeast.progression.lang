@@ -66,6 +66,9 @@ quest.harvest_feast_daily_roast.flavor = Süss húst tűzön, és hozd ide. Az e
 
 # ---- Steps worded for this season ----
 objective.harvest_feast.attend = Légy itt az Aratási Lakomán
+objective.harvest_feast.bring_down_turkeys = Teríts le {0} Vadpulykát
+objective.harvest_feast.bring_pies = Hozz {0} Tökpitét
+objective.harvest_feast.bring_carrots = Hozz {0} Sárgarépát
 
 # ---- Achievements ----
 achievement.category.seasons.harvest_feast = Aratási Lakoma

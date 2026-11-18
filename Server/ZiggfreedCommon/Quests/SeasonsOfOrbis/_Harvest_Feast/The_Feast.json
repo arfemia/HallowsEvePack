@@ -51,6 +51,7 @@
       "Target": "Plant_Crop_Carrot_Item",
       "MatchMode": "EXACT",
       "Amount": 10,
+      "TextKey": "objective.harvest_feast.bring_carrots",
       "Order": 1,
       "TurnInNpcId": "giver"
     }

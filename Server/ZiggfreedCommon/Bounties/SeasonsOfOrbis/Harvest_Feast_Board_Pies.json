@@ -5,7 +5,7 @@
   "Boards": [ { "Board": "Harvest_Feast_Daily", "Difficulty": "Harvest_Feast_Kitchen", "Weight": 1 } ],
   "Requires": { "Quests": [ "harvest_feast_host_2" ] },
   "Objectives": {
-    "bring_pies": { "Kind": "TURN_IN", "Target": "Food_Pie_Pumpkin", "MatchMode": "EXACT", "Amount": 2 }
+    "bring_pies": { "Kind": "TURN_IN", "Target": "Food_Pie_Pumpkin", "MatchMode": "EXACT", "Amount": 2, "TextKey": "objective.harvest_feast.bring_pies" }
   },
   "Rewards": {
     "Claim": [

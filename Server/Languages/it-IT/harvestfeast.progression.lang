@@ -66,6 +66,9 @@ quest.harvest_feast_daily_roast.flavor = Cuoci della carne su un fuoco e portala
 
 # ---- Steps worded for this season ----
 objective.harvest_feast.attend = Sii presente alla Festa del Raccolto
+objective.harvest_feast.bring_down_turkeys = Butta giù {0} Tacchini Selvatici
+objective.harvest_feast.bring_pies = Porta {0} Torte di Zucca
+objective.harvest_feast.bring_carrots = Porta {0} Carote
 
 # ---- Achievements ----
 achievement.category.seasons.harvest_feast = Festa del Raccolto

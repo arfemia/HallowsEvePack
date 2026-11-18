@@ -66,6 +66,9 @@ quest.harvest_feast_daily_roast.flavor = Brat Fleisch über dem Feuer und bring 
 
 # ---- Steps worded for this season ----
 objective.harvest_feast.attend = Sei zum Erntefest dabei
+objective.harvest_feast.bring_down_turkeys = Strecke {0} Wilde Truthähne nieder
+objective.harvest_feast.bring_pies = Bringe {0} Kürbiskuchen
+objective.harvest_feast.bring_carrots = Bringe {0} Karotten
 
 # ---- Achievements ----
 achievement.category.seasons.harvest_feast = Erntefest

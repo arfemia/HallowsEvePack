@@ -24,6 +24,7 @@
       "Target": "Harvest_Feast_Turkey",
       "MatchMode": "EXACT",
       "Amount": 5,
+      "TextKey": "objective.harvest_feast.bring_down_turkeys",
       "Order": 1
     }
   },
