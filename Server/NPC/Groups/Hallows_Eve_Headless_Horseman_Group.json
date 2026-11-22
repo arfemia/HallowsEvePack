@@ -1,9 +1,12 @@
 {
-  "$Comment": "The Headless Horseman in each of his forms, in the saddle and on foot, on the normal ride and the hard one (the _HM roles). Both of his fights' scripts find him through this group: to bind him when it raises him without a spawn marker, to keep hold of him when he changes form, and to clear him away when the fight resets. Each graveyard runs one fight, so one group serves both. Add a role id here if he gains another form.",
+  "$Comment": "The Headless Horseman in each of his forms, in the saddle and on foot, on the normal ride and the hard one (the _HM roles). Both of his fights' scripts find him through this group: to bind him when it raises him without a spawn marker, to keep hold of him when he changes form, and to clear him away when the fight resets. Each graveyard runs one fight, so one group serves both. ZigRank Boss counts him as a boss for CommonLib's crowd-control rule (a CommonLib without that rule ignores the tag): a talent's stun, root, slow or push never lands on him, an ability's own does, and a taunt always does. His Head and the foes he calls stay ordinary. Add a role id here if he gains another form.",
   "IncludeRoles": [
     "Hallows_Eve_Headless_Horseman_Mounted",
     "Hallows_Eve_Headless_Horseman",
     "Hallows_Eve_Headless_Horseman_Mounted_HM",
     "Hallows_Eve_Headless_Horseman_HM"
-  ]
+  ],
+  "Tags": {
+    "ZigRank": [ "Boss" ]
+  }
 }
