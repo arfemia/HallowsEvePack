@@ -1,0 +1,33 @@
+{
+  "$Comment": [
+    "Set of Plates: sit down to The Feast in several years, one Golden Plate each. The Feast comes back",
+    "once a year (Repeat.PerRun in Quests/SeasonsOfOrbis/_Harvest_Feast/The_Feast.json), so each year's",
+    "collect adds one, and the criterion's Amount is how many years it takes. The description's number",
+    "comes from the Amount through @amount.",
+    "",
+    "Earned once and kept: no Parent, so no yearly copy, and no full_table or season_keepsake tag, so",
+    "neither The Full Table nor the Seasons of Orbis ladder waits on it. It pays the title",
+    "Harvest_Feast_Marthas_Regular (Titles/SeasonsOfOrbis/) through the Title reward kind, on unlock,",
+    "and nothing else: the plates are its reward. The _Harvest_Feast folder makes the id",
+    "harvest_feast_set_of_plates, and its words come from the keys that id spells."
+  ],
+  "Text": { "TextArgs": { "Flavor": [ "@amount" ] } },
+  "Listing": {
+    "Category": "Seasons",
+    "Subcategory": "Harvest_Feast",
+    "SortOrder": 150,
+    "Icon": "Harvest_Feast_Golden_Plate"
+  },
+  "Scoring": { "Points": 25 },
+  "Criteria": {
+    "sit-down-to-the-feast": {
+      "Kind": "COMPLETE_QUEST",
+      "Target": "harvest_feast_the_feast",
+      "MatchMode": "EXACT",
+      "Amount": 3
+    }
+  },
+  "Rewards": {
+    "Auto": [ { "Kind": "Title", "Params": { "Title": "Harvest_Feast_Marthas_Regular" } } ]
+  }
+}

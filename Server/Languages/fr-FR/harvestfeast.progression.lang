@@ -134,6 +134,14 @@ objective.harvest_feast.pick_carrots = Cueillez {0} {0, plural, one {Carotte} ot
 objective.harvest_feast.bring_vegetables = Rapportez {0} {0, plural, one {Légume rôti} other {Légumes rôtis}}
 objective.harvest_feast.bring_spices = Rapportez {0} Épices
 objective.harvest_feast.wear_harvest_set = Portez {0} {0, plural, one {pièce} other {pièces}} de la Panoplie de Moisson
+objective.harvest_feast.pick_crops = Cueillez {0} cultures à la main
+objective.harvest_feast.daily_jobs = Faites {0} tâches du jour ou tâches du Tableau de la Fête
+objective.harvest_feast.defeat_great_turkey = Vainquez la Grande Dinde
+objective.harvest_feast.defeat_great_turkeys = Vainquez la Grande Dinde {0} fois
+objective.harvest_feast.feast_basket = Récupérez un Panier de la Fête
+objective.harvest_feast.cook_turkey_pie = Cuisez une Tourte de dinde
+objective.harvest_feast.cook_harvest_salad = Préparez une Salade de la récolte
+objective.harvest_feast.cook_marthas_roast = Cuisez un Rôti de Martha
 
 # ---- Achievements ----
 achievement.category.seasons.harvest_feast = Fête des Moissons
@@ -143,19 +151,41 @@ achievement.harvest_feast_turkey_chaser.title = Chasseur de dindes {0}
 achievement.harvest_feast_turkey_chaser.desc = Chassez {0} dindes.
 achievement.harvest_feast_full_baskets.title = Paniers pleins {0}
 achievement.harvest_feast_full_baskets.desc = Cueillez {0} cultures à la main.
-achievement.harvest_feast_keepsake.title = Trophée de la Fête {0}
+achievement.harvest_feast_helping_hands.title = Coup de main {0}
+achievement.harvest_feast_helping_hands.desc = Faites {0} tâches du jour pour Martha et ses aides.
+achievement.harvest_feast_great_turkey_down.title = Cimetière des Dindes {0}
+achievement.harvest_feast_great_turkey_down.desc = Vainquez la Grande Dinde dans le Cimetière des Dindes.
+achievement.harvest_feast_keepsake.title = Assiette dorée de Martha {0}
 achievement.harvest_feast_keepsake.desc = Attablez-vous au Festin avec Martha.
-keepsake.harvest_feast_trophy.name = Trophée de la Fête de {0}
+keepsake.harvest_feast_golden_plate.name = Assiette dorée de Martha de {0}
 keepsake.harvest_feast_plate.name = Assiette de la Fête de {0}
+achievement.harvest_feast_supper_round.title = Tournée du souper {0}
+achievement.harvest_feast_supper_round.desc = Portez le souper à Tomas, Elsie et Bram.
 achievement.harvest_feast_full_table.title = La table pleine {0}
-achievement.harvest_feast_full_table.desc = Obtenez tous les succès de la Fête des Moissons de cette année.
+achievement.harvest_feast_full_table.desc = Obtenez tous les succès de cette liste pendant une même Fête des Moissons.
 achievement.harvest_feast_harvest_set.title = Panoplie de Moisson
 achievement.harvest_feast_harvest_set.desc = Portez toute la Panoplie de Moisson de la boutique de Martha.
+achievement.harvest_feast_marthas_cookbook.title = Livre de cuisine de Martha
+achievement.harvest_feast_marthas_cookbook.desc = Cuisez une Tourte de dinde, une Salade de la récolte et un Rôti de Martha.
+achievement.harvest_feast_marthas_hunter.title = Chasseur de Martha
+achievement.harvest_feast_marthas_hunter.desc = Remettez des Dindes en plus {0} fois.
+achievement.harvest_feast_great_turkey_hunter.title = Chasseur de la Grande Dinde
+achievement.harvest_feast_great_turkey_hunter.desc = Vainquez la Grande Dinde {0} fois.
+achievement.harvest_feast_great_turkey_slayer.title = Tueur de la Grande Dinde
+achievement.harvest_feast_great_turkey_slayer.desc = Vainquez la Grande Dinde {0} fois.
+achievement.harvest_feast_set_of_plates.title = Service d'assiettes
+achievement.harvest_feast_set_of_plates.desc = Attablez-vous au Festin pendant {0} années différentes.
 
 # ---- The Full Table title ----
 title.harvest_feast_full_table.name = La Table pleine
-title.harvest_feast_full_table.flavor = A obtenu tous les succès de la Fête des Moissons d'une même année.
+title.harvest_feast_full_table.flavor = A obtenu tous les succès que demande La Table pleine en une seule Fête des Moissons.
 title.harvest_feast_full_table.display = {0} de la Table pleine
+title.harvest_feast_great_turkey_slayer.name = Tueur de la Grande Dinde
+title.harvest_feast_great_turkey_slayer.flavor = A vaincu la Grande Dinde encore et encore.
+title.harvest_feast_great_turkey_slayer.display = {0}, Tueur de la Grande Dinde
+title.harvest_feast_marthas_regular.name = Habitué de Martha
+title.harvest_feast_marthas_regular.flavor = S'est attablé au Festin avec Martha année après année.
+title.harvest_feast_marthas_regular.display = {0}, Habitué de Martha
 
 # ---- Martha's ranks: an achievement and a gift at each, and a title at Head of the Table ----
 achievement.harvest_feast_marthas_neighbor.title = Voisin de Martha
@@ -173,6 +203,8 @@ objective.harvest_feast.head_of_the_table = Devenez Tête de table auprès de Ma
 title.harvest_feast_head_of_the_table.name = Tête de table
 title.harvest_feast_head_of_the_table.flavor = Est devenu Tête de table auprès de Martha.
 title.harvest_feast_head_of_the_table.display = {0}, Tête de table
+achievement.harvest_feast_marthas_favorite.title = Préféré de Martha
+achievement.harvest_feast_marthas_favorite.desc = Récupérez un Panier de la Fête auprès de Martha.
 
 # ---- The Almanac page ----
 almanac.harvest_feast.title = Fête des Moissons
@@ -214,7 +246,7 @@ dialogue.harvest_feast_host.pie_ready.opt.turnin = Voilà la tarte.
 dialogue.harvest_feast_host.feast_offer.text = Une fois l'an, on met tout sur la table et on mange jusqu'à ne plus pouvoir se lever.\nCuis une <b>tarte à la citrouille</b> sur une <b>Cuisinière du chef</b>, fais cuire de la <b>viande</b> sur un <b>Feu de camp</b>, et cueille des <b>carottes</b> dans les <b>forêts</b> des Emerald Wilds. Apporte tout ici et on dressera la table ensemble.
 dialogue.harvest_feast_host.feast_offer.opt.accept = Mettons la table.
 dialogue.harvest_feast_host.feast_brief.text = Une <b>tarte à la citrouille</b> d'une <b>Cuisinière du chef</b>, de la <b>viande cuite</b> sur un <b>Feu de camp</b> et des <b>carottes</b> des <b>forêts</b>. Ensuite, on mange.
-dialogue.harvest_feast_host.feast_ready.text = Tarte, rôti et carottes. Voilà un festin.\nAssieds-toi, mange, et emporte ça chez toi : une dinde qui ne s'enfuira pas, avec l'année dessus.\nIl y en a plus ici qu'on n'en mangera jamais. Prends ta part, puis reviens me parler. J'ai une dernière tâche pour toi.
+dialogue.harvest_feast_host.feast_ready.text = Tarte, rôti et carottes. Voilà un festin.\nAssieds-toi, mange, et emporte ça chez toi : mon assiette dorée, avec l'année dessus. Personne ne mange dans celle-là.\nIl y en a plus ici qu'on n'en mangera jamais. Prends ta part, puis reviens me parler. J'ai une dernière tâche pour toi.
 dialogue.harvest_feast_host.feast_ready.opt.turnin = Voilà tout.
 dialogue.harvest_feast_host.feast_done.text = Encore plein ? Moi aussi, et tous ceux à qui tu as porté une assiette.\nMon histoire s'arrête là jusqu'à la fête de l'an prochain, mais la table reste dressée jusqu'à la fin. Il y a du <b>travail</b> chaque jour et des <b>dindes</b> quand tu en veux. Tomas, Elsie et Bram ont chacun une <b>tâche</b> aussi. Continue de m'aider et ma <b>boutique</b> s'ouvrira. Qu'est-ce que je peux faire pour toi ?
 dialogue.harvest_feast_host.deliveries_offer.text = Regarde tout ce qui reste. Je ne laisserai pas gâcher de la bonne nourriture.\nTomas, Elsie et Bram ont travaillé toute la semaine sans s'asseoir. Porte une <b>tarte à la citrouille</b> à <b>Tomas</b>, un <b>légume rôti</b> à <b>Elsie</b> et de la <b>viande cuite</b> à <b>Bram</b>. Les restes que je t'ai donnés feront l'affaire. Ils sont dans les parages du <b>temple</b>.
@@ -352,5 +384,6 @@ almanac.harvest_feast.source.stall_favor = Vendu dans la boutique de Martha à m
 almanac.harvest_feast.source.stall_gift = Vendu dans la boutique de Martha, et l'un de ses cadeaux à mesure que grandit sa faveur.
 almanac.harvest_feast.source.seeds = Vient de la Fête et des commissions de Martha, ou s'achète dans sa boutique.
 almanac.harvest_feast.source.keepsake = Souvenir de la Fête, offert une fois par an quand vous vous attablez à la Fête.
+almanac.harvest_feast.source.turkey_trophy = Une trouvaille rare quand on chasse des Dindes sauvages pendant la fête.
 almanac.harvest_feast.source.winter = Vendu sur l'étagère du festival de la boutique de Martha pendant la fête.
 almanac.harvest_feast.source.festival_favor = Vendu dans les boutiques du festival à ceux qui ont beaucoup de Faveur du festival.

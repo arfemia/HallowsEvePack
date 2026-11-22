@@ -134,6 +134,14 @@ objective.harvest_feast.pick_carrots = Recoge {0} {0, plural, one {Zanahoria} ot
 objective.harvest_feast.bring_vegetables = Trae {0} {0, plural, one {Verdura Asada} other {Verduras Asadas}}
 objective.harvest_feast.bring_spices = Trae {0} Especias
 objective.harvest_feast.wear_harvest_set = Viste {0} {0, plural, one {pieza} other {piezas}} del Conjunto de la Cosecha
+objective.harvest_feast.pick_crops = Recoge {0} cultivos a mano
+objective.harvest_feast.daily_jobs = Haz {0} encargos diarios o trabajos del Tablón del Banquete
+objective.harvest_feast.defeat_great_turkey = Derrota al Gran Pavo
+objective.harvest_feast.defeat_great_turkeys = Derrota al Gran Pavo {0} veces
+objective.harvest_feast.feast_basket = Recoge una Cesta del Banquete
+objective.harvest_feast.cook_turkey_pie = Cocina un Pastel de Pavo
+objective.harvest_feast.cook_harvest_salad = Prepara una Ensalada de la Cosecha
+objective.harvest_feast.cook_marthas_roast = Cocina el Asado de Martha
 
 # ---- Achievements ----
 achievement.category.seasons.harvest_feast = Banquete de la Cosecha
@@ -143,19 +151,41 @@ achievement.harvest_feast_turkey_chaser.title = Cazapavos {0}
 achievement.harvest_feast_turkey_chaser.desc = Caza {0} pavos.
 achievement.harvest_feast_full_baskets.title = Cestas Llenas {0}
 achievement.harvest_feast_full_baskets.desc = Recoge {0} cultivos a mano.
-achievement.harvest_feast_keepsake.title = Trofeo del Banquete {0}
+achievement.harvest_feast_helping_hands.title = Manos Amigas {0}
+achievement.harvest_feast_helping_hands.desc = Haz {0} encargos diarios para Martha y sus ayudantes.
+achievement.harvest_feast_great_turkey_down.title = Cementerio de los Pavos {0}
+achievement.harvest_feast_great_turkey_down.desc = Derrota al Gran Pavo en el Cementerio de los Pavos.
+achievement.harvest_feast_keepsake.title = Plato Dorado de Martha {0}
 achievement.harvest_feast_keepsake.desc = Siéntate a comer en El Banquete con Martha.
-keepsake.harvest_feast_trophy.name = Trofeo del Banquete de {0}
+keepsake.harvest_feast_golden_plate.name = Plato Dorado de Martha de {0}
 keepsake.harvest_feast_plate.name = Plato del Banquete de {0}
+achievement.harvest_feast_supper_round.title = Ronda de Cenas {0}
+achievement.harvest_feast_supper_round.desc = Lleva la cena a Tomas, Elsie y Bram.
 achievement.harvest_feast_full_table.title = La Mesa Completa {0}
-achievement.harvest_feast_full_table.desc = Consigue todos los logros del Banquete de la Cosecha de este año.
+achievement.harvest_feast_full_table.desc = Consigue todos los logros de esta lista en un mismo Banquete de la Cosecha.
 achievement.harvest_feast_harvest_set.title = Conjunto de la Cosecha
 achievement.harvest_feast_harvest_set.desc = Lleva entero el Conjunto de la Cosecha de la tienda de Martha.
+achievement.harvest_feast_marthas_cookbook.title = Recetario de Martha
+achievement.harvest_feast_marthas_cookbook.desc = Cocina Pastel de Pavo, Ensalada de la Cosecha y Asado de Martha.
+achievement.harvest_feast_marthas_hunter.title = Cazador de Martha
+achievement.harvest_feast_marthas_hunter.desc = Entrega Pavos Extra {0} veces.
+achievement.harvest_feast_great_turkey_hunter.title = Cazador del Gran Pavo
+achievement.harvest_feast_great_turkey_hunter.desc = Derrota al Gran Pavo {0} veces.
+achievement.harvest_feast_great_turkey_slayer.title = Azote del Gran Pavo
+achievement.harvest_feast_great_turkey_slayer.desc = Derrota al Gran Pavo {0} veces.
+achievement.harvest_feast_set_of_plates.title = Juego de Platos
+achievement.harvest_feast_set_of_plates.desc = Siéntate a comer en El Banquete en {0} años distintos.
 
 # ---- The Full Table title ----
 title.harvest_feast_full_table.name = La Mesa Completa
-title.harvest_feast_full_table.flavor = Consiguió todos los logros del Banquete de la Cosecha de un mismo año.
+title.harvest_feast_full_table.flavor = Consiguió todos los logros que pide La Mesa Completa en un mismo Banquete de la Cosecha.
 title.harvest_feast_full_table.display = {0} de la Mesa Completa
+title.harvest_feast_great_turkey_slayer.name = Azote del Gran Pavo
+title.harvest_feast_great_turkey_slayer.flavor = Derrotó al Gran Pavo una y otra vez.
+title.harvest_feast_great_turkey_slayer.display = {0}, Azote del Gran Pavo
+title.harvest_feast_marthas_regular.name = Habitual de Martha
+title.harvest_feast_marthas_regular.flavor = Se sentó a comer en El Banquete con Martha año tras año.
+title.harvest_feast_marthas_regular.display = {0}, Habitual de Martha
 
 # ---- Martha's ranks: an achievement and a gift at each, and a title at Head of the Table ----
 achievement.harvest_feast_marthas_neighbor.title = Vecino de Martha
@@ -173,6 +203,8 @@ objective.harvest_feast.head_of_the_table = Conviértete en Cabecera de la Mesa 
 title.harvest_feast_head_of_the_table.name = Cabecera de la Mesa
 title.harvest_feast_head_of_the_table.flavor = Se convirtió en Cabecera de la Mesa con Martha.
 title.harvest_feast_head_of_the_table.display = {0}, Cabecera de la Mesa
+achievement.harvest_feast_marthas_favorite.title = Favorito de Martha
+achievement.harvest_feast_marthas_favorite.desc = Recoge una Cesta del Banquete de Martha.
 
 # ---- The Almanac page ----
 almanac.harvest_feast.title = Banquete de la Cosecha
@@ -214,7 +246,7 @@ dialogue.harvest_feast_host.pie_ready.opt.turnin = Aquí está el pastel.
 dialogue.harvest_feast_host.feast_offer.text = Una vez al año lo ponemos todo en la mesa y comemos hasta que nadie se tiene en pie.\nHornea un <b>pastel de calabaza</b> en una <b>Cocina del Chef</b>, cocina algo de <b>carne</b> en una <b>Fogata</b> y recoge <b>zanahorias</b> en los <b>bosques</b> de las Emerald Wilds. Tráelo todo aquí y lo serviremos juntos.
 dialogue.harvest_feast_host.feast_offer.opt.accept = Pongamos la mesa.
 dialogue.harvest_feast_host.feast_brief.text = Un <b>pastel de calabaza</b> de una <b>Cocina del Chef</b>, <b>carne cocinada</b> en una <b>Fogata</b> y <b>zanahorias</b> de los <b>bosques</b>. Luego comemos.
-dialogue.harvest_feast_host.feast_ready.text = Pastel, asado y zanahorias. Eso sí es un banquete.\nSiéntate, come y llévate esto a casa: un pavo que no se escapa, con el año grabado.\nAun así, aquí sobra más de lo que podremos comer. Recoge tu parte y habla conmigo otra vez. Tengo un último encargo para ti.
+dialogue.harvest_feast_host.feast_ready.text = Pastel, asado y zanahorias. Eso sí es un banquete.\nSiéntate, come y llévate esto a casa: mi plato dorado, con el año grabado. En ese no come nadie.\nAun así, aquí sobra más de lo que podremos comer. Recoge tu parte y habla conmigo otra vez. Tengo un último encargo para ti.
 dialogue.harvest_feast_host.feast_ready.opt.turnin = Aquí está todo.
 dialogue.harvest_feast_host.feast_done.text = ¿Sigues lleno? Yo también, y todos a los que llevaste un plato.\nCon esto mi historia queda cerrada hasta el banquete del año que viene, pero la mesa sigue puesta hasta que termine. Hay <b>trabajo</b> cada día y <b>pavos</b> cuando quieras. Tomas, Elsie y Bram también tienen un <b>encargo</b> cada uno. Sigue ayudando y mi <b>tienda</b> se abrirá. ¿Qué puedo hacer por ti?
 dialogue.harvest_feast_host.deliveries_offer.text = Mira todo lo que sobra. No pienso tirar comida buena.\nTomas, Elsie y Bram trabajaron toda la semana y no se sentaron. Llévale a <b>Tomas</b> un <b>pastel de calabaza</b>, a <b>Elsie</b> una <b>verdura asada</b> y a <b>Bram</b> algo de <b>carne cocinada</b>. Con las sobras que te di basta. Andan por el <b>templo</b>.
@@ -352,5 +384,6 @@ almanac.harvest_feast.source.stall_favor = Se vende en la tienda de Martha a med
 almanac.harvest_feast.source.stall_gift = Se vende en la tienda de Martha, y es uno de sus regalos a medida que crece su favor.
 almanac.harvest_feast.source.seeds = Del Banquete y de los recados de Martha, o se compran en su tienda.
 almanac.harvest_feast.source.keepsake = Recuerdo del Banquete, que te dan una vez al año cuando te sientas a la mesa.
+almanac.harvest_feast.source.turkey_trophy = Un hallazgo poco común al cazar Pavos Silvestres mientras dura el banquete.
 almanac.harvest_feast.source.winter = Se vende en el estante del festival de la tienda de Martha mientras dura el banquete.
 almanac.harvest_feast.source.festival_favor = Se vende en las tiendas del festival a quienes tienen mucho Favor del Festival.

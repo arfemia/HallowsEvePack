@@ -1,10 +1,10 @@
 {
-  "$Comment": "The Feast Trophy, the year's keepsake: Martha hands one over with the pay for The Feast, once each Harvest Feast, and it is never sold. A turkey figure to place in the house. It wears the game's own turkey, its model and texture, standing still on the block it is placed on, and its icon is the game's own turkey portrait sized to an item icon by tools/derive_art.py (an item's Icon must sit under Icons/ItemsGenerated/ or Icons/Items/): CustomModelScale shrinks the creature to about one block high, and the game's Kweebec_Ancient block is the pattern for a creature model placed as a block. The quest's Claim row stamps each one with the year (StackNameKey keepsake.harvest_feast_trophy.name in harvestfeast.progression.lang), so the name here is the plain one a shop or a recipe would show.",
+  "$Comment": "The Turkey Trophy, a rare find from hunting: a Wild Turkey drops one now and then (Drops/Harvest_Feast/Harvest_Feast_Drop_Wild_Turkey.json, about one in two hundred), and nothing sells it. A turkey figure to place in the house. It wears the game's own turkey, its model and texture, standing still on the block it is placed on, and its icon is the game's own turkey portrait sized to an item icon by tools/derive_art.py (an item's Icon must sit under Icons/ItemsGenerated/ or Icons/Items/): CustomModelScale shrinks the creature to about one block high, and the game's Kweebec_Ancient block is the pattern for a creature model placed as a block.",
   "TranslationProperties": {
-    "Name": "items.Harvest_Feast_Feast_Trophy.name",
-    "Description": "items.Harvest_Feast_Feast_Trophy.description"
+    "Name": "items.Harvest_Feast_Turkey_Trophy.name",
+    "Description": "items.Harvest_Feast_Turkey_Trophy.description"
   },
-  "Icon": "Icons/ItemsGenerated/Harvest_Feast_Feast_Trophy.png",
+  "Icon": "Icons/ItemsGenerated/Harvest_Feast_Turkey_Trophy.png",
   "Categories": ["Blocks.Deco"],
   "Quality": "Legendary",
   "Interactions": {"Primary": "Block_Primary", "Secondary": "Block_Secondary"},

@@ -134,6 +134,14 @@ objective.harvest_feast.pick_carrots = Colha {0} {0, plural, one {Cenoura} other
 objective.harvest_feast.bring_vegetables = Traga {0} {0, plural, one {Legume Assado} other {Legumes Assados}}
 objective.harvest_feast.bring_spices = Traga {0} Temperos
 objective.harvest_feast.wear_harvest_set = Use {0} {0, plural, one {peça} other {peças}} do Conjunto da Colheita
+objective.harvest_feast.pick_crops = Colha {0} cultivos à mão
+objective.harvest_feast.daily_jobs = Faça {0} serviços diários ou serviços do Quadro da Festa
+objective.harvest_feast.defeat_great_turkey = Derrote o Grande Peru
+objective.harvest_feast.defeat_great_turkeys = Derrote o Grande Peru {0} vezes
+objective.harvest_feast.feast_basket = Pegue uma Cesta da Festa
+objective.harvest_feast.cook_turkey_pie = Asse uma Torta de Peru
+objective.harvest_feast.cook_harvest_salad = Faça uma Salada da Colheita
+objective.harvest_feast.cook_marthas_roast = Cozinhe o Assado da Martha
 
 # ---- Achievements ----
 achievement.category.seasons.harvest_feast = Festa da Colheita
@@ -143,19 +151,41 @@ achievement.harvest_feast_turkey_chaser.title = Caçador de Perus {0}
 achievement.harvest_feast_turkey_chaser.desc = Cace {0} perus.
 achievement.harvest_feast_full_baskets.title = Cestas Cheias {0}
 achievement.harvest_feast_full_baskets.desc = Colha {0} cultivos à mão.
-achievement.harvest_feast_keepsake.title = Troféu do Banquete {0}
+achievement.harvest_feast_helping_hands.title = Mãos Prestativas {0}
+achievement.harvest_feast_helping_hands.desc = Faça {0} serviços diários para a Martha e seus ajudantes.
+achievement.harvest_feast_great_turkey_down.title = Cemitério dos Perus {0}
+achievement.harvest_feast_great_turkey_down.desc = Derrote o Grande Peru no Cemitério dos Perus.
+achievement.harvest_feast_keepsake.title = Prato Dourado da Martha {0}
 achievement.harvest_feast_keepsake.desc = Sente-se para O Banquete com Martha.
-keepsake.harvest_feast_trophy.name = Troféu do Banquete de {0}
+keepsake.harvest_feast_golden_plate.name = Prato Dourado da Martha de {0}
 keepsake.harvest_feast_plate.name = Prato da Festa de {0}
+achievement.harvest_feast_supper_round.title = Rodada do Jantar {0}
+achievement.harvest_feast_supper_round.desc = Leve o jantar para Tomas, Elsie e Bram.
 achievement.harvest_feast_full_table.title = A Mesa Cheia {0}
-achievement.harvest_feast_full_table.desc = Ganhe todas as conquistas da Festa da Colheita deste ano.
+achievement.harvest_feast_full_table.desc = Ganhe todas as conquistas desta lista durante uma Festa da Colheita.
 achievement.harvest_feast_harvest_set.title = Conjunto da Colheita
 achievement.harvest_feast_harvest_set.desc = Use o Conjunto da Colheita inteiro da loja da Martha.
+achievement.harvest_feast_marthas_cookbook.title = Livro de Receitas da Martha
+achievement.harvest_feast_marthas_cookbook.desc = Faça Torta de Peru, Salada da Colheita e Assado da Martha.
+achievement.harvest_feast_marthas_hunter.title = Caçador da Martha
+achievement.harvest_feast_marthas_hunter.desc = Entregue Perus Extras {0} vezes.
+achievement.harvest_feast_great_turkey_hunter.title = Caçador do Grande Peru
+achievement.harvest_feast_great_turkey_hunter.desc = Derrote o Grande Peru {0} vezes.
+achievement.harvest_feast_great_turkey_slayer.title = Algoz do Grande Peru
+achievement.harvest_feast_great_turkey_slayer.desc = Derrote o Grande Peru {0} vezes.
+achievement.harvest_feast_set_of_plates.title = Jogo de Pratos
+achievement.harvest_feast_set_of_plates.desc = Sente-se para O Banquete em {0} anos diferentes.
 
 # ---- The Full Table title ----
 title.harvest_feast_full_table.name = A Mesa Cheia
-title.harvest_feast_full_table.flavor = Ganhou todas as conquistas da Festa da Colheita de um ano.
+title.harvest_feast_full_table.flavor = Ganhou todas as conquistas que A Mesa Cheia pede numa só Festa da Colheita.
 title.harvest_feast_full_table.display = {0} da Mesa Cheia
+title.harvest_feast_great_turkey_slayer.name = Algoz do Grande Peru
+title.harvest_feast_great_turkey_slayer.flavor = Derrotou o Grande Peru vez após vez.
+title.harvest_feast_great_turkey_slayer.display = {0}, Algoz do Grande Peru
+title.harvest_feast_marthas_regular.name = Freguês da Martha
+title.harvest_feast_marthas_regular.flavor = Sentou-se para O Banquete com a Martha ano após ano.
+title.harvest_feast_marthas_regular.display = {0}, Freguês da Martha
 
 # ---- Martha's ranks: an achievement and a gift at each, and a title at Head of the Table ----
 achievement.harvest_feast_marthas_neighbor.title = Vizinho da Martha
@@ -173,6 +203,8 @@ objective.harvest_feast.head_of_the_table = Torne-se Cabeceira da Mesa com Marth
 title.harvest_feast_head_of_the_table.name = Cabeceira da Mesa
 title.harvest_feast_head_of_the_table.flavor = Tornou-se Cabeceira da Mesa com Martha.
 title.harvest_feast_head_of_the_table.display = {0}, Cabeceira da Mesa
+achievement.harvest_feast_marthas_favorite.title = Favorito da Martha
+achievement.harvest_feast_marthas_favorite.desc = Pegue uma Cesta da Festa com a Martha.
 
 # ---- The Almanac page ----
 almanac.harvest_feast.title = Festa da Colheita
@@ -214,7 +246,7 @@ dialogue.harvest_feast_host.pie_ready.opt.turnin = Aqui está a torta.
 dialogue.harvest_feast_host.feast_offer.text = Uma vez por ano a gente põe tudo na mesa e come até ninguém se aguentar de pé.\nAsse uma <b>torta de abóbora</b> num <b>Forno do Chefe</b>, cozinhe um pouco de <b>carne</b> numa <b>Fogueira</b> e colha <b>cenouras</b> nas <b>florestas</b> das Emerald Wilds. Traga tudo para cá e a gente arruma junto.
 dialogue.harvest_feast_host.feast_offer.opt.accept = Vamos pôr a mesa.
 dialogue.harvest_feast_host.feast_brief.text = Uma <b>torta de abóbora</b> de um <b>Forno do Chefe</b>, <b>carne cozida</b> numa <b>Fogueira</b> e <b>cenouras</b> das <b>florestas</b>. Depois a gente come.
-dialogue.harvest_feast_host.feast_ready.text = Torta, assado e cenouras. Isso sim é um banquete.\nSente, coma e leve isto para casa: um peru que não foge, com o ano gravado.\nSó que aqui tem mais comida do que a gente consegue comer. Pegue a sua parte e fale comigo de novo. Tenho um último serviço para você.
+dialogue.harvest_feast_host.feast_ready.text = Torta, assado e cenouras. Isso sim é um banquete.\nSente, coma e leve isto para casa: o meu prato dourado, com o ano gravado. Ninguém come nesse.\nSó que aqui tem mais comida do que a gente consegue comer. Pegue a sua parte e fale comigo de novo. Tenho um último serviço para você.
 dialogue.harvest_feast_host.feast_ready.opt.turnin = Aqui está tudo.
 dialogue.harvest_feast_host.feast_done.text = Ainda cheio? Eu também, e todo mundo a quem você levou um prato.\nA minha história acaba aqui até a festa do ano que vem, mas a mesa fica posta até o fim. Tem <b>serviço</b> todo dia e <b>perus</b> quando você quiser. Tomas, Elsie e Bram também têm um <b>serviço</b> cada um. Continue ajudando e a minha <b>loja</b> abre. O que posso fazer por você?
 dialogue.harvest_feast_host.deliveries_offer.text = Olhe quanto sobrou. Não vou deixar comida boa se perder.\nTomas, Elsie e Bram trabalharam a semana toda e não sentaram nem uma vez. Leve ao <b>Tomas</b> uma <b>torta de abóbora</b>, à <b>Elsie</b> um <b>legume assado</b> e ao <b>Bram</b> um pouco de <b>carne cozida</b>. As sobras que dei a você servem. Eles estão pelo <b>templo</b>.
@@ -352,5 +384,6 @@ almanac.harvest_feast.source.stall_gift = Vendido na loja da Martha, e um dos pr
 almanac.harvest_feast.source.stall_favor =Vendido na loja da Martha conforme sua posição com ela cresce.
 almanac.harvest_feast.source.seeds = Vem do Banquete e dos recados da Martha, ou é comprado na loja dela.
 almanac.harvest_feast.source.keepsake = Lembrança do Banquete, dada uma vez por ano quando você se senta à mesa do Banquete.
+almanac.harvest_feast.source.turkey_trophy = Um achado raro de quem caça Perus Selvagens enquanto a festa durar.
 almanac.harvest_feast.source.winter = Vendido na Prateleira do Festival da loja da Martha enquanto a festa durar.
 almanac.harvest_feast.source.festival_favor = Vendido nas lojas do festival a quem tem muito Favor do Festival.

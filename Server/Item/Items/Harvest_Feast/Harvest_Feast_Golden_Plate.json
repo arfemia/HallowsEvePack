@@ -1,0 +1,34 @@
+{
+  "$Comment": "Martha's Golden Plate, the year's keepsake: Martha hands one over with the pay for The Feast, once each Harvest Feast, and it is never sold or crafted. It places like the game's own plate (Deco_Plate), on that plate's model, and stacks on another the same way, so a player can pile up one for every year. Its texture and icon are a gold recolour of the game's plate texture and icon, written by tools/derive_art.py (change the GOLD_RAMP there and rerun it, never the PNGs). The quest's Claim row stamps each one with the year (StackNameKey keepsake.harvest_feast_golden_plate.name in harvestfeast.progression.lang), so the name here is the plain one a list or a tooltip shows. Its words are in items.lang.",
+  "TranslationProperties": {
+    "Name": "items.Harvest_Feast_Golden_Plate.name",
+    "Description": "items.Harvest_Feast_Golden_Plate.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Harvest_Feast_Golden_Plate.png",
+  "Categories": ["Blocks.Deco"],
+  "Quality": "Legendary",
+  "Interactions": {"Primary": "Block_Primary", "Secondary": "Block_Secondary"},
+  "BlockType": {
+    "Material": "Solid",
+    "BlockSoundSetId": "Stone",
+    "PhysicalMaterialId": "Stone",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Miscellaneous/Plate.blockymodel",
+    "CustomModelTexture": [
+      {"Texture": "Blocks/Harvest_Feast/Golden_Plate/Golden_Plate_Texture.png", "Weight": 1}
+    ],
+    "CustomModelScale": 1,
+    "HitboxType": "Plant_Small",
+    "Flags": {"IsStackable": true},
+    "RandomRotation": "YawStep1",
+    "Gathering": {"Soft": {}},
+    "BlockParticleSetId": "Stone",
+    "Support": {"Down": [{"FaceType": "Full"}]},
+    "TextureComputedColor": "#D9A63A"
+  },
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {"Scale": 0.39, "Translation": [0, -13.5], "Rotation": [22.5, 45, 22.5]},
+  "Tags": {"Type": ["Deco"]},
+  "ItemSoundSetId": "ISS_Blocks_Wood"
+}

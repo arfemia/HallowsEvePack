@@ -135,6 +135,14 @@ objective.harvest_feast.pick_carrots = {0} Havuç topla
 objective.harvest_feast.bring_vegetables = {0} Közlenmiş Sebze getir
 objective.harvest_feast.bring_spices = {0} Baharat getir
 objective.harvest_feast.wear_harvest_set = Hasat Setinden {0} parça giy
+objective.harvest_feast.pick_crops = Elle {0} ürün topla
+objective.harvest_feast.daily_jobs = {0} günlük iş ya da Şölen Panosu işi yap
+objective.harvest_feast.defeat_great_turkey = Büyük Hindi'yi yen
+objective.harvest_feast.defeat_great_turkeys = Büyük Hindi'yi {0} kez yen
+objective.harvest_feast.feast_basket = Bir Şölen Sepeti al
+objective.harvest_feast.cook_turkey_pie = Bir Hindili Turta pişir
+objective.harvest_feast.cook_harvest_salad = Bir Hasat Salatası yap
+objective.harvest_feast.cook_marthas_roast = Martha'nın Kızartması'nı pişir
 
 # ---- Achievements ----
 achievement.category.seasons.harvest_feast = Hasat Şöleni
@@ -144,19 +152,41 @@ achievement.harvest_feast_turkey_chaser.title = Hindi Kovalayan {0}
 achievement.harvest_feast_turkey_chaser.desc = {0} hindi avla.
 achievement.harvest_feast_full_baskets.title = Dolu Sepetler {0}
 achievement.harvest_feast_full_baskets.desc = Elle {0} ürün topla.
-achievement.harvest_feast_keepsake.title = Şölen Kupası {0}
+achievement.harvest_feast_helping_hands.title = Yardım Eli {0}
+achievement.harvest_feast_helping_hands.desc = Martha ve yardımcıları için {0} günlük iş yap.
+achievement.harvest_feast_great_turkey_down.title = Hindi Mezarlığı {0}
+achievement.harvest_feast_great_turkey_down.desc = Hindi Mezarlığı'nda Büyük Hindi'yi yen.
+achievement.harvest_feast_keepsake.title = Martha'nın Altın Tabağı {0}
 achievement.harvest_feast_keepsake.desc = Martha ile birlikte Şölen sofrasına otur.
-keepsake.harvest_feast_trophy.name = {0} Şölen Kupası
+keepsake.harvest_feast_golden_plate.name = {0} Martha'nın Altın Tabağı
 keepsake.harvest_feast_plate.name = {0} Şölen Tabağı
+achievement.harvest_feast_supper_round.title = Akşam Yemeği Turu {0}
+achievement.harvest_feast_supper_round.desc = Tomas'a, Elsie'ye ve Bram'a akşam yemeği götür.
 achievement.harvest_feast_full_table.title = Dolu Sofra {0}
-achievement.harvest_feast_full_table.desc = Bu yılın tüm Hasat Şöleni başarımlarını kazan.
+achievement.harvest_feast_full_table.desc = Bu listedeki her başarımı tek bir Hasat Şöleni'nde kazan.
 achievement.harvest_feast_harvest_set.title = Hasat Seti
 achievement.harvest_feast_harvest_set.desc = Martha'nın dükkanından Hasat Setinin tamamını giy.
+achievement.harvest_feast_marthas_cookbook.title = Martha'nın Yemek Defteri
+achievement.harvest_feast_marthas_cookbook.desc = Hindili Turta, Hasat Salatası ve Martha'nın Kızartması'nı pişir.
+achievement.harvest_feast_marthas_hunter.title = Martha'nın Avcısı
+achievement.harvest_feast_marthas_hunter.desc = Fazladan Hindiler işini {0} kez teslim et.
+achievement.harvest_feast_great_turkey_hunter.title = Büyük Hindi Avcısı
+achievement.harvest_feast_great_turkey_hunter.desc = Büyük Hindi'yi {0} kez yen.
+achievement.harvest_feast_great_turkey_slayer.title = Büyük Hindi Katili
+achievement.harvest_feast_great_turkey_slayer.desc = Büyük Hindi'yi {0} kez yen.
+achievement.harvest_feast_set_of_plates.title = Tabak Takımı
+achievement.harvest_feast_set_of_plates.desc = {0} farklı yılda Şölen sofrasına otur.
 
 # ---- The Full Table title ----
 title.harvest_feast_full_table.name = Dolu Sofra
-title.harvest_feast_full_table.flavor = Bir yılın tüm Hasat Şöleni başarımlarını kazanmış.
+title.harvest_feast_full_table.flavor = Dolu Sofra'nın istediği her başarımı tek bir Hasat Şöleni'nde kazanmış.
 title.harvest_feast_full_table.display = {0}, Dolu Sofra
+title.harvest_feast_great_turkey_slayer.name = Büyük Hindi Katili
+title.harvest_feast_great_turkey_slayer.flavor = Büyük Hindi'yi defalarca yendi.
+title.harvest_feast_great_turkey_slayer.display = {0}, Büyük Hindi Katili
+title.harvest_feast_marthas_regular.name = Martha'nın Müdavimi
+title.harvest_feast_marthas_regular.flavor = Yıllar boyu Martha ile Şölen sofrasına oturdu.
+title.harvest_feast_marthas_regular.display = {0}, Martha'nın Müdavimi
 
 # ---- Martha's ranks: an achievement and a gift at each, and a title at Head of the Table ----
 achievement.harvest_feast_marthas_neighbor.title = Martha'nın Komşusu
@@ -174,6 +204,8 @@ objective.harvest_feast.head_of_the_table = Martha nezdinde Sofra Başı ol
 title.harvest_feast_head_of_the_table.name = Sofra Başı
 title.harvest_feast_head_of_the_table.flavor = Martha nezdinde Sofra Başı oldu.
 title.harvest_feast_head_of_the_table.display = {0}, Sofra Başı
+achievement.harvest_feast_marthas_favorite.title = Martha'nın Gözdesi
+achievement.harvest_feast_marthas_favorite.desc = Martha'dan bir Şölen Sepeti al.
 
 # ---- The Almanac page ----
 almanac.harvest_feast.title = Hasat Şöleni
@@ -198,6 +230,7 @@ almanac.harvest_feast.source.stall_favor = Martha nezdindeki itibarın yükseldi
 almanac.harvest_feast.source.stall_gift = Martha'nın dükkanında satılır, teveccühü arttıkça verdiği hediyelerden de biridir.
 almanac.harvest_feast.source.seeds = Şölen'den ve Martha'nın ayak işlerinden gelir ya da dükkanından satın alınır.
 almanac.harvest_feast.source.keepsake = Şölen'in hatırası, Şölen sofrasına oturduğunda yılda bir kez verilir.
+almanac.harvest_feast.source.turkey_trophy = Şölen sürerken Yabani Hindi avlarken nadiren çıkan bir buluntu.
 almanac.harvest_feast.source.winter = Şölen sürerken Martha'nın dükkanındaki şenlik rafında satılır.
 almanac.harvest_feast.source.festival_favor = Şenlik Teveccühü yüksek olanlara şenlik dükkanlarında satılır.
 
@@ -231,7 +264,7 @@ dialogue.harvest_feast_host.pie_ready.opt.turnin = İşte turta.
 dialogue.harvest_feast_host.feast_offer.text = Yılda bir her şeyi sofraya koyar, kimse ayakta duramayana dek yeriz.\nBir <b>Aşçı Ocağı'nda</b> <b>bal kabaklı turta</b> pişir, bir <b>Kamp Ateşi'nde</b> <b>et</b> pişir ve Emerald Wilds'ın <b>ormanlarında</b> <b>havuç</b> topla. Hepsini buraya getir, birlikte kuralım.
 dialogue.harvest_feast_host.feast_offer.opt.accept = Sofrayı kuralım.
 dialogue.harvest_feast_host.feast_brief.text = Bir <b>Aşçı Ocağı'ndan</b> <b>bal kabaklı turta</b>, bir <b>Kamp Ateşi'nden</b> <b>pişmiş et</b> ve <b>ormanlardan</b> <b>havuç</b>. Sonra yeriz.
-dialogue.harvest_feast_host.feast_ready.text = Turta, kızartma ve havuç. İşte şölen bu.\nOtur, ye, bunu da eve götür: koşup kaçmayacak bir hindi, üzerinde yıl yazıyor.\nYine de burada yiyebileceğimizden fazlası var. Payını al, sonra bana tekrar gel. Senin için son bir işim var.
+dialogue.harvest_feast_host.feast_ready.text = Turta, kızartma ve havuç. İşte şölen bu.\nOtur, ye, bunu da eve götür: altın tabağım, üzerinde yıl yazıyor. Ondan kimse yemek yemez.\nYine de burada yiyebileceğimizden fazlası var. Payını al, sonra bana tekrar gel. Senin için son bir işim var.
 dialogue.harvest_feast_host.feast_ready.opt.turnin = Hepsi burada.
 dialogue.harvest_feast_host.feast_done.text = Hâlâ tok musun? Ben de, tabak götürdüğün herkes de.\nBenim hikâyem gelecek yılın şölenine kadar bitti, ama sofra o zamana dek kurulu kalır. Her gün <b>iş</b> var, istediğin zaman da <b>hindiler</b>. Tomas'ın, Elsie'nin ve Bram'ın da birer <b>işi</b> var. Yardım etmeye devam et, <b>dükkanım</b> açılır. Senin için ne yapabilirim?
 dialogue.harvest_feast_host.deliveries_offer.text = Artanlara bak. İyi yemeğin çöpe gitmesine göz yummam.\nTomas, Elsie ve Bram bütün hafta çalıştı ve bir kez bile oturmadı. <b>Tomas'a</b> bir <b>bal kabaklı turta</b>, <b>Elsie'ye</b> bir <b>közlenmiş sebze</b>, <b>Bram'a</b> da biraz <b>pişmiş et</b> götür. Sana verdiğim artanlar yeter. Hepsi <b>tapınak</b> civarında.

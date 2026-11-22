@@ -134,6 +134,14 @@ objective.harvest_feast.pick_carrots = Szedj {0} {0, plural, one {Sárgarépát}
 objective.harvest_feast.bring_vegetables = Hozz {0} {0, plural, one {Sült Zöldséget} other {Sült Zöldséget}}
 objective.harvest_feast.bring_spices = Hozz {0} Fűszert
 objective.harvest_feast.wear_harvest_set = Viselj {0} {0, plural, one {darabot} other {darabot}} az Aratási Szettből
+objective.harvest_feast.pick_crops = Szedj {0} termést kézzel
+objective.harvest_feast.daily_jobs = Végezz el {0} munkát a napi megbízásokból vagy a Lakoma Tábláján
+objective.harvest_feast.defeat_great_turkey = Győzd le a Nagy Pulykát
+objective.harvest_feast.defeat_great_turkeys = Győzd le a Nagy Pulykát {0} alkalommal
+objective.harvest_feast.feast_basket = Gyűjts be egy Lakomakosarat
+objective.harvest_feast.cook_turkey_pie = Süss egy Pulykás pitét
+objective.harvest_feast.cook_harvest_salad = Készíts egy Aratási salátát
+objective.harvest_feast.cook_marthas_roast = Süsd meg Martha sültjét
 
 # ---- Achievements ----
 achievement.category.seasons.harvest_feast = Aratási Lakoma
@@ -143,19 +151,41 @@ achievement.harvest_feast_turkey_chaser.title = Pulykahajtó {0}
 achievement.harvest_feast_turkey_chaser.desc = Vadássz {0} pulykára.
 achievement.harvest_feast_full_baskets.title = Teli Kosarak {0}
 achievement.harvest_feast_full_baskets.desc = Szedj le {0} termést kézzel.
-achievement.harvest_feast_keepsake.title = Lakomatrófea {0}
+achievement.harvest_feast_helping_hands.title = Segítő Kezek {0}
+achievement.harvest_feast_helping_hands.desc = Végezz el {0} napi munkát Marthának és segítőinek.
+achievement.harvest_feast_great_turkey_down.title = Pulykatemető {0}
+achievement.harvest_feast_great_turkey_down.desc = Győzd le a Nagy Pulykát a Pulykatemetőben.
+achievement.harvest_feast_keepsake.title = Martha Aranytányérja {0}
 achievement.harvest_feast_keepsake.desc = Ülj le a Lakomára Marthával.
-keepsake.harvest_feast_trophy.name = {0}. évi Lakomatrófea
+keepsake.harvest_feast_golden_plate.name = Martha aranytányérja, {0}
 keepsake.harvest_feast_plate.name = {0}. évi Lakomatányér
+achievement.harvest_feast_supper_round.title = Vacsorakör {0}
+achievement.harvest_feast_supper_round.desc = Vidd el a vacsorát Tomasnak, Elsie-nek és Bramnak.
 achievement.harvest_feast_full_table.title = A Teli Asztal {0}
-achievement.harvest_feast_full_table.desc = Szerezd meg az idei Aratási Lakoma összes teljesítményét.
+achievement.harvest_feast_full_table.desc = Szerezd meg a lista összes teljesítményét egy Aratási Lakoma alatt.
 achievement.harvest_feast_harvest_set.title = Aratási Szett
 achievement.harvest_feast_harvest_set.desc = Viseld az egész Aratási Szettet Martha boltjából.
+achievement.harvest_feast_marthas_cookbook.title = Martha Szakácskönyve
+achievement.harvest_feast_marthas_cookbook.desc = Süss Pulykás pitét, Aratási salátát és Martha sültjét.
+achievement.harvest_feast_marthas_hunter.title = Martha Vadásza
+achievement.harvest_feast_marthas_hunter.desc = Add át az Extra Pulykákat {0} alkalommal.
+achievement.harvest_feast_great_turkey_hunter.title = Nagy Pulyka Vadász
+achievement.harvest_feast_great_turkey_hunter.desc = Győzd le a Nagy Pulykát {0} alkalommal.
+achievement.harvest_feast_great_turkey_slayer.title = Nagy Pulyka Pusztító
+achievement.harvest_feast_great_turkey_slayer.desc = Győzd le a Nagy Pulykát {0} alkalommal.
+achievement.harvest_feast_set_of_plates.title = Tányérkészlet
+achievement.harvest_feast_set_of_plates.desc = Ülj le a Lakomához {0} különböző évben.
 
 # ---- The Full Table title ----
 title.harvest_feast_full_table.name = A Teli Asztal
-title.harvest_feast_full_table.flavor = Egy év Aratási Lakomájának minden teljesítménye megszerezve.
+title.harvest_feast_full_table.flavor = Egy Aratási Lakoma alatt megszerezte minden teljesítményt, amit A Teli Asztal kér.
 title.harvest_feast_full_table.display = {0}, a Teli Asztal
+title.harvest_feast_great_turkey_slayer.name = Nagy Pulyka Pusztító
+title.harvest_feast_great_turkey_slayer.flavor = Újra és újra legyőzte a Nagy Pulykát.
+title.harvest_feast_great_turkey_slayer.display = {0}, Nagy Pulyka Pusztító
+title.harvest_feast_marthas_regular.name = Martha Törzsvendége
+title.harvest_feast_marthas_regular.flavor = Évről évre leült a Lakomához Marthával.
+title.harvest_feast_marthas_regular.display = {0}, Martha Törzsvendége
 
 # ---- Martha's ranks: an achievement and a gift at each, and a title at Head of the Table ----
 achievement.harvest_feast_marthas_neighbor.title = Martha Szomszédja
@@ -173,6 +203,8 @@ objective.harvest_feast.head_of_the_table = Légy Asztalfő Marthánál
 title.harvest_feast_head_of_the_table.name = Asztalfő
 title.harvest_feast_head_of_the_table.flavor = Asztalfő lett Marthánál.
 title.harvest_feast_head_of_the_table.display = {0}, Asztalfő
+achievement.harvest_feast_marthas_favorite.title = Martha Kedvence
+achievement.harvest_feast_marthas_favorite.desc = Gyűjts be egy Lakomakosarat Marthától.
 
 # ---- The Almanac page ----
 almanac.harvest_feast.title = Aratási Lakoma
@@ -214,7 +246,7 @@ dialogue.harvest_feast_host.pie_ready.opt.turnin = Itt a pite.
 dialogue.harvest_feast_host.feast_offer.text = Évente egyszer mindent az asztalra teszünk, és addig eszünk, amíg senki sem bír felállni.\nSüss egy <b>tökpitét</b> egy <b>Szakács Tűzhelyen</b>, süss <b>húst</b> egy <b>Tábortűzön</b>, és szedj <b>sárgarépát</b> az Emerald Wilds <b>erdeiben</b>. Hozd el mindet ide, és együtt terítünk meg.
 dialogue.harvest_feast_host.feast_offer.opt.accept = Terítsünk meg.
 dialogue.harvest_feast_host.feast_brief.text = Egy <b>tökpite</b> a <b>Szakács Tűzhelyről</b>, <b>sült hús</b> a <b>Tábortűzről</b> és <b>sárgarépa</b> az <b>erdőkből</b>. Aztán eszünk.
-dialogue.harvest_feast_host.feast_ready.text = Pite, sült és sárgarépa. Na, ez egy lakoma.\nÜlj le, egyél, és vidd haza ezt: egy pulyka, ami nem szalad el, rajta az évszám.\nÉs több van itt, mint amennyit valaha megeszünk. Vedd el a részed, aztán szólj újra. Van még egy utolsó munkám a számodra.
+dialogue.harvest_feast_host.feast_ready.text = Pite, sült és sárgarépa. Na, ez egy lakoma.\nÜlj le, egyél, és vidd haza ezt: az aranytányéromat, rajta az évszámmal. Arról senki sem eszik.\nÉs több van itt, mint amennyit valaha megeszünk. Vedd el a részed, aztán szólj újra. Van még egy utolsó munkám a számodra.
 dialogue.harvest_feast_host.feast_ready.opt.turnin = Itt van minden.
 dialogue.harvest_feast_host.feast_done.text = Még jóllakva? Én is, és mindenki, akinek tányért vittél.\nA történetem véget ért a jövő évi lakomáig, de az asztal megterítve marad, amíg tart. Minden nap van <b>munka</b>, és <b>pulykák</b> is várnak, amikor csak akarod. Tomasnak, Elsie-nek és Bramnak is van egy-egy <b>munkája</b>. Segíts tovább, és kinyílik a <b>boltom</b>. Miben segíthetek?
 dialogue.harvest_feast_host.deliveries_offer.text = Nézd, mennyi maradt. Nem hagyom, hogy a jó étel kárba vesszen.\nTomas, Elsie és Bram egész héten dolgoztak, és le sem ültek. Vigyél <b>Tomasnak</b> egy <b>tökpitét</b>, <b>Elsie-nek</b> egy <b>sült zöldséget</b>, <b>Bramnak</b> pedig egy kis <b>főtt húst</b>. A maradék, amit adtam, megteszi. A <b>templom</b> környékén vannak.
@@ -352,5 +384,6 @@ almanac.harvest_feast.source.stall_favor = Martha boltjában kapható, ahogy nő
 almanac.harvest_feast.source.stall_gift = Martha boltjában kapható, és egyike a kegye növekedtével járó ajándékainak.
 almanac.harvest_feast.source.seeds = A Lakomáról és Martha megbízásaiból, vagy megvehető a boltjában.
 almanac.harvest_feast.source.keepsake = A Lakoma emléktárgya, évente egyszer kapod, amikor asztalhoz ülsz a Lakomán.
+almanac.harvest_feast.source.turkey_trophy = Ritka zsákmány a Vadpulykák vadászatából, amíg tart a lakoma.
 almanac.harvest_feast.source.winter = A fesztiválpolcon kapható Martha boltjában, amíg a lakoma tart.
 almanac.harvest_feast.source.festival_favor = A fesztiválboltokban kapható azoknak, akiknek magas a Fesztiválkegyük.

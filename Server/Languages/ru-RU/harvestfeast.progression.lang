@@ -134,6 +134,14 @@ objective.harvest_feast.pick_carrots = Соберите морковь: {0}
 objective.harvest_feast.bring_vegetables = Принесите запечённые овощи: {0}
 objective.harvest_feast.bring_spices = Принесите специи: {0}
 objective.harvest_feast.wear_harvest_set = Наденьте предметов Комплекта урожая: {0}
+objective.harvest_feast.pick_crops = Соберите вручную урожай: {0}
+objective.harvest_feast.daily_jobs = Выполните ежедневные работы или работы с Доски пира: {0}
+objective.harvest_feast.defeat_great_turkey = Победите Великого индюка
+objective.harvest_feast.defeat_great_turkeys = Победите Великого индюка (раз: {0})
+objective.harvest_feast.feast_basket = Заберите Корзину пира
+objective.harvest_feast.cook_turkey_pie = Испеките Индюшиный пирог
+objective.harvest_feast.cook_harvest_salad = Приготовьте Салат урожая
+objective.harvest_feast.cook_marthas_roast = Приготовьте Жаркое Марты
 
 # ---- Achievements ----
 achievement.category.seasons.harvest_feast = Праздник урожая
@@ -143,19 +151,41 @@ achievement.harvest_feast_turkey_chaser.title = Охотник на индюко
 achievement.harvest_feast_turkey_chaser.desc = Добудьте индюков: {0}.
 achievement.harvest_feast_full_baskets.title = Полные корзины {0}
 achievement.harvest_feast_full_baskets.desc = Соберите вручную урожай: {0}.
-achievement.harvest_feast_keepsake.title = Трофей пира {0}
+achievement.harvest_feast_helping_hands.title = Рабочие руки {0}
+achievement.harvest_feast_helping_hands.desc = Выполните ежедневные работы для Марты и её помощников: {0}.
+achievement.harvest_feast_great_turkey_down.title = Индюшачье кладбище {0}
+achievement.harvest_feast_great_turkey_down.desc = Победите Великого индюка на Индюшачьем кладбище.
+achievement.harvest_feast_keepsake.title = Золотая тарелка Марты {0}
 achievement.harvest_feast_keepsake.desc = Сядьте с Мартой за пир.
-keepsake.harvest_feast_trophy.name = Трофей пира {0} года
+keepsake.harvest_feast_golden_plate.name = Золотая тарелка Марты {0} года
 keepsake.harvest_feast_plate.name = Пиршественная тарелка {0} года
+achievement.harvest_feast_supper_round.title = Обход с ужином {0}
+achievement.harvest_feast_supper_round.desc = Отнесите ужин Томасу, Элси и Брэму.
 achievement.harvest_feast_full_table.title = Полный стол {0}
-achievement.harvest_feast_full_table.desc = Получите все достижения Праздника урожая этого года.
+achievement.harvest_feast_full_table.desc = Получите все достижения из этого списка за один Праздник урожая.
 achievement.harvest_feast_harvest_set.title = Комплект урожая
 achievement.harvest_feast_harvest_set.desc = Наденьте весь Комплект урожая из лавки Марты.
+achievement.harvest_feast_marthas_cookbook.title = Кулинарная книга Марты
+achievement.harvest_feast_marthas_cookbook.desc = Приготовьте Индюшиный пирог, Салат урожая и Жаркое Марты.
+achievement.harvest_feast_marthas_hunter.title = Охотник Марты
+achievement.harvest_feast_marthas_hunter.desc = Сдайте Лишних индюков (раз: {0}).
+achievement.harvest_feast_great_turkey_hunter.title = Охотник на Великого индюка
+achievement.harvest_feast_great_turkey_hunter.desc = Победите Великого индюка (раз: {0}).
+achievement.harvest_feast_great_turkey_slayer.title = Убийца Великого индюка
+achievement.harvest_feast_great_turkey_slayer.desc = Победите Великого индюка (раз: {0}).
+achievement.harvest_feast_set_of_plates.title = Сервиз
+achievement.harvest_feast_set_of_plates.desc = Сядьте за пир в разные годы: {0}.
 
 # ---- The Full Table title ----
 title.harvest_feast_full_table.name = Полный стол
-title.harvest_feast_full_table.flavor = Получены все достижения Праздника урожая одного года.
+title.harvest_feast_full_table.flavor = Получил все достижения, которых требует Полный стол, за один Праздник урожая.
 title.harvest_feast_full_table.display = {0} из Полного стола
+title.harvest_feast_great_turkey_slayer.name = Убийца Великого индюка
+title.harvest_feast_great_turkey_slayer.flavor = Побеждал Великого индюка снова и снова.
+title.harvest_feast_great_turkey_slayer.display = {0}, Убийца Великого индюка
+title.harvest_feast_marthas_regular.name = Завсегдатай Марты
+title.harvest_feast_marthas_regular.flavor = Год за годом садился с Мартой за пир.
+title.harvest_feast_marthas_regular.display = {0}, завсегдатай Марты
 
 # ---- Martha's ranks: an achievement and a gift at each, and a title at Head of the Table ----
 achievement.harvest_feast_marthas_neighbor.title = Сосед Марты
@@ -173,6 +203,8 @@ objective.harvest_feast.head_of_the_table = Станьте во главе ст�
 title.harvest_feast_head_of_the_table.name = Во главе стола
 title.harvest_feast_head_of_the_table.flavor = Стал во главе стола у Марты.
 title.harvest_feast_head_of_the_table.display = {0}, во главе стола
+achievement.harvest_feast_marthas_favorite.title = Любимчик Марты
+achievement.harvest_feast_marthas_favorite.desc = Заберите у Марты Корзину пира.
 
 # ---- The Almanac page ----
 almanac.harvest_feast.title = Праздник урожая
@@ -214,7 +246,7 @@ dialogue.harvest_feast_host.pie_ready.opt.turnin = Вот пирог.
 dialogue.harvest_feast_host.feast_offer.text = Раз в год мы выставляем всё на стол и едим, пока не встанем с трудом.\nИспеки <b>тыквенный пирог</b> на <b>Кухонной плите</b>, прожарь <b>мясо</b> на <b>Костре</b> и собери <b>морковь</b> в <b>лесах</b> Emerald Wilds. Неси всё сюда, и накроем вместе.
 dialogue.harvest_feast_host.feast_offer.opt.accept = Накроем на стол.
 dialogue.harvest_feast_host.feast_brief.text = <b>Тыквенный пирог</b> с <b>Кухонной плиты</b>, <b>жареное мясо</b> с <b>Костра</b> и <b>морковь</b> из <b>лесов</b>. Потом едим.
-dialogue.harvest_feast_host.feast_ready.text = Пирог, жаркое и морковь. Вот это пир.\nСадись, ешь и возьми домой вот это: индюка, который не убежит, с годом на боку.\nНо здесь больше, чем мы съедим. Забери свою долю и поговори со мной ещё раз. У меня для тебя последнее дело.
+dialogue.harvest_feast_host.feast_ready.text = Пирог, жаркое и морковь. Вот это пир.\nСадись, ешь и возьми домой вот это: мою золотую тарелку, с годом на ободке. С неё никто не ест.\nНо здесь больше, чем мы съедим. Забери свою долю и поговори со мной ещё раз. У меня для тебя последнее дело.
 dialogue.harvest_feast_host.feast_ready.opt.turnin = Вот всё.
 dialogue.harvest_feast_host.feast_done.text = Всё ещё сыт? Я тоже, как и все, кому ты носил ужин.\nНа этом моя история до следующего пира закончена, но стол стоит накрытым, пока он не кончится. Каждый день есть <b>работа</b> и <b>индюки</b>, когда захочешь. У Томаса, Элси и Брэма тоже есть по <b>работе</b>. Помогай дальше, и моя <b>лавка</b> откроется. Чем могу помочь?
 dialogue.harvest_feast_host.deliveries_offer.text = Посмотри, сколько осталось. Хорошую еду пропадать я не дам.\nТомас, Элси и Брэм работали всю неделю и так и не присели. Отнеси <b>Томасу</b> <b>тыквенный пирог</b>, <b>Элси</b> <b>запечённый овощ</b>, а <b>Брэму</b> <b>жареное мясо</b>. Тех остатков, что я тебе дала, хватит. Они где-то у <b>храма</b>.
@@ -352,5 +384,6 @@ almanac.harvest_feast.source.stall_favor = Продаётся в лавке Ма
 almanac.harvest_feast.source.stall_gift = Продаётся в лавке Марты, а ещё входит в её дары по мере роста её расположения.
 almanac.harvest_feast.source.seeds = С пира и за поручения Марты, или покупаются в её лавке.
 almanac.harvest_feast.source.keepsake = Памятный подарок пира, раз в год, когда вы садитесь за стол.
+almanac.harvest_feast.source.turkey_trophy = Редкая находка при охоте на диких индюков, пока идёт пир.
 almanac.harvest_feast.source.winter = Продаётся на праздничной полке лавки Марты, пока идёт пир.
 almanac.harvest_feast.source.festival_favor = Продаётся в праздничных лавках тем, у кого высокое расположение праздников.
