@@ -1,0 +1,9 @@
+{
+  "$Comment": "Refills the Great Turkey to its full maximum health as it rises: its fight's script applies it once its party health steps (Harvest_Feast_Great_Turkey_Scale_Health_P2 to P5) are on, since those raise the maximum but not its current health.",
+  "StatModifiers": {
+    "Health": 100
+  },
+  "ValueType": "Percent",
+  "OverlapBehavior": "Overwrite",
+  "Duration": 0.1
+}

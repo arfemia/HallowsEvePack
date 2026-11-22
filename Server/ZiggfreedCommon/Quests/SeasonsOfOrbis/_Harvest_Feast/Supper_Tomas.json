@@ -1,0 +1,53 @@
+{
+  "$Comment": [
+    "Supper for Tomas, one of the three supper deliveries that close Martha's questline: once The Feast is",
+    "collected, Martha sends a plate of the leftovers to each villager who helped all week, and one line of",
+    "hers (deliveries_offer in her conversation) takes all three. The _Harvest_Feast folder makes the id",
+    "harvest_feast_supper_tomas; Supper_Elsie.json and Supper_Bram.json are its two siblings. The Feast's",
+    "pay hands over the leftovers they ask for (Lootables/SeasonsOfOrbis/Harvest_Feast_Feast_Pay.json); a",
+    "player without them bakes or cooks their own.",
+    "",
+    "Martha gives it (the base's Npc), and its one step is handed in at Tomas: TurnInNpcId names his role,",
+    "the id his placement stands him under (NpcPlacements/Harvest_Feast_Miller_Temple.json), kept standing",
+    "with KeepAlive, Respawn and Fortify. Each delivery is a quest of its own so that a hand-in at the",
+    "villager finishes it, which is what lets his conversation open on his thanks (its Ready row) the",
+    "moment the player arrives with the plate. CompletionDialogue is his conversation, since the pay is",
+    "collected at him and the conversation that follows is his, not Martha's.",
+    "",
+    "Repeat.PerRun brings it back once in each year's run of Harvest Feast, the way The Feast comes back.",
+    "Requires reads The Feast as collected, which stays true from the first year on; Martha's offer line",
+    "waits for this year's Feast all the same, since it reads The Feast's own state.",
+    "",
+    "The Mmo_Xp row is MMO Skill Tree's: Crafting XP, as the cooking quests pay, waiting to be collected",
+    "with the rest. The row's own Requires, the hytale:mod_installed gate, leaves it out on a server",
+    "without that mod, unpaid and unshown, and the rest of the quest pays."
+  ],
+  "Name": "Supper_Tomas",
+  "Parent": "Harvest_Feast_Quest_Base",
+  "CompletionDialogue": "Harvest_Feast_Miller",
+  "Listing": { "Icon": "Food_Pie_Pumpkin", "Category": "main", "SortOrder": 50 },
+  "Requires": { "Quests": [ "harvest_feast_the_feast" ] },
+  "Repeat": {
+    "PerRun": { "Event": "Harvest_Feast", "Times": 1 }
+  },
+  "Objectives": {
+    "supper_for_tomas": {
+      "Kind": "TURN_IN",
+      "Target": "Food_Pie_Pumpkin",
+      "MatchMode": "EXACT",
+      "Amount": 1,
+      "TextKey": "objective.harvest_feast.supper_for_tomas",
+      "Order": 1,
+      "TurnInNpcId": "Harvest_Feast_Miller"
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Currency", "Params": { "Currency": "Harvest_Feast_Coins", "Amount": "10" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 135 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 100 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "CRAFTING", "Amount": "750" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

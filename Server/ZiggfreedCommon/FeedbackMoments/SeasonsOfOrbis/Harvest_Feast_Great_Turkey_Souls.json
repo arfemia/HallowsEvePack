@@ -1,0 +1,11 @@
+{
+  "$Comment": [
+    "What each member of the Great Turkey's fight is told when more Turkey Souls rise to join it as its health",
+    "falls (its fight's FightWaves, Macro_Orbis_Boss_Fight_Waves, draw it as each wave rises). The file name",
+    "is the moment id. Key is a line in this pack's harvestfeast.progression.lang, written bare."
+  ],
+  "Toast": {
+    "Title": { "Key": "notify.harvest_feast_great_turkey_souls" },
+    "Tone": "Warning"
+  }
+}

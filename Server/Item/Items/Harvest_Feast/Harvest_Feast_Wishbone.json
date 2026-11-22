@@ -1,0 +1,18 @@
+{
+  "$Comment": "The Wishbone, the price of the Turkey Graveyard: Bram the Shepherd takes one to open the graveyard for a party (EntryCost in ZiggfreedCommon/Dungeons/Harvest_Feast_Turkey_Graveyard.json, so change the count there), and Martha pays one each time a player hands in Extra Turkeys (Quests/SeasonsOfOrbis/_Harvest_Feast/Extra_Turkeys.json). The Great Turkey's Boss Kill Claim gives one back now and then (Lootables/SeasonsOfOrbis/Harvest_Feast_Great_Turkey_Chase.json). A plain item that only sits in the bag: no BlockType, so it can never be placed, and no recipe. It wears the game's own bone fragment (its model, texture and icon), so it needs no art of its own. Its words are in items.lang. MaxStack is how many fit in one slot; DropOnDeath false keeps it in the bag when its owner falls.",
+  "TranslationProperties": {
+    "Name": "items.Harvest_Feast_Wishbone.name",
+    "Description": "items.Harvest_Feast_Wishbone.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Ingredient_Bone_Fragment.png",
+  "IconProperties": {"Scale": 0.54, "Rotation": [16.315, 54.56, 33.19], "Translation": [2.1, -5.1]},
+  "Quality": "Uncommon",
+  "Categories": ["Items.Ingredients"],
+  "Model": "Resources/Materials/Bone_Fragment.blockymodel",
+  "Texture": "Resources/Materials/Bone_Fragment_Texture.png",
+  "PlayerAnimationsId": "Item",
+  "Tags": {"Type": ["Ingredient"]},
+  "Scale": 1.2,
+  "MaxStack": 25,
+  "DropOnDeath": false
+}

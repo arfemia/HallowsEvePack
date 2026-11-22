@@ -1,0 +1,26 @@
+{
+  "$Comment": [
+    "What the members of the Great Turkey's fight see as it rises and the fight begins: a big banner, its",
+    "line and, under it, what the fight is for. Its binding row points its Engaged beat here",
+    "(ZiggfreedCommon/Encounters/Harvest_Feast_Great_Turkey_Encounter.json, Feedback.Engaged). Keys are",
+    "lines in this pack's harvestfeast.progression.lang, written bare.",
+    "",
+    "The moment fires once per member. The banner always reaches the members (ToParticipants) and anyone",
+    "else standing within RadiusBlocks of them, which keeps it inside this one graveyard: the graveyards of",
+    "one copy share a world but stand far further apart than this. MinSecondsBetween folds the members'",
+    "fires into one banner, and stays short so it never swallows another party's banner in the same copy."
+  ],
+  "Broadcast": {
+    "Title": {
+      "Key": "notify.harvest_feast_great_turkey_engaged"
+    },
+    "Secondary": {
+      "Key": "notify.harvest_feast_great_turkey_engaged.sub"
+    },
+    "Major": true,
+    "ToParticipants": true,
+    "SameWorldOnly": true,
+    "RadiusBlocks": 96.0,
+    "MinSecondsBetween": 5
+  }
+}

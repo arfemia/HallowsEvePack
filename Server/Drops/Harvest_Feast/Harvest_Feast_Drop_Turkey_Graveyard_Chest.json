@@ -1,0 +1,29 @@
+{
+  "$Comment": "What the chest hidden in the Turkey Graveyard holds, rolled fresh into it each time a party's graveyard is pasted (tools/arenas/Harvest_Feast_Turkey_Graveyard.json names it on the chest): a pumpkin pie or two every time, then each Choice below on its own when its Weight, its chance out of 100, comes up: Spices for Martha's dishes, and one of her Turkey Pies. It holds no Wishbone on purpose: the chest refills every run, so a Wishbone here would make the way in pay for itself.",
+  "Container": {
+    "Type": "Multiple",
+    "Containers": [
+      {
+        "Type": "Choice",
+        "Weight": 100,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Food_Pie_Pumpkin", "QuantityMin": 1, "QuantityMax": 2 } }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 50,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Ingredient_Spices", "QuantityMin": 1, "QuantityMax": 2 } }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 20,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Harvest_Feast_Turkey_Pie", "QuantityMin": 1, "QuantityMax": 1 } }
+        ]
+      }
+    ]
+  }
+}

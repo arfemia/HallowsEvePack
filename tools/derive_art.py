@@ -9,7 +9,7 @@
 
 The seed is JackoLantern01.blockymodel and JackoLantern01_Texture.png, read from tools/seed/
 (a byte copy, kept beside the tool so the pack rebuilds from its own repo) unless --seed
-names another folder. The vanilla inputs are byte copies of eighteen files from the installed
+names another folder. The vanilla inputs are byte copies of nineteen files from the installed
 game's Assets.zip, kept under tools/seed/vanilla/ at their Assets.zip paths (VANILLA_FILES);
 --vendor rewrites them from the Assets.zip it is given. A rerun writes byte-identical
 files: nothing here is random, and PNGs carry no metadata.
@@ -43,6 +43,8 @@ What it writes (pack-relative):
       orthographic renderer at each family's vanilla IconProperties angle.
   Common/Icons/ModelsGenerated/Hallows_Eve_*.png        128x128 model icons for the mobs and the
       Horseman's Steed (drawn full size on the Steed Trophy's atlas).
+  Common/Icons/ItemsGenerated/Harvest_Feast_Feast_Trophy.png  Harvest Feast's one derived file:
+      the game's own turkey portrait (TURKEY_ICON) sized to a 64x64 item icon, nothing redrawn.
 
 What it reads from the pack and never writes: the artist's hand-made Headless Horseman art, copied
 into Common/ as it came. Common/Items/Hallows_Eve/Horseman_Armor/ holds his armour (the collar
@@ -262,10 +264,15 @@ PLAYER = "Characters/Player.blockymodel"
 HORSE = "NPC/Livestock/Horse/Models/Model.blockymodel"
 STRAP = "Resources/Materials/Strap_Leather.blockymodel"
 STRAP_TEXTURE = "Resources/Materials/Strap_Leather_Texture.png"
+# The game's own 128x128 turkey portrait, which Harvest Feast's Feast Trophy (a block wearing the
+# game's turkey model) takes as its item icon, sized to 64x64: an item's Icon must sit under
+# Icons/ItemsGenerated/ or Icons/Items/, and the game ships no turkey there.
+TURKEY_ICON = "Icons/ModelsGenerated/Turkey.png"
+FEAST_TROPHY_ICON = f"{ICONS}/Harvest_Feast_Feast_Trophy.png"
 VANILLA_FILES = tuple(f"Common/{rel}" for rel in (
     WORKBENCH, WORKBENCH_TEXTURE, WAND, WAND_TEXTURE, SPIRIT, SPIRIT_TEXTURE,
     WRAITH, WRAITH_TEXTURE, ESSENCE, ESSENCE_TEXTURE, GHOUL, GHOUL_TEXTURE,
-    SKELETON, SKELETON_BURNT_TEXTURE, PLAYER, HORSE, STRAP, STRAP_TEXTURE))
+    SKELETON, SKELETON_BURNT_TEXTURE, PLAYER, HORSE, STRAP, STRAP_TEXTURE, TURKEY_ICON))
 
 # --- the Cursed Geode: a scripted stone with a lit crack (64x64 texture, x, y, w, h) ---------
 
@@ -1803,7 +1810,12 @@ def icon_png(model, texture_rgba, angles, size=64):
     """Renders, trims the alpha bounding box, centres it on a square with a 4% margin, and
     resizes to size x size with LANCZOS (the blockbench-hytale skill's icon recipe)."""
     canvas = render(model, texture_rgba, angles)
-    image = Image.fromarray(np.clip(np.rint(canvas * 255), 0, 255).astype(np.uint8))
+    return square_icon_png(Image.fromarray(np.clip(np.rint(canvas * 255), 0, 255).astype(np.uint8)), size)
+
+
+def square_icon_png(image, size=64):
+    """Trims an RGBA picture's alpha bounding box, centres it on a square with a 4% margin, and
+    resizes to size x size with LANCZOS: the icon recipe every icon here shares."""
     image = image.crop(image.getchannel("A").getbbox())
     side = max(image.size)
     side += 2 * round(side * 0.04)
@@ -1958,6 +1970,7 @@ def build(seed_dir, art_dir=PACK / "Common"):
         rigs[worn(name)] = armor_icon_model(vanilla[PLAYER], name, rigs[name])
     for folder, icon, model_name, texture_name, angles, size in ICON_PLAN:
         outputs[f"{folder}/{icon}.png"] = icon_png(rigs[model_name], texture_rgba[texture_name], angles, size)
+    outputs[FEAST_TROPHY_ICON] = square_icon_png(Image.fromarray(vanilla[TURKEY_ICON]))
     return dict(sorted(outputs.items())), rigs, texture_rgba
 
 

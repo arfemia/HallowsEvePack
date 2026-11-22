@@ -69,6 +69,10 @@ Hallows_Eve_Horsemans_Reins.description = Las riendas del propio Jinete sin Cabe
 Hallows_Eve_Horsemans_Reins.command_calm = Calmar
 Hallows_Eve_Horsemans_Steed_Trophy.name = Trofeo del Corcel del Jinete
 Hallows_Eve_Horsemans_Steed_Trophy.description = Una figura diminuta del caballo negro del Jinete sin Cabeza con su barda, sobre un pedestal ribeteado de oro. Colócala donde quieras. Se encuentra de vez en cuando en su Botín de Jefe, y el Viejo Jack vende una.
+Harvest_Feast_Feast_Trophy.name = Trofeo del Banquete
+Harvest_Feast_Feast_Trophy.description = Un pavo que se queda donde lo pones. Martha regala uno a todo el que se sienta con ella en El Banquete, y cada Banquete de la Cosecha tiene el suyo. Colócalo donde quieras.
+Harvest_Feast_Wishbone.name = Espoleta
+Harvest_Feast_Wishbone.description = La espoleta de un pavo, guardada del asado. <b>Bram el Pastor</b>, en el Templo Olvidado, se lleva una para guiaros a ti y a tu grupo al <b>Cementerio de los Pavos</b> mientras dure el Banquete de la Cosecha.\n\nMartha te da una cada vez que le entregas <b>Pavos Extra</b>.
 
 # Banquete de la Cosecha - el Conjunto de la Cosecha, a la venta en la tienda de Martha.
 Harvest_Feast_Harvest_Hat.name = Sombrero de la Cosecha

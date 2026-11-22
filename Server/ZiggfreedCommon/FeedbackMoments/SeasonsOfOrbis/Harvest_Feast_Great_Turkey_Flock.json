@@ -1,0 +1,12 @@
+{
+  "$Comment": [
+    "What each member of the Great Turkey's fight is told as its second phase starts at half its health: it",
+    "gobbles, and more Turkey Souls come to its side (its fight's Phase2Behavior,",
+    "Macro_Harvest_Feast_Great_Turkey_Rally, draws it). The file name is the moment id. Key is a line in this",
+    "pack's harvestfeast.progression.lang, written bare."
+  ],
+  "Toast": {
+    "Title": { "Key": "notify.harvest_feast_great_turkey_flock" },
+    "Tone": "Warning"
+  }
+}

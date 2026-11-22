@@ -1,6 +1,6 @@
 # Seasons of Orbis
 
-Yearly events for your Hytale server. Hallow's Eve runs from October 1 to November 12, Harvest Feast from November 20 to December 1, and every January 13 is Hytale's Anniversary.
+Yearly events for your Hytale server. Hallow's Eve runs from October 1 to November 12, Harvest Feast from November 20 to December 6, and every January 13 is Hytale's Anniversary.
 
 Each season brings a host to the Forgotten Temple with quests, a daily board, a shop and achievements: Old Jack for Hallow's Eve, Martha the Cook for Harvest Feast. The pack needs Ziggfreed's CommonLib 2.5.1 or newer and RPG Stations 1.1.1 or newer, on a Hytale Update 7 server. MMO Skill Tree and Alec's Tamework are optional. Everything plays in nine languages.
 
@@ -33,21 +33,24 @@ Each season brings a host to the Forgotten Temple with quests, a daily board, a 
 - Harvest Moon, October 28 to November 1. About twice the creatures come out at night, and geodes and Hallowed Pumpkins come in pairs.
 - Thirteen achievements each year, the last of them The Hallowed and its title, plus more that span the years and four for wearing the sets. The Hallowed asks for one win over the Horseman. Horseman Hunter and Horseman's Bane, for 10 and 50 wins in one Hallow's Eve, are a ladder of their own, with the title "Horseman's Bane" at the top. Bring him down with nothing but Lantern Bombs for By Lantern Light, or for Lamplighter and its title on the hard ride.
 
-## Harvest Feast, November 20 to December 1
+## Harvest Feast, November 20 to December 6
 
 - **Martha the Cook** sets up a long table in the Forgotten Temple. A quest in your log, Meet Martha, sends you to her through any Forgotten Temple Gateway.
-- Her four quests run from Wheat Harvest to The Feast. Turkey Hunt hands you the pumpkin pie recipe with a Dough and some Spices, and turns you into a turkey for three minutes. In Your First Pie you bake one at a Chef's Stove.
-- The Feast comes back every year. Bring a pumpkin pie, some cooked meat and a basket of carrots, sit down, and take home a Feast Plate with the year on it and two Meat Pies.
+- Her four quests run from Wheat Harvest to The Feast, then a supper round. Turkey Hunt hands you the pumpkin pie recipe with a Dough and some Spices, and turns you into a turkey for three minutes. In Your First Pie you bake one at a Chef's Stove.
+- The Feast comes back every year. Bring a pumpkin pie, some cooked meat and a basket of carrots, sit down to a banner and a firework, and take home the Feast Trophy, a turkey with the year on it to place in your home, with the leftovers.
+- The supper round comes back with it: Supper for Tomas, Supper for Elsie and Supper for Bram. Take each of them a plate of the leftovers. They worked all week and never sat down.
 - Three dailies: Daily Turkeys, Daily Wheat and Daily Roast. Shared Meal comes round every day too. Roast a vegetable on a Campfire and share it at her table.
-- Extra Turkeys, as often as you like. Hunt ten more turkeys, take your pay, and go again.
+- Extra Turkeys, as often as you like. Hunt ten more turkeys, take your pay, and go again. Each one also pays a Wishbone.
+- The Turkey Graveyard, a party fight while the feast runs. Give Bram the Shepherd a Wishbone and he takes your party in: waves of Turkey Souls, then the Great Turkey, with a Boss Kill Claim every win and a bigger Claim on your first win each day.
 - The Guest List, once a feast. Invite three people to the feast, then tell Martha who's coming. Tomas the Miller, Elsie the Weaver and Bram the Shepherd stand around the temple, so there's always somebody to ask, and each has a tip for you on dough, spices or turkeys.
+- A daily job from each of Martha's helpers: flour for Tomas, spices for Elsie and eggs for Bram. Each pays Harvest Coins and Martha's favor.
 - The Feast Board posts a Field job and a Kitchen job every day: turkeys, wheat, pumpkins or carrots out in the fields, pies, roast meat, roast vegetables or spices in the kitchen. Get to know Martha and a second of each opens up.
 - Wild Turkeys roam the first zone's woods and plains by day, in small flocks, and every one you hunt earns Martha's favor. The game's own turkeys count for her turkey quests too, and earn a little favor while the feast runs. You can tame them too. Pumpkins you pick by hand sometimes come with Spices, which a pumpkin pie needs.
 - Harvest Coins, the feast's own currency. Martha pays them for everything, and her shop takes them for the recipes for her own dishes, popcorn, corn seeds, autumn leaves, hay and a Scarecrow. They keep until next year. Its Festival Shelf has the winter decorations for Festival Tokens, from a Winter Stocking to a Snowman.
 - Martha's own dishes, each better than any food in the game, cooked at a Chef's Stove once you buy the recipe: Turkey Pie for more max health, Harvest Salad for more max stamina, and Martha's Roast for both, with her favor coming faster while it lasts. The Salad's recipe opens at Neighbor, the Roast's at Family.
 - The Harvest Set: the Harvest Gloves, Hat, Trousers and Tunic, four wool pieces from Martha's shop that open as her favor grows. Each adds health and stamina and earns her favor 5% faster. Wear two for more health, and all four for more health again and another 10% favor.
 - Martha's Favor runs from Newcomer through Neighbor, Friend and Family to Head of the Table. Each rank pays a gift you collect on the achievements page, and Head of the Table adds a title. Past the top it keeps counting, and every 5,000 more favor packs you a Feast Basket of pies, coins and tokens.
-- Five achievements each year. Feast Guest, Turkey Chaser, Full Baskets and Feast Plate, and The Full Table for earning the other four, with the title "of the Full Table". One more for wearing the whole Harvest Set.
+- Five achievements each year. Feast Guest, Turkey Chaser, Full Baskets and Feast Trophy, and The Full Table for earning the other four, with the title "of the Full Table". One more for wearing the whole Harvest Set.
 
 ## Every season
 

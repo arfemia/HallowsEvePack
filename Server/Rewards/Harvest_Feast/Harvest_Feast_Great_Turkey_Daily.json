@@ -1,0 +1,6 @@
+{
+  "$Comment": "The Great Turkey's daily Claim, the bigger one: its fight's script grants it at its death, and each player who fought it finds one in the chest where it fell (and on their Claims tab), rolled from Harvest_Feast_Great_Turkey_Daily and scaled by their share of the fight (ShareScaled). Diminish is left out, so the first win each day pays and later wins that day pay nothing; a roll that lands nothing never spends the day. Its row is titled with the fight's own name.",
+  "Type": "ZigClaim",
+  "Lootable": "Harvest_Feast_Great_Turkey_Daily",
+  "ShareScaled": true
+}

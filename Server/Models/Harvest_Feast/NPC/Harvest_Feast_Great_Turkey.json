@@ -1,0 +1,9 @@
+{
+  "$Comment": "The Great Turkey's look: the game's own Turkey (its model, texture and every animation) drawn at more than twice its size, with the same pale cold light as the Turkey Souls (Harvest_Feast_Turkey_Soul.json beside this file). MinScale and MaxScale fix its size: the game scales the hitbox, the eye height and the camera with it, so a bigger number makes a bigger target that needs more room between the graves to walk. Parent Turkey brings the sounds and the animations. Like the souls, it wears the effect Harvest_Feast_Turkey_Soul_Glow for its ghostly sheen, from its role. Light is a model light; each hex digit is a red, green or blue level from 0 to f.",
+  "Parent": "Turkey",
+  "Model": "NPC/Livestock/Turkey/Models/Model.blockymodel",
+  "Texture": "NPC/Livestock/Turkey/Models/Texture.png",
+  "MinScale": 2.2,
+  "MaxScale": 2.2,
+  "Light": { "Color": "#6bd" }
+}
