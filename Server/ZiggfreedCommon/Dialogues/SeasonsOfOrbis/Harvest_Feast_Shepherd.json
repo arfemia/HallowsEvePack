@@ -15,18 +15,10 @@
     "Eggs (harvest_feast_shepherd_eggs): the conversation opens on its offer while it can be taken, on its",
     "brief while it is carried, and on its hand-in once the eggs are in the bag. Each hand-in opens his",
     "quest list with Collect in front of the player, and collecting plays this conversation again (each",
-    "quest's CompletionDialogue). Otherwise it opens on greeting, the Fallback, which offers his two tips:",
-    "turkeys, eggs and taming (the turkeys screen), and his sheep.",
-    "",
-    "Bram is also the way into the Turkey Graveyard, Harvest Feast's repeatable fight",
-    "(ZiggfreedCommon/Dungeons/Harvest_Feast_Turkey_Graveyard.json): his greeting and his eggs brief ask",
-    "about it, and the graveyard screen says what it is, what it costs and where that comes from, then",
-    "offers the way in. Its label names the price, since option labels take no number from the file:",
-    "change it with the dungeon's EntryCost. Open is the Dungeon destination: picking it opens CommonLib's",
-    "confirm screen with the Wishbone, how many the player holds and how many it takes; its button spends",
-    "the Wishbone and sends the player in with their party, and with none the button is off and the screen",
-    "says where Wishbones come from. A partymate following into a graveyard their party already holds",
-    "skips the screen and walks in free.",
+    "quest's CompletionDialogue). Otherwise it opens on greeting, the Fallback. Greeting and the eggs brief",
+    "lead with What needs doing? (Open Quests: the quest list of the character in front of the player, so",
+    "his daily and his supper), then his tip on turkeys, eggs and taming (the turkeys screen). The way",
+    "into the Turkey Graveyard is Martha's (Harvest_Feast_Host.json), not his.",
     "",
     "The invitation tour's line is not in this file: DialogueExtensions/SeasonsOfOrbis/",
     "Harvest_Feast_Invitation.json adds it to the screens a conversation opens on while the player carries",
@@ -58,22 +50,8 @@
     "greeting": {
       "TextKey": "dialogue.harvest_feast_shepherd.greeting.text",
       "Options": [
-        { "LabelKey": "dialogue.harvest_feast_shepherd.opt.turkeys", "Style": "neutral", "Goto": "turkeys" },
-        { "LabelKey": "dialogue.harvest_feast_shepherd.opt.sheep", "Style": "neutral", "Goto": "sheep" },
-        { "LabelKey": "dialogue.harvest_feast_shepherd.opt.graveyard", "Style": "neutral", "Goto": "graveyard" }
-      ],
-      "IncludeOptions": [ "goodbye" ]
-    },
-    "graveyard": {
-      "TextKey": "dialogue.harvest_feast_shepherd.graveyard.text",
-      "Options": [
-        {
-          "LabelKey": "dialogue.harvest_feast_shepherd.graveyard.opt.enter",
-          "Style": "accept",
-          "Presentation": { "Icon": { "Item": "Harvest_Feast_Wishbone" } },
-          "Open": { "Type": "Dungeon", "Dungeon": "Harvest_Feast_Turkey_Graveyard" }
-        },
-        { "LabelKey": "dialogue.harvest_feast_shepherd.graveyard.opt.back", "Style": "neutral", "Goto": "greeting" }
+        { "LabelKey": "dialogue.harvest_feast_shepherd.opt.quests", "Style": "accept", "Open": "Quests" },
+        { "LabelKey": "dialogue.harvest_feast_shepherd.opt.turkeys", "Style": "neutral", "Goto": "turkeys" }
       ],
       "IncludeOptions": [ "goodbye" ]
     },
@@ -81,13 +59,6 @@
       "TextKey": "dialogue.harvest_feast_shepherd.turkeys.text",
       "Options": [
         { "LabelKey": "dialogue.harvest_feast_shepherd.opt.thanks", "Style": "neutral", "Goto": "greeting" }
-      ],
-      "IncludeOptions": [ "goodbye" ]
-    },
-    "sheep": {
-      "TextKey": "dialogue.harvest_feast_shepherd.sheep.text",
-      "Options": [
-        { "LabelKey": "dialogue.harvest_feast_shepherd.opt.back", "Style": "neutral", "Goto": "greeting" }
       ],
       "IncludeOptions": [ "goodbye" ]
     },
@@ -121,9 +92,8 @@
     "eggs_brief": {
       "TextKey": "dialogue.harvest_feast_shepherd.eggs_brief.text",
       "Options": [
-        { "LabelKey": "dialogue.harvest_feast_shepherd.opt.turkeys", "Style": "neutral", "Goto": "turkeys" },
-        { "LabelKey": "dialogue.harvest_feast_shepherd.opt.sheep", "Style": "neutral", "Goto": "sheep" },
-        { "LabelKey": "dialogue.harvest_feast_shepherd.opt.graveyard", "Style": "neutral", "Goto": "graveyard" }
+        { "LabelKey": "dialogue.harvest_feast_shepherd.opt.quests", "Style": "accept", "Open": "Quests" },
+        { "LabelKey": "dialogue.harvest_feast_shepherd.opt.turkeys", "Style": "neutral", "Goto": "turkeys" }
       ],
       "IncludeOptions": [ "goodbye" ]
     },

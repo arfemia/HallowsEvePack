@@ -55,8 +55,21 @@
     "own table.",
     "",
     "THE FOOTER. Most screens pull in the feast_footer group: hand-ins, the quest list (her board's jobs",
-    "included), the stall, How do we stand? (it opens the Reputation page, and shows once the player has",
-    "any favor with her), the Almanac (only while the Almanac is switched on), two lore lines and goodbye.",
+    "included), the stall, the Turkey Graveyard, How do we stand? (it opens the Reputation page, and shows",
+    "once the player has any favor with her), the Almanac (only while the Almanac is switched on) and",
+    "goodbye.",
+    "",
+    "THE TURKEY GRAVEYARD. Martha is the way into Harvest Feast's repeatable fight",
+    "(ZiggfreedCommon/Dungeons/Harvest_Feast_Turkey_Graveyard.json). Its footer option and the way-in",
+    "option carry their own Presentation, the Turkey Souls' pale blue and the Wishbone's icon, so they",
+    "stand apart from her other options; the footer option shows only while the feast runs. The graveyard",
+    "screen says what it is, what it costs and where that comes from, then offers the way in. The way-in",
+    "label names the price, since option labels take no number from the file: change it with the",
+    "dungeon's EntryCost. Open is the Dungeon destination: picking it opens CommonLib's confirm screen with",
+    "the Wishbone, how many the player holds and how many it takes; its button spends the Wishbone and",
+    "sends the player in with their party, and with none the button is off and the screen says where",
+    "Wishbones come from. A partymate following into a graveyard their party already holds skips the",
+    "screen and walks in free.",
     "",
     "No line asks which world the player is in, so the arrival line, the greeting and her first quest's",
     "offer play wherever she stands: the conversation is reached only through her (her placement's",
@@ -524,12 +537,16 @@
       ],
       "IncludeOptions": [ "feast_tail" ]
     },
-    "who_are_you": {
-      "TextKey": "dialogue.harvest_feast_host.who_are_you.text",
-      "IncludeOptions": [ "feast_tail" ]
-    },
-    "about_feast": {
-      "TextKey": "dialogue.harvest_feast_host.about_feast.text",
+    "graveyard": {
+      "TextKey": "dialogue.harvest_feast_host.graveyard.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.graveyard.opt.enter",
+          "Style": "accept",
+          "Presentation": { "Color": "#66bbdd", "Icon": { "Item": "Harvest_Feast_Wishbone" } },
+          "Open": { "Type": "Dungeon", "Dungeon": "Harvest_Feast_Turkey_Graveyard" }
+        }
+      ],
       "IncludeOptions": [ "feast_tail" ]
     }
   },
@@ -567,6 +584,15 @@
         "Open": { "Type": "Shop", "Shop": "Harvest_Feast_Host" }
       },
       {
+        "LabelKey": "dialogue.harvest_feast_host.opt.graveyard",
+        "Style": "neutral",
+        "Presentation": { "Color": "#66bbdd", "Icon": { "Item": "Harvest_Feast_Wishbone" } },
+        "Conditions": [
+          { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Harvest_Feast_Live", "Min": 1 }
+        ],
+        "Goto": "graveyard"
+      },
+      {
         "LabelKey": "dialogue.harvest_feast_host.opt.standing",
         "Style": "neutral",
         "Conditions": [
@@ -583,16 +609,6 @@
         "Open": { "Type": "Almanac", "Event": "Harvest_Feast" }
       },
       {
-        "LabelKey": "dialogue.harvest_feast_host.opt.who",
-        "Style": "neutral",
-        "Goto": "who_are_you"
-      },
-      {
-        "LabelKey": "dialogue.harvest_feast_host.opt.feast",
-        "Style": "neutral",
-        "Goto": "about_feast"
-      },
-      {
         "LabelKey": "dialogue.harvest_feast_host.opt.farewell",
         "Style": "farewell",
         "Close": true
@@ -603,16 +619,6 @@
         "LabelKey": "dialogue.harvest_feast_host.opt.back",
         "Style": "neutral",
         "Goto": "menu"
-      },
-      {
-        "LabelKey": "dialogue.harvest_feast_host.opt.who",
-        "Style": "neutral",
-        "Goto": "who_are_you"
-      },
-      {
-        "LabelKey": "dialogue.harvest_feast_host.opt.feast",
-        "Style": "neutral",
-        "Goto": "about_feast"
       },
       {
         "LabelKey": "dialogue.harvest_feast_host.opt.farewell",

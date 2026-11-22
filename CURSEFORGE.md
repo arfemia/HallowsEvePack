@@ -41,7 +41,7 @@ Each season brings a host to the Forgotten Temple with quests, a daily board, a 
 - The supper round comes back with it: Supper for Tomas, Supper for Elsie and Supper for Bram. Take each of them a plate of the leftovers. They worked all week and never sat down.
 - Three dailies: Daily Turkeys, Daily Wheat and Daily Roast. Shared Meal comes round every day too. Roast a vegetable on a Campfire and share it at her table.
 - Extra Turkeys, as often as you like. Hunt ten more turkeys, take your pay, and go again. Each one also pays a Wishbone.
-- The Turkey Graveyard, a party fight while the feast runs. Give Bram the Shepherd a Wishbone and he takes your party in: waves of Turkey Souls, then the Great Turkey, with a Boss Kill Claim every win and a bigger Claim on your first win each day.
+- The Turkey Graveyard, a party fight while the feast runs. Give Martha a Wishbone and she sends your party in: waves of Turkey Souls, then the Great Turkey, with a Boss Kill Claim every win and a bigger Claim on your first win each day.
 - The Guest List, once a feast. Invite three people to the feast, then tell Martha who's coming. Tomas the Miller, Elsie the Weaver and Bram the Shepherd stand around the temple, so there's always somebody to ask, and each has a tip for you on dough, spices or turkeys.
 - A daily job from each of Martha's helpers: flour for Tomas, spices for Elsie and eggs for Bram. Each pays Harvest Coins and Martha's favor.
 - The Feast Board posts a Field job and a Kitchen job every day: turkeys, wheat, pumpkins or carrots out in the fields, pies, roast meat, roast vegetables or spices in the kitchen. Get to know Martha and a second of each opens up.

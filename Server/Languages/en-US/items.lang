@@ -79,7 +79,7 @@ Harvest_Feast_Turkey_Trophy.description = A turkey that stays where you put it. 
 
 # Harvest Feast - the price of the Turkey Graveyard, paid for each Extra Turkeys.
 Harvest_Feast_Wishbone.name = Wishbone
-Harvest_Feast_Wishbone.description = A turkey's wishbone, saved from the roast. <b>Bram the Shepherd</b> in the Forgotten Temple takes one to lead you and your party into the <b>Turkey Graveyard</b> while Harvest Feast runs.\n\nMartha gives you one each time you hand in <b>Extra Turkeys</b>.
+Harvest_Feast_Wishbone.description = A turkey's wishbone, saved from the roast. <b>Martha the Cook</b> in the Forgotten Temple takes one to send you and your party into the <b>Turkey Graveyard</b> while Harvest Feast runs.\n\nShe gives you one each time you hand in <b>Extra Turkeys</b>.
 
 # Harvest Feast - the Harvest Set, sold at Martha's shop.
 Harvest_Feast_Harvest_Hat.name = Harvest Hat

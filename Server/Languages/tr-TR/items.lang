@@ -74,7 +74,7 @@ Harvest_Feast_Golden_Plate.description = Üzerinde yıl yazan altın bir tabak, 
 Harvest_Feast_Turkey_Trophy.name = Hindi Kupası
 Harvest_Feast_Turkey_Trophy.description = Koyduğun yerde duran bir hindi. Çok nadiren bir Yabani Hindi birini geride bırakır, o da yalnızca Hasat Şöleni sürerken. İstediğin yere koy.
 Harvest_Feast_Wishbone.name = Dilek Kemiği
-Harvest_Feast_Wishbone.description = Kızartmadan saklanmış bir hindi dilek kemiği. Unutulmuş Tapınak'taki <b>Çoban Bram</b>, Hasat Şöleni sürerken birini alıp seni ve grubunu <b>Hindi Mezarlığı'na</b> götürür.\n\nMartha, <b>Fazladan Hindiler</b> teslim ettiğin her seferinde sana bir tane verir.
+Harvest_Feast_Wishbone.description = Kızartmadan saklanmış bir hindi dilek kemiği. Unutulmuş Tapınak'taki <b>Aşçı Martha</b>, Hasat Şöleni sürerken birini alıp seni ve grubunu <b>Hindi Mezarlığı'na</b> götürür.\n\nSana, <b>Fazladan Hindiler</b> teslim ettiğin her seferinde sana bir tane verir.
 
 # Harvest Feast - the Harvest Set, sold at Martha's shop.
 Harvest_Feast_Harvest_Hat.name = Hasat Şapkası

@@ -1,6 +1,6 @@
 {
   "$Comment": [
-    "Beat the Great Turkey once during one season, in the Turkey Graveyard Bram the Shepherd opens for a",
+    "Beat the Great Turkey once during one season, in the Turkey Graveyard Martha the Cook opens for a",
     "Wishbone (ZiggfreedCommon/Dungeons/Harvest_Feast_Turkey_Graveyard.json). ENCOUNTER_DEFEATED names",
     "the fight's encounter script (EncounterManager/Harvest_Feast/Harvest_Feast_Great_Turkey_Encounter.json),",
     "never the creature, and every player the fight credits earns it at once, however many shared the",

@@ -15,8 +15,9 @@
     "Spices (harvest_feast_weaver_spices): the conversation opens on its offer while it can be taken, on",
     "its brief while it is carried, and on its hand-in once the spices are in the bag. Each hand-in opens",
     "her quest list with Collect in front of the player, and collecting plays this conversation again",
-    "(each quest's CompletionDialogue). Otherwise it opens on greeting, the Fallback, which offers her two",
-    "tips: where Spices come from (the spice screen) and what she weaves.",
+    "(each quest's CompletionDialogue). Otherwise it opens on greeting, the Fallback. Greeting and the",
+    "spices brief lead with What needs doing? (Open Quests: the quest list of the character in front of",
+    "the player, so her daily and her supper), then her tip on where Spices come from (the spice screen).",
     "",
     "The invitation tour's line is not in this file: DialogueExtensions/SeasonsOfOrbis/",
     "Harvest_Feast_Invitation.json adds it to the screens a conversation opens on while the player carries",
@@ -48,8 +49,8 @@
     "greeting": {
       "TextKey": "dialogue.harvest_feast_weaver.greeting.text",
       "Options": [
-        { "LabelKey": "dialogue.harvest_feast_weaver.opt.spice", "Style": "neutral", "Goto": "spice" },
-        { "LabelKey": "dialogue.harvest_feast_weaver.opt.cloth", "Style": "neutral", "Goto": "cloth" }
+        { "LabelKey": "dialogue.harvest_feast_weaver.opt.quests", "Style": "accept", "Open": "Quests" },
+        { "LabelKey": "dialogue.harvest_feast_weaver.opt.spice", "Style": "neutral", "Goto": "spice" }
       ],
       "IncludeOptions": [ "goodbye" ]
     },
@@ -57,13 +58,6 @@
       "TextKey": "dialogue.harvest_feast_weaver.spice.text",
       "Options": [
         { "LabelKey": "dialogue.harvest_feast_weaver.opt.thanks", "Style": "neutral", "Goto": "greeting" }
-      ],
-      "IncludeOptions": [ "goodbye" ]
-    },
-    "cloth": {
-      "TextKey": "dialogue.harvest_feast_weaver.cloth.text",
-      "Options": [
-        { "LabelKey": "dialogue.harvest_feast_weaver.opt.back", "Style": "neutral", "Goto": "greeting" }
       ],
       "IncludeOptions": [ "goodbye" ]
     },
@@ -97,8 +91,8 @@
     "spices_brief": {
       "TextKey": "dialogue.harvest_feast_weaver.spices_brief.text",
       "Options": [
-        { "LabelKey": "dialogue.harvest_feast_weaver.opt.spice", "Style": "neutral", "Goto": "spice" },
-        { "LabelKey": "dialogue.harvest_feast_weaver.opt.cloth", "Style": "neutral", "Goto": "cloth" }
+        { "LabelKey": "dialogue.harvest_feast_weaver.opt.quests", "Style": "accept", "Open": "Quests" },
+        { "LabelKey": "dialogue.harvest_feast_weaver.opt.spice", "Style": "neutral", "Goto": "spice" }
       ],
       "IncludeOptions": [ "goodbye" ]
     },

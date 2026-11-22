@@ -224,7 +224,7 @@ almanac.harvest_feast.crops_picked = Crops picked by hand
 almanac.harvest_feast.feasts = Feasts sat down to
 almanac.harvest_feast.errands = Errands run for Martha
 almanac.harvest_feast.great_turkeys_down = Great Turkeys put down
-almanac.harvest_feast.source.wishbone = Martha's pay for Extra Turkeys. Bram the Shepherd takes one to open the Turkey Graveyard.
+almanac.harvest_feast.source.wishbone = Martha's pay for Extra Turkeys. Give one back to her to open the Turkey Graveyard.
 
 # ---- The Almanac page's items: where each comes from ----
 almanac.harvest_feast.source.bake_pumpkin = Bake it at a Chef's Stove from the recipe Martha gives you.
@@ -286,20 +286,19 @@ dialogue.harvest_feast_host.daily_wheat_offer.opt.accept = I'll bring wheat.
 dialogue.harvest_feast_host.daily_roast_offer.text = Cook some raw <b>meat</b> on a <b>Campfire</b> and bring it here. People keep eating it before it gets to the table.
 dialogue.harvest_feast_host.daily_roast_offer.opt.accept = I'll bring a roast.
 dialogue.harvest_feast_host.roast_brief.text = Any raw <b>meat</b> will do. Cook it on a <b>Campfire</b> and bring it here before somebody eats it.
-dialogue.harvest_feast_host.extra_turkeys_ready.text = More turkeys? I'll never say no.\nThat's another roast for the table, and here's the <b>wishbone</b>. Take it to <b>Bram</b>; he knows what it's for. Ask me what needs doing whenever you want more.
+dialogue.harvest_feast_host.extra_turkeys_ready.text = More turkeys? I'll never say no.\nThat's another roast for the table, and here's the <b>wishbone</b>. Bring it back to me when you're ready for the <b>Turkey Graveyard</b>. Ask me what needs doing whenever you want more.
 dialogue.harvest_feast_host.extra_turkeys_ready.opt.turnin = More turkeys for you.
 dialogue.harvest_feast_host.ready_generic.text = Let me see what you've brought.
 dialogue.harvest_feast_host.ready_generic.opt.turnin = It's done.
-dialogue.harvest_feast_host.who_are_you.text = Nobody important. I cook.\nWhen the fields are in, I come here, set out the long table and feed whoever turns up. Some years that's a dozen people. Some years it's everyone for miles.
-dialogue.harvest_feast_host.about_feast.text = It's a thank-you, mostly. The fields gave us plenty, and the least we can do is eat it together.\nYou bring something, you take something home. That's all the rules there are.
 dialogue.harvest_feast_host.opt.returned = I'm back.
 dialogue.harvest_feast_host.opt.quests = What needs doing?
 dialogue.harvest_feast_host.opt.shop = Let's see your shop.
+dialogue.harvest_feast_host.opt.graveyard = Tell me about the Turkey Graveyard.
 dialogue.harvest_feast_host.opt.standing = How do we stand?
 dialogue.harvest_feast_host.opt.almanac = Show me the Almanac.
-dialogue.harvest_feast_host.opt.who = Who are you?
-dialogue.harvest_feast_host.opt.feast = What's the feast for?
 dialogue.harvest_feast_host.opt.back = Something else.
+dialogue.harvest_feast_host.graveyard.text = Every turkey this feast eats leaves its soul behind. They gather in an old <b>graveyard</b>, and they won't rest. Neither will the big one.\nBring me a <b>Wishbone</b> and I'll send you and your party there. I give you one each time you hand in <b>Extra Turkeys</b>. Put the souls down, then the <b>Great Turkey</b>, and they'll settle.
+dialogue.harvest_feast_host.graveyard.opt.enter = Take me to the Turkey Graveyard. (costs a Wishbone)
 dialogue.harvest_feast_host.opt.farewell = See you at the table.
 
 # ---- The shared meal and the invitation tour ----
@@ -323,13 +322,11 @@ dialogue.harvest_feast_invitation.opt.invite = Come and eat with us at Martha's 
 # ---- The feast's villagers: Tomas the Miller, Elsie the Weaver and Bram the Shepherd ----
 dialogue.harvest_feast_miller.off_season.text = The feast's packed away, and so's the flour.\nI'll be back with more when the fields come in next year.
 dialogue.harvest_feast_miller.off_season.opt.farewell = Until next year, then.
-dialogue.harvest_feast_miller.greeting.text = Don't stand too close, the flour gets on everything.\nI've hauled sacks up from the mill all week so the ovens never go cold. I could do with a seat at the long table once the feast gets going.
-dialogue.harvest_feast_miller.mill.text = Down by the river, same as ever. The wheel turns whether I'm there or not.\nThis time of year every sack it grinds goes to the feast.
+dialogue.harvest_feast_miller.greeting.text = Tomas, from the mill. Every pie at this feast starts with my flour.\nIf you're baking, I can tell you how dough's made.
 dialogue.harvest_feast_miller.dough.text = Flour first. Grind <b>wheat</b> into <b>flour</b> at a <b>Chef's Stove</b>.\nThen mix the flour with <b>eggs</b> and a <b>tankard of water</b> at the same stove, and that's your dough. Bram knows where to find eggs.
 dialogue.harvest_feast_miller.opt.dough = How do I make dough?
-dialogue.harvest_feast_miller.opt.mill = Where's your mill?
+dialogue.harvest_feast_miller.opt.quests = What needs doing?
 dialogue.harvest_feast_miller.opt.thanks = Thanks, Tomas.
-dialogue.harvest_feast_miller.opt.back = Fair enough.
 dialogue.harvest_feast_miller.opt.farewell = I'll let you get back to it.
 dialogue.harvest_feast_miller.supper.text = Is that pumpkin pie? For me?\nStill warm, and she remembered I like the crust. Tell Martha I'll be first at the table next year, and I'll bring the flour.
 dialogue.harvest_feast_miller.supper.opt.give = Martha sent you supper.
@@ -341,13 +338,11 @@ dialogue.harvest_feast_miller.flour_ready.text = Fine as dust. That's proper flo
 dialogue.harvest_feast_miller.flour_ready.opt.turnin = Here's your flour.
 dialogue.harvest_feast_weaver.off_season.text = The feast is over and the cloths are folded away.\nCome and find me when the fields are in again. I will have new ones by then.
 dialogue.harvest_feast_weaver.off_season.opt.farewell = I'll look out for them.
-dialogue.harvest_feast_weaver.greeting.text = I have been at my loom since dawn. It is good to stand somewhere else for a change.\nI wove the cloths for the long table. It would be nice to sit down at the feast and eat off one of them for once.
-dialogue.harvest_feast_weaver.cloth.text = A runner for the middle of the table, wheat gold with an orange edge.\nSomebody always spills gravy on it, so I weave a new one every year.
+dialogue.harvest_feast_weaver.greeting.text = I am Elsie. I wove the cloths for Martha's long table.\nIf you are cooking, I can tell you where spices come from.
 dialogue.harvest_feast_weaver.spice.text = You make <b>Spices</b> at a <b>Chef's Stove</b>, from <b>flowers</b> and a <b>vegetable</b>.\nOr pick <b>pumpkins</b> by hand in the <b>autumn woods</b>. Every so often there is some spice beside one. I do not know why, and I do not ask.
 dialogue.harvest_feast_weaver.opt.spice = Where do I get spice?
-dialogue.harvest_feast_weaver.opt.cloth = What are you weaving now?
+dialogue.harvest_feast_weaver.opt.quests = What needs doing?
 dialogue.harvest_feast_weaver.opt.thanks = Thank you, Elsie.
-dialogue.harvest_feast_weaver.opt.back = It's lovely work.
 dialogue.harvest_feast_weaver.opt.farewell = I won't keep you.
 dialogue.harvest_feast_weaver.supper.text = Is that a roast vegetable? For me?\nMartha always notices who has not sat down. Thank you. I will eat it at the loom, and I will try not to spill any on the cloth.
 dialogue.harvest_feast_weaver.supper.opt.give = Martha saved you some supper.
@@ -359,13 +354,11 @@ dialogue.harvest_feast_weaver.spices_ready.text = That is a good color. The runn
 dialogue.harvest_feast_weaver.spices_ready.opt.turnin = Here are your spices.
 dialogue.harvest_feast_shepherd.off_season.text = Feast's done. I'm off back up the hill before the sheep wander any further.
 dialogue.harvest_feast_shepherd.off_season.opt.farewell = Safe walk home.
-dialogue.harvest_feast_shepherd.greeting.text = Came down from the hills with fleece for the weaver. The sheep can look after themselves for a few days.\nThey can't, really. But I wasn't going to miss the feast.
-dialogue.harvest_feast_shepherd.sheep.text = My sister. She says she doesn't mind.\nThat means I'm taking her back a whole pie.
+dialogue.harvest_feast_shepherd.greeting.text = Bram. I keep sheep up in the hills, and I know turkeys better than most.\nAsk if you want a tip.
 dialogue.harvest_feast_shepherd.turkeys.text = <b>Wild Turkeys</b> only come out by day. Look in the <b>woods</b> and out on the <b>plains</b>. They spook easy, so a bow helps.\nEggs come from <b>chickens</b>, not turkeys. And feed a turkey some <b>corn</b> and it's yours, though a tame one won't give you anything.
 dialogue.harvest_feast_shepherd.opt.turkeys = Any tips for turkeys?
-dialogue.harvest_feast_shepherd.opt.sheep = Who's watching your sheep?
+dialogue.harvest_feast_shepherd.opt.quests = What needs doing?
 dialogue.harvest_feast_shepherd.opt.thanks = Thanks, Bram.
-dialogue.harvest_feast_shepherd.opt.back = She's earned it.
 dialogue.harvest_feast_shepherd.opt.farewell = Enjoy the feast.
 dialogue.harvest_feast_shepherd.supper.text = That meat for me? Martha's doing, I bet.\nProper food. I've lived on bread all week. Tell her thanks, and don't tell my sister.
 dialogue.harvest_feast_shepherd.supper.opt.give = Martha sent you supper.
@@ -375,12 +368,8 @@ dialogue.harvest_feast_shepherd.eggs_offer.opt.later = Not today.
 dialogue.harvest_feast_shepherd.eggs_brief.text = <b>Eggs</b> come from <b>chickens</b> in a <b>Chicken Coop</b>. Catch chickens in a <b>Capture Crate</b>, house them in the coop, and bring me what they lay.
 dialogue.harvest_feast_shepherd.eggs_ready.text = Not one cracked. Good.\nTomas will be happy. Makes a change.
 dialogue.harvest_feast_shepherd.eggs_ready.opt.turnin = Here are the eggs.
-dialogue.harvest_feast_shepherd.opt.graveyard = Tell me about the Turkey Graveyard.
-dialogue.harvest_feast_shepherd.graveyard.text = Every turkey the feast eats leaves its soul behind. They end up in a <b>graveyard</b> I know, and they don't rest. Neither does the big one.\nBring me a <b>Wishbone</b> and I'll take you and your party in. Martha gives you one each time you hand her <b>Extra Turkeys</b>. Put the souls down, then the <b>Great Turkey</b>. They'll settle after that.
-dialogue.harvest_feast_shepherd.graveyard.opt.enter = Take me to the Turkey Graveyard. (costs a Wishbone, from Extra Turkeys)
-dialogue.harvest_feast_shepherd.graveyard.opt.back = Maybe later.
 
-# ---- The Turkey Graveyard: the dungeon Bram opens, its fight and the Great Turkey's Claim ----
+# ---- The Turkey Graveyard: the dungeon Martha opens, its fight and the Great Turkey's Claim ----
 # The graveyard's confirm screen and lines read these. Banners and notices print markup as text, so none of
 # those values carries any; the defeat line's {0} is the player's share of the fight in whole percent and
 # {1} how many seconds it took.
