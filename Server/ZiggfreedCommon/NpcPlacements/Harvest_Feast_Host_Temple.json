@@ -16,16 +16,20 @@
     "world's name does not. This placement authors no Identity.NpcId, so the character IS the role: the",
     "feast's quests bind to Harvest_Feast_Host.",
     "",
-    "Anchor is the temple's arrival spot plus an offset: four blocks along negative X, onto the open",
-    "landing, and two back along negative Z, across the landing from Old Jack's spot, so the two hosts",
-    "never share a spot even when a server owner moves a season's days. To move the host, edit",
-    "Anchor.WorldSpawn.Offset (small enough to stay off the walls) and Yaw to turn the host, then look",
-    "at the spot in game. To take the host out without editing this file, set enabled (lower case, as",
-    "that file spells it) to false for this id in mods/ziggfreedcommon/npc-placements.json.",
+    "Anchor is the temple's arrival spot plus an offset. A player arrives facing negative X and walks a",
+    "stone path three blocks wide (Z within 1.5 of the spot) into the round hall, past a row of statues",
+    "and stone benches three blocks to either side. Six blocks along negative X and eight along negative",
+    "Z is the open marble floor on the hall's north side, behind that row, so the host and the table",
+    "stand off the path and face it (Yaw 180 faces positive Z). Old Jack stands on the south side, so",
+    "the two hosts never share a spot even when a server owner moves a season's days. To move the host,",
+    "edit Anchor.WorldSpawn.Offset and Yaw, keeping a Z offset between -7 and -10 with the props as",
+    "they are (nearer than -7 the bench meets the statue row; past -10 is the north wall), then look at",
+    "the spot in game. To take the host out without editing this file, set enabled (lower case, as that file",
+    "spells it) to false for this id in mods/ziggfreedcommon/npc-placements.json.",
     "",
     "Props are the feast's supper table, drawn while Martha stands: a tavern table in front of her and a",
     "bench across it turned to face her, each offset from her spot along the world's own axes and raised",
-    "half a block (Y 0.5), because a block is drawn centred on the point it is given."
+    "half a block (Y 0.5), because a block is drawn centred on the point it is given. They move with her."
   ],
   "Name": "Harvest_Feast_Host_Temple",
   "Enabled": true,
@@ -38,7 +42,7 @@
   },
   "Anchor": {
     "WorldSpawn": {
-      "Offset": { "X": -4, "Z": -2 },
+      "Offset": { "X": -6, "Z": -8 },
       "Yaw": 180.0
     }
   },

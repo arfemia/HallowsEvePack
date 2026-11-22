@@ -80,3 +80,21 @@ Harvest_Feast_Harvest_Gloves.description = Soğukta toplamak için sıcak yün e
 Harvest_Feast_Harvest_Trousers.name = Hasat Pantolonu
 Harvest_Feast_Harvest_Trousers.description = Tarlada bir güne dayanan yün pantolon. Martha seni Aile saydığında dükkanında satar. Hasat Setinin parçası: daha fazlasını giy, daha fazla can kazan; setin tamamını giy, onun teveccühünü daha hızlı kazan.
 
+# Harvest Feast - Martha's three dishes, the recipe pages her shop sells for them, and what eating them does.
+Harvest_Feast_Turkey_Pie.name = Hindili Turta
+Harvest_Feast_Turkey_Pie.description = Martha'nın kendi etli turtası. Canı anında <color is="#ffffff">5%</color> yeniler ve şunları verir:\n\n• <color is="#ffffff">Can Yenilenmesi III</color>\n• <color is="#ffffff">Can Artışı IV</color>: azami can <color is="#ffffff">20%</color> artar, fiziksel ve mermi hasarı <color is="#ffffff">8%</color> azalır\n\nSüre: <color is="#ffffff">10:00</color>\n\nMartha'nın tarifini öğrendikten sonra bir Aşçı Ocağı'nda pişir.
+Harvest_Feast_Harvest_Salad.name = Hasat Salatası
+Harvest_Feast_Harvest_Salad.description = Bir tutam baharatlı havuç, mısır ve bal kabağı. Canı anında <color is="#ffffff">5%</color> yeniler ve şunları verir:\n\n• <color is="#ffffff">Can Yenilenmesi III</color>\n• <color is="#ffffff">Dayanıklılık Artışı IV</color>: azami dayanıklılık <color is="#ffffff">40%</color> artar\n\nSüre: <color is="#ffffff">10:00</color>\n\nMartha'nın tarifini öğrendikten sonra bir Aşçı Ocağı'nda yap.
+Harvest_Feast_Marthas_Roast.name = Martha'nın Kızartması
+Harvest_Feast_Marthas_Roast.description = Martha'nın en iyi yemeği, bir çubukta kızartılmış et ve sebze. Canı anında <color is="#ffffff">5%</color> yeniler ve şunları verir:\n\n• <color is="#ffffff">Can Yenilenmesi III</color>\n• <color is="#ffffff">Can Artışı IV</color>: azami can <color is="#ffffff">20%</color> artar, fiziksel ve mermi hasarı <color is="#ffffff">8%</color> azalır\n• <color is="#ffffff">Dayanıklılık Artışı IV</color>: azami dayanıklılık <color is="#ffffff">40%</color> artar\n• <color is="#ffffff">Teveccüh Artışı</color>: Martha'nın teveccühü <color is="#ffffff">10%</color> daha hızlı gelir\n\nSüre: <color is="#ffffff">10:00</color>\n\nMartha'nın tarifini öğrendikten sonra bir Aşçı Ocağı'nda pişir.
+Harvest_Feast_Recipe_Turkey_Pie.name = Tarif: Hindili Turta
+Harvest_Feast_Recipe_Turkey_Pie.description = <item is="Harvest_Feast_Turkey_Pie"/> tarifini öğretir. Bir Aşçı Ocağı'nda hamur, çiğ et ve baharattan pişir.\n\nCanı anında <color is="#ffffff">5%</color> yeniler ve şunları verir:\n\n• <color is="#ffffff">Can Yenilenmesi III</color>\n• <color is="#ffffff">Can Artışı IV</color>\n\nSüre: <color is="#ffffff">10:00</color>
+Harvest_Feast_Recipe_Harvest_Salad.name = Tarif: Hasat Salatası
+Harvest_Feast_Recipe_Harvest_Salad.description = <item is="Harvest_Feast_Harvest_Salad"/> tarifini öğretir. Bir Aşçı Ocağı'nda havuç, mısır, bir bal kabağı ve baharattan yap.\n\nCanı anında <color is="#ffffff">5%</color> yeniler ve şunları verir:\n\n• <color is="#ffffff">Can Yenilenmesi III</color>\n• <color is="#ffffff">Dayanıklılık Artışı IV</color>\n\nSüre: <color is="#ffffff">10:00</color>
+Harvest_Feast_Recipe_Marthas_Roast.name = Tarif: Martha'nın Kızartması
+Harvest_Feast_Recipe_Marthas_Roast.description = <item is="Harvest_Feast_Marthas_Roast"/> tarifini öğretir. Bir Aşçı Ocağı'nda bir çubuk, çiğ et, bir havuç, mısır, bir bal kabağı ve baharattan pişir.\n\nCanı anında <color is="#ffffff">5%</color> yeniler ve şunları verir:\n\n• <color is="#ffffff">Can Yenilenmesi III</color>\n• <color is="#ffffff">Can Artışı IV</color>\n• <color is="#ffffff">Dayanıklılık Artışı IV</color>\n• <color is="#ffffff">Teveccüh Artışı</color>\n\nSüre: <color is="#ffffff">10:00</color>
+effect.harvest_feast_food_regen.name = Can Yenilenmesi III
+effect.harvest_feast_food_health.name = Can Artışı IV
+effect.harvest_feast_food_stamina.name = Dayanıklılık Artışı IV
+effect.harvest_feast_food_favor.name = Teveccüh Artışı
+

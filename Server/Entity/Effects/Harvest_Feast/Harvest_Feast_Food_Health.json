@@ -1,0 +1,30 @@
+{
+  "$Comment": "The health half of Martha's dishes: eating a Turkey Pie or Martha's Roast puts it on. Shaped like the game's best meat buff (Meat_Buff_T3), stronger and longer: max health times 1.20 where the game's is 1.15, and 8% less physical and projectile damage where the game's is 5%, for 600 seconds (ten minutes) where the game's lasts six. Overwrite means eating another dish restarts it, never stacks it; each dish also clears the game's own meat buffs as it lands. Tune Amount or Duration here and both dishes follow; their descriptions in items.lang write these numbers out (Health Boost IV), so change them with it.",
+  "Name": "items.effect.harvest_feast_food_health.name",
+  "StatusEffectIcon": "UI/StatusEffects/AddHealth/Large.png",
+  "RawStatModifiers": {
+    "Health": [
+      {
+        "Amount": 1.20,
+        "CalculationType": "Multiplicative",
+        "Target": "Max"
+      }
+    ]
+  },
+  "DamageResistance": {
+    "Physical": [
+      {
+        "CalculationType": "Percent",
+        "Amount": 0.08
+      }
+    ],
+    "Projectile": [
+      {
+        "CalculationType": "Percent",
+        "Amount": 0.08
+      }
+    ]
+  },
+  "OverlapBehavior": "Overwrite",
+  "Duration": 600
+}

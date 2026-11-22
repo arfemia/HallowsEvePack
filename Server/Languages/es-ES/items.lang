@@ -80,3 +80,21 @@ Harvest_Feast_Harvest_Gloves.description = Guantes de lana abrigados para recoge
 Harvest_Feast_Harvest_Trousers.name = Pantalones de la Cosecha
 Harvest_Feast_Harvest_Trousers.description = Pantalones de lana que aguantan un día entero en el campo. Martha los vende en su tienda cuando eres De la Familia. Parte del Conjunto de la Cosecha: lleva más piezas para más salud, y el conjunto entero para ganar su favor más rápido.
 
+# Harvest Feast - Martha's three dishes, the recipe pages her shop sells for them, and what eating them does.
+Harvest_Feast_Turkey_Pie.name = Pastel de Pavo
+Harvest_Feast_Turkey_Pie.description = El pastel de carne de Martha. Restaura al instante el <color is="#ffffff">5%</color> de la salud y concede:\n\n• <color is="#ffffff">Regeneración de Salud III</color>\n• <color is="#ffffff">Aumento de Salud IV</color>: un <color is="#ffffff">20%</color> más de salud máxima y un <color is="#ffffff">8%</color> menos de daño físico y de proyectiles\n\nDuración: <color is="#ffffff">10:00</color>\n\nHornéalo en una Cocina del Chef cuando hayas aprendido la receta de Martha.
+Harvest_Feast_Harvest_Salad.name = Ensalada de la Cosecha
+Harvest_Feast_Harvest_Salad.description = Zanahorias, maíz y calabaza con una pizca de especias. Restaura al instante el <color is="#ffffff">5%</color> de la salud y concede:\n\n• <color is="#ffffff">Regeneración de Salud III</color>\n• <color is="#ffffff">Aumento de Resistencia IV</color>: un <color is="#ffffff">40%</color> más de resistencia máxima\n\nDuración: <color is="#ffffff">10:00</color>\n\nPrepárala en una Cocina del Chef cuando hayas aprendido la receta de Martha.
+Harvest_Feast_Marthas_Roast.name = Asado de Martha
+Harvest_Feast_Marthas_Roast.description = El mejor plato de Martha, carne y verduras asadas en un palo. Restaura al instante el <color is="#ffffff">5%</color> de la salud y concede:\n\n• <color is="#ffffff">Regeneración de Salud III</color>\n• <color is="#ffffff">Aumento de Salud IV</color>: un <color is="#ffffff">20%</color> más de salud máxima y un <color is="#ffffff">8%</color> menos de daño físico y de proyectiles\n• <color is="#ffffff">Aumento de Resistencia IV</color>: un <color is="#ffffff">40%</color> más de resistencia máxima\n• <color is="#ffffff">Aumento de Favor</color>: el favor de Martha sube un <color is="#ffffff">10%</color> más rápido\n\nDuración: <color is="#ffffff">10:00</color>\n\nCocínalo en una Cocina del Chef cuando hayas aprendido la receta de Martha.
+Harvest_Feast_Recipe_Turkey_Pie.name = Receta: Pastel de Pavo
+Harvest_Feast_Recipe_Turkey_Pie.description = Enseña la receta de <item is="Harvest_Feast_Turkey_Pie"/>. Hornéalo en una Cocina del Chef con masa, carne cruda y especias.\n\nRestaura al instante el <color is="#ffffff">5%</color> de la salud y concede:\n\n• <color is="#ffffff">Regeneración de Salud III</color>\n• <color is="#ffffff">Aumento de Salud IV</color>\n\nDuración: <color is="#ffffff">10:00</color>
+Harvest_Feast_Recipe_Harvest_Salad.name = Receta: Ensalada de la Cosecha
+Harvest_Feast_Recipe_Harvest_Salad.description = Enseña la receta de <item is="Harvest_Feast_Harvest_Salad"/>. Prepárala en una Cocina del Chef con zanahorias, maíz, una calabaza y especias.\n\nRestaura al instante el <color is="#ffffff">5%</color> de la salud y concede:\n\n• <color is="#ffffff">Regeneración de Salud III</color>\n• <color is="#ffffff">Aumento de Resistencia IV</color>\n\nDuración: <color is="#ffffff">10:00</color>
+Harvest_Feast_Recipe_Marthas_Roast.name = Receta: Asado de Martha
+Harvest_Feast_Recipe_Marthas_Roast.description = Enseña la receta de <item is="Harvest_Feast_Marthas_Roast"/>. Cocínalo en una Cocina del Chef con un palo, carne cruda, una zanahoria, maíz, una calabaza y especias.\n\nRestaura al instante el <color is="#ffffff">5%</color> de la salud y concede:\n\n• <color is="#ffffff">Regeneración de Salud III</color>\n• <color is="#ffffff">Aumento de Salud IV</color>\n• <color is="#ffffff">Aumento de Resistencia IV</color>\n• <color is="#ffffff">Aumento de Favor</color>\n\nDuración: <color is="#ffffff">10:00</color>
+effect.harvest_feast_food_regen.name = Regeneración de Salud III
+effect.harvest_feast_food_health.name = Aumento de Salud IV
+effect.harvest_feast_food_stamina.name = Aumento de Resistencia IV
+effect.harvest_feast_food_favor.name = Aumento de Favor
+

@@ -1,0 +1,13 @@
+{
+  "$Comment": "The recipe page for Martha's Turkey Pie (Harvest_Feast_Recipe_Turkey_Pie), the first of her three dishes, open to anyone at her shop. Reading it teaches the dish for good, so a player buys it once (Limits.Total). Its picture is the dish.",
+  "Parent": "Harvest_Feast_Offer_Base",
+  "Text": {
+    "TitleKey": "shop.harvest_feast_offer_recipe_turkey_pie.title",
+    "FlavorKey": "shop.harvest_feast_offer_recipe_turkey_pie.desc"
+  },
+  "Icon": "Harvest_Feast_Turkey_Pie",
+  "Listing": { "Category": "kitchen", "SortOrder": 10 },
+  "Cost": { "Currencies": { "Harvest_Feast_Coins": 40 } },
+  "Limits": { "Total": 1 },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Harvest_Feast_Recipe_Turkey_Pie", "Count": 1 } } ]
+}

@@ -1,0 +1,20 @@
+{
+  "$Comment": "The stamina half of Martha's dishes: eating a Harvest Salad or Martha's Roast puts it on. Shaped like the game's best fruit and vegetable buff (FruitVeggie_Buff_T3), stronger and longer: max stamina times 1.40 where the game's is 1.30, and 0.07 stamina back every tenth of a second (DamageCalculatorCooldown) where the game's gives 0.05, for 600 seconds (ten minutes) where the game's lasts six. Overwrite means eating another dish restarts it, never stacks it; each dish also clears the game's own fruit and vegetable buffs as it lands. Tune Amount or Duration here and both dishes follow; their descriptions in items.lang write these numbers out (Stamina Boost IV), so change them with it.",
+  "Name": "items.effect.harvest_feast_food_stamina.name",
+  "StatusEffectIcon": "UI/StatusEffects/Stamina/Large.png",
+  "StatModifiers": {
+    "Stamina": 0.07
+  },
+  "RawStatModifiers": {
+    "Stamina": [
+      {
+        "Amount": 1.40,
+        "CalculationType": "Multiplicative",
+        "Target": "Max"
+      }
+    ]
+  },
+  "OverlapBehavior": "Overwrite",
+  "Duration": 600,
+  "DamageCalculatorCooldown": 0.1
+}

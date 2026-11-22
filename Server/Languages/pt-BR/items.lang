@@ -79,3 +79,21 @@ Harvest_Feast_Harvest_Gloves.description = Luvas de lã quentinhas para colher n
 Harvest_Feast_Harvest_Trousers.name = Calça da Colheita
 Harvest_Feast_Harvest_Trousers.description = Calça de lã que aguenta um dia inteiro nos campos. A Martha vende na loja dela quando te considera Da Família. Parte do Conjunto da Colheita: use mais peças para ter mais vida, e o conjunto inteiro para ganhar o favor dela mais rápido.
 
+# Harvest Feast - Martha's three dishes, the recipe pages her shop sells for them, and what eating them does.
+Harvest_Feast_Turkey_Pie.name = Torta de Peru
+Harvest_Feast_Turkey_Pie.description = A torta de carne da própria Martha. Restaura instantaneamente <color is="#ffffff">5%</color> da vida e concede:\n\n• <color is="#ffffff">Regeneração de Vida III</color>\n• <color is="#ffffff">Aumento de Vida IV</color>: <color is="#ffffff">20%</color> a mais de vida máxima e <color is="#ffffff">8%</color> a menos de dano físico e de projéteis\n\nDuração: <color is="#ffffff">10:00</color>\n\nAsse num Forno do Chefe depois de aprender a receita da Martha.
+Harvest_Feast_Harvest_Salad.name = Salada da Colheita
+Harvest_Feast_Harvest_Salad.description = Cenouras, milho e abóbora com uma pitada de tempero. Restaura instantaneamente <color is="#ffffff">5%</color> da vida e concede:\n\n• <color is="#ffffff">Regeneração de Vida III</color>\n• <color is="#ffffff">Aumento de Estâmina IV</color>: <color is="#ffffff">40%</color> a mais de estâmina máxima\n\nDuração: <color is="#ffffff">10:00</color>\n\nFaça num Forno do Chefe depois de aprender a receita da Martha.
+Harvest_Feast_Marthas_Roast.name = Assado da Martha
+Harvest_Feast_Marthas_Roast.description = O melhor prato da Martha, carne e legumes assados num graveto. Restaura instantaneamente <color is="#ffffff">5%</color> da vida e concede:\n\n• <color is="#ffffff">Regeneração de Vida III</color>\n• <color is="#ffffff">Aumento de Vida IV</color>: <color is="#ffffff">20%</color> a mais de vida máxima e <color is="#ffffff">8%</color> a menos de dano físico e de projéteis\n• <color is="#ffffff">Aumento de Estâmina IV</color>: <color is="#ffffff">40%</color> a mais de estâmina máxima\n• <color is="#ffffff">Aumento de Favor</color>: o favor da Martha sobe <color is="#ffffff">10%</color> mais rápido\n\nDuração: <color is="#ffffff">10:00</color>\n\nCozinhe num Forno do Chefe depois de aprender a receita da Martha.
+Harvest_Feast_Recipe_Turkey_Pie.name = Receita: Torta de Peru
+Harvest_Feast_Recipe_Turkey_Pie.description = Ensina a receita de <item is="Harvest_Feast_Turkey_Pie"/>. Asse num Forno do Chefe com massa, carne crua e tempero.\n\nRestaura instantaneamente <color is="#ffffff">5%</color> da vida e concede:\n\n• <color is="#ffffff">Regeneração de Vida III</color>\n• <color is="#ffffff">Aumento de Vida IV</color>\n\nDuração: <color is="#ffffff">10:00</color>
+Harvest_Feast_Recipe_Harvest_Salad.name = Receita: Salada da Colheita
+Harvest_Feast_Recipe_Harvest_Salad.description = Ensina a receita de <item is="Harvest_Feast_Harvest_Salad"/>. Faça num Forno do Chefe com cenouras, milho, uma abóbora e tempero.\n\nRestaura instantaneamente <color is="#ffffff">5%</color> da vida e concede:\n\n• <color is="#ffffff">Regeneração de Vida III</color>\n• <color is="#ffffff">Aumento de Estâmina IV</color>\n\nDuração: <color is="#ffffff">10:00</color>
+Harvest_Feast_Recipe_Marthas_Roast.name = Receita: Assado da Martha
+Harvest_Feast_Recipe_Marthas_Roast.description = Ensina a receita de <item is="Harvest_Feast_Marthas_Roast"/>. Cozinhe num Forno do Chefe com um graveto, carne crua, uma cenoura, milho, uma abóbora e tempero.\n\nRestaura instantaneamente <color is="#ffffff">5%</color> da vida e concede:\n\n• <color is="#ffffff">Regeneração de Vida III</color>\n• <color is="#ffffff">Aumento de Vida IV</color>\n• <color is="#ffffff">Aumento de Estâmina IV</color>\n• <color is="#ffffff">Aumento de Favor</color>\n\nDuração: <color is="#ffffff">10:00</color>
+effect.harvest_feast_food_regen.name = Regeneração de Vida III
+effect.harvest_feast_food_health.name = Aumento de Vida IV
+effect.harvest_feast_food_stamina.name = Aumento de Estâmina IV
+effect.harvest_feast_food_favor.name = Aumento de Favor
+
