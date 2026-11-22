@@ -1,0 +1,8 @@
+{
+  "$Comment": "Harvest Coins: what Martha pays for every quest and board job, and what her own shelves charge (her festival shelf still takes Festival Tokens). A plain number this server keeps for each player, so it cannot be dropped, traded or lost. It has no OnDeath and no Decay, so unspent coins keep from one feast to the next. Season takes the wallet out of every balance strip while the feast is off; balances are kept. The pay tables (Lootables/SeasonsOfOrbis/Harvest_Feast_*_Pay.json) pay it on their first roll through the Currency reward kind, and a few quests, achievements and the skill jobs pay it on their own rows. Its name is the key currency.harvest_feast_coins.name. Text.FlavorKey is the one line saying what the coins are for: it shows under the name when a player hovers the wallet, and once in a notice the first time they earn some while the feast runs.",
+  "Text": { "FlavorKey": "currency.harvest_feast_coins.description" },
+  "Icon": "Plant_Crop_Corn_Item",
+  "Color": "#d9a441",
+  "Cap": 0,
+  "Season": "Harvest_Feast"
+}

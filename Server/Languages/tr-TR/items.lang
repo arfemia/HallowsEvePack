@@ -70,3 +70,13 @@ Hallows_Eve_Horsemans_Reins.command_calm = Sakinleştir
 Hallows_Eve_Horsemans_Steed_Trophy.name = Süvari'nin At Kupası
 Hallows_Eve_Horsemans_Steed_Trophy.description = Başsız Süvari'nin zırhlı kara atının, altın kenarlı bir kaide üstünde minik bir figürü. Dilediğin yere koy. Ara sıra Boss Zaferi ödülünde bulunur; Yaşlı Jack da bir tanesini satar.
 
+# Harvest Feast - the Harvest Set, sold at Martha's shop.
+Harvest_Feast_Harvest_Hat.name = Hasat Şapkası
+Harvest_Feast_Harvest_Hat.description = Tarlada geçen uzun günler için sıcak bir yün şapka. Martha seni Dost saydığında dükkanında satar. Hasat Setinin parçası: daha fazlasını giy, daha fazla can kazan; setin tamamını giy, onun teveccühünü daha hızlı kazan.
+Harvest_Feast_Harvest_Tunic.name = Hasat Tuniği
+Harvest_Feast_Harvest_Tunic.description = Tarlada geçen uzun günler için bir yün tunik. Martha'nın nezdinde Sofra Başı olduğunda dükkanında satılır. Hasat Setinin parçası: daha fazlasını giy, daha fazla can kazan; setin tamamını giy, onun teveccühünü daha hızlı kazan.
+Harvest_Feast_Harvest_Gloves.name = Hasat Eldivenleri
+Harvest_Feast_Harvest_Gloves.description = Soğukta toplamak için sıcak yün eldivenler. Martha seni Komşu saydığında dükkanında satar. Hasat Setinin parçası: daha fazlasını giy, daha fazla can kazan; setin tamamını giy, onun teveccühünü daha hızlı kazan.
+Harvest_Feast_Harvest_Trousers.name = Hasat Pantolonu
+Harvest_Feast_Harvest_Trousers.description = Tarlada bir güne dayanan yün pantolon. Martha seni Aile saydığında dükkanında satar. Hasat Setinin parçası: daha fazlasını giy, daha fazla can kazan; setin tamamını giy, onun teveccühünü daha hızlı kazan.
+

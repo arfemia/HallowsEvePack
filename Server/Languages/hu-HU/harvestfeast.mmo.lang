@@ -8,14 +8,19 @@
 board.harvest_feast_daily.grade.skill = Képességmunka
 
 # ---- The skill jobs ----
-quest.mmo_harvest_feast_daily_harvesting.title = Teli Földek
+quest.mmo_harvest_feast_daily_harvesting.title = Aratási Munka
 quest.mmo_harvest_feast_daily_harvesting.flavor = Több terem odakint a földeken, mint amennyit egy pár kéz be tud hordani. Töltsd a mai napot szedéssel, és légy benne gyorsabb.
-quest.mmo_harvest_feast_daily_crafting.title = Zsúfolt Munkapadok
+quest.mmo_harvest_feast_daily_crafting.title = Craftolási Munka
 quest.mmo_harvest_feast_daily_crafting.flavor = A munkapadok ezen a héten nem hűlnek ki. Töltsd a mai napot készítéssel; bármelyik munkapad megteszi.
-quest.mmo_harvest_feast_daily_archery.title = Vadász Gyakorlat
-quest.mmo_harvest_feast_daily_archery.flavor = A pulykák egy lépéstől is megriadnak. Tanulj meg messziről leteríteni őket, és a sült hálás lesz.
-quest.mmo_harvest_feast_daily_woodcutting.title = Sütőfa
+quest.mmo_harvest_feast_daily_archery.title = Íjászati Munka
+quest.mmo_harvest_feast_daily_archery.flavor = A pulykák egy lépéstől is megriadnak. Vadássz íjjal az Emerald Wilds-ban, és a sült hálás lesz.
+quest.mmo_harvest_feast_daily_woodcutting.title = Favágási Munka
 quest.mmo_harvest_feast_daily_woodcutting.flavor = A sütők egész héten falják a fát. Vágj ki néhány fát, és tartsd égve a tüzet.
 
 # ---- The feast's boost ----
 boostrule.mmo_harvest_feast_harvesting.title = Aratási Lakoma
+
+# ---- The Harvest Set's skill half ----
+# A set's notice is a toast, so no value carries markup.
+gearset.mmo_harvest_feast_harvest_set.tier_half = Plusz Aratás XP.
+gearset.mmo_harvest_feast_harvest_set.tier_full = Megint több Aratás XP, és jobb szerencse, amikor aratsz.

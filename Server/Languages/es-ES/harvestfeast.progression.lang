@@ -6,33 +6,55 @@
 # .flavor, achievement.<id>.title and .desc), so no content file names those. Numbers ride {0} and
 # come from the content files, so a retune never touches a translation.
 
+# ---- Harvest Coins ----
+currency.harvest_feast_coins.name = Monedas de la Cosecha
+currency.harvest_feast_coins.amount = {0, number} {0, plural, one {Moneda de la Cosecha} other {Monedas de la Cosecha}}
+currency.harvest_feast_coins.description = Gástalas en la tienda de Martha en el Templo Olvidado.
+
 # ---- Martha's reputation ----
-reputation.harvest_feast_host.name = Favor del Banquete
+reputation.harvest_feast_host.name = Favor de Martha
 reputation.harvest_feast_host.flavor = Martha recuerda quién vino a ayudar y quién solo vino a comer.
 reputation.harvest_feast_host.rank.neutral = Recién Llegado
 reputation.harvest_feast_host.rank.friendly = Vecino
-reputation.harvest_feast_host.rank.honored = Cara Conocida
+reputation.harvest_feast_host.rank.honored = Amigo
 reputation.harvest_feast_host.rank.revered = De la Familia
 reputation.harvest_feast_host.rank.exalted = Cabecera de la Mesa
+reputation.harvest_feast_host.earn.quests = Haz sus misiones y sus encargos diarios.
+reputation.harvest_feast_host.earn.board = Coge trabajos del Tablón del Banquete.
+reputation.harvest_feast_host.earn.talk = Pasa a charlar una vez al día.
+reputation.harvest_feast_host.earn.turkeys = Abate Pavos Silvestres en las Emerald Wilds y llévale Pavos Extra tantas veces como quieras.
+reputation.harvest_feast_host.earn.gear = Lleva el Conjunto de la Cosecha de su tienda y ganarás su favor más rápido.
+lootable.harvest_feast_feast_basket.title = Cesta del Banquete
+lootable.harvest_feast_feast_basket.flavor = Martha te prepara una cada vez que tu favor con ella sube otro escalón más allá de Cabecera de la Mesa.
+notify.harvest_feast_feast_basket = Una Cesta del Banquete de Martha, por toda tu ayuda en la mesa.
 
 # ---- The feast board ----
 board.harvest_feast_daily.title = Tablón del Banquete
 board.harvest_feast_daily.desc = Trabajos del campo y de la cocina, nuevos cada mañana. Cuanto más ayudas, más te reservo. Cobra antes de que se recoja la mesa. Si llegas tarde, lo que hayas ganado te espera en tu Libro de Misiones.
 board.harvest_feast_daily.grade.field = Trabajo de Campo
 board.harvest_feast_daily.grade.kitchen = Trabajo de Cocina
-quest.harvest_feast_board_turkeys.title = Batida de Pavos
-quest.harvest_feast_board_turkeys.flavor = El bosque está lleno de pavos esta semana. Abate unos cuantos, si logras alcanzarlos; corren como si supieran qué hay para cenar.
-quest.harvest_feast_board_wheat.title = Siega del Trigo
-quest.harvest_feast_board_wheat.flavor = El trigo silvestre no espera a nadie. Recógelo antes de que llegue la helada.
-quest.harvest_feast_board_pies.title = Pasteles para la Mesa
-quest.harvest_feast_board_pies.flavor = Cada asiento de la mesa quiere su trozo. Hornea un par de pasteles de calabaza y tráelos mientras estén calientes.
-quest.harvest_feast_board_roast.title = Hoguera de Asar
-quest.harvest_feast_board_roast.flavor = Cocina un buen montón de carne al fuego. Solo con el olor ya viene la gente a la mesa.
+quest.harvest_feast_board_turkeys.title = Trabajo de Pavos
+quest.harvest_feast_board_turkeys.flavor = Abate Pavos Silvestres de día en el bosque y en las llanuras de las Emerald Wilds. Corren como si supieran qué hay para cenar.
+quest.harvest_feast_board_wheat.title = Trabajo de Trigo
+quest.harvest_feast_board_wheat.flavor = Recoge trigo silvestre a mano en las llanuras de las Emerald Wilds. No esperará a la helada.
+quest.harvest_feast_board_pumpkins.title = Trabajo de Calabazas
+quest.harvest_feast_board_pumpkins.flavor = Recoge calabazas a mano en los bosques otoñales de las Emerald Wilds. Todo pastel empieza con una.
+quest.harvest_feast_board_carrots.title = Trabajo de Zanahorias
+quest.harvest_feast_board_carrots.flavor = Recoge zanahorias a mano en los bosques de las Emerald Wilds. Quiero una cesta llena para la mesa.
+quest.harvest_feast_board_pies.title = Trabajo de Pasteles
+quest.harvest_feast_board_pies.flavor = Hornea pasteles de calabaza en un Fogón de Chef y tráelos a la mesa mientras estén calientes.
+quest.harvest_feast_board_roast.title = Trabajo de Cocina
+quest.harvest_feast_board_roast.flavor = Cocina carne cruda en una Hoguera y tráela a la mesa. Solo con el olor ya viene la gente.
+quest.harvest_feast_board_vegetables.title = Trabajo de Verduras
+quest.harvest_feast_board_vegetables.flavor = Asa verduras en una Hoguera y tráelas a la mesa. Vale una zanahoria, maíz, una calabaza o una seta.
+quest.harvest_feast_board_spices.title = Trabajo de Especias
+quest.harvest_feast_board_spices.flavor = Prepara Especias en un Fogón de Chef con flores y una verdura, o quédate las que encuentres recogiendo calabazas. Tráelas aquí.
 
 # ---- The feast stall ----
 shop.harvest_feast_host.title = Tienda del Banquete
-shop.harvest_feast_host.desc = Recetas de mi propio libro, palomitas por bolsas y unas cuantas cosas para la casa.
+shop.harvest_feast_host.desc = Recetas de mi propio libro, palomitas por bolsas, ropa para el campo y unas cuantas cosas para la casa.
 shop.harvest_feast_host.category.kitchen = Cocina
+shop.harvest_feast_host.category.clothes = Ropa
 shop.harvest_feast_host.category.decor = Decoración
 shop.harvest_feast_offer_recipe_apple_pie.title = Receta de Pastel de Manzana
 shop.harvest_feast_offer_recipe_apple_pie.desc = Léela una vez y sabrás hornear pasteles de manzana para siempre.
@@ -40,29 +62,45 @@ shop.harvest_feast_offer_recipe_meat_pie.title = Receta de Pastel de Carne
 shop.harvest_feast_offer_recipe_meat_pie.desc = El pastel de carne de la propia Martha, anotado para los amigos de la mesa.
 shop.harvest_feast_offer_recipe_caesar_salad.title = Receta de Ensalada César
 shop.harvest_feast_offer_recipe_caesar_salad.desc = La ensalada César de Martha, anotada para la familia.
+shop.harvest_feast_offer_harvest_gloves.title = Guantes de la Cosecha
+shop.harvest_feast_offer_harvest_gloves.desc = Guantes de lana abrigados, parte del Conjunto de la Cosecha. Lleva el conjunto entero y ganarás el favor de Martha más rápido.
+shop.harvest_feast_offer_harvest_hat.title = Sombrero de la Cosecha
+shop.harvest_feast_offer_harvest_hat.desc = Un sombrero de lana abrigado, parte del Conjunto de la Cosecha. Lleva el conjunto entero y ganarás el favor de Martha más rápido.
+shop.harvest_feast_offer_harvest_trousers.title = Pantalones de la Cosecha
+shop.harvest_feast_offer_harvest_trousers.desc = Pantalones de lana para el campo, parte del Conjunto de la Cosecha. Lleva el conjunto entero y ganarás el favor de Martha más rápido.
+shop.harvest_feast_offer_harvest_tunic.title = Túnica de la Cosecha
+shop.harvest_feast_offer_harvest_tunic.desc = Una túnica de lana, la última pieza del Conjunto de la Cosecha. Lleva el conjunto entero y ganarás el favor de Martha más rápido.
+
+# ---- The Harvest Set ----
+# A set's notice is a toast, so no value carries markup.
+gearset.harvest_feast_harvest_set.title = Conjunto de la Cosecha
+gearset.harvest_feast_harvest_set.tier_half = Medio conjunto puesto: un poco más de salud.
+gearset.harvest_feast_harvest_set.tier_full = El conjunto entero puesto: más salud todavía, y ganas el favor de Martha más rápido.
 
 # ---- Martha's intro quest ----
-quest.harvest_feast_martha_meet.title = Cena en el Templo
+quest.harvest_feast_martha_meet.title = Conoce a Martha
 quest.harvest_feast_martha_meet.flavor = La cosecha está recogida, así que vuelvo a cocinar en el Templo Olvidado. Cualquier Portal al Templo Olvidado te lleva hasta allí. Ven a buscarme, y ven con hambre.
 objective.harvest_feast.meet_martha = Encuentra a Martha la Cocinera en el Templo Olvidado
 
 # ---- Martha's questline and the yearly feast ----
-quest.harvest_feast_host_1.title = Trigo para los Hornos
-quest.harvest_feast_host_1.flavor = Primero el pan, siempre. El trigo silvestre crece espeso en esta época, así que tráeme un buen brazado para los hornos.
-quest.harvest_feast_host_2.title = La Caza del Pavo
-quest.harvest_feast_host_2.flavor = Los pavos silvestres están gordos y ruidosos este mes, y no son tan tontos como parecen. Abate unos cuantos; la mesa no sirve de nada sin un asado.
-quest.harvest_feast_host_3.title = El Primer Pastel
-quest.harvest_feast_host_3.flavor = Te toca ponerte ante los fogones. Aprende esa receta, hornea un pastel de calabaza en un Fogón de Chef y tráemelo.
-quest.harvest_feast_the_feast.title = La Mesa Larga
-quest.harvest_feast_the_feast.flavor = Una vez al año lo ponemos todo en la mesa y comemos hasta que nadie se tiene en pie. Trae un pastel, algo de asado y una cesta de zanahorias, y lo serviremos juntos.
+quest.harvest_feast_host_1.title = Siega del Trigo
+quest.harvest_feast_host_1.flavor = Primero el pan, siempre. El trigo silvestre crece en las llanuras de las Emerald Wilds. Recógeme un buen brazado a mano y tráelo al Templo Olvidado.
+quest.harvest_feast_host_2.title = Caza del Pavo
+quest.harvest_feast_host_2.flavor = Los Pavos Silvestres andan de día por el bosque y las llanuras de las Emerald Wilds. Abate unos cuantos y vuelve conmigo. La mesa no sirve de nada sin un asado.
+quest.harvest_feast_host_3.title = Tu Primer Pastel
+quest.harvest_feast_host_3.flavor = Te toca ponerte ante los fogones. Usa la receta que te di para aprenderla, hornea un pastel de calabaza en un Fogón de Chef con masa, una calabaza y especia, y tráemelo.
+quest.harvest_feast_the_feast.title = El Banquete
+quest.harvest_feast_the_feast.flavor = Una vez al año lo ponemos todo en la mesa. Hornea un pastel de calabaza en un Fogón de Chef, cocina carne en una Hoguera, recoge zanahorias en los bosques y tráemelo todo.
 
-# ---- Martha's dailies ----
-quest.harvest_feast_daily_turkeys.title = Carrera de Pavos
-quest.harvest_feast_daily_turkeys.flavor = El asado de ayer quedó en el hueso. Tráeme unos cuantos pavos más y pondré otro.
-quest.harvest_feast_daily_wheat.title = Pan para la Mañana
-quest.harvest_feast_daily_wheat.flavor = Todas las hogazas que horneé hoy ya se han ido. Tráeme más trigo, o mañana no hay pan.
-quest.harvest_feast_daily_roast.title = Asado para la Mesa
-quest.harvest_feast_daily_roast.flavor = Cocina algo de carne al fuego y tráela aquí. La gente se la come antes de que llegue a la mesa.
+# ---- Martha's dailies and Extra Turkeys ----
+quest.harvest_feast_daily_turkeys.title = Pavos Diarios
+quest.harvest_feast_daily_turkeys.flavor = El asado de ayer quedó en el hueso. Abate unos cuantos Pavos Silvestres más en las Emerald Wilds y pondré otro.
+quest.harvest_feast_daily_wheat.title = Trigo Diario
+quest.harvest_feast_daily_wheat.flavor = Todas las hogazas que horneé hoy ya se han ido. Tráeme más trigo de las llanuras, o mañana no hay pan.
+quest.harvest_feast_daily_roast.title = Asado Diario
+quest.harvest_feast_daily_roast.flavor = Cocina carne cruda en una Hoguera y tráela aquí. La gente se la come antes de que llegue a la mesa.
+quest.harvest_feast_extra_turkeys.title = Pavos Extra
+quest.harvest_feast_extra_turkeys.flavor = Aceptaré todos los pavos que atrapes. Abate más Pavos Silvestres en las Emerald Wilds y vuelve conmigo. Hazlo tantas veces como quieras.
 
 # ---- Steps worded for this season ----
 objective.harvest_feast.attend = Participa en el Banquete de la Cosecha
@@ -71,27 +109,43 @@ objective.harvest_feast.bring_pies = Trae {0} Pasteles de Calabaza
 objective.harvest_feast.bring_carrots = Trae {0} Zanahorias
 objective.harvest_feast.bring_pie = Trae un Pastel de Calabaza
 objective.harvest_feast.bring_roast = Trae {0} de Carne Silvestre Cocinada
+objective.harvest_feast.pick_pumpkins = Recoge {0} {0, plural, one {Calabaza} other {Calabazas}}
+objective.harvest_feast.pick_carrots = Recoge {0} {0, plural, one {Zanahoria} other {Zanahorias}}
+objective.harvest_feast.bring_vegetables = Trae {0} {0, plural, one {Verdura Asada} other {Verduras Asadas}}
+objective.harvest_feast.bring_spices = Trae {0} Especias
+objective.harvest_feast.wear_harvest_set = Viste {0} {0, plural, one {pieza} other {piezas}} del Conjunto de la Cosecha
 
 # ---- Achievements ----
 achievement.category.seasons.harvest_feast = Banquete de la Cosecha
-achievement.harvest_feast_guest.title = Un Asiento en la Mesa {0}
+achievement.harvest_feast_guest.title = Invitado al Banquete {0}
 achievement.harvest_feast_guest.desc = Participa en el Banquete de la Cosecha.
 achievement.harvest_feast_turkey_chaser.title = Cazapavos {0}
 achievement.harvest_feast_turkey_chaser.desc = Abate {0} Pavos Silvestres.
 achievement.harvest_feast_full_baskets.title = Cestas Llenas {0}
 achievement.harvest_feast_full_baskets.desc = Recoge {0} cultivos a mano.
 achievement.harvest_feast_keepsake.title = Plato del Banquete {0}
-achievement.harvest_feast_keepsake.desc = Siéntate a comer en la mesa larga del banquete.
+achievement.harvest_feast_keepsake.desc = Siéntate a comer en El Banquete con Martha.
 keepsake.harvest_feast_plate.name = Plato del Banquete de {0}
 achievement.harvest_feast_full_table.title = La Mesa Completa {0}
 achievement.harvest_feast_full_table.desc = Consigue todos los logros del Banquete de la Cosecha de este año.
+achievement.harvest_feast_harvest_set.title = Conjunto de la Cosecha
+achievement.harvest_feast_harvest_set.desc = Lleva entero el Conjunto de la Cosecha de la tienda de Martha.
 
 # ---- The Full Table title ----
 title.harvest_feast_full_table.name = La Mesa Completa
 title.harvest_feast_full_table.flavor = Consiguió todos los logros del Banquete de la Cosecha de un mismo año.
 title.harvest_feast_full_table.display = {0} de la Mesa Completa
 
-# ---- Head of the Table: the achievement and its title, for Martha's top rank ----
+# ---- Martha's ranks: an achievement and a gift at each, and a title at Head of the Table ----
+achievement.harvest_feast_marthas_neighbor.title = Vecino de Martha
+achievement.harvest_feast_marthas_neighbor.desc = Conviértete en Vecino de Martha.
+objective.harvest_feast.neighbor = Alcanza el rango de Vecino con Martha
+achievement.harvest_feast_marthas_friend.title = Amigo de Martha
+achievement.harvest_feast_marthas_friend.desc = Conviértete en Amigo de Martha.
+objective.harvest_feast.friend = Alcanza el rango de Amigo con Martha
+achievement.harvest_feast_marthas_family.title = Familia de Martha
+achievement.harvest_feast_marthas_family.desc = Pasa a formar parte de la familia de Martha.
+objective.harvest_feast.family = Llega a ser De la Familia con Martha
 achievement.harvest_feast_head_of_the_table.title = Cabecera de la Mesa
 achievement.harvest_feast_head_of_the_table.desc = Conviértete en Cabecera de la Mesa con Martha.
 objective.harvest_feast.head_of_the_table = Conviértete en Cabecera de la Mesa con Martha
@@ -113,39 +167,42 @@ dialogue.harvest_feast_host.meet_arrival.text = Has caminado hasta aquí con el 
 dialogue.harvest_feast_host.meet_arrival.opt.hail = Encantado de conocerte, Martha.
 dialogue.harvest_feast_host.first_words.text = Cuidado con la mesa, es más larga de lo que parece.\nTodos los años, cuando la cosecha está recogida, la monto aquí, en el <color is="#ffd97a">Templo Olvidado</color>, y doy de comer a quien aparezca. Hay mucho que cocinar de aquí al banquete. Tienes pinta de poder cargar un saco de harina.
 dialogue.harvest_feast_host.first_words.opt.hail = Encantado de ayudar.
-dialogue.harvest_feast_host.board_fresh.text = El tablón está listo. Campo o cocina, todo hay que hacerlo, y todo se paga.
+dialogue.harvest_feast_host.board_fresh.text = El tablón está listo. Campo o cocina, todo hay que hacerlo, y cada trabajo paga <msg key="harvestfeast.progression.currency.harvest_feast_coins.name"/> para gastar en mi tienda.
 dialogue.harvest_feast_host.board_fresh.opt.later = Luego.
 dialogue.harvest_feast_host.board_fresh_friendly.text = Límpiate las botas. Te guardé una silla.\nHay un trabajo extra en el tablón con tu nombre.
 dialogue.harvest_feast_host.board_fresh_honored.text = Ah, bien, eres tú. Elige del tablón antes de que lleguen los demás.
 dialogue.harvest_feast_host.board_fresh_revered.text = Siéntate. Come algo primero, tienes aspecto de medio muerto de hambre.\nEl tablón puede esperar.
 dialogue.harvest_feast_host.menu.text = Cuidado con la olla. ¿Qué puedo hacer por ti?
-dialogue.harvest_feast_host.wheat_offer.text = Primero el pan. Siempre.\nEl <b>trigo</b> silvestre crece espeso en los campos abiertos en esta época. Recógeme un buen brazado para los hornos.
+dialogue.harvest_feast_host.wheat_offer.text = Primero el pan. Siempre.\nEl <b>trigo</b> silvestre crece en las <b>llanuras de las Emerald Wilds</b>. Recógeme un buen brazado a mano y tráelo aquí.
 dialogue.harvest_feast_host.wheat_offer.opt.accept = Traeré trigo.
-dialogue.harvest_feast_host.wheat_brief.text = El <b>trigo</b> crece silvestre en los campos abiertos. Recógelo a mano y tráelo aquí.
+dialogue.harvest_feast_host.wheat_brief.text = El <b>trigo</b> silvestre crece en las <b>llanuras de las Emerald Wilds</b>. Recógelo a mano y tráemelo aquí, al templo.
 dialogue.harvest_feast_host.wheat_ready.text = Qué buen brazado. La harina estará molida para la mañana.\nAhora, un banquete necesita un asado. Vuelve cuando estés listo para cazar.
 dialogue.harvest_feast_host.wheat_ready.opt.turnin = Aquí está el trigo.
-dialogue.harvest_feast_host.turkeys_offer.text = Los <b>Pavos Silvestres</b> andan por el bosque este mes, gordos y ruidosos y no tan tontos como parecen.\nAbate unos cuantos. La mesa no sirve de nada sin un asado.
+dialogue.harvest_feast_host.turkeys_offer.text = Los <b>Pavos Silvestres</b> andan de día por las <b>Emerald Wilds</b>, en el bosque y las llanuras. Gordos y ruidosos, y no tan tontos como parecen.\nAbate unos cuantos y vuelve conmigo. Si te dan guerra, pregúntale a Bram el Pastor.
 dialogue.harvest_feast_host.turkeys_offer.opt.accept = Iré de caza.
-dialogue.harvest_feast_host.turkeys_ready.text = Hueles a bosque. Bien, eso quiere decir que fue bien.\nTe doy una receta para el siguiente trabajo. Y quédate quieto: si vas a perseguir pavos toda la semana, bien puedes parecerte a uno.
+dialogue.harvest_feast_host.turkeys_brief.text = Abate <b>Pavos Silvestres</b> de día en el <b>bosque</b> y las <b>llanuras</b> de las Emerald Wilds, y vuelve conmigo.
+dialogue.harvest_feast_host.turkeys_ready.text = Hueles a bosque. Bien, eso quiere decir que fue bien.\nAquí tienes la <b>receta del pastel de calabaza</b> para el siguiente trabajo, con algo de <b>masa</b> y <b>especia</b> para empezar. Y quédate quieto: si vas a perseguir pavos toda la semana, bien puedes parecerte a uno.
 dialogue.harvest_feast_host.turkeys_ready.opt.turnin = Vuelvo de la caza.
-dialogue.harvest_feast_host.pie_offer.text = Te toca ponerte ante los fogones. Aprende esa receta y hornea un <b>pastel de calabaza</b> en un <b>Fogón de Chef</b>.\nMasa, una calabaza, una pizca de especia y un horno caliente. Tráemelo.
+dialogue.harvest_feast_host.pie_offer.text = Te toca ponerte ante los fogones. Usa esa <b>receta</b> para aprenderla y hornea un <b>pastel de calabaza</b> en un <b>Fogón de Chef</b> con masa, una calabaza y especia.\nLa masa y la especia ya las tienes de mí. Recoge una <b>calabaza</b> en los <b>bosques otoñales</b> de las Emerald Wilds. Para más masa, pregunta a Tomas el Molinero, y Elsie la Tejedora sabe de dónde sale la especia.
 dialogue.harvest_feast_host.pie_offer.opt.accept = Te hornearé un pastel.
-dialogue.harvest_feast_host.pie_brief.text = Aprende la receta y hornea un <b>pastel de calabaza</b> en un <b>Fogón de Chef</b>. Necesitarás masa, una calabaza y algo de especia.
+dialogue.harvest_feast_host.pie_brief.text = Hornea un <b>pastel de calabaza</b> en un <b>Fogón de Chef</b> con masa, una calabaza y especia. Las <b>calabazas</b> crecen en los <b>bosques otoñales</b>. Tomas el Molinero sabe de masa, y Elsie la Tejedora, de especia.
 dialogue.harvest_feast_host.pie_ready.text = Huele eso. Ese pastel lo hizo alguien con cariño.\nHas cumplido tu parte y más. Ven y siéntate; es hora de comer.
 dialogue.harvest_feast_host.pie_ready.opt.turnin = Aquí está el pastel.
-dialogue.harvest_feast_host.feast_offer.text = Una vez al año lo ponemos todo en la mesa y comemos hasta que nadie se tiene en pie.\nTráeme un <b>pastel de calabaza</b>, algo de <b>carne cocinada</b> y una cesta de <b>zanahorias</b>, y lo serviremos juntos.
+dialogue.harvest_feast_host.feast_offer.text = Una vez al año lo ponemos todo en la mesa y comemos hasta que nadie se tiene en pie.\nHornea un <b>pastel de calabaza</b> en un <b>Fogón de Chef</b>, cocina algo de <b>carne</b> en una <b>Hoguera</b> y recoge <b>zanahorias</b> en los <b>bosques</b> de las Emerald Wilds. Tráelo todo aquí y lo serviremos juntos.
 dialogue.harvest_feast_host.feast_offer.opt.accept = Pongamos la mesa.
-dialogue.harvest_feast_host.feast_brief.text = Un <b>pastel de calabaza</b>, <b>carne cocinada</b> al fuego y <b>zanahorias</b> de los campos. Luego comemos.
+dialogue.harvest_feast_host.feast_brief.text = Un <b>pastel de calabaza</b> de un <b>Fogón de Chef</b>, <b>carne cocinada</b> en una <b>Hoguera</b> y <b>zanahorias</b> de los <b>bosques</b>. Luego comemos.
 dialogue.harvest_feast_host.feast_ready.text = Pastel, asado y zanahorias. Eso sí es un banquete.\nSiéntate, come y llévate este plato a casa. Lleva el año grabado, así lo recordarás.
 dialogue.harvest_feast_host.feast_ready.opt.turnin = Aquí está todo.
 dialogue.harvest_feast_host.feast_done.text = ¿Sigues lleno? Yo también. La mesa sigue puesta hasta que acabe el banquete.\n¿Qué puedo hacer por ti?
-dialogue.harvest_feast_host.daily_turkeys_offer.text = El asado de ayer quedó en el hueso. Tráeme unos cuantos <b>Pavos Silvestres</b> más y pondré otro.
+dialogue.harvest_feast_host.daily_turkeys_offer.text = El asado de ayer quedó en el hueso. Abate unos cuantos <b>Pavos Silvestres</b> más en las <b>Emerald Wilds</b> y pondré otro.
 dialogue.harvest_feast_host.daily_turkeys_offer.opt.accept = Iré de caza.
-dialogue.harvest_feast_host.daily_wheat_offer.text = Todas las hogazas que horneé hoy ya se han ido. Más <b>trigo</b>, o mañana no hay pan.
+dialogue.harvest_feast_host.daily_wheat_offer.text = Todas las hogazas que horneé hoy ya se han ido. Recoge más <b>trigo</b> en las <b>llanuras</b>, o mañana no hay pan.
 dialogue.harvest_feast_host.daily_wheat_offer.opt.accept = Traeré trigo.
-dialogue.harvest_feast_host.daily_roast_offer.text = Cocina algo de <b>carne</b> al fuego y tráela aquí. La gente se la come antes de que llegue a la mesa.
+dialogue.harvest_feast_host.daily_roast_offer.text = Cocina algo de <b>carne</b> cruda en una <b>Hoguera</b> y tráela aquí. La gente se la come antes de que llegue a la mesa.
 dialogue.harvest_feast_host.daily_roast_offer.opt.accept = Traeré un asado.
-dialogue.harvest_feast_host.active_generic.text = Anda, ve. Te guardaré un plato caliente.
+dialogue.harvest_feast_host.roast_brief.text = Vale cualquier <b>carne</b> cruda. Cocínala en una <b>Hoguera</b> y tráela aquí antes de que alguien se la coma.
+dialogue.harvest_feast_host.extra_turkeys_ready.text = ¿Más pavos? Nunca digo que no.\nOtro asado para la mesa. Pregúntame qué hay que hacer cuando quieras más; siempre hay sitio.
+dialogue.harvest_feast_host.extra_turkeys_ready.opt.turnin = Más pavos para ti.
 dialogue.harvest_feast_host.ready_generic.text = Déjame ver qué has traído.
 dialogue.harvest_feast_host.ready_generic.opt.turnin = Está hecho.
 dialogue.harvest_feast_host.who_are_you.text = Nadie importante. Cocino.\nCuando la cosecha está recogida, vengo aquí, pongo la mesa larga y doy de comer a quien aparezca. Algunos años son una docena de personas. Otros, todo el que vive a leguas.
@@ -161,14 +218,14 @@ dialogue.harvest_feast_host.opt.back = Otra cosa.
 dialogue.harvest_feast_host.opt.farewell = Nos vemos en la mesa.
 
 # ---- The shared meal and the invitation tour ----
-quest.harvest_feast_shared_meal.title = La Mesa Compartida
-quest.harvest_feast_shared_meal.flavor = Nadie come solo en mi mesa. Asa una verdura al fuego, tráela aquí y siéntate un rato.
+quest.harvest_feast_shared_meal.title = Comida Compartida
+quest.harvest_feast_shared_meal.flavor = Nadie come solo en mi mesa. Asa una verdura en una Hoguera, tráela aquí y siéntate un rato.
 quest.harvest_feast_invitations.title = La Lista de Invitados
-quest.harvest_feast_invitations.flavor = Una mesa larga medio vacía no sirve de nada. Invita a unas cuantas personas al banquete y ven a contarme quién viene.
+quest.harvest_feast_invitations.flavor = Una mesa larga medio vacía no sirve de nada. Habla con la gente por el Templo Olvidado e invítala al banquete, y luego ven a decirme quién viene.
 objective.harvest_feast.invite = Invita a {0} personas al banquete
-dialogue.harvest_feast_host.meal_offer.text = Nadie come solo en mi mesa.\nAsa una <b>verdura</b> al fuego y tráela aquí, y la compartiremos. Pasa cada día si quieres. Siempre hay una silla.
+dialogue.harvest_feast_host.meal_offer.text = Nadie come solo en mi mesa.\nAsa una <b>verdura</b> en una <b>Hoguera</b> y tráela aquí, y la compartiremos. Pasa cada día si quieres. Siempre hay una silla.
 dialogue.harvest_feast_host.meal_offer.opt.accept = Traeré algo.
-dialogue.harvest_feast_host.meal_brief.text = Vale cualquier <b>verdura</b>. Ásala al fuego y tráela a la mesa.
+dialogue.harvest_feast_host.meal_brief.text = Vale cualquier <b>verdura</b>: una zanahoria, maíz, una calabaza o una seta. Ásala en una <b>Hoguera</b> y tráela a la mesa.
 dialogue.harvest_feast_host.meal_ready.text = Siéntate, siéntate. Pasa eso para aquí y prueba lo mío.\nAsí. Hoy sí que has comido bien.
 dialogue.harvest_feast_host.meal_ready.opt.turnin = Compartámoslo.
 dialogue.harvest_feast_host.invitations_offer.text = Una mesa larga medio vacía no sirve de nada.\nVe y habla del banquete a la gente, a quien se pare un momento. <b>Invita a unas cuantas personas</b> y vuelve a decirme quién viene.
@@ -183,26 +240,35 @@ dialogue.harvest_feast_miller.off_season.text = El banquete está recogido, y la
 dialogue.harvest_feast_miller.off_season.opt.farewell = Hasta el año que viene, entonces.
 dialogue.harvest_feast_miller.greeting.text = No te acerques demasiado, la harina se pega a todo.\nHe subido sacos del molino toda la semana para que los hornos no se enfríen. Me vendría bien un asiento en la mesa larga cuando empiece el banquete.
 dialogue.harvest_feast_miller.mill.text = Junto al río, como siempre. La rueda gira esté yo o no.\nEn esta época cada saco que muele va al banquete.
+dialogue.harvest_feast_miller.dough.text = Primero la harina. Muele <b>trigo</b> hasta hacer <b>harina</b> en un <b>Fogón de Chef</b>.\nLuego mezcla la harina con <b>huevos</b> y una <b>jarra de agua</b> en el mismo fogón, y esa es tu masa. Bram sabe dónde encontrar huevos.
+dialogue.harvest_feast_miller.opt.dough = ¿Cómo hago masa?
 dialogue.harvest_feast_miller.opt.mill = ¿Dónde está tu molino?
+dialogue.harvest_feast_miller.opt.thanks = Gracias, Tomas.
 dialogue.harvest_feast_miller.opt.back = Tiene sentido.
 dialogue.harvest_feast_miller.opt.farewell = Te dejo con lo tuyo.
 dialogue.harvest_feast_weaver.off_season.text = El banquete ha terminado y los manteles están doblados.\nVen a buscarme cuando la cosecha vuelva a estar recogida. Para entonces tendré otros nuevos.
 dialogue.harvest_feast_weaver.off_season.opt.farewell = Estaré atento.
 dialogue.harvest_feast_weaver.greeting.text = Llevo en mi telar desde el amanecer. Es agradable estar de pie en otro sitio, para variar.\nTejí los manteles de la mesa larga. Sería bonito sentarme al banquete y comer en uno de ellos por una vez.
 dialogue.harvest_feast_weaver.cloth.text = Un camino para el centro de la mesa, dorado como el trigo con un borde naranja.\nSiempre alguien le derrama salsa, así que tejo uno nuevo cada año.
+dialogue.harvest_feast_weaver.spice.text = Las <b>Especias</b> se hacen en un <b>Fogón de Chef</b>, con <b>flores</b> y una <b>verdura</b>.\nO se recogen <b>calabazas</b> a mano en los <b>bosques otoñales</b>. De vez en cuando hay algo de especia junto a una. No sé por qué, y no pregunto.
+dialogue.harvest_feast_weaver.opt.spice = ¿Dónde consigo especia?
 dialogue.harvest_feast_weaver.opt.cloth = ¿Qué estás tejiendo ahora?
+dialogue.harvest_feast_weaver.opt.thanks = Gracias, Elsie.
 dialogue.harvest_feast_weaver.opt.back = Es un trabajo precioso.
 dialogue.harvest_feast_weaver.opt.farewell = No te entretengo.
 dialogue.harvest_feast_shepherd.off_season.text = Se acabó el banquete. Vuelvo a subir la colina antes de que las ovejas se alejen más.
 dialogue.harvest_feast_shepherd.off_season.opt.farewell = Buen camino a casa.
 dialogue.harvest_feast_shepherd.greeting.text = Bajé de las colinas con lana para la tejedora. Las ovejas pueden cuidarse solas unos días.\nBueno, no pueden. Pero no pensaba perderme el banquete.
 dialogue.harvest_feast_shepherd.sheep.text = Mi hermana. Dice que no le importa.\nEso significa que le llevo de vuelta un pastel entero.
+dialogue.harvest_feast_shepherd.turkeys.text = Los <b>Pavos Silvestres</b> solo salen de día. Busca en el <b>bosque</b> y en las <b>llanuras</b>. Se asustan fácil, así que un arco ayuda.\nLos huevos vienen de las <b>gallinas</b>, no de los pavos. Y dale <b>maíz</b> a un pavo y es tuyo, aunque uno domado no te dará nada.
+dialogue.harvest_feast_shepherd.opt.turkeys = ¿Algún consejo sobre pavos?
 dialogue.harvest_feast_shepherd.opt.sheep = ¿Quién cuida de tus ovejas?
+dialogue.harvest_feast_shepherd.opt.thanks = Gracias, Bram.
 dialogue.harvest_feast_shepherd.opt.back = Se lo ha ganado.
 dialogue.harvest_feast_shepherd.opt.farewell = Disfruta del banquete.
 
 # ---- The Almanac page's items: where each comes from ----
-almanac.harvest_feast.source.bake_pumpkin = Se hornea en un banco de cocina con la receta que te da Martha.
+almanac.harvest_feast.source.bake_pumpkin = Se hornea en un Fogón de Chef con la receta que te da Martha.
 almanac.harvest_feast.source.errands = Un manjar de vez en cuando por los recados de Martha.
 almanac.harvest_feast.source.feast = Se sirve en el propio Banquete, una vez al año.
 almanac.harvest_feast.source.popcorn = De la historia de Martha, su tablón y la comida compartida, o se compra en su tienda.
@@ -210,6 +276,7 @@ almanac.harvest_feast.source.bread = Se reparte en la comida diaria, y forma par
 almanac.harvest_feast.source.story = Martha te lo da durante su historia.
 almanac.harvest_feast.source.stall = Se vende en la tienda de Martha.
 almanac.harvest_feast.source.stall_favor = Se vende en la tienda de Martha a medida que crece tu favor con ella.
+almanac.harvest_feast.source.stall_gift = Se vende en la tienda de Martha, y es uno de sus regalos a medida que crece su favor.
 almanac.harvest_feast.source.seeds = Del Banquete y de los recados de Martha, o se compran en su tienda.
 almanac.harvest_feast.source.keepsake = Recuerdo del Banquete, que te dan una vez al año cuando te sientas a la mesa.
 almanac.harvest_feast.source.winter = Se vende en el estante del festival de la tienda de Martha mientras dura el banquete.

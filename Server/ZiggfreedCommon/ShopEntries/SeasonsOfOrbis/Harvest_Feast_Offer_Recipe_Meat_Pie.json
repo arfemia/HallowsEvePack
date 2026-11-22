@@ -7,7 +7,7 @@
   },
   "Icon": "Food_Pie_Meat",
   "Listing": { "Category": "kitchen", "SortOrder": 20 },
-  "Cost": { "Currencies": { "Seasons_Of_Orbis_Festival_Token": 12 } },
+  "Cost": { "Currencies": { "Harvest_Feast_Coins": 60 } },
   "Limits": { "Total": 1 },
   "Requires": {
     "Factors": [

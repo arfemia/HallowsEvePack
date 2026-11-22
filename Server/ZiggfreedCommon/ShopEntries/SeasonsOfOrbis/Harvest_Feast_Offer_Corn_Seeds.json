@@ -6,7 +6,7 @@
     "FlavorKey": "server.items.Plant_Seeds_Corn.description"
   },
   "Listing": { "Category": "kitchen", "SortOrder": 40 },
-  "Cost": { "Currencies": { "Seasons_Of_Orbis_Festival_Token": 3 } },
+  "Cost": { "Currencies": { "Harvest_Feast_Coins": 8 } },
   "Limits": { "Daily": 1 },
   "Rewards": [ { "Kind": "Item", "Params": { "Item": "Plant_Seeds_Corn", "Count": 4 } } ]
 }

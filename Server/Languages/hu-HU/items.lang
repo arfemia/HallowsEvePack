@@ -68,3 +68,13 @@ Hallows_Eve_Horsemans_Reins.description = A Fej Nélküli Lovas saját gyeplője
 Hallows_Eve_Horsemans_Reins.command_calm = Nyugtatás
 Hallows_Eve_Horsemans_Steed_Trophy.name = Lovas-hátas Trófea
 Hallows_Eve_Horsemans_Steed_Trophy.description = A Fej Nélküli Lovas fekete lovának apró alakja a páncéljában, aranyszegélyes talapzaton. Rakd le, ahová csak akarod. Időnként akad a Boss-legyőzés Átvehetőjében, és Öreg Jack is árul egyet.
+
+# Harvest Feast - az Aratási Szett, Martha boltjában kapható.
+Harvest_Feast_Harvest_Hat.name = Aratási Kalap
+Harvest_Feast_Harvest_Hat.description = Meleg gyapjúkalap a mezőn töltött hosszú napokra. Martha a boltjában árulja, ha már Barátjának tart. Az Aratási Szett része: viselj többet belőle több életerőért, az egész szettet pedig, hogy gyorsabban szerezd a kegyét.
+Harvest_Feast_Harvest_Tunic.name = Aratási Tunika
+Harvest_Feast_Harvest_Tunic.description = Gyapjútunika a mezőn töltött hosszú napokra. Martha a boltjában árulja, ha nála Asztalfő vagy. Az Aratási Szett része: viselj többet belőle több életerőért, az egész szettet pedig, hogy gyorsabban szerezd a kegyét.
+Harvest_Feast_Harvest_Gloves.name = Aratási Kesztyű
+Harvest_Feast_Harvest_Gloves.description = Meleg gyapjúkesztyű a hidegben szedéshez. Martha a boltjában árulja, ha már Szomszédjának tart. Az Aratási Szett része: viselj többet belőle több életerőért, az egész szettet pedig, hogy gyorsabban szerezd a kegyét.
+Harvest_Feast_Harvest_Trousers.name = Aratási Nadrág
+Harvest_Feast_Harvest_Trousers.description = Gyapjúnadrág, amely kibír egy napot a mezőn. Martha a boltjában árulja, ha már Családjának tart. Az Aratási Szett része: viselj többet belőle több életerőért, az egész szettet pedig, hogy gyorsabban szerezd a kegyét.

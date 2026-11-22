@@ -7,7 +7,7 @@
   },
   "Icon": "Food_Pie_Apple",
   "Listing": { "Category": "kitchen", "SortOrder": 10 },
-  "Cost": { "Currencies": { "Seasons_Of_Orbis_Festival_Token": 8 } },
+  "Cost": { "Currencies": { "Harvest_Feast_Coins": 40 } },
   "Limits": { "Total": 1 },
   "Rewards": [ { "Kind": "Item", "Params": { "Item": "Recipe_Food_Pie_Apple", "Count": 1 } } ]
 }

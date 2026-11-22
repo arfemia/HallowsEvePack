@@ -2,3 +2,4 @@
 # itemTooltip.stats.<StatId>, loaded as client.<key>. {value} is the client's own placeholder.
 itemTooltip.stats.ReputationGain_Hallows_Eve_Old_Jack = Gain de Faveur du Vieux Jack: {value}%
 itemTooltip.stats.ReputationGain_Hallows_Eve_Hallowed = Gain de Faveur des Sanctifiés: {value}%
+itemTooltip.stats.ReputationGain_Harvest_Feast_Host = Gain de Faveur de Martha: {value}%

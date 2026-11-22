@@ -35,16 +35,18 @@ Each season brings a host to the Forgotten Temple with quests, a daily board, a 
 
 ## Harvest Feast, November 20 to December 1
 
-- **Martha the Cook** sets up a long table in the Forgotten Temple. A quest in your log, Supper in the Temple, sends you to her through any Forgotten Temple Gateway.
-- Her four quests run from Wheat for the Ovens to The Long Table. The Turkey Hunt hands you the pumpkin pie recipe and turns you into a turkey for three minutes. In The First Pie you bake one at a Chef's Stove.
-- The Long Table is the feast itself, and it comes back every year. Bring a pumpkin pie, some cooked meat and a basket of carrots, sit down, and take home a Feast Plate with the year on it and two Meat Pies.
-- Three dailies: Turkey Run, Bread for the Morning and Roast for the Table. The Shared Table comes round every day too. Roast a vegetable over a fire and share it at her table.
-- The Guest List, once a feast. Invite three people to the feast, then tell Martha who's coming. Tomas the Miller, Elsie the Weaver and Bram the Shepherd stand around the temple, so there's always somebody to ask.
-- The Feast Board posts a Field job and a Kitchen job every day, turkeys and wild wheat out in the fields, pies and roast in the kitchen. Get to know Martha and a second of each opens up.
-- Wild Turkeys roam the first zone's autumn woods, forests and plains by day, in small flocks. You can tame them too. Pumpkins you pick by hand sometimes come with Spices, which a pumpkin pie needs.
-- Martha's shop takes Festival Tokens: the Apple Pie, Meat Pie and Caesar Salad recipes, popcorn, corn seeds and autumn leaves. Its Festival Shelf has the winter decorations, from a Winter Stocking to a Snowman.
-- Favor at the Feast runs from Newcomer to Head of the Table, which has its own achievement and title.
-- Five achievements each year. A Seat at the Table, Turkey Chaser, Full Baskets and Feast Plate, and The Full Table for earning the other four, with the title "of the Full Table".
+- **Martha the Cook** sets up a long table in the Forgotten Temple. A quest in your log, Meet Martha, sends you to her through any Forgotten Temple Gateway.
+- Her four quests run from Wheat Harvest to The Feast. Turkey Hunt hands you the pumpkin pie recipe with a Dough and some Spices, and turns you into a turkey for three minutes. In Your First Pie you bake one at a Chef's Stove.
+- The Feast comes back every year. Bring a pumpkin pie, some cooked meat and a basket of carrots, sit down, and take home a Feast Plate with the year on it and two Meat Pies.
+- Three dailies: Daily Turkeys, Daily Wheat and Daily Roast. Shared Meal comes round every day too. Roast a vegetable on a Campfire and share it at her table.
+- Extra Turkeys, as often as you like. Hunt ten more Wild Turkeys, take your pay, and go again.
+- The Guest List, once a feast. Invite three people to the feast, then tell Martha who's coming. Tomas the Miller, Elsie the Weaver and Bram the Shepherd stand around the temple, so there's always somebody to ask, and each has a tip for you on dough, spices or turkeys.
+- The Feast Board posts a Field job and a Kitchen job every day: turkeys, wheat, pumpkins or carrots out in the fields, pies, roast meat, roast vegetables or spices in the kitchen. Get to know Martha and a second of each opens up.
+- Wild Turkeys roam the first zone's woods and plains by day, in small flocks, and every one you hunt earns Martha's favor. You can tame them too. Pumpkins you pick by hand sometimes come with Spices, which a pumpkin pie needs.
+- Harvest Coins, the feast's own currency. Martha pays them for everything, and her shop takes them for the Apple Pie, Meat Pie and Caesar Salad recipes, popcorn, corn seeds, autumn leaves, hay and a Scarecrow. They keep until next year. Its Festival Shelf has the winter decorations for Festival Tokens, from a Winter Stocking to a Snowman.
+- The Harvest Set: the Harvest Gloves, Hat, Trousers and Tunic, four wool pieces from Martha's shop that open as her favor grows. Each adds health and stamina and earns her favor 5% faster. Wear two for more health, and all four for more health again and another 10% favor.
+- Martha's Favor runs from Newcomer through Neighbor, Friend and Family to Head of the Table. Each rank pays a gift you collect on the achievements page, and Head of the Table adds a title. Past the top it keeps counting, and every 5,000 more favor packs you a Feast Basket of pies, coins and tokens.
+- Five achievements each year. Feast Guest, Turkey Chaser, Full Baskets and Feast Plate, and The Full Table for earning the other four, with the title "of the Full Table". One more for wearing the whole Harvest Set.
 
 ## Every season
 
@@ -59,7 +61,7 @@ From 2027, the day Hytale came out gets a banner and an Almanac page. Be on the 
 
 ## How it works
 
-1. Log in while a season runs. A banner marks it, and a quest in your log sends you to its host in the Forgotten Temple: Lanterns in the Temple to Old Jack, or Supper in the Temple to Martha the Cook.
+1. Log in while a season runs. A banner marks it, and a quest in your log sends you to its host in the Forgotten Temple: Lanterns in the Temple to Old Jack, or Meet Martha to Martha the Cook.
 2. Press F on the host to hand it in. Old Jack's and Martha's both give you an Objective Book, which opens your quests, achievements and the Almanac.
 3. Ask "What needs doing?" for the host's quests and board jobs in one list, or open their shop. Once they know you, "How do we stand?" shows your reputation.
 4. Head out for the season's work, Old Jack's creatures after dark or Martha's turkeys and crops by day, then spend what you earn at the host's shop.
@@ -67,7 +69,7 @@ From 2027, the day Hytale came out gets a banner and an Almanac page. Be on the 
 
 ## With MMO Skill Tree
 
-Install MMO Skill Tree 1.7.2 or newer and both seasons train your skills. Old Jack's quests, jobs and the season's achievements pay XP in the skill the work trains: Defense for the fights, Harvesting for the pumpkins, Mining for the geodes and Artillery for the bombs. The Horseman pays Defense XP for each day's first win and for clearing his graveyard. During Harvest Feast, Martha's quests and jobs pay Harvesting, Defense, Crafting and Acrobatics XP, her board posts a Skill job every day, and Harvesting XP runs a quarter higher for everyone while the feast does. Without it, the rest of each season plays the same.
+Install MMO Skill Tree 1.7.2 or newer and both seasons train your skills. Old Jack's quests, jobs and the season's achievements pay XP in the skill the work trains: Defense for the fights, Harvesting for the pumpkins, Mining for the geodes and Artillery for the bombs. The Horseman pays Defense XP for each day's first win and for clearing his graveyard. During Harvest Feast, Martha's quests and jobs pay Harvesting, Defense, Crafting and Acrobatics XP, her rank gifts add an XP boost, her board posts a Skill job every day, the Harvest Set adds Harvesting XP and Harvesting luck, and Harvesting XP runs a quarter higher for everyone while the feast does. Without it, the rest of each season plays the same.
 
 Add the [MMO Skill Bounty Pack](https://www.curseforge.com/hytale/mods/mmo-skill-tree-bounty-board-pack-rich-customizable) and its Daily board posts a haunt contract each day of Hallow's Eve.
 

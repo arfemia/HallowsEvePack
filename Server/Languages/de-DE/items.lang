@@ -68,3 +68,13 @@ Hallows_Eve_Horsemans_Reins.description = Die eigenen Zügel des Kopflosen Reite
 Hallows_Eve_Horsemans_Reins.command_calm = Beruhigen
 Hallows_Eve_Horsemans_Steed_Trophy.name = Trophäe des Pferdes des Reiters
 Hallows_Eve_Horsemans_Steed_Trophy.description = Eine winzige Figur vom schwarzen Pferd des Kopflosen Reiters in seiner Rossrüstung, auf einem goldverzierten Sockel. Stell sie hin, wo du willst. Hin und wieder in seiner Bosskill-Abholung zu finden, und der Alte Jack verkauft eine.
+
+# Erntefest - das Ernte-Set, verkauft in Marthas Laden.
+Harvest_Feast_Harvest_Hat.name = Erntehut
+Harvest_Feast_Harvest_Hat.description = Ein warmer Wollhut für lange Tage auf den Feldern. Martha verkauft ihn in ihrem Laden, sobald sie dich einen Freund nennt. Teil des Ernte-Sets: Trag mehr davon für mehr Gesundheit, und das ganze Set, um ihre Gunst schneller zu gewinnen.
+Harvest_Feast_Harvest_Tunic.name = Erntetunika
+Harvest_Feast_Harvest_Tunic.description = Eine Wolltunika für lange Tage auf den Feldern. Martha verkauft sie in ihrem Laden, sobald du bei ihr Oberhaupt der Tafel bist. Teil des Ernte-Sets: Trag mehr davon für mehr Gesundheit, und das ganze Set, um ihre Gunst schneller zu gewinnen.
+Harvest_Feast_Harvest_Gloves.name = Erntehandschuhe
+Harvest_Feast_Harvest_Gloves.description = Warme Wollhandschuhe zum Pflücken in der Kälte. Martha verkauft sie in ihrem Laden, sobald sie dich einen Nachbarn nennt. Teil des Ernte-Sets: Trag mehr davon für mehr Gesundheit, und das ganze Set, um ihre Gunst schneller zu gewinnen.
+Harvest_Feast_Harvest_Trousers.name = Erntehose
+Harvest_Feast_Harvest_Trousers.description = Eine Wollhose, die einen Tag auf den Feldern aushält. Martha verkauft sie in ihrem Laden, sobald sie dich zur Familie zählt. Teil des Ernte-Sets: Trag mehr davon für mehr Gesundheit, und das ganze Set, um ihre Gunst schneller zu gewinnen.

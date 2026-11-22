@@ -7,7 +7,7 @@
   },
   "Icon": "Food_Salad_Caesar",
   "Listing": { "Category": "kitchen", "SortOrder": 25 },
-  "Cost": { "Currencies": { "Seasons_Of_Orbis_Festival_Token": 20 } },
+  "Cost": { "Currencies": { "Harvest_Feast_Coins": 100 } },
   "Limits": { "Total": 1 },
   "Requires": {
     "Factors": [

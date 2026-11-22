@@ -9,6 +9,8 @@
     "greeting, the Fallback. A conversation has no Season leaf, so the off-season beat reads the feature",
     "ziggfreedcommon:feature Harvest_Feast_Live, Min 1.",
     "",
+    "The greeting offers one tip, where Spices come from (the spice screen), which the pumpkin pie needs.",
+    "",
     "Elsie gives no quest and credits no talk of her own. The invitation tour's line is not in this file:",
     "DialogueExtensions/SeasonsOfOrbis/Harvest_Feast_Invitation.json adds it to the screens a",
     "conversation opens on while the player carries the tour, after a screen's own lines and before the",
@@ -36,7 +38,15 @@
     "greeting": {
       "TextKey": "dialogue.harvest_feast_weaver.greeting.text",
       "Options": [
+        { "LabelKey": "dialogue.harvest_feast_weaver.opt.spice", "Style": "neutral", "Goto": "spice" },
         { "LabelKey": "dialogue.harvest_feast_weaver.opt.cloth", "Style": "neutral", "Goto": "cloth" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "spice": {
+      "TextKey": "dialogue.harvest_feast_weaver.spice.text",
+      "Options": [
+        { "LabelKey": "dialogue.harvest_feast_weaver.opt.thanks", "Style": "neutral", "Goto": "greeting" }
       ],
       "IncludeOptions": [ "goodbye" ]
     },

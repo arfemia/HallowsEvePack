@@ -1,0 +1,16 @@
+{
+  "$Comment": "The Harvest Gloves, a piece of the Harvest Set, sold to players Friendly with Martha, the rank her favor calls Neighbor. Requires is a lock, not a hide: a player below the rank still sees the offer, locked, with the rank's own name in the reason, so they can see what to work towards, and the Season leaf on the base still hides it while the feast is off. The offer is named with this pack's keys, and its picture is the item.",
+  "Parent": "Harvest_Feast_Offer_Base",
+  "Text": {
+    "TitleKey": "shop.harvest_feast_offer_harvest_gloves.title",
+    "FlavorKey": "shop.harvest_feast_offer_harvest_gloves.desc"
+  },
+  "Listing": { "Category": "clothes", "SortOrder": 10 },
+  "Cost": { "Currencies": { "Harvest_Feast_Coins": 120 } },
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Harvest_Feast_Host/Friendly", "Min": 1 }
+    ]
+  },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Harvest_Feast_Harvest_Gloves", "Count": 1 } } ]
+}

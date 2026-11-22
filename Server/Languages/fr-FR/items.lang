@@ -68,3 +68,13 @@ Hallows_Eve_Horsemans_Reins.description = Les rênes mêmes du Cavalier sans tê
 Hallows_Eve_Horsemans_Reins.command_calm = Calmer
 Hallows_Eve_Horsemans_Steed_Trophy.name = Trophée du Destrier du Cavalier
 Hallows_Eve_Horsemans_Steed_Trophy.description = Une minuscule figurine du cheval noir du Cavalier sans tête dans son caparaçon, sur un socle bordé d'or. Posez-la où vous voulez. Se trouve de temps en temps dans sa récompense « Boss vaincu », et le Vieux Jack en vend une.
+
+# Harvest Feast - the Harvest Set, sold at Martha's shop.
+Harvest_Feast_Harvest_Hat.name = Chapeau de Moisson
+Harvest_Feast_Harvest_Hat.description = Un chapeau de laine chaud pour les longues journées aux champs. Martha le vend dans sa boutique dès qu'elle vous compte parmi ses Amis. Fait partie de la Panoplie de Moisson : portez-en davantage pour plus de santé, et la panoplie entière pour gagner sa faveur plus vite.
+Harvest_Feast_Harvest_Tunic.name = Tunique de Moisson
+Harvest_Feast_Harvest_Tunic.description = Une tunique de laine pour les longues journées aux champs. Martha la vend dans sa boutique dès que vous êtes Tête de table auprès d'elle. Fait partie de la Panoplie de Moisson : portez-en davantage pour plus de santé, et la panoplie entière pour gagner sa faveur plus vite.
+Harvest_Feast_Harvest_Gloves.name = Gants de Moisson
+Harvest_Feast_Harvest_Gloves.description = Des gants de laine chauds pour cueillir par temps froid. Martha les vend dans sa boutique dès qu'elle vous compte parmi ses Voisins. Fait partie de la Panoplie de Moisson : portez-en davantage pour plus de santé, et la panoplie entière pour gagner sa faveur plus vite.
+Harvest_Feast_Harvest_Trousers.name = Pantalon de Moisson
+Harvest_Feast_Harvest_Trousers.description = Un pantalon de laine qui tient bon toute une journée aux champs. Martha le vend dans sa boutique dès qu'elle vous compte parmi la Famille. Fait partie de la Panoplie de Moisson : portez-en davantage pour plus de santé, et la panoplie entière pour gagner sa faveur plus vite.

@@ -1,0 +1,39 @@
+{
+  "$Comment": "The Harvest Tunic, the chest piece of the Harvest Set (ZiggfreedCommon/GearSets/SeasonsOfOrbis/Harvest_Feast_Harvest_Set.json), sold at Martha's shop once a player is Head of the Table with her. A full item body with no Parent, so it inherits no recipe and nobody crafts it: it wears the game's own woolen tunic (its model, texture and icon) and the woolen tunic's armor numbers. Its own stats ride the native Armor block: Health and Stamina like any armor, and ReputationGain_Harvest_Feast_Host (10 is +10%), which raises every gain of Martha's favor while it is worn. Raise or lower an Amount to tune it; the set adds its own bonus on top.",
+  "TranslationProperties": {
+    "Name": "items.Harvest_Feast_Harvest_Tunic.name",
+    "Description": "items.Harvest_Feast_Harvest_Tunic.description"
+  },
+  "Quality": "Uncommon",
+  "ItemLevel": 30,
+  "PlayerAnimationsId": "Block",
+  "ItemSoundSetId": "ISS_Armor_Cloth",
+  "Categories": ["Items.Armors"],
+  "Icon": "Icons/ItemsGenerated/Armor_Wool_Chest.png",
+  "IconProperties": {"Rotation": [22.5, 45, 22.5], "Scale": 0.415, "Translation": [1.5, -6.9]},
+  "Model": "Items/Armors/Wool/Chest.blockymodel",
+  "Texture": "Items/Armors/Wool/Chest_Texture.png",
+  "Interactions": {
+    "Primary": {"Interactions": [{"Type": "EquipItem"}]},
+    "Secondary": {"Interactions": [{"Type": "EquipItem"}]}
+  },
+  "Armor": {
+    "ArmorSlot": "Chest",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "Overtop"
+    ],
+    "DamageResistance": {
+      "Physical": [{"Amount": 0.09, "CalculationType": "Percent"}],
+      "Projectile": [{"Amount": 0.09, "CalculationType": "Percent"}]
+    },
+    "StatModifiers": {
+      "Health": [{"Amount": 17, "CalculationType": "Additive"}],
+      "Stamina": [{"Amount": 3, "CalculationType": "Additive"}],
+      "ReputationGain_Harvest_Feast_Host": [{"Amount": 5, "CalculationType": "Additive", "Target": "Max"}]
+    }
+  },
+  "MaxDurability": 100,
+  "DurabilityLossOnHit": 1,
+  "Tags": {"Type": ["Armor"], "Family": ["Harvest_Feast"]}
+}

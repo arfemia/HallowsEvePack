@@ -8,14 +8,19 @@
 board.harvest_feast_daily.grade.skill = Работа для навыков
 
 # ---- The skill jobs ----
-quest.mmo_harvest_feast_daily_harvesting.title = Полные поля
+quest.mmo_harvest_feast_daily_harvesting.title = Заказ на сбор урожая
 quest.mmo_harvest_feast_daily_harvesting.flavor = В полях больше, чем унесёт одна пара рук. Проведите сегодня за сбором и научитесь делать это быстрее.
-quest.mmo_harvest_feast_daily_crafting.title = Занятые верстаки
+quest.mmo_harvest_feast_daily_crafting.title = Заказ на ремесло
 quest.mmo_harvest_feast_daily_crafting.flavor = Верстаки на этой неделе не остывают. Проведите сегодня за работой, подойдёт любой верстак.
-quest.mmo_harvest_feast_daily_archery.title = Охотничья практика
-quest.mmo_harvest_feast_daily_archery.flavor = Индюки пугаются шагов. Научитесь бить их издали, и жаркое скажет вам спасибо.
-quest.mmo_harvest_feast_daily_woodcutting.title = Дрова для печей
+quest.mmo_harvest_feast_daily_archery.title = Заказ на стрельбу из лука
+quest.mmo_harvest_feast_daily_archery.flavor = Индюки пугаются шагов. Охотьтесь с луком в Emerald Wilds, и жаркое скажет вам спасибо.
+quest.mmo_harvest_feast_daily_woodcutting.title = Заказ на рубку дров
 quest.mmo_harvest_feast_daily_woodcutting.flavor = Печи всю неделю глотают дрова. Свалите несколько деревьев и не дайте огню погаснуть.
 
 # ---- The feast's boost ----
 boostrule.mmo_harvest_feast_harvesting.title = Праздник урожая
+
+# ---- The Harvest Set's skill half ----
+# A set's notice is a toast, so no value carries markup.
+gearset.mmo_harvest_feast_harvest_set.tier_half = Плюс больше опыта сбора урожая.
+gearset.mmo_harvest_feast_harvest_set.tier_full = И снова больше опыта сбора урожая, а при сборе вам больше везёт.

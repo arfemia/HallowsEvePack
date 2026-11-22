@@ -8,14 +8,19 @@
 board.harvest_feast_daily.grade.skill = Yetenek İşleri
 
 # ---- The skill jobs ----
-quest.mmo_harvest_feast_daily_harvesting.title = Dolu Tarlalar
+quest.mmo_harvest_feast_daily_harvesting.title = Hasat İşi
 quest.mmo_harvest_feast_daily_harvesting.flavor = Tarlalarda bir çift elin toplayabileceğinden fazlası var. Bugünü toplamakla geçir, bu işte hızlan.
-quest.mmo_harvest_feast_daily_crafting.title = Işlek Tezgahlar
+quest.mmo_harvest_feast_daily_crafting.title = Üretim İşi
 quest.mmo_harvest_feast_daily_crafting.flavor = Tezgahlar bu hafta hiç soğumuyor. Bugünü bir şeyler yapmakla geçir; hangi tezgah olsa olur.
-quest.mmo_harvest_feast_daily_archery.title = Avcının Talimi
-quest.mmo_harvest_feast_daily_archery.flavor = Hindiler ayak sesinde ürker. Onları uzaktan indirmeyi öğren, kızartma sana müteşekkir olur.
-quest.mmo_harvest_feast_daily_woodcutting.title = Fırın Odunu
+quest.mmo_harvest_feast_daily_archery.title = Okçuluk İşi
+quest.mmo_harvest_feast_daily_archery.flavor = Hindiler ayak sesinde ürker. Emerald Wilds'ta yayla avlan, kızartma sana müteşekkir olur.
+quest.mmo_harvest_feast_daily_woodcutting.title = Odunculuk İşi
 quest.mmo_harvest_feast_daily_woodcutting.flavor = Fırınlar bütün hafta odun yer. Birkaç ağaç devir, ateşler sönmesin.
 
 # ---- The feast's boost ----
 boostrule.mmo_harvest_feast_harvesting.title = Hasat Şöleni
+
+# ---- The Harvest Set's skill half ----
+# A set's notice is a toast, so no value carries markup.
+gearset.mmo_harvest_feast_harvest_set.tier_half = Ayrıca daha fazla Hasat XP'si.
+gearset.mmo_harvest_feast_harvest_set.tier_full = Ayrıca yine daha fazla Hasat XP'si ve hasat ederken daha iyi şans.

@@ -68,3 +68,13 @@ Hallows_Eve_Horsemans_Reins.description = The Headless Horseman's own reins, and
 Hallows_Eve_Horsemans_Reins.command_calm = Calm
 Hallows_Eve_Horsemans_Steed_Trophy.name = Horseman's Steed Trophy
 Hallows_Eve_Horsemans_Steed_Trophy.description = A tiny figure of the Headless Horseman's black horse in its barding, on a gold-trimmed stand. Place it anywhere you like. Found once in a while in his Boss Kill Claim, and Old Jack sells one.
+
+# Harvest Feast - the Harvest Set, sold at Martha's shop.
+Harvest_Feast_Harvest_Hat.name = Harvest Hat
+Harvest_Feast_Harvest_Hat.description = A warm wool hat for long days in the fields. Martha sells it at her shop once she counts you a Friend. Part of the Harvest Set: wear more of it for more health, and the whole set to earn her favor faster.
+Harvest_Feast_Harvest_Tunic.name = Harvest Tunic
+Harvest_Feast_Harvest_Tunic.description = A wool tunic for long days in the fields. Martha sells it at her shop once you're Head of the Table with her. Part of the Harvest Set: wear more of it for more health, and the whole set to earn her favor faster.
+Harvest_Feast_Harvest_Gloves.name = Harvest Gloves
+Harvest_Feast_Harvest_Gloves.description = Warm wool gloves for picking in the cold. Martha sells them at her shop once she counts you a Neighbor. Part of the Harvest Set: wear more of it for more health, and the whole set to earn her favor faster.
+Harvest_Feast_Harvest_Trousers.name = Harvest Trousers
+Harvest_Feast_Harvest_Trousers.description = Wool trousers that stand up to a day in the fields. Martha sells them at her shop once she counts you Family. Part of the Harvest Set: wear more of it for more health, and the whole set to earn her favor faster.

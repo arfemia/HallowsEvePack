@@ -70,3 +70,13 @@ Hallows_Eve_Horsemans_Reins.command_calm = Calmar
 Hallows_Eve_Horsemans_Steed_Trophy.name = Trofeo del Corcel del Jinete
 Hallows_Eve_Horsemans_Steed_Trophy.description = Una figura diminuta del caballo negro del Jinete sin Cabeza con su barda, sobre un pedestal ribeteado de oro. Colócala donde quieras. Se encuentra de vez en cuando en su Botín de Jefe, y el Viejo Jack vende una.
 
+# Banquete de la Cosecha - el Conjunto de la Cosecha, a la venta en la tienda de Martha.
+Harvest_Feast_Harvest_Hat.name = Sombrero de la Cosecha
+Harvest_Feast_Harvest_Hat.description = Un sombrero de lana abrigado para los largos días en el campo. Martha lo vende en su tienda cuando te considera Amigo. Parte del Conjunto de la Cosecha: lleva más piezas para más salud, y el conjunto entero para ganar su favor más rápido.
+Harvest_Feast_Harvest_Tunic.name = Túnica de la Cosecha
+Harvest_Feast_Harvest_Tunic.description = Una túnica de lana para los largos días en el campo. Martha la vende en su tienda cuando eres Cabecera de la Mesa con ella. Parte del Conjunto de la Cosecha: lleva más piezas para más salud, y el conjunto entero para ganar su favor más rápido.
+Harvest_Feast_Harvest_Gloves.name = Guantes de la Cosecha
+Harvest_Feast_Harvest_Gloves.description = Guantes de lana abrigados para recoger con frío. Martha los vende en su tienda cuando te considera Vecino. Parte del Conjunto de la Cosecha: lleva más piezas para más salud, y el conjunto entero para ganar su favor más rápido.
+Harvest_Feast_Harvest_Trousers.name = Pantalones de la Cosecha
+Harvest_Feast_Harvest_Trousers.description = Pantalones de lana que aguantan un día entero en el campo. Martha los vende en su tienda cuando eres De la Familia. Parte del Conjunto de la Cosecha: lleva más piezas para más salud, y el conjunto entero para ganar su favor más rápido.
+

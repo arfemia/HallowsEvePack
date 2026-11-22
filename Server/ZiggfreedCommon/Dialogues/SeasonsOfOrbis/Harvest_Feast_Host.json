@@ -9,20 +9,24 @@
     "READY to hand in, then one she can OFFER, then one that is ACTIVE, then Then, then Fallback.",
     "First holds five things. The off-season line comes first and shows only while the feast is off (a",
     "visit after a command ends it, or a server owner who stands her somewhere all year), and its only",
-    "answer is goodbye. Then her arrival line, for a player carrying Supper in the Temple (the quest",
-    "every player gets while the feast runs): its answer marks her greeted and hands that quest in, and",
-    "since its pay is a Claim, the hand-in takes the player to her quest list with Collect in front of",
+    "answer is goodbye. Then her arrival line, for a player carrying her intro quest (Meet Martha, the",
+    "quest every player gets while the feast runs): its answer marks her greeted and hands that quest in,",
+    "and since its pay is a Claim, the hand-in takes the player to her quest list with Collect in front of",
     "them. Then the greeting, for anyone who came without that quest, shown until the hail spends it.",
-    "Then Wheat for the Ovens' offer, once (OnceId meet_wheat_offer), for a player who has handed the",
-    "intro in and not taken that quest yet: collecting the intro plays this conversation again, so the",
-    "questline opens straight after the arrival. Then the board line, shown once a day (Once with Period",
-    "Daily, turning over at midnight UTC) and skipped while the player has something to hand in.",
+    "Then her first quest's offer (harvest_feast_host_1), once (OnceId meet_wheat_offer), for a player who",
+    "has handed the intro in and not taken that quest yet: collecting the intro plays this conversation",
+    "again, so the questline opens straight after the arrival. Then the board line, shown once a day (Once",
+    "with Period Daily, turning over at midnight UTC) and skipped while the player has something to hand",
+    "in.",
     "",
     "Quests holds one row per quest: the intro, the questline, then the rest, so the questline wins a tie",
     "with a daily. The intro's row brings the arrival line back for a player whose quest log was full when",
-    "the intro tried to arm: its answer for them takes the quest and hands it in. Then shows the",
-    "after-feast line once this year's feast is done (The Long Table reads ON_COOLDOWN until it comes back",
-    "next year, so the line takes that state beside COMPLETED).",
+    "the intro tried to arm: its answer for them takes the quest and hands it in. Extra Turkeys",
+    "(harvest_feast_extra_turkeys) repeats with no limit, so its row names only its Active and Ready",
+    "screens: with no Offerable beat the ladder never opens on it as an offer, and it is offered from her",
+    "quest list (What needs doing?) instead. Then shows the after-feast line once this year's feast is",
+    "done (harvest_feast_the_feast reads ON_COOLDOWN until it comes back next year, so the line takes that",
+    "state beside COMPLETED).",
     "",
     "THE BOARD LINE AND FAVOR. The board line comes in four wordings, one per band of favor with Martha,",
     "highest first, so the first that applies is the player's own rank: Revered, Honored, Friendly, then",
@@ -46,12 +50,13 @@
     "included), the stall, How do we stand? (it opens the Reputation page, and shows once the player has",
     "any favor with her), the Almanac (only while the Almanac is switched on), two lore lines and goodbye.",
     "",
-    "No line asks which world the player is in, so the arrival line, the greeting and Wheat for the Ovens'",
+    "No line asks which world the player is in, so the arrival line, the greeting and her first quest's",
     "offer play wherever she stands: the conversation is reached only through her (her placement's",
     "Interact), and Season keeps her standing only while the feast runs. The greeting's memory carries no",
     "Where, so it is kept once per player, the same in every world, and its ResetWithQuest files it under",
-    "her meet quest (Supper in the Temple): it is forgotten whenever that quest is reset, so a player who",
-    "starts the questline over hears her first words again. It can be written before that quest starts."
+    "her meet quest (harvest_feast_martha_meet): it is forgotten whenever that quest is reset, so a player",
+    "who starts the questline over hears her first words again. It can be written before that quest",
+    "starts."
   ],
   "Header": [ "ActiveObjective" ],
   "Memories": {
@@ -141,14 +146,15 @@
     "Quests": {
       "harvest_feast_martha_meet": { "Offerable": "meet_arrival", "Active": "meet_arrival", "Ready": "meet_arrival" },
       "harvest_feast_host_1": { "Offerable": "wheat_offer", "Active": "wheat_brief", "Ready": "wheat_ready" },
-      "harvest_feast_host_2": { "Offerable": "turkeys_offer", "Active": "active_generic", "Ready": "turkeys_ready" },
+      "harvest_feast_host_2": { "Offerable": "turkeys_offer", "Active": "turkeys_brief", "Ready": "turkeys_ready" },
       "harvest_feast_host_3": { "Offerable": "pie_offer", "Active": "pie_brief", "Ready": "pie_ready" },
       "harvest_feast_the_feast": { "Offerable": "feast_offer", "Active": "feast_brief", "Ready": "feast_ready" },
       "harvest_feast_invitations": { "Offerable": "invitations_offer", "Active": "invitations_brief", "Ready": "invitations_ready" },
-      "harvest_feast_daily_turkeys": { "Offerable": "daily_turkeys_offer", "Active": "active_generic", "Ready": "ready_generic" },
-      "harvest_feast_daily_wheat": { "Offerable": "daily_wheat_offer", "Active": "active_generic", "Ready": "ready_generic" },
-      "harvest_feast_daily_roast": { "Offerable": "daily_roast_offer", "Active": "active_generic", "Ready": "ready_generic" },
-      "harvest_feast_shared_meal": { "Offerable": "meal_offer", "Active": "meal_brief", "Ready": "meal_ready" }
+      "harvest_feast_daily_turkeys": { "Offerable": "daily_turkeys_offer", "Active": "turkeys_brief", "Ready": "ready_generic" },
+      "harvest_feast_daily_wheat": { "Offerable": "daily_wheat_offer", "Active": "wheat_brief", "Ready": "ready_generic" },
+      "harvest_feast_daily_roast": { "Offerable": "daily_roast_offer", "Active": "roast_brief", "Ready": "ready_generic" },
+      "harvest_feast_shared_meal": { "Offerable": "meal_offer", "Active": "meal_brief", "Ready": "meal_ready" },
+      "harvest_feast_extra_turkeys": { "Active": "turkeys_brief", "Ready": "extra_turkeys_ready" }
     },
     "Then": [
       {
@@ -261,10 +267,14 @@
         {
           "LabelKey": "dialogue.harvest_feast_host.turkeys_offer.opt.accept",
           "Style": "accept",
-          "Do": [ { "Accept": "harvest_feast_host_2" }, { "Goto": "active_generic" } ]
+          "Do": [ { "Accept": "harvest_feast_host_2" }, { "Goto": "turkeys_brief" } ]
         }
       ],
       "IncludeOptions": [ "feast_tail" ]
+    },
+    "turkeys_brief": {
+      "TextKey": "dialogue.harvest_feast_host.turkeys_brief.text",
+      "IncludeOptions": [ "feast_footer" ]
     },
     "turkeys_ready": {
       "TextKey": "dialogue.harvest_feast_host.turkeys_ready.text",
@@ -351,7 +361,7 @@
         {
           "LabelKey": "dialogue.harvest_feast_host.daily_turkeys_offer.opt.accept",
           "Style": "accept",
-          "Do": [ { "Accept": "harvest_feast_daily_turkeys" }, { "Goto": "active_generic" } ]
+          "Do": [ { "Accept": "harvest_feast_daily_turkeys" }, { "Goto": "turkeys_brief" } ]
         }
       ],
       "IncludeOptions": [ "feast_tail" ]
@@ -362,7 +372,7 @@
         {
           "LabelKey": "dialogue.harvest_feast_host.daily_wheat_offer.opt.accept",
           "Style": "accept",
-          "Do": [ { "Accept": "harvest_feast_daily_wheat" }, { "Goto": "active_generic" } ]
+          "Do": [ { "Accept": "harvest_feast_daily_wheat" }, { "Goto": "wheat_brief" } ]
         }
       ],
       "IncludeOptions": [ "feast_tail" ]
@@ -373,7 +383,26 @@
         {
           "LabelKey": "dialogue.harvest_feast_host.daily_roast_offer.opt.accept",
           "Style": "accept",
-          "Do": [ { "Accept": "harvest_feast_daily_roast" }, { "Goto": "active_generic" } ]
+          "Do": [ { "Accept": "harvest_feast_daily_roast" }, { "Goto": "roast_brief" } ]
+        }
+      ],
+      "IncludeOptions": [ "feast_tail" ]
+    },
+    "roast_brief": {
+      "TextKey": "dialogue.harvest_feast_host.roast_brief.text",
+      "IncludeOptions": [ "feast_footer" ]
+    },
+    "extra_turkeys_ready": {
+      "TextKey": "dialogue.harvest_feast_host.extra_turkeys_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.extra_turkeys_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "harvest_feast_extra_turkeys" } ],
+          "Do": [
+            { "TurnIn": "harvest_feast_extra_turkeys" },
+            { "Open": { "Type": "Quests", "Highlight": "harvest_feast_extra_turkeys" } }
+          ]
         }
       ],
       "IncludeOptions": [ "feast_tail" ]
@@ -437,10 +466,6 @@
         }
       ],
       "IncludeOptions": [ "feast_tail" ]
-    },
-    "active_generic": {
-      "TextKey": "dialogue.harvest_feast_host.active_generic.text",
-      "IncludeOptions": [ "feast_footer" ]
     },
     "ready_generic": {
       "TextKey": "dialogue.harvest_feast_host.ready_generic.text",

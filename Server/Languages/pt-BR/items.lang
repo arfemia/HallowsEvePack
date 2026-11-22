@@ -69,3 +69,13 @@ Hallows_Eve_Horsemans_Reins.command_calm = Acalmar
 Hallows_Eve_Horsemans_Steed_Trophy.name = Troféu do Corcel do Cavaleiro
 Hallows_Eve_Horsemans_Steed_Trophy.description = Uma figura minúscula do cavalo preto do Cavaleiro Sem Cabeça com a sua armadura, num suporte com acabamento dourado. Coloque onde quiser. Aparece de vez em quando no Resgate de Chefe Derrotado dele, e o Velho Jack vende uma.
 
+# Harvest Feast - the Harvest Set, sold at Martha's shop.
+Harvest_Feast_Harvest_Hat.name = Chapéu da Colheita
+Harvest_Feast_Harvest_Hat.description = Um chapéu de lã quente para os longos dias nos campos. A Martha vende na loja dela quando te considera Amigo. Parte do Conjunto da Colheita: use mais peças para ter mais vida, e o conjunto inteiro para ganhar o favor dela mais rápido.
+Harvest_Feast_Harvest_Tunic.name = Túnica da Colheita
+Harvest_Feast_Harvest_Tunic.description = Uma túnica de lã para os longos dias nos campos. A Martha vende na loja dela quando você é Cabeceira da Mesa com ela. Parte do Conjunto da Colheita: use mais peças para ter mais vida, e o conjunto inteiro para ganhar o favor dela mais rápido.
+Harvest_Feast_Harvest_Gloves.name = Luvas da Colheita
+Harvest_Feast_Harvest_Gloves.description = Luvas de lã quentinhas para colher no frio. A Martha vende na loja dela quando te considera Vizinho. Parte do Conjunto da Colheita: use mais peças para ter mais vida, e o conjunto inteiro para ganhar o favor dela mais rápido.
+Harvest_Feast_Harvest_Trousers.name = Calça da Colheita
+Harvest_Feast_Harvest_Trousers.description = Calça de lã que aguenta um dia inteiro nos campos. A Martha vende na loja dela quando te considera Da Família. Parte do Conjunto da Colheita: use mais peças para ter mais vida, e o conjunto inteiro para ganhar o favor dela mais rápido.
+

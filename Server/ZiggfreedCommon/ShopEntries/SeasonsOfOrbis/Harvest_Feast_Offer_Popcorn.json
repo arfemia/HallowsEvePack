@@ -3,7 +3,7 @@
   "Parent": "Harvest_Feast_Offer_Base",
   "Text": { "TitleKey": "server.items.Food_Popcorn.name" },
   "Listing": { "Category": "kitchen", "SortOrder": 30 },
-  "Cost": { "Currencies": { "Seasons_Of_Orbis_Festival_Token": 2 } },
+  "Cost": { "Currencies": { "Harvest_Feast_Coins": 6 } },
   "Limits": { "Daily": 2 },
   "Rewards": [ { "Kind": "Item", "Params": { "Item": "Food_Popcorn", "Count": 4 } } ]
 }

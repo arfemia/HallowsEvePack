@@ -8,14 +8,19 @@
 board.harvest_feast_daily.grade.skill = Travail de compétence
 
 # ---- The skill jobs ----
-quest.mmo_harvest_feast_daily_harvesting.title = Champs pleins
+quest.mmo_harvest_feast_daily_harvesting.title = Tâche de récolte
 quest.mmo_harvest_feast_daily_harvesting.flavor = Il y a plus dans les champs que deux mains n'en peuvent rentrer. Passe la journée à cueillir, et prends de la vitesse.
-quest.mmo_harvest_feast_daily_crafting.title = Établis occupés
+quest.mmo_harvest_feast_daily_crafting.title = Tâche d'artisanat
 quest.mmo_harvest_feast_daily_crafting.flavor = Les établis ne refroidissent pas de la semaine. Passe la journée à fabriquer des choses ; n'importe quel établi fera l'affaire.
-quest.mmo_harvest_feast_daily_archery.title = Exercice du chasseur
-quest.mmo_harvest_feast_daily_archery.flavor = Les dindes s'effraient au moindre pas. Apprends à les abattre de loin, et le rôti te remerciera.
-quest.mmo_harvest_feast_daily_woodcutting.title = Bois pour les fours
+quest.mmo_harvest_feast_daily_archery.title = Tâche d'archerie
+quest.mmo_harvest_feast_daily_archery.flavor = Les dindes s'effraient au moindre pas. Chasse à l'arc dans les Emerald Wilds, et le rôti te remerciera.
+quest.mmo_harvest_feast_daily_woodcutting.title = Tâche de bûcheronnage
 quest.mmo_harvest_feast_daily_woodcutting.flavor = Les fours mangent du bois toute la semaine. Abats quelques arbres et entretiens les feux.
 
 # ---- The feast's boost ----
 boostrule.mmo_harvest_feast_harvesting.title = Fête des Moissons
+
+# ---- The Harvest Set's skill half ----
+# A set's notice is a toast, so no value carries markup.
+gearset.mmo_harvest_feast_harvest_set.tier_half = Et plus d'XP de Récolte.
+gearset.mmo_harvest_feast_harvest_set.tier_full = Et encore plus d'XP de Récolte, et plus de chance quand vous récoltez.
