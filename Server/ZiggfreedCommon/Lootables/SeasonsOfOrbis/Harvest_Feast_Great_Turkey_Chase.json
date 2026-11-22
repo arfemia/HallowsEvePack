@@ -2,7 +2,7 @@
   "$Comment": [
     "What the Great Turkey's Boss Kill Claim (Rewards/Harvest_Feast/Harvest_Feast_Great_Turkey_Chase) pays,",
     "on every win in the Turkey Graveyard. Every roll is read on its own: the first two always pay, the",
-    "last four are chances on top.",
+    "next four are chances on top, then the supplies at the end.",
     "",
     "The first roll pays Harvest Coins, the feast's own currency that Martha's shelves take, and festival",
     "tokens, the currency every season shares, both through the Currency reward kind. Then a pumpkin pie",
@@ -21,7 +21,7 @@
     "graveyard pays for its own way in. Chance is a percent from 0 to 100. A companion mod adds rolls with",
     "a file naming this table in ContributesTo.",
     "",
-    "The last four rolls are its supplies, for the next run: Life Essence every win, then chances at health potions, the Lantern Bombs Old Jack's season brought (Item/Items/Hallows_Eve/Hallows_Eve_Lantern_Bomb_Common.json), and a Potion of Turkey Morphing (Item/Items/Harvest_Feast/Harvest_Feast_Potion_Morph_Turkey.json). A roll with no Chance always pays; Count to CountMax is how many."
+    "The last four rolls are its supplies, for the next run: Life Essence every win, then chances at health potions, the Lantern Bombs from Hallow's Eve (Item/Items/Hallows_Eve/Hallows_Eve_Lantern_Bomb_Common.json), and a Potion of Turkey Morphing (Item/Items/Harvest_Feast/Harvest_Feast_Potion_Morph_Turkey.json). A roll with no Chance always pays; Count to CountMax is how many."
   ],
   "Name": "Harvest_Feast_Great_Turkey_Chase",
   "Rolls": [

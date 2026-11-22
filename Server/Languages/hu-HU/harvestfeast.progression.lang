@@ -387,11 +387,13 @@ dialogue.harvest_feast_host.graveyard_daily_offer.text = Megint felkeltek a lelk
 dialogue.harvest_feast_host.graveyard_daily_offer.opt.accept = Ma megyek.
 almanac.harvest_feast.great_turkey.line = Martha, a Szakács egy Kívánságcsontért cserébe a Pulykatemetőbe küld. Győzd le egyszer a Nagy Pulykát, és megnyitja a nehéz bejáratot. Hozz barátokat.
 almanac.harvest_feast.great_turkey.button = Boss-harc rekordok
-almanac.harvest_feast.boss_kill.line = Minden győzelem a Boss-legyőzés Átvehetőjét hagyja a ládában, ahol a Boss elesik, az Átvehetők alatt: pár érmét és egy tökpitét, néha egy Pulykás pitét, egy Kívánságcsontot vissza, a Nagy Pulyka-palástot, vagy nagyon ritkán egy Arany Pulykatrófeát. Az első napi győzelmed újra kockáztatja a Palástot és a trófeát. A nehéz bejáratnál többet fizet, és mindkettő sokkal gyakrabban akad.
+almanac.harvest_feast.boss_kill.line = Minden győzelem a Boss-legyőzés Átvehetőjét hagyja a ládában, ahol a Boss elesik, az Átvehetők alatt: pár érmét, egy tökpitét és Életesszenciát, néha gyógyitalokat, Lámpásbombákat, egy Pulykás pitét, egy Kívánságcsontot vissza, egy Pulykaváltozás italát, a Nagy Pulyka-palástot, vagy nagyon ritkán egy Arany Pulykatrófeát. Az első napi győzelmed újra kockáztatja a Palástot és a trófeát. A nehéz bejáratnál többet fizet, és a ritka zsákmány sokkal gyakrabban akad.
 almanac.harvest_feast.source.boss_kill_pie = Mindig ott van a Nagy Pulyka Boss-legyőzés Átvehetőjében, a nehéz bejáratnál többet. Süthetsz is egyet egy Szakács Tűzhelyen.
 almanac.harvest_feast.source.boss_kill_turkey_pie = Gyakran a Nagy Pulyka Boss-legyőzés Átvehetőjében, a nehéz bejáratnál gyakrabban, és mindig a napi Átvehetőjében. Főzhetsz is egyet egy Szakács Tűzhelyen, ha megtanultad Martha receptjét.
 almanac.harvest_feast.source.great_turkey_mantle = Csak a Nagy Pulykától: időnként bármelyik győzelemnél, gyakrabban az első napi győzelmednél, a nehéz bejáratnál pedig sokkal gyakrabban. Martha a nehéz bejáratot akkor nyitja meg, ha legyőzted. Az Aratási Szett mellvértjének számít.
 almanac.harvest_feast.source.golden_turkey_trophy = Csak a Nagy Pulykától: nagyon ritkán bármelyik győzelemnél, gyakrabban az első napi győzelmednél és a nehéz bejáratnál. Blokként helyezd le.
+almanac.harvest_feast.source.potion_morph_turkey = Csak a Nagy Pulykától: időnként a Boss-legyőzés Átvehetőjében, a nehéz bejáratnál gyakrabban. Idd meg, és egy ideig pulykának látszol.
+almanac.harvest_feast.source.boss_kill_supplies = A Nagy Pulyka Boss-legyőzés Átvehetőjében, a nehéz bejáratnál többet.
 
 # ---- The Almanac page's items: where each comes from ----
 almanac.harvest_feast.source.bake_pumpkin = Süsd meg egy Szakács Tűzhelyen azzal a recepttel, amit Martha ad.

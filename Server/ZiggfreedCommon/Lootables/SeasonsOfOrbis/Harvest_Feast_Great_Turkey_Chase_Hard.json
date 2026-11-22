@@ -2,8 +2,8 @@
   "$Comment": [
     "What the Great Turkey's Boss Kill Claim on the hard way in (Rewards/Harvest_Feast/",
     "Harvest_Feast_Great_Turkey_Chase_Hard) pays, on every hard win: Harvest_Feast_Great_Turkey_Chase.json's",
-    "rolls at better amounts and odds. Every roll is read on its own: the first two always pay, the last four",
-    "are chances on top.",
+    "rolls at better amounts and odds. Every roll is read on its own: the first two always pay, the next four",
+    "are chances on top, then the supplies at the end.",
     "",
     "The first roll pays Harvest Coins and festival tokens through the Currency reward kind, the second two",
     "pumpkin pies. Then a better chance at one of Martha's Turkey Pies, the same chance at a Wishbone back as",
@@ -17,7 +17,7 @@
     "table. Chance is a percent from 0 to 100. A companion mod adds rolls with a file naming this table in",
     "ContributesTo.",
     "",
-    "The last four rolls are its supplies, for the next run: Life Essence every win, then chances at health potions, the Lantern Bombs Old Jack's season brought (Item/Items/Hallows_Eve/Hallows_Eve_Lantern_Bomb_Common.json), and a Potion of Turkey Morphing (Item/Items/Harvest_Feast/Harvest_Feast_Potion_Morph_Turkey.json). A roll with no Chance always pays; Count to CountMax is how many."
+    "The last four rolls are its supplies, for the next run: Life Essence every win, then chances at health potions, the Lantern Bombs from Hallow's Eve (Item/Items/Hallows_Eve/Hallows_Eve_Lantern_Bomb_Common.json), and a Potion of Turkey Morphing (Item/Items/Harvest_Feast/Harvest_Feast_Potion_Morph_Turkey.json). A roll with no Chance always pays; Count to CountMax is how many."
   ],
   "Name": "Harvest_Feast_Great_Turkey_Chase_Hard",
   "Rolls": [

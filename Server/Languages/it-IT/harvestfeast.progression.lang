@@ -387,11 +387,13 @@ dialogue.harvest_feast_host.graveyard_daily_offer.text = Le anime sono di nuovo 
 dialogue.harvest_feast_host.graveyard_daily_offer.opt.accept = Ci vado oggi.
 almanac.harvest_feast.great_turkey.line = Martha la Cuoca ti manda nel Cimitero dei Tacchini in cambio di un Osso del Desiderio. Sconfiggi il Gran Tacchino una volta e ti apre la via difficile. Porta degli amici.
 almanac.harvest_feast.great_turkey.button = Record dei boss
-almanac.harvest_feast.boss_kill.line = Ogni vittoria lascia la sua Ricompensa Uccisione Boss nel forziere dove cade, e sotto Ricompense: qualche moneta e una torta di zucca, e a volte una Torta di Tacchino, un Osso del Desiderio di ritorno, il Mantello del Gran Tacchino o, una volta ogni tanto, un Trofeo del Tacchino d'Oro. La prima vittoria di ogni giorno tira di nuovo per il Mantello e il trofeo. Nella via difficile paga di più, ed escono molto più spesso.
+almanac.harvest_feast.boss_kill.line = Ogni vittoria lascia la sua Ricompensa Uccisione Boss nel forziere dove cade, e sotto Ricompense: qualche moneta, una torta di zucca e Essenza di Vita, e a volte pozioni di salute, Bombe Lanterna, una Torta di Tacchino, un Osso del Desiderio di ritorno, una Pozione di Trasformazione in Tacchino, il Mantello del Gran Tacchino o, una volta ogni tanto, un Trofeo del Tacchino d'Oro. La prima vittoria di ogni giorno tira di nuovo per il Mantello e il trofeo. Nella via difficile paga di più, ed escono molto più spesso.
 almanac.harvest_feast.source.boss_kill_pie = Sempre nella Ricompensa Uccisione Boss del Gran Tacchino, e in più copie nella via difficile. Puoi anche infornarla a un Fornello dello Chef.
 almanac.harvest_feast.source.boss_kill_turkey_pie = Spesso nella Ricompensa Uccisione Boss del Gran Tacchino, più spesso nella via difficile, e sempre in quella giornaliera. Puoi anche cuocerla a un Fornello dello Chef dopo aver imparato la ricetta di Martha.
 almanac.harvest_feast.source.great_turkey_mantle = Solo dal Gran Tacchino: ogni tanto con qualsiasi vittoria, più spesso con la prima vittoria di ogni giorno, e molto più spesso nella via difficile. Martha apre la via difficile dopo che l'hai sconfitto. Conta come il pezzo per il torso del Set del Raccolto.
 almanac.harvest_feast.source.golden_turkey_trophy = Solo dal Gran Tacchino: una volta ogni tanto con qualsiasi vittoria, più spesso con la prima vittoria di ogni giorno e nella via difficile. Piazzalo come blocco.
+almanac.harvest_feast.source.potion_morph_turkey = Solo dal Gran Tacchino: ogni tanto nella sua Ricompensa Uccisione Boss, più spesso nella via difficile. Bevila per sembrare un tacchino per un po'.
+almanac.harvest_feast.source.boss_kill_supplies = Nella Ricompensa Uccisione Boss del Gran Tacchino, e in quantità maggiore nella via difficile.
 
 # ---- The Almanac page's items: where each comes from ----
 almanac.harvest_feast.source.bake_pumpkin = Cuocila a un Fornello dello Chef con la ricetta che ti dà Martha.

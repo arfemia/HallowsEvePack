@@ -387,11 +387,13 @@ dialogue.harvest_feast_host.graveyard_daily_offer.text = Die Seelen sind wieder 
 dialogue.harvest_feast_host.graveyard_daily_offer.opt.accept = Ich gehe heute.
 almanac.harvest_feast.great_turkey.line = Martha die Köchin schickt dich für einen Wunschknochen in den Truthahnfriedhof. Besiege den Großen Truthahn einmal, dann öffnet sie den schweren Weg hinein. Nimm Freunde mit.
 almanac.harvest_feast.great_turkey.button = Bosskampf-Aufzeichnungen
-almanac.harvest_feast.boss_kill.line = Jeder Sieg lässt seine Bosskill-Abholung in der Truhe, wo er fällt, und unter Abholungen: ein paar Münzen und einen Kürbiskuchen, und manchmal eine Truthahnpastete, einen Wunschknochen zurück, den Mantel des Großen Truthahns oder, ganz selten, eine Goldene Truthahntrophäe. Dein erster Sieg am Tag würfelt noch einmal um Mantel und Trophäe. Auf dem schweren Weg hinein zahlt sie mehr, und beide fallen viel öfter.
+almanac.harvest_feast.boss_kill.line = Jeder Sieg lässt seine Bosskill-Abholung in der Truhe, wo er fällt, und unter Abholungen: ein paar Münzen, ein Kürbiskuchen und Lebensessenz, und manchmal Heiltränke, Laternenbomben, eine Truthahnpastete, ein Wunschknochen zurück, ein Trank der Truthahnverwandlung, der Mantel des Großen Truthahns oder, ganz selten, eine Goldene Truthahntrophäe. Dein erster Sieg am Tag würfelt noch einmal um Mantel und Trophäe. Auf dem schweren Weg hinein zahlt sie mehr, und beide fallen viel öfter.
 almanac.harvest_feast.source.boss_kill_pie = Immer in der Bosskill-Abholung des Großen Truthahns, auf dem schweren Weg hinein mehr davon. Du kannst einen auch auf einem Kochherd backen.
 almanac.harvest_feast.source.boss_kill_turkey_pie = Oft in der Bosskill-Abholung des Großen Truthahns, auf dem schweren Weg hinein noch öfter, und immer in seiner täglichen Abholung. Du kannst sie auch auf einem Kochherd kochen, sobald du Marthas Rezept gelernt hast.
 almanac.harvest_feast.source.great_turkey_mantle = Nur vom Großen Truthahn: hin und wieder bei jedem Sieg, öfter bei deinem ersten Sieg am Tag und viel öfter auf dem schweren Weg hinein. Martha öffnet den schweren Weg, sobald du ihn besiegt hast. Zählt als Brustteil des Ernte-Sets.
 almanac.harvest_feast.source.golden_turkey_trophy = Nur vom Großen Truthahn: ganz selten bei jedem Sieg, öfter bei deinem ersten Sieg am Tag und auf dem schweren Weg hinein. Stell sie als Block auf.
+almanac.harvest_feast.source.potion_morph_turkey = Nur vom Großen Truthahn: hin und wieder in seiner Bosskill-Abholung, öfter auf dem schweren Weg hinein. Trink ihn, und du siehst eine Weile wie ein Truthahn aus.
+almanac.harvest_feast.source.boss_kill_supplies = In der Bosskill-Abholung des Großen Truthahns, auf dem schweren Weg hinein mehr davon.
 
 # ---- The Almanac page's items: where each comes from ----
 almanac.harvest_feast.source.bake_pumpkin = Back ihn auf einem Kochherd nach dem Rezept, das Martha dir gibt.
