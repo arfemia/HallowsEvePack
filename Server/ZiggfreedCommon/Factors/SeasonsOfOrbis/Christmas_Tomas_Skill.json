@@ -1,0 +1,22 @@
+{
+  "$Comment": [
+    "The skill key to Tomas's secret, on a server running MMO Skill Tree: reads 1 once the player's Crafting",
+    "level is 20 or more, and less below it. The file name is the factor id. Formula reads the Crafting level",
+    "through hytale:stat (the channel MMO_Level_CRAFTING, which MMO Skill Tree mirrors each skill's level",
+    "onto) at a weight of 0.05, so level 20 reads 1, and Clamp holds it at 1. Change the level by changing",
+    "the weight (0.04 is level 25) and the words of the lock line that name it",
+    "(Mmo_Christmas_Tomas_Key_Name.json, christmas.mmo.lang).",
+    "",
+    "Requires, the plain hytale:mod_installed condition with Min 1, drops this file at load where MMO Skill",
+    "Tree is missing: the factor is then absent on purpose, so the key that sums it (Christmas_Tomas_Key.json)",
+    "reads only the apprentice quest there, and nothing reports it as unknown. Its id carries no Mmo_ prefix",
+    "because the key file, which every server loads, names it as a term."
+  ],
+  "Requires": {
+    "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ]
+  },
+  "Formula": {
+    "Factors": [ { "Factor": "hytale:stat", "Param": "MMO_Level_CRAFTING", "Weight": 0.05 } ],
+    "Clamp": { "Max": 1 }
+  }
+}

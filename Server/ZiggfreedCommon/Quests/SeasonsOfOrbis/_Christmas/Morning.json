@@ -16,9 +16,12 @@
     "the game's red-dotted Christmas Packet (sold nowhere), a Santa Suit to wear, and a little favor on",
     "Santa's Nice List and Festival Favor.",
     "",
-    "The Mmo_Xp row is MMO Skill Tree's: Acrobatics XP for the walk to the temple, collected with the rest.",
-    "Its own Requires, the hytale:mod_installed gate, leaves the row out on a server without that mod,",
-    "unpaid and unshown, and the rest still pays."
+    "The Mmo_Xp and Mmo_Boost_Token rows are MMO Skill Tree's: Acrobatics XP for the walk to the temple, and",
+    "a boost token, half again as much XP in every skill for two hours, which the player starts when it",
+    "suits them, collected with the rest. Each row's own Requires, the hytale:mod_installed gate, leaves it",
+    "out on a server without that mod, unpaid and unshown, and the rest still pays. There a bag of treats",
+    "(the table Christmas_Treats) stands in for the token, so the present is as full: that row's own",
+    "Requires, the same condition with Max 0, leaves it out where MMO Skill Tree is installed."
   ],
   "Name": "Morning",
   "Parent": "Christmas_Quest_Base",
@@ -51,7 +54,11 @@
       { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 100 } },
       { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 100 } },
       { "Kind": "Mmo_Xp", "Params": { "Skill": "ACROBATICS", "Amount": "2500" },
-        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } },
+      { "Kind": "Mmo_Boost_Token", "Params": { "Skill": "ALL", "Multiplier": "1.5", "DurationMinutes": "120" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } },
+      { "Kind": "Lootable", "Params": { "Lootable": "Christmas_Treats" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Max": 0 } ] } }
     ]
   }
 }

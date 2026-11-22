@@ -1,0 +1,27 @@
+{
+  "$Comment": [
+    "Bram's skill job, on his own board (Christmas_Shepherd_Jobs) on a server running MMO Skill Tree: earn",
+    "this much Woodcutting XP while you carry it, chopping any tree. Requires, the plain hytale:mod_installed",
+    "condition with Min 1, drops it at load where MMO Skill Tree is missing, and the board posts Bram's plain",
+    "errand there instead. Its Claim is the errands' plain pay plus Woodcutting XP.",
+    "Mmo_Christmas_Miller_Skill_Job.json explains the rest; its words are in christmas.mmo.lang."
+  ],
+  "Parent": "Christmas_Contract_Base",
+  "Requires": {
+    "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ]
+  },
+  "Listing": { "Icon": "Tool_Hatchet_Crude" },
+  "Boards": [ { "Board": "Christmas_Shepherd_Jobs", "Difficulty": "Christmas_Shepherd_Skill", "Weight": 1 } ],
+  "Objectives": {
+    "gain_xp": { "Kind": "GAIN_XP", "Target": "WOODCUTTING", "MatchMode": "EXACT", "Amount": 1250 }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Currency", "Params": { "Currency": "Christmas_Coins", "Amount": "4" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 20 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 15 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "WOODCUTTING", "Amount": "750" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

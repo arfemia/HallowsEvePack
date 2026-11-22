@@ -1,0 +1,18 @@
+{
+  "$Comment": [
+    "Bram's secret has two keys, and this factor reads 1 when the player holds either: his apprentice quest",
+    "done and collected (ziggfreedcommon:quest_completed, christmas_bram_apprentice), which works on every",
+    "server, or Woodcutting level 20 (the factor Christmas_Bram_Skill), which exists only where MMO Skill",
+    "Tree runs. Formula adds the two and Clamp holds the sum at 1. Bram's extra roll in every Christmas",
+    "Present asks for it with Min 1 (Lootables/SeasonsOfOrbis/Christmas_Bram_Present.json), of the player who",
+    "opens the present. Nothing shows a lock line on it, so it carries no name.",
+    "Christmas_Tomas_Key.json explains the rest."
+  ],
+  "Formula": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:quest_completed", "Param": "christmas_bram_apprentice", "Weight": 1 },
+      { "Factor": "Christmas_Bram_Skill", "Weight": 1 }
+    ],
+    "Clamp": { "Max": 1 }
+  }
+}

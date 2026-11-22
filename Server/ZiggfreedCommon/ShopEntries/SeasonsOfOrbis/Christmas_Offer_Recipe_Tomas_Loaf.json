@@ -1,0 +1,19 @@
+{
+  "$Comment": "The recipe page for Tomas's Christmas Loaf (Christmas_Recipe_Tomas_Loaf), Tomas's secret, sold at his stall to a player holding either key to it: the factor Christmas_Tomas_Key reads 1 once his apprentice quest is collected, or, on a server running MMO Skill Tree, at Crafting level 20 (Factors/SeasonsOfOrbis/Christmas_Tomas_Key.json). Requires is a lock, not a hide: a player without a key still sees the offer, locked, and the lock line names what opens it on that server (the key's name overlays). The Season leaf on the base still hides it while Christmas is off. Reading the page teaches the dish for good, so a player buys it once (Limits.Total). Its picture is the dish. Nothing about it is a rank on Santa's Nice List, so it stays out of the list's rank gifts.",
+  "Parent": "Christmas_Offer_Base",
+  "Shop": "Christmas_Miller",
+  "Text": {
+    "TitleKey": "shop.christmas_offer_recipe_tomas_loaf.title",
+    "FlavorKey": "shop.christmas_offer_recipe_tomas_loaf.desc"
+  },
+  "Icon": "Christmas_Tomas_Loaf",
+  "Listing": { "Category": "kitchen", "SortOrder": 35 },
+  "Cost": { "Currencies": { "Christmas_Coins": 60 } },
+  "Limits": { "Total": 1 },
+  "Requires": {
+    "Factors": [
+      { "Factor": "Christmas_Tomas_Key", "Min": 1 }
+    ]
+  },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Christmas_Recipe_Tomas_Loaf", "Count": 1 } } ]
+}

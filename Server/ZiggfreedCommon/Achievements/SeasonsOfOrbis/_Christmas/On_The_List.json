@@ -14,7 +14,9 @@
     "Coins, two Christmas Presents and candy canes, and MMO Skill Tree's Mmo_Boost_Token, a quarter more XP",
     "in every skill for half an hour, which the player starts when it suits them. The token row's own",
     "Requires, the hytale:mod_installed gate, leaves it out on a server without that mod, unpaid and",
-    "unshown, and the rest still pays."
+    "unshown, and the rest still pays. There a Hot Cocoa stands in for it, a buff the player also starts",
+    "when it suits them: that row's own Requires, the same condition with Max 0, leaves it out where MMO",
+    "Skill Tree is installed."
   ],
   "Listing": {
     "Category": "Seasons",
@@ -39,7 +41,9 @@
       { "Kind": "Item", "Params": { "Item": "Christmas_Present", "Count": "2" } },
       { "Kind": "Item", "Params": { "Item": "Food_Candy_Cane", "Count": "8" } },
       { "Kind": "Mmo_Boost_Token", "Params": { "Skill": "ALL", "Multiplier": "1.25", "DurationMinutes": "30" },
-        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } },
+      { "Kind": "Item", "Params": { "Item": "Christmas_Hot_Cocoa", "Count": "1" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Max": 0 } ] } }
     ]
   }
 }

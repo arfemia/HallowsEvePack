@@ -1,0 +1,24 @@
+{
+  "$Comment": [
+    "A bag of Christmas treats: one draw from the bag below, weighted against each other, mostly candy canes",
+    "or cookies, now and then a Hot Cocoa, once in a while a Christmas Cake. Christmas Morning's present pays",
+    "it on a server without MMO Skill Tree, in place of the boost token that server has nowhere to put",
+    "(Quests/SeasonsOfOrbis/_Christmas/Morning.json, the row gated with Max 0), so the present feels as full",
+    "on both. Every item goes where the player's pickup settings send it, and whatever their bag cannot take",
+    "drops at their feet. Text names this table wherever a reward paying it is shown; its hover lists what",
+    "it pays. Its words are in christmas.mmo.lang."
+  ],
+  "Name": "Christmas_Treats",
+  "Text": {
+    "TitleKey": "lootable.christmas_treats.title",
+    "FlavorKey": "lootable.christmas_treats.flavor"
+  },
+  "Pool": {
+    "Entries": [
+      { "Weight": 40, "Grants": { "Items": [ { "Item": "Food_Candy_Cane", "Count": 4 } ] } },
+      { "Weight": 30, "Grants": { "Items": [ { "Item": "Christmas_Gingerbread_Cookie", "Count": 3 } ] } },
+      { "Weight": 20, "Grants": { "Items": [ { "Item": "Christmas_Hot_Cocoa", "Count": 2 } ] } },
+      { "Weight": 10, "Grants": { "Items": [ { "Item": "Christmas_Cake", "Count": 1 } ] } }
+    ]
+  }
+}

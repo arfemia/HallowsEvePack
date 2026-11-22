@@ -1,0 +1,14 @@
+{
+  "$Comment": [
+    "Names the factor Christmas_Elsie_Key for lock lines on a server without MMO Skill Tree, where her",
+    "apprentice quest is the one key: 'Requires finishing Elsie's Apprentice' on her Reindeer Suit.",
+    "Requires, the plain hytale:mod_installed condition with Max 0, drops this file at load where MMO Skill",
+    "Tree is installed, and Mmo_Christmas_Elsie_Key_Name.json names the factor there instead.",
+    "Christmas_Tomas_Key_Name.json explains the rest."
+  ],
+  "Requires": {
+    "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Max": 0 } ]
+  },
+  "Factor": "Christmas_Elsie_Key",
+  "Text": { "TitleKey": "christmas.mmo.factor.christmas_elsie_key.name" }
+}

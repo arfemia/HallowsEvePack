@@ -1,0 +1,34 @@
+{
+  "$Comment": [
+    "One of Tomas's plain errands, on his own board (Christmas_Miller_Jobs): bring him wheat for his flour.",
+    "His board posts an errand only where MMO Skill Tree is missing (the errand slot's Max 0 gate), in place",
+    "of the skill job a server running that mod posts, so every server gets one job from Tomas a day. The",
+    "band Christmas_Miller_Errand holds his two errands, and the board draws one of them each day. A TURN_IN",
+    "step is handed in at Tomas or at his board.",
+    "",
+    "It pays half a Christmas Board job, the same plain pay as his skill job: Christmas Coins, a little favor",
+    "on Santa's Nice List and Festival Favor, waiting at the board until the player collects it.",
+    "",
+    "The Mmo_Xp row (Harvesting XP, behind its own hytale:mod_installed gate) is there because every paying",
+    "contract in the pack carries an MMO Skill Tree row, and it pays nothing with this pack's boards: the",
+    "errand file loads on every server, but its slot is posted only where MMO Skill Tree is missing, and",
+    "there the row's gate leaves it out. It pays only if a server owner's own board posts the errand where",
+    "MMO Skill Tree runs. The season and the listing come from Christmas_Contract_Base, and its words from",
+    "the keys its id spells, in christmas.mmo.lang."
+  ],
+  "Parent": "Christmas_Contract_Base",
+  "Listing": { "Icon": "Plant_Crop_Wheat_Item" },
+  "Boards": [ { "Board": "Christmas_Miller_Jobs", "Difficulty": "Christmas_Miller_Errand", "Weight": 1 } ],
+  "Objectives": {
+    "bring_wheat": { "Kind": "TURN_IN", "Target": "Plant_Crop_Wheat_Item", "MatchMode": "EXACT", "Amount": 10, "TextKey": "objective.christmas.bring_tomas_wheat" }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Currency", "Params": { "Currency": "Christmas_Coins", "Amount": "4" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 20 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 15 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "HARVESTING", "Amount": "750" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

@@ -156,3 +156,11 @@ Christmas_Yeti_Fur_Coat.name = Yeti Fur Coat
 Christmas_Yeti_Fur_Coat.description = A heavy coat of the Yeti's white fur. You take <color is="#ffffff">20%</color> less Ice damage while you wear it. The Yeti sometimes leaves one behind the first time you beat him each day.
 Christmas_Ornament.name = Christmas Ornament
 Christmas_Ornament.description = A glass bauble for the tree. Santa gives one to everyone who helps him fill his sleigh on Christmas Eve, and each Christmas has its own. Hang it anywhere you like.
+
+# Christmas - the villagers' secrets: Tomas's own loaf and its recipe page, and Elsie's Reindeer Suit.
+Christmas_Tomas_Loaf.name = Tomas's Christmas Loaf
+Christmas_Tomas_Loaf.description = Tomas the Miller's own sweet loaf. Instantly restores <color is="#ffffff">5%</color> health and grants:\n\n• <color is="#ffffff">Swift Feet</color>: you move <color is="#ffffff">15%</color> faster\n• <color is="#ffffff">Warm Inside</color>: <color is="#ffffff">40%</color> less ice damage\n\nDuration: <color is="#ffffff">10:00</color>\n\nBake it at a Chef's Stove once you've learned the recipe.
+Christmas_Recipe_Tomas_Loaf.name = Recipe: Tomas's Christmas Loaf
+Christmas_Recipe_Tomas_Loaf.description = Teaches the <item is="Christmas_Tomas_Loaf"/> recipe. Bake it at a Chef's Stove from dough and tree sap, <color is="#ffffff">2</color> at a time.\n\nInstantly restores <color is="#ffffff">5%</color> health and grants:\n\n• <color is="#ffffff">Swift Feet</color>\n• <color is="#ffffff">Warm Inside</color>\n\nDuration: <color is="#ffffff">10:00</color>
+Christmas_Reindeer_Suit.name = Reindeer Suit
+Christmas_Reindeer_Suit.description = A bundle of reindeer clothes, antlers and red nose included, just your size. Right-click to put it on and look like one of Santa's reindeer for <color is="#ffffff">30:00</color>. Type /zigcostume off to take it off sooner. Elsie the Weaver sells it at her Christmas stall. Ask her how to earn it.

@@ -1,0 +1,63 @@
+{
+  "$Comment": "The recipe page for Tomas's Christmas Loaf (Christmas_Tomas_Loaf), Tomas's secret. Shaped like the game's own recipe pages (Recipe_Food_Pie_Meat) and the other Christmas recipe pages: using it with either button teaches the loaf for good (LearnRecipe) and uses the page up. It has its own name key, where the game's pages build theirs from the dish's.",
+  "TranslationProperties": {
+    "Name": "items.Christmas_Recipe_Tomas_Loaf.name",
+    "Description": "items.Christmas_Recipe_Tomas_Loaf.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Recipe_Page.png",
+  "Quality": "Epic",
+  "Categories": [
+    "Items.Recipes"
+  ],
+  "PlayerAnimationsId": "Item",
+  "Model": "Items/Consumables/Recipes/Recipe.blockymodel",
+  "Texture": "Items/Consumables/Recipes/Recipe_Texture.png",
+  "IconProperties": {
+    "Scale": 0.76,
+    "Rotation": [
+      135,
+      135,
+      0
+    ],
+    "Translation": [
+      -1,
+      5
+    ]
+  },
+  "Consumable": true,
+  "Interactions": {
+    "Primary": {
+      "Interactions": [
+        {
+          "ItemId": "Christmas_Tomas_Loaf",
+          "Type": "LearnRecipe",
+          "Next": {
+            "Type": "ModifyInventory",
+            "AdjustHeldItemQuantity": -1
+          }
+        }
+      ]
+    },
+    "Secondary": {
+      "Interactions": [
+        {
+          "ItemId": "Christmas_Tomas_Loaf",
+          "Type": "LearnRecipe",
+          "Next": {
+            "Type": "ModifyInventory",
+            "AdjustHeldItemQuantity": -1
+          }
+        }
+      ]
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Recipe"
+    ],
+    "Family": [
+      "Food"
+    ]
+  },
+  "MaxStack": 10
+}

@@ -15,13 +15,18 @@
     "story is collected and Elsie's is not taken yet, he sends the player to her. Collecting his quest plays",
     "this conversation again (its CompletionDialogue), so the pointer comes straight after.",
     "",
-    "Quests holds two rows, both bound to him by the id he keeps in both seasons (Harvest_Feast_Miller).",
+    "Quests holds three rows, all bound to him by the id he keeps in both seasons (Harvest_Feast_Miller).",
     "His part of Santa's story, Christmas Cookies (christmas_gingerbread_cookies): the conversation opens on",
     "its offer while it can be taken, on its brief while it is carried, and on its hand-in once the cookie",
-    "is in the bag. Then his daily, Daily Baking (christmas_daily_baking), the same three screens. Each",
-    "hand-in opens his quest list with Collect in front of the player. Otherwise it opens on greeting, the",
-    "Fallback: who he is this Christmas and what his stall sells, in plain words, with his stall, his quest",
-    "list (Any work for me?), how to make dough (the dough screen), and why he is here."
+    "is in the bag. Then his daily, Daily Baking (christmas_daily_baking), the same three screens. Then his",
+    "secret's apprentice quest, Tomas's Apprentice (christmas_tomas_apprentice), the same three screens: it",
+    "teaches the route that opens his loaf recipe on every server. Each hand-in opens his quest list with",
+    "Collect in front of the player. Otherwise it opens on greeting, the Fallback: who he is this Christmas",
+    "and what his stall sells, in plain words, with his stall, his quest list (Any work for me?, which also",
+    "lists the day's job from his own board, Boards/SeasonsOfOrbis/Christmas_Miller_Jobs.json), how to make",
+    "dough (the dough screen), and why he is here. One more line shows only where MMO Skill Tree is installed",
+    "(its Factor condition, hytale:mod_installed with Min 1): the other key to his secret, Crafting level 20,",
+    "on the secret_skill screen. Its words, and the apprentice quest's, are in christmas.mmo.lang."
   ],
   "Start": {
     "First": [
@@ -43,7 +48,8 @@
     ],
     "Quests": {
       "christmas_gingerbread_cookies": { "Offerable": "cookies_offer", "Active": "cookies_brief", "Ready": "cookies_ready" },
-      "christmas_daily_baking": { "Offerable": "baking_offer", "Active": "baking_brief", "Ready": "baking_ready" }
+      "christmas_daily_baking": { "Offerable": "baking_offer", "Active": "baking_brief", "Ready": "baking_ready" },
+      "christmas_tomas_apprentice": { "Offerable": "apprentice_offer", "Active": "apprentice_brief", "Ready": "apprentice_ready" }
     },
     "Fallback": "greeting"
   },
@@ -67,7 +73,56 @@
         },
         { "LabelKey": "dialogue.christmas_miller.opt.quests", "Style": "neutral", "Open": "Quests" },
         { "LabelKey": "dialogue.christmas_miller.opt.dough", "Style": "neutral", "Goto": "dough" },
-        { "LabelKey": "dialogue.christmas_miller.opt.why", "Style": "neutral", "Goto": "why" }
+        { "LabelKey": "dialogue.christmas_miller.opt.why", "Style": "neutral", "Goto": "why" },
+        {
+          "LabelKey": "dialogue.christmas_miller.opt.secret_skill",
+          "Style": "neutral",
+          "Conditions": [
+            { "Type": "Factor", "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 }
+          ],
+          "Goto": "secret_skill"
+        }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "secret_skill": {
+      "TextKey": "dialogue.christmas_miller.secret_skill.text",
+      "Options": [
+        { "LabelKey": "dialogue.christmas_miller.opt.back", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "apprentice_offer": {
+      "TextKey": "dialogue.christmas_miller.apprentice_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_miller.apprentice_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "christmas_tomas_apprentice" }, { "Goto": "apprentice_brief" } ]
+        },
+        { "LabelKey": "dialogue.christmas_miller.opt.later", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "apprentice_brief": {
+      "TextKey": "dialogue.christmas_miller.apprentice_brief.text",
+      "Options": [
+        { "LabelKey": "dialogue.christmas_miller.opt.back", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "apprentice_ready": {
+      "TextKey": "dialogue.christmas_miller.apprentice_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_miller.apprentice_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "christmas_tomas_apprentice" } ],
+          "Do": [
+            { "TurnIn": "christmas_tomas_apprentice" },
+            { "Open": { "Type": "Quests", "Highlight": "christmas_tomas_apprentice" } }
+          ]
+        }
       ],
       "IncludeOptions": [ "goodbye" ]
     },

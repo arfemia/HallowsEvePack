@@ -1,0 +1,43 @@
+{
+  "$Comment": [
+    "The Winter Bauble find (Christmas_Bauble_Find.json) on a server running MMO Skill Tree, where a",
+    "woodcutter's luck makes it come more often. The file name is the row's id.",
+    "",
+    "It claims the same moment and the same pattern as the plain find (When BreakBlock, Match *_Trunk), and",
+    "two rows claiming one pattern in one moment are one answer: the row whose id sorts last wins, and",
+    "Mmo_Christmas_Bauble_Find sorts after Christmas_Bauble_Find. So with MMO Skill Tree this row takes the",
+    "plain row's place, the same find with the same sound. Requires, the plain hytale:mod_installed condition",
+    "with Min 1, drops this file at load where that mod is missing, and the plain row runs at its flat",
+    "chance there. Season leaves it out while Christmas is off, as the plain row's does.",
+    "",
+    "Chance is a percent: the plain row's 5 as its Base, plus the breaker's Woodcutting luck",
+    "(MMO_Luck_WOODCUTTING, which the Christmas Set's MMO half raises) and their luck for everything",
+    "(MMO_Luck), both read through hytale:stat in whole points. Clamp holds it at 25 at most. Keep the Base",
+    "equal to the plain row's Chance, so a player with no luck finds baubles as often on both servers. A",
+    "server owner retunes or switches off this row by its own id in mods/ziggfreedcommon/bonus-rows.json;",
+    "switching off the plain row alone leaves this one running where MMO Skill Tree is installed."
+  ],
+  "Season": "Christmas",
+  "Requires": {
+    "Factors": [
+      { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 }
+    ]
+  },
+  "When": { "Kind": "BreakBlock", "Match": "*_Trunk" },
+  "Chance": {
+    "Base": 5.0,
+    "Factors": [
+      { "Factor": "hytale:stat", "Param": "MMO_Luck_WOODCUTTING", "Weight": 1.0 },
+      { "Factor": "hytale:stat", "Param": "MMO_Luck", "Weight": 1.0 }
+    ],
+    "Clamp": { "Max": 25.0 }
+  },
+  "Loot": {
+    "Rolls": [
+      {
+        "Grants": { "Items": [ { "Item": "WinterHoliday_Ornament_Bauble", "Count": 1 } ] },
+        "Cue": "Christmas_Bauble_Found"
+      }
+    ]
+  }
+}

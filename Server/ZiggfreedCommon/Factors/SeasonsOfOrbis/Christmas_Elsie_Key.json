@@ -1,0 +1,18 @@
+{
+  "$Comment": [
+    "Elsie's secret has two keys, and this factor reads 1 when the player holds either: her apprentice quest",
+    "done and collected (ziggfreedcommon:quest_completed, christmas_elsie_apprentice), which works on every",
+    "server, or Building level 20 (the factor Christmas_Elsie_Skill), which exists only where MMO Skill Tree",
+    "runs. Formula adds the two and Clamp holds the sum at 1. The Reindeer Suit at her stall locks on it with",
+    "Min 1 (ShopEntries/SeasonsOfOrbis/Christmas_Offer_Reindeer_Suit.json), and its lock line reads the name",
+    "overlay each server loads (Christmas_Elsie_Key_Name.json, Mmo_Christmas_Elsie_Key_Name.json).",
+    "Christmas_Tomas_Key.json explains the rest."
+  ],
+  "Formula": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:quest_completed", "Param": "christmas_elsie_apprentice", "Weight": 1 },
+      { "Factor": "Christmas_Elsie_Skill", "Weight": 1 }
+    ],
+    "Clamp": { "Max": 1 }
+  }
+}

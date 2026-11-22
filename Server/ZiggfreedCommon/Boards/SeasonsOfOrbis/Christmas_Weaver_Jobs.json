@@ -1,0 +1,35 @@
+{
+  "$Comment": [
+    "Elsie the Weaver's own small board: one job a day, drawn at midnight UTC. Hosts names the id Elsie",
+    "keeps in both seasons (Harvest_Feast_Weaver), so her quest page (in her Christmas conversation and in",
+    "her feast conversation's Christmas line) lists the day's job beside her own quests.",
+    "",
+    "The first slot posts the Christmas_Weaver_Skill band, which only her skill job carries",
+    "(Mmo_Christmas_Weaver_Skill_Job.json, a server running MMO Skill Tree); the second posts the",
+    "Christmas_Weaver_Errand band, her plain errands. The slot gates are read when the board loads: Min 1",
+    "leaves a slot off where MMO Skill Tree is missing, Max 0 where it is installed, so every server posts",
+    "one job from Elsie a day for the same plain pay. Both slots are Optional, so the one a server leaves",
+    "out never reads as a gap. Christmas_Miller_Jobs.json explains the rest; its words are in",
+    "christmas.mmo.lang."
+  ],
+  "Season": "Christmas",
+  "Text": {
+    "TitleKey": "board.christmas_weaver_jobs.title",
+    "FlavorKey": "board.christmas_weaver_jobs.desc"
+  },
+  "Hosts": [ "Harvest_Feast_Weaver" ],
+  "Icon": "Christmas_Present",
+  "Order": 93,
+  "Rotation": { "Period": "Daily" },
+  "Slots": [
+    { "Difficulty": "Christmas_Weaver_Skill", "Optional": true,
+      "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } },
+    { "Difficulty": "Christmas_Weaver_Errand", "Optional": true,
+      "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Max": 0 } ] } }
+  ],
+  "Grades": {
+    "Christmas_Weaver_Skill": { "TitleKey": "board.christmas_weaver_jobs.grade.skill", "Color": "#d6453d" },
+    "Christmas_Weaver_Errand": { "TitleKey": "board.christmas_weaver_jobs.grade.errand", "Color": "#d6453d" }
+  },
+  "Currencies": [ "Christmas_Coins" ]
+}

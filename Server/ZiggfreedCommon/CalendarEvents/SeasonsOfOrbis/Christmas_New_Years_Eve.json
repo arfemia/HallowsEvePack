@@ -1,0 +1,20 @@
+{
+  "$Comment": [
+    "New Year's Eve, December 31st (both ends that one day, counted in UTC), inside Christmas. The file name",
+    "is the event id. It exists so content can wait for the day itself: MMO Skill Tree's boost rule",
+    "MMOSkillTree/BoostRules/SeasonsOfOrbis/Mmo_Christmas_New_Years_Eve.json reads it beside Christmas, so",
+    "the boost runs only while both are live. It has no Herald, so it comes and goes without a banner.",
+    "",
+    "It is an event of its own, on its own dates: a server owner who moves Christmas in",
+    "mods/ziggfreedcommon/calendar.json moves this one there too. Switching Christmas off is enough to keep",
+    "the boost out, since the boost reads Christmas as well. /zigcalendar status Christmas_New_Years_Eve shows",
+    "what the server reads."
+  ],
+  "Window": { "Start": "12-31", "End": "12-31" },
+  "FirstYear": 2026,
+  "Presentation": {
+    "TitleKey": "calendar.christmas_new_years_eve.name",
+    "FlavorKey": "calendar.christmas_new_years_eve.flavor",
+    "Icon": "WinterHoliday_Lights"
+  }
+}

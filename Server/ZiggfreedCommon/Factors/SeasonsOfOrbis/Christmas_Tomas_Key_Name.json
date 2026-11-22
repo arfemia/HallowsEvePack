@@ -1,0 +1,18 @@
+{
+  "$Comment": [
+    "Names the factor Christmas_Tomas_Key for lock lines on a server without MMO Skill Tree, where his",
+    "apprentice quest is the one key: a player who has not finished it reads 'Requires finishing Tomas's",
+    "Apprentice' on his loaf recipe. Factor names the factor this file names (it defines no value of its",
+    "own), and Text.TitleKey is the full lang key: the lang file's name, a dot, then the key as written in",
+    "christmas.mmo.lang.",
+    "",
+    "Requires, the plain hytale:mod_installed condition with Max 0, drops this file at load where MMO Skill",
+    "Tree is installed; Mmo_Christmas_Tomas_Key_Name.json, gated with Min 1, names the factor there instead,",
+    "with the skill level too. Each server loads exactly one of the two."
+  ],
+  "Requires": {
+    "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Max": 0 } ]
+  },
+  "Factor": "Christmas_Tomas_Key",
+  "Text": { "TitleKey": "christmas.mmo.factor.christmas_tomas_key.name" }
+}

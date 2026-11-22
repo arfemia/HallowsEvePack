@@ -1,0 +1,122 @@
+{
+  "$Comment": "Tomas's Christmas Loaf, Tomas the Miller's own dish and his secret: a sweet loaf baked two at a time at a Chef's Stove (the Cookingbench, its Baked tab) once a player has learned it from Christmas_Recipe_Tomas_Loaf, which his stall sells to a player holding either key to his secret (his apprentice quest, or Crafting level 20 on a server running MMO Skill Tree). It wears the game's bread (Food_Bread's model, texture and icon). Eating one gives an instant heal, the cookie's Christmas_Food_Speed and the cocoa's Christmas_Food_Warmth (not its health regen), and nothing a Christmas Cake does not give, so the secret is a new dish, never more power. Its description in items.lang writes the numbers out: change it with the effects. Recipe.Input is what one batch costs, Recipe.Output and OutputQuantity how many it makes (keep the two equal); Fuel is the 3 fuel every baked dish in the game burns. The loaf is good all year.",
+  "TranslationProperties": {
+    "Name": "items.Christmas_Tomas_Loaf.name",
+    "Description": "items.Christmas_Tomas_Loaf.description"
+  },
+  "Parent": "Template_Food",
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Food_T3"
+  },
+  "Quality": "Epic",
+  "Icon": "Icons/ItemsGenerated/Food_Bread.png",
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "Opacity": "Semitransparent",
+    "CustomModel": "Items/Consumables/Food/Bread.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Food/Bread_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "HitboxType": "Food_Medium",
+    "RandomRotation": "YawStep1",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
+    },
+    "CustomModelScale": 0.5,
+    "BlockParticleSetId": "Dust",
+    "ParticleColor": "#e4cb69",
+    "TextureComputedColor": "#A26927"
+  },
+  "InteractionVars": {
+    "Consume_Charge": {
+      "Interactions": [
+        {
+          "Parent": "Consume_Charge_Food_T1_Inner",
+          "Effects": {
+            "Particles": [
+              {
+                "SystemId": "Food_Eat",
+                "Color": "#DCC15D",
+                "TargetNodeName": "Mouth",
+                "TargetEntityPart": "Entity"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Food_Instant_Heal_T1"
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Christmas_Food_Speed"
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Christmas_Food_Warmth"
+        }
+      ]
+    }
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Dough",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Tree_Sap",
+        "Quantity": 1
+      },
+      {
+        "ResourceTypeId": "Fuel",
+        "Quantity": 3
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Christmas_Tomas_Loaf",
+        "Quantity": 2
+      }
+    ],
+    "OutputQuantity": 2,
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Cookingbench",
+        "Categories": [
+          "Baked"
+        ]
+      }
+    ],
+    "TimeSeconds": 5,
+    "KnowledgeRequired": true
+  },
+  "ItemLevel": 16,
+  "MaxStack": 25,
+  "DropOnDeath": true,
+  "Scale": 1.5,
+  "ResourceTypes": [
+    {
+      "Id": "Foods"
+    }
+  ],
+  "Consumable": true,
+  "Tags": {
+    "Type": [
+      "Food"
+    ],
+    "Family": [
+      "Christmas"
+    ]
+  }
+}

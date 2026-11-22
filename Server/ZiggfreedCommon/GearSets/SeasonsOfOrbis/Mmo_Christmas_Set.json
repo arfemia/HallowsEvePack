@@ -1,0 +1,41 @@
+{
+  "$Comment": [
+    "MMO Skill Tree's half of the Christmas Set, Christmas_Set.json. Joins adds this file to that set instead",
+    "of making a set of its own, so the player still sees one Christmas Set: one notice, one entry. The set's",
+    "name and members stay that file's, so this file names none.",
+    "",
+    "Its two tiers ask exactly what the set's two tiers ask (Armor 2, then Armor 4), so each joins its twin:",
+    "its stats apply beside the set's, and its line follows the set's line in the same notice. A tier asking",
+    "for something else would be added as a tier of its own. Requires takes this file out on a server without",
+    "MMO Skill Tree, where these stats do not exist and its lines would name a bonus nobody gets; always write",
+    "it with Min 1.",
+    "",
+    "MMO_BonusXp_WOODCUTTING raises the Woodcutting XP the wearer earns and MMO_Luck_WOODCUTTING the luck",
+    "Woodcutting's lucky rolls read, both in whole percent points (10 is 10%). The luck also raises the",
+    "Winter Bauble find while Christmas runs (BonusRows/SeasonsOfOrbis/Mmo_Christmas_Bauble_Find.json). Both",
+    "are Additive on purpose: these channels have a base of zero, so a Multiplicative entry computes nothing."
+  ],
+  "Joins": "Christmas_Set",
+  "Requires": {
+    "Factors": [
+      { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 }
+    ]
+  },
+  "Bonuses": [
+    {
+      "Armor": 2,
+      "Text": { "TitleKey": "gearset.mmo_christmas_set.tier_half" },
+      "StatModifiers": {
+        "MMO_BonusXp_WOODCUTTING": [ { "Amount": 10, "CalculationType": "Additive" } ]
+      }
+    },
+    {
+      "Armor": 4,
+      "Text": { "TitleKey": "gearset.mmo_christmas_set.tier_full" },
+      "StatModifiers": {
+        "MMO_BonusXp_WOODCUTTING": [ { "Amount": 15, "CalculationType": "Additive" } ],
+        "MMO_Luck_WOODCUTTING": [ { "Amount": 10, "CalculationType": "Additive" } ]
+      }
+    }
+  ]
+}
