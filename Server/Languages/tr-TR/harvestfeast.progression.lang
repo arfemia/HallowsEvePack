@@ -353,7 +353,8 @@ dialogue.harvest_feast_shepherd.opt.thanks = Sağ ol, Bram.
 dialogue.harvest_feast_shepherd.opt.farewell = Şölenin tadını çıkar.
 dialogue.harvest_feast_shepherd.supper.text = O et bana mı? Martha'nın işi, bahse girerim.\nOna sağ ol de.
 dialogue.harvest_feast_shepherd.supper.opt.give = Martha sana akşam yemeği gönderdi.
-dialogue.harvest_feast_shepherd.eggs_offer.text = Tomas hamuru için yumurta istiyor, tavukları da ben bilirim.\nBana biraz <b>yumurta</b> getir.dialogue.harvest_feast_shepherd.eggs_offer.opt.accept = Sana yumurta getireceğim.
+dialogue.harvest_feast_shepherd.eggs_offer.text = Tomas hamuru için yumurta istiyor, tavukları da ben bilirim.\nBana biraz <b>yumurta</b> getir.
+dialogue.harvest_feast_shepherd.eggs_offer.opt.accept = Sana yumurta getireceğim.
 dialogue.harvest_feast_shepherd.eggs_offer.opt.later = Bugün olmaz.
 dialogue.harvest_feast_shepherd.eggs_brief.text = Bana biraz <b>yumurta</b> getir.
 dialogue.harvest_feast_shepherd.eggs_ready.text = Tek bir tanesi bile çatlamamış. İyi.\nYarın yine aynısı.

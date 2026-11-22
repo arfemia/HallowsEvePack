@@ -335,7 +335,8 @@ dialogue.harvest_feast_shepherd.opt.thanks = Gracias, Bram.
 dialogue.harvest_feast_shepherd.opt.farewell = Disfruta del banquete.
 dialogue.harvest_feast_shepherd.supper.text = ¿Esa carne es para mí? Cosa de Martha, seguro.\nDale las gracias.
 dialogue.harvest_feast_shepherd.supper.opt.give = Martha te envía la cena.
-dialogue.harvest_feast_shepherd.eggs_offer.text = Tomas quiere huevos para su masa, y yo sé de gallinas.\nTráeme unos <b>huevos</b>.dialogue.harvest_feast_shepherd.eggs_offer.opt.accept = Te traeré huevos.
+dialogue.harvest_feast_shepherd.eggs_offer.text = Tomas quiere huevos para su masa, y yo sé de gallinas.\nTráeme unos <b>huevos</b>.
+dialogue.harvest_feast_shepherd.eggs_offer.opt.accept = Te traeré huevos.
 dialogue.harvest_feast_shepherd.eggs_offer.opt.later = Hoy no.
 dialogue.harvest_feast_shepherd.eggs_brief.text = Tráeme unos <b>huevos</b>.
 dialogue.harvest_feast_shepherd.eggs_ready.text = Ni uno roto. Bien.\nLo mismo mañana.
