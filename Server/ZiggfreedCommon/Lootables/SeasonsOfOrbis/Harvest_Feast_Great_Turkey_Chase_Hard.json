@@ -15,36 +15,142 @@
     "(ZiggfreedCommon/Almanac/SeasonsOfOrbis/Harvest_Feast.json) lists what both tables pay, so change them",
     "together. Favor with Martha is not here: favor rides a quest's or a contract's own Rewards, never a pay",
     "table. Chance is a percent from 0 to 100. A companion mod adds rolls with a file naming this table in",
-    "ContributesTo."
+    "ContributesTo.",
+    "",
+    "The last four rolls are its supplies, for the next run: Life Essence every win, then chances at health potions, the Lantern Bombs Old Jack's season brought (Item/Items/Hallows_Eve/Hallows_Eve_Lantern_Bomb_Common.json), and a Potion of Turkey Morphing (Item/Items/Harvest_Feast/Harvest_Feast_Potion_Morph_Turkey.json). A roll with no Chance always pays; Count to CountMax is how many."
   ],
   "Name": "Harvest_Feast_Great_Turkey_Chase_Hard",
   "Rolls": [
     {
       "Grants": {
         "Rewards": [
-          { "Kind": "Currency", "Params": { "Currency": "Harvest_Feast_Coins", "Amount": "15" } },
-          { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "2" } }
+          {
+            "Kind": "Currency",
+            "Params": {
+              "Currency": "Harvest_Feast_Coins",
+              "Amount": "15"
+            }
+          },
+          {
+            "Kind": "Currency",
+            "Params": {
+              "Currency": "Seasons_Of_Orbis_Festival_Token",
+              "Amount": "2"
+            }
+          }
         ]
       }
     },
     {
-      "Grants": { "Items": [ { "Item": "Food_Pie_Pumpkin", "Count": 2 } ] }
+      "Grants": {
+        "Items": [
+          {
+            "Item": "Food_Pie_Pumpkin",
+            "Count": 2
+          }
+        ]
+      }
     },
     {
-      "Chance": { "Base": 50.0 },
-      "Grants": { "Items": [ { "Item": "Harvest_Feast_Turkey_Pie", "Count": 1 } ] }
+      "Chance": {
+        "Base": 50.0
+      },
+      "Grants": {
+        "Items": [
+          {
+            "Item": "Harvest_Feast_Turkey_Pie",
+            "Count": 1
+          }
+        ]
+      }
     },
     {
-      "Chance": { "Base": 15.0 },
-      "Grants": { "Items": [ { "Item": "Harvest_Feast_Wishbone", "Count": 1 } ] }
+      "Chance": {
+        "Base": 15.0
+      },
+      "Grants": {
+        "Items": [
+          {
+            "Item": "Harvest_Feast_Wishbone",
+            "Count": 1
+          }
+        ]
+      }
     },
     {
-      "Chance": { "Base": 15.0 },
-      "Grants": { "Items": [ { "Item": "Harvest_Feast_Great_Turkey_Mantle", "Count": 1 } ] }
+      "Chance": {
+        "Base": 15.0
+      },
+      "Grants": {
+        "Items": [
+          {
+            "Item": "Harvest_Feast_Great_Turkey_Mantle",
+            "Count": 1
+          }
+        ]
+      }
     },
     {
-      "Chance": { "Base": 6.0 },
-      "Grants": { "Items": [ { "Item": "Harvest_Feast_Golden_Turkey_Trophy", "Count": 1 } ] }
+      "Chance": {
+        "Base": 6.0
+      },
+      "Grants": {
+        "Items": [
+          {
+            "Item": "Harvest_Feast_Golden_Turkey_Trophy",
+            "Count": 1
+          }
+        ]
+      }
+    },
+    {
+      "Grants": {
+        "Items": [
+          {
+            "Item": "Ingredient_Life_Essence",
+            "Count": 8,
+            "CountMax": 15
+          }
+        ]
+      }
+    },
+    {
+      "Grants": {
+        "Items": [
+          {
+            "Item": "Potion_Health",
+            "Count": 1,
+            "CountMax": 2
+          }
+        ]
+      }
+    },
+    {
+      "Chance": {
+        "Base": 75.0
+      },
+      "Grants": {
+        "Items": [
+          {
+            "Item": "Hallows_Eve_Lantern_Bomb_Common",
+            "Count": 3,
+            "CountMax": 5
+          }
+        ]
+      }
+    },
+    {
+      "Chance": {
+        "Base": 40.0
+      },
+      "Grants": {
+        "Items": [
+          {
+            "Item": "Harvest_Feast_Potion_Morph_Turkey",
+            "Count": 1
+          }
+        ]
+      }
     }
   ]
 }

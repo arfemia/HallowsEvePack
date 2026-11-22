@@ -1,0 +1,57 @@
+{
+  "$Comment": "The Potion of Turkey Morphing, a find from the Great Turkey's Boss Kill Claim (Lootables/SeasonsOfOrbis/Harvest_Feast_Great_Turkey_Chase.json and its _Hard twin). Shaped like the game's Potion_Morph_Pigeon: a child of Potion_Template drunk through the game's morph-potion chain, whose Effect applies Harvest_Feast_Costume_Turkey (Entity/Effects/Harvest_Feast/Harvest_Feast_Costume_Turkey.json), the same turkey look Turkey Hunt puts on, so its length is set there. It has no recipe: the Great Turkey is the only way to get one. The bottle is the game's potion in its orange glass, and the icon the game's own morph-potion icon.",
+  "Parent": "Potion_Template",
+  "TranslationProperties": {
+    "Name": "items.Harvest_Feast_Potion_Morph_Turkey.name",
+    "Description": "items.Harvest_Feast_Potion_Morph_Turkey.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Potion_Morph_Dog.png",
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Root_Secondary_Consume_Potion_Morph"
+  },
+  "InteractionVars": {
+    "RemoveEffect": {
+      "Interactions": [
+        { "Type": "Simple" }
+      ]
+    },
+    "Effect": {
+      "Interactions": [
+        { "Type": "ApplyEffect", "EffectId": "Harvest_Feast_Costume_Turkey" }
+      ]
+    },
+    "Stat_Check": {
+      "Interactions": [
+        { "Parent": "Stat_Check", "Costs": { "Health": 1 }, "ValueType": "Percent", "LessThan": false }
+      ]
+    },
+    "ConsumeSFX": {
+      "Interactions": [
+        { "Parent": "Consume_SFX", "Effects": { "LocalSoundEventId": "SFX_Health_Potion_Low_Drink" } }
+      ]
+    },
+    "ConsumedSFX": {
+      "Interactions": [
+        { "Type": "Simple" }
+      ]
+    }
+  },
+  "BlockType": {
+    "CustomModel": "Items/Consumables/Potions/Potion.blockymodel",
+    "CustomModelTexture": [
+      { "Texture": "Items/Consumables/Potions/Potion_Textures/Orange.png", "Weight": 1 }
+    ],
+    "ParticleColor": "#d9a441",
+    "Light": { "Color": "#333" },
+    "TextureComputedColor": "#C8742A"
+  },
+  "ItemLevel": 20,
+  "DropOnDeath": true,
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [22.5, 45, 22.5],
+    "Translation": [0, -13.5]
+  },
+  "Quality": "Rare"
+}
