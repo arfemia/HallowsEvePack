@@ -1,0 +1,45 @@
+{
+  "$Comment": [
+    "The top of the Great Turkey's ladder: beat it in the Turkey Graveyard many times, over as many feasts",
+    "as it takes. ENCOUNTER_DEFEATED names the fight's encounter script, as Great_Turkey_Down.json does,",
+    "and every player the fight credits counts the win, so a party that sticks together climbs it together.",
+    "The description's number comes from the criterion's Amount through @amount, and the criterion's",
+    "TextKey words the step.",
+    "",
+    "Earned once and kept: no Parent and no full_table tag, like Great Turkey Hunter, the rung below it in",
+    "the chain kills_harvest_feast_great_turkey. Rewards.Auto pays the title Harvest_Feast_Great_Turkey_Slayer",
+    "(Titles/SeasonsOfOrbis/) the moment it is earned: a title is the one thing an achievement pays",
+    "without waiting to be collected. Rewards.Claim waits on the achievements page: Harvest Coins and MMO",
+    "Skill Tree's Mmo_Xp row, Defense XP for the fights. The Mmo_Xp row's own Requires, the",
+    "hytale:mod_installed gate, leaves it out on a server without that mod, unpaid and unshown, and the",
+    "coins still pay. The _Harvest_Feast folder makes the id harvest_feast_great_turkey_slayer."
+  ],
+  "Text": { "TextArgs": { "Flavor": [ "@amount" ] } },
+  "Listing": {
+    "Category": "Seasons",
+    "Subcategory": "Harvest_Feast",
+    "SortOrder": 141,
+    "Icon": "Harvest_Feast_Wishbone",
+    "Chains": [ { "Id": "kills_harvest_feast_great_turkey", "Tier": 2 } ]
+  },
+  "Scoring": { "Points": 50 },
+  "Criteria": {
+    "defeat-great-turkey": {
+      "Kind": "ENCOUNTER_DEFEATED",
+      "Target": "Harvest_Feast_Great_Turkey_Encounter",
+      "MatchMode": "EXACT",
+      "Amount": 50,
+      "TextKey": "objective.harvest_feast.defeat_great_turkeys"
+    }
+  },
+  "Rewards": {
+    "Auto": [
+      { "Kind": "Title", "Params": { "Title": "Harvest_Feast_Great_Turkey_Slayer" } }
+    ],
+    "Claim": [
+      { "Kind": "Currency", "Params": { "Currency": "Harvest_Feast_Coins", "Amount": "120" } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "5000" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

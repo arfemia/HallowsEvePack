@@ -1,0 +1,48 @@
+{
+  "$Comment": [
+    "Do daily jobs during one season: Martha's dailies (the harvest_feast_daily_ prefix), Shared Meal,",
+    "the dailies Tomas, Elsie and Bram give (Miller_Flour, Weaver_Spices, Shepherd_Eggs), and the Feast",
+    "Board's jobs (the harvest_feast_board_ prefix, and with MMO Skill Tree its Skill jobs under",
+    "mmo_harvest_feast_daily_). COMPLETE_QUEST counts each one as its pay is collected, and Target plus",
+    "every Targets entry is one list read under the one MatchMode, PREFIX, so a whole quest id matches",
+    "itself and a prefix matches every job that starts with it; a new daily or board job under those",
+    "prefixes counts with no edit here. The Guest List (once a feast) and Extra Turkeys (as often as you",
+    "like) are left out on purpose. The criterion's TextKey words the step, and the description's number",
+    "comes from the criterion's Amount through @amount, so a retune touches no translation.",
+    "",
+    "It inherits the yearly occurrence from Harvest_Feast_Achievement_Base, and the full_table tag counts",
+    "it toward The Full Table. Each year's copy pays Harvest Coins and MMO Skill Tree's Mmo_Boost_Token, a",
+    "quarter more XP in every skill for an hour, since the jobs train many skills, both waiting on the",
+    "achievements page until the player collects them. The token row's own Requires, the",
+    "hytale:mod_installed gate, leaves it out on a server without that mod, unpaid and unshown, and the",
+    "coins still pay. The _Harvest_Feast folder makes the id harvest_feast_helping_hands."
+  ],
+  "Parent": "Harvest_Feast_Achievement_Base",
+  "Text": { "TextArgs": { "Flavor": [ "@amount" ] } },
+  "Listing": { "SortOrder": 40, "Icon": "Food_Bread", "Tags": [ "full_table" ] },
+  "Scoring": { "Points": 10 },
+  "Criteria": {
+    "do-daily-jobs": {
+      "Kind": "COMPLETE_QUEST",
+      "Target": "harvest_feast_daily_",
+      "Targets": [
+        "harvest_feast_shared_meal",
+        "harvest_feast_miller_flour",
+        "harvest_feast_weaver_spices",
+        "harvest_feast_shepherd_eggs",
+        "harvest_feast_board_",
+        "mmo_harvest_feast_daily_"
+      ],
+      "MatchMode": "PREFIX",
+      "Amount": 10,
+      "TextKey": "objective.harvest_feast.daily_jobs"
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Currency", "Params": { "Currency": "Harvest_Feast_Coins", "Amount": "25" } },
+      { "Kind": "Mmo_Boost_Token", "Params": { "Skill": "ALL", "Multiplier": "1.25", "DurationMinutes": "60" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

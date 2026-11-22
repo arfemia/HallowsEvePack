@@ -1,5 +1,5 @@
 {
-  "$Comment": "A Wild Turkey: the feast's own turkey, out in the daytime woods and fields while Harvest Feast runs, and what the host's hunts count. It is a Variant of Template_Animal_Neutral carrying the game's Turkey's own Modify, with the nameplate changed, its flock made of feast turkeys only, and IsMemory false so a creature that walks a few weeks a year stays out of the Memories collection. Any key the template does not declare makes the game refuse the whole role, and the creature never spawns, so add a key here only if the game's own Turkey role already names it. It drops what the game's turkey drops (raw wild meat and a light hide), and taming one still turns it into the game's own tame turkey. It spawns only through this pack's calendar rule (CalendarSpawns/SeasonsOfOrbis/Harvest_Feast_Turkey_Spawns.json).",
+  "$Comment": "A Wild Turkey: the feast's own turkey, out in the daytime woods and fields while Harvest Feast runs, and what the host's hunts count. It is a Variant of Template_Animal_Neutral carrying the game's Turkey's own Modify, with the nameplate changed, its flock made of feast turkeys only, and IsMemory false so a creature that walks a few weeks a year stays out of the Memories collection. Any key the template does not declare makes the game refuse the whole role, and the creature never spawns, so add a key here only if the game's own Turkey role already names it. It drops what the game's turkey drops (raw wild meat and a light hide) and, rarely, a Turkey Trophy (Drops/Harvest_Feast/Harvest_Feast_Drop_Wild_Turkey.json), and taming one still turns it into the game's own tame turkey. It spawns only through this pack's calendar rule (CalendarSpawns/SeasonsOfOrbis/Harvest_Feast_Turkey_Spawns.json).",
   "Type": "Variant",
   "Reference": "Template_Animal_Neutral",
   "Modify": {
@@ -7,7 +7,7 @@
     "FlockArray": [ "Harvest_Feast_Turkey" ],
     "AttractiveItemSet": [ "Plant_Crop_Corn_Item" ],
     "AttractiveItemSetParticles": "Want_Food_Corn",
-    "DropList": "Drop_Turkey",
+    "DropList": "Harvest_Feast_Drop_Wild_Turkey",
     "MaxHealth": 38,
     "MaxSpeed": 5,
     "ViewRange": 18,

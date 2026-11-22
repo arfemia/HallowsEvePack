@@ -1,0 +1,55 @@
+{
+  "$Comment": "What a Wild Turkey (the feast's own, Harvest_Feast_Turkey) drops: the game's turkey drops (Drop_Turkey: raw wild meat and a light hide, copied here whole because a role names one drop list), plus, very rarely, a Turkey Trophy to place at home. The last Choice is the rare roll: Weight 1 against Empty's 199 is a one-in-two-hundred chance per Wild Turkey. Raise the Empty weight to make it rarer. The game's own turkeys keep the game's list and never drop the trophy.",
+  "Container": {
+    "Type": "Multiple",
+    "Containers": [
+      {
+        "Type": "Choice",
+        "Weight": 100,
+        "Containers": [
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Food_Wildmeat_Raw",
+              "QuantityMin": 1,
+              "QuantityMax": 2
+            }
+          }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 100,
+        "Containers": [
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Ingredient_Hide_Light",
+              "QuantityMin": 1,
+              "QuantityMax": 1
+            }
+          }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 100,
+        "Containers": [
+          {
+            "Type": "Single",
+            "Weight": 1,
+            "Item": {
+              "ItemId": "Harvest_Feast_Turkey_Trophy",
+              "QuantityMin": 1,
+              "QuantityMax": 1
+            }
+          },
+          {
+            "Type": "Empty",
+            "Weight": 199
+          }
+        ]
+      }
+    ]
+  }
+}

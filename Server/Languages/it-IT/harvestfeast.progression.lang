@@ -134,6 +134,14 @@ objective.harvest_feast.pick_carrots = Raccogli {0} {0, plural, one {Carota} man
 objective.harvest_feast.bring_vegetables = Porta {0} {0, plural, one {Verdura Arrostita} many {Verdure Arrostite} other {Verdure Arrostite}}
 objective.harvest_feast.bring_spices = Porta {0} Spezie
 objective.harvest_feast.wear_harvest_set = Indossa {0} {0, plural, one {pezzo} many {pezzi} other {pezzi}} del Set del Raccolto
+objective.harvest_feast.pick_crops = Raccogli {0} raccolti a mano
+objective.harvest_feast.daily_jobs = Fai {0} lavori giornalieri o lavori della Bacheca della Festa
+objective.harvest_feast.defeat_great_turkey = Sconfiggi il Gran Tacchino
+objective.harvest_feast.defeat_great_turkeys = Sconfiggi il Gran Tacchino {0} volte
+objective.harvest_feast.feast_basket = Ritira un Cesto della Festa
+objective.harvest_feast.cook_turkey_pie = Cuoci una Torta di Tacchino
+objective.harvest_feast.cook_harvest_salad = Prepara un'Insalata del Raccolto
+objective.harvest_feast.cook_marthas_roast = Cuoci l'Arrosto di Martha
 
 # ---- Achievements ----
 achievement.category.seasons.harvest_feast = Festa del Raccolto
@@ -143,19 +151,41 @@ achievement.harvest_feast_turkey_chaser.title = Cacciatore di Tacchini {0}
 achievement.harvest_feast_turkey_chaser.desc = Caccia {0} tacchini.
 achievement.harvest_feast_full_baskets.title = Cesti Pieni {0}
 achievement.harvest_feast_full_baskets.desc = Raccogli {0} raccolti a mano.
-achievement.harvest_feast_keepsake.title = Trofeo della Festa {0}
+achievement.harvest_feast_helping_hands.title = Mani Pronte {0}
+achievement.harvest_feast_helping_hands.desc = Fai {0} lavori giornalieri per Martha e i suoi aiutanti.
+achievement.harvest_feast_great_turkey_down.title = Cimitero dei Tacchini {0}
+achievement.harvest_feast_great_turkey_down.desc = Sconfiggi il Gran Tacchino nel Cimitero dei Tacchini.
+achievement.harvest_feast_keepsake.title = Piatto d'Oro di Martha {0}
 achievement.harvest_feast_keepsake.desc = Siediti al Banchetto con Martha.
-keepsake.harvest_feast_trophy.name = Trofeo della Festa del {0}
+keepsake.harvest_feast_golden_plate.name = Piatto d'Oro di Martha del {0}
 keepsake.harvest_feast_plate.name = Piatto della Festa del {0}
+achievement.harvest_feast_supper_round.title = Giro di Cene {0}
+achievement.harvest_feast_supper_round.desc = Porta la cena a Tomas, Elsie e Bram.
 achievement.harvest_feast_full_table.title = La Tavola Piena {0}
-achievement.harvest_feast_full_table.desc = Ottieni tutti gli obiettivi della Festa del Raccolto di quest'anno.
+achievement.harvest_feast_full_table.desc = Ottieni tutti gli obiettivi di questa lista durante una Festa del Raccolto.
 achievement.harvest_feast_harvest_set.title = Set del Raccolto
 achievement.harvest_feast_harvest_set.desc = Indossa l'intero Set del Raccolto del negozio di Martha.
+achievement.harvest_feast_marthas_cookbook.title = Ricettario di Martha
+achievement.harvest_feast_marthas_cookbook.desc = Cuoci Torta di Tacchino, Insalata del Raccolto e Arrosto di Martha.
+achievement.harvest_feast_marthas_hunter.title = Cacciatore di Martha
+achievement.harvest_feast_marthas_hunter.desc = Consegna Tacchini Extra {0} volte.
+achievement.harvest_feast_great_turkey_hunter.title = Cacciatore del Gran Tacchino
+achievement.harvest_feast_great_turkey_hunter.desc = Sconfiggi il Gran Tacchino {0} volte.
+achievement.harvest_feast_great_turkey_slayer.title = Sterminatore del Gran Tacchino
+achievement.harvest_feast_great_turkey_slayer.desc = Sconfiggi il Gran Tacchino {0} volte.
+achievement.harvest_feast_set_of_plates.title = Servizio di Piatti
+achievement.harvest_feast_set_of_plates.desc = Siediti al Banchetto in {0} anni diversi.
 
 # ---- The Full Table title ----
 title.harvest_feast_full_table.name = La Tavola Piena
-title.harvest_feast_full_table.flavor = Ottenuti tutti gli obiettivi della Festa del Raccolto di un anno.
+title.harvest_feast_full_table.flavor = Ottenuti tutti gli obiettivi che La Tavola Piena chiede in una Festa del Raccolto.
 title.harvest_feast_full_table.display = {0} della Tavola Piena
+title.harvest_feast_great_turkey_slayer.name = Sterminatore del Gran Tacchino
+title.harvest_feast_great_turkey_slayer.flavor = Ha sconfitto il Gran Tacchino più e più volte.
+title.harvest_feast_great_turkey_slayer.display = {0}, Sterminatore del Gran Tacchino
+title.harvest_feast_marthas_regular.name = Ospite Fisso di Martha
+title.harvest_feast_marthas_regular.flavor = Si è seduto al Banchetto con Martha anno dopo anno.
+title.harvest_feast_marthas_regular.display = {0}, Ospite Fisso di Martha
 
 # ---- Martha's ranks: an achievement and a gift at each, and a title at Head of the Table ----
 achievement.harvest_feast_marthas_neighbor.title = Vicino di Casa di Martha
@@ -173,6 +203,8 @@ objective.harvest_feast.head_of_the_table = Diventa Capotavola con Martha
 title.harvest_feast_head_of_the_table.name = Capotavola
 title.harvest_feast_head_of_the_table.flavor = Ottenuto il rango di Capotavola con Martha.
 title.harvest_feast_head_of_the_table.display = {0}, Capotavola
+achievement.harvest_feast_marthas_favorite.title = Preferito di Martha
+achievement.harvest_feast_marthas_favorite.desc = Ritira un Cesto della Festa da Martha.
 
 # ---- The Almanac page ----
 almanac.harvest_feast.title = Festa del Raccolto
@@ -214,7 +246,7 @@ dialogue.harvest_feast_host.pie_ready.opt.turnin = Ecco la torta.
 dialogue.harvest_feast_host.feast_offer.text = Una volta l'anno mettiamo tutto in tavola e mangiamo finché nessuno si regge in piedi.\nInforna una <b>torta di zucca</b> a un <b>Fornello dello Chef</b>, cuoci della <b>carne</b> su un <b>Falò</b> e raccogli <b>carote</b> nelle <b>foreste</b> delle Emerald Wilds. Portami tutto e la apparecchiamo insieme.
 dialogue.harvest_feast_host.feast_offer.opt.accept = Apparecchiamo.
 dialogue.harvest_feast_host.feast_brief.text = Una <b>torta di zucca</b> da un <b>Fornello dello Chef</b>, <b>carne cotta</b> su un <b>Falò</b> e <b>carote</b> dalle <b>foreste</b>. Poi si mangia.
-dialogue.harvest_feast_host.feast_ready.text = Torta, arrosto e carote. Questa sì che è una festa.\nSiediti, mangia, e porta a casa questo: un tacchino che non scappa, con sopra l'anno.\nCi sono più avanzi di quanti ne mangeremo mai. Prendi la tua parte, poi parla ancora con me. Ho un ultimo lavoro per te.
+dialogue.harvest_feast_host.feast_ready.text = Torta, arrosto e carote. Questa sì che è una festa.\nSiediti, mangia, e porta a casa questo: il mio piatto d'oro, con sopra l'anno. Nessuno ci mangia sopra.\nCi sono più avanzi di quanti ne mangeremo mai. Prendi la tua parte, poi parla ancora con me. Ho un ultimo lavoro per te.
 dialogue.harvest_feast_host.feast_ready.opt.turnin = Ecco tutto.
 dialogue.harvest_feast_host.feast_done.text = Hai ancora lo stomaco pieno? Anch'io, e così tutti quelli a cui hai portato un piatto.\nLa mia storia finisce qui fino alla festa del prossimo anno, ma la tavola resta apparecchiata finché dura. C'è <b>lavoro</b> ogni giorno e <b>tacchini</b> quando vuoi. Anche Tomas, Elsie e Bram hanno un <b>lavoro</b> a testa. Continua ad aiutarmi e il mio <b>negozio</b> si apre. Cosa posso fare per te?
 dialogue.harvest_feast_host.deliveries_offer.text = Guarda quanto è rimasto. Non lascio sprecare del buon cibo.\nTomas, Elsie e Bram hanno lavorato tutta la settimana senza mai sedersi. Porta a <b>Tomas</b> una <b>torta di zucca</b>, a <b>Elsie</b> una <b>verdura arrostita</b> e a <b>Bram</b> un po' di <b>carne cotta</b>. Gli avanzi che ti ho dato vanno bene. Sono dalle parti del <b>tempio</b>.
@@ -352,5 +384,6 @@ almanac.harvest_feast.source.stall_favor = In vendita nel negozio di Martha man 
 almanac.harvest_feast.source.stall_gift = In vendita nel negozio di Martha, e uno dei suoi regali man mano che cresce il suo favore.
 almanac.harvest_feast.source.seeds = Dalla Festa e dalle commissioni di Martha, o si comprano nel suo negozio.
 almanac.harvest_feast.source.keepsake = Il ricordo della Festa, che ricevi una volta all'anno quando ti siedi a tavola.
+almanac.harvest_feast.source.turkey_trophy = Un raro ritrovamento cacciando Tacchini Selvatici finché dura la festa.
 almanac.harvest_feast.source.winter = In vendita sullo scaffale delle feste del negozio di Martha mentre dura la festa.
 almanac.harvest_feast.source.festival_favor = In vendita nei negozi delle feste a chi ha un alto Favore delle Feste.

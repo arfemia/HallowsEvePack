@@ -140,29 +140,62 @@ objective.harvest_feast.pick_carrots = Pick {0} {0, plural, one {Carrot} other {
 objective.harvest_feast.bring_vegetables = Bring {0} {0, plural, one {Roast Vegetable} other {Roast Vegetables}}
 objective.harvest_feast.bring_spices = Bring {0} Spices
 objective.harvest_feast.wear_harvest_set = Wear {0} {0, plural, one {piece} other {pieces}} of the Harvest Set
+objective.harvest_feast.pick_crops = Pick {0} crops by hand
+objective.harvest_feast.daily_jobs = Do {0} daily jobs or Feast Board jobs
+objective.harvest_feast.defeat_great_turkey = Defeat the Great Turkey
+objective.harvest_feast.defeat_great_turkeys = Defeat the Great Turkey {0} times
+objective.harvest_feast.feast_basket = Collect a Feast Basket
+objective.harvest_feast.cook_turkey_pie = Cook a Turkey Pie
+objective.harvest_feast.cook_harvest_salad = Make a Harvest Salad
+objective.harvest_feast.cook_marthas_roast = Cook Martha's Roast
 
-# ---- Achievements ----
+# ---- Achievements: each year's set, which The Full Table asks for in one Harvest Feast ----
 achievement.category.seasons.harvest_feast = Harvest Feast
 achievement.harvest_feast_guest.title = Feast Guest {0}
 achievement.harvest_feast_guest.desc = Be here for Harvest Feast.
+achievement.harvest_feast_keepsake.title = Martha's Golden Plate {0}
+achievement.harvest_feast_keepsake.desc = Sit down to The Feast with Martha.
+# The name stamped into each year's keepsake as it is handed over. The plate key names the game's plates
+# that earlier feasts gave out, so keep it for the players who hold one.
+keepsake.harvest_feast_golden_plate.name = Martha's Golden Plate of {0}
+keepsake.harvest_feast_plate.name = Feast Plate of {0}
+achievement.harvest_feast_supper_round.title = Supper Round {0}
+achievement.harvest_feast_supper_round.desc = Take supper to Tomas, Elsie and Bram.
 achievement.harvest_feast_turkey_chaser.title = Turkey Chaser {0}
 achievement.harvest_feast_turkey_chaser.desc = Hunt {0} turkeys.
 achievement.harvest_feast_full_baskets.title = Full Baskets {0}
 achievement.harvest_feast_full_baskets.desc = Pick {0} crops by hand.
-achievement.harvest_feast_keepsake.title = Feast Trophy {0}
-achievement.harvest_feast_keepsake.desc = Sit down to The Feast with Martha.
-# The name stamped into each year's keepsake as it is handed over. The plate key stays for the plates earlier feasts gave out.
-keepsake.harvest_feast_trophy.name = Feast Trophy of {0}
-keepsake.harvest_feast_plate.name = Feast Plate of {0}
+achievement.harvest_feast_helping_hands.title = Helping Hands {0}
+achievement.harvest_feast_helping_hands.desc = Do {0} daily jobs for Martha and her helpers.
+achievement.harvest_feast_great_turkey_down.title = Turkey Graveyard {0}
+achievement.harvest_feast_great_turkey_down.desc = Defeat the Great Turkey in the Turkey Graveyard.
 achievement.harvest_feast_full_table.title = The Full Table {0}
-achievement.harvest_feast_full_table.desc = Earn all of this year's Harvest Feast achievements.
+achievement.harvest_feast_full_table.desc = Earn every achievement on this list during one Harvest Feast.
+
+# ---- Achievements kept for good, earned once and carried from one feast to the next ----
 achievement.harvest_feast_harvest_set.title = Harvest Set
 achievement.harvest_feast_harvest_set.desc = Wear the whole Harvest Set from Martha's shop.
+achievement.harvest_feast_marthas_cookbook.title = Martha's Cookbook
+achievement.harvest_feast_marthas_cookbook.desc = Cook Turkey Pie, Harvest Salad and Martha's Roast.
+achievement.harvest_feast_marthas_hunter.title = Martha's Hunter
+achievement.harvest_feast_marthas_hunter.desc = Hand in Extra Turkeys {0} times.
+achievement.harvest_feast_great_turkey_hunter.title = Great Turkey Hunter
+achievement.harvest_feast_great_turkey_hunter.desc = Defeat the Great Turkey {0} times.
+achievement.harvest_feast_great_turkey_slayer.title = Great Turkey Slayer
+achievement.harvest_feast_great_turkey_slayer.desc = Defeat the Great Turkey {0} times.
+achievement.harvest_feast_set_of_plates.title = Set of Plates
+achievement.harvest_feast_set_of_plates.desc = Sit down to The Feast in {0} different years.
 
-# ---- The Full Table title ----
+# ---- The season's titles ----
 title.harvest_feast_full_table.name = The Full Table
-title.harvest_feast_full_table.flavor = Earned all of one year's Harvest Feast achievements.
+title.harvest_feast_full_table.flavor = Earned every achievement The Full Table asks for in one Harvest Feast.
 title.harvest_feast_full_table.display = {0} of the Full Table
+title.harvest_feast_great_turkey_slayer.name = Great Turkey Slayer
+title.harvest_feast_great_turkey_slayer.flavor = Defeated the Great Turkey again and again.
+title.harvest_feast_great_turkey_slayer.display = {0}, Great Turkey Slayer
+title.harvest_feast_marthas_regular.name = Martha's Regular
+title.harvest_feast_marthas_regular.flavor = Sat down to The Feast with Martha year after year.
+title.harvest_feast_marthas_regular.display = {0}, Martha's Regular
 
 # ---- Martha's ranks: an achievement and a gift at each, and a title at Head of the Table ----
 achievement.harvest_feast_marthas_neighbor.title = Martha's Neighbor
@@ -180,6 +213,8 @@ objective.harvest_feast.head_of_the_table = Become Head of the Table with Martha
 title.harvest_feast_head_of_the_table.name = Head of the Table
 title.harvest_feast_head_of_the_table.flavor = Became Head of the Table with Martha.
 title.harvest_feast_head_of_the_table.display = {0}, Head of the Table
+achievement.harvest_feast_marthas_favorite.title = Martha's Favorite
+achievement.harvest_feast_marthas_favorite.desc = Collect a Feast Basket from Martha.
 
 # ---- The Almanac page ----
 almanac.harvest_feast.title = Harvest Feast
@@ -204,6 +239,7 @@ almanac.harvest_feast.source.stall_favor = Sold at Martha's shop as your standin
 almanac.harvest_feast.source.stall_gift = Sold at Martha's shop, and one of her gifts as her favor grows.
 almanac.harvest_feast.source.seeds = From the Feast and Martha's errands, or bought at her shop.
 almanac.harvest_feast.source.keepsake = The Feast's keepsake, given once a year when you sit down to the Feast.
+almanac.harvest_feast.source.turkey_trophy = A rare find from hunting Wild Turkeys while the feast runs.
 almanac.harvest_feast.source.winter = Sold on the festival shelf at Martha's shop while the feast runs.
 almanac.harvest_feast.source.festival_favor = Sold at the festival shops to those high in Festival Favor.
 
@@ -237,7 +273,7 @@ dialogue.harvest_feast_host.pie_ready.opt.turnin = Here's the pie.
 dialogue.harvest_feast_host.feast_offer.text = Once a year we put it all on the table and eat till nobody can stand.\nBake a <b>pumpkin pie</b> at a <b>Chef's Stove</b>, cook some <b>meat</b> on a <b>Campfire</b>, and pick <b>carrots</b> in the <b>forests</b> of the Emerald Wilds. Bring it all here and we'll set it out together.
 dialogue.harvest_feast_host.feast_offer.opt.accept = Let's set the table.
 dialogue.harvest_feast_host.feast_brief.text = A <b>pumpkin pie</b> from a <b>Chef's Stove</b>, <b>cooked meat</b> from a <b>Campfire</b> and <b>carrots</b> from the <b>forests</b>. Then we eat.
-dialogue.harvest_feast_host.feast_ready.text = Pie, roast and carrots. Now that's a feast.\nSit, eat, and take this home: a turkey that won't run off, with the year on it.\nThere's more here than we'll ever eat, though. Collect your share, then talk to me again. I've one last job for you.
+dialogue.harvest_feast_host.feast_ready.text = Pie, roast and carrots. Now that's a feast.\nSit, eat, and take this home: my golden plate, with the year on it. Nobody eats off that one.\nThere's more here than we'll ever eat, though. Collect your share, then talk to me again. I've one last job for you.
 dialogue.harvest_feast_host.feast_ready.opt.turnin = Here's everything.
 dialogue.harvest_feast_host.feast_done.text = Still full? So am I, and so is everyone you took a plate to.\nThat's my story done till next year's feast, but the table stays set until it's over. There's <b>work</b> every day and <b>turkeys</b> whenever you want them. Tomas, Elsie and Bram have a <b>job</b> each too. Keep helping and my <b>shop</b> opens up. What can I do for you?
 dialogue.harvest_feast_host.deliveries_offer.text = Look at all that's left. I won't see good food wasted.\nTomas, Elsie and Bram worked all week and never sat down. Take <b>Tomas</b> a <b>pumpkin pie</b>, <b>Elsie</b> a <b>roast vegetable</b> and <b>Bram</b> some <b>cooked meat</b>. The leftovers I gave you will do. They're about the <b>temple</b>.

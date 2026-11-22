@@ -68,8 +68,10 @@ Hallows_Eve_Horsemans_Reins.description = Die eigenen Zügel des Kopflosen Reite
 Hallows_Eve_Horsemans_Reins.command_calm = Beruhigen
 Hallows_Eve_Horsemans_Steed_Trophy.name = Trophäe des Pferdes des Reiters
 Hallows_Eve_Horsemans_Steed_Trophy.description = Eine winzige Figur vom schwarzen Pferd des Kopflosen Reiters in seiner Rossrüstung, auf einem goldverzierten Sockel. Stell sie hin, wo du willst. Hin und wieder in seiner Bosskill-Abholung zu finden, und der Alte Jack verkauft eine.
-Harvest_Feast_Feast_Trophy.name = Festtrophäe
-Harvest_Feast_Feast_Trophy.description = Ein Truthahn, der bleibt, wo du ihn hinstellst. Martha gibt jedem einen, der sich mit ihr zum Fest an die Tafel setzt, und jedes Erntefest hat seinen eigenen. Stell ihn hin, wo du willst.
+Harvest_Feast_Golden_Plate.name = Marthas Goldteller
+Harvest_Feast_Golden_Plate.description = Ein goldener Teller mit dem Jahr darauf, viel zu schön, um davon zu essen. Martha gibt jedem einen, der sich mit ihr zum Fest an die Tafel setzt, einmal pro Erntefest. Stell ihn hin, wo du willst, oder stapel die Teller mehrerer Jahre aufeinander.
+Harvest_Feast_Turkey_Trophy.name = Truthahntrophäe
+Harvest_Feast_Turkey_Trophy.description = Ein Truthahn, der bleibt, wo du ihn hinstellst. Hin und wieder lässt ein Wilder Truthahn einen zurück, und nur solange das Erntefest läuft. Stell ihn hin, wo du willst.
 Harvest_Feast_Wishbone.name = Wunschknochen
 Harvest_Feast_Wishbone.description = Der Wunschknochen eines Truthahns, vom Braten aufgehoben. <b>Bram der Schäfer</b> im Vergessenen Tempel nimmt einen, um dich und deine Gruppe in den <b>Truthahnfriedhof</b> zu führen, solange das Erntefest läuft.\n\nMartha gibt dir jedes Mal einen, wenn du <b>Extra-Truthähne</b> abgibst.
 

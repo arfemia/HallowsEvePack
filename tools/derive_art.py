@@ -9,7 +9,7 @@
 
 The seed is JackoLantern01.blockymodel and JackoLantern01_Texture.png, read from tools/seed/
 (a byte copy, kept beside the tool so the pack rebuilds from its own repo) unless --seed
-names another folder. The vanilla inputs are byte copies of nineteen files from the installed
+names another folder. The vanilla inputs are byte copies of twenty-one files from the installed
 game's Assets.zip, kept under tools/seed/vanilla/ at their Assets.zip paths (VANILLA_FILES);
 --vendor rewrites them from the Assets.zip it is given. A rerun writes byte-identical
 files: nothing here is random, and PNGs carry no metadata.
@@ -43,8 +43,13 @@ What it writes (pack-relative):
       orthographic renderer at each family's vanilla IconProperties angle.
   Common/Icons/ModelsGenerated/Hallows_Eve_*.png        128x128 model icons for the mobs and the
       Horseman's Steed (drawn full size on the Steed Trophy's atlas).
-  Common/Icons/ItemsGenerated/Harvest_Feast_Feast_Trophy.png  Harvest Feast's one derived file:
-      the game's own turkey portrait (TURKEY_ICON) sized to a 64x64 item icon, nothing redrawn.
+  Common/Blocks/Harvest_Feast/Golden_Plate/Golden_Plate_Texture.png  Martha's Golden Plate, Harvest
+      Feast's keepsake: the game's plate texture (PLATE_TEXTURE) recoloured gold by its own shading,
+      worn on the game's plate model, so no model is derived.
+  Common/Icons/ItemsGenerated/Harvest_Feast_Golden_Plate.png  its icon: the game's own plate icon
+      (PLATE_ICON) recoloured the same gold and sized to fill a 64x64 item icon.
+  Common/Icons/ItemsGenerated/Harvest_Feast_Turkey_Trophy.png  the Turkey Trophy's icon: the game's
+      own turkey portrait (TURKEY_ICON) sized to a 64x64 item icon, nothing redrawn.
 
 What it reads from the pack and never writes: the artist's hand-made Headless Horseman art, copied
 into Common/ as it came. Common/Items/Hallows_Eve/Horseman_Armor/ holds his armour (the collar
@@ -264,15 +269,26 @@ PLAYER = "Characters/Player.blockymodel"
 HORSE = "NPC/Livestock/Horse/Models/Model.blockymodel"
 STRAP = "Resources/Materials/Strap_Leather.blockymodel"
 STRAP_TEXTURE = "Resources/Materials/Strap_Leather_Texture.png"
-# The game's own 128x128 turkey portrait, which Harvest Feast's Feast Trophy (a block wearing the
-# game's turkey model) takes as its item icon, sized to 64x64: an item's Icon must sit under
-# Icons/ItemsGenerated/ or Icons/Items/, and the game ships no turkey there.
+# The game's plate (Deco_Plate): its 64x32 texture and its 64x64 item icon. Harvest Feast's Golden
+# Plate wears the game's plate model with a gold recolour of the texture, and takes the same gold
+# recolour of the icon, sized to fill the square: an item's Icon must sit under
+# Icons/ItemsGenerated/ or Icons/Items/.
+PLATE_TEXTURE = "Blocks/Miscellaneous/Plate_Texture.png"
+PLATE_ICON = "Icons/ItemsGenerated/Deco_Plate.png"
+GOLDEN_PLATE_TEXTURE = "Blocks/Harvest_Feast/Golden_Plate/Golden_Plate_Texture.png"
+GOLDEN_PLATE_ICON = f"{ICONS}/Harvest_Feast_Golden_Plate.png"
+# Dark to bright: the plate's own shading, lowest to highest, laid over these golds.
+GOLD_RAMP = [(0.0, "#6b4510"), (0.35, "#a8741e"), (0.65, "#d9a63a"), (0.85, "#f2cf66"), (1.0, "#fff3c0")]
+# The game's own 128x128 turkey portrait, which Harvest Feast's Turkey Trophy (a block wearing the
+# game's turkey model, a rare drop from a Wild Turkey) takes as its item icon, sized to 64x64: an
+# item's Icon must sit under Icons/ItemsGenerated/ or Icons/Items/, and the game ships no turkey there.
 TURKEY_ICON = "Icons/ModelsGenerated/Turkey.png"
-FEAST_TROPHY_ICON = f"{ICONS}/Harvest_Feast_Feast_Trophy.png"
+TURKEY_TROPHY_ICON = f"{ICONS}/Harvest_Feast_Turkey_Trophy.png"
 VANILLA_FILES = tuple(f"Common/{rel}" for rel in (
     WORKBENCH, WORKBENCH_TEXTURE, WAND, WAND_TEXTURE, SPIRIT, SPIRIT_TEXTURE,
     WRAITH, WRAITH_TEXTURE, ESSENCE, ESSENCE_TEXTURE, GHOUL, GHOUL_TEXTURE,
-    SKELETON, SKELETON_BURNT_TEXTURE, PLAYER, HORSE, STRAP, STRAP_TEXTURE, TURKEY_ICON))
+    SKELETON, SKELETON_BURNT_TEXTURE, PLAYER, HORSE, STRAP, STRAP_TEXTURE, PLATE_TEXTURE, PLATE_ICON,
+    TURKEY_ICON))
 
 # --- the Cursed Geode: a scripted stone with a lit crack (64x64 texture, x, y, w, h) ---------
 
@@ -1569,6 +1585,19 @@ def reins_texture(texture):
     return rgba
 
 
+def gold_recolour(texture, min_alpha=0.5):
+    """Martha's Golden Plate: the game's plate shading laid over GOLD_RAMP, darkest to brightest. Only
+    pixels at least `min_alpha` opaque are recoloured, so the soft shadow a vanilla icon carries
+    under the plate stays as it is."""
+    rgba = texture.astype(np.float64) / 255.0
+    solid = rgba[..., 3] >= min_alpha
+    lum = luminance(rgba[..., :3])
+    lo, hi = float(lum[solid].min()), float(lum[solid].max())
+    colour = ramp((lum - lo) / max(hi - lo, 1e-6), GOLD_RAMP)
+    rgba[..., :3] = np.where(solid[..., None], colour, rgba[..., :3])
+    return rgba
+
+
 def paste(atlas, rgba, at):
     """Copies an RGBA uint8 texture onto a float atlas with its top-left corner at `at`."""
     x, y = at
@@ -1948,6 +1977,7 @@ def build(seed_dir, art_dir=PACK / "Common"):
         horse_textures[HORSE_COAT], horse_textures[HORSE_BARDING_TEXTURE], horse_textures[HORSE_TAIL_TEXTURE],
         plinth)
     images[REINS_TEXTURE] = reins_texture(vanilla[STRAP_TEXTURE])
+    images[GOLDEN_PLATE_TEXTURE] = gold_recolour(vanilla[PLATE_TEXTURE])
     outputs = {}
     for name, model in models.items():
         outputs[f"Common/{name}"] = (json.dumps(model, indent=2) + "\n").encode("utf-8")
@@ -1970,7 +2000,9 @@ def build(seed_dir, art_dir=PACK / "Common"):
         rigs[worn(name)] = armor_icon_model(vanilla[PLAYER], name, rigs[name])
     for folder, icon, model_name, texture_name, angles, size in ICON_PLAN:
         outputs[f"{folder}/{icon}.png"] = icon_png(rigs[model_name], texture_rgba[texture_name], angles, size)
-    outputs[FEAST_TROPHY_ICON] = square_icon_png(Image.fromarray(vanilla[TURKEY_ICON]))
+    gold_icon = np.clip(np.rint(gold_recolour(vanilla[PLATE_ICON]) * 255.0), 0, 255).astype(np.uint8)
+    outputs[GOLDEN_PLATE_ICON] = square_icon_png(Image.fromarray(gold_icon))
+    outputs[TURKEY_TROPHY_ICON] = square_icon_png(Image.fromarray(vanilla[TURKEY_ICON]))
     return dict(sorted(outputs.items())), rigs, texture_rgba
 
 

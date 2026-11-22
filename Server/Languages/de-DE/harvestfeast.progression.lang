@@ -134,6 +134,14 @@ objective.harvest_feast.pick_carrots = Pflücke {0} {0, plural, one {Karotte} ot
 objective.harvest_feast.bring_vegetables = Bringe {0} {0, plural, one {Gebratenes Gemüse} other {Gebratene Gemüse}}
 objective.harvest_feast.bring_spices = Bringe {0} Gewürze
 objective.harvest_feast.wear_harvest_set = Trage {0} {0, plural, one {Teil} other {Teile}} des Ernte-Sets
+objective.harvest_feast.pick_crops = Pflücke {0} Feldfrüchte von Hand
+objective.harvest_feast.daily_jobs = Erledige {0} Tagesaufgaben oder Arbeiten von der Tafel des Erntefests
+objective.harvest_feast.defeat_great_turkey = Besiege den Großen Truthahn
+objective.harvest_feast.defeat_great_turkeys = Besiege den Großen Truthahn {0} Mal
+objective.harvest_feast.feast_basket = Hol dir einen Festkorb
+objective.harvest_feast.cook_turkey_pie = Back eine Truthahnpastete
+objective.harvest_feast.cook_harvest_salad = Stell einen Erntesalat her
+objective.harvest_feast.cook_marthas_roast = Koche Marthas Braten
 
 # ---- Achievements ----
 achievement.category.seasons.harvest_feast = Erntefest
@@ -143,19 +151,41 @@ achievement.harvest_feast_turkey_chaser.title = Truthahnjäger {0}
 achievement.harvest_feast_turkey_chaser.desc = Jage {0} Truthähne.
 achievement.harvest_feast_full_baskets.title = Volle Körbe {0}
 achievement.harvest_feast_full_baskets.desc = Pflück {0} Feldfrüchte von Hand.
-achievement.harvest_feast_keepsake.title = Festtrophäe {0}
+achievement.harvest_feast_helping_hands.title = Helfende Hände {0}
+achievement.harvest_feast_helping_hands.desc = Erledige {0} Tagesaufgaben für Martha und ihre Helfer.
+achievement.harvest_feast_great_turkey_down.title = Truthahnfriedhof {0}
+achievement.harvest_feast_great_turkey_down.desc = Besiege den Großen Truthahn im Truthahnfriedhof.
+achievement.harvest_feast_keepsake.title = Marthas Goldteller {0}
 achievement.harvest_feast_keepsake.desc = Setz dich mit Martha zum Fest an die Tafel.
-keepsake.harvest_feast_trophy.name = Festtrophäe von {0}
+keepsake.harvest_feast_golden_plate.name = Marthas Goldteller von {0}
 keepsake.harvest_feast_plate.name = Festteller von {0}
+achievement.harvest_feast_supper_round.title = Abendessenrunde {0}
+achievement.harvest_feast_supper_round.desc = Bring Tomas, Elsie und Bram das Abendessen.
 achievement.harvest_feast_full_table.title = Die volle Tafel {0}
-achievement.harvest_feast_full_table.desc = Erhalte alle Erntefest-Erfolge dieses Jahres.
+achievement.harvest_feast_full_table.desc = Erhalte alle Erfolge dieser Liste in einem Erntefest.
 achievement.harvest_feast_harvest_set.title = Ernte-Set
 achievement.harvest_feast_harvest_set.desc = Trag das ganze Ernte-Set aus Marthas Laden.
+achievement.harvest_feast_marthas_cookbook.title = Marthas Kochbuch
+achievement.harvest_feast_marthas_cookbook.desc = Koche Truthahnpastete, Erntesalat und Marthas Braten.
+achievement.harvest_feast_marthas_hunter.title = Marthas Jäger
+achievement.harvest_feast_marthas_hunter.desc = Gib {0} Mal Extra-Truthähne ab.
+achievement.harvest_feast_great_turkey_hunter.title = Jäger des Großen Truthahns
+achievement.harvest_feast_great_turkey_hunter.desc = Besiege den Großen Truthahn {0} Mal.
+achievement.harvest_feast_great_turkey_slayer.title = Bezwinger des Großen Truthahns
+achievement.harvest_feast_great_turkey_slayer.desc = Besiege den Großen Truthahn {0} Mal.
+achievement.harvest_feast_set_of_plates.title = Tellerset
+achievement.harvest_feast_set_of_plates.desc = Setz dich in {0} verschiedenen Jahren zum Fest an die Tafel.
 
 # ---- The Full Table title ----
 title.harvest_feast_full_table.name = Die volle Tafel
-title.harvest_feast_full_table.flavor = Hat alle Erntefest-Erfolge eines Jahres erhalten.
+title.harvest_feast_full_table.flavor = Hat alle Erfolge, die Die volle Tafel verlangt, in einem Erntefest erhalten.
 title.harvest_feast_full_table.display = {0} der vollen Tafel
+title.harvest_feast_great_turkey_slayer.name = Bezwinger des Großen Truthahns
+title.harvest_feast_great_turkey_slayer.flavor = Hat den Großen Truthahn immer wieder besiegt.
+title.harvest_feast_great_turkey_slayer.display = {0}, Bezwinger des Großen Truthahns
+title.harvest_feast_marthas_regular.name = Marthas Stammgast
+title.harvest_feast_marthas_regular.flavor = Hat sich Jahr um Jahr mit Martha zum Fest an die Tafel gesetzt.
+title.harvest_feast_marthas_regular.display = {0}, Marthas Stammgast
 
 # ---- Martha's ranks: an achievement and a gift at each, and a title at Head of the Table ----
 achievement.harvest_feast_marthas_neighbor.title = Marthas Nachbar
@@ -173,6 +203,8 @@ objective.harvest_feast.head_of_the_table = Werde bei Martha Oberhaupt der Tafel
 title.harvest_feast_head_of_the_table.name = Oberhaupt der Tafel
 title.harvest_feast_head_of_the_table.flavor = Wurde bei Martha Oberhaupt der Tafel.
 title.harvest_feast_head_of_the_table.display = {0}, Oberhaupt der Tafel
+achievement.harvest_feast_marthas_favorite.title = Marthas Liebling
+achievement.harvest_feast_marthas_favorite.desc = Hol dir einen Festkorb von Martha.
 
 # ---- The Almanac page ----
 almanac.harvest_feast.title = Erntefest
@@ -214,7 +246,7 @@ dialogue.harvest_feast_host.pie_ready.opt.turnin = Hier ist der Kuchen.
 dialogue.harvest_feast_host.feast_offer.text = Einmal im Jahr stellen wir alles auf den Tisch und essen, bis keiner mehr stehen kann.\nBack einen <b>Kürbiskuchen</b> auf einem <b>Kochherd</b>, brat <b>Fleisch</b> auf einem <b>Lagerfeuer</b> und pflück <b>Karotten</b> in den <b>Wäldern</b> der Emerald Wilds. Bring alles her, dann decken wir gemeinsam.
 dialogue.harvest_feast_host.feast_offer.opt.accept = Decken wir den Tisch.
 dialogue.harvest_feast_host.feast_brief.text = Ein <b>Kürbiskuchen</b> vom <b>Kochherd</b>, <b>gebratenes Fleisch</b> vom <b>Lagerfeuer</b> und <b>Karotten</b> aus den <b>Wäldern</b>. Dann essen wir.
-dialogue.harvest_feast_host.feast_ready.text = Kuchen, Braten und Karotten. Das ist ein Fest.\nSetz dich, iss, und nimm das hier mit nach Hause: ein Truthahn, der nicht davonläuft, mit dem Jahr darauf.\nEs ist mehr da, als wir je essen werden. Hol dir deinen Anteil, dann sprich noch einmal mit mir. Ich habe eine letzte Aufgabe für dich.
+dialogue.harvest_feast_host.feast_ready.text = Kuchen, Braten und Karotten. Das ist ein Fest.\nSetz dich, iss, und nimm das hier mit nach Hause: meinen goldenen Teller, mit dem Jahr darauf. Davon isst keiner.\nEs ist mehr da, als wir je essen werden. Hol dir deinen Anteil, dann sprich noch einmal mit mir. Ich habe eine letzte Aufgabe für dich.
 dialogue.harvest_feast_host.feast_ready.opt.turnin = Hier ist alles.
 dialogue.harvest_feast_host.feast_done.text = Noch satt? Ich auch, und alle, denen du einen Teller gebracht hast.\nMeine Geschichte ist bis zum Fest im nächsten Jahr erzählt, aber die Tafel bleibt gedeckt, bis es vorbei ist. Hier gibt es jeden Tag <b>Arbeit</b> und <b>Truthähne</b>, wann immer du willst. Tomas, Elsie und Bram haben auch je eine <b>Aufgabe</b>. Hilf weiter, dann öffnet sich mein <b>Laden</b>. Was kann ich für dich tun?
 dialogue.harvest_feast_host.deliveries_offer.text = Sieh dir an, was übrig ist. Gutes Essen lasse ich nicht verderben.\nTomas, Elsie und Bram haben die ganze Woche gearbeitet und sich nie gesetzt. Bring <b>Tomas</b> einen <b>Kürbiskuchen</b>, <b>Elsie</b> ein <b>Gebratenes Gemüse</b> und <b>Bram</b> etwas <b>Gegartes Fleisch</b>. Die Reste, die ich dir gegeben habe, reichen dafür. Sie sind alle rund um den <b>Tempel</b>.
@@ -352,5 +384,6 @@ almanac.harvest_feast.source.stall_favor = Wird in Marthas Laden verkauft, wenn 
 almanac.harvest_feast.source.stall_gift = Wird in Marthas Laden verkauft und gehört zu ihren Geschenken, wenn ihre Gunst wächst.
 almanac.harvest_feast.source.seeds = Vom Fest und aus Marthas Besorgungen, oder in ihrem Laden gekauft.
 almanac.harvest_feast.source.keepsake = Das Andenken des Fests, einmal im Jahr geschenkt, wenn du dich zum Fest an den Tisch setzt.
+almanac.harvest_feast.source.turkey_trophy = Ein seltener Fund bei der Jagd auf Wilde Truthähne, solange das Fest läuft.
 almanac.harvest_feast.source.winter = Wird im Festivalregal in Marthas Laden verkauft, solange das Fest läuft.
 almanac.harvest_feast.source.festival_favor = Wird in den Festival-Läden an alle verkauft, die viel Festivalgunst haben.
