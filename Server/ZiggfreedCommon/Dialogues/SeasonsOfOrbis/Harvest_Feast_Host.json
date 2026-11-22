@@ -55,35 +55,34 @@
     "own table.",
     "",
     "THE FOOTER. Most screens pull in the feast_footer group: hand-ins, the quest list (her board's jobs",
-    "included), the stall, the Turkey Graveyard, How do we stand? (it opens the Reputation page, and shows",
-    "once the player has any favor with her), the Almanac (only while the Almanac is switched on) and",
-    "goodbye.",
+    "included), the stall, the two ways into the Turkey Graveyard, How's my favor with you? (it opens the",
+    "Reputation page, and shows once the player has any favor with her), the Almanac (only while the",
+    "Almanac is switched on) and goodbye.",
     "",
     "THE TURKEY GRAVEYARD. Martha is the way into Harvest Feast's repeatable fight",
-    "(ZiggfreedCommon/Dungeons/Harvest_Feast_Turkey_Graveyard.json). Its footer option and the way-in",
-    "option carry their own Presentation, the Turkey Souls' pale blue and the Wishbone's icon, so they",
-    "stand apart from her other options; the footer option shows only while the feast runs. The graveyard",
-    "screen says what it is, what it costs and where that comes from, then offers the way in. The way-in",
-    "label names the price, since option labels take no number from the file: change it with the",
-    "dungeon's EntryCost. Open is the Dungeon destination: picking it opens CommonLib's confirm screen with",
-    "the Wishbone, how many the player holds and how many it takes; its button spends the Wishbone and",
-    "sends the player in with their party, and with none the button is off and the screen says where",
-    "Wishbones come from. A partymate following into a graveyard their party already holds skips the",
-    "screen and walks in free.",
+    "(ZiggfreedCommon/Dungeons/Harvest_Feast_Turkey_Graveyard.json), straight from her footer while the",
+    "feast runs, with no screen of its own in between: the graveyard quests' offer and hand-in screens say",
+    "what it is and where Wishbones come from. Each way in carries its own Presentation and the Wishbone's",
+    "icon so it stands apart from her other options. The label names the price, since option labels take",
+    "no number from the file: change it with the dungeon's EntryCost. Open is the Dungeon destination:",
+    "picking it opens CommonLib's confirm screen with the Wishbone, how many the player holds and how many",
+    "it takes; its button spends the Wishbone and sends the player in with their party, and with none the",
+    "button is off and the screen says where Wishbones come from. A partymate following into a graveyard",
+    "their party already holds skips the screen and walks in free.",
     "",
-    "THE HARD WAY IN. The graveyard screen's second way in, enter_hard, opens the hard graveyard",
+    "THE HARD WAY IN. The footer's second way in, enter_hard, opens the hard graveyard",
     "(ZiggfreedCommon/Dungeons/Harvest_Feast_Turkey_Graveyard_Hard.json) for the same Wishbone, tinted the",
     "Great Turkey's fury red so it reads apart from the normal way. Its condition, the quest The Great Turkey",
     "(harvest_feast_great_turkey) finished and collected, is the hard graveyard's only gate, since the",
     "dungeon asks only for its season and its Wishbone, so no other line or press-F may open it. That quest",
     "repeats once each feast, so the hard way opens after one win each year.",
     "",
-    "THE GRAVEYARD QUESTS. Three rows in Quests, each with the graveyard screen as its Active screen, so a",
-    "player carrying one is met with the way in: The Great Turkey (graveyard_offer, graveyard_ready), its",
-    "hard twin harvest_feast_great_turkey_hard (graveyard_hard_offer, graveyard_hard_ready), which opens",
+    "THE GRAVEYARD QUESTS. Three rows in Quests, each naming no Active screen, so a player carrying one",
+    "opens on her usual menu, where the ways in sit: The Great Turkey (graveyard_offer, graveyard_ready),",
+    "its hard twin harvest_feast_great_turkey_hard (graveyard_hard_offer, graveyard_hard_ready), which opens",
     "once the first is collected, and the graveyard daily harvest_feast_daily_graveyard (graveyard_daily_offer,",
     "handed in on ready_generic with the other dailies). Each offer's answer takes the quest and goes to the",
-    "graveyard screen.",
+    "menu.",
     "",
     "No line asks which world the player is in, so the arrival line, the greeting and her first quest's",
     "offer play wherever she stands: the conversation is reached only through her (her placement's",
@@ -200,12 +199,12 @@
       "harvest_feast_supper_elsie": { "Active": "deliveries_brief" },
       "harvest_feast_supper_bram": { "Active": "deliveries_brief" },
       "harvest_feast_invitations": { "Offerable": "invitations_offer", "Active": "invitations_brief", "Ready": "invitations_ready" },
-      "harvest_feast_great_turkey": { "Offerable": "graveyard_offer", "Active": "graveyard", "Ready": "graveyard_ready" },
-      "harvest_feast_great_turkey_hard": { "Offerable": "graveyard_hard_offer", "Active": "graveyard", "Ready": "graveyard_hard_ready" },
+      "harvest_feast_great_turkey": { "Offerable": "graveyard_offer", "Ready": "graveyard_ready" },
+      "harvest_feast_great_turkey_hard": { "Offerable": "graveyard_hard_offer", "Ready": "graveyard_hard_ready" },
       "harvest_feast_daily_turkeys":{ "Offerable": "daily_turkeys_offer", "Active": "turkeys_brief", "Ready": "ready_generic" },
       "harvest_feast_daily_wheat": { "Offerable": "daily_wheat_offer", "Active": "wheat_brief", "Ready": "ready_generic" },
       "harvest_feast_daily_roast": { "Offerable": "daily_roast_offer", "Active": "roast_brief", "Ready": "ready_generic" },
-      "harvest_feast_daily_graveyard": { "Offerable": "graveyard_daily_offer", "Active": "graveyard", "Ready": "ready_generic" },
+      "harvest_feast_daily_graveyard": { "Offerable": "graveyard_daily_offer", "Ready": "ready_generic" },
       "harvest_feast_shared_meal": { "Offerable": "meal_offer", "Active": "meal_brief", "Ready": "meal_ready" },
       "harvest_feast_extra_turkeys": { "Active": "turkeys_brief", "Ready": "extra_turkeys_ready" }
     },
@@ -554,27 +553,6 @@
       ],
       "IncludeOptions": [ "feast_tail" ]
     },
-    "graveyard": {
-      "TextKey": "dialogue.harvest_feast_host.graveyard.text",
-      "Options": [
-        {
-          "LabelKey": "dialogue.harvest_feast_host.graveyard.opt.enter",
-          "Style": "accept",
-          "Presentation": { "Color": "#66bbdd", "Icon": { "Item": "Harvest_Feast_Wishbone" } },
-          "Open": { "Type": "Dungeon", "Dungeon": "Harvest_Feast_Turkey_Graveyard" }
-        },
-        {
-          "LabelKey": "dialogue.harvest_feast_host.graveyard.opt.enter_hard",
-          "Style": "accept",
-          "Presentation": { "Color": "#ff5a3c", "Icon": { "Item": "Harvest_Feast_Wishbone" } },
-          "Conditions": [
-            { "Type": "Requires", "Requires": { "Quests": [ "harvest_feast_great_turkey" ] } }
-          ],
-          "Open": { "Type": "Dungeon", "Dungeon": "Harvest_Feast_Turkey_Graveyard_Hard" }
-        }
-      ],
-      "IncludeOptions": [ "feast_tail" ]
-    },
     "graveyard_offer": {
       "TextKey": "dialogue.harvest_feast_host.graveyard_offer.text",
       "Options": [
@@ -582,7 +560,7 @@
           "LabelKey": "dialogue.harvest_feast_host.graveyard_offer.opt.accept",
           "Style": "accept",
           "Presentation": { "Color": "#66bbdd", "Icon": { "Item": "Harvest_Feast_Wishbone" } },
-          "Do": [ { "Accept": "harvest_feast_great_turkey" }, { "Goto": "graveyard" } ]
+          "Do": [ { "Accept": "harvest_feast_great_turkey" }, { "Goto": "menu" } ]
         }
       ],
       "IncludeOptions": [ "feast_tail" ]
@@ -609,7 +587,7 @@
           "LabelKey": "dialogue.harvest_feast_host.graveyard_hard_offer.opt.accept",
           "Style": "accept",
           "Presentation": { "Color": "#ff5a3c", "Icon": { "Item": "Harvest_Feast_Wishbone" } },
-          "Do": [ { "Accept": "harvest_feast_great_turkey_hard" }, { "Goto": "graveyard" } ]
+          "Do": [ { "Accept": "harvest_feast_great_turkey_hard" }, { "Goto": "menu" } ]
         }
       ],
       "IncludeOptions": [ "feast_tail" ]
@@ -635,7 +613,7 @@
         {
           "LabelKey": "dialogue.harvest_feast_host.graveyard_daily_offer.opt.accept",
           "Style": "accept",
-          "Do": [ { "Accept": "harvest_feast_daily_graveyard" }, { "Goto": "graveyard" } ]
+          "Do": [ { "Accept": "harvest_feast_daily_graveyard" }, { "Goto": "menu" } ]
         }
       ],
       "IncludeOptions": [ "feast_tail" ]
@@ -675,13 +653,23 @@
         "Open": { "Type": "Shop", "Shop": "Harvest_Feast_Host" }
       },
       {
-        "LabelKey": "dialogue.harvest_feast_host.opt.graveyard",
+        "LabelKey": "dialogue.harvest_feast_host.graveyard.opt.enter",
         "Style": "neutral",
         "Presentation": { "Color": "#66bbdd", "Icon": { "Item": "Harvest_Feast_Wishbone" } },
         "Conditions": [
           { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Harvest_Feast_Live", "Min": 1 }
         ],
-        "Goto": "graveyard"
+        "Open": { "Type": "Dungeon", "Dungeon": "Harvest_Feast_Turkey_Graveyard" }
+      },
+      {
+        "LabelKey": "dialogue.harvest_feast_host.graveyard.opt.enter_hard",
+        "Style": "neutral",
+        "Presentation": { "Color": "#ff5a3c", "Icon": { "Item": "Harvest_Feast_Wishbone" } },
+        "Conditions": [
+          { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Harvest_Feast_Live", "Min": 1 },
+          { "Type": "Requires", "Requires": { "Quests": [ "harvest_feast_great_turkey" ] } }
+        ],
+        "Open": { "Type": "Dungeon", "Dungeon": "Harvest_Feast_Turkey_Graveyard_Hard" }
       },
       {
         "LabelKey": "dialogue.harvest_feast_host.opt.standing",
