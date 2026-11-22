@@ -1,0 +1,29 @@
+{
+  "$Comment": [
+    "What a job on the Christmas Board pays. Every roll is read on its own: the first always pays, and the",
+    "other two are chances on top. Chance is a percent from 0 to 100.",
+    "",
+    "Christmas Coins and festival tokens pay through the Currency reward kind, since a counter wallet has",
+    "no item to hand over; favor rides each job's own Rewards. A companion mod adds its own rolls to this",
+    "table with a file of its own that names it in ContributesTo, so nothing here has to change."
+  ],
+  "Name": "Christmas_Board_Pay",
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [
+          { "Kind": "Currency", "Params": { "Currency": "Christmas_Coins", "Amount": "8" } },
+          { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "1" } }
+        ]
+      }
+    },
+    {
+      "Chance": { "Base": 25.0 },
+      "Grants": { "Items": [ { "Item": "Food_Candy_Cane", "Count": 2 } ] }
+    },
+    {
+      "Chance": { "Base": 10.0 },
+      "Grants": { "Items": [ { "Item": "Christmas_Present", "Count": 1 } ] }
+    }
+  ]
+}

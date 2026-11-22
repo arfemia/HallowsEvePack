@@ -1,0 +1,43 @@
+{
+  "$Comment": [
+    "Nice: reach Honored on Santa's Nice List, the rank the list calls Nice, and collect Santa's gift.",
+    "",
+    "Earned once and kept, like On the List: no Parent, so no yearly copy, and no merry tag. REPUTATION_RANK",
+    "credits every rank a player's favor has reached, each time their favor changes and when they log in.",
+    "Target is the rank id and Qualifier the reputation id. The criterion's TextKey words the step with the",
+    "list's own rank name. The _Christmas folder makes the id christmas_nice, and its words come from the",
+    "keys that id spells.",
+    "",
+    "The gift waits in Rewards.Claim on the achievements page until the player collects it: Christmas",
+    "Coins, the game's green Christmas Packet and a bundle of snowballs, and MMO Skill Tree's",
+    "Mmo_Boost_Token, a quarter more XP in every skill for an hour, which the player starts when it suits",
+    "them. The token row's own Requires, the hytale:mod_installed gate, leaves it out on a server without",
+    "that mod, unpaid and unshown, and the rest still pays."
+  ],
+  "Listing": {
+    "Category": "Seasons",
+    "Subcategory": "Christmas",
+    "SortOrder": 98,
+    "Icon": "Furniture_Christmas_Chest_Small_Green"
+  },
+  "Scoring": { "Points": 10 },
+  "Criteria": {
+    "reach-nice": {
+      "Kind": "REPUTATION_RANK",
+      "Target": "Honored",
+      "MatchMode": "EXACT",
+      "Qualifier": "Christmas_Nice_List",
+      "Amount": 1,
+      "TextKey": "objective.christmas.nice"
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Currency", "Params": { "Currency": "Christmas_Coins", "Amount": "60" } },
+      { "Kind": "Item", "Params": { "Item": "Furniture_Christmas_Chest_Small_Green", "Count": "1" } },
+      { "Kind": "Item", "Params": { "Item": "Christmas_Snowball", "Count": "16" } },
+      { "Kind": "Mmo_Boost_Token", "Params": { "Skill": "ALL", "Multiplier": "1.25", "DurationMinutes": "60" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

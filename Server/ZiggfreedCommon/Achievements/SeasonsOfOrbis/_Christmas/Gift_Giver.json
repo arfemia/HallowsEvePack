@@ -1,0 +1,21 @@
+{
+  "$Comment": "Finish Santa's Daily Presents a few times during one Christmas. COMPLETE_QUEST counts each collected finish of christmas_daily_presents. The description's number comes from the criterion's Amount through @amount. The merry tag counts it toward the Merrymaker. Each year's copy pays a few Christmas Coins and MMO Skill Tree's Mmo_Xp row once, Crafting XP for the presents, both waiting on the achievements page until the player collects them. The Mmo_Xp row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that mod, unpaid and unshown, and the coins still pay. The _Christmas folder makes the id christmas_gift_giver.",
+  "Parent": "Christmas_Achievement_Base",
+  "Text": { "TextArgs": { "Flavor": [ "@amount" ] } },
+  "Listing": { "SortOrder": 30, "Icon": "Furniture_Christmas_Chest_Small_Green", "Tags": [ "merry" ] },
+  "Criteria": {
+    "finish-daily-presents": {
+      "Kind": "COMPLETE_QUEST",
+      "Target": "christmas_daily_presents",
+      "MatchMode": "EXACT",
+      "Amount": 5
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Currency", "Params": { "Currency": "Christmas_Coins", "Amount": "25" } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "CRAFTING", "Amount": "2500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

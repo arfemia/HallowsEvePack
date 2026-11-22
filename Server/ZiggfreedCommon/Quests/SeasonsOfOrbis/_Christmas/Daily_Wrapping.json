@@ -1,0 +1,49 @@
+{
+  "$Comment": [
+    "Elsie the Weaver's daily: plant fibre for her ribbons, given and handed in at Elsie, who wraps two",
+    "presents for the player in return. The _Christmas folder makes the id christmas_daily_wrapping. Npc",
+    "binds it to Elsie by the id her placement keeps in both seasons (Harvest_Feast_Weaver), so she offers",
+    "it from her Christmas conversation, and from her feast conversation's Christmas line while Harvest",
+    "Feast's last days still run, and CompletionDialogue plays her Christmas conversation once it is",
+    "collected. It opens once Santa's first quest is done. Repeat.Reset with Period Daily is a calendar",
+    "daily: it comes back at midnight UTC. A TURN_IN step is handed in where it is, so no report-back step",
+    "is added.",
+    "",
+    "It pays like Santa's dailies, through Christmas_Daily_Pay, with two Christmas Presents and favor on",
+    "Santa's Nice List and Festival Favor on its own Rewards. The Mmo_Xp row is MMO Skill Tree's: Crafting",
+    "XP for the wrapping, waiting to be collected with the rest. The row's own Requires, the",
+    "hytale:mod_installed gate, leaves it out on a server without that mod, unpaid and unshown, and the",
+    "rest of the quest pays."
+  ],
+  "Name": "Daily_Wrapping",
+  "Parent": "Christmas_Quest_Base",
+  "Npc": { "ViewId": "Harvest_Feast_Weaver", "TurnInId": "giver" },
+  "CompletionDialogue": "Christmas_Weaver",
+  "Listing": { "Icon": "Ingredient_Fibre", "Category": "misc", "SortOrder": 170 },
+  "Requires": { "Quests": [ "christmas_present_thieves" ] },
+  "Repeat": {
+    "Reset": { "Period": "Daily" },
+    "CooldownFrom": "Complete"
+  },
+  "Objectives": {
+    "bring_fibre": {
+      "Kind": "TURN_IN",
+      "Target": "Ingredient_Fibre",
+      "MatchMode": "EXACT",
+      "Amount": 10,
+      "TextKey": "objective.christmas.bring_elsie_fibre",
+      "Order": 1,
+      "TurnInNpcId": "giver"
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Christmas_Daily_Pay" } },
+      { "Kind": "Item", "Params": { "Item": "Christmas_Present", "Count": "2" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 25 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 20 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "CRAFTING", "Amount": "1500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

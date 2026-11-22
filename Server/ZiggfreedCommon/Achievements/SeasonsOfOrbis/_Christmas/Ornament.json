@@ -1,0 +1,29 @@
+{
+  "$Comment": [
+    "The yearly keepsake: help Santa on Christmas Eve, once a season, and keep the Christmas Ornament.",
+    "",
+    "It inherits the yearly occurrence from Christmas_Achievement_Base, so each year mints its own copy and",
+    "@year in the title reads as that year. Feat files it with the feats, earned only. The merry tag counts",
+    "it toward the Merrymaker, and season_keepsake toward the Seasons of Orbis ladder; Christmas's Almanac",
+    "page names this file in Keepsake, and no other Christmas file carries season_keepsake. It pays nothing",
+    "itself: the ornament is Christmas Eve's own pay (Quests/SeasonsOfOrbis/_Christmas/Eve.json), collected",
+    "at Santa with the rest, so a player never has to visit the achievements page for the year's keepsake.",
+    "The _Christmas folder makes the id christmas_ornament."
+  ],
+  "Parent": "Christmas_Achievement_Base",
+  "Listing": {
+    "SortOrder": 10,
+    "Icon": "Christmas_Ornament",
+    "Tags": [ "merry", "season_keepsake" ],
+    "Feat": true
+  },
+  "Scoring": { "Points": 25 },
+  "Criteria": {
+    "help-on-christmas-eve": {
+      "Kind": "COMPLETE_QUEST",
+      "Target": "christmas_eve",
+      "MatchMode": "EXACT",
+      "Amount": 1
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$Comment": "A Workshop job on the Christmas Board: make dough at a Chef's Stove for Tomas's oven, handed in at the board. It writes its own Rewards.Claim, the base's list with MMO Skill Tree's Mmo_Xp row added (Crafting XP for the stove work), because a child's list replaces the base's whole. The row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that mod, and the rest of the job pays. The season and the listing come from Christmas_Contract_Base.",
+  "Parent": "Christmas_Contract_Base",
+  "Listing": { "Icon": "Ingredient_Dough" },
+  "Boards": [ { "Board": "Christmas_Daily", "Difficulty": "Christmas_Workshop", "Weight": 1 } ],
+  "Objectives": {
+    "bring_dough": { "Kind": "TURN_IN", "Target": "Ingredient_Dough", "MatchMode": "EXACT", "Amount": 3, "TextKey": "objective.christmas.bring_dough" }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Christmas_Board_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 40 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 30 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "CRAFTING", "Amount": "1500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

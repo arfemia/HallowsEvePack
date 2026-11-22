@@ -25,5 +25,14 @@ effect.christmas_costume_reindeer.name = Reindeer Costume
 effect.christmas_costume_elf_suit.name = Elf Suit
 effect.christmas_costume_santa.name = Santa Suit
 
+# ---- Christmas Cheer ----
+# What a friend's present leaves on you: its buff-bar tile name. Its effect's Name is this key in full.
+effect.christmas_cheer.name = Christmas Cheer
+
 # ---- Santa's Sack ----
 notify.christmas_santas_sack = A Santa's Sack, for climbing even higher on the Nice List.
+
+# ---- Christmas Eve ----
+# The banner when a player collects Christmas Eve's pay. The sub line's {0} is the player's name.
+notify.christmas_eve_delivered = The Sleigh Is Full
+notify.christmas_eve_delivered.sub = {0} helped Santa get ready for Christmas Eve.

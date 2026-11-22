@@ -1,0 +1,40 @@
+{
+  "$Comment": [
+    "What a Christmas Present holds when another player gives it to you: the better table, so giving a",
+    "present away always beats opening your own (Christmas_Present_Gift). The giver points the present",
+    "at you and uses it (Item/Interactions/Christmas/Christmas_Present_Give.json), which pays this table",
+    "to you, not to them, and tells you who it came from.",
+    "",
+    "The roll always pays a few more Christmas Coins than an opened present, through the Currency reward",
+    "kind. Pool is one draw from the bag below, weighted against each other: a better treat (more candy",
+    "canes, two cookies, a cocoa), a bigger handful of snowballs, or now and then a Winter Bauble or one of",
+    "the game's Christmas Packets. Every item goes where your pickup settings send it, with the game's own",
+    "pickup notice, and whatever your bag cannot take drops at your feet.",
+    "",
+    "Text names this table wherever a reward paying it is shown and gives its hover a line. A companion",
+    "mod adds its own rolls with a file of its own that names this table in ContributesTo."
+  ],
+  "Name": "Christmas_Present_Given",
+  "Text": {
+    "TitleKey": "lootable.christmas_present_given.title",
+    "FlavorKey": "lootable.christmas_present_given.flavor"
+  },
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Christmas_Coins", "Amount": "6" } } ]
+      }
+    }
+  ],
+  "Pool": {
+    "Entries": [
+      { "Weight": 25, "Grants": { "Items": [ { "Item": "Food_Candy_Cane", "Count": 4 } ] } },
+      { "Weight": 22, "Grants": { "Items": [ { "Item": "Christmas_Gingerbread_Cookie", "Count": 2 } ] } },
+      { "Weight": 16, "Grants": { "Items": [ { "Item": "Christmas_Hot_Cocoa", "Count": 1 } ] } },
+      { "Weight": 12, "Grants": { "Items": [ { "Item": "Christmas_Snowball", "Count": 16 } ] } },
+      { "Weight": 13, "Grants": { "Items": [ { "Item": "WinterHoliday_Ornament_Bauble", "Count": 1 } ] } },
+      { "Weight": 6, "Grants": { "Items": [ { "Item": "Furniture_Christmas_Chest_Small_Green", "Count": 1 } ] } },
+      { "Weight": 6, "Grants": { "Items": [ { "Item": "Furniture_Christmas_Chest_Small_White", "Count": 1 } ] } }
+    ]
+  }
+}

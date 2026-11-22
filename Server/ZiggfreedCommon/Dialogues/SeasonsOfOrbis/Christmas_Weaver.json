@@ -3,19 +3,26 @@
   "$Comment": [
     "Elsie the Weaver's Christmas conversation, what she says once only Christmas runs and she stands",
     "beside Santa in her winter clothes (her placement's Christmas entry names it in Interact). While",
-    "Harvest Feast's last days still run she speaks her feast conversation instead, which a Christmas line",
-    "reaches her stall from (DialogueExtensions/SeasonsOfOrbis/Christmas_Weaver_Feast_Line.json). Elsie",
-    "never contracts: I am, it is, do not.",
+    "Harvest Feast's last days still run she speaks her feast conversation instead, whose Christmas lines",
+    "reach her stall and her quest list (DialogueExtensions/SeasonsOfOrbis/Christmas_Weaver_Feast_Line.json).",
+    "Elsie never contracts: I am, it is, do not.",
     "",
-    "Start's First beat answers a visit while Christmas is off (after a command ends it, or when a server",
-    "owner stands Elsie somewhere all year) with one line and goodbye. Otherwise the conversation opens on",
-    "greeting, the Fallback: who she is this Christmas and what her stall sells, in plain words. A",
+    "Start's First beats come first. The off-season beat answers a visit while Christmas is off (after a",
+    "command ends it, or when a server owner stands Elsie somewhere all year) with one line and goodbye. A",
     "conversation has no Season leaf, so the off-season beat and the stall line read the feature",
-    "ziggfreedcommon:feature Christmas_Live, Min 1, and nobody is sent to a stall that opens closed.",
+    "ziggfreedcommon:feature Christmas_Live, Min 1, and nobody is sent to a stall that opens closed. Then",
+    "the next step's pointer, once per player (OnceId christmas_elsie_next_santa): once her part of the",
+    "story is collected and Christmas Eve is not taken yet, she sends the player back to Santa. Collecting",
+    "her quest plays this conversation again (its CompletionDialogue), so the pointer comes straight after.",
     "",
-    "The greeting offers her stall (Christmas_Weaver), one tip, what to do with a present (the presents",
-    "screen), and why she is here. More of Christmas (her jobs, her part of the story) joins as lines of",
-    "its own."
+    "Quests holds two rows, both bound to her by the id she keeps in both seasons (Harvest_Feast_Weaver).",
+    "Her part of Santa's story, Wrapping Presents (christmas_wrapping_presents): the conversation opens on",
+    "its offer while it can be taken, on its brief while it is carried, and on its hand-in once the fibre is",
+    "in the bag and Bram has his present. Then her daily, Daily Wrapping (christmas_daily_wrapping), the",
+    "same three screens. Each hand-in opens her quest list with Collect in front of the player. Otherwise",
+    "it opens on greeting, the Fallback: who she is this Christmas and what her stall sells, in plain",
+    "words, with her stall, her quest list (Can I help?), what to do with a present (the presents screen),",
+    "and why she is here."
   ],
   "Start": {
     "First": [
@@ -24,8 +31,21 @@
         "When": [
           { "Type": "Not", "Of": [ { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Christmas_Live", "Min": 1 } ] }
         ]
+      },
+      {
+        "Node": "next_santa",
+        "When": [
+          { "Type": "QuestState", "Quest": "christmas_wrapping_presents", "State": "COMPLETED" },
+          { "Type": "QuestState", "Quest": "christmas_eve", "State": "NOT_STARTED" }
+        ],
+        "Once": true,
+        "OnceId": "christmas_elsie_next_santa"
       }
     ],
+    "Quests": {
+      "christmas_wrapping_presents": { "Offerable": "wrapping_offer", "Active": "wrapping_brief", "Ready": "wrapping_ready" },
+      "christmas_daily_wrapping": { "Offerable": "fibre_offer", "Active": "fibre_brief", "Ready": "fibre_ready" }
+    },
     "Fallback": "greeting"
   },
   "Nodes": {
@@ -46,6 +66,7 @@
           ],
           "Open": { "Type": "Shop", "Shop": "Christmas_Weaver" }
         },
+        { "LabelKey": "dialogue.christmas_weaver.opt.quests", "Style": "neutral", "Open": "Quests" },
         { "LabelKey": "dialogue.christmas_weaver.opt.presents", "Style": "neutral", "Goto": "presents" },
         { "LabelKey": "dialogue.christmas_weaver.opt.why", "Style": "neutral", "Goto": "why" }
       ],
@@ -62,6 +83,82 @@
       "TextKey": "dialogue.christmas_weaver.why.text",
       "Options": [
         { "LabelKey": "dialogue.christmas_weaver.opt.back", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "next_santa": {
+      "TextKey": "dialogue.christmas_weaver.next_santa.text",
+      "Options": [
+        { "LabelKey": "dialogue.christmas_weaver.opt.thanks", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "wrapping_offer": {
+      "TextKey": "dialogue.christmas_weaver.wrapping_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_weaver.wrapping_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "christmas_wrapping_presents" }, { "Goto": "wrapping_brief" } ]
+        },
+        { "LabelKey": "dialogue.christmas_weaver.opt.later", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "wrapping_brief": {
+      "TextKey": "dialogue.christmas_weaver.wrapping_brief.text",
+      "Options": [
+        { "LabelKey": "dialogue.christmas_weaver.opt.presents", "Style": "neutral", "Goto": "presents" },
+        { "LabelKey": "dialogue.christmas_weaver.opt.back", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "wrapping_ready": {
+      "TextKey": "dialogue.christmas_weaver.wrapping_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_weaver.wrapping_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "christmas_wrapping_presents" } ],
+          "Do": [
+            { "TurnIn": "christmas_wrapping_presents" },
+            { "Open": { "Type": "Quests", "Highlight": "christmas_wrapping_presents" } }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "fibre_offer": {
+      "TextKey": "dialogue.christmas_weaver.fibre_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_weaver.fibre_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "christmas_daily_wrapping" }, { "Goto": "fibre_brief" } ]
+        },
+        { "LabelKey": "dialogue.christmas_weaver.opt.later", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "fibre_brief": {
+      "TextKey": "dialogue.christmas_weaver.fibre_brief.text",
+      "Options": [
+        { "LabelKey": "dialogue.christmas_weaver.opt.back", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "fibre_ready": {
+      "TextKey": "dialogue.christmas_weaver.fibre_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_weaver.fibre_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "christmas_daily_wrapping" } ],
+          "Do": [
+            { "TurnIn": "christmas_daily_wrapping" },
+            { "Open": { "Type": "Quests", "Highlight": "christmas_daily_wrapping" } }
+          ]
+        }
       ],
       "IncludeOptions": [ "goodbye" ]
     }

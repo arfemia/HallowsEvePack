@@ -9,7 +9,10 @@
     "lock on one of these ranks reads the name written here. The ids stay the library's (Honored is the",
     "rank Santa calls Nice). Order places the list on the Reputation page after Martha's Favor.",
     "",
-    "Favor comes from Santa's daily word, from any Reputation reward a Christmas quest or job pays, and",
+    "Favor comes from Santa's daily word, from any Reputation reward a Christmas quest, job or the Yeti's",
+    "fight pays, from",
+    "each Christmas Present given to another player (Item/Interactions/Christmas/Christmas_Present_Give.json)",
+    "and each carol sung (DialogueExtensions/SeasonsOfOrbis/Christmas_Carol.json), and",
     "from Kills: Amount favor for each creature put down whose role is in one of the listed NPC groups,",
     "here Christmas_Present_Thieves (NPC/Groups), the Trorks in Santa hats, and Christmas_Game_Trorks,",
     "the game's own grown Trorks, for less and only while Christmas runs (the row's Season), since they",
@@ -50,7 +53,12 @@
   },
   "Earn": {
     "Lines": [
+      "reputation.christmas_nice_list.earn.quests",
+      "reputation.christmas_nice_list.earn.board",
       "reputation.christmas_nice_list.earn.thieves",
+      "reputation.christmas_nice_list.earn.presents",
+      "reputation.christmas_nice_list.earn.carols",
+      "reputation.christmas_nice_list.earn.yeti",
       "reputation.christmas_nice_list.earn.talk",
       "reputation.christmas_nice_list.earn.gear"
     ]

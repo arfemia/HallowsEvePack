@@ -1,0 +1,99 @@
+{
+  "$Comment": "Giving a Christmas Present away: the present's Primary. A ray from the eyes finds what the present points at, and HitEntityRules picks one rule per thing it hits (the last rule whose Matchers all hold), written as rules because a plain HitEntity skips an invulnerable target, and every Forgotten Temple character is one. A player (the first rule) is a friend: ZigGrantReward with PayTarget pays them the better table Christmas_Present_Given, through the same payout a quest uses, and tells them who it came from. PayTarget is the one step that fails when no player was hit, so the payout comes first here and only a gift that landed goes on into its Next, which spends one present (ModifyInventory), puts Christmas Cheer on the friend (Christmas_Cheer: Santa's favor comes faster for a while), pays the giver a little favor on Santa's Nice List, and counts USE_ITEM with the Qualifier Gift for the giver, with a sparkle. None of it is damage, so it works with PvP off and inside the Forgotten Temple. A character (the second rule: not a player and Invulnerable, which every quest giver and every placed character is) goes to ZigCreditProgress with QualifierFromTarget, which credits the giver with USE_ITEM qualified by that character's own id, and Targets, the characters who take a present by hand: Tomas (Harvest_Feast_Miller), Elsie (Harvest_Feast_Weaver), Bram (Harvest_Feast_Shepherd), the ids their placements keep in both seasons, and Santa (Christmas_Santa, his role, since his placement names no NpcId of its own). That is how Daily Presents, Wrapping Presents, the Present Job and Christmas Eve take a present. Only a credit for one of them goes on into its Next, which spends the present with a sparkle; any other character (Martha, a merchant) fails it, so the present stays in the hand and the Failed branch fizzles. The game's matchers cannot tell one character from another, which is why the list sits on the credit and the spend waits behind it. Add an id to Targets to let another character take presents. Any creature (the third rule: not a player and not invulnerable) only fizzles, and pointing at nothing fizzles through the Selector's Failed, so neither spends a present. Change what a gift holds in Christmas_Present_Given and how long the cheer lasts in its effect, never here.",
+  "Type": "Simple",
+  "RunTime": 0.2,
+  "Effects": {"ItemAnimationId": "Interact"},
+  "Next": {
+    "Type": "Selector",
+    "Selector": {"Id": "Raycast", "Offset": {"Y": 1.6}},
+    "HitEntityRules": [
+      {
+        "Matchers": [{"Type": "Player"}],
+        "Next": {
+          "Interactions": [
+            {
+              "Type": "ZigGrantReward",
+              "PayTarget": true,
+              "Rewards": [
+                {"Kind": "Lootable", "Params": {"Lootable": "Christmas_Present_Given"}}
+              ],
+              "Next": {
+                "Type": "ModifyInventory",
+                "AdjustHeldItemQuantity": -1,
+                "Next": {
+                  "Type": "Serial",
+                  "Interactions": [
+                    {"Type": "ApplyEffect", "EffectId": "Christmas_Cheer", "Entity": "Target"},
+                    {
+                      "Type": "ZigGrantReward",
+                      "Rewards": [
+                        {"Kind": "Reputation", "Params": {"Reputation": "Christmas_Nice_List", "Amount": 10}}
+                      ]
+                    },
+                    {"Type": "ZigCreditProgress", "Qualifier": "Gift"},
+                    {
+                      "Type": "Simple",
+                      "RunTime": 0.2,
+                      "Effects": {
+                        "WorldSoundEventId": "SFX_Player_Pickup_Item",
+                        "Particles": [{"SystemId": "Dust_Sparkles_Fine", "TargetEntityPart": "Entity"}]
+                      }
+                    }
+                  ]
+                }
+              },
+              "Failed": {
+                "Type": "Simple",
+                "RunTime": 0.2,
+                "Effects": {"WorldSoundEventId": "SFX_Bow_No_Ammo"}
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Matchers": [{"Type": "Player", "Invert": true}, {"Type": "Vulnerable", "Invert": true}],
+        "Next": {
+          "Interactions": [
+            {
+              "Type": "ZigCreditProgress",
+              "QualifierFromTarget": true,
+              "Targets": ["Harvest_Feast_Miller", "Harvest_Feast_Weaver", "Harvest_Feast_Shepherd", "Christmas_Santa"],
+              "Next": {
+                "Type": "ModifyInventory",
+                "AdjustHeldItemQuantity": -1,
+                "Next": {
+                  "Type": "Simple",
+                  "RunTime": 0.2,
+                  "Effects": {
+                    "WorldSoundEventId": "SFX_Player_Pickup_Item",
+                    "Particles": [{"SystemId": "Dust_Sparkles_Fine", "TargetEntityPart": "Entity"}]
+                  }
+                }
+              },
+              "Failed": {
+                "Type": "Simple",
+                "RunTime": 0.2,
+                "Effects": {"WorldSoundEventId": "SFX_Bow_No_Ammo"}
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Matchers": [{"Type": "Player", "Invert": true}, {"Type": "Vulnerable"}],
+        "Next": {
+          "Interactions": [
+            {"Type": "Simple", "RunTime": 0.2, "Effects": {"WorldSoundEventId": "SFX_Bow_No_Ammo"}}
+          ]
+        }
+      }
+    ],
+    "FailOn": "Entity",
+    "Failed": {
+      "Type": "Simple",
+      "RunTime": 0.2,
+      "Effects": {"WorldSoundEventId": "SFX_Bow_No_Ammo"}
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$Comment": [
+    "The skeleton every Christmas quest inherits through Parent. It is never offered.",
+    "",
+    "Season hides every quest built on it while Christmas is off; a child that writes its own Requires",
+    "(the quest before it) keeps it, since Season is a leaf of its own, and Christmas Morning writes its",
+    "own Season (Christmas_Morning) in its place. Hidden keeps each quest off open lists, so it is offered",
+    "only at its giver, and RequirePrerequisites keeps a locked one out of sight. MainLine makes the story",
+    "main quests (a list shows them first, with a gold bar and a star); a quest that repeats on a daily or",
+    "other periodic reset reads as repeatable whatever this says, while one that repeats only once per run",
+    "of Christmas stays a main quest.",
+    "Npc binds them all to Santa (the role Christmas_Santa, which his placement stands under with no NpcId",
+    "of its own), who takes the hand-ins, and CompletionDialogue sends a finished quest back to his",
+    "conversation. A helper's quest names the helper instead, by the id that helper keeps in both seasons",
+    "(Harvest_Feast_Miller for Tomas, Harvest_Feast_Weaver for Elsie, Harvest_Feast_Shepherd for Bram),",
+    "and that helper's Christmas conversation.",
+    "",
+    "A child adds its Listing (icon, category, order, its tier in the story), its Requires, its",
+    "Objectives, its Rewards and any Repeat, and takes its words from the keys its id spells",
+    "(quest.<id>.title and .flavor). This file sits outside the _Christmas folder on purpose: its file name",
+    "already spells its id, so Parent names it the same way in the game and in the build's own content",
+    "check."
+  ],
+  "Name": "Christmas_Quest_Base",
+  "Abstract": true,
+  "Season": "Christmas",
+  "Listing": { "Hidden": true, "RequirePrerequisites": true, "MainLine": true },
+  "Flow": { "AutoAccept": false, "AutoTrack": true, "HideLockedSteps": true },
+  "Npc": { "ViewId": "Christmas_Santa", "TurnInId": "giver" },
+  "CompletionDialogue": "Christmas_Santa"
+}

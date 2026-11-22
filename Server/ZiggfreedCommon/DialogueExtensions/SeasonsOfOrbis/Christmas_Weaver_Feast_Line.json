@@ -4,14 +4,17 @@
     "Elsie's Christmas line in her Harvest Feast conversation. Christmas starts while the feast's last",
     "days still run, and while the feast runs Elsie stands at her feast spot speaking her feast",
     "conversation (NpcPlacements/Harvest_Feast_Weaver_Temple.json takes its feast entry first). This line",
-    "lets a player reach her Christmas stall from the first day of Christmas all the same. Once the feast",
-    "is over she speaks her Christmas conversation (Dialogues/SeasonsOfOrbis/Christmas_Weaver.json), which",
-    "opens the stall itself, and the feast conversation is no longer reached.",
+    "lets a player reach her Christmas stall from the first day of Christmas all the same, and its second",
+    "line opens her quest list, where her Christmas quests (Wrapping Presents, christmas_wrapping_presents,",
+    "and her daily, Daily Wrapping, christmas_daily_wrapping) are offered, carried and handed in, since",
+    "they are bound to the id she keeps in both seasons (Harvest_Feast_Weaver). Once the feast is over she",
+    "speaks her Christmas conversation (Dialogues/SeasonsOfOrbis/Christmas_Weaver.json), which offers the",
+    "stall and the quests itself, and the feast conversation is no longer reached.",
     "",
-    "Dialogues.Ids names her feast conversation alone, since each villager's line opens that villager's",
-    "own stall. It lands on the screens the conversation opens on, after a screen's own lines and before",
-    "the goodbye group, so goodbye stays last. Season offers it only while Christmas runs; to take it out,",
-    "set Enabled false in a file of the same name. The line pays nothing: it opens the stall."
+    "Dialogues.Ids names her feast conversation alone, since each villager's lines open that villager's",
+    "own stall and quests. They land on the screens the conversation opens on, after a screen's own lines",
+    "and before the goodbye group, so goodbye stays last. Season offers them only while Christmas runs; to",
+    "take them out, set Enabled false in a file of the same name. The lines pay nothing themselves."
   ],
   "Season": "Christmas",
   "Dialogues": { "Ids": [ "Harvest_Feast_Weaver" ] },
@@ -21,6 +24,12 @@
       "Style": "neutral",
       "Presentation": { "Icon": { "Item": "Christmas_Present" } },
       "Open": { "Type": "Shop", "Shop": "Christmas_Weaver" }
+    },
+    {
+      "LabelKey": "dialogue.christmas_feast_line.opt.quests",
+      "Style": "neutral",
+      "Presentation": { "Icon": { "Item": "Ingredient_Fibre" } },
+      "Open": "Quests"
     }
   ]
 }

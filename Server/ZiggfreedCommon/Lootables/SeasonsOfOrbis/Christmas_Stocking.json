@@ -1,0 +1,36 @@
+{
+  "$Comment": [
+    "What Santa's Stocking holds: the free offer on Santa's stall, once a day",
+    "(ShopEntries/SeasonsOfOrbis/Christmas_Offer_Stocking.json). Every roll is read on its own: the first",
+    "always pays a few Christmas Coins through the Currency reward kind, and the second is a chance at a",
+    "Christmas Present on top (Chance is a percent from 0 to 100). Pool is one draw from the bag below,",
+    "weighted against each other: candy canes most days, a Gingerbread Cookie the rest. Every item goes",
+    "where the player's pickup settings send it, with the game's own pickup notice.",
+    "",
+    "Text names this table on the stall and in the notice that pays it, and gives its hover a line; the",
+    "hover then lists what it pays. A companion mod adds its own rolls with a file of its own that names",
+    "this table in ContributesTo."
+  ],
+  "Name": "Christmas_Stocking",
+  "Text": {
+    "TitleKey": "lootable.christmas_stocking.title",
+    "FlavorKey": "lootable.christmas_stocking.flavor"
+  },
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Christmas_Coins", "Amount": "3" } } ]
+      }
+    },
+    {
+      "Chance": { "Base": 10.0 },
+      "Grants": { "Items": [ { "Item": "Christmas_Present", "Count": 1 } ] }
+    }
+  ],
+  "Pool": {
+    "Entries": [
+      { "Weight": 60, "Grants": { "Items": [ { "Item": "Food_Candy_Cane", "Count": 2 } ] } },
+      { "Weight": 40, "Grants": { "Items": [ { "Item": "Christmas_Gingerbread_Cookie", "Count": 1 } ] } }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "$Comment": [
+    "Christmas Eve, the end of Santa's story each year: once Elsie's Wrapping Presents is done, bring Santa",
+    "Gingerbread Cookies for the sack and carrots for the reindeer, and give him a present for the sleigh.",
+    "The _Christmas folder makes the id christmas_eve. The cookies and carrots are TURN_IN steps handed in",
+    "at Santa; the present is a USE_ITEM step qualified by Santa's id (Christmas_Santa): holding a Christmas",
+    "Present and pointing it at him spends it and counts here",
+    "(Item/Interactions/Christmas/Christmas_Present_Give.json). All three steps share Order 1, so they can",
+    "be done in any order, and the TURN_IN steps are handed in at Santa, so no report-back step is added.",
+    "",
+    "Its pay holds that year's keepsake, the Christmas Ornament (Item/Items/Christmas/Christmas_Ornament.json)",
+    "with the year on it, collected with the rest at Santa. The first Claim row is the ornament: StackNameArg",
+    "@run reads as the label of the Christmas run this quest is paid for, which for a yearly event is the",
+    "year it started, and StackNameKey, keepsake.christmas_ornament.name, is stamped into every ornament",
+    "handed over and read back from the item, so never rename that key. Finishing it also earns that year's",
+    "keepsake achievement, christmas_ornament, for its points. Collecting it rolls Christmas_Eve_Pay, whose",
+    "first roll cues the celebration moment Christmas_Eve_Delivered.",
+    "",
+    "Repeat.PerRun brings this one quest back once in each year's run of Christmas: a run pays it once, a",
+    "forced or moved run cannot pay it twice, and an Eve left unfinished when the run ends waits for next",
+    "year and counts for that year's run. The steps before it never come back. After it, Santa's lines say",
+    "the story is done until next year and send the player to the dailies, the thieves and the stalls.",
+    "",
+    "The Mmo_Xp row is MMO Skill Tree's: Crafting XP, the capstone's share, for the baking and the",
+    "wrapping, waiting to be collected with the rest. The row's own Requires, the hytale:mod_installed gate,",
+    "leaves it out on a server without that mod, unpaid and unshown, and the rest of the quest pays."
+  ],
+  "Name": "Eve",
+  "Parent": "Christmas_Quest_Base",
+  "Listing": {
+    "Icon": "Christmas_Ornament",
+    "Category": "main",
+    "SortOrder": 50,
+    "Chains": [ { "Id": "christmas_story", "Tier": 5 } ]
+  },
+  "Requires": { "Quests": [ "christmas_wrapping_presents" ] },
+  "Repeat": {
+    "PerRun": { "Event": "Christmas", "Times": 1 }
+  },
+  "Objectives": {
+    "bring_cookies": {
+      "Kind": "TURN_IN",
+      "Target": "Christmas_Gingerbread_Cookie",
+      "MatchMode": "EXACT",
+      "Amount": 3,
+      "TextKey": "objective.christmas.bring_santa_cookies",
+      "Order": 1,
+      "TurnInNpcId": "giver"
+    },
+    "bring_carrots": {
+      "Kind": "TURN_IN",
+      "Target": "Plant_Crop_Carrot_Item",
+      "MatchMode": "EXACT",
+      "Amount": 10,
+      "TextKey": "objective.christmas.bring_santa_carrots",
+      "Order": 1,
+      "TurnInNpcId": "giver"
+    },
+    "present_for_the_sack": {
+      "Kind": "USE_ITEM",
+      "Target": "Christmas_Present",
+      "Qualifier": "Christmas_Santa",
+      "MatchMode": "EXACT",
+      "Amount": 1,
+      "TextKey": "objective.christmas.give_santa_present",
+      "Order": 1
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Item", "Params": { "Item": "Christmas_Ornament", "Count": "1",
+        "StackNameKey": "keepsake.christmas_ornament.name", "StackNameArg": "@run" } },
+      { "Kind": "Lootable", "Params": { "Lootable": "Christmas_Eve_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 500 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 400 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "CRAFTING", "Amount": "5000" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

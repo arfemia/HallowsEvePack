@@ -1,0 +1,22 @@
+{
+  "$Comment": "Throw snowballs during one Christmas. Each throw counts as USE_ITEM with the Qualifier Throw (Item/Interactions/Christmas/Christmas_Snowball_Throw.json), hit or miss. The description's number comes from the criterion's Amount through @amount. It carries no merry tag, so the Merrymaker never waits on a snowball fight. Each year's copy pays a few Christmas Coins and MMO Skill Tree's Mmo_Xp row once, Artillery XP for the throwing, both waiting on the achievements page until the player collects them. The Mmo_Xp row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that mod, unpaid and unshown, and the coins still pay. The _Christmas folder makes the id christmas_snowball_fight.",
+  "Parent": "Christmas_Achievement_Base",
+  "Text": { "TextArgs": { "Flavor": [ "@amount" ] } },
+  "Listing": { "SortOrder": 70, "Icon": "Christmas_Snowball" },
+  "Criteria": {
+    "throw-snowballs": {
+      "Kind": "USE_ITEM",
+      "Target": "Christmas_Snowball",
+      "Qualifier": "Throw",
+      "MatchMode": "EXACT",
+      "Amount": 50
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Currency", "Params": { "Currency": "Christmas_Coins", "Amount": "10" } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "ARTILLERY", "Amount": "2500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

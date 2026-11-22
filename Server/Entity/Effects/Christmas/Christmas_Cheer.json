@@ -1,0 +1,21 @@
+{
+  "$Comment": "Christmas Cheer: what a player gets when a friend gives them a Christmas Present (Item/Interactions/Christmas/Christmas_Present_Give.json puts it on whoever the present was pointed at). While it lasts, every gain of Santa's favor (the Nice List reputation) comes 20% faster: it adds 20 to ReputationGain_Christmas_Nice_List (whole percent points, Additive on the Max), the stat the Christmas Set and the Christmas Cake raise too, so they stack. 1800 seconds (thirty minutes), restarted, never stacked, by the next present a friend gives (Overwrite). It is no debuff, and a little sparkle plays as it lands. Its picture on the buff bar is the red Christmas packet.",
+  "Name": "christmas.world.effect.christmas_cheer.name",
+  "StatusEffectIcon": "Icons/ItemsGenerated/Furniture_Christmas_Chest_Small_Red.png",
+  "RawStatModifiers": {
+    "ReputationGain_Christmas_Nice_List": [
+      {
+        "Amount": 20,
+        "CalculationType": "Additive",
+        "Target": "Max"
+      }
+    ]
+  },
+  "OverlapBehavior": "Overwrite",
+  "Duration": 1800,
+  "Debuff": false,
+  "ApplicationEffects": {
+    "Particles": [{"SystemId": "Dust_Sparkles_Fine"}],
+    "WorldSoundEventId": "SFX_Potion_Drink_Success"
+  }
+}

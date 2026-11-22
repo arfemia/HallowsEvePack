@@ -1,0 +1,48 @@
+{
+  "$Comment": [
+    "Christmas Carols, the carol tour: once in each run of Christmas, sing a carol to people around the",
+    "Forgotten Temple, then tell Santa. The step counts a talk credit carrying the Qualifier",
+    "Christmas_Carol, which only the carol line gives (DialogueExtensions/SeasonsOfOrbis/Christmas_Carol.json):",
+    "that line shows in every other character's conversation all Christmas, and each character can be sung",
+    "to once a day. No Target means whoever the player is talking to. Npc.TurnInId, from the base, adds the",
+    "report-back step to Santa once enough people have heard a carol. It opens once Santa's first quest is",
+    "done.",
+    "",
+    "Listing.MainLine is false here: the tour is a side errand, so it reads as a side quest while the story",
+    "stays main quests.",
+    "",
+    "Repeat.PerRun brings it back once in each run of Christmas: a run pays it once, a forced or moved run",
+    "cannot pay it twice, and a tour left unfinished when the run ends waits for the next one with its",
+    "carols kept. It pays through Christmas_Carols_Pay, with favor on Santa's Nice List and Festival Favor",
+    "on its own Rewards. The achievement Carol Singer counts it.",
+    "",
+    "The Mmo_Xp row is MMO Skill Tree's: Acrobatics XP for the walk about the temple, waiting to be",
+    "collected with the rest. The row's own Requires, the hytale:mod_installed gate, leaves it out on a",
+    "server without that mod, unpaid and unshown, and the rest of the quest pays."
+  ],
+  "Name": "Carols",
+  "Parent": "Christmas_Quest_Base",
+  "Listing": { "Icon": "WinterHoliday_Lights", "Category": "misc", "SortOrder": 100, "MainLine": false },
+  "Requires": { "Quests": [ "christmas_present_thieves" ] },
+  "Repeat": {
+    "PerRun": { "Event": "Christmas", "Times": 1 }
+  },
+  "Objectives": {
+    "sing_carols": {
+      "Kind": "TALK_TO_NPC",
+      "Qualifier": "Christmas_Carol",
+      "Amount": 3,
+      "TextKey": "objective.christmas.sing_carols",
+      "Order": 1
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Christmas_Carols_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 150 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 200 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "ACROBATICS", "Amount": "2500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

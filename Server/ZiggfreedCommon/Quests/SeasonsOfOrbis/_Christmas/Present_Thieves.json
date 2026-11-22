@@ -1,0 +1,48 @@
+{
+  "$Comment": [
+    "The first step of Santa's story: catch Present Thieves, the Trorks in Santa hats who robbed his sleigh.",
+    "The _Christmas folder makes the id christmas_present_thieves. The kill step counts this pack's Present",
+    "Thief (Target) and the game's own grown Trorks (Targets, the twelve roles the NPC group",
+    "Christmas_Game_Trorks names), so a player hunting Trorks anywhere makes progress; the Trork wolves stay",
+    "out. Npc.TurnInId, from the base, adds the report-back step to Santa after the hunt.",
+    "",
+    "It pays through Christmas_Chain_Pay, with favor on Santa's Nice List and Festival Favor on its own",
+    "Rewards so the quest card shows them, and one Christmas Present, so every player has one to open or",
+    "give away. Finishing it opens the dailies, the helpers' part of the story (Bram's Reindeer Food next)",
+    "and Extra Thieves.",
+    "",
+    "The Mmo_Xp row is MMO Skill Tree's: Defense XP for the hunt, waiting to be collected with the rest.",
+    "The row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that mod,",
+    "unpaid and unshown, and the rest of the quest pays."
+  ],
+  "Name": "Present_Thieves",
+  "Parent": "Christmas_Quest_Base",
+  "Listing": {
+    "Icon": "Christmas_Present",
+    "Category": "main",
+    "SortOrder": 10,
+    "Chains": [ { "Id": "christmas_story", "Tier": 1 } ]
+  },
+  "Objectives": {
+    "catch_thieves": {
+      "Kind": "KILL_ENTITY",
+      "Target": "Christmas_Present_Thief",
+      "Targets": [ "Trork_Brawler", "Trork_Chieftain", "Trork_Doctor_Witch", "Trork_Guard", "Trork_Hunter", "Trork_Mauler",
+        "Trork_Sentry", "Trork_Sentry_Patrol", "Trork_Shaman", "Trork_Unarmed", "Trork_Warrior", "Trork_Warrior_Patrol" ],
+      "MatchMode": "EXACT",
+      "Amount": 5,
+      "TextKey": "objective.christmas.catch_thieves",
+      "Order": 1
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Christmas_Chain_Pay" } },
+      { "Kind": "Item", "Params": { "Item": "Christmas_Present", "Count": "1" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 250 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 150 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "2500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

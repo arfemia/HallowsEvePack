@@ -1,0 +1,57 @@
+{
+  "$Comment": [
+    "Christmas Morning: a present waits for every player under Santa's tree, once a year. The _Christmas",
+    "folder makes the id christmas_morning. Its own Season, Christmas_Morning, replaces the base's, so it",
+    "shows only while the calendar event Christmas_Morning runs (December 25 to January 10) and hides the",
+    "rest of Christmas. Flow.AutoAccept puts it in every player's quest log while that event runs, at their",
+    "next login or world change, and the base's Flow.AutoTrack pins it to their tracker; it asks for nothing",
+    "earlier in the story, so a player who only just arrived gets it too.",
+    "",
+    "The one step is a TURN_IN with a blank Target, handed in at Santa: nothing to bring, only the walk.",
+    "Santa's conversation opens on his morning line while it is carried, and its answer hands it in; a",
+    "player whose quest log was full takes it from the same line. Repeat.PerRun brings it back once in each",
+    "year's run of Christmas_Morning.",
+    "",
+    "Its pay is direct rows, waiting to be collected like every quest's: Christmas Coins, festival tokens,",
+    "the game's red-dotted Christmas Packet (sold nowhere), a Santa Suit to wear, and a little favor on",
+    "Santa's Nice List and Festival Favor.",
+    "",
+    "The Mmo_Xp row is MMO Skill Tree's: Acrobatics XP for the walk to the temple, collected with the rest.",
+    "Its own Requires, the hytale:mod_installed gate, leaves the row out on a server without that mod,",
+    "unpaid and unshown, and the rest still pays."
+  ],
+  "Name": "Morning",
+  "Parent": "Christmas_Quest_Base",
+  "Season": "Christmas_Morning",
+  "Listing": {
+    "Icon": "Furniture_Christmas_Chest_Small_RedDotted",
+    "Category": "main",
+    "SortOrder": 60
+  },
+  "Flow": { "AutoAccept": true },
+  "Repeat": {
+    "PerRun": { "Event": "Christmas_Morning", "Times": 1 }
+  },
+  "Objectives": {
+    "open_your_present": {
+      "Kind": "TURN_IN",
+      "Target": "",
+      "Amount": 1,
+      "Order": 1,
+      "TurnInNpcId": "giver",
+      "TextKey": "objective.christmas.morning"
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Currency", "Params": { "Currency": "Christmas_Coins", "Amount": "50" } },
+      { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "3" } },
+      { "Kind": "Item", "Params": { "Item": "Furniture_Christmas_Chest_Small_RedDotted", "Count": "1" } },
+      { "Kind": "Item", "Params": { "Item": "Christmas_Santa_Suit", "Count": "1" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 100 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 100 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "ACROBATICS", "Amount": "2500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

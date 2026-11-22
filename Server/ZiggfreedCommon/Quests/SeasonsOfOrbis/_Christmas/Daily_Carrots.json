@@ -1,0 +1,48 @@
+{
+  "$Comment": [
+    "Bram the Shepherd's daily: carrots for Santa's reindeer, given and handed in at Bram, who hands over a",
+    "bundle of snowballs in return. The _Christmas folder makes the id christmas_daily_carrots. Npc binds it",
+    "to Bram by the id his placement keeps in both seasons (Harvest_Feast_Shepherd), so he offers it from",
+    "his Christmas conversation, and from his feast conversation's Christmas line while Harvest Feast's last",
+    "days still run, and CompletionDialogue plays his Christmas conversation once it is collected. It opens",
+    "once Santa's first quest is done. Repeat.Reset with Period Daily is a calendar daily: it comes back at",
+    "midnight UTC. A TURN_IN step is handed in where it is, so no report-back step is added. Wild carrots",
+    "grow in the forests of the Emerald Wilds.",
+    "",
+    "It pays like Santa's dailies, through Christmas_Daily_Pay, with the snowballs and favor on Santa's",
+    "Nice List and Festival Favor on its own Rewards. The Mmo_Xp row is MMO Skill Tree's: Harvesting XP for",
+    "the carrots, waiting to be collected with the rest. The row's own Requires, the hytale:mod_installed",
+    "gate, leaves it out on a server without that mod, unpaid and unshown, and the rest of the quest pays."
+  ],
+  "Name": "Daily_Carrots",
+  "Parent": "Christmas_Quest_Base",
+  "Npc": { "ViewId": "Harvest_Feast_Shepherd", "TurnInId": "giver" },
+  "CompletionDialogue": "Christmas_Shepherd",
+  "Listing": { "Icon": "Plant_Crop_Carrot_Item", "Category": "misc", "SortOrder": 180 },
+  "Requires": { "Quests": [ "christmas_present_thieves" ] },
+  "Repeat": {
+    "Reset": { "Period": "Daily" },
+    "CooldownFrom": "Complete"
+  },
+  "Objectives": {
+    "bring_carrots": {
+      "Kind": "TURN_IN",
+      "Target": "Plant_Crop_Carrot_Item",
+      "MatchMode": "EXACT",
+      "Amount": 10,
+      "TextKey": "objective.christmas.bring_bram_carrots",
+      "Order": 1,
+      "TurnInNpcId": "giver"
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Christmas_Daily_Pay" } },
+      { "Kind": "Item", "Params": { "Item": "Christmas_Snowball", "Count": "16" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 25 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 20 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "HARVESTING", "Amount": "1500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

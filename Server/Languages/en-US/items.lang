@@ -135,7 +135,7 @@ effect.christmas_food_favor.name = Nice List Boost
 
 # Christmas - presents, snowballs, the two suits and the Christmas Wand.
 Christmas_Present.name = Christmas Present
-Christmas_Present.description = A little present wrapped in red, with a bow on top. Present Thieves drop them, and Elsie the Weaver sells them at her Christmas stall. Hold it and right-click to open it, and keep whatever is inside.
+Christmas_Present.description = A little present wrapped in red, with a bow on top. Present Thieves drop them, and Elsie the Weaver sells them at her Christmas stall. Hold it and right-click to open it, and keep whatever is inside.\n\nOr give it away: hold it, look at a friend, at Santa or at one of his helpers, and left-click. A friend gets a better gift than you would, and Santa likes you a little more.
 Christmas_Snowball.name = Snowball
 Christmas_Snowball.description = A cold surprise for a friend. Throw it, and whoever it hits slows down for a moment. It never hurts. Bram the Shepherd hands them out.
 Christmas_Elf_Suit.name = Elf Suit
@@ -144,3 +144,11 @@ Christmas_Santa_Suit.name = Santa Suit
 Christmas_Santa_Suit.description = A bundle of red clothes with white fur trim, just your size. Right-click to put it on and look like Santa himself for <color is="#ffffff">30:00</color>. Type /zigcostume off to take it off sooner. Elsie the Weaver sells it at her Christmas stall.
 Christmas_Wand.name = Christmas Wand
 Christmas_Wand.description = Point it at a friend. One button turns them into one of Santa's elves, the other into a reindeer, and they can take the costume off whenever they like. Elsie the Weaver sells it at her Christmas stall once you're On the List with Santa.
+Christmas_Yeti_Bait.name = Yeti Bait
+Christmas_Yeti_Bait.description = A fish no Yeti can say no to. <b>Bram the Shepherd</b> in the Forgotten Temple takes one to lead you and your party into the <b>Yeti Cave</b> while Christmas runs.\n\nBram sells it at his Christmas stall once you've brought his reindeer their carrots.
+Christmas_Yeti_Fur_Hood.name = Yeti Fur Hood
+Christmas_Yeti_Fur_Hood.description = Thick white fur from the Yeti's own back. You take <color is="#ffffff">15%</color> less Ice damage while you wear it. The Yeti sometimes leaves one behind the first time you beat him each day.
+Christmas_Yeti_Fur_Coat.name = Yeti Fur Coat
+Christmas_Yeti_Fur_Coat.description = A heavy coat of the Yeti's white fur. You take <color is="#ffffff">20%</color> less Ice damage while you wear it. The Yeti sometimes leaves one behind the first time you beat him each day.
+Christmas_Ornament.name = Christmas Ornament
+Christmas_Ornament.description = A glass bauble for the tree. Santa gives one to everyone who helps him fill his sleigh on Christmas Eve, and each Christmas has its own. Hang it anywhere you like.

@@ -1,0 +1,40 @@
+{
+  "Name": "Christmas_Carol",
+  "$Comment": [
+    "The carol line: one line this file adds to every other character's conversation while Christmas runs,",
+    "on the screens a conversation opens on, after a screen's own lines and before the goodbye group. It",
+    "reaches characters that have a conversation of their own; the game's own merchants and townsfolk have",
+    "none, so they never show it. Dialogues.Exclude keeps it out of Santa's conversation: nobody sings to",
+    "the man who brought the presents. Tomas, Elsie and Bram stand in the Forgotten Temple all Christmas,",
+    "so there is always somebody to sing to.",
+    "",
+    "Once with Period Daily and PerCharacter true, keyed by OnceId, is kept per character: a player sings",
+    "to each character once a day, and the line comes back at midnight UTC. Grant hands the singer a candy",
+    "cane and a little favor on Santa's Nice List every time, all Christmas long (the Reputation reward;",
+    "Amount is how much). MarkTalked with no Target credits whoever the player is talking to, and its",
+    "Qualifier, Christmas_Carol, is what the carol tour's step counts (Santa's quest christmas_carols), so",
+    "no other talk step on the server moves the tour; while the tour is not carried the credit counts for",
+    "nothing. The line names no Goto and no Close, so the conversation stays on the screen it was on, the",
+    "line gone for the day, and the library's receipt toast shows inside it with the pickup sound. Season",
+    "hides the line whenever Christmas is off; to take it out everywhere, set Enabled false in a file of",
+    "the same name."
+  ],
+  "Season": "Christmas",
+  "Dialogues": { "Exclude": [ "Christmas_Santa" ] },
+  "Options": [
+    {
+      "LabelKey": "dialogue.christmas_carol.opt.sing",
+      "OnceId": "christmas_carol",
+      "Once": { "Period": "Daily", "PerCharacter": true },
+      "Style": "neutral",
+      "Presentation": { "Icon": { "Item": "WinterHoliday_Lights" } },
+      "Actions": [
+        { "Type": "MarkTalked", "Qualifier": "Christmas_Carol" }
+      ],
+      "Grant": [
+        { "Kind": "Item", "Params": { "Item": "Food_Candy_Cane", "Count": "1" } },
+        { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 5 } }
+      ]
+    }
+  ]
+}

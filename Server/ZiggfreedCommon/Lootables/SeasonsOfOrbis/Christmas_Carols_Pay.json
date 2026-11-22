@@ -1,0 +1,20 @@
+{
+  "$Comment": [
+    "What Christmas Carols pays, once in each run of Christmas. The one roll always pays Christmas Coins",
+    "and festival tokens through the Currency reward kind. Favor on Santa's Nice List and Festival Favor",
+    "ride the quest's own Rewards, where the quest card shows them. The candy cane each carol line hands",
+    "over every day is the line's own (DialogueExtensions/SeasonsOfOrbis/Christmas_Carol.json), not this",
+    "table's. A companion mod adds rolls of its own with a file naming this table in ContributesTo."
+  ],
+  "Name": "Christmas_Carols_Pay",
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [
+          { "Kind": "Currency", "Params": { "Currency": "Christmas_Coins", "Amount": "25" } },
+          { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "4" } }
+        ]
+      }
+    }
+  ]
+}

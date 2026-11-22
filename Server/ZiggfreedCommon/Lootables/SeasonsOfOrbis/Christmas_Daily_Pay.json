@@ -1,0 +1,25 @@
+{
+  "$Comment": [
+    "What each Christmas daily pays: Santa's two (Daily Thieves and Daily Presents) and the helpers' three",
+    "(Tomas's Daily Baking, Elsie's Daily Wrapping and Bram's Daily Carrots). Every roll is read on its",
+    "own: the first always pays, the second is a chance on top. Chance is a percent from 0 to 100.",
+    "Christmas Coins and festival tokens pay through the Currency reward kind; favor rides each daily's own",
+    "Rewards, and so does anything one daily pays that the others do not (Elsie's presents, Bram's",
+    "snowballs). A companion mod adds rolls with a file naming this table in ContributesTo."
+  ],
+  "Name": "Christmas_Daily_Pay",
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [
+          { "Kind": "Currency", "Params": { "Currency": "Christmas_Coins", "Amount": "6" } },
+          { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "1" } }
+        ]
+      }
+    },
+    {
+      "Chance": { "Base": 20.0 },
+      "Grants": { "Items": [ { "Item": "Christmas_Gingerbread_Cookie", "Count": 1 } ] }
+    }
+  ]
+}

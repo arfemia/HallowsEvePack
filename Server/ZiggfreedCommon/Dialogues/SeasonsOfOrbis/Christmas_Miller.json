@@ -3,18 +3,25 @@
   "$Comment": [
     "Tomas the Miller's Christmas conversation, what he says once only Christmas runs and he stands beside",
     "Santa in his winter clothes (his placement's Christmas entry names it in Interact). While Harvest",
-    "Feast's last days still run he speaks his feast conversation instead, which a Christmas line reaches",
-    "his stall from (DialogueExtensions/SeasonsOfOrbis/Christmas_Miller_Feast_Line.json). Tomas contracts",
-    "everything: I've, it's, don't.",
+    "Feast's last days still run he speaks his feast conversation instead, whose Christmas lines reach his",
+    "stall and his quest list (DialogueExtensions/SeasonsOfOrbis/Christmas_Miller_Feast_Line.json). Tomas",
+    "contracts everything: I've, it's, don't.",
     "",
-    "Start's First beat answers a visit while Christmas is off (after a command ends it, or when a server",
-    "owner stands Tomas somewhere all year) with one line and goodbye. Otherwise the conversation opens on",
-    "greeting, the Fallback: who he is this Christmas and what his stall sells, in plain words. A",
+    "Start's First beats come first. The off-season beat answers a visit while Christmas is off (after a",
+    "command ends it, or when a server owner stands Tomas somewhere all year) with one line and goodbye. A",
     "conversation has no Season leaf, so the off-season beat and the stall line read the feature",
-    "ziggfreedcommon:feature Christmas_Live, Min 1, and nobody is sent to a stall that opens closed.",
+    "ziggfreedcommon:feature Christmas_Live, Min 1, and nobody is sent to a stall that opens closed. Then",
+    "the next step's pointer, once per player (OnceId christmas_tomas_next_elsie): once his part of the",
+    "story is collected and Elsie's is not taken yet, he sends the player to her. Collecting his quest plays",
+    "this conversation again (its CompletionDialogue), so the pointer comes straight after.",
     "",
-    "The greeting offers his stall (Christmas_Miller), one tip, how to make dough (the dough screen), and",
-    "why he is here. More of Christmas (his jobs, his part of the story) joins as lines of its own."
+    "Quests holds two rows, both bound to him by the id he keeps in both seasons (Harvest_Feast_Miller).",
+    "His part of Santa's story, Christmas Cookies (christmas_gingerbread_cookies): the conversation opens on",
+    "its offer while it can be taken, on its brief while it is carried, and on its hand-in once the cookie",
+    "is in the bag. Then his daily, Daily Baking (christmas_daily_baking), the same three screens. Each",
+    "hand-in opens his quest list with Collect in front of the player. Otherwise it opens on greeting, the",
+    "Fallback: who he is this Christmas and what his stall sells, in plain words, with his stall, his quest",
+    "list (Any work for me?), how to make dough (the dough screen), and why he is here."
   ],
   "Start": {
     "First": [
@@ -23,8 +30,21 @@
         "When": [
           { "Type": "Not", "Of": [ { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Christmas_Live", "Min": 1 } ] }
         ]
+      },
+      {
+        "Node": "next_elsie",
+        "When": [
+          { "Type": "QuestState", "Quest": "christmas_gingerbread_cookies", "State": "COMPLETED" },
+          { "Type": "QuestState", "Quest": "christmas_wrapping_presents", "State": "NOT_STARTED" }
+        ],
+        "Once": true,
+        "OnceId": "christmas_tomas_next_elsie"
       }
     ],
+    "Quests": {
+      "christmas_gingerbread_cookies": { "Offerable": "cookies_offer", "Active": "cookies_brief", "Ready": "cookies_ready" },
+      "christmas_daily_baking": { "Offerable": "baking_offer", "Active": "baking_brief", "Ready": "baking_ready" }
+    },
     "Fallback": "greeting"
   },
   "Nodes": {
@@ -45,6 +65,7 @@
           ],
           "Open": { "Type": "Shop", "Shop": "Christmas_Miller" }
         },
+        { "LabelKey": "dialogue.christmas_miller.opt.quests", "Style": "neutral", "Open": "Quests" },
         { "LabelKey": "dialogue.christmas_miller.opt.dough", "Style": "neutral", "Goto": "dough" },
         { "LabelKey": "dialogue.christmas_miller.opt.why", "Style": "neutral", "Goto": "why" }
       ],
@@ -61,6 +82,83 @@
       "TextKey": "dialogue.christmas_miller.why.text",
       "Options": [
         { "LabelKey": "dialogue.christmas_miller.opt.back", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "next_elsie": {
+      "TextKey": "dialogue.christmas_miller.next_elsie.text",
+      "Options": [
+        { "LabelKey": "dialogue.christmas_miller.opt.thanks", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "cookies_offer": {
+      "TextKey": "dialogue.christmas_miller.cookies_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_miller.cookies_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "christmas_gingerbread_cookies" }, { "Goto": "cookies_brief" } ]
+        },
+        { "LabelKey": "dialogue.christmas_miller.opt.later", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "cookies_brief": {
+      "TextKey": "dialogue.christmas_miller.cookies_brief.text",
+      "Options": [
+        { "LabelKey": "dialogue.christmas_miller.opt.dough", "Style": "neutral", "Goto": "dough" },
+        { "LabelKey": "dialogue.christmas_miller.opt.back", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "cookies_ready": {
+      "TextKey": "dialogue.christmas_miller.cookies_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_miller.cookies_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "christmas_gingerbread_cookies" } ],
+          "Do": [
+            { "TurnIn": "christmas_gingerbread_cookies" },
+            { "Open": { "Type": "Quests", "Highlight": "christmas_gingerbread_cookies" } }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "baking_offer": {
+      "TextKey": "dialogue.christmas_miller.baking_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_miller.baking_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "christmas_daily_baking" }, { "Goto": "baking_brief" } ]
+        },
+        { "LabelKey": "dialogue.christmas_miller.opt.later", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "baking_brief": {
+      "TextKey": "dialogue.christmas_miller.baking_brief.text",
+      "Options": [
+        { "LabelKey": "dialogue.christmas_miller.opt.dough", "Style": "neutral", "Goto": "dough" },
+        { "LabelKey": "dialogue.christmas_miller.opt.back", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "baking_ready": {
+      "TextKey": "dialogue.christmas_miller.baking_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_miller.baking_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "christmas_daily_baking" } ],
+          "Do": [
+            { "TurnIn": "christmas_daily_baking" },
+            { "Open": { "Type": "Quests", "Highlight": "christmas_daily_baking" } }
+          ]
+        }
       ],
       "IncludeOptions": [ "goodbye" ]
     }

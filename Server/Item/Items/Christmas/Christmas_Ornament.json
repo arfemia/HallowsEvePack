@@ -1,0 +1,34 @@
+{
+  "$Comment": "The Christmas Ornament, the year's keepsake: Santa hands one over with the pay for Christmas Eve, once each Christmas, and it is never sold. A glass bauble to hang in the house. It wears the game's own Winter Bauble (WinterHoliday_Ornament_Bauble's model, its first texture and its icon), placed the way the game's bauble is, so it is its own item and a bauble from a present or a tree never counts as the keepsake. The quest's Claim row stamps each one with the year (StackNameKey keepsake.christmas_ornament.name in christmas.progression.lang), so the name here is the plain one a shop or a recipe would show.",
+  "TranslationProperties": {
+    "Name": "items.Christmas_Ornament.name",
+    "Description": "items.Christmas_Ornament.description"
+  },
+  "Icon": "Icons/ItemsGenerated/WinterHoliday_Ornament_Bauble.png",
+  "Categories": ["Blocks.Deco"],
+  "Quality": "Legendary",
+  "Interactions": {"Primary": "Block_Primary", "Secondary": "Block_Secondary"},
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Items/Hypixel/Event_Decoration/Winter Holiday_Props/WinterHoliday_Ornamet_Bauble.blockymodel",
+    "CustomModelTexture": [
+      {"Texture": "Items/Hypixel/Event_Decoration/Winter Holiday_Props/WinterHoliday_Ornamet_Bauble1_Texture.png", "Weight": 1}
+    ],
+    "HitboxType": "Ladder",
+    "VariantRotation": "NESW",
+    "Flags": {},
+    "Gathering": {"Soft": {}},
+    "BlockParticleSetId": "Crystal",
+    "ParticleColor": "#fbc481",
+    "BlockSoundSetId": "Glass",
+    "PhysicalMaterialId": "Glass",
+    "TextureComputedColor": "#FB8A0F"
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {"Scale": 1.6, "Rotation": [0.0, 0.0, 15.0], "Translation": [2.0, -14.0]},
+  "Tags": {"Type": ["Deco"], "Family": ["Christmas"]},
+  "ItemSoundSetId": "ISS_Blocks_Wood",
+  "MaxStack": 25
+}
