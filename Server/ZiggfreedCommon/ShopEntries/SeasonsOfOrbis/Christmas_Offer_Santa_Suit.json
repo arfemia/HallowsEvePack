@@ -1,0 +1,18 @@
+{
+  "$Comment": "The Santa Suit (Christmas_Santa_Suit), a one-use costume, sold at Elsie's stall to players Revered on Santa's Nice List, the rank the list calls Very Nice. Requires is a lock, not a hide: a player below the rank still sees the offer, locked, with the rank's own name in the reason, and the Season leaf on the base still hides it while Christmas is off. It has no limit, since each suit is worn once. Its picture is the suit.",
+  "Parent": "Christmas_Offer_Base",
+  "Shop": "Christmas_Weaver",
+  "Text": {
+    "TitleKey": "shop.christmas_offer_santa_suit.title",
+    "FlavorKey": "shop.christmas_offer_santa_suit.desc"
+  },
+  "Icon": "Christmas_Santa_Suit",
+  "Listing": { "Category": "gifts", "SortOrder": 30 },
+  "Cost": { "Currencies": { "Christmas_Coins": 150 } },
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Christmas_Nice_List/Revered", "Min": 1 }
+    ]
+  },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Christmas_Santa_Suit", "Count": 1 } } ]
+}

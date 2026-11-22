@@ -1,0 +1,27 @@
+{
+  "Name": "Christmas_Miller_Feast_Line",
+  "$Comment": [
+    "Tomas's Christmas line in his Harvest Feast conversation. Christmas starts while the feast's last",
+    "days still run, and while the feast runs Tomas stands at his feast spot speaking his feast",
+    "conversation (NpcPlacements/Harvest_Feast_Miller_Temple.json takes its feast entry first). This line",
+    "lets a player reach his Christmas stall from the first day of Christmas all the same. Once the feast",
+    "is over he speaks his Christmas conversation (Dialogues/SeasonsOfOrbis/Christmas_Miller.json), which",
+    "opens the stall itself, and the feast conversation is no longer reached.",
+    "",
+    "Dialogues.Ids names his feast conversation alone, since each villager's line opens that villager's",
+    "own stall (Christmas_Weaver_Feast_Line and Christmas_Shepherd_Feast_Line do the same for Elsie and",
+    "Bram). It lands on the screens the conversation opens on, after a screen's own lines and before the",
+    "goodbye group, so goodbye stays last. Season offers it only while Christmas runs; to take it out, set",
+    "Enabled false in a file of the same name. The line pays nothing: it opens the stall."
+  ],
+  "Season": "Christmas",
+  "Dialogues": { "Ids": [ "Harvest_Feast_Miller" ] },
+  "Options": [
+    {
+      "LabelKey": "dialogue.christmas_feast_line.opt.stall",
+      "Style": "neutral",
+      "Presentation": { "Icon": { "Item": "Christmas_Present" } },
+      "Open": { "Type": "Shop", "Shop": "Christmas_Miller" }
+    }
+  ]
+}

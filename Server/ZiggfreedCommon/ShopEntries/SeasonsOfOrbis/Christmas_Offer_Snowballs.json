@@ -1,0 +1,13 @@
+{
+  "$Comment": "Sixteen more snowballs (Christmas_Snowball) at Bram's stall for a couple of Christmas Coins, with no limit, for a player whose free bundle (Christmas_Offer_Snowballs_Daily) is already thrown. Its picture is the snowball.",
+  "Parent": "Christmas_Offer_Base",
+  "Shop": "Christmas_Shepherd",
+  "Text": {
+    "TitleKey": "shop.christmas_offer_snowballs.title",
+    "FlavorKey": "shop.christmas_offer_snowballs.desc"
+  },
+  "Icon": "Christmas_Snowball",
+  "Listing": { "Category": "snow", "SortOrder": 20 },
+  "Cost": { "Currencies": { "Christmas_Coins": 2 } },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Christmas_Snowball", "Count": 16 } } ]
+}

@@ -1,0 +1,11 @@
+{
+  "$Comment": "What an Elf Suit pays instead when its costume cannot go on: the player is already in a costume, or in a form they cannot take off. The suit's wear chain (Christmas_Elf_Suit_Wear) names this table as the costume's FallbackLootable, so the suit just used comes straight back. It always pays, with no Chance and no Conditions, and it carries no costume of its own.",
+  "Name": "Christmas_Elf_Suit_Return",
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Item", "Params": { "Item": "Christmas_Elf_Suit", "Count": "1" } } ]
+      }
+    }
+  ]
+}

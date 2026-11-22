@@ -1,0 +1,5 @@
+{
+  "$Comment": "The skeleton every offer on a Christmas stall inherits through Parent. It is never for sale. Season hides every offer built on it while Christmas is off, even one that writes its own Requires (a rank lock on Santa's Nice List), since Season is a leaf of its own. Christmas has four stalls (Santa's, Tomas's, Elsie's and Bram's), so each child names its own Shop, along with its words, its shelf, its price, any limit and what it hands over.",
+  "Abstract": true,
+  "Season": "Christmas"
+}

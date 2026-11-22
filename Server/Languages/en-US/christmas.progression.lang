@@ -1,0 +1,126 @@
+# Christmas progression: the season's currency, Santa's Nice List and Santa's Sack, the four Christmas
+# stalls and their offers, the Christmas Set, the present's gift, Santa's conversation, the Christmas
+# conversations of Tomas, Elsie and Bram, and the Christmas line their feast conversations gain.
+# Keys are written bare: the library finds each one by its tail, whatever this file is called. Numbers
+# ride {0} and come from the content files, so a retune never touches a translation.
+
+# ---- Christmas Coins ----
+currency.christmas_coins.name = Christmas Coins
+currency.christmas_coins.amount = {0, number} {0, plural, one {Christmas Coin} other {Christmas Coins}}
+currency.christmas_coins.description = Spend them at the Christmas stalls in the Forgotten Temple.
+
+# ---- Santa's Nice List ----
+reputation.christmas_nice_list.name = Santa's Nice List
+reputation.christmas_nice_list.flavor = Santa checks it twice. Help him get his presents back and you climb it.
+reputation.christmas_nice_list.rank.neutral = Newcomer
+reputation.christmas_nice_list.rank.friendly = On the List
+reputation.christmas_nice_list.rank.honored = Nice
+reputation.christmas_nice_list.rank.revered = Very Nice
+reputation.christmas_nice_list.rank.exalted = Santa's Favorite
+reputation.christmas_nice_list.earn.thieves = Catch Present Thieves at night in the Emerald Wilds, or any time in the snow of the Whisperfrost Frontiers. The game's own Trorks count for a little while Christmas runs.
+reputation.christmas_nice_list.earn.talk = Stop by Santa for a word once a day.
+reputation.christmas_nice_list.earn.gear = Wear the Christmas Set from Elsie's stall, or eat a Christmas Cake, and you climb faster.
+lootable.christmas_santas_sack.title = Santa's Sack
+lootable.christmas_santas_sack.flavor = Santa packs you one every time you climb another step past Santa's Favorite.
+lootable.christmas_present_gift.title = Christmas Present
+lootable.christmas_present_gift.flavor = A few coins and a little surprise.
+
+# ---- The Christmas stalls ----
+shop.christmas_santa.title = Santa's Stall
+shop.christmas_santa.desc = Packets for wrapping your own gifts, and candy canes for the cold walk home.
+shop.christmas_santa.category.packets = Christmas Packets
+shop.christmas_santa.category.treats = Treats
+shop.christmas_miller.title = Tomas's Bakery
+shop.christmas_miller.desc = The recipes for everything I bake for Santa, and fresh dough if you're in a hurry.
+shop.christmas_miller.category.kitchen = Kitchen
+shop.christmas_weaver.title = Elsie's Stall
+shop.christmas_weaver.desc = Presents I have wrapped myself, a little magic, and warm clothes for the snow.
+shop.christmas_weaver.category.gifts = Gifts
+shop.christmas_weaver.category.clothes = Clothes
+shop.christmas_shepherd.title = Bram's Snowballs
+shop.christmas_shepherd.desc = Packed hard. Mind who you throw them at.
+shop.christmas_shepherd.category.snow = Snow
+shop.christmas_offer_recipe_gingerbread_cookie.title = Gingerbread Cookie Recipe
+shop.christmas_offer_recipe_gingerbread_cookie.desc = Bake them at a Chef's Stove from dough and spices. They put a spring in your step.
+shop.christmas_offer_recipe_hot_cocoa.title = Hot Cocoa Recipe
+shop.christmas_offer_recipe_hot_cocoa.desc = Make it at a Chef's Stove. It keeps the cold out and your health coming back.
+shop.christmas_offer_recipe_cake.title = Christmas Cake Recipe
+shop.christmas_offer_recipe_cake.desc = The best thing on the table. It does everything the cookies and the cocoa do, and you climb Santa's Nice List faster while it lasts.
+shop.christmas_offer_present.title = Christmas Present
+shop.christmas_offer_present.desc = Wrapped by Elsie. Open it to see what's inside.
+shop.christmas_offer_christmas_wand.title = Christmas Wand
+shop.christmas_offer_christmas_wand.desc = Point it at a friend to dress them up as an elf or a reindeer.
+shop.christmas_offer_santa_suit.title = Santa Suit
+shop.christmas_offer_santa_suit.desc = Put it on and you're Santa for a while.
+shop.christmas_offer_christmas_gloves.title = Christmas Gloves
+shop.christmas_offer_christmas_gloves.desc = Warm gloves, part of the Christmas Set. Wear the whole set and you climb Santa's Nice List faster.
+shop.christmas_offer_christmas_hat.title = Christmas Hat
+shop.christmas_offer_christmas_hat.desc = A warm hat, part of the Christmas Set. Wear the whole set and you climb Santa's Nice List faster.
+shop.christmas_offer_christmas_trousers.title = Christmas Trousers
+shop.christmas_offer_christmas_trousers.desc = Warm trousers for the snow, part of the Christmas Set. Wear the whole set and you climb Santa's Nice List faster.
+shop.christmas_offer_christmas_coat.title = Christmas Coat
+shop.christmas_offer_christmas_coat.desc = A warm coat, the last piece of the Christmas Set. Wear the whole set and you climb Santa's Nice List faster.
+shop.christmas_offer_snowballs_daily.title = Free Snowballs
+shop.christmas_offer_snowballs_daily.desc = A bundle of snowballs from Bram, free once a day.
+shop.christmas_offer_snowballs.title = Snowballs
+shop.christmas_offer_snowballs.desc = Another bundle, for when the free ones are gone.
+
+# ---- The Christmas Set ----
+# A set's notice is a toast, so no value carries markup.
+gearset.christmas_set.title = Christmas Set
+gearset.christmas_set.tier_half = Half the set on: a little more health.
+gearset.christmas_set.tier_full = The whole set on: more health again, the cold bites less, and you climb Santa's Nice List faster.
+
+# ---- Santa's conversation ----
+dialogue.christmas_santa.off_season.text = Christmas is over, and my sleigh's packed for home.\nCome and find me again next winter.
+dialogue.christmas_santa.off_season.opt.farewell = Goodbye, Santa.
+dialogue.christmas_santa.first_words.text = Ho ho ho. There you are.\nI'm Santa, and I need a hand. Trorks in Santa hats robbed my sleigh and ran off with the presents. Catch those <b>Present Thieves</b> at night in the <b>Emerald Wilds</b>, or any time in the snow of the <b>Whisperfrost Frontiers</b>, and bring my presents back.
+dialogue.christmas_santa.first_words.opt.hail = I'll help, Santa.
+dialogue.christmas_santa.daily_word.text = Back again? Good. That's another day on my <b>Nice List</b>.\nThe thieves are still out there. Keep an eye on the woods tonight.
+dialogue.christmas_santa.menu.text = Now then. What can I do for you?
+dialogue.christmas_santa.who_are_you.text = I'm Santa. Every Christmas I bring presents to everyone in Orbis.\nThis year I've got help. Tomas bakes, Elsie wraps the presents and sews, and Bram keeps everybody in snowballs.
+dialogue.christmas_santa.about_thieves.text = They're Trorks in Santa hats, and they only fight with their fists, so they're no match for you.\nLook at night in the woods and fields of the <b>Emerald Wilds</b>, or any time in the snow of the <b>Whisperfrost Frontiers</b>. Plenty of them still carry a present. Open it, and it's yours.
+dialogue.christmas_santa.helpers.text = <b>Tomas</b> and <b>Elsie</b> keep their stalls right here beside me. While Martha's feast is still on, they're helping her by the <b>kweebec village</b> at the end of the road.\n<b>Bram</b> is out on the meadow, halfway down the road from where you came in.
+dialogue.christmas_santa.opt.shop = Show me your stall.
+dialogue.christmas_santa.opt.standing = How am I doing on your list?
+dialogue.christmas_santa.opt.thieves = Where are the thieves?
+dialogue.christmas_santa.opt.helpers = Where are your helpers?
+dialogue.christmas_santa.opt.who = Who are you?
+dialogue.christmas_santa.opt.back = Something else.
+dialogue.christmas_santa.opt.farewell = Merry Christmas, Santa.
+
+# ---- Santa's helpers: Tomas the Miller, Elsie the Weaver and Bram the Shepherd ----
+dialogue.christmas_feast_line.opt.stall = What's on your Christmas stall?
+dialogue.christmas_miller.off_season.text = Christmas is over, and the oven's gone cold.\nI'll see you when the snow comes back.
+dialogue.christmas_miller.off_season.opt.farewell = See you next winter.
+dialogue.christmas_miller.greeting.text = Merry Christmas. Santa needs cookies for his sack, so I've brought my oven up from the mill.\nI sell the recipes for <b>Gingerbread Cookies</b>, <b>Hot Cocoa</b> and <b>Christmas Cake</b>. Bake them at a <b>Chef's Stove</b>.
+dialogue.christmas_miller.dough.text = Grind <b>wheat</b> into <b>flour</b> at a <b>Chef's Stove</b>, then mix the flour with <b>eggs</b> and a <b>tankard of water</b> at the same stove.\nShort on time? I sell a little dough every day.
+dialogue.christmas_miller.why.text = Trorks robbed Santa's sleigh on the road, and he asked the village for help. Elsie and Bram came too.\nSomebody has to feed the old man.
+dialogue.christmas_miller.opt.stall = What are you selling?
+dialogue.christmas_miller.opt.dough = How do I make dough?
+dialogue.christmas_miller.opt.why = Why are you here?
+dialogue.christmas_miller.opt.thanks = Thanks, Tomas.
+dialogue.christmas_miller.opt.back = Good of you.
+dialogue.christmas_miller.opt.farewell = Merry Christmas, Tomas.
+dialogue.christmas_weaver.off_season.text = Christmas is over and the ribbons are put away.\nCome and find me next winter. I will have new presents wrapped by then.
+dialogue.christmas_weaver.off_season.opt.farewell = I'll look for you.
+dialogue.christmas_weaver.greeting.text = Merry Christmas. The thieves left Santa's presents torn and muddy, so I am wrapping every one again.\nI sell <b>Christmas Presents</b>, the <b>Christmas Wand</b>, the <b>Santa Suit</b> and the <b>Christmas Set</b>. The higher you are on Santa's <b>Nice List</b>, the more I can sell you.
+dialogue.christmas_weaver.presents.text = Use a present to open it. There is always something inside, and sometimes something lovely.\nThe <b>Present Thieves</b> carry plenty. You will find them at night in the <b>Emerald Wilds</b>.
+dialogue.christmas_weaver.why.text = Santa asked the village for help, so here I am. Somebody has to wrap all of this.\nAnd somebody has to sew him a new coat. The Trorks took his spare one too.
+dialogue.christmas_weaver.opt.stall = Show me what you have.
+dialogue.christmas_weaver.opt.presents = What do I do with a present?
+dialogue.christmas_weaver.opt.why = Why are you here?
+dialogue.christmas_weaver.opt.thanks = Thank you, Elsie.
+dialogue.christmas_weaver.opt.back = That's a lot of wrapping.
+dialogue.christmas_weaver.opt.farewell = Merry Christmas, Elsie.
+dialogue.christmas_shepherd.off_season.text = Christmas is done. Back up the hill for me.
+dialogue.christmas_shepherd.off_season.opt.farewell = Safe walk home.
+dialogue.christmas_shepherd.greeting.text = Merry Christmas. Santa's sleigh got robbed, so I came down to help.\nI hand out <b>snowballs</b>, a free bundle every day. Hit someone with one and they slow down for a moment. Doesn't hurt.
+dialogue.christmas_shepherd.thieves.text = Trorks in Santa hats. They come out at night in the <b>woods</b> and <b>fields</b> of the <b>Emerald Wilds</b>.\nUp in the snow of the <b>Whisperfrost Frontiers</b> they're about all day. Hit one with a snowball first. Slows it right down.
+dialogue.christmas_shepherd.why.text = Somebody's got to keep the snow coming.\nAnd Santa asked nicely.
+dialogue.christmas_shepherd.opt.stall = Got any snowballs?
+dialogue.christmas_shepherd.opt.thieves = Where are the thieves?
+dialogue.christmas_shepherd.opt.why = Why are you here?
+dialogue.christmas_shepherd.opt.thanks = Thanks, Bram.
+dialogue.christmas_shepherd.opt.back = Fair enough.
+dialogue.christmas_shepherd.opt.farewell = Merry Christmas, Bram.

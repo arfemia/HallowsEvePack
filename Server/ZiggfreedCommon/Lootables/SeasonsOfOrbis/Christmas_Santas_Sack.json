@@ -1,0 +1,37 @@
+{
+  "$Comment": [
+    "What Santa packs for a player each time their favor on his Nice List climbs another step past Santa's",
+    "Favorite: the Beyond block in ZiggfreedCommon/Reputations/SeasonsOfOrbis/Christmas_Nice_List.json",
+    "names this table, and its Every is the size of a step. Every roll is read on its own: the first always",
+    "pays and plays the moment Christmas_Santas_Sack (a toast and a sound), so the sack never lands",
+    "unannounced; the second is a chance on top. Chance is a percent from 0 to 100. Festival tokens and",
+    "Christmas Coins pay through the Currency reward kind, since a counter wallet has no item to hand over.",
+    "",
+    "Text names the reward on Santa's Reputation page and in the notice that pays it (Santa's Sack instead",
+    "of Loot Bundle) and gives its hover a line; the hover then lists what this table pays."
+  ],
+  "Name": "Christmas_Santas_Sack",
+  "Text": {
+    "TitleKey": "lootable.christmas_santas_sack.title",
+    "FlavorKey": "lootable.christmas_santas_sack.flavor"
+  },
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [
+          { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "2" } },
+          { "Kind": "Currency", "Params": { "Currency": "Christmas_Coins", "Amount": "40" } }
+        ],
+        "Items": [
+          { "Item": "Christmas_Present", "Count": 2 },
+          { "Item": "Christmas_Gingerbread_Cookie", "Count": 2 }
+        ]
+      },
+      "Cue": "Christmas_Santas_Sack"
+    },
+    {
+      "Chance": { "Base": 25.0 },
+      "Grants": { "Items": [ { "Item": "Furniture_Christmas_Chest_Small_RedDotted", "Count": 1 } ] }
+    }
+  ]
+}

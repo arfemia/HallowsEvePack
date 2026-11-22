@@ -1,0 +1,157 @@
+{
+  "Name": "Christmas_Santa",
+  "$Comment": [
+    "Santa's conversation, everything he says while Christmas runs, wherever his placement stands him (the",
+    "Forgotten Temple, unless a server owner moves him). He contracts everything: I'm, you'll, they're.",
+    "",
+    "HOW A SCREEN IS PICKED. Start is walked in a fixed order: First (top to bottom), then a quest that is",
+    "READY to hand in, then one he can OFFER, then one that is ACTIVE, then Then, then Fallback.",
+    "First holds three things. The off-season line comes first and shows only while Christmas is off (a",
+    "visit after a command ends it, or a server owner who stands him somewhere all year), and its only",
+    "answer is goodbye. Then his first words, for a player he has not met: what happened to his sleigh,",
+    "what to do about it and where, in a few plain lines, kept until the player answers. Then his daily",
+    "word, once a day (Once with Period Daily, turning over at midnight UTC), which pays a little favor on",
+    "his Nice List when the player finishes the line, whichever way they leave it. Fallback is the menu.",
+    "",
+    "THE SEASON. A conversation has no Season leaf, so the off-season beat and the option that opens the",
+    "stall read the feature ziggfreedcommon:feature Christmas_Live, Min 1: while Christmas is off the stall",
+    "is not offered, and nobody is sent to a screen that opens closed.",
+    "",
+    "THE HELPERS. Where are your helpers? answers for the whole season in one line: Tomas and Elsie stand",
+    "beside Santa, and while Harvest Feast's last days still run (they overlap the start of Christmas)",
+    "they are at their feast spots by the kweebec village instead. A conversation gates a line only on its",
+    "own season's switch, so the line names both places rather than asking which season runs.",
+    "",
+    "THE FOOTER. Most screens pull in the santa_footer group: the stall, How am I doing on the list? (it",
+    "opens the Reputation page, and shows once the player has any favor with him), three lore lines and",
+    "goodbye. More of Christmas (quests, the board) joins this conversation as rows and lines of its own.",
+    "",
+    "No line asks which world the player is in, so every line plays wherever he stands. The greeting's",
+    "memory carries no Where, so it is kept once per player, the same in every world."
+  ],
+  "Header": [ "ActiveObjective" ],
+  "Memories": {
+    "christmas_santa_greeted": {}
+  },
+  "Start": {
+    "First": [
+      {
+        "Node": "off_season",
+        "When": [
+          { "Type": "Not", "Of": [ { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Christmas_Live", "Min": 1 } ] }
+        ]
+      },
+      {
+        "Node": "first_words",
+        "When": [
+          { "Type": "NotRemembered", "Memory": "christmas_santa_greeted" }
+        ]
+      },
+      {
+        "Node": "daily_word",
+        "When": [
+          { "Type": "Remembered", "Memory": "christmas_santa_greeted" }
+        ],
+        "Once": { "Period": "Daily" },
+        "OnceId": "christmas_santa_daily_word",
+        "Actions": [
+          { "Type": "Grant", "Rewards": [ { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 10 } } ] }
+        ]
+      }
+    ],
+    "Fallback": "menu"
+  },
+  "Nodes": {
+    "off_season": {
+      "TextKey": "dialogue.christmas_santa.off_season.text",
+      "Options": [
+        { "LabelKey": "dialogue.christmas_santa.off_season.opt.farewell", "Style": "farewell", "Close": true }
+      ]
+    },
+    "first_words": {
+      "TextKey": "dialogue.christmas_santa.first_words.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_santa.first_words.opt.hail",
+          "Style": "accept",
+          "Actions": [
+            { "Type": "Remember", "Memory": "christmas_santa_greeted" },
+            { "Type": "Goto", "Node": "menu" }
+          ]
+        }
+      ]
+    },
+    "daily_word": {
+      "TextKey": "dialogue.christmas_santa.daily_word.text",
+      "IncludeOptions": [ "santa_footer" ]
+    },
+    "menu": {
+      "TextKey": "dialogue.christmas_santa.menu.text",
+      "IncludeOptions": [ "santa_footer" ]
+    },
+    "who_are_you": {
+      "TextKey": "dialogue.christmas_santa.who_are_you.text",
+      "IncludeOptions": [ "santa_tail" ]
+    },
+    "about_thieves": {
+      "TextKey": "dialogue.christmas_santa.about_thieves.text",
+      "IncludeOptions": [ "santa_tail" ]
+    },
+    "helpers": {
+      "TextKey": "dialogue.christmas_santa.helpers.text",
+      "IncludeOptions": [ "santa_tail" ]
+    }
+  },
+  "Fragments": {
+    "santa_footer": [
+      {
+        "LabelKey": "dialogue.christmas_santa.opt.shop",
+        "Style": "neutral",
+        "Conditions": [
+          { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Christmas_Live", "Min": 1 }
+        ],
+        "Open": { "Type": "Shop", "Shop": "Christmas_Santa" }
+      },
+      {
+        "LabelKey": "dialogue.christmas_santa.opt.standing",
+        "Style": "neutral",
+        "Conditions": [
+          { "Type": "Factor", "Factor": "ziggfreedcommon:reputation", "Param": "Christmas_Nice_List", "Min": 1 }
+        ],
+        "Open": { "Type": "Reputation", "Reputation": "Christmas_Nice_List" }
+      },
+      {
+        "LabelKey": "dialogue.christmas_santa.opt.thieves",
+        "Style": "neutral",
+        "Goto": "about_thieves"
+      },
+      {
+        "LabelKey": "dialogue.christmas_santa.opt.helpers",
+        "Style": "neutral",
+        "Goto": "helpers"
+      },
+      {
+        "LabelKey": "dialogue.christmas_santa.opt.who",
+        "Style": "neutral",
+        "Goto": "who_are_you"
+      },
+      {
+        "LabelKey": "dialogue.christmas_santa.opt.farewell",
+        "Style": "farewell",
+        "Close": true
+      }
+    ],
+    "santa_tail": [
+      {
+        "LabelKey": "dialogue.christmas_santa.opt.back",
+        "Style": "neutral",
+        "Goto": "menu"
+      },
+      {
+        "LabelKey": "dialogue.christmas_santa.opt.farewell",
+        "Style": "farewell",
+        "Close": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "$Comment": "The Christmas Gloves, the hand piece of the Christmas Set (ZiggfreedCommon/GearSets/SeasonsOfOrbis/Christmas_Set.json), sold at Elsie the Weaver's Christmas stall once a player is On the List with Santa. A full item body with no Parent, so it inherits no recipe and nobody crafts it: they wear the game's own cotton gloves (Armor_Cloth_Cotton_Hands' model, texture, icon and armour numbers). Their own stats ride the native Armor block: the cotton gloves' resistances plus 5% less Ice damage, Health and Stamina like any armour, and ReputationGain_Christmas_Nice_List (10 is +10%), which raises every gain of Santa's favor while they are worn. Raise or lower an Amount to tune them; the set adds its own bonus on top.",
+  "TranslationProperties": {
+    "Name": "items.Christmas_Gloves.name",
+    "Description": "items.Christmas_Gloves.description"
+  },
+  "Quality": "Uncommon",
+  "ItemLevel": 30,
+  "PlayerAnimationsId": "Block",
+  "ItemSoundSetId": "ISS_Armor_Cloth",
+  "Categories": ["Items.Armors"],
+  "Icon": "Icons/ItemsGenerated/Armor_Cloth_Cotton_Hands.png",
+  "IconProperties": {"Rotation": [22.5, 45, 22.5], "Scale": 0.59, "Translation": [0.6, -32.4]},
+  "Model": "Items/Armors/Cotton/Hands.blockymodel",
+  "Texture": "Items/Armors/Cotton/Hands_Texture.png",
+  "Interactions": {
+    "Primary": {"Interactions": [{"Type": "EquipItem"}]},
+    "Secondary": {"Interactions": [{"Type": "EquipItem"}]}
+  },
+  "Armor": {
+    "ArmorSlot": "Hands",
+    "BaseDamageResistance": 0,
+    "DamageResistance": {
+      "Physical": [{"Amount": 0.04, "CalculationType": "Percent"}],
+      "Projectile": [{"Amount": 0.04, "CalculationType": "Percent"}],
+      "Ice": [{"Amount": 0.05, "CalculationType": "Percent"}]
+    },
+    "StatModifiers": {
+      "Health": [{"Amount": 7, "CalculationType": "Additive"}],
+      "Stamina": [{"Amount": 2, "CalculationType": "Additive"}],
+      "ReputationGain_Christmas_Nice_List": [{"Amount": 5, "CalculationType": "Additive", "Target": "Max"}]
+    }
+  },
+  "MaxDurability": 120,
+  "DurabilityLossOnHit": 0.5,
+  "Tags": {"Type": ["Armor"], "Family": ["Christmas"]}
+}

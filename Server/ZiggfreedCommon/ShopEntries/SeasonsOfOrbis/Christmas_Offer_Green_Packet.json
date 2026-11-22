@@ -1,0 +1,9 @@
+{
+  "$Comment": "The game's own Small Green Christmas Packet at Santa's stall, a small chest that holds things. The title is the item's own name key, written in full (server.items.<Id>.name) so the stall shows the name the item shows in the bag; the item has no description key, so the offer has no line under it.",
+  "Parent": "Christmas_Offer_Base",
+  "Shop": "Christmas_Santa",
+  "Text": { "TitleKey": "server.items.Furniture_Christmas_Chest_Small_Green.name" },
+  "Listing": { "Category": "packets", "SortOrder": 20 },
+  "Cost": { "Currencies": { "Christmas_Coins": 25 } },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Furniture_Christmas_Chest_Small_Green", "Count": 1 } } ]
+}

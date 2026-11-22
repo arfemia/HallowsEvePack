@@ -1,0 +1,14 @@
+{
+  "$Comment": "The recipe page for the Gingerbread Cookie (Christmas_Recipe_Gingerbread_Cookie), the first of Christmas's three dishes, open to anyone at Tomas's stall. Reading it teaches the dish for good, so a player buys it once (Limits.Total). Its picture is the dish.",
+  "Parent": "Christmas_Offer_Base",
+  "Shop": "Christmas_Miller",
+  "Text": {
+    "TitleKey": "shop.christmas_offer_recipe_gingerbread_cookie.title",
+    "FlavorKey": "shop.christmas_offer_recipe_gingerbread_cookie.desc"
+  },
+  "Icon": "Christmas_Gingerbread_Cookie",
+  "Listing": { "Category": "kitchen", "SortOrder": 10 },
+  "Cost": { "Currencies": { "Christmas_Coins": 40 } },
+  "Limits": { "Total": 1 },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Christmas_Recipe_Gingerbread_Cookie", "Count": 1 } } ]
+}

@@ -1,0 +1,37 @@
+{
+  "$Comment": "A Snowball's flight. Parent is the game's own thrown-rubble flight (Projectile_Config_Rubble), so its gravity gives a hand-thrown arc; LaunchForce is gentler than the rubble's 45, and Model is the game's ice rubble lump. Both interaction roots are restated, which replaces the parent's whole map (it has only these two), so the rubble's damage never fires: nothing here deals damage. On a hit, the game's Slow lands on whoever was hit for two seconds (Duration overrides Slow's own ten), a puff of snow bursts with the game's snow breaking sound, and the snowball is removed; a miss gives only the puff. The slow reaches players with PvP off and in the Forgotten Temple too, since it is no damage. The throw's Lifetime (Christmas_Snowball_Throw) removes it after 3 seconds if it never lands.",
+  "Parent": "Projectile_Config_Rubble",
+  "Model": "Rubble_Ice",
+  "LaunchForce": 25,
+  "Interactions": {
+    "ProjectileHit": {
+      "Cooldown": {"Cooldown": 0},
+      "Interactions": [
+        {"Type": "ApplyEffect", "EffectId": "Slow", "Entity": "Target", "Duration": 2},
+        {
+          "Type": "Simple",
+          "RunTime": 0,
+          "Effects": {
+            "WorldSoundEventId": "SFX_Snow_Break",
+            "Particles": [{"SystemId": "Block_Break_Snow", "TargetEntityPart": "Entity"}]
+          }
+        },
+        {"Type": "RemoveEntity", "Entity": "User"}
+      ]
+    },
+    "ProjectileMiss": {
+      "Cooldown": {"Cooldown": 0},
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "RunTime": 0,
+          "Effects": {
+            "WorldSoundEventId": "SFX_Snow_Break",
+            "Particles": [{"SystemId": "Block_Break_Snow", "TargetEntityPart": "Entity"}]
+          }
+        },
+        {"Type": "RemoveEntity", "Entity": "User"}
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "$Comment": "Opening a Christmas Present, with the game's wooden chest opening sound. The present is spent first, and only a present actually spent pays: ModifyInventory takes one from the hand, and only its Next pays the table Christmas_Present_Gift (ZigGrantReward) and counts the opening (ZigCreditProgress, USE_ITEM with the Qualifier Open, its Target the present even when it was the last one). Tune what a present holds in that table, never here.",
+  "Type": "Simple",
+  "RunTime": 0.3,
+  "Effects": {"ItemAnimationId": "Interact", "WorldSoundEventId": "SFX_Chest_Wooden_Open"},
+  "Next": {
+    "Type": "ModifyInventory",
+    "AdjustHeldItemQuantity": -1,
+    "Next": {
+      "Type": "Serial",
+      "Interactions": [
+        {
+          "Type": "ZigGrantReward",
+          "Rewards": [
+            {"Kind": "Lootable", "Params": {"Lootable": "Christmas_Present_Gift"}}
+          ]
+        },
+        {"Type": "ZigCreditProgress", "Qualifier": "Open"}
+      ]
+    }
+  }
+}

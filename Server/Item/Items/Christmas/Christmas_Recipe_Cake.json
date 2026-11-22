@@ -1,0 +1,63 @@
+{
+  "$Comment": "The recipe page for the Christmas Cake (Christmas_Cake). Shaped like the game's own recipe pages (Recipe_Food_Pie_Meat): using it with either button teaches the cake for good (LearnRecipe) and uses the page up. It has its own name key, where the game's pages build theirs from the dish's.",
+  "TranslationProperties": {
+    "Name": "items.Christmas_Recipe_Cake.name",
+    "Description": "items.Christmas_Recipe_Cake.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Recipe_Page.png",
+  "Quality": "Legendary",
+  "Categories": [
+    "Items.Recipes"
+  ],
+  "PlayerAnimationsId": "Item",
+  "Model": "Items/Consumables/Recipes/Recipe.blockymodel",
+  "Texture": "Items/Consumables/Recipes/Recipe_Texture.png",
+  "IconProperties": {
+    "Scale": 0.76,
+    "Rotation": [
+      135,
+      135,
+      0
+    ],
+    "Translation": [
+      -1,
+      5
+    ]
+  },
+  "Consumable": true,
+  "Interactions": {
+    "Primary": {
+      "Interactions": [
+        {
+          "ItemId": "Christmas_Cake",
+          "Type": "LearnRecipe",
+          "Next": {
+            "Type": "ModifyInventory",
+            "AdjustHeldItemQuantity": -1
+          }
+        }
+      ]
+    },
+    "Secondary": {
+      "Interactions": [
+        {
+          "ItemId": "Christmas_Cake",
+          "Type": "LearnRecipe",
+          "Next": {
+            "Type": "ModifyInventory",
+            "AdjustHeldItemQuantity": -1
+          }
+        }
+      ]
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Recipe"
+    ],
+    "Family": [
+      "Food"
+    ]
+  },
+  "MaxStack": 10
+}

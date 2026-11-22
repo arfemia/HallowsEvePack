@@ -1,0 +1,16 @@
+{
+  "$Comment": "The Christmas Cake's own extra: while it lasts, every gain of Santa's favor (the Nice List reputation) comes 10% faster. It adds 10 to ReputationGain_Christmas_Nice_List (whole percent points, Additive on the Max), the same stat the Christmas Set raises, so it stacks with the set. 600 seconds (ten minutes), restarted, never stacked, by eating another cake (Overwrite). Its picture on the buff bar is the cake. The cake's description in items.lang writes the number out (Nice List Boost), so change it with this.",
+  "Name": "items.effect.christmas_food_favor.name",
+  "StatusEffectIcon": "Icons/ItemsGenerated/WinterHoliday_WinterRoll.png",
+  "RawStatModifiers": {
+    "ReputationGain_Christmas_Nice_List": [
+      {
+        "Amount": 10,
+        "CalculationType": "Additive",
+        "Target": "Max"
+      }
+    ]
+  },
+  "OverlapBehavior": "Overwrite",
+  "Duration": 600
+}

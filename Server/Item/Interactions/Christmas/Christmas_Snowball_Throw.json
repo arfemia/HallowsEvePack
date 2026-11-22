@@ -1,0 +1,16 @@
+{
+  "$Comment": "Throwing a Snowball, in the game's own order: the throw animation with the game's swing sound, a half-second cooldown, the snowball leaves the hand (Christmas_Snowball_Projectile), the throw counts as USE_ITEM with the Qualifier Throw, and only then is one snowball taken from the hand. Spending it last is what lets the last snowball of a stack finish its own throw. Lifetime is the longest the snowball can stay in the world, in seconds: the game removes it then even if it never lands (thrown off a cliff, or the thrower left). Raise the Cooldown for slower snowball fights.",
+  "Type": "Serial",
+  "Interactions": [
+    {"Type": "Simple", "RunTime": 0.25, "Effects": {"ItemAnimationId": "Throw", "WorldSoundEventId": "SFX_Unarmed_Swing"}},
+    {"Type": "ResetCooldown", "Cooldown": {"Cooldown": 0.5}},
+    {
+      "Type": "Projectile",
+      "Config": "Christmas_Snowball_Projectile",
+      "Lifetime": 3,
+      "Next": {"Type": "Simple", "RunTime": 0.2}
+    },
+    {"Type": "ZigCreditProgress", "Qualifier": "Throw"},
+    {"Type": "ModifyInventory", "AdjustHeldItemQuantity": -1}
+  ]
+}

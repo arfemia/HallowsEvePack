@@ -1,34 +1,49 @@
 {
   "$Comment": [
     "Elsie the Weaver, one of the three villagers standing in the Forgotten Temple while Harvest Feast",
-    "runs, so a player carrying the invitation tour always has somebody to ask. The role, this placement",
-    "and the conversation pressing F opens all ship in this pack. Interact names the conversation",
-    "(Dialogues/SeasonsOfOrbis/Harvest_Feast_Weaver.json). Author Dialogue or Open, never both.",
+    "runs, so a player carrying the invitation tour always has somebody to ask, and one of Santa's three",
+    "helpers while Christmas runs. The roles, this placement and the conversations pressing F opens all",
+    "ship in this pack. Author Dialogue or Open, never both.",
     "",
-    "Season makes Elsie a guest, as it does the host: the placement stands only while the calendar event",
-    "Harvest_Feast is switched on and running, and the library looks at every placement again at each",
-    "start and end, so neither needs a restart. Lifecycle keeps her chunk loaded, stands her up again if",
-    "something removes her, and raises her health past anything that can be dealt.",
+    "Seasons is what makes Elsie a guest, and one woman in two seasons: the placement stands while any",
+    "listed calendar event is switched on and running, and the entry in effect is the first, in list",
+    "order, whose event runs. The Harvest_Feast entry comes first and changes nothing, so while the feast",
+    "runs (its last days overlap the start of Christmas) she stands at her feast spot in her feast clothes",
+    "with her feast conversation, which gains a Christmas line from the first day of Christmas",
+    "(DialogueExtensions/SeasonsOfOrbis/Christmas_Weaver_Feast_Line.json). Once only Christmas runs, its",
+    "entry replaces four leaves whole: Role, her winter clothes (NPC/Roles/Passive/Christmas_Weaver.json),",
+    "the library changing the standing NPC's role in place; Interact, her Christmas conversation",
+    "(Dialogues/SeasonsOfOrbis/Christmas_Weaver.json); Anchor, her Christmas spot; and Props, her stall. A",
+    "new Anchor takes her away from her feast spot and stands her at the new one. The library looks at every placement",
+    "again at each start and end and whenever she is loaded, so nothing needs a restart. Lifecycle keeps",
+    "her chunk loaded, stands her up again if something removes her, and raises her health past anything",
+    "that can be dealt.",
     "",
     "Where finds the temple by its GameplayConfig id, which stays the same on every visit while the",
-    "world's name does not. Identity.NpcId is spelled as the role, so a nameplate key built from it",
-    "resolves. Each villager has an id and a conversation of their own: the invitation line is spent per",
-    "conversation, so two villagers sharing one would count as one person asked.",
+    "world's name does not. Identity.NpcId is spelled as her feast role and never changes with an entry's",
+    "Role, so a nameplate key built from it resolves and every quest, talk step and hand-in bound to",
+    "Harvest_Feast_Weaver finds her in both seasons. Each villager has an id and a conversation of their",
+    "own: the invitation line is spent per conversation, so two villagers sharing one would count as one",
+    "person asked.",
     "",
-    "The three villagers stand apart, so asking them all is a walk through the temple: Bram on the",
-    "meadow halfway down the road from the arrival, Tomas where that road comes into the kweebec village,",
-    "and Elsie on the village's far side. Anchor stands Elsie beside the Rootling Merchant's spawn marker",
-    "(Temple_Kweebec_Merchant_Static), which every Forgotten Temple carries once, so she moves with the",
-    "temple's own layout: sixteen blocks along negative X and five along positive Z from the marker is",
-    "the cobbled ground just south of the marble dais on the village's west side, well clear of the",
-    "merchant and of anybody else standing at that marker. Limits.OncePerWorld keeps her to one spot even",
-    "if a temple ever carries the marker twice. To move Elsie, edit Anchor.Structure.Offset and Yaw, then",
-    "look at the spot in game. To take her out without editing this file, set enabled (lower case, as",
-    "that file spells it) to false for this id in mods/ziggfreedcommon/npc-placements.json."
+    "At the feast the three villagers stand apart, so asking them all is a walk through the temple: Bram",
+    "on the meadow halfway down the road from the arrival, Tomas where that road comes into the kweebec",
+    "village, and Elsie on the village's far side. The file's Anchor stands Elsie beside the Rootling",
+    "Merchant's spawn marker (Temple_Kweebec_Merchant_Static), which every Forgotten Temple carries once,",
+    "so she moves with the temple's own layout: sixteen blocks along negative X and five along positive Z",
+    "from the marker is the cobbled ground just south of the marble dais on the village's west side, well",
+    "clear of the merchant. Limits.OncePerWorld keeps her to one spot even if a temple ever carries the",
+    "marker twice. At Christmas she keeps a stall beside Santa on the marble floor on the round hall's",
+    "north side: the Christmas entry's Anchor is the temple's arrival spot plus an offset, ten blocks along",
+    "negative X and eight along negative Z, four blocks east of Santa (X -14), facing the path (Yaw 180).",
+    "Her Props there are a tavern table in front of her and two of the game's Christmas Packets beside it,",
+    "offset along the world's own axes and raised half a block (Y 0.5), because a block is drawn centred",
+    "on the point it is given. To move Elsie, edit the Offset and Yaw of the Anchor for the season you",
+    "mean, then look at the spot in game. To take her out without editing this file, set enabled (lower",
+    "case, as that file spells it) to false for this id in mods/ziggfreedcommon/npc-placements.json."
   ],
   "Name": "Harvest_Feast_Weaver_Temple",
   "Enabled": true,
-  "Season": "Harvest_Feast",
   "Where": {
     "GameplayConfig": [ "ForgottenTemple" ]
   },
@@ -53,5 +68,24 @@
   },
   "Interact": {
     "Dialogue": "Harvest_Feast_Weaver"
-  }
+  },
+  "Seasons": [
+    { "Season": "Harvest_Feast" },
+    {
+      "Season": "Christmas",
+      "Role": "Christmas_Weaver",
+      "Interact": { "Dialogue": "Christmas_Weaver" },
+      "Anchor": {
+        "WorldSpawn": {
+          "Offset": { "X": -10, "Z": -8 },
+          "Yaw": 180.0
+        }
+      },
+      "Props": [
+        { "Item": "Furniture_Tavern_Table", "Offset": { "X": 0.3, "Y": 0.5, "Z": 2 }, "Yaw": 0.0 },
+        { "Item": "Furniture_Christmas_Chest_Small_Red", "Offset": { "X": 1.6, "Y": 0.5, "Z": 1.6 }, "Yaw": 170.0 },
+        { "Item": "Furniture_Christmas_Chest_Small_RedDotted", "Offset": { "X": -1.1, "Y": 0.5, "Z": 1.8 }, "Yaw": 200.0 }
+      ]
+    }
+  ]
 }

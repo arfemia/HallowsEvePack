@@ -1,0 +1,19 @@
+{
+  "$Comment": "A Christmas Present: Present Thieves drop them and Elsie the Weaver sells them. It wears the game's red Christmas packet (Furniture_Christmas_Chest_Small_Red's model, texture, icon and icon framing) as a plain item with no BlockType, so it can never be placed as a block; Scale shrinks the block-sized model to fit a hand. Secondary opens it (Christmas_Present_Open): one present is spent, the table Christmas_Present_Gift pays out, and the opening counts as USE_ITEM with the Qualifier Open. Primary is free for giving it away to another player or a villager. The item never checks the calendar, so a present kept from December still opens in March.",
+  "TranslationProperties": {
+    "Name": "items.Christmas_Present.name",
+    "Description": "items.Christmas_Present.description"
+  },
+  "Quality": "Uncommon",
+  "Icon": "Icons/ItemsGenerated/Furniture_Christmas_Chest_Small_Red.png",
+  "IconProperties": {"Rotation": [22.5, 45, 22.5], "Scale": 0.55, "Translation": [0, -15]},
+  "Model": "Blocks/Decorative_Sets/Christmas/Chest_Small.blockymodel",
+  "Texture": "Blocks/Decorative_Sets/Christmas/Chest_Small_Textures/Red.png",
+  "Scale": 0.6,
+  "PlayerAnimationsId": "Item",
+  "Interactions": {"Secondary": {"Interactions": ["Christmas_Present_Open"]}},
+  "ItemSoundSetId": "ISS_Items_Cloth",
+  "MaxStack": 25,
+  "DropOnDeath": true,
+  "Tags": {"Family": ["Christmas"]}
+}

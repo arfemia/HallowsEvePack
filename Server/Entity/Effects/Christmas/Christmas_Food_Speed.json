@@ -1,0 +1,11 @@
+{
+  "$Comment": "Swift Feet, what a Gingerbread Cookie or a Christmas Cake gives: the eater moves 15% faster for 600 seconds (ten minutes). ApplicationEffects.HorizontalSpeedMultiplier is the game's own movement knob, the field its Slow sets to 0.5 and some of its creatures' rage effects set above 1; 1.15 is 15% faster. Overwrite means eating another cookie or cake restarts it, never stacks it. Its picture on the buff bar is the gingerbread cookie. Both dishes' descriptions in items.lang write these numbers out (15%, 10:00), so change them with it.",
+  "Name": "items.effect.christmas_food_speed.name",
+  "StatusEffectIcon": "Icons/ItemsGenerated/WinterHoliday_Ornament_Biscuit.png",
+  "ApplicationEffects": {
+    "HorizontalSpeedMultiplier": 1.15
+  },
+  "OverlapBehavior": "Overwrite",
+  "Duration": 600,
+  "Debuff": false
+}

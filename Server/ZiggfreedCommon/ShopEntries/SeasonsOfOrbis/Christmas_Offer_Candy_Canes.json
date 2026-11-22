@@ -1,0 +1,10 @@
+{
+  "$Comment": "The game's own candy canes, four to a bundle, two bundles a day (Limits.Daily, turning over at midnight UTC). The title is the item's own name key, written in full (server.items.<Id>.name) so the stall shows the name the item shows in the bag. The item's own description carries formatting meant for its tooltip, so the offer leaves it out.",
+  "Parent": "Christmas_Offer_Base",
+  "Shop": "Christmas_Santa",
+  "Text": { "TitleKey": "server.items.Food_Candy_Cane.name" },
+  "Listing": { "Category": "treats", "SortOrder": 10 },
+  "Cost": { "Currencies": { "Christmas_Coins": 6 } },
+  "Limits": { "Daily": 2 },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Food_Candy_Cane", "Count": 4 } } ]
+}

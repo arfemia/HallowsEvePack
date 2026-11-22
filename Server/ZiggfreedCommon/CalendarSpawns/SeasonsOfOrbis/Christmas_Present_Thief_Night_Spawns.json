@@ -1,0 +1,26 @@
+{
+  "$Comment": [
+    "Present Thieves after dark while Christmas runs, written as the world-spawn rule",
+    "Christmas_Present_Thieves_Night when Christmas starts and stilled (every moon phase at zero) when it",
+    "ends. They come in ones and twos onto soil in the first zone's woods, forests and plains from seven",
+    "at night to five in the morning, and the ones still out are gone at dawn; LightRanges keeps them away",
+    "from anywhere a torch or a lantern lights.",
+    "",
+    "The body is read by the game's own NPC/Spawn/World codec, the shape of its own rules. The game allows",
+    "one rule per creature and environment: the thieves' other rule",
+    "(Christmas_Present_Thief_Snow_Spawns.json) names only the third zone's environments, so the two never",
+    "share one. To make the nights busier or quieter, change Weight."
+  ],
+  "Event": "Christmas",
+  "Rule": "Christmas_Present_Thieves_Night",
+  "Priority": 0,
+  "Spawn": {
+    "Environments": [ "Env_Zone1_Autumn", "Env_Zone1_Forests", "Env_Zone1_Plains" ],
+    "NPCs": [
+      { "Id": "Christmas_Present_Thief", "Weight": 8, "SpawnBlockSet": "Soil", "Flock": { "Size": [1, 2] } }
+    ],
+    "DayTimeRange": [19, 5],
+    "Despawn": { "DayTimeRange": [5, 19] },
+    "LightRanges": { "Light": [0, 8] }
+  }
+}

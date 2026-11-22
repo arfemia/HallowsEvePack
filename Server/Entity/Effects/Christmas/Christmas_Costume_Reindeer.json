@@ -1,0 +1,13 @@
+{
+  "$Comment": "A costume: for three minutes the wearer takes the game's Christmas reindeer look (the model Reindeer_Christmas, a stag with a red nose). It changes the model and is no debuff, which is what makes it a costume: the wearer can take it off any time with /zigcostume off, and no second costume goes over it. The Christmas Wand's secondary use puts it on another player. Its picture on the buff bar is the game's stag. Duration is in seconds.",
+  "Name": "christmas.world.effect.christmas_costume_reindeer.name",
+  "StatusEffectIcon": "Icons/ModelsGenerated/Deer_Stag.png",
+  "OverlapBehavior": "Overwrite",
+  "Duration": 180,
+  "Debuff": false,
+  "ModelChange": "Reindeer_Christmas",
+  "ApplicationEffects": {
+    "Particles": [{"SystemId": "Potion_Morph_Burst"}],
+    "WorldSoundEventId": "SFX_Deer_Stag_Alerted"
+  }
+}

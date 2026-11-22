@@ -1,0 +1,74 @@
+{
+  "Name": "Christmas_Weaver",
+  "$Comment": [
+    "Elsie the Weaver's Christmas conversation, what she says once only Christmas runs and she stands",
+    "beside Santa in her winter clothes (her placement's Christmas entry names it in Interact). While",
+    "Harvest Feast's last days still run she speaks her feast conversation instead, which a Christmas line",
+    "reaches her stall from (DialogueExtensions/SeasonsOfOrbis/Christmas_Weaver_Feast_Line.json). Elsie",
+    "never contracts: I am, it is, do not.",
+    "",
+    "Start's First beat answers a visit while Christmas is off (after a command ends it, or when a server",
+    "owner stands Elsie somewhere all year) with one line and goodbye. Otherwise the conversation opens on",
+    "greeting, the Fallback: who she is this Christmas and what her stall sells, in plain words. A",
+    "conversation has no Season leaf, so the off-season beat and the stall line read the feature",
+    "ziggfreedcommon:feature Christmas_Live, Min 1, and nobody is sent to a stall that opens closed.",
+    "",
+    "The greeting offers her stall (Christmas_Weaver), one tip, what to do with a present (the presents",
+    "screen), and why she is here. More of Christmas (her jobs, her part of the story) joins as lines of",
+    "its own."
+  ],
+  "Start": {
+    "First": [
+      {
+        "Node": "off_season",
+        "When": [
+          { "Type": "Not", "Of": [ { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Christmas_Live", "Min": 1 } ] }
+        ]
+      }
+    ],
+    "Fallback": "greeting"
+  },
+  "Nodes": {
+    "off_season": {
+      "TextKey": "dialogue.christmas_weaver.off_season.text",
+      "Options": [
+        { "LabelKey": "dialogue.christmas_weaver.off_season.opt.farewell", "Style": "farewell", "Close": true }
+      ]
+    },
+    "greeting": {
+      "TextKey": "dialogue.christmas_weaver.greeting.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_weaver.opt.stall",
+          "Style": "neutral",
+          "Conditions": [
+            { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Christmas_Live", "Min": 1 }
+          ],
+          "Open": { "Type": "Shop", "Shop": "Christmas_Weaver" }
+        },
+        { "LabelKey": "dialogue.christmas_weaver.opt.presents", "Style": "neutral", "Goto": "presents" },
+        { "LabelKey": "dialogue.christmas_weaver.opt.why", "Style": "neutral", "Goto": "why" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "presents": {
+      "TextKey": "dialogue.christmas_weaver.presents.text",
+      "Options": [
+        { "LabelKey": "dialogue.christmas_weaver.opt.thanks", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "why": {
+      "TextKey": "dialogue.christmas_weaver.why.text",
+      "Options": [
+        { "LabelKey": "dialogue.christmas_weaver.opt.back", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    }
+  },
+  "Fragments": {
+    "goodbye": [
+      { "LabelKey": "dialogue.christmas_weaver.opt.farewell", "Style": "farewell", "Close": true }
+    ]
+  }
+}

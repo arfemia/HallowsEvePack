@@ -1,0 +1,26 @@
+{
+  "$Comment": [
+    "A bauble in the branches: while Christmas runs, chopping down a tree trunk sometimes shakes loose one",
+    "of the game's Winter Baubles, landing on the broken block like anything the trunk drops. The trees",
+    "are the game's own, found all year; only this find is seasonal. The file name is the row's id.",
+    "",
+    "When names BreakBlock, a block a player breaks that they did not place, so trunks a player sets down",
+    "and chops again never pay. Match *_Trunk covers every tree's trunk block (Wood_Oak_Trunk,",
+    "Wood_Fir_Trunk and the rest) and the giant fern and mushroom stems that share the ending; a trunk's",
+    "half, full and stair blocks end otherwise and stay out. Chance is the row's own odds as a percent (5",
+    "is about one trunk in twenty). Season leaves the whole row out while Christmas is off, so its roll",
+    "needs no condition of its own. The roll carries the find's sound (its Cue). A server owner retunes or",
+    "switches off this row by its id in mods/ziggfreedcommon/bonus-rows.json."
+  ],
+  "Season": "Christmas",
+  "When": { "Kind": "BreakBlock", "Match": "*_Trunk" },
+  "Chance": { "Base": 5.0 },
+  "Loot": {
+    "Rolls": [
+      {
+        "Grants": { "Items": [ { "Item": "WinterHoliday_Ornament_Bauble", "Count": 1 } ] },
+        "Cue": "Christmas_Bauble_Found"
+      }
+    ]
+  }
+}

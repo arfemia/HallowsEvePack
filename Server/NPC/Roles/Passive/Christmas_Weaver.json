@@ -1,0 +1,11 @@
+{
+  "$Comment": "Elsie the Weaver in her winter clothes, the look she wears while only Christmas runs. She is the same character as at Harvest Feast: her one placement (NpcPlacements/Harvest_Feast_Weaver_Temple.json) keeps her NpcId Harvest_Feast_Weaver in every season and names this role in its Christmas entry, and the library changes the standing NPC's role in place when the feast ends, so nothing she is bound to (a quest, a talk step, a hand-in) moves. A thin Variant: Template_Zig_QuestGiver, shipped by Ziggfreed's CommonLib, holds the whole body, and this file only says how she looks, what she holds and how she reads. Modify may name only the five parameters that template declares: Appearance, NameTranslationKey, Weapons, OffHand and DefaultOffHandSlot; anything else makes the game refuse the whole role, and the only sign in game is a villager who never appears. Appearance is this pack's own winter model (Models/Christmas/NPC/Christmas_Weaver.json). OffHand puts a Christmas Present (this pack's Christmas_Present) in her off hand, one she is wrapping, and DefaultOffHandSlot 0 has her hold it from the start. NameTranslationKey is her feast nameplate, so her name never changes.",
+  "Type": "Variant",
+  "Reference": "Template_Zig_QuestGiver",
+  "Modify": {
+    "Appearance": "Christmas_Weaver",
+    "NameTranslationKey": "npcs.Harvest_Feast_Weaver.name",
+    "OffHand": [ "Christmas_Present" ],
+    "DefaultOffHandSlot": 0
+  }
+}

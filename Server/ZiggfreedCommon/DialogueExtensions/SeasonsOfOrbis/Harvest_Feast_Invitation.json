@@ -20,7 +20,7 @@
     "it out everywhere, set Enabled false in a file of the same name."
   ],
   "Season": "Harvest_Feast",
-  "Dialogues": { "Exclude": [ "Harvest_Feast_Host", "Hallows_Eve_Old_Jack" ] },
+  "Dialogues": { "Exclude": [ "Harvest_Feast_Host", "Hallows_Eve_Old_Jack", "Christmas_Santa" ] },
   "Options": [
     {
       "LabelKey": "dialogue.harvest_feast_invitation.opt.invite",

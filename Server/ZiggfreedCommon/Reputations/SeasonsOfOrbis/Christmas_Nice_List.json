@@ -1,0 +1,58 @@
+{
+  "$Comment": [
+    "Santa's Nice List: the name, picture and payouts of the game's reputation group of the same id",
+    "(NPC/Reputation/Groups/Christmas_Nice_List.json), which keeps each player's number. Players read the",
+    "name from reputation.christmas_nice_list.name; never rename the id, since every player's favor is",
+    "filed under it.",
+    "",
+    "Ranks renames the library's ranks for Santa alone; a rank left out keeps the library's name, and a",
+    "lock on one of these ranks reads the name written here. The ids stay the library's (Honored is the",
+    "rank Santa calls Nice). Order places the list on the Reputation page after Martha's Favor.",
+    "",
+    "Favor comes from Santa's daily word, from any Reputation reward a Christmas quest or job pays, and",
+    "from Kills: Amount favor for each creature put down whose role is in one of the listed NPC groups,",
+    "here Christmas_Present_Thieves (NPC/Groups), the Trorks in Santa hats, and Christmas_Game_Trorks,",
+    "the game's own grown Trorks, for less and only while Christmas runs (the row's Season), since they",
+    "live in the world all year. The Christmas Set and the Christmas Cake raise every gain of this favor",
+    "by a percent, through the stat ReputationGain_Christmas_Nice_List (Entity/Stats), which the library",
+    "finds by this file's id; gear that raises the library's global ReputationGain still does too.",
+    "",
+    "With no Cap, favor keeps climbing past Exalted (Santa's Favorite), and each time earned favor passes",
+    "another multiple of Every above Exalted's floor, Beyond's Rewards wait for the player to collect them",
+    "on the Reputation page: here the loot table Christmas_Santas_Sack. Earn lists the ways to earn favor,",
+    "one lang key a line, for the How to earn block on the Reputation page.",
+    "",
+    "The ranks open things up at the Christmas stalls: Friendly (On the List) the Christmas Gloves and the",
+    "Christmas Wand, Honored (Nice) the Hot Cocoa recipe and the Christmas Hat, Revered (Very Nice) the",
+    "Christmas Cake recipe, the Christmas Trousers and the Santa Suit, and Exalted (Santa's Favorite) the",
+    "Christmas Coat."
+  ],
+  "Text": {
+    "TitleKey": "reputation.christmas_nice_list.name",
+    "FlavorKey": "reputation.christmas_nice_list.flavor"
+  },
+  "Icon": "Furniture_Christmas_Chest_Small_Red",
+  "Order": 40,
+  "Ranks": {
+    "Neutral": { "Name": "reputation.christmas_nice_list.rank.neutral" },
+    "Friendly": { "Name": "reputation.christmas_nice_list.rank.friendly" },
+    "Honored": { "Name": "reputation.christmas_nice_list.rank.honored" },
+    "Revered": { "Name": "reputation.christmas_nice_list.rank.revered" },
+    "Exalted": { "Name": "reputation.christmas_nice_list.rank.exalted" }
+  },
+  "Kills": [
+    { "NPCGroups": [ "Christmas_Present_Thieves" ], "Amount": 3 },
+    { "NPCGroups": [ "Christmas_Game_Trorks" ], "Amount": 1, "Season": "Christmas" }
+  ],
+  "Beyond": {
+    "Every": 5000,
+    "Rewards": [ { "Kind": "Lootable", "Params": { "Lootable": "Christmas_Santas_Sack" } } ]
+  },
+  "Earn": {
+    "Lines": [
+      "reputation.christmas_nice_list.earn.thieves",
+      "reputation.christmas_nice_list.earn.talk",
+      "reputation.christmas_nice_list.earn.gear"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$Comment": "Putting on a Santa Suit. The suit is spent first, and only a suit actually spent pays: ModifyInventory takes one from the hand, and only its Next pays the Costume reward (ZigGrantReward), which puts Christmas_Costume_Santa on the player who used it. When the costume cannot go on, the reward pays its FallbackLootable instead (Christmas_Santa_Suit_Return), which hands the suit back, so a suit is never lost. Change how long it lasts in the costume effect, never here.",
+  "Type": "Simple",
+  "RunTime": 0.3,
+  "Effects": {"ItemAnimationId": "Interact"},
+  "Next": {
+    "Type": "ModifyInventory",
+    "AdjustHeldItemQuantity": -1,
+    "Next": {
+      "Type": "ZigGrantReward",
+      "Rewards": [
+        {"Kind": "Costume", "Params": {"Costume": "Christmas_Costume_Santa", "FallbackLootable": "Christmas_Santa_Suit_Return"}}
+      ]
+    }
+  }
+}

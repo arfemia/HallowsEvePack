@@ -1,0 +1,30 @@
+{
+  "$Comment": [
+    "Christmas Morning, the last part of Christmas: from the first moment of December 25th to the last",
+    "moment of January 10th, counted in UTC, so it ends the same moment Christmas does. The file name is",
+    "the event id. Its End falls before its Start, so a run crosses the new year and belongs to the year",
+    "it starts in. It runs on its own dates, so a server owner who moves Christmas in",
+    "mods/ziggfreedcommon/calendar.json moves this one there too.",
+    "",
+    "Content that waits for Christmas morning writes Season: Christmas_Morning, or reads",
+    "ziggfreedcommon:feature with Param Christmas_Morning_Live and Min 1 in a conversation.",
+    "",
+    "Herald shows its start banner once to each player, the first time they are on the server from",
+    "Christmas morning on. It has no End banner: it ends with Christmas, whose own banner says goodbye.",
+    "/zigcalendar status Christmas_Morning shows what the server reads."
+  ],
+  "Window": { "Start": "12-25", "End": "01-10" },
+  "FirstYear": 2026,
+  "Presentation": {
+    "TitleKey": "calendar.christmas_morning.name",
+    "FlavorKey": "calendar.christmas_morning.flavor",
+    "Icon": "WinterHoliday_Stocking"
+  },
+  "Herald": {
+    "Start": {
+      "TitleKey": "calendar.christmas_morning.herald.start",
+      "SubtitleKey": "calendar.christmas_morning.herald.start.sub",
+      "Major": true
+    }
+  }
+}

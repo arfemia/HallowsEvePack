@@ -1,8 +1,8 @@
 {
   "Group": "Ziggfreed",
   "Name": "SeasonsOfOrbis",
-  "Version": "1.2.5",
-  "Description": "Seasons of Orbis, yearly events for any server running Ziggfreed's CommonLib and RPG Stations: Hallow's Eve with Old Jack from October 1 to November 12, with quests, a daily board, a shop in the Forgotten Temple and the Headless Horseman's graveyard, Harvest Feast with Martha the Cook from November 20 to December 1, and Hytale's Anniversary every January 13. Festival Favor and Festival Tokens carry over from season to season; MMO Skill Tree is optional and adds skill XP.",
+  "Version": "1.3.0",
+  "Description": "Seasons of Orbis, yearly events for any server running Ziggfreed's CommonLib and RPG Stations: Hallow's Eve with Old Jack from October 1 to November 12, with quests, a daily board, a shop in the Forgotten Temple and the Headless Horseman's graveyard, Harvest Feast with Martha the Cook from November 20 to December 6, Christmas with Santa and his three helpers from December 2 to January 10, and Hytale's Anniversary every January 13. Festival Favor and Festival Tokens carry over from season to season; MMO Skill Tree is optional and adds skill XP.",
   "Authors": [
     {
       "Name": "ZiggFreed"
@@ -12,7 +12,7 @@
   "ServerVersion": ">=0.7.0-pre.0 <0.8.0",
   "IncludesAssetPack": true,
   "Dependencies": {
-    "Ziggfreed:ZiggfreedCommon": ">=2.5.1",
+    "Ziggfreed:ZiggfreedCommon": ">=2.5.3",
     "Ziggfreed:RpgStations": ">=1.1.1"
   },
   "OptionalDependencies": {

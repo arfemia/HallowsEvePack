@@ -1,0 +1,5 @@
+{
+  "$Comment": "Santa's Nice List: one number per player, kept and saved by the game itself, through death and across worlds. NPCGroups names the group holding Santa's role (NPC/Groups/Christmas_Santa.json), so Santa takes the attitude of the rank a player's favor reaches; a group named here that the game never loaded breaks every NPC that spawns. InitialReputationValue is where every player starts. ZiggfreedCommon/Reputations/SeasonsOfOrbis/Christmas_Nice_List.json gives it its name, rank names and what favor pays.",
+  "NPCGroups": [ "Christmas_Santa" ],
+  "InitialReputationValue": 0
+}

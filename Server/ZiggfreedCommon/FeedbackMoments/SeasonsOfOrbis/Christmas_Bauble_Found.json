@@ -1,0 +1,13 @@
+{
+  "$Comment": [
+    "The sound a player hears when a chopped trunk shakes loose a Winter Bauble during Christmas. The file",
+    "name is the moment id, and it is the Cue the bauble row",
+    "(BonusRows/SeasonsOfOrbis/Christmas_Bauble_Find.json) puts on its roll; a cue plays only when the roll",
+    "beside it handed something over.",
+    "",
+    "It shows no line of its own: the bauble lands like anything the trunk drops, and the game's own",
+    "pickup notice names it when it is picked up. Sound is any SoundEvent id, played where the player",
+    "stands."
+  ],
+  "Sound": { "Id": "SFX_Player_Pickup_Item" }
+}

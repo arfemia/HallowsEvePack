@@ -1,0 +1,13 @@
+{
+  "$Comment": "A free bundle of sixteen snowballs (Christmas_Snowball) from Bram, once a day (Limits.Daily, turning over at midnight UTC). No Cost means free. More sell beside it for a couple of coins (Christmas_Offer_Snowballs). Its picture is the snowball.",
+  "Parent": "Christmas_Offer_Base",
+  "Shop": "Christmas_Shepherd",
+  "Text": {
+    "TitleKey": "shop.christmas_offer_snowballs_daily.title",
+    "FlavorKey": "shop.christmas_offer_snowballs_daily.desc"
+  },
+  "Icon": "Christmas_Snowball",
+  "Listing": { "Category": "snow", "SortOrder": 10 },
+  "Limits": { "Daily": 1 },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Christmas_Snowball", "Count": 16 } } ]
+}

@@ -1,0 +1,39 @@
+{
+  "$Comment": "What a Present Thief drops: the game's own unarmed Trork drops (linen scraps, now and then a piece of Trork armour, the game's Drop_Trork_Brawler), a Christmas Present 1 time in 3, the one it stole from Santa's sleigh, and sometimes a candy cane. In a Multiple container each child is rolled on its own, and a child's Weight is its chance out of 100. Every branch ends in a concrete Single, which the game's validator needs. The role names this list in its DropList (NPC/Roles/Christmas/Christmas_Present_Thief.json).",
+  "Container": {
+    "Type": "Multiple",
+    "Containers": [
+      {
+        "Type": "Choice",
+        "Weight": 100,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Ingredient_Fabric_Scrap_Linen", "QuantityMin": 1, "QuantityMax": 3 } }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 5,
+        "Containers": [
+          { "Weight": 25, "Type": "Single", "Item": { "ItemId": "Armor_Trork_Head", "QuantityMin": 1, "QuantityMax": 1 } },
+          { "Weight": 25, "Type": "Single", "Item": { "ItemId": "Armor_Trork_Chest", "QuantityMin": 1, "QuantityMax": 1 } },
+          { "Weight": 25, "Type": "Single", "Item": { "ItemId": "Armor_Trork_Hands", "QuantityMin": 1, "QuantityMax": 1 } },
+          { "Weight": 25, "Type": "Single", "Item": { "ItemId": "Armor_Trork_Legs", "QuantityMin": 1, "QuantityMax": 1 } }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 33,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Christmas_Present", "QuantityMin": 1, "QuantityMax": 1 } }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 15,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Food_Candy_Cane", "QuantityMin": 1, "QuantityMax": 2 } }
+        ]
+      }
+    ]
+  }
+}

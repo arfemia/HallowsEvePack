@@ -5,3 +5,4 @@
 itemTooltip.stats.ReputationGain_Hallows_Eve_Old_Jack = Old Jack's Favor Gain: {value}%
 itemTooltip.stats.ReputationGain_Hallows_Eve_Hallowed = Hallowed Favor Gain: {value}%
 itemTooltip.stats.ReputationGain_Harvest_Feast_Host = Martha's Favor Gain: {value}%
+itemTooltip.stats.ReputationGain_Christmas_Nice_List = Nice List Gain: {value}%

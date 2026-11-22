@@ -1,0 +1,12 @@
+{
+  "$Comment": "A Present Thief: one of the Trorks in Santa hats who robbed Santa's sleigh, out at night in the first zone's woods and plains and any time in the snow while Christmas runs. It is a Variant of Template_Trork_Melee carrying the game's unarmed Trork's own Modify (Trork_Unarmed: fists, 42 health, a fight a new player wins), with the look, the drop list and the nameplate changed. A Variant's Modify reaches only the Parameters its immediate Reference declares, so it is never a Variant of Trork_Unarmed itself, and any key the template does not declare makes the game refuse the whole role while the boot still reads PASS. The look is the game's own Trork in a Santa hat (Trork_Christmas). The template already keeps it out of the Memories collection. Its drops (Drops/Christmas/Christmas_Drop_Present_Thief.json) carry a Christmas Present 1 time in 3. Each one put down pays favor on Santa's Nice List through the group Christmas_Present_Thieves. It spawns only through this pack's calendar rules (CalendarSpawns/SeasonsOfOrbis/Christmas_Present_Thief_*_Spawns.json).",
+  "Type": "Variant",
+  "Reference": "Template_Trork_Melee",
+  "Modify": {
+    "Appearance": "Trork_Christmas",
+    "DropList": "Christmas_Drop_Present_Thief",
+    "Weapons": [],
+    "MaxHealth": 42,
+    "NameTranslationKey": "npcs.Christmas_Present_Thief.name"
+  }
+}

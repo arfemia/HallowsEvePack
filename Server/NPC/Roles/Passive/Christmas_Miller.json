@@ -1,0 +1,9 @@
+{
+  "$Comment": "Tomas the Miller in his winter clothes, the look he wears while only Christmas runs. He is the same character as at Harvest Feast: his one placement (NpcPlacements/Harvest_Feast_Miller_Temple.json) keeps his NpcId Harvest_Feast_Miller in every season and names this role in its Christmas entry, and the library changes the standing NPC's role in place when the feast ends, so nothing he is bound to (a quest, a talk step, a hand-in) moves. A thin Variant: Template_Zig_QuestGiver, shipped by Ziggfreed's CommonLib, holds the whole body, and this file only says how he looks and reads. Modify may name only the five parameters that template declares: Appearance, NameTranslationKey, Weapons, OffHand and DefaultOffHandSlot; anything else makes the game refuse the whole role, and the only sign in game is a villager who never appears. Appearance is this pack's own winter model (Models/Christmas/NPC/Christmas_Miller.json). NameTranslationKey is his feast nameplate, so his name never changes. He holds nothing.",
+  "Type": "Variant",
+  "Reference": "Template_Zig_QuestGiver",
+  "Modify": {
+    "Appearance": "Christmas_Miller",
+    "NameTranslationKey": "npcs.Harvest_Feast_Miller.name"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$Comment": "A Christmas Present (Christmas_Present) wrapped by Elsie, open to anyone at her stall, five a day (Limits.Daily, turning over at midnight UTC) so the thieves stay the main way to get them. Its picture is the present.",
+  "Parent": "Christmas_Offer_Base",
+  "Shop": "Christmas_Weaver",
+  "Text": {
+    "TitleKey": "shop.christmas_offer_present.title",
+    "FlavorKey": "shop.christmas_offer_present.desc"
+  },
+  "Icon": "Christmas_Present",
+  "Listing": { "Category": "gifts", "SortOrder": 10 },
+  "Cost": { "Currencies": { "Christmas_Coins": 15 } },
+  "Limits": { "Daily": 5 },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Christmas_Present", "Count": 1 } } ]
+}

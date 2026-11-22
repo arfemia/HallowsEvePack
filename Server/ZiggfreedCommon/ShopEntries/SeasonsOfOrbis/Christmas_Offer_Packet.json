@@ -1,0 +1,9 @@
+{
+  "$Comment": "The game's own Small Christmas Packet at Santa's stall, a small chest that holds things, for a player who wants to wrap a gift of their own and leave it for a friend. The title is the item's own name key, written in full (server.items.<Id>.name) so the stall shows the name the item shows in the bag; the item has no description key, so the offer has no line under it. The red packet sells for festival tokens on the festival shelf the stall also carries.",
+  "Parent": "Christmas_Offer_Base",
+  "Shop": "Christmas_Santa",
+  "Text": { "TitleKey": "server.items.Furniture_Christmas_Chest_Small.name" },
+  "Listing": { "Category": "packets", "SortOrder": 10 },
+  "Cost": { "Currencies": { "Christmas_Coins": 25 } },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Furniture_Christmas_Chest_Small", "Count": 1 } } ]
+}
