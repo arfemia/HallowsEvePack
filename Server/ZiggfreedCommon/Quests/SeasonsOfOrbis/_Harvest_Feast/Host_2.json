@@ -1,6 +1,6 @@
 {
   "$Comment": [
-    "The host's second quest: hunt Wild Turkeys. Npc.TurnInId, from the base, adds the report-back step to",
+    "The host's second quest: hunt Wild Turkeys or the game's own. Npc.TurnInId, from the base, adds the report-back step to",
     "the host after the hunt. Its Claim also hands over the game's pumpkin pie recipe page, which the third",
     "quest needs, with a Dough and some Spices, so the first pie needs only a pumpkin, and puts the turkey",
     "costume on the player for a few minutes. A player already in a costume keeps their look and gets",
@@ -23,6 +23,7 @@
     "bring_down_turkeys": {
       "Kind": "KILL_ENTITY",
       "Target": "Harvest_Feast_Turkey",
+      "Targets": [ "Turkey" ],
       "MatchMode": "EXACT",
       "Amount": 5,
       "TextKey": "objective.harvest_feast.bring_down_turkeys",

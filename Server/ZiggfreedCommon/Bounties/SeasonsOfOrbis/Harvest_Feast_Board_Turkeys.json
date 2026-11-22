@@ -1,10 +1,10 @@
 {
-  "$Comment": "A Field job on the feast board: bring down Wild Turkeys, the feast's own, which walk the first zone's woods and fields by day while the feast runs. It writes its own Rewards.Claim, the base's list with MMO Skill Tree's Mmo_Xp row added (Defense XP for the hunt), because a child's list replaces the base's whole. The row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that mod, and the rest of the job pays. The season and the listing come from Harvest_Feast_Contract_Base.",
+  "$Comment": "A Field job on the feast board: bring down turkeys: the feast's own Wild Turkeys, which walk the first zone's woods and fields by day while the feast runs. It writes its own Rewards.Claim, the base's list with MMO Skill Tree's Mmo_Xp row added (Defense XP for the hunt), because a child's list replaces the base's whole. The row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that mod, and the rest of the job pays. The season and the listing come from Harvest_Feast_Contract_Base.",
   "Parent": "Harvest_Feast_Contract_Base",
   "Listing": { "Icon": "Food_Wildmeat_Raw" },
   "Boards": [ { "Board": "Harvest_Feast_Daily", "Difficulty": "Harvest_Feast_Field", "Weight": 1 } ],
   "Objectives": {
-    "bring_down_turkeys": { "Kind": "KILL_ENTITY", "Target": "Harvest_Feast_Turkey", "MatchMode": "EXACT", "Amount": 8, "TextKey": "objective.harvest_feast.bring_down_turkeys" }
+    "bring_down_turkeys": { "Kind": "KILL_ENTITY", "Target": "Harvest_Feast_Turkey", "Targets": [ "Turkey" ], "MatchMode": "EXACT", "Amount": 8, "TextKey": "objective.harvest_feast.bring_down_turkeys" }
   },
   "Rewards": {
     "Claim": [

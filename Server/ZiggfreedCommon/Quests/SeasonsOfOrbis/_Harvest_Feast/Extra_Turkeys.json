@@ -1,6 +1,6 @@
 {
   "$Comment": [
-    "Extra Turkeys: hunt Wild Turkeys for Martha as often as a player likes, for those who want to keep",
+    "Extra Turkeys: hunt turkeys (Wild Turkeys or the game's own) for Martha as often as a player likes, for those who want to keep",
     "earning her favor past the day's work. It opens once the turkey hunt (harvest_feast_host_2) is done.",
     "An empty Repeat makes it repeatable with nothing holding it back: no cooldown, no daily reset and no",
     "limit, so it is offered again the moment its pay is collected. Npc.TurnInId, from the base, adds the",
@@ -25,6 +25,7 @@
     "bring_down_turkeys": {
       "Kind": "KILL_ENTITY",
       "Target": "Harvest_Feast_Turkey",
+      "Targets": [ "Turkey" ],
       "MatchMode": "EXACT",
       "Amount": 10,
       "TextKey": "objective.harvest_feast.bring_down_turkeys",

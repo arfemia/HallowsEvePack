@@ -11,7 +11,9 @@
     "",
     "Favor comes from the Reputation rewards on her quests and board jobs, from her daily greeting, and",
     "from Kills: Amount favor for each creature put down whose role is in one of the listed NPC groups,",
-    "here Harvest_Feast_Turkeys (NPC/Groups), the feast's Wild Turkeys. The Harvest Set raises every gain",
+    "here Harvest_Feast_Turkeys (NPC/Groups), the feast's Wild Turkeys, and Harvest_Feast_Game_Turkeys,",
+    "the game's own grown turkey, for less and only while the feast runs (the row's Season), since it",
+    "lives in the world all year. The Harvest Set raises every gain",
     "of this favor by a percent while worn, through the stat ReputationGain_Harvest_Feast_Host",
     "(Entity/Stats), which the library finds by this file's id; gear that raises the library's global",
     "ReputationGain still does too.",
@@ -41,7 +43,8 @@
     "Exalted": { "Name": "reputation.harvest_feast_host.rank.exalted" }
   },
   "Kills": [
-    { "NPCGroups": [ "Harvest_Feast_Turkeys" ], "Amount": 4 }
+    { "NPCGroups": [ "Harvest_Feast_Turkeys" ], "Amount": 4 },
+    { "NPCGroups": [ "Harvest_Feast_Game_Turkeys" ], "Amount": 2, "Season": "Harvest_Feast" }
   ],
   "Beyond": {
     "Every": 5000,

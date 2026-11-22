@@ -21,6 +21,7 @@
     "bring_down_turkeys": {
       "Kind": "KILL_ENTITY",
       "Target": "Harvest_Feast_Turkey",
+      "Targets": [ "Turkey" ],
       "MatchMode": "EXACT",
       "Amount": 4,
       "TextKey": "objective.harvest_feast.bring_down_turkeys",

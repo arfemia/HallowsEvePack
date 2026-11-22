@@ -71,6 +71,7 @@
     "Turkeys_Brought_Down": {
       "Kind": "KILL_ENTITY",
       "Target": "Harvest_Feast_Turkey",
+      "Targets": [ "Turkey" ],
       "MatchMode": "EXACT",
       "TextKey": "almanac.harvest_feast.turkeys_brought_down",
       "Icon": "Food_Wildmeat_Raw",
