@@ -1,0 +1,23 @@
+{
+  "$Comment": [
+    "The feast's celebration, the moment a player collects The Feast's pay: a big banner with a fanfare",
+    "for them and for everyone within RadiusBlocks of them (the rest of the table), and a firework over",
+    "their head. The loot table Harvest_Feast_Feast_Pay names this moment with the Cue on its first roll,",
+    "and only The Feast pays that table, so it plays once a year per player.",
+    "",
+    "Reword the banner with the keys notify.harvest_feast_feast_served and its .sub line in",
+    "harvestfeast.progression.lang; the sub line's {0} is the player's name. SoundEventId is any",
+    "SoundEvent id, heard by each player shown the banner. Command runs as the console with {player}",
+    "filled in: the game's own particle spawn command, at that player, with any ParticleSystem id (the",
+    "game's Firework_Mix3 and Firework_Mix4 burst in other colours). Delete Command for no firework."
+  ],
+  "Broadcast": {
+    "Title": { "Key": "notify.harvest_feast_feast_served" },
+    "Secondary": { "Key": "notify.harvest_feast_feast_served.sub", "Args": ["player"] },
+    "Major": true,
+    "SoundEventId": "SFX_Event_Chapter_1_Complete_Sting",
+    "SameWorldOnly": true,
+    "RadiusBlocks": 48.0
+  },
+  "Command": { "Line": "particle spawn Firework_Mix2 --player={player}" }
+}

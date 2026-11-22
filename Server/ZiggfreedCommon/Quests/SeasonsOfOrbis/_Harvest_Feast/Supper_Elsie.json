@@ -1,0 +1,42 @@
+{
+  "$Comment": [
+    "Supper for Elsie, one of the three supper deliveries that close Martha's questline (Supper_Tomas.json",
+    "explains the three). The _Harvest_Feast folder makes the id harvest_feast_supper_elsie. Martha gives",
+    "it; its one step, a roast vegetable, is handed in at Elsie (TurnInNpcId her role, which her placement",
+    "NpcPlacements/Harvest_Feast_Weaver_Temple.json stands under and keeps standing), whose conversation",
+    "opens on her thanks while the player carries it, and plays again once the pay is collected",
+    "(CompletionDialogue). Repeat.PerRun brings it back once each year's feast, like The Feast.",
+    "",
+    "The Mmo_Xp row is MMO Skill Tree's: Crafting XP, as the cooking quests pay, waiting to be collected",
+    "with the rest. The row's own Requires, the hytale:mod_installed gate, leaves it out on a server",
+    "without that mod, unpaid and unshown, and the rest of the quest pays."
+  ],
+  "Name": "Supper_Elsie",
+  "Parent": "Harvest_Feast_Quest_Base",
+  "CompletionDialogue": "Harvest_Feast_Weaver",
+  "Listing": { "Icon": "Food_Vegetable_Cooked", "Category": "main", "SortOrder": 51 },
+  "Requires": { "Quests": [ "harvest_feast_the_feast" ] },
+  "Repeat": {
+    "PerRun": { "Event": "Harvest_Feast", "Times": 1 }
+  },
+  "Objectives": {
+    "supper_for_elsie": {
+      "Kind": "TURN_IN",
+      "Target": "Food_Vegetable_Cooked",
+      "MatchMode": "EXACT",
+      "Amount": 1,
+      "TextKey": "objective.harvest_feast.supper_for_elsie",
+      "Order": 1,
+      "TurnInNpcId": "Harvest_Feast_Weaver"
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Currency", "Params": { "Currency": "Harvest_Feast_Coins", "Amount": "10" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 135 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 100 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "CRAFTING", "Amount": "750" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

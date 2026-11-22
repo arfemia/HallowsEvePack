@@ -1,0 +1,103 @@
+{
+  "$Comment": [
+    "One of the Great Turkey's later phases, as it starts: its fight's Phase2Behavior and Phase3Behavior",
+    "slots both run this, each forwarded its own settings (Harvest_Feast_Great_Turkey_Encounter.json).",
+    "",
+    "The first moment the phase sees the Great Turkey bound in the Boss slot, it raises its flag",
+    "(ArmedFlag, so all of this happens once per try), puts Effect on it (none when Effect is empty),",
+    "raises AddCount of AddRole around the fight's entity, moves the music to MusicPhase and shows every",
+    "member Moment. Nothing else runs while the phase lasts: the Great Turkey keeps fighting as its role",
+    "fights, and the fight waves keep rising as its health falls. Give each phase its own ArmedFlag and",
+    "clear both in Macro_Harvest_Feast_Great_Turkey_Reset, so the next try plays them again."
+  ],
+  "Class": "Instruction",
+  "Type": "Component",
+  "Interface": "Hytale.Instruction.Encounter.Phase.Behavior",
+  "Parameters": {
+    "ArmedFlag": {
+      "Value": "Great_Turkey_P2_Armed",
+      "Description": "The flag that marks this phase's start as played, so it plays once per try."
+    },
+    "Effect": {
+      "Value": "",
+      "Description": "The effect put on the Great Turkey for the rest of the fight. Empty puts none."
+    },
+    "AddRole": {
+      "Value": "Harvest_Feast_Turkey_Soul",
+      "Description": "The creature that rises as the phase starts."
+    },
+    "AddCount": {
+      "Value": [ 3, 3 ],
+      "Description": "How many of AddRole rise, as a [min, max] range."
+    },
+    "MusicPhase": {
+      "Value": "Phase2",
+      "Description": "The music's phase as this phase starts: Phase2 or Phase3."
+    },
+    "Moment": {
+      "Value": "",
+      "Description": "The FeedbackMoment every member is shown as the phase starts. Empty shows nothing."
+    },
+    "Range": {
+      "Value": 80,
+      "Description": "How far from the script's entity the Great Turkey is looked for."
+    }
+  },
+  "Content": {
+    "Continue": true,
+    "Sensor": {
+      "Type": "Any"
+    },
+    "Instructions": [
+      {
+        "$Comment": "As the phase starts: the effect, the adds, the music and the news, once.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            {
+              "Type": "Target",
+              "TargetSlot": "Boss",
+              "Range": { "Compute": "Range" }
+            },
+            {
+              "Type": "Flag",
+              "Name": { "Compute": "ArmedFlag" },
+              "Set": false
+            }
+          ]
+        },
+        "Actions": [
+          {
+            "Type": "SetFlag",
+            "Name": { "Compute": "ArmedFlag" }
+          },
+          {
+            "Enabled": { "Compute": "!isEmpty(Effect)" },
+            "Type": "ApplyEntityEffect",
+            "EntityEffect": { "Compute": "Effect" },
+            "UseTarget": true
+          },
+          {
+            "Type": "SetEncounterAudioState",
+            "AudioState": "AudioState_Goblin_Boss_Phase",
+            "Value": { "Compute": "MusicPhase" }
+          },
+          {
+            "Type": "Spawn",
+            "Kind": { "Compute": "AddRole" },
+            "SpawnAngle": 360,
+            "DistanceRange": [ 4, 8 ],
+            "CountRange": { "Compute": "AddCount" }
+          },
+          {
+            "Enabled": { "Compute": "!isEmpty(Moment)" },
+            "Type": "ZigFeedback",
+            "Moment": { "Compute": "Moment" },
+            "ToMembers": true
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -7,7 +7,7 @@
     "",
     "HOW A SCREEN IS PICKED. Start is walked in a fixed order: First (top to bottom), then a quest that is",
     "READY to hand in, then one she can OFFER, then one that is ACTIVE, then Then, then Fallback.",
-    "First holds five things. The off-season line comes first and shows only while the feast is off (a",
+    "First holds six things. The off-season line comes first and shows only while the feast is off (a",
     "visit after a command ends it, or a server owner who stands her somewhere all year), and its only",
     "answer is goodbye. Then her arrival line, for a player carrying her intro quest (Meet Martha, the",
     "quest every player gets while the feast runs): its answer marks her greeted and hands that quest in,",
@@ -15,7 +15,8 @@
     "them. Then the greeting, for anyone who came without that quest, shown until the hail spends it.",
     "Then her first quest's offer (harvest_feast_host_1), once (OnceId meet_wheat_offer), for a player who",
     "has handed the intro in and not taken that quest yet: collecting the intro plays this conversation",
-    "again, so the questline opens straight after the arrival. Then the board line, shown once a day (Once",
+    "again, so the questline opens straight after the arrival. Then the supper deliveries' offer (below).",
+    "Then the board line, shown once a day (Once",
     "with Period Daily, turning over at midnight UTC) and skipped while the player has something to hand",
     "in.",
     "",
@@ -24,9 +25,16 @@
     "the intro tried to arm: its answer for them takes the quest and hands it in. Extra Turkeys",
     "(harvest_feast_extra_turkeys) repeats with no limit, so its row names only its Active and Ready",
     "screens: with no Offerable beat the ladder never opens on it as an offer, and it is offered from her",
-    "quest list (What needs doing?) instead. Then shows the after-feast line once this year's feast is",
-    "done (harvest_feast_the_feast reads ON_COOLDOWN until it comes back next year, so the line takes that",
-    "state beside COMPLETED).",
+    "quest list (What needs doing?) instead. Then shows the after-feast line once this year's feast and",
+    "its three supper deliveries are done: each reads ON_COOLDOWN until it comes back next year, so the",
+    "line takes that state beside COMPLETED.",
+    "",
+    "THE SUPPER DELIVERIES. After The Feast she sends a plate to each villager: three quests of one step",
+    "each (harvest_feast_supper_tomas, _elsie and _bram), handed in at the villager, whose conversation",
+    "thanks the player and takes the plate. The First beat deliveries_offer opens on her offer once this",
+    "year's Feast is collected (it reads ON_COOLDOWN or COMPLETED) while any of the three can still be",
+    "taken, and its one answer takes all three. Their rows name only the Active screen, so the start",
+    "ladder never opens on them one by one; a player can still take one from her quest list.",
     "",
     "THE BOARD LINE AND FAVOR. The board line comes in four wordings, one per band of favor with Martha,",
     "highest first, so the first that applies is the player's own rank: Revered, Honored, Friendly, then",
@@ -92,6 +100,18 @@
         "OnceId": "meet_wheat_offer"
       },
       {
+        "Node": "deliveries_offer",
+        "When": [
+          { "Type": "QuestState", "Quest": "harvest_feast_the_feast", "States": [ "COMPLETED", "ON_COOLDOWN" ] },
+          { "Type": "AnyOf", "Any": [
+            { "Type": "QuestState", "Quest": "harvest_feast_supper_tomas", "State": "NOT_STARTED" },
+            { "Type": "QuestState", "Quest": "harvest_feast_supper_elsie", "State": "NOT_STARTED" },
+            { "Type": "QuestState", "Quest": "harvest_feast_supper_bram", "State": "NOT_STARTED" }
+          ] },
+          { "Type": "Not", "Of": [ { "Type": "HasReadyToTurnIn" } ] }
+        ]
+      },
+      {
         "Node": "board_fresh_revered",
         "When": [
           { "Type": "Remembered", "Memory": "feast_host_greeted" },
@@ -149,6 +169,9 @@
       "harvest_feast_host_2": { "Offerable": "turkeys_offer", "Active": "turkeys_brief", "Ready": "turkeys_ready" },
       "harvest_feast_host_3": { "Offerable": "pie_offer", "Active": "pie_brief", "Ready": "pie_ready" },
       "harvest_feast_the_feast": { "Offerable": "feast_offer", "Active": "feast_brief", "Ready": "feast_ready" },
+      "harvest_feast_supper_tomas": { "Active": "deliveries_brief" },
+      "harvest_feast_supper_elsie": { "Active": "deliveries_brief" },
+      "harvest_feast_supper_bram": { "Active": "deliveries_brief" },
       "harvest_feast_invitations": { "Offerable": "invitations_offer", "Active": "invitations_brief", "Ready": "invitations_ready" },
       "harvest_feast_daily_turkeys": { "Offerable": "daily_turkeys_offer", "Active": "turkeys_brief", "Ready": "ready_generic" },
       "harvest_feast_daily_wheat": { "Offerable": "daily_wheat_offer", "Active": "wheat_brief", "Ready": "ready_generic" },
@@ -160,7 +183,10 @@
       {
         "Node": "feast_done",
         "When": [
-          { "Type": "QuestState", "Quest": "harvest_feast_the_feast", "States": [ "COMPLETED", "ON_COOLDOWN" ] }
+          { "Type": "QuestState", "Quest": "harvest_feast_the_feast", "States": [ "COMPLETED", "ON_COOLDOWN" ] },
+          { "Type": "QuestState", "Quest": "harvest_feast_supper_tomas", "States": [ "COMPLETED", "ON_COOLDOWN" ] },
+          { "Type": "QuestState", "Quest": "harvest_feast_supper_elsie", "States": [ "COMPLETED", "ON_COOLDOWN" ] },
+          { "Type": "QuestState", "Quest": "harvest_feast_supper_bram", "States": [ "COMPLETED", "ON_COOLDOWN" ] }
         ]
       }
     ],
@@ -353,6 +379,26 @@
     },
     "feast_done": {
       "TextKey": "dialogue.harvest_feast_host.feast_done.text",
+      "IncludeOptions": [ "feast_footer" ]
+    },
+    "deliveries_offer": {
+      "TextKey": "dialogue.harvest_feast_host.deliveries_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.deliveries_offer.opt.accept",
+          "Style": "accept",
+          "Do": [
+            { "Accept": "harvest_feast_supper_tomas" },
+            { "Accept": "harvest_feast_supper_elsie" },
+            { "Accept": "harvest_feast_supper_bram" },
+            { "Goto": "deliveries_brief" }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "feast_tail" ]
+    },
+    "deliveries_brief": {
+      "TextKey": "dialogue.harvest_feast_host.deliveries_brief.text",
       "IncludeOptions": [ "feast_footer" ]
     },
     "daily_turkeys_offer": {

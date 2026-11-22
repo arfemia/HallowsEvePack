@@ -1,0 +1,36 @@
+{
+  "$Comment": [
+    "The Turkey Graveyard, Harvest Feast's repeatable fight: the Headless Horseman's graveyard again (the same",
+    "source prefab and the same cells as Hallows_Eve_Graveyard.json beside this file), with the Great Turkey's",
+    "fight's entity (Harvest_Feast_Great_Turkey_Encounter) on the open road south of the central plaza, the",
+    "Great Turkey's spawn marker on the plaza's north side, and a vanilla Leave_Instance pad against the",
+    "entrance room's back wall, the way out. Cells count from the anchor, and the fight's reach and leash",
+    "(ArenaRange, LeashRange and the rest, in Harvest_Feast_Great_Turkey_Encounter.json) from the fight's",
+    "entity's cell, so move them with it. The Turkey Souls rise where the Horseman's hard ride raises its",
+    "skeletons: 7 blocks north of the fight's entity across the plaza, and at the fountain's north corners.",
+    "The six Orbis_Boss_Health_Pack points are where the fight's health packs may drop, over open ground.",
+    "Containers stocks the hidden chest in the sealed room inside the west rock from",
+    "Server/Drops/Harvest_Feast/Harvest_Feast_Drop_Turkey_Graveyard_Chest.json, full again on every paste."
+  ],
+  "Source": "tools/arenas/ziggy_halloween.prefab.zip",
+  "Output": "Server/Prefabs/Harvest_Feast/Harvest_Feast_Turkey_Graveyard.prefab.json",
+  "StripSpawnMarkers": false,
+  "Encounter": { "Id": "Harvest_Feast_Great_Turkey_Encounter", "At": [0, 1, 66] },
+  "Markers": [
+    { "Id": "Harvest_Feast_Great_Turkey_Marker", "At": [0, 1, 46] }
+  ],
+  "Blocks": [
+    { "Name": "Leave_Instance", "At": [0, 1, -3] }
+  ],
+  "Points": [
+    { "Name": "Health Pack North West", "Tags": ["Orbis_Boss_Health_Pack"], "At": [-4, 5, 42] },
+    { "Name": "Health Pack North East", "Tags": ["Orbis_Boss_Health_Pack"], "At": [4, 5, 42] },
+    { "Name": "Health Pack Fountain West", "Tags": ["Orbis_Boss_Health_Pack"], "At": [-8, 5, 50] },
+    { "Name": "Health Pack Fountain East", "Tags": ["Orbis_Boss_Health_Pack"], "At": [8, 5, 56] },
+    { "Name": "Health Pack South West", "Tags": ["Orbis_Boss_Health_Pack"], "At": [-4, 5, 64] },
+    { "Name": "Health Pack South East", "Tags": ["Orbis_Boss_Health_Pack"], "At": [4, 5, 64] }
+  ],
+  "Containers": [
+    { "At": [-25, 1, 46], "Droplist": "Harvest_Feast_Drop_Turkey_Graveyard_Chest" }
+  ]
+}

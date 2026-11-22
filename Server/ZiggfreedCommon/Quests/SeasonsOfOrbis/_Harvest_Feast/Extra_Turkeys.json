@@ -12,6 +12,10 @@
     "their own through her reputation's Kills table, so the quest's favor comes on top. Tune its Amount",
     "and its favor together with the Kills Amount if turkeys come faster than planned.",
     "",
+    "Each hand-in also pays one Wishbone (Harvest_Feast_Wishbone), the price Bram the Shepherd takes to open",
+    "the Turkey Graveyard for a party (ZiggfreedCommon/Dungeons/Harvest_Feast_Turkey_Graveyard.json). The",
+    "graveyard's Turkey Souls are no turkeys to this quest, so the graveyard never pays for its own way in.",
+    "",
     "The Mmo_Xp row is MMO Skill Tree's: Defense XP for the hunt, waiting to be collected with the rest.",
     "The row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that mod,",
     "unpaid and unshown, and the rest of the quest pays."
@@ -36,6 +40,7 @@
     "Claim": [
       { "Kind": "Currency", "Params": { "Currency": "Harvest_Feast_Coins", "Amount": "6" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 40 } },
+      { "Kind": "Item", "Params": { "Item": "Harvest_Feast_Wishbone", "Count": "1" } },
       { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "750" },
         "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
     ]

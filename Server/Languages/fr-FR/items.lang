@@ -68,6 +68,10 @@ Hallows_Eve_Horsemans_Reins.description = Les rênes mêmes du Cavalier sans tê
 Hallows_Eve_Horsemans_Reins.command_calm = Calmer
 Hallows_Eve_Horsemans_Steed_Trophy.name = Trophée du Destrier du Cavalier
 Hallows_Eve_Horsemans_Steed_Trophy.description = Une minuscule figurine du cheval noir du Cavalier sans tête dans son caparaçon, sur un socle bordé d'or. Posez-la où vous voulez. Se trouve de temps en temps dans sa récompense « Boss vaincu », et le Vieux Jack en vend une.
+Harvest_Feast_Feast_Trophy.name = Trophée de la Fête
+Harvest_Feast_Feast_Trophy.description = Une dinde qui reste où on la pose. Martha en donne une à chaque personne qui s'attable au Festin avec elle, et chaque fête a la sienne. Posez-la où vous voulez.
+Harvest_Feast_Wishbone.name = Os du souhait
+Harvest_Feast_Wishbone.description = Un os du souhait de dinde, gardé du rôti. <b>Bram le Berger</b>, dans le Temple de l'Oubli, en prend un pour te mener, avec ton groupe, au <b>Cimetière des Dindes</b> tant que la Fête des Moissons dure.\n\nMartha t'en donne un chaque fois que tu lui remets des <b>Dindes en plus</b>.
 
 # Harvest Feast - the Harvest Set, sold at Martha's shop.
 Harvest_Feast_Harvest_Hat.name = Chapeau de Moisson

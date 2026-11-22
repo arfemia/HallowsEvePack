@@ -1,0 +1,62 @@
+{
+  "$Comment": "The Great Turkey, the Turkey Graveyard's boss: the biggest of the hunted turkeys' souls, which only its fight's script raises (EncounterManager/Harvest_Feast/Harvest_Feast_Great_Turkey_Encounter.json), from Harvest_Feast_Great_Turkey_Marker once the waves of Turkey Souls are put down. Like the souls it is a Variant of Template_Predator carrying the game's Undead Chicken's own Modify, with the look (Models/Harvest_Feast/NPC/Harvest_Feast_Great_Turkey.json, the game's turkey drawn more than twice its size), the senses, the reach, the health, the leash, the drop list and the nameplate changed: it sees every player in the graveyard and turns on them at once, reaches further with its bigger body (AttackDistance, TargetRange), keeps pecking instead of backing off after each one, is never shoved (KnockbackScale 0), stays awake at night and drops nothing, since its reward is the Claims its fight pays. _CombatConfig puts the souls' ghostly sheen on it (Harvest_Feast_Turkey_Soul_Glow). Its fight adds one health step per player beyond the first (the Harvest_Feast_Great_Turkey_Scale_Health effects), calls more souls at half health and puts its fury on it at a fifth (Harvest_Feast_Great_Turkey_Fury), so MaxHealth here is its health for a player alone. It is in Harvest_Feast_Great_Turkey_Group, which its fight binds and clears, and in no group Martha's favor counts. Melee_Damage's BaseDamage is one peck before armour. Any key the template does not declare makes the game refuse the whole role.",
+  "Type": "Variant",
+  "Reference": "Template_Predator",
+  "Modify": {
+    "Appearance": "Harvest_Feast_Great_Turkey",
+    "WanderRadius": 4,
+    "ViewRange": 40,
+    "ViewSector": 360,
+    "HearingRange": 20,
+    "AlertedRange": 40,
+    "AlertedTime": [0.5, 1],
+    "DropList": "Empty",
+    "MaxSpeed": 7,
+    "Attack": "Root_NPC_Attack_Melee",
+    "AttackDistance": 3.5,
+    "TargetRange": 3.5,
+    "AttackPauseRange": [1.5, 2.5],
+    "CombatBackOffAfterAttack": false,
+    "KnockbackScale": 0,
+    "AlwaysSleepAtNight": false,
+    "MaxHealth": 900,
+    "IsMemory": false,
+    "DeathParticles": "Effect_Death_Medium",
+    "LeashDistance": 45,
+    "HardLeashDistance": 60,
+    "LeashMinPlayerDistance": 15,
+    "LeashTimer": [10, 15],
+    "_CombatConfig": {
+      "EntityEffects": ["Harvest_Feast_Turkey_Soul_Glow"]
+    },
+    "_InteractionVars": {
+      "Melee_Start": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Simple",
+            "Effects": {
+              "ItemPlayerAnimationsId": "Hound_Bleached_Default",
+              "ItemAnimationId": "Bite"
+            },
+            "RunTime": 0.333
+          }
+        ]
+      },
+      "Melee_Damage": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "Type": "Absolute",
+              "BaseDamage": {
+                "Physical": 20
+              },
+              "RandomPercentageModifier": 0.1
+            }
+          }
+        ]
+      }
+    },
+    "NameTranslationKey": "npcs.Harvest_Feast_Great_Turkey.name"
+  }
+}

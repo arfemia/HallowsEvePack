@@ -1,0 +1,32 @@
+{
+  "$Comment": [
+    "What the Great Turkey's daily Claim (Rewards/Harvest_Feast/Harvest_Feast_Great_Turkey_Daily) pays, the",
+    "bigger Claim, for the first win each day. Every roll is read on its own: the first two always pay, the",
+    "last is a chance on top. The Claim keeps each roll a player wins with a chance equal to their share of",
+    "the fight.",
+    "",
+    "The first roll pays Harvest Coins and festival tokens through the Currency reward kind, the second one",
+    "of Martha's Turkey Pies, and the last a chance at two pumpkin pies. Favor is not here: favor rides a",
+    "quest's or a contract's own Rewards, never a pay table. Mmo_Harvest_Feast_Great_Turkey_Daily.json adds",
+    "Defense XP where MMO Skill Tree runs. Chance is a percent from 0 to 100. A companion mod adds rolls with",
+    "a file naming this table in ContributesTo."
+  ],
+  "Name": "Harvest_Feast_Great_Turkey_Daily",
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [
+          { "Kind": "Currency", "Params": { "Currency": "Harvest_Feast_Coins", "Amount": "20" } },
+          { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "2" } }
+        ]
+      }
+    },
+    {
+      "Grants": { "Items": [ { "Item": "Harvest_Feast_Turkey_Pie", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 50.0 },
+      "Grants": { "Items": [ { "Item": "Food_Pie_Pumpkin", "Count": 2 } ] }
+    }
+  ]
+}

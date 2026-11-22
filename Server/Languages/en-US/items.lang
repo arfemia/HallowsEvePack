@@ -69,6 +69,14 @@ Hallows_Eve_Horsemans_Reins.command_calm = Calm
 Hallows_Eve_Horsemans_Steed_Trophy.name = Horseman's Steed Trophy
 Hallows_Eve_Horsemans_Steed_Trophy.description = A tiny figure of the Headless Horseman's black horse in its barding, on a gold-trimmed stand. Place it anywhere you like. Found once in a while in his Boss Kill Claim, and Old Jack sells one.
 
+# Harvest Feast - the year's keepsake, handed over with The Feast's pay.
+Harvest_Feast_Feast_Trophy.name = Feast Trophy
+Harvest_Feast_Feast_Trophy.description = A turkey that stays where you put it. Martha gives one to everyone who sits down to The Feast with her, and each Harvest Feast has its own. Place it anywhere you like.
+
+# Harvest Feast - the price of the Turkey Graveyard, paid for each Extra Turkeys.
+Harvest_Feast_Wishbone.name = Wishbone
+Harvest_Feast_Wishbone.description = A turkey's wishbone, saved from the roast. <b>Bram the Shepherd</b> in the Forgotten Temple takes one to lead you and your party into the <b>Turkey Graveyard</b> while Harvest Feast runs.\n\nMartha gives you one each time you hand in <b>Extra Turkeys</b>.
+
 # Harvest Feast - the Harvest Set, sold at Martha's shop.
 Harvest_Feast_Harvest_Hat.name = Harvest Hat
 Harvest_Feast_Harvest_Hat.description = A warm wool hat for long days in the fields. Martha sells it at her shop once she counts you a Friend. Part of the Harvest Set: wear more of it for more health, and the whole set to earn her favor faster.

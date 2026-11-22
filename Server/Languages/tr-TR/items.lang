@@ -69,6 +69,10 @@ Hallows_Eve_Horsemans_Reins.description = Başsız Süvari'nin kendi dizginleri;
 Hallows_Eve_Horsemans_Reins.command_calm = Sakinleştir
 Hallows_Eve_Horsemans_Steed_Trophy.name = Süvari'nin At Kupası
 Hallows_Eve_Horsemans_Steed_Trophy.description = Başsız Süvari'nin zırhlı kara atının, altın kenarlı bir kaide üstünde minik bir figürü. Dilediğin yere koy. Ara sıra Boss Zaferi ödülünde bulunur; Yaşlı Jack da bir tanesini satar.
+Harvest_Feast_Feast_Trophy.name = Şölen Kupası
+Harvest_Feast_Feast_Trophy.description = Koyduğun yerde duran bir hindi. Martha, şölende kendisiyle sofraya oturan herkese bir tane verir, her Hasat Şöleni'nin kendine ait bir tanesi vardır. İstediğin yere koy.
+Harvest_Feast_Wishbone.name = Dilek Kemiği
+Harvest_Feast_Wishbone.description = Kızartmadan saklanmış bir hindi dilek kemiği. Unutulmuş Tapınak'taki <b>Çoban Bram</b>, Hasat Şöleni sürerken birini alıp seni ve grubunu <b>Hindi Mezarlığı'na</b> götürür.\n\nMartha, <b>Fazladan Hindiler</b> teslim ettiğin her seferinde sana bir tane verir.
 
 # Harvest Feast - the Harvest Set, sold at Martha's shop.
 Harvest_Feast_Harvest_Hat.name = Hasat Şapkası

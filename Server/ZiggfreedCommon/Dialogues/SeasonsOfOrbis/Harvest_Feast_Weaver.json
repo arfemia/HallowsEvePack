@@ -4,18 +4,24 @@
     "Elsie the Weaver's conversation, one of the three villagers standing in the Forgotten Temple while",
     "Harvest Feast runs. Elsie never contracts: I am, it is, do not.",
     "",
-    "Start's First beat answers a visit while the feast is off (after a command ends it, or when a server",
-    "owner stands Elsie somewhere all year) with one line and goodbye. Otherwise the conversation opens on",
-    "greeting, the Fallback. A conversation has no Season leaf, so the off-season beat reads the feature",
-    "ziggfreedcommon:feature Harvest_Feast_Live, Min 1.",
+    "Start's First beats come first. The off-season beat answers a visit while the feast is off (after a",
+    "command ends it, or when a server owner stands Elsie somewhere all year) with one line and goodbye. A",
+    "conversation has no Season leaf, so it reads the feature ziggfreedcommon:feature Harvest_Feast_Live,",
+    "Min 1.",
     "",
-    "The greeting offers one tip, where Spices come from (the spice screen), which the pumpkin pie needs.",
+    "Quests holds two rows. Supper for Elsie (harvest_feast_supper_elsie), the plate Martha sends her after",
+    "The Feast, names only its Ready screen: while the player carries it with the roast vegetable in the",
+    "bag, the conversation opens on supper, her thanks, whose answer hands it over. Then her daily, Daily",
+    "Spices (harvest_feast_weaver_spices): the conversation opens on its offer while it can be taken, on",
+    "its brief while it is carried, and on its hand-in once the spices are in the bag. Each hand-in opens",
+    "her quest list with Collect in front of the player, and collecting plays this conversation again",
+    "(each quest's CompletionDialogue). Otherwise it opens on greeting, the Fallback, which offers her two",
+    "tips: where Spices come from (the spice screen) and what she weaves.",
     "",
-    "Elsie gives no quest and credits no talk of her own. The invitation tour's line is not in this file:",
-    "DialogueExtensions/SeasonsOfOrbis/Harvest_Feast_Invitation.json adds it to the screens a",
-    "conversation opens on while the player carries the tour, after a screen's own lines and before the",
-    "goodbye group, so goodbye stays last. That line is spent once a day per conversation, which is why",
-    "each villager has a conversation of their own."
+    "The invitation tour's line is not in this file: DialogueExtensions/SeasonsOfOrbis/",
+    "Harvest_Feast_Invitation.json adds it to the screens a conversation opens on while the player carries",
+    "the tour, after a screen's own lines and before the goodbye group, so goodbye stays last. That line",
+    "is spent once a day per conversation, which is why each villager has a conversation of their own."
   ],
   "Start": {
     "First": [
@@ -26,6 +32,10 @@
         ]
       }
     ],
+    "Quests": {
+      "harvest_feast_supper_elsie": { "Ready": "supper" },
+      "harvest_feast_weaver_spices": { "Offerable": "spices_offer", "Active": "spices_brief", "Ready": "spices_ready" }
+    },
     "Fallback": "greeting"
   },
   "Nodes": {
@@ -54,6 +64,56 @@
       "TextKey": "dialogue.harvest_feast_weaver.cloth.text",
       "Options": [
         { "LabelKey": "dialogue.harvest_feast_weaver.opt.back", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "supper": {
+      "TextKey": "dialogue.harvest_feast_weaver.supper.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_weaver.supper.opt.give",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "harvest_feast_supper_elsie" } ],
+          "Do": [
+            { "TurnIn": "harvest_feast_supper_elsie" },
+            { "Open": { "Type": "Quests", "Highlight": "harvest_feast_supper_elsie" } }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "spices_offer": {
+      "TextKey": "dialogue.harvest_feast_weaver.spices_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_weaver.spices_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "harvest_feast_weaver_spices" }, { "Goto": "spices_brief" } ]
+        },
+        { "LabelKey": "dialogue.harvest_feast_weaver.spices_offer.opt.later", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "spices_brief": {
+      "TextKey": "dialogue.harvest_feast_weaver.spices_brief.text",
+      "Options": [
+        { "LabelKey": "dialogue.harvest_feast_weaver.opt.spice", "Style": "neutral", "Goto": "spice" },
+        { "LabelKey": "dialogue.harvest_feast_weaver.opt.cloth", "Style": "neutral", "Goto": "cloth" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "spices_ready": {
+      "TextKey": "dialogue.harvest_feast_weaver.spices_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_weaver.spices_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "harvest_feast_weaver_spices" } ],
+          "Do": [
+            { "TurnIn": "harvest_feast_weaver_spices" },
+            { "Open": { "Type": "Quests", "Highlight": "harvest_feast_weaver_spices" } }
+          ]
+        }
       ],
       "IncludeOptions": [ "goodbye" ]
     }

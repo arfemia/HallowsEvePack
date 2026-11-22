@@ -1,0 +1,7 @@
+{
+  "$Comment": "A Turkey Soul's look: the game's own Turkey (its model, texture and every animation), with a pale cold light that moves with it, so a soul glows among the graves at night. Parent Turkey brings the size, the hitbox, the sounds and the animations. The ghostly sheen is not here: it is the effect Harvest_Feast_Turkey_Soul_Glow, which the soul's role wears from the moment it rises, since a look alone cannot carry a model effect. Light is a model light; each hex digit is a red, green or blue level from 0 to f. The Great Turkey wears the same light on a bigger body (Harvest_Feast_Great_Turkey.json beside this file), so change the two together.",
+  "Parent": "Turkey",
+  "Model": "NPC/Livestock/Turkey/Models/Model.blockymodel",
+  "Texture": "NPC/Livestock/Turkey/Models/Texture.png",
+  "Light": { "Color": "#6bd" }
+}

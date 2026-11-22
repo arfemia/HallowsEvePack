@@ -68,6 +68,10 @@ Hallows_Eve_Horsemans_Reins.description = A Fej Nélküli Lovas saját gyeplője
 Hallows_Eve_Horsemans_Reins.command_calm = Nyugtatás
 Hallows_Eve_Horsemans_Steed_Trophy.name = Lovas-hátas Trófea
 Hallows_Eve_Horsemans_Steed_Trophy.description = A Fej Nélküli Lovas fekete lovának apró alakja a páncéljában, aranyszegélyes talapzaton. Rakd le, ahová csak akarod. Időnként akad a Boss-legyőzés Átvehetőjében, és Öreg Jack is árul egyet.
+Harvest_Feast_Feast_Trophy.name = Lakomatrófea
+Harvest_Feast_Feast_Trophy.description = Egy pulyka, ami ott marad, ahová teszed. Martha mindenkinek ad egyet, aki leül vele a Lakomára, és minden Aratási Lakomának megvan a sajátja. Tedd le, ahová szeretnéd.
+Harvest_Feast_Wishbone.name = Kívánságcsont
+Harvest_Feast_Wishbone.description = Egy pulyka kívánságcsontja, a sültből félretéve. <b>Bram, a Pásztor</b> a Feledett Templomban egyet elvesz érte, és bevezet a csapatoddal a <b>Pulykatemetőbe</b>, amíg tart az Aratási Lakoma.\n\nMartha mindig ad egyet, ha átadod neki az <b>Extra Pulykákat</b>.
 
 # Harvest Feast - az Aratási Szett, Martha boltjában kapható.
 Harvest_Feast_Harvest_Hat.name = Aratási Kalap

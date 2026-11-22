@@ -1,0 +1,16 @@
+{
+  "$Comment": "Clears the Great Turkey's own bookkeeping while its fight resets (its fight's reset slot runs it), so the next try plays its later phases again from the start: the flags Macro_Harvest_Feast_Great_Turkey_Rally raises as each phase starts. The fury on the Great Turkey needs no clearing, since the reset removes the Great Turkey itself and the next try raises a fresh one. Add a flag here whenever a Great Turkey phase gains one.",
+  "Class": "Instruction",
+  "Type": "Component",
+  "Interface": "Hytale.Instruction.Encounter.Phase.Behavior",
+  "Content": {
+    "Continue": true,
+    "Sensor": {
+      "Type": "Any"
+    },
+    "Actions": [
+      { "Type": "SetFlag", "Name": "Great_Turkey_P2_Armed", "SetTo": false },
+      { "Type": "SetFlag", "Name": "Great_Turkey_P3_Armed", "SetTo": false }
+    ]
+  }
+}
