@@ -72,8 +72,12 @@ Harvest_Feast_Golden_Plate.name = Marthas Goldteller
 Harvest_Feast_Golden_Plate.description = Ein goldener Teller mit dem Jahr darauf, viel zu schön, um davon zu essen. Martha gibt jedem einen, der sich mit ihr zum Fest an die Tafel setzt, einmal pro Erntefest. Stell ihn hin, wo du willst, oder stapel die Teller mehrerer Jahre aufeinander.
 Harvest_Feast_Turkey_Trophy.name = Truthahntrophäe
 Harvest_Feast_Turkey_Trophy.description = Ein Truthahn, der bleibt, wo du ihn hinstellst. Hin und wieder lässt ein Wilder Truthahn einen zurück, und nur solange das Erntefest läuft. Stell ihn hin, wo du willst.
+Harvest_Feast_Golden_Turkey_Trophy.name = Goldene Truthahntrophäe
+Harvest_Feast_Golden_Turkey_Trophy.description = Ein Truthahn aus purem Gold. Ganz selten lässt der Große Truthahn eine fallen, bei jedem Sieg, öfter beim ersten Sieg des Tages und auf dem schweren Weg hinein. Stell sie auf, wo du willst.
+Harvest_Feast_Great_Turkey_Mantle.name = Mantel des Großen Truthahns
+Harvest_Feast_Great_Turkey_Mantle.description = Leder, genäht mit den eigenen Schwanzfedern des Großen Truthahns, noch kalt vom Friedhof. Pfeile prallen daran ab, und Marthas Gunst kommt schneller, solange du ihn trägst. Teil des Ernte-Sets, anstelle der Erntetunika. Nur der Große Truthahn lässt ihn fallen, bei jedem Sieg, öfter beim ersten Sieg des Tages und auf dem schweren Weg hinein.
 Harvest_Feast_Wishbone.name = Wunschknochen
-Harvest_Feast_Wishbone.description = Der Wunschknochen eines Truthahns, vom Braten aufgehoben. <b>Bram der Schäfer</b> im Vergessenen Tempel nimmt einen, um dich und deine Gruppe in den <b>Truthahnfriedhof</b> zu führen, solange das Erntefest läuft.\n\nMartha gibt dir jedes Mal einen, wenn du <b>Extra-Truthähne</b> abgibst.
+Harvest_Feast_Wishbone.description = Der Wunschknochen eines Truthahns, vom Braten aufgehoben. <b>Martha die Köchin</b> im Vergessenen Tempel nimmt einen, um dich und deine Gruppe in den <b>Truthahnfriedhof</b> zu schicken, solange das Erntefest läuft.\n\nSie gibt dir jedes Mal einen, wenn du <b>Extra-Truthähne</b> abgibst.
 
 # Erntefest - das Ernte-Set, verkauft in Marthas Laden.
 Harvest_Feast_Harvest_Hat.name = Erntehut

@@ -1,0 +1,57 @@
+{
+  "$Comment": "A Turkey Soul on the hard way in: Harvest_Feast_Turkey_Soul written out again with more health and a harder peck, under an id of its own so only the hard fight raises it (EncounterManager/Harvest_Feast/Harvest_Feast_Great_Turkey_Encounter_Hard.json), in its waves around the fountain and at the Great Turkey's side. It never spawns in the wild. Like the normal soul it is a Variant of Template_Predator carrying the game's Undead Chicken's own Modify, wears the Turkey Soul look and sheen, stays awake at night, drops nothing and stays out of the Memories collection. It shares the normal soul's nameplate. It is in Harvest_Feast_Turkey_Soul_Group, which both fights wait on and sweep; it is in no group Martha's favor counts and no quest or tally names it, so putting one down never counts as hunting a turkey. Melee_Damage's BaseDamage is one peck before armour. Any key the template does not declare makes the game refuse the whole role.",
+  "Type": "Variant",
+  "Reference": "Template_Predator",
+  "Modify": {
+    "Appearance": "Harvest_Feast_Turkey_Soul",
+    "WanderRadius": 6,
+    "ViewRange": 30,
+    "ViewSector": 360,
+    "HearingRange": 16,
+    "AlertedRange": 40,
+    "AlertedTime": [0.5, 1],
+    "DropList": "Empty",
+    "MaxSpeed": 8,
+    "Attack": "Root_NPC_Attack_Melee",
+    "AlwaysSleepAtNight": false,
+    "MaxHealth": 100,
+    "IsMemory": false,
+    "DeathParticles": "Effect_Death",
+    "LeashDistance": 40,
+    "HardLeashDistance": 60,
+    "LeashMinPlayerDistance": 15,
+    "LeashTimer": [10, 15],
+    "_CombatConfig": {
+      "EntityEffects": ["Harvest_Feast_Turkey_Soul_Glow"]
+    },
+    "_InteractionVars": {
+      "Melee_Start": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Simple",
+            "Effects": {
+              "ItemPlayerAnimationsId": "Hound_Bleached_Default",
+              "ItemAnimationId": "Bite"
+            },
+            "RunTime": 0.333
+          }
+        ]
+      },
+      "Melee_Damage": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "Type": "Absolute",
+              "BaseDamage": {
+                "Physical": 10
+              },
+              "RandomPercentageModifier": 0.1
+            }
+          }
+        ]
+      }
+    },
+    "NameTranslationKey": "npcs.Harvest_Feast_Turkey_Soul.name"
+  }
+}

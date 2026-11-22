@@ -1,8 +1,8 @@
 {
   "$Comment": [
     "The Turkey Graveyard, Harvest Feast's repeatable fight: where the souls of the feast's hunted turkeys",
-    "linger, and the Great Turkey with them. Bram the Shepherd opens it from his conversation's graveyard",
-    "screen while the feast runs (Dialogues/SeasonsOfOrbis/Harvest_Feast_Shepherd.json). Every area of a copy pastes",
+    "linger, and the Great Turkey with them. Martha the Cook opens it from her conversation's graveyard",
+    "screen while the feast runs (Dialogues/SeasonsOfOrbis/Harvest_Feast_Host.json). Every area of a copy pastes",
     "Harvest_Feast/Harvest_Feast_Turkey_Graveyard.prefab.json, the Headless Horseman's graveyard with the Great",
     "Turkey's fight's entity, its spawn marker, the points its health packs drop on and a way-out pad in the",
     "entrance room (tools/arena_markers.py writes it), so every fresh paste stages a fresh fight. The prefab's",
@@ -25,7 +25,7 @@
     "CommonLib's confirm screen with the graveyard's name and description, the Wishbone, how many they hold",
     "and how many it takes, and a button whose words are ConfirmKey's; it spends the Wishbone and sends the",
     "party in, and closing the screen spends nothing. With none, the button is off and the HintKey line says",
-    "where Wishbones come from. Change Count to change the price, and Bram's way-in label, which names it,",
+    "where Wishbones come from. Change Count to change the price, and Martha's way-in label, which names it,",
     "with it."
   ],
   "Enabled": true,

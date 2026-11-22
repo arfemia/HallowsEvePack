@@ -73,8 +73,12 @@ Harvest_Feast_Golden_Plate.name = Plato Dorado de Martha
 Harvest_Feast_Golden_Plate.description = Un plato dorado con el año grabado, demasiado bueno para comer en él. Martha regala uno a todo el que se sienta a El Banquete con ella, una vez por cada Banquete de la Cosecha. Colócalo donde quieras, o apila el de un año sobre el de otro.
 Harvest_Feast_Turkey_Trophy.name = Trofeo de Pavo
 Harvest_Feast_Turkey_Trophy.description = Un pavo que se queda donde lo pones. De tarde en tarde un Pavo Silvestre deja uno, y solo mientras dura el Banquete de la Cosecha. Colócalo donde quieras.
+Harvest_Feast_Golden_Turkey_Trophy.name = Trofeo de Pavo Dorado
+Harvest_Feast_Golden_Turkey_Trophy.description = Un pavo de oro macizo. De tarde en tarde el Gran Pavo deja uno al ser vencido, más a menudo en tu primera victoria de cada día y en la entrada difícil. Colócalo donde quieras.
+Harvest_Feast_Great_Turkey_Mantle.name = Manto del Gran Pavo
+Harvest_Feast_Great_Turkey_Mantle.description = Cuero cosido con las plumas de la cola del propio Gran Pavo, todavía frío del cementerio. Las flechas resbalan en él, y el favor de Martha llega más rápido mientras lo lleves. Parte del Conjunto de la Cosecha, en lugar de la Túnica de la Cosecha. Solo lo deja el Gran Pavo, más a menudo en tu primera victoria de cada día y en la entrada difícil.
 Harvest_Feast_Wishbone.name = Espoleta
-Harvest_Feast_Wishbone.description = La espoleta de un pavo, guardada del asado. <b>Bram el Pastor</b>, en el Templo Olvidado, se lleva una para guiaros a ti y a tu grupo al <b>Cementerio de los Pavos</b> mientras dure el Banquete de la Cosecha.\n\nMartha te da una cada vez que le entregas <b>Pavos Extra</b>.
+Harvest_Feast_Wishbone.description = La espoleta de un pavo, guardada del asado. <b>Martha la Cocinera</b>, en el Templo Olvidado, se lleva una para guiaros a ti y a tu grupo al <b>Cementerio de los Pavos</b> mientras dure el Banquete de la Cosecha.\n\nTe da una cada vez que le entregas <b>Pavos Extra</b>.
 
 # Banquete de la Cosecha - el Conjunto de la Cosecha, a la venta en la tienda de Martha.
 Harvest_Feast_Harvest_Hat.name = Sombrero de la Cosecha

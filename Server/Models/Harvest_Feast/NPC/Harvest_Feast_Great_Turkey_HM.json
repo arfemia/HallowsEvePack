@@ -1,0 +1,9 @@
+{
+  "$Comment": "The Great Turkey's look on the hard way in (the role Harvest_Feast_Great_Turkey_HM): the Great Turkey's own look (Harvest_Feast_Great_Turkey.json beside this file, the game's turkey at more than twice its size), the same size, with its pale cold light turned a hot orange so a player can tell the hard bird at a glance. Parent Turkey brings the sounds and the animations, as it does for the normal Great Turkey. MinScale and MaxScale fix its size; keep them the normal Great Turkey's, since both fights share one graveyard. Light is a model light; each hex digit is a red, green or blue level from 0 to f.",
+  "Parent": "Turkey",
+  "Model": "NPC/Livestock/Turkey/Models/Model.blockymodel",
+  "Texture": "NPC/Livestock/Turkey/Models/Texture.png",
+  "MinScale": 2.2,
+  "MaxScale": 2.2,
+  "Light": { "Color": "#f73" }
+}

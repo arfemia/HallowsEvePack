@@ -15,8 +15,9 @@
     "Flour (harvest_feast_miller_flour): the conversation opens on its offer while it can be taken, on its",
     "brief while it is carried, and on its hand-in once the flour is in the bag. Each hand-in opens his",
     "quest list with Collect in front of the player, and collecting plays this conversation again (each",
-    "quest's CompletionDialogue). Otherwise it opens on greeting, the Fallback, which offers his two tips:",
-    "how to make dough (the dough screen) and where his mill is.",
+    "quest's CompletionDialogue). Otherwise it opens on greeting, the Fallback. Greeting and the flour brief",
+    "lead with What needs doing? (Open Quests: the quest list of the character in front of the player, so",
+    "his daily and his supper), then his tip on making dough (the dough screen).",
     "",
     "The invitation tour's line is not in this file: DialogueExtensions/SeasonsOfOrbis/",
     "Harvest_Feast_Invitation.json adds it to the screens a conversation opens on while the player carries",
@@ -48,8 +49,8 @@
     "greeting": {
       "TextKey": "dialogue.harvest_feast_miller.greeting.text",
       "Options": [
-        { "LabelKey": "dialogue.harvest_feast_miller.opt.dough", "Style": "neutral", "Goto": "dough" },
-        { "LabelKey": "dialogue.harvest_feast_miller.opt.mill", "Style": "neutral", "Goto": "mill" }
+        { "LabelKey": "dialogue.harvest_feast_miller.opt.quests", "Style": "accept", "Open": "Quests" },
+        { "LabelKey": "dialogue.harvest_feast_miller.opt.dough", "Style": "neutral", "Goto": "dough" }
       ],
       "IncludeOptions": [ "goodbye" ]
     },
@@ -57,13 +58,6 @@
       "TextKey": "dialogue.harvest_feast_miller.dough.text",
       "Options": [
         { "LabelKey": "dialogue.harvest_feast_miller.opt.thanks", "Style": "neutral", "Goto": "greeting" }
-      ],
-      "IncludeOptions": [ "goodbye" ]
-    },
-    "mill": {
-      "TextKey": "dialogue.harvest_feast_miller.mill.text",
-      "Options": [
-        { "LabelKey": "dialogue.harvest_feast_miller.opt.back", "Style": "neutral", "Goto": "greeting" }
       ],
       "IncludeOptions": [ "goodbye" ]
     },
@@ -97,8 +91,8 @@
     "flour_brief": {
       "TextKey": "dialogue.harvest_feast_miller.flour_brief.text",
       "Options": [
-        { "LabelKey": "dialogue.harvest_feast_miller.opt.dough", "Style": "neutral", "Goto": "dough" },
-        { "LabelKey": "dialogue.harvest_feast_miller.opt.mill", "Style": "neutral", "Goto": "mill" }
+        { "LabelKey": "dialogue.harvest_feast_miller.opt.quests", "Style": "accept", "Open": "Quests" },
+        { "LabelKey": "dialogue.harvest_feast_miller.opt.dough", "Style": "neutral", "Goto": "dough" }
       ],
       "IncludeOptions": [ "goodbye" ]
     },

@@ -1,9 +1,11 @@
 {
   "$Comment": [
-    "Beat the Great Turkey once during one season, in the Turkey Graveyard Bram the Shepherd opens for a",
+    "Beat the Great Turkey once during one season, in the Turkey Graveyard Martha the Cook opens for a",
     "Wishbone (ZiggfreedCommon/Dungeons/Harvest_Feast_Turkey_Graveyard.json). ENCOUNTER_DEFEATED names",
     "the fight's encounter script (EncounterManager/Harvest_Feast/Harvest_Feast_Great_Turkey_Encounter.json),",
-    "never the creature, and every player the fight credits earns it at once, however many shared the",
+    "never the creature, with MatchMode PREFIX, so a win on the hard way in",
+    "(Harvest_Feast_Great_Turkey_Encounter_Hard) counts too; every player the fight credits earns it at",
+    "once, however many shared the",
     "win. The fight's health grows with each player in it, so one player alone can win it. The criterion's",
     "TextKey words the step. Great Turkey Hunter and Great Turkey Slayer (Great_Turkey_Hunter.json and",
     "Great_Turkey_Slayer.json) count the same fight over the years, kept for good.",
@@ -22,7 +24,7 @@
     "defeat-great-turkey": {
       "Kind": "ENCOUNTER_DEFEATED",
       "Target": "Harvest_Feast_Great_Turkey_Encounter",
-      "MatchMode": "EXACT",
+      "MatchMode": "PREFIX",
       "Amount": 1,
       "TextKey": "objective.harvest_feast.defeat_great_turkey"
     }

@@ -1,6 +1,6 @@
 {
   "$Comment": [
-    "Wear the whole Harvest Set: the Harvest Hat, Tunic, Gloves and Trousers from Martha's shop.",
+    "Wear the whole Harvest Set: the Harvest Hat, Tunic (or the Great Turkey Mantle in its place), Gloves and Trousers.",
     "GEAR_SET_TIER counts a set's bonus tier coming on as gear goes on, its amount the number of pieces",
     "that tier takes, so Amount 4 is met the moment the set's four-piece tier",
     "(GearSets/SeasonsOfOrbis/Harvest_Feast_Harvest_Set.json) comes on. Logging in already dressed counts",

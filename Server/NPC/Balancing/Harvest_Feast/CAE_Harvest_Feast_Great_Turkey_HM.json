@@ -1,0 +1,83 @@
+{
+  "$Comment": "How the Great Turkey fights on the hard way in (its role Harvest_Feast_Great_Turkey_HM): CAE_Harvest_Feast_Great_Turkey written out again, as the game writes its own hard bosses, with Charge ready every 8 seconds instead of 12, a peck every 1.2 to 2 seconds instead of 1.5 to 2.5, and the Harvest_Feast_Great_Turkey_Hard_Mode effect beside the souls' sheen (Harvest_Feast_Turkey_Soul_Glow), which makes every peck and every charge hit 40% harder. Each time the evaluator runs it scores the actions in its one ActionSet and runs the best: Charge sends it at a player within 14 blocks (the TargetDistance switch) with the template's telegraph (half a second locked on, a puffed-up gobble with a warning marker on the ground, then a straight run that a miss or a block ends in a daze); its weight puts it ahead of PickTarget whenever it is ready. PickTarget picks the nearest player to peck. Between those it pecks (BasicAttacks: Root_NPC_Attack_Melee with the Undead Chicken's bite, MaxRange its reach, CooldownRange the seconds between pecks, Melee_Damage's BaseDamage one peck before armour and before the hard mode). Tune pacing in each action's TimeSinceLastUsed SwitchPoint (seconds); the charge's hit, wind-up, run and daze sit in the template's parameters.",
+  "Type": "CombatActionEvaluator",
+  "EntityEffects": ["Harvest_Feast_Turkey_Soul_Glow", "Harvest_Feast_Great_Turkey_Hard_Mode"],
+  "TargetMemoryDuration": 10,
+  "CombatActionEvaluator": {
+    "RunConditions": [
+      {
+        "Type": "TimeSinceLastUsed",
+        "Curve": {"ResponseCurve": "Linear", "XRange": [0, 5]}
+      },
+      {"Type": "Randomiser", "MinValue": 0.75, "MaxValue": 1}
+    ],
+    "MinRunUtility": 0.5,
+    "MinActionUtility": 0.01,
+    "AvailableActions": {
+      "PickTarget": {
+        "Type": "SelectBasicAttackTarget",
+        "Description": "Select the nearest target",
+        "OffhandSlot": -1,
+        "Conditions": [
+          {
+            "Type": "TargetDistance",
+            "Curve": {"ResponseCurve": "SimpleDescendingLogistic", "XRange": [0, 15]}
+          }
+        ]
+      },
+      "Charge": {
+        "Type": "State",
+        "Description": "Locks on, winds up and charges at the target",
+        "Target": "Hostile",
+        "State": "Combat",
+        "SubState": "Charge",
+        "PostExecuteDistanceRange": [2.5, 2.5],
+        "WeightCoefficient": 1.5,
+        "Conditions": [
+          {"Type": "TimeSinceLastUsed", "Curve": {"Type": "Switch", "SwitchPoint": 8}},
+          {"Type": "TargetDistance", "Curve": {"Type": "Switch", "SwitchPoint": 14, "InitialState": 1, "FinalState": 0}},
+          {"Type": "Randomiser", "MinValue": 0.75, "MaxValue": 1}
+        ]
+      }
+    },
+    "ActionSets": {
+      "Default": {
+        "BasicAttacks": {
+          "Attacks": ["Root_NPC_Attack_Melee"],
+          "InteractionVars": {
+            "Melee_Start": {
+              "Interactions": [
+                {
+                  "Parent": "NPC_Attack_Melee_Simple",
+                  "Effects": {
+                    "ItemPlayerAnimationsId": "Hound_Bleached_Default",
+                    "ItemAnimationId": "Bite"
+                  },
+                  "RunTime": 0.333
+                }
+              ]
+            },
+            "Melee_Damage": {
+              "Interactions": [
+                {
+                  "Parent": "NPC_Attack_Melee_Damage",
+                  "DamageCalculator": {
+                    "Type": "Absolute",
+                    "BaseDamage": {"Physical": 20},
+                    "RandomPercentageModifier": 0.1
+                  }
+                }
+              ]
+            }
+          },
+          "Randomise": false,
+          "UseProjectedDistance": true,
+          "MaxRange": 3.5,
+          "Timeout": 0.5,
+          "CooldownRange": [1.2, 2]
+        },
+        "Actions": ["PickTarget", "Charge"]
+      }
+    }
+  }
+}

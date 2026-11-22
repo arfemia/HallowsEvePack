@@ -72,8 +72,12 @@ Harvest_Feast_Golden_Plate.name = Martha aranytányérja
 Harvest_Feast_Golden_Plate.description = Aranytányér, rajta az évszámmal, túl szép ahhoz, hogy edjenek róla. Martha mindenkinek ad egyet, aki leül vele a Lakomához, Aratási Lakománként egyszer. Tedd le, ahová szeretnéd, vagy rakd egymásra a különböző évek tányérjait.
 Harvest_Feast_Turkey_Trophy.name = Pulykatrófea
 Harvest_Feast_Turkey_Trophy.description = Egy pulyka, ami ott marad, ahová teszed. Nagyon ritkán egy Vadpulyka hagy hátra egyet, és csak amíg tart az Aratási Lakoma. Tedd le, ahová szeretnéd.
+Harvest_Feast_Golden_Turkey_Trophy.name = Arany Pulykatrófea
+Harvest_Feast_Golden_Turkey_Trophy.description = Egy tömör arany pulyka. Nagyon ritkán a Nagy Pulyka hagy egyet, minden győzelemkor, de gyakrabban az első napi győzelemnél és a nehéz bejáratnál. Tedd le, ahová szeretnéd.
+Harvest_Feast_Great_Turkey_Mantle.name = Nagy Pulyka-palást
+Harvest_Feast_Great_Turkey_Mantle.description = A Nagy Pulyka saját farktollaival varrt bőr, még hideg a temetőtől. A nyilak lepattannak róla, és amíg viseled, Martha kegye gyorsabban nő. Az Aratási Szett része, az Aratási Tunika helyett. Csak a Nagy Pulyka hagyja, minden győzelemkor, de gyakrabban az első napi győzelemnél és a nehéz bejáratnál.
 Harvest_Feast_Wishbone.name = Kívánságcsont
-Harvest_Feast_Wishbone.description = Egy pulyka kívánságcsontja, a sültből félretéve. <b>Bram, a Pásztor</b> a Feledett Templomban egyet elvesz érte, és bevezet a csapatoddal a <b>Pulykatemetőbe</b>, amíg tart az Aratási Lakoma.\n\nMartha mindig ad egyet, ha átadod neki az <b>Extra Pulykákat</b>.
+Harvest_Feast_Wishbone.description = Egy pulyka kívánságcsontja, a sültből félretéve. <b>Martha, a Szakács</b> a Feledett Templomban egyet elvesz érte, és bevezet a csapatoddal a <b>Pulykatemetőbe</b>, amíg tart az Aratási Lakoma.\n\nMindig ad egyet, ha átadod neki az <b>Extra Pulykákat</b>.
 
 # Harvest Feast - az Aratási Szett, Martha boltjában kapható.
 Harvest_Feast_Harvest_Hat.name = Aratási Kalap

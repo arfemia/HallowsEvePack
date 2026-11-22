@@ -1,0 +1,39 @@
+{
+  "$Comment": "The Great Turkey Mantle, the one piece of armour only the Great Turkey drops: a rare roll in its Boss Kill Claim on every win in the Turkey Graveyard, rolled again in its daily Claim on the first win each day, at better odds on the hard way in (ZiggfreedCommon/Lootables/SeasonsOfOrbis/Harvest_Feast_Great_Turkey_Chase.json and its _Hard twin). A chest piece and a member of the Harvest Set (ZiggfreedCommon/GearSets/SeasonsOfOrbis/Harvest_Feast_Harvest_Set.json), so it stands in for the Harvest Tunic in the chest slot and never breaks the set. A full item body with no Parent, so it inherits no recipe and nobody crafts it: it wears the game's raven leather chest model, with its own texture (tools/derive_art.py turns the raven's blue-black feathers a turkey's bronze) and an icon drawn the same way. Its armour sits a step above the raven chest's and the Harvest Tunic's: more Physical and more Projectile resistance (0.10 is 10%), more Health and Stamina, and twice the Tunic's ReputationGain_Harvest_Feast_Host (10 is +10%), which raises every gain of Martha's favor while it is worn. It carries no Fire stat, so the Headless Horseman's flaming armour keeps its own use. Raise or lower an Amount to tune it; the set adds its own bonus on top. An Armor block written here replaces a parent's whole, so the file restates every leaf.",
+  "TranslationProperties": {
+    "Name": "items.Harvest_Feast_Great_Turkey_Mantle.name",
+    "Description": "items.Harvest_Feast_Great_Turkey_Mantle.description"
+  },
+  "Quality": "Epic",
+  "ItemLevel": 32,
+  "PlayerAnimationsId": "Block",
+  "ItemSoundSetId": "ISS_Armor_Leather",
+  "Categories": ["Items.Armors"],
+  "Icon": "Icons/ItemsGenerated/Harvest_Feast_Great_Turkey_Mantle.png",
+  "IconProperties": {"Rotation": [22.5, 45, 22.5], "Scale": 0.4, "Translation": [0, -16.8]},
+  "Model": "Items/Armors/Leather_Raven/Chest.blockymodel",
+  "Texture": "Items/Harvest_Feast/Great_Turkey_Mantle/Great_Turkey_Mantle_Texture.png",
+  "Interactions": {
+    "Primary": {"Interactions": [{"Type": "EquipItem"}]},
+    "Secondary": {"Interactions": [{"Type": "EquipItem"}]}
+  },
+  "Armor": {
+    "ArmorSlot": "Chest",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "Overtop"
+    ],
+    "DamageResistance": {
+      "Physical": [{"Amount": 0.10, "CalculationType": "Percent"}],
+      "Projectile": [{"Amount": 0.12, "CalculationType": "Percent"}]
+    },
+    "StatModifiers": {
+      "Health": [{"Amount": 20, "CalculationType": "Additive"}],
+      "Stamina": [{"Amount": 5, "CalculationType": "Additive"}],
+      "ReputationGain_Harvest_Feast_Host": [{"Amount": 10, "CalculationType": "Additive", "Target": "Max"}]
+    }
+  },
+  "MaxDurability": 150,
+  "DurabilityLossOnHit": 0.5,
+  "Tags": {"Type": ["Armor"], "Family": ["Harvest_Feast"]}
+}

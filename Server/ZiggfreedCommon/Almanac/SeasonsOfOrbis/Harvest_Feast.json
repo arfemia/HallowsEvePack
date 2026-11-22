@@ -1,5 +1,5 @@
 {
-  "$Comment": "Harvest Feast in the Almanac: the season's name and picture, its yearly keepsake, and the tallies it keeps. The file name is the calendar event id. Each stat line counts one kind of moment while the feast runs; its key is the tally's name in every player's record, so never rename one. Hero.Composition is the banner at the top of the season's page: each item's own icon drawn at X and Y (pixels from the top-left of the 962 x 240 plate) and Size (a square side up to 128; 64, 96 and 128 read best), over the Background colour. Keep the plate left of about x 450 clear for the title, status and dates. Gradient paints the sky from its Top colour down to its Bottom one in place of the flat Background, and Glow lays a soft round light under the items, its square box placed by X, Y and Size the way an item's is. Accent is the season's colour for the strip under the top of the page; a colour too dark to read against a row is swapped for the shared one. Sections lays out the page below its top in the order written: the tallies, the items grid, the keepsake shelf, the achievements and the links. The grid (Collection.Items, at most 45, nine a row) shows every item a player can find this season; a Hidden one shows '?' until the player has held it once, and SourceKey is the tooltip line saying where it comes from. Add, drop or reorder a slot here; an item the server does not have is left out. The Harvest Set's four pieces, Martha's three dishes and their recipe pages, Martha's Golden Plate, the Turkey Trophy and the Wishbone are this pack's own items; every other slot is the game's.",
+  "$Comment": "Harvest Feast in the Almanac: the season's name and picture, its yearly keepsake, and the tallies it keeps. The file name is the calendar event id. Each stat line counts one kind of moment while the feast runs; its key is the tally's name in every player's record, so never rename one. Hero.Composition is the banner at the top of the season's page: each item's own icon drawn at X and Y (pixels from the top-left of the 962 x 240 plate) and Size (a square side up to 128; 64, 96 and 128 read best), over the Background colour. Keep the plate left of about x 450 clear for the title, status and dates. Gradient paints the sky from its Top colour down to its Bottom one in place of the flat Background, and Glow lays a soft round light under the items, its square box placed by X, Y and Size the way an item's is. Accent is the season's colour for the strip under the top of the page; a colour too dark to read against a row is swapped for the shared one. Sections lays out the page below its top in the order written: the tallies, the Great Turkey's banner and its Boss Kill grid, the season's items grid, the keepsake shelf, the achievements and the links. The banner is a 906 wide plate Height tall, composed the way the top is (Composition, pictures placed by X, Y and Size on that plate), with its title and line on the left (keep the plate left of x 584 clear for them): it points players to Martha, who opens the Turkey Graveyard for a Wishbone and its hard way in after one win. A picture names an Item, or an Npc role whose portrait it draws instead, here the Great Turkey among its finds. A grid (Collection.Items, at most 45, nine a row) shows items a player can find; a Hidden one shows '?' until the player has held it once, and SourceKey is the tooltip line saying where it comes from. The Boss Kill grid lists what the Great Turkey's Boss Kill Claim pays (ZiggfreedCommon/Lootables/SeasonsOfOrbis/Harvest_Feast_Great_Turkey_Chase.json and its _Hard twin), so change them together; its heading is that Claim's own title (claim.harvest_feast_great_turkey_chase) and its button opens Records, where the fight's records sit on the Bosses tab, under Seasonal. The season's grid shows every item a player can find this season, the Great Turkey Mantle and the Golden Turkey Trophy included. Add, drop or reorder a slot here; an item the server does not have is left out. The Harvest Set's four pieces, the Great Turkey Mantle, Martha's three dishes and their recipe pages, Martha's Golden Plate, both turkey trophies and the Wishbone are this pack's own items; every other slot is the game's. Great_Turkeys_Down counts wins over the Great Turkey's normal fight and Great_Turkeys_Down_Hard wins on the hard way in (ENCOUNTER_DEFEATED names each fight's script).",
   "Text": {
     "TitleKey": "almanac.harvest_feast.title",
     "FlavorKey": "almanac.harvest_feast.flavor"
@@ -29,6 +29,46 @@
   "Sections": [
     { "Tallies": {} },
     {
+      "Banner": {
+        "Height": 140,
+        "Composition": {
+          "Gradient": { "Top": "#0A0F1A", "Bottom": "#2A2216" },
+          "Glow": { "Color": "#4F9FC4", "X": 615, "Y": -60, "Size": 260 },
+          "Items": [
+            { "Item": "Furniture_Village_Tombstone", "X": 588, "Y": 40, "Size": 88 },
+            { "Item": "Harvest_Feast_Great_Turkey_Mantle", "X": 630, "Y": 22, "Size": 72 },
+            { "Npc": "Harvest_Feast_Great_Turkey", "X": 681, "Y": 6, "Size": 128 },
+            { "Item": "Harvest_Feast_Wishbone", "X": 790, "Y": 14, "Size": 56 },
+            { "Item": "Harvest_Feast_Golden_Turkey_Trophy", "X": 806, "Y": 58, "Size": 72 },
+            { "Item": "Harvest_Feast_Turkey_Pie", "X": 770, "Y": 96, "Size": 40 }
+          ]
+        },
+        "Text": {
+          "TitleKey": "npcs.Harvest_Feast_Great_Turkey.name",
+          "FlavorKey": "almanac.harvest_feast.great_turkey.line"
+        }
+      }
+    },
+    {
+      "Collection": {
+        "Text": {
+          "TitleKey": "claim.harvest_feast_great_turkey_chase",
+          "FlavorKey": "almanac.harvest_feast.boss_kill.line"
+        },
+        "Items": [
+          { "Item": "Food_Pie_Pumpkin", "SourceKey": "almanac.harvest_feast.source.boss_kill_pie" },
+          { "Item": "Harvest_Feast_Turkey_Pie", "SourceKey": "almanac.harvest_feast.source.boss_kill_turkey_pie" },
+          { "Item": "Harvest_Feast_Wishbone", "SourceKey": "almanac.harvest_feast.source.wishbone" },
+          { "Item": "Harvest_Feast_Great_Turkey_Mantle", "Hidden": true, "SourceKey": "almanac.harvest_feast.source.great_turkey_mantle" },
+          { "Item": "Harvest_Feast_Golden_Turkey_Trophy", "Hidden": true, "SourceKey": "almanac.harvest_feast.source.golden_turkey_trophy" }
+        ],
+        "Button": {
+          "TextKey": "almanac.harvest_feast.great_turkey.button",
+          "Destination": { "Type": "Records" }
+        }
+      }
+    },
+    {
       "Collection": {
         "Items": [
           { "Item": "Food_Pie_Pumpkin", "SourceKey": "almanac.harvest_feast.source.bake_pumpkin" },
@@ -54,6 +94,8 @@
           { "Item": "Harvest_Feast_Golden_Plate", "Hidden": true, "SourceKey": "almanac.harvest_feast.source.keepsake" },
           { "Item": "Harvest_Feast_Turkey_Trophy", "Hidden": true, "SourceKey": "almanac.harvest_feast.source.turkey_trophy" },
           { "Item": "Harvest_Feast_Wishbone", "SourceKey": "almanac.harvest_feast.source.wishbone" },
+          { "Item": "Harvest_Feast_Great_Turkey_Mantle", "Hidden": true, "SourceKey": "almanac.harvest_feast.source.great_turkey_mantle" },
+          { "Item": "Harvest_Feast_Golden_Turkey_Trophy", "Hidden": true, "SourceKey": "almanac.harvest_feast.source.golden_turkey_trophy" },
           { "Item": "Winter_Holiday_Wreath", "SourceKey": "almanac.harvest_feast.source.winter" },
           { "Item": "WinterHoliday_Garland", "SourceKey": "almanac.harvest_feast.source.winter" },
           { "Item": "WinterHoliday_Lights", "SourceKey": "almanac.harvest_feast.source.winter" },
@@ -110,6 +152,14 @@
       "TextKey": "almanac.harvest_feast.great_turkeys_down",
       "Icon": "Harvest_Feast_Wishbone",
       "Order": 50
+    },
+    "Great_Turkeys_Down_Hard": {
+      "Kind": "ENCOUNTER_DEFEATED",
+      "Target": "Harvest_Feast_Great_Turkey_Encounter_Hard",
+      "MatchMode": "EXACT",
+      "TextKey": "almanac.harvest_feast.great_turkeys_down_hard",
+      "Icon": "Harvest_Feast_Great_Turkey_Mantle",
+      "Order": 55
     }
   }
 }
