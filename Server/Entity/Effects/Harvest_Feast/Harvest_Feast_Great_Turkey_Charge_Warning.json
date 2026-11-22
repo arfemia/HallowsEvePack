@@ -1,0 +1,19 @@
+{
+  "$Comment": "The warning before the Great Turkey charges: the Gobliterator's warning marker on the ground just ahead of it. Harvest_Feast_Template_Great_Turkey (NPC/Roles/Harvest_Feast/Templates) puts it on the Great Turkey as its wind-up starts, while it puffs up and gobbles. It carries no model effect, so the souls' pale sheen (Harvest_Feast_Turkey_Soul_Glow) stays on it throughout. Duration covers the wind-up and the first moments of the charge; Scale and PositionOffset place the marker (Z ahead, Y down from its origin).",
+  "ApplicationEffects": {
+    "Particles": [
+      {
+        "SystemId": "Gobliterator_Saw_Charge_Warning",
+        "Scale": 2.5,
+        "TargetEntityPart": "Entity",
+        "TargetNodeName": "Origin",
+        "PositionOffset": {"Y": -1, "Z": 1}
+      }
+    ]
+  },
+  "OverlapBehavior": "Overwrite",
+  "Infinite": false,
+  "Debuff": false,
+  "Duration": 2,
+  "RemovalBehavior": "Duration"
+}

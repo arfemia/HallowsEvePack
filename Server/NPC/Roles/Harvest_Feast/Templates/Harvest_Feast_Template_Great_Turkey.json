@@ -1,0 +1,554 @@
+{
+  "$Comment": [
+    "The Great Turkey, the template both its roles are Variants of (Harvest_Feast_Great_Turkey and _HM).",
+    "It is the Headless Horseman's foot template (Hallows_Eve_Template_Horseman_Foot, itself the game's",
+    "Gobliterator boss template cut down to its combat-evaluator core and its telegraphed dash) redone",
+    "for a turkey: the turkey's own animations, no flame, and a daze after every charge that misses.",
+    "",
+    "The combat evaluator (_CombatConfig on each Variant) picks its actions and drives the Combat",
+    "sub-states. .Default aims, keeps DesiredAttackDistanceRange and fires the picked ability: its peck,",
+    "between charges. .Charge is its charge: half a second locked on at 10 degrees, then",
+    "CombatChargeWindupTime it cannot be knocked out of, in which it puffs up and gobbles (its model's",
+    "Alerted set), kicks up dust and shows a warning marker on the ground ahead of it",
+    "(Harvest_Feast_Great_Turkey_Charge_Warning); then it runs CombatChargeSpeed blocks a second for",
+    "CombatChargeDistance, straight through where its target stood. A player it runs into takes",
+    "CombatChargeHitEntityInteraction once, and it takes a second to turn back (.ChargeEnd); its own",
+    "souls are never hit. A charge that misses, or that any block stops, leaves it dazed for",
+    "CombatStunTime (.Stunned, with Harvest_Feast_Great_Turkey_Dazed, under which it takes more",
+    "physical damage): that is the players' opening. No block is ever broken. The motion's own",
+    "collision interactions are left empty so a hit lands once, from the ChargeEntityCollisions sensor.",
+    "",
+    ".Return is how its fight holds it to its arena. When it strays past the fight's LeashRange, the",
+    "fight's script (Macro_Orbis_Boss_Hold) notifies it with Orbis_Boss_Leash, and unless it is",
+    "mid-charge or dazed it walks back toward the fight until it is within ReturnRange of it (or",
+    "ReturnTimeLimit runs out), then fights again. Its health is untouched; only its fight's reset",
+    "restores it.",
+    "",
+    "Every parameter's default is the normal Great Turkey's; a Variant overrides what differs. Any key",
+    "a Variant names that this file does not declare makes the game refuse the whole role."
+  ],
+  "Type": "Abstract",
+  "Appearance": { "Compute": "Appearance" },
+  "AttitudeGroup": { "Compute": "AttitudeGroup" },
+  "BreathesInWater": true,
+  "BusyStates": [ "Combat", "Alerted" ],
+  "DeathAnimationTime": 1.5,
+  "DeathParticles": "Effect_Death_Medium",
+  "DefaultNPCAttitude": "Ignore",
+  "DefaultPlayerAttitude": { "Compute": "DefaultPlayerAttitude" },
+  "DisableDamageGroups": { "Compute": "DisableDamageGroups" },
+  "DropDeathItemsInstantly": false,
+  "DropList": "Empty",
+  "Invulnerable": { "Compute": "Invulnerable" },
+  "IsMemory": false,
+  "KnockbackScale": 0.0,
+  "MaxHealth": { "Compute": "MaxHealth" },
+  "NameTranslationKey": { "Compute": "NameTranslationKey" },
+  "SeparationDistance": 2,
+  "SeparationDistanceTarget": 0.5,
+  "SeparationFarRadiusTarget": 7,
+  "SeparationNearRadiusTarget": 2,
+  "SeparationWeight": 1,
+  "StartState": "Idle",
+  "Instructions": [
+    {
+      "$Comment": "No health regeneration, from the moment it appears.",
+      "Continue": true,
+      "Sensor": { "Type": "Any", "Once": true },
+      "Actions": [
+        { "Type": "SetHealthRegen", "EnableRegen": false }
+      ]
+    },
+    {
+      "$Comment": "Idle: stand still and watch for hostiles.",
+      "Sensor": { "Type": "State", "State": "Idle" },
+      "Instructions": [
+        {
+          "$Comment": "If hit, react and engage at once.",
+          "Reference": "Component_Instruction_Damage_Check",
+          "Modify": {
+            "_ExportStates": [ "Combat", "Idle" ],
+            "AlertedRange": { "Compute": "AlertedRange" }
+          }
+        },
+        {
+          "$Comment": "A hostile within detection range: become Alerted.",
+          "Sensor": {
+            "Reference": "Component_Sensor_Standard_Detection",
+            "Modify": {
+              "ViewRange": { "Compute": "ViewRange" },
+              "ViewSector": { "Compute": "ViewSector" },
+              "HearingRange": { "Compute": "HearingRange" },
+              "AbsoluteDetectionRange": { "Compute": "AbsoluteDetectionRange" },
+              "ThroughWalls": false,
+              "Attitudes": [ "Hostile" ]
+            }
+          },
+          "Actions": [
+            { "Type": "State", "State": "Alerted" }
+          ]
+        }
+      ]
+    },
+    {
+      "$Comment": "Alerted: play the alerted animation once, watch the target, then Combat.Default after AlertedTime.",
+      "Sensor": { "Type": "State", "State": "Alerted" },
+      "Instructions": [
+        {
+          "Continue": true,
+          "Sensor": { "Type": "Any", "Once": true },
+          "Actions": [
+            { "Type": "PlayAnimation", "Slot": "Status", "Animation": "Alerted" }
+          ]
+        },
+        {
+          "Continue": true,
+          "Sensor": {
+            "Type": "Target",
+            "Range": { "Compute": "AlertedRange" },
+            "Filters": [ { "Type": "LineOfSight" } ]
+          },
+          "HeadMotion": { "Type": "Watch" }
+        },
+        {
+          "$Comment": "Hit while Alerted: straight to combat.",
+          "Sensor": { "Type": "Damage", "Combat": true },
+          "Actions": [
+            { "Type": "AddToHostileTargetMemory" },
+            { "Type": "State", "ClearHeadMotion": false, "ClearBodyMotion": false, "State": "Combat.Default" }
+          ]
+        },
+        {
+          "Sensor": { "Type": "Target", "Range": { "Compute": "AlertedRange" } },
+          "ActionsBlocking": true,
+          "Actions": [
+            { "Type": "Timeout", "Delay": { "Compute": "AlertedTime" } },
+            { "Type": "State", "ClearHeadMotion": false, "ClearBodyMotion": false, "State": "Combat.Default" }
+          ]
+        },
+        {
+          "$Comment": "Lost the target while Alerted: back to Idle.",
+          "Actions": [
+            { "Type": "State", "State": "Idle" }
+          ]
+        }
+      ]
+    },
+    {
+      "$Comment": "Combat: the combat evaluator picks actions and drives these sub-states.",
+      "Sensor": { "Type": "State", "State": "Combat" },
+      "Instructions": [
+        {
+          "$Comment": "Called back: its fight's script notifies it with Orbis_Boss_Leash while it is past the fight's LeashRange, sending the fight's own entity. Unless it is mid-charge or dazed, it notes where the fight stands and turns back. The message is only read here, so one that comes while it is already returning is left to lapse.",
+          "Sensor": {
+            "Type": "And",
+            "Sensors": [
+              { "Type": "Not", "Sensor": { "Type": "State", "State": ".Return" } },
+              { "Type": "Not", "Sensor": { "Type": "State", "IgnoreMissingSetState": true, "State": ".Charge" } },
+              { "Type": "Not", "Sensor": { "Type": "State", "IgnoreMissingSetState": true, "State": ".Stunned" } },
+              { "Type": "Beacon", "Message": "Orbis_Boss_Leash", "Range": 100 }
+            ]
+          },
+          "Actions": [
+            { "Type": "StorePosition", "Slot": "Harvest_Feast_Great_Turkey_Fight" },
+            { "Type": "TimerStart", "Name": "Harvest_Feast_Great_Turkey_Return", "StartValueRange": { "Compute": "ReturnTimeLimit" }, "RestartValueRange": { "Compute": "ReturnTimeLimit" } },
+            { "Type": "TimerRestart", "Name": "Harvest_Feast_Great_Turkey_Return" },
+            { "Type": "State", "State": ".Return" }
+          ]
+        },
+        {
+          "$Comment": "Return: it walks back toward its fight until it is within ReturnRange of it, or ReturnTimeLimit runs out, then fights again from there. It pecks no one on the way.",
+          "Sensor": { "Type": "State", "State": ".Return" },
+          "Instructions": [
+            {
+              "Sensor": {
+                "Type": "Or",
+                "Sensors": [
+                  { "Type": "ReadPosition", "Slot": "Harvest_Feast_Great_Turkey_Fight", "Range": { "Compute": "ReturnRange" } },
+                  { "Type": "Timer", "Name": "Harvest_Feast_Great_Turkey_Return", "State": "Stopped" }
+                ]
+              },
+              "Actions": [
+                { "Type": "State", "State": ".Default" }
+              ]
+            },
+            {
+              "Sensor": { "Type": "ReadPosition", "Slot": "Harvest_Feast_Great_Turkey_Fight", "Range": 200 },
+              "BodyMotion": {
+                "Type": "Seek",
+                "SlowDownDistance": 1,
+                "StopDistance": 0.5,
+                "RelativeSpeed": { "Compute": "ReturnSpeed" },
+                "UsePathfinder": true
+              }
+            },
+            {
+              "Actions": [
+                { "Type": "State", "State": ".Default" }
+              ]
+            }
+          ]
+        },
+        {
+          "Sensor": {
+            "Type": "Or",
+            "Sensors": [
+              {
+                "Reference": "Component_Sensor_Standard_Detection",
+                "Modify": {
+                  "ViewRange": { "Compute": "ViewRange" },
+                  "ViewSector": { "Compute": "ViewSector" },
+                  "HearingRange": { "Compute": "HearingRange" },
+                  "AbsoluteDetectionRange": { "Compute": "AbsoluteDetectionRange" },
+                  "ThroughWalls": false,
+                  "Attitudes": [ "Hostile" ]
+                }
+              },
+              { "Type": "HasHostileTargetMemory" }
+            ]
+          },
+          "Instructions": [
+            {
+              "$Comment": "Copy the evaluator's picked target into the LockedTarget slot.",
+              "Continue": true,
+              "Sensor": { "Type": "Target", "TargetSlot": "CAETargetSlot" },
+              "Actions": [
+                { "Type": "SetMarkedTarget" }
+              ]
+            },
+            {
+              "Continue": true,
+              "Sensor": { "Type": "Damage", "Combat": true },
+              "Actions": [
+                { "Type": "AddToHostileTargetMemory" }
+              ]
+            },
+            {
+              "$Comment": "Default sub-state: aim, keep the attack distance, fire the picked ability.",
+              "TreeMode": true,
+              "Sensor": { "Type": "State", "State": ".Default" },
+              "Instructions": [
+                {
+                  "Sensor": { "Type": "CombatActionEvaluator", "TargetInRange": true },
+                  "HeadMotion": { "Type": "Aim", "HitProbability": 1 },
+                  "BodyMotion": {
+                    "Type": "MaintainDistance",
+                    "DesiredDistanceRange": { "Compute": "DesiredAttackDistanceRange" },
+                    "MoveThreshold": 0.2,
+                    "RelativeForwardsSpeed": { "Compute": "CombatMovingRelativeSpeed" },
+                    "RelativeBackwardsSpeed": { "Compute": "CombatBackwardsRelativeSpeed" }
+                  },
+                  "Actions": [
+                    { "Type": "CombatAbility" }
+                  ]
+                }
+              ]
+            },
+            {
+              "$Comment": "Stunned: its charge missed or a block stopped it. It stands dazed for CombatStunTime, open to physical hits.",
+              "Sensor": { "Type": "State", "IgnoreMissingSetState": true, "State": ".Stunned" },
+              "BodyMotion": { "Type": "Nothing" },
+              "ActionsBlocking": true,
+              "Actions": [
+                { "Type": "PlayAnimation", "Animation": "Hurt", "Slot": "Action" },
+                { "Type": "ApplyEntityEffect", "EntityEffect": "Harvest_Feast_Great_Turkey_Dazed", "Once": true, "UseTarget": false },
+                { "Type": "Timeout", "Delay": { "Compute": "CombatStunTime" } },
+                { "Type": "PlayAnimation", "Slot": "Action" },
+                { "Type": "State", "State": ".Default" }
+              ]
+            },
+            {
+              "$Comment": "ChargeEnd: a second to turn back after running into a player.",
+              "Sensor": { "Type": "State", "IgnoreMissingSetState": true, "State": ".ChargeEnd" },
+              "Instructions": [
+                {
+                  "Continue": true,
+                  "Sensor": { "Type": "Target" },
+                  "HeadMotion": { "Type": "Aim" }
+                },
+                {
+                  "ActionsBlocking": true,
+                  "Actions": [
+                    { "Type": "Timeout", "Delay": [ 1, 1 ] },
+                    { "Type": "State", "State": ".Default" }
+                  ]
+                }
+              ]
+            },
+            {
+              "$Comment": "Charge: its telegraphed charge at the target.",
+              "Sensor": { "Type": "State", "IgnoreMissingSetState": true, "State": ".Charge" },
+              "Instructions": [
+                {
+                  "Sensor": {
+                    "Type": "Or",
+                    "Sensors": [
+                      { "Type": "CombatActionEvaluator", "TargetInRange": true },
+                      { "Type": "CombatActionEvaluator", "TargetInRange": false }
+                    ]
+                  },
+                  "Instructions": [
+                    {
+                      "Continue": true,
+                      "Sensor": { "Type": "Target", "Range": { "Compute": "CombatChargeTargetDistance" } },
+                      "BodyMotion": {
+                        "Type": "Charge",
+                        "ClearOnceOnStateChange": true,
+                        "RelativeTurnSpeed": 1,
+                        "LockedOnToleranceAngle": 10,
+                        "LockedOnDurationRange": [ 0.5, 0.5 ],
+                        "WindingUpDurationRange": { "Compute": "CombatChargeWindupTime" },
+                        "PostChargeDurationRange": [ 0, 0 ],
+                        "WindingUpUninterruptable": true,
+                        "WindingUpRelativeTurnSpeed": 1,
+                        "ChargeRelativeSpeed": 0,
+                        "ChargeDistanceRange": { "Compute": "CombatChargeDistance" },
+                        "ChargeAbsoluteSpeed": { "Compute": "CombatChargeSpeed" },
+                        "IgnoredBlockSetTriggers": false,
+                        "EntityStopsCharge": false,
+                        "KnockbackThreshold": 1000000,
+                        "ClimbSlope": 2,
+                        "DropSlope": 2,
+                        "HorizontalSkipGapWidth": 2.5,
+                        "NPCCollisionInteraction": "",
+                        "PlayerCollisionInteraction": ""
+                      },
+                      "HeadMotion": { "Type": "Aim", "RelativeTurnSpeed": 0.5 }
+                    },
+                    {
+                      "Sensor": { "Type": "ChargeState", "States": [ "LostTarget" ] }
+                    },
+                    {
+                      "$Comment": "Aiming: back to .Default if no lock comes within a second.",
+                      "Sensor": { "Type": "ChargeState", "States": [ "Aiming" ] },
+                      "ActionsBlocking": true,
+                      "Actions": [
+                        { "Type": "Timeout", "Delay": [ 1, 1 ] },
+                        { "Type": "State", "State": ".Default" }
+                      ]
+                    },
+                    {
+                      "$Comment": "WindingUp: it puffs up and gobbles, kicks up dust and shows the warning marker, once.",
+                      "Sensor": { "Type": "ChargeState", "States": [ "WindingUp" ] },
+                      "Instructions": [
+                        {
+                          "Sensor": { "Type": "Any", "Once": true },
+                          "Actions": [
+                            { "Type": "PlayAnimation", "Animation": "Alerted", "Slot": "Action" },
+                            { "Type": "SpawnParticles", "ParticleSystem": "Goblin_Feastmaster_StampedePrepare" },
+                            { "Type": "ApplyEntityEffect", "UseTarget": false, "EntityEffect": "Harvest_Feast_Great_Turkey_Charge_Warning" }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "$Comment": "Charging: it lets the wind-up go so its run shows, and kicks up dust, once.",
+                      "Continue": true,
+                      "Sensor": { "Type": "ChargeState", "Once": true, "States": [ "Charging" ] },
+                      "Actions": [
+                        { "Type": "PlayAnimation", "Slot": "Action" },
+                        { "Type": "SpawnParticles", "ParticleSystem": "Goblin_Feastmaster_Stampede" }
+                      ]
+                    },
+                    {
+                      "$Comment": "Obstructed: a block stopped it, so it is dazed.",
+                      "Sensor": { "Type": "ChargeState", "Once": true, "States": [ "Obstructed" ] },
+                      "Actions": [
+                        { "Type": "State", "State": ".Stunned" }
+                      ]
+                    },
+                    {
+                      "$Comment": "Ran into a player: the hit, once, and the charge ends.",
+                      "Continue": true,
+                      "Sensor": { "Type": "ChargeEntityCollisions", "GetNPCs": false, "GetPlayers": true },
+                      "Actions": [
+                        { "Type": "EntityHitInteraction", "Interaction": { "Compute": "CombatChargeHitEntityInteraction" } },
+                        { "Type": "State", "State": ".ChargeEnd" }
+                      ]
+                    },
+                    {
+                      "$Comment": "Missed: it ran its full distance into nothing, so it is dazed.",
+                      "Sensor": { "Type": "ChargeState", "Once": true, "States": [ "Finished" ] },
+                      "Actions": [
+                        { "Type": "State", "State": ".Stunned" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "$Comment": "No evaluator target: clear the wind-up and return to .Default.",
+                  "Actions": [
+                    { "Type": "PlayAnimation", "Slot": "Action" },
+                    { "Type": "State", "State": ".Default" }
+                  ]
+                }
+              ]
+            },
+            {
+              "$Comment": "Chase to close distance. Exit slots fall back to Idle.",
+              "Reference": "Component_Instruction_Intelligent_Chase",
+              "Modify": {
+                "_ExportStates": [ "Idle", "Idle", "Idle" ],
+                "ViewRange": { "Compute": "AlertedRange" },
+                "HearingRange": { "Compute": "HearingRange" },
+                "RelativeSpeed": { "Compute": "ChaseRelativeSpeed" }
+              }
+            }
+          ]
+        },
+        {
+          "$Comment": "Fallback to Idle.",
+          "Actions": [
+            { "Type": "State", "State": "Idle" }
+          ]
+        }
+      ]
+    }
+  ],
+  "Parameters": {
+    "Appearance": {
+      "Value": "Harvest_Feast_Great_Turkey",
+      "Description": "Model to be used. It must carry the Alerted and Hurt animation sets, as the game's Turkey does."
+    },
+    "ViewRange": {
+      "Value": 40,
+      "Description": "The range from which the target will be seen. If zero, sight is disabled."
+    },
+    "ViewSector": {
+      "Value": 360,
+      "Description": "The view sector within which the target needs to be to be seen."
+    },
+    "HearingRange": {
+      "Value": 20,
+      "Description": "The range from which the target will be heard. If zero, hearing is disabled."
+    },
+    "AbsoluteDetectionRange": {
+      "Value": 4,
+      "Description": "The range at which a target is always detected. If zero, absolute detection is disabled."
+    },
+    "AlertedRange": {
+      "Value": 40,
+      "Description": "The range within which a player can be seen or sensed once it is alerted."
+    },
+    "AlertedTime": {
+      "Value": [ 0.5, 1 ],
+      "Description": "How long it waits in the Alerted state before combat."
+    },
+    "MaxSpeed": {
+      "Value": 7,
+      "Description": "Maximum walking speed."
+    },
+    "RunThreshold": {
+      "Value": 0.55,
+      "Description": "Relative speed at which the run animation is used. 1 disables run animations."
+    },
+    "MaxHealth": {
+      "Value": 900,
+      "Description": "Max health for a player alone; its fight adds a health step per player beyond the first."
+    },
+    "DesiredAttackDistanceRange": {
+      "Value": [ 2.5, 2.5 ],
+      "Description": "Distance it keeps from its target while pecking in .Default."
+    },
+    "ChaseRelativeSpeed": {
+      "Value": 1,
+      "Description": "Relative chasing speed when pursuing a target out of reach."
+    },
+    "CombatMovingRelativeSpeed": {
+      "Value": 0.6,
+      "Description": "Relative speed while moving to keep the attack distance."
+    },
+    "CombatBackwardsRelativeSpeed": {
+      "Value": 0.4,
+      "Description": "Relative speed when backing away from the target."
+    },
+    "AttitudeGroup": {
+      "Value": "Predators",
+      "Description": "Attitude group."
+    },
+    "DefaultPlayerAttitude": {
+      "Value": "Hostile",
+      "Description": "Default attitude towards players."
+    },
+    "DisableDamageGroups": {
+      "Value": [ "Self" ],
+      "TypeHint": "String",
+      "Description": "Groups it takes no damage from."
+    },
+    "Invulnerable": {
+      "Value": false,
+      "Description": "Whether it starts invulnerable. Its fight's script sets and clears invulnerability itself."
+    },
+    "NameTranslationKey": {
+      "Value": "npcs.Harvest_Feast_Great_Turkey.name",
+      "Description": "Translation key for its display name."
+    },
+    "CombatChargeTargetDistance": {
+      "Value": 30,
+      "Description": "The furthest its target may be for a charge to keep going.",
+      "TypeHint": "Double"
+    },
+    "CombatChargeWindupTime": {
+      "Value": [ 1.2, 1.2 ],
+      "Description": "Seconds it puffs up and gobbles before it runs: the players' warning."
+    },
+    "CombatChargeDistance": {
+      "Value": [ 16, 20 ],
+      "Description": "How far each charge runs, in blocks. Keep it past the evaluator's Charge range so it runs through where its target stood."
+    },
+    "CombatChargeSpeed": {
+      "Value": 16,
+      "Description": "How fast it charges, in blocks a second.",
+      "TypeHint": "Double"
+    },
+    "CombatChargeHitEntityInteraction": {
+      "Value": "Root_NPC_Skeleton_Burnt_Praetorian_Charge_Hit",
+      "Description": "The interaction a player it runs into takes: the game's Burnt Praetorian charge hit, 30 Physical before armour and a hard shove back.",
+      "TypeHint": "String"
+    },
+    "CombatStunTime": {
+      "Value": [ 2, 2 ],
+      "Description": "Seconds it stands dazed after a charge that misses or that a block stops. Keep Harvest_Feast_Great_Turkey_Dazed's Duration the same."
+    },
+    "ReturnRange": {
+      "Value": 50,
+      "Description": "How close to its fight's entity it walks back, once its fight calls it back, before it fights again. Keep it inside the fight's LeashRange."
+    },
+    "ReturnSpeed": {
+      "Value": 1,
+      "Description": "Its walking speed on the way back, relative to MaxSpeed."
+    },
+    "ReturnTimeLimit": {
+      "Value": [ 5, 5 ],
+      "Description": "Seconds the walk back may take before it fights again from wherever it is."
+    }
+  },
+  "StateTransitions": [
+    {
+      "$Comment": "Clear the status animation when leaving Alerted.",
+      "States": [ { "To": [], "From": [ "Alerted" ] } ],
+      "Actions": [
+        { "Type": "PlayAnimation", "Slot": "Status" }
+      ]
+    },
+    {
+      "$Comment": "Release the target and reset instructions when entering Idle.",
+      "States": [ { "To": [ "Idle" ], "From": [] } ],
+      "Actions": [
+        { "Type": "ReleaseTarget" },
+        { "Type": "ResetInstructions" }
+      ]
+    }
+  ],
+  "MotionControllerList": [
+    {
+      "Type": "Walk",
+      "MaxWalkSpeed": { "Compute": "MaxSpeed" },
+      "Gravity": 10,
+      "RunThreshold": { "Compute": "RunThreshold" },
+      "MaxFallSpeed": 15,
+      "MaxRotationSpeed": 360,
+      "Acceleration": 10
+    }
+  ]
+}

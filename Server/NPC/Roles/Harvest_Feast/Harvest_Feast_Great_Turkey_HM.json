@@ -1,62 +1,11 @@
 {
-  "$Comment": "The Great Turkey on the hard way in, the form its hard fight (EncounterManager/Harvest_Feast/Harvest_Feast_Great_Turkey_Encounter_Hard.json) raises from Harvest_Feast_Great_Turkey_Hard_Marker once the waves of hard Turkey Souls are down: Harvest_Feast_Great_Turkey written out again, as the game writes its own hard bosses, with more health, the hard look (Models/Harvest_Feast/NPC/Harvest_Feast_Great_Turkey_HM.json, the same bird burning a hot orange) and the hard name, and the Harvest_Feast_Great_Turkey_Hard_Mode effect beside the souls' sheen in _CombatConfig, which makes every peck hit harder. Its fight adds one hard health step per player beyond the first (the Harvest_Feast_Great_Turkey_Hard_Scale_Health effects) and puts its fury on it at a fifth, on top of the hard mode, so MaxHealth here is its health for a player alone. It is in Harvest_Feast_Great_Turkey_Group, which both its fights bind and clear, and in no group Martha's favor counts. Melee_Damage's BaseDamage is one peck before armour and before the hard mode. Any key the template does not declare makes the game refuse the whole role.",
+  "$Comment": "The Great Turkey on the hard way in, the form its hard fight (EncounterManager/Harvest_Feast/Harvest_Feast_Great_Turkey_Encounter_Hard.json) raises from Harvest_Feast_Great_Turkey_Hard_Marker once the waves of hard Turkey Souls are down: Harvest_Feast_Great_Turkey written out again, as the game writes its own hard bosses, on the same Harvest_Feast_Template_Great_Turkey, with more health, the hard look (Models/Harvest_Feast/NPC/Harvest_Feast_Great_Turkey_HM.json, the same bird burning a hot orange), the hard name and its hard combat evaluator (CAE_Harvest_Feast_Great_Turkey_HM: faster pecks, a charge at most every 8 seconds instead of 12, and the Harvest_Feast_Great_Turkey_Hard_Mode effect beside the souls' sheen, which makes every peck and every charge hit 40% harder, so the charge's 30 Physical lands as 42 before armour). The charge is the normal one: half a second locked on, a 1.2-second puffed-up gobble with a warning marker on the ground, a 16 to 20 block run through where its target stood, and a 2-second daze (taking half again the physical damage) when it misses or a grave or a wall stops it. Tune how often it charges and each peck in its evaluator, and the charge's hit, wind-up, distance, speed and daze in the template's parameters. Its fight adds one hard health step per player beyond the first (the Harvest_Feast_Great_Turkey_Hard_Scale_Health effects) and puts its fury on it at a fifth, on top of the hard mode, so MaxHealth here is its health for a player alone. It is in Harvest_Feast_Great_Turkey_Group, which both its fights bind and clear, and in no group Martha's favor counts. Any key the template does not declare makes the game refuse the whole role.",
   "Type": "Variant",
-  "Reference": "Template_Predator",
+  "Reference": "Harvest_Feast_Template_Great_Turkey",
   "Modify": {
     "Appearance": "Harvest_Feast_Great_Turkey_HM",
-    "WanderRadius": 4,
-    "ViewRange": 40,
-    "ViewSector": 360,
-    "HearingRange": 20,
-    "AlertedRange": 40,
-    "AlertedTime": [0.5, 1],
-    "DropList": "Empty",
-    "MaxSpeed": 7,
-    "Attack": "Root_NPC_Attack_Melee",
-    "AttackDistance": 3.5,
-    "TargetRange": 3.5,
-    "AttackPauseRange": [1.2, 2],
-    "CombatBackOffAfterAttack": false,
-    "KnockbackScale": 0,
-    "AlwaysSleepAtNight": false,
     "MaxHealth": 1950,
-    "IsMemory": false,
-    "DeathParticles": "Effect_Death_Medium",
-    "LeashDistance": 45,
-    "HardLeashDistance": 60,
-    "LeashMinPlayerDistance": 15,
-    "LeashTimer": [10, 15],
-    "_CombatConfig": {
-      "EntityEffects": ["Harvest_Feast_Turkey_Soul_Glow", "Harvest_Feast_Great_Turkey_Hard_Mode"]
-    },
-    "_InteractionVars": {
-      "Melee_Start": {
-        "Interactions": [
-          {
-            "Parent": "NPC_Attack_Melee_Simple",
-            "Effects": {
-              "ItemPlayerAnimationsId": "Hound_Bleached_Default",
-              "ItemAnimationId": "Bite"
-            },
-            "RunTime": 0.333
-          }
-        ]
-      },
-      "Melee_Damage": {
-        "Interactions": [
-          {
-            "Parent": "NPC_Attack_Melee_Damage",
-            "DamageCalculator": {
-              "Type": "Absolute",
-              "BaseDamage": {
-                "Physical": 20
-              },
-              "RandomPercentageModifier": 0.1
-            }
-          }
-        ]
-      }
-    },
-    "NameTranslationKey": "npcs.Harvest_Feast_Great_Turkey_HM.name"
+    "NameTranslationKey": "npcs.Harvest_Feast_Great_Turkey_HM.name",
+    "_CombatConfig": "CAE_Harvest_Feast_Great_Turkey_HM"
   }
 }

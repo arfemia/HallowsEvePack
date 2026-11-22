@@ -1,5 +1,5 @@
 {
-  "$Comment": "The Great Turkey's fury, for the last part of its fight: its pecks hit 30% harder, it moves a fifth faster, and it glows red with the game's enrage sparks. Its fight's script puts it on the Great Turkey when it is worn down to a fifth of its health (Phase3Behavior in EncounterManager/Harvest_Feast/Harvest_Feast_Great_Turkey_Encounter.json), and it lasts until it falls. Amount is the extra damage as a fraction; HorizontalSpeedMultiplier its speed.",
+  "$Comment": "The Great Turkey's fury, for the last part of its fight: its pecks and its charge hit 30% harder, it moves a fifth faster, and it glows red with the game's enrage sparks. Its fight's script puts it on the Great Turkey when it is worn down to a fifth of its health (Phase3Behavior in EncounterManager/Harvest_Feast/Harvest_Feast_Great_Turkey_Encounter.json), and it lasts until it falls. Amount is the extra damage as a fraction; HorizontalSpeedMultiplier its speed.",
   "ApplicationEffects": {
     "EntityTopTint": "#ff5a3c",
     "EntityBottomTint": "#b3200f",

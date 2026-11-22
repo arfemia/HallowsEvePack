@@ -1,5 +1,5 @@
 {
-  "$Comment": "The ghostly sheen every creature of the Turkey Graveyard wears: the game's own Spectator model effect, a pale blue wash over the whole body, the one the game puts on a player watching as a spectator. The Turkey Souls and the Great Turkey wear it from the moment they rise, through their roles' _CombatConfig EntityEffects (Harvest_Feast_Turkey_Soul.json and Harvest_Feast_Great_Turkey.json under NPC/Roles/Harvest_Feast), and it lasts until they fall. It changes nothing but the look, shows no tile and needs no name. ModelVFXId is any model effect under the game's Entity/ModelVFX.",
+  "$Comment": "The ghostly sheen every creature of the Turkey Graveyard wears: the game's own Spectator model effect, a pale blue wash over the whole body, the one the game puts on a player watching as a spectator. The Turkey Souls and the Great Turkey wear it from the moment they rise, through the EntityEffects of the souls' _CombatConfig (Harvest_Feast_Turkey_Soul.json under NPC/Roles/Harvest_Feast) and of the Great Turkey's combat evaluators (CAE_Harvest_Feast_Great_Turkey and _HM under NPC/Balancing/Harvest_Feast), and it lasts until they fall. It changes nothing but the look, shows no tile and needs no name. ModelVFXId is any model effect under the game's Entity/ModelVFX.",
   "ApplicationEffects": {
     "ModelVFXId": "Spectator"
   },
