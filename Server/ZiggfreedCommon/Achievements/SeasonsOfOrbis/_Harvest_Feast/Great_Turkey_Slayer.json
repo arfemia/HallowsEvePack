@@ -2,9 +2,11 @@
   "$Comment": [
     "The top of the Great Turkey's ladder: beat it in the Turkey Graveyard many times, over as many feasts",
     "as it takes. ENCOUNTER_DEFEATED names the fight's encounter script, as Great_Turkey_Down.json does,",
-    "and every player the fight credits counts the win, so a party that sticks together climbs it together.",
-    "The description's number comes from the criterion's Amount through @amount, and the criterion's",
-    "TextKey words the step.",
+    "with MatchMode PREFIX, so a win on the hard way in (Harvest_Feast_Great_Turkey_Encounter_Hard) counts",
+    "too, and every player the fight credits counts the win, so a party that sticks together climbs it",
+    "together. Amount is sized to the feast's two and a half weeks, about two fifths of the Headless",
+    "Horseman's top rung. The description's number comes from the criterion's Amount through @amount, and",
+    "the criterion's TextKey words the step.",
     "",
     "Earned once and kept: no Parent and no full_table tag, like Great Turkey Hunter, the rung below it in",
     "the chain kills_harvest_feast_great_turkey. Rewards.Auto pays the title Harvest_Feast_Great_Turkey_Slayer",
@@ -27,8 +29,8 @@
     "defeat-great-turkey": {
       "Kind": "ENCOUNTER_DEFEATED",
       "Target": "Harvest_Feast_Great_Turkey_Encounter",
-      "MatchMode": "EXACT",
-      "Amount": 50,
+      "MatchMode": "PREFIX",
+      "Amount": 20,
       "TextKey": "objective.harvest_feast.defeat_great_turkeys"
     }
   },

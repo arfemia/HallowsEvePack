@@ -1,0 +1,10 @@
+{
+  "$Comment": "The Great Turkey's hard way in, carried by its hard form through its combat config's EntityEffects (NPC/Roles/Harvest_Feast/Harvest_Feast_Great_Turkey_HM.json), the way the Headless Horseman's hard forms carry Hallows_Eve_Horseman_Hard_Mode: every peck hits 40% harder. It adds to its fury (Harvest_Feast_Great_Turkey_Fury) in its last phase. The Turkey Souls at its side keep their own damage. Amount is the extra damage as a fraction.",
+  "OutgoingDamage": {
+    "Physical": [{"CalculationType": "Percent", "Amount": 0.4}]
+  },
+  "OverlapBehavior": "Ignore",
+  "Infinite": true,
+  "RemovalBehavior": "Infinite",
+  "Debuff": false
+}

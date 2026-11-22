@@ -1,0 +1,50 @@
+{
+  "$Comment": [
+    "What the Great Turkey's Boss Kill Claim on the hard way in (Rewards/Harvest_Feast/",
+    "Harvest_Feast_Great_Turkey_Chase_Hard) pays, on every hard win: Harvest_Feast_Great_Turkey_Chase.json's",
+    "rolls at better amounts and odds. Every roll is read on its own: the first two always pay, the last four",
+    "are chances on top.",
+    "",
+    "The first roll pays Harvest Coins and festival tokens through the Currency reward kind, the second two",
+    "pumpkin pies. Then a better chance at one of Martha's Turkey Pies, the same chance at a Wishbone back as",
+    "the normal Claim, the Great Turkey Mantle (Item/Items/Harvest_Feast/Harvest_Feast_Great_Turkey_Mantle.json)",
+    "at better than twice the normal odds and the Golden Turkey Trophy at three times them. The Wishbone stays",
+    "at the normal Claim's chance on purpose: the Claim is not scaled by share, so every player who fought it",
+    "rolls the Wishbone on its own, and a full party must spend more Wishbones than it wins back, or the hard",
+    "graveyard pays for its own way in. The Almanac's Boss Kill grid",
+    "(ZiggfreedCommon/Almanac/SeasonsOfOrbis/Harvest_Feast.json) lists what both tables pay, so change them",
+    "together. Favor with Martha is not here: favor rides a quest's or a contract's own Rewards, never a pay",
+    "table. Chance is a percent from 0 to 100. A companion mod adds rolls with a file naming this table in",
+    "ContributesTo."
+  ],
+  "Name": "Harvest_Feast_Great_Turkey_Chase_Hard",
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [
+          { "Kind": "Currency", "Params": { "Currency": "Harvest_Feast_Coins", "Amount": "15" } },
+          { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "2" } }
+        ]
+      }
+    },
+    {
+      "Grants": { "Items": [ { "Item": "Food_Pie_Pumpkin", "Count": 2 } ] }
+    },
+    {
+      "Chance": { "Base": 50.0 },
+      "Grants": { "Items": [ { "Item": "Harvest_Feast_Turkey_Pie", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 15.0 },
+      "Grants": { "Items": [ { "Item": "Harvest_Feast_Wishbone", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 15.0 },
+      "Grants": { "Items": [ { "Item": "Harvest_Feast_Great_Turkey_Mantle", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 6.0 },
+      "Grants": { "Items": [ { "Item": "Harvest_Feast_Golden_Turkey_Trophy", "Count": 1 } ] }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "$Comment": [
+    "The Turkey Graveyard's hard way in: the twin of Harvest_Feast_Turkey_Graveyard.json beside this file, with",
+    "the Great Turkey's hard fight in it. Every area of a copy pastes",
+    "Harvest_Feast/Harvest_Feast_Turkey_Graveyard_Hard.prefab.json, the same graveyard with the hard fight's",
+    "entity, its hard spawn marker and a way-out pad in its entrance room (tools/arena_markers.py writes it from",
+    "tools/arenas/Harvest_Feast_Turkey_Graveyard_Hard.json), so every fresh paste stages a fresh hard fight.",
+    "EntryOffset lands an arriving party one block up, standing on the entrance room's floor, and EntryYaw 180",
+    "turns them to face south, into the graveyard. IntroCamera plays the Horseman's graveyard intro",
+    "(Hallows_Eve_Graveyard_Intro), since every one of these graveyards shares one layout.",
+    "",
+    "Martha the Cook opens it from her graveyard screen (Dialogues/SeasonsOfOrbis/Harvest_Feast_Host.json), and",
+    "only for a player who has finished and collected her quest The Great Turkey",
+    "(harvest_feast_great_turkey) this feast: that option's condition is the hard way's only gate, since this",
+    "file names no quest, so no other line or press-F may open it (a partymate who follows their party into an area it already holds walks in, as on the normal way). Season keeps it closed outside Harvest",
+    "Feast. Share: one party to an area, up to five players, and four areas to a copy. Complete names the hard",
+    "fight, the script its prefab runs, so the run clears when the Great Turkey falls, and Rewards rolls",
+    "Harvest_Feast_Turkey_Graveyard_Clear_Hard for each member present as a Claim: full the first hard clear",
+    "each day, half on later ones, counted apart from the normal clears. InChest puts that Claim in the chest",
+    "the Great Turkey leaves where it fell, beside its own two, with ChestKey's line under the clear's banner.",
+    "Difficulty files its runs and their returns under Hard, apart from the normal graveyard's. Text names it",
+    "in the reader's language (harvestfeast.progression.lang), and its GoalKey is the line each player reads",
+    "as they arrive.",
+    "",
+    "EntryCost is the normal way's price, one Wishbone, taken from whoever opens an area for their party;",
+    "partymates who follow into that fight walk in free. Confirm is left out, so it is on: before anything is",
+    "spent, the player opening the area sees CommonLib's confirm screen with the hard graveyard's name and",
+    "description, the Wishbone, how many they hold and how many it takes. With none, the button is off and",
+    "the HintKey line says where Wishbones come from. Change Count to change the price, and Martha's hard",
+    "way-in label, which names it, with it."
+  ],
+  "Enabled": true,
+  "Share": {
+    "PartyLocked": true,
+    "MaxPlayers": 5,
+    "AreasPerCopy": 4
+  },
+  "Area": {
+    "Prefab": "Harvest_Feast/Harvest_Feast_Turkey_Graveyard_Hard.prefab.json",
+    "EntryOffset": {
+      "Y": 1
+    },
+    "EntryYaw": 180,
+    "IntroCamera": "Hallows_Eve_Graveyard_Intro"
+  },
+  "Complete": {
+    "Bosses": [ "Harvest_Feast_Great_Turkey_Encounter_Hard" ]
+  },
+  "Rewards": {
+    "Lootable": "Harvest_Feast_Turkey_Graveyard_Clear_Hard",
+    "Diminish": { "Steps": [1, 0.5], "Window": "Daily" },
+    "InChest": true
+  },
+  "EntryCost": {
+    "Items": [ { "Item": "Harvest_Feast_Wishbone", "Count": 1 } ],
+    "HintKey": "dungeon.harvest_feast_turkey_graveyard.cost_hint",
+    "ConfirmKey": "dungeon.harvest_feast_turkey_graveyard.confirm"
+  },
+  "Copy": {
+    "EmptyCloseSeconds": 60
+  },
+  "Difficulty": "Hard",
+  "Season": "Harvest_Feast",
+  "Text": {
+    "NameKey": "dungeon.harvest_feast_turkey_graveyard_hard.name",
+    "DescriptionKey": "dungeon.harvest_feast_turkey_graveyard_hard.description",
+    "GoalKey": "dungeon.harvest_feast_turkey_graveyard_hard.goal",
+    "ChestKey": "dungeon.harvest_feast_turkey_graveyard.chest"
+  }
+}

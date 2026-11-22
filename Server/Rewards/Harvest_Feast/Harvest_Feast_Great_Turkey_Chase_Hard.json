@@ -1,0 +1,8 @@
+{
+  "$Comment": "The Great Turkey's Boss Kill Claim on the hard way in: granted beside its hard daily Claim on every hard win, rolled from Harvest_Feast_Great_Turkey_Chase_Hard, whose first roll always pays something. Diminish pays every hard win in full (one step of 1 that repeats), since each run already cost a Wishbone. It is not scaled by share (ShareScaled false), so everyone who fought it rolls the same odds. It is counted under the hard fight's own script and this reward's own id, apart from the normal Boss Kill Claim. TitleKey titles its row on the Claims tab and in the chest (claim.harvest_feast_great_turkey_chase_hard in harvestfeast.progression.lang).",
+  "Type": "ZigClaim",
+  "Lootable": "Harvest_Feast_Great_Turkey_Chase_Hard",
+  "Diminish": { "Steps": [1], "Window": "Daily" },
+  "ShareScaled": false,
+  "TitleKey": "claim.harvest_feast_great_turkey_chase_hard"
+}

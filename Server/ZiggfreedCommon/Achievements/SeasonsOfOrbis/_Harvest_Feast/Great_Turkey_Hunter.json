@@ -1,9 +1,11 @@
 {
   "$Comment": [
     "Beat the Great Turkey in the Turkey Graveyard several times, over as many feasts as it takes.",
-    "ENCOUNTER_DEFEATED names the fight's encounter script, as Great_Turkey_Down.json does, and every",
-    "player the fight credits counts the win. The description's number comes from the criterion's Amount",
-    "through @amount, and the criterion's TextKey words the step.",
+    "ENCOUNTER_DEFEATED names the fight's encounter script, as Great_Turkey_Down.json does, with MatchMode",
+    "PREFIX, so a win on the hard way in (Harvest_Feast_Great_Turkey_Encounter_Hard) counts too, and every",
+    "player the fight credits counts the win. Amount is sized to the feast's two and a half weeks: a player",
+    "who goes in most days reaches it in their first feast. The description's number comes from the",
+    "criterion's Amount through @amount, and the criterion's TextKey words the step.",
     "",
     "Earned once and kept: no Parent, so no yearly copy, and wins add up from one feast to the next. It",
     "carries no full_table tag, so The Full Table never waits on it. The chain",
@@ -27,8 +29,8 @@
     "defeat-great-turkey": {
       "Kind": "ENCOUNTER_DEFEATED",
       "Target": "Harvest_Feast_Great_Turkey_Encounter",
-      "MatchMode": "EXACT",
-      "Amount": 10,
+      "MatchMode": "PREFIX",
+      "Amount": 5,
       "TextKey": "objective.harvest_feast.defeat_great_turkeys"
     }
   },

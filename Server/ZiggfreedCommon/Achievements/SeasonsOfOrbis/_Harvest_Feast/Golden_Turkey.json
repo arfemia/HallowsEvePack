@@ -1,0 +1,29 @@
+{
+  "$Comment": [
+    "Find the Golden Turkey Trophy (Item/Items/Harvest_Feast/Harvest_Feast_Golden_Turkey_Trophy.json), the",
+    "Great Turkey's rarest find: a small roll in its Boss Kill Claim on every win in the Turkey Graveyard,",
+    "rolled again in its daily Claim on the first win each day, three times as likely on the hard way in. LOOT_RECEIVED counts the trophy as a payout hands it over,",
+    "so it ticks the moment the Claim holding it is collected, from the chest where the Great Turkey fell or",
+    "from Claims; it names no Qualifier, so any payout that hands one over counts.",
+    "",
+    "Earned once and kept: no Parent, so no yearly copy, and no full_table tag, since luck decides it. It",
+    "pays nothing but its points: the trophy is the reward. The _Harvest_Feast folder makes the id",
+    "harvest_feast_golden_turkey."
+  ],
+  "Listing": {
+    "Category": "Seasons",
+    "Subcategory": "Harvest_Feast",
+    "SortOrder": 142,
+    "Icon": "Harvest_Feast_Golden_Turkey_Trophy"
+  },
+  "Scoring": { "Points": 25 },
+  "Criteria": {
+    "find-golden-turkey": {
+      "Kind": "LOOT_RECEIVED",
+      "Target": "Harvest_Feast_Golden_Turkey_Trophy",
+      "MatchMode": "EXACT",
+      "Amount": 1,
+      "TextKey": "objective.harvest_feast.find_golden_turkey"
+    }
+  }
+}

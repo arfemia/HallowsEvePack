@@ -2,13 +2,20 @@
   "$Comment": [
     "What the Great Turkey's Boss Kill Claim (Rewards/Harvest_Feast/Harvest_Feast_Great_Turkey_Chase) pays,",
     "on every win in the Turkey Graveyard. Every roll is read on its own: the first two always pay, the",
-    "last two are chances on top.",
+    "last four are chances on top.",
     "",
     "The first roll pays Harvest Coins, the feast's own currency that Martha's shelves take, and festival",
     "tokens, the currency every season shares, both through the Currency reward kind. Then a pumpkin pie",
     "every time, a chance at one of Martha's Turkey Pies, and a chance at a Wishbone, which gives back what",
-    "opening the graveyard costs. Favor with Martha is not here: favor rides a quest's or a contract's own",
-    "Rewards, never a pay table, and Martha already pays it for the Extra Turkeys that bought the Wishbone.",
+    "opening the graveyard costs. Then the two finds only the Great Turkey pays: the Great Turkey Mantle",
+    "(Item/Items/Harvest_Feast/Harvest_Feast_Great_Turkey_Mantle.json), the Harvest Set's chest piece the",
+    "shop never sells, and the Golden Turkey Trophy, a gold turkey to place as a block. The hard way in",
+    "(Harvest_Feast_Great_Turkey_Chase_Hard.json beside this file) pays more of everything and both finds at",
+    "better odds, and the Almanac's Boss Kill grid (ZiggfreedCommon/Almanac/SeasonsOfOrbis/Harvest_Feast.json)",
+    "lists what both pay, so change them together. HideInPreview on the trophy keeps it out of any list of",
+    "what this table pays (a reward paying it lists its contents on hover); it still rolls the same.",
+    "",
+    "Favor with Martha is not here: favor rides a quest's or a contract's own Rewards, never a pay table, and Martha already pays it for the Extra Turkeys that bought the Wishbone.",
     "The Boss Kill Claim is not scaled by share, so every player who fought it rolls the Wishbone on its",
     "own: keep that chance low enough that a full party spends more Wishbones than it wins back, or the",
     "graveyard pays for its own way in. Chance is a percent from 0 to 100. A companion mod adds rolls with",
@@ -34,6 +41,15 @@
     {
       "Chance": { "Base": 15.0 },
       "Grants": { "Items": [ { "Item": "Harvest_Feast_Wishbone", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 6.0 },
+      "Grants": { "Items": [ { "Item": "Harvest_Feast_Great_Turkey_Mantle", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 2.0 },
+      "HideInPreview": true,
+      "Grants": { "Items": [ { "Item": "Harvest_Feast_Golden_Turkey_Trophy", "Count": 1 } ] }
     }
   ]
 }

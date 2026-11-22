@@ -1,0 +1,45 @@
+{
+  "$Comment": [
+    "The binding row for the Great Turkey's hard fight (EncounterManager/Harvest_Feast/",
+    "Harvest_Feast_Great_Turkey_Encounter_Hard.json), the twin of the normal fight's row beside this file. It",
+    "names the fight with its hard name (NameKey, the hard Great Turkey's nameplate in npcs.lang, on the bar's",
+    "Records tab, the Claims it pays and every line that names it), binds the boss the library credits through",
+    "the script's Boss slot, and keeps the hard fight's records under a bucket of their own,",
+    "harvest_feast_great_turkey_hard, a boss of its own on Records' Bosses tab in the Seasonal group, split by",
+    "how many fought it (ByPartySize), so a hard win is never ranked against a normal one.",
+    "",
+    "Participation and Feedback are the normal row's, so a share of the hard daily Claim is earned the same way",
+    "and the same banner and toasts teach the fight: damage to the Great Turkey (DamageDealt, the server rule's",
+    "1.0), to the Turkey Souls at its side (DamageToAdds), damage taken (DamageTaken) and every second in the",
+    "fight (Presence), each times its weight. Change a weight in both rows together.",
+    "",
+    "Scale holds only Companion, as on the normal row: where MMO Mob Scaling runs, it scales the Great Turkey",
+    "with the level its souls read in the hard graveyard, health and pecks both, read once as the fight",
+    "begins. Write no other Scale leaf (its hard fight scales its health with the party itself) and no Loot",
+    "(its hard script pays its two hard Claims). Switch the row off with Enabled false, or from",
+    "mods/ziggfreedcommon/encounters.json under the key harvest_feast_great_turkey_encounter_hard."
+  ],
+  "EncounterAsset": "Harvest_Feast_Great_Turkey_Encounter_Hard",
+  "NameKey": "npcs.Harvest_Feast_Great_Turkey_HM.name",
+  "Subject": {
+    "TargetSlot": "Boss"
+  },
+  "Scale": {
+    "Companion": { "Health": true, "Damage": true }
+  },
+  "Participation": {
+    "DamageTaken": 0.5,
+    "Presence": 2.0,
+    "DamageToAdds": 2.5
+  },
+  "Leaderboard": {
+    "Bucket": "harvest_feast_great_turkey_hard",
+    "ByPartySize": true,
+    "Group": "Seasonal"
+  },
+  "Feedback": {
+    "Engaged": "Harvest_Feast_Great_Turkey_Engaged",
+    "Defeated": "Harvest_Feast_Great_Turkey_Defeated",
+    "Wiped": "Harvest_Feast_Great_Turkey_Wiped"
+  }
+}

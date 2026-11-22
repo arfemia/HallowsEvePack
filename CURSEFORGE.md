@@ -41,7 +41,8 @@ Each season brings a host to the Forgotten Temple with quests, a daily board, a 
 - The supper round comes back with it: Supper for Tomas, Supper for Elsie and Supper for Bram. Take each of them a plate of the leftovers. They worked all week and never sat down.
 - Three dailies: Daily Turkeys, Daily Wheat and Daily Roast. Shared Meal comes round every day too. Roast a vegetable on a Campfire and share it at her table.
 - Extra Turkeys, as often as you like. Hunt ten more turkeys, take your pay, and go again. Each one also pays a Wishbone.
-- The Turkey Graveyard, a party fight while the feast runs. Give Martha a Wishbone and she sends your party in: waves of Turkey Souls, then the Great Turkey, with a Boss Kill Claim every win and a bigger Claim on your first win each day.
+- The Turkey Graveyard, a party fight while the feast runs. Give Martha a Wishbone and she sends your party in: waves of Turkey Souls, then the Great Turkey, with a Boss Kill Claim every win and a bigger Claim on your first win each day. Beat it once for her quest and she opens a hard way in for the same Wishbone, with a tougher Great Turkey, more souls and better pay. There's a graveyard daily too.
+- The Great Turkey Mantle, a chest piece only the Great Turkey drops, on any win, more often on your first win each day and on the hard way in. It counts as the Harvest Set's chest, so wear it in place of the Tunic. Once in a long while the Great Turkey leaves a Golden Turkey Trophy instead.
 - The Guest List, once a feast. Invite three people to the feast, then tell Martha who's coming. Tomas the Miller, Elsie the Weaver and Bram the Shepherd stand around the temple, so there's always somebody to ask, and each has a tip for you on dough, spices or turkeys.
 - A daily job from each of Martha's helpers: flour for Tomas, spices for Elsie and eggs for Bram. Each pays Harvest Coins and Martha's favor.
 - The Feast Board posts a Field job and a Kitchen job every day: turkeys, wheat, pumpkins or carrots out in the fields, pies, roast meat, roast vegetables or spices in the kitchen. Get to know Martha and a second of each opens up.
@@ -51,7 +52,7 @@ Each season brings a host to the Forgotten Temple with quests, a daily board, a 
 - The Harvest Set: the Harvest Gloves, Hat, Trousers and Tunic, four wool pieces from Martha's shop that open as her favor grows. Each adds health and stamina and earns her favor 5% faster. Wear two for more health, and all four for more health again and another 10% favor.
 - Martha's Favor runs from Newcomer through Neighbor, Friend and Family to Head of the Table. Each rank pays a gift you collect on the achievements page, and Head of the Table adds a title. Past the top it keeps counting, and every 5,000 more favor packs you a Feast Basket of pies, coins and tokens.
 - Eight achievements each year, the last of them The Full Table and its title "of the Full Table", for the other seven in one feast: the supper round, ten daily jobs and one win over the Great Turkey among them.
-- More you keep for good, from one feast to the next: Martha's ranks, the Harvest Set, all three of her dishes, ten Extra Turkeys and your first Feast Basket. Great Turkey Hunter and Great Turkey Slayer, for 10 and 50 wins over the Great Turkey, are a ladder with the title "Great Turkey Slayer" at the top. Sit down to The Feast in three different years for Set of Plates and the title "Martha's Regular".
+- More you keep for good, from one feast to the next: Martha's ranks, the Harvest Set, all three of her dishes, ten Extra Turkeys and your first Feast Basket. Great Turkey Hunter and Great Turkey Slayer, for 5 and 20 wins over the Great Turkey either way in, are a ladder with the title "Great Turkey Slayer" at the top, and Golden Turkey asks for the trophy. Hard Graveyard is yours for a win on the hard way in. Sit down to The Feast in three different years for Set of Plates and the title "Martha's Regular".
 
 ## Every season
 
@@ -93,6 +94,7 @@ Without Tamework the Reins never drop, and the Almanac leaves them out.
 - To switch Hallow's Eve off, add `"Hallows_Eve": { "Enabled": false }` to `mods/ziggfreedcommon/calendar.json` and run `/zigcalendar reload`. Every event has its own switch there, and the same file can move an event's dates. Nothing anyone earned is lost.
 - The Festival Shelf can also open all year as a shop of its own: switch it on in `mods/ziggfreedcommon/shops.json`.
 - The Horseman's Graveyard and its hard ride are CommonLib dungeons, `Hallows_Eve_Graveyard` and `Hallows_Eve_Graveyard_Hard`: switch either off or change how many players share it in `mods/ziggfreedcommon/dungeons.json`. `/zigdungeon enter Hallows_Eve_Graveyard` takes you in alone while Hallow's Eve runs, without spending a candle.
+- The Turkey Graveyard and its hard way in are CommonLib dungeons too, `Harvest_Feast_Turkey_Graveyard` and `Harvest_Feast_Turkey_Graveyard_Hard`, with the same switches in the same file.
 
 ## Install
 

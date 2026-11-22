@@ -1,0 +1,15 @@
+{
+  "$Comment": "Adds 880 to the Great Turkey's maximum health on the hard way in while its hard fight has at least 4 players in it: the hard twin of Harvest_Feast_Great_Turkey_Scale_Health_P4. Its hard fight's script applies it as the Great Turkey rises, one step per player up to 5, then refills it (Harvest_Feast_Great_Turkey_Scale_TopUp), since a higher maximum leaves its current health where it was. It stays on the Great Turkey for the whole fight. Amount is the health one more player adds; change the four steps together.",
+  "RawStatModifiers": {
+    "Health": [
+      {
+        "Amount": 880,
+        "CalculationType": "Additive",
+        "Target": "Max"
+      }
+    ]
+  },
+  "OverlapBehavior": "Ignore",
+  "Infinite": true,
+  "RemovalBehavior": "Infinite"
+}
