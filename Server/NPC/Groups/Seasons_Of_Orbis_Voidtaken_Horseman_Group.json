@@ -1,6 +1,9 @@
 {
-  "$Comment": "The Voidtaken Horseman, the restless graveyard's boss wave. The run's script (Seasons_Of_Orbis_Restless_Graveyard_Encounter) names this group in its Groups, so a boss wave stands until he falls and he is cleared away with the rest when the run ends. Add a role id here if he gains another form.",
+  "$Comment": "The Voidtaken Horseman, the restless graveyard's boss wave. The run's script (Seasons_Of_Orbis_Restless_Graveyard_Encounter) names this group in its Groups, so a boss wave stands until he falls and he is cleared away with the rest when the run ends. ZigRank Boss counts him as a boss for CommonLib's crowd-control rule (a CommonLib without that rule ignores the tag): a talent's stun, root, slow or push never lands on him, an ability's own does, and a taunt always does. Add a role id here if he gains another form.",
   "IncludeRoles": [
     "Seasons_Of_Orbis_Voidtaken_Horseman_Mounted"
-  ]
+  ],
+  "Tags": {
+    "ZigRank": [ "Boss" ]
+  }
 }
