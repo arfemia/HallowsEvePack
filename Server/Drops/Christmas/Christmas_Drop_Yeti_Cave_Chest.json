@@ -1,0 +1,29 @@
+{
+  "$Comment": "What the red Christmas Packet at the back of the Yeti's den holds, rolled fresh into it each time a party's cave is pasted (tools/arenas/Christmas_Yeti_Cave.json names it on the packet): a bundle of snowballs every time, then each Choice below on its own when its Weight, its chance out of 100, comes up: a Christmas Present the Yeti took from Santa's sleigh, and a little Ice Essence. It holds no Yeti Bait on purpose: the packet refills every run, so bait here would make the way in pay for itself.",
+  "Container": {
+    "Type": "Multiple",
+    "Containers": [
+      {
+        "Type": "Choice",
+        "Weight": 100,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Christmas_Snowball", "QuantityMin": 8, "QuantityMax": 16 } }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 40,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Christmas_Present", "QuantityMin": 1, "QuantityMax": 1 } }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 30,
+        "Containers": [
+          { "Type": "Single", "Item": { "ItemId": "Ingredient_Ice_Essence", "QuantityMin": 1, "QuantityMax": 1 } }
+        ]
+      }
+    ]
+  }
+}

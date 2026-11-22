@@ -1,0 +1,34 @@
+{
+  "$Comment": [
+    "What clearing the Yeti Cave pays each player there at the end, beside the Yeti's own Claims: the",
+    "dungeon's Rewards (Dungeons/Christmas_Yeti_Cave.json) roll it into the chest where the Yeti fell, full",
+    "the first clear each day and half on later ones: every quantity halves, a leftover half paying by",
+    "chance. Every roll here always pays: Christmas Coins and festival tokens through the Currency reward",
+    "kind, Ice Essence (Count to CountMax an even pick), two Christmas Presents the Yeti had stashed, and",
+    "favor on Santa's Nice List through the Reputation reward kind. Mmo_Christmas_Yeti_Cave_Clear.json adds",
+    "Defense XP where MMO Skill Tree runs. A companion mod adds rolls with a file naming this table in",
+    "ContributesTo."
+  ],
+  "Name": "Christmas_Yeti_Cave_Clear",
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [
+          { "Kind": "Currency", "Params": { "Currency": "Christmas_Coins", "Amount": "20" } },
+          { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "2" } }
+        ]
+      }
+    },
+    {
+      "Grants": { "Items": [ { "Item": "Ingredient_Ice_Essence", "Count": 2, "CountMax": 3 } ] }
+    },
+    {
+      "Grants": { "Items": [ { "Item": "Christmas_Present", "Count": 2 } ] }
+    },
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 150 } } ]
+      }
+    }
+  ]
+}

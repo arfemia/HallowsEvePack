@@ -1,0 +1,4 @@
+{
+  "$Comment": "One snowball of the Yeti's volley, the id his fight's script drops at each player's feet as it lights the warning ring there (Macro_Christmas_Yeti_Phase, through the pack's Macro_Orbis_Boss_Volley). It runs Christmas_Yeti_Snowball_Drop.",
+  "Interactions": ["Christmas_Yeti_Snowball_Drop"]
+}

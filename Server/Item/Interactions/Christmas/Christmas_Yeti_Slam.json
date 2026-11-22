@@ -1,0 +1,88 @@
+{
+  "$Comment": "The Yeti's ring slam, every third attack of his chain (Root_Christmas_Yeti_Attack): the Headless Horseman's slam (the game's Feastmaster slam) with the Yeti's own arms. He roots himself and a warning ring (Feastmaster_Slam_Warning, Scale 3.4 to match the 5 block blast) lights on the ground around him for about a second, then he swings his arms down and every player within 5 blocks takes Physical damage and is thrown up and back in a burst of ice. Its one hit rule matches Player only, so his White Wolves are never hurt, and IgnoreOwner skips him. The first step's RunTime is the warning, the Selector's Range the blast radius in blocks: change both together, with the ring's Scale about Range less a third. BaseDamage and Knockback.Force set how hard it hits.",
+  "Type": "Simple",
+  "RunTime": 1.0,
+  "Effects": {
+    "WorldSoundEventId": "SFX_Goblin_Feastmaster_Slam_Whoosh",
+    "Particles": [
+      {
+        "SystemId": "Feastmaster_Slam_Warning",
+        "TargetEntityPart": "Entity",
+        "TargetNodeName": "Origin",
+        "DetachedFromModel": true,
+        "Scale": 3.4
+      }
+    ],
+    "MovementEffects": {
+      "DisableAll": true
+    }
+  },
+  "Next": {
+    "Type": "Simple",
+    "RunTime": 0.25,
+    "Effects": {
+      "ItemPlayerAnimationsId": "Yeti_Default",
+      "ItemAnimationId": "SwingRight",
+      "MovementEffects": {
+        "DisableAll": true
+      }
+    },
+    "Next": {
+      "Type": "Selector",
+      "RunTime": 0.083,
+      "Selector": {"Id": "AOECircle", "Range": 5},
+      "IgnoreOwner": true,
+      "Effects": {
+        "WorldSoundEventId": "SFX_Goblin_Feastmaster_Slam",
+        "Particles": [
+          {
+            "SystemId": "Goblin_Feastmaster_Slam",
+            "TargetEntityPart": "Entity",
+            "DetachedFromModel": true
+          },
+          {
+            "SystemId": "Ability_Ice_Explosion",
+            "TargetEntityPart": "Entity",
+            "DetachedFromModel": true
+          }
+        ]
+      },
+      "HitEntityRules": [
+        {
+          "Matchers": [{"Type": "Player"}],
+          "Next": {
+            "Interactions": [
+              {
+                "Parent": "DamageEntityParent",
+                "DamageCalculator": {
+                  "BaseDamage": {"Physical": 32},
+                  "RandomPercentageModifier": 0.1
+                },
+                "DamageEffects": {
+                  "Knockback": {
+                    "Type": "Force",
+                    "VelocityConfig": {
+                      "AirResistance": 0.97,
+                      "AirResistanceMax": 0.96,
+                      "GroundResistance": 0.94,
+                      "GroundResistanceMax": 0.3,
+                      "Threshold": 3.0,
+                      "Style": "Exp"
+                    },
+                    "Direction": {"X": 0, "Y": 1.0, "Z": -1},
+                    "Force": 14.0,
+                    "VelocityType": "Set"
+                  },
+                  "WorldSoundEventId": "SFX_Unarmed_Impact",
+                  "LocalSoundEventId": "SFX_Unarmed_Impact",
+                  "CameraEffect": "Impact_Strong"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "Next": {"Type": "Simple", "RunTime": 0.267}
+    }
+  }
+}

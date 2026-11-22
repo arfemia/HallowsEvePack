@@ -1,0 +1,11 @@
+{
+  "$Comment": "Drops one of the Yeti's snowballs onto the spot his fight marked (Christmas_Yeti_Snowball_Projectile falls from the cave's roof above it). His fight's script runs this at each player's feet as it lights the warning ring there. Lifetime is the longest the snowball can stay in the world, in seconds, so one whose burst never finished never lingers; keep it above the fall, which takes under two seconds.",
+  "Type": "Simple",
+  "RunTime": 0.1,
+  "Next": {
+    "Type": "Projectile",
+    "Config": "Christmas_Yeti_Snowball_Projectile",
+    "Lifetime": 6,
+    "RunTime": 2
+  }
+}

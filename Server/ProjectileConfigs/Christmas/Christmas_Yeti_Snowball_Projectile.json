@@ -1,0 +1,31 @@
+{
+  "$Comment": "One of the Yeti's snowballs, falling straight down onto a ring marked under a player (the Horseman's volley bomb and the game's falling stalactite do the same): it appears 10 blocks above the ring, pointed down, and drops at 7 blocks a second, so a player has about a second and a half to step off the ring. The den and the hall are 14 blocks high, so there it always starts under the roof; over the low entrance passage it starts in the rock and bursts there, out of a player's reach. It is drawn as a big lump of snow (its own model, Christmas_Yeti_Snowball), which changes nothing it hits. It bursts as Christmas_Yeti_Snowball_Burst (players only) on whatever it strikes.",
+  "Model": "Christmas_Yeti_Snowball",
+  "SpawnRotationOffset": {"Pitch": -90, "Roll": 0},
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 0,
+    "TerminalVelocityAir": 50,
+    "TerminalVelocityWater": 15,
+    "RotationMode": "VelocityDamped",
+    "Bounciness": 0.0,
+    "SticksVertically": true
+  },
+  "LaunchForce": 7,
+  "SpawnOffset": {"Z": 10},
+  "UseModelScale": true,
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        "Christmas_Yeti_Snowball_Burst",
+        {"Type": "RemoveEntity", "Entity": "User"}
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        "Christmas_Yeti_Snowball_Burst",
+        {"Type": "RemoveEntity", "Entity": "User"}
+      ]
+    }
+  }
+}

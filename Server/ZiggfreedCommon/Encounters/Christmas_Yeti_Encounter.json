@@ -1,0 +1,52 @@
+{
+  "$Comment": [
+    "The binding row for the Yeti's fight in the Yeti Cave (EncounterManager/Christmas/",
+    "Christmas_Yeti_Encounter.json): what the server owes for it, which the script never describes. It",
+    "names the fight (NameKey, the Yeti's nameplate in npcs.lang, on the bar's Records tab, the Claims it",
+    "pays and every line that names it), binds the boss the library credits through the script's Boss",
+    "slot, and keeps the fight's records under the bucket christmas_yeti, a boss on Records' Bosses tab in",
+    "the Seasonal group, split by how many fought him (ByPartySize). The achievement Yeti Hunter counts",
+    "this fight by its id (ENCOUNTER_DEFEATED), so a wild Yeti in the snow never counts.",
+    "",
+    "Participation decides each player's share of his daily Claim. A player's score is every point of",
+    "damage they deal the Yeti (DamageDealt, the server rule's 1.0), every point they deal the White",
+    "Wolves he calls (DamageToAdds), every point they take while in the fight (DamageTaken) and every",
+    "second they spend in it (Presence), each times its weight; their share is that score against the top",
+    "player's. The wolves weigh the most, so a player who keeps them off the rest of the party reads close",
+    "to the top. Raise DamageToAdds to pay that work more, raise Presence to flatten the shares, lower it",
+    "to reward damage more.",
+    "",
+    "Feedback names its own notices under FeedbackMoments/SeasonsOfOrbis: a banner as he rises, a toast",
+    "with each player's share when he falls, and a toast after a wipe. His script tells the members of",
+    "each of its phases itself, so PhaseChanged is left to the library and never shows.",
+    "",
+    "Scale holds only Companion, with Health and Damage on: where MMO Mob Scaling runs, it may scale the",
+    "Yeti's health and his own hits, read once as the fight begins; without Mob Scaling the switches do",
+    "nothing. Write no other Scale leaf: his fight scales his health with the party itself, one step per",
+    "player. No Loot either: his script pays his two Claims. Switch the row off with Enabled false, or",
+    "from mods/ziggfreedcommon/encounters.json under the key christmas_yeti_encounter."
+  ],
+  "EncounterAsset": "Christmas_Yeti_Encounter",
+  "NameKey": "npcs.Christmas_Yeti.name",
+  "Subject": {
+    "TargetSlot": "Boss"
+  },
+  "Scale": {
+    "Companion": { "Health": true, "Damage": true }
+  },
+  "Participation": {
+    "DamageTaken": 0.5,
+    "Presence": 2.0,
+    "DamageToAdds": 2.5
+  },
+  "Leaderboard": {
+    "Bucket": "christmas_yeti",
+    "ByPartySize": true,
+    "Group": "Seasonal"
+  },
+  "Feedback": {
+    "Engaged": "Christmas_Yeti_Engaged",
+    "Defeated": "Christmas_Yeti_Defeated",
+    "Wiped": "Christmas_Yeti_Wiped"
+  }
+}

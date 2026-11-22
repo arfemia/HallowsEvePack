@@ -1,0 +1,65 @@
+{
+  "$Comment": "The Yeti, the boss of the Yeti Cave: only his fight's script raises him (EncounterManager/Christmas/Christmas_Yeti_Encounter.json), from Christmas_Yeti_Marker as players come into the cave, and he never spawns in the world. Like the game's own Yeti he is a Variant of Template_Predator, and this Modify is the game Yeti's own with what a boss needs changed: his look (Models/Christmas/NPC/Christmas_Yeti.json, the game's Yeti drawn a little bigger), his health, his senses (he sees every player in the cave and turns on them at once), his attack, his leash, no fleeing, no sleep, no naps, no shove (KnockbackScale 0), no drops (his reward is the Claims his fight pays) and no memory entry. Attack is Root_Christmas_Yeti_Attack: the game Yeti's four swipes in turn with a ringed ground slam after every second one (Christmas_Yeti_Slam). Melee_Damage's BaseDamage is one swipe before armour; the slam sets its own. His fight adds one health step per player beyond the first (the Christmas_Yeti_Scale_Health effects), starts his snowball volleys at 60% and calls two White Wolves at 30%, so MaxHealth here is his health for a player alone. His template walks him home and heals him whenever his target stays out of his reach, so his cave has nowhere he cannot follow and LeashDistance covers all of it. He is in Christmas_Yeti_Group, which his fight binds and clears and which counts him as a boss, and in no group Santa's Nice List counts. Any key the template does not declare makes the game refuse the whole role.",
+  "Type": "Variant",
+  "Reference": "Template_Predator",
+  "Modify": {
+    "Appearance": "Christmas_Yeti",
+    "AttitudeGroup": "PredatorsBig",
+    "DropList": "Empty",
+    "MaxHealth": 1000,
+    "MaxSpeed": 6,
+    "WanderRadius": 4,
+    "ViewRange": 40,
+    "ViewSector": 360,
+    "HearingRange": 24,
+    "AbsoluteDetectionRange": 2,
+    "AlertedRange": 45,
+    "IsMemory": false,
+    "AlertedTime": [0.5, 1],
+    "MaintainDistanceWhileAlerted": false,
+    "ThreatenDelayRange": [2, 2],
+    "ThreatenAnimation": "",
+    "FleeIfNotThreatened": false,
+    "FleeRange": 11,
+    "HardLeashDistance": 60,
+    "LeashDistance": 45,
+    "LeashMinPlayerDistance": 15,
+    "LeashTimer": [10, 15],
+    "CombatBehaviorDistance": 6.5,
+    "CombatRelativeTurnSpeed": 1,
+    "CombatDirectWeight": 0,
+    "CombatStrafeWeight": 10,
+    "CombatBackOffAfterAttack": false,
+    "CombatStrafingFrequencyRange": [1, 2],
+    "CombatStrafingDurationRange": [2, 3],
+    "CombatMovingRelativeSpeed": 0.5,
+    "Attack": "Root_Christmas_Yeti_Attack",
+    "AttackPauseRange": [2, 3],
+    "AttackDistance": 3.5,
+    "TargetRange": 3.5,
+    "ChaseRelativeSpeed": 0.9,
+    "AlwaysSleepAtNight": false,
+    "DayFlavorAnimation": "",
+    "DayTimeNapWeight": 0,
+    "TimidDuringDay": false,
+    "KnockbackScale": 0,
+    "DeathParticles": "Effect_Death_Medium",
+    "_InteractionVars": {
+      "Melee_Damage": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "Type": "Absolute",
+              "BaseDamage": {
+                "Physical": 22
+              },
+              "RandomPercentageModifier": 0.1
+            }
+          }
+        ]
+      }
+    },
+    "NameTranslationKey": "npcs.Christmas_Yeti.name"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "$Comment": "The Yeti's snowball, as it falls on a ring marked under a player: the game's own rubble lump in its white calcite texture, drawn three times the size of a thrown rubble stone so a player looking up sees it coming. MinScale and MaxScale set the drawn size (its projectile's UseModelScale honours them). The engine scales the HitBox by the same factor, so the HitBox here is small and the snowball still strikes the ground and players where it lands; the burst and the warning ring are the projectile's and the fight's, untouched by this file.",
+  "Model": "Items/Rubble/Rubble.blockymodel",
+  "Texture": "Items/Rubble/Rubble_Textures/Calcite.png",
+  "EyeHeight": 0.05,
+  "HitBox": {"Max": {"X": 0.05, "Y": 0.05, "Z": 0.05}, "Min": {"X": -0.05, "Y": -0.05, "Z": -0.05}},
+  "MinScale": 3,
+  "MaxScale": 3,
+  "Trails": []
+}

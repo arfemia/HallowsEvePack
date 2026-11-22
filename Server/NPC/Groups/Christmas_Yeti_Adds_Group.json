@@ -1,0 +1,4 @@
+{
+  "$Comment": "The White Wolves the Yeti calls in his cave (the role Christmas_Yeti_Wolf). His fight's script clears this group when the fight resets, so a wipe never leaves a wolf behind for the next try. No reputation names this group, and Santa's Nice List counts none of it.",
+  "IncludeRoles": [ "Christmas_Yeti_Wolf" ]
+}

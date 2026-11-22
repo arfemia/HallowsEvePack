@@ -1,0 +1,161 @@
+{
+  "$Comment": [
+    "One of the Yeti's later phases: his fight's Phase2Behavior and Phase3Behavior slots both run this,",
+    "each forwarded its own settings (Christmas_Yeti_Encounter.json).",
+    "",
+    "The first moment the phase sees the Yeti bound in the Boss slot, it raises its flag (ArmedFlag, so",
+    "all of this happens once per try), puts Effect on him (none when Effect is empty), raises AddCount",
+    "of AddRole around the fight's entity (none when AddRole is empty), moves the music to MusicPhase and",
+    "shows every member Moment. Then, for as long as the phase lasts, every Interval seconds a warning",
+    "ring lights under each player within VolleyRange of the fight's entity and a snowball falls onto it",
+    "(the pack's shared Macro_Orbis_Boss_Volley dropping Interaction). The Yeti keeps fighting as his",
+    "role fights the whole time. The Volley names are the volley's own bookkeeping: give each phase its",
+    "own, and clear every flag here in Macro_Christmas_Yeti_Reset, so the next try plays them again."
+  ],
+  "Class": "Instruction",
+  "Type": "Component",
+  "Interface": "Hytale.Instruction.Encounter.Phase.Behavior",
+  "Parameters": {
+    "ArmedFlag": {
+      "Value": "Christmas_Yeti_P2_Armed",
+      "Description": "The flag that marks this phase's start as played, so it plays once per try."
+    },
+    "Effect": {
+      "Value": "",
+      "Description": "The effect put on the Yeti for the rest of the fight. Empty puts none."
+    },
+    "AddRole": {
+      "Value": "",
+      "Description": "The creature that rises as the phase starts. Empty raises none."
+    },
+    "AddCount": {
+      "Value": [ 2, 2 ],
+      "Description": "How many of AddRole rise, as a [min, max] range."
+    },
+    "MusicPhase": {
+      "Value": "Phase2",
+      "Description": "The music's phase as this phase starts: Phase2 or Phase3."
+    },
+    "Moment": {
+      "Value": "",
+      "Description": "The FeedbackMoment every member is shown as the phase starts. Empty shows nothing."
+    },
+    "Range": {
+      "Value": 80,
+      "Description": "How far from the script's entity the Yeti is looked for."
+    },
+    "Interval": {
+      "Value": [ 8, 8 ],
+      "Description": "Seconds between snowball volleys in this phase, as a [min, max] range rolled each time."
+    },
+    "Interaction": {
+      "Value": "Root_Christmas_Yeti_Snowball_Volley",
+      "Description": "The snowball each volley drops at a player's feet."
+    },
+    "VolleyRange": {
+      "Value": 31,
+      "Description": "How far from the script's entity a player may stand and still be a volley's target."
+    },
+    "VolleyArmedFlag": {
+      "Value": "Christmas_Yeti_P2_Volley_Armed",
+      "Description": "The volley's flag set once its interval has started. Give each phase its own name."
+    },
+    "VolleyIntervalTimer": {
+      "Value": "Christmas_Yeti_P2_Volley_Interval",
+      "Description": "The volley's timer holding the wait to the next volley. Give each phase its own name."
+    },
+    "VolleyFlag": {
+      "Value": "Christmas_Yeti_P2_Volley_Active",
+      "Description": "The volley's flag that starts one volley. Give each phase its own name."
+    },
+    "VolleyRunningFlag": {
+      "Value": "Christmas_Yeti_P2_Volley_Running",
+      "Description": "The volley's flag marking a volley in progress. Give each phase its own name."
+    },
+    "VolleyBurstTimer": {
+      "Value": "Christmas_Yeti_P2_Volley_Burst",
+      "Description": "The volley's timer holding a volley's length. Give each phase its own name."
+    },
+    "VolleyWaveTimer": {
+      "Value": "Christmas_Yeti_P2_Volley_Wave",
+      "Description": "The volley's timer for point waves, unused here. Give each phase its own name."
+    },
+    "VolleyPlayerTimer": {
+      "Value": "Christmas_Yeti_P2_Volley_Player",
+      "Description": "The volley's timer pacing the drops on players. Give each phase its own name."
+    }
+  },
+  "Content": {
+    "Continue": true,
+    "Sensor": {
+      "Type": "Any"
+    },
+    "Instructions": [
+      {
+        "$Comment": "As the phase starts: the effect, the adds, the music and the news, once.",
+        "Continue": true,
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            {
+              "Type": "Target",
+              "TargetSlot": "Boss",
+              "Range": { "Compute": "Range" }
+            },
+            {
+              "Type": "Flag",
+              "Name": { "Compute": "ArmedFlag" },
+              "Set": false
+            }
+          ]
+        },
+        "Actions": [
+          {
+            "Type": "SetFlag",
+            "Name": { "Compute": "ArmedFlag" }
+          },
+          {
+            "Enabled": { "Compute": "!isEmpty(Effect)" },
+            "Type": "ApplyEntityEffect",
+            "EntityEffect": { "Compute": "Effect" },
+            "UseTarget": true
+          },
+          {
+            "Type": "SetEncounterAudioState",
+            "AudioState": "AudioState_Goblin_Boss_Phase",
+            "Value": { "Compute": "MusicPhase" }
+          },
+          {
+            "Enabled": { "Compute": "!isEmpty(AddRole)" },
+            "Type": "Spawn",
+            "Kind": { "Compute": "AddRole" },
+            "SpawnAngle": 360,
+            "DistanceRange": [ 4, 8 ],
+            "CountRange": { "Compute": "AddCount" }
+          },
+          {
+            "Enabled": { "Compute": "!isEmpty(Moment)" },
+            "Type": "ZigFeedback",
+            "Moment": { "Compute": "Moment" },
+            "ToMembers": true
+          }
+        ]
+      },
+      {
+        "Reference": "Macro_Orbis_Boss_Volley",
+        "Modify": {
+          "Interval": { "Compute": "Interval" },
+          "Interaction": { "Compute": "Interaction" },
+          "Range": { "Compute": "VolleyRange" },
+          "ArmedFlag": { "Compute": "VolleyArmedFlag" },
+          "IntervalTimer": { "Compute": "VolleyIntervalTimer" },
+          "VolleyFlag": { "Compute": "VolleyFlag" },
+          "RunningFlag": { "Compute": "VolleyRunningFlag" },
+          "BurstTimer": { "Compute": "VolleyBurstTimer" },
+          "WaveTimer": { "Compute": "VolleyWaveTimer" },
+          "PlayerTimer": { "Compute": "VolleyPlayerTimer" }
+        }
+      }
+    ]
+  }
+}

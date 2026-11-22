@@ -1,0 +1,9 @@
+{
+  "$Comment": "The Yeti's look in his cave: the game's own Yeti (its model, texture, eyes, necklace and every animation) drawn a little bigger than a wild one, with a faint cold light so he reads in the dark of the cave. MinScale and MaxScale fix his size (a wild Yeti is 1.5): the game scales the hitbox, the eye height and the camera with it, so a bigger number makes a bigger target that needs more room to walk. Keep him under the cave's passage, which is 5 blocks high; at 1.8 he stands under 5. Parent Yeti brings the sounds, the animations and the necklace. Light is a model light; each hex digit is a red, green or blue level from 0 to f.",
+  "Parent": "Yeti",
+  "Model": "NPC/Beast/Yeti/Models/Model.blockymodel",
+  "Texture": "NPC/Beast/Yeti/Models/Texture.png",
+  "MinScale": 1.8,
+  "MaxScale": 1.8,
+  "Light": { "Color": "#68a" }
+}

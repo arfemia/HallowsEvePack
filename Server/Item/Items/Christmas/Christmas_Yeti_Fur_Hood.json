@@ -1,0 +1,41 @@
+{
+  "$Comment": "The Yeti Fur Hood, one of the two pieces of his fur the Yeti's Boss Kill Claim can pay (ZiggfreedCommon/Lootables/SeasonsOfOrbis/Christmas_Yeti_Chase.json, about 1 in 6 on the first win each day). A full item body with no Parent, so it inherits no recipe and nobody crafts it: it wears the game's own heavy leather helm (Armor_Leather_Heavy_Head's model, texture and icon) with the heavy leather helm's armour, and more on top: 15% less Ice damage, the cold the Yeti's own snowballs hit with, and more Health. It belongs to no gear set. Raise or lower an Amount to tune it.",
+  "TranslationProperties": {
+    "Name": "items.Christmas_Yeti_Fur_Hood.name",
+    "Description": "items.Christmas_Yeti_Fur_Hood.description"
+  },
+  "Quality": "Rare",
+  "ItemLevel": 35,
+  "PlayerAnimationsId": "Block",
+  "ItemSoundSetId": "ISS_Armor_Leather",
+  "Categories": ["Items.Armors"],
+  "Icon": "Icons/ItemsGenerated/Armor_Leather_Heavy_Head.png",
+  "IconProperties": {"Rotation": [22.5, 45, 22.5], "Scale": 0.47, "Translation": [-4.2, -15.6]},
+  "Model": "Items/Armors/Leather_Heavy/Head.blockymodel",
+  "Texture": "Items/Armors/Leather_Heavy/Head_Texture.png",
+  "Interactions": {
+    "Primary": {"Interactions": [{"Type": "EquipItem"}]},
+    "Secondary": {"Interactions": [{"Type": "EquipItem"}]}
+  },
+  "Armor": {
+    "ArmorSlot": "Head",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "EarAccessory",
+      "Ear",
+      "Haircut",
+      "HeadAccessory"
+    ],
+    "DamageResistance": {
+      "Physical": [{"Amount": 0.05, "CalculationType": "Percent"}],
+      "Projectile": [{"Amount": 0.05, "CalculationType": "Percent"}],
+      "Ice": [{"Amount": 0.15, "CalculationType": "Percent"}]
+    },
+    "StatModifiers": {
+      "Health": [{"Amount": 15, "CalculationType": "Additive"}]
+    }
+  },
+  "MaxDurability": 140,
+  "DurabilityLossOnHit": 0.5,
+  "Tags": {"Type": ["Armor"], "Family": ["Christmas"]}
+}

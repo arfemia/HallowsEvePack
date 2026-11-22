@@ -1,0 +1,73 @@
+{
+  "$Comment": [
+    "The Yeti Cave, Christmas's repeatable fight: the game's own Yeti camp (Yeti_Camps_YetiCamps_004, a",
+    "byte copy from the game's Assets.zip in the zip beside this file) as the Yeti's den, with a hall",
+    "dug out south of it. The camp is made to be carved into the ground, so on its own it would float in",
+    "the dungeon's empty world: Crop keeps only its ground (its dirt and ice floor, the low ring of shale",
+    "and ice around its brazier, the rubble), Skin opens the den and the hall to one height and wraps",
+    "them in two blocks of shale (walls, floor and roof), and Fills lays the snow floor and four ice",
+    "pillars. Every cell counts from the camp's anchor, three cells above its brazier, so y -4 is the",
+    "floor and y -3 where a player stands.",
+    "",
+    "The den is 19 blocks across and 13 deep, the hall south of it 35 across and 37 long, both 14 high,",
+    "and a passage 5 wide leads south from the hall to the arrival spot and the way-out pad",
+    "(Leave_Instance) behind it. Nothing a player can climb stands more than two blocks high, and no",
+    "corner is too low for the Yeti, so he can always reach whoever he chases: a predator that cannot",
+    "walks home and heals. The fight's entity (Christmas_Yeti_Encounter) stands in the hall a little",
+    "north of its middle, and the Yeti's spawn marker between it and the den. Its reach and leash",
+    "(ArenaRange and the rest, in EncounterManager/Christmas/Christmas_Yeti_Encounter.json) count from",
+    "the entity's cell, so move them with it. The six Orbis_Boss_Health_Pack points are where health",
+    "packs may drop, and seven braziers light the hall and the passage beside the camp's own. Containers",
+    "sets a red Christmas Packet against the den's back wall, stocked from",
+    "Server/Drops/Christmas/Christmas_Drop_Yeti_Cave_Chest.json and full again on every paste. The cave",
+    "is high enough for the Yeti's snowballs, which start 10 blocks above the ring they fall on."
+  ],
+  "Source": "tools/arenas/Yeti_Camps_YetiCamps_004.prefab.zip",
+  "Output": "Server/Prefabs/Christmas/Christmas_Yeti_Cave.prefab.json",
+  "StripSpawnMarkers": true,
+  "Crop": { "From": [-9, -5, -9], "To": [9, -2, 3] },
+  "Fills": [
+    { "Block": "Soil_Snow", "From": [-9, -4, -9], "To": [9, -4, 3] },
+    { "Block": "Soil_Snow", "From": [-17, -4, 4], "To": [17, -4, 40] },
+    { "Block": "Soil_Snow", "From": [-2, -4, 41], "To": [2, -4, 58] },
+    { "Block": "Rock_Ice", "From": [-10, -3, 15], "To": [-9, 10, 16] },
+    { "Block": "Rock_Ice", "From": [9, -3, 15], "To": [10, 10, 16] },
+    { "Block": "Rock_Ice", "From": [-10, -3, 29], "To": [-9, 10, 30] },
+    { "Block": "Rock_Ice", "From": [9, -3, 29], "To": [10, 10, 30] }
+  ],
+  "Skin": {
+    "Block": "Rock_Shale",
+    "Thickness": 2,
+    "Air": [
+      { "From": [-9, -3, -9], "To": [9, 10, 3] },
+      { "From": [-17, -3, 4], "To": [17, 10, 40] },
+      { "From": [-2, -3, 41], "To": [2, 1, 58] }
+    ]
+  },
+  "Encounter": { "Id": "Christmas_Yeti_Encounter", "At": [0, -3, 20] },
+  "Markers": [
+    { "Id": "Christmas_Yeti_Marker", "At": [0, -3, 9] }
+  ],
+  "Blocks": [
+    { "Name": "Leave_Instance", "At": [0, -3, 57] },
+    { "Name": "Furniture_Crude_Brazier", "At": [-16, -3, 6] },
+    { "Name": "Furniture_Crude_Brazier", "At": [16, -3, 6] },
+    { "Name": "Furniture_Crude_Brazier", "At": [-16, -3, 22] },
+    { "Name": "Furniture_Crude_Brazier", "At": [16, -3, 22] },
+    { "Name": "Furniture_Crude_Brazier", "At": [-16, -3, 38] },
+    { "Name": "Furniture_Crude_Brazier", "At": [16, -3, 38] },
+    { "Name": "Furniture_Crude_Brazier", "At": [2, -3, 48] }
+  ],
+  "Points": [
+    { "Name": "Health Pack North West", "Tags": ["Orbis_Boss_Health_Pack"], "At": [-11, -3, 10] },
+    { "Name": "Health Pack North East", "Tags": ["Orbis_Boss_Health_Pack"], "At": [11, -3, 10] },
+    { "Name": "Health Pack West", "Tags": ["Orbis_Boss_Health_Pack"], "At": [-12, -3, 22] },
+    { "Name": "Health Pack East", "Tags": ["Orbis_Boss_Health_Pack"], "At": [12, -3, 22] },
+    { "Name": "Health Pack South West", "Tags": ["Orbis_Boss_Health_Pack"], "At": [-11, -3, 34] },
+    { "Name": "Health Pack South East", "Tags": ["Orbis_Boss_Health_Pack"], "At": [11, -3, 34] }
+  ],
+  "Containers": [
+    { "At": [0, -3, -9], "Block": "Furniture_Christmas_Chest_Small_Red", "Capacity": 18, "Rotation": 2,
+      "Droplist": "Christmas_Drop_Yeti_Cave_Chest" }
+  ]
+}

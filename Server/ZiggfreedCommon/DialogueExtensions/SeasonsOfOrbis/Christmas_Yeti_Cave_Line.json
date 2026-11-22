@@ -1,0 +1,29 @@
+{
+  "Name": "Christmas_Yeti_Cave_Line",
+  "$Comment": [
+    "Bram's way into the Yeti Cave, one line on his conversations while Christmas runs. Dialogues.Ids names",
+    "his Christmas conversation and his Harvest Feast one: while the feast's last days still run he",
+    "speaks his feast conversation (NpcPlacements/Harvest_Feast_Shepherd_Temple.json takes its feast entry",
+    "first), so the cave opens from the first day of Christmas all the same.",
+    "",
+    "It lands on the screens a conversation opens on, after a screen's own lines and before the goodbye",
+    "group, so goodbye stays last. Season offers it only while Christmas runs; to take it out, set Enabled",
+    "false in a file of the same name. Open is the Dungeon destination: picking it opens CommonLib's",
+    "confirm screen with the cave's name and description, the Yeti Bait, how many the player holds and",
+    "how many it takes; its button spends the bait and sends the player in with their party, and with",
+    "none the button is off and the screen says where Yeti Bait comes from (the dungeon's HintKey). A",
+    "partymate following into a cave their party already holds skips the screen and walks in free. The",
+    "label names the price, since option labels take no number from the file: change it with the",
+    "dungeon's EntryCost."
+  ],
+  "Season": "Christmas",
+  "Dialogues": { "Ids": [ "Christmas_Shepherd", "Harvest_Feast_Shepherd" ] },
+  "Options": [
+    {
+      "LabelKey": "dialogue.christmas_yeti_cave_line.opt.enter",
+      "Style": "accept",
+      "Presentation": { "Icon": { "Item": "Christmas_Yeti_Bait" } },
+      "Open": { "Type": "Dungeon", "Dungeon": "Christmas_Yeti_Cave" }
+    }
+  ]
+}

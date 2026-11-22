@@ -1,0 +1,12 @@
+{
+  "$Comment": [
+    "What each member of the Yeti's fight is told as his last phase starts at 30% of his health: two White",
+    "Wolves come to his side and the snowballs come faster (his fight's Phase3Behavior,",
+    "Macro_Christmas_Yeti_Phase, draws it). The file name is the moment id. Key is a line in this pack's",
+    "christmas.yeti.lang, written bare."
+  ],
+  "Toast": {
+    "Title": { "Key": "notify.christmas_yeti_wolves" },
+    "Tone": "Warning"
+  }
+}

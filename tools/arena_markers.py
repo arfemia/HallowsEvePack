@@ -11,15 +11,33 @@ A spec (tools/arenas/<Name>.json) names:
                      arena's own creatures), before ours go in
   Encounter          {"Id": <encounter script id>, "At": [x, y, z]}: the fight's own entity
   Markers            [{"Id": <spawn marker id>, "At": [x, y, z]}]: manual spawn markers
-  Blocks             [{"Name": <block id>, "At": [x, y, z]}]: blocks set into the arena
-                     (an exit pad), replacing whatever the source had in that cell
+  Blocks             [{"Name": <block id>, "At": [x, y, z], "Rotation": <n>}]: blocks set into
+                     the arena (an exit pad, a brazier), replacing whatever the source had in
+                     that cell; Rotation, the prefab's own rotation index, is optional
   Points             [{"Name": <label>, "Tags": [<tag>, ...], "At": [x, y, z]}]: tagged points
                      an encounter's Points sensor finds (where a health pack drops)
   Containers         [{"At": [x, y, z], "Droplist": <Server/Drops id>}]: a container block the
-                     source already holds in that cell (a chest), stocked from that drop list
+                     source already holds in that cell (a chest), stocked from that drop list;
+                     with "Block": <block id> (and optional "Capacity", "Rotation") the container
+                     is set into that cell first, for a source that holds none there
+
+Three more keys build a cave around a source that was made to be carved into the world's
+ground (the game's Yeti camps), which pasted into a dungeon's empty world would float with no
+floor, walls or roof. Each is optional; a spec without them writes what it always wrote.
+  Crop               {"From": [x, y, z], "To": [x, y, z]}: keep only the source's blocks inside
+                     this box, both corners included
+  Fills              [{"Block": <block id>, "From": [x, y, z], "To": [x, y, z]}]: solid boxes
+                     laid under the source (a snow floor, an ice pillar); the source's own cells
+                     win where they meet
+  Skin               {"Block": <block id>, "Thickness": <n>, "Air": [{"From": [...], "To": [...]}]}:
+                     the open space is every Air box plus the source's own Empty cells (what it
+                     carves), less anything a block fills; every other cell within Thickness of
+                     it (a cube around each open cell) that holds nothing becomes Block, so the
+                     space is walled, floored and roofed the way the ground would wrap it
 
 "At" is a block cell counted from the prefab's anchor (the cell a party arrives above), the way
 the dungeon's EntryOffset counts: an entity stands on the floor of that cell, at its centre.
+"From" and "To" count the same way.
 The entities carry no UUID, so every paste of the prefab stages a fresh fight. Their shape is
 the dev test arena's (the encounter entity and the spawn marker entity a runtime paste keeps).
 A point is the game's own prefab point (a Transform and a Point component, the shape its
@@ -27,7 +45,8 @@ builder tools save): a paste registers it as a live point and places no entity.
 A container's drop list is the game's own prefab chest fill, the Droplist key on the block's
 ItemContainerBlock component (vanilla's Goblin_Thief_Chest prefab): each paste places a fresh
 container, and the game's stash rolls the list into it as it lands, so every paste is restocked.
-A rerun writes byte-identical files.
+A rerun writes byte-identical files. A file that differs only by a CRLF line ending, as a Windows
+checkout writes it, reads as current and is left alone.
 """
 import argparse
 import copy
@@ -110,11 +129,63 @@ def place(entity, name_key, ident, at, prefab):
     return out
 
 
+def box_cells(box, prefab):
+    """Every file cell of `box` ({"From": [...], "To": [...]}, counted from the anchor), corners included."""
+    ax, ay, az = anchor(prefab)
+    lo = [min(a, b) for a, b in zip(box["From"], box["To"])]
+    hi = [max(a, b) for a, b in zip(box["From"], box["To"])]
+    for y in range(lo[1] + ay, hi[1] + ay + 1):
+        for z in range(lo[2] + az, hi[2] + az + 1):
+            for x in range(lo[0] + ax, hi[0] + ax + 1):
+                yield (x, y, z)
+
+
+def crop(blocks, box, prefab):
+    """The source's blocks inside `box`, in the source's order."""
+    keep = set(box_cells(box, prefab))
+    return [b for b in blocks if (b["x"], b["y"], b["z"]) in keep]
+
+
+def cave(blocks, spec, prefab):
+    """The source's blocks with the spec's Fills laid under them and its Skin wrapped around the open
+    space: the source's own blocks first, in their order, then every generated cell sorted by y, z, x."""
+    held = {(b["x"], b["y"], b["z"]): b["name"] for b in blocks}
+    made = {}
+    for fill in spec.get("Fills", []):
+        for cell in box_cells(fill, prefab):
+            if cell not in held:
+                made[cell] = fill["Block"]
+    skin = spec.get("Skin")
+    if skin:
+        open_cells = {cell for cell, name in held.items() if name == "Empty"}
+        for box in skin.get("Air", []):
+            open_cells.update(c for c in box_cells(box, prefab) if c not in made and held.get(c, "Empty") == "Empty")
+        n = skin["Thickness"]
+        reach = [(dx, dy, dz) for dy in range(-n, n + 1) for dz in range(-n, n + 1) for dx in range(-n, n + 1)]
+        for (x, y, z) in open_cells:
+            for dx, dy, dz in reach:
+                cell = (x + dx, y + dy, z + dz)
+                if cell not in held and cell not in made and cell not in open_cells:
+                    made[cell] = skin["Block"]
+    extra = [{"x": x, "y": y, "z": z, "name": made[(x, y, z)]}
+             for (x, y, z) in sorted(made, key=lambda c: (c[1], c[2], c[0]))]
+    return blocks + extra
+
+
 def stock(blocks, container, prefab):
     """Name a drop list on the container block in cell `container["At"]` (counted from the anchor)."""
     ax, ay, az = anchor(prefab)
     at = container["At"]
     cell = (at[0] + ax, at[1] + ay, at[2] + az)
+    if "Block" in container:
+        capacity = container.get("Capacity", 18)
+        blocks[:] = [b for b in blocks if (b["x"], b["y"], b["z"]) != cell]
+        placed = {"x": cell[0], "y": cell[1], "z": cell[2], "name": container["Block"],
+                  "components": {"Components": {"ItemContainerBlock": {
+                      "ItemContainer": {"Capacity": capacity, "Items": {}}, "Capacity": capacity}}}}
+        if "Rotation" in container:
+            placed["rotation"] = container["Rotation"]
+        blocks.append(placed)
     for block in blocks:
         if (block["x"], block["y"], block["z"]) != cell:
             continue
@@ -141,14 +212,26 @@ def build(spec):
         entities.append(place(POINT_ENTITY, "Point", point, point["At"], prefab))
     prefab["entities"] = entities
     blocks = prefab.get("blocks", [])
+    if "Crop" in spec:
+        blocks = crop(blocks, spec["Crop"], prefab)
+    if "Fills" in spec or "Skin" in spec:
+        blocks = cave(blocks, spec, prefab)
     for block in spec.get("Blocks", []):
         x, y, z = (block["At"][0] + ax, block["At"][1] + ay, block["At"][2] + az)
         blocks = [b for b in blocks if (b["x"], b["y"], b["z"]) != (x, y, z)]
-        blocks.append({"x": x, "y": y, "z": z, "name": block["Name"]})
+        placed = {"x": x, "y": y, "z": z, "name": block["Name"]}
+        if "Rotation" in block:
+            placed["rotation"] = block["Rotation"]
+        blocks.append(placed)
     for container in spec.get("Containers", []):
         stock(blocks, container, prefab)
     prefab["blocks"] = blocks
     return (json.dumps(prefab, separators=(",", ":"), ensure_ascii=False) + "\n").encode("utf-8")
+
+
+def same(out, data):
+    """True when the file on disk holds `data`, reading a CRLF line ending (a Windows checkout's) as LF."""
+    return out.read_bytes().replace(b"\r\n", b"\n") == data
 
 
 def main(argv=None):
@@ -164,10 +247,10 @@ def main(argv=None):
         if args.check:
             if not out.is_file():
                 problems.append(f"missing: {spec['Output']}")
-            elif out.read_bytes() != data:
+            elif not same(out, data):
                 problems.append(f"stale: {spec['Output']}")
             continue
-        if out.is_file() and out.read_bytes() == data:
+        if out.is_file() and same(out, data):
             continue
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_bytes(data)
