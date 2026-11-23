@@ -1,20 +1,26 @@
 {
   "$Comment": [
     "MMO Skill Tree's half of the Christmas Set, Christmas_Set.json. Joins adds this file to that set instead",
-    "of making a set of its own, so the player still sees one Christmas Set: one notice, one entry. The set's",
-    "name and members stay that file's, so this file names none.",
+    "of making a set of its own, so the player still sees one Christmas Set entry. The set's name and members",
+    "stay that file's, so this file names none.",
     "",
-    "Its two tiers ask exactly what the set's two tiers ask (Armor 2, then Armor 4), so each joins its twin:",
-    "its stats apply beside the set's, and its line follows the set's line in the same notice. A tier asking",
-    "for something else would be added as a tier of its own. Requires takes this file out on a server without",
-    "MMO Skill Tree, where these stats do not exist and its lines would name a bonus nobody gets; always write",
-    "it with Min 1.",
+    "Its first two tiers ask exactly what the set's two tiers ask (Armor 2, then Armor 4), so each joins its",
+    "twin: its stats apply beside the set's. The third asks the same four pieces but binds its stats with",
+    "While, and a bound tier never joins another, so it is added as a tier of its own with a notice of its",
+    "own: the full-set line (tier_full) sits on it, and the unbound Armor 4 twin carries no line, so the",
+    "player reads each line once. A tier asking for something else would be added the same way. Requires",
+    "takes this file out on a server without MMO Skill Tree, where these stats do not exist and its lines",
+    "would name a bonus nobody gets; always write it with Min 1.",
     "",
     "TrackGain_Woodcutting raises the Woodcutting XP the wearer earns and GatherYield the chance of a bonus",
     "find on a gathering break, the luck Woodcutting's lucky rolls read, both in whole percent points (10 is",
-    "10%). The yield also raises the Winter Bauble find while Christmas runs",
-    "(Factors/SeasonsOfOrbis/Christmas_Bauble_Luck.json). Both are Additive on purpose: these channels have a",
-    "base of zero, so a Multiplicative entry computes nothing."
+    "10%). The yield is the luck of chopping trees, so it counts only while a hatchet is in hand: While is",
+    "CommonLib's ZigHolding with Items naming the tools Woodcutting's own skill file lists (*Tool_Hatchet_*,",
+    "a name read along each item's Parent line, so a copy of a vanilla hatchet counts too). It names no MMO",
+    "Skill Tree condition on purpose: this pack depends on MMO Skill Tree only optionally, and a condition",
+    "nobody registered fails the file's read before Requires can drop it. The yield also raises the Winter",
+    "Bauble find while Christmas runs (Factors/SeasonsOfOrbis/Christmas_Bauble_Luck.json). Both stats are",
+    "Additive on purpose: these channels have a base of zero, so a Multiplicative entry computes nothing."
   ],
   "Joins": "Christmas_Set",
   "Requires": {
@@ -32,9 +38,15 @@
     },
     {
       "Armor": 4,
-      "Text": { "TitleKey": "gearset.mmo_christmas_set.tier_full" },
       "StatModifiers": {
-        "TrackGain_Woodcutting": [ { "Amount": 15, "CalculationType": "Additive" } ],
+        "TrackGain_Woodcutting": [ { "Amount": 15, "CalculationType": "Additive" } ]
+      }
+    },
+    {
+      "Armor": 4,
+      "Text": { "TitleKey": "gearset.mmo_christmas_set.tier_full" },
+      "While": [ { "Id": "ZigHolding", "Items": [ "*Tool_Hatchet_*" ] } ],
+      "StatModifiers": {
         "GatherYield": [ { "Amount": 10, "CalculationType": "Additive" } ]
       }
     }
