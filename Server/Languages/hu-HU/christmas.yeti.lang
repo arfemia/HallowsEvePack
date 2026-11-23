@@ -1,0 +1,33 @@
+# Christmas - the Yeti Cave: the cave's name and its lines, the Yeti's fight's notices, his Boss Kill
+# Claim, Bram's Yeti Bait offer and way-in line, and the Yeti Hunter achievement. Keys are written bare:
+# the library finds each one by its tail, whatever this file is called. Numbers ride {0} and come from
+# the content files, so a retune never touches a translation. The Yeti's nameplate is in npcs.lang and
+# his bait's and fur's names in items.lang.
+
+# ---- The Yeti Cave ----
+dungeon.christmas_yeti_cave.name = A Jeti Barlangja
+dungeon.christmas_yeti_cave.description = A Jeti, aki elriasztotta a Mikulás egyik rénszarvasát, itt lakik, egy halom lopott ajándékkal. Hozz barátokat, és öltözz melegen.
+dungeon.christmas_yeti_cave.goal = Sétálj be a barlangba, hogy felébreszd a Jetit, aztán győzd le. Hátrálj, amikor gyűrű gyúl körülötte, és lépj le a lábad alatti gyűrűkről, mielőtt a hógolyói becsapódnak.
+dungeon.christmas_yeti_cave.cost_hint = Bram Jeti-csalit árul a boltjában, ha már elvitted a rénszarvasainak a sárgarépát.
+dungeon.christmas_yeti_cave.confirm = Dobd el a csalit
+dungeon.christmas_yeti_cave.chest = A jutalmad abban a ládában vár, ahol elesett.
+
+# ---- The Yeti's fight ----
+notify.christmas_yeti_engaged = Felébred a Jeti!
+notify.christmas_yeti_engaged.sub = Győzd le, és a rejtett ajándékai a tieid.
+notify.christmas_yeti_snowballs = A Jeti hógolyókat kezd dobálni! Lépj le a gyűrűkről.
+notify.christmas_yeti_wolves = Két Fehér Farkas siet a Jeti segítségére!
+notify.christmas_yeti_defeated = A Jeti elesett!
+notify.christmas_yeti_defeated.sub = A részed: {0}%, {1, number} másodperc alatt.
+notify.christmas_yeti_wiped = A Jeti visszamegy a barlangjába.
+notify.christmas_yeti_wiped.sub = Hátrálj, amikor gyűrű gyúl körülötte, és lépj le a gyűrűkről, mielőtt a hógolyói becsapódnak.
+claim.christmas_yeti_chase = A Jeti: Boss-legyőzés
+
+# ---- Bram's stall and his way in ----
+shop.christmas_offer_yeti_bait.title = Jeti-csali
+shop.christmas_offer_yeti_bait.desc = Egy hal, amelynek egy Jeti sem tud ellenállni. Bram elvesz egyet, hogy bevezessen téged és a barátaidat a Jeti Barlangjába.
+dialogue.christmas_yeti_cave_line.opt.enter = Vigyél a Jeti Barlangjába. (egy Jeti-csalitba kerül, Bram boltjából)
+
+# ---- Achievement ----
+achievement.christmas_yeti_hunter.title = Jetivadász {0}
+achievement.christmas_yeti_hunter.desc = Győzd le a Jetit a barlangjában.

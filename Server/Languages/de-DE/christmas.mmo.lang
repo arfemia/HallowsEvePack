@@ -1,0 +1,121 @@
+
+# Christmas with MMO Skill Tree, and what stands in for it without: the villagers' own job boards (a skill
+# job a day where MMO Skill Tree runs, a plain errand where it does not), the season's boosts and their two
+# one-day events, the Christmas Set's skill half, Christmas Morning's bag of treats, and the villagers'
+# secrets with their apprentice quests and lock lines. Only a line that shows just where MMO Skill Tree
+# runs names a skill, a level or XP; every other line here shows on both kinds of server, so it names none.
+# Keys are written bare: MMO Skill Tree and the library find each one by its tail, whatever this file is
+# called. A job or quest takes its words from the keys its id spells (quest.<id>.title and .flavor). A
+# factor's name and an effect's name are read in full, christmas.mmo. and then the key.
+
+# ---- The villagers' job boards ----
+board.christmas_miller_jobs.title = Tomas' Arbeiten
+board.christmas_miller_jobs.desc = Eine Arbeit von mir am Tag, jeden Morgen neu. Hol dir deinen Lohn, bevor Weihnachten vorbei ist. Kommst du zu spät, wartet er in deinem Questbuch.
+board.christmas_miller_jobs.grade.skill = Fähigkeitsarbeit
+board.christmas_miller_jobs.grade.errand = Besorgung
+board.christmas_weaver_jobs.title = Elsies Arbeiten
+board.christmas_weaver_jobs.desc = Jeden Tag eine Arbeit von mir, jeden Morgen neu. Hol dir deinen Lohn, bevor Weihnachten vorbei ist. Kommst du zu spät, wartet er in deinem Questbuch.
+board.christmas_weaver_jobs.grade.skill = Fähigkeitsarbeit
+board.christmas_weaver_jobs.grade.errand = Besorgung
+board.christmas_shepherd_jobs.title = Brams Arbeiten
+board.christmas_shepherd_jobs.desc = Eine Arbeit am Tag, jeden Morgen neu. Lass dich bezahlen, bevor Weihnachten endet, sonst wartet der Lohn in deinem Questbuch.
+board.christmas_shepherd_jobs.grade.skill = Fähigkeitsarbeit
+board.christmas_shepherd_jobs.grade.errand = Besorgung
+
+# ---- The skill jobs (only where MMO Skill Tree runs) ----
+quest.mmo_christmas_miller_skill_job.title = Handwerksarbeit
+quest.mmo_christmas_miller_skill_job.flavor = Meine Öfen kühlen an Weihnachten nie ab. Verbring den Tag mit dem Herstellen von Dingen an einer beliebigen Werkbank und werde dabei schneller.
+quest.mmo_christmas_weaver_skill_job.title = Bauarbeit
+quest.mmo_christmas_weaver_skill_job.flavor = Jedes Zuhause will sein weihnachtliches Gesicht. Verbring den Tag damit, etwas bei dir aufzustellen, und werde dabei besser.
+quest.mmo_christmas_shepherd_skill_job.title = Holzfällerarbeit
+quest.mmo_christmas_shepherd_skill_job.flavor = Das Feuer des Weihnachtsmanns frisst die ganze Nacht Holz. Verbring den Tag mit dem Fällen von Bäumen und werde mit der Axt schneller.
+
+# ---- The errands (only where MMO Skill Tree is missing) ----
+quest.christmas_errand_wheat.title = Weizen für die Mühle
+quest.christmas_errand_wheat.flavor = Mein Mehl mahlt sich nicht von selbst. Schneid etwas Weizen auf den Feldern und bring ihn mir.
+quest.christmas_errand_bread.title = Brot für die Tafel
+quest.christmas_errand_bread.flavor = Auch die Helfer des Weihnachtsmanns wollen essen. Back an einem Kochherd Brot aus Teig.
+quest.christmas_errand_decorations.title = Dekorationsbesorgung
+quest.christmas_errand_decorations.flavor = Stell ein paar Weihnachtsdekorationen bei dir zu Hause auf. Girlanden, Lichter, ein Schneemann, alles Helle tut es.
+quest.christmas_errand_wool.title = Wolle für Strümpfe
+quest.christmas_errand_wool.flavor = Ich brauche Wolle für die Weihnachtsstrümpfe. Stell an einem Webstuhl Wollballen her und bring sie mir.
+quest.christmas_errand_logs.title = Holzbesorgung
+quest.christmas_errand_logs.flavor = Fäll Stämme von beliebigen Bäumen. Der Rentierstall braucht heute Nacht ein Feuer.
+quest.christmas_errand_wolves.title = Wolfsbesorgung
+quest.christmas_errand_wolves.flavor = Wölfe schnüffeln ständig um meine Herde. Jage ein paar in den Wäldern oder draußen im Schnee.
+
+# ---- Steps ----
+objective.christmas.bring_tomas_wheat = Bring Tomas {0} Weizen
+objective.christmas.bake_bread = Back {0} {0, plural, one {Brot} other {Brote}}
+objective.christmas.put_up_decorations = Stell {0} {0, plural, one {Weihnachtsdekoration} other {Weihnachtsdekorationen}} zu Hause auf
+objective.christmas.bring_elsie_wool = Bring Elsie {0} {0, plural, one {Wollballen} other {Wollballen}}
+objective.christmas.hunt_wolves = Jage {0} {0, plural, one {Wolf} other {Wölfe}}
+objective.christmas.bake_treats = Back {0} von Tomas' Leckereien
+
+# ---- Two days inside Christmas ----
+calendar.christmas_day.name = Weihnachtstag
+calendar.christmas_day.flavor = Der große Tag selbst.
+calendar.christmas_new_years_eve.name = Silvester
+calendar.christmas_new_years_eve.flavor = Die letzte Nacht des Jahres.
+
+# ---- The boosts (only where MMO Skill Tree runs) ----
+boostrule.mmo_christmas_trades.title = Weihnachten
+boostrule.mmo_christmas_day.title = Weihnachtstag
+boostrule.mmo_christmas_new_years_eve.title = Silvester
+
+# ---- The Christmas Set's skill half (only where MMO Skill Tree runs) ----
+# A set's notice is a toast, so no value carries markup.
+gearset.mmo_christmas_set.tier_half = Dazu mehr Holzfäll-XP.
+gearset.mmo_christmas_set.tier_full = Dazu nochmal mehr Holzfäll-XP und mehr Glück beim Fällen von Bäumen.
+
+# ---- Christmas Morning's treats, and Bram's present ----
+lootable.christmas_treats.title = Eine Tüte Leckereien
+lootable.christmas_treats.flavor = Zuckerstangen, Plätzchen oder Kakao, und hin und wieder ein ganzer Weihnachtskuchen.
+lootable.christmas_bram_decorations.title = Brams Geschenk
+lootable.christmas_bram_decorations.flavor = Ein kleines Extra von Bram in jedem Geschenk, das du öffnest: eine Weihnachtsdekoration für dein Zuhause.
+
+# ---- The villagers' secrets ----
+quest.christmas_tomas_apprentice.title = Tomas' Lehrling
+quest.christmas_tomas_apprentice.flavor = Back meine Weihnachtsleckereien an einem Kochherd. Jede Leckerei zählt. Back genug, dann verkaufe ich dir das Rezept für mein eigenes Weihnachtsbrot.
+quest.christmas_elsie_apprentice.title = Elsies Lehrling
+quest.christmas_elsie_apprentice.flavor = Stell Weihnachtsdekorationen bei dir zu Hause auf. Stell genug auf, dann verkaufe ich dir meinen Rentieranzug.
+quest.christmas_bram_apprentice.title = Brams Lehrling
+quest.christmas_bram_apprentice.flavor = Fäll Stämme von beliebigen Bäumen. Fäll genug, dann steckt in jedem Weihnachtsgeschenk, das du öffnest, ein kleines Extra von mir.
+shop.christmas_offer_recipe_tomas_loaf.title = Rezept: Tomas' Weihnachtsbrot
+shop.christmas_offer_recipe_tomas_loaf.desc = Tomas' eigenes süßes Brot. Du bist schneller und die Kälte beißt weniger, solange es wirkt.
+shop.christmas_offer_reindeer_suit.title = Rentieranzug
+shop.christmas_offer_reindeer_suit.desc = Zieh ihn an, und du bist eine Weile eines der Rentiere des Weihnachtsmanns.
+# A lock line reads "Requires " and then one of these; each server loads the one its overlay names.
+factor.christmas_tomas_key.name = den Abschluss von Tomas' Lehrling
+factor.christmas_tomas_key.name_mmo = den Abschluss von Tomas' Lehrling oder Handwerksstufe 20
+factor.christmas_elsie_key.name = den Abschluss von Elsies Lehrling
+factor.christmas_elsie_key.name_mmo = den Abschluss von Elsies Lehrling oder Bauen-Stufe 20
+# A costume's buff-bar tile name. Its effect's Name is this key in full (christmas.mmo.effect...).
+effect.christmas_costume_reindeer_suit.name = Rentieranzug
+
+# ---- Tomas's secret, in his Christmas conversation ----
+dialogue.christmas_miller.apprentice_offer.text = Ich habe ein Geheimnis: ein eigenes <b>Weihnachtsbrot</b>, süßer als jeder Kuchen.\nBack eine Weile meine Weihnachtsleckereien an einem <b>Kochherd</b>, dann verkaufe ich dir das Rezept.
+dialogue.christmas_miller.apprentice_offer.opt.accept = Bring es mir bei.
+dialogue.christmas_miller.apprentice_brief.text = Back <b>Lebkuchenmännchen</b>, <b>Heiße Schokolade</b> oder <b>Weihnachtskuchen</b> an einem <b>Kochherd</b>. Jedes zählt. Komm zurück, wenn du genug gebacken hast.
+dialogue.christmas_miller.apprentice_ready.text = Sieh an, ein richtiger Bäcker. Mein Rezept für das <b>Weihnachtsbrot</b> liegt jetzt für dich in meinem Laden.
+dialogue.christmas_miller.apprentice_ready.opt.turnin = Danke, Tomas.
+dialogue.christmas_miller.opt.secret_skill = Und wenn ich schon ein guter Koch bin?
+dialogue.christmas_miller.secret_skill.text = Dann brauchst du meinen Unterricht nicht. Erreiche <b>Handwerksstufe 20</b>, und ich verkaufe dir das Rezept für mein <b>Weihnachtsbrot</b> trotzdem.\nOder back eine Weile mit mir. Beides geht.
+
+# ---- Elsie's secret, in her Christmas conversation ----
+dialogue.christmas_weaver.apprentice_offer.text = Ich habe ein Geheimnis: einen <b>Rentieranzug</b>, den ich selbst genäht habe. Er ist nicht für jeden.\nStell <b>Weihnachtsdekorationen</b> bei dir zu Hause auf, und wenn du genug aufgestellt hast, verkaufe ich dir einen.
+dialogue.christmas_weaver.apprentice_offer.opt.accept = Ich dekoriere.
+dialogue.christmas_weaver.apprentice_brief.text = Stell Girlanden, Lichter, Kränze, Schneemänner, jede Weihnachtsdekoration bei dir zu Hause auf. Hier im Tempel kann nichts aufgestellt werden. Dekorationen findest du im Festivalregal jedes Weihnachtsladens und in Weihnachtsgeschenken.
+dialogue.christmas_weaver.apprentice_ready.text = Dein Zuhause muss wunderbar aussehen. Mein <b>Rentieranzug</b> liegt jetzt für dich in meinem Laden.
+dialogue.christmas_weaver.apprentice_ready.opt.turnin = Danke, Elsie.
+dialogue.christmas_weaver.opt.secret_skill = Und wenn ich schon gut dekoriere?
+dialogue.christmas_weaver.secret_skill.text = Dann brauchst du meinen Unterricht nicht. Erreiche <b>Bauen-Stufe 20</b>, und ich verkaufe dir meinen <b>Rentieranzug</b> trotzdem.\nOder dekoriere eine Weile mit mir. Beides ist recht.
+
+# ---- Bram's secret, in his Christmas conversation ----
+dialogue.christmas_shepherd.apprentice_offer.text = Ich habe ein Geheimnis. Hilf mir, Stämme zu fällen, dann steckt in jedem <b>Weihnachtsgeschenk</b>, das du öffnest, ein kleines Extra von mir. Eine Dekoration, vielleicht die Schneeflocke für die Baumspitze.
+dialogue.christmas_shepherd.apprentice_offer.opt.accept = Ich fälle.
+dialogue.christmas_shepherd.apprentice_brief.text = Fäll Stämme von beliebigen Bäumen. Jeder Stammblock zählt. Komm zurück, wenn du genug hast.
+dialogue.christmas_shepherd.apprentice_ready.text = Das ist ein schöner Haufen. Ab jetzt steckt in jedem <b>Weihnachtsgeschenk</b>, das du öffnest, ein kleines Extra von mir.
+dialogue.christmas_shepherd.apprentice_ready.opt.turnin = Danke, Bram.
+dialogue.christmas_shepherd.opt.secret_skill = Und wenn ich schon gut mit der Axt bin?
+dialogue.christmas_shepherd.secret_skill.text = Dann brauchst du mich nicht. Erreiche <b>Holzfällen-Stufe 20</b>, dann steckt in jedem <b>Weihnachtsgeschenk</b>, das du öffnest, ein kleines Extra von mir.\nOder fäll eine Weile mit mir. Beides geht.

@@ -1,0 +1,121 @@
+
+# Christmas with MMO Skill Tree, and what stands in for it without: the villagers' own job boards (a skill
+# job a day where MMO Skill Tree runs, a plain errand where it does not), the season's boosts and their two
+# one-day events, the Christmas Set's skill half, Christmas Morning's bag of treats, and the villagers'
+# secrets with their apprentice quests and lock lines. Only a line that shows just where MMO Skill Tree
+# runs names a skill, a level or XP; every other line here shows on both kinds of server, so it names none.
+# Keys are written bare: MMO Skill Tree and the library find each one by its tail, whatever this file is
+# called. A job or quest takes its words from the keys its id spells (quest.<id>.title and .flavor). A
+# factor's name and an effect's name are read in full, christmas.mmo. and then the key.
+
+# ---- The villagers' job boards ----
+board.christmas_miller_jobs.title = Tomas'ın İşleri
+board.christmas_miller_jobs.desc = Günde bir iş benden, her sabah yenisi. Noel bitmeden ücretini al. Geç kalırsan, Görev Kitabında bekler.
+board.christmas_miller_jobs.grade.skill = Yetenek İşi
+board.christmas_miller_jobs.grade.errand = Ufak İş
+board.christmas_weaver_jobs.title = Elsie'nin İşleri
+board.christmas_weaver_jobs.desc = Her gün bir iş benden, her sabah yenisi. Noel bitmeden ücretini al. Geç kalırsan, Görev Kitabında bekler.
+board.christmas_weaver_jobs.grade.skill = Yetenek İşi
+board.christmas_weaver_jobs.grade.errand = Ufak İş
+board.christmas_shepherd_jobs.title = Bram'ın İşleri
+board.christmas_shepherd_jobs.desc = Günde bir iş, her sabah yenisi. Noel bitmeden ücretini al, yoksa Görev Kitabında bekler.
+board.christmas_shepherd_jobs.grade.skill = Yetenek İşi
+board.christmas_shepherd_jobs.grade.errand = Ufak İş
+
+# ---- The skill jobs (only where MMO Skill Tree runs) ----
+quest.mmo_christmas_miller_skill_job.title = Üretim İşi
+quest.mmo_christmas_miller_skill_job.flavor = Fırınlarım Noel'de hiç soğumaz. Bugünü bir tezgahta bir şeyler yapmakla geçir, bu işte hızlan.
+quest.mmo_christmas_weaver_skill_job.title = İnşa İşi
+quest.mmo_christmas_weaver_skill_job.flavor = Her ev Noel havasını ister. Bugünü kendi evinde bir şeyler kurmakla geçir, bu işte ustalaş.
+quest.mmo_christmas_shepherd_skill_job.title = Odunculuk İşi
+quest.mmo_christmas_shepherd_skill_job.flavor = Noel Baba'nın ateşi bütün gece odun yer. Bugünü ağaç kesmekle geçir, baltada hızlan.
+
+# ---- The errands (only where MMO Skill Tree is missing) ----
+quest.christmas_errand_wheat.title = Değirmen İçin Buğday
+quest.christmas_errand_wheat.flavor = Unum kendi kendine öğütülmez. Tarlalardan biraz buğday biç ve bana getir.
+quest.christmas_errand_bread.title = Sofra İçin Ekmek
+quest.christmas_errand_bread.flavor = Noel Baba'nın yardımcılarının da karnı doymalı. Bir Aşçı Ocağı'nda hamurdan biraz ekmek pişir.
+quest.christmas_errand_decorations.title = Süsleme İşi
+quest.christmas_errand_decorations.flavor = Evine biraz Noel süsü as. Çelenk, ışık, kardan adam, parlak ne olursa olur.
+quest.christmas_errand_wool.title = Çoraplar İçin Yün
+quest.christmas_errand_wool.flavor = Noel çorapları için yüne ihtiyacım var. Bir dokuma tezgahında yün balyaları yap ve bana getir.
+quest.christmas_errand_logs.title = Kütük İşi
+quest.christmas_errand_logs.flavor = Herhangi bir ağaçtan kütük kes. Ren geyiği ağılı bu gece bir ateş istiyor.
+quest.christmas_errand_wolves.title = Kurt İşi
+quest.christmas_errand_wolves.flavor = Kurtlar sürümün etrafını koklayıp duruyor. Ormanlarda ya da karlı yerlerde birkaçını avla.
+
+# ---- Steps ----
+objective.christmas.bring_tomas_wheat = Tomas'a {0} Buğday getir
+objective.christmas.bake_bread = {0} {0, plural, one {ekmek} other {ekmek}} pişir
+objective.christmas.put_up_decorations = Evine {0} Noel {0, plural, one {süsü} other {süsü}} as
+objective.christmas.bring_elsie_wool = Elsie'ye {0} {0, plural, one {balya} other {balya}} yün getir
+objective.christmas.hunt_wolves = {0} {0, plural, one {kurt} other {kurt}} avla
+objective.christmas.bake_treats = Tomas'ın ikramlarından {0} pişir
+
+# ---- Two days inside Christmas ----
+calendar.christmas_day.name = Noel Günü
+calendar.christmas_day.flavor = Büyük günün kendisi.
+calendar.christmas_new_years_eve.name = Yılbaşı Gecesi
+calendar.christmas_new_years_eve.flavor = Yılın son gecesi.
+
+# ---- The boosts (only where MMO Skill Tree runs) ----
+boostrule.mmo_christmas_trades.title = Noel
+boostrule.mmo_christmas_day.title = Noel Günü
+boostrule.mmo_christmas_new_years_eve.title = Yılbaşı Gecesi
+
+# ---- The Christmas Set's skill half (only where MMO Skill Tree runs) ----
+# A set's notice is a toast, so no value carries markup.
+gearset.mmo_christmas_set.tier_half = Ayrıca daha fazla Odunculuk XP'si.
+gearset.mmo_christmas_set.tier_full = Ayrıca yine daha fazla Odunculuk XP'si ve ağaç keserken daha iyi şans.
+
+# ---- Christmas Morning's treats, and Bram's present ----
+lootable.christmas_treats.title = Bir Torba İkram
+lootable.christmas_treats.flavor = Şekerleme bastonları, kurabiyeler ya da kakao, ara sıra da koca bir Noel Pastası.
+lootable.christmas_bram_decorations.title = Bram'ın Hediyesi
+lootable.christmas_bram_decorations.flavor = Açtığın her hediyede Bram'dan küçük bir fazlalık: evin için bir Noel süsü.
+
+# ---- The villagers' secrets ----
+quest.christmas_tomas_apprentice.title = Tomas'ın Çırağı
+quest.christmas_tomas_apprentice.flavor = Noel ikramlarımı bir Aşçı Ocağı'nda pişir. Yaptığın her ikram sayılır. Yeterince pişirirsen kendi Noel Somunumun tarifini sana satarım.
+quest.christmas_elsie_apprentice.title = Elsie'nin Çırağı
+quest.christmas_elsie_apprentice.flavor = Evine Noel süsleri as. Yeterince asarsan Ren Geyiği Kıyafetimi sana satarım.
+quest.christmas_bram_apprentice.title = Bram'ın Çırağı
+quest.christmas_bram_apprentice.flavor = Herhangi bir ağaçtan kütük devir. Yeterince kesersen açtığın her Noel Hediyesi benden küçük bir fazlalık taşır.
+shop.christmas_offer_recipe_tomas_loaf.title = Tomas'ın Noel Somunu Tarifi
+shop.christmas_offer_recipe_tomas_loaf.desc = Tomas'ın kendi tatlı somunu. Sürdüğü müddetçe daha hızlı koşarsın ve soğuk daha az ısırır.
+shop.christmas_offer_reindeer_suit.title = Ren Geyiği Kıyafeti
+shop.christmas_offer_reindeer_suit.desc = Giy, bir süre Noel Baba'nın ren geyiklerinden biri olursun.
+# A lock line reads "Requires " and then one of these; each server loads the one its overlay names.
+factor.christmas_tomas_key.name = Tomas'ın Çırağı'nı bitirmek
+factor.christmas_tomas_key.name_mmo = Tomas'ın Çırağı'nı bitirmek ya da Üretim seviye 20
+factor.christmas_elsie_key.name = Elsie'nin Çırağı'nı bitirmek
+factor.christmas_elsie_key.name_mmo = Elsie'nin Çırağı'nı bitirmek ya da İnşa seviye 20
+# A costume's buff-bar tile name. Its effect's Name is this key in full (christmas.mmo.effect...).
+effect.christmas_costume_reindeer_suit.name = Ren Geyiği Kıyafeti
+
+# ---- Tomas's secret, in his Christmas conversation ----
+dialogue.christmas_miller.apprentice_offer.text = Bir sırrım var: kendi <b>Noel Somunum</b>, hangi pastadan olursa olsun daha tatlı.\nBir süre Noel ikramlarımı bir <b>Aşçı Ocağı</b>'nda pişir, tarifi sana satarım.
+dialogue.christmas_miller.apprentice_offer.opt.accept = Öğret bana.
+dialogue.christmas_miller.apprentice_brief.text = Bir <b>Aşçı Ocağı</b>'nda <b>Zencefilli Kurabiye</b>, <b>Sıcak Kakao</b> ya da <b>Noel Pastası</b> pişir. Hepsi sayılır. Yeterince pişirince dön.
+dialogue.christmas_miller.apprentice_ready.text = Bak sen, tam bir fırıncı olmuşsun. <b>Noel Somunu</b> tarifim artık dükkanımda senin için duruyor.
+dialogue.christmas_miller.apprentice_ready.opt.turnin = Sağ ol, Tomas.
+dialogue.christmas_miller.opt.secret_skill = Ya zaten iyi bir aşçıysam?
+dialogue.christmas_miller.secret_skill.text = O zaman derslerime ihtiyacın yok. <b>Üretim seviye 20</b>'ye ulaş, yine de sana <b>Noel Somunu</b> tarifimi satarım.\nYa da bir süre benimle pişir. İkisi de olur.
+
+# ---- Elsie's secret, in her Christmas conversation ----
+dialogue.christmas_weaver.apprentice_offer.text = Bir sırrım var: kendi diktiğim bir <b>Ren Geyiği Kıyafeti</b>. Herkese göre değil.\nEvine <b>Noel süsleri</b> as, yeterince astığında bir tane sana satarım.
+dialogue.christmas_weaver.apprentice_offer.opt.accept = Süsleyeceğim.
+dialogue.christmas_weaver.apprentice_brief.text = Evine çelenk, ışık, tören çelengi, kardan adam, hangi Noel süsü olursa as. Tapınağın içinde hiçbir şey asılamaz. Süsleri her Noel dükkanındaki şenlik rafında ve Noel Hediyelerinin içinde bulursun.
+dialogue.christmas_weaver.apprentice_ready.text = Evin harika görünüyor olmalı. <b>Ren Geyiği Kıyafetim</b> artık dükkanımda senin için duruyor.
+dialogue.christmas_weaver.apprentice_ready.opt.turnin = Teşekkürler, Elsie.
+dialogue.christmas_weaver.opt.secret_skill = Ya zaten iyi süslüyorsam?
+dialogue.christmas_weaver.secret_skill.text = O zaman derslerime ihtiyacın yok. <b>İnşa seviye 20</b>'ye ulaş, yine de sana <b>Ren Geyiği Kıyafetimi</b> satarım.\nYa da bir süre benimle süsle. İkisi de olur.
+
+# ---- Bram's secret, in his Christmas conversation ----
+dialogue.christmas_shepherd.apprentice_offer.text = Bir sır var. Kütük devirmeme yardım et, açtığın her <b>Noel Hediyesi</b> benden küçük bir fazlalık taşısın. Bir süs, belki ağacın tepesi için kar tanesi.
+dialogue.christmas_shepherd.apprentice_offer.opt.accept = Keserim.
+dialogue.christmas_shepherd.apprentice_brief.text = Herhangi bir ağaçtan kütük kes. Her gövde bloğu sayılır. Yeterince kesince dön.
+dialogue.christmas_shepherd.apprentice_ready.text = Güzel bir yığın. Bundan sonra açtığın her <b>Noel Hediyesi</b>'nin içinde benden küçük bir fazlalık olacak.
+dialogue.christmas_shepherd.apprentice_ready.opt.turnin = Sağ ol, Bram.
+dialogue.christmas_shepherd.opt.secret_skill = Ya zaten baltayla aram iyiyse?
+dialogue.christmas_shepherd.secret_skill.text = O zaman bana ihtiyacın yok. <b>Odunculuk seviye 20</b>'ye ulaş, açtığın her <b>Noel Hediyesi</b> benden küçük bir fazlalık taşısın.\nYa da bir süre benimle kes. İkisi de olur.

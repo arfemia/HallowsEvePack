@@ -1,0 +1,38 @@
+# Christmas - the calendar's words (what Christmas and Christmas Morning are called, and their banners),
+# the costumes' names and the notice for Santa's Sack. Keys are written bare: the library finds each one
+# by its tail, whatever this file is called. Banners and notices print markup as text, so none of these
+# values carries any.
+
+# ---- Christmas ----
+calendar.christmas.name = Natale
+calendar.christmas.flavor = Babbo Natale è nel Tempio Dimenticato, e dei Trork con il cappello da Babbo Natale sono scappati con i suoi regali.
+calendar.christmas.herald.start = Natale
+calendar.christmas.herald.start.sub = Babbo Natale è nel Tempio Dimenticato, e dei Trork gli hanno rubato i regali.
+calendar.christmas.herald.end = Il Natale è finito
+calendar.christmas.herald.end.sub = La slitta di Babbo Natale è sistemata fino all'anno prossimo.
+
+# ---- Christmas Morning ----
+calendar.christmas_morning.name = Mattina di Natale
+calendar.christmas_morning.flavor = La mattina di Natale nel Tempio Dimenticato, con qualcosa sotto l'albero di Babbo Natale.
+calendar.christmas_morning.herald.start = Buon Natale
+calendar.christmas_morning.herald.start.sub = Vai a trovare Babbo Natale nel Tempio Dimenticato.
+
+# ---- Costumes ----
+# A costume's buff-bar tile name. Its effect's Name is this key in full (christmas.world.effect...),
+# because the client reads an effect's Name exactly as written.
+effect.christmas_costume_elf.name = Costume da Elfo
+effect.christmas_costume_reindeer.name = Costume da Renna
+effect.christmas_costume_elf_suit.name = Costume da Elfo
+effect.christmas_costume_santa.name = Costume da Babbo Natale
+
+# ---- Christmas Cheer ----
+# What a friend's present leaves on you: its buff-bar tile name. Its effect's Name is this key in full.
+effect.christmas_cheer.name = Allegria Natalizia
+
+# ---- Santa's Sack ----
+notify.christmas_santas_sack = Un Sacco di Babbo Natale, per salire ancora più in alto nella Lista dei Buoni.
+
+# ---- Christmas Eve ----
+# The banner when a player collects Christmas Eve's pay. The sub line's {0} is the player's name.
+notify.christmas_eve_delivered = La Slitta è Piena
+notify.christmas_eve_delivered.sub = {0} ha aiutato Babbo Natale a prepararsi per la Vigilia di Natale.

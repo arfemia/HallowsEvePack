@@ -104,3 +104,51 @@ effect.harvest_feast_food_regen.name = Rigenerazione Salute III
 effect.harvest_feast_food_health.name = Salute Potenziata IV
 effect.harvest_feast_food_stamina.name = Stamina Potenziata IV
 effect.harvest_feast_food_favor.name = Favore Potenziato
+Christmas_Hat.name = Cappello di Natale
+Christmas_Hat.description = Un morbido cappello di cotone per tenerti calde le orecchie. Elsie la Tessitrice lo vende nel suo negozio di Natale nel Tempio Dimenticato quando Babbo Natale ti considera Buono. Parte del Set di Natale: ogni pezzo fa guadagnare un po' più in fretta il favore di Babbo Natale e ripara un po' dal freddo, e più pezzi del set indossi, più salute hai.
+Christmas_Coat.name = Cappotto di Natale
+Christmas_Coat.description = Un cappotto spesso di cotone per la notte più fredda dell'anno. Elsie la Tessitrice lo vende nel suo negozio di Natale nel Tempio Dimenticato quando sei il Preferito di Babbo Natale. Parte del Set di Natale: ogni pezzo fa guadagnare un po' più in fretta il favore di Babbo Natale e ripara un po' dal freddo, e più pezzi del set indossi, più salute hai.
+Christmas_Gloves.name = Guanti di Natale
+Christmas_Gloves.description = Morbidi guanti di cotone per fare i pupazzi di neve. Elsie la Tessitrice li vende nel suo negozio di Natale nel Tempio Dimenticato quando sei In Lista con Babbo Natale. Parte del Set di Natale: ogni pezzo fa guadagnare un po' più in fretta il favore di Babbo Natale e ripara un po' dal freddo, e più pezzi del set indossi, più salute hai.
+Christmas_Trousers.name = Pantaloni di Natale
+Christmas_Trousers.description = Caldi pantaloni di cotone che tengono fuori la neve. Elsie la Tessitrice li vende nel suo negozio di Natale nel Tempio Dimenticato quando Babbo Natale ti considera Molto Buono. Parte del Set di Natale: ogni pezzo fa guadagnare un po' più in fretta il favore di Babbo Natale e ripara un po' dal freddo, e più pezzi del set indossi, più salute hai.
+Christmas_Gingerbread_Cookie.name = Biscotto di Pan di Zenzero
+Christmas_Gingerbread_Cookie.description = Un ometto di pan di zenzero dal morso speziato. Ripristina subito il <color is="#ffffff">5%</color> di salute e concede:\n\n• <color is="#ffffff">Piedi Veloci</color>: ti muovi del <color is="#ffffff">15%</color> più in fretta\n\nDurata: <color is="#ffffff">10:00</color>\n\nCuocili a un Fornello dello Chef dopo aver imparato la ricetta.
+Christmas_Hot_Cocoa.name = Cioccolata Calda
+Christmas_Hot_Cocoa.description = Una tazza fumante di cioccolata, dolce e speziata. Ripristina subito il <color is="#ffffff">5%</color> di salute e concede:\n\n• <color is="#ffffff">Rigenerazione Salute III</color>\n• <color is="#ffffff">Caldo Dentro</color>: <color is="#ffffff">40%</color> di danni da ghiaccio in meno\n\nDurata: <color is="#ffffff">10:00</color>\n\nPreparala a un Fornello dello Chef dopo aver imparato la ricetta.
+Christmas_Cake.name = Torta di Natale
+Christmas_Cake.description = Un rotolo di pan di spagna con una dolce spirale dentro. Ripristina subito il <color is="#ffffff">5%</color> di salute e concede:\n\n• <color is="#ffffff">Rigenerazione Salute III</color>\n• <color is="#ffffff">Piedi Veloci</color>: ti muovi del <color is="#ffffff">15%</color> più in fretta\n• <color is="#ffffff">Caldo Dentro</color>: <color is="#ffffff">40%</color> di danni da ghiaccio in meno\n• <color is="#ffffff">Bonus Lista dei Buoni</color>: il favore di Babbo Natale arriva il <color is="#ffffff">10%</color> più in fretta\n\nDurata: <color is="#ffffff">10:00</color>\n\nCuocila a un Fornello dello Chef dopo aver imparato la ricetta.
+Christmas_Recipe_Gingerbread_Cookie.name = Ricetta: Biscotto di Pan di Zenzero
+Christmas_Recipe_Gingerbread_Cookie.description = Insegna la ricetta di <item is="Christmas_Gingerbread_Cookie"/>. Cuocili a un Fornello dello Chef con impasto e spezie, <color is="#ffffff">3</color> alla volta.\n\nRipristina subito il <color is="#ffffff">5%</color> di salute e concede:\n\n• <color is="#ffffff">Piedi Veloci</color>\n\nDurata: <color is="#ffffff">10:00</color>
+Christmas_Recipe_Hot_Cocoa.name = Ricetta: Cioccolata Calda
+Christmas_Recipe_Hot_Cocoa.description = Insegna la ricetta di <item is="Christmas_Hot_Cocoa"/>. Preparala a un Fornello dello Chef con un boccale d'acqua, linfa d'albero e spezie, e il boccale resta tuo.\n\nRipristina subito il <color is="#ffffff">5%</color> di salute e concede:\n\n• <color is="#ffffff">Rigenerazione Salute III</color>\n• <color is="#ffffff">Caldo Dentro</color>\n\nDurata: <color is="#ffffff">10:00</color>
+Christmas_Recipe_Cake.name = Ricetta: Torta di Natale
+Christmas_Recipe_Cake.description = Insegna la ricetta di <item is="Christmas_Cake"/>. Cuocila a un Fornello dello Chef con impasto, uova e linfa d'albero.\n\nRipristina subito il <color is="#ffffff">5%</color> di salute e concede:\n\n• <color is="#ffffff">Rigenerazione Salute III</color>\n• <color is="#ffffff">Piedi Veloci</color>\n• <color is="#ffffff">Caldo Dentro</color>\n• <color is="#ffffff">Bonus Lista dei Buoni</color>\n\nDurata: <color is="#ffffff">10:00</color>
+effect.christmas_food_speed.name = Piedi Veloci
+effect.christmas_food_warmth.name = Caldo Dentro
+effect.christmas_food_regen.name = Rigenerazione Salute III
+effect.christmas_food_favor.name = Bonus Lista dei Buoni
+Christmas_Present.name = Regalo di Natale
+Christmas_Present.description = Un regalino incartato di rosso, con un fiocco sopra. I Ladri di Regali li lasciano cadere, ed Elsie la Tessitrice li vende nel suo negozio di Natale. Tienilo in mano e clicca con il tasto destro per aprirlo, e tieni quello che c'è dentro.\n\nOppure regalalo: tienilo in mano, guarda un amico, Babbo Natale o uno dei suoi aiutanti, e clicca con il tasto sinistro. Un amico riceve un regalo migliore del tuo, e Babbo Natale ti vuole un po' più bene.
+Christmas_Snowball.name = Palla di Neve
+Christmas_Snowball.description = Una fredda sorpresa per un amico. Lanciala, e chi colpisce rallenta per un attimo. Non fa mai male. Le distribuisce Bram il Pastore.
+Christmas_Elf_Suit.name = Costume da Elfo
+Christmas_Elf_Suit.description = Un fagotto di vestiti da elfo verdi, della tua taglia. Clicca con il tasto destro per indossarlo e sembrare uno degli elfi di Babbo Natale per <color is="#ffffff">30:00</color>. Scrivi /zigcostume off per toglierlo prima. Elsie la Tessitrice te ne dà uno se la aiuti.
+Christmas_Santa_Suit.name = Costume da Babbo Natale
+Christmas_Santa_Suit.description = Un fagotto di vestiti rossi con il bordo di pelliccia bianca, della tua taglia. Clicca con il tasto destro per indossarlo e sembrare Babbo Natale in persona per <color is="#ffffff">30:00</color>. Scrivi /zigcostume off per toglierlo prima. Elsie la Tessitrice lo vende nel suo negozio di Natale.
+Christmas_Wand.name = Bacchetta di Natale
+Christmas_Wand.description = Puntala contro un amico. Un tasto lo trasforma in uno degli elfi di Babbo Natale, l'altro in una renna, e può togliersi il costume quando vuole. Elsie la Tessitrice la vende nel suo negozio di Natale quando sei In Lista con Babbo Natale.
+Christmas_Yeti_Bait.name = Esca per Yeti
+Christmas_Yeti_Bait.description = Un pesce a cui nessuno Yeti sa dire di no. <b>Bram il Pastore</b> nel Tempio Dimenticato ne prende uno per portare te e il tuo gruppo nella <b>Grotta dello Yeti</b> finché dura il Natale.\n\nBram la vende nel suo negozio di Natale dopo che hai portato le carote alle sue renne.
+Christmas_Yeti_Fur_Hood.name = Cappuccio di Pelo di Yeti
+Christmas_Yeti_Fur_Hood.description = Fitto pelo bianco preso dalla schiena dello Yeti in persona. Subisci il <color is="#ffffff">15%</color> di danni da ghiaccio in meno mentre lo indossi. Ogni tanto lo Yeti ne lascia uno la prima volta che lo batti ogni giorno.
+Christmas_Yeti_Fur_Coat.name = Cappotto di Pelo di Yeti
+Christmas_Yeti_Fur_Coat.description = Un pesante cappotto del pelo bianco dello Yeti. Subisci il <color is="#ffffff">20%</color> di danni da ghiaccio in meno mentre lo indossi. Ogni tanto lo Yeti ne lascia uno la prima volta che lo batti ogni giorno.
+Christmas_Ornament.name = Pallina di Natale
+Christmas_Ornament.description = Una pallina di vetro per l'albero. Babbo Natale ne dà una a chiunque lo aiuti a riempire la slitta alla Vigilia di Natale, e ogni Natale ha la sua. Appendila dove vuoi.
+Christmas_Tomas_Loaf.name = Pane di Natale di Tomas
+Christmas_Tomas_Loaf.description = Il pane dolce di Tomas il Mugnaio. Ripristina subito il <color is="#ffffff">5%</color> di salute e concede:\n\n• <color is="#ffffff">Piedi Veloci</color>: ti muovi del <color is="#ffffff">15%</color> più in fretta\n• <color is="#ffffff">Caldo Dentro</color>: <color is="#ffffff">40%</color> di danni da ghiaccio in meno\n\nDurata: <color is="#ffffff">10:00</color>\n\nCuocilo a un Fornello dello Chef dopo aver imparato la ricetta.
+Christmas_Recipe_Tomas_Loaf.name = Ricetta: Pane di Natale di Tomas
+Christmas_Recipe_Tomas_Loaf.description = Insegna la ricetta di <item is="Christmas_Tomas_Loaf"/>. Cuocilo a un Fornello dello Chef con impasto e linfa d'albero, <color is="#ffffff">2</color> alla volta.\n\nRipristina subito il <color is="#ffffff">5%</color> di salute e concede:\n\n• <color is="#ffffff">Piedi Veloci</color>\n• <color is="#ffffff">Caldo Dentro</color>\n\nDurata: <color is="#ffffff">10:00</color>
+Christmas_Reindeer_Suit.name = Costume da Renna
+Christmas_Reindeer_Suit.description = Un fagotto di vestiti da renna, con corna e naso rosso inclusi, della tua taglia. Clicca con il tasto destro per indossarlo e sembrare una delle renne di Babbo Natale per <color is="#ffffff">30:00</color>. Scrivi /zigcostume off per toglierlo prima. Elsie la Tessitrice lo vende nel suo negozio di Natale. Chiedile come ottenerlo.

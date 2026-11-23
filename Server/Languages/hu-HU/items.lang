@@ -106,3 +106,51 @@ effect.harvest_feast_food_regen.name = Életerő-regeneráció III
 effect.harvest_feast_food_health.name = Életerő-növelés IV
 effect.harvest_feast_food_stamina.name = Állóképesség-növelés IV
 effect.harvest_feast_food_favor.name = Kegynövelés
+Christmas_Hat.name = Karácsonyi Sapka
+Christmas_Hat.description = Puha pamutsapka, hogy melegen tartsa a füled. Elsie, a Takács árulja a karácsonyi boltjában a Feledett Templomban, ha a Mikulás Jónak tart. A Karácsonyi Szett része: minden darab egy kicsit gyorsabban szerzi a Mikulás kegyét, és egy kicsit kint tartja a hideget, és minél többet viselsz a szettből, annál több életerőd lesz.
+Christmas_Coat.name = Karácsonyi Kabát
+Christmas_Coat.description = Vastag pamutkabát az év leghidegebb éjszakájára. Elsie, a Takács árulja a karácsonyi boltjában a Feledett Templomban, ha a Mikulás Kedvence vagy. A Karácsonyi Szett része: minden darab egy kicsit gyorsabban szerzi a Mikulás kegyét, és egy kicsit kint tartja a hideget, és minél többet viselsz a szettből, annál több életerőd lesz.
+Christmas_Gloves.name = Karácsonyi Kesztyű
+Christmas_Gloves.description = Puha pamutkesztyű hóemberépítéshez. Elsie, a Takács árulja a karácsonyi boltjában a Feledett Templomban, ha A Listán vagy a Mikulásnál. A Karácsonyi Szett része: minden darab egy kicsit gyorsabban szerzi a Mikulás kegyét, és egy kicsit kint tartja a hideget, és minél többet viselsz a szettből, annál több életerőd lesz.
+Christmas_Trousers.name = Karácsonyi Nadrág
+Christmas_Trousers.description = Meleg pamutnadrág, amely kint tartja a havat. Elsie, a Takács árulja a karácsonyi boltjában a Feledett Templomban, ha a Mikulás Nagyon Jónak tart. A Karácsonyi Szett része: minden darab egy kicsit gyorsabban szerzi a Mikulás kegyét, és egy kicsit kint tartja a hideget, és minél többet viselsz a szettből, annál több életerőd lesz.
+Christmas_Gingerbread_Cookie.name = Mézeskalács
+Christmas_Gingerbread_Cookie.description = Egy kis mézeskalácsember fűszeres ízzel. Azonnal visszaad <color is="#ffffff">5%</color> életerőt, és ad:\n\n• <color is="#ffffff">Fürge Láb</color>: <color is="#ffffff">15%</color>-kal gyorsabban mozogsz\n\nIdőtartam: <color is="#ffffff">10:00</color>\n\nSüsd meg egy Szakács Tűzhelyen, miután megtanultad a receptet.
+Christmas_Hot_Cocoa.name = Forró kakaó
+Christmas_Hot_Cocoa.description = Egy meleg bögre kakaó, édes és fűszeres. Azonnal visszaad <color is="#ffffff">5%</color> életerőt, és ad:\n\n• <color is="#ffffff">Életerő-regeneráció III</color>\n• <color is="#ffffff">Belső Melegség</color>: <color is="#ffffff">40%</color>-kal kevesebb jégkár\n\nIdőtartam: <color is="#ffffff">10:00</color>\n\nKészítsd el egy Szakács Tűzhelyen, miután megtanultad a receptet.
+Christmas_Cake.name = Karácsonyi bejgli
+Christmas_Cake.description = Egy tekercs, édes örvénnyel a belsejében. Azonnal visszaad <color is="#ffffff">5%</color> életerőt, és ad:\n\n• <color is="#ffffff">Életerő-regeneráció III</color>\n• <color is="#ffffff">Fürge Láb</color>: <color is="#ffffff">15%</color>-kal gyorsabban mozogsz\n• <color is="#ffffff">Belső Melegség</color>: <color is="#ffffff">40%</color>-kal kevesebb jégkár\n• <color is="#ffffff">Jólista-növelés</color>: a Mikulás kegye <color is="#ffffff">10%</color>-kal gyorsabban nő\n\nIdőtartam: <color is="#ffffff">10:00</color>\n\nSüsd meg egy Szakács Tűzhelyen, miután megtanultad a receptet.
+Christmas_Recipe_Gingerbread_Cookie.name = Recept: Mézeskalács
+Christmas_Recipe_Gingerbread_Cookie.description = Megtanítja a(z) <item is="Christmas_Gingerbread_Cookie"/> receptjét. Süsd meg őket egy Szakács Tűzhelyen tésztából és fűszerekből, egyszerre <color is="#ffffff">3</color> darabot.\n\nAzonnal visszaad <color is="#ffffff">5%</color> életerőt, és ad:\n\n• <color is="#ffffff">Fürge Láb</color>\n\nIdőtartam: <color is="#ffffff">10:00</color>
+Christmas_Recipe_Hot_Cocoa.name = Recept: Forró kakaó
+Christmas_Recipe_Hot_Cocoa.description = Megtanítja a(z) <item is="Christmas_Hot_Cocoa"/> receptjét. Készítsd el egy Szakács Tűzhelyen egy korsó vízből, fanedvből és fűszerekből, és a korsót megtartod.\n\nAzonnal visszaad <color is="#ffffff">5%</color> életerőt, és ad:\n\n• <color is="#ffffff">Életerő-regeneráció III</color>\n• <color is="#ffffff">Belső Melegség</color>\n\nIdőtartam: <color is="#ffffff">10:00</color>
+Christmas_Recipe_Cake.name = Recept: Karácsonyi bejgli
+Christmas_Recipe_Cake.description = Megtanítja a(z) <item is="Christmas_Cake"/> receptjét. Süsd meg egy Szakács Tűzhelyen tésztából, tojásból és fanedvből.\n\nAzonnal visszaad <color is="#ffffff">5%</color> életerőt, és ad:\n\n• <color is="#ffffff">Életerő-regeneráció III</color>\n• <color is="#ffffff">Fürge Láb</color>\n• <color is="#ffffff">Belső Melegség</color>\n• <color is="#ffffff">Jólista-növelés</color>\n\nIdőtartam: <color is="#ffffff">10:00</color>
+effect.christmas_food_speed.name = Fürge Láb
+effect.christmas_food_warmth.name = Belső Melegség
+effect.christmas_food_regen.name = Életerő-regeneráció III
+effect.christmas_food_favor.name = Jólista-növelés
+Christmas_Present.name = Karácsonyi Ajándék
+Christmas_Present.description = Egy kis piros csomagolású ajándék, masnival a tetején. Az Ajándéklopók ejtik, és Elsie, a Takács árulja a karácsonyi boltjában. Tartsd a kezedben, és kattints jobb gombbal a kibontásához, és tartsd meg, ami benne van.\n\nVagy add tovább: tartsd a kezedben, nézz egy barátra, a Mikulásra vagy az egyik segítőjére, és kattints balra. A barát jobb ajándékot kap, mint amit te kapnál, és a Mikulás egy kicsit jobban megkedvel.
+Christmas_Snowball.name = Hógolyó
+Christmas_Snowball.description = Egy hideg meglepetés egy barátnak. Dobd el, és akit eltalál, egy pillanatra lelassul. Sosem sebez. Bram, a Pásztor osztja.
+Christmas_Elf_Suit.name = Manó-ruha
+Christmas_Elf_Suit.description = Egy köteg zöld manóruha, pont a te méretedre. Kattints jobb gombbal a felvételéhez, és <color is="#ffffff">30:00</color> ideig a Mikulás egyik manójának nézel ki. Írd be: /zigcostume off, hogy hamarabb levedd. Elsie, a Takács ad egyet, ha segítesz neki.
+Christmas_Santa_Suit.name = Mikulás-ruha
+Christmas_Santa_Suit.description = Egy köteg piros ruha fehér szőrmeszegéllyel, pont a te méretedre. Kattints jobb gombbal a felvételéhez, és <color is="#ffffff">30:00</color> ideig maga a Mikulásnak nézel ki. Írd be: /zigcostume off, hogy hamarabb levedd. Elsie, a Takács árulja a karácsonyi boltjában.
+Christmas_Wand.name = Karácsonyi Pálca
+Christmas_Wand.description = Irányítsd egy barátra. Az egyik gomb a Mikulás egyik manójává változtatja, a másik rénszarvassá, és bármikor levehetik a jelmezt. Elsie, a Takács árulja a karácsonyi boltjában, ha A Listán vagy a Mikulásnál.
+Christmas_Yeti_Bait.name = Jeti-csali
+Christmas_Yeti_Bait.description = Egy hal, amelynek egy Jeti sem tud ellenállni. <b>Bram, a Pásztor</b> a Feledett Templomban egyet elvesz érte, és bevezet téged és a csapatodat a <b>Jeti Barlangjába</b>, amíg tart a karácsony.\n\nBram a karácsonyi boltjában árulja, ha már elvitted a rénszarvasainak a sárgarépát.
+Christmas_Yeti_Fur_Hood.name = Jeti-szőrmekapucni
+Christmas_Yeti_Fur_Hood.description = Vastag fehér szőrme a Jeti saját hátáról. <color is="#ffffff">15%</color>-kal kevesebb jégkárt kapsz, amíg viseled. A Jeti néha hagy hátra egyet, amikor először győzöd le minden nap.
+Christmas_Yeti_Fur_Coat.name = Jeti-szőrmekabát
+Christmas_Yeti_Fur_Coat.description = A Jeti fehér szőréből készült nehéz kabát. <color is="#ffffff">20%</color>-kal kevesebb jégkárt kapsz, amíg viseled. A Jeti néha hagy hátra egyet, amikor először győzöd le minden nap.
+Christmas_Ornament.name = Karácsonyi Dísz
+Christmas_Ornament.description = Egy üveggömb a fára. A Mikulás mindenkinek ad egyet, aki segít neki megtölteni a szánját Szentestén, és minden karácsonynak megvan a sajátja. Akaszd, ahová csak akarod.
+Christmas_Tomas_Loaf.name = Tomas karácsonyi kalácsa
+Christmas_Tomas_Loaf.description = Tomas, a Molnár saját édes kalácsa. Azonnal visszaad <color is="#ffffff">5%</color> életerőt, és ad:\n\n• <color is="#ffffff">Fürge Láb</color>: <color is="#ffffff">15%</color>-kal gyorsabban mozogsz\n• <color is="#ffffff">Belső Melegség</color>: <color is="#ffffff">40%</color>-kal kevesebb jégkár\n\nIdőtartam: <color is="#ffffff">10:00</color>\n\nSüsd meg egy Szakács Tűzhelyen, miután megtanultad a receptet.
+Christmas_Recipe_Tomas_Loaf.name = Recept: Tomas karácsonyi kalácsa
+Christmas_Recipe_Tomas_Loaf.description = Megtanítja a(z) <item is="Christmas_Tomas_Loaf"/> receptjét. Süsd meg egy Szakács Tűzhelyen tésztából és fanedvből, egyszerre <color is="#ffffff">2</color> darabot.\n\nAzonnal visszaad <color is="#ffffff">5%</color> életerőt, és ad:\n\n• <color is="#ffffff">Fürge Láb</color>\n• <color is="#ffffff">Belső Melegség</color>\n\nIdőtartam: <color is="#ffffff">10:00</color>
+Christmas_Reindeer_Suit.name = Rénszarvas-ruha
+Christmas_Reindeer_Suit.description = Egy köteg rénszarvasruha, agancsot és piros orrot is beleértve, pont a te méretedre. Kattints jobb gombbal a felvételéhez, és <color is="#ffffff">30:00</color> ideig a Mikulás egyik rénszarvasának nézel ki. Írd be: /zigcostume off, hogy hamarabb levedd. Elsie, a Takács árulja a karácsonyi boltjában. Kérdezd meg, hogyan szerezheted meg.

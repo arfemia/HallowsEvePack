@@ -106,4 +106,52 @@ effect.harvest_feast_food_regen.name = Regeneração de Vida III
 effect.harvest_feast_food_health.name = Aumento de Vida IV
 effect.harvest_feast_food_stamina.name = Aumento de Estâmina IV
 effect.harvest_feast_food_favor.name = Aumento de Favor
+Christmas_Hat.name = Gorro de Natal
+Christmas_Hat.description = Um gorro de algodão aconchegante para manter as orelhas quentes. Elsie, a Tecelã, vende na loja de Natal dela no Templo Esquecido quando o Papai Noel considera você Bonzinho. Parte do Conjunto de Natal: cada peça faz você ganhar o favor do Papai Noel um pouco mais rápido e afasta um pouco do frio, e quanto mais do conjunto você usa, mais vida ganha.
+Christmas_Coat.name = Casaco de Natal
+Christmas_Coat.description = Um casaco grosso de algodão para a noite mais fria do ano. Elsie, a Tecelã, vende na loja de Natal dela no Templo Esquecido quando você é Favorito do Papai Noel. Parte do Conjunto de Natal: cada peça faz você ganhar o favor do Papai Noel um pouco mais rápido e afasta um pouco do frio, e quanto mais do conjunto você usa, mais vida ganha.
+Christmas_Gloves.name = Luvas de Natal
+Christmas_Gloves.description = Luvas macias de algodão para fazer bonecos de neve. Elsie, a Tecelã, vende na loja de Natal dela no Templo Esquecido quando você está Na Lista do Papai Noel. Parte do Conjunto de Natal: cada peça faz você ganhar o favor do Papai Noel um pouco mais rápido e afasta um pouco do frio, e quanto mais do conjunto você usa, mais vida ganha.
+Christmas_Trousers.name = Calça de Natal
+Christmas_Trousers.description = Uma calça quente de algodão que deixa a neve do lado de fora. Elsie, a Tecelã, vende na loja de Natal dela no Templo Esquecido quando o Papai Noel considera você Muito Bonzinho. Parte do Conjunto de Natal: cada peça faz você ganhar o favor do Papai Noel um pouco mais rápido e afasta um pouco do frio, e quanto mais do conjunto você usa, mais vida ganha.
+Christmas_Gingerbread_Cookie.name = Biscoito de Gengibre
+Christmas_Gingerbread_Cookie.description = Um homenzinho de gengibre com uma mordida picante. Restaura instantaneamente <color is="#ffffff">5%</color> da vida e concede:\n\n• <color is="#ffffff">Pés Ligeiros</color>: você se move <color is="#ffffff">15%</color> mais rápido\n\nDuração: <color is="#ffffff">10:00</color>\n\nAsse num Forno do Chefe depois de aprender a receita.
+Christmas_Hot_Cocoa.name = Chocolate Quente
+Christmas_Hot_Cocoa.description = Uma caneca morna de chocolate, doce e temperado. Restaura instantaneamente <color is="#ffffff">5%</color> da vida e concede:\n\n• <color is="#ffffff">Regeneração de Vida III</color>\n• <color is="#ffffff">Calor por Dentro</color>: <color is="#ffffff">40%</color> a menos de dano de gelo\n\nDuração: <color is="#ffffff">10:00</color>\n\nFaça num Forno do Chefe depois de aprender a receita.
+Christmas_Cake.name = Bolo de Natal
+Christmas_Cake.description = Um rocambole com um redemoinho doce por dentro. Restaura instantaneamente <color is="#ffffff">5%</color> da vida e concede:\n\n• <color is="#ffffff">Regeneração de Vida III</color>\n• <color is="#ffffff">Pés Ligeiros</color>: você se move <color is="#ffffff">15%</color> mais rápido\n• <color is="#ffffff">Calor por Dentro</color>: <color is="#ffffff">40%</color> a menos de dano de gelo\n• <color is="#ffffff">Aumento na Lista</color>: o favor do Papai Noel sobe <color is="#ffffff">10%</color> mais rápido\n\nDuração: <color is="#ffffff">10:00</color>\n\nAsse num Forno do Chefe depois de aprender a receita.
+Christmas_Recipe_Gingerbread_Cookie.name = Receita: Biscoito de Gengibre
+Christmas_Recipe_Gingerbread_Cookie.description = Ensina a receita de <item is="Christmas_Gingerbread_Cookie"/>. Asse num Forno do Chefe com massa e temperos, <color is="#ffffff">3</color> de cada vez.\n\nRestaura instantaneamente <color is="#ffffff">5%</color> da vida e concede:\n\n• <color is="#ffffff">Pés Ligeiros</color>\n\nDuração: <color is="#ffffff">10:00</color>
+Christmas_Recipe_Hot_Cocoa.name = Receita: Chocolate Quente
+Christmas_Recipe_Hot_Cocoa.description = Ensina a receita de <item is="Christmas_Hot_Cocoa"/>. Faça num Forno do Chefe com uma caneca de água, seiva de árvore e temperos, e a caneca fica com você.\n\nRestaura instantaneamente <color is="#ffffff">5%</color> da vida e concede:\n\n• <color is="#ffffff">Regeneração de Vida III</color>\n• <color is="#ffffff">Calor por Dentro</color>\n\nDuração: <color is="#ffffff">10:00</color>
+Christmas_Recipe_Cake.name = Receita: Bolo de Natal
+Christmas_Recipe_Cake.description = Ensina a receita de <item is="Christmas_Cake"/>. Asse num Forno do Chefe com massa, ovos e seiva de árvore.\n\nRestaura instantaneamente <color is="#ffffff">5%</color> da vida e concede:\n\n• <color is="#ffffff">Regeneração de Vida III</color>\n• <color is="#ffffff">Pés Ligeiros</color>\n• <color is="#ffffff">Calor por Dentro</color>\n• <color is="#ffffff">Aumento na Lista</color>\n\nDuração: <color is="#ffffff">10:00</color>
+effect.christmas_food_speed.name = Pés Ligeiros
+effect.christmas_food_warmth.name = Calor por Dentro
+effect.christmas_food_regen.name = Regeneração de Vida III
+effect.christmas_food_favor.name = Aumento na Lista
+Christmas_Present.name = Presente de Natal
+Christmas_Present.description = Um presentinho embrulhado de vermelho, com um laço em cima. Ladrões de Presentes deixam cair, e Elsie, a Tecelã, vende na loja de Natal dela. Segure e clique com o botão direito para abrir, e fique com o que tiver dentro.\n\nOu dê de presente: segure, olhe para um amigo, para o Papai Noel ou para um dos ajudantes dele, e clique com o botão esquerdo. Um amigo ganha um presente melhor do que você ganharia, e o Papai Noel gosta um pouco mais de você.
+Christmas_Snowball.name = Bola de Neve
+Christmas_Snowball.description = Uma surpresa gelada para um amigo. Jogue, e quem for atingido desacelera por um instante. Nunca machuca. Bram, o Pastor, distribui.
+Christmas_Elf_Suit.name = Roupa de Elfo
+Christmas_Elf_Suit.description = Um monte de roupas verdes de elfo, do seu tamanho. Clique com o botão direito para vestir e parecer um dos elfos do Papai Noel por <color is="#ffffff">30:00</color>. Digite /zigcostume off para tirar antes. Elsie, a Tecelã, dá uma a você por ajudá-la.
+Christmas_Santa_Suit.name = Roupa de Papai Noel
+Christmas_Santa_Suit.description = Um monte de roupas vermelhas com acabamento de pelo branco, do seu tamanho. Clique com o botão direito para vestir e parecer o próprio Papai Noel por <color is="#ffffff">30:00</color>. Digite /zigcostume off para tirar antes. Elsie, a Tecelã, vende na loja de Natal dela.
+Christmas_Wand.name = Varinha de Natal
+Christmas_Wand.description = Aponte para um amigo. Um botão o transforma num dos elfos do Papai Noel, o outro numa rena, e ele pode tirar a fantasia quando quiser. Elsie, a Tecelã, vende na loja de Natal dela quando você está Na Lista do Papai Noel.
+Christmas_Yeti_Bait.name = Isca de Yeti
+Christmas_Yeti_Bait.description = Um peixe a que nenhum Yeti resiste. <b>Bram, o Pastor</b>, no Templo Esquecido, usa uma para levar você e seu grupo até a <b>Caverna do Yeti</b> enquanto o Natal durar.\n\nBram vende na loja de Natal dele depois que você leva cenouras às renas dele.
+Christmas_Yeti_Fur_Hood.name = Capuz de Pele de Yeti
+Christmas_Yeti_Fur_Hood.description = Pele branca e grossa das costas do próprio Yeti. Você sofre <color is="#ffffff">15%</color> a menos de dano de gelo enquanto usa. O Yeti às vezes deixa um para trás na primeira vez que você o derrota a cada dia.
+Christmas_Yeti_Fur_Coat.name = Casaco de Pele de Yeti
+Christmas_Yeti_Fur_Coat.description = Um casaco pesado da pele branca do Yeti. Você sofre <color is="#ffffff">20%</color> a menos de dano de gelo enquanto usa. O Yeti às vezes deixa um para trás na primeira vez que você o derrota a cada dia.
+Christmas_Ornament.name = Enfeite de Natal
+Christmas_Ornament.description = Uma bola de vidro para a árvore. O Papai Noel dá um a todo mundo que ajuda a encher o trenó dele na Véspera de Natal, e cada Natal tem o seu. Pendure onde quiser.
+Christmas_Tomas_Loaf.name = Pão de Natal do Tomas
+Christmas_Tomas_Loaf.description = O pão doce do próprio Tomas, o Moleiro. Restaura instantaneamente <color is="#ffffff">5%</color> da vida e concede:\n\n• <color is="#ffffff">Pés Ligeiros</color>: você se move <color is="#ffffff">15%</color> mais rápido\n• <color is="#ffffff">Calor por Dentro</color>: <color is="#ffffff">40%</color> a menos de dano de gelo\n\nDuração: <color is="#ffffff">10:00</color>\n\nAsse num Forno do Chefe depois de aprender a receita.
+Christmas_Recipe_Tomas_Loaf.name = Receita: Pão de Natal do Tomas
+Christmas_Recipe_Tomas_Loaf.description = Ensina a receita de <item is="Christmas_Tomas_Loaf"/>. Asse num Forno do Chefe com massa e seiva de árvore, <color is="#ffffff">2</color> de cada vez.\n\nRestaura instantaneamente <color is="#ffffff">5%</color> da vida e concede:\n\n• <color is="#ffffff">Pés Ligeiros</color>\n• <color is="#ffffff">Calor por Dentro</color>\n\nDuração: <color is="#ffffff">10:00</color>
+Christmas_Reindeer_Suit.name = Roupa de Rena
+Christmas_Reindeer_Suit.description = Um monte de roupas de rena, com chifres e nariz vermelho incluídos, do seu tamanho. Clique com o botão direito para vestir e parecer uma das renas do Papai Noel por <color is="#ffffff">30:00</color>. Digite /zigcostume off para tirar antes. Elsie, a Tecelã, vende na loja de Natal dela. Pergunte a ela como ganhar.
 

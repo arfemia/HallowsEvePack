@@ -1,8 +1,8 @@
 # Seasons of Orbis
 
-Yearly events for your Hytale server. Hallow's Eve runs from October 1 to November 12, Harvest Feast from November 20 to December 6, and every January 13 is Hytale's Anniversary.
+Yearly events for your Hytale server. Hallow's Eve runs from October 1 to November 12, Harvest Feast from November 20 to December 6, Christmas from December 2 to January 10, and every January 13 is Hytale's Anniversary.
 
-Each season brings a host to the Forgotten Temple with quests, a daily board, a shop and achievements: Old Jack for Hallow's Eve, Martha the Cook for Harvest Feast. The pack needs Ziggfreed's CommonLib 2.5.1 or newer and RPG Stations 1.1.1 or newer, on a Hytale Update 7 server. MMO Skill Tree and Alec's Tamework are optional. Everything plays in nine languages.
+Each season brings a host to the Forgotten Temple with quests, a daily board, a shop and achievements: Old Jack for Hallow's Eve, Martha the Cook for Harvest Feast, Santa for Christmas. The pack needs Ziggfreed's CommonLib 2.5.3 or newer and RPG Stations 1.1.1 or newer, on a Hytale Update 7 server. MMO Skill Tree and Alec's Tamework are optional. Everything plays in nine languages.
 
 [![Discord](https://img.shields.io/badge/Discord-Join%20Server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/5NFdZsUxHZ) [![Ko-fi](https://img.shields.io/badge/Ko--fi-Support-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/ziggfreed) [![Documentation](https://img.shields.io/badge/Docs-Read%20More-0ea5e9?style=for-the-badge)](https://mmo-skill-tree-docs.ziggfreed.com)
 
@@ -54,9 +54,26 @@ Each season brings a host to the Forgotten Temple with quests, a daily board, a 
 - Eight achievements each year, the last of them The Full Table and its title "of the Full Table", for the other seven in one feast: the supper round, ten daily jobs and one win over the Great Turkey among them.
 - More you keep for good, from one feast to the next: Martha's ranks, the Harvest Set, all three of her dishes, ten Extra Turkeys and your first Feast Basket. Great Turkey Hunter and Great Turkey Slayer, for 5 and 20 wins over the Great Turkey either way in, are a ladder with the title "Great Turkey Slayer" at the top, and Golden Turkey asks for the trophy. Hard Graveyard is yours for a win on the hard way in. Sit down to The Feast in three different years for Set of Plates and the title "Martha's Regular".
 
+## Christmas, December 2 to January 10
+
+- **Santa** sets up by his tree in the Forgotten Temple. Trorks in Santa hats robbed his sleigh, and a quest in your log, Meet Santa, sends you to help.
+- Present Thieves come out at night in the Emerald Wilds and all day in the snow of the Whisperfrost Frontiers. About one in three drops a Christmas Present.
+- Open a present yourself, or hold it, look at a friend and left-click. They get a better gift and Christmas Cheer. It works with PvP off and in the temple.
+- His story: catch the thieves, feed Bram's reindeer, bake Gingerbread Cookies with Tomas and wrap presents with Elsie. Christmas Eve fills his sleigh and pays a Christmas Ornament with the year on it, and from December 25 a present waits for everyone under his tree.
+- Tomas, Elsie and Bram stay on from the Harvest Feast as his helpers, in winter clothes once the feast is over. Each has a daily, a job a day on their own board, and a secret you earn as their apprentice: Tomas's Christmas Loaf, Elsie's Reindeer Suit, and a little extra from Bram in every present you open.
+- The Christmas Board posts an outdoor job and a workshop job every day, with more as you climb Santa's Nice List. Extra Thieves runs as often as you like, and Santa's Stocking is free once a day.
+- Sing a carol to anyone but Santa, once a day each, for a candy cane.
+- Christmas Coins, Christmas's own currency, spend at four shops: Santa's Stall, Tomas's Bakery, Elsie's Stall and Bram's Snowballs. They keep until next Christmas.
+- Gingerbread Cookies, Hot Cocoa and Christmas Cake, from Tomas's recipes at a Chef's Stove. Faster feet, warmth, health back, and the cake does all of it.
+- The Christmas Set: a hat, coat, gloves and trousers from Elsie that keep out the cold and earn Santa's favor faster.
+- Snowballs slow a friend for a moment and never hurt. Bram hands out a bundle free every day. The Christmas Wand turns a friend into an elf or a reindeer.
+- Santa's Nice List runs from Newcomer to Santa's Favorite, with a gift at each step and a Santa's Sack every 5,000 favor past the top.
+- **The Yeti Cave**. Buy Yeti Bait from Bram and he leads you and up to four friends to the Yeti. Back off when a ring lights up around him, step off the rings before his snowballs land, and watch for two White Wolves near the end. His Boss Kill Claim can hold the Yeti Fur Hood or Coat.
+- Fourteen achievements, nine of them each year, with the title "the Merrymaker" for five of those in one Christmas and "Santa's Favorite" at the top of the Nice List. Christmas has its own Almanac page too.
+
 ## Every season
 
-- Festival Favor, a reputation every season shares, and Festival Tokens, a wallet that keeps from one season to the next. Old Jack's and Martha's quests and board jobs pay both.
+- Festival Favor, a reputation every season shares, and Festival Tokens, a wallet that keeps from one season to the next. Most of Old Jack's, Martha's and Santa's quests and board jobs pay both.
 - The Festival Shelf at each host's shop sells by season for Festival Tokens. High Festival Favor opens the Goblin Plushie and the Carved Kweebec Figure, found nowhere else.
 - Achievements for keepsakes from different seasons, up to Seasons of Orbis and the title "Friend of the Seasons".
 - An Almanac page for each season with your keepsakes, your lifetime tallies and every item to find, with where it comes from. Hallow's Eve's shows what the Horseman's Boss Kill Claim pays and how often the whole server has brought him down.
@@ -67,15 +84,15 @@ From 2027, the day Hytale came out gets a banner and an Almanac page. Be on the 
 
 ## How it works
 
-1. Log in while a season runs. A banner marks it, and a quest in your log sends you to its host in the Forgotten Temple: Lanterns in the Temple to Old Jack, or Meet Martha to Martha the Cook.
-2. Press F on the host to hand it in. Old Jack's and Martha's both give you an Objective Book, which opens your quests, achievements and the Almanac.
-3. Ask "What needs doing?" for the host's quests and board jobs in one list, or open their shop. Once they know you, "How do we stand?" shows your reputation.
-4. Head out for the season's work, Old Jack's creatures after dark or Martha's turkeys and crops by day, then spend what you earn at the host's shop.
+1. Log in while a season runs. A banner marks it, and a quest in your log sends you to its host in the Forgotten Temple: Lanterns in the Temple to Old Jack, Meet Martha to Martha the Cook, or Meet Santa to Santa.
+2. Press F on the host to hand it in. Each of them gives you an Objective Book, which opens your quests, achievements and the Almanac.
+3. Ask "What needs doing?" for the host's quests and board jobs in one list, or open their shop. Once they know you, ask how you stand with them to open your reputation.
+4. Head out for the season's work, Old Jack's creatures after dark, Martha's turkeys and crops by day or Santa's Present Thieves, then spend what you earn at the host's shop.
 5. When the season ends the host leaves, and everything you earned stays with you. An unfinished quest waits for next year.
 
 ## With MMO Skill Tree
 
-Install MMO Skill Tree 1.7.2 or newer and both seasons train your skills. Old Jack's quests, jobs and the season's achievements pay XP in the skill the work trains: Defense for the fights, Harvesting for the pumpkins, Mining for the geodes and Artillery for the bombs. The Horseman pays Defense XP for each day's first win and for clearing his graveyard. During Harvest Feast, Martha's quests and jobs pay Harvesting, Defense, Crafting and Acrobatics XP, her rank gifts add an XP boost, her board posts a Skill job every day, the Harvest Set adds Harvesting XP and Harvesting luck, and Harvesting XP runs a quarter higher for everyone while the feast does. Without it, the rest of each season plays the same.
+Install MMO Skill Tree 1.7.2 or newer and every season trains your skills. Old Jack's quests, jobs and the season's achievements pay XP in the skill the work trains: Defense for the fights, Harvesting for the pumpkins, Mining for the geodes and Artillery for the bombs. The Horseman pays Defense XP for each day's first win and for clearing his graveyard. During Harvest Feast, Martha's quests and jobs pay Harvesting, Defense, Crafting and Acrobatics XP, her rank gifts add an XP boost, her board posts a Skill job every day, the Harvest Set adds Harvesting XP and Harvesting luck, and Harvesting XP runs a quarter higher for everyone while the feast does. At Christmas, Santa's and his helpers' quests and jobs pay XP in the skill the work trains, from Defense for the thieves to Building for decorating, and the Yeti pays Defense XP. Each helper posts a Crafting, Building or Woodcutting job every day, Woodcutting and Crafting XP run a quarter higher all Christmas and every skill does on Christmas Day and New Year's Eve, the Christmas Set adds Woodcutting XP and luck, and level 20 in a helper's trade opens their secret without the apprenticeship. Without it, the rest of each season plays the same.
 
 Add the [MMO Skill Bounty Pack](https://www.curseforge.com/hytale/mods/mmo-skill-tree-bounty-board-pack-rich-customizable) and its Daily board posts a haunt contract each day of Hallow's Eve.
 
@@ -94,11 +111,11 @@ Without Tamework the Reins never drop, and the Almanac leaves them out.
 - To switch Hallow's Eve off, add `"Hallows_Eve": { "Enabled": false }` to `mods/ziggfreedcommon/calendar.json` and run `/zigcalendar reload`. Every event has its own switch there, and the same file can move an event's dates. Nothing anyone earned is lost.
 - The Festival Shelf can also open all year as a shop of its own: switch it on in `mods/ziggfreedcommon/shops.json`.
 - The Horseman's Graveyard and its hard ride are CommonLib dungeons, `Hallows_Eve_Graveyard` and `Hallows_Eve_Graveyard_Hard`: switch either off or change how many players share it in `mods/ziggfreedcommon/dungeons.json`. `/zigdungeon enter Hallows_Eve_Graveyard` takes you in alone while Hallow's Eve runs, without spending a candle.
-- The Turkey Graveyard and its hard way in are CommonLib dungeons too, `Harvest_Feast_Turkey_Graveyard` and `Harvest_Feast_Turkey_Graveyard_Hard`, with the same switches in the same file.
+- The Turkey Graveyard and its hard way in are CommonLib dungeons too, `Harvest_Feast_Turkey_Graveyard` and `Harvest_Feast_Turkey_Graveyard_Hard`, with the same switches in the same file, and so is the Yeti Cave, `Christmas_Yeti_Cave`.
 
 ## Install
 
-1. Run your server on Hytale's Update 7, with Ziggfreed's CommonLib (2.5.1 or newer) and RPG Stations (1.1.1 or newer).
+1. Run your server on Hytale's Update 7, with Ziggfreed's CommonLib (2.5.3 or newer) and RPG Stations (1.1.1 or newer).
 2. Drop the Seasons of Orbis zip into your server's `Mods/` folder beside them.
 3. Start the server. While a season runs, its host is in the Forgotten Temple.
 

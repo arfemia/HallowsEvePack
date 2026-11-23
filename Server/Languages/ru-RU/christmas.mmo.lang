@@ -1,0 +1,121 @@
+
+# Christmas with MMO Skill Tree, and what stands in for it without: the villagers' own job boards (a skill
+# job a day where MMO Skill Tree runs, a plain errand where it does not), the season's boosts and their two
+# one-day events, the Christmas Set's skill half, Christmas Morning's bag of treats, and the villagers'
+# secrets with their apprentice quests and lock lines. Only a line that shows just where MMO Skill Tree
+# runs names a skill, a level or XP; every other line here shows on both kinds of server, so it names none.
+# Keys are written bare: MMO Skill Tree and the library find each one by its tail, whatever this file is
+# called. A job or quest takes its words from the keys its id spells (quest.<id>.title and .flavor). A
+# factor's name and an effect's name are read in full, christmas.mmo. and then the key.
+
+# ---- The villagers' job boards ----
+board.christmas_miller_jobs.title = Работы Томаса
+board.christmas_miller_jobs.desc = Одна работа от меня в день, каждое утро новая. Забирай плату, пока Рождество не закончилось. Опоздаешь, и она дождётся тебя в Книге квестов.
+board.christmas_miller_jobs.grade.skill = Работа на навык
+board.christmas_miller_jobs.grade.errand = Поручение
+board.christmas_weaver_jobs.title = Работы Элси
+board.christmas_weaver_jobs.desc = Одна работа от меня в день, каждое утро новая. Забирай плату, пока Рождество не прошло. Если опоздаешь, она дождётся тебя в Книге квестов.
+board.christmas_weaver_jobs.grade.skill = Работа на навык
+board.christmas_weaver_jobs.grade.errand = Поручение
+board.christmas_shepherd_jobs.title = Работы Брэма
+board.christmas_shepherd_jobs.desc = Одна работа в день, каждое утро новая. Получай плату, пока Рождество не закончилось, а то она будет ждать в Книге квестов.
+board.christmas_shepherd_jobs.grade.skill = Работа на навык
+board.christmas_shepherd_jobs.grade.errand = Поручение
+
+# ---- The skill jobs (only where MMO Skill Tree runs) ----
+quest.mmo_christmas_miller_skill_job.title = Работа по созданию
+quest.mmo_christmas_miller_skill_job.flavor = На Рождество мои печи не остывают. Потрудись сегодня за любым верстаком и научись работать быстрее.
+quest.mmo_christmas_weaver_skill_job.title = Работа по строительству
+quest.mmo_christmas_weaver_skill_job.flavor = Каждый дом хочет рождественский вид. Потрудись сегодня над своим и стань в этом лучше.
+quest.mmo_christmas_shepherd_skill_job.title = Работа по рубке
+quest.mmo_christmas_shepherd_skill_job.flavor = Огонь Санта-Клауса всю ночь ест дрова. Руби сегодня деревья и научись работать топором быстрее.
+
+# ---- The errands (only where MMO Skill Tree is missing) ----
+quest.christmas_errand_wheat.title = Пшеница для мельницы
+quest.christmas_errand_wheat.flavor = Моя мука сама не смелется. Сожни в полях немного пшеницы и принеси мне.
+quest.christmas_errand_bread.title = Хлеб к столу
+quest.christmas_errand_bread.flavor = Помощников Санта-Клауса тоже надо кормить. Испеки хлеб из теста на Кухонной плите.
+quest.christmas_errand_decorations.title = Поручение: украшения
+quest.christmas_errand_decorations.flavor = Развесь у себя дома рождественские украшения. Гирлянды, огоньки, снеговик, подойдёт всё яркое.
+quest.christmas_errand_wool.title = Шерсть для носков
+quest.christmas_errand_wool.flavor = Мне нужна шерсть для рождественских носков. Наделай рулонов шерсти на ткацком станке и принеси мне.
+quest.christmas_errand_logs.title = Поручение: брёвна
+quest.christmas_errand_logs.flavor = Руби брёвна с любых деревьев. Оленьему сараю сегодня нужен огонь.
+quest.christmas_errand_wolves.title = Поручение: волки
+quest.christmas_errand_wolves.flavor = Волки всё нюхают вокруг моего стада. Поохоться на нескольких в лесах или в снегах.
+
+# ---- Steps ----
+objective.christmas.bring_tomas_wheat = Принесите Томасу пшеницы: {0}
+objective.christmas.bake_bread = Испеките {0} {0, plural, one {буханку} few {буханки} many {буханок} other {буханки}} хлеба
+objective.christmas.put_up_decorations = Развесьте дома {0} {0, plural, one {рождественское украшение} few {рождественских украшения} many {рождественских украшений} other {рождественского украшения}}
+objective.christmas.bring_elsie_wool = Принесите Элси {0} {0, plural, one {рулон} few {рулона} many {рулонов} other {рулона}} шерсти
+objective.christmas.hunt_wolves = Добудьте {0} {0, plural, one {волка} few {волков} many {волков} other {волка}}
+objective.christmas.bake_treats = Испеките угощения Томаса: {0}
+
+# ---- Two days inside Christmas ----
+calendar.christmas_day.name = Рождественский день
+calendar.christmas_day.flavor = Сам главный день.
+calendar.christmas_new_years_eve.name = Новогодняя ночь
+calendar.christmas_new_years_eve.flavor = Последняя ночь года.
+
+# ---- The boosts (only where MMO Skill Tree runs) ----
+boostrule.mmo_christmas_trades.title = Рождество
+boostrule.mmo_christmas_day.title = Рождественский день
+boostrule.mmo_christmas_new_years_eve.title = Новогодняя ночь
+
+# ---- The Christmas Set's skill half (only where MMO Skill Tree runs) ----
+# A set's notice is a toast, so no value carries markup.
+gearset.mmo_christmas_set.tier_half = И больше опыта Рубки.
+gearset.mmo_christmas_set.tier_full = И ещё больше опыта Рубки, а при рубке деревьев больше везёт.
+
+# ---- Christmas Morning's treats, and Bram's present ----
+lootable.christmas_treats.title = Мешок угощений
+lootable.christmas_treats.flavor = Карамельные трости, пряники или какао, а иногда и целый Рождественский рулет.
+lootable.christmas_bram_decorations.title = Подарок Брэма
+lootable.christmas_bram_decorations.flavor = Небольшая добавка от Брэма в каждом открытом подарке: рождественское украшение для твоего дома.
+
+# ---- The villagers' secrets ----
+quest.christmas_tomas_apprentice.title = Ученик Томаса
+quest.christmas_tomas_apprentice.flavor = Пеки мои рождественские угощения на Кухонной плите. Считается каждое. Напечёшь достаточно, и я продам тебе рецепт моего собственного Рождественского каравая.
+quest.christmas_elsie_apprentice.title = Ученик Элси
+quest.christmas_elsie_apprentice.flavor = Развесь у себя дома рождественские украшения. Развесишь достаточно, и я продам тебе свой Олений наряд.
+quest.christmas_bram_apprentice.title = Ученик Брэма
+quest.christmas_bram_apprentice.flavor = Руби брёвна с любых деревьев. Нарубишь достаточно, и в каждом открытом тобой Рождественском подарке будет небольшая добавка от меня.
+shop.christmas_offer_recipe_tomas_loaf.title = Рецепт: Рождественский каравай Томаса
+shop.christmas_offer_recipe_tomas_loaf.desc = Собственный сладкий каравай Томаса. Пока он действует, ты быстрее бегаешь, а холод кусает слабее.
+shop.christmas_offer_reindeer_suit.title = Олений наряд
+shop.christmas_offer_reindeer_suit.desc = Надень его, и ты на какое-то время один из оленей Санта-Клауса.
+# A lock line reads "Requires " and then one of these; each server loads the one its overlay names.
+factor.christmas_tomas_key.name = завершение квеста «Ученик Томаса»
+factor.christmas_tomas_key.name_mmo = завершение квеста «Ученик Томаса» или уровень Создания 20
+factor.christmas_elsie_key.name = завершение квеста «Ученик Элси»
+factor.christmas_elsie_key.name_mmo = завершение квеста «Ученик Элси» или уровень Строительства 20
+# A costume's buff-bar tile name. Its effect's Name is this key in full (christmas.mmo.effect...).
+effect.christmas_costume_reindeer_suit.name = Олений наряд
+
+# ---- Tomas's secret, in his Christmas conversation ----
+dialogue.christmas_miller.apprentice_offer.text = У меня есть секрет: собственный <b>Рождественский каравай</b>, слаще любого пирога.\nПеки мои рождественские угощения на <b>Кухонной плите</b> какое-то время, и я продам тебе рецепт.
+dialogue.christmas_miller.apprentice_offer.opt.accept = Научи меня.
+dialogue.christmas_miller.apprentice_brief.text = Пеки <b>Пряничных человечков</b>, <b>Горячее какао</b> или <b>Рождественский рулет</b> на <b>Кухонной плите</b>. Считается каждое. Приходи, когда напечёшь достаточно.
+dialogue.christmas_miller.apprentice_ready.text = Погляди-ка, настоящий пекарь. Рецепт моего <b>Рождественского каравая</b> теперь лежит для тебя в моей лавке.
+dialogue.christmas_miller.apprentice_ready.opt.turnin = Спасибо, Томас.
+dialogue.christmas_miller.opt.secret_skill = А если я уже хорошо готовлю?
+dialogue.christmas_miller.secret_skill.text = Тогда мои уроки тебе не нужны. Доберись до <b>20 уровня Создания</b>, и я всё равно продам тебе рецепт <b>Рождественского каравая</b>.\nИли попеки со мной ещё. Подойдёт и то, и другое.
+
+# ---- Elsie's secret, in her Christmas conversation ----
+dialogue.christmas_weaver.apprentice_offer.text = У меня есть секрет: <b>Олений наряд</b>, который я сшила сама. Он не для всех подряд.\nРазвесь у себя дома <b>рождественские украшения</b>, и когда развесишь достаточно, я продам тебе один.
+dialogue.christmas_weaver.apprentice_offer.opt.accept = Я украшу дом.
+dialogue.christmas_weaver.apprentice_brief.text = Развесь у себя дома гирлянды, огоньки, венки, снеговиков, любые рождественские украшения. Здесь, в храме, ничего вешать нельзя. Украшения есть на праздничной полке в любой рождественской лавке и в Рождественских подарках.
+dialogue.christmas_weaver.apprentice_ready.text = Твой дом, наверное, выглядит чудесно. Мой <b>Олений наряд</b> теперь лежит для тебя в моей лавке.
+dialogue.christmas_weaver.apprentice_ready.opt.turnin = Спасибо, Элси.
+dialogue.christmas_weaver.opt.secret_skill = А если я уже хорошо украшаю?
+dialogue.christmas_weaver.secret_skill.text = Тогда мои уроки тебе не нужны. Доберись до <b>20 уровня Строительства</b>, и я всё равно продам тебе свой <b>Олений наряд</b>.\nИли поукрашай со мной ещё. Подойдёт и то, и другое.
+
+# ---- Bram's secret, in his Christmas conversation ----
+dialogue.christmas_shepherd.apprentice_offer.text = Есть секрет. Помоги мне с брёвнами, и в каждом открытом тобой <b>Рождественском подарке</b> будет небольшая добавка от меня. Украшение, а может, снежинка на верхушку ёлки.
+dialogue.christmas_shepherd.apprentice_offer.opt.accept = Нарублю.
+dialogue.christmas_shepherd.apprentice_brief.text = Руби брёвна с любых деревьев. Считается каждый блок ствола. Приходи, когда наберёшь достаточно.
+dialogue.christmas_shepherd.apprentice_ready.text = Славная куча. Теперь в каждом открытом тобой <b>Рождественском подарке</b> будет небольшая добавка от меня.
+dialogue.christmas_shepherd.apprentice_ready.opt.turnin = Спасибо, Брэм.
+dialogue.christmas_shepherd.opt.secret_skill = А если я уже хорошо владею топором?
+dialogue.christmas_shepherd.secret_skill.text = Тогда я тебе не нужен. Доберись до <b>20 уровня Рубки</b>, и в каждом открытом тобой <b>Рождественском подарке</b> будет небольшая добавка от меня.\nИли порубим вместе ещё. Подойдёт и то, и другое.

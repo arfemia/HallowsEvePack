@@ -106,3 +106,51 @@ effect.harvest_feast_food_regen.name = Régénération de santé III
 effect.harvest_feast_food_health.name = Augmentation de santé IV
 effect.harvest_feast_food_stamina.name = Augmentation d’endurance IV
 effect.harvest_feast_food_favor.name = Augmentation de faveur
+Christmas_Hat.name = Bonnet de Noël
+Christmas_Hat.description = Un bonnet de coton bien douillet pour garder vos oreilles au chaud. Elsie la Tisserande le vend dans sa boutique de Noël du Temple de l'Oubli quand le Père Noël vous juge Gentil. Il fait partie de la Panoplie de Noël : chaque pièce vous fait gagner la faveur du Père Noël un peu plus vite et tient un peu le froid à distance, et plus vous portez de pièces, plus vous avez de santé.
+Christmas_Coat.name = Manteau de Noël
+Christmas_Coat.description = Un épais manteau de coton pour la nuit la plus froide de l'année. Elsie la Tisserande le vend dans sa boutique de Noël du Temple de l'Oubli quand vous êtes Chouchou du Père Noël. Il fait partie de la Panoplie de Noël : chaque pièce vous fait gagner la faveur du Père Noël un peu plus vite et tient un peu le froid à distance, et plus vous portez de pièces, plus vous avez de santé.
+Christmas_Gloves.name = Gants de Noël
+Christmas_Gloves.description = De doux gants de coton pour faire des bonshommes de neige. Elsie la Tisserande les vend dans sa boutique de Noël du Temple de l'Oubli quand vous êtes Sur la liste du Père Noël. Ils font partie de la Panoplie de Noël : chaque pièce vous fait gagner la faveur du Père Noël un peu plus vite et tient un peu le froid à distance, et plus vous portez de pièces, plus vous avez de santé.
+Christmas_Trousers.name = Pantalon de Noël
+Christmas_Trousers.description = Un pantalon de coton chaud qui garde la neige dehors. Elsie la Tisserande le vend dans sa boutique de Noël du Temple de l'Oubli quand le Père Noël vous juge Très gentil. Il fait partie de la Panoplie de Noël : chaque pièce vous fait gagner la faveur du Père Noël un peu plus vite et tient un peu le froid à distance, et plus vous portez de pièces, plus vous avez de santé.
+Christmas_Gingerbread_Cookie.name = Biscuit au pain d'épices
+Christmas_Gingerbread_Cookie.description = Un petit bonhomme en pain d'épices qui pique un peu. Restaure instantanément <color is="#ffffff">5 %</color> de santé et confère :\n\n• <color is="#ffffff">Pieds rapides</color> : vous vous déplacez <color is="#ffffff">15 %</color> plus vite\n\nDurée : <color is="#ffffff">10:00</color>\n\nÀ cuire sur une Cuisinière du chef une fois la recette apprise.
+Christmas_Hot_Cocoa.name = Chocolat chaud
+Christmas_Hot_Cocoa.description = Une chope de chocolat chaud, sucré et épicé. Restaure instantanément <color is="#ffffff">5 %</color> de santé et confère :\n\n• <color is="#ffffff">Régénération de santé III</color>\n• <color is="#ffffff">Chaleur intérieure</color> : <color is="#ffffff">40 %</color> de dégâts de glace en moins\n\nDurée : <color is="#ffffff">10:00</color>\n\nÀ préparer sur une Cuisinière du chef une fois la recette apprise.
+Christmas_Cake.name = Gâteau de Noël
+Christmas_Cake.description = Un gâteau roulé avec un tourbillon sucré à l'intérieur. Restaure instantanément <color is="#ffffff">5 %</color> de santé et confère :\n\n• <color is="#ffffff">Régénération de santé III</color>\n• <color is="#ffffff">Pieds rapides</color> : vous vous déplacez <color is="#ffffff">15 %</color> plus vite\n• <color is="#ffffff">Chaleur intérieure</color> : <color is="#ffffff">40 %</color> de dégâts de glace en moins\n• <color is="#ffffff">Augmentation de la Liste des gentils</color> : la faveur du Père Noël arrive <color is="#ffffff">10 %</color> plus vite\n\nDurée : <color is="#ffffff">10:00</color>\n\nÀ cuire sur une Cuisinière du chef une fois la recette apprise.
+Christmas_Recipe_Gingerbread_Cookie.name = Recette : Biscuit au pain d'épices
+Christmas_Recipe_Gingerbread_Cookie.description = Apprend la recette suivante : <item is="Christmas_Gingerbread_Cookie"/>. À cuire sur une Cuisinière du chef avec de la pâte et des épices, <color is="#ffffff">3</color> à la fois.\n\nRestaure instantanément <color is="#ffffff">5 %</color> de santé et confère :\n\n• <color is="#ffffff">Pieds rapides</color>\n\nDurée : <color is="#ffffff">10:00</color>
+Christmas_Recipe_Hot_Cocoa.name = Recette : Chocolat chaud
+Christmas_Recipe_Hot_Cocoa.description = Apprend la recette suivante : <item is="Christmas_Hot_Cocoa"/>. À préparer sur une Cuisinière du chef avec une chope d'eau, de la sève d'arbre et des épices, et vous gardez la chope.\n\nRestaure instantanément <color is="#ffffff">5 %</color> de santé et confère :\n\n• <color is="#ffffff">Régénération de santé III</color>\n• <color is="#ffffff">Chaleur intérieure</color>\n\nDurée : <color is="#ffffff">10:00</color>
+Christmas_Recipe_Cake.name = Recette : Gâteau de Noël
+Christmas_Recipe_Cake.description = Apprend la recette suivante : <item is="Christmas_Cake"/>. À cuire sur une Cuisinière du chef avec de la pâte, des œufs et de la sève d'arbre.\n\nRestaure instantanément <color is="#ffffff">5 %</color> de santé et confère :\n\n• <color is="#ffffff">Régénération de santé III</color>\n• <color is="#ffffff">Pieds rapides</color>\n• <color is="#ffffff">Chaleur intérieure</color>\n• <color is="#ffffff">Augmentation de la Liste des gentils</color>\n\nDurée : <color is="#ffffff">10:00</color>
+effect.christmas_food_speed.name = Pieds rapides
+effect.christmas_food_warmth.name = Chaleur intérieure
+effect.christmas_food_regen.name = Régénération de santé III
+effect.christmas_food_favor.name = Augmentation de la Liste des gentils
+Christmas_Present.name = Cadeau de Noël
+Christmas_Present.description = Un petit cadeau emballé de rouge, avec un nœud dessus. Les Voleurs de cadeaux en lâchent, et Elsie la Tisserande en vend dans sa boutique de Noël. Tenez-le et faites un clic droit pour l'ouvrir, et gardez ce qu'il y a dedans.\n\nOu offrez-le : tenez-le, regardez un ami, le Père Noël ou l'un de ses aides, et faites un clic gauche. Un ami reçoit un plus beau cadeau que vous, et le Père Noël vous apprécie un peu plus.
+Christmas_Snowball.name = Boule de neige
+Christmas_Snowball.description = Une froide surprise pour un ami. Lancez-la, et celui qu'elle touche ralentit un instant. Elle ne fait jamais mal. Bram le Berger en distribue.
+Christmas_Elf_Suit.name = Tenue d'elfe
+Christmas_Elf_Suit.description = Un paquet de vêtements d'elfe verts, juste à votre taille. Faites un clic droit pour l'enfiler et ressembler à l'un des elfes du Père Noël pendant <color is="#ffffff">30:00</color>. Tapez /zigcostume off pour l'enlever plus tôt. Elsie la Tisserande vous en donne une si vous l'aidez.
+Christmas_Santa_Suit.name = Tenue de Père Noël
+Christmas_Santa_Suit.description = Un paquet de vêtements rouges avec une bordure de fourrure blanche, juste à votre taille. Faites un clic droit pour l'enfiler et ressembler au Père Noël en personne pendant <color is="#ffffff">30:00</color>. Tapez /zigcostume off pour l'enlever plus tôt. Elsie la Tisserande la vend dans sa boutique de Noël.
+Christmas_Wand.name = Baguette de Noël
+Christmas_Wand.description = Pointez-la sur un ami. Un bouton le change en l'un des elfes du Père Noël, l'autre en renne, et il peut retirer le costume quand il veut. Elsie la Tisserande la vend dans sa boutique de Noël quand vous êtes Sur la liste du Père Noël.
+Christmas_Yeti_Bait.name = Appât du Yéti
+Christmas_Yeti_Bait.description = Un poisson auquel aucun Yéti ne résiste. <b>Bram le Berger</b>, dans le Temple de l'Oubli, en prend un pour vous mener, vous et votre groupe, dans la <b>Grotte du Yéti</b> pendant Noël.\n\nBram le vend dans sa boutique de Noël une fois que vous avez apporté leurs carottes à ses rennes.
+Christmas_Yeti_Fur_Hood.name = Capuche en fourrure de Yéti
+Christmas_Yeti_Fur_Hood.description = Une épaisse fourrure blanche prise sur le dos même du Yéti. Vous subissez <color is="#ffffff">15 %</color> de dégâts de glace en moins tant que vous la portez. Le Yéti en laisse parfois une derrière lui la première fois que vous le battez chaque jour.
+Christmas_Yeti_Fur_Coat.name = Manteau en fourrure de Yéti
+Christmas_Yeti_Fur_Coat.description = Un lourd manteau de la fourrure blanche du Yéti. Vous subissez <color is="#ffffff">20 %</color> de dégâts de glace en moins tant que vous le portez. Le Yéti en laisse parfois un derrière lui la première fois que vous le battez chaque jour.
+Christmas_Ornament.name = Boule de Noël
+Christmas_Ornament.description = Une boule de verre pour le sapin. Le Père Noël en donne une à tous ceux qui l'aident à remplir son traîneau la Veille de Noël, et chaque Noël a la sienne. Accrochez-la où vous voulez.
+Christmas_Tomas_Loaf.name = Pain de Noël de Tomas
+Christmas_Tomas_Loaf.description = Le pain sucré de Tomas le Meunier lui-même. Restaure instantanément <color is="#ffffff">5 %</color> de santé et confère :\n\n• <color is="#ffffff">Pieds rapides</color> : vous vous déplacez <color is="#ffffff">15 %</color> plus vite\n• <color is="#ffffff">Chaleur intérieure</color> : <color is="#ffffff">40 %</color> de dégâts de glace en moins\n\nDurée : <color is="#ffffff">10:00</color>\n\nÀ cuire sur une Cuisinière du chef une fois la recette apprise.
+Christmas_Recipe_Tomas_Loaf.name = Recette : Pain de Noël de Tomas
+Christmas_Recipe_Tomas_Loaf.description = Apprend la recette suivante : <item is="Christmas_Tomas_Loaf"/>. À cuire sur une Cuisinière du chef avec de la pâte et de la sève d'arbre, <color is="#ffffff">2</color> à la fois.\n\nRestaure instantanément <color is="#ffffff">5 %</color> de santé et confère :\n\n• <color is="#ffffff">Pieds rapides</color>\n• <color is="#ffffff">Chaleur intérieure</color>\n\nDurée : <color is="#ffffff">10:00</color>
+Christmas_Reindeer_Suit.name = Tenue de renne
+Christmas_Reindeer_Suit.description = Un paquet de vêtements de renne, bois et nez rouge compris, juste à votre taille. Faites un clic droit pour l'enfiler et ressembler à l'un des rennes du Père Noël pendant <color is="#ffffff">30:00</color>. Tapez /zigcostume off pour l'enlever plus tôt. Elsie la Tisserande la vend dans sa boutique de Noël. Demandez-lui comment l'obtenir.
