@@ -387,11 +387,13 @@ dialogue.harvest_feast_host.graveyard_daily_offer.text = As almas estão de pé 
 dialogue.harvest_feast_host.graveyard_daily_offer.opt.accept = Eu vou hoje.
 almanac.harvest_feast.great_turkey.line = Martha, a Cozinheira, manda você ao Cemitério dos Perus por um Osso da Sorte. Derrote o Grande Peru uma vez e ela abre a entrada difícil. Traga amigos.
 almanac.harvest_feast.great_turkey.button = Registros de lutas de chefe
-almanac.harvest_feast.boss_kill.line = Toda vitória deixa o seu Resgate de Chefe Derrotado no baú onde ele cai, e em Resgates: algumas moedas e uma torta de abóbora, e às vezes uma Torta de Peru, um Osso da Sorte de volta, o Manto do Grande Peru ou, bem de vez em quando, um Troféu de Peru Dourado. Sua primeira vitória do dia sorteia o Manto e o troféu de novo. Na entrada difícil paga mais, e os dois aparecem bem mais.
+almanac.harvest_feast.boss_kill.line = Toda vitória deixa o seu Resgate de Chefe Derrotado no baú onde ele cai, e em Resgates: algumas moedas, uma torta de abóbora e Essência de Vida, e às vezes poções de vida, Bombas-Lanterna, uma Torta de Peru, um Osso da Sorte de volta, uma Poção de Transformação em Peru, o Manto do Grande Peru ou, bem de vez em quando, um Troféu de Peru Dourado. Sua primeira vitória do dia sorteia o Manto e o troféu de novo. Na entrada difícil paga mais, e os dois aparecem bem mais.
 almanac.harvest_feast.source.boss_kill_pie = Sempre no Resgate de Chefe Derrotado do Grande Peru, e mais delas na entrada difícil. Também dá para assar uma num Forno do Chefe.
 almanac.harvest_feast.source.boss_kill_turkey_pie = Com frequência no Resgate de Chefe Derrotado do Grande Peru, com mais frequência na entrada difícil, e sempre no Resgate diário dele. Também dá para cozinhar num Forno do Chefe depois de aprender a receita da Martha.
 almanac.harvest_feast.source.great_turkey_mantle = Só do Grande Peru: de vez em quando em qualquer vitória, mais na primeira vitória do dia, e bem mais na entrada difícil. A Martha abre a entrada difícil depois que você o derrota. Conta como a peça do peito do Conjunto da Colheita.
 almanac.harvest_feast.source.golden_turkey_trophy = Só do Grande Peru: bem de vez em quando em qualquer vitória, mais na primeira vitória do dia e na entrada difícil. Coloque como bloco.
+almanac.harvest_feast.source.potion_morph_turkey = Só do Grande Peru: de vez em quando no Resgate de Chefe Derrotado dele, mais na entrada difícil. Beba para parecer um peru por um tempo.
+almanac.harvest_feast.source.boss_kill_supplies = No Resgate de Chefe Derrotado do Grande Peru, e mais dele na entrada difícil.
 
 # ---- The Almanac page's items: where each comes from ----
 almanac.harvest_feast.source.bake_pumpkin = Asse num Forno do Chefe com a receita que a Martha dá a você.
@@ -403,7 +405,7 @@ almanac.harvest_feast.source.story = A Martha dá a você durante a história de
 almanac.harvest_feast.source.stall = Vendido na loja da Martha.
 almanac.harvest_feast.source.cook_dish = Cozinhe num Forno do Chefe, depois de aprender com uma receita que a Martha vende.
 almanac.harvest_feast.source.stall_gift = Vendido na loja da Martha, e um dos presentes dela conforme o favor cresce.
-almanac.harvest_feast.source.stall_favor =Vendido na loja da Martha conforme sua posição com ela cresce.
+almanac.harvest_feast.source.stall_favor = Vendido na loja da Martha conforme sua posição com ela cresce.
 almanac.harvest_feast.source.seeds = Vem do Banquete e dos recados da Martha, ou é comprado na loja dela.
 almanac.harvest_feast.source.keepsake = Lembrança do Banquete, dada uma vez por ano quando você se senta à mesa do Banquete.
 almanac.harvest_feast.source.turkey_trophy = Um achado raro de quem caça Perus Selvagens enquanto a festa durar.

@@ -60,7 +60,12 @@
           { "Item": "Harvest_Feast_Turkey_Pie", "SourceKey": "almanac.harvest_feast.source.boss_kill_turkey_pie" },
           { "Item": "Harvest_Feast_Wishbone", "SourceKey": "almanac.harvest_feast.source.wishbone" },
           { "Item": "Harvest_Feast_Great_Turkey_Mantle", "Hidden": true, "SourceKey": "almanac.harvest_feast.source.great_turkey_mantle" },
-          { "Item": "Harvest_Feast_Golden_Turkey_Trophy", "Hidden": true, "SourceKey": "almanac.harvest_feast.source.golden_turkey_trophy" }
+          { "Item": "Harvest_Feast_Golden_Turkey_Trophy", "Hidden": true, "SourceKey": "almanac.harvest_feast.source.golden_turkey_trophy" },
+          { "Item": "Harvest_Feast_Potion_Morph_Turkey", "Hidden": true, "SourceKey": "almanac.harvest_feast.source.potion_morph_turkey" },
+          { "Item": "Ingredient_Life_Essence", "SourceKey": "almanac.harvest_feast.source.boss_kill_supplies" },
+          { "Item": "Potion_Health_Small", "SourceKey": "almanac.harvest_feast.source.boss_kill_supplies" },
+          { "Item": "Potion_Health", "SourceKey": "almanac.harvest_feast.source.boss_kill_supplies" },
+          { "Item": "Hallows_Eve_Lantern_Bomb_Common", "SourceKey": "almanac.harvest_feast.source.boss_kill_supplies" }
         ],
         "Button": {
           "TextKey": "almanac.harvest_feast.great_turkey.button",
@@ -96,6 +101,7 @@
           { "Item": "Harvest_Feast_Wishbone", "SourceKey": "almanac.harvest_feast.source.wishbone" },
           { "Item": "Harvest_Feast_Great_Turkey_Mantle", "Hidden": true, "SourceKey": "almanac.harvest_feast.source.great_turkey_mantle" },
           { "Item": "Harvest_Feast_Golden_Turkey_Trophy", "Hidden": true, "SourceKey": "almanac.harvest_feast.source.golden_turkey_trophy" },
+          { "Item": "Harvest_Feast_Potion_Morph_Turkey", "Hidden": true, "SourceKey": "almanac.harvest_feast.source.potion_morph_turkey" },
           { "Item": "Winter_Holiday_Wreath", "SourceKey": "almanac.harvest_feast.source.winter" },
           { "Item": "WinterHoliday_Garland", "SourceKey": "almanac.harvest_feast.source.winter" },
           { "Item": "WinterHoliday_Lights", "SourceKey": "almanac.harvest_feast.source.winter" },

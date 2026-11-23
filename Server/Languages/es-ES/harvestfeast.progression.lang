@@ -387,11 +387,13 @@ dialogue.harvest_feast_host.graveyard_daily_offer.text = Las almas vuelven a est
 dialogue.harvest_feast_host.graveyard_daily_offer.opt.accept = Iré hoy.
 almanac.harvest_feast.great_turkey.line = Martha la Cocinera te manda al Cementerio de los Pavos a cambio de una Espoleta. Vence al Gran Pavo una vez y ella abre la entrada difícil. Trae amigos.
 almanac.harvest_feast.great_turkey.button = Registros de combates de jefe
-almanac.harvest_feast.boss_kill.line = Cada victoria deja su Botín de Jefe en el cofre donde cae y, en Pendientes, unas monedas y un pastel de calabaza, y a veces un Pastel de Pavo, una Espoleta de vuelta, el Manto del Gran Pavo o, de tarde en tarde, un Trofeo de Pavo Dorado. Tu primera victoria de cada día vuelve a tirar por el Manto y el trofeo. En la entrada difícil paga más, y ambos salen mucho más a menudo.
+almanac.harvest_feast.boss_kill.line = Cada victoria deja su Botín de Jefe en el cofre donde cae y, en Pendientes, unas monedas, un pastel de calabaza y Esencia de Vida, y a veces pociones de salud, Bombas Farol, un Pastel de Pavo, una Espoleta de vuelta, una Poción de Transformación en Pavo, el Manto del Gran Pavo o, de tarde en tarde, un Trofeo de Pavo Dorado. Tu primera victoria de cada día vuelve a tirar por el Manto y el trofeo. En la entrada difícil paga más, y ambos salen mucho más a menudo.
 almanac.harvest_feast.source.boss_kill_pie = Siempre en el Botín de Jefe del Gran Pavo, y más pasteles en la entrada difícil. También puedes hornear uno en una Cocina del Chef.
 almanac.harvest_feast.source.boss_kill_turkey_pie = A menudo en el Botín de Jefe del Gran Pavo, más a menudo en la entrada difícil, y siempre en su Botín diario. También puedes cocinarlo en una Cocina del Chef cuando hayas aprendido la receta de Martha.
 almanac.harvest_feast.source.great_turkey_mantle = Solo del Gran Pavo: de vez en cuando en cualquier victoria, más a menudo en tu primera victoria del día y mucho más a menudo en la entrada difícil. Martha abre la entrada difícil cuando lo has vencido. Cuenta como la pieza de pecho del Conjunto de la Cosecha.
 almanac.harvest_feast.source.golden_turkey_trophy = Solo del Gran Pavo: de tarde en tarde en cualquier victoria, más a menudo en tu primera victoria del día y en la entrada difícil. Colócalo como bloque.
+almanac.harvest_feast.source.potion_morph_turkey = Solo del Gran Pavo: de vez en cuando en su Botín de Jefe, más a menudo en la entrada difícil. Bébela para parecer un pavo un rato.
+almanac.harvest_feast.source.boss_kill_supplies = En el Botín de Jefe del Gran Pavo, y más cantidad en la entrada difícil.
 
 # ---- The Almanac page's items: where each comes from ----
 almanac.harvest_feast.source.bake_pumpkin = Se hornea en una Cocina del Chef con la receta que te da Martha.
