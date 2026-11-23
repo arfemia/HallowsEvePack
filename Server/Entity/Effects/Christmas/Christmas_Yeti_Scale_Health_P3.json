@@ -1,0 +1,15 @@
+{
+  "$Comment": "Adds 500 to the Yeti's maximum health while his fight has at least 3 players in it: his fight's script applies it as he rises, one step per player up to 5, then refills him (Christmas_Yeti_Scale_TopUp), since a higher maximum leaves his current health where it was. It stays on him for the whole fight. Amount is the health one more player adds; change the four steps together.",
+  "RawStatModifiers": {
+    "Health": [
+      {
+        "Amount": 500,
+        "CalculationType": "Additive",
+        "Target": "Max"
+      }
+    ]
+  },
+  "OverlapBehavior": "Ignore",
+  "Infinite": true,
+  "RemovalBehavior": "Infinite"
+}

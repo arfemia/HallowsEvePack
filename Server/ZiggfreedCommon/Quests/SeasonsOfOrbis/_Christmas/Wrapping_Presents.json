@@ -1,0 +1,68 @@
+{
+  "$Comment": [
+    "The fourth step of the story, Elsie the Weaver's: bring her plant fibre for ribbon, and give one of",
+    "your presents to Bram. The _Christmas folder makes the id christmas_wrapping_presents. Npc binds it to",
+    "Elsie by the id her placement keeps in both seasons (Harvest_Feast_Weaver,",
+    "NpcPlacements/Harvest_Feast_Weaver_Temple.json), and CompletionDialogue plays her Christmas",
+    "conversation once it is collected.",
+    "",
+    "The fibre is a TURN_IN handed in at Elsie. The present is a USE_ITEM step qualified by Bram's id",
+    "(Harvest_Feast_Shepherd): holding a Christmas Present and pointing it at Bram spends it and counts here",
+    "(Item/Interactions/Christmas/Christmas_Present_Give.json). Santa's first quest hands every player one",
+    "present, the thieves drop more, and Elsie sells them. Both steps share Order 1, so either can come",
+    "first, and the fibre is handed in at Elsie, so no report-back step is added.",
+    "",
+    "Its pay holds three Christmas Presents to open or give away, an Elf Suit (the item, worn whenever the",
+    "player likes) and three minutes in Santa's elf costume straight away (the Costume reward,",
+    "Christmas_Costume_Elf). A player already in a costume keeps their look and gets",
+    "Christmas_Costume_Fallback instead. It pays through Christmas_Chain_Pay, with favor on Santa's Nice",
+    "List and Festival Favor on its own Rewards. Finishing it opens Christmas Eve at Santa.",
+    "",
+    "The Mmo_Xp row is MMO Skill Tree's: Crafting XP for the wrapping, waiting to be collected with the",
+    "rest. The row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that",
+    "mod, unpaid and unshown, and the rest of the quest pays."
+  ],
+  "Name": "Wrapping_Presents",
+  "Parent": "Christmas_Quest_Base",
+  "Npc": { "ViewId": "Harvest_Feast_Weaver", "TurnInId": "giver" },
+  "CompletionDialogue": "Christmas_Weaver",
+  "Listing": {
+    "Icon": "Christmas_Present",
+    "Category": "main",
+    "SortOrder": 40,
+    "Chains": [ { "Id": "christmas_story", "Tier": 4 } ]
+  },
+  "Requires": { "Quests": [ "christmas_gingerbread_cookies" ] },
+  "Objectives": {
+    "bring_fibre": {
+      "Kind": "TURN_IN",
+      "Target": "Ingredient_Fibre",
+      "MatchMode": "EXACT",
+      "Amount": 10,
+      "TextKey": "objective.christmas.bring_elsie_fibre",
+      "Order": 1,
+      "TurnInNpcId": "giver"
+    },
+    "present_for_bram": {
+      "Kind": "USE_ITEM",
+      "Target": "Christmas_Present",
+      "Qualifier": "Harvest_Feast_Shepherd",
+      "MatchMode": "EXACT",
+      "Amount": 1,
+      "TextKey": "objective.christmas.give_bram_present",
+      "Order": 1
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Christmas_Chain_Pay" } },
+      { "Kind": "Item", "Params": { "Item": "Christmas_Present", "Count": "3" } },
+      { "Kind": "Item", "Params": { "Item": "Christmas_Elf_Suit", "Count": "1" } },
+      { "Kind": "Costume", "Params": { "Costume": "Christmas_Costume_Elf", "FallbackLootable": "Christmas_Costume_Fallback" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 250 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 150 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "CRAFTING", "Amount": "2500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

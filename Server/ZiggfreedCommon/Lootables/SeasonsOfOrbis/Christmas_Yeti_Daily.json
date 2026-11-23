@@ -1,0 +1,31 @@
+{
+  "$Comment": [
+    "What the Yeti's daily Claim (Rewards/Christmas/Christmas_Yeti_Daily) pays, the bigger Claim, for the",
+    "first win each day. Every roll is read on its own: the first two always pay, the last is a chance on",
+    "top. The Claim keeps each roll a player wins with a chance equal to their share of the fight.",
+    "",
+    "The first roll pays Christmas Coins and festival tokens through the Currency reward kind, the second a",
+    "Hot Cocoa (the warm drink that takes the edge off the cold), and the last a chance at two Gingerbread",
+    "Cookies. Favor is not here: the cave's clear pays Santa's Nice List (Christmas_Yeti_Cave_Clear).",
+    "Mmo_Christmas_Yeti_Daily.json adds Defense XP where MMO Skill Tree runs. Chance is a percent from 0",
+    "to 100. A companion mod adds rolls with a file naming this table in ContributesTo."
+  ],
+  "Name": "Christmas_Yeti_Daily",
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [
+          { "Kind": "Currency", "Params": { "Currency": "Christmas_Coins", "Amount": "15" } },
+          { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "2" } }
+        ]
+      }
+    },
+    {
+      "Grants": { "Items": [ { "Item": "Christmas_Hot_Cocoa", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 50.0 },
+      "Grants": { "Items": [ { "Item": "Christmas_Gingerbread_Cookie", "Count": 2 } ] }
+    }
+  ]
+}

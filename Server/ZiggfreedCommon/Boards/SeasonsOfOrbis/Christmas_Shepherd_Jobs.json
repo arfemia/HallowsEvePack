@@ -1,0 +1,35 @@
+{
+  "$Comment": [
+    "Bram the Shepherd's own small board: one job a day, drawn at midnight UTC. Hosts names the id Bram keeps",
+    "in both seasons (Harvest_Feast_Shepherd), so his quest page (in his Christmas conversation and in his",
+    "feast conversation's Christmas line) lists the day's job beside his own quests.",
+    "",
+    "The first slot posts the Christmas_Shepherd_Skill band, which only his skill job carries",
+    "(Mmo_Christmas_Shepherd_Skill_Job.json, a server running MMO Skill Tree); the second posts the",
+    "Christmas_Shepherd_Errand band, his plain errands. The slot gates are read when the board loads: Min 1",
+    "leaves a slot off where MMO Skill Tree is missing, Max 0 where it is installed, so every server posts",
+    "one job from Bram a day for the same plain pay. Both slots are Optional, so the one a server leaves out",
+    "never reads as a gap. Christmas_Miller_Jobs.json explains the rest; its words are in",
+    "christmas.mmo.lang."
+  ],
+  "Season": "Christmas",
+  "Text": {
+    "TitleKey": "board.christmas_shepherd_jobs.title",
+    "FlavorKey": "board.christmas_shepherd_jobs.desc"
+  },
+  "Hosts": [ "Harvest_Feast_Shepherd" ],
+  "Icon": "Wood_Fir_Trunk",
+  "Order": 94,
+  "Rotation": { "Period": "Daily" },
+  "Slots": [
+    { "Difficulty": "Christmas_Shepherd_Skill", "Optional": true,
+      "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } },
+    { "Difficulty": "Christmas_Shepherd_Errand", "Optional": true,
+      "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Max": 0 } ] } }
+  ],
+  "Grades": {
+    "Christmas_Shepherd_Skill": { "TitleKey": "board.christmas_shepherd_jobs.grade.skill", "Color": "#7cb8d6" },
+    "Christmas_Shepherd_Errand": { "TitleKey": "board.christmas_shepherd_jobs.grade.errand", "Color": "#7cb8d6" }
+  },
+  "Currencies": [ "Christmas_Coins" ]
+}

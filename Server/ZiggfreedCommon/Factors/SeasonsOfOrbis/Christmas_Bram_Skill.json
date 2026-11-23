@@ -1,0 +1,16 @@
+{
+  "$Comment": [
+    "The skill key to Bram's secret, on a server running MMO Skill Tree: reads 1 once the player's",
+    "Woodcutting level is 20 or more (hytale:stat Level_Woodcutting at a weight of 0.05, clamped at 1).",
+    "Requires, the plain hytale:mod_installed condition with Min 1, drops it at load where that mod is",
+    "missing, so the key (Christmas_Bram_Key.json) reads only the apprentice quest there.",
+    "Christmas_Tomas_Skill.json explains the rest."
+  ],
+  "Requires": {
+    "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ]
+  },
+  "Formula": {
+    "Factors": [ { "Factor": "hytale:stat", "Param": "Level_Woodcutting", "Weight": 0.05 } ],
+    "Clamp": { "Max": 1 }
+  }
+}

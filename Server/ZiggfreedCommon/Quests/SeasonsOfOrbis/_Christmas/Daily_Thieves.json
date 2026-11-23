@@ -1,0 +1,42 @@
+{
+  "$Comment": [
+    "One of Santa's two dailies, open once his first quest is done: catch a few more Present Thieves.",
+    "Repeat.Reset with Period Daily is a calendar daily: it comes back at midnight UTC, not a fixed number",
+    "of hours after the last one. Each Christmas daily pays through Christmas_Daily_Pay, so retuning the pay",
+    "is one edit there. The kill step counts the Present Thief and the game's own grown Trorks, as every",
+    "thief step does. The report-back step to Santa comes from the base's Npc.TurnInId.",
+    "",
+    "The Mmo_Xp row is MMO Skill Tree's: Defense XP for the hunt, waiting to be collected with the rest.",
+    "The row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that mod,",
+    "unpaid and unshown, and the rest of the quest pays."
+  ],
+  "Name": "Daily_Thieves",
+  "Parent": "Christmas_Quest_Base",
+  "Listing": { "Icon": "Christmas_Present", "Category": "misc", "SortOrder": 110 },
+  "Requires": { "Quests": [ "christmas_present_thieves" ] },
+  "Repeat": {
+    "Reset": { "Period": "Daily" },
+    "CooldownFrom": "Complete"
+  },
+  "Objectives": {
+    "catch_thieves": {
+      "Kind": "KILL_ENTITY",
+      "Target": "Christmas_Present_Thief",
+      "Targets": [ "Trork_Brawler", "Trork_Chieftain", "Trork_Doctor_Witch", "Trork_Guard", "Trork_Hunter", "Trork_Mauler",
+        "Trork_Sentry", "Trork_Sentry_Patrol", "Trork_Shaman", "Trork_Unarmed", "Trork_Warrior", "Trork_Warrior_Patrol" ],
+      "MatchMode": "EXACT",
+      "Amount": 4,
+      "TextKey": "objective.christmas.catch_thieves",
+      "Order": 1
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Christmas_Daily_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 30 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 40 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "1500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

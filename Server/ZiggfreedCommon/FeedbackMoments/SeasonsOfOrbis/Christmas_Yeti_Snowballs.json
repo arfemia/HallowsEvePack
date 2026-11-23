@@ -1,0 +1,12 @@
+{
+  "$Comment": [
+    "What each member of the Yeti's fight is told as his second phase starts at 60% of his health: he",
+    "starts hurling snowballs, which fall on rings under the players (his fight's Phase2Behavior,",
+    "Macro_Christmas_Yeti_Phase, draws it). The file name is the moment id. Key is a line in this pack's",
+    "christmas.yeti.lang, written bare."
+  ],
+  "Toast": {
+    "Title": { "Key": "notify.christmas_yeti_snowballs" },
+    "Tone": "Warning"
+  }
+}

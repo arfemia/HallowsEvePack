@@ -1,0 +1,26 @@
+{
+  "$Comment": [
+    "The skeleton every Christmas contract inherits through Parent. It is never posted.",
+    "",
+    "Season hides every contract built on it while Christmas is off; a child that writes its own Requires",
+    "keeps it, since Season is a leaf of its own. Listing files each one with the contracts. Rewards.Claim",
+    "is what every job on the Christmas Board pays, like every contract's: the pay waits at the board until",
+    "the player collects it. The board leaves with Christmas, and a job finished but not collected by then",
+    "shows Collect in the player's Objective Book instead, so its pay never waits a year for the board to",
+    "come back. The list is the board's pay table, a little favor on Santa's Nice List and a little",
+    "Festival Favor. A child that writes its own Rewards.Claim replaces the list whole. Each bucket inherits",
+    "on its own, so a list left in Rewards.Auto here would pay on top of every child's Claim. A child names",
+    "its board and band in Boards and its work in Objectives, and takes its words from the keys its id",
+    "spells (quest.<id>.title and .flavor)."
+  ],
+  "Abstract": true,
+  "Season": "Christmas",
+  "Listing": { "Category": "bounty" },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Christmas_Board_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 24 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 30 } }
+    ]
+  }
+}

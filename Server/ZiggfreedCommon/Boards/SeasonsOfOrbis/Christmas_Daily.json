@@ -1,0 +1,44 @@
+{
+  "$Comment": [
+    "The Christmas Board, drawn once a day at midnight UTC, one contract per slot. A slot posts only",
+    "contracts whose Boards entry names its Difficulty band. Christmas_Outdoor holds the work out in the",
+    "world (Present Thieves, carrots, logs for Santa's fire, eggs); Christmas_Workshop holds what is made",
+    "and brought to Santa (cookies, dough, presents, spices).",
+    "",
+    "Santa's favor opens more of the board. The third and fourth slots carry Requires: the second Outdoor",
+    "job opens at On the List (the rank id Friendly), the second Workshop job at Nice (Honored). Everyone",
+    "sees them posted, and a player below the rank sees them locked, with the reason. Each band has four",
+    "contracts for its two slots, so the day's jobs change from one day to the next.",
+    "",
+    "Hosts names Santa, so his quest page (What needs doing?) lists what this board has posted beside his",
+    "own quests: a player takes a job there under this board's rules, and hands it in and collects its pay",
+    "with him or at the board, wherever they took it.",
+    "",
+    "Grades names each band for the badge on its rows: TitleKey is its words, Color the badge's colour.",
+    "Season makes the board absent while Christmas is off. Its contracts' pay waits here until the player",
+    "collects it (Rewards.Claim); a job left uncollected when Christmas ends shows Collect in the player's",
+    "Objective Book instead, since a contract whose board is gone is collected anywhere. Order 91 keeps it",
+    "behind a server's everyday boards. It carries no Where, so it opens in any world and follows Santa",
+    "wherever a server stands him."
+  ],
+  "Season": "Christmas",
+  "Text": {
+    "TitleKey": "board.christmas_daily.title",
+    "FlavorKey": "board.christmas_daily.desc"
+  },
+  "Hosts": [ "Christmas_Santa" ],
+  "Icon": "Furniture_Christmas_Chest_Small_Red",
+  "Order": 91,
+  "Rotation": { "Period": "Daily" },
+  "Slots": [
+    { "Difficulty": "Christmas_Outdoor" },
+    { "Difficulty": "Christmas_Workshop" },
+    { "Difficulty": "Christmas_Outdoor", "Optional": true, "Requires": { "Factors": [ { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Christmas_Nice_List/Friendly", "Min": 1 } ] } },
+    { "Difficulty": "Christmas_Workshop", "Optional": true, "Requires": { "Factors": [ { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Christmas_Nice_List/Honored", "Min": 1 } ] } }
+  ],
+  "Grades": {
+    "Christmas_Outdoor": { "TitleKey": "board.christmas_daily.grade.outdoor", "Color": "#7cb8d6" },
+    "Christmas_Workshop": { "TitleKey": "board.christmas_daily.grade.workshop", "Color": "#d6453d" }
+  },
+  "Currencies": [ "Christmas_Coins", "Seasons_Of_Orbis_Festival_Token" ]
+}

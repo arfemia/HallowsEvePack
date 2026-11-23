@@ -1,0 +1,156 @@
+{
+  "$Comment": "Christmas Cake, the best of the three Christmas treats: baked at a Chef's Stove (the Cookingbench, its Baked tab) once a player has learned it from Christmas_Recipe_Cake. It wears the game's winter roll (WinterHoliday_WinterRoll's model, texture and icon) and does everything the other two do: an instant heal, Christmas_Food_Regen (the game's top food regen, for ten minutes), Christmas_Food_Speed and Christmas_Food_Warmth, and on top Christmas_Food_Favor, which makes Santa's favor come faster while it lasts. It clears the game's own food regens first, so they never stack from this side. Its description in items.lang writes the numbers out: change it with the effects. Recipe.Input is what it costs to bake; Fuel is the 3 fuel every baked dish in the game burns. The cake is good all year.",
+  "TranslationProperties": {
+    "Name": "items.Christmas_Cake.name",
+    "Description": "items.Christmas_Cake.description"
+  },
+  "Parent": "Template_Food",
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Food_T3"
+  },
+  "Quality": "Legendary",
+  "Icon": "Icons/ItemsGenerated/WinterHoliday_WinterRoll.png",
+  "IconProperties": {
+    "Scale": 1.8,
+    "Rotation": [
+      0.0,
+      0.0,
+      15.0
+    ],
+    "Translation": [
+      4.0,
+      -15.0
+    ]
+  },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Hypixel/Event_Decoration/Winter Holiday_Props/WinterHoliday_Ornament_WinterRoll.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Hypixel/Event_Decoration/Winter Holiday_Props/WinterHoliday_Ornament_WinterRoll_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#a05b09",
+    "TextureComputedColor": "#813B21",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
+    },
+    "HitboxType": "Food_Medium"
+  },
+  "InteractionVars": {
+    "Consume_Charge": {
+      "Interactions": [
+        {
+          "Parent": "Consume_Charge_Food_T1_Inner",
+          "Effects": {
+            "Particles": [
+              {
+                "SystemId": "Food_Eat",
+                "Color": "#A05B09",
+                "TargetNodeName": "Mouth",
+                "TargetEntityPart": "Entity"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Food_Instant_Heal_T1"
+        },
+        {
+          "Type": "ClearEntityEffect",
+          "EntityEffectId": "HealthRegen_Buff_Raw"
+        },
+        {
+          "Type": "ClearEntityEffect",
+          "EntityEffectId": "HealthRegen_Buff_T1"
+        },
+        {
+          "Type": "ClearEntityEffect",
+          "EntityEffectId": "HealthRegen_Buff_T2"
+        },
+        {
+          "Type": "ClearEntityEffect",
+          "EntityEffectId": "HealthRegen_Buff_T3"
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Christmas_Food_Regen"
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Christmas_Food_Speed"
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Christmas_Food_Warmth"
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Christmas_Food_Favor"
+        }
+      ]
+    }
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Dough",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Food_Egg",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "Ingredient_Tree_Sap",
+        "Quantity": 1
+      },
+      {
+        "ResourceTypeId": "Fuel",
+        "Quantity": 3
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Christmas_Cake"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Cookingbench",
+        "Categories": [
+          "Baked"
+        ]
+      }
+    ],
+    "TimeSeconds": 5,
+    "KnowledgeRequired": true
+  },
+  "ItemLevel": 18,
+  "MaxStack": 25,
+  "DropOnDeath": true,
+  "Scale": 1.2,
+  "ResourceTypes": [
+    {
+      "Id": "Foods"
+    }
+  ],
+  "Consumable": true,
+  "Tags": {
+    "Type": [
+      "Food"
+    ],
+    "Family": [
+      "Christmas"
+    ]
+  }
+}

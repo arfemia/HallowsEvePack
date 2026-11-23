@@ -1,0 +1,80 @@
+{
+  "$Comment": "Bram the Shepherd's winter look for Christmas, every piece of it the game's own: the same player's body, stubbled face and stalk of wheat as his Harvest Feast look (Models/Harvest_Feast/NPC/Harvest_Feast_Shepherd.json), now in the character creator's trapper hat, a fur-lined jacket over his farmer's shirt, leather mittens, his leather trousers and thick snow boots. Parent Player brings the body, its animations and its hitbox. The body, face and mouth share one skin tone (GradientSet Skin, GradientId 10): keep it the same as his feast look, so he reads as one man in two seasons. DefaultAttachments replaces the parent's list whole, so the face pieces come first. The trapper hat covers the ears in the character creator, so this look carries no ears, and its short hair is GenericShort, the cut a haircut falls back to under a hat. A greyscale texture takes its colour from GradientSet and GradientId, the dyes the character creator offers players: change a GradientId to re-dye one piece. The role Christmas_Shepherd names this model, and his placement wears that role while only Christmas runs.",
+  "Parent": "Player",
+  "Model": "Characters/Player.blockymodel",
+  "Texture": "Characters/Player_Textures/Player_Greyscale.png",
+  "GradientSet": "Skin",
+  "GradientId": "10",
+  "DefaultAttachments": [
+    {
+      "Model": "Characters/Body_Attachments/Faces/Player_Face_Detached.blockymodel",
+      "Texture": "Characters/Body_Attachments/Faces/Faces_Detached_Textures/Face_Stubble.png",
+      "GradientSet": "Skin",
+      "GradientId": "10"
+    },
+    {
+      "Model": "Characters/Body_Attachments/Mouths/Mouth1.blockymodel",
+      "Texture": "Characters/Body_Attachments/Mouths/Mouth1_Textures/Default_Greyscale.png",
+      "GradientSet": "Skin",
+      "GradientId": "10"
+    },
+    {
+      "Model": "Characters/Body_Attachments/Eyes/Eyes.blockymodel",
+      "Texture": "Characters/Body_Attachments/Eyes/Eyes_Textures/Greyscale.png",
+      "GradientSet": "Eyes_Gradient",
+      "GradientId": "BrownDark"
+    },
+    {
+      "Model": "Characters/Body_Attachments/Eyebrows/Eyebrows_Medium.blockymodel",
+      "Texture": "Characters/Body_Attachments/Eyebrows/Medium_Greyscale.png",
+      "GradientSet": "Hair",
+      "GradientId": "BrownDark"
+    },
+    {
+      "Model": "Characters/Haircuts/GenericShort.blockymodel",
+      "Texture": "Characters/Haircuts/GenericShort_Greyscale.png",
+      "GradientSet": "Hair",
+      "GradientId": "BrownDark"
+    },
+    {
+      "Model": "Cosmetics/Face_Accessories/MouthWheat.blockymodel",
+      "Texture": "Cosmetics/Face_Accessories/MouthWheat_Green.png"
+    },
+    {
+      "Model": "Cosmetics/Undertops/LongSleeveShirt.blockymodel",
+      "Texture": "Cosmetics/Undertops/LongSleeveShirt_Textures/Farmer_Shirt_Greyscale.png",
+      "GradientSet": "Fantasy_Cotton_Dark",
+      "GradientId": "Green"
+    },
+    {
+      "Model": "Cosmetics/Overtops/Overtops_Long_Waist_Sleeve.blockymodel",
+      "Texture": "Cosmetics/Overtops/Overtops_Long_Sleeve_Waist_Sleeve/Fur_Lined_Greyscale.png",
+      "GradientSet": "Fantasy_Cotton",
+      "GradientId": "Brown"
+    },
+    {
+      "Model": "Cosmetics/Gloves/BoxingGloves.blockymodel",
+      "Texture": "Cosmetics/Gloves/LeatherMittens_Greyscale.png",
+      "GradientSet": "Faded_Leather",
+      "GradientId": "Brown"
+    },
+    {
+      "Model": "Cosmetics/Pants/Pants_Straight.blockymodel",
+      "Texture": "Cosmetics/Pants/Pants_Straight_Textures/Leather_Greyscale.png",
+      "GradientSet": "Faded_Leather",
+      "GradientId": "Brown"
+    },
+    {
+      "Model": "Cosmetics/Shoes/Boots_Thick.blockymodel",
+      "Texture": "Cosmetics/Shoes/Boots_Thick_Textures/Snowboots_Greyscale.png",
+      "GradientSet": "Faded_Leather",
+      "GradientId": "BrownDark"
+    },
+    {
+      "Model": "Cosmetics/Head/TrapperHat.blockymodel",
+      "Texture": "Cosmetics/Head/TrapperHat.png",
+      "GradientSet": "Faded_Leather",
+      "GradientId": "Brown"
+    }
+  ]
+}

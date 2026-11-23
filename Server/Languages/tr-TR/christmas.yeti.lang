@@ -1,0 +1,33 @@
+# Christmas - the Yeti Cave: the cave's name and its lines, the Yeti's fight's notices, his Boss Kill
+# Claim, Bram's Yeti Bait offer and way-in line, and the Yeti Hunter achievement. Keys are written bare:
+# the library finds each one by its tail, whatever this file is called. Numbers ride {0} and come from
+# the content files, so a retune never touches a translation. The Yeti's nameplate is in npcs.lang and
+# his bait's and fur's names in items.lang.
+
+# ---- The Yeti Cave ----
+dungeon.christmas_yeti_cave.name = Yeti Mağarası
+dungeon.christmas_yeti_cave.description = Noel Baba'nın bir ren geyiğini korkutup kaçıran Yeti burada yaşıyor, yanında bir yığın çalıntı hediyeyle. Arkadaşlarını getir ve sıkı giyin.
+dungeon.christmas_yeti_cave.goal = Yeti'yi uyandırmak için mağaraya gir, sonra onu yen. Etrafında bir halka yandığında geri çekil, kartopları düşmeden de ayağının altındaki halkalardan çık.
+dungeon.christmas_yeti_cave.cost_hint = Bram, ren geyiklerine havuçlarını getirdiğinde dükkanında Yeti Yemi satar.
+dungeon.christmas_yeti_cave.confirm = Yemi At
+dungeon.christmas_yeti_cave.chest = Ödülün, düştüğü yerdeki sandıkta bekliyor.
+
+# ---- The Yeti's fight ----
+notify.christmas_yeti_engaged = Yeti uyanıyor!
+notify.christmas_yeti_engaged.sub = Onu yen, hediye yığını senin olsun.
+notify.christmas_yeti_snowballs = Yeti kartopu atmaya başladı! Halkalardan çık.
+notify.christmas_yeti_wolves = İki Beyaz Kurt Yeti'ye yardıma geliyor!
+notify.christmas_yeti_defeated = Yeti yere serildi!
+notify.christmas_yeti_defeated.sub = Payın: {0}%, {1, number} saniyede.
+notify.christmas_yeti_wiped = Yeti inine dönüyor.
+notify.christmas_yeti_wiped.sub = Etrafında bir halka yandığında geri çekil, kartopları düşmeden de halkalardan çık.
+claim.christmas_yeti_chase = Yeti: Boss Zaferi
+
+# ---- Bram's stall and his way in ----
+shop.christmas_offer_yeti_bait.title = Yeti Yemi
+shop.christmas_offer_yeti_bait.desc = Hiçbir Yeti'nin geri çeviremeyeceği bir balık. Bram bir tanesini alıp seni ve arkadaşlarını Yeti Mağarası'na götürür.
+dialogue.christmas_yeti_cave_line.opt.enter = Beni Yeti Mağarası'na götür. (bir Yeti Yemi harcar, Bram'ın dükkanından)
+
+# ---- Achievement ----
+achievement.christmas_yeti_hunter.title = Yeti Avcısı {0}
+achievement.christmas_yeti_hunter.desc = Yeti'yi mağarasında yen.

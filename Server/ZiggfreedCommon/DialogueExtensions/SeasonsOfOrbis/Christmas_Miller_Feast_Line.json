@@ -1,0 +1,38 @@
+{
+  "Name": "Christmas_Miller_Feast_Line",
+  "$Comment": [
+    "Tomas's Christmas line in his Harvest Feast conversation. Christmas starts while the feast's last",
+    "days still run, and while the feast runs Tomas stands at his feast spot speaking his feast",
+    "conversation (NpcPlacements/Harvest_Feast_Miller_Temple.json takes its feast entry first). This line",
+    "lets a player reach his Christmas stall from the first day of Christmas all the same, and its second",
+    "line opens his quest list, where his Christmas quests (Christmas Cookies, christmas_gingerbread_cookies,",
+    "his daily, Daily Baking, christmas_daily_baking, and his apprentice quest, christmas_tomas_apprentice)",
+    "are offered, carried and handed in, since they are bound to the id he keeps in both seasons",
+    "(Harvest_Feast_Miller), beside the day's job from his own board (Boards/SeasonsOfOrbis/Christmas_Miller_Jobs.json,",
+    "which Hosts that id). Once the feast is over he speaks his",
+    "Christmas conversation (Dialogues/SeasonsOfOrbis/Christmas_Miller.json), which offers the stall and",
+    "the quests itself, and the feast conversation is no longer reached.",
+    "",
+    "Dialogues.Ids names his feast conversation alone, since each villager's lines open that villager's",
+    "own stall and quests (Christmas_Weaver_Feast_Line and Christmas_Shepherd_Feast_Line do the same for",
+    "Elsie and Bram). They land on the screens the conversation opens on, after a screen's own lines and",
+    "before the goodbye group, so goodbye stays last. Season offers them only while Christmas runs; to take",
+    "them out, set Enabled false in a file of the same name. The lines pay nothing themselves."
+  ],
+  "Season": "Christmas",
+  "Dialogues": { "Ids": [ "Harvest_Feast_Miller" ] },
+  "Options": [
+    {
+      "LabelKey": "dialogue.christmas_feast_line.opt.stall",
+      "Style": "neutral",
+      "Presentation": { "Icon": { "Item": "Christmas_Present" } },
+      "Open": { "Type": "Shop", "Shop": "Christmas_Miller" }
+    },
+    {
+      "LabelKey": "dialogue.christmas_feast_line.opt.quests",
+      "Style": "neutral",
+      "Presentation": { "Icon": { "Item": "Christmas_Gingerbread_Cookie" } },
+      "Open": "Quests"
+    }
+  ]
+}

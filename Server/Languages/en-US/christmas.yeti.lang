@@ -1,0 +1,33 @@
+# Christmas - the Yeti Cave: the cave's name and its lines, the Yeti's fight's notices, his Boss Kill
+# Claim, Bram's Yeti Bait offer and way-in line, and the Yeti Hunter achievement. Keys are written bare:
+# the library finds each one by its tail, whatever this file is called. Numbers ride {0} and come from
+# the content files, so a retune never touches a translation. The Yeti's nameplate is in npcs.lang and
+# his bait's and fur's names in items.lang.
+
+# ---- The Yeti Cave ----
+dungeon.christmas_yeti_cave.name = The Yeti Cave
+dungeon.christmas_yeti_cave.description = The Yeti who scared off one of Santa's reindeer lives here, with a pile of stolen presents. Bring friends, and wrap up warm.
+dungeon.christmas_yeti_cave.goal = Walk into the cave to wake the Yeti, then bring him down. Back away when a ring lights up around him, and step off the rings under your feet before his snowballs land.
+dungeon.christmas_yeti_cave.cost_hint = Bram sells Yeti Bait at his shop once you've brought his reindeer their carrots.
+dungeon.christmas_yeti_cave.confirm = Throw the Bait
+dungeon.christmas_yeti_cave.chest = Your reward waits in the chest where he fell.
+
+# ---- The Yeti's fight ----
+notify.christmas_yeti_engaged = The Yeti wakes up!
+notify.christmas_yeti_engaged.sub = Bring him down and his stash of presents is yours.
+notify.christmas_yeti_snowballs = The Yeti starts throwing snowballs! Step off the rings.
+notify.christmas_yeti_wolves = Two White Wolves come to help the Yeti!
+notify.christmas_yeti_defeated = The Yeti is down!
+notify.christmas_yeti_defeated.sub = Your share: {0}%, in {1, number} seconds.
+notify.christmas_yeti_wiped = The Yeti goes back to his den.
+notify.christmas_yeti_wiped.sub = Back away when a ring lights up around him, and step off the rings before his snowballs land.
+claim.christmas_yeti_chase = The Yeti: Boss Kill
+
+# ---- Bram's shop and his way in ----
+shop.christmas_offer_yeti_bait.title = Yeti Bait
+shop.christmas_offer_yeti_bait.desc = A fish no Yeti can say no to. Bram takes one to lead you and your friends into the Yeti Cave.
+dialogue.christmas_yeti_cave_line.opt.enter = Take me to the Yeti Cave. (costs a Yeti Bait, from Bram's shop)
+
+# ---- Achievement ----
+achievement.christmas_yeti_hunter.title = Yeti Hunter {0}
+achievement.christmas_yeti_hunter.desc = Defeat the Yeti in his cave.

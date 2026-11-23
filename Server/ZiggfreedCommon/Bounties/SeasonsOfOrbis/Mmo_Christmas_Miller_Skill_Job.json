@@ -1,0 +1,34 @@
+{
+  "$Comment": [
+    "Tomas's skill job, on his own board (Christmas_Miller_Jobs) on a server running MMO Skill Tree: earn this",
+    "much Crafting XP while you carry it, baking or making anything at any bench. It takes the season and the",
+    "listing from Christmas_Contract_Base.",
+    "",
+    "Requires is the plain hytale:mod_installed condition at the top, with Min 1: it drops this file at load",
+    "where MMO Skill Tree is missing, so nothing reads or reports its GAIN_XP step there, and the board posts",
+    "Tomas's plain errand in its place. Write it in this file, not in a shared base: the pack's own check",
+    "reads a skill job's gate from the file itself.",
+    "",
+    "Its Rewards.Claim replaces the base's list: the same plain pay as his errands (Christmas Coins, a little",
+    "favor on Santa's Nice List and Festival Favor), plus MMO Skill Tree's Crafting XP. The pay waits at the",
+    "board until the player collects it. Its words come from the keys its id spells, in christmas.mmo.lang."
+  ],
+  "Parent": "Christmas_Contract_Base",
+  "Requires": {
+    "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ]
+  },
+  "Listing": { "Icon": "Christmas_Gingerbread_Cookie" },
+  "Boards": [ { "Board": "Christmas_Miller_Jobs", "Difficulty": "Christmas_Miller_Skill", "Weight": 1 } ],
+  "Objectives": {
+    "gain_xp": { "Kind": "GAIN_XP", "Target": "CRAFTING", "MatchMode": "EXACT", "Amount": 1250 }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Currency", "Params": { "Currency": "Christmas_Coins", "Amount": "4" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 12 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 15 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "CRAFTING", "Amount": "750" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

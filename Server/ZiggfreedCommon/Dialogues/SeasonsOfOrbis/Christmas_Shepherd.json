@@ -1,0 +1,225 @@
+{
+  "Name": "Christmas_Shepherd",
+  "$Comment": [
+    "Bram the Shepherd's Christmas conversation, what he says once only Christmas runs, on his meadow in",
+    "his winter clothes (his placement's Christmas entry names it in Interact). While Harvest Feast's last",
+    "days still run he speaks his feast conversation instead, whose Christmas lines reach his stall and his",
+    "quest list (DialogueExtensions/SeasonsOfOrbis/Christmas_Shepherd_Feast_Line.json). Bram contracts, and",
+    "keeps it short: I'm, can't, they're.",
+    "",
+    "Start's First beats come first. The off-season beat answers a visit while Christmas is off (after a",
+    "command ends it, or when a server owner stands Bram somewhere all year) with one line and goodbye. A",
+    "conversation has no Season leaf, so the off-season beat and the stall line read the feature",
+    "ziggfreedcommon:feature Christmas_Live, Min 1, and nobody is sent to a stall that opens closed. Then",
+    "the next step's pointer, once per player (OnceId christmas_bram_next_tomas): once his part of the story",
+    "is collected and Tomas's is not taken yet, he sends the player to Tomas. Collecting his quest plays",
+    "this conversation again (its CompletionDialogue), so the pointer comes straight after.",
+    "",
+    "Quests holds three rows, all bound to him by the id he keeps in both seasons (Harvest_Feast_Shepherd).",
+    "His part of Santa's story, Reindeer Food (christmas_reindeer_food): the conversation opens on its offer",
+    "while it can be taken, on its brief while it is carried, and on its hand-in once the carrots are in the",
+    "bag. Then his daily, Daily Carrots (christmas_daily_carrots), the same three screens. Then his secret's",
+    "apprentice quest, Bram's Apprentice (christmas_bram_apprentice), the same three screens: it teaches the",
+    "route that opens his extra roll in every Christmas Present on every server. Each hand-in opens his quest",
+    "list with Collect in front of the player. Otherwise it opens on greeting, the Fallback: who he is this",
+    "Christmas and what his stall gives out, in plain words, with his stall, his quest list (Need a hand?,",
+    "which also lists the day's job from his own board, Boards/SeasonsOfOrbis/Christmas_Shepherd_Jobs.json),",
+    "where the Present Thieves are (the thieves screen), and why he is here. One more line shows only where",
+    "MMO Skill Tree is installed (its Factor condition, hytale:mod_installed with Min 1): the other key to his",
+    "secret, Woodcutting level 20, on the secret_skill screen. Its words, and the apprentice quest's, are in",
+    "christmas.mmo.lang."
+  ],
+  "Start": {
+    "First": [
+      {
+        "Node": "off_season",
+        "When": [
+          { "Type": "Not", "Of": [ { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Christmas_Live", "Min": 1 } ] }
+        ]
+      },
+      {
+        "Node": "next_tomas",
+        "When": [
+          { "Type": "QuestState", "Quest": "christmas_reindeer_food", "State": "COMPLETED" },
+          { "Type": "QuestState", "Quest": "christmas_gingerbread_cookies", "State": "NOT_STARTED" }
+        ],
+        "Once": true,
+        "OnceId": "christmas_bram_next_tomas"
+      }
+    ],
+    "Quests": {
+      "christmas_reindeer_food": { "Offerable": "reindeer_offer", "Active": "reindeer_brief", "Ready": "reindeer_ready" },
+      "christmas_daily_carrots": { "Offerable": "carrots_offer", "Active": "carrots_brief", "Ready": "carrots_ready" },
+      "christmas_bram_apprentice": { "Offerable": "apprentice_offer", "Active": "apprentice_brief", "Ready": "apprentice_ready" }
+    },
+    "Fallback": "greeting"
+  },
+  "Nodes": {
+    "off_season": {
+      "TextKey": "dialogue.christmas_shepherd.off_season.text",
+      "Options": [
+        { "LabelKey": "dialogue.christmas_shepherd.off_season.opt.farewell", "Style": "farewell", "Close": true }
+      ]
+    },
+    "greeting": {
+      "TextKey": "dialogue.christmas_shepherd.greeting.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_shepherd.opt.stall",
+          "Style": "neutral",
+          "Conditions": [
+            { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Christmas_Live", "Min": 1 }
+          ],
+          "Open": { "Type": "Shop", "Shop": "Christmas_Shepherd" }
+        },
+        { "LabelKey": "dialogue.christmas_shepherd.opt.quests", "Style": "neutral", "Open": "Quests" },
+        { "LabelKey": "dialogue.christmas_shepherd.opt.thieves", "Style": "neutral", "Goto": "thieves" },
+        { "LabelKey": "dialogue.christmas_shepherd.opt.why", "Style": "neutral", "Goto": "why" },
+        {
+          "LabelKey": "dialogue.christmas_shepherd.opt.secret_skill",
+          "Style": "neutral",
+          "Conditions": [
+            { "Type": "Factor", "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 }
+          ],
+          "Goto": "secret_skill"
+        }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "secret_skill": {
+      "TextKey": "dialogue.christmas_shepherd.secret_skill.text",
+      "Options": [
+        { "LabelKey": "dialogue.christmas_shepherd.opt.back", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "apprentice_offer": {
+      "TextKey": "dialogue.christmas_shepherd.apprentice_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_shepherd.apprentice_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "christmas_bram_apprentice" }, { "Goto": "apprentice_brief" } ]
+        },
+        { "LabelKey": "dialogue.christmas_shepherd.opt.later", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "apprentice_brief": {
+      "TextKey": "dialogue.christmas_shepherd.apprentice_brief.text",
+      "Options": [
+        { "LabelKey": "dialogue.christmas_shepherd.opt.back", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "apprentice_ready": {
+      "TextKey": "dialogue.christmas_shepherd.apprentice_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_shepherd.apprentice_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "christmas_bram_apprentice" } ],
+          "Do": [
+            { "TurnIn": "christmas_bram_apprentice" },
+            { "Open": { "Type": "Quests", "Highlight": "christmas_bram_apprentice" } }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "thieves": {
+      "TextKey": "dialogue.christmas_shepherd.thieves.text",
+      "Options": [
+        { "LabelKey": "dialogue.christmas_shepherd.opt.thanks", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "why": {
+      "TextKey": "dialogue.christmas_shepherd.why.text",
+      "Options": [
+        { "LabelKey": "dialogue.christmas_shepherd.opt.back", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "next_tomas": {
+      "TextKey": "dialogue.christmas_shepherd.next_tomas.text",
+      "Options": [
+        { "LabelKey": "dialogue.christmas_shepherd.opt.thanks", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "reindeer_offer": {
+      "TextKey": "dialogue.christmas_shepherd.reindeer_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_shepherd.reindeer_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "christmas_reindeer_food" }, { "Goto": "reindeer_brief" } ]
+        },
+        { "LabelKey": "dialogue.christmas_shepherd.opt.later", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "reindeer_brief": {
+      "TextKey": "dialogue.christmas_shepherd.reindeer_brief.text",
+      "Options": [
+        { "LabelKey": "dialogue.christmas_shepherd.opt.back", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "reindeer_ready": {
+      "TextKey": "dialogue.christmas_shepherd.reindeer_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_shepherd.reindeer_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "christmas_reindeer_food" } ],
+          "Do": [
+            { "TurnIn": "christmas_reindeer_food" },
+            { "Open": { "Type": "Quests", "Highlight": "christmas_reindeer_food" } }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "carrots_offer": {
+      "TextKey": "dialogue.christmas_shepherd.carrots_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_shepherd.carrots_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "christmas_daily_carrots" }, { "Goto": "carrots_brief" } ]
+        },
+        { "LabelKey": "dialogue.christmas_shepherd.opt.later", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "carrots_brief": {
+      "TextKey": "dialogue.christmas_shepherd.carrots_brief.text",
+      "Options": [
+        { "LabelKey": "dialogue.christmas_shepherd.opt.back", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "carrots_ready": {
+      "TextKey": "dialogue.christmas_shepherd.carrots_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_shepherd.carrots_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "christmas_daily_carrots" } ],
+          "Do": [
+            { "TurnIn": "christmas_daily_carrots" },
+            { "Open": { "Type": "Quests", "Highlight": "christmas_daily_carrots" } }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    }
+  },
+  "Fragments": {
+    "goodbye": [
+      { "LabelKey": "dialogue.christmas_shepherd.opt.farewell", "Style": "farewell", "Close": true }
+    ]
+  }
+}

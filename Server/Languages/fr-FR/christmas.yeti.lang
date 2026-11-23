@@ -1,0 +1,33 @@
+# Christmas - the Yeti Cave: the cave's name and its lines, the Yeti's fight's notices, his Boss Kill
+# Claim, Bram's Yeti Bait offer and way-in line, and the Yeti Hunter achievement. Keys are written bare:
+# the library finds each one by its tail, whatever this file is called. Numbers ride {0} and come from
+# the content files, so a retune never touches a translation. The Yeti's nameplate is in npcs.lang and
+# his bait's and fur's names in items.lang.
+
+# ---- The Yeti Cave ----
+dungeon.christmas_yeti_cave.name = Grotte du Yéti
+dungeon.christmas_yeti_cave.description = Le Yéti qui a fait fuir l'un des rennes du Père Noël vit ici, avec un tas de cadeaux volés. Venez à plusieurs, et couvrez-vous bien.
+dungeon.christmas_yeti_cave.goal = Entrez dans la grotte pour réveiller le Yéti, puis terrassez-le. Reculez quand un anneau s'allume autour de lui, et quittez les anneaux sous vos pieds avant que ses boules de neige tombent.
+dungeon.christmas_yeti_cave.cost_hint = Bram vend de l'Appât du Yéti dans sa boutique une fois que vous avez apporté leurs carottes à ses rennes.
+dungeon.christmas_yeti_cave.confirm = Lancer l'Appât
+dungeon.christmas_yeti_cave.chest = Votre récompense vous attend dans le coffre, là où il est tombé.
+
+# ---- The Yeti's fight ----
+notify.christmas_yeti_engaged = Le Yéti se réveille !
+notify.christmas_yeti_engaged.sub = Terrassez-le et sa réserve de cadeaux est à vous.
+notify.christmas_yeti_snowballs = Le Yéti lance des boules de neige ! Quittez les anneaux.
+notify.christmas_yeti_wolves = Deux Loups blancs viennent aider le Yéti !
+notify.christmas_yeti_defeated = Le Yéti est à terre !
+notify.christmas_yeti_defeated.sub = Votre part : {0} %, en {1, number} secondes.
+notify.christmas_yeti_wiped = Le Yéti retourne dans sa tanière.
+notify.christmas_yeti_wiped.sub = Reculez quand un anneau s'allume autour de lui, et quittez les anneaux avant que ses boules de neige tombent.
+claim.christmas_yeti_chase = Le Yéti : Boss vaincu
+
+# ---- Bram's stall and his way in ----
+shop.christmas_offer_yeti_bait.title = Appât du Yéti
+shop.christmas_offer_yeti_bait.desc = Un poisson auquel aucun Yéti ne résiste. Bram en prend un pour vous mener, vous et vos amis, dans la Grotte du Yéti.
+dialogue.christmas_yeti_cave_line.opt.enter = Emmène-moi à la Grotte du Yéti. (coûte un Appât du Yéti, de la boutique de Bram)
+
+# ---- Achievement ----
+achievement.christmas_yeti_hunter.title = Chasseur de Yéti {0}
+achievement.christmas_yeti_hunter.desc = Terrassez le Yéti dans sa grotte.

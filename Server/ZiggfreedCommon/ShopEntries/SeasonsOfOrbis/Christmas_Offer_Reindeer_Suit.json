@@ -1,0 +1,18 @@
+{
+  "$Comment": "The Reindeer Suit (Christmas_Reindeer_Suit), a one-use costume and Elsie's secret, sold at her stall to a player holding either key to it: the factor Christmas_Elsie_Key reads 1 once her apprentice quest is collected, or, on a server running MMO Skill Tree, at Building level 20 (Factors/SeasonsOfOrbis/Christmas_Elsie_Key.json). Requires is a lock, not a hide: a player without a key still sees the offer, locked, and the lock line names what opens it on that server (the key's name overlays). The Season leaf on the base still hides it while Christmas is off. It has no limit, since each suit is worn once. Its picture is the suit.",
+  "Parent": "Christmas_Offer_Base",
+  "Shop": "Christmas_Weaver",
+  "Text": {
+    "TitleKey": "shop.christmas_offer_reindeer_suit.title",
+    "FlavorKey": "shop.christmas_offer_reindeer_suit.desc"
+  },
+  "Icon": "Christmas_Reindeer_Suit",
+  "Listing": { "Category": "gifts", "SortOrder": 35 },
+  "Cost": { "Currencies": { "Christmas_Coins": 120 } },
+  "Requires": {
+    "Factors": [
+      { "Factor": "Christmas_Elsie_Key", "Min": 1 }
+    ]
+  },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Christmas_Reindeer_Suit", "Count": 1 } } ]
+}

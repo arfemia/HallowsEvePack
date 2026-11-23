@@ -1,0 +1,13 @@
+{
+  "$Comment": "A costume: for three minutes the wearer takes the game's Christmas elf look (the model NPC_Elf). It changes the model and is no debuff, which is what makes it a costume: the wearer can take it off any time with /zigcostume off, and no second costume goes over it. The Christmas Wand's primary use puts it on another player. Its picture on the buff bar is the game's candy cane. Duration is in seconds.",
+  "Name": "christmas.world.effect.christmas_costume_elf.name",
+  "StatusEffectIcon": "Icons/ItemsGenerated/WinterHoliday_Cane.png",
+  "OverlapBehavior": "Overwrite",
+  "Duration": 180,
+  "Debuff": false,
+  "ModelChange": "NPC_Elf",
+  "ApplicationEffects": {
+    "Particles": [{"SystemId": "Potion_Morph_Burst"}],
+    "WorldSoundEventId": "SFX_Potion_Drink_Success"
+  }
+}

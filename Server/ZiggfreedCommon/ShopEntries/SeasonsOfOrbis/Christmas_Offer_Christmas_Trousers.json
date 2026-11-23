@@ -1,0 +1,17 @@
+{
+  "$Comment": "The Christmas Trousers, a piece of the Christmas Set, sold at Elsie's stall to players Revered on Santa's Nice List, the rank the list calls Very Nice. Requires is a lock, not a hide: a player below the rank still sees the offer, locked, with the rank's own name in the reason, so they can see what to work towards, and the Season leaf on the base still hides it while Christmas is off. The offer is named with this pack's keys, and its picture is the item.",
+  "Parent": "Christmas_Offer_Base",
+  "Shop": "Christmas_Weaver",
+  "Text": {
+    "TitleKey": "shop.christmas_offer_christmas_trousers.title",
+    "FlavorKey": "shop.christmas_offer_christmas_trousers.desc"
+  },
+  "Listing": { "Category": "clothes", "SortOrder": 30 },
+  "Cost": { "Currencies": { "Christmas_Coins": 200 } },
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Christmas_Nice_List/Revered", "Min": 1 }
+    ]
+  },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Christmas_Trousers", "Count": 1 } } ]
+}

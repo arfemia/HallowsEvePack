@@ -1,0 +1,13 @@
+{
+  "$Comment": "The Santa Suit's costume: for thirty minutes the wearer takes the game's Santa look (the model NPC_Santa). It changes the model and is no debuff, which is what makes it a costume: the wearer can take it off any time with /zigcostume off, and no second costume goes over it. Using a Santa Suit (Christmas_Santa_Suit) puts it on the player who used it. Its picture on the buff bar is the suit's own red wool. Duration is in seconds; the suit's description in items.lang writes it out (30:00), so change it with this.",
+  "Name": "christmas.world.effect.christmas_costume_santa.name",
+  "StatusEffectIcon": "Icons/ItemsGenerated/Ingredient_Bolt_Wool_Red.png",
+  "OverlapBehavior": "Overwrite",
+  "Duration": 1800,
+  "Debuff": false,
+  "ModelChange": "NPC_Santa",
+  "ApplicationEffects": {
+    "Particles": [{"SystemId": "Potion_Morph_Burst"}],
+    "WorldSoundEventId": "SFX_Potion_Drink_Success"
+  }
+}

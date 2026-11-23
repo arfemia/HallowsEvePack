@@ -1,0 +1,16 @@
+{
+  "$Comment": "Warm Inside, what a Hot Cocoa, a Christmas Cake or Tomas's Christmas Loaf gives: for 600 seconds (ten minutes) DamageResistance takes Amount (0.40, 40%) off every Ice hit, the game's frost attacks and the Ice damage its cold creatures deal. Percent resistances from every effect and armour piece add up before they apply, so with the Christmas Set on as well the two together take off more than either alone; 1 would make the eater immune. Overwrite means another of them restarts it, never stacks it. Its picture on the buff bar is the cocoa's mug. The three dishes' descriptions in items.lang write these numbers out (40%, 10:00), so change them with it.",
+  "Name": "items.effect.christmas_food_warmth.name",
+  "StatusEffectIcon": "Icons/ItemsGenerated/Deco_Mug.png",
+  "DamageResistance": {
+    "Ice": [
+      {
+        "Amount": 0.40,
+        "CalculationType": "Percent"
+      }
+    ]
+  },
+  "OverlapBehavior": "Overwrite",
+  "Duration": 600,
+  "Debuff": false
+}

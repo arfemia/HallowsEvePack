@@ -1,0 +1,20 @@
+{
+  "$Comment": "Defeat the Yeti in his cave during one Christmas. ENCOUNTER_DEFEATED counts his fight by its id (Christmas_Yeti_Encounter, the Yeti Cave's boss), so a wild Yeti killed in the snow never counts. It carries no merry tag on purpose: the season's meta counts what everyone can do, never a boss fight. Each year's copy pays a few Christmas Coins and MMO Skill Tree's Mmo_Xp row once, Defense XP for the fight, both waiting on the achievements page until the player collects them. The Mmo_Xp row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that mod, unpaid and unshown, and the coins still pay.",
+  "Parent": "Christmas_Achievement_Base",
+  "Listing": { "SortOrder": 70, "Icon": "Christmas_Yeti_Fur_Hood" },
+  "Criteria": {
+    "defeat-yeti": {
+      "Kind": "ENCOUNTER_DEFEATED",
+      "Target": "Christmas_Yeti_Encounter",
+      "MatchMode": "EXACT",
+      "Amount": 1
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Currency", "Params": { "Currency": "Christmas_Coins", "Amount": "25" } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "2500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$Comment": "A Workshop job on the Christmas Board: bake Gingerbread Cookies at a Chef's Stove and bring them in, handed in at the board. A cookie needs the recipe Bram passes on from Tomas, so Requires locks the job until Tomas's Christmas Cookies (christmas_gingerbread_cookies) is claimed: it is still posted, and a player without the recipe sees it locked with the reason. Its own Requires leaves the base's Season untouched. It writes its own Rewards.Claim, the base's list with MMO Skill Tree's Mmo_Xp row added (Crafting XP for the baking), because a child's list replaces the base's whole. The row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that mod, and the rest of the job pays. The season and the listing come from Christmas_Contract_Base.",
+  "Parent": "Christmas_Contract_Base",
+  "Listing": { "Icon": "Christmas_Gingerbread_Cookie" },
+  "Boards": [ { "Board": "Christmas_Daily", "Difficulty": "Christmas_Workshop", "Weight": 1 } ],
+  "Requires": { "Quests": [ "christmas_gingerbread_cookies" ] },
+  "Objectives": {
+    "bring_cookies": { "Kind": "TURN_IN", "Target": "Christmas_Gingerbread_Cookie", "MatchMode": "EXACT", "Amount": 3, "TextKey": "objective.christmas.bring_cookies" }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Christmas_Board_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 24 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 30 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "CRAFTING", "Amount": "1500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

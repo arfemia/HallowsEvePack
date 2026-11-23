@@ -1,0 +1,31 @@
+{
+  "$Comment": "The Christmas Wand: point it at another player and dress them up. Primary turns them into one of Santa's elves (Christmas_Wand_Cast_Elf), Secondary into a reindeer (Christmas_Wand_Cast_Reindeer); both share the one five-second cooldown Christmas_Wand. It dresses only another player, who can take the costume off with /zigcostume off, and a costume that lands counts as USE_ITEM with the Qualifier Costume for the player who cast it. It wears the game's own wooden wand (Weapon_Wand_Wood's model, texture, icon and sparkle).",
+  "TranslationProperties": {
+    "Name": "items.Christmas_Wand.name",
+    "Description": "items.Christmas_Wand.description"
+  },
+  "Categories": ["Items.Weapons"],
+  "Icon": "Icons/ItemsGenerated/Weapon_Wand_Wood.png",
+  "Quality": "Uncommon",
+  "ItemLevel": 20,
+  "Model": "Items/Weapons/Wand/Wood.blockymodel",
+  "Texture": "Items/Weapons/Wand/Wood_Texture.png",
+  "PlayerAnimationsId": "Wand",
+  "Particles": [{"SystemId": "Wood_Wand", "TargetNodeName": "Handle"}],
+  "Utility": {"Compatible": true},
+  "Interactions": {
+    "Primary": {
+      "Cooldown": {"Id": "Christmas_Wand", "Cooldown": 5},
+      "Interactions": ["Christmas_Wand_Cast_Elf"]
+    },
+    "Secondary": {
+      "Cooldown": {"Id": "Christmas_Wand", "Cooldown": 5},
+      "Interactions": ["Christmas_Wand_Cast_Reindeer"]
+    }
+  },
+  "IconProperties": {"Scale": 0.6, "Translation": [-13, -16], "Rotation": [45, 90, 0]},
+  "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",
+  "Tags": {"Type": ["Weapon"], "Family": ["Wand", "Christmas"]},
+  "Weapon": {},
+  "ItemSoundSetId": "ISS_Weapons_Wand"
+}

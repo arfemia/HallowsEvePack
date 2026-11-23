@@ -108,3 +108,51 @@ effect.harvest_feast_food_regen.name = Gesundheitsregeneration III
 effect.harvest_feast_food_health.name = Gesundheitsschub IV
 effect.harvest_feast_food_stamina.name = Ausdauerschub IV
 effect.harvest_feast_food_favor.name = Gunstschub
+Christmas_Hat.name = Weihnachtshut
+Christmas_Hat.description = Ein kuschelig warmer Baumwollhut, der deine Ohren warm hält. Elsie die Weberin verkauft ihn in ihrem Weihnachtsladen im Vergessenen Tempel, sobald der Weihnachtsmann dich für Brav hält. Teil des Weihnachts-Sets: Jedes Teil lässt dich die Gunst des Weihnachtsmanns etwas schneller gewinnen und hält ein wenig Kälte ab, und je mehr vom Set du trägst, desto mehr Gesundheit bekommst du.
+Christmas_Coat.name = Weihnachtsmantel
+Christmas_Coat.description = Ein dicker Baumwollmantel für die kälteste Nacht des Jahres. Elsie die Weberin verkauft ihn in ihrem Weihnachtsladen im Vergessenen Tempel, sobald du Liebling des Weihnachtsmanns bist. Teil des Weihnachts-Sets: Jedes Teil lässt dich die Gunst des Weihnachtsmanns etwas schneller gewinnen und hält ein wenig Kälte ab, und je mehr vom Set du trägst, desto mehr Gesundheit bekommst du.
+Christmas_Gloves.name = Weihnachtshandschuhe
+Christmas_Gloves.description = Weiche Baumwollhandschuhe zum Bauen von Schneemännern. Elsie die Weberin verkauft sie in ihrem Weihnachtsladen im Vergessenen Tempel, sobald du beim Weihnachtsmann Auf der Liste bist. Teil des Weihnachts-Sets: Jedes Teil lässt dich die Gunst des Weihnachtsmanns etwas schneller gewinnen und hält ein wenig Kälte ab, und je mehr vom Set du trägst, desto mehr Gesundheit bekommst du.
+Christmas_Trousers.name = Weihnachtshose
+Christmas_Trousers.description = Warme Baumwollhose, die den Schnee draußen hält. Elsie die Weberin verkauft sie in ihrem Weihnachtsladen im Vergessenen Tempel, sobald der Weihnachtsmann dich für Sehr brav hält. Teil des Weihnachts-Sets: Jedes Teil lässt dich die Gunst des Weihnachtsmanns etwas schneller gewinnen und hält ein wenig Kälte ab, und je mehr vom Set du trägst, desto mehr Gesundheit bekommst du.
+Christmas_Gingerbread_Cookie.name = Lebkuchenmännchen
+Christmas_Gingerbread_Cookie.description = Ein kleiner Lebkuchenmann mit würzigem Biss. Stellt sofort <color is="#ffffff">5%</color> Gesundheit wieder her und gewährt:\n\n• <color is="#ffffff">Flinke Füße</color>: Du bewegst dich <color is="#ffffff">15%</color> schneller\n\nDauer: <color is="#ffffff">10:00</color>\n\nBack sie auf einem Kochherd, sobald du das Rezept gelernt hast.
+Christmas_Hot_Cocoa.name = Heiße Schokolade
+Christmas_Hot_Cocoa.description = Ein warmer Becher Kakao, süß und gewürzt. Stellt sofort <color is="#ffffff">5%</color> Gesundheit wieder her und gewährt:\n\n• <color is="#ffffff">Gesundheitsregeneration III</color>\n• <color is="#ffffff">Innere Wärme</color>: <color is="#ffffff">40%</color> weniger Eisschaden\n\nDauer: <color is="#ffffff">10:00</color>\n\nStell sie auf einem Kochherd her, sobald du das Rezept gelernt hast.
+Christmas_Cake.name = Weihnachtskuchen
+Christmas_Cake.description = Eine Biskuitrolle mit süßer Spirale im Inneren. Stellt sofort <color is="#ffffff">5%</color> Gesundheit wieder her und gewährt:\n\n• <color is="#ffffff">Gesundheitsregeneration III</color>\n• <color is="#ffffff">Flinke Füße</color>: Du bewegst dich <color is="#ffffff">15%</color> schneller\n• <color is="#ffffff">Innere Wärme</color>: <color is="#ffffff">40%</color> weniger Eisschaden\n• <color is="#ffffff">Brav-Schub</color>: Die Gunst des Weihnachtsmanns steigt <color is="#ffffff">10%</color> schneller\n\nDauer: <color is="#ffffff">10:00</color>\n\nBack ihn auf einem Kochherd, sobald du das Rezept gelernt hast.
+Christmas_Recipe_Gingerbread_Cookie.name = Rezept: Lebkuchenmännchen
+Christmas_Recipe_Gingerbread_Cookie.description = Lehrt das Rezept für <item is="Christmas_Gingerbread_Cookie"/>. Back sie auf einem Kochherd aus Teig und Gewürzen, <color is="#ffffff">3</color> auf einmal.\n\nStellt sofort <color is="#ffffff">5%</color> Gesundheit wieder her und gewährt:\n\n• <color is="#ffffff">Flinke Füße</color>\n\nDauer: <color is="#ffffff">10:00</color>
+Christmas_Recipe_Hot_Cocoa.name = Rezept: Heiße Schokolade
+Christmas_Recipe_Hot_Cocoa.description = Lehrt das Rezept für <item is="Christmas_Hot_Cocoa"/>. Stell sie auf einem Kochherd aus einem Krug Wasser, Baumharz und Gewürzen her, und den Krug behältst du.\n\nStellt sofort <color is="#ffffff">5%</color> Gesundheit wieder her und gewährt:\n\n• <color is="#ffffff">Gesundheitsregeneration III</color>\n• <color is="#ffffff">Innere Wärme</color>\n\nDauer: <color is="#ffffff">10:00</color>
+Christmas_Recipe_Cake.name = Rezept: Weihnachtskuchen
+Christmas_Recipe_Cake.description = Lehrt das Rezept für <item is="Christmas_Cake"/>. Back ihn auf einem Kochherd aus Teig, Eiern und Baumharz.\n\nStellt sofort <color is="#ffffff">5%</color> Gesundheit wieder her und gewährt:\n\n• <color is="#ffffff">Gesundheitsregeneration III</color>\n• <color is="#ffffff">Flinke Füße</color>\n• <color is="#ffffff">Innere Wärme</color>\n• <color is="#ffffff">Brav-Schub</color>\n\nDauer: <color is="#ffffff">10:00</color>
+effect.christmas_food_speed.name = Flinke Füße
+effect.christmas_food_warmth.name = Innere Wärme
+effect.christmas_food_regen.name = Gesundheitsregeneration III
+effect.christmas_food_favor.name = Brav-Schub
+Christmas_Present.name = Weihnachtsgeschenk
+Christmas_Present.description = Ein kleines rotes Geschenk mit einer Schleife obendrauf. Geschenkdiebe lassen sie fallen, und Elsie die Weberin verkauft sie in ihrem Weihnachtsladen. Halte es in der Hand und klick mit rechts, um es zu öffnen, und behalte, was drin ist.\n\nOder verschenk es: Halte es in der Hand, sieh einen Freund, den Weihnachtsmann oder einen seiner Helfer an und klick mit links. Ein Freund bekommt ein besseres Geschenk als du, und der Weihnachtsmann mag dich etwas mehr.
+Christmas_Snowball.name = Schneeball
+Christmas_Snowball.description = Eine kalte Überraschung für einen Freund. Wirf ihn, und wen er trifft, wird für einen Moment langsamer. Er tut nie weh. Bram der Schäfer verteilt sie.
+Christmas_Elf_Suit.name = Elfenanzug
+Christmas_Elf_Suit.description = Ein Bündel grüner Elfenkleidung, genau deine Größe. Klick mit rechts, um sie anzuziehen und für <color is="#ffffff">30:00</color> wie einer der Elfen des Weihnachtsmanns auszusehen. Gib /zigcostume off ein, um sie früher auszuziehen. Elsie die Weberin gibt dir einen, wenn du ihr hilfst.
+Christmas_Santa_Suit.name = Weihnachtsmannanzug
+Christmas_Santa_Suit.description = Ein Bündel roter Kleidung mit weißem Pelzbesatz, genau deine Größe. Klick mit rechts, um sie anzuziehen und für <color is="#ffffff">30:00</color> wie der Weihnachtsmann selbst auszusehen. Gib /zigcostume off ein, um sie früher auszuziehen. Elsie die Weberin verkauft ihn in ihrem Weihnachtsladen.
+Christmas_Wand.name = Weihnachtsstab
+Christmas_Wand.description = Richte ihn auf einen Freund. Ein Knopf macht ihn zu einem der Elfen des Weihnachtsmanns, der andere zu einem Rentier, und er kann das Kostüm jederzeit ausziehen. Elsie die Weberin verkauft ihn in ihrem Weihnachtsladen, sobald du beim Weihnachtsmann Auf der Liste bist.
+Christmas_Yeti_Bait.name = Yeti-Köder
+Christmas_Yeti_Bait.description = Ein Fisch, zu dem kein Yeti nein sagen kann. <b>Bram der Schäfer</b> im Vergessenen Tempel nimmt einen, um dich und deine Gruppe in die <b>Yeti-Höhle</b> zu führen, solange Weihnachten läuft.\n\nBram verkauft ihn in seinem Weihnachtsladen, sobald du seinen Rentieren die Karotten gebracht hast.
+Christmas_Yeti_Fur_Hood.name = Yeti-Fellkapuze
+Christmas_Yeti_Fur_Hood.description = Dickes weißes Fell vom Rücken des Yetis selbst. Du erleidest <color is="#ffffff">15%</color> weniger Eisschaden, solange du sie trägst. Der Yeti lässt manchmal eine zurück, wenn du ihn zum ersten Mal am Tag besiegst.
+Christmas_Yeti_Fur_Coat.name = Yeti-Fellmantel
+Christmas_Yeti_Fur_Coat.description = Ein schwerer Mantel aus dem weißen Fell des Yetis. Du erleidest <color is="#ffffff">20%</color> weniger Eisschaden, solange du ihn trägst. Der Yeti lässt manchmal einen zurück, wenn du ihn zum ersten Mal am Tag besiegst.
+Christmas_Ornament.name = Weihnachtskugel
+Christmas_Ornament.description = Eine Glaskugel für den Baum. Der Weihnachtsmann gibt jedem eine, der ihm an Heiligabend hilft, seinen Schlitten zu füllen, und jedes Weihnachten hat seine eigene. Häng sie auf, wo du willst.
+Christmas_Tomas_Loaf.name = Tomas' Weihnachtsbrot
+Christmas_Tomas_Loaf.description = Tomas des Müllers eigenes süßes Brot. Stellt sofort <color is="#ffffff">5%</color> Gesundheit wieder her und gewährt:\n\n• <color is="#ffffff">Flinke Füße</color>: Du bewegst dich <color is="#ffffff">15%</color> schneller\n• <color is="#ffffff">Innere Wärme</color>: <color is="#ffffff">40%</color> weniger Eisschaden\n\nDauer: <color is="#ffffff">10:00</color>\n\nBack es auf einem Kochherd, sobald du das Rezept gelernt hast.
+Christmas_Recipe_Tomas_Loaf.name = Rezept: Tomas' Weihnachtsbrot
+Christmas_Recipe_Tomas_Loaf.description = Lehrt das Rezept für <item is="Christmas_Tomas_Loaf"/>. Back es auf einem Kochherd aus Teig und Baumharz, <color is="#ffffff">2</color> auf einmal.\n\nStellt sofort <color is="#ffffff">5%</color> Gesundheit wieder her und gewährt:\n\n• <color is="#ffffff">Flinke Füße</color>\n• <color is="#ffffff">Innere Wärme</color>\n\nDauer: <color is="#ffffff">10:00</color>
+Christmas_Reindeer_Suit.name = Rentieranzug
+Christmas_Reindeer_Suit.description = Ein Bündel Rentierkleidung, Geweih und rote Nase inklusive, genau deine Größe. Klick mit rechts, um sie anzuziehen und für <color is="#ffffff">30:00</color> wie eines der Rentiere des Weihnachtsmanns auszusehen. Gib /zigcostume off ein, um sie früher auszuziehen. Elsie die Weberin verkauft ihn in ihrem Weihnachtsladen. Frag sie, wie du ihn verdienst.

@@ -1,0 +1,22 @@
+{
+  "$Comment": [
+    "Christmas Eve's celebration, the moment a player collects Christmas Eve's pay: a big banner with a",
+    "fanfare for them and for everyone within RadiusBlocks of them (everyone round Santa's tree), and a",
+    "firework over their head. The loot table Christmas_Eve_Pay names this moment with the Cue on its first",
+    "roll, and only Christmas Eve pays that table, so it plays once a year per player.",
+    "",
+    "Reword the banner with the keys notify.christmas_eve_delivered and its .sub line in",
+    "christmas.world.lang; the sub line's {0} is the player's name. SoundEventId is any SoundEvent id, heard",
+    "by each player shown the banner. Command runs as the console with {player} filled in: the game's own",
+    "particle spawn command, at that player, with any ParticleSystem id. Delete Command for no firework."
+  ],
+  "Broadcast": {
+    "Title": { "Key": "notify.christmas_eve_delivered" },
+    "Secondary": { "Key": "notify.christmas_eve_delivered.sub", "Args": ["player"] },
+    "Major": true,
+    "SoundEventId": "SFX_Event_Chapter_1_Complete_Sting",
+    "SameWorldOnly": true,
+    "RadiusBlocks": 48.0
+  },
+  "Command": { "Line": "particle spawn Firework_Mix3 --player={player}" }
+}

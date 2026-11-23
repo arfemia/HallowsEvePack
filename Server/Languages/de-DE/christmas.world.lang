@@ -1,0 +1,38 @@
+# Christmas - the calendar's words (what Christmas and Christmas Morning are called, and their banners),
+# the costumes' names and the notice for Santa's Sack. Keys are written bare: the library finds each one
+# by its tail, whatever this file is called. Banners and notices print markup as text, so none of these
+# values carries any.
+
+# ---- Christmas ----
+calendar.christmas.name = Weihnachten
+calendar.christmas.flavor = Der Weihnachtsmann ist im Vergessenen Tempel, und Trorks in Weihnachtsmannmützen sind mit seinen Geschenken abgehauen.
+calendar.christmas.herald.start = Weihnachten
+calendar.christmas.herald.start.sub = Der Weihnachtsmann ist im Vergessenen Tempel, und Trorks haben seine Geschenke gestohlen.
+calendar.christmas.herald.end = Weihnachten ist vorbei
+calendar.christmas.herald.end.sub = Der Schlitten des Weihnachtsmanns ist bis nächstes Jahr eingepackt.
+
+# ---- Christmas Morning ----
+calendar.christmas_morning.name = Weihnachtsmorgen
+calendar.christmas_morning.flavor = Weihnachtsmorgen im Vergessenen Tempel, mit etwas unter dem Baum des Weihnachtsmanns.
+calendar.christmas_morning.herald.start = Frohe Weihnachten
+calendar.christmas_morning.herald.start.sub = Geh zum Weihnachtsmann im Vergessenen Tempel.
+
+# ---- Costumes ----
+# A costume's buff-bar tile name. Its effect's Name is this key in full (christmas.world.effect...),
+# because the client reads an effect's Name exactly as written.
+effect.christmas_costume_elf.name = Elfenkostüm
+effect.christmas_costume_reindeer.name = Rentierkostüm
+effect.christmas_costume_elf_suit.name = Elfenanzug
+effect.christmas_costume_santa.name = Weihnachtsmannanzug
+
+# ---- Christmas Cheer ----
+# What a friend's present leaves on you: its buff-bar tile name. Its effect's Name is this key in full.
+effect.christmas_cheer.name = Weihnachtsfreude
+
+# ---- Santa's Sack ----
+notify.christmas_santas_sack = Ein Sack des Weihnachtsmanns, für den Aufstieg noch höher auf der Brav-Liste.
+
+# ---- Christmas Eve ----
+# The banner when a player collects Christmas Eve's pay. The sub line's {0} is the player's name.
+notify.christmas_eve_delivered = Der Schlitten ist voll
+notify.christmas_eve_delivered.sub = {0} hat dem Weihnachtsmann geholfen, sich auf Heiligabend vorzubereiten.

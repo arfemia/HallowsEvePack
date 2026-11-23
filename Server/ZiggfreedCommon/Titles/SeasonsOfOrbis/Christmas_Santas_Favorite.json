@@ -1,0 +1,4 @@
+{
+  "$Comment": "Santa's Favorite: the title the achievement christmas_santas_favorite pays once a player reaches the top of Santa's Nice List. It shows beside a player's name in menus and leaderboards once they pick it. It names no keys: title.christmas_santas_favorite.name and .flavor name and describe it, and .display, whose {0} is the name, is where it sits around the name. Enabled false hides it everywhere without taking it from anybody who earned it.",
+  "Order": 55
+}

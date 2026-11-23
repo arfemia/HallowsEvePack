@@ -1,0 +1,23 @@
+{
+  "$Comment": [
+    "Present Thieves in the snow, day and night, while Christmas runs, written as the world-spawn rule",
+    "Christmas_Present_Thieves_Snow when Christmas starts and stilled (every moon phase at zero) when it",
+    "ends. They come in ones and twos onto soil and snow in the third zone's tundra and forests at any",
+    "hour, so a player who lives in the cold finds them in daylight too.",
+    "",
+    "The body is read by the game's own NPC/Spawn/World codec, the shape of its own rules. The game allows",
+    "one rule per creature and environment: the thieves' night rule",
+    "(Christmas_Present_Thief_Night_Spawns.json) names only the first zone's environments, so the two never",
+    "share one. To make the snow busier or quieter, change Weight."
+  ],
+  "Event": "Christmas",
+  "Rule": "Christmas_Present_Thieves_Snow",
+  "Priority": 0,
+  "Spawn": {
+    "Environments": [ "Env_Zone3_Tundra", "Env_Zone3_Forests" ],
+    "NPCs": [
+      { "Id": "Christmas_Present_Thief", "Weight": 6, "SpawnBlockSet": "Soil", "Flock": { "Size": [1, 2] } }
+    ],
+    "DayTimeRange": [0, 24]
+  }
+}

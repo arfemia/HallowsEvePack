@@ -1,0 +1,7 @@
+{
+  "$Comment": "The Yeti (the role Christmas_Yeti), the Yeti Cave's boss. His fight's script finds him through this group: to bind him when he rises without a spawn marker, to hold him through the fight, and to clear him away when the fight resets. ZigRank Boss counts him as a boss for CommonLib's crowd-control rule (a CommonLib without that rule ignores the tag): a talent's stun, root, slow or push never lands on him, an ability's own does, and a taunt always does. His White Wolves stay ordinary (Christmas_Yeti_Adds_Group). No reputation names this group, and Santa's Nice List counts none of it. Add a role id here if the Yeti gains another form.",
+  "IncludeRoles": [ "Christmas_Yeti" ],
+  "Tags": {
+    "ZigRank": [ "Boss" ]
+  }
+}

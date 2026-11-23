@@ -1,0 +1,121 @@
+
+# Christmas with MMO Skill Tree, and what stands in for it without: the villagers' own job boards (a skill
+# job a day where MMO Skill Tree runs, a plain errand where it does not), the season's boosts and their two
+# one-day events, the Christmas Set's skill half, Christmas Morning's bag of treats, and the villagers'
+# secrets with their apprentice quests and lock lines. Only a line that shows just where MMO Skill Tree
+# runs names a skill, a level or XP; every other line here shows on both kinds of server, so it names none.
+# Keys are written bare: MMO Skill Tree and the library find each one by its tail, whatever this file is
+# called. A job or quest takes its words from the keys its id spells (quest.<id>.title and .flavor). A
+# factor's name and an effect's name are read in full, christmas.mmo. and then the key.
+
+# ---- The villagers' job boards ----
+board.christmas_miller_jobs.title = Tomas Munkái
+board.christmas_miller_jobs.desc = Naponta egy munka tőlem, minden reggel új. Vedd fel a béredet, mielőtt a karácsonynak vége. Ha elkésel, a Küldetésnaplódban vár.
+board.christmas_miller_jobs.grade.skill = Képességmunka
+board.christmas_miller_jobs.grade.errand = Megbízás
+board.christmas_weaver_jobs.title = Elsie Munkái
+board.christmas_weaver_jobs.desc = Naponta egy munka tőlem, minden reggel új. Vedd fel a béredet, mielőtt a karácsonynak vége. Ha elkésel, a Küldetésnaplódban vár.
+board.christmas_weaver_jobs.grade.skill = Képességmunka
+board.christmas_weaver_jobs.grade.errand = Megbízás
+board.christmas_shepherd_jobs.title = Bram Munkái
+board.christmas_shepherd_jobs.desc = Naponta egy munka, minden reggel új. Vedd fel a béred, mielőtt a karácsonynak vége, vagy a Küldetésnaplódban vár.
+board.christmas_shepherd_jobs.grade.skill = Képességmunka
+board.christmas_shepherd_jobs.grade.errand = Megbízás
+
+# ---- The skill jobs (only where MMO Skill Tree runs) ----
+quest.mmo_christmas_miller_skill_job.title = Craftolási munka
+quest.mmo_christmas_miller_skill_job.flavor = A kemencéim karácsonykor sosem hűlnek ki. Tölts ma egy napot azzal, hogy bármelyik munkapadon készítesz dolgokat, és légy gyorsabb benne.
+quest.mmo_christmas_weaver_skill_job.title = Építési munka
+quest.mmo_christmas_weaver_skill_job.flavor = Minden otthon karácsonyi külsőt akar. Tölts ma egy napot azzal, hogy kirakod a dolgokat a sajátodban, és légy jobb benne.
+quest.mmo_christmas_shepherd_skill_job.title = Favágómunka
+quest.mmo_christmas_shepherd_skill_job.flavor = A Mikulás tüze egész éjjel eszi a fát. Tölts ma egy napot azzal, hogy fákat vágsz, és légy gyorsabb a fejszével.
+
+# ---- The errands (only where MMO Skill Tree is missing) ----
+quest.christmas_errand_wheat.title = Búza a malomnak
+quest.christmas_errand_wheat.flavor = A lisztem nem őrli meg magát. Hozz nekem egy kis búzát.
+quest.christmas_errand_bread.title = Kenyér az asztalra
+quest.christmas_errand_bread.flavor = A Mikulás segítőit is etetni kell. Süss egy kis kenyeret.
+quest.christmas_errand_decorations.title = Díszítési megbízás
+quest.christmas_errand_decorations.flavor = Tegyél ki karácsonyi dekorációkat az otthonodban. Girlandok, fények, egy hóember, bármi vidám jó lesz.
+quest.christmas_errand_wool.title = Gyapjú a zoknikhoz
+quest.christmas_errand_wool.flavor = Gyapjú kell a karácsonyi zoknikhoz. Hozz nekem egy kis gyapjútekercset.
+quest.christmas_errand_logs.title = Farönk-megbízás
+quest.christmas_errand_logs.flavor = Vágj farönköket bármelyik fából. A rénszarvasok istállójában ma este tűz kell.
+quest.christmas_errand_wolves.title = Farkasmegbízás
+quest.christmas_errand_wolves.flavor = Farkasok szaglásznak a nyájam körül. Vadássz le párat az erdőkben vagy kint a hóban.
+
+# ---- Steps ----
+objective.christmas.bring_tomas_wheat = Hozz Tomasnak {0} Búzát
+objective.christmas.bake_bread = Süss {0} {0, plural, one {kenyeret} other {kenyeret}}
+objective.christmas.put_up_decorations = Tegyél ki {0} karácsonyi {0, plural, one {dekorációt} other {dekorációt}} otthon
+objective.christmas.bring_elsie_wool = Hozz Elsie-nek {0} {0, plural, one {tekercs gyapjút} other {tekercs gyapjút}}
+objective.christmas.hunt_wolves = Vadássz {0} {0, plural, one {farkasra} other {farkasra}}
+objective.christmas.bake_treats = Süss meg {0} darabot Tomas finomságaiból
+
+# ---- Two days inside Christmas ----
+calendar.christmas_day.name = Karácsony napja
+calendar.christmas_day.flavor = Maga a nagy nap.
+calendar.christmas_new_years_eve.name = Szilveszter
+calendar.christmas_new_years_eve.flavor = Az év utolsó éjszakája.
+
+# ---- The boosts (only where MMO Skill Tree runs) ----
+boostrule.mmo_christmas_trades.title = Karácsony
+boostrule.mmo_christmas_day.title = Karácsony napja
+boostrule.mmo_christmas_new_years_eve.title = Szilveszter
+
+# ---- The Christmas Set's skill half (only where MMO Skill Tree runs) ----
+# A set's notice is a toast, so no value carries markup.
+gearset.mmo_christmas_set.tier_half = Még több Favágás XP.
+gearset.mmo_christmas_set.tier_full = Megint több Favágás XP, és jobb szerencse, ha fát vágsz.
+
+# ---- Christmas Morning's treats, and Bram's present ----
+lootable.christmas_treats.title = Egy Zacskó Finomság
+lootable.christmas_treats.flavor = Cukorbot, mézeskalács vagy kakaó, és néha egy egész Karácsonyi bejgli.
+lootable.christmas_bram_decorations.title = Bram Ajándéka
+lootable.christmas_bram_decorations.flavor = Egy kis extra Bramtól minden kibontott ajándékban: egy karácsonyi dekoráció az otthonodra.
+
+# ---- The villagers' secrets ----
+quest.christmas_tomas_apprentice.title = Tomas Tanítványa
+quest.christmas_tomas_apprentice.flavor = Süsd meg a karácsonyi finomságaimat. Minden elkészült finomság számít. Süss eleget, és eladom neked a saját karácsonyi kalácsom receptjét.
+quest.christmas_elsie_apprentice.title = Elsie Tanítványa
+quest.christmas_elsie_apprentice.flavor = Tegyél ki karácsonyi dekorációkat az otthonodban. Tegyél ki eleget, és eladom neked a Rénszarvas-ruhámat.
+quest.christmas_bram_apprentice.title = Bram Tanítványa
+quest.christmas_bram_apprentice.flavor = Hozz le rönköket bármelyik fáról. Vágj eleget, és minden kibontott Karácsonyi Ajándékban lesz tőlem egy kis extra.
+shop.christmas_offer_recipe_tomas_loaf.title = Tomas karácsonyi kalácsának receptje
+shop.christmas_offer_recipe_tomas_loaf.desc = Tomas saját édes kalácsa. Gyorsabban mozogsz, és a hideg kevésbé mar, amíg tart.
+shop.christmas_offer_reindeer_suit.title = Rénszarvas-ruha
+shop.christmas_offer_reindeer_suit.desc = Vedd fel, és egy ideig a Mikulás egyik rénszarvasa vagy.
+# A lock line reads "Requires " and then one of these; each server loads the one its overlay names.
+factor.christmas_tomas_key.name = Tomas Tanítványának teljesítése
+factor.christmas_tomas_key.name_mmo = Tomas Tanítványának teljesítése vagy a Craftolás 20. szintje
+factor.christmas_elsie_key.name = Elsie Tanítványának teljesítése
+factor.christmas_elsie_key.name_mmo = Elsie Tanítványának teljesítése vagy az Építés 20. szintje
+# A costume's buff-bar tile name. Its effect's Name is this key in full (christmas.mmo.effect...).
+effect.christmas_costume_reindeer_suit.name = Rénszarvas-ruha
+
+# ---- Tomas's secret, in his Christmas conversation ----
+dialogue.christmas_miller.apprentice_offer.text = Van egy titkom: egy saját <b>karácsonyi kalács</b>, édesebb bármelyik bejglinél.\nSüsd meg egy ideig a karácsonyi finomságaimat, és eladom neked a receptet.
+dialogue.christmas_miller.apprentice_offer.opt.accept = Taníts meg.
+dialogue.christmas_miller.apprentice_brief.text = Süss <b>Mézeskalácsot</b>, <b>Forró kakaót</b> vagy <b>Karácsonyi bejglit</b>. Mindegyik számít. Gyere vissza, ha eleget sütöttél.
+dialogue.christmas_miller.apprentice_ready.text = Nézd csak, igazi pék lett belőled. A <b>karácsonyi kalács</b> receptje most már ott van a boltomban neked.
+dialogue.christmas_miller.apprentice_ready.opt.turnin = Kösz, Tomas.
+dialogue.christmas_miller.opt.secret_skill = Mi van, ha már jó szakács vagyok?
+dialogue.christmas_miller.secret_skill.text = Akkor nincs szükséged a leckéimre. Érd el a <b>Craftolás 20. szintjét</b>, és ugyanúgy eladom neked a <b>karácsonyi kalács</b> receptjét.\nVagy süss velem egy ideig. Mindkettő jó.
+
+# ---- Elsie's secret, in her Christmas conversation ----
+dialogue.christmas_weaver.apprentice_offer.text = Van egy titkom: egy <b>Rénszarvas-ruha</b>, amit magam varrtam. Nem akárkinek való.\nTegyél ki <b>karácsonyi dekorációkat</b> az otthonodban, és ha eleget kitettél, eladok neked egyet.
+dialogue.christmas_weaver.apprentice_offer.opt.accept = Díszíteni fogok.
+dialogue.christmas_weaver.apprentice_brief.text = Tegyél ki girlandokat, fényeket, koszorúkat, hóembereket, bármilyen karácsonyi dekorációt az otthonodban. Itt a templomban semmit sem lehet kirakni. Dekorációkat a Mikulás boltjának fesztiválpolcán találsz, és a Karácsonyi Ajándékokban.
+dialogue.christmas_weaver.apprentice_ready.text = Az otthonod biztos gyönyörű. A <b>Rénszarvas-ruhám</b> most már ott van a boltomban neked.
+dialogue.christmas_weaver.apprentice_ready.opt.turnin = Köszönöm, Elsie.
+dialogue.christmas_weaver.opt.secret_skill = Mi van, ha már jól díszítek?
+dialogue.christmas_weaver.secret_skill.text = Akkor nincs szükséged a leckéimre. Érd el az <b>Építés 20. szintjét</b>, és ugyanúgy eladom neked a <b>Rénszarvas-ruhámat</b>.\nVagy díszíts velem egy ideig. Mindkettő jó.
+
+# ---- Bram's secret, in his Christmas conversation ----
+dialogue.christmas_shepherd.apprentice_offer.text = Van egy titkom. Segíts lehozni a rönköket, és minden kibontott <b>Karácsonyi Ajándékban</b> lesz tőlem egy kis extra. Egy dekoráció, talán a hópehely a fa tetejére.
+dialogue.christmas_shepherd.apprentice_offer.opt.accept = Vágok.
+dialogue.christmas_shepherd.apprentice_brief.text = Vágj rönköket bármelyik fából. Minden törzsblokk számít. Gyere vissza, ha eleget vágtál.
+dialogue.christmas_shepherd.apprentice_ready.text = Szép kupac. Mostantól minden kibontott <b>Karácsonyi Ajándékban</b> lesz tőlem egy kis extra.
+dialogue.christmas_shepherd.apprentice_ready.opt.turnin = Kösz, Bram.
+dialogue.christmas_shepherd.opt.secret_skill = Mi van, ha már jól bánok a fejszével?
+dialogue.christmas_shepherd.secret_skill.text = Akkor nincs rám szükséged. Érd el a <b>Favágás 20. szintjét</b>, és minden kibontott <b>Karácsonyi Ajándékban</b> lesz tőlem egy kis extra.\nVagy vágj velem egy ideig. Mindkettő jó.

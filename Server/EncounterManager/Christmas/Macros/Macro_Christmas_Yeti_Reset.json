@@ -1,0 +1,22 @@
+{
+  "$Comment": "Clears the Yeti's own bookkeeping while his fight resets (his fight's reset slot runs it), so the next try plays his later phases again from the start: the flags Macro_Christmas_Yeti_Phase raises as each phase starts, and each phase's volley flags. The White Wolves need no clearing here, since the fight's sweep removes Christmas_Yeti_Adds_Group, and the Yeti himself is removed and raised fresh. Add a flag here whenever a Yeti phase gains one.",
+  "Class": "Instruction",
+  "Type": "Component",
+  "Interface": "Hytale.Instruction.Encounter.Phase.Behavior",
+  "Content": {
+    "Continue": true,
+    "Sensor": {
+      "Type": "Any"
+    },
+    "Actions": [
+      { "Type": "SetFlag", "Name": "Christmas_Yeti_P2_Armed", "SetTo": false },
+      { "Type": "SetFlag", "Name": "Christmas_Yeti_P3_Armed", "SetTo": false },
+      { "Type": "SetFlag", "Name": "Christmas_Yeti_P2_Volley_Armed", "SetTo": false },
+      { "Type": "SetFlag", "Name": "Christmas_Yeti_P2_Volley_Active", "SetTo": false },
+      { "Type": "SetFlag", "Name": "Christmas_Yeti_P2_Volley_Running", "SetTo": false },
+      { "Type": "SetFlag", "Name": "Christmas_Yeti_P3_Volley_Armed", "SetTo": false },
+      { "Type": "SetFlag", "Name": "Christmas_Yeti_P3_Volley_Active", "SetTo": false },
+      { "Type": "SetFlag", "Name": "Christmas_Yeti_P3_Volley_Running", "SetTo": false }
+    ]
+  }
+}

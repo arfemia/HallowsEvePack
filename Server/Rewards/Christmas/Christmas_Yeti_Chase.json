@@ -1,0 +1,8 @@
+{
+  "$Comment": "The Yeti's Boss Kill Claim: granted beside his daily Claim, rolled from Christmas_Yeti_Chase, whose first roll always pays something and whose next two are the chances at his fur. Diminish pays the first win each day only (a step of 1, then 0). It is not scaled by share (ShareScaled false), so everyone who fought him rolls the same odds at the Yeti Fur Hood and Coat. TitleKey titles its row on the Claims tab and in the chest (claim.christmas_yeti_chase in christmas.yeti.lang).",
+  "Type": "ZigClaim",
+  "Lootable": "Christmas_Yeti_Chase",
+  "Diminish": { "Steps": [1, 0], "Window": "Daily" },
+  "ShareScaled": false,
+  "TitleKey": "claim.christmas_yeti_chase"
+}

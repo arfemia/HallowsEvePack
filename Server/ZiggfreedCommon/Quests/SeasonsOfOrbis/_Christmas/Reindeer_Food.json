@@ -1,0 +1,55 @@
+{
+  "$Comment": [
+    "The second step of the story, Bram the Shepherd's: carrots for Santa's reindeer. The _Christmas folder",
+    "makes the id christmas_reindeer_food. Npc binds it to Bram by the id his placement keeps in both seasons",
+    "(Harvest_Feast_Shepherd, NpcPlacements/Harvest_Feast_Shepherd_Temple.json), so he offers it and takes",
+    "it in his feast conversation's last days and his Christmas one alike, and CompletionDialogue plays his",
+    "Christmas conversation once it is collected. It opens once Santa's first quest is done. A TURN_IN step",
+    "is handed in where it is, so no report-back step is added. Wild carrots grow in the forests of the",
+    "Emerald Wilds.",
+    "",
+    "It pays through Christmas_Chain_Pay, with favor on Santa's Nice List and Festival Favor on its own",
+    "Rewards, and a bundle of Bram's snowballs. It also hands over what the next step needs, which Tomas",
+    "left with Bram: the Gingerbread Cookie recipe page, one Dough and one Spices, so the first batch of",
+    "cookies needs nothing bought.",
+    "",
+    "The Mmo_Xp row is MMO Skill Tree's: Harvesting XP for the carrots, waiting to be collected with the",
+    "rest. The row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that",
+    "mod, unpaid and unshown, and the rest of the quest pays."
+  ],
+  "Name": "Reindeer_Food",
+  "Parent": "Christmas_Quest_Base",
+  "Npc": { "ViewId": "Harvest_Feast_Shepherd", "TurnInId": "giver" },
+  "CompletionDialogue": "Christmas_Shepherd",
+  "Listing": {
+    "Icon": "Plant_Crop_Carrot_Item",
+    "Category": "main",
+    "SortOrder": 20,
+    "Chains": [ { "Id": "christmas_story", "Tier": 2 } ]
+  },
+  "Requires": { "Quests": [ "christmas_present_thieves" ] },
+  "Objectives": {
+    "bring_carrots": {
+      "Kind": "TURN_IN",
+      "Target": "Plant_Crop_Carrot_Item",
+      "MatchMode": "EXACT",
+      "Amount": 10,
+      "TextKey": "objective.christmas.bring_bram_carrots",
+      "Order": 1,
+      "TurnInNpcId": "giver"
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Christmas_Chain_Pay" } },
+      { "Kind": "Item", "Params": { "Item": "Christmas_Snowball", "Count": "16" } },
+      { "Kind": "Item", "Params": { "Item": "Christmas_Recipe_Gingerbread_Cookie", "Count": "1" } },
+      { "Kind": "Item", "Params": { "Item": "Ingredient_Dough", "Count": "1" } },
+      { "Kind": "Item", "Params": { "Item": "Ingredient_Spices", "Count": "1" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 250 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 150 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "HARVESTING", "Amount": "2500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

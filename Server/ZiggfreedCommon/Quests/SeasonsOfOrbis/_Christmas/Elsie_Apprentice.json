@@ -1,0 +1,45 @@
+{
+  "$Comment": [
+    "Elsie's Apprentice: put up Christmas decorations at home, and her Reindeer Suit opens at her stall. It is",
+    "one of the two keys to her secret (Factors/SeasonsOfOrbis/Christmas_Elsie_Key.json), the one that works",
+    "on every server; a server running MMO Skill Tree also opens the suit at Building level 20. The _Christmas",
+    "folder makes the id christmas_elsie_apprentice, which the key reads once it is collected.",
+    "",
+    "Npc binds it to Elsie by the id her placement keeps in both seasons (Harvest_Feast_Weaver), and the",
+    "base's Npc.TurnInId adds the report-back step to her. It opens once her part of Santa's story",
+    "(christmas_wrapping_presents) is done, and never repeats. The step is PLACE_BLOCK with the PREFIX match",
+    "the Christmas Decorator achievement uses: the game's winter pieces (WinterHoliday_), its wreath",
+    "(Winter_Holiday_Wreath) and its Christmas Packets (Furniture_Christmas_Chest_Small_). Nothing can be",
+    "placed in the Forgotten Temple, so it is done at home. Listing.MainLine false keeps it off the story's",
+    "gold bar.",
+    "",
+    "It pays like Tomas's Apprentice (Tomas_Apprentice.json), with MMO Skill Tree's Building XP behind its",
+    "own row gate. Its words come from the keys its id spells, in christmas.mmo.lang."
+  ],
+  "Name": "Elsie_Apprentice",
+  "Parent": "Christmas_Quest_Base",
+  "Npc": { "ViewId": "Harvest_Feast_Weaver", "TurnInId": "giver" },
+  "CompletionDialogue": "Christmas_Weaver",
+  "Listing": { "Icon": "WinterHoliday_Garland", "Category": "misc", "SortOrder": 180, "MainLine": false },
+  "Requires": { "Quests": [ "christmas_wrapping_presents" ] },
+  "Objectives": {
+    "put_up_decorations": {
+      "Kind": "PLACE_BLOCK",
+      "Target": "WinterHoliday_",
+      "Targets": [ "Winter_Holiday_Wreath", "Furniture_Christmas_Chest_Small_" ],
+      "MatchMode": "PREFIX",
+      "Amount": 30,
+      "TextKey": "objective.christmas.put_up_decorations",
+      "Order": 1
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Currency", "Params": { "Currency": "Christmas_Coins", "Amount": "20" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 100 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 50 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "BUILDING", "Amount": "2500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

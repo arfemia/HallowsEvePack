@@ -1,0 +1,61 @@
+{
+  "$Comment": [
+    "Santa's second daily, open once his first quest is done: give a Christmas Present to each of his three",
+    "helpers. Each step is a USE_ITEM qualified by one helper's id, the id their placement keeps in both",
+    "seasons (Harvest_Feast_Miller for Tomas, Harvest_Feast_Weaver for Elsie, Harvest_Feast_Shepherd for",
+    "Bram): holding a present and pointing it at that helper spends it and counts here",
+    "(Item/Interactions/Christmas/Christmas_Present_Give.json). Repeat.Reset with Period Daily brings it",
+    "back at midnight UTC. It pays through Christmas_Daily_Pay, and the report-back step to Santa comes",
+    "from the base's Npc.TurnInId. The achievement Gift Giver counts how often it is finished.",
+    "",
+    "The Mmo_Xp row is MMO Skill Tree's: Crafting XP for the presents, waiting to be collected with the",
+    "rest. The row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that",
+    "mod, unpaid and unshown, and the rest of the quest pays."
+  ],
+  "Name": "Daily_Presents",
+  "Parent": "Christmas_Quest_Base",
+  "Listing": { "Icon": "Furniture_Christmas_Chest_Small_Green", "Category": "misc", "SortOrder": 120 },
+  "Requires": { "Quests": [ "christmas_present_thieves" ] },
+  "Repeat": {
+    "Reset": { "Period": "Daily" },
+    "CooldownFrom": "Complete"
+  },
+  "Objectives": {
+    "present_for_tomas": {
+      "Kind": "USE_ITEM",
+      "Target": "Christmas_Present",
+      "Qualifier": "Harvest_Feast_Miller",
+      "MatchMode": "EXACT",
+      "Amount": 1,
+      "TextKey": "objective.christmas.give_tomas_present",
+      "Order": 1
+    },
+    "present_for_elsie": {
+      "Kind": "USE_ITEM",
+      "Target": "Christmas_Present",
+      "Qualifier": "Harvest_Feast_Weaver",
+      "MatchMode": "EXACT",
+      "Amount": 1,
+      "TextKey": "objective.christmas.give_elsie_present",
+      "Order": 1
+    },
+    "present_for_bram": {
+      "Kind": "USE_ITEM",
+      "Target": "Christmas_Present",
+      "Qualifier": "Harvest_Feast_Shepherd",
+      "MatchMode": "EXACT",
+      "Amount": 1,
+      "TextKey": "objective.christmas.give_bram_present",
+      "Order": 1
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Christmas_Daily_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 30 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 40 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "CRAFTING", "Amount": "1500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

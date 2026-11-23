@@ -1,0 +1,151 @@
+{
+  "$Comment": "Christmas in the Almanac: the season's name and picture, its yearly keepsake, and the tallies it keeps. The file name is the calendar event id. Each stat line counts one kind of moment while Christmas runs; its key is the tally's name in every player's record, so never rename one. LiveOnly false keeps a tally running all year, for the presents and snowballs a player still holds after Christmas. Thieves_Caught counts the Present Thief and the game's own grown Trorks, as every thief step does; Presents_Opened and Presents_Given count the present's two uses (USE_ITEM with the Qualifier Open or Gift); Carols_Sung counts the carol line's talk credit (the Qualifier Christmas_Carol); Yetis_Defeated counts the Yeti's fight (ENCOUNTER_DEFEATED names the fight's script, Christmas_Yeti_Encounter). Hero.Composition is the banner at the top of the season's page: each item's own icon drawn at X and Y (pixels from the top-left of the 962 x 240 plate) and Size (a square side up to 128; 64, 96 and 128 read best), over the Background colour. Keep the plate left of about x 450 clear for the title, status and dates. Gradient paints the night sky from its Top colour down to its Bottom one in place of the flat Background, and Glow lays a soft round light under the items, its square box placed by X, Y and Size the way an item's is. Accent is the season's colour for the strip under the top of the page; a colour too dark to read against a row is swapped for the shared one. Sections lays out the page below its top in the order written: the tallies, the Yeti's banner, the items grid, the keepsake shelf, the achievements and the links. The banner is a 906 wide plate Height tall, composed the way the top is, with its title and line on the left (keep the plate left of x 584 clear for them): it points players to Bram, who opens the Yeti Cave (the dungeon Christmas_Yeti_Cave) for Yeti Bait. A picture names an Item, or an Npc role whose portrait it draws instead, here the Yeti himself (the role Christmas_Yeti) beside his fur. The grid (Collection.Items, at most 45, nine a row) shows every item a player can find this Christmas; a Hidden one shows '?' until the player has held it once, and SourceKey is the tooltip line saying where it comes from. Add, drop or reorder a slot here; an item the server does not have is left out. The dishes and their recipe pages, the Christmas Set, the present, snowball, wand, both suits, the Yeti's bait and fur, and the Christmas Ornament are this pack's own items; every other slot is the game's.",
+  "Text": {
+    "TitleKey": "almanac.christmas.title",
+    "FlavorKey": "almanac.christmas.flavor"
+  },
+  "Icon": "Furniture_Christmas_Chest_Small_Red",
+  "Accent": "#E0524A",
+  "Hero": {
+    "Composition": {
+      "Background": "#0E1630",
+      "Gradient": { "Top": "#070C1E", "Bottom": "#1C2A52" },
+      "Glow": { "Color": "#B8323A", "X": 514, "Y": -78, "Size": 400 },
+      "Items": [
+        { "Item": "Furniture_Christmas_Chest_Small_Red", "X": 650, "Y": 58, "Size": 128 },
+        { "Item": "Furniture_Christmas_Chest_Small_Green", "X": 546, "Y": 90, "Size": 96 },
+        { "Item": "Furniture_Christmas_Chest_Small_White", "X": 786, "Y": 90, "Size": 96 },
+        { "Item": "WinterHoliday_Snowflake", "X": 562, "Y": 14, "Size": 64 },
+        { "Item": "WinterHoliday_Ornament_Bauble", "X": 802, "Y": 14, "Size": 64 },
+        { "Item": "Winter_Holiday_Wreath", "X": 476, "Y": 40, "Size": 64 },
+        { "Item": "WinterHoliday_Snowman", "X": 890, "Y": 40, "Size": 64 },
+        { "Item": "Food_Candy_Cane", "X": 476, "Y": 118, "Size": 64 },
+        { "Item": "WinterHoliday_WinterRoll", "X": 890, "Y": 116, "Size": 64 }
+      ]
+    }
+  },
+  "Order": 30,
+  "Keepsake": "Christmas_Ornament",
+  "Sections": [
+    { "Tallies": {} },
+    {
+      "Banner": {
+        "Height": 140,
+        "Composition": {
+          "Gradient": { "Top": "#0A1226", "Bottom": "#2E4A6E" },
+          "Glow": { "Color": "#9FC7E8", "X": 615, "Y": -60, "Size": 260 },
+          "Items": [
+            { "Item": "Rubble_Ice", "X": 596, "Y": 52, "Size": 72 },
+            { "Item": "Christmas_Yeti_Fur_Hood", "X": 630, "Y": 22, "Size": 72 },
+            { "Npc": "Christmas_Yeti", "X": 681, "Y": 6, "Size": 128 },
+            { "Item": "Christmas_Yeti_Fur_Coat", "X": 800, "Y": 30, "Size": 72 },
+            { "Item": "Christmas_Yeti_Bait", "X": 770, "Y": 96, "Size": 40 }
+          ]
+        },
+        "Text": {
+          "TitleKey": "almanac.christmas.yeti.title",
+          "FlavorKey": "almanac.christmas.yeti.line"
+        }
+      }
+    },
+    {
+      "Collection": {
+        "Items": [
+          { "Item": "Christmas_Present", "SourceKey": "almanac.christmas.source.present" },
+          { "Item": "Christmas_Snowball", "SourceKey": "almanac.christmas.source.snowball" },
+          { "Item": "Christmas_Gingerbread_Cookie", "SourceKey": "almanac.christmas.source.cookie" },
+          { "Item": "Christmas_Hot_Cocoa", "SourceKey": "almanac.christmas.source.cook_dish" },
+          { "Item": "Christmas_Cake", "Hidden": true, "SourceKey": "almanac.christmas.source.cook_dish" },
+          { "Item": "Christmas_Recipe_Gingerbread_Cookie", "SourceKey": "almanac.christmas.source.recipe_cookie" },
+          { "Item": "Christmas_Recipe_Hot_Cocoa", "SourceKey": "almanac.christmas.source.bakery_favor" },
+          { "Item": "Christmas_Recipe_Cake", "Hidden": true, "SourceKey": "almanac.christmas.source.bakery_favor" },
+          { "Item": "Food_Candy_Cane", "SourceKey": "almanac.christmas.source.candy_cane" },
+          { "Item": "Christmas_Hat", "SourceKey": "almanac.christmas.source.elsie_favor" },
+          { "Item": "Christmas_Coat", "SourceKey": "almanac.christmas.source.elsie_favor" },
+          { "Item": "Christmas_Gloves", "SourceKey": "almanac.christmas.source.elsie_favor" },
+          { "Item": "Christmas_Trousers", "SourceKey": "almanac.christmas.source.elsie_favor" },
+          { "Item": "Christmas_Wand", "SourceKey": "almanac.christmas.source.elsie_favor" },
+          { "Item": "Christmas_Santa_Suit", "SourceKey": "almanac.christmas.source.santa_suit" },
+          { "Item": "Christmas_Elf_Suit", "SourceKey": "almanac.christmas.source.elf_suit" },
+          { "Item": "Christmas_Yeti_Bait", "SourceKey": "almanac.christmas.source.yeti_bait" },
+          { "Item": "Christmas_Yeti_Fur_Hood", "Hidden": true, "SourceKey": "almanac.christmas.source.yeti_fur" },
+          { "Item": "Christmas_Yeti_Fur_Coat", "Hidden": true, "SourceKey": "almanac.christmas.source.yeti_fur" },
+          { "Item": "Furniture_Christmas_Chest_Small", "SourceKey": "almanac.christmas.source.santa_stall" },
+          { "Item": "Furniture_Christmas_Chest_Small_Green", "SourceKey": "almanac.christmas.source.santa_stall" },
+          { "Item": "Furniture_Christmas_Chest_Small_White", "SourceKey": "almanac.christmas.source.santa_stall" },
+          { "Item": "Furniture_Christmas_Chest_Small_Red", "SourceKey": "almanac.christmas.source.winter" },
+          { "Item": "Furniture_Christmas_Chest_Small_RedDotted", "Hidden": true, "SourceKey": "almanac.christmas.source.morning" },
+          { "Item": "WinterHoliday_Ornament_Bauble", "SourceKey": "almanac.christmas.source.bauble" },
+          { "Item": "Winter_Holiday_Wreath", "SourceKey": "almanac.christmas.source.winter" },
+          { "Item": "WinterHoliday_Garland", "SourceKey": "almanac.christmas.source.winter" },
+          { "Item": "WinterHoliday_Lights", "SourceKey": "almanac.christmas.source.winter" },
+          { "Item": "WinterHoliday_Stocking", "SourceKey": "almanac.christmas.source.winter" },
+          { "Item": "WinterHoliday_Snowman", "SourceKey": "almanac.christmas.source.winter" },
+          { "Item": "Christmas_Ornament", "Hidden": true, "SourceKey": "almanac.christmas.source.keepsake" },
+          { "Item": "Deco_Goblin_Plush", "Hidden": true, "SourceKey": "almanac.christmas.source.festival_favor" },
+          { "Item": "Furniture_Kweebec_Statue", "Hidden": true, "SourceKey": "almanac.christmas.source.festival_favor" }
+        ]
+      }
+    },
+    { "Keepsakes": {} },
+    { "Achievements": {} },
+    { "Links": {} }
+  ],
+  "Stats": {
+    "Thieves_Caught": {
+      "Kind": "KILL_ENTITY",
+      "Target": "Christmas_Present_Thief",
+      "Targets": [ "Trork_Brawler", "Trork_Chieftain", "Trork_Doctor_Witch", "Trork_Guard", "Trork_Hunter", "Trork_Mauler",
+        "Trork_Sentry", "Trork_Sentry_Patrol", "Trork_Shaman", "Trork_Unarmed", "Trork_Warrior", "Trork_Warrior_Patrol" ],
+      "MatchMode": "EXACT",
+      "TextKey": "almanac.christmas.thieves_caught",
+      "Icon": "Christmas_Present",
+      "Order": 10
+    },
+    "Presents_Opened": {
+      "Kind": "USE_ITEM",
+      "Target": "Christmas_Present",
+      "MatchMode": "EXACT",
+      "Qualifier": "Open",
+      "TextKey": "almanac.christmas.presents_opened",
+      "Icon": "Furniture_Christmas_Chest_Small_Red",
+      "Order": 20,
+      "LiveOnly": false
+    },
+    "Presents_Given": {
+      "Kind": "USE_ITEM",
+      "Target": "Christmas_Present",
+      "MatchMode": "EXACT",
+      "Qualifier": "Gift",
+      "TextKey": "almanac.christmas.presents_given",
+      "Icon": "Furniture_Christmas_Chest_Small_Green",
+      "Order": 30,
+      "LiveOnly": false
+    },
+    "Carols_Sung": {
+      "Kind": "TALK_TO_NPC",
+      "Qualifier": "Christmas_Carol",
+      "TextKey": "almanac.christmas.carols_sung",
+      "Icon": "WinterHoliday_Lights",
+      "Order": 40
+    },
+    "Snowballs_Thrown": {
+      "Kind": "USE_ITEM",
+      "Target": "Christmas_Snowball",
+      "MatchMode": "EXACT",
+      "Qualifier": "Throw",
+      "TextKey": "almanac.christmas.snowballs_thrown",
+      "Icon": "Christmas_Snowball",
+      "Order": 50,
+      "LiveOnly": false
+    },
+    "Yetis_Defeated": {
+      "Kind": "ENCOUNTER_DEFEATED",
+      "Target": "Christmas_Yeti_Encounter",
+      "MatchMode": "EXACT",
+      "TextKey": "almanac.christmas.yetis_defeated",
+      "Icon": "Christmas_Yeti_Fur_Hood",
+      "Order": 60
+    }
+  }
+}

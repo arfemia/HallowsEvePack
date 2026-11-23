@@ -1,0 +1,4 @@
+{
+  "$Comment": "Christmas's Present Thieves (the role Christmas_Present_Thief), the Trorks in Santa hats who robbed his sleigh. The Nice List's Kills table (ZiggfreedCommon/Reputations/SeasonsOfOrbis/Christmas_Nice_List.json) pays favor for each one put down. No reputation group names this group, so it changes nothing about how they treat a player. Add a role id here and its kills count too. The game's own Trorks pay less, through their own group (Christmas_Game_Trorks) and Kills row.",
+  "IncludeRoles": [ "Christmas_Present_Thief" ]
+}

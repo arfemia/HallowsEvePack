@@ -1,0 +1,28 @@
+{
+  "$Comment": [
+    "Christmas lifts Woodcutting and Crafting XP for everyone on the server while it runs, on a server running",
+    "MMO Skill Tree: Bram's logs and Tomas's ovens. The hytale:mod_installed condition in Requires leaves the",
+    "file out without it.",
+    "",
+    "A standing boost: nobody starts it and it keeps no timer. It lifts every gain in the skills it names",
+    "while the rest of its Requires passes, and it counts as a server boost, so the cap in",
+    "mods/ziggfreedcommon/boost-settings.json bounds it like any other boost, Christmas Day's and New Year's",
+    "Eve's included.",
+    "",
+    "Tracks.Ids names the skills. Percent is how much more XP they earn: 25 is a quarter more.",
+    "ziggfreedcommon:calendar_live reads 1 only while Christmas runs, and never where a server switches",
+    "Christmas off. Text.TitleKey names it on the Boosts page; its words are in christmas.mmo.lang. To change",
+    "or switch it off, write this id in mods/ziggfreedcommon/boosts.json",
+    "({ \"Mmo_Christmas_Trades\": { \"Enabled\": false } })."
+  ],
+  "Text": { "TitleKey": "boostrule.mmo_christmas_trades.title" },
+  "Standing": true,
+  "Tracks": { "Ids": [ "WOODCUTTING", "CRAFTING" ] },
+  "Percent": 25,
+  "Requires": {
+    "Factors": [
+      { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 },
+      { "Factor": "ziggfreedcommon:calendar_live", "Param": "Christmas", "Min": 1 }
+    ]
+  }
+}

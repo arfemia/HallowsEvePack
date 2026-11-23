@@ -1,0 +1,80 @@
+{
+  "$Comment": "A White Wolf the Yeti calls to his side in the Yeti Cave: his fight's script raises two of them as his health falls to 30% (Macro_Christmas_Yeti_Phase, its AddRole), and nothing else ever spawns one. The game's White Wolf is a Variant of the Black Wolf, itself a Variant of Template_Predator, so this file folds both layers of the game's Modify onto the template: the Black Wolf's senses, speed, turns and bite, with the White Wolf's look, health, attack weight and harder bite. What a fight needs is changed on top: it sees every player in the cave and turns on them at once, never naps, stays awake at night, drops nothing and leaves no memory entry. FlockArray names this role, so the two run as one pack and take turns biting. Its name is the game's own White Wolf's (server.npcRoles.Wolf_White.name), translated in every language. It is in Christmas_Yeti_Adds_Group, which the fight clears when it resets, and in no group Santa's Nice List counts. The Yeti's slam and snowballs hit players only, so they never hurt it. Any key the template does not declare makes the game refuse the whole role.",
+  "Type": "Variant",
+  "Reference": "Template_Predator",
+  "Modify": {
+    "Appearance": "Wolf_White",
+    "FlockArray": [ "Christmas_Yeti_Wolf" ],
+    "AttitudeGroup": "PredatorsBig",
+    "DropList": "Empty",
+    "MaxHealth": 103,
+    "MaxSpeed": 10,
+    "WanderRadius": 6,
+    "ViewRange": 40,
+    "ViewSector": 360,
+    "HearingRange": 24,
+    "AbsoluteDetectionRange": 2,
+    "AlertedRange": 45,
+    "ChanceToBeAlertedWhenFlockAlerted": 100,
+    "IsMemory": false,
+    "AlertedTime": [0.5, 1],
+    "MaintainDistanceWhileAlerted": false,
+    "ThreatenDelayRange": [1, 1],
+    "ThreatenAnimation": "Howl",
+    "FleeIfNotThreatened": false,
+    "FleeRange": 11,
+    "HardLeashDistance": 60,
+    "LeashDistance": 45,
+    "LeashMinPlayerDistance": 15,
+    "LeashTimer": [10, 15],
+    "CombatBehaviorDistance": 6,
+    "CombatDirectWeight": 0,
+    "CombatStrafeWeight": 10,
+    "CombatBackOffAfterAttack": true,
+    "CombatBackOffDistanceRange": [3, 5],
+    "CombatTurns": true,
+    "CombatTurnAttackWeight": 50,
+    "Attack": "Root_NPC_Wolf_Attack",
+    "AttackDistance": 2.5,
+    "ChaseRelativeSpeed": 0.65,
+    "CombatMovingRelativeSpeed": 0.6,
+    "AlwaysSleepAtNight": false,
+    "NightFlavorAnimation": "Howl",
+    "DayTimeNapWeight": 0,
+    "TimidDuringDay": false,
+    "_InteractionVars": {
+      "Melee_Start": {
+        "Interactions": [
+          {
+            "Parent": "Wolf_Bite",
+            "Effects": {
+              "ItemPlayerAnimationsId": "Wolf_Black_Default",
+              "ItemAnimationId": "Bite"
+            },
+            "RunTime": 0.167
+          }
+        ]
+      },
+      "Bite_Damage": {
+        "Interactions": [
+          {
+            "Parent": "Wolf_Bite_Damage",
+            "DamageCalculator": {
+              "Type": "Absolute",
+              "BaseDamage": {
+                "Physical": 27
+              },
+              "RandomPercentageModifier": 0.1
+            },
+            "DamageEffects": {
+              "Knockback": {
+                "Force": 1
+              }
+            }
+          }
+        ]
+      }
+    },
+    "NameTranslationKey": "server.npcRoles.Wolf_White.name"
+  }
+}

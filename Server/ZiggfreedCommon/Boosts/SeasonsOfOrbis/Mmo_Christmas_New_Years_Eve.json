@@ -1,0 +1,29 @@
+{
+  "$Comment": [
+    "New Year's Eve lifts XP in every skill for everyone on the server, on a server running MMO Skill Tree:",
+    "the hytale:mod_installed condition in Requires leaves the file out without it.",
+    "",
+    "A standing boost: nobody starts it and it keeps no timer. It lifts every gain in the skills it names",
+    "while the rest of its Requires passes, and it counts as a server boost, so the cap in",
+    "mods/ziggfreedcommon/boost-settings.json bounds it like any other boost, the Christmas trades boost",
+    "(Mmo_Christmas_Trades.json) included.",
+    "",
+    "Tracks.Categories names every skill category, so every skill gains and no reputation does. Percent is",
+    "how much more XP they earn: 25 is a quarter more. ziggfreedcommon:calendar_live reads 1 only while that",
+    "calendar event runs, so this boost needs both Christmas and its one-day event Christmas_New_Years_Eve",
+    "(December 31st) running. Text.TitleKey names it on the Boosts page; its words are in christmas.mmo.lang.",
+    "To change or switch it off, write this id in mods/ziggfreedcommon/boosts.json",
+    "({ \"Mmo_Christmas_New_Years_Eve\": { \"Enabled\": false } })."
+  ],
+  "Text": { "TitleKey": "boostrule.mmo_christmas_new_years_eve.title" },
+  "Standing": true,
+  "Tracks": { "Categories": [ "Combat", "Gathering", "Crafting", "Magic", "Misc" ] },
+  "Percent": 25,
+  "Requires": {
+    "Factors": [
+      { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 },
+      { "Factor": "ziggfreedcommon:calendar_live", "Param": "Christmas", "Min": 1 },
+      { "Factor": "ziggfreedcommon:calendar_live", "Param": "Christmas_New_Years_Eve", "Min": 1 }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+# Christmas - the Yeti Cave: the cave's name and its lines, the Yeti's fight's notices, his Boss Kill
+# Claim, Bram's Yeti Bait offer and way-in line, and the Yeti Hunter achievement. Keys are written bare:
+# the library finds each one by its tail, whatever this file is called. Numbers ride {0} and come from
+# the content files, so a retune never touches a translation. The Yeti's nameplate is in npcs.lang and
+# his bait's and fur's names in items.lang.
+
+# ---- The Yeti Cave ----
+dungeon.christmas_yeti_cave.name = Die Yeti-Höhle
+dungeon.christmas_yeti_cave.description = Hier lebt der Yeti, der eines der Rentiere des Weihnachtsmanns verscheucht hat, mit einem Haufen gestohlener Geschenke. Nimm Freunde mit und zieh dich warm an.
+dungeon.christmas_yeti_cave.goal = Geh in die Höhle, um den Yeti zu wecken, und bring ihn dann zu Fall. Weich zurück, wenn ein Ring um ihn aufleuchtet, und tritt von den Ringen unter deinen Füßen weg, bevor seine Schneebälle landen.
+dungeon.christmas_yeti_cave.cost_hint = Bram verkauft Yeti-Köder in seinem Laden, sobald du seinen Rentieren die Karotten gebracht hast.
+dungeon.christmas_yeti_cave.confirm = Den Köder werfen
+dungeon.christmas_yeti_cave.chest = Deine Belohnung wartet in der Truhe, wo er gefallen ist.
+
+# ---- The Yeti's fight ----
+notify.christmas_yeti_engaged = Der Yeti wacht auf!
+notify.christmas_yeti_engaged.sub = Bring ihn zu Fall, dann gehört sein Geschenkevorrat dir.
+notify.christmas_yeti_snowballs = Der Yeti wirft Schneebälle! Tritt von den Ringen weg.
+notify.christmas_yeti_wolves = Zwei Weiße Wölfe kommen dem Yeti zu Hilfe!
+notify.christmas_yeti_defeated = Der Yeti ist besiegt!
+notify.christmas_yeti_defeated.sub = Dein Anteil: {0}%, in {1, number} Sekunden.
+notify.christmas_yeti_wiped = Der Yeti zieht sich in seine Höhle zurück.
+notify.christmas_yeti_wiped.sub = Weich zurück, wenn ein Ring um ihn aufleuchtet, und tritt von den Ringen weg, bevor seine Schneebälle landen.
+claim.christmas_yeti_chase = Der Yeti: Bosskill
+
+# ---- Bram's stall and his way in ----
+shop.christmas_offer_yeti_bait.title = Yeti-Köder
+shop.christmas_offer_yeti_bait.desc = Ein Fisch, zu dem kein Yeti nein sagen kann. Bram nimmt einen, um dich und deine Freunde in die Yeti-Höhle zu führen.
+dialogue.christmas_yeti_cave_line.opt.enter = Bring mich zur Yeti-Höhle. (kostet einen Yeti-Köder, aus Brams Laden)
+
+# ---- Achievement ----
+achievement.christmas_yeti_hunter.title = Yeti-Jäger {0}
+achievement.christmas_yeti_hunter.desc = Besiege den Yeti in seiner Höhle.

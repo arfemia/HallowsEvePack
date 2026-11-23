@@ -1,0 +1,8 @@
+{
+  "$Comment": "Christmas Coins: what Santa and his helpers pay for Christmas work, and what their four stalls charge (Santa's festival shelf still takes Festival Tokens). A plain number this server keeps for each player, so it cannot be dropped, traded or lost. It has no OnDeath and no Decay, so unspent coins keep from one Christmas to the next. Season takes the wallet out of every balance strip while Christmas is off; balances are kept. Christmas's pay tables, the opened Christmas Present and Santa's Sack pay it through the Currency reward kind. Its name is the key currency.christmas_coins.name. Text.FlavorKey is the one line saying what the coins are for: it shows under the name when a player hovers the wallet, and once in a notice the first time they earn some while Christmas runs.",
+  "Text": { "FlavorKey": "currency.christmas_coins.description" },
+  "Icon": "WinterHoliday_Snowflake",
+  "Color": "#d6453d",
+  "Cap": 0,
+  "Season": "Christmas"
+}

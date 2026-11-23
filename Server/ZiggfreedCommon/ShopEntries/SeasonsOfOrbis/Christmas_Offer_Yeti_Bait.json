@@ -1,0 +1,14 @@
+{
+  "$Comment": "Yeti Bait (Christmas_Yeti_Bait), the way into the Yeti Cave, sold at Bram's stall for Christmas Coins with no limit, once a player has finished his quest Reindeer Food (the quest id christmas_reindeer_food, from Quests/SeasonsOfOrbis/_Christmas/Reindeer_Food.json). Requires is a lock, not a hide: a player who has not finished it still sees the offer, locked, with the quest's name in the reason, and the Season leaf on the base still hides it while Christmas is off. Its picture is the bait. Change the price here and Bram's way-in label together.",
+  "Parent": "Christmas_Offer_Base",
+  "Shop": "Christmas_Shepherd",
+  "Text": {
+    "TitleKey": "shop.christmas_offer_yeti_bait.title",
+    "FlavorKey": "shop.christmas_offer_yeti_bait.desc"
+  },
+  "Icon": "Christmas_Yeti_Bait",
+  "Listing": { "Category": "snow", "SortOrder": 30 },
+  "Cost": { "Currencies": { "Christmas_Coins": 25 } },
+  "Requires": { "Quests": [ "christmas_reindeer_food" ] },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Christmas_Yeti_Bait", "Count": 1 } } ]
+}

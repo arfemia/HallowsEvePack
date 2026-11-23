@@ -1,0 +1,30 @@
+{
+  "$Comment": [
+    "What each step of Santa's Christmas story pays, from Present Thieves to Wrapping Presents. Every roll",
+    "is read on its own: the first always pays, the second is a chance on top. Chance is a percent from 0",
+    "to 100.",
+    "",
+    "The first roll pays Christmas Coins, the season's own currency that the four Christmas stalls take,",
+    "and festival tokens, the currency every season shares, both through the Currency reward kind (a",
+    "counter wallet has no item to hand over), with a couple of the game's candy canes for the road. Favor",
+    "on Santa's Nice List and Festival Favor are not here: each quest pays them on its own Rewards, so the",
+    "quest card shows them. A companion mod adds rolls of its own with a file that names this table in",
+    "ContributesTo, so nothing here has to change."
+  ],
+  "Name": "Christmas_Chain_Pay",
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [
+          { "Kind": "Currency", "Params": { "Currency": "Christmas_Coins", "Amount": "15" } },
+          { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "2" } }
+        ],
+        "Items": [ { "Item": "Food_Candy_Cane", "Count": 2 } ]
+      }
+    },
+    {
+      "Chance": { "Base": 25.0 },
+      "Grants": { "Items": [ { "Item": "Christmas_Gingerbread_Cookie", "Count": 1 } ] }
+    }
+  ]
+}

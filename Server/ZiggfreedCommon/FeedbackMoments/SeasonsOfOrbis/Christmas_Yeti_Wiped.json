@@ -1,0 +1,17 @@
+{
+  "$Comment": [
+    "What each player who fought the Yeti sees when the fight is lost: everyone fell or left, and he waits",
+    "at full health for the next try. Its binding row points its Wiped beat here (Feedback.Wiped). The",
+    "second line is the lesson most first fights miss: step off the rings before the snowballs land, and",
+    "back off when the ring lights around him. A quiet Info toast, since the screen already went grey."
+  ],
+  "Toast": {
+    "Title": {
+      "Key": "notify.christmas_yeti_wiped"
+    },
+    "Secondary": {
+      "Key": "notify.christmas_yeti_wiped.sub"
+    },
+    "Tone": "Info"
+  }
+}

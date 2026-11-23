@@ -1,0 +1,26 @@
+{
+  "$Comment": [
+    "What each player who fought the Yeti sees the instant he falls: his own headline, and under it each",
+    "player's share of the fight. Its binding row points its Defeated beat here (Feedback.Defeated). Keys",
+    "are lines in this pack's christmas.yeti.lang, written bare.",
+    "",
+    "The moment fires once per credited player and carries 'share' (that player's share of the fight as",
+    "whole percent points, the top player reading 100, which is what their daily Claim's rolls were scaled",
+    "by) and 'seconds' (how long the fight took), the second line's {0} and {1}. Gold Reward tone and the",
+    "game's own snowlands discovery sting. The dungeon's own banner follows it, saying the reward waits in",
+    "the chest where the Yeti fell."
+  ],
+  "Toast": {
+    "Title": {
+      "Key": "notify.christmas_yeti_defeated"
+    },
+    "Secondary": {
+      "Key": "notify.christmas_yeti_defeated.sub",
+      "Args": ["share", "seconds"]
+    },
+    "Tone": "Reward"
+  },
+  "Sound": {
+    "Id": "SFX_Discovery_Z3_Short"
+  }
+}

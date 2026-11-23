@@ -1,0 +1,14 @@
+{
+  "$Comment": [
+    "Names the factor Christmas_Elsie_Key for lock lines on a server running MMO Skill Tree: 'Requires",
+    "finishing Elsie's Apprentice or Building level 20' on her Reindeer Suit. Requires, the plain",
+    "hytale:mod_installed condition with Min 1, drops this file at load where that mod is missing, and",
+    "Christmas_Elsie_Key_Name.json names the factor there instead. Keep the level in the words equal to the",
+    "one Christmas_Elsie_Skill.json reads. Mmo_Christmas_Tomas_Key_Name.json explains the rest."
+  ],
+  "Requires": {
+    "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ]
+  },
+  "Factor": "Christmas_Elsie_Key",
+  "Text": { "TitleKey": "christmas.mmo.factor.christmas_elsie_key.name_mmo" }
+}

@@ -1,0 +1,17 @@
+{
+  "$Comment": "The game's own Trorks, for Santa's Nice List. The list's Kills table (ZiggfreedCommon/Reputations/SeasonsOfOrbis/Christmas_Nice_List.json) pays a little favor for each one put down while Christmas runs, less than for the Present Thieves (Christmas_Present_Thieves), since the game's Trorks live in the world all year. Every grown Trork role is named one by one: the game's own Trork group matches anything with Trork in its id, which would pull in the Trork wolves, the templates and the test beacons. The wolves stay out on purpose. A Christmas step or tally that counts Present Thieves names these same roles in its Targets, so the game's Trorks count there too. No reputation group names this group, so it changes nothing about how Trorks treat a player.",
+  "IncludeRoles": [
+    "Trork_Brawler",
+    "Trork_Chieftain",
+    "Trork_Doctor_Witch",
+    "Trork_Guard",
+    "Trork_Hunter",
+    "Trork_Mauler",
+    "Trork_Sentry",
+    "Trork_Sentry_Patrol",
+    "Trork_Shaman",
+    "Trork_Unarmed",
+    "Trork_Warrior",
+    "Trork_Warrior_Patrol"
+  ]
+}

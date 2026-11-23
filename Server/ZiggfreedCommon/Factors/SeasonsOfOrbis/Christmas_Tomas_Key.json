@@ -1,0 +1,22 @@
+{
+  "$Comment": [
+    "Tomas's secret has two keys, and this factor reads 1 when the player holds either: his apprentice",
+    "quest done and collected (ziggfreedcommon:quest_completed, christmas_tomas_apprentice), which works on",
+    "every server, or Crafting level 20 (the factor Christmas_Tomas_Skill), which exists only where MMO Skill",
+    "Tree runs. The file name is the factor id. Formula adds the two and Clamp holds the sum at 1, so either",
+    "key alone opens the lock. Where MMO Skill Tree is missing the skill factor is absent and adds 0, so the",
+    "apprentice quest is the one key there.",
+    "",
+    "Tomas's loaf recipe at his stall locks on this factor with Min 1",
+    "(ShopEntries/SeasonsOfOrbis/Christmas_Offer_Recipe_Tomas_Loaf.json). A player who holds neither key",
+    "reads the lock line its name overlays write, one for each kind of server: Christmas_Tomas_Key_Name.json",
+    "names only the quest, Mmo_Christmas_Tomas_Key_Name.json names the quest or the skill level."
+  ],
+  "Formula": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:quest_completed", "Param": "christmas_tomas_apprentice", "Weight": 1 },
+      { "Factor": "Christmas_Tomas_Skill", "Weight": 1 }
+    ],
+    "Clamp": { "Max": 1 }
+  }
+}

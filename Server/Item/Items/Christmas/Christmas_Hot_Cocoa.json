@@ -1,0 +1,179 @@
+{
+  "$Comment": "Hot Cocoa, the second of the three Christmas treats: made at a Chef's Stove (the Cookingbench, its Prepared tab, where the game files its finished dishes; it has no drinks tab) once a player has learned it from Christmas_Recipe_Hot_Cocoa. It wears the game's wooden mug (Deco_Mug's model, texture and icon), and PlayerAnimationsId swaps the eating animation for the mug's own drink, with the mug's drinking sounds (ConsumeSFX, ConsumedSFX). Drinking it gives an instant heal, Christmas_Food_Regen (the game's top food regen, for ten minutes) and Christmas_Food_Warmth (40% less Ice damage); it clears the game's own food regens first, so they never stack from this side. Its description in items.lang writes the numbers out: change it with the effects. The recipe takes a tankard of water the way the game's dough does and hands the empty Deco_Tankard back as its second output. The drink is good all year.",
+  "TranslationProperties": {
+    "Name": "items.Christmas_Hot_Cocoa.name",
+    "Description": "items.Christmas_Hot_Cocoa.description"
+  },
+  "Parent": "Template_Food",
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Food_T3"
+  },
+  "Quality": "Epic",
+  "Icon": "Icons/ItemsGenerated/Deco_Mug.png",
+  "IconProperties": {
+    "Scale": 0.8,
+    "Rotation": [
+      22.5,
+      278.0,
+      328.0
+    ],
+    "Translation": [
+      0.0,
+      -9.0
+    ]
+  },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Blocks/Miscellaneous/Mug.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Miscellaneous/Mug_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "CustomModelScale": 0.6,
+    "ParticleColor": "#6b4226",
+    "TextureComputedColor": "#4D361E",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
+    },
+    "HitboxType": "Food_Medium"
+  },
+  "PlayerAnimationsId": {
+    "Parent": "Item",
+    "Animations": {
+      "Consume": {
+        "FirstPerson": "Characters/Animations/Items/Main_Handed/Item/Attacks/Drink/Drink_FPS.blockyanim",
+        "ThirdPerson": "Characters/Animations/Items/Main_Handed/Item/Attacks/Drink/Drink.blockyanim",
+        "Speed": 1,
+        "Looping": true
+      }
+    }
+  },
+  "InteractionVars": {
+    "Consume_Charge": {
+      "Interactions": [
+        {
+          "Parent": "Consume_Charge_Food_T1_Inner",
+          "Effects": {
+            "Particles": [
+              {
+                "SystemId": "Food_Eat",
+                "Color": "#5A3A22",
+                "TargetNodeName": "Mouth",
+                "TargetEntityPart": "Entity"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ConsumeSFX": {
+      "Interactions": [
+        {
+          "Parent": "Consume_SFX",
+          "Effects": {
+            "LocalSoundEventId": "SFX_Health_Potion_Low_Drink"
+          }
+        }
+      ]
+    },
+    "ConsumedSFX": {
+      "Interactions": [
+        {
+          "Parent": "Consume_SFX",
+          "Effects": {
+            "LocalSoundEventId": "SFX_Water_MoveOut"
+          }
+        }
+      ]
+    },
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Food_Instant_Heal_T1"
+        },
+        {
+          "Type": "ClearEntityEffect",
+          "EntityEffectId": "HealthRegen_Buff_Raw"
+        },
+        {
+          "Type": "ClearEntityEffect",
+          "EntityEffectId": "HealthRegen_Buff_T1"
+        },
+        {
+          "Type": "ClearEntityEffect",
+          "EntityEffectId": "HealthRegen_Buff_T2"
+        },
+        {
+          "Type": "ClearEntityEffect",
+          "EntityEffectId": "HealthRegen_Buff_T3"
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Christmas_Food_Regen"
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Christmas_Food_Warmth"
+        }
+      ]
+    }
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "*Deco_Tankard_State_Filled_Water"
+      },
+      {
+        "ItemId": "Ingredient_Tree_Sap",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Spices",
+        "Quantity": 1
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Christmas_Hot_Cocoa"
+      },
+      {
+        "ItemId": "Deco_Tankard",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Cookingbench",
+        "Categories": [
+          "Prepared"
+        ]
+      }
+    ],
+    "TimeSeconds": 1,
+    "KnowledgeRequired": true
+  },
+  "ItemLevel": 16,
+  "MaxStack": 25,
+  "DropOnDeath": true,
+  "Scale": 1.43,
+  "ResourceTypes": [
+    {
+      "Id": "Foods"
+    }
+  ],
+  "Consumable": true,
+  "Tags": {
+    "Type": [
+      "Food"
+    ],
+    "Family": [
+      "Christmas"
+    ]
+  }
+}

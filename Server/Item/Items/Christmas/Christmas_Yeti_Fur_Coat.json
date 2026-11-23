@@ -1,0 +1,38 @@
+{
+  "$Comment": "The Yeti Fur Coat, one of the two pieces of his fur the Yeti's Boss Kill Claim can pay (ZiggfreedCommon/Lootables/SeasonsOfOrbis/Christmas_Yeti_Chase.json, 1 in 10 on the first win each day). A full item body with no Parent, so it inherits no recipe and nobody crafts it: it wears the game's own heavy leather chestpiece (Armor_Leather_Heavy_Chest's model, texture and icon) with the heavy leather chestpiece's armour, and more on top: 20% less Ice damage, the cold the Yeti's own snowballs hit with, and more Health. It belongs to no gear set. Raise or lower an Amount to tune it. Tags.ZigLevel asks for Defense 35 to wear it (the best level the player ever reached), behind MMO Skill Tree's Gear levels switch (Tags.ZigLevelFeature); gear a player already had when gear levels arrived keeps working for them, and a server owner frees or retunes it with a ZigLevel group gate in mods/ziggfreedcommon/use-gates.json.",
+  "TranslationProperties": {
+    "Name": "items.Christmas_Yeti_Fur_Coat.name",
+    "Description": "items.Christmas_Yeti_Fur_Coat.description"
+  },
+  "Quality": "Rare",
+  "ItemLevel": 35,
+  "PlayerAnimationsId": "Block",
+  "ItemSoundSetId": "ISS_Armor_Leather",
+  "Categories": ["Items.Armors"],
+  "Icon": "Icons/ItemsGenerated/Armor_Leather_Heavy_Chest.png",
+  "IconProperties": {"Rotation": [22.5, 45, 22.5], "Scale": 0.405, "Translation": [0, -6.6]},
+  "Model": "Items/Armors/Leather_Heavy/Chest.blockymodel",
+  "Texture": "Items/Armors/Leather_Heavy/Chest_Texture.png",
+  "Interactions": {
+    "Primary": {"Interactions": [{"Type": "EquipItem"}]},
+    "Secondary": {"Interactions": [{"Type": "EquipItem"}]}
+  },
+  "Armor": {
+    "ArmorSlot": "Chest",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "Overtop"
+    ],
+    "DamageResistance": {
+      "Physical": [{"Amount": 0.09, "CalculationType": "Percent"}],
+      "Projectile": [{"Amount": 0.09, "CalculationType": "Percent"}],
+      "Ice": [{"Amount": 0.2, "CalculationType": "Percent"}]
+    },
+    "StatModifiers": {
+      "Health": [{"Amount": 30, "CalculationType": "Additive"}]
+    }
+  },
+  "MaxDurability": 140,
+  "DurabilityLossOnHit": 0.5,
+  "Tags": {"Type": ["Armor"], "Family": ["Christmas"], "ZigLevel": ["Defense:35"], "ZigLevelFeature": ["mmoskilltree:Gear_Levels"]}
+}

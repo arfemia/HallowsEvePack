@@ -1,0 +1,38 @@
+# Christmas - the calendar's words (what Christmas and Christmas Morning are called, and their banners),
+# the costumes' names and the notice for Santa's Sack. Keys are written bare: the library finds each one
+# by its tail, whatever this file is called. Banners and notices print markup as text, so none of these
+# values carries any.
+
+# ---- Christmas ----
+calendar.christmas.name = Christmas
+calendar.christmas.flavor = Santa is in the Forgotten Temple, and Trorks in Santa hats have run off with his presents.
+calendar.christmas.herald.start = Christmas
+calendar.christmas.herald.start.sub = Santa is in the Forgotten Temple, and Trorks have stolen his presents.
+calendar.christmas.herald.end = Christmas is over
+calendar.christmas.herald.end.sub = Santa's sleigh is packed up until next year.
+
+# ---- Christmas Morning ----
+calendar.christmas_morning.name = Christmas Morning
+calendar.christmas_morning.flavor = Christmas morning in the Forgotten Temple, with something under Santa's tree.
+calendar.christmas_morning.herald.start = Merry Christmas
+calendar.christmas_morning.herald.start.sub = Go and see Santa in the Forgotten Temple.
+
+# ---- Costumes ----
+# A costume's buff-bar tile name. Its effect's Name is this key in full (christmas.world.effect...),
+# because the client reads an effect's Name exactly as written.
+effect.christmas_costume_elf.name = Elf Costume
+effect.christmas_costume_reindeer.name = Reindeer Costume
+effect.christmas_costume_elf_suit.name = Elf Suit
+effect.christmas_costume_santa.name = Santa Suit
+
+# ---- Christmas Cheer ----
+# What a friend's present leaves on you: its buff-bar tile name. Its effect's Name is this key in full.
+effect.christmas_cheer.name = Christmas Cheer
+
+# ---- Santa's Sack ----
+notify.christmas_santas_sack = A Santa's Sack, for climbing even higher on the Nice List.
+
+# ---- Christmas Eve ----
+# The banner when a player collects Christmas Eve's pay. The sub line's {0} is the player's name.
+notify.christmas_eve_delivered = The Sleigh Is Full
+notify.christmas_eve_delivered.sub = {0} helped Santa get ready for Christmas Eve.

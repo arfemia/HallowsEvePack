@@ -1,0 +1,20 @@
+{
+  "$Comment": "Finish Christmas Carols, Santa's carol tour, during one Christmas. COMPLETE_QUEST counts the collected finish of christmas_carols. The merry tag counts it toward the Merrymaker. Each year's copy pays a few Christmas Coins and MMO Skill Tree's Mmo_Xp row once, Acrobatics XP for the walk about the temple, both waiting on the achievements page until the player collects them. The Mmo_Xp row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that mod, unpaid and unshown, and the coins still pay. The _Christmas folder makes the id christmas_carol_singer.",
+  "Parent": "Christmas_Achievement_Base",
+  "Listing": { "SortOrder": 40, "Icon": "WinterHoliday_Lights", "Tags": [ "merry" ] },
+  "Criteria": {
+    "finish-the-carols": {
+      "Kind": "COMPLETE_QUEST",
+      "Target": "christmas_carols",
+      "MatchMode": "EXACT",
+      "Amount": 1
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Currency", "Params": { "Currency": "Christmas_Coins", "Amount": "10" } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "ACROBATICS", "Amount": "2500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

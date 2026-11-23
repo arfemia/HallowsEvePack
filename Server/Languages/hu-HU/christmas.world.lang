@@ -1,0 +1,38 @@
+# Christmas - the calendar's words (what Christmas and Christmas Morning are called, and their banners),
+# the costumes' names and the notice for Santa's Sack. Keys are written bare: the library finds each one
+# by its tail, whatever this file is called. Banners and notices print markup as text, so none of these
+# values carries any.
+
+# ---- Christmas ----
+calendar.christmas.name = Karácsony
+calendar.christmas.flavor = A Mikulás a Feledett Templomban van, és Mikulássapkás Trorkok elvitték az ajándékait.
+calendar.christmas.herald.start = Karácsony
+calendar.christmas.herald.start.sub = A Mikulás a Feledett Templomban van, és Trorkok ellopták az ajándékait.
+calendar.christmas.herald.end = Vége a karácsonynak
+calendar.christmas.herald.end.sub = A Mikulás szánja jövő évig összecsomagolva áll.
+
+# ---- Christmas Morning ----
+calendar.christmas_morning.name = Karácsony Reggele
+calendar.christmas_morning.flavor = Karácsony reggele a Feledett Templomban, valami vár a Mikulás fája alatt.
+calendar.christmas_morning.herald.start = Boldog karácsonyt
+calendar.christmas_morning.herald.start.sub = Keresd fel a Mikulást a Feledett Templomban.
+
+# ---- Costumes ----
+# A costume's buff-bar tile name. Its effect's Name is this key in full (christmas.world.effect...),
+# because the client reads an effect's Name exactly as written.
+effect.christmas_costume_elf.name = Manó-jelmez
+effect.christmas_costume_reindeer.name = Rénszarvas-jelmez
+effect.christmas_costume_elf_suit.name = Manó-ruha
+effect.christmas_costume_santa.name = Mikulás-ruha
+
+# ---- Christmas Cheer ----
+# What a friend's present leaves on you: its buff-bar tile name. Its effect's Name is this key in full.
+effect.christmas_cheer.name = Karácsonyi Hangulat
+
+# ---- Santa's Sack ----
+notify.christmas_santas_sack = Egy Mikulás-zsák, amiért még följebb jutottál a Jók Listáján.
+
+# ---- Christmas Eve ----
+# The banner when a player collects Christmas Eve's pay. The sub line's {0} is the player's name.
+notify.christmas_eve_delivered = Tele a Szán
+notify.christmas_eve_delivered.sub = {0} segített a Mikulásnak felkészülni Szentestére.

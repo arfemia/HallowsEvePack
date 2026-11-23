@@ -1,0 +1,37 @@
+{
+  "$Comment": [
+    "One of Elsie's plain errands, on her own board (Christmas_Weaver_Jobs): put up Christmas decorations at",
+    "home. PLACE_BLOCK counts each one placed, and the PREFIX match takes the game's own winter pieces",
+    "(WinterHoliday_: the garland, lights, stocking, snowman, snowflake, bauble and the rest), its wreath",
+    "(Winter_Holiday_Wreath, spelt apart) and its Christmas Packets (Furniture_Christmas_Chest_Small_, every",
+    "colour), the same pieces the Christmas Decorator achievement counts. Nothing can be placed in the",
+    "Forgotten Temple, so it is done at home.",
+    "",
+    "Christmas_Errand_Wheat.json explains the board, the slot that posts it only where MMO Skill Tree is",
+    "missing, and the pay, which is the same here: Christmas Coins, favor on Santa's Nice List and Festival",
+    "Favor. Its Mmo_Xp row (Building XP) pays nothing with this pack's boards, as that file explains. Its",
+    "words are in christmas.mmo.lang."
+  ],
+  "Parent": "Christmas_Contract_Base",
+  "Listing": { "Icon": "WinterHoliday_Garland" },
+  "Boards": [ { "Board": "Christmas_Weaver_Jobs", "Difficulty": "Christmas_Weaver_Errand", "Weight": 1 } ],
+  "Objectives": {
+    "put_up_decorations": {
+      "Kind": "PLACE_BLOCK",
+      "Target": "WinterHoliday_",
+      "Targets": [ "Winter_Holiday_Wreath", "Furniture_Christmas_Chest_Small_" ],
+      "MatchMode": "PREFIX",
+      "Amount": 5,
+      "TextKey": "objective.christmas.put_up_decorations"
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Currency", "Params": { "Currency": "Christmas_Coins", "Amount": "4" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 12 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 15 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "BUILDING", "Amount": "750" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

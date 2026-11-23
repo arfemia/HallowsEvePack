@@ -1,0 +1,8 @@
+{
+  "$Comment": "How much faster a player earns favor on Santa's Nice List (the reputation Christmas_Nice_List) while wearing or eating something that raises it, in whole percent points (10 is +10%): each piece of the Christmas Set (Armor.StatModifiers on the Christmas Hat, Coat, Gloves and Trousers), the set's four-piece tier (ZiggfreedCommon/GearSets/SeasonsOfOrbis/Christmas_Set.json) and the Christmas Cake's effect, each Additive on the Max. ziggfreed-common adds it to the shared CategoryGain_Reputation and multiplies every gain on the Nice List (a Present Thief, a quest, Santa's daily word) by 1 + the total, and past Santa's Favorite too, where each multiple of Beyond's Every pays a Santa's Sack. A loss of favor is never changed, and favor already earned never moves when the gear comes off. The id is TrackGain_ and the reputation's group id, the reputation's own track gain stat, which is how the library finds it. Base Max 0, so a player wearing none of it earns the amount written; Min -100 keeps a subtractive modifier from ever turning a gain into nothing. Its tooltip line is the client.lang key itemTooltip.stats.TrackGain_Christmas_Nice_List.",
+  "InitialValue": 0.0,
+  "Min": -100.0,
+  "Max": 0.0,
+  "Shared": false,
+  "HideFromTooltip": false
+}

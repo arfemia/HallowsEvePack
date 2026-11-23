@@ -1,0 +1,25 @@
+{
+  "$Comment": [
+    "Bram the Shepherd's Christmas shop: snowballs, a free bundle once a day and more for a couple of",
+    "Christmas Coins, which Currencies puts in the header, and his Yeti Bait. Season makes the shop, and",
+    "every offer naming it, absent while Christmas is off. Players reach it through Bram: his Christmas",
+    "conversation (Dialogues/SeasonsOfOrbis/Christmas_Shepherd.json) and, while Harvest Feast's last days",
+    "still run, the Christmas line added to his feast conversation (DialogueExtensions/SeasonsOfOrbis/",
+    "Christmas_Shepherd_Feast_Line.json). It carries no Where, so it opens wherever he stands. Order 93",
+    "keeps it behind a server's everyday storefronts. It includes no festival shelf: Christmas's is at",
+    "Santa's shop (Christmas_Santa.json). The shop's name and its category's are keys in",
+    "christmas.progression.lang."
+  ],
+  "Season": "Christmas",
+  "Text": {
+    "TitleKey": "shop.christmas_shepherd.title",
+    "FlavorKey": "shop.christmas_shepherd.desc"
+  },
+  "Icon": "Christmas_Snowball",
+  "Order": 93,
+  "Currencies": [ "Christmas_Coins" ],
+  "CategoryOrder": [ "snow" ],
+  "Categories": {
+    "snow": { "TitleKey": "shop.christmas_shepherd.category.snow" }
+  }
+}

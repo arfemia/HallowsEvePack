@@ -109,4 +109,52 @@ effect.harvest_feast_food_regen.name = Can Yenilenmesi III
 effect.harvest_feast_food_health.name = Can Artışı IV
 effect.harvest_feast_food_stamina.name = Dayanıklılık Artışı IV
 effect.harvest_feast_food_favor.name = Teveccüh Artışı
+Christmas_Hat.name = Noel Şapkası
+Christmas_Hat.description = Kulaklarını sıcak tutan rahat pamuklu bir şapka. Noel Baba seni Uslu saydığında Elsie, Unutulmuş Tapınak'taki Noel dükkanında satar. Noel Setinin parçası: her parça Noel Baba'nın teveccühünü biraz daha hızlı kazandırır ve soğuğu biraz dışarıda tutar; setten ne kadar çok giyersen o kadar çok can kazanırsın.
+Christmas_Coat.name = Noel Montu
+Christmas_Coat.description = Yılın en soğuk gecesi için kalın pamuklu bir mont. Noel Baba'nın Gözdesi olduğunda Elsie, Unutulmuş Tapınak'taki Noel dükkanında satar. Noel Setinin parçası: her parça Noel Baba'nın teveccühünü biraz daha hızlı kazandırır ve soğuğu biraz dışarıda tutar; setten ne kadar çok giyersen o kadar çok can kazanırsın.
+Christmas_Gloves.name = Noel Eldivenleri
+Christmas_Gloves.description = Kardan adam yapmak için yumuşak pamuklu eldivenler. Noel Baba'nın listesine girdiğinde Elsie, Unutulmuş Tapınak'taki Noel dükkanında satar. Noel Setinin parçası: her parça Noel Baba'nın teveccühünü biraz daha hızlı kazandırır ve soğuğu biraz dışarıda tutar; setten ne kadar çok giyersen o kadar çok can kazanırsın.
+Christmas_Trousers.name = Noel Pantolonu
+Christmas_Trousers.description = Karı dışarıda tutan sıcak pamuklu bir pantolon. Noel Baba seni Çok Uslu saydığında Elsie, Unutulmuş Tapınak'taki Noel dükkanında satar. Noel Setinin parçası: her parça Noel Baba'nın teveccühünü biraz daha hızlı kazandırır ve soğuğu biraz dışarıda tutar; setten ne kadar çok giyersen o kadar çok can kazanırsın.
+Christmas_Gingerbread_Cookie.name = Zencefilli Kurabiye
+Christmas_Gingerbread_Cookie.description = Isırığı baharatlı küçük bir zencefilli adam. Canı anında <color is="#ffffff">5%</color> yeniler ve şunları verir:\n\n• <color is="#ffffff">Çevik Adımlar</color>: <color is="#ffffff">15%</color> daha hızlı hareket edersin\n\nSüre: <color is="#ffffff">10:00</color>\n\nTarifi öğrendikten sonra bir Aşçı Ocağı'nda pişir.
+Christmas_Hot_Cocoa.name = Sıcak Kakao
+Christmas_Hot_Cocoa.description = Tatlı ve baharatlı sıcak bir kupa kakao. Canı anında <color is="#ffffff">5%</color> yeniler ve şunları verir:\n\n• <color is="#ffffff">Can Yenilenmesi III</color>\n• <color is="#ffffff">İçten Sıcak</color>: buz hasarı <color is="#ffffff">40%</color> azalır\n\nSüre: <color is="#ffffff">10:00</color>\n\nTarifi öğrendikten sonra bir Aşçı Ocağı'nda yap.
+Christmas_Cake.name = Noel Pastası
+Christmas_Cake.description = İçinde tatlı bir kıvrım olan rulo pandispanya. Canı anında <color is="#ffffff">5%</color> yeniler ve şunları verir:\n\n• <color is="#ffffff">Can Yenilenmesi III</color>\n• <color is="#ffffff">Çevik Adımlar</color>: <color is="#ffffff">15%</color> daha hızlı hareket edersin\n• <color is="#ffffff">İçten Sıcak</color>: buz hasarı <color is="#ffffff">40%</color> azalır\n• <color is="#ffffff">Uslular Listesi Artışı</color>: Noel Baba'nın teveccühü <color is="#ffffff">10%</color> daha hızlı gelir\n\nSüre: <color is="#ffffff">10:00</color>\n\nTarifi öğrendikten sonra bir Aşçı Ocağı'nda pişir.
+Christmas_Recipe_Gingerbread_Cookie.name = Tarif: Zencefilli Kurabiye
+Christmas_Recipe_Gingerbread_Cookie.description = <item is="Christmas_Gingerbread_Cookie"/> tarifini öğretir. Bir Aşçı Ocağı'nda hamur ve baharattan, <color is="#ffffff">3</color> tanesini bir seferde pişir.\n\nCanı anında <color is="#ffffff">5%</color> yeniler ve şunları verir:\n\n• <color is="#ffffff">Çevik Adımlar</color>\n\nSüre: <color is="#ffffff">10:00</color>
+Christmas_Recipe_Hot_Cocoa.name = Tarif: Sıcak Kakao
+Christmas_Recipe_Hot_Cocoa.description = <item is="Christmas_Hot_Cocoa"/> tarifini öğretir. Bir Aşçı Ocağı'nda bir maşrapa su, ağaç özsuyu ve baharattan yap; maşrapa sende kalır.\n\nCanı anında <color is="#ffffff">5%</color> yeniler ve şunları verir:\n\n• <color is="#ffffff">Can Yenilenmesi III</color>\n• <color is="#ffffff">İçten Sıcak</color>\n\nSüre: <color is="#ffffff">10:00</color>
+Christmas_Recipe_Cake.name = Tarif: Noel Pastası
+Christmas_Recipe_Cake.description = <item is="Christmas_Cake"/> tarifini öğretir. Bir Aşçı Ocağı'nda hamur, yumurta ve ağaç özsuyundan pişir.\n\nCanı anında <color is="#ffffff">5%</color> yeniler ve şunları verir:\n\n• <color is="#ffffff">Can Yenilenmesi III</color>\n• <color is="#ffffff">Çevik Adımlar</color>\n• <color is="#ffffff">İçten Sıcak</color>\n• <color is="#ffffff">Uslular Listesi Artışı</color>\n\nSüre: <color is="#ffffff">10:00</color>
+effect.christmas_food_speed.name = Çevik Adımlar
+effect.christmas_food_warmth.name = İçten Sıcak
+effect.christmas_food_regen.name = Can Yenilenmesi III
+effect.christmas_food_favor.name = Uslular Listesi Artışı
+Christmas_Present.name = Noel Hediyesi
+Christmas_Present.description = Kırmızı sarılı, üstünde fiyonk olan küçük bir hediye. Hediye Hırsızları düşürür, Elsie de Noel dükkanında satar. Elinde tut ve açmak için sağ tıkla, içindekini sen al.\n\nYa da ver gitsin: elinde tut, bir arkadaşına, Noel Baba'ya ya da yardımcılarından birine bak ve sol tıkla. Arkadaş senin alacağından daha iyi bir hediye alır, Noel Baba da seni biraz daha çok sever.
+Christmas_Snowball.name = Kartopu
+Christmas_Snowball.description = Bir arkadaşa soğuk bir sürpriz. At, vurduğu kişi bir an yavaşlar. Asla zarar vermez. Çoban Bram dağıtır.
+Christmas_Elf_Suit.name = Elf Kıyafeti
+Christmas_Elf_Suit.description = Tam senin bedenine, yeşil elf giysilerinden bir deste. Giymek için sağ tıkla, <color is="#ffffff">30:00</color> boyunca Noel Baba'nın elflerinden biri gibi görün. Daha erken çıkarmak için /zigcostume off yaz. Elsie yardım ettiğin için sana bir tane verir.
+Christmas_Santa_Suit.name = Noel Baba Kıyafeti
+Christmas_Santa_Suit.description = Tam senin bedenine, beyaz kürk kenarlı kırmızı giysilerden bir deste. Giymek için sağ tıkla, <color is="#ffffff">30:00</color> boyunca Noel Baba'nın ta kendisi gibi görün. Daha erken çıkarmak için /zigcostume off yaz. Elsie Noel dükkanında satar.
+Christmas_Wand.name = Noel Asası
+Christmas_Wand.description = Bir arkadaşına doğrult. Bir düğme onu Noel Baba'nın elflerinden birine, öbürü bir ren geyiğine çevirir; kostümü istediği zaman çıkarabilir. Noel Baba'nın listesine girdiğinde Elsie, Noel dükkanında satar.
+Christmas_Yeti_Bait.name = Yeti Yemi
+Christmas_Yeti_Bait.description = Hiçbir Yeti'nin geri çeviremeyeceği bir balık. Unutulmuş Tapınak'taki <b>Çoban Bram</b>, Noel sürerken seni ve partini <b>Yeti Mağarası</b>'na götürmek için bir tane alır.\n\nBram, ren geyiklerine havuçlarını getirdiğinde Noel dükkanında satar.
+Christmas_Yeti_Fur_Hood.name = Yeti Kürk Başlığı
+Christmas_Yeti_Fur_Hood.description = Yeti'nin kendi sırtından kalın beyaz kürk. Giyerken <color is="#ffffff">15%</color> daha az Buz hasarı alırsın. Yeti, onu her günün ilk yenişinde ara sıra bir tane geride bırakır.
+Christmas_Yeti_Fur_Coat.name = Yeti Kürk Montu
+Christmas_Yeti_Fur_Coat.description = Yeti'nin beyaz kürkünden ağır bir mont. Giyerken <color is="#ffffff">20%</color> daha az Buz hasarı alırsın. Yeti, onu her günün ilk yenişinde ara sıra bir tane geride bırakır.
+Christmas_Ornament.name = Noel Küresi
+Christmas_Ornament.description = Ağaç için cam bir küre. Noel Baba, Noel Arifesi'nde kızağını doldurmasına yardım eden herkese bir tane verir ve her Noel'in kendine ait bir küresi vardır. İstediğin yere as.
+Christmas_Tomas_Loaf.name = Tomas'ın Noel Somunu
+Christmas_Tomas_Loaf.description = Değirmenci Tomas'ın kendi tatlı somunu. Canı anında <color is="#ffffff">5%</color> yeniler ve şunları verir:\n\n• <color is="#ffffff">Çevik Adımlar</color>: <color is="#ffffff">15%</color> daha hızlı hareket edersin\n• <color is="#ffffff">İçten Sıcak</color>: buz hasarı <color is="#ffffff">40%</color> azalır\n\nSüre: <color is="#ffffff">10:00</color>\n\nTarifi öğrendikten sonra bir Aşçı Ocağı'nda pişir.
+Christmas_Recipe_Tomas_Loaf.name = Tarif: Tomas'ın Noel Somunu
+Christmas_Recipe_Tomas_Loaf.description = <item is="Christmas_Tomas_Loaf"/> tarifini öğretir. Bir Aşçı Ocağı'nda hamur ve ağaç özsuyundan, <color is="#ffffff">2</color> tanesini bir seferde pişir.\n\nCanı anında <color is="#ffffff">5%</color> yeniler ve şunları verir:\n\n• <color is="#ffffff">Çevik Adımlar</color>\n• <color is="#ffffff">İçten Sıcak</color>\n\nSüre: <color is="#ffffff">10:00</color>
+Christmas_Reindeer_Suit.name = Ren Geyiği Kıyafeti
+Christmas_Reindeer_Suit.description = Boynuzları ve kırmızı burnuyla birlikte, tam senin bedenine ren geyiği giysilerinden bir deste. Giymek için sağ tıkla, <color is="#ffffff">30:00</color> boyunca Noel Baba'nın ren geyiklerinden biri gibi görün. Daha erken çıkarmak için /zigcostume off yaz. Elsie Noel dükkanında satar. Nasıl kazanacağını ona sor.
 

@@ -1,0 +1,31 @@
+{
+  "$Comment": [
+    "What the Yeti's Boss Kill Claim (Rewards/Christmas/Christmas_Yeti_Chase) pays, for the first win each",
+    "day. Every roll is read on its own: the first has no Chance, so it always pays and the Claim is never",
+    "empty; the next two are the chances at his fur, the Yeti Fur Hood (about 1 in 6) and the Yeti Fur",
+    "Coat (1 in 10), warm heavy leather that keeps out the cold. The Claim is not scaled by each",
+    "player's share of the fight, so everyone who fought him rolls these odds. The Almanac's Christmas",
+    "grid lists what this table pays, so change them together. Mmo_Christmas_Yeti_Chase.json adds Defense",
+    "XP where MMO Skill Tree runs. Chance is a percent from 0 to 100. A companion mod adds rolls with a",
+    "file naming this table in ContributesTo."
+  ],
+  "Name": "Christmas_Yeti_Chase",
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [
+          { "Kind": "Currency", "Params": { "Currency": "Christmas_Coins", "Amount": "8" } },
+          { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "1" } }
+        ]
+      }
+    },
+    {
+      "Chance": { "Base": 16.7 },
+      "Grants": { "Items": [ { "Item": "Christmas_Yeti_Fur_Hood", "Count": 1 } ] }
+    },
+    {
+      "Chance": { "Base": 10.0 },
+      "Grants": { "Items": [ { "Item": "Christmas_Yeti_Fur_Coat", "Count": 1 } ] }
+    }
+  ]
+}

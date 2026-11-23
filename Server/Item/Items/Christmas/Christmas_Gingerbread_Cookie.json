@@ -1,0 +1,114 @@
+{
+  "$Comment": "Gingerbread Cookie, the first of the three Christmas treats: baked three at a time at a Chef's Stove (the Cookingbench, its Baked tab) once a player has learned it from Christmas_Recipe_Gingerbread_Cookie. It wears the game's gingerbread ornament (WinterHoliday_Ornament_Biscuit's model, texture and icon, which the game ships with no item of its own). Eating one gives an instant heal and Christmas_Food_Speed (15% faster for ten minutes); the game has no food that speeds a player up, so there is nothing of its own to clear first. Its description in items.lang writes the numbers out: change it with the effect. Recipe.Input is what one batch costs, Recipe.Output and OutputQuantity how many it makes (keep the two equal, as the game's salt does); Fuel is the 3 fuel every baked dish in the game burns. The cookie is good all year.",
+  "TranslationProperties": {
+    "Name": "items.Christmas_Gingerbread_Cookie.name",
+    "Description": "items.Christmas_Gingerbread_Cookie.description"
+  },
+  "Parent": "Template_Food",
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Food_T3"
+  },
+  "Quality": "Epic",
+  "Icon": "Icons/ItemsGenerated/WinterHoliday_Ornament_Biscuit.png",
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Hypixel/Event_Decoration/Winter Holiday_Props/WinterHoliday_Ornament_Biscuit.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Hypixel/Event_Decoration/Winter Holiday_Props/WinterHoliday_Ornament_Biscuit_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#c2763a",
+    "TextureComputedColor": "#B8693A",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
+    },
+    "HitboxType": "Food_Small"
+  },
+  "InteractionVars": {
+    "Consume_Charge": {
+      "Interactions": [
+        {
+          "Parent": "Consume_Charge_Food_T1_Inner",
+          "Effects": {
+            "Particles": [
+              {
+                "SystemId": "Food_Eat",
+                "Color": "#C2763A",
+                "TargetNodeName": "Mouth",
+                "TargetEntityPart": "Entity"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Food_Instant_Heal_T1"
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Christmas_Food_Speed"
+        }
+      ]
+    }
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Dough",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Spices",
+        "Quantity": 1
+      },
+      {
+        "ResourceTypeId": "Fuel",
+        "Quantity": 3
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Christmas_Gingerbread_Cookie",
+        "Quantity": 3
+      }
+    ],
+    "OutputQuantity": 3,
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Cookingbench",
+        "Categories": [
+          "Baked"
+        ]
+      }
+    ],
+    "TimeSeconds": 5,
+    "KnowledgeRequired": true
+  },
+  "ItemLevel": 14,
+  "MaxStack": 25,
+  "DropOnDeath": true,
+  "Scale": 1.2,
+  "ResourceTypes": [
+    {
+      "Id": "Foods"
+    }
+  ],
+  "Consumable": true,
+  "Tags": {
+    "Type": [
+      "Food"
+    ],
+    "Family": [
+      "Christmas"
+    ]
+  }
+}

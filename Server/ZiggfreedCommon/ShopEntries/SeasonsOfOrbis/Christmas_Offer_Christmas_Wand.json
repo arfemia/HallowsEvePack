@@ -1,0 +1,18 @@
+{
+  "$Comment": "The Christmas Wand (Christmas_Wand), sold at Elsie's stall to players Friendly on Santa's Nice List, the rank the list calls On the List. Requires is a lock, not a hide: a player below the rank still sees the offer, locked, with the rank's own name in the reason, and the Season leaf on the base still hides it while Christmas is off. Its picture is the wand.",
+  "Parent": "Christmas_Offer_Base",
+  "Shop": "Christmas_Weaver",
+  "Text": {
+    "TitleKey": "shop.christmas_offer_christmas_wand.title",
+    "FlavorKey": "shop.christmas_offer_christmas_wand.desc"
+  },
+  "Icon": "Christmas_Wand",
+  "Listing": { "Category": "gifts", "SortOrder": 20 },
+  "Cost": { "Currencies": { "Christmas_Coins": 80 } },
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Christmas_Nice_List/Friendly", "Min": 1 }
+    ]
+  },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Christmas_Wand", "Count": 1 } } ]
+}

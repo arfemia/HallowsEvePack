@@ -1,0 +1,18 @@
+{
+  "$Comment": "The Santa Suit, sold at Elsie the Weaver's Christmas stall. A one-use item: Secondary (Christmas_Santa_Suit_Wear) spends it and puts the thirty-minute costume Christmas_Costume_Santa on the player who used it; if the costume cannot go on (they already wear one, or a form they cannot take off), the table Christmas_Santa_Suit_Return hands the suit straight back. It wears the game's red wool bolt (Ingredient_Bolt_Wool's model with its red texture, and the red bolt's icon), so it never looks like a Christmas Present.",
+  "TranslationProperties": {
+    "Name": "items.Christmas_Santa_Suit.name",
+    "Description": "items.Christmas_Santa_Suit.description"
+  },
+  "Quality": "Epic",
+  "Icon": "Icons/ItemsGenerated/Ingredient_Bolt_Wool_Red.png",
+  "IconProperties": {"Scale": 0.6, "Translation": [0, -6], "Rotation": [22.5, 45, 22.5]},
+  "Model": "Resources/Materials/Wool_Bolt.blockymodel",
+  "Texture": "Resources/Materials/Wool_Bolt_Textures/Red.png",
+  "PlayerAnimationsId": "Item",
+  "Interactions": {"Secondary": {"Interactions": ["Christmas_Santa_Suit_Wear"]}},
+  "ItemSoundSetId": "ISS_Items_Cloth",
+  "MaxStack": 10,
+  "DropOnDeath": true,
+  "Tags": {"Family": ["Christmas"]}
+}

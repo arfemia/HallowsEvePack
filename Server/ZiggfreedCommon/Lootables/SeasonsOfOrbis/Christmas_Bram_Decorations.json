@@ -1,0 +1,25 @@
+{
+  "$Comment": [
+    "What Bram's extra roll in a Christmas Present holds (Christmas_Bram_Present.json): one draw from the bag",
+    "below, weighted against each other, one of the game's own Christmas decorations to put up at home, the",
+    "snowflake tree topper (WinterHoliday_Snowflake) now and then. Every item goes where the opening player's",
+    "pickup settings send it, and whatever their bag cannot take drops at their feet. Text names it on the",
+    "notice; its words are in christmas.mmo.lang."
+  ],
+  "Name": "Christmas_Bram_Decorations",
+  "Text": {
+    "TitleKey": "lootable.christmas_bram_decorations.title",
+    "FlavorKey": "lootable.christmas_bram_decorations.flavor"
+  },
+  "Pool": {
+    "Entries": [
+      { "Weight": 20, "Grants": { "Items": [ { "Item": "WinterHoliday_Garland", "Count": 1 } ] } },
+      { "Weight": 20, "Grants": { "Items": [ { "Item": "WinterHoliday_Lights", "Count": 1 } ] } },
+      { "Weight": 15, "Grants": { "Items": [ { "Item": "WinterHoliday_Single_Light", "Count": 2 } ] } },
+      { "Weight": 15, "Grants": { "Items": [ { "Item": "WinterHoliday_Stocking", "Count": 1 } ] } },
+      { "Weight": 10, "Grants": { "Items": [ { "Item": "Winter_Holiday_Wreath", "Count": 1 } ] } },
+      { "Weight": 10, "Grants": { "Items": [ { "Item": "WinterHoliday_Snowman", "Count": 1 } ] } },
+      { "Weight": 10, "Grants": { "Items": [ { "Item": "WinterHoliday_Snowflake", "Count": 1 } ] } }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "$Comment": "Where one of the Yeti's snowballs lands: each player within 3 blocks takes the game's own Ice damage, a small shove and the game's own Slow for 3 seconds (Duration overrides Slow's own ten), in a puff of snow. The one hit rule matches Player only, the pack's rule for a boss's bombs, so the Yeti and his White Wolves are never hurt or slowed by it; it is a creature's blast, so the world's PvP setting never filters it. IgnoreOwner skips the fight that dropped it whatever the rule says. Ice damage is what the Yeti Fur Hood and Coat resist. Range is the radius in blocks; BaseDamage and Knockback.Force set how hard it hits, and the slow's Duration how long it holds.",
+  "Type": "Selector",
+  "Selector": {"Id": "AOECircle", "Range": 3},
+  "IgnoreOwner": true,
+  "Effects": {
+    "WorldSoundEventId": "SFX_Snow_Break",
+    "Particles": [
+      {"SystemId": "IceBall_Explosion", "TargetEntityPart": "Entity"},
+      {"SystemId": "Block_Break_Snow", "TargetEntityPart": "Entity"}
+    ]
+  },
+  "HitEntityRules": [
+    {
+      "Matchers": [{"Type": "Player"}],
+      "Next": {
+        "Interactions": [
+          {"Type": "ApplyEffect", "EffectId": "Slow", "Entity": "Target", "Duration": 3},
+          {
+            "Parent": "DamageEntityParent",
+            "DamageCalculator": {"BaseDamage": {"Ice": 12}},
+            "DamageEffects": {
+              "Knockback": {
+                "Type": "Point",
+                "VelocityConfig": {
+                  "AirResistance": 0.97,
+                  "AirResistanceMax": 0.96,
+                  "GroundResistance": 0.94,
+                  "GroundResistanceMax": 0.3,
+                  "Threshold": 3.0,
+                  "Style": "Exp"
+                },
+                "Force": 4,
+                "VelocityType": "Set"
+              },
+              "WorldParticles": [{"SystemId": "Impact_Ice", "Scale": 1}]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Next": {"Type": "Simple", "RunTime": 0.1}
+}

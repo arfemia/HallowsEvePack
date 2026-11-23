@@ -1,0 +1,17 @@
+{
+  "$Comment": "Yeti Bait, the price of the Yeti Cave: Bram the Shepherd takes one to open the cave for a party (EntryCost in ZiggfreedCommon/Dungeons/Christmas_Yeti_Cave.json, so change the count there), and sells it at his Christmas stall once a player has brought his reindeer their carrots (ShopEntries/SeasonsOfOrbis/Christmas_Offer_Yeti_Bait.json). A plain item that only sits in the bag: no BlockType, so it can never be placed or eaten, and no recipe. It wears the game's own raw fish (its model, texture and icon; the Yeti wears a fish on his necklace), so it needs no art of its own. Its words are in items.lang. MaxStack is how many fit in one slot; DropOnDeath false keeps it in the bag when its owner falls.",
+  "TranslationProperties": {
+    "Name": "items.Christmas_Yeti_Bait.name",
+    "Description": "items.Christmas_Yeti_Bait.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Food_Fish_Raw.png",
+  "Quality": "Uncommon",
+  "Categories": ["Items.Ingredients"],
+  "Model": "Resources/Ingredients/Fish_Piece.blockymodel",
+  "Texture": "Resources/Ingredients/Fish_Piece_Raw_Texture.png",
+  "PlayerAnimationsId": "Item",
+  "Tags": {"Type": ["Ingredient"], "Family": ["Christmas"]},
+  "Scale": 1,
+  "MaxStack": 25,
+  "DropOnDeath": false
+}

@@ -1,0 +1,18 @@
+{
+  "$Comment": "A Snowball, which Bram the Shepherd hands out sixteen to a bundle (MaxStack 16). Primary throws it (Christmas_Snowball_Throw): whoever it hits slows down for two seconds, and it never deals damage, so it is safe to throw at friends anywhere. It wears the game's ice rubble (the rubble lump with its pale ice texture, and Rubble_Ice's icon), the closest the game has to a ball of snow; its flight uses the same lump (the model Rubble_Ice). It has no Weapon block, so it never counts as a weapon and MaxStack is its own.",
+  "TranslationProperties": {
+    "Name": "items.Christmas_Snowball.name",
+    "Description": "items.Christmas_Snowball.description"
+  },
+  "Quality": "Common",
+  "Icon": "Icons/ItemsGenerated/Rubble_Ice.png",
+  "IconProperties": {"Scale": 0.58823, "Rotation": [22.5, 45, 22.5], "Translation": [0, -13.5]},
+  "Model": "Items/Rubble/Rubble.blockymodel",
+  "Texture": "Items/Rubble/Rubble_Textures/Ice.png",
+  "PlayerAnimationsId": "Item",
+  "Interactions": {"Primary": {"Interactions": ["Christmas_Snowball_Throw"]}},
+  "ItemSoundSetId": "ISS_Blocks_Soft",
+  "MaxStack": 16,
+  "DropOnDeath": true,
+  "Tags": {"Family": ["Christmas"]}
+}

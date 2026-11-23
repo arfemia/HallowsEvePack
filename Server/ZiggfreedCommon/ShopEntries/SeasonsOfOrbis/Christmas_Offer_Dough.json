@@ -1,0 +1,10 @@
+{
+  "$Comment": "The game's own dough at Tomas's stall, two to a bundle, one bundle a day (Limits.Daily, turning over at midnight UTC), a head start on the cookies and the cake for a player with no flour yet. The title is the item's own name key, written in full (server.items.<Id>.name) so the stall shows the name the item shows in the bag; the offer has no line under it.",
+  "Parent": "Christmas_Offer_Base",
+  "Shop": "Christmas_Miller",
+  "Text": { "TitleKey": "server.items.Ingredient_Dough.name" },
+  "Listing": { "Category": "kitchen", "SortOrder": 40 },
+  "Cost": { "Currencies": { "Christmas_Coins": 10 } },
+  "Limits": { "Daily": 1 },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Ingredient_Dough", "Count": 2 } } ]
+}

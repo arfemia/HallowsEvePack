@@ -1,0 +1,32 @@
+{
+  "$Comment": [
+    "Santa's shop. Season makes the shop, and every offer naming it, absent while Christmas is off.",
+    "Order 90 keeps it behind a server's everyday storefronts, so a shop block or a conversation line that",
+    "opens the first storefront never lands here. It carries no Where, so it opens in any world and follows",
+    "Santa wherever a server stands him: players reach it through his conversation, and Season closes it",
+    "while Christmas is off.",
+    "",
+    "Santa's own shelves are priced in Christmas Coins, the season's own currency, which Currencies puts in",
+    "the header: the game's Christmas Packets, to wrap gifts in, and candy canes. Includes carries the",
+    "festival shelf (Seasons_Of_Orbis_Festival_Stall) beside his own goods: the offers every season's host",
+    "shares, priced in festival tokens, with one purchase limit across them all, each on sale only in its",
+    "own Season or Dates (so the winter pieces show here). The shelf brings its own wallet, place and name.",
+    "CategoryOrder fixes the order of his own shelves, and each one's name is a key in",
+    "christmas.progression.lang. Christmas's festival shelf is here alone: Tomas, Elsie and Bram keep shops",
+    "of their own (Christmas_Miller, Christmas_Weaver, Christmas_Shepherd) without it."
+  ],
+  "Season": "Christmas",
+  "Text": {
+    "TitleKey": "shop.christmas_santa.title",
+    "FlavorKey": "shop.christmas_santa.desc"
+  },
+  "Icon": "Furniture_Christmas_Chest_Small_Red",
+  "Order": 90,
+  "Includes": [ "Seasons_Of_Orbis_Festival_Stall" ],
+  "Currencies": [ "Christmas_Coins" ],
+  "CategoryOrder": [ "packets", "treats" ],
+  "Categories": {
+    "packets": { "TitleKey": "shop.christmas_santa.category.packets" },
+    "treats": { "TitleKey": "shop.christmas_santa.category.treats" }
+  }
+}

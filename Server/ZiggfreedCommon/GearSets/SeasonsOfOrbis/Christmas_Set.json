@@ -1,0 +1,28 @@
+{
+  "$Comment": "The Christmas Set: the Christmas Hat, Coat, Gloves and Trousers, sold at Elsie the Weaver's Christmas stall as Santa's favor grows. Members lists the four pieces, and Armor counts the members worn in armour slots, one per slot. The first tier asks for any two of them (Armor 2) and adds Health; the second asks for all four (Armor 4) and adds more Health, raises every gain of Santa's favor by a percent (the stat TrackGain_Christmas_Nice_List, 10 is +10%, on top of each piece's own) and adds Ice resistance (ziggfreed-common's stat DamageResist_Ice, in whole percent points, 10 resists a tenth of each Ice hit, summed with each piece's own 5%). Every tier whose minimums hold applies, so the whole set wears both at once. Keep the tiers in this order: a layer another mod adds joins the tiers that ask Armor 2 and Armor 4, and the engine files each tier's modifiers by its position. Raise or lower an Amount to tune the set; under Parent the Bonuses list replaces whole, so restate every tier you keep. The text keys live in christmas.progression.lang.",
+  "Text": {"TitleKey": "gearset.christmas_set.title"},
+  "Members": [
+    "Christmas_Hat",
+    "Christmas_Coat",
+    "Christmas_Gloves",
+    "Christmas_Trousers"
+  ],
+  "Bonuses": [
+    {
+      "Armor": 2,
+      "Text": {"TitleKey": "gearset.christmas_set.tier_half"},
+      "StatModifiers": {
+        "Health": [{"Amount": 5, "CalculationType": "Additive"}]
+      }
+    },
+    {
+      "Armor": 4,
+      "Text": {"TitleKey": "gearset.christmas_set.tier_full"},
+      "StatModifiers": {
+        "Health": [{"Amount": 10, "CalculationType": "Additive"}],
+        "TrackGain_Christmas_Nice_List": [{"Amount": 10, "CalculationType": "Additive", "Target": "Max"}],
+        "DamageResist_Ice": [{"Amount": 10, "CalculationType": "Additive", "Target": "Max"}]
+      }
+    }
+  ]
+}

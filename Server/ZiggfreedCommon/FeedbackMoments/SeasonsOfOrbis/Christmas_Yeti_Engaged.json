@@ -1,0 +1,26 @@
+{
+  "$Comment": [
+    "What the members of the Yeti's fight see as he rises and the fight begins: a big banner, his line",
+    "and, under it, what the fight is for. Its binding row points its Engaged beat here",
+    "(ZiggfreedCommon/Encounters/Christmas_Yeti_Encounter.json, Feedback.Engaged). Keys are lines in this",
+    "pack's christmas.yeti.lang, written bare.",
+    "",
+    "The moment fires once per member. The banner always reaches the members (ToParticipants) and anyone",
+    "else standing within RadiusBlocks of them, which keeps it inside this one cave: the caves of one copy",
+    "share a world but stand far further apart than this. MinSecondsBetween folds the members' fires into",
+    "one banner, and stays short so it never swallows another party's banner in the same copy."
+  ],
+  "Broadcast": {
+    "Title": {
+      "Key": "notify.christmas_yeti_engaged"
+    },
+    "Secondary": {
+      "Key": "notify.christmas_yeti_engaged.sub"
+    },
+    "Major": true,
+    "ToParticipants": true,
+    "SameWorldOnly": true,
+    "RadiusBlocks": 96.0,
+    "MinSecondsBetween": 5
+  }
+}

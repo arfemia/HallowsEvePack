@@ -1,0 +1,72 @@
+{
+  "$Comment": [
+    "Santa, Christmas's host, standing in the Forgotten Temple while Christmas runs. The role, this",
+    "placement and the conversation pressing F opens all ship in this pack. Interact names the",
+    "conversation (Dialogues/SeasonsOfOrbis/Christmas_Santa.json) rather than a screen, because Santa has",
+    "lines to say before any list opens. Author Dialogue or Open, never both.",
+    "",
+    "Season is what makes Santa a guest: the placement stands only while the calendar event Christmas is",
+    "switched on and running, so he arrives when it starts and leaves when it ends, is stopped by a",
+    "command, or is switched off. The library looks at every placement again at each start and end, so",
+    "neither needs a restart. Lifecycle keeps his chunk loaded (which is also what lets the end of",
+    "Christmas find him and clear the spot), stands him up again if something removes him, and raises his",
+    "health past anything that can be dealt.",
+    "",
+    "Where finds the temple by its GameplayConfig id, which stays the same on every visit while the",
+    "world's name does not. This placement authors no Identity.NpcId, so the character IS the role:",
+    "Christmas's quests bind to Christmas_Santa.",
+    "",
+    "Anchor is the temple's arrival spot plus an offset. A player arrives facing negative X and walks a",
+    "stone path three blocks wide (Z within 1.5 of the spot) into the round hall, past a row of statues",
+    "and stone benches three blocks to either side. Fourteen blocks along negative X and eight along",
+    "negative Z is the open marble floor on the hall's north side, behind that row, eight blocks further",
+    "in than Martha the Cook's spot (X -6), which she keeps while Harvest Feast's last days overlap the",
+    "start of Christmas; Yaw 180 faces positive Z, towards the path. Once the feast is over, Elsie the",
+    "Weaver stands four blocks to his east (X -10) and Tomas the Miller four to his west (X -18), each",
+    "with a stall of their own. To move Santa, edit Anchor.WorldSpawn.Offset and Yaw, keeping a Z offset",
+    "between -7 and -10 (nearer than -7 meets the statue row; past -10 is the north wall), then look at",
+    "the spot in game. To take him out without editing this file, set enabled (lower case, as that file",
+    "spells it) to false for this id in mods/ziggfreedcommon/npc-placements.json.",
+    "",
+    "Props are Santa's corner, drawn while he stands, each offset from his spot along the world's own",
+    "axes, and Y lifts a block off the floor by half its drawn height, because a block is drawn centred on",
+    "the point it is given: a small snowy fir to his east, stacked from the game's fir trunk and three",
+    "shrinking blocks of snowy fir leaves (Scale draws a block smaller or larger), the game's snowflake",
+    "topper on it, three of the game's Christmas Packets under it, and the game's snowman to his west.",
+    "They move with him."
+  ],
+  "Name": "Christmas_Santa_Temple",
+  "Enabled": true,
+  "Season": "Christmas",
+  "Where": {
+    "GameplayConfig": [ "ForgottenTemple" ]
+  },
+  "Identity": {
+    "Role": "Christmas_Santa"
+  },
+  "Anchor": {
+    "WorldSpawn": {
+      "Offset": { "X": -14, "Z": -8 },
+      "Yaw": 180.0
+    }
+  },
+  "Lifecycle": {
+    "KeepAlive": true,
+    "Respawn": true,
+    "Fortify": true
+  },
+  "Interact": {
+    "Dialogue": "Christmas_Santa"
+  },
+  "Props": [
+    { "Item": "Wood_Fir_Trunk", "Offset": { "X": 2, "Y": 0.25, "Z": -1 }, "Yaw": 0.0, "Scale": 0.5 },
+    { "Item": "Plant_Leaves_Fir_Snow", "Offset": { "X": 2, "Y": 1.25, "Z": -1 }, "Yaw": 0.0, "Scale": 1.5 },
+    { "Item": "Plant_Leaves_Fir_Snow", "Offset": { "X": 2, "Y": 2.5, "Z": -1 }, "Yaw": 45.0, "Scale": 1.0 },
+    { "Item": "Plant_Leaves_Fir_Snow", "Offset": { "X": 2, "Y": 3.25, "Z": -1 }, "Yaw": 0.0, "Scale": 0.5 },
+    { "Item": "WinterHoliday_Snowflake", "Offset": { "X": 2, "Y": 3.9, "Z": -1 }, "Yaw": 180.0, "Scale": 0.8 },
+    { "Item": "Furniture_Christmas_Chest_Small_Red", "Offset": { "X": 1.1, "Y": 0.5, "Z": 0.1 }, "Yaw": 160.0 },
+    { "Item": "Furniture_Christmas_Chest_Small_Green", "Offset": { "X": 2.4, "Y": 0.5, "Z": 0.3 }, "Yaw": 200.0 },
+    { "Item": "Furniture_Christmas_Chest_Small_White", "Offset": { "X": 2.9, "Y": 0.5, "Z": -0.6 }, "Yaw": 180.0 },
+    { "Item": "WinterHoliday_Snowman", "Offset": { "X": -2, "Y": 0.5, "Z": -1 }, "Yaw": 180.0 }
+  ]
+}

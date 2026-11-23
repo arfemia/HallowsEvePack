@@ -1,0 +1,13 @@
+{
+  "$Comment": "The Elf Suit's costume: for thirty minutes the wearer takes the game's Christmas elf look (the model NPC_Elf). It changes the model and is no debuff, which is what makes it a costume: the wearer can take it off any time with /zigcostume off, and no second costume goes over it. Using an Elf Suit (Christmas_Elf_Suit) puts it on the player who used it. Its picture on the buff bar is the suit's own green wool. Duration is in seconds; the suit's description in items.lang writes it out (30:00), so change it with this.",
+  "Name": "christmas.world.effect.christmas_costume_elf_suit.name",
+  "StatusEffectIcon": "Icons/ItemsGenerated/Ingredient_Bolt_Wool_Green.png",
+  "OverlapBehavior": "Overwrite",
+  "Duration": 1800,
+  "Debuff": false,
+  "ModelChange": "NPC_Elf",
+  "ApplicationEffects": {
+    "Particles": [{"SystemId": "Potion_Morph_Burst"}],
+    "WorldSoundEventId": "SFX_Potion_Drink_Success"
+  }
+}

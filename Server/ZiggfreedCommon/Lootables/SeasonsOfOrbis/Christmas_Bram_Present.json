@@ -1,0 +1,30 @@
+{
+  "$Comment": [
+    "Bram's secret: every Christmas Present a player opens rolls once more, for one of the game's Christmas",
+    "decorations or the snowflake tree topper (the table Christmas_Bram_Decorations), once that player holds",
+    "either key to it: Bram's apprentice quest, or Woodcutting level 20 on a server running MMO Skill Tree",
+    "(Factors/SeasonsOfOrbis/Christmas_Bram_Key.json).",
+    "",
+    "ContributesTo folds this roll into the present's own table (Christmas_Present_Gift) without touching its",
+    "file. Requires here is no mod gate: its condition, Christmas_Bram_Key with Min 1, is asked of the player",
+    "who opens the present each time one is opened, in front of this file's roll, so a player without a key",
+    "rolls the present exactly as its own file says. A present given to a friend pays its own table",
+    "(Christmas_Present_Given), not this one. HideInPreview keeps the roll off the present's hover, which",
+    "lists the same contents for everyone."
+  ],
+  "Name": "Christmas_Bram_Present",
+  "ContributesTo": "Christmas_Present_Gift",
+  "Requires": {
+    "Factors": [
+      { "Factor": "Christmas_Bram_Key", "Min": 1 }
+    ]
+  },
+  "Rolls": [
+    {
+      "HideInPreview": true,
+      "Grants": {
+        "Rewards": [ { "Kind": "Lootable", "Params": { "Lootable": "Christmas_Bram_Decorations" } } ]
+      }
+    }
+  ]
+}

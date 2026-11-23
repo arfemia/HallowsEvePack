@@ -1,0 +1,13 @@
+{
+  "$Comment": "Santa's Stocking: free at Santa's stall once a day (Limits.Daily, turning over at midnight UTC). No Cost means free. It hands over the loot table Christmas_Stocking (ZiggfreedCommon/Lootables/SeasonsOfOrbis/), a few Christmas Coins and a treat with a small chance at a Christmas Present, so tune what it holds there, never here. It sits first on his Treats shelf (SortOrder 5, before the candy canes), and its picture is the game's Christmas stocking.",
+  "Parent": "Christmas_Offer_Base",
+  "Shop": "Christmas_Santa",
+  "Text": {
+    "TitleKey": "shop.christmas_offer_stocking.title",
+    "FlavorKey": "shop.christmas_offer_stocking.desc"
+  },
+  "Icon": "WinterHoliday_Stocking",
+  "Listing": { "Category": "treats", "SortOrder": 5 },
+  "Limits": { "Daily": 1 },
+  "Rewards": [ { "Kind": "Lootable", "Params": { "Lootable": "Christmas_Stocking" } } ]
+}

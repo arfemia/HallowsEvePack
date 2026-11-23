@@ -1,0 +1,41 @@
+{
+  "$Comment": [
+    "Tomas the Miller's own small board: one job a day, drawn at midnight UTC. Hosts names the id Tomas keeps",
+    "in both seasons (Harvest_Feast_Miller), so his quest page (Any work for me?, in his Christmas",
+    "conversation and in his feast conversation's Christmas line) lists the day's job beside his own quests,",
+    "and a player takes it, hands it in and collects its pay there or at this board.",
+    "",
+    "The two slots are the two kinds of server. The first posts the Christmas_Miller_Skill band, which only",
+    "his skill job carries (Bounties/SeasonsOfOrbis/Mmo_Christmas_Miller_Skill_Job.json, a server running MMO",
+    "Skill Tree). The second posts the Christmas_Miller_Errand band, his plain errands. Each slot's Requires",
+    "is the plain hytale:mod_installed condition at its top level, read when the board loads: Min 1 leaves",
+    "the slot off the board where MMO Skill Tree is missing, and Max 0 leaves it off where that mod is",
+    "installed. So every server posts exactly one job from Tomas a day, for the same plain pay. Both slots",
+    "are Optional, so the slot a server leaves out never reads as a gap.",
+    "",
+    "Grades names each band for the badge on its row: TitleKey is its words, Color the badge's colour.",
+    "Season makes the board absent while Christmas is off; a job left uncollected when Christmas ends shows",
+    "Collect in the player's Objective Book instead. Order 92 sorts it after Santa's board. Its words are in",
+    "christmas.mmo.lang."
+  ],
+  "Season": "Christmas",
+  "Text": {
+    "TitleKey": "board.christmas_miller_jobs.title",
+    "FlavorKey": "board.christmas_miller_jobs.desc"
+  },
+  "Hosts": [ "Harvest_Feast_Miller" ],
+  "Icon": "Christmas_Gingerbread_Cookie",
+  "Order": 92,
+  "Rotation": { "Period": "Daily" },
+  "Slots": [
+    { "Difficulty": "Christmas_Miller_Skill", "Optional": true,
+      "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } },
+    { "Difficulty": "Christmas_Miller_Errand", "Optional": true,
+      "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Max": 0 } ] } }
+  ],
+  "Grades": {
+    "Christmas_Miller_Skill": { "TitleKey": "board.christmas_miller_jobs.grade.skill", "Color": "#d6a03d" },
+    "Christmas_Miller_Errand": { "TitleKey": "board.christmas_miller_jobs.grade.errand", "Color": "#d6a03d" }
+  },
+  "Currencies": [ "Christmas_Coins" ]
+}

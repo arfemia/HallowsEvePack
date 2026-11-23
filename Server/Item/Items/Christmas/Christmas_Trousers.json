@@ -1,0 +1,41 @@
+{
+  "$Comment": "The Christmas Trousers, the leg piece of the Christmas Set (ZiggfreedCommon/GearSets/SeasonsOfOrbis/Christmas_Set.json), sold at Elsie the Weaver's Christmas stall once Santa counts a player Very Nice. A full item body with no Parent, so it inherits no recipe and nobody crafts it: they wear the game's own cotton trousers (Armor_Cloth_Cotton_Legs' model, texture, icon and armour numbers). Their own stats ride the native Armor block: the cotton trousers' resistances plus 5% less Ice damage, Health and Stamina like any armour, and TrackGain_Christmas_Nice_List (10 is +10%), which raises every gain of Santa's favor while they are worn. Raise or lower an Amount to tune them; the set adds its own bonus on top. Tags.ZigLevel asks for Defense 30 to wear it (the best level the player ever reached), behind MMO Skill Tree's Gear levels switch (Tags.ZigLevelFeature); gear a player already had when gear levels arrived keeps working for them, and a server owner frees or retunes it with a ZigLevel group gate in mods/ziggfreedcommon/use-gates.json.",
+  "TranslationProperties": {
+    "Name": "items.Christmas_Trousers.name",
+    "Description": "items.Christmas_Trousers.description"
+  },
+  "Quality": "Uncommon",
+  "ItemLevel": 30,
+  "PlayerAnimationsId": "Block",
+  "ItemSoundSetId": "ISS_Armor_Cloth",
+  "Categories": ["Items.Armors"],
+  "Icon": "Icons/ItemsGenerated/Armor_Cloth_Cotton_Legs.png",
+  "IconProperties": {"Rotation": [22.5, 45, 22.5], "Scale": 0.49, "Translation": [-0.6, -16.8]},
+  "Model": "Items/Armors/Cotton/Legs.blockymodel",
+  "Texture": "Items/Armors/Cotton/Legs_Texture.png",
+  "Interactions": {
+    "Primary": {"Interactions": [{"Type": "EquipItem"}]},
+    "Secondary": {"Interactions": [{"Type": "EquipItem"}]}
+  },
+  "Armor": {
+    "ArmorSlot": "Legs",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "Pants",
+      "Shoes"
+    ],
+    "DamageResistance": {
+      "Physical": [{"Amount": 0.07, "CalculationType": "Percent"}],
+      "Projectile": [{"Amount": 0.07, "CalculationType": "Percent"}],
+      "Ice": [{"Amount": 0.05, "CalculationType": "Percent"}]
+    },
+    "StatModifiers": {
+      "Health": [{"Amount": 13, "CalculationType": "Additive"}],
+      "Stamina": [{"Amount": 2, "CalculationType": "Additive"}],
+      "TrackGain_Christmas_Nice_List": [{"Amount": 5, "CalculationType": "Additive", "Target": "Max"}]
+    }
+  },
+  "MaxDurability": 120,
+  "DurabilityLossOnHit": 0.5,
+  "Tags": {"Type": ["Armor"], "Family": ["Christmas"], "ZigLevel": ["Defense:30"], "ZigLevelFeature": ["mmoskilltree:Gear_Levels"]}
+}

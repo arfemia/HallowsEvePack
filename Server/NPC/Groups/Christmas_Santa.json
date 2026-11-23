@@ -1,0 +1,4 @@
+{
+  "$Comment": "Santa, Christmas's host, alone in a group of one. The reputation group Christmas_Nice_List (NPC/Reputation/Groups) names this group, which is how the game ties the way Santa treats each player to that player's place on his Nice List. Add another role id to IncludeRoles and that character shares Santa's list.",
+  "IncludeRoles": [ "Christmas_Santa" ]
+}

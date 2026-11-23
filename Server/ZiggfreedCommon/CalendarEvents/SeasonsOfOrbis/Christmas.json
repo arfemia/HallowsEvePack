@@ -1,0 +1,41 @@
+{
+  "$Comment": [
+    "Christmas, the winter season after Harvest Feast. The file name is the event id: every Season leaf,",
+    "spawn rule and page in the pack names it Christmas. Both days of the Window are in it, counted in",
+    "UTC because no Clock is written, so Christmas runs from the first moment of December 2nd to the last",
+    "moment of January 10th. Its End falls before its Start, so a run crosses the new year and belongs to",
+    "the year it starts in: the run that opens on December 2nd 2026 is the 2026 run. Its first days",
+    "overlap the end of Harvest Feast, which runs to December 6th; Christmas Morning",
+    "(Christmas_Morning.json) runs inside it from December 25th.",
+    "",
+    "A file that must vanish while Christmas is off writes Season: Christmas, on itself or on the base it",
+    "inherits from. A conversation line reads ziggfreedcommon:feature with Param Christmas_Live and Min 1",
+    "instead, and a roll or a lock reads ziggfreedcommon:calendar_live with Param Christmas.",
+    "",
+    "Presentation names the season wherever events are listed, with the game's red Christmas packet as",
+    "its picture. Herald is the banner: Start shows once to each player, the first time they are on the",
+    "server during a run; End shows to everyone online when a run ends by its dates or by a command, and",
+    "never when the event is switched off.",
+    "",
+    "A server owner switches Christmas off, or moves its days, in mods/ziggfreedcommon/calendar.json",
+    "without touching this file. /zigcalendar status Christmas shows what the server reads."
+  ],
+  "Window": { "Start": "12-02", "End": "01-10" },
+  "FirstYear": 2026,
+  "Presentation": {
+    "TitleKey": "calendar.christmas.name",
+    "FlavorKey": "calendar.christmas.flavor",
+    "Icon": "Furniture_Christmas_Chest_Small_Red"
+  },
+  "Herald": {
+    "Start": {
+      "TitleKey": "calendar.christmas.herald.start",
+      "SubtitleKey": "calendar.christmas.herald.start.sub",
+      "Major": true
+    },
+    "End": {
+      "TitleKey": "calendar.christmas.herald.end",
+      "SubtitleKey": "calendar.christmas.herald.end.sub"
+    }
+  }
+}

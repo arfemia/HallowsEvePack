@@ -1,0 +1,19 @@
+{
+  "$Comment": "The recipe page for the Christmas Cake (Christmas_Recipe_Cake), the best of Christmas's three dishes, sold at Tomas's stall to players Revered on Santa's Nice List, the rank the list calls Very Nice. Requires is a lock, not a hide: a player below the rank still sees the offer, locked, with the rank's own name in the reason, and the Season leaf on the base still hides it while Christmas is off. Reading the page teaches the dish for good, so a player buys it once (Limits.Total). Its picture is the dish.",
+  "Parent": "Christmas_Offer_Base",
+  "Shop": "Christmas_Miller",
+  "Text": {
+    "TitleKey": "shop.christmas_offer_recipe_cake.title",
+    "FlavorKey": "shop.christmas_offer_recipe_cake.desc"
+  },
+  "Icon": "Christmas_Cake",
+  "Listing": { "Category": "kitchen", "SortOrder": 30 },
+  "Cost": { "Currencies": { "Christmas_Coins": 100 } },
+  "Limits": { "Total": 1 },
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Christmas_Nice_List/Revered", "Min": 1 }
+    ]
+  },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Christmas_Recipe_Cake", "Count": 1 } } ]
+}

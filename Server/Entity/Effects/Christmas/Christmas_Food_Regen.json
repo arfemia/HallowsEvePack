@@ -1,0 +1,12 @@
+{
+  "$Comment": "The health regen a Hot Cocoa or a Christmas Cake gives: the game's top food regen (HealthRegen_Buff_T3, 2% of health back every 2 seconds) for 600 seconds (ten minutes) where the game's lasts six, so a dish's buffs all end together. Each dish clears the game's own food regens as it lands, so they never stack from this side. The dishes' descriptions in items.lang write this out (Health Regen III, Duration 10:00): change them with it.",
+  "Name": "items.effect.christmas_food_regen.name",
+  "StatusEffectIcon": "UI/StatusEffects/HealthRegen.png",
+  "StatModifiers": {
+    "Health": 2
+  },
+  "ValueType": "Percent",
+  "OverlapBehavior": "Overwrite",
+  "Duration": 600,
+  "DamageCalculatorCooldown": 2
+}

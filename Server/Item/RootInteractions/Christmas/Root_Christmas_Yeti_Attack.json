@@ -1,0 +1,23 @@
+{
+  "$Comment": "The Yeti's attack in his cave, the id his role names as Attack (NPC/Roles/Christmas/Christmas_Yeti.json). It is the game Yeti's own Root_NPC_Yeti_Attack chain with his ring slam worked in: each attack plays the next entry of Next, so he swipes left, backswings right, slams, swipes right, backswings left and slams again, then starts over. ChainingAllowance is how many seconds may pass between two attacks before the chain starts over at its first swipe; his role's AttackPauseRange keeps every gap well inside it. Change Next's order to change how often he slams.",
+  "Interactions": [
+    {
+      "Type": "Chaining",
+      "ChainId": "Christmas_Yeti_Swipes",
+      "ChainingAllowance": 15,
+      "Next": [
+        "Yeti_Swing_Left",
+        "Yeti_Backswing_Right",
+        "Christmas_Yeti_Slam",
+        "Yeti_Swing_Right",
+        "Yeti_Backswing_Left",
+        "Christmas_Yeti_Slam"
+      ]
+    }
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  }
+}

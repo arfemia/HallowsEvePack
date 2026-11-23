@@ -1,0 +1,38 @@
+# Christmas - the calendar's words (what Christmas and Christmas Morning are called, and their banners),
+# the costumes' names and the notice for Santa's Sack. Keys are written bare: the library finds each one
+# by its tail, whatever this file is called. Banners and notices print markup as text, so none of these
+# values carries any.
+
+# ---- Christmas ----
+calendar.christmas.name = Noel
+calendar.christmas.flavor = Noel Baba Unutulmuş Tapınak'ta, Noel Baba şapkalı Trork'lar da hediyelerini alıp kaçtı.
+calendar.christmas.herald.start = Noel
+calendar.christmas.herald.start.sub = Noel Baba Unutulmuş Tapınak'ta, Trork'lar da hediyelerini çaldı.
+calendar.christmas.herald.end = Noel bitti
+calendar.christmas.herald.end.sub = Noel Baba'nın kızağı gelecek yıla kadar toplandı.
+
+# ---- Christmas Morning ----
+calendar.christmas_morning.name = Noel Sabahı
+calendar.christmas_morning.flavor = Unutulmuş Tapınak'ta Noel sabahı, Noel Baba'nın ağacının altında bir şey var.
+calendar.christmas_morning.herald.start = Mutlu Noeller
+calendar.christmas_morning.herald.start.sub = Unutulmuş Tapınak'ta Noel Baba'yı git de gör.
+
+# ---- Costumes ----
+# A costume's buff-bar tile name. Its effect's Name is this key in full (christmas.world.effect...),
+# because the client reads an effect's Name exactly as written.
+effect.christmas_costume_elf.name = Elf Kostümü
+effect.christmas_costume_reindeer.name = Ren Geyiği Kostümü
+effect.christmas_costume_elf_suit.name = Elf Kıyafeti
+effect.christmas_costume_santa.name = Noel Baba Kıyafeti
+
+# ---- Christmas Cheer ----
+# What a friend's present leaves on you: its buff-bar tile name. Its effect's Name is this key in full.
+effect.christmas_cheer.name = Noel Neşesi
+
+# ---- Santa's Sack ----
+notify.christmas_santas_sack = Bir Noel Baba'nın Çuvalı, Uslular Listesi'nde daha da yükseldiğin için.
+
+# ---- Christmas Eve ----
+# The banner when a player collects Christmas Eve's pay. The sub line's {0} is the player's name.
+notify.christmas_eve_delivered = Kızak Dolu
+notify.christmas_eve_delivered.sub = {0}, Noel Baba'nın Noel Arifesi hazırlığına yardım etti.

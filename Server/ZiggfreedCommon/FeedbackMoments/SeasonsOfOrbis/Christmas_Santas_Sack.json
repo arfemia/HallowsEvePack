@@ -1,0 +1,12 @@
+{
+  "$Comment": [
+    "The notice a player gets when Santa packs them a Santa's Sack: a toast and a small pickup sound, to",
+    "that player alone. The loot table Christmas_Santas_Sack names this moment with its Cue. Reword the",
+    "toast with the key notify.christmas_santas_sack; delete the Sound group for a silent toast."
+  ],
+  "Toast": {
+    "Title": { "Key": "notify.christmas_santas_sack" },
+    "Tone": "Reward"
+  },
+  "Sound": { "Id": "SFX_Player_Pickup_Item" }
+}

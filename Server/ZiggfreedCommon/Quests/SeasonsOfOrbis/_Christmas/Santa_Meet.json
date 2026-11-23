@@ -1,0 +1,61 @@
+{
+  "$Comment": [
+    "The way into Christmas: go and find Santa in the Forgotten Temple. It arms itself: Flow.AutoAccept",
+    "puts it in every player's quest log while Christmas runs, at their next login or world change, and the",
+    "base's Flow.AutoTrack pins it to their tracker. The _Christmas folder makes the id",
+    "christmas_santa_meet.",
+    "",
+    "The one step is a TURN_IN with a blank Target, handed in at the giver: nothing to bring, only the",
+    "walk. Santa's conversation opens on his arrival line while it is carried, and its answer hands it in.",
+    "Its pay is a Claim like every quest's, so the hand-in takes the player to his quest list with Collect",
+    "in front of them; collecting it plays his conversation again, and its beat with the OnceId",
+    "christmas_meet_thieves_offer opens on his first quest's offer. A player whose quest log was full when",
+    "it tried to arm takes it from the same arrival line, through its quest row.",
+    "",
+    "Its Parent's Season hides it while Christmas is off, so its own Requires holds only the Not group,",
+    "which keeps it from anyone who already finished his first quest (christmas_present_thieves). With no",
+    "Repeat it comes once per player, ever. His first quest does not wait on it: a player without it still",
+    "gets the story from Santa.",
+    "",
+    "The Item row hands over the library's Objective Book, the way into every quest and achievement list,",
+    "so a player whose first season is Christmas, or a server with this pack and no MMO Skill Tree, has a",
+    "way to get one; a player who already holds one gets a second. The Currency rows pay a few Christmas",
+    "Coins, so a new player has something to spend at the Christmas stalls, and a few festival tokens.",
+    "",
+    "Beside them, MMO Skill Tree's Mmo_Xp row pays Acrobatics XP for the walk to the temple, collected",
+    "with the rest. Its own Requires, the hytale:mod_installed gate, leaves the row out on a server",
+    "without that mod, unpaid and unshown, and the rest still pays."
+  ],
+  "Name": "Santa_Meet",
+  "Parent": "Christmas_Quest_Base",
+  "Listing": {
+    "Icon": "Christmas_Present",
+    "Category": "main",
+    "SortOrder": 5
+  },
+  "Flow": { "AutoAccept": true },
+  "Requires": {
+    "Not": [
+      { "Quests": [ "christmas_present_thieves" ] }
+    ]
+  },
+  "Objectives": {
+    "meet_santa": {
+      "Kind": "TURN_IN",
+      "Target": "",
+      "Amount": 1,
+      "Order": 1,
+      "TurnInNpcId": "giver",
+      "TextKey": "objective.christmas.meet_santa"
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Item", "Params": { "Item": "Ziggfreed_Objective_Book", "Count": "1" } },
+      { "Kind": "Currency", "Params": { "Currency": "Christmas_Coins", "Amount": "10" } },
+      { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "2" } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "ACROBATICS", "Amount": "2500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

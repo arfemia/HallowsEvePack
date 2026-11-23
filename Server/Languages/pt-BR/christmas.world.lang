@@ -1,0 +1,38 @@
+# Christmas - the calendar's words (what Christmas and Christmas Morning are called, and their banners),
+# the costumes' names and the notice for Santa's Sack. Keys are written bare: the library finds each one
+# by its tail, whatever this file is called. Banners and notices print markup as text, so none of these
+# values carries any.
+
+# ---- Christmas ----
+calendar.christmas.name = Natal
+calendar.christmas.flavor = O Papai Noel está no Templo Esquecido, e Trorks de gorro de Papai Noel fugiram com os presentes dele.
+calendar.christmas.herald.start = Natal
+calendar.christmas.herald.start.sub = O Papai Noel está no Templo Esquecido, e Trorks roubaram os presentes dele.
+calendar.christmas.herald.end = O Natal acabou
+calendar.christmas.herald.end.sub = O trenó do Papai Noel está guardado até o ano que vem.
+
+# ---- Christmas Morning ----
+calendar.christmas_morning.name = Manhã de Natal
+calendar.christmas_morning.flavor = Manhã de Natal no Templo Esquecido, com algo debaixo da árvore do Papai Noel.
+calendar.christmas_morning.herald.start = Feliz Natal
+calendar.christmas_morning.herald.start.sub = Vá ver o Papai Noel no Templo Esquecido.
+
+# ---- Costumes ----
+# A costume's buff-bar tile name. Its effect's Name is this key in full (christmas.world.effect...),
+# because the client reads an effect's Name exactly as written.
+effect.christmas_costume_elf.name = Fantasia de Elfo
+effect.christmas_costume_reindeer.name = Fantasia de Rena
+effect.christmas_costume_elf_suit.name = Roupa de Elfo
+effect.christmas_costume_santa.name = Roupa de Papai Noel
+
+# ---- Christmas Cheer ----
+# What a friend's present leaves on you: its buff-bar tile name. Its effect's Name is this key in full.
+effect.christmas_cheer.name = Alegria de Natal
+
+# ---- Santa's Sack ----
+notify.christmas_santas_sack = Um Saco do Papai Noel, por subir ainda mais na Lista dos Bonzinhos.
+
+# ---- Christmas Eve ----
+# The banner when a player collects Christmas Eve's pay. The sub line's {0} is the player's name.
+notify.christmas_eve_delivered = O Trenó Está Cheio
+notify.christmas_eve_delivered.sub = {0} ajudou o Papai Noel a se preparar para a Véspera de Natal.

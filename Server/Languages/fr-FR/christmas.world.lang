@@ -1,0 +1,38 @@
+# Christmas - the calendar's words (what Christmas and Christmas Morning are called, and their banners),
+# the costumes' names and the notice for Santa's Sack. Keys are written bare: the library finds each one
+# by its tail, whatever this file is called. Banners and notices print markup as text, so none of these
+# values carries any.
+
+# ---- Christmas ----
+calendar.christmas.name = Noël
+calendar.christmas.flavor = Le Père Noël est dans le Temple de l'Oubli, et des Trorks en bonnet de Père Noël ont filé avec ses cadeaux.
+calendar.christmas.herald.start = Noël
+calendar.christmas.herald.start.sub = Le Père Noël est dans le Temple de l'Oubli, et des Trorks lui ont volé ses cadeaux.
+calendar.christmas.herald.end = Noël est fini
+calendar.christmas.herald.end.sub = Le traîneau du Père Noël est rangé jusqu'à l'an prochain.
+
+# ---- Christmas Morning ----
+calendar.christmas_morning.name = Matin de Noël
+calendar.christmas_morning.flavor = Le matin de Noël dans le Temple de l'Oubli, avec quelque chose sous le sapin du Père Noël.
+calendar.christmas_morning.herald.start = Joyeux Noël
+calendar.christmas_morning.herald.start.sub = Allez voir le Père Noël dans le Temple de l'Oubli.
+
+# ---- Costumes ----
+# A costume's buff-bar tile name. Its effect's Name is this key in full (christmas.world.effect...),
+# because the client reads an effect's Name exactly as written.
+effect.christmas_costume_elf.name = Costume d'elfe
+effect.christmas_costume_reindeer.name = Costume de renne
+effect.christmas_costume_elf_suit.name = Tenue d'elfe
+effect.christmas_costume_santa.name = Tenue de Père Noël
+
+# ---- Christmas Cheer ----
+# What a friend's present leaves on you: its buff-bar tile name. Its effect's Name is this key in full.
+effect.christmas_cheer.name = Joie de Noël
+
+# ---- Santa's Sack ----
+notify.christmas_santas_sack = Une Hotte du Père Noël, pour grimper encore plus haut sur la Liste des gentils.
+
+# ---- Christmas Eve ----
+# The banner when a player collects Christmas Eve's pay. The sub line's {0} is the player's name.
+notify.christmas_eve_delivered = Le traîneau est plein
+notify.christmas_eve_delivered.sub = {0} a aidé le Père Noël à préparer la Veille de Noël.

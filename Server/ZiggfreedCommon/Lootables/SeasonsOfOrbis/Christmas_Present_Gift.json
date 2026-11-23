@@ -1,0 +1,43 @@
+{
+  "$Comment": [
+    "What a Christmas Present holds when a player opens it. The present's use runs its open chain",
+    "(Item/Interactions/Christmas/Christmas_Present_Open.json), which hands this table out by id, so",
+    "retuning the gift is an edit here and nowhere else.",
+    "",
+    "The roll always pays a few Christmas Coins, through the Currency reward kind. Pool is one draw from",
+    "the bag below, weighted against each other: mostly a treat (candy canes, a cookie, a cocoa) or a",
+    "handful of snowballs, now and then a Winter Bauble or one of the game's Christmas Packets. Every item",
+    "goes where the opening player's pickup settings send it, with the game's own pickup notice, and",
+    "whatever their bag cannot take drops at their feet.",
+    "",
+    "The table pays whenever a present is opened, in season or out, since a present kept from December",
+    "is an ordinary item. A companion mod adds its own rolls with a file of its own that names this table",
+    "in ContributesTo.",
+    "",
+    "Text names this table wherever a reward paying it is shown and gives its hover a line; the hover",
+    "then lists what this table pays."
+  ],
+  "Name": "Christmas_Present_Gift",
+  "Text": {
+    "TitleKey": "lootable.christmas_present_gift.title",
+    "FlavorKey": "lootable.christmas_present_gift.flavor"
+  },
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Christmas_Coins", "Amount": "3" } } ]
+      }
+    }
+  ],
+  "Pool": {
+    "Entries": [
+      { "Weight": 35, "Grants": { "Items": [ { "Item": "Food_Candy_Cane", "Count": 2 } ] } },
+      { "Weight": 20, "Grants": { "Items": [ { "Item": "Christmas_Gingerbread_Cookie", "Count": 1 } ] } },
+      { "Weight": 10, "Grants": { "Items": [ { "Item": "Christmas_Hot_Cocoa", "Count": 1 } ] } },
+      { "Weight": 20, "Grants": { "Items": [ { "Item": "Christmas_Snowball", "Count": 8 } ] } },
+      { "Weight": 8, "Grants": { "Items": [ { "Item": "WinterHoliday_Ornament_Bauble", "Count": 1 } ] } },
+      { "Weight": 4, "Grants": { "Items": [ { "Item": "Furniture_Christmas_Chest_Small_Green", "Count": 1 } ] } },
+      { "Weight": 3, "Grants": { "Items": [ { "Item": "Furniture_Christmas_Chest_Small_White", "Count": 1 } ] } }
+    ]
+  }
+}

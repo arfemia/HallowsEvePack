@@ -1,0 +1,467 @@
+{
+  "Name": "Christmas_Santa",
+  "$Comment": [
+    "Santa's conversation, everything he says while Christmas runs, wherever his placement stands him (the",
+    "Forgotten Temple, unless a server owner moves him). He contracts everything: I'm, you'll, they're.",
+    "",
+    "HOW A SCREEN IS PICKED. Start is walked in a fixed order: First (top to bottom), then a quest that is",
+    "READY to hand in, then one he can OFFER, then one that is ACTIVE, then Then, then Fallback.",
+    "First holds seven things. The off-season line comes first and shows only while Christmas is off (a",
+    "visit after a command ends it, or a server owner who stands him somewhere all year), and its only",
+    "answer is goodbye. Then his arrival line, for a player carrying his intro quest (Meet Santa,",
+    "christmas_santa_meet, which arms itself while Christmas runs): its answer marks him greeted and hands",
+    "that quest in, and since its pay is a Claim, the hand-in takes the player to his quest list with",
+    "Collect in front of them. Then his Christmas Morning line, for a player carrying Christmas Morning",
+    "(christmas_morning, which arms itself from December 25): its answer hands it in. Then his first words,",
+    "for a player he has not met and who came without the intro: what happened to his sleigh, what to do",
+    "about it and where, kept until the player answers. Then his first quest's offer",
+    "(christmas_present_thieves), once (OnceId christmas_meet_thieves_offer), for a player who has handed",
+    "the intro in and not taken that quest yet: collecting the intro plays this conversation again, so the",
+    "story opens straight after the arrival. Then his daily word, once a day (Once with Period Daily,",
+    "turning over at midnight UTC) and skipped while the player has something to hand in, in two wordings",
+    "sharing one OnceId: after this year's Christmas Eve it says the story is done until next year and",
+    "sends the player to the dailies, the thieves and the stalls; before it, the plain one. Either pays a",
+    "little favor on his Nice List when the player finishes the line, whichever way they leave it.",
+    "",
+    "Quests holds one row per quest of his: the intro, the story's two steps that are his (Present Thieves",
+    "and Christmas Eve), Christmas Morning, the carol tour, then his two dailies, so the story wins a tie",
+    "with a daily. The helpers' steps (Reindeer Food, Christmas Cookies, Wrapping Presents) and their",
+    "dailies are theirs, in their own conversations. Extra Thieves (christmas_extra_thieves) repeats with",
+    "no limit, so its row names only its Active and Ready screens: with no Offerable beat the ladder never",
+    "opens on it as an offer, and it is offered from his quest list (What needs doing?) instead. Then shows",
+    "the after-Eve line once this year's Christmas Eve is done (it reads ON_COOLDOWN until it comes back",
+    "next year, so the line takes that state beside COMPLETED).",
+    "",
+    "THE PRESENT HAND-INS. Christmas Eve, Daily Presents and the Present Job take a present by hand: the",
+    "player holds a Christmas Present, looks at the character and uses it",
+    "(Item/Interactions/Christmas/Christmas_Present_Give.json), so the brief screens say how.",
+    "",
+    "THE SEASON. A conversation has no Season leaf, so the off-season beat and the option that opens the",
+    "stall read the feature ziggfreedcommon:feature Christmas_Live, Min 1: while Christmas is off the stall",
+    "is not offered, and nobody is sent to a screen that opens closed.",
+    "",
+    "THE HELPERS. Where are your helpers? answers for the whole season in one line: Tomas and Elsie stand",
+    "beside Santa, and while Harvest Feast's last days still run (they overlap the start of Christmas)",
+    "they are at their feast spots by the kweebec village instead. A conversation gates a line only on its",
+    "own season's switch, so the line names both places rather than asking which season runs. What can I",
+    "help with? tells the story's order in one line, for a player who lost the thread.",
+    "",
+    "THE FOOTER. Most screens pull in the santa_footer group: hand-ins, the quest list (the Christmas",
+    "Board's jobs included, since the board names him in Hosts), the stall (Santa's Stocking is on it, free",
+    "once a day), How am I doing on the list? (it opens the Reputation page, and shows once the player has",
+    "any favor with him), the Almanac (only while the Almanac is switched on), the story, three lore lines",
+    "and goodbye.",
+    "",
+    "No line asks which world the player is in, so every line plays wherever he stands. The greeting's",
+    "memory carries no Where, so it is kept once per player, the same in every world, and its",
+    "ResetWithQuest files it under his intro quest (christmas_santa_meet): it is forgotten whenever that",
+    "quest is reset, so a player who starts the story over hears his first words again."
+  ],
+  "Header": [ "ActiveObjective" ],
+  "Memories": {
+    "christmas_santa_greeted": { "ResetWithQuest": "christmas_santa_meet" }
+  },
+  "Start": {
+    "First": [
+      {
+        "Node": "off_season",
+        "When": [
+          { "Type": "Not", "Of": [ { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Christmas_Live", "Min": 1 } ] }
+        ]
+      },
+      {
+        "Node": "meet_arrival",
+        "When": [
+          { "Type": "QuestState", "Quest": "christmas_santa_meet", "State": "ACTIVE" }
+        ]
+      },
+      {
+        "Node": "morning_arrival",
+        "When": [
+          { "Type": "QuestState", "Quest": "christmas_morning", "State": "ACTIVE" }
+        ]
+      },
+      {
+        "Node": "first_words",
+        "When": [
+          { "Type": "NotRemembered", "Memory": "christmas_santa_greeted" }
+        ]
+      },
+      {
+        "Node": "thieves_offer",
+        "When": [
+          { "Type": "QuestState", "Quest": "christmas_santa_meet", "States": [ "COMPLETED_UNCLAIMED", "COMPLETED" ] },
+          { "Type": "QuestState", "Quest": "christmas_present_thieves", "State": "NOT_STARTED" }
+        ],
+        "Once": true,
+        "OnceId": "christmas_meet_thieves_offer"
+      },
+      {
+        "Node": "daily_word_story_done",
+        "When": [
+          { "Type": "Remembered", "Memory": "christmas_santa_greeted" },
+          { "Type": "Not", "Of": [ { "Type": "HasReadyToTurnIn" } ] },
+          { "Type": "QuestState", "Quest": "christmas_eve", "States": [ "COMPLETED", "ON_COOLDOWN" ] }
+        ],
+        "Once": { "Period": "Daily" },
+        "OnceId": "christmas_santa_daily_word",
+        "Actions": [
+          { "Type": "Grant", "Rewards": [ { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 10 } } ] }
+        ]
+      },
+      {
+        "Node": "daily_word",
+        "When": [
+          { "Type": "Remembered", "Memory": "christmas_santa_greeted" },
+          { "Type": "Not", "Of": [ { "Type": "HasReadyToTurnIn" } ] }
+        ],
+        "Once": { "Period": "Daily" },
+        "OnceId": "christmas_santa_daily_word",
+        "Actions": [
+          { "Type": "Grant", "Rewards": [ { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 10 } } ] }
+        ]
+      }
+    ],
+    "Quests": {
+      "christmas_santa_meet": { "Offerable": "meet_arrival", "Active": "meet_arrival", "Ready": "meet_arrival" },
+      "christmas_present_thieves": { "Offerable": "thieves_offer", "Active": "thieves_brief", "Ready": "thieves_ready" },
+      "christmas_eve": { "Offerable": "eve_offer", "Active": "eve_brief", "Ready": "eve_ready" },
+      "christmas_morning": { "Offerable": "morning_arrival", "Active": "morning_arrival", "Ready": "morning_arrival" },
+      "christmas_carols": { "Offerable": "carols_offer", "Active": "carols_brief", "Ready": "carols_ready" },
+      "christmas_daily_thieves": { "Offerable": "daily_thieves_offer", "Active": "thieves_brief", "Ready": "ready_generic" },
+      "christmas_daily_presents": { "Offerable": "daily_presents_offer", "Active": "presents_brief", "Ready": "ready_generic" },
+      "christmas_extra_thieves": { "Active": "thieves_brief", "Ready": "extra_thieves_ready" }
+    },
+    "Then": [
+      {
+        "Node": "story_done",
+        "When": [
+          { "Type": "QuestState", "Quest": "christmas_eve", "States": [ "COMPLETED", "ON_COOLDOWN" ] }
+        ]
+      }
+    ],
+    "Fallback": "menu"
+  },
+  "Nodes": {
+    "off_season": {
+      "TextKey": "dialogue.christmas_santa.off_season.text",
+      "Options": [
+        { "LabelKey": "dialogue.christmas_santa.off_season.opt.farewell", "Style": "farewell", "Close": true }
+      ]
+    },
+    "meet_arrival": {
+      "TextKey": "dialogue.christmas_santa.meet_arrival.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_santa.meet_arrival.opt.hail",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "QuestState", "Quest": "christmas_santa_meet", "State": "ACTIVE" } ],
+          "Do": [
+            { "Remember": "christmas_santa_greeted" },
+            { "TurnIn": "christmas_santa_meet" },
+            { "Goto": "thieves_offer" }
+          ]
+        },
+        {
+          "LabelKey": "dialogue.christmas_santa.meet_arrival.opt.hail",
+          "Style": "accept",
+          "Conditions": [ { "Type": "QuestState", "Quest": "christmas_santa_meet", "State": "NOT_STARTED" } ],
+          "Do": [
+            { "Remember": "christmas_santa_greeted" },
+            { "Accept": "christmas_santa_meet" },
+            { "TurnIn": "christmas_santa_meet" },
+            { "Goto": "thieves_offer" }
+          ]
+        }
+      ]
+    },
+    "morning_arrival": {
+      "TextKey": "dialogue.christmas_santa.morning_arrival.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_santa.morning_arrival.opt.open",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "QuestState", "Quest": "christmas_morning", "State": "ACTIVE" } ],
+          "Do": [
+            { "TurnIn": "christmas_morning" },
+            { "Open": { "Type": "Quests", "Highlight": "christmas_morning" } }
+          ]
+        },
+        {
+          "LabelKey": "dialogue.christmas_santa.morning_arrival.opt.open",
+          "Style": "accept",
+          "Conditions": [ { "Type": "QuestState", "Quest": "christmas_morning", "State": "NOT_STARTED" } ],
+          "Do": [
+            { "Accept": "christmas_morning" },
+            { "TurnIn": "christmas_morning" },
+            { "Open": { "Type": "Quests", "Highlight": "christmas_morning" } }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "santa_tail" ]
+    },
+    "first_words": {
+      "TextKey": "dialogue.christmas_santa.first_words.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_santa.first_words.opt.hail",
+          "Style": "accept",
+          "Actions": [
+            { "Type": "Remember", "Memory": "christmas_santa_greeted" },
+            { "Type": "Goto", "Node": "menu" }
+          ]
+        }
+      ]
+    },
+    "daily_word": {
+      "TextKey": "dialogue.christmas_santa.daily_word.text",
+      "IncludeOptions": [ "santa_footer" ]
+    },
+    "daily_word_story_done": {
+      "TextKey": "dialogue.christmas_santa.daily_word_story_done.text",
+      "IncludeOptions": [ "santa_footer" ]
+    },
+    "menu": {
+      "TextKey": "dialogue.christmas_santa.menu.text",
+      "IncludeOptions": [ "santa_footer" ]
+    },
+    "story_done": {
+      "TextKey": "dialogue.christmas_santa.story_done.text",
+      "IncludeOptions": [ "santa_footer" ]
+    },
+    "story": {
+      "TextKey": "dialogue.christmas_santa.story.text",
+      "IncludeOptions": [ "santa_tail" ]
+    },
+    "thieves_offer": {
+      "TextKey": "dialogue.christmas_santa.thieves_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_santa.thieves_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "christmas_present_thieves" }, { "Goto": "thieves_brief" } ]
+        }
+      ],
+      "IncludeOptions": [ "santa_tail" ]
+    },
+    "thieves_brief": {
+      "TextKey": "dialogue.christmas_santa.thieves_brief.text",
+      "IncludeOptions": [ "santa_footer" ]
+    },
+    "thieves_ready": {
+      "TextKey": "dialogue.christmas_santa.thieves_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_santa.thieves_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "christmas_present_thieves" } ],
+          "Do": [
+            { "TurnIn": "christmas_present_thieves" },
+            { "Open": { "Type": "Quests", "Highlight": "christmas_present_thieves" } }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "santa_tail" ]
+    },
+    "eve_offer": {
+      "TextKey": "dialogue.christmas_santa.eve_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_santa.eve_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "christmas_eve" }, { "Goto": "eve_brief" } ]
+        }
+      ],
+      "IncludeOptions": [ "santa_tail" ]
+    },
+    "eve_brief": {
+      "TextKey": "dialogue.christmas_santa.eve_brief.text",
+      "IncludeOptions": [ "santa_footer" ]
+    },
+    "eve_ready": {
+      "TextKey": "dialogue.christmas_santa.eve_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_santa.eve_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "christmas_eve" } ],
+          "Do": [
+            { "TurnIn": "christmas_eve" },
+            { "Open": { "Type": "Quests", "Highlight": "christmas_eve" } }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "santa_tail" ]
+    },
+    "carols_offer": {
+      "TextKey": "dialogue.christmas_santa.carols_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_santa.carols_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "christmas_carols" }, { "Goto": "carols_brief" } ]
+        }
+      ],
+      "IncludeOptions": [ "santa_tail" ]
+    },
+    "carols_brief": {
+      "TextKey": "dialogue.christmas_santa.carols_brief.text",
+      "IncludeOptions": [ "santa_footer" ]
+    },
+    "carols_ready": {
+      "TextKey": "dialogue.christmas_santa.carols_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_santa.carols_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "christmas_carols" } ],
+          "Do": [
+            { "TurnIn": "christmas_carols" },
+            { "Open": { "Type": "Quests", "Highlight": "christmas_carols" } }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "santa_tail" ]
+    },
+    "daily_thieves_offer": {
+      "TextKey": "dialogue.christmas_santa.daily_thieves_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_santa.daily_thieves_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "christmas_daily_thieves" }, { "Goto": "thieves_brief" } ]
+        }
+      ],
+      "IncludeOptions": [ "santa_tail" ]
+    },
+    "daily_presents_offer": {
+      "TextKey": "dialogue.christmas_santa.daily_presents_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_santa.daily_presents_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "christmas_daily_presents" }, { "Goto": "presents_brief" } ]
+        }
+      ],
+      "IncludeOptions": [ "santa_tail" ]
+    },
+    "presents_brief": {
+      "TextKey": "dialogue.christmas_santa.presents_brief.text",
+      "IncludeOptions": [ "santa_footer" ]
+    },
+    "extra_thieves_ready": {
+      "TextKey": "dialogue.christmas_santa.extra_thieves_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_santa.extra_thieves_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "christmas_extra_thieves" } ],
+          "Do": [
+            { "TurnIn": "christmas_extra_thieves" },
+            { "Open": { "Type": "Quests", "Highlight": "christmas_extra_thieves" } }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "santa_tail" ]
+    },
+    "ready_generic": {
+      "TextKey": "dialogue.christmas_santa.ready_generic.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.christmas_santa.ready_generic.opt.turnin",
+          "Style": "turnin",
+          "Open": "Quests"
+        }
+      ],
+      "IncludeOptions": [ "santa_tail" ]
+    },
+    "who_are_you": {
+      "TextKey": "dialogue.christmas_santa.who_are_you.text",
+      "IncludeOptions": [ "santa_tail" ]
+    },
+    "about_thieves": {
+      "TextKey": "dialogue.christmas_santa.about_thieves.text",
+      "IncludeOptions": [ "santa_tail" ]
+    },
+    "helpers": {
+      "TextKey": "dialogue.christmas_santa.helpers.text",
+      "IncludeOptions": [ "santa_tail" ]
+    }
+  },
+  "Fragments": {
+    "santa_footer": [
+      {
+        "LabelKey": "dialogue.christmas_santa.opt.returned",
+        "Style": "accept",
+        "Conditions": [ { "Type": "HasReadyToTurnIn" } ],
+        "Open": "Quests"
+      },
+      {
+        "LabelKey": "dialogue.christmas_santa.opt.quests",
+        "Style": "neutral",
+        "Open": "Quests"
+      },
+      {
+        "LabelKey": "dialogue.christmas_santa.opt.shop",
+        "Style": "neutral",
+        "Conditions": [
+          { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Christmas_Live", "Min": 1 }
+        ],
+        "Open": { "Type": "Shop", "Shop": "Christmas_Santa" }
+      },
+      {
+        "LabelKey": "dialogue.christmas_santa.opt.standing",
+        "Style": "neutral",
+        "Conditions": [
+          { "Type": "Factor", "Factor": "ziggfreedcommon:reputation", "Param": "Christmas_Nice_List", "Min": 1 }
+        ],
+        "Open": { "Type": "Reputation", "Reputation": "Christmas_Nice_List" }
+      },
+      {
+        "LabelKey": "dialogue.christmas_santa.opt.almanac",
+        "Style": "neutral",
+        "Conditions": [
+          { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Almanac", "Min": 1 }
+        ],
+        "Open": { "Type": "Almanac", "Event": "Christmas" }
+      },
+      {
+        "LabelKey": "dialogue.christmas_santa.opt.story",
+        "Style": "neutral",
+        "Goto": "story"
+      },
+      {
+        "LabelKey": "dialogue.christmas_santa.opt.thieves",
+        "Style": "neutral",
+        "Goto": "about_thieves"
+      },
+      {
+        "LabelKey": "dialogue.christmas_santa.opt.helpers",
+        "Style": "neutral",
+        "Goto": "helpers"
+      },
+      {
+        "LabelKey": "dialogue.christmas_santa.opt.who",
+        "Style": "neutral",
+        "Goto": "who_are_you"
+      },
+      {
+        "LabelKey": "dialogue.christmas_santa.opt.farewell",
+        "Style": "farewell",
+        "Close": true
+      }
+    ],
+    "santa_tail": [
+      {
+        "LabelKey": "dialogue.christmas_santa.opt.back",
+        "Style": "neutral",
+        "Goto": "menu"
+      },
+      {
+        "LabelKey": "dialogue.christmas_santa.opt.farewell",
+        "Style": "farewell",
+        "Close": true
+      }
+    ]
+  }
+}

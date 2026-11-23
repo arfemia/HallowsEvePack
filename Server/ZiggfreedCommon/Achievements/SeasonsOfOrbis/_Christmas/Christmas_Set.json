@@ -1,0 +1,30 @@
+{
+  "$Comment": [
+    "Wear the whole Christmas Set: the Christmas Hat, Coat, Gloves and Trousers from Elsie's stall.",
+    "GEAR_SET_TIER counts a set's bonus tier coming on as gear goes on, its amount the number of pieces",
+    "that tier takes, so Amount 4 is met the moment the set's four-piece tier",
+    "(GearSets/SeasonsOfOrbis/Christmas_Set.json) comes on. Logging in already dressed counts nothing: the",
+    "pieces have to go on.",
+    "",
+    "Earned once and kept. The set carries from one Christmas to the next, so this file has no Parent: the",
+    "yearly skeleton would ask for the same clothes every year. It carries no merry tag, so the Merrymaker",
+    "never waits on it. It pays nothing but its points. The criterion's TextKey words the step from this",
+    "pack's own lang file. The _Christmas folder makes the id christmas_christmas_set."
+  ],
+  "Listing": {
+    "Category": "Seasons",
+    "Subcategory": "Christmas",
+    "SortOrder": 110,
+    "Icon": "Christmas_Coat"
+  },
+  "Scoring": { "Points": 25 },
+  "Criteria": {
+    "wear-the-set": {
+      "Kind": "GEAR_SET_TIER",
+      "Target": "Christmas_Set",
+      "MatchMode": "EXACT",
+      "Amount": 4,
+      "TextKey": "objective.christmas.wear_christmas_set"
+    }
+  }
+}

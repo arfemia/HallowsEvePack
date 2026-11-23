@@ -1,0 +1,121 @@
+
+# Christmas with MMO Skill Tree, and what stands in for it without: the villagers' own job boards (a skill
+# job a day where MMO Skill Tree runs, a plain errand where it does not), the season's boosts and their two
+# one-day events, the Christmas Set's skill half, Christmas Morning's bag of treats, and the villagers'
+# secrets with their apprentice quests and lock lines. Only a line that shows just where MMO Skill Tree
+# runs names a skill, a level or XP; every other line here shows on both kinds of server, so it names none.
+# Keys are written bare: MMO Skill Tree and the library find each one by its tail, whatever this file is
+# called. A job or quest takes its words from the keys its id spells (quest.<id>.title and .flavor). A
+# factor's name and an effect's name are read in full, christmas.mmo. and then the key.
+
+# ---- The villagers' job boards ----
+board.christmas_miller_jobs.title = I Lavori di Tomas
+board.christmas_miller_jobs.desc = Un lavoro al giorno da parte mia, nuovo ogni mattina. Ritira la paga prima che il Natale finisca. Se arrivi tardi, ti aspetta nel tuo Libro degli obiettivi.
+board.christmas_miller_jobs.grade.skill = Lavoro di Abilità
+board.christmas_miller_jobs.grade.errand = Commissione
+board.christmas_weaver_jobs.title = I Lavori di Elsie
+board.christmas_weaver_jobs.desc = Un lavoro al giorno da parte mia, nuovo ogni mattina. Ritira la paga prima che il Natale sia finito. Se arrivi tardi, ti aspetta nel tuo Libro degli obiettivi.
+board.christmas_weaver_jobs.grade.skill = Lavoro di Abilità
+board.christmas_weaver_jobs.grade.errand = Commissione
+board.christmas_shepherd_jobs.title = I Lavori di Bram
+board.christmas_shepherd_jobs.desc = Un lavoro al giorno, nuovo ogni mattina. Fatti pagare prima che il Natale finisca, o ti aspetta nel tuo Libro degli obiettivi.
+board.christmas_shepherd_jobs.grade.skill = Lavoro di Abilità
+board.christmas_shepherd_jobs.grade.errand = Commissione
+
+# ---- The skill jobs (only where MMO Skill Tree runs) ----
+quest.mmo_christmas_miller_skill_job.title = Lavoro di Crafting
+quest.mmo_christmas_miller_skill_job.flavor = I miei forni a Natale non si raffreddano mai. Passa la giornata a fabbricare cose a un banco qualsiasi e diventa più rapido.
+quest.mmo_christmas_weaver_skill_job.title = Lavoro di Building
+quest.mmo_christmas_weaver_skill_job.flavor = Ogni casa vuole il suo aspetto natalizio. Passa la giornata a sistemare cose nella tua e diventa più bravo.
+quest.mmo_christmas_shepherd_skill_job.title = Lavoro di Woodcutting
+quest.mmo_christmas_shepherd_skill_job.flavor = Il fuoco di Babbo Natale mangia legna tutta la notte. Passa la giornata a tagliare alberi e diventa più rapido con l'ascia.
+
+# ---- The errands (only where MMO Skill Tree is missing) ----
+quest.christmas_errand_wheat.title = Grano per il Mulino
+quest.christmas_errand_wheat.flavor = La mia farina non si macina da sola. Portami del grano.
+quest.christmas_errand_bread.title = Pane per la Tavola
+quest.christmas_errand_bread.flavor = Anche gli aiutanti di Babbo Natale devono mangiare. Cuoci del pane.
+quest.christmas_errand_decorations.title = Commissione di Addobbi
+quest.christmas_errand_decorations.flavor = Metti su qualche addobbo di Natale a casa tua. Ghirlande, luci, un pupazzo di neve, va bene tutto ciò che luccica.
+quest.christmas_errand_wool.title = Lana per le Calze
+quest.christmas_errand_wool.flavor = Mi serve lana per le calze di Natale. Portami dei rotoli di lana.
+quest.christmas_errand_logs.title = Commissione di Tronchi
+quest.christmas_errand_logs.flavor = Taglia tronchi da un albero qualsiasi. Stanotte la stalla delle renne ha bisogno di un fuoco.
+quest.christmas_errand_wolves.title = Commissione dei Lupi
+quest.christmas_errand_wolves.flavor = I lupi continuano ad annusare attorno al mio gregge. Caccia qualche lupo nei boschi o fuori nella neve.
+
+# ---- Steps ----
+objective.christmas.bring_tomas_wheat = Porta a Tomas {0} Grano
+objective.christmas.bake_bread = Cuoci {0} {0, plural, one {pagnotta} other {pagnotte}} di pane
+objective.christmas.put_up_decorations = Metti {0} {0, plural, one {addobbo} other {addobbi}} di Natale a casa
+objective.christmas.bring_elsie_wool = Porta a Elsie {0} {0, plural, one {rotolo} other {rotoli}} di lana
+objective.christmas.hunt_wolves = Caccia {0} {0, plural, one {lupo} other {lupi}}
+objective.christmas.bake_treats = Cuoci {0} dolcetti di Tomas
+
+# ---- Two days inside Christmas ----
+calendar.christmas_day.name = Giorno di Natale
+calendar.christmas_day.flavor = Il gran giorno in persona.
+calendar.christmas_new_years_eve.name = Notte di Capodanno
+calendar.christmas_new_years_eve.flavor = L'ultima notte dell'anno.
+
+# ---- The boosts (only where MMO Skill Tree runs) ----
+boostrule.mmo_christmas_trades.title = Natale
+boostrule.mmo_christmas_day.title = Giorno di Natale
+boostrule.mmo_christmas_new_years_eve.title = Notte di Capodanno
+
+# ---- The Christmas Set's skill half (only where MMO Skill Tree runs) ----
+# A set's notice is a toast, so no value carries markup.
+gearset.mmo_christmas_set.tier_half = Più XP di Woodcutting.
+gearset.mmo_christmas_set.tier_full = Ancora più XP di Woodcutting, e più fortuna quando tagli gli alberi.
+
+# ---- Christmas Morning's treats, and Bram's present ----
+lootable.christmas_treats.title = Un Sacchetto di Dolcetti
+lootable.christmas_treats.flavor = Bastoncini di zucchero, biscotti o cioccolata, e ogni tanto una Torta di Natale intera.
+lootable.christmas_bram_decorations.title = Il Regalo di Bram
+lootable.christmas_bram_decorations.flavor = Un piccolo extra da Bram in ogni regalo che apri: un addobbo di Natale per casa tua.
+
+# ---- The villagers' secrets ----
+quest.christmas_tomas_apprentice.title = L'Apprendista di Tomas
+quest.christmas_tomas_apprentice.flavor = Cuoci i miei dolcetti di Natale. Conta ogni dolcetto che fai. Cuocine abbastanza e ti vendo la ricetta del mio Pane di Natale.
+quest.christmas_elsie_apprentice.title = L'Apprendista di Elsie
+quest.christmas_elsie_apprentice.flavor = Metti degli addobbi di Natale a casa tua. Mettine abbastanza e ti vendo il mio Costume da Renna.
+quest.christmas_bram_apprentice.title = L'Apprendista di Bram
+quest.christmas_bram_apprentice.flavor = Abbatti tronchi da un albero qualsiasi. Tagliane abbastanza e ogni Regalo di Natale che apri contiene un piccolo extra da parte mia.
+shop.christmas_offer_recipe_tomas_loaf.title = Ricetta: Pane di Natale di Tomas
+shop.christmas_offer_recipe_tomas_loaf.desc = Il pane dolce di Tomas in persona. Ti muovi più in fretta e il freddo morde meno finché dura.
+shop.christmas_offer_reindeer_suit.title = Costume da Renna
+shop.christmas_offer_reindeer_suit.desc = Indossalo e per un po' sei una delle renne di Babbo Natale.
+# A lock line reads "Requires " and then one of these; each server loads the one its overlay names.
+factor.christmas_tomas_key.name = aver finito L'Apprendista di Tomas
+factor.christmas_tomas_key.name_mmo = aver finito L'Apprendista di Tomas o il livello 20 di Crafting
+factor.christmas_elsie_key.name = aver finito L'Apprendista di Elsie
+factor.christmas_elsie_key.name_mmo = aver finito L'Apprendista di Elsie o il livello 20 di Building
+# A costume's buff-bar tile name. Its effect's Name is this key in full (christmas.mmo.effect...).
+effect.christmas_costume_reindeer_suit.name = Costume da Renna
+
+# ---- Tomas's secret, in his Christmas conversation ----
+dialogue.christmas_miller.apprentice_offer.text = Ho un segreto: un <b>Pane di Natale</b> tutto mio, più dolce di qualsiasi torta.\nCuoci per un po' i miei dolcetti di Natale e ti vendo la ricetta.
+dialogue.christmas_miller.apprentice_offer.opt.accept = Insegnami.
+dialogue.christmas_miller.apprentice_brief.text = Cuoci <b>Biscotti di Pan di Zenzero</b>, <b>Cioccolata Calda</b> o <b>Torta di Natale</b>. Conta ogni cosa. Torna quando ne hai cotti abbastanza.
+dialogue.christmas_miller.apprentice_ready.text = Guardati, un vero fornaio. Ora la ricetta del mio <b>Pane di Natale</b> è nel mio negozio per te.
+dialogue.christmas_miller.apprentice_ready.opt.turnin = Grazie, Tomas.
+dialogue.christmas_miller.opt.secret_skill = E se sono già un bravo cuoco?
+dialogue.christmas_miller.secret_skill.text = Allora non ti servono le mie lezioni. Arriva al <b>livello 20 di Crafting</b> e ti vendo comunque la ricetta del mio <b>Pane di Natale</b>.\nOppure cuoci un po' con me. Va bene l'una e l'altra.
+
+# ---- Elsie's secret, in her Christmas conversation ----
+dialogue.christmas_weaver.apprentice_offer.text = Ho un segreto: un <b>Costume da Renna</b> che ho cucito io. Non è per tutti.\nMetti degli <b>addobbi di Natale</b> a casa tua, e quando ne avrai messi abbastanza, te ne vendo uno.
+dialogue.christmas_weaver.apprentice_offer.opt.accept = Addobberò la casa.
+dialogue.christmas_weaver.apprentice_brief.text = Metti a casa tua ghirlande, luci, corone, pupazzi di neve, qualsiasi addobbo di Natale. Qui nel tempio non si può mettere niente. Gli addobbi li trovi sullo scaffale delle feste nel negozio di Babbo Natale, e dentro i Regali di Natale.
+dialogue.christmas_weaver.apprentice_ready.text = La tua casa deve essere meravigliosa. Ora il mio <b>Costume da Renna</b> è nel mio negozio per te.
+dialogue.christmas_weaver.apprentice_ready.opt.turnin = Grazie, Elsie.
+dialogue.christmas_weaver.opt.secret_skill = E se so già addobbare bene?
+dialogue.christmas_weaver.secret_skill.text = Allora non ti servono le mie lezioni. Arriva al <b>livello 20 di Building</b> e ti vendo comunque il mio <b>Costume da Renna</b>.\nOppure addobba un po' con me. Va bene in tutti e due i modi.
+
+# ---- Bram's secret, in his Christmas conversation ----
+dialogue.christmas_shepherd.apprentice_offer.text = Ho un segreto. Aiutami ad abbattere tronchi e ogni <b>Regalo di Natale</b> che apri contiene un piccolo extra da parte mia. Un addobbo, magari il fiocco di neve per la cima dell'albero.
+dialogue.christmas_shepherd.apprentice_offer.opt.accept = Taglio io.
+dialogue.christmas_shepherd.apprentice_brief.text = Taglia tronchi da un albero qualsiasi. Conta ogni blocco di tronco. Torna quando ne hai abbastanza.
+dialogue.christmas_shepherd.apprentice_ready.text = Che bella catasta. D'ora in poi, ogni <b>Regalo di Natale</b> che apri ha dentro un piccolo extra da parte mia.
+dialogue.christmas_shepherd.apprentice_ready.opt.turnin = Grazie, Bram.
+dialogue.christmas_shepherd.opt.secret_skill = E se sono già bravo con l'ascia?
+dialogue.christmas_shepherd.secret_skill.text = Allora non hai bisogno di me. Arriva al <b>livello 20 di Woodcutting</b> e ogni <b>Regalo di Natale</b> che apri contiene un piccolo extra da parte mia.\nOppure taglia un po' con me. Va bene l'una e l'altra.

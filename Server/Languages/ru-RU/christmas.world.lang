@@ -1,0 +1,38 @@
+# Christmas - the calendar's words (what Christmas and Christmas Morning are called, and their banners),
+# the costumes' names and the notice for Santa's Sack. Keys are written bare: the library finds each one
+# by its tail, whatever this file is called. Banners and notices print markup as text, so none of these
+# values carries any.
+
+# ---- Christmas ----
+calendar.christmas.name = Рождество
+calendar.christmas.flavor = Санта-Клаус в Забытом храме, а трорки в колпаках Санта-Клауса утащили его подарки.
+calendar.christmas.herald.start = Рождество
+calendar.christmas.herald.start.sub = Санта-Клаус в Забытом храме, а трорки украли его подарки.
+calendar.christmas.herald.end = Рождество закончилось
+calendar.christmas.herald.end.sub = Сани Санта-Клауса убраны до следующего года.
+
+# ---- Christmas Morning ----
+calendar.christmas_morning.name = Рождественское утро
+calendar.christmas_morning.flavor = Рождественское утро в Забытом храме, и под ёлкой Санта-Клауса что-то лежит.
+calendar.christmas_morning.herald.start = С Рождеством
+calendar.christmas_morning.herald.start.sub = Загляни к Санта-Клаусу в Забытый храм.
+
+# ---- Costumes ----
+# A costume's buff-bar tile name. Its effect's Name is this key in full (christmas.world.effect...),
+# because the client reads an effect's Name exactly as written.
+effect.christmas_costume_elf.name = Костюм эльфа
+effect.christmas_costume_reindeer.name = Костюм оленя
+effect.christmas_costume_elf_suit.name = Эльфийский наряд
+effect.christmas_costume_santa.name = Наряд Санта-Клауса
+
+# ---- Christmas Cheer ----
+# What a friend's present leaves on you: its buff-bar tile name. Its effect's Name is this key in full.
+effect.christmas_cheer.name = Рождественское настроение
+
+# ---- Santa's Sack ----
+notify.christmas_santas_sack = Мешок Санта-Клауса за то, что ты поднялся ещё выше в Списке хороших.
+
+# ---- Christmas Eve ----
+# The banner when a player collects Christmas Eve's pay. The sub line's {0} is the player's name.
+notify.christmas_eve_delivered = Сани полны
+notify.christmas_eve_delivered.sub = {0} помогает Санта-Клаусу подготовиться к Сочельнику.
