@@ -1,0 +1,18 @@
+{
+  "$Comment": "The recipe page for Martha's Harvest Salad (Harvest_Feast_Recipe_Harvest_Salad), sold to players Friendly with her, the rank her favor calls Neighbor. Requires is a lock, not a hide: a player below the rank still sees the offer, locked, with the rank's own name in the reason, and the Season leaf on the base still hides it while the feast is off. A player buys it once (Limits.Total). Its picture is the dish.",
+  "Parent": "Harvest_Feast_Offer_Base",
+  "Text": {
+    "TitleKey": "shop.harvest_feast_offer_recipe_harvest_salad.title",
+    "FlavorKey": "shop.harvest_feast_offer_recipe_harvest_salad.desc"
+  },
+  "Icon": "Harvest_Feast_Harvest_Salad",
+  "Listing": { "Category": "kitchen", "SortOrder": 20 },
+  "Cost": { "Currencies": { "Harvest_Feast_Coins": 60 } },
+  "Limits": { "Total": 1 },
+  "Requires": {
+    "Factors": [
+      { "Factor": "ziggfreedcommon:reputation_rank", "Param": "Harvest_Feast_Host/Friendly", "Min": 1 }
+    ]
+  },
+  "Rewards": [ { "Kind": "Item", "Params": { "Item": "Harvest_Feast_Recipe_Harvest_Salad", "Count": 1 } } ]
+}

@@ -9,7 +9,7 @@
 
 The seed is JackoLantern01.blockymodel and JackoLantern01_Texture.png, read from tools/seed/
 (a byte copy, kept beside the tool so the pack rebuilds from its own repo) unless --seed
-names another folder. The vanilla inputs are byte copies of eighteen files from the installed
+names another folder. The vanilla inputs are byte copies of twenty-four files from the installed
 game's Assets.zip, kept under tools/seed/vanilla/ at their Assets.zip paths (VANILLA_FILES);
 --vendor rewrites them from the Assets.zip it is given. A rerun writes byte-identical
 files: nothing here is random, and PNGs carry no metadata.
@@ -43,6 +43,22 @@ What it writes (pack-relative):
       orthographic renderer at each family's vanilla IconProperties angle.
   Common/Icons/ModelsGenerated/Hallows_Eve_*.png        128x128 model icons for the mobs and the
       Horseman's Steed (drawn full size on the Steed Trophy's atlas).
+  Common/Blocks/Harvest_Feast/Golden_Plate/Golden_Plate_Texture.png  Martha's Golden Plate, Harvest
+      Feast's keepsake: the game's plate texture (PLATE_TEXTURE) recoloured gold by its own shading,
+      worn on the game's plate model, so no model is derived.
+  Common/Icons/ItemsGenerated/Harvest_Feast_Golden_Plate.png  its icon: the game's own plate icon
+      (PLATE_ICON) recoloured the same gold and sized to fill a 64x64 item icon.
+  Common/Icons/ItemsGenerated/Harvest_Feast_Turkey_Trophy.png  the Turkey Trophy's icon: the game's
+      own turkey portrait (TURKEY_ICON) sized to a 64x64 item icon, nothing redrawn.
+  Common/Blocks/Harvest_Feast/Golden_Turkey_Trophy/Golden_Turkey_Trophy_Texture.png  the Golden Turkey
+      Trophy: the game's turkey texture (TURKEY_TEXTURE) recoloured gold the Golden Plate's way, worn on
+      the game's turkey model; its icon Common/Icons/ItemsGenerated/Harvest_Feast_Golden_Turkey_Trophy.png
+      is the turkey portrait in the same gold, sized to 64x64.
+  Common/Items/Harvest_Feast/Great_Turkey_Mantle/Great_Turkey_Mantle_Texture.png  the Great Turkey
+      Mantle: the game's raven leather chest texture (RAVEN_CHEST_TEXTURE) with its blue-black feathers
+      turned a turkey's bronze (TURKEY_FEATHER_RAMP), worn on the game's raven chest model; its icon
+      Common/Icons/ItemsGenerated/Harvest_Feast_Great_Turkey_Mantle.png is the game's raven chest icon
+      (RAVEN_CHEST_ICON) recoloured the same way, at its own 64x64.
 
 What it reads from the pack and never writes: the artist's hand-made Headless Horseman art, copied
 into Common/ as it came. Common/Items/Hallows_Eve/Horseman_Armor/ holds his armour (the collar
@@ -262,10 +278,41 @@ PLAYER = "Characters/Player.blockymodel"
 HORSE = "NPC/Livestock/Horse/Models/Model.blockymodel"
 STRAP = "Resources/Materials/Strap_Leather.blockymodel"
 STRAP_TEXTURE = "Resources/Materials/Strap_Leather_Texture.png"
+# The game's plate (Deco_Plate): its 64x32 texture and its 64x64 item icon. Harvest Feast's Golden
+# Plate wears the game's plate model with a gold recolour of the texture, and takes the same gold
+# recolour of the icon, sized to fill the square: an item's Icon must sit under
+# Icons/ItemsGenerated/ or Icons/Items/.
+PLATE_TEXTURE = "Blocks/Miscellaneous/Plate_Texture.png"
+PLATE_ICON = "Icons/ItemsGenerated/Deco_Plate.png"
+GOLDEN_PLATE_TEXTURE = "Blocks/Harvest_Feast/Golden_Plate/Golden_Plate_Texture.png"
+GOLDEN_PLATE_ICON = f"{ICONS}/Harvest_Feast_Golden_Plate.png"
+# Dark to bright: the plate's own shading, lowest to highest, laid over these golds.
+GOLD_RAMP = [(0.0, "#6b4510"), (0.35, "#a8741e"), (0.65, "#d9a63a"), (0.85, "#f2cf66"), (1.0, "#fff3c0")]
+# The game's own 128x128 turkey portrait, which Harvest Feast's Turkey Trophy (a block wearing the
+# game's turkey model, a rare drop from a Wild Turkey) takes as its item icon, sized to 64x64: an
+# item's Icon must sit under Icons/ItemsGenerated/ or Icons/Items/, and the game ships no turkey there.
+TURKEY_ICON = "Icons/ModelsGenerated/Turkey.png"
+TURKEY_TROPHY_ICON = f"{ICONS}/Harvest_Feast_Turkey_Trophy.png"
+# The Golden Turkey Trophy, the Great Turkey's rarest find: the Turkey Trophy's block (the game's turkey
+# model) wearing the game's turkey texture recoloured gold by its own shading, and the game's turkey
+# portrait recoloured the same gold for its item icon.
+TURKEY_TEXTURE = "NPC/Livestock/Turkey/Models/Texture.png"
+GOLDEN_TURKEY_TEXTURE = "Blocks/Harvest_Feast/Golden_Turkey_Trophy/Golden_Turkey_Trophy_Texture.png"
+GOLDEN_TURKEY_ICON = f"{ICONS}/Harvest_Feast_Golden_Turkey_Trophy.png"
+# The Great Turkey Mantle, the chest piece only the Great Turkey drops: the game's raven leather chest
+# (its model, worn as it is) with the raven's blue-black feathers turned a turkey's bronze, the leather
+# left alone; its icon is the game's raven chest icon recoloured the same way.
+RAVEN_CHEST_TEXTURE = "Items/Armors/Leather_Raven/Chest_Texture.png"
+RAVEN_CHEST_ICON = "Icons/ItemsGenerated/Armor_Leather_Raven_Chest.png"
+GREAT_TURKEY_MANTLE_TEXTURE = "Items/Harvest_Feast/Great_Turkey_Mantle/Great_Turkey_Mantle_Texture.png"
+GREAT_TURKEY_MANTLE_ICON = f"{ICONS}/Harvest_Feast_Great_Turkey_Mantle.png"
+# Dark to bright: a turkey's tail feathers, from the brown at the quill to the pale band at the tip.
+TURKEY_FEATHER_RAMP = [(0.0, "#2b170c"), (0.3, "#5a3218"), (0.6, "#8f5426"), (0.82, "#c08240"), (1.0, "#f0d08a")]
 VANILLA_FILES = tuple(f"Common/{rel}" for rel in (
     WORKBENCH, WORKBENCH_TEXTURE, WAND, WAND_TEXTURE, SPIRIT, SPIRIT_TEXTURE,
     WRAITH, WRAITH_TEXTURE, ESSENCE, ESSENCE_TEXTURE, GHOUL, GHOUL_TEXTURE,
-    SKELETON, SKELETON_BURNT_TEXTURE, PLAYER, HORSE, STRAP, STRAP_TEXTURE))
+    SKELETON, SKELETON_BURNT_TEXTURE, PLAYER, HORSE, STRAP, STRAP_TEXTURE, PLATE_TEXTURE, PLATE_ICON,
+    TURKEY_ICON, TURKEY_TEXTURE, RAVEN_CHEST_TEXTURE, RAVEN_CHEST_ICON))
 
 # --- the Cursed Geode: a scripted stone with a lit crack (64x64 texture, x, y, w, h) ---------
 
@@ -1562,6 +1609,35 @@ def reins_texture(texture):
     return rgba
 
 
+def gold_recolour(texture, min_alpha=0.5):
+    """Martha's Golden Plate: the game's plate shading laid over GOLD_RAMP, darkest to brightest. Only
+    pixels at least `min_alpha` opaque are recoloured, so the soft shadow a vanilla icon carries
+    under the plate stays as it is."""
+    rgba = texture.astype(np.float64) / 255.0
+    solid = rgba[..., 3] >= min_alpha
+    lum = luminance(rgba[..., :3])
+    lo, hi = float(lum[solid].min()), float(lum[solid].max())
+    colour = ramp((lum - lo) / max(hi - lo, 1e-6), GOLD_RAMP)
+    rgba[..., :3] = np.where(solid[..., None], colour, rgba[..., :3])
+    return rgba
+
+
+def turkey_feather_recolour(texture, min_alpha=0.5):
+    """The Great Turkey Mantle: the raven chest's blue-black feathers (blue hue, some saturation) laid
+    over TURKEY_FEATHER_RAMP by their own shading, darkest to brightest; the leather and its stitching
+    keep their colour. Only pixels at least `min_alpha` opaque are read, so an icon's soft shadow stays."""
+    rgba = texture.astype(np.float64) / 255.0
+    hsv = rgb_to_hsv(rgba[..., :3])
+    feather = (rgba[..., 3] >= min_alpha) & (hsv[..., 0] > 0.5) & (hsv[..., 0] < 0.8) & (hsv[..., 1] > 0.15)
+    if not feather.any():
+        raise ValueError("no feather pixels found to recolour")
+    lum = luminance(rgba[..., :3])
+    lo, hi = float(lum[feather].min()), float(lum[feather].max())
+    colour = ramp((lum - lo) / max(hi - lo, 1e-6), TURKEY_FEATHER_RAMP)
+    rgba[..., :3] = np.where(feather[..., None], colour, rgba[..., :3])
+    return rgba
+
+
 def paste(atlas, rgba, at):
     """Copies an RGBA uint8 texture onto a float atlas with its top-left corner at `at`."""
     x, y = at
@@ -1803,7 +1879,12 @@ def icon_png(model, texture_rgba, angles, size=64):
     """Renders, trims the alpha bounding box, centres it on a square with a 4% margin, and
     resizes to size x size with LANCZOS (the blockbench-hytale skill's icon recipe)."""
     canvas = render(model, texture_rgba, angles)
-    image = Image.fromarray(np.clip(np.rint(canvas * 255), 0, 255).astype(np.uint8))
+    return square_icon_png(Image.fromarray(np.clip(np.rint(canvas * 255), 0, 255).astype(np.uint8)), size)
+
+
+def square_icon_png(image, size=64):
+    """Trims an RGBA picture's alpha bounding box, centres it on a square with a 4% margin, and
+    resizes to size x size with LANCZOS: the icon recipe every icon here shares."""
     image = image.crop(image.getchannel("A").getbbox())
     side = max(image.size)
     side += 2 * round(side * 0.04)
@@ -1936,6 +2017,9 @@ def build(seed_dir, art_dir=PACK / "Common"):
         horse_textures[HORSE_COAT], horse_textures[HORSE_BARDING_TEXTURE], horse_textures[HORSE_TAIL_TEXTURE],
         plinth)
     images[REINS_TEXTURE] = reins_texture(vanilla[STRAP_TEXTURE])
+    images[GOLDEN_PLATE_TEXTURE] = gold_recolour(vanilla[PLATE_TEXTURE])
+    images[GOLDEN_TURKEY_TEXTURE] = gold_recolour(vanilla[TURKEY_TEXTURE])
+    images[GREAT_TURKEY_MANTLE_TEXTURE] = turkey_feather_recolour(vanilla[RAVEN_CHEST_TEXTURE])
     outputs = {}
     for name, model in models.items():
         outputs[f"Common/{name}"] = (json.dumps(model, indent=2) + "\n").encode("utf-8")
@@ -1958,6 +2042,13 @@ def build(seed_dir, art_dir=PACK / "Common"):
         rigs[worn(name)] = armor_icon_model(vanilla[PLAYER], name, rigs[name])
     for folder, icon, model_name, texture_name, angles, size in ICON_PLAN:
         outputs[f"{folder}/{icon}.png"] = icon_png(rigs[model_name], texture_rgba[texture_name], angles, size)
+    gold_icon = np.clip(np.rint(gold_recolour(vanilla[PLATE_ICON]) * 255.0), 0, 255).astype(np.uint8)
+    outputs[GOLDEN_PLATE_ICON] = square_icon_png(Image.fromarray(gold_icon))
+    outputs[TURKEY_TROPHY_ICON] = square_icon_png(Image.fromarray(vanilla[TURKEY_ICON]))
+    golden_turkey = np.clip(np.rint(gold_recolour(vanilla[TURKEY_ICON]) * 255.0), 0, 255).astype(np.uint8)
+    outputs[GOLDEN_TURKEY_ICON] = square_icon_png(Image.fromarray(golden_turkey))
+    mantle_icon = np.clip(np.rint(turkey_feather_recolour(vanilla[RAVEN_CHEST_ICON]) * 255.0), 0, 255)
+    outputs[GREAT_TURKEY_MANTLE_ICON] = png_bytes(Image.fromarray(mantle_icon.astype(np.uint8)))
     return dict(sorted(outputs.items())), rigs, texture_rgba
 
 

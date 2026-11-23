@@ -1,0 +1,4 @@
+{
+  "$Comment": "The game's own grown turkey (the role Turkey), for Martha's favor. Her favor's Kills table (ZiggfreedCommon/Reputations/SeasonsOfOrbis/Harvest_Feast_Host.json) pays a little favor for each one put down while Harvest Feast runs, less than for the feast's own Wild Turkeys (Harvest_Feast_Turkeys). Turkey_Chick and the tame turkey roles are left out on purpose, so raising turkeys in a pen is no way to farm her favor; her turkey quests count the same Turkey role through their Targets. No reputation group names this group, so it changes nothing about how turkeys treat a player.",
+  "IncludeRoles": [ "Turkey" ]
+}

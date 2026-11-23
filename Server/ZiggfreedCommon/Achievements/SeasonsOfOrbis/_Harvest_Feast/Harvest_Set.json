@@ -1,0 +1,30 @@
+{
+  "$Comment": [
+    "Wear the whole Harvest Set: the Harvest Hat, Tunic (or the Great Turkey Mantle in its place), Gloves and Trousers.",
+    "GEAR_SET_TIER counts a set's bonus tier coming on as gear goes on, its amount the number of pieces",
+    "that tier takes, so Amount 4 is met the moment the set's four-piece tier",
+    "(GearSets/SeasonsOfOrbis/Harvest_Feast_Harvest_Set.json) comes on. Logging in already dressed counts",
+    "nothing: the pieces have to go on.",
+    "",
+    "Earned once and kept. The set carries from one feast to the next, so this file has no Parent: the",
+    "yearly skeleton would ask for the same clothes every year. It carries no full_table tag, so The Full",
+    "Table never waits on it. It pays nothing but its points. The criterion's TextKey words the step from",
+    "this pack's own lang file. The _Harvest_Feast folder makes the id harvest_feast_harvest_set."
+  ],
+  "Listing": {
+    "Category": "Seasons",
+    "Subcategory": "Harvest_Feast",
+    "SortOrder": 110,
+    "Icon": "Harvest_Feast_Harvest_Tunic"
+  },
+  "Scoring": { "Points": 25 },
+  "Criteria": {
+    "wear-the-set": {
+      "Kind": "GEAR_SET_TIER",
+      "Target": "Harvest_Feast_Harvest_Set",
+      "MatchMode": "EXACT",
+      "Amount": 4,
+      "TextKey": "objective.harvest_feast.wear_harvest_set"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$Comment": "Martha's Roast's own extra: while it lasts, every gain of Martha's favor comes 10% faster. It adds 10 to TrackGain_Harvest_Feast_Host (whole percent points, Additive on the Max), the same stat the Harvest Set raises, so it stacks with the set. 600 seconds (ten minutes), restarted, never stacked, by eating another Roast (Overwrite). Its picture is the feast's pumpkin pie. The Roast's description in items.lang writes the number out (Favor Boost), so change it with this.",
+  "Name": "items.effect.harvest_feast_food_favor.name",
+  "StatusEffectIcon": "Icons/ItemsGenerated/Food_Pie_Pumpkin.png",
+  "RawStatModifiers": {
+    "TrackGain_Harvest_Feast_Host": [
+      {
+        "Amount": 10,
+        "CalculationType": "Additive",
+        "Target": "Max"
+      }
+    ]
+  },
+  "OverlapBehavior": "Overwrite",
+  "Duration": 600
+}

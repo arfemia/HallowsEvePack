@@ -1,0 +1,68 @@
+{
+  "$Comment": [
+    "The Turkey Graveyard, Harvest Feast's repeatable fight: where the souls of the feast's hunted turkeys",
+    "linger, and the Great Turkey with them. Martha the Cook opens it from her conversation's graveyard",
+    "screen while the feast runs (Dialogues/SeasonsOfOrbis/Harvest_Feast_Host.json). Every area of a copy pastes",
+    "Harvest_Feast/Harvest_Feast_Turkey_Graveyard.prefab.json, the Headless Horseman's graveyard with the Great",
+    "Turkey's fight's entity, its spawn marker, the points its health packs drop on and a way-out pad in the",
+    "entrance room (tools/arena_markers.py writes it), so every fresh paste stages a fresh fight. The prefab's",
+    "anchor is the entrance room's floor, so EntryOffset lands an arriving party one block up, standing on it;",
+    "the Leave_Instance pad behind them takes a player back out. EntryYaw 180 turns them to face south, into",
+    "the graveyard. IntroCamera plays the Horseman's graveyard intro (Hallows_Eve_Graveyard_Intro under",
+    "ZiggfreedCommon/CameraSequences), a short sweep over the graves, since both places share one layout.",
+    "",
+    "Season keeps it closed outside Harvest Feast. Share: one party to an area, up to five players, and four",
+    "areas to a copy. Complete names the Great Turkey's fight, so the run clears when it falls, and Rewards",
+    "rolls Harvest_Feast_Turkey_Graveyard_Clear for each member present as a Claim: full the first clear each",
+    "day, half on later ones. InChest puts that Claim in the chest the Great Turkey leaves where it fell,",
+    "beside its own two, so no results screen opens: each member sees a banner naming the clear with",
+    "ChestKey's line under it. Text names it in the reader's language (harvestfeast.progression.lang), and",
+    "its GoalKey is the line each player reads as they arrive: what to do there.",
+    "",
+    "EntryCost is the price of going in: one Wishbone (Martha pays one for each Extra Turkeys handed in),",
+    "taken from whoever opens an area for their party; partymates who follow into that fight walk in free.",
+    "Confirm is left out, so it is on: before anything is spent, the player opening the area sees",
+    "CommonLib's confirm screen with the graveyard's name and description, the Wishbone, how many they hold",
+    "and how many it takes, and a button whose words are ConfirmKey's; it spends the Wishbone and sends the",
+    "party in, and closing the screen spends nothing. With none, the button is off and the HintKey line says",
+    "where Wishbones come from. Change Count to change the price, and Martha's way-in label, which names it,",
+    "with it."
+  ],
+  "Enabled": true,
+  "Share": {
+    "PartyLocked": true,
+    "MaxPlayers": 5,
+    "AreasPerCopy": 4
+  },
+  "Area": {
+    "Prefab": "Harvest_Feast/Harvest_Feast_Turkey_Graveyard.prefab.json",
+    "EntryOffset": {
+      "Y": 1
+    },
+    "EntryYaw": 180,
+    "IntroCamera": "Hallows_Eve_Graveyard_Intro"
+  },
+  "Complete": {
+    "Bosses": [ "Harvest_Feast_Great_Turkey_Encounter" ]
+  },
+  "Rewards": {
+    "Lootable": "Harvest_Feast_Turkey_Graveyard_Clear",
+    "Diminish": { "Steps": [1, 0.5], "Window": "Daily" },
+    "InChest": true
+  },
+  "EntryCost": {
+    "Items": [ { "Item": "Harvest_Feast_Wishbone", "Count": 1 } ],
+    "HintKey": "dungeon.harvest_feast_turkey_graveyard.cost_hint",
+    "ConfirmKey": "dungeon.harvest_feast_turkey_graveyard.confirm"
+  },
+  "Copy": {
+    "EmptyCloseSeconds": 60
+  },
+  "Season": "Harvest_Feast",
+  "Text": {
+    "NameKey": "dungeon.harvest_feast_turkey_graveyard.name",
+    "DescriptionKey": "dungeon.harvest_feast_turkey_graveyard.description",
+    "GoalKey": "dungeon.harvest_feast_turkey_graveyard.goal",
+    "ChestKey": "dungeon.harvest_feast_turkey_graveyard.chest"
+  }
+}

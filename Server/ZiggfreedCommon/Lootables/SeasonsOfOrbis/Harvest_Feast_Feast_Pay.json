@@ -1,19 +1,32 @@
 {
   "$Comment": [
-    "What sitting down to the feast pays, once a year. The plate with the year on it is not here: it is",
-    "the quest's own first Claim row, whose StackNameArg @run names it for the year's run.",
+    "What sitting down to the feast pays, once a year. Martha's Golden Plate with the year on it is not",
+    "here: it is the quest's own first Claim row, whose StackNameArg @run names it for the year's run.",
     "",
-    "The first roll always pays festival tokens and two meat pies to take home, the feast's leftovers.",
-    "The second roll is a chance on top; Chance is a percent from 0 to 100. Favor rides the quest's own",
-    "Rewards."
+    "The first roll always pays Harvest Coins, festival tokens and the feast's leftovers: two meat pies to",
+    "take home, and the pumpkin pie, roast vegetable and cooked wildmeat that the three supper deliveries",
+    "(Supper_Tomas, Supper_Elsie and Supper_Bram) ask the player to take to the villagers. Its Cue plays",
+    "the moment Harvest_Feast_Feast_Served",
+    "(FeedbackMoments/SeasonsOfOrbis/), the feast's celebration, as the pay is collected; this table pays",
+    "only The Feast, once a year, so the cue never repeats. The second roll is a chance on top; Chance is",
+    "a percent from 0 to 100. Favor rides the quest's own Rewards."
   ],
   "Name": "Harvest_Feast_Feast_Pay",
   "Rolls": [
     {
       "Grants": {
-        "Rewards": [ { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "5" } } ],
-        "Items": [ { "Item": "Food_Pie_Meat", "Count": 2 } ]
-      }
+        "Rewards": [
+          { "Kind": "Currency", "Params": { "Currency": "Harvest_Feast_Coins", "Amount": "40" } },
+          { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "5" } }
+        ],
+        "Items": [
+          { "Item": "Food_Pie_Meat", "Count": 2 },
+          { "Item": "Food_Pie_Pumpkin", "Count": 1 },
+          { "Item": "Food_Vegetable_Cooked", "Count": 1 },
+          { "Item": "Food_Wildmeat_Cooked", "Count": 1 }
+        ]
+      },
+      "Cue": "Harvest_Feast_Feast_Served"
     },
     {
       "Chance": { "Base": 20.0 },

@@ -1,0 +1,25 @@
+{
+  "$Comment": [
+    "The Turkey Graveyard's hard way in: the same source prefab and the same cells as",
+    "Harvest_Feast_Turkey_Graveyard.json beside this file, with the hard fight's entity",
+    "(Harvest_Feast_Great_Turkey_Encounter_Hard) on the open road south of the central plaza, the hard Great",
+    "Turkey's spawn marker on the plaza's north side, and a vanilla Leave_Instance pad against the entrance",
+    "room's back wall, the way out. Move a cell in both specs together, so the two graveyards stay one place.",
+    "Cells count from the anchor, and the fight's reach and leash from the fight's entity's cell. No health",
+    "pack points: no health packs fall on the hard fight. Containers stocks the same hidden chest from the",
+    "same drop list."
+  ],
+  "Source": "tools/arenas/ziggy_halloween.prefab.zip",
+  "Output": "Server/Prefabs/Harvest_Feast/Harvest_Feast_Turkey_Graveyard_Hard.prefab.json",
+  "StripSpawnMarkers": false,
+  "Encounter": { "Id": "Harvest_Feast_Great_Turkey_Encounter_Hard", "At": [0, 1, 66] },
+  "Markers": [
+    { "Id": "Harvest_Feast_Great_Turkey_Hard_Marker", "At": [0, 1, 46] }
+  ],
+  "Blocks": [
+    { "Name": "Leave_Instance", "At": [0, 1, -3] }
+  ],
+  "Containers": [
+    { "At": [-25, 1, 46], "Droplist": "Harvest_Feast_Drop_Turkey_Graveyard_Chest" }
+  ]
+}

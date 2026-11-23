@@ -1,0 +1,89 @@
+{
+  "$Comment": [
+    "What the Great Turkey's daily Claim (Rewards/Harvest_Feast/Harvest_Feast_Great_Turkey_Daily) pays, the",
+    "bigger Claim, for the first win each day. Every roll is read on its own: the first two always pay, the",
+    "last three are chances on top. The Claim keeps each roll a player wins with a chance equal to their share of",
+    "the fight.",
+    "",
+    "The first roll pays Harvest Coins and festival tokens through the Currency reward kind, the second one",
+    "of Martha's Turkey Pies, and the last a chance at two pumpkin pies. Favor is not here: favor rides a",
+    "quest's or a contract's own Rewards, never a pay table. Mmo_Harvest_Feast_Great_Turkey_Daily.json adds",
+    "Defense XP where MMO Skill Tree runs. Chance is a percent from 0 to 100. A companion mod adds rolls with",
+    "a file naming this table in ContributesTo.",
+    "",
+    "The last two rolls are the Great Turkey's chase, the Great Turkey Mantle and the Golden Turkey Trophy, at the same odds as its Boss Kill Claim: that Claim rolls them on every win, so the first win each day rolls them twice. These daily rolls are kept, like the others here, with a chance equal to the player's share of the fight, so the bonus is whole for a player who fought it alone. Raise or drop the Base here to tune only the first-win-each-day bonus."
+  ],
+  "Name": "Harvest_Feast_Great_Turkey_Daily",
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [
+          {
+            "Kind": "Currency",
+            "Params": {
+              "Currency": "Harvest_Feast_Coins",
+              "Amount": "20"
+            }
+          },
+          {
+            "Kind": "Currency",
+            "Params": {
+              "Currency": "Seasons_Of_Orbis_Festival_Token",
+              "Amount": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Grants": {
+        "Items": [
+          {
+            "Item": "Harvest_Feast_Turkey_Pie",
+            "Count": 1
+          }
+        ]
+      }
+    },
+    {
+      "Chance": {
+        "Base": 50.0
+      },
+      "Grants": {
+        "Items": [
+          {
+            "Item": "Food_Pie_Pumpkin",
+            "Count": 2
+          }
+        ]
+      }
+    },
+    {
+      "Chance": {
+        "Base": 6.0
+      },
+      "Grants": {
+        "Items": [
+          {
+            "Item": "Harvest_Feast_Great_Turkey_Mantle",
+            "Count": 1
+          }
+        ]
+      }
+    },
+    {
+      "Chance": {
+        "Base": 2.0
+      },
+      "HideInPreview": true,
+      "Grants": {
+        "Items": [
+          {
+            "Item": "Harvest_Feast_Golden_Turkey_Trophy",
+            "Count": 1
+          }
+        ]
+      }
+    }
+  ]
+}

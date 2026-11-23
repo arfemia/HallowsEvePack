@@ -1,0 +1,12 @@
+{
+  "$Comment": [
+    "What each member of the Great Turkey's fight is told as its fury begins, its last phase (its fight's",
+    "Phase3Behavior, Macro_Harvest_Feast_Great_Turkey_Rally, draws it, as it puts the effect of the same name",
+    "on the Great Turkey). The file name is the moment id. Key is a line in this pack's",
+    "harvestfeast.progression.lang, written bare."
+  ],
+  "Toast": {
+    "Title": { "Key": "notify.harvest_feast_great_turkey_fury" },
+    "Tone": "Warning"
+  }
+}

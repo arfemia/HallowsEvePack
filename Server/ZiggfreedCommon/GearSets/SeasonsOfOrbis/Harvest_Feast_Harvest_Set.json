@@ -1,0 +1,28 @@
+{
+  "$Comment": "The Harvest Set: the Harvest Hat, Tunic, Gloves and Trousers, sold at Martha's shop as her favor grows, and the Great Turkey Mantle, the chest piece only the Great Turkey drops in the Turkey Graveyard. Members lists the five pieces, and Armor counts the members worn in armour slots, one per slot, so the Mantle and the Tunic share the chest slot and either one counts there: trading the Tunic for the Mantle never loses a tier. The first tier asks for any two of them (Armor 2) and adds Health; the second asks for all four (Armor 4) and adds more Health and raises every gain of Martha's favor by a percent (the stat TrackGain_Harvest_Feast_Host, 10 is +10%, on top of each piece's own). Every tier whose minimums hold applies, so the whole set wears both at once. Keep the tiers in this order: MMO Skill Tree's layer (Mmo_Harvest_Feast_Harvest_Set.json) joins the tiers that ask Armor 2 and Armor 4, and the engine files each tier's modifiers by its position. Raise or lower an Amount to tune the set; under Parent the Bonuses list replaces whole, so restate every tier you keep. The text keys live in harvestfeast.progression.lang.",
+  "Text": {"TitleKey": "gearset.harvest_feast_harvest_set.title"},
+  "Members": [
+    "Harvest_Feast_Harvest_Hat",
+    "Harvest_Feast_Harvest_Tunic",
+    "Harvest_Feast_Harvest_Gloves",
+    "Harvest_Feast_Harvest_Trousers",
+    "Harvest_Feast_Great_Turkey_Mantle"
+  ],
+  "Bonuses": [
+    {
+      "Armor": 2,
+      "Text": {"TitleKey": "gearset.harvest_feast_harvest_set.tier_half"},
+      "StatModifiers": {
+        "Health": [{"Amount": 5, "CalculationType": "Additive"}]
+      }
+    },
+    {
+      "Armor": 4,
+      "Text": {"TitleKey": "gearset.harvest_feast_harvest_set.tier_full"},
+      "StatModifiers": {
+        "Health": [{"Amount": 10, "CalculationType": "Additive"}],
+        "TrackGain_Harvest_Feast_Host": [{"Amount": 10, "CalculationType": "Additive", "Target": "Max"}]
+      }
+    }
+  ]
+}

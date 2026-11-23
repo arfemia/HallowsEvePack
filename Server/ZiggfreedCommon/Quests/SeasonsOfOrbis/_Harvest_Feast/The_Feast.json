@@ -1,12 +1,19 @@
 {
   "$Comment": [
     "The yearly feast: once the questline is done, bring the host a pumpkin pie, some cooked meat and",
-    "carrots, and sit down to the feast. Its pay holds that year's keepsake, a plate with the year on",
-    "it, collected with the rest at the host. The first Claim row is the plate: StackNameArg @run reads",
-    "as the label of the Harvest Feast run this quest is paid for, which for a yearly event is its year,",
-    "and StackNameKey, keepsake.harvest_feast_plate.name,",
-    "is stamped into every plate handed over and read back from the item, so never rename that key.",
-    "Finishing it also earns that year's keepsake achievement, harvest_feast_keepsake, for its points.",
+    "carrots, and sit down to the feast. Its pay holds that year's keepsake, Martha's Golden Plate",
+    "(Item/Items/Harvest_Feast/Harvest_Feast_Golden_Plate.json) with the year on it, collected with the",
+    "rest at the host. The first Claim row is the plate: StackNameArg @run reads as the label of the",
+    "Harvest Feast run this quest is paid for, which for a yearly event is its year, and StackNameKey,",
+    "keepsake.harvest_feast_golden_plate.name, is stamped into every plate handed over and read back from",
+    "the item, so never rename that key, nor keepsake.harvest_feast_plate.name, which names the game's",
+    "plates players already hold. Finishing it also earns that year's keepsake achievement,",
+    "harvest_feast_keepsake, for its points.",
+    "",
+    "Collecting it rolls Harvest_Feast_Feast_Pay, whose always-paying roll hands over the leftovers",
+    "the three supper deliveries offered next (Supper_Tomas.json, Supper_Elsie.json and Supper_Bram.json)",
+    "take round, and cues the celebration moment",
+    "Harvest_Feast_Feast_Served.",
     "",
     "Repeat.PerRun brings this one quest back once in each year's run of Harvest Feast: a run pays it",
     "once, a forced or moved run cannot pay it twice, and a feast left unfinished when the run ends waits",
@@ -20,7 +27,7 @@
   "Name": "The_Feast",
   "Parent": "Harvest_Feast_Quest_Base",
   "Listing": {
-    "Icon": "Deco_Plate",
+    "Icon": "Harvest_Feast_Golden_Plate",
     "Category": "main",
     "SortOrder": 40,
     "Chains": [ { "Id": "harvest_feast_host", "Tier": 4 } ]
@@ -35,6 +42,7 @@
       "Target": "Food_Pie_Pumpkin",
       "MatchMode": "EXACT",
       "Amount": 1,
+      "TextKey": "objective.harvest_feast.bring_pie",
       "Order": 1,
       "TurnInNpcId": "giver"
     },
@@ -43,6 +51,7 @@
       "Target": "Food_Wildmeat_Cooked",
       "MatchMode": "EXACT",
       "Amount": 4,
+      "TextKey": "objective.harvest_feast.bring_roast",
       "Order": 1,
       "TurnInNpcId": "giver"
     },
@@ -51,14 +60,15 @@
       "Target": "Plant_Crop_Carrot_Item",
       "MatchMode": "EXACT",
       "Amount": 10,
+      "TextKey": "objective.harvest_feast.bring_carrots",
       "Order": 1,
       "TurnInNpcId": "giver"
     }
   },
   "Rewards": {
     "Claim": [
-      { "Kind": "Item", "Params": { "Item": "Deco_Plate", "Count": "1",
-        "StackNameKey": "keepsake.harvest_feast_plate.name", "StackNameArg": "@run" } },
+      { "Kind": "Item", "Params": { "Item": "Harvest_Feast_Golden_Plate", "Count": "1",
+        "StackNameKey": "keepsake.harvest_feast_golden_plate.name", "StackNameArg": "@run" } },
       { "Kind": "Lootable", "Params": { "Lootable": "Harvest_Feast_Feast_Pay" } },
       { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 500 } },
       { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 400 } },

@@ -68,3 +68,43 @@ Hallows_Eve_Horsemans_Reins.description = Die eigenen Zügel des Kopflosen Reite
 Hallows_Eve_Horsemans_Reins.command_calm = Beruhigen
 Hallows_Eve_Horsemans_Steed_Trophy.name = Trophäe des Pferdes des Reiters
 Hallows_Eve_Horsemans_Steed_Trophy.description = Eine winzige Figur vom schwarzen Pferd des Kopflosen Reiters in seiner Rossrüstung, auf einem goldverzierten Sockel. Stell sie hin, wo du willst. Hin und wieder in seiner Bosskill-Abholung zu finden, und der Alte Jack verkauft eine.
+Harvest_Feast_Golden_Plate.name = Marthas Goldteller
+Harvest_Feast_Golden_Plate.description = Ein goldener Teller mit dem Jahr darauf, viel zu schön, um davon zu essen. Martha gibt jedem einen, der sich mit ihr zum Fest an die Tafel setzt, einmal pro Erntefest. Stell ihn hin, wo du willst, oder stapel die Teller mehrerer Jahre aufeinander.
+Harvest_Feast_Turkey_Trophy.name = Truthahntrophäe
+Harvest_Feast_Turkey_Trophy.description = Ein Truthahn, der bleibt, wo du ihn hinstellst. Hin und wieder lässt ein Wilder Truthahn einen zurück, und nur solange das Erntefest läuft. Stell ihn hin, wo du willst.
+Harvest_Feast_Golden_Turkey_Trophy.name = Goldene Truthahntrophäe
+Harvest_Feast_Golden_Turkey_Trophy.description = Ein Truthahn aus purem Gold. Ganz selten lässt der Große Truthahn eine fallen, bei jedem Sieg, öfter beim ersten Sieg des Tages und auf dem schweren Weg hinein. Stell sie auf, wo du willst.
+Harvest_Feast_Potion_Morph_Turkey.name = Trank der Truthahnverwandlung
+Harvest_Feast_Potion_Morph_Turkey.description = Trink ihn, und du siehst eine Weile wie ein Truthahn aus. Zu finden in der Bosskill-Abholung des Großen Truthahns, öfter auf dem schweren Weg hinein.
+Harvest_Feast_Great_Turkey_Mantle.name = Mantel des Großen Truthahns
+Harvest_Feast_Great_Turkey_Mantle.description = Leder, genäht mit den eigenen Schwanzfedern des Großen Truthahns, noch kalt vom Friedhof. Pfeile prallen daran ab, und Marthas Gunst kommt schneller, solange du ihn trägst. Teil des Ernte-Sets, anstelle der Erntetunika. Nur der Große Truthahn lässt ihn fallen, bei jedem Sieg, öfter beim ersten Sieg des Tages und auf dem schweren Weg hinein.
+Harvest_Feast_Wishbone.name = Wunschknochen
+Harvest_Feast_Wishbone.description = Der Wunschknochen eines Truthahns, vom Braten aufgehoben. <b>Martha die Köchin</b> im Vergessenen Tempel nimmt einen, um dich und deine Gruppe in den <b>Truthahnfriedhof</b> zu schicken, solange das Erntefest läuft.\n\nSie gibt dir jedes Mal einen, wenn du <b>Extra-Truthähne</b> abgibst.
+
+# Erntefest - das Ernte-Set, verkauft in Marthas Laden.
+Harvest_Feast_Harvest_Hat.name = Erntehut
+Harvest_Feast_Harvest_Hat.description = Ein warmer Wollhut für lange Tage auf den Feldern. Martha verkauft ihn in ihrem Laden, sobald sie dich einen Freund nennt. Teil des Ernte-Sets: Trag mehr davon für mehr Gesundheit, und das ganze Set, um ihre Gunst schneller zu gewinnen.
+Harvest_Feast_Harvest_Tunic.name = Erntetunika
+Harvest_Feast_Harvest_Tunic.description = Eine Wolltunika für lange Tage auf den Feldern. Martha verkauft sie in ihrem Laden, sobald du bei ihr Oberhaupt der Tafel bist. Teil des Ernte-Sets: Trag mehr davon für mehr Gesundheit, und das ganze Set, um ihre Gunst schneller zu gewinnen.
+Harvest_Feast_Harvest_Gloves.name = Erntehandschuhe
+Harvest_Feast_Harvest_Gloves.description = Warme Wollhandschuhe zum Pflücken in der Kälte. Martha verkauft sie in ihrem Laden, sobald sie dich einen Nachbarn nennt. Teil des Ernte-Sets: Trag mehr davon für mehr Gesundheit, und das ganze Set, um ihre Gunst schneller zu gewinnen.
+Harvest_Feast_Harvest_Trousers.name = Erntehose
+Harvest_Feast_Harvest_Trousers.description = Eine Wollhose, die einen Tag auf den Feldern aushält. Martha verkauft sie in ihrem Laden, sobald sie dich zur Familie zählt. Teil des Ernte-Sets: Trag mehr davon für mehr Gesundheit, und das ganze Set, um ihre Gunst schneller zu gewinnen.
+
+# Harvest Feast - Martha's three dishes, the recipe pages her shop sells for them, and what eating them does.
+Harvest_Feast_Turkey_Pie.name = Truthahnpastete
+Harvest_Feast_Turkey_Pie.description = Marthas eigene Fleischpastete. Stellt sofort <color is="#ffffff">5%</color> Gesundheit wieder her und gewährt:\n\n• <color is="#ffffff">Gesundheitsregeneration III</color>\n• <color is="#ffffff">Gesundheitsschub IV</color>: <color is="#ffffff">20%</color> mehr maximale Gesundheit und <color is="#ffffff">8%</color> weniger physischer und Projektilschaden\n\nDauer: <color is="#ffffff">10:00</color>\n\nBack sie auf einem Kochherd, sobald du Marthas Rezept gelernt hast.
+Harvest_Feast_Harvest_Salad.name = Erntesalat
+Harvest_Feast_Harvest_Salad.description = Karotten, Mais und Kürbis mit einer Prise Gewürz. Stellt sofort <color is="#ffffff">5%</color> Gesundheit wieder her und gewährt:\n\n• <color is="#ffffff">Gesundheitsregeneration III</color>\n• <color is="#ffffff">Ausdauerschub IV</color>: <color is="#ffffff">40%</color> mehr maximale Ausdauer\n\nDauer: <color is="#ffffff">10:00</color>\n\nStell ihn auf einem Kochherd her, sobald du Marthas Rezept gelernt hast.
+Harvest_Feast_Marthas_Roast.name = Marthas Braten
+Harvest_Feast_Marthas_Roast.description = Marthas beste Speise, Fleisch und Gemüse am Spieß gebraten. Stellt sofort <color is="#ffffff">5%</color> Gesundheit wieder her und gewährt:\n\n• <color is="#ffffff">Gesundheitsregeneration III</color>\n• <color is="#ffffff">Gesundheitsschub IV</color>: <color is="#ffffff">20%</color> mehr maximale Gesundheit und <color is="#ffffff">8%</color> weniger physischer und Projektilschaden\n• <color is="#ffffff">Ausdauerschub IV</color>: <color is="#ffffff">40%</color> mehr maximale Ausdauer\n• <color is="#ffffff">Gunstschub</color>: Marthas Gunst steigt <color is="#ffffff">10%</color> schneller\n\nDauer: <color is="#ffffff">10:00</color>\n\nKoch ihn auf einem Kochherd, sobald du Marthas Rezept gelernt hast.
+Harvest_Feast_Recipe_Turkey_Pie.name = Rezept: Truthahnpastete
+Harvest_Feast_Recipe_Turkey_Pie.description = Lehrt das Rezept für <item is="Harvest_Feast_Turkey_Pie"/>. Back sie auf einem Kochherd aus Teig, rohem Fleisch und Gewürzen.\n\nStellt sofort <color is="#ffffff">5%</color> Gesundheit wieder her und gewährt:\n\n• <color is="#ffffff">Gesundheitsregeneration III</color>\n• <color is="#ffffff">Gesundheitsschub IV</color>\n\nDauer: <color is="#ffffff">10:00</color>
+Harvest_Feast_Recipe_Harvest_Salad.name = Rezept: Erntesalat
+Harvest_Feast_Recipe_Harvest_Salad.description = Lehrt das Rezept für <item is="Harvest_Feast_Harvest_Salad"/>. Stell ihn auf einem Kochherd aus Karotten, Mais, einem Kürbis und Gewürzen her.\n\nStellt sofort <color is="#ffffff">5%</color> Gesundheit wieder her und gewährt:\n\n• <color is="#ffffff">Gesundheitsregeneration III</color>\n• <color is="#ffffff">Ausdauerschub IV</color>\n\nDauer: <color is="#ffffff">10:00</color>
+Harvest_Feast_Recipe_Marthas_Roast.name = Rezept: Marthas Braten
+Harvest_Feast_Recipe_Marthas_Roast.description = Lehrt das Rezept für <item is="Harvest_Feast_Marthas_Roast"/>. Koch ihn auf einem Kochherd aus einem Stock, rohem Fleisch, einer Karotte, Mais, einem Kürbis und Gewürzen.\n\nStellt sofort <color is="#ffffff">5%</color> Gesundheit wieder her und gewährt:\n\n• <color is="#ffffff">Gesundheitsregeneration III</color>\n• <color is="#ffffff">Gesundheitsschub IV</color>\n• <color is="#ffffff">Ausdauerschub IV</color>\n• <color is="#ffffff">Gunstschub</color>\n\nDauer: <color is="#ffffff">10:00</color>
+effect.harvest_feast_food_regen.name = Gesundheitsregeneration III
+effect.harvest_feast_food_health.name = Gesundheitsschub IV
+effect.harvest_feast_food_stamina.name = Ausdauerschub IV
+effect.harvest_feast_food_favor.name = Gunstschub

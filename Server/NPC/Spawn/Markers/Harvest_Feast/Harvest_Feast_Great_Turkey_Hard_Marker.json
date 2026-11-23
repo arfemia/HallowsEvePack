@@ -1,0 +1,17 @@
+{
+  "$Comment": "The spot the Great Turkey rises from on the hard way in (Harvest_Feast_Great_Turkey_HM): Harvest_Feast_Great_Turkey_Marker's twin, standing in the hard graveyard's prefab beside the hard fight's own entity, so every fresh copy brings a fresh one. ManualTrigger means it never spawns the Great Turkey on its own: only the hard fight's script raises it, once the waves of Turkey Souls are down and players come near, and only while its last spawn is gone. RealtimeRespawn and RealtimeRespawnTime are the respawn form every marker must write; a marker that only fires on request never reads them. DeactivationDistance and DeactivationTime are wide so the Great Turkey is never packed back into the marker mid-fight.",
+  "Model": "NPC_Spawn_Marker",
+  "NPCs": [
+    {
+      "Name": "Harvest_Feast_Great_Turkey_HM",
+      "Weight": 100,
+      "RealtimeRespawnTime": 10
+    }
+  ],
+  "ExclusionRadius": 0,
+  "RealtimeRespawn": true,
+  "MaxDropHeight": 4,
+  "DeactivationDistance": 128,
+  "DeactivationTime": 150,
+  "ManualTrigger": true
+}

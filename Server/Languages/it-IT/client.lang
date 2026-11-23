@@ -2,3 +2,4 @@
 # itemTooltip.stats.<StatId>, loaded as client.<key>. {value} is the client's own placeholder.
 itemTooltip.stats.TrackGain_Hallows_Eve_Old_Jack = Guadagno di Favore del Vecchio Jack: {value}%
 itemTooltip.stats.TrackGain_Hallows_Eve_Hallowed = Guadagno di Favore dei Consacrati: {value}%
+itemTooltip.stats.TrackGain_Harvest_Feast_Host = Guadagno di Favore di Martha: {value}%

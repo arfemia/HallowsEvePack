@@ -68,3 +68,41 @@ Hallows_Eve_Horsemans_Reins.description = Le redini del Cavaliere senza Testa in
 Hallows_Eve_Horsemans_Reins.command_calm = Calma
 Hallows_Eve_Horsemans_Steed_Trophy.name = Trofeo del Destriero del Cavaliere
 Hallows_Eve_Horsemans_Steed_Trophy.description = Una minuscola statuetta del cavallo nero del Cavaliere senza Testa con la sua bardatura, su un piedistallo bordato d'oro. Piazzala dove vuoi. Si trova ogni tanto nella sua Ricompensa Boss, e il Vecchio Jack ne vende una.
+Harvest_Feast_Golden_Plate.name = Piatto d'Oro di Martha
+Harvest_Feast_Golden_Plate.description = Un piatto d'oro con sopra l'anno, troppo bello per mangiarci. Martha ne dà uno a chiunque si siede al Banchetto con lei, una volta a ogni Festa del Raccolto. Piazzalo dove vuoi, o impila quello di un anno su un altro.
+Harvest_Feast_Turkey_Trophy.name = Trofeo del Tacchino
+Harvest_Feast_Turkey_Trophy.description = Un tacchino che resta dove lo metti. Ogni tanto un Tacchino Selvatico ne lascia uno, e solo finché dura la Festa del Raccolto. Piazzalo dove vuoi.
+Harvest_Feast_Golden_Turkey_Trophy.name = Trofeo del Tacchino d'Oro
+Harvest_Feast_Golden_Turkey_Trophy.description = Un tacchino d'oro massiccio. Una volta ogni tanto il Gran Tacchino ne lascia uno a ogni vittoria, e più spesso alla prima vittoria di ogni giorno e nella via difficile. Piazzalo dove vuoi.
+Harvest_Feast_Potion_Morph_Turkey.name = Pozione di Trasformazione in Tacchino
+Harvest_Feast_Potion_Morph_Turkey.description = Bevila e per un po' sembrerai un tacchino. Si trova nella Ricompensa Uccisione Boss del Gran Tacchino, più spesso nella via difficile.
+Harvest_Feast_Great_Turkey_Mantle.name = Mantello del Gran Tacchino
+Harvest_Feast_Great_Turkey_Mantle.description = Cuoio cucito con le penne della coda del Gran Tacchino, ancora freddo di cimitero. Le frecce rimbalzano, e il favore di Martha cresce più in fretta finché lo indossi. Parte del Set del Raccolto, al posto della Tunica del Raccolto. Lo lascia solo il Gran Tacchino, a ogni vittoria, e più spesso alla prima vittoria di ogni giorno e nella via difficile.
+Harvest_Feast_Wishbone.name = Osso del Desiderio
+Harvest_Feast_Wishbone.description = L'osso del desiderio di un tacchino, tenuto da parte dall'arrosto. <b>Martha la Cuoca</b> nel Tempio Dimenticato ne prende uno per portare te e il tuo gruppo nel <b>Cimitero dei Tacchini</b> finché dura la Festa del Raccolto.\n\nMartha te ne dà uno ogni volta che consegni dei <b>Tacchini Extra</b>.
+Harvest_Feast_Harvest_Hat.name = Cappello del Raccolto
+Harvest_Feast_Harvest_Hat.description = Un caldo cappello di lana per le lunghe giornate nei campi. Martha lo vende nel suo negozio quando ti considera un Amico. Parte del Set del Raccolto: indossane di più per avere più salute, e il set intero per guadagnare più in fretta il suo favore.
+Harvest_Feast_Harvest_Tunic.name = Tunica del Raccolto
+Harvest_Feast_Harvest_Tunic.description = Una tunica di lana per le lunghe giornate nei campi. Martha la vende nel suo negozio quando sei Capotavola con lei. Parte del Set del Raccolto: indossane di più per avere più salute, e il set intero per guadagnare più in fretta il suo favore.
+Harvest_Feast_Harvest_Gloves.name = Guanti del Raccolto
+Harvest_Feast_Harvest_Gloves.description = Caldi guanti di lana per raccogliere al freddo. Martha li vende nel suo negozio quando ti considera un Vicino di Casa. Parte del Set del Raccolto: indossane di più per avere più salute, e il set intero per guadagnare più in fretta il suo favore.
+Harvest_Feast_Harvest_Trousers.name = Pantaloni del Raccolto
+Harvest_Feast_Harvest_Trousers.description = Pantaloni di lana che reggono una giornata nei campi. Martha li vende nel suo negozio quando ti considera Famiglia. Parte del Set del Raccolto: indossane di più per avere più salute, e il set intero per guadagnare più in fretta il suo favore.
+
+# Harvest Feast - Martha's three dishes, the recipe pages her shop sells for them, and what eating them does.
+Harvest_Feast_Turkey_Pie.name = Torta di Tacchino
+Harvest_Feast_Turkey_Pie.description = La torta di carne di Martha. Ripristina subito il <color is="#ffffff">5%</color> di salute e concede:\n\n• <color is="#ffffff">Rigenerazione Salute III</color>\n• <color is="#ffffff">Salute Potenziata IV</color>: <color is="#ffffff">20%</color> di salute massima in più e <color is="#ffffff">8%</color> di danni fisici e da proiettile in meno\n\nDurata: <color is="#ffffff">10:00</color>\n\nCuocila a un Fornello dello Chef dopo aver imparato la ricetta di Martha.
+Harvest_Feast_Harvest_Salad.name = Insalata del Raccolto
+Harvest_Feast_Harvest_Salad.description = Carote, mais e zucca con un pizzico di spezie. Ripristina subito il <color is="#ffffff">5%</color> di salute e concede:\n\n• <color is="#ffffff">Rigenerazione Salute III</color>\n• <color is="#ffffff">Stamina Potenziata IV</color>: <color is="#ffffff">40%</color> di stamina massima in più\n\nDurata: <color is="#ffffff">10:00</color>\n\nPreparala a un Fornello dello Chef dopo aver imparato la ricetta di Martha.
+Harvest_Feast_Marthas_Roast.name = Arrosto di Martha
+Harvest_Feast_Marthas_Roast.description = Il piatto migliore di Martha, carne e verdure arrostite su un bastone. Ripristina subito il <color is="#ffffff">5%</color> di salute e concede:\n\n• <color is="#ffffff">Rigenerazione Salute III</color>\n• <color is="#ffffff">Salute Potenziata IV</color>: <color is="#ffffff">20%</color> di salute massima in più e <color is="#ffffff">8%</color> di danni fisici e da proiettile in meno\n• <color is="#ffffff">Stamina Potenziata IV</color>: <color is="#ffffff">40%</color> di stamina massima in più\n• <color is="#ffffff">Favore Potenziato</color>: il Favore di Martha cresce <color is="#ffffff">10%</color> più in fretta\n\nDurata: <color is="#ffffff">10:00</color>\n\nCuocilo a un Fornello dello Chef dopo aver imparato la ricetta di Martha.
+Harvest_Feast_Recipe_Turkey_Pie.name = Ricetta: Torta di Tacchino
+Harvest_Feast_Recipe_Turkey_Pie.description = Insegna la ricetta di <item is="Harvest_Feast_Turkey_Pie"/>. Cuocila a un Fornello dello Chef con impasto, carne cruda e spezie.\n\nRipristina subito il <color is="#ffffff">5%</color> di salute e concede:\n\n• <color is="#ffffff">Rigenerazione Salute III</color>\n• <color is="#ffffff">Salute Potenziata IV</color>\n\nDurata: <color is="#ffffff">10:00</color>
+Harvest_Feast_Recipe_Harvest_Salad.name = Ricetta: Insalata del Raccolto
+Harvest_Feast_Recipe_Harvest_Salad.description = Insegna la ricetta di <item is="Harvest_Feast_Harvest_Salad"/>. Preparala a un Fornello dello Chef con carote, mais, una zucca e spezie.\n\nRipristina subito il <color is="#ffffff">5%</color> di salute e concede:\n\n• <color is="#ffffff">Rigenerazione Salute III</color>\n• <color is="#ffffff">Stamina Potenziata IV</color>\n\nDurata: <color is="#ffffff">10:00</color>
+Harvest_Feast_Recipe_Marthas_Roast.name = Ricetta: Arrosto di Martha
+Harvest_Feast_Recipe_Marthas_Roast.description = Insegna la ricetta di <item is="Harvest_Feast_Marthas_Roast"/>. Cuocilo a un Fornello dello Chef con un bastone, carne cruda, una carota, mais, una zucca e spezie.\n\nRipristina subito il <color is="#ffffff">5%</color> di salute e concede:\n\n• <color is="#ffffff">Rigenerazione Salute III</color>\n• <color is="#ffffff">Salute Potenziata IV</color>\n• <color is="#ffffff">Stamina Potenziata IV</color>\n• <color is="#ffffff">Favore Potenziato</color>\n\nDurata: <color is="#ffffff">10:00</color>
+effect.harvest_feast_food_regen.name = Rigenerazione Salute III
+effect.harvest_feast_food_health.name = Salute Potenziata IV
+effect.harvest_feast_food_stamina.name = Stamina Potenziata IV
+effect.harvest_feast_food_favor.name = Favore Potenziato

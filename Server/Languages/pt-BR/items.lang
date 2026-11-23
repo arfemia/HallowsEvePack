@@ -68,4 +68,44 @@ Hallows_Eve_Horsemans_Reins.description = As rédeas do próprio Cavaleiro Sem C
 Hallows_Eve_Horsemans_Reins.command_calm = Acalmar
 Hallows_Eve_Horsemans_Steed_Trophy.name = Troféu do Corcel do Cavaleiro
 Hallows_Eve_Horsemans_Steed_Trophy.description = Uma figura minúscula do cavalo preto do Cavaleiro Sem Cabeça com a sua armadura, num suporte com acabamento dourado. Coloque onde quiser. Aparece de vez em quando no Resgate de Chefe Derrotado dele, e o Velho Jack vende uma.
+Harvest_Feast_Golden_Plate.name = Prato Dourado da Martha
+Harvest_Feast_Golden_Plate.description = Um prato dourado com o ano gravado, bom demais para comer nele. A Martha dá um a todos que se sentam para O Banquete com ela, uma vez a cada Festa da Colheita. Coloque onde quiser, ou empilhe o de um ano sobre o de outro.
+Harvest_Feast_Turkey_Trophy.name = Troféu de Peru
+Harvest_Feast_Turkey_Trophy.description = Um peru que fica onde você o põe. De vez em quando um Peru Selvagem deixa um para trás, e só enquanto a Festa da Colheita durar. Coloque onde quiser.
+Harvest_Feast_Golden_Turkey_Trophy.name = Troféu de Peru Dourado
+Harvest_Feast_Golden_Turkey_Trophy.description = Um peru de ouro maciço. Bem de vez em quando o Grande Peru deixa um, em qualquer vitória, e com mais chance na primeira vitória de cada dia e na entrada difícil. Coloque onde quiser.
+Harvest_Feast_Potion_Morph_Turkey.name = Poção de Transformação em Peru
+Harvest_Feast_Potion_Morph_Turkey.description = Beba e você vai parecer um peru por um tempo. Encontrada no Resgate de Chefe Derrotado do Grande Peru, mais vezes na entrada difícil.
+Harvest_Feast_Great_Turkey_Mantle.name = Manto do Grande Peru
+Harvest_Feast_Great_Turkey_Mantle.description = Couro costurado com as penas da cauda do próprio Grande Peru, ainda frio do cemitério. As flechas escorregam nele, e o favor da Martha sobe mais rápido enquanto você o veste. Parte do Conjunto da Colheita, no lugar da Túnica da Colheita. Só o Grande Peru a deixa, em qualquer vitória, e com mais chance na primeira vitória de cada dia e na entrada difícil.
+Harvest_Feast_Wishbone.name = Osso da Sorte
+Harvest_Feast_Wishbone.description = O osso da sorte de um peru, guardado do assado. <b>Martha, a Cozinheira</b>, no Templo Esquecido, aceita um para levar você e o seu grupo ao <b>Cemitério dos Perus</b> enquanto a Festa da Colheita durar.\n\nA Martha dá um toda vez que você entrega <b>Perus Extras</b>.
+
+# Harvest Feast - the Harvest Set, sold at Martha's shop.
+Harvest_Feast_Harvest_Hat.name = Chapéu da Colheita
+Harvest_Feast_Harvest_Hat.description = Um chapéu de lã quente para os longos dias nos campos. A Martha vende na loja dela quando te considera Amigo. Parte do Conjunto da Colheita: use mais peças para ter mais vida, e o conjunto inteiro para ganhar o favor dela mais rápido.
+Harvest_Feast_Harvest_Tunic.name = Túnica da Colheita
+Harvest_Feast_Harvest_Tunic.description = Uma túnica de lã para os longos dias nos campos. A Martha vende na loja dela quando você é Cabeceira da Mesa com ela. Parte do Conjunto da Colheita: use mais peças para ter mais vida, e o conjunto inteiro para ganhar o favor dela mais rápido.
+Harvest_Feast_Harvest_Gloves.name = Luvas da Colheita
+Harvest_Feast_Harvest_Gloves.description = Luvas de lã quentinhas para colher no frio. A Martha vende na loja dela quando te considera Vizinho. Parte do Conjunto da Colheita: use mais peças para ter mais vida, e o conjunto inteiro para ganhar o favor dela mais rápido.
+Harvest_Feast_Harvest_Trousers.name = Calça da Colheita
+Harvest_Feast_Harvest_Trousers.description = Calça de lã que aguenta um dia inteiro nos campos. A Martha vende na loja dela quando te considera Da Família. Parte do Conjunto da Colheita: use mais peças para ter mais vida, e o conjunto inteiro para ganhar o favor dela mais rápido.
+
+# Harvest Feast - Martha's three dishes, the recipe pages her shop sells for them, and what eating them does.
+Harvest_Feast_Turkey_Pie.name = Torta de Peru
+Harvest_Feast_Turkey_Pie.description = A torta de carne da própria Martha. Restaura instantaneamente <color is="#ffffff">5%</color> da vida e concede:\n\n• <color is="#ffffff">Regeneração de Vida III</color>\n• <color is="#ffffff">Aumento de Vida IV</color>: <color is="#ffffff">20%</color> a mais de vida máxima e <color is="#ffffff">8%</color> a menos de dano físico e de projéteis\n\nDuração: <color is="#ffffff">10:00</color>\n\nAsse num Forno do Chefe depois de aprender a receita da Martha.
+Harvest_Feast_Harvest_Salad.name = Salada da Colheita
+Harvest_Feast_Harvest_Salad.description = Cenouras, milho e abóbora com uma pitada de tempero. Restaura instantaneamente <color is="#ffffff">5%</color> da vida e concede:\n\n• <color is="#ffffff">Regeneração de Vida III</color>\n• <color is="#ffffff">Aumento de Estâmina IV</color>: <color is="#ffffff">40%</color> a mais de estâmina máxima\n\nDuração: <color is="#ffffff">10:00</color>\n\nFaça num Forno do Chefe depois de aprender a receita da Martha.
+Harvest_Feast_Marthas_Roast.name = Assado da Martha
+Harvest_Feast_Marthas_Roast.description = O melhor prato da Martha, carne e legumes assados num graveto. Restaura instantaneamente <color is="#ffffff">5%</color> da vida e concede:\n\n• <color is="#ffffff">Regeneração de Vida III</color>\n• <color is="#ffffff">Aumento de Vida IV</color>: <color is="#ffffff">20%</color> a mais de vida máxima e <color is="#ffffff">8%</color> a menos de dano físico e de projéteis\n• <color is="#ffffff">Aumento de Estâmina IV</color>: <color is="#ffffff">40%</color> a mais de estâmina máxima\n• <color is="#ffffff">Aumento de Favor</color>: o favor da Martha sobe <color is="#ffffff">10%</color> mais rápido\n\nDuração: <color is="#ffffff">10:00</color>\n\nCozinhe num Forno do Chefe depois de aprender a receita da Martha.
+Harvest_Feast_Recipe_Turkey_Pie.name = Receita: Torta de Peru
+Harvest_Feast_Recipe_Turkey_Pie.description = Ensina a receita de <item is="Harvest_Feast_Turkey_Pie"/>. Asse num Forno do Chefe com massa, carne crua e tempero.\n\nRestaura instantaneamente <color is="#ffffff">5%</color> da vida e concede:\n\n• <color is="#ffffff">Regeneração de Vida III</color>\n• <color is="#ffffff">Aumento de Vida IV</color>\n\nDuração: <color is="#ffffff">10:00</color>
+Harvest_Feast_Recipe_Harvest_Salad.name = Receita: Salada da Colheita
+Harvest_Feast_Recipe_Harvest_Salad.description = Ensina a receita de <item is="Harvest_Feast_Harvest_Salad"/>. Faça num Forno do Chefe com cenouras, milho, uma abóbora e tempero.\n\nRestaura instantaneamente <color is="#ffffff">5%</color> da vida e concede:\n\n• <color is="#ffffff">Regeneração de Vida III</color>\n• <color is="#ffffff">Aumento de Estâmina IV</color>\n\nDuração: <color is="#ffffff">10:00</color>
+Harvest_Feast_Recipe_Marthas_Roast.name = Receita: Assado da Martha
+Harvest_Feast_Recipe_Marthas_Roast.description = Ensina a receita de <item is="Harvest_Feast_Marthas_Roast"/>. Cozinhe num Forno do Chefe com um graveto, carne crua, uma cenoura, milho, uma abóbora e tempero.\n\nRestaura instantaneamente <color is="#ffffff">5%</color> da vida e concede:\n\n• <color is="#ffffff">Regeneração de Vida III</color>\n• <color is="#ffffff">Aumento de Vida IV</color>\n• <color is="#ffffff">Aumento de Estâmina IV</color>\n• <color is="#ffffff">Aumento de Favor</color>\n\nDuração: <color is="#ffffff">10:00</color>
+effect.harvest_feast_food_regen.name = Regeneração de Vida III
+effect.harvest_feast_food_health.name = Aumento de Vida IV
+effect.harvest_feast_food_stamina.name = Aumento de Estâmina IV
+effect.harvest_feast_food_favor.name = Aumento de Favor
 

@@ -1,0 +1,11 @@
+{
+  "$Comment": "The Great Turkey on the hard way in, the form its hard fight (EncounterManager/Harvest_Feast/Harvest_Feast_Great_Turkey_Encounter_Hard.json) raises from Harvest_Feast_Great_Turkey_Hard_Marker once the waves of hard Turkey Souls are down: Harvest_Feast_Great_Turkey written out again, as the game writes its own hard bosses, on the same Harvest_Feast_Template_Great_Turkey, with more health, the hard look (Models/Harvest_Feast/NPC/Harvest_Feast_Great_Turkey_HM.json, the same bird burning a hot orange), the hard name and its hard combat evaluator (CAE_Harvest_Feast_Great_Turkey_HM: faster pecks, a charge at most every 8 seconds instead of 12, and the Harvest_Feast_Great_Turkey_Hard_Mode effect beside the souls' sheen, which makes every peck and every charge hit 40% harder, so the charge's 30 Physical lands as 42 before armour). The charge is the normal one: half a second locked on, a 1.2-second puffed-up gobble with a warning marker on the ground, a 16 to 20 block run through where its target stood, and a 2-second daze (taking half again the physical damage) when it misses or a grave or a wall stops it. Tune how often it charges and each peck in its evaluator, and the charge's hit, wind-up, distance, speed and daze in the template's parameters. Its fight adds one hard health step per player beyond the first (the Harvest_Feast_Great_Turkey_Hard_Scale_Health effects) and puts its fury on it at a fifth, on top of the hard mode, so MaxHealth here is its health for a player alone. It is in Harvest_Feast_Great_Turkey_Group, which both its fights bind and clear, and in no group Martha's favor counts. Any key the template does not declare makes the game refuse the whole role.",
+  "Type": "Variant",
+  "Reference": "Harvest_Feast_Template_Great_Turkey",
+  "Modify": {
+    "Appearance": "Harvest_Feast_Great_Turkey_HM",
+    "MaxHealth": 1950,
+    "NameTranslationKey": "npcs.Harvest_Feast_Great_Turkey_HM.name",
+    "_CombatConfig": "CAE_Harvest_Feast_Great_Turkey_HM"
+  }
+}

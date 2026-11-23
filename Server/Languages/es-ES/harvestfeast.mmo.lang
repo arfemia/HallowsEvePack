@@ -8,14 +8,19 @@
 board.harvest_feast_daily.grade.skill = Trabajo de Oficio
 
 # ---- The skill jobs ----
-quest.mmo_harvest_feast_daily_harvesting.title = Campos Llenos
+quest.mmo_harvest_feast_daily_harvesting.title = Trabajo de Cosecha
 quest.mmo_harvest_feast_daily_harvesting.flavor = En los campos hay más de lo que unas solas manos pueden recoger. Pasa hoy cosechando y hazlo cada vez más rápido.
-quest.mmo_harvest_feast_daily_crafting.title = Mesas Ocupadas
+quest.mmo_harvest_feast_daily_crafting.title = Trabajo de Fabricación
 quest.mmo_harvest_feast_daily_crafting.flavor = Las mesas de trabajo no se enfrían en toda la semana. Pasa hoy fabricando cosas; vale cualquier mesa.
-quest.mmo_harvest_feast_daily_archery.title = Práctica de Cazador
-quest.mmo_harvest_feast_daily_archery.flavor = Los pavos se espantan al menor paso. Aprende a abatirlos desde lejos, y el asado te lo agradecerá.
-quest.mmo_harvest_feast_daily_woodcutting.title = Leña para los Hornos
+quest.mmo_harvest_feast_daily_archery.title = Trabajo de Arquería
+quest.mmo_harvest_feast_daily_archery.flavor = Los pavos se espantan al menor paso. Caza con arco en las Emerald Wilds, y el asado te lo agradecerá.
+quest.mmo_harvest_feast_daily_woodcutting.title = Trabajo de Tala
 quest.mmo_harvest_feast_daily_woodcutting.flavor = Los hornos se comen la leña toda la semana. Tala unos cuantos árboles y mantén los fuegos vivos.
 
 # ---- The feast's boost ----
 boostrule.mmo_harvest_feast_harvesting.title = Banquete de la Cosecha
+
+# ---- The Harvest Set's skill half ----
+# A set's notice is a toast, so no value carries markup.
+gearset.mmo_harvest_feast_harvest_set.tier_half = Y más XP de Cosecha.
+gearset.mmo_harvest_feast_harvest_set.tier_full = Y más XP de Cosecha otra vez, y mejor suerte al cosechar.

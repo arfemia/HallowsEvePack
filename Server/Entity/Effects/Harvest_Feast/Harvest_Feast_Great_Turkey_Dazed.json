@@ -1,0 +1,19 @@
+{
+  "$Comment": "The Great Turkey dazed after a charge that misses or that a block stops: the game's stun stars over its head, and it takes half again the physical damage, which is the players' opening. Harvest_Feast_Template_Great_Turkey (NPC/Roles/Harvest_Feast/Templates) puts it on the Great Turkey as its daze starts. It is the game's Goblin_Feastmaster_Stunned with the stars on the turkey's Head node. Keep Duration equal to the template's CombatStunTime; Amount is the change to its physical resistance as a fraction (below zero, it takes more).",
+  "ApplicationEffects": {
+    "Particles": [
+      {
+        "SystemId": "Stunned",
+        "TargetEntityPart": "Self",
+        "TargetNodeName": "Head",
+        "PositionOffset": {"Y": 0.5}
+      }
+    ]
+  },
+  "DamageResistance": {
+    "Physical": [{"CalculationType": "Percent", "Amount": -0.5}]
+  },
+  "OverlapBehavior": "Overwrite",
+  "Infinite": false,
+  "Duration": 2
+}

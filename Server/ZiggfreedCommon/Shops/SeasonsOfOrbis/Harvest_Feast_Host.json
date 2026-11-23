@@ -6,13 +6,14 @@
     "Martha wherever a server stands her: players reach it through her, and Season closes it while the feast",
     "is off.",
     "",
-    "Everything here is priced in festival tokens, the currency every season shares. Includes carries the",
-    "festival shelf (Seasons_Of_Orbis_Festival_Stall) beside the host's own goods: the offers every",
-    "season's host shares, with one purchase limit across them all, each on sale only in its own Season",
-    "or Dates (so the winter pieces show here and the Pumpkin Basket does not). The shelf brings its own",
-    "wallet, place and name, so the header shows festival tokens and the festival shelf follows the host's",
-    "own shelves with no line of its own here. CategoryOrder fixes the order of the host's own shelves, and",
-    "each one's name is a key in harvestfeast.progression.lang."
+    "Martha's own shelves are priced in Harvest Coins, the feast's own currency, which Currencies puts in",
+    "the header. Includes carries the festival shelf (Seasons_Of_Orbis_Festival_Stall) beside her own",
+    "goods: the offers every season's host shares, priced in festival tokens, with one purchase limit",
+    "across them all, each on sale only in its own Season or Dates (so the winter pieces show here and the",
+    "Pumpkin Basket does not). The shelf brings its own wallet, place and name, so the header shows",
+    "festival tokens beside the coins and the festival shelf follows Martha's own shelves with no line of",
+    "its own here. CategoryOrder fixes the order of her own shelves, and each one's name is a key in",
+    "harvestfeast.progression.lang."
   ],
   "Season": "Harvest_Feast",
   "Text": {
@@ -22,9 +23,11 @@
   "Icon": "Food_Pie_Pumpkin",
   "Order": 90,
   "Includes": [ "Seasons_Of_Orbis_Festival_Stall" ],
-  "CategoryOrder": [ "kitchen", "decor" ],
+  "Currencies": [ "Harvest_Feast_Coins" ],
+  "CategoryOrder": [ "kitchen", "clothes", "decor" ],
   "Categories": {
     "kitchen": { "TitleKey": "shop.harvest_feast_host.category.kitchen" },
+    "clothes": { "TitleKey": "shop.harvest_feast_host.category.clothes" },
     "decor": { "TitleKey": "shop.harvest_feast_host.category.decor" }
   }
 }

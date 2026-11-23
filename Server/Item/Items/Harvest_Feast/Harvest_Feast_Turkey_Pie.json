@@ -1,0 +1,148 @@
+{
+  "$Comment": "Turkey Pie, the first of Martha's three dishes: a pie heavy with meat, baked at a Chef's Stove (the Cookingbench, its Baked tab) once a player has learned it from Harvest_Feast_Recipe_Turkey_Pie, sold at her shop. It wears the game's meat pie (its model, texture and icon) and eats like the game's best pies: an instant heal, Harvest_Feast_Food_Regen (the game's top food regen, for ten minutes) and Harvest_Feast_Food_Health, which beats the game's best meat buff. It clears the game's own food regens and meat buffs first, so they never stack from this side. Its description in items.lang writes the numbers out: change it with the effects. Recipe.Input is what it costs to bake; Meats is any raw meat, a Wild Turkey's included. The dish is good all year; only the recipe is feast-only.",
+  "TranslationProperties": {
+    "Name": "items.Harvest_Feast_Turkey_Pie.name",
+    "Description": "items.Harvest_Feast_Turkey_Pie.description"
+  },
+  "Parent": "Template_Food",
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Food_T3"
+  },
+  "Quality": "Epic",
+  "Icon": "Icons/ItemsGenerated/Food_Pie_Meat.png",
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Consumables/Food/Pie.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Food/Pie_Textures/Meat.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#d69f46",
+    "TextureComputedColor": "#A18561",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
+    },
+    "HitboxType": "Food_Large"
+  },
+  "InteractionVars": {
+    "Consume_Charge": {
+      "Interactions": [
+        {
+          "Parent": "Consume_Charge_Food_T1_Inner",
+          "Effects": {
+            "Particles": [
+              {
+                "SystemId": "Food_Eat",
+                "Color": "#AE5C40",
+                "TargetNodeName": "Mouth",
+                "TargetEntityPart": "Entity"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Food_Instant_Heal_T1"
+        },
+        {
+          "Type": "ClearEntityEffect",
+          "EntityEffectId": "HealthRegen_Buff_Raw"
+        },
+        {
+          "Type": "ClearEntityEffect",
+          "EntityEffectId": "HealthRegen_Buff_T1"
+        },
+        {
+          "Type": "ClearEntityEffect",
+          "EntityEffectId": "HealthRegen_Buff_T2"
+        },
+        {
+          "Type": "ClearEntityEffect",
+          "EntityEffectId": "HealthRegen_Buff_T3"
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Harvest_Feast_Food_Regen"
+        },
+        {
+          "Type": "ClearEntityEffect",
+          "EntityEffectId": "Meat_Buff_T1"
+        },
+        {
+          "Type": "ClearEntityEffect",
+          "EntityEffectId": "Meat_Buff_T2"
+        },
+        {
+          "Type": "ClearEntityEffect",
+          "EntityEffectId": "Meat_Buff_T3"
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Harvest_Feast_Food_Health"
+        }
+      ]
+    }
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Dough",
+        "Quantity": 1
+      },
+      {
+        "ResourceTypeId": "Meats",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "Ingredient_Spices",
+        "Quantity": 1
+      },
+      {
+        "ResourceTypeId": "Fuel",
+        "Quantity": 3
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Harvest_Feast_Turkey_Pie"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Cookingbench",
+        "Categories": [
+          "Baked"
+        ]
+      }
+    ],
+    "TimeSeconds": 5,
+    "KnowledgeRequired": true
+  },
+  "ItemLevel": 14,
+  "MaxStack": 25,
+  "DropOnDeath": true,
+  "Scale": 1.2,
+  "ResourceTypes": [
+    {
+      "Id": "Foods"
+    }
+  ],
+  "Consumable": true,
+  "Tags": {
+    "Type": [
+      "Food"
+    ],
+    "Family": [
+      "Harvest_Feast"
+    ]
+  }
+}

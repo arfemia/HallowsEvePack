@@ -1,0 +1,15 @@
+{
+  "$Comment": "Adds 450 to the Great Turkey's maximum health while its fight has at least 5 players in it: its fight's script applies it as the Great Turkey rises, one step per player up to 5, then refills it (Harvest_Feast_Great_Turkey_Scale_TopUp), since a higher maximum leaves its current health where it was. It stays on the Great Turkey for the whole fight. Amount is the health one more player adds; change the four steps together.",
+  "RawStatModifiers": {
+    "Health": [
+      {
+        "Amount": 450,
+        "CalculationType": "Additive",
+        "Target": "Max"
+      }
+    ]
+  },
+  "OverlapBehavior": "Ignore",
+  "Infinite": true,
+  "RemovalBehavior": "Infinite"
+}

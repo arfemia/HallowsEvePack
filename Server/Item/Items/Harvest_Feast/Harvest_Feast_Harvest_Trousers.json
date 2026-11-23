@@ -1,0 +1,40 @@
+{
+  "$Comment": "The Harvest Trousers, the leg piece of the Harvest Set (ZiggfreedCommon/GearSets/SeasonsOfOrbis/Harvest_Feast_Harvest_Set.json), sold at Martha's shop once she counts a player Family. A full item body with no Parent, so it inherits no recipe and nobody crafts it: it wears the game's own woolen boots (their model, texture and icon) and their armor numbers. Its own stats ride the native Armor block: Health and Stamina like any armor, and TrackGain_Harvest_Feast_Host (10 is +10%), which raises every gain of Martha's favor while it is worn. Raise or lower an Amount to tune it; the set adds its own bonus on top. Tags.ZigLevel asks for Defense 30 to wear them (the best level the player ever reached), behind MMO Skill Tree's Gear levels switch (Tags.ZigLevelFeature); gear a player already had when gear levels arrived keeps working for them, and a server owner frees or retunes it with a ZigLevel group gate in mods/ziggfreedcommon/use-gates.json.",
+  "TranslationProperties": {
+    "Name": "items.Harvest_Feast_Harvest_Trousers.name",
+    "Description": "items.Harvest_Feast_Harvest_Trousers.description"
+  },
+  "Quality": "Uncommon",
+  "ItemLevel": 30,
+  "PlayerAnimationsId": "Block",
+  "ItemSoundSetId": "ISS_Armor_Cloth",
+  "Categories": ["Items.Armors"],
+  "Icon": "Icons/ItemsGenerated/Armor_Wool_Legs.png",
+  "IconProperties": {"Rotation": [22.5, 45, 22.5], "Scale": 0.59, "Translation": [-2.7, -8.1]},
+  "Model": "Items/Armors/Wool/Feet.blockymodel",
+  "Texture": "Items/Armors/Wool/Feet_Texture.png",
+  "Interactions": {
+    "Primary": {"Interactions": [{"Type": "EquipItem"}]},
+    "Secondary": {"Interactions": [{"Type": "EquipItem"}]}
+  },
+  "Armor": {
+    "ArmorSlot": "Legs",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "Pants",
+      "Shoes"
+    ],
+    "DamageResistance": {
+      "Physical": [{"Amount": 0.07, "CalculationType": "Percent"}],
+      "Projectile": [{"Amount": 0.07, "CalculationType": "Percent"}]
+    },
+    "StatModifiers": {
+      "Health": [{"Amount": 13, "CalculationType": "Additive"}],
+      "Stamina": [{"Amount": 3, "CalculationType": "Additive"}],
+      "TrackGain_Harvest_Feast_Host": [{"Amount": 5, "CalculationType": "Additive", "Target": "Max"}]
+    }
+  },
+  "MaxDurability": 100,
+  "DurabilityLossOnHit": 0.5,
+  "Tags": {"Type": ["Armor"], "Family": ["Harvest_Feast"], "ZigLevel": ["Defense:30"], "ZigLevelFeature": ["mmoskilltree:Gear_Levels"]}
+}

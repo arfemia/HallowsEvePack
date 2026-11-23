@@ -1,0 +1,35 @@
+{
+  "$Comment": "The Turkey Trophy, a rare find from hunting: a Wild Turkey drops one now and then (Drops/Harvest_Feast/Harvest_Feast_Drop_Wild_Turkey.json, about one in two hundred), and nothing sells it. A turkey figure to place in the house. It wears the game's own turkey, its model and texture, standing still on the block it is placed on, and its icon is the game's own turkey portrait sized to an item icon by tools/derive_art.py (an item's Icon must sit under Icons/ItemsGenerated/ or Icons/Items/): CustomModelScale shrinks the creature to about one block high, and the game's Kweebec_Ancient block is the pattern for a creature model placed as a block.",
+  "TranslationProperties": {
+    "Name": "items.Harvest_Feast_Turkey_Trophy.name",
+    "Description": "items.Harvest_Feast_Turkey_Trophy.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Harvest_Feast_Turkey_Trophy.png",
+  "Categories": ["Blocks.Deco"],
+  "Quality": "Legendary",
+  "Interactions": {"Primary": "Block_Primary", "Secondary": "Block_Secondary"},
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "NPC/Livestock/Turkey/Models/Model.blockymodel",
+    "CustomModelTexture": [
+      {"Texture": "NPC/Livestock/Turkey/Models/Texture.png", "Weight": 1}
+    ],
+    "CustomModelScale": 0.5,
+    "HitboxType": "Plant_Large",
+    "VariantRotation": "NESW",
+    "Flags": {},
+    "Support": {"Down": [{"FaceType": "Full"}]},
+    "Gathering": {"Breaking": {"GatherType": "Woods"}},
+    "BlockParticleSetId": "Dust",
+    "BlockSoundSetId": "Plushie",
+    "PhysicalMaterialId": "Wool",
+    "TextureComputedColor": "#5A3A28"
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {"Scale": 0.6, "Rotation": [22.5, 45.0, 22.5], "Translation": [-1.0, -15.0]},
+  "Tags": {"Type": ["Deco"]},
+  "ItemSoundSetId": "ISS_Blocks_Wood",
+  "MaxStack": 25
+}

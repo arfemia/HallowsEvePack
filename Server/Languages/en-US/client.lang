@@ -4,3 +4,4 @@
 # with the item's amount. These keys only add; none replaces a key the client ships.
 itemTooltip.stats.TrackGain_Hallows_Eve_Old_Jack = Old Jack's Favor Gain: {value}%
 itemTooltip.stats.TrackGain_Hallows_Eve_Hallowed = Hallowed Favor Gain: {value}%
+itemTooltip.stats.TrackGain_Harvest_Feast_Host = Martha's Favor Gain: {value}%

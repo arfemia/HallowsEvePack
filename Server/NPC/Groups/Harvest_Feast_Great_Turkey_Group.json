@@ -1,0 +1,4 @@
+{
+  "$Comment": "The Great Turkey (the role Harvest_Feast_Great_Turkey, and Harvest_Feast_Great_Turkey_HM on the hard way in), the Turkey Graveyard's boss. Both its fights' scripts find it through this group: to bind it when it rises without a spawn marker, to hold it through the fight, and to clear it away when the fight resets. No reputation names this group, and Martha's favor counts none of it. Add a role id here if the Great Turkey gains another form.",
+  "IncludeRoles": [ "Harvest_Feast_Great_Turkey", "Harvest_Feast_Great_Turkey_HM" ]
+}

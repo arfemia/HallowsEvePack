@@ -1,0 +1,37 @@
+{
+  "$Comment": [
+    "What Martha packs for a player each time their favor with her climbs another step past Head of the",
+    "Table: the Beyond block in ZiggfreedCommon/Reputations/SeasonsOfOrbis/Harvest_Feast_Host.json names",
+    "this table, and its Every is the size of a step. Every roll is read on its own: the first always pays",
+    "and plays the moment Harvest_Feast_Feast_Basket (a toast and a sound), so the basket never lands",
+    "unannounced; the second is a chance on top. Chance is a percent from 0 to 100. Festival tokens and",
+    "Harvest Coins pay through the Currency reward kind, since a counter wallet has no item to hand over.",
+    "",
+    "Text names the reward on Martha's Reputation page and in the notice that pays it (Feast Basket instead",
+    "of Loot Bundle) and gives its hover a line; the hover then lists what this table pays."
+  ],
+  "Name": "Harvest_Feast_Feast_Basket",
+  "Text": {
+    "TitleKey": "lootable.harvest_feast_feast_basket.title",
+    "FlavorKey": "lootable.harvest_feast_feast_basket.flavor"
+  },
+  "Rolls": [
+    {
+      "Grants": {
+        "Rewards": [
+          { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "2" } },
+          { "Kind": "Currency", "Params": { "Currency": "Harvest_Feast_Coins", "Amount": "40" } }
+        ],
+        "Items": [
+          { "Item": "Food_Pie_Pumpkin", "Count": 2 },
+          { "Item": "Food_Pie_Meat", "Count": 2 }
+        ]
+      },
+      "Cue": "Harvest_Feast_Feast_Basket"
+    },
+    {
+      "Chance": { "Base": 25.0 },
+      "Grants": { "Items": [ { "Item": "Plant_Hay_Bundle", "Count": 4 } ] }
+    }
+  ]
+}

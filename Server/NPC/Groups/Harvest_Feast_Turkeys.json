@@ -1,0 +1,4 @@
+{
+  "$Comment": "The feast's Wild Turkeys (the role Harvest_Feast_Turkey). Martha's favor's Kills table (ZiggfreedCommon/Reputations/SeasonsOfOrbis/Harvest_Feast_Host.json) pays favor for each one put down. No reputation group names this group, so it changes nothing about how they treat a player. A turkey once tamed takes the game's own tame turkey role, which is not in this group, so it pays no favor. Add a role id here and its kills count too. The game's own grown turkey pays less, through its own group (Harvest_Feast_Game_Turkeys) and Kills row.",
+  "IncludeRoles": [ "Harvest_Feast_Turkey" ]
+}

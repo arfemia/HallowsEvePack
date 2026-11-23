@@ -4,16 +4,25 @@
     "Tomas the Miller's conversation, one of the three villagers standing in the Forgotten Temple while",
     "Harvest Feast runs. Tomas contracts everything: I've, it's, don't.",
     "",
-    "Start's First beat answers a visit while the feast is off (after a command ends it, or when a server",
-    "owner stands Tomas somewhere all year) with one line and goodbye. Otherwise the conversation opens on",
-    "greeting, the Fallback. A conversation has no Season leaf, so the off-season beat reads the feature",
-    "ziggfreedcommon:feature Harvest_Feast_Live, Min 1.",
+    "Start's First beats come first. The off-season beat answers a visit while the feast is off (after a",
+    "command ends it, or when a server owner stands Tomas somewhere all year) with one line and goodbye. A",
+    "conversation has no Season leaf, so it reads the feature ziggfreedcommon:feature Harvest_Feast_Live,",
+    "Min 1.",
     "",
-    "Tomas gives no quest and credits no talk of his own. The invitation tour's line is not in this file:",
-    "DialogueExtensions/SeasonsOfOrbis/Harvest_Feast_Invitation.json adds it to the screens a",
-    "conversation opens on while the player carries the tour, after a screen's own lines and before the",
-    "goodbye group, so goodbye stays last. That line is spent once a day per conversation, which is why",
-    "each villager has a conversation of their own."
+    "Quests holds two rows. Supper for Tomas (harvest_feast_supper_tomas), the plate Martha sends him after",
+    "The Feast, names only its Ready screen: while the player carries it with the pumpkin pie in the bag,",
+    "the conversation opens on supper, his thanks, whose answer hands the pie over. Then his daily, Daily",
+    "Flour (harvest_feast_miller_flour): the conversation opens on its offer while it can be taken, on its",
+    "brief while it is carried, and on its hand-in once the flour is in the bag. Each hand-in opens his",
+    "quest list with Collect in front of the player, and collecting plays this conversation again (each",
+    "quest's CompletionDialogue). Otherwise it opens on greeting, the Fallback. Greeting and the flour brief",
+    "lead with What needs doing? (Open Quests: the quest list of the character in front of the player, so",
+    "his daily and his supper), then his tip on making dough (the dough screen).",
+    "",
+    "The invitation tour's line is not in this file: DialogueExtensions/SeasonsOfOrbis/",
+    "Harvest_Feast_Invitation.json adds it to the screens a conversation opens on while the player carries",
+    "the tour, after a screen's own lines and before the goodbye group, so goodbye stays last. That line",
+    "is spent once a day per conversation, which is why each villager has a conversation of their own."
   ],
   "Start": {
     "First": [
@@ -24,6 +33,10 @@
         ]
       }
     ],
+    "Quests": {
+      "harvest_feast_supper_tomas": { "Ready": "supper" },
+      "harvest_feast_miller_flour": { "Offerable": "flour_offer", "Active": "flour_brief", "Ready": "flour_ready" }
+    },
     "Fallback": "greeting"
   },
   "Nodes": {
@@ -36,14 +49,65 @@
     "greeting": {
       "TextKey": "dialogue.harvest_feast_miller.greeting.text",
       "Options": [
-        { "LabelKey": "dialogue.harvest_feast_miller.opt.mill", "Style": "neutral", "Goto": "mill" }
+        { "LabelKey": "dialogue.harvest_feast_miller.opt.quests", "Style": "accept", "Open": "Quests" },
+        { "LabelKey": "dialogue.harvest_feast_miller.opt.dough", "Style": "neutral", "Goto": "dough" }
       ],
       "IncludeOptions": [ "goodbye" ]
     },
-    "mill": {
-      "TextKey": "dialogue.harvest_feast_miller.mill.text",
+    "dough": {
+      "TextKey": "dialogue.harvest_feast_miller.dough.text",
       "Options": [
-        { "LabelKey": "dialogue.harvest_feast_miller.opt.back", "Style": "neutral", "Goto": "greeting" }
+        { "LabelKey": "dialogue.harvest_feast_miller.opt.thanks", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "supper": {
+      "TextKey": "dialogue.harvest_feast_miller.supper.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_miller.supper.opt.give",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "harvest_feast_supper_tomas" } ],
+          "Do": [
+            { "TurnIn": "harvest_feast_supper_tomas" },
+            { "Open": { "Type": "Quests", "Highlight": "harvest_feast_supper_tomas" } }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "flour_offer": {
+      "TextKey": "dialogue.harvest_feast_miller.flour_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_miller.flour_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "harvest_feast_miller_flour" }, { "Goto": "flour_brief" } ]
+        },
+        { "LabelKey": "dialogue.harvest_feast_miller.flour_offer.opt.later", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "flour_brief": {
+      "TextKey": "dialogue.harvest_feast_miller.flour_brief.text",
+      "Options": [
+        { "LabelKey": "dialogue.harvest_feast_miller.opt.quests", "Style": "accept", "Open": "Quests" },
+        { "LabelKey": "dialogue.harvest_feast_miller.opt.dough", "Style": "neutral", "Goto": "dough" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "flour_ready": {
+      "TextKey": "dialogue.harvest_feast_miller.flour_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_miller.flour_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "harvest_feast_miller_flour" } ],
+          "Do": [
+            { "TurnIn": "harvest_feast_miller_flour" },
+            { "Open": { "Type": "Quests", "Highlight": "harvest_feast_miller_flour" } }
+          ]
+        }
       ],
       "IncludeOptions": [ "goodbye" ]
     }

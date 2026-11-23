@@ -69,4 +69,44 @@ Hallows_Eve_Horsemans_Reins.description = Las riendas del propio Jinete sin Cabe
 Hallows_Eve_Horsemans_Reins.command_calm = Calmar
 Hallows_Eve_Horsemans_Steed_Trophy.name = Trofeo del Corcel del Jinete
 Hallows_Eve_Horsemans_Steed_Trophy.description = Una figura diminuta del caballo negro del Jinete sin Cabeza con su barda, sobre un pedestal ribeteado de oro. Colócala donde quieras. Se encuentra de vez en cuando en su Botín de Jefe, y el Viejo Jack vende una.
+Harvest_Feast_Golden_Plate.name = Plato Dorado de Martha
+Harvest_Feast_Golden_Plate.description = Un plato dorado con el año grabado, demasiado bueno para comer en él. Martha regala uno a todo el que se sienta a El Banquete con ella, una vez por cada Banquete de la Cosecha. Colócalo donde quieras, o apila el de un año sobre el de otro.
+Harvest_Feast_Turkey_Trophy.name = Trofeo de Pavo
+Harvest_Feast_Turkey_Trophy.description = Un pavo que se queda donde lo pones. De tarde en tarde un Pavo Silvestre deja uno, y solo mientras dura el Banquete de la Cosecha. Colócalo donde quieras.
+Harvest_Feast_Golden_Turkey_Trophy.name = Trofeo de Pavo Dorado
+Harvest_Feast_Golden_Turkey_Trophy.description = Un pavo de oro macizo. De tarde en tarde el Gran Pavo deja uno al ser vencido, más a menudo en tu primera victoria de cada día y en la entrada difícil. Colócalo donde quieras.
+Harvest_Feast_Potion_Morph_Turkey.name = Poción de Transformación en Pavo
+Harvest_Feast_Potion_Morph_Turkey.description = Bébela y parecerás un pavo durante un rato. Se encuentra en el Botín de Jefe del Gran Pavo, más a menudo por la entrada difícil.
+Harvest_Feast_Great_Turkey_Mantle.name = Manto del Gran Pavo
+Harvest_Feast_Great_Turkey_Mantle.description = Cuero cosido con las plumas de la cola del propio Gran Pavo, todavía frío del cementerio. Las flechas resbalan en él, y el favor de Martha llega más rápido mientras lo lleves. Parte del Conjunto de la Cosecha, en lugar de la Túnica de la Cosecha. Solo lo deja el Gran Pavo, más a menudo en tu primera victoria de cada día y en la entrada difícil.
+Harvest_Feast_Wishbone.name = Espoleta
+Harvest_Feast_Wishbone.description = La espoleta de un pavo, guardada del asado. <b>Martha la Cocinera</b>, en el Templo Olvidado, se lleva una para guiaros a ti y a tu grupo al <b>Cementerio de los Pavos</b> mientras dure el Banquete de la Cosecha.\n\nTe da una cada vez que le entregas <b>Pavos Extra</b>.
+
+# Banquete de la Cosecha - el Conjunto de la Cosecha, a la venta en la tienda de Martha.
+Harvest_Feast_Harvest_Hat.name = Sombrero de la Cosecha
+Harvest_Feast_Harvest_Hat.description = Un sombrero de lana abrigado para los largos días en el campo. Martha lo vende en su tienda cuando te considera Amigo. Parte del Conjunto de la Cosecha: lleva más piezas para más salud, y el conjunto entero para ganar su favor más rápido.
+Harvest_Feast_Harvest_Tunic.name = Túnica de la Cosecha
+Harvest_Feast_Harvest_Tunic.description = Una túnica de lana para los largos días en el campo. Martha la vende en su tienda cuando eres Cabecera de la Mesa con ella. Parte del Conjunto de la Cosecha: lleva más piezas para más salud, y el conjunto entero para ganar su favor más rápido.
+Harvest_Feast_Harvest_Gloves.name = Guantes de la Cosecha
+Harvest_Feast_Harvest_Gloves.description = Guantes de lana abrigados para recoger con frío. Martha los vende en su tienda cuando te considera Vecino. Parte del Conjunto de la Cosecha: lleva más piezas para más salud, y el conjunto entero para ganar su favor más rápido.
+Harvest_Feast_Harvest_Trousers.name = Pantalones de la Cosecha
+Harvest_Feast_Harvest_Trousers.description = Pantalones de lana que aguantan un día entero en el campo. Martha los vende en su tienda cuando eres De la Familia. Parte del Conjunto de la Cosecha: lleva más piezas para más salud, y el conjunto entero para ganar su favor más rápido.
+
+# Harvest Feast - Martha's three dishes, the recipe pages her shop sells for them, and what eating them does.
+Harvest_Feast_Turkey_Pie.name = Pastel de Pavo
+Harvest_Feast_Turkey_Pie.description = El pastel de carne de Martha. Restaura al instante el <color is="#ffffff">5%</color> de la salud y concede:\n\n• <color is="#ffffff">Regeneración de Salud III</color>\n• <color is="#ffffff">Aumento de Salud IV</color>: un <color is="#ffffff">20%</color> más de salud máxima y un <color is="#ffffff">8%</color> menos de daño físico y de proyectiles\n\nDuración: <color is="#ffffff">10:00</color>\n\nHornéalo en una Cocina del Chef cuando hayas aprendido la receta de Martha.
+Harvest_Feast_Harvest_Salad.name = Ensalada de la Cosecha
+Harvest_Feast_Harvest_Salad.description = Zanahorias, maíz y calabaza con una pizca de especias. Restaura al instante el <color is="#ffffff">5%</color> de la salud y concede:\n\n• <color is="#ffffff">Regeneración de Salud III</color>\n• <color is="#ffffff">Aumento de Resistencia IV</color>: un <color is="#ffffff">40%</color> más de resistencia máxima\n\nDuración: <color is="#ffffff">10:00</color>\n\nPrepárala en una Cocina del Chef cuando hayas aprendido la receta de Martha.
+Harvest_Feast_Marthas_Roast.name = Asado de Martha
+Harvest_Feast_Marthas_Roast.description = El mejor plato de Martha, carne y verduras asadas en un palo. Restaura al instante el <color is="#ffffff">5%</color> de la salud y concede:\n\n• <color is="#ffffff">Regeneración de Salud III</color>\n• <color is="#ffffff">Aumento de Salud IV</color>: un <color is="#ffffff">20%</color> más de salud máxima y un <color is="#ffffff">8%</color> menos de daño físico y de proyectiles\n• <color is="#ffffff">Aumento de Resistencia IV</color>: un <color is="#ffffff">40%</color> más de resistencia máxima\n• <color is="#ffffff">Aumento de Favor</color>: el favor de Martha sube un <color is="#ffffff">10%</color> más rápido\n\nDuración: <color is="#ffffff">10:00</color>\n\nCocínalo en una Cocina del Chef cuando hayas aprendido la receta de Martha.
+Harvest_Feast_Recipe_Turkey_Pie.name = Receta: Pastel de Pavo
+Harvest_Feast_Recipe_Turkey_Pie.description = Enseña la receta de <item is="Harvest_Feast_Turkey_Pie"/>. Hornéalo en una Cocina del Chef con masa, carne cruda y especias.\n\nRestaura al instante el <color is="#ffffff">5%</color> de la salud y concede:\n\n• <color is="#ffffff">Regeneración de Salud III</color>\n• <color is="#ffffff">Aumento de Salud IV</color>\n\nDuración: <color is="#ffffff">10:00</color>
+Harvest_Feast_Recipe_Harvest_Salad.name = Receta: Ensalada de la Cosecha
+Harvest_Feast_Recipe_Harvest_Salad.description = Enseña la receta de <item is="Harvest_Feast_Harvest_Salad"/>. Prepárala en una Cocina del Chef con zanahorias, maíz, una calabaza y especias.\n\nRestaura al instante el <color is="#ffffff">5%</color> de la salud y concede:\n\n• <color is="#ffffff">Regeneración de Salud III</color>\n• <color is="#ffffff">Aumento de Resistencia IV</color>\n\nDuración: <color is="#ffffff">10:00</color>
+Harvest_Feast_Recipe_Marthas_Roast.name = Receta: Asado de Martha
+Harvest_Feast_Recipe_Marthas_Roast.description = Enseña la receta de <item is="Harvest_Feast_Marthas_Roast"/>. Cocínalo en una Cocina del Chef con un palo, carne cruda, una zanahoria, maíz, una calabaza y especias.\n\nRestaura al instante el <color is="#ffffff">5%</color> de la salud y concede:\n\n• <color is="#ffffff">Regeneración de Salud III</color>\n• <color is="#ffffff">Aumento de Salud IV</color>\n• <color is="#ffffff">Aumento de Resistencia IV</color>\n• <color is="#ffffff">Aumento de Favor</color>\n\nDuración: <color is="#ffffff">10:00</color>
+effect.harvest_feast_food_regen.name = Regeneración de Salud III
+effect.harvest_feast_food_health.name = Aumento de Salud IV
+effect.harvest_feast_food_stamina.name = Aumento de Resistencia IV
+effect.harvest_feast_food_favor.name = Aumento de Favor
 

@@ -1,0 +1,18 @@
+{
+  "$Comment": [
+    "What each player who fought the Great Turkey sees when the fight is lost: everyone fell or left, and it",
+    "waits at full health for the next try, with the waves before it already beaten. Its binding row points",
+    "its Wiped beat here (Feedback.Wiped). The second line is the lesson most first fights miss: the souls",
+    "that join it wear a party down if nobody deals with them. A quiet Info toast, since the screen already",
+    "went grey."
+  ],
+  "Toast": {
+    "Title": {
+      "Key": "notify.harvest_feast_great_turkey_wiped"
+    },
+    "Secondary": {
+      "Key": "notify.harvest_feast_great_turkey_wiped.sub"
+    },
+    "Tone": "Info"
+  }
+}

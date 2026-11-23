@@ -1,0 +1,8 @@
+{
+  "$Comment": "How much faster a player earns favor with Martha (the reputation Harvest_Feast_Host) while wearing gear that raises it, in whole percent points (10 is +10%): each piece of the Harvest Set (Armor.StatModifiers on the Harvest Hat, Tunic, Gloves and Trousers) and the set's four-piece tier (ZiggfreedCommon/GearSets/SeasonsOfOrbis/Harvest_Feast_Harvest_Set.json), each Additive on the Max. ziggfreed-common adds it to the shared CategoryGain_Reputation and multiplies every favor gain with Martha (a turkey, a quest, a board job, her daily greeting) by 1 + the total, and past Head of the Table too, where each multiple of Beyond's Every pays a Feast Basket. A loss of favor is never changed, and favor already earned never moves when the gear comes off. The id is TrackGain_ and the reputation's group id, the reputation's own track gain stat, which is how the library finds it. Base Max 0, so a player wearing none of it earns the amount written; Min -100 keeps a subtractive modifier from ever turning a gain into nothing. Its tooltip line is the client.lang key itemTooltip.stats.TrackGain_Harvest_Feast_Host.",
+  "InitialValue": 0.0,
+  "Min": -100.0,
+  "Max": 0.0,
+  "Shared": false,
+  "HideFromTooltip": false
+}

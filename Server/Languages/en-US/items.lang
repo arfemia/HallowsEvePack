@@ -74,3 +74,51 @@ Seasons_Of_Orbis_Voidtaken_Gauntlets.name = Voidtaken Gauntlets
 Seasons_Of_Orbis_Voidtaken_Gauntlets.description = The gloves the Voidtaken Horseman rides in, cold as the void that took him. Void damage you deal hits harder while you wear them. Found now and then when he falls in the Restless Graveyard.
 Seasons_Of_Orbis_Voidtaken_Greaves.name = Voidtaken Greaves
 Seasons_Of_Orbis_Voidtaken_Greaves.description = Ancient steel from the Voidtaken Horseman's saddle, dark at the knees where the void got in. Void damage you deal hits harder while you wear them. Found now and then when he falls in the Restless Graveyard.
+
+# Harvest Feast - the year's keepsake, handed over with The Feast's pay.
+Harvest_Feast_Golden_Plate.name = Martha's Golden Plate
+Harvest_Feast_Golden_Plate.description = A golden plate with the year on it, much too good to eat off. Martha gives one to everyone who sits down to The Feast with her, once each Harvest Feast. Place it anywhere you like, or stack one year's on another.
+
+# Harvest Feast - a rare find from hunting Wild Turkeys.
+Harvest_Feast_Turkey_Trophy.name = Turkey Trophy
+Harvest_Feast_Turkey_Trophy.description = A turkey that stays where you put it. Once in a long while a Wild Turkey leaves one behind, and only while Harvest Feast runs. Place it anywhere you like.
+
+# Harvest Feast - the Great Turkey's two finds in the Turkey Graveyard.
+Harvest_Feast_Golden_Turkey_Trophy.name = Golden Turkey Trophy
+Harvest_Feast_Golden_Turkey_Trophy.description = A turkey in solid gold. Once in a long while the Great Turkey leaves one, more often on your first win each day and on the hard way in. Place it anywhere you like.
+Harvest_Feast_Potion_Morph_Turkey.name = Potion of Turkey Morphing
+Harvest_Feast_Potion_Morph_Turkey.description = Drink it and you look like a turkey for a while. Found in the Great Turkey's Boss Kill Claim, more often on the hard way in.
+Harvest_Feast_Great_Turkey_Mantle.name = Great Turkey Mantle
+Harvest_Feast_Great_Turkey_Mantle.description = Leather sewn with the Great Turkey's own tail feathers, still cold from the graveyard. Arrows glance off it, and Martha's favor comes faster while you wear it. Part of the Harvest Set, in place of the Harvest Tunic. Only the Great Turkey drops it, more often on your first win each day and on the hard way in.
+
+# Harvest Feast - the price of the Turkey Graveyard, paid for each Extra Turkeys.
+Harvest_Feast_Wishbone.name = Wishbone
+Harvest_Feast_Wishbone.description = A turkey's wishbone, saved from the roast. <b>Martha the Cook</b> in the Forgotten Temple takes one to send you and your party into the <b>Turkey Graveyard</b> while Harvest Feast runs.\n\nShe gives you one each time you hand in <b>Extra Turkeys</b>.
+
+# Harvest Feast - the Harvest Set, sold at Martha's shop.
+Harvest_Feast_Harvest_Hat.name = Harvest Hat
+Harvest_Feast_Harvest_Hat.description = A warm wool hat for long days in the fields. Martha sells it at her shop once she counts you a Friend. Part of the Harvest Set: wear more of it for more health, and the whole set to earn her favor faster.
+Harvest_Feast_Harvest_Tunic.name = Harvest Tunic
+Harvest_Feast_Harvest_Tunic.description = A wool tunic for long days in the fields. Martha sells it at her shop once you're Head of the Table with her. Part of the Harvest Set: wear more of it for more health, and the whole set to earn her favor faster.
+Harvest_Feast_Harvest_Gloves.name = Harvest Gloves
+Harvest_Feast_Harvest_Gloves.description = Warm wool gloves for picking in the cold. Martha sells them at her shop once she counts you a Neighbor. Part of the Harvest Set: wear more of it for more health, and the whole set to earn her favor faster.
+Harvest_Feast_Harvest_Trousers.name = Harvest Trousers
+Harvest_Feast_Harvest_Trousers.description = Wool trousers that stand up to a day in the fields. Martha sells them at her shop once she counts you Family. Part of the Harvest Set: wear more of it for more health, and the whole set to earn her favor faster.
+
+# Harvest Feast - Martha's three dishes, the recipe pages her shop sells for them, and what eating them does.
+Harvest_Feast_Turkey_Pie.name = Turkey Pie
+Harvest_Feast_Turkey_Pie.description = Martha's own meat pie. Instantly restores <color is="#ffffff">5%</color> health and grants:\n\n• <color is="#ffffff">Health Regen III</color>\n• <color is="#ffffff">Health Boost IV</color>: <color is="#ffffff">20%</color> more max health and <color is="#ffffff">8%</color> less physical and projectile damage\n\nDuration: <color is="#ffffff">10:00</color>\n\nBake it at a Chef's Stove once you've learned Martha's recipe.
+Harvest_Feast_Harvest_Salad.name = Harvest Salad
+Harvest_Feast_Harvest_Salad.description = Carrots, corn and pumpkin with a pinch of spice. Instantly restores <color is="#ffffff">5%</color> health and grants:\n\n• <color is="#ffffff">Health Regen III</color>\n• <color is="#ffffff">Stamina Boost IV</color>: <color is="#ffffff">40%</color> more max stamina\n\nDuration: <color is="#ffffff">10:00</color>\n\nMake it at a Chef's Stove once you've learned Martha's recipe.
+Harvest_Feast_Marthas_Roast.name = Martha's Roast
+Harvest_Feast_Marthas_Roast.description = Martha's best dish, meat and vegetables roasted on a stick. Instantly restores <color is="#ffffff">5%</color> health and grants:\n\n• <color is="#ffffff">Health Regen III</color>\n• <color is="#ffffff">Health Boost IV</color>: <color is="#ffffff">20%</color> more max health and <color is="#ffffff">8%</color> less physical and projectile damage\n• <color is="#ffffff">Stamina Boost IV</color>: <color is="#ffffff">40%</color> more max stamina\n• <color is="#ffffff">Favor Boost</color>: Martha's favor comes <color is="#ffffff">10%</color> faster\n\nDuration: <color is="#ffffff">10:00</color>\n\nCook it at a Chef's Stove once you've learned Martha's recipe.
+Harvest_Feast_Recipe_Turkey_Pie.name = Recipe: Turkey Pie
+Harvest_Feast_Recipe_Turkey_Pie.description = Teaches the <item is="Harvest_Feast_Turkey_Pie"/> recipe. Bake it at a Chef's Stove from dough, raw meat and spices.\n\nInstantly restores <color is="#ffffff">5%</color> health and grants:\n\n• <color is="#ffffff">Health Regen III</color>\n• <color is="#ffffff">Health Boost IV</color>\n\nDuration: <color is="#ffffff">10:00</color>
+Harvest_Feast_Recipe_Harvest_Salad.name = Recipe: Harvest Salad
+Harvest_Feast_Recipe_Harvest_Salad.description = Teaches the <item is="Harvest_Feast_Harvest_Salad"/> recipe. Make it at a Chef's Stove from carrots, corn, a pumpkin and spices.\n\nInstantly restores <color is="#ffffff">5%</color> health and grants:\n\n• <color is="#ffffff">Health Regen III</color>\n• <color is="#ffffff">Stamina Boost IV</color>\n\nDuration: <color is="#ffffff">10:00</color>
+Harvest_Feast_Recipe_Marthas_Roast.name = Recipe: Martha's Roast
+Harvest_Feast_Recipe_Marthas_Roast.description = Teaches the <item is="Harvest_Feast_Marthas_Roast"/> recipe. Cook it at a Chef's Stove from a stick, raw meat, a carrot, corn, a pumpkin and spices.\n\nInstantly restores <color is="#ffffff">5%</color> health and grants:\n\n• <color is="#ffffff">Health Regen III</color>\n• <color is="#ffffff">Health Boost IV</color>\n• <color is="#ffffff">Stamina Boost IV</color>\n• <color is="#ffffff">Favor Boost</color>\n\nDuration: <color is="#ffffff">10:00</color>
+effect.harvest_feast_food_regen.name = Health Regen III
+effect.harvest_feast_food_health.name = Health Boost IV
+effect.harvest_feast_food_stamina.name = Stamina Boost IV
+effect.harvest_feast_food_favor.name = Favor Boost

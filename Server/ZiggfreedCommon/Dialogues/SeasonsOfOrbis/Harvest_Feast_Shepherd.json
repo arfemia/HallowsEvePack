@@ -4,16 +4,26 @@
     "Bram the Shepherd's conversation, one of the three villagers standing in the Forgotten Temple while",
     "Harvest Feast runs. Bram contracts, and keeps it short: I'm, can't, she's.",
     "",
-    "Start's First beat answers a visit while the feast is off (after a command ends it, or when a server",
-    "owner stands Bram somewhere all year) with one line and goodbye. Otherwise the conversation opens on",
-    "greeting, the Fallback. A conversation has no Season leaf, so the off-season beat reads the feature",
-    "ziggfreedcommon:feature Harvest_Feast_Live, Min 1.",
+    "Start's First beats come first. The off-season beat answers a visit while the feast is off (after a",
+    "command ends it, or when a server owner stands Bram somewhere all year) with one line and goodbye. A",
+    "conversation has no Season leaf, so it reads the feature ziggfreedcommon:feature Harvest_Feast_Live,",
+    "Min 1.",
     "",
-    "Bram gives no quest and credits no talk of his own. The invitation tour's line is not in this file:",
-    "DialogueExtensions/SeasonsOfOrbis/Harvest_Feast_Invitation.json adds it to the screens a",
-    "conversation opens on while the player carries the tour, after a screen's own lines and before the",
-    "goodbye group, so goodbye stays last. That line is spent once a day per conversation, which is why",
-    "each villager has a conversation of their own."
+    "Quests holds two rows. Supper for Bram (harvest_feast_supper_bram), the plate Martha sends him after",
+    "The Feast, names only its Ready screen: while the player carries it with the cooked wildmeat in the",
+    "bag, the conversation opens on supper, his thanks, whose answer hands it over. Then his daily, Daily",
+    "Eggs (harvest_feast_shepherd_eggs): the conversation opens on its offer while it can be taken, on its",
+    "brief while it is carried, and on its hand-in once the eggs are in the bag. Each hand-in opens his",
+    "quest list with Collect in front of the player, and collecting plays this conversation again (each",
+    "quest's CompletionDialogue). Otherwise it opens on greeting, the Fallback. Greeting and the eggs brief",
+    "lead with What needs doing? (Open Quests: the quest list of the character in front of the player, so",
+    "his daily and his supper), then his tip on turkeys, eggs and taming (the turkeys screen). The way",
+    "into the Turkey Graveyard is Martha's (Harvest_Feast_Host.json), not his.",
+    "",
+    "The invitation tour's line is not in this file: DialogueExtensions/SeasonsOfOrbis/",
+    "Harvest_Feast_Invitation.json adds it to the screens a conversation opens on while the player carries",
+    "the tour, after a screen's own lines and before the goodbye group, so goodbye stays last. That line",
+    "is spent once a day per conversation, which is why each villager has a conversation of their own."
   ],
   "Start": {
     "First": [
@@ -24,6 +34,10 @@
         ]
       }
     ],
+    "Quests": {
+      "harvest_feast_supper_bram": { "Ready": "supper" },
+      "harvest_feast_shepherd_eggs": { "Offerable": "eggs_offer", "Active": "eggs_brief", "Ready": "eggs_ready" }
+    },
     "Fallback": "greeting"
   },
   "Nodes": {
@@ -36,14 +50,65 @@
     "greeting": {
       "TextKey": "dialogue.harvest_feast_shepherd.greeting.text",
       "Options": [
-        { "LabelKey": "dialogue.harvest_feast_shepherd.opt.sheep", "Style": "neutral", "Goto": "sheep" }
+        { "LabelKey": "dialogue.harvest_feast_shepherd.opt.quests", "Style": "accept", "Open": "Quests" },
+        { "LabelKey": "dialogue.harvest_feast_shepherd.opt.turkeys", "Style": "neutral", "Goto": "turkeys" }
       ],
       "IncludeOptions": [ "goodbye" ]
     },
-    "sheep": {
-      "TextKey": "dialogue.harvest_feast_shepherd.sheep.text",
+    "turkeys": {
+      "TextKey": "dialogue.harvest_feast_shepherd.turkeys.text",
       "Options": [
-        { "LabelKey": "dialogue.harvest_feast_shepherd.opt.back", "Style": "neutral", "Goto": "greeting" }
+        { "LabelKey": "dialogue.harvest_feast_shepherd.opt.thanks", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "supper": {
+      "TextKey": "dialogue.harvest_feast_shepherd.supper.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_shepherd.supper.opt.give",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "harvest_feast_supper_bram" } ],
+          "Do": [
+            { "TurnIn": "harvest_feast_supper_bram" },
+            { "Open": { "Type": "Quests", "Highlight": "harvest_feast_supper_bram" } }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "eggs_offer": {
+      "TextKey": "dialogue.harvest_feast_shepherd.eggs_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_shepherd.eggs_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "harvest_feast_shepherd_eggs" }, { "Goto": "eggs_brief" } ]
+        },
+        { "LabelKey": "dialogue.harvest_feast_shepherd.eggs_offer.opt.later", "Style": "neutral", "Goto": "greeting" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "eggs_brief": {
+      "TextKey": "dialogue.harvest_feast_shepherd.eggs_brief.text",
+      "Options": [
+        { "LabelKey": "dialogue.harvest_feast_shepherd.opt.quests", "Style": "accept", "Open": "Quests" },
+        { "LabelKey": "dialogue.harvest_feast_shepherd.opt.turkeys", "Style": "neutral", "Goto": "turkeys" }
+      ],
+      "IncludeOptions": [ "goodbye" ]
+    },
+    "eggs_ready": {
+      "TextKey": "dialogue.harvest_feast_shepherd.eggs_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_shepherd.eggs_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "harvest_feast_shepherd_eggs" } ],
+          "Do": [
+            { "TurnIn": "harvest_feast_shepherd_eggs" },
+            { "Open": { "Type": "Quests", "Highlight": "harvest_feast_shepherd_eggs" } }
+          ]
+        }
       ],
       "IncludeOptions": [ "goodbye" ]
     }

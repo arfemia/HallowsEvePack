@@ -68,3 +68,43 @@ Hallows_Eve_Horsemans_Reins.description = Собственные поводья 
 Hallows_Eve_Horsemans_Reins.command_calm = Успокоить
 Hallows_Eve_Horsemans_Steed_Trophy.name = Трофей «Конь Всадника»
 Hallows_Eve_Horsemans_Steed_Trophy.description = Крошечная фигурка вороного коня Всадника без головы в броне, на подставке с золотой отделкой. Поставьте её где угодно. Изредка встречается в его награде за босса, а Старый Джек продаёт такую.
+Harvest_Feast_Golden_Plate.name = Золотая тарелка Марты
+Harvest_Feast_Golden_Plate.description = Золотая тарелка с годом на ободке, слишком хороша, чтобы есть с неё. Марта дарит такую каждому, кто садится с ней за пир, раз за каждый Праздник урожая. Поставьте её где угодно или сложите стопкой тарелки разных лет.
+Harvest_Feast_Turkey_Trophy.name = Индюшиный трофей
+Harvest_Feast_Turkey_Trophy.description = Индюк, который стоит там, где его поставили. Очень редко дикий индюк оставляет такого после себя, и только пока идёт Праздник урожая. Поставьте его где угодно.
+Harvest_Feast_Golden_Turkey_Trophy.name = Золотой индюшиный трофей
+Harvest_Feast_Golden_Turkey_Trophy.description = Индюк из цельного золота. Раз в долгое время Великий индюк оставляет такой после любой победы, а после первой победы за день и на сложном пути чаще. Поставьте его где угодно.
+Harvest_Feast_Potion_Morph_Turkey.name = Зелье превращения в индюка
+Harvest_Feast_Potion_Morph_Turkey.description = Выпейте, и на время вы станете похожи на индюка. Встречается в награде за босса Великого индюка, чаще на сложном пути.
+Harvest_Feast_Great_Turkey_Mantle.name = Накидка Великого индюка
+Harvest_Feast_Great_Turkey_Mantle.description = Кожа, сшитая из хвостовых перьев самого Великого индюка, ещё холодная после кладбища. Стрелы скользят по ней, а расположение Марты растёт быстрее, пока вы её носите. Часть Комплекта урожая, вместо Туники урожая. Выпадает только с Великого индюка после любой победы, а после первой победы за день и на сложном пути чаще.
+Harvest_Feast_Wishbone.name = Вилочка
+Harvest_Feast_Wishbone.description = Вилочка индюка, припасённая с жаркого. <b>Марта-повариха</b> в Забытом храме берёт одну, чтобы провести тебя и твою группу на <b>Индюшачье кладбище</b>, пока идёт Праздник урожая.\n\nОна даёт её каждый раз, когда сдаёшь ей <b>Лишних индюков</b>.
+
+# Harvest Feast - the Harvest Set, sold at Martha's shop.
+Harvest_Feast_Harvest_Hat.name = Шапка урожая
+Harvest_Feast_Harvest_Hat.description = Тёплая шерстяная шапка для долгих дней в поле. Марта продаёт её в своей лавке, когда считает вас другом. Часть Комплекта урожая: чем больше его на вас, тем больше здоровья, а целый комплект ускоряет рост её расположения.
+Harvest_Feast_Harvest_Tunic.name = Туника урожая
+Harvest_Feast_Harvest_Tunic.description = Шерстяная туника для долгих дней в поле. Марта продаёт её в своей лавке, когда вы у неё во главе стола. Часть Комплекта урожая: чем больше его на вас, тем больше здоровья, а целый комплект ускоряет рост её расположения.
+Harvest_Feast_Harvest_Gloves.name = Перчатки урожая
+Harvest_Feast_Harvest_Gloves.description = Тёплые шерстяные перчатки для сбора урожая на холоде. Марта продаёт их в своей лавке, когда считает вас соседом. Часть Комплекта урожая: чем больше его на вас, тем больше здоровья, а целый комплект ускоряет рост её расположения.
+Harvest_Feast_Harvest_Trousers.name = Штаны урожая
+Harvest_Feast_Harvest_Trousers.description = Шерстяные штаны, которые выдержат день в поле. Марта продаёт их в своей лавке, когда считает вас семьёй. Часть Комплекта урожая: чем больше его на вас, тем больше здоровья, а целый комплект ускоряет рост её расположения.
+
+# Harvest Feast - Martha's three dishes, the recipe pages her shop sells for them, and what eating them does.
+Harvest_Feast_Turkey_Pie.name = Индюшиный пирог
+Harvest_Feast_Turkey_Pie.description = Собственный мясной пирог Марты. Мгновенно восстанавливает <color is="#ffffff">5%</color> здоровья и даёт:\n\n• <color is="#ffffff">Регенерацию здоровья III</color>\n• <color is="#ffffff">Увеличение здоровья IV</color>: на <color is="#ffffff">20%</color> больше максимального здоровья и на <color is="#ffffff">8%</color> меньше физического урона и урона от снарядов\n\nДлительность: <color is="#ffffff">10:00</color>\n\nИспеките его на Кухонной плите, изучив рецепт Марты.
+Harvest_Feast_Harvest_Salad.name = Салат урожая
+Harvest_Feast_Harvest_Salad.description = Морковь, кукуруза и тыква со щепоткой специй. Мгновенно восстанавливает <color is="#ffffff">5%</color> здоровья и даёт:\n\n• <color is="#ffffff">Регенерацию здоровья III</color>\n• <color is="#ffffff">Увеличение выносливости IV</color>: на <color is="#ffffff">40%</color> больше максимальной выносливости\n\nДлительность: <color is="#ffffff">10:00</color>\n\nПриготовьте его на Кухонной плите, изучив рецепт Марты.
+Harvest_Feast_Marthas_Roast.name = Жаркое Марты
+Harvest_Feast_Marthas_Roast.description = Лучшее блюдо Марты: мясо и овощи, зажаренные на палке. Мгновенно восстанавливает <color is="#ffffff">5%</color> здоровья и даёт:\n\n• <color is="#ffffff">Регенерацию здоровья III</color>\n• <color is="#ffffff">Увеличение здоровья IV</color>: на <color is="#ffffff">20%</color> больше максимального здоровья и на <color is="#ffffff">8%</color> меньше физического урона и урона от снарядов\n• <color is="#ffffff">Увеличение выносливости IV</color>: на <color is="#ffffff">40%</color> больше максимальной выносливости\n• <color is="#ffffff">Рост расположения</color>: расположение Марты растёт на <color is="#ffffff">10%</color> быстрее\n\nДлительность: <color is="#ffffff">10:00</color>\n\nПриготовьте его на Кухонной плите, изучив рецепт Марты.
+Harvest_Feast_Recipe_Turkey_Pie.name = Рецепт: Индюшиный пирог
+Harvest_Feast_Recipe_Turkey_Pie.description = Изучите рецепт: <item is="Harvest_Feast_Turkey_Pie"/>. Испеките его на Кухонной плите из теста, сырого мяса и специй.\n\nМгновенно восстанавливает <color is="#ffffff">5%</color> здоровья и даёт:\n\n• <color is="#ffffff">Регенерацию здоровья III</color>\n• <color is="#ffffff">Увеличение здоровья IV</color>\n\nДлительность: <color is="#ffffff">10:00</color>
+Harvest_Feast_Recipe_Harvest_Salad.name = Рецепт: Салат урожая
+Harvest_Feast_Recipe_Harvest_Salad.description = Изучите рецепт: <item is="Harvest_Feast_Harvest_Salad"/>. Приготовьте его на Кухонной плите из моркови, кукурузы, тыквы и специй.\n\nМгновенно восстанавливает <color is="#ffffff">5%</color> здоровья и даёт:\n\n• <color is="#ffffff">Регенерацию здоровья III</color>\n• <color is="#ffffff">Увеличение выносливости IV</color>\n\nДлительность: <color is="#ffffff">10:00</color>
+Harvest_Feast_Recipe_Marthas_Roast.name = Рецепт: Жаркое Марты
+Harvest_Feast_Recipe_Marthas_Roast.description = Изучите рецепт: <item is="Harvest_Feast_Marthas_Roast"/>. Приготовьте его на Кухонной плите из палки, сырого мяса, моркови, кукурузы, тыквы и специй.\n\nМгновенно восстанавливает <color is="#ffffff">5%</color> здоровья и даёт:\n\n• <color is="#ffffff">Регенерацию здоровья III</color>\n• <color is="#ffffff">Увеличение здоровья IV</color>\n• <color is="#ffffff">Увеличение выносливости IV</color>\n• <color is="#ffffff">Рост расположения</color>\n\nДлительность: <color is="#ffffff">10:00</color>
+effect.harvest_feast_food_regen.name = Регенерация здоровья III
+effect.harvest_feast_food_health.name = Увеличение здоровья IV
+effect.harvest_feast_food_stamina.name = Увеличение выносливости IV
+effect.harvest_feast_food_favor.name = Рост расположения

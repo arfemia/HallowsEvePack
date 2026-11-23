@@ -1,0 +1,46 @@
+{
+  "$Comment": [
+    "Take the supper round once The Feast is done: a plate of the leftovers to each of Martha's three",
+    "helpers. One COMPLETE_QUEST criterion per delivery, each naming its quest's id",
+    "(Quests/SeasonsOfOrbis/_Harvest_Feast/Supper_Tomas.json, Supper_Elsie.json and Supper_Bram.json),",
+    "and every criterion must complete. A quest counts when its pay is collected, and the three come back",
+    "once in each year's feast, so this year's copy waits on this year's round.",
+    "",
+    "It inherits the yearly occurrence from Harvest_Feast_Achievement_Base, so each year has its own copy",
+    "with the year in its title, and the full_table tag counts it toward The Full Table. Each year's copy",
+    "pays Harvest Coins and MMO Skill Tree's Mmo_Xp row, Crafting XP as the supper deliveries pay it, both",
+    "waiting on the achievements page until the player collects them. The Mmo_Xp row's own Requires, the",
+    "hytale:mod_installed gate, leaves it out on a server without that mod, unpaid and unshown, and the",
+    "coins still pay. The _Harvest_Feast folder makes the id harvest_feast_supper_round."
+  ],
+  "Parent": "Harvest_Feast_Achievement_Base",
+  "Listing": { "SortOrder": 15, "Icon": "Food_Pie_Pumpkin", "Tags": [ "full_table" ] },
+  "Scoring": { "Points": 10 },
+  "Criteria": {
+    "supper-for-tomas": {
+      "Kind": "COMPLETE_QUEST",
+      "Target": "harvest_feast_supper_tomas",
+      "MatchMode": "EXACT",
+      "Amount": 1
+    },
+    "supper-for-elsie": {
+      "Kind": "COMPLETE_QUEST",
+      "Target": "harvest_feast_supper_elsie",
+      "MatchMode": "EXACT",
+      "Amount": 1
+    },
+    "supper-for-bram": {
+      "Kind": "COMPLETE_QUEST",
+      "Target": "harvest_feast_supper_bram",
+      "MatchMode": "EXACT",
+      "Amount": 1
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Currency", "Params": { "Currency": "Harvest_Feast_Coins", "Amount": "25" } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "CRAFTING", "Amount": "2500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

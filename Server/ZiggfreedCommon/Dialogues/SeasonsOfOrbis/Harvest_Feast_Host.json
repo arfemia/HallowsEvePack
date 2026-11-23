@@ -7,21 +7,34 @@
     "",
     "HOW A SCREEN IS PICKED. Start is walked in a fixed order: First (top to bottom), then a quest that is",
     "READY to hand in, then one she can OFFER, then one that is ACTIVE, then Then, then Fallback.",
-    "First holds five things. The off-season line comes first and shows only while the feast is off (a",
+    "First holds six things. The off-season line comes first and shows only while the feast is off (a",
     "visit after a command ends it, or a server owner who stands her somewhere all year), and its only",
-    "answer is goodbye. Then her arrival line, for a player carrying Supper in the Temple (the quest",
-    "every player gets while the feast runs): its answer marks her greeted and hands that quest in, and",
-    "since its pay is a Claim, the hand-in takes the player to her quest list with Collect in front of",
+    "answer is goodbye. Then her arrival line, for a player carrying her intro quest (Meet Martha, the",
+    "quest every player gets while the feast runs): its answer marks her greeted and hands that quest in,",
+    "and since its pay is a Claim, the hand-in takes the player to her quest list with Collect in front of",
     "them. Then the greeting, for anyone who came without that quest, shown until the hail spends it.",
-    "Then Wheat for the Ovens' offer, once (OnceId meet_wheat_offer), for a player who has handed the",
-    "intro in and not taken that quest yet: collecting the intro plays this conversation again, so the",
-    "questline opens straight after the arrival. Then the board line, shown once a day (Once with Period",
-    "Daily, turning over at midnight UTC) and skipped while the player has something to hand in.",
+    "Then her first quest's offer (harvest_feast_host_1), once (OnceId meet_wheat_offer), for a player who",
+    "has handed the intro in and not taken that quest yet: collecting the intro plays this conversation",
+    "again, so the questline opens straight after the arrival. Then the supper deliveries' offer (below).",
+    "Then the board line, shown once a day (Once",
+    "with Period Daily, turning over at midnight UTC) and skipped while the player has something to hand",
+    "in.",
     "",
     "Quests holds one row per quest: the intro, the questline, then the rest, so the questline wins a tie",
     "with a daily. The intro's row brings the arrival line back for a player whose quest log was full when",
-    "the intro tried to arm: its answer for them takes the quest and hands it in. Then shows the",
-    "after-feast line once this year's feast is done.",
+    "the intro tried to arm: its answer for them takes the quest and hands it in. Extra Turkeys",
+    "(harvest_feast_extra_turkeys) repeats with no limit, so its row names only its Active and Ready",
+    "screens: with no Offerable beat the ladder never opens on it as an offer, and it is offered from her",
+    "quest list (What needs doing?) instead. Then shows the after-feast line once this year's feast and",
+    "its three supper deliveries are done: each reads ON_COOLDOWN until it comes back next year, so the",
+    "line takes that state beside COMPLETED.",
+    "",
+    "THE SUPPER DELIVERIES. After The Feast she sends a plate to each villager: three quests of one step",
+    "each (harvest_feast_supper_tomas, _elsie and _bram), handed in at the villager, whose conversation",
+    "thanks the player and takes the plate. The First beat deliveries_offer opens on her offer once this",
+    "year's Feast is collected (it reads ON_COOLDOWN or COMPLETED) while any of the three can still be",
+    "taken, and its one answer takes all three. Their rows name only the Active screen, so the start",
+    "ladder never opens on them one by one; a player can still take one from her quest list.",
     "",
     "THE BOARD LINE AND FAVOR. The board line comes in four wordings, one per band of favor with Martha,",
     "highest first, so the first that applies is the player's own rank: Revered, Honored, Friendly, then",
@@ -42,15 +55,42 @@
     "own table.",
     "",
     "THE FOOTER. Most screens pull in the feast_footer group: hand-ins, the quest list (her board's jobs",
-    "included), the stall, How do we stand? (it opens the Reputation page, and shows once the player has",
-    "any favor with her), the Almanac (only while the Almanac is switched on), two lore lines and goodbye.",
+    "included), the stall, the two ways into the Turkey Graveyard, How's my favor with you? (it opens the",
+    "Reputation page, and shows once the player has any favor with her), the Almanac (only while the",
+    "Almanac is switched on) and goodbye.",
     "",
-    "No line asks which world the player is in, so the arrival line, the greeting and Wheat for the Ovens'",
+    "THE TURKEY GRAVEYARD. Martha is the way into Harvest Feast's repeatable fight",
+    "(ZiggfreedCommon/Dungeons/Harvest_Feast_Turkey_Graveyard.json), straight from her footer while the",
+    "feast runs, with no screen of its own in between: the graveyard quests' offer and hand-in screens say",
+    "what it is and where Wishbones come from. Each way in carries its own Presentation and the Wishbone's",
+    "icon so it stands apart from her other options. The label names the price, since option labels take",
+    "no number from the file: change it with the dungeon's EntryCost. Open is the Dungeon destination:",
+    "picking it opens CommonLib's confirm screen with the Wishbone, how many the player holds and how many",
+    "it takes; its button spends the Wishbone and sends the player in with their party, and with none the",
+    "button is off and the screen says where Wishbones come from. A partymate following into a graveyard",
+    "their party already holds skips the screen and walks in free.",
+    "",
+    "THE HARD WAY IN. The footer's second way in, enter_hard, opens the hard graveyard",
+    "(ZiggfreedCommon/Dungeons/Harvest_Feast_Turkey_Graveyard_Hard.json) for the same Wishbone, tinted the",
+    "Great Turkey's fury red so it reads apart from the normal way. Its condition, the quest The Great Turkey",
+    "(harvest_feast_great_turkey) finished and collected, is the hard graveyard's only gate, since the",
+    "dungeon asks only for its season and its Wishbone, so no other line or press-F may open it. That quest",
+    "repeats once each feast, so the hard way opens after one win each year.",
+    "",
+    "THE GRAVEYARD QUESTS. Three rows in Quests, each naming no Active screen, so a player carrying one",
+    "opens on her usual menu, where the ways in sit: The Great Turkey (graveyard_offer, graveyard_ready),",
+    "its hard twin harvest_feast_great_turkey_hard (graveyard_hard_offer, graveyard_hard_ready), which opens",
+    "once the first is collected, and the graveyard daily harvest_feast_daily_graveyard (graveyard_daily_offer,",
+    "handed in on ready_generic with the other dailies). Each offer's answer takes the quest and goes to the",
+    "menu.",
+    "",
+    "No line asks which world the player is in, so the arrival line, the greeting and her first quest's",
     "offer play wherever she stands: the conversation is reached only through her (her placement's",
     "Interact), and Season keeps her standing only while the feast runs. The greeting's memory carries no",
     "Where, so it is kept once per player, the same in every world, and its ResetWithQuest files it under",
-    "her meet quest (Supper in the Temple): it is forgotten whenever that quest is reset, so a player who",
-    "starts the questline over hears her first words again. It can be written before that quest starts."
+    "her meet quest (harvest_feast_martha_meet): it is forgotten whenever that quest is reset, so a player",
+    "who starts the questline over hears her first words again. It can be written before that quest",
+    "starts."
   ],
   "Header": [ "ActiveObjective" ],
   "Memories": {
@@ -84,6 +124,18 @@
         ],
         "Once": true,
         "OnceId": "meet_wheat_offer"
+      },
+      {
+        "Node": "deliveries_offer",
+        "When": [
+          { "Type": "QuestState", "Quest": "harvest_feast_the_feast", "States": [ "COMPLETED", "ON_COOLDOWN" ] },
+          { "Type": "AnyOf", "Any": [
+            { "Type": "QuestState", "Quest": "harvest_feast_supper_tomas", "State": "NOT_STARTED" },
+            { "Type": "QuestState", "Quest": "harvest_feast_supper_elsie", "State": "NOT_STARTED" },
+            { "Type": "QuestState", "Quest": "harvest_feast_supper_bram", "State": "NOT_STARTED" }
+          ] },
+          { "Type": "Not", "Of": [ { "Type": "HasReadyToTurnIn" } ] }
+        ]
       },
       {
         "Node": "board_fresh_revered",
@@ -140,20 +192,30 @@
     "Quests": {
       "harvest_feast_martha_meet": { "Offerable": "meet_arrival", "Active": "meet_arrival", "Ready": "meet_arrival" },
       "harvest_feast_host_1": { "Offerable": "wheat_offer", "Active": "wheat_brief", "Ready": "wheat_ready" },
-      "harvest_feast_host_2": { "Offerable": "turkeys_offer", "Active": "active_generic", "Ready": "turkeys_ready" },
+      "harvest_feast_host_2": { "Offerable": "turkeys_offer", "Active": "turkeys_brief", "Ready": "turkeys_ready" },
       "harvest_feast_host_3": { "Offerable": "pie_offer", "Active": "pie_brief", "Ready": "pie_ready" },
       "harvest_feast_the_feast": { "Offerable": "feast_offer", "Active": "feast_brief", "Ready": "feast_ready" },
+      "harvest_feast_supper_tomas": { "Active": "deliveries_brief" },
+      "harvest_feast_supper_elsie": { "Active": "deliveries_brief" },
+      "harvest_feast_supper_bram": { "Active": "deliveries_brief" },
       "harvest_feast_invitations": { "Offerable": "invitations_offer", "Active": "invitations_brief", "Ready": "invitations_ready" },
-      "harvest_feast_daily_turkeys": { "Offerable": "daily_turkeys_offer", "Active": "active_generic", "Ready": "ready_generic" },
-      "harvest_feast_daily_wheat": { "Offerable": "daily_wheat_offer", "Active": "active_generic", "Ready": "ready_generic" },
-      "harvest_feast_daily_roast": { "Offerable": "daily_roast_offer", "Active": "active_generic", "Ready": "ready_generic" },
-      "harvest_feast_shared_meal": { "Offerable": "meal_offer", "Active": "meal_brief", "Ready": "meal_ready" }
+      "harvest_feast_great_turkey": { "Offerable": "graveyard_offer", "Ready": "graveyard_ready" },
+      "harvest_feast_great_turkey_hard": { "Offerable": "graveyard_hard_offer", "Ready": "graveyard_hard_ready" },
+      "harvest_feast_daily_turkeys":{ "Offerable": "daily_turkeys_offer", "Active": "turkeys_brief", "Ready": "ready_generic" },
+      "harvest_feast_daily_wheat": { "Offerable": "daily_wheat_offer", "Active": "wheat_brief", "Ready": "ready_generic" },
+      "harvest_feast_daily_roast": { "Offerable": "daily_roast_offer", "Active": "roast_brief", "Ready": "ready_generic" },
+      "harvest_feast_daily_graveyard": { "Offerable": "graveyard_daily_offer", "Ready": "ready_generic" },
+      "harvest_feast_shared_meal": { "Offerable": "meal_offer", "Active": "meal_brief", "Ready": "meal_ready" },
+      "harvest_feast_extra_turkeys": { "Active": "turkeys_brief", "Ready": "extra_turkeys_ready" }
     },
     "Then": [
       {
         "Node": "feast_done",
         "When": [
-          { "Type": "QuestState", "Quest": "harvest_feast_the_feast", "State": "COMPLETED" }
+          { "Type": "QuestState", "Quest": "harvest_feast_the_feast", "States": [ "COMPLETED", "ON_COOLDOWN" ] },
+          { "Type": "QuestState", "Quest": "harvest_feast_supper_tomas", "States": [ "COMPLETED", "ON_COOLDOWN" ] },
+          { "Type": "QuestState", "Quest": "harvest_feast_supper_elsie", "States": [ "COMPLETED", "ON_COOLDOWN" ] },
+          { "Type": "QuestState", "Quest": "harvest_feast_supper_bram", "States": [ "COMPLETED", "ON_COOLDOWN" ] }
         ]
       }
     ],
@@ -260,10 +322,14 @@
         {
           "LabelKey": "dialogue.harvest_feast_host.turkeys_offer.opt.accept",
           "Style": "accept",
-          "Do": [ { "Accept": "harvest_feast_host_2" }, { "Goto": "active_generic" } ]
+          "Do": [ { "Accept": "harvest_feast_host_2" }, { "Goto": "turkeys_brief" } ]
         }
       ],
       "IncludeOptions": [ "feast_tail" ]
+    },
+    "turkeys_brief": {
+      "TextKey": "dialogue.harvest_feast_host.turkeys_brief.text",
+      "IncludeOptions": [ "feast_footer" ]
     },
     "turkeys_ready": {
       "TextKey": "dialogue.harvest_feast_host.turkeys_ready.text",
@@ -344,13 +410,33 @@
       "TextKey": "dialogue.harvest_feast_host.feast_done.text",
       "IncludeOptions": [ "feast_footer" ]
     },
+    "deliveries_offer": {
+      "TextKey": "dialogue.harvest_feast_host.deliveries_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.deliveries_offer.opt.accept",
+          "Style": "accept",
+          "Do": [
+            { "Accept": "harvest_feast_supper_tomas" },
+            { "Accept": "harvest_feast_supper_elsie" },
+            { "Accept": "harvest_feast_supper_bram" },
+            { "Goto": "deliveries_brief" }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "feast_tail" ]
+    },
+    "deliveries_brief": {
+      "TextKey": "dialogue.harvest_feast_host.deliveries_brief.text",
+      "IncludeOptions": [ "feast_footer" ]
+    },
     "daily_turkeys_offer": {
       "TextKey": "dialogue.harvest_feast_host.daily_turkeys_offer.text",
       "Options": [
         {
           "LabelKey": "dialogue.harvest_feast_host.daily_turkeys_offer.opt.accept",
           "Style": "accept",
-          "Do": [ { "Accept": "harvest_feast_daily_turkeys" }, { "Goto": "active_generic" } ]
+          "Do": [ { "Accept": "harvest_feast_daily_turkeys" }, { "Goto": "turkeys_brief" } ]
         }
       ],
       "IncludeOptions": [ "feast_tail" ]
@@ -361,7 +447,7 @@
         {
           "LabelKey": "dialogue.harvest_feast_host.daily_wheat_offer.opt.accept",
           "Style": "accept",
-          "Do": [ { "Accept": "harvest_feast_daily_wheat" }, { "Goto": "active_generic" } ]
+          "Do": [ { "Accept": "harvest_feast_daily_wheat" }, { "Goto": "wheat_brief" } ]
         }
       ],
       "IncludeOptions": [ "feast_tail" ]
@@ -372,7 +458,26 @@
         {
           "LabelKey": "dialogue.harvest_feast_host.daily_roast_offer.opt.accept",
           "Style": "accept",
-          "Do": [ { "Accept": "harvest_feast_daily_roast" }, { "Goto": "active_generic" } ]
+          "Do": [ { "Accept": "harvest_feast_daily_roast" }, { "Goto": "roast_brief" } ]
+        }
+      ],
+      "IncludeOptions": [ "feast_tail" ]
+    },
+    "roast_brief": {
+      "TextKey": "dialogue.harvest_feast_host.roast_brief.text",
+      "IncludeOptions": [ "feast_footer" ]
+    },
+    "extra_turkeys_ready": {
+      "TextKey": "dialogue.harvest_feast_host.extra_turkeys_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.extra_turkeys_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "harvest_feast_extra_turkeys" } ],
+          "Do": [
+            { "TurnIn": "harvest_feast_extra_turkeys" },
+            { "Open": { "Type": "Quests", "Highlight": "harvest_feast_extra_turkeys" } }
+          ]
         }
       ],
       "IncludeOptions": [ "feast_tail" ]
@@ -437,10 +542,6 @@
       ],
       "IncludeOptions": [ "feast_tail" ]
     },
-    "active_generic": {
-      "TextKey": "dialogue.harvest_feast_host.active_generic.text",
-      "IncludeOptions": [ "feast_footer" ]
-    },
     "ready_generic": {
       "TextKey": "dialogue.harvest_feast_host.ready_generic.text",
       "Options": [
@@ -452,12 +553,69 @@
       ],
       "IncludeOptions": [ "feast_tail" ]
     },
-    "who_are_you": {
-      "TextKey": "dialogue.harvest_feast_host.who_are_you.text",
+    "graveyard_offer": {
+      "TextKey": "dialogue.harvest_feast_host.graveyard_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.graveyard_offer.opt.accept",
+          "Style": "accept",
+          "Presentation": { "Color": "#66bbdd", "Icon": { "Item": "Harvest_Feast_Wishbone" } },
+          "Do": [ { "Accept": "harvest_feast_great_turkey" }, { "Goto": "menu" } ]
+        }
+      ],
       "IncludeOptions": [ "feast_tail" ]
     },
-    "about_feast": {
-      "TextKey": "dialogue.harvest_feast_host.about_feast.text",
+    "graveyard_ready": {
+      "TextKey": "dialogue.harvest_feast_host.graveyard_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.graveyard_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "harvest_feast_great_turkey" } ],
+          "Do": [
+            { "TurnIn": "harvest_feast_great_turkey" },
+            { "Open": { "Type": "Quests", "Highlight": "harvest_feast_great_turkey" } }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "feast_tail" ]
+    },
+    "graveyard_hard_offer": {
+      "TextKey": "dialogue.harvest_feast_host.graveyard_hard_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.graveyard_hard_offer.opt.accept",
+          "Style": "accept",
+          "Presentation": { "Color": "#ff5a3c", "Icon": { "Item": "Harvest_Feast_Wishbone" } },
+          "Do": [ { "Accept": "harvest_feast_great_turkey_hard" }, { "Goto": "menu" } ]
+        }
+      ],
+      "IncludeOptions": [ "feast_tail" ]
+    },
+    "graveyard_hard_ready": {
+      "TextKey": "dialogue.harvest_feast_host.graveyard_hard_ready.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.graveyard_hard_ready.opt.turnin",
+          "Style": "turnin",
+          "Conditions": [ { "Type": "ReadyToTurnIn", "Quest": "harvest_feast_great_turkey_hard" } ],
+          "Do": [
+            { "TurnIn": "harvest_feast_great_turkey_hard" },
+            { "Open": { "Type": "Quests", "Highlight": "harvest_feast_great_turkey_hard" } }
+          ]
+        }
+      ],
+      "IncludeOptions": [ "feast_tail" ]
+    },
+    "graveyard_daily_offer": {
+      "TextKey": "dialogue.harvest_feast_host.graveyard_daily_offer.text",
+      "Options": [
+        {
+          "LabelKey": "dialogue.harvest_feast_host.graveyard_daily_offer.opt.accept",
+          "Style": "accept",
+          "Do": [ { "Accept": "harvest_feast_daily_graveyard" }, { "Goto": "menu" } ]
+        }
+      ],
       "IncludeOptions": [ "feast_tail" ]
     }
   },
@@ -495,6 +653,25 @@
         "Open": { "Type": "Shop", "Shop": "Harvest_Feast_Host" }
       },
       {
+        "LabelKey": "dialogue.harvest_feast_host.graveyard.opt.enter",
+        "Style": "neutral",
+        "Presentation": { "Color": "#66bbdd", "Icon": { "Item": "Harvest_Feast_Wishbone" } },
+        "Conditions": [
+          { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Harvest_Feast_Live", "Min": 1 }
+        ],
+        "Open": { "Type": "Dungeon", "Dungeon": "Harvest_Feast_Turkey_Graveyard" }
+      },
+      {
+        "LabelKey": "dialogue.harvest_feast_host.graveyard.opt.enter_hard",
+        "Style": "neutral",
+        "Presentation": { "Color": "#ff5a3c", "Icon": { "Item": "Harvest_Feast_Wishbone" } },
+        "Conditions": [
+          { "Type": "Factor", "Factor": "ziggfreedcommon:feature", "Param": "Harvest_Feast_Live", "Min": 1 },
+          { "Type": "Requires", "Requires": { "Quests": [ "harvest_feast_great_turkey" ] } }
+        ],
+        "Open": { "Type": "Dungeon", "Dungeon": "Harvest_Feast_Turkey_Graveyard_Hard" }
+      },
+      {
         "LabelKey": "dialogue.harvest_feast_host.opt.standing",
         "Style": "neutral",
         "Conditions": [
@@ -511,16 +688,6 @@
         "Open": { "Type": "Almanac", "Event": "Harvest_Feast" }
       },
       {
-        "LabelKey": "dialogue.harvest_feast_host.opt.who",
-        "Style": "neutral",
-        "Goto": "who_are_you"
-      },
-      {
-        "LabelKey": "dialogue.harvest_feast_host.opt.feast",
-        "Style": "neutral",
-        "Goto": "about_feast"
-      },
-      {
         "LabelKey": "dialogue.harvest_feast_host.opt.farewell",
         "Style": "farewell",
         "Close": true
@@ -531,16 +698,6 @@
         "LabelKey": "dialogue.harvest_feast_host.opt.back",
         "Style": "neutral",
         "Goto": "menu"
-      },
-      {
-        "LabelKey": "dialogue.harvest_feast_host.opt.who",
-        "Style": "neutral",
-        "Goto": "who_are_you"
-      },
-      {
-        "LabelKey": "dialogue.harvest_feast_host.opt.feast",
-        "Style": "neutral",
-        "Goto": "about_feast"
       },
       {
         "LabelKey": "dialogue.harvest_feast_host.opt.farewell",

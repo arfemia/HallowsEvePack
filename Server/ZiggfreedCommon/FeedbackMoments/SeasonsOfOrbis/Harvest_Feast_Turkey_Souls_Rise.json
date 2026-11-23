@@ -1,0 +1,13 @@
+{
+  "$Comment": [
+    "What each member of the Great Turkey's fight is told as each wave of Turkey Souls rises around the",
+    "Turkey Graveyard's fountain, before the Great Turkey wakes (the fight's GuardWave, Zc_Wave_Chain, draws",
+    "it). Args 'wave' is the wave's number in the run, which the chain hands every moment it draws. Keys are",
+    "lines in this pack's harvestfeast.progression.lang, written bare. The file name is the moment id."
+  ],
+  "Toast": {
+    "Title": { "Key": "notify.harvest_feast_turkey_souls_rise" },
+    "Secondary": { "Key": "notify.harvest_feast_turkey_souls_rise.sub", "Args": ["wave"] },
+    "Tone": "Warning"
+  }
+}

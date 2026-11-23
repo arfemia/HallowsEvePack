@@ -4,13 +4,20 @@
     "Seasons > Harvest_Feast subcategory is earned in the same year. MetaSelector picks them, so a new",
     "full_table achievement counts toward it with no edit here; it never picks itself or another",
     "capstone. It inherits the yearly occurrence, so each year has its own copy, and it pays the title",
-    "Harvest_Feast_Full_Table through the Title reward kind. Keep the full_table tag off this file.",
+    "Harvest_Feast_Full_Table through the Title reward kind, on unlock. Keep the full_table tag off this",
+    "file.",
     "",
-    "Each year's copy also offers MMO Skill Tree's Mmo_Boost_Token to collect: half again as much XP in",
-    "every skill for an hour, which the player starts when it suits them. It waits in Rewards.Claim on",
-    "the achievements page, and the collect notice lists it. Its own Requires, the hytale:mod_installed",
-    "gate, leaves the row out on a server without that mod, unpaid and unshown, so there the achievement",
-    "has nothing to collect and the title still pays on the spot."
+    "Every yearly Harvest Feast achievement (one with the base as its Parent) carries full_table, and",
+    "each asks for something a player can do alone in one feast: be there (Guest), sit down to The Feast",
+    "(Keepsake), take the supper round (Supper_Round), hunt turkeys (Turkey_Chaser), pick crops",
+    "(Full_Baskets), do daily jobs (Helping_Hands) and beat the Great Turkey once (Great_Turkey_Down).",
+    "Anything longer, a ladder, a rank or a set, is kept for good instead, with no Parent and no tag.",
+    "",
+    "Each year's copy also pays Harvest Coins to spend at Martha's shop, and offers MMO Skill Tree's",
+    "Mmo_Boost_Token: half again as much XP in every skill for an hour, which the player starts when it",
+    "suits them. Both wait in Rewards.Claim on the achievements page, and the collect notice lists them.",
+    "The token row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that",
+    "mod, unpaid and unshown, and the coins still pay."
   ],
   "Parent": "Harvest_Feast_Achievement_Base",
   "Listing": { "SortOrder": 90, "Icon": "Deco_Trophy_Harvest" },
@@ -25,6 +32,7 @@
       { "Kind": "Title", "Params": { "Title": "Harvest_Feast_Full_Table" } }
     ],
     "Claim": [
+      { "Kind": "Currency", "Params": { "Currency": "Harvest_Feast_Coins", "Amount": "100" } },
       { "Kind": "Mmo_Boost_Token", "Params": { "Skill": "ALL", "Multiplier": "1.5", "DurationMinutes": "60" },
         "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
     ]

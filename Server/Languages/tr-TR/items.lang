@@ -69,4 +69,44 @@ Hallows_Eve_Horsemans_Reins.description = Başsız Süvari'nin kendi dizginleri;
 Hallows_Eve_Horsemans_Reins.command_calm = Sakinleştir
 Hallows_Eve_Horsemans_Steed_Trophy.name = Süvari'nin At Kupası
 Hallows_Eve_Horsemans_Steed_Trophy.description = Başsız Süvari'nin zırhlı kara atının, altın kenarlı bir kaide üstünde minik bir figürü. Dilediğin yere koy. Ara sıra Boss Zaferi ödülünde bulunur; Yaşlı Jack da bir tanesini satar.
+Harvest_Feast_Golden_Plate.name = Martha'nın Altın Tabağı
+Harvest_Feast_Golden_Plate.description = Üzerinde yıl yazan altın bir tabak, yemek yemek için fazla değerli. Martha, Şölen sofrasına onunla oturan herkese her Hasat Şöleni'nde bir tane verir. İstediğin yere koy ya da bir yılın tabağını ötekinin üstüne diz.
+Harvest_Feast_Turkey_Trophy.name = Hindi Kupası
+Harvest_Feast_Turkey_Trophy.description = Koyduğun yerde duran bir hindi. Çok nadiren bir Yabani Hindi birini geride bırakır, o da yalnızca Hasat Şöleni sürerken. İstediğin yere koy.
+Harvest_Feast_Golden_Turkey_Trophy.name = Altın Hindi Kupası
+Harvest_Feast_Golden_Turkey_Trophy.description = Som altından bir hindi. Büyük Hindi her zaferde, ama çok nadiren birini bırakır; günün ilk zaferinde ve zor yolda daha sık. İstediğin yere koy.
+Harvest_Feast_Potion_Morph_Turkey.name = Hindiye Dönüşme İksiri
+Harvest_Feast_Potion_Morph_Turkey.description = İç, bir süre hindiye benzersin. Büyük Hindi'nin Boss Zaferi ödülünde bulunur, zor yolda daha sık.
+Harvest_Feast_Great_Turkey_Mantle.name = Büyük Hindi Pelerini
+Harvest_Feast_Great_Turkey_Mantle.description = Büyük Hindi'nin kendi kuyruk tüyleriyle dikilmiş deri, mezarlıktan hâlâ soğuk. Oklar ondan sekip gider, üstündeyken Martha'nın teveccühü daha hızlı gelir. Hasat Setinin parçası, Hasat Tuniği yerine. Yalnızca Büyük Hindi bırakır, her zaferde; günün ilk zaferinde ve zor yolda daha sık.
+Harvest_Feast_Wishbone.name = Dilek Kemiği
+Harvest_Feast_Wishbone.description = Kızartmadan saklanmış bir hindi dilek kemiği. Unutulmuş Tapınak'taki <b>Aşçı Martha</b>, Hasat Şöleni sürerken birini alıp seni ve grubunu <b>Hindi Mezarlığı'na</b> götürür.\n\nSana, <b>Fazladan Hindiler</b> teslim ettiğin her seferinde sana bir tane verir.
+
+# Harvest Feast - the Harvest Set, sold at Martha's shop.
+Harvest_Feast_Harvest_Hat.name = Hasat Şapkası
+Harvest_Feast_Harvest_Hat.description = Tarlada geçen uzun günler için sıcak bir yün şapka. Martha seni Dost saydığında dükkanında satar. Hasat Setinin parçası: daha fazlasını giy, daha fazla can kazan; setin tamamını giy, onun teveccühünü daha hızlı kazan.
+Harvest_Feast_Harvest_Tunic.name = Hasat Tuniği
+Harvest_Feast_Harvest_Tunic.description = Tarlada geçen uzun günler için bir yün tunik. Martha'nın nezdinde Sofra Başı olduğunda dükkanında satılır. Hasat Setinin parçası: daha fazlasını giy, daha fazla can kazan; setin tamamını giy, onun teveccühünü daha hızlı kazan.
+Harvest_Feast_Harvest_Gloves.name = Hasat Eldivenleri
+Harvest_Feast_Harvest_Gloves.description = Soğukta toplamak için sıcak yün eldivenler. Martha seni Komşu saydığında dükkanında satar. Hasat Setinin parçası: daha fazlasını giy, daha fazla can kazan; setin tamamını giy, onun teveccühünü daha hızlı kazan.
+Harvest_Feast_Harvest_Trousers.name = Hasat Pantolonu
+Harvest_Feast_Harvest_Trousers.description = Tarlada bir güne dayanan yün pantolon. Martha seni Aile saydığında dükkanında satar. Hasat Setinin parçası: daha fazlasını giy, daha fazla can kazan; setin tamamını giy, onun teveccühünü daha hızlı kazan.
+
+# Harvest Feast - Martha's three dishes, the recipe pages her shop sells for them, and what eating them does.
+Harvest_Feast_Turkey_Pie.name = Hindili Turta
+Harvest_Feast_Turkey_Pie.description = Martha'nın kendi etli turtası. Canı anında <color is="#ffffff">5%</color> yeniler ve şunları verir:\n\n• <color is="#ffffff">Can Yenilenmesi III</color>\n• <color is="#ffffff">Can Artışı IV</color>: azami can <color is="#ffffff">20%</color> artar, fiziksel ve mermi hasarı <color is="#ffffff">8%</color> azalır\n\nSüre: <color is="#ffffff">10:00</color>\n\nMartha'nın tarifini öğrendikten sonra bir Aşçı Ocağı'nda pişir.
+Harvest_Feast_Harvest_Salad.name = Hasat Salatası
+Harvest_Feast_Harvest_Salad.description = Bir tutam baharatlı havuç, mısır ve bal kabağı. Canı anında <color is="#ffffff">5%</color> yeniler ve şunları verir:\n\n• <color is="#ffffff">Can Yenilenmesi III</color>\n• <color is="#ffffff">Dayanıklılık Artışı IV</color>: azami dayanıklılık <color is="#ffffff">40%</color> artar\n\nSüre: <color is="#ffffff">10:00</color>\n\nMartha'nın tarifini öğrendikten sonra bir Aşçı Ocağı'nda yap.
+Harvest_Feast_Marthas_Roast.name = Martha'nın Kızartması
+Harvest_Feast_Marthas_Roast.description = Martha'nın en iyi yemeği, bir çubukta kızartılmış et ve sebze. Canı anında <color is="#ffffff">5%</color> yeniler ve şunları verir:\n\n• <color is="#ffffff">Can Yenilenmesi III</color>\n• <color is="#ffffff">Can Artışı IV</color>: azami can <color is="#ffffff">20%</color> artar, fiziksel ve mermi hasarı <color is="#ffffff">8%</color> azalır\n• <color is="#ffffff">Dayanıklılık Artışı IV</color>: azami dayanıklılık <color is="#ffffff">40%</color> artar\n• <color is="#ffffff">Teveccüh Artışı</color>: Martha'nın teveccühü <color is="#ffffff">10%</color> daha hızlı gelir\n\nSüre: <color is="#ffffff">10:00</color>\n\nMartha'nın tarifini öğrendikten sonra bir Aşçı Ocağı'nda pişir.
+Harvest_Feast_Recipe_Turkey_Pie.name = Tarif: Hindili Turta
+Harvest_Feast_Recipe_Turkey_Pie.description = <item is="Harvest_Feast_Turkey_Pie"/> tarifini öğretir. Bir Aşçı Ocağı'nda hamur, çiğ et ve baharattan pişir.\n\nCanı anında <color is="#ffffff">5%</color> yeniler ve şunları verir:\n\n• <color is="#ffffff">Can Yenilenmesi III</color>\n• <color is="#ffffff">Can Artışı IV</color>\n\nSüre: <color is="#ffffff">10:00</color>
+Harvest_Feast_Recipe_Harvest_Salad.name = Tarif: Hasat Salatası
+Harvest_Feast_Recipe_Harvest_Salad.description = <item is="Harvest_Feast_Harvest_Salad"/> tarifini öğretir. Bir Aşçı Ocağı'nda havuç, mısır, bir bal kabağı ve baharattan yap.\n\nCanı anında <color is="#ffffff">5%</color> yeniler ve şunları verir:\n\n• <color is="#ffffff">Can Yenilenmesi III</color>\n• <color is="#ffffff">Dayanıklılık Artışı IV</color>\n\nSüre: <color is="#ffffff">10:00</color>
+Harvest_Feast_Recipe_Marthas_Roast.name = Tarif: Martha'nın Kızartması
+Harvest_Feast_Recipe_Marthas_Roast.description = <item is="Harvest_Feast_Marthas_Roast"/> tarifini öğretir. Bir Aşçı Ocağı'nda bir çubuk, çiğ et, bir havuç, mısır, bir bal kabağı ve baharattan pişir.\n\nCanı anında <color is="#ffffff">5%</color> yeniler ve şunları verir:\n\n• <color is="#ffffff">Can Yenilenmesi III</color>\n• <color is="#ffffff">Can Artışı IV</color>\n• <color is="#ffffff">Dayanıklılık Artışı IV</color>\n• <color is="#ffffff">Teveccüh Artışı</color>\n\nSüre: <color is="#ffffff">10:00</color>
+effect.harvest_feast_food_regen.name = Can Yenilenmesi III
+effect.harvest_feast_food_health.name = Can Artışı IV
+effect.harvest_feast_food_stamina.name = Dayanıklılık Artışı IV
+effect.harvest_feast_food_favor.name = Teveccüh Artışı
 

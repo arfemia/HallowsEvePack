@@ -1,6 +1,8 @@
 {
   "$Comment": [
-    "The yearly keepsake: sit down to the feast with Martha, once a season, and keep the plate.",
+    "The yearly keepsake: sit down to the feast with Martha, once a season, and keep Martha's Golden",
+    "Plate (Item/Items/Harvest_Feast/Harvest_Feast_Golden_Plate.json). Set_Of_Plates.json, kept for good,",
+    "counts the same quest over the years.",
     "",
     "It inherits the yearly occurrence from Harvest_Feast_Achievement_Base, so each year mints its own",
     "copy and @year in the title reads as that year. Feat files it with the feats, earned only. The",
@@ -13,7 +15,7 @@
   "Parent": "Harvest_Feast_Achievement_Base",
   "Listing": {
     "SortOrder": 10,
-    "Icon": "Deco_Plate",
+    "Icon": "Harvest_Feast_Golden_Plate",
     "Tags": [ "full_table", "season_keepsake" ],
     "Feat": true
   },

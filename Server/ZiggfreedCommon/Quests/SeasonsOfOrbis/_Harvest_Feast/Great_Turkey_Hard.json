@@ -1,0 +1,46 @@
+{
+  "$Comment": [
+    "A Restless Soul: beat the Great Turkey on the Turkey Graveyard's hard way in",
+    "(ZiggfreedCommon/Dungeons/Harvest_Feast_Turkey_Graveyard_Hard.json), then report back to Martha. The",
+    "_Harvest_Feast folder makes the id harvest_feast_great_turkey_hard. Martha offers it on her",
+    "graveyard_hard_offer screen once The Great Turkey (harvest_feast_great_turkey) is done and collected,",
+    "the same quest that opens the hard way in; while it is carried her conversation opens on her graveyard",
+    "screen, and once it is done on graveyard_hard_ready.",
+    "",
+    "ENCOUNTER_DEFEATED names the hard fight's script with MatchMode EXACT, so a normal win never counts, and",
+    "every player the fight credits counts the win; only players carrying the quest when it falls move it.",
+    "Npc.TurnInId, from the base, adds the report-back step to Martha. Repeat.PerRun brings it back once in",
+    "each Harvest Feast, like The Great Turkey.",
+    "",
+    "The Mmo_Xp row is MMO Skill Tree's: Defense XP for the fight, paid only where that mod runs. Its own",
+    "Requires, the hytale:mod_installed gate, leaves the row out on a server without it, unpaid and",
+    "unshown, and the rest of the quest pays."
+  ],
+  "Name": "Great_Turkey_Hard",
+  "Parent": "Harvest_Feast_Quest_Base",
+  "Listing": { "Icon": "Harvest_Feast_Great_Turkey_Mantle", "Category": "main", "SortOrder": 61 },
+  "Requires": { "Quests": [ "harvest_feast_great_turkey" ] },
+  "Repeat": {
+    "PerRun": { "Event": "Harvest_Feast", "Times": 1 }
+  },
+  "Objectives": {
+    "defeat_great_turkey_hard": {
+      "Kind": "ENCOUNTER_DEFEATED",
+      "Target": "Harvest_Feast_Great_Turkey_Encounter_Hard",
+      "MatchMode": "EXACT",
+      "Amount": 1,
+      "TextKey": "objective.harvest_feast.defeat_great_turkey_hard",
+      "Order": 1
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Currency", "Params": { "Currency": "Harvest_Feast_Coins", "Amount": "50" } },
+      { "Kind": "Currency", "Params": { "Currency": "Seasons_Of_Orbis_Festival_Token", "Amount": "3" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 300 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 200 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "4000" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

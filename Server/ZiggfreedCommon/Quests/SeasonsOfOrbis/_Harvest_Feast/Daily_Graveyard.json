@@ -1,0 +1,52 @@
+{
+  "$Comment": [
+    "Martha's graveyard daily: beat the Great Turkey once a day, either way in. The _Harvest_Feast folder",
+    "makes the id harvest_feast_daily_graveyard, so the Almanac's Errands tally and Helping Hands count it",
+    "with Martha's other dailies (the harvest_feast_daily_ prefix). Requires opens it once a player has",
+    "finished The Great Turkey (harvest_feast_great_turkey) and collected its pay, so it follows a first win.",
+    "Martha offers it on her graveyard_daily_offer screen; while it is carried her conversation opens on her",
+    "graveyard screen, with both ways in, and its hand-in shares her ready_generic screen with the other",
+    "dailies.",
+    "",
+    "ENCOUNTER_DEFEATED with MatchMode PREFIX on the normal fight's script id counts its hard twin",
+    "(Harvest_Feast_Great_Turkey_Encounter_Hard) too; MatchMode EXACT would hold it to the normal way in.",
+    "Every player the fight credits counts the win, but only those carrying this quest when it falls.",
+    "Npc.TurnInId, from the base, adds the report-back step to Martha.",
+    "",
+    "Repeat.Reset with Period Daily is a calendar daily: it comes back at midnight UTC, not a fixed number",
+    "of hours after the last one. It pays through Harvest_Feast_Daily_Pay like the other dailies, so",
+    "retuning that pay is one edit there; the favor rows are this file's own, a little more than the other",
+    "dailies' since each run costs a Wishbone.",
+    "",
+    "The Mmo_Xp row is MMO Skill Tree's: Defense XP for the fight, paid only where that mod runs. Its own",
+    "Requires, the hytale:mod_installed gate, leaves the row out on a server without it, unpaid and",
+    "unshown, and the rest of the quest pays."
+  ],
+  "Name": "Daily_Graveyard",
+  "Parent": "Harvest_Feast_Quest_Base",
+  "Listing": { "Icon": "Harvest_Feast_Wishbone", "Category": "misc", "SortOrder": 135 },
+  "Requires": { "Quests": [ "harvest_feast_great_turkey" ] },
+  "Repeat": {
+    "Reset": { "Period": "Daily" },
+    "CooldownFrom": "Complete"
+  },
+  "Objectives": {
+    "defeat_great_turkey": {
+      "Kind": "ENCOUNTER_DEFEATED",
+      "Target": "Harvest_Feast_Great_Turkey_Encounter",
+      "MatchMode": "PREFIX",
+      "Amount": 1,
+      "TextKey": "objective.harvest_feast.defeat_great_turkey",
+      "Order": 1
+    }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Harvest_Feast_Daily_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 100 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 40 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "DEFENSE", "Amount": "1500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$Comment": "A Kitchen job on the feast board: bring Roast Vegetables, cooked on a Campfire from a carrot, corn, a pumpkin or a mushroom, handed in at the board. The step's TextKey words it in the plural. It writes its own Rewards.Claim, the base's list with MMO Skill Tree's Mmo_Xp row added (Crafting XP for the cooking), because a child's list replaces the base's whole. The row's own Requires, the hytale:mod_installed gate, leaves it out on a server without that mod, and the rest of the job pays. The season and the listing come from Harvest_Feast_Contract_Base.",
+  "Parent": "Harvest_Feast_Contract_Base",
+  "Listing": { "Icon": "Food_Vegetable_Cooked" },
+  "Boards": [ { "Board": "Harvest_Feast_Daily", "Difficulty": "Harvest_Feast_Kitchen", "Weight": 1 } ],
+  "Objectives": {
+    "bring_vegetables": { "Kind": "TURN_IN", "Target": "Food_Vegetable_Cooked", "MatchMode": "EXACT", "Amount": 5, "TextKey": "objective.harvest_feast.bring_vegetables" }
+  },
+  "Rewards": {
+    "Claim": [
+      { "Kind": "Lootable", "Params": { "Lootable": "Harvest_Feast_Board_Pay" } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Harvest_Feast_Host", "Amount": 50 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 30 } },
+      { "Kind": "Mmo_Xp", "Params": { "Skill": "CRAFTING", "Amount": "1500" },
+        "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }
+    ]
+  }
+}

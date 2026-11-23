@@ -3,6 +3,6 @@
   "Parent": "Harvest_Feast_Offer_Base",
   "Text": { "TitleKey": "server.items.Plant_Leaves_Autumn.name" },
   "Listing": { "Category": "decor", "SortOrder": 10 },
-  "Cost": { "Currencies": { "Seasons_Of_Orbis_Festival_Token": 2 } },
+  "Cost": { "Currencies": { "Harvest_Feast_Coins": 6 } },
   "Rewards": [ { "Kind": "Item", "Params": { "Item": "Plant_Leaves_Autumn", "Count": 16 } } ]
 }

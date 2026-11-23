@@ -1,0 +1,4 @@
+{
+  "$Comment": "The Turkey Souls the Turkey Graveyard's fights raise (the role Harvest_Feast_Turkey_Soul, and Harvest_Feast_Turkey_Soul_HM on the hard way in): the waves around the fountain, which the Great Turkey waits on until none is left alive, and the souls that join it mid-fight. Each fight clears every one of them when it resets, so the next try starts clean. No reputation names this group, and Martha's favor counts none of it: a Turkey Soul is a spirit, not a turkey. Add a role id here if a fight raises another kind.",
+  "IncludeRoles": [ "Harvest_Feast_Turkey_Soul", "Harvest_Feast_Turkey_Soul_HM" ]
+}
