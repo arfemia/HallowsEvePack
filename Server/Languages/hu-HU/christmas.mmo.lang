@@ -32,13 +32,13 @@ quest.mmo_christmas_shepherd_skill_job.flavor = A Mikulás tüze egész éjjel e
 
 # ---- The errands (only where MMO Skill Tree is missing) ----
 quest.christmas_errand_wheat.title = Búza a malomnak
-quest.christmas_errand_wheat.flavor = A lisztem nem őrli meg magát. Arass egy kis búzát a mezőn, és hozd el nekem.
+quest.christmas_errand_wheat.flavor = A lisztem nem őrli meg magát. Hozz nekem egy kis búzát.
 quest.christmas_errand_bread.title = Kenyér az asztalra
-quest.christmas_errand_bread.flavor = A Mikulás segítőit is etetni kell. Süss egy kis kenyeret tésztából egy Szakács Tűzhelyen.
+quest.christmas_errand_bread.flavor = A Mikulás segítőit is etetni kell. Süss egy kis kenyeret.
 quest.christmas_errand_decorations.title = Díszítési megbízás
 quest.christmas_errand_decorations.flavor = Tegyél ki karácsonyi dekorációkat az otthonodban. Girlandok, fények, egy hóember, bármi vidám jó lesz.
 quest.christmas_errand_wool.title = Gyapjú a zoknikhoz
-quest.christmas_errand_wool.flavor = Gyapjú kell a karácsonyi zoknikhoz. Készíts gyapjútekercseket egy szövőszéken, és hozd el nekem.
+quest.christmas_errand_wool.flavor = Gyapjú kell a karácsonyi zoknikhoz. Hozz nekem egy kis gyapjútekercset.
 quest.christmas_errand_logs.title = Farönk-megbízás
 quest.christmas_errand_logs.flavor = Vágj farönköket bármelyik fából. A rénszarvasok istállójában ma este tűz kell.
 quest.christmas_errand_wolves.title = Farkasmegbízás
@@ -76,7 +76,7 @@ lootable.christmas_bram_decorations.flavor = Egy kis extra Bramtól minden kibon
 
 # ---- The villagers' secrets ----
 quest.christmas_tomas_apprentice.title = Tomas Tanítványa
-quest.christmas_tomas_apprentice.flavor = Süsd meg a karácsonyi finomságaimat egy Szakács Tűzhelyen. Minden elkészült finomság számít. Süss eleget, és eladom neked a saját karácsonyi kalácsom receptjét.
+quest.christmas_tomas_apprentice.flavor = Süsd meg a karácsonyi finomságaimat. Minden elkészült finomság számít. Süss eleget, és eladom neked a saját karácsonyi kalácsom receptjét.
 quest.christmas_elsie_apprentice.title = Elsie Tanítványa
 quest.christmas_elsie_apprentice.flavor = Tegyél ki karácsonyi dekorációkat az otthonodban. Tegyél ki eleget, és eladom neked a Rénszarvas-ruhámat.
 quest.christmas_bram_apprentice.title = Bram Tanítványa
@@ -94,9 +94,9 @@ factor.christmas_elsie_key.name_mmo = Elsie Tanítványának teljesítése vagy 
 effect.christmas_costume_reindeer_suit.name = Rénszarvas-ruha
 
 # ---- Tomas's secret, in his Christmas conversation ----
-dialogue.christmas_miller.apprentice_offer.text = Van egy titkom: egy saját <b>karácsonyi kalács</b>, édesebb bármelyik bejglinél.\nSüsd meg a karácsonyi finomságaimat egy <b>Szakács Tűzhelyen</b> egy ideig, és eladom neked a receptet.
+dialogue.christmas_miller.apprentice_offer.text = Van egy titkom: egy saját <b>karácsonyi kalács</b>, édesebb bármelyik bejglinél.\nSüsd meg egy ideig a karácsonyi finomságaimat, és eladom neked a receptet.
 dialogue.christmas_miller.apprentice_offer.opt.accept = Taníts meg.
-dialogue.christmas_miller.apprentice_brief.text = Süss <b>Mézeskalácsot</b>, <b>Forró kakaót</b> vagy <b>Karácsonyi bejglit</b> egy <b>Szakács Tűzhelyen</b>. Mindegyik számít. Gyere vissza, ha eleget sütöttél.
+dialogue.christmas_miller.apprentice_brief.text = Süss <b>Mézeskalácsot</b>, <b>Forró kakaót</b> vagy <b>Karácsonyi bejglit</b>. Mindegyik számít. Gyere vissza, ha eleget sütöttél.
 dialogue.christmas_miller.apprentice_ready.text = Nézd csak, igazi pék lett belőled. A <b>karácsonyi kalács</b> receptje most már ott van a boltomban neked.
 dialogue.christmas_miller.apprentice_ready.opt.turnin = Kösz, Tomas.
 dialogue.christmas_miller.opt.secret_skill = Mi van, ha már jó szakács vagyok?
@@ -105,7 +105,7 @@ dialogue.christmas_miller.secret_skill.text = Akkor nincs szükséged a leckéim
 # ---- Elsie's secret, in her Christmas conversation ----
 dialogue.christmas_weaver.apprentice_offer.text = Van egy titkom: egy <b>Rénszarvas-ruha</b>, amit magam varrtam. Nem akárkinek való.\nTegyél ki <b>karácsonyi dekorációkat</b> az otthonodban, és ha eleget kitettél, eladok neked egyet.
 dialogue.christmas_weaver.apprentice_offer.opt.accept = Díszíteni fogok.
-dialogue.christmas_weaver.apprentice_brief.text = Tegyél ki girlandokat, fényeket, koszorúkat, hóembereket, bármilyen karácsonyi dekorációt az otthonodban. Itt a templomban semmit sem lehet kirakni. Dekorációkat a fesztiválpolcon találsz bármelyik karácsonyi boltban, és a Karácsonyi Ajándékokban.
+dialogue.christmas_weaver.apprentice_brief.text = Tegyél ki girlandokat, fényeket, koszorúkat, hóembereket, bármilyen karácsonyi dekorációt az otthonodban. Itt a templomban semmit sem lehet kirakni. Dekorációkat a Mikulás boltjának fesztiválpolcán találsz, és a Karácsonyi Ajándékokban.
 dialogue.christmas_weaver.apprentice_ready.text = Az otthonod biztos gyönyörű. A <b>Rénszarvas-ruhám</b> most már ott van a boltomban neked.
 dialogue.christmas_weaver.apprentice_ready.opt.turnin = Köszönöm, Elsie.
 dialogue.christmas_weaver.opt.secret_skill = Mi van, ha már jól díszítek?

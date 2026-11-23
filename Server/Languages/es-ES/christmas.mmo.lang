@@ -32,13 +32,13 @@ quest.mmo_christmas_shepherd_skill_job.flavor = El fuego de Papá Noel se come l
 
 # ---- The errands (only where MMO Skill Tree is missing) ----
 quest.christmas_errand_wheat.title = Trigo para el Molino
-quest.christmas_errand_wheat.flavor = Mi harina no se muele sola. Corta trigo en los campos y tráemelo.
+quest.christmas_errand_wheat.flavor = Mi harina no se muele sola. Tráeme algo de trigo.
 quest.christmas_errand_bread.title = Pan para la Mesa
-quest.christmas_errand_bread.flavor = Los ayudantes de Papá Noel también tienen que comer. Hornea pan con masa en una Cocina del Chef.
+quest.christmas_errand_bread.flavor = Los ayudantes de Papá Noel también tienen que comer. Hornea algo de pan.
 quest.christmas_errand_decorations.title = Recado de Decoración
 quest.christmas_errand_decorations.flavor = Pon adornos de Navidad en tu casa. Guirnaldas, luces, un muñeco de nieve, cualquier cosa brillante sirve.
 quest.christmas_errand_wool.title = Lana para los Calcetines
-quest.christmas_errand_wool.flavor = Necesito lana para los calcetines de Navidad. Haz rollos de lana en un telar y tráemelos.
+quest.christmas_errand_wool.flavor = Necesito lana para los calcetines de Navidad. Tráeme unos rollos de lana.
 quest.christmas_errand_logs.title = Recado de Troncos
 quest.christmas_errand_logs.flavor = Corta troncos de cualquier árbol. El establo de los renos necesita fuego esta noche.
 quest.christmas_errand_wolves.title = Recado de Lobos
@@ -76,7 +76,7 @@ lootable.christmas_bram_decorations.flavor = Un extra de Bram en cada regalo que
 
 # ---- The villagers' secrets ----
 quest.christmas_tomas_apprentice.title = Aprendiz de Tomas
-quest.christmas_tomas_apprentice.flavor = Hornea mis dulces de Navidad en una Cocina del Chef. Cada dulce que hagas cuenta. Hornea los suficientes y te vendo la receta de mi propio Pan de Navidad.
+quest.christmas_tomas_apprentice.flavor = Hornea mis dulces de Navidad. Cada dulce que hagas cuenta. Hornea los suficientes y te vendo la receta de mi propio Pan de Navidad.
 quest.christmas_elsie_apprentice.title = Aprendiz de Elsie
 quest.christmas_elsie_apprentice.flavor = Pon adornos de Navidad en tu casa. Pon los suficientes y te venderé mi Traje de Reno.
 quest.christmas_bram_apprentice.title = Aprendiz de Bram
@@ -94,9 +94,9 @@ factor.christmas_elsie_key.name_mmo = terminar Aprendiz de Elsie o nivel 20 de C
 effect.christmas_costume_reindeer_suit.name = Traje de Reno
 
 # ---- Tomas's secret, in his Christmas conversation ----
-dialogue.christmas_miller.apprentice_offer.text = Tengo un secreto: un <b>Pan de Navidad</b> propio, más dulce que cualquier pastel.\nHornea mis dulces de Navidad en una <b>Cocina del Chef</b> durante un tiempo y te venderé la receta.
+dialogue.christmas_miller.apprentice_offer.text = Tengo un secreto: un <b>Pan de Navidad</b> propio, más dulce que cualquier pastel.\nHornea mis dulces de Navidad durante un tiempo y te venderé la receta.
 dialogue.christmas_miller.apprentice_offer.opt.accept = Enséñame.
-dialogue.christmas_miller.apprentice_brief.text = Hornea <b>Galletas de Jengibre</b>, <b>Chocolate Caliente</b> o <b>Pastel de Navidad</b> en una <b>Cocina del Chef</b>. Cada uno cuenta. Vuelve cuando hayas horneado bastante.
+dialogue.christmas_miller.apprentice_brief.text = Hornea <b>Galletas de Jengibre</b>, <b>Chocolate Caliente</b> o <b>Pastel de Navidad</b>. Cada uno cuenta. Vuelve cuando hayas horneado bastante.
 dialogue.christmas_miller.apprentice_ready.text = Mírate, un panadero de verdad. La receta de mi <b>Pan de Navidad</b> ya está en mi tienda para ti.
 dialogue.christmas_miller.apprentice_ready.opt.turnin = Gracias, Tomas.
 dialogue.christmas_miller.opt.secret_skill = ¿Y si ya cocino bien?
@@ -105,7 +105,7 @@ dialogue.christmas_miller.secret_skill.text = Entonces no necesitas mis leccione
 # ---- Elsie's secret, in her Christmas conversation ----
 dialogue.christmas_weaver.apprentice_offer.text = Tengo un secreto: un <b>Traje de Reno</b> que cosí yo misma. No es para cualquiera.\nPon <b>adornos de Navidad</b> en tu casa, y cuando hayas puesto bastantes, te venderé uno.
 dialogue.christmas_weaver.apprentice_offer.opt.accept = Voy a decorar.
-dialogue.christmas_weaver.apprentice_brief.text = Pon guirnaldas, luces, coronas, muñecos de nieve, cualquier adorno de Navidad, en tu casa. Aquí en el templo no se puede poner nada. Encontrarás adornos en el estante del festival de cualquier tienda de Navidad, y dentro de los Regalos de Navidad.
+dialogue.christmas_weaver.apprentice_brief.text = Pon guirnaldas, luces, coronas, muñecos de nieve, cualquier adorno de Navidad, en tu casa. Aquí en el templo no se puede poner nada. Encontrarás adornos en el estante del festival de la tienda de Papá Noel, y dentro de los Regalos de Navidad.
 dialogue.christmas_weaver.apprentice_ready.text = Tu casa debe de estar preciosa. Mi <b>Traje de Reno</b> ya está en mi tienda para ti.
 dialogue.christmas_weaver.apprentice_ready.opt.turnin = Gracias, Elsie.
 dialogue.christmas_weaver.opt.secret_skill = ¿Y si ya decoro bien?

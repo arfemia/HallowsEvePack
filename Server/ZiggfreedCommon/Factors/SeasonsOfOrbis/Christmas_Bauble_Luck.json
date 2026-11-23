@@ -1,0 +1,23 @@
+{
+  "$Comment": [
+    "A woodcutter's luck on the Winter Bauble find, on a server running MMO Skill Tree: the breaker's",
+    "Woodcutting luck (the channel MMO_Luck_WOODCUTTING, which the Christmas Set's MMO half raises) plus",
+    "their luck for everything (MMO_Luck), both read through hytale:stat in whole points at a weight of 1.",
+    "The file name is the factor id. The bauble row (BonusRows/SeasonsOfOrbis/Christmas_Bauble_Find.json)",
+    "adds it to its Chance, a percent, so each point of luck is one more percent, up to the row's Clamp.",
+    "",
+    "Requires, the plain hytale:mod_installed condition with Min 1, drops this file at load where MMO Skill",
+    "Tree is missing: the factor is then absent on purpose, so it adds 0 to the row's Chance there and",
+    "nothing reports it as unknown. Its id carries no Mmo_ prefix because the bauble row, which every",
+    "server loads, names it as a term."
+  ],
+  "Requires": {
+    "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ]
+  },
+  "Formula": {
+    "Factors": [
+      { "Factor": "hytale:stat", "Param": "MMO_Luck_WOODCUTTING", "Weight": 1.0 },
+      { "Factor": "hytale:stat", "Param": "MMO_Luck", "Weight": 1.0 }
+    ]
+  }
+}

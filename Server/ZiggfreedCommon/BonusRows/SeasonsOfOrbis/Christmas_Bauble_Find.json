@@ -7,14 +7,22 @@
     "When names BreakBlock, a block a player breaks that they did not place, so trunks a player sets down",
     "and chops again never pay. Match *_Trunk covers every tree's trunk block (Wood_Oak_Trunk,",
     "Wood_Fir_Trunk and the rest) and the giant fern and mushroom stems that share the ending; a trunk's",
-    "half, full and stair blocks end otherwise and stay out. Chance is the row's own odds as a percent (5",
-    "is about one trunk in twenty). Season leaves the whole row out while Christmas is off, so its roll",
-    "needs no condition of its own. The roll carries the find's sound (its Cue). A server owner retunes or",
-    "switches off this row by its id in mods/ziggfreedcommon/bonus-rows.json."
+    "half, full and stair blocks end otherwise and stay out. Season leaves the whole row out while",
+    "Christmas is off, so its roll needs no condition of its own. The roll carries the find's sound (its",
+    "Cue).",
+    "",
+    "Chance is a percent: Base 5 is about one trunk in twenty, plus the factor Christmas_Bauble_Luck",
+    "(Factors/SeasonsOfOrbis/Christmas_Bauble_Luck.json), a woodcutter's luck where MMO Skill Tree runs,",
+    "which adds 0 where it is missing. Clamp holds the chance at 25 at most. A server owner retunes or",
+    "switches off this one row by its id in mods/ziggfreedcommon/bonus-rows.json, on every kind of server."
   ],
   "Season": "Christmas",
   "When": { "Kind": "BreakBlock", "Match": "*_Trunk" },
-  "Chance": { "Base": 5.0 },
+  "Chance": {
+    "Base": 5.0,
+    "Factors": [ { "Factor": "Christmas_Bauble_Luck", "Weight": 1.0 } ],
+    "Clamp": { "Max": 25.0 }
+  },
   "Loot": {
     "Rolls": [
       {

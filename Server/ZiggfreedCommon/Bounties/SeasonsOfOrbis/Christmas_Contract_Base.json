@@ -19,7 +19,7 @@
   "Rewards": {
     "Claim": [
       { "Kind": "Lootable", "Params": { "Lootable": "Christmas_Board_Pay" } },
-      { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 40 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 24 } },
       { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 30 } }
     ]
   }

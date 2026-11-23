@@ -12,7 +12,7 @@
     "",
     "MMO_BonusXp_WOODCUTTING raises the Woodcutting XP the wearer earns and MMO_Luck_WOODCUTTING the luck",
     "Woodcutting's lucky rolls read, both in whole percent points (10 is 10%). The luck also raises the",
-    "Winter Bauble find while Christmas runs (BonusRows/SeasonsOfOrbis/Mmo_Christmas_Bauble_Find.json). Both",
+    "Winter Bauble find while Christmas runs (Factors/SeasonsOfOrbis/Christmas_Bauble_Luck.json). Both",
     "are Additive on purpose: these channels have a base of zero, so a Multiplicative entry computes nothing."
   ],
   "Joins": "Christmas_Set",

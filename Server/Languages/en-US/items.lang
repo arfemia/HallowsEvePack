@@ -117,15 +117,15 @@ effect.harvest_feast_food_health.name = Health Boost IV
 effect.harvest_feast_food_stamina.name = Stamina Boost IV
 effect.harvest_feast_food_favor.name = Favor Boost
 
-# Christmas - the Christmas Set, sold at Elsie the Weaver's Christmas stall.
+# Christmas - the Christmas Set, sold at Elsie the Weaver's Christmas shop.
 Christmas_Hat.name = Christmas Hat
-Christmas_Hat.description = A cozy cotton hat to keep your ears warm. Elsie the Weaver sells it at her Christmas stall in the Forgotten Temple once Santa counts you Nice. Part of the Christmas Set: every piece earns Santa's favor a little faster and keeps out a little cold, and the more of the set you wear, the more health you get.
+Christmas_Hat.description = A cozy cotton hat to keep your ears warm. Elsie the Weaver sells it at her Christmas shop in the Forgotten Temple once Santa counts you Nice. Part of the Christmas Set: every piece earns Santa's favor a little faster and keeps out a little cold, and the more of the set you wear, the more health you get.
 Christmas_Coat.name = Christmas Coat
-Christmas_Coat.description = A thick cotton coat for the coldest night of the year. Elsie the Weaver sells it at her Christmas stall in the Forgotten Temple once you're Santa's Favorite. Part of the Christmas Set: every piece earns Santa's favor a little faster and keeps out a little cold, and the more of the set you wear, the more health you get.
+Christmas_Coat.description = A thick cotton coat for the coldest night of the year. Elsie the Weaver sells it at her Christmas shop in the Forgotten Temple once you're Santa's Favorite. Part of the Christmas Set: every piece earns Santa's favor a little faster and keeps out a little cold, and the more of the set you wear, the more health you get.
 Christmas_Gloves.name = Christmas Gloves
-Christmas_Gloves.description = Soft cotton gloves for building snowmen. Elsie the Weaver sells them at her Christmas stall in the Forgotten Temple once you're On the List with Santa. Part of the Christmas Set: every piece earns Santa's favor a little faster and keeps out a little cold, and the more of the set you wear, the more health you get.
+Christmas_Gloves.description = Soft cotton gloves for building snowmen. Elsie the Weaver sells them at her Christmas shop in the Forgotten Temple once you're On the List with Santa. Part of the Christmas Set: every piece earns Santa's favor a little faster and keeps out a little cold, and the more of the set you wear, the more health you get.
 Christmas_Trousers.name = Christmas Trousers
-Christmas_Trousers.description = Warm cotton trousers that keep the snow out. Elsie the Weaver sells them at her Christmas stall in the Forgotten Temple once Santa counts you Very Nice. Part of the Christmas Set: every piece earns Santa's favor a little faster and keeps out a little cold, and the more of the set you wear, the more health you get.
+Christmas_Trousers.description = Warm cotton trousers that keep the snow out. Elsie the Weaver sells them at her Christmas shop in the Forgotten Temple once Santa counts you Very Nice. Part of the Christmas Set: every piece earns Santa's favor a little faster and keeps out a little cold, and the more of the set you wear, the more health you get.
 
 # Christmas - the three Christmas treats, their recipe pages, and what eating them does.
 Christmas_Gingerbread_Cookie.name = Gingerbread Cookie
@@ -147,17 +147,17 @@ effect.christmas_food_favor.name = Nice List Boost
 
 # Christmas - presents, snowballs, the two suits and the Christmas Wand.
 Christmas_Present.name = Christmas Present
-Christmas_Present.description = A little present wrapped in red, with a bow on top. Present Thieves drop them, and Elsie the Weaver sells them at her Christmas stall. Hold it and right-click to open it, and keep whatever is inside.\n\nOr give it away: hold it, look at a friend, at Santa or at one of his helpers, and left-click. A friend gets a better gift than you would, and Santa likes you a little more.
+Christmas_Present.description = A little present wrapped in red, with a bow on top. Present Thieves drop them, and Elsie the Weaver sells them at her Christmas shop. Hold it and right-click to open it, and keep whatever is inside.\n\nOr give it away: hold it, look at a friend, at Santa or at one of his helpers, and left-click. A friend gets a better gift than you would, and Santa likes you a little more.
 Christmas_Snowball.name = Snowball
 Christmas_Snowball.description = A cold surprise for a friend. Throw it, and whoever it hits slows down for a moment. It never hurts. Bram the Shepherd hands them out.
 Christmas_Elf_Suit.name = Elf Suit
 Christmas_Elf_Suit.description = A bundle of green elf clothes, just your size. Right-click to put it on and look like one of Santa's elves for <color is="#ffffff">30:00</color>. Type /zigcostume off to take it off sooner. Elsie the Weaver gives you one for helping her.
 Christmas_Santa_Suit.name = Santa Suit
-Christmas_Santa_Suit.description = A bundle of red clothes with white fur trim, just your size. Right-click to put it on and look like Santa himself for <color is="#ffffff">30:00</color>. Type /zigcostume off to take it off sooner. Elsie the Weaver sells it at her Christmas stall.
+Christmas_Santa_Suit.description = A bundle of red clothes with white fur trim, just your size. Right-click to put it on and look like Santa himself for <color is="#ffffff">30:00</color>. Type /zigcostume off to take it off sooner. Elsie the Weaver sells it at her Christmas shop.
 Christmas_Wand.name = Christmas Wand
-Christmas_Wand.description = Point it at a friend. One button turns them into one of Santa's elves, the other into a reindeer, and they can take the costume off whenever they like. Elsie the Weaver sells it at her Christmas stall once you're On the List with Santa.
+Christmas_Wand.description = Point it at a friend. One button turns them into one of Santa's elves, the other into a reindeer, and they can take the costume off whenever they like. Elsie the Weaver sells it at her Christmas shop once you're On the List with Santa.
 Christmas_Yeti_Bait.name = Yeti Bait
-Christmas_Yeti_Bait.description = A fish no Yeti can say no to. <b>Bram the Shepherd</b> in the Forgotten Temple takes one to lead you and your party into the <b>Yeti Cave</b> while Christmas runs.\n\nBram sells it at his Christmas stall once you've brought his reindeer their carrots.
+Christmas_Yeti_Bait.description = A fish no Yeti can say no to. <b>Bram the Shepherd</b> in the Forgotten Temple takes one to lead you and your party into the <b>Yeti Cave</b> while Christmas runs.\n\nBram sells it at his Christmas shop once you've brought his reindeer their carrots.
 Christmas_Yeti_Fur_Hood.name = Yeti Fur Hood
 Christmas_Yeti_Fur_Hood.description = Thick white fur from the Yeti's own back. You take <color is="#ffffff">15%</color> less Ice damage while you wear it. The Yeti sometimes leaves one behind the first time you beat him each day.
 Christmas_Yeti_Fur_Coat.name = Yeti Fur Coat
@@ -171,4 +171,4 @@ Christmas_Tomas_Loaf.description = Tomas the Miller's own sweet loaf. Instantly 
 Christmas_Recipe_Tomas_Loaf.name = Recipe: Tomas's Christmas Loaf
 Christmas_Recipe_Tomas_Loaf.description = Teaches the <item is="Christmas_Tomas_Loaf"/> recipe. Bake it at a Chef's Stove from dough and tree sap, <color is="#ffffff">2</color> at a time.\n\nInstantly restores <color is="#ffffff">5%</color> health and grants:\n\n• <color is="#ffffff">Swift Feet</color>\n• <color is="#ffffff">Warm Inside</color>\n\nDuration: <color is="#ffffff">10:00</color>
 Christmas_Reindeer_Suit.name = Reindeer Suit
-Christmas_Reindeer_Suit.description = A bundle of reindeer clothes, antlers and red nose included, just your size. Right-click to put it on and look like one of Santa's reindeer for <color is="#ffffff">30:00</color>. Type /zigcostume off to take it off sooner. Elsie the Weaver sells it at her Christmas stall. Ask her how to earn it.
+Christmas_Reindeer_Suit.description = A bundle of reindeer clothes, antlers and red nose included, just your size. Right-click to put it on and look like one of Santa's reindeer for <color is="#ffffff">30:00</color>. Type /zigcostume off to take it off sooner. Elsie the Weaver sells it at her Christmas shop. Ask her how to earn it.

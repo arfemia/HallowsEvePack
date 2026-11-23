@@ -8,7 +8,7 @@
 dungeon.christmas_yeti_cave.name = The Yeti Cave
 dungeon.christmas_yeti_cave.description = The Yeti who scared off one of Santa's reindeer lives here, with a pile of stolen presents. Bring friends, and wrap up warm.
 dungeon.christmas_yeti_cave.goal = Walk into the cave to wake the Yeti, then bring him down. Back away when a ring lights up around him, and step off the rings under your feet before his snowballs land.
-dungeon.christmas_yeti_cave.cost_hint = Bram sells Yeti Bait at his stall once you've brought his reindeer their carrots.
+dungeon.christmas_yeti_cave.cost_hint = Bram sells Yeti Bait at his shop once you've brought his reindeer their carrots.
 dungeon.christmas_yeti_cave.confirm = Throw the Bait
 dungeon.christmas_yeti_cave.chest = Your reward waits in the chest where he fell.
 
@@ -23,10 +23,10 @@ notify.christmas_yeti_wiped = The Yeti goes back to his den.
 notify.christmas_yeti_wiped.sub = Back away when a ring lights up around him, and step off the rings before his snowballs land.
 claim.christmas_yeti_chase = The Yeti: Boss Kill
 
-# ---- Bram's stall and his way in ----
+# ---- Bram's shop and his way in ----
 shop.christmas_offer_yeti_bait.title = Yeti Bait
 shop.christmas_offer_yeti_bait.desc = A fish no Yeti can say no to. Bram takes one to lead you and your friends into the Yeti Cave.
-dialogue.christmas_yeti_cave_line.opt.enter = Take me to the Yeti Cave. (costs a Yeti Bait, from Bram's stall)
+dialogue.christmas_yeti_cave_line.opt.enter = Take me to the Yeti Cave. (costs a Yeti Bait, from Bram's shop)
 
 # ---- Achievement ----
 achievement.christmas_yeti_hunter.title = Yeti Hunter {0}

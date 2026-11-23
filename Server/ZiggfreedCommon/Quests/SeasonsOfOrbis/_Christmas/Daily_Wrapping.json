@@ -40,7 +40,7 @@
     "Claim": [
       { "Kind": "Lootable", "Params": { "Lootable": "Christmas_Daily_Pay" } },
       { "Kind": "Item", "Params": { "Item": "Christmas_Present", "Count": "2" } },
-      { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 25 } },
+      { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 15 } },
       { "Kind": "Reputation", "Params": { "Reputation": "Seasons_Of_Orbis_Festival", "Amount": 20 } },
       { "Kind": "Mmo_Xp", "Params": { "Skill": "CRAFTING", "Amount": "1500" },
         "Requires": { "Factors": [ { "Factor": "hytale:mod_installed", "Param": "Ziggfreed:MMOSkillTree", "Min": 1 } ] } }

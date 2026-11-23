@@ -27,7 +27,7 @@
     },
     {
       "Grants": {
-        "Rewards": [ { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 150 } } ]
+        "Rewards": [ { "Kind": "Reputation", "Params": { "Reputation": "Christmas_Nice_List", "Amount": 90 } } ]
       }
     }
   ]

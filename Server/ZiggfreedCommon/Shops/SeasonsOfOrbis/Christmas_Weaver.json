@@ -1,17 +1,16 @@
 {
   "$Comment": [
-    "Elsie the Weaver's Christmas stall: presents she has wrapped, the Christmas Wand and the Santa Suit,",
+    "Elsie the Weaver's Christmas shop: presents she has wrapped, the Christmas Wand and the Santa Suit,",
     "and the four pieces of the Christmas Set, priced in Christmas Coins, which Currencies puts in the",
     "header. The wand, the suit and the set wait for a rank on Santa's Nice List: each offer's own Requires",
     "locks it, and a player below the rank still sees it, locked, with the rank's name. Season makes the",
-    "stall, and every offer naming it, absent while Christmas is off. Players reach it through Elsie: her",
+    "shop, and every offer naming it, absent while Christmas is off. Players reach it through Elsie: her",
     "Christmas conversation (Dialogues/SeasonsOfOrbis/Christmas_Weaver.json) and, while Harvest Feast's",
     "last days still run, the Christmas line added to her feast conversation (DialogueExtensions/",
     "SeasonsOfOrbis/Christmas_Weaver_Feast_Line.json). It carries no Where, so it opens wherever she",
-    "stands. Order 92 keeps it behind a server's everyday storefronts. Includes carries the festival shelf",
-    "(Seasons_Of_Orbis_Festival_Stall), as every storefront in this pack does, with one purchase limit",
-    "across every stall that carries it. CategoryOrder fixes the order of her own shelves, and each one's",
-    "name is a key in christmas.progression.lang."
+    "stands. Order 92 keeps it behind a server's everyday storefronts. It includes no festival shelf:",
+    "Christmas's is at Santa's shop (Christmas_Santa.json). CategoryOrder fixes the order of her own",
+    "shelves, and each one's name is a key in christmas.progression.lang."
   ],
   "Season": "Christmas",
   "Text": {
@@ -20,7 +19,6 @@
   },
   "Icon": "Christmas_Present",
   "Order": 92,
-  "Includes": [ "Seasons_Of_Orbis_Festival_Stall" ],
   "Currencies": [ "Christmas_Coins" ],
   "CategoryOrder": [ "gifts", "clothes" ],
   "Categories": {

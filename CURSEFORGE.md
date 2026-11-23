@@ -63,7 +63,7 @@ Each season brings a host to the Forgotten Temple with quests, a daily board, a 
 - Tomas, Elsie and Bram stay on from the Harvest Feast as his helpers, in winter clothes once the feast is over. Each has a daily, a job a day on their own board, and a secret you earn as their apprentice: Tomas's Christmas Loaf, Elsie's Reindeer Suit, and a little extra from Bram in every present you open.
 - The Christmas Board posts an outdoor job and a workshop job every day, with more as you climb Santa's Nice List. Extra Thieves runs as often as you like, and Santa's Stocking is free once a day.
 - Sing a carol to anyone but Santa, once a day each, for a candy cane.
-- Christmas Coins, Christmas's own currency, spend at four shops: Santa's Stall, Tomas's Bakery, Elsie's Stall and Bram's Snowballs. They keep until next Christmas.
+- Christmas Coins, Christmas's own currency, spend at four shops: Santa's Shop, Tomas's Bakery, Elsie's Shop and Bram's Snowballs. They keep until next Christmas.
 - Gingerbread Cookies, Hot Cocoa and Christmas Cake, from Tomas's recipes at a Chef's Stove. Faster feet, warmth, health back, and the cake does all of it.
 - The Christmas Set: a hat, coat, gloves and trousers from Elsie that keep out the cold and earn Santa's favor faster.
 - Snowballs slow a friend for a moment and never hurt. Bram hands out a bundle free every day. The Christmas Wand turns a friend into an elf or a reindeer.

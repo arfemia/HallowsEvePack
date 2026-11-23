@@ -32,13 +32,13 @@ quest.mmo_christmas_shepherd_skill_job.flavor = Огонь Санта-Клаус
 
 # ---- The errands (only where MMO Skill Tree is missing) ----
 quest.christmas_errand_wheat.title = Пшеница для мельницы
-quest.christmas_errand_wheat.flavor = Моя мука сама не смелется. Сожни в полях немного пшеницы и принеси мне.
+quest.christmas_errand_wheat.flavor = Моя мука сама не смелется. Принеси мне немного пшеницы.
 quest.christmas_errand_bread.title = Хлеб к столу
-quest.christmas_errand_bread.flavor = Помощников Санта-Клауса тоже надо кормить. Испеки хлеб из теста на Кухонной плите.
+quest.christmas_errand_bread.flavor = Помощников Санта-Клауса тоже надо кормить. Испеки хлеб.
 quest.christmas_errand_decorations.title = Поручение: украшения
 quest.christmas_errand_decorations.flavor = Развесь у себя дома рождественские украшения. Гирлянды, огоньки, снеговик, подойдёт всё яркое.
 quest.christmas_errand_wool.title = Шерсть для носков
-quest.christmas_errand_wool.flavor = Мне нужна шерсть для рождественских носков. Наделай рулонов шерсти на ткацком станке и принеси мне.
+quest.christmas_errand_wool.flavor = Мне нужна шерсть для рождественских носков. Принеси мне рулоны шерсти.
 quest.christmas_errand_logs.title = Поручение: брёвна
 quest.christmas_errand_logs.flavor = Руби брёвна с любых деревьев. Оленьему сараю сегодня нужен огонь.
 quest.christmas_errand_wolves.title = Поручение: волки
@@ -76,7 +76,7 @@ lootable.christmas_bram_decorations.flavor = Небольшая добавка �
 
 # ---- The villagers' secrets ----
 quest.christmas_tomas_apprentice.title = Ученик Томаса
-quest.christmas_tomas_apprentice.flavor = Пеки мои рождественские угощения на Кухонной плите. Считается каждое. Напечёшь достаточно, и я продам тебе рецепт моего собственного Рождественского каравая.
+quest.christmas_tomas_apprentice.flavor = Пеки мои рождественские угощения. Считается каждое. Напечёшь достаточно, и я продам тебе рецепт моего собственного Рождественского каравая.
 quest.christmas_elsie_apprentice.title = Ученик Элси
 quest.christmas_elsie_apprentice.flavor = Развесь у себя дома рождественские украшения. Развесишь достаточно, и я продам тебе свой Олений наряд.
 quest.christmas_bram_apprentice.title = Ученик Брэма
@@ -94,9 +94,9 @@ factor.christmas_elsie_key.name_mmo = завершение квеста «Уче
 effect.christmas_costume_reindeer_suit.name = Олений наряд
 
 # ---- Tomas's secret, in his Christmas conversation ----
-dialogue.christmas_miller.apprentice_offer.text = У меня есть секрет: собственный <b>Рождественский каравай</b>, слаще любого пирога.\nПеки мои рождественские угощения на <b>Кухонной плите</b> какое-то время, и я продам тебе рецепт.
+dialogue.christmas_miller.apprentice_offer.text = У меня есть секрет: собственный <b>Рождественский каравай</b>, слаще любого пирога.\nПеки мои рождественские угощения какое-то время, и я продам тебе рецепт.
 dialogue.christmas_miller.apprentice_offer.opt.accept = Научи меня.
-dialogue.christmas_miller.apprentice_brief.text = Пеки <b>Пряничных человечков</b>, <b>Горячее какао</b> или <b>Рождественский рулет</b> на <b>Кухонной плите</b>. Считается каждое. Приходи, когда напечёшь достаточно.
+dialogue.christmas_miller.apprentice_brief.text = Пеки <b>Пряничных человечков</b>, <b>Горячее какао</b> или <b>Рождественский рулет</b>. Считается каждое. Приходи, когда напечёшь достаточно.
 dialogue.christmas_miller.apprentice_ready.text = Погляди-ка, настоящий пекарь. Рецепт моего <b>Рождественского каравая</b> теперь лежит для тебя в моей лавке.
 dialogue.christmas_miller.apprentice_ready.opt.turnin = Спасибо, Томас.
 dialogue.christmas_miller.opt.secret_skill = А если я уже хорошо готовлю?
@@ -105,7 +105,7 @@ dialogue.christmas_miller.secret_skill.text = Тогда мои уроки те�
 # ---- Elsie's secret, in her Christmas conversation ----
 dialogue.christmas_weaver.apprentice_offer.text = У меня есть секрет: <b>Олений наряд</b>, который я сшила сама. Он не для всех подряд.\nРазвесь у себя дома <b>рождественские украшения</b>, и когда развесишь достаточно, я продам тебе один.
 dialogue.christmas_weaver.apprentice_offer.opt.accept = Я украшу дом.
-dialogue.christmas_weaver.apprentice_brief.text = Развесь у себя дома гирлянды, огоньки, венки, снеговиков, любые рождественские украшения. Здесь, в храме, ничего вешать нельзя. Украшения есть на праздничной полке в любой рождественской лавке и в Рождественских подарках.
+dialogue.christmas_weaver.apprentice_brief.text = Развесь у себя дома гирлянды, огоньки, венки, снеговиков, любые рождественские украшения. Здесь, в храме, ничего вешать нельзя. Украшения есть на праздничной полке в лавке Санта-Клауса и в Рождественских подарках.
 dialogue.christmas_weaver.apprentice_ready.text = Твой дом, наверное, выглядит чудесно. Мой <b>Олений наряд</b> теперь лежит для тебя в моей лавке.
 dialogue.christmas_weaver.apprentice_ready.opt.turnin = Спасибо, Элси.
 dialogue.christmas_weaver.opt.secret_skill = А если я уже хорошо украшаю?

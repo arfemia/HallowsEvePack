@@ -1,14 +1,13 @@
 {
   "$Comment": [
-    "Tomas the Miller's Christmas stall: the recipes for Christmas's three dishes and fresh dough, priced in",
-    "Christmas Coins, which Currencies puts in the header. Season makes the stall, and every offer naming",
+    "Tomas the Miller's Christmas shop: the recipes for Christmas's three dishes and fresh dough, priced in",
+    "Christmas Coins, which Currencies puts in the header. Season makes the shop, and every offer naming",
     "it, absent while Christmas is off. Players reach it through Tomas: his Christmas conversation",
     "(Dialogues/SeasonsOfOrbis/Christmas_Miller.json) and, while Harvest Feast's last days still run, the",
     "Christmas line added to his feast conversation (DialogueExtensions/SeasonsOfOrbis/",
     "Christmas_Miller_Feast_Line.json). It carries no Where, so it opens wherever he stands. Order 91 keeps",
-    "it behind a server's everyday storefronts. Includes carries the festival shelf",
-    "(Seasons_Of_Orbis_Festival_Stall), as every storefront in this pack does, with one purchase limit",
-    "across every stall that carries it. The shelf's name and its category's are keys in",
+    "it behind a server's everyday storefronts. It includes no festival shelf: Christmas's is at Santa's",
+    "shop (Christmas_Santa.json). The shop's name and its category's are keys in",
     "christmas.progression.lang."
   ],
   "Season": "Christmas",
@@ -18,7 +17,6 @@
   },
   "Icon": "Christmas_Gingerbread_Cookie",
   "Order": 91,
-  "Includes": [ "Seasons_Of_Orbis_Festival_Stall" ],
   "Currencies": [ "Christmas_Coins" ],
   "CategoryOrder": [ "kitchen" ],
   "Categories": {

@@ -32,13 +32,13 @@ quest.mmo_christmas_shepherd_skill_job.flavor = Noel Baba'nın ateşi bütün ge
 
 # ---- The errands (only where MMO Skill Tree is missing) ----
 quest.christmas_errand_wheat.title = Değirmen İçin Buğday
-quest.christmas_errand_wheat.flavor = Unum kendi kendine öğütülmez. Tarlalardan biraz buğday biç ve bana getir.
+quest.christmas_errand_wheat.flavor = Unum kendi kendine öğütülmez. Bana biraz buğday getir.
 quest.christmas_errand_bread.title = Sofra İçin Ekmek
-quest.christmas_errand_bread.flavor = Noel Baba'nın yardımcılarının da karnı doymalı. Bir Aşçı Ocağı'nda hamurdan biraz ekmek pişir.
+quest.christmas_errand_bread.flavor = Noel Baba'nın yardımcılarının da karnı doymalı. Biraz ekmek pişir.
 quest.christmas_errand_decorations.title = Süsleme İşi
 quest.christmas_errand_decorations.flavor = Evine biraz Noel süsü as. Çelenk, ışık, kardan adam, parlak ne olursa olur.
 quest.christmas_errand_wool.title = Çoraplar İçin Yün
-quest.christmas_errand_wool.flavor = Noel çorapları için yüne ihtiyacım var. Bir dokuma tezgahında yün balyaları yap ve bana getir.
+quest.christmas_errand_wool.flavor = Noel çorapları için yüne ihtiyacım var. Bana biraz yün balyası getir.
 quest.christmas_errand_logs.title = Kütük İşi
 quest.christmas_errand_logs.flavor = Herhangi bir ağaçtan kütük kes. Ren geyiği ağılı bu gece bir ateş istiyor.
 quest.christmas_errand_wolves.title = Kurt İşi
@@ -76,7 +76,7 @@ lootable.christmas_bram_decorations.flavor = Açtığın her hediyede Bram'dan k
 
 # ---- The villagers' secrets ----
 quest.christmas_tomas_apprentice.title = Tomas'ın Çırağı
-quest.christmas_tomas_apprentice.flavor = Noel ikramlarımı bir Aşçı Ocağı'nda pişir. Yaptığın her ikram sayılır. Yeterince pişirirsen kendi Noel Somunumun tarifini sana satarım.
+quest.christmas_tomas_apprentice.flavor = Noel ikramlarımı pişir. Yaptığın her ikram sayılır. Yeterince pişirirsen kendi Noel Somunumun tarifini sana satarım.
 quest.christmas_elsie_apprentice.title = Elsie'nin Çırağı
 quest.christmas_elsie_apprentice.flavor = Evine Noel süsleri as. Yeterince asarsan Ren Geyiği Kıyafetimi sana satarım.
 quest.christmas_bram_apprentice.title = Bram'ın Çırağı
@@ -94,9 +94,9 @@ factor.christmas_elsie_key.name_mmo = Elsie'nin Çırağı'nı bitirmek ya da İ
 effect.christmas_costume_reindeer_suit.name = Ren Geyiği Kıyafeti
 
 # ---- Tomas's secret, in his Christmas conversation ----
-dialogue.christmas_miller.apprentice_offer.text = Bir sırrım var: kendi <b>Noel Somunum</b>, hangi pastadan olursa olsun daha tatlı.\nBir süre Noel ikramlarımı bir <b>Aşçı Ocağı</b>'nda pişir, tarifi sana satarım.
+dialogue.christmas_miller.apprentice_offer.text = Bir sırrım var: kendi <b>Noel Somunum</b>, hangi pastadan olursa olsun daha tatlı.\nBir süre Noel ikramlarımı pişir, tarifi sana satarım.
 dialogue.christmas_miller.apprentice_offer.opt.accept = Öğret bana.
-dialogue.christmas_miller.apprentice_brief.text = Bir <b>Aşçı Ocağı</b>'nda <b>Zencefilli Kurabiye</b>, <b>Sıcak Kakao</b> ya da <b>Noel Pastası</b> pişir. Hepsi sayılır. Yeterince pişirince dön.
+dialogue.christmas_miller.apprentice_brief.text = <b>Zencefilli Kurabiye</b>, <b>Sıcak Kakao</b> ya da <b>Noel Pastası</b> pişir. Hepsi sayılır. Yeterince pişirince dön.
 dialogue.christmas_miller.apprentice_ready.text = Bak sen, tam bir fırıncı olmuşsun. <b>Noel Somunu</b> tarifim artık dükkanımda senin için duruyor.
 dialogue.christmas_miller.apprentice_ready.opt.turnin = Sağ ol, Tomas.
 dialogue.christmas_miller.opt.secret_skill = Ya zaten iyi bir aşçıysam?
@@ -105,7 +105,7 @@ dialogue.christmas_miller.secret_skill.text = O zaman derslerime ihtiyacın yok.
 # ---- Elsie's secret, in her Christmas conversation ----
 dialogue.christmas_weaver.apprentice_offer.text = Bir sırrım var: kendi diktiğim bir <b>Ren Geyiği Kıyafeti</b>. Herkese göre değil.\nEvine <b>Noel süsleri</b> as, yeterince astığında bir tane sana satarım.
 dialogue.christmas_weaver.apprentice_offer.opt.accept = Süsleyeceğim.
-dialogue.christmas_weaver.apprentice_brief.text = Evine çelenk, ışık, tören çelengi, kardan adam, hangi Noel süsü olursa as. Tapınağın içinde hiçbir şey asılamaz. Süsleri her Noel dükkanındaki şenlik rafında ve Noel Hediyelerinin içinde bulursun.
+dialogue.christmas_weaver.apprentice_brief.text = Evine çelenk, ışık, tören çelengi, kardan adam, hangi Noel süsü olursa as. Tapınağın içinde hiçbir şey asılamaz. Süsleri Noel Baba'nın dükkanındaki şenlik rafında ve Noel Hediyelerinin içinde bulursun.
 dialogue.christmas_weaver.apprentice_ready.text = Evin harika görünüyor olmalı. <b>Ren Geyiği Kıyafetim</b> artık dükkanımda senin için duruyor.
 dialogue.christmas_weaver.apprentice_ready.opt.turnin = Teşekkürler, Elsie.
 dialogue.christmas_weaver.opt.secret_skill = Ya zaten iyi süslüyorsam?

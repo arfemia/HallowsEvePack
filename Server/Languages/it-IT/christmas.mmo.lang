@@ -32,13 +32,13 @@ quest.mmo_christmas_shepherd_skill_job.flavor = Il fuoco di Babbo Natale mangia 
 
 # ---- The errands (only where MMO Skill Tree is missing) ----
 quest.christmas_errand_wheat.title = Grano per il Mulino
-quest.christmas_errand_wheat.flavor = La mia farina non si macina da sola. Taglia un po' di grano nei campi e portamelo.
+quest.christmas_errand_wheat.flavor = La mia farina non si macina da sola. Portami del grano.
 quest.christmas_errand_bread.title = Pane per la Tavola
-quest.christmas_errand_bread.flavor = Anche gli aiutanti di Babbo Natale devono mangiare. Cuoci del pane con l'impasto a un Fornello dello Chef.
+quest.christmas_errand_bread.flavor = Anche gli aiutanti di Babbo Natale devono mangiare. Cuoci del pane.
 quest.christmas_errand_decorations.title = Commissione di Addobbi
 quest.christmas_errand_decorations.flavor = Metti su qualche addobbo di Natale a casa tua. Ghirlande, luci, un pupazzo di neve, va bene tutto ciò che luccica.
 quest.christmas_errand_wool.title = Lana per le Calze
-quest.christmas_errand_wool.flavor = Mi serve lana per le calze di Natale. Fai dei rotoli di lana a un telaio e portameli.
+quest.christmas_errand_wool.flavor = Mi serve lana per le calze di Natale. Portami dei rotoli di lana.
 quest.christmas_errand_logs.title = Commissione di Tronchi
 quest.christmas_errand_logs.flavor = Taglia tronchi da un albero qualsiasi. Stanotte la stalla delle renne ha bisogno di un fuoco.
 quest.christmas_errand_wolves.title = Commissione dei Lupi
@@ -76,7 +76,7 @@ lootable.christmas_bram_decorations.flavor = Un piccolo extra da Bram in ogni re
 
 # ---- The villagers' secrets ----
 quest.christmas_tomas_apprentice.title = L'Apprendista di Tomas
-quest.christmas_tomas_apprentice.flavor = Cuoci i miei dolcetti di Natale a un Fornello dello Chef. Conta ogni dolcetto che fai. Cuocine abbastanza e ti vendo la ricetta del mio Pane di Natale.
+quest.christmas_tomas_apprentice.flavor = Cuoci i miei dolcetti di Natale. Conta ogni dolcetto che fai. Cuocine abbastanza e ti vendo la ricetta del mio Pane di Natale.
 quest.christmas_elsie_apprentice.title = L'Apprendista di Elsie
 quest.christmas_elsie_apprentice.flavor = Metti degli addobbi di Natale a casa tua. Mettine abbastanza e ti vendo il mio Costume da Renna.
 quest.christmas_bram_apprentice.title = L'Apprendista di Bram
@@ -94,9 +94,9 @@ factor.christmas_elsie_key.name_mmo = aver finito L'Apprendista di Elsie o il li
 effect.christmas_costume_reindeer_suit.name = Costume da Renna
 
 # ---- Tomas's secret, in his Christmas conversation ----
-dialogue.christmas_miller.apprentice_offer.text = Ho un segreto: un <b>Pane di Natale</b> tutto mio, più dolce di qualsiasi torta.\nCuoci per un po' i miei dolcetti di Natale a un <b>Fornello dello Chef</b> e ti vendo la ricetta.
+dialogue.christmas_miller.apprentice_offer.text = Ho un segreto: un <b>Pane di Natale</b> tutto mio, più dolce di qualsiasi torta.\nCuoci per un po' i miei dolcetti di Natale e ti vendo la ricetta.
 dialogue.christmas_miller.apprentice_offer.opt.accept = Insegnami.
-dialogue.christmas_miller.apprentice_brief.text = Cuoci <b>Biscotti di Pan di Zenzero</b>, <b>Cioccolata Calda</b> o <b>Torta di Natale</b> a un <b>Fornello dello Chef</b>. Conta ogni cosa. Torna quando ne hai cotti abbastanza.
+dialogue.christmas_miller.apprentice_brief.text = Cuoci <b>Biscotti di Pan di Zenzero</b>, <b>Cioccolata Calda</b> o <b>Torta di Natale</b>. Conta ogni cosa. Torna quando ne hai cotti abbastanza.
 dialogue.christmas_miller.apprentice_ready.text = Guardati, un vero fornaio. Ora la ricetta del mio <b>Pane di Natale</b> è nel mio negozio per te.
 dialogue.christmas_miller.apprentice_ready.opt.turnin = Grazie, Tomas.
 dialogue.christmas_miller.opt.secret_skill = E se sono già un bravo cuoco?
@@ -105,7 +105,7 @@ dialogue.christmas_miller.secret_skill.text = Allora non ti servono le mie lezio
 # ---- Elsie's secret, in her Christmas conversation ----
 dialogue.christmas_weaver.apprentice_offer.text = Ho un segreto: un <b>Costume da Renna</b> che ho cucito io. Non è per tutti.\nMetti degli <b>addobbi di Natale</b> a casa tua, e quando ne avrai messi abbastanza, te ne vendo uno.
 dialogue.christmas_weaver.apprentice_offer.opt.accept = Addobberò la casa.
-dialogue.christmas_weaver.apprentice_brief.text = Metti a casa tua ghirlande, luci, corone, pupazzi di neve, qualsiasi addobbo di Natale. Qui nel tempio non si può mettere niente. Gli addobbi li trovi sullo scaffale delle feste di ogni negozio di Natale, e dentro i Regali di Natale.
+dialogue.christmas_weaver.apprentice_brief.text = Metti a casa tua ghirlande, luci, corone, pupazzi di neve, qualsiasi addobbo di Natale. Qui nel tempio non si può mettere niente. Gli addobbi li trovi sullo scaffale delle feste nel negozio di Babbo Natale, e dentro i Regali di Natale.
 dialogue.christmas_weaver.apprentice_ready.text = La tua casa deve essere meravigliosa. Ora il mio <b>Costume da Renna</b> è nel mio negozio per te.
 dialogue.christmas_weaver.apprentice_ready.opt.turnin = Grazie, Elsie.
 dialogue.christmas_weaver.opt.secret_skill = E se so già addobbare bene?

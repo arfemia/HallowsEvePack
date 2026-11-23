@@ -32,13 +32,13 @@ quest.mmo_christmas_shepherd_skill_job.flavor = Das Feuer des Weihnachtsmanns fr
 
 # ---- The errands (only where MMO Skill Tree is missing) ----
 quest.christmas_errand_wheat.title = Weizen für die Mühle
-quest.christmas_errand_wheat.flavor = Mein Mehl mahlt sich nicht von selbst. Schneid etwas Weizen auf den Feldern und bring ihn mir.
+quest.christmas_errand_wheat.flavor = Mein Mehl mahlt sich nicht von selbst. Bring mir etwas Weizen.
 quest.christmas_errand_bread.title = Brot für die Tafel
-quest.christmas_errand_bread.flavor = Auch die Helfer des Weihnachtsmanns wollen essen. Back an einem Kochherd Brot aus Teig.
+quest.christmas_errand_bread.flavor = Auch die Helfer des Weihnachtsmanns wollen essen. Back etwas Brot.
 quest.christmas_errand_decorations.title = Dekorationsbesorgung
 quest.christmas_errand_decorations.flavor = Stell ein paar Weihnachtsdekorationen bei dir zu Hause auf. Girlanden, Lichter, ein Schneemann, alles Helle tut es.
 quest.christmas_errand_wool.title = Wolle für Strümpfe
-quest.christmas_errand_wool.flavor = Ich brauche Wolle für die Weihnachtsstrümpfe. Stell an einem Webstuhl Wollballen her und bring sie mir.
+quest.christmas_errand_wool.flavor = Ich brauche Wolle für die Weihnachtsstrümpfe. Bring mir ein paar Wollballen.
 quest.christmas_errand_logs.title = Holzbesorgung
 quest.christmas_errand_logs.flavor = Fäll Stämme von beliebigen Bäumen. Der Rentierstall braucht heute Nacht ein Feuer.
 quest.christmas_errand_wolves.title = Wolfsbesorgung
@@ -76,7 +76,7 @@ lootable.christmas_bram_decorations.flavor = Ein kleines Extra von Bram in jedem
 
 # ---- The villagers' secrets ----
 quest.christmas_tomas_apprentice.title = Tomas' Lehrling
-quest.christmas_tomas_apprentice.flavor = Back meine Weihnachtsleckereien an einem Kochherd. Jede Leckerei zählt. Back genug, dann verkaufe ich dir das Rezept für mein eigenes Weihnachtsbrot.
+quest.christmas_tomas_apprentice.flavor = Back meine Weihnachtsleckereien. Jede Leckerei zählt. Back genug, dann verkaufe ich dir das Rezept für mein eigenes Weihnachtsbrot.
 quest.christmas_elsie_apprentice.title = Elsies Lehrling
 quest.christmas_elsie_apprentice.flavor = Stell Weihnachtsdekorationen bei dir zu Hause auf. Stell genug auf, dann verkaufe ich dir meinen Rentieranzug.
 quest.christmas_bram_apprentice.title = Brams Lehrling
@@ -94,9 +94,9 @@ factor.christmas_elsie_key.name_mmo = den Abschluss von Elsies Lehrling oder Bau
 effect.christmas_costume_reindeer_suit.name = Rentieranzug
 
 # ---- Tomas's secret, in his Christmas conversation ----
-dialogue.christmas_miller.apprentice_offer.text = Ich habe ein Geheimnis: ein eigenes <b>Weihnachtsbrot</b>, süßer als jeder Kuchen.\nBack eine Weile meine Weihnachtsleckereien an einem <b>Kochherd</b>, dann verkaufe ich dir das Rezept.
+dialogue.christmas_miller.apprentice_offer.text = Ich habe ein Geheimnis: ein eigenes <b>Weihnachtsbrot</b>, süßer als jeder Kuchen.\nBack eine Weile meine Weihnachtsleckereien, dann verkaufe ich dir das Rezept.
 dialogue.christmas_miller.apprentice_offer.opt.accept = Bring es mir bei.
-dialogue.christmas_miller.apprentice_brief.text = Back <b>Lebkuchenmännchen</b>, <b>Heiße Schokolade</b> oder <b>Weihnachtskuchen</b> an einem <b>Kochherd</b>. Jedes zählt. Komm zurück, wenn du genug gebacken hast.
+dialogue.christmas_miller.apprentice_brief.text = Back <b>Lebkuchenmännchen</b>, <b>Heiße Schokolade</b> oder <b>Weihnachtskuchen</b>. Jedes zählt. Komm zurück, wenn du genug gebacken hast.
 dialogue.christmas_miller.apprentice_ready.text = Sieh an, ein richtiger Bäcker. Mein Rezept für das <b>Weihnachtsbrot</b> liegt jetzt für dich in meinem Laden.
 dialogue.christmas_miller.apprentice_ready.opt.turnin = Danke, Tomas.
 dialogue.christmas_miller.opt.secret_skill = Und wenn ich schon ein guter Koch bin?
@@ -105,7 +105,7 @@ dialogue.christmas_miller.secret_skill.text = Dann brauchst du meinen Unterricht
 # ---- Elsie's secret, in her Christmas conversation ----
 dialogue.christmas_weaver.apprentice_offer.text = Ich habe ein Geheimnis: einen <b>Rentieranzug</b>, den ich selbst genäht habe. Er ist nicht für jeden.\nStell <b>Weihnachtsdekorationen</b> bei dir zu Hause auf, und wenn du genug aufgestellt hast, verkaufe ich dir einen.
 dialogue.christmas_weaver.apprentice_offer.opt.accept = Ich dekoriere.
-dialogue.christmas_weaver.apprentice_brief.text = Stell Girlanden, Lichter, Kränze, Schneemänner, jede Weihnachtsdekoration bei dir zu Hause auf. Hier im Tempel kann nichts aufgestellt werden. Dekorationen findest du im Festivalregal jedes Weihnachtsladens und in Weihnachtsgeschenken.
+dialogue.christmas_weaver.apprentice_brief.text = Stell Girlanden, Lichter, Kränze, Schneemänner, jede Weihnachtsdekoration bei dir zu Hause auf. Hier im Tempel kann nichts aufgestellt werden. Dekorationen findest du im Festivalregal im Laden des Weihnachtsmanns und in Weihnachtsgeschenken.
 dialogue.christmas_weaver.apprentice_ready.text = Dein Zuhause muss wunderbar aussehen. Mein <b>Rentieranzug</b> liegt jetzt für dich in meinem Laden.
 dialogue.christmas_weaver.apprentice_ready.opt.turnin = Danke, Elsie.
 dialogue.christmas_weaver.opt.secret_skill = Und wenn ich schon gut dekoriere?

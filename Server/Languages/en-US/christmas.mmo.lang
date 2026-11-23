@@ -32,13 +32,13 @@ quest.mmo_christmas_shepherd_skill_job.flavor = Santa's fire eats wood all night
 
 # ---- The errands (only where MMO Skill Tree is missing) ----
 quest.christmas_errand_wheat.title = Wheat for the Mill
-quest.christmas_errand_wheat.flavor = My flour won't grind itself. Cut some wheat in the fields and bring it to me.
+quest.christmas_errand_wheat.flavor = My flour won't grind itself. Bring me some wheat.
 quest.christmas_errand_bread.title = Bread for the Table
-quest.christmas_errand_bread.flavor = Santa's helpers need feeding too. Bake some bread from dough at a Chef's Stove.
+quest.christmas_errand_bread.flavor = Santa's helpers need feeding too. Bake some bread.
 quest.christmas_errand_decorations.title = Decorating Errand
 quest.christmas_errand_decorations.flavor = Put up some Christmas decorations at your home. Garlands, lights, a snowman, anything bright will do.
 quest.christmas_errand_wool.title = Wool for Stockings
-quest.christmas_errand_wool.flavor = I need wool for the Christmas stockings. Make bolts of wool at a loom and bring them to me.
+quest.christmas_errand_wool.flavor = I need wool for the Christmas stockings. Bring me some bolts of wool.
 quest.christmas_errand_logs.title = Log Errand
 quest.christmas_errand_logs.flavor = Chop logs from any tree. The reindeer shed needs a fire tonight.
 quest.christmas_errand_wolves.title = Wolf Errand
@@ -76,7 +76,7 @@ lootable.christmas_bram_decorations.flavor = A little extra from Bram in every p
 
 # ---- The villagers' secrets ----
 quest.christmas_tomas_apprentice.title = Tomas's Apprentice
-quest.christmas_tomas_apprentice.flavor = Bake my Christmas treats at a Chef's Stove. Every treat you make counts. Bake enough and I'll sell you the recipe for my own Christmas Loaf.
+quest.christmas_tomas_apprentice.flavor = Bake my Christmas treats. Every treat you make counts. Bake enough and I'll sell you the recipe for my own Christmas Loaf.
 quest.christmas_elsie_apprentice.title = Elsie's Apprentice
 quest.christmas_elsie_apprentice.flavor = Put up Christmas decorations at your home. Put up enough and I will sell you my Reindeer Suit.
 quest.christmas_bram_apprentice.title = Bram's Apprentice
@@ -94,10 +94,10 @@ factor.christmas_elsie_key.name_mmo = finishing Elsie's Apprentice or Building l
 effect.christmas_costume_reindeer_suit.name = Reindeer Suit
 
 # ---- Tomas's secret, in his Christmas conversation ----
-dialogue.christmas_miller.apprentice_offer.text = I've a secret: a <b>Christmas Loaf</b> of my own, sweeter than any cake.\nBake my Christmas treats at a <b>Chef's Stove</b> for a while and I'll sell you the recipe.
+dialogue.christmas_miller.apprentice_offer.text = I've a secret: a <b>Christmas Loaf</b> of my own, sweeter than any cake.\nBake my Christmas treats for a while and I'll sell you the recipe.
 dialogue.christmas_miller.apprentice_offer.opt.accept = Teach me.
-dialogue.christmas_miller.apprentice_brief.text = Bake <b>Gingerbread Cookies</b>, <b>Hot Cocoa</b> or <b>Christmas Cake</b> at a <b>Chef's Stove</b>. Every one counts. Come back when you've baked enough.
-dialogue.christmas_miller.apprentice_ready.text = Look at you, a proper baker. My <b>Christmas Loaf</b> recipe is on my stall for you now.
+dialogue.christmas_miller.apprentice_brief.text = Bake <b>Gingerbread Cookies</b>, <b>Hot Cocoa</b> or <b>Christmas Cake</b>. Every one counts. Come back when you've baked enough.
+dialogue.christmas_miller.apprentice_ready.text = Look at you, a proper baker. My <b>Christmas Loaf</b> recipe is in my shop for you now.
 dialogue.christmas_miller.apprentice_ready.opt.turnin = Thanks, Tomas.
 dialogue.christmas_miller.opt.secret_skill = What if I'm already a good cook?
 dialogue.christmas_miller.secret_skill.text = Then you don't need my lessons. Reach <b>Crafting level 20</b> and I'll sell you my <b>Christmas Loaf</b> recipe all the same.\nOr bake with me a while. Either way works.
@@ -105,8 +105,8 @@ dialogue.christmas_miller.secret_skill.text = Then you don't need my lessons. Re
 # ---- Elsie's secret, in her Christmas conversation ----
 dialogue.christmas_weaver.apprentice_offer.text = I have a secret: a <b>Reindeer Suit</b> I sewed myself. It is not for just anyone.\nPut up <b>Christmas decorations</b> at your home, and when you have put up enough, I will sell you one.
 dialogue.christmas_weaver.apprentice_offer.opt.accept = I will decorate.
-dialogue.christmas_weaver.apprentice_brief.text = Put up garlands, lights, wreaths, snowmen, any Christmas decoration, at your home. Nothing can go up here in the temple. You will find decorations on the festival shelf at any Christmas stall, and inside Christmas Presents.
-dialogue.christmas_weaver.apprentice_ready.text = Your home must look wonderful. My <b>Reindeer Suit</b> is on my stall for you now.
+dialogue.christmas_weaver.apprentice_brief.text = Put up garlands, lights, wreaths, snowmen, any Christmas decoration, at your home. Nothing can go up here in the temple. You will find decorations on the festival shelf at Santa's shop, and inside Christmas Presents.
+dialogue.christmas_weaver.apprentice_ready.text = Your home must look wonderful. My <b>Reindeer Suit</b> is in my shop for you now.
 dialogue.christmas_weaver.apprentice_ready.opt.turnin = Thank you, Elsie.
 dialogue.christmas_weaver.opt.secret_skill = What if I already decorate well?
 dialogue.christmas_weaver.secret_skill.text = Then you do not need my lessons. Reach <b>Building level 20</b> and I will sell you my <b>Reindeer Suit</b> all the same.\nOr decorate with me a while. Either way is fine.
