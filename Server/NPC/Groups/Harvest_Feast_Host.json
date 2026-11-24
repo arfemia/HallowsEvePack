@@ -1,4 +1,4 @@
 {
-  "$Comment": "Martha the Cook, the feast's host, alone in a group of one. The reputation group Harvest_Feast_Host (NPC/Reputation/Groups) names this group, which is how the game ties the way the host treats each player to that player's favor. Add another role id to IncludeRoles and that character shares the host's favor.",
-  "IncludeRoles": [ "Harvest_Feast_Host" ]
+  "$Comment": "Martha the Cook, the feast's host, alone in a group of one. The reputation group Harvest_Feast_Host (NPC/Reputation/Groups) names this group, which is how the game ties the way the host treats each player to that player's favor. Add another role id to IncludeRoles, written *<id>, and that character shares the host's favor. Each role id is written after a * the way the game's own groups write *Chicken: the star still matches that role, while the game works a group out again as each mod's roles load, before this pack's own, so a bare id would log a warning at every server start though the group comes out the same.",
+  "IncludeRoles": [ "*Harvest_Feast_Host" ]
 }

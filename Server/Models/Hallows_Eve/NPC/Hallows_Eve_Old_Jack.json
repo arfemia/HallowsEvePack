@@ -1,6 +1,15 @@
 {
-  "$Comment": "Old Jack's look: an Outlander under the Jack Helm, in a hunter's coat, breeches and cape. Parent Outlander brings the body, its animations and its hitbox. DefaultAttachments replaces the parent's list whole, so the Outlander's ears, eyes and mouth are left out on purpose: the helm covers the whole head, and its carved face is his face. Light is that face's glow, a model light that moves with him; each hex digit is a red, green or blue level from 0 to f, and each level is also roughly how many blocks it reaches.",
+  "$Comment": "Old Jack's look: an Outlander under the Jack Helm, in a hunter's coat, breeches and cape. Parent Outlander brings the body, its animations and its hitbox. AnimationSets adds one animation to the Outlander's own, Wave, the player's own wave emote (the Outlander moves on the player's skeleton), which CommonLib's quest-giver template, his role's base, plays when a player walks up; the pack's other villagers take the same Wave from their shared parent, Seasons_Of_Orbis_Villager, which stands on the player's body rather than the Outlander's. DefaultAttachments replaces the parent's list whole, so the Outlander's ears, eyes and mouth are left out on purpose: the helm covers the whole head, and its carved face is his face. Light is that face's glow, a model light that moves with him; each hex digit is a red, green or blue level from 0 to f, and each level is also roughly how many blocks it reaches.",
   "Parent": "Outlander",
+  "AnimationSets": {
+    "Wave": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Emote/Wave.blockyanim"
+        }
+      ]
+    }
+  },
   "DefaultAttachments": [
     {
       "Model": "Items/Hallows_Eve/Jack_Helm/Jack_Helm.blockymodel",

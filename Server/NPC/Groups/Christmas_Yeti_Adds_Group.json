@@ -1,4 +1,4 @@
 {
-  "$Comment": "The White Wolves the Yeti calls in his cave (the role Christmas_Yeti_Wolf). His fight's script clears this group when the fight resets, so a wipe never leaves a wolf behind for the next try. No reputation names this group, and Santa's Nice List counts none of it.",
-  "IncludeRoles": [ "Christmas_Yeti_Wolf" ]
+  "$Comment": "The White Wolves the Yeti calls in his cave (the role Christmas_Yeti_Wolf). His fight's script clears this group when the fight resets, so a wipe never leaves a wolf behind for the next try. No reputation names this group, and Santa's Nice List counts none of it. Its role id is written after a * the way the game's own groups write *Chicken: the star still matches that role, while the game works a group out again as each mod's roles load, before this pack's own, so a bare id would log a warning at every server start though the group comes out the same.",
+  "IncludeRoles": [ "*Christmas_Yeti_Wolf" ]
 }

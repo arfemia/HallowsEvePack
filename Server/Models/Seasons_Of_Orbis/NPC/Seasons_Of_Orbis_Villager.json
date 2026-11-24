@@ -1,0 +1,13 @@
+{
+  "$Comment": "The body the pack's villagers stand on: the player's own (Parent Player brings the body, its animations and its hitbox) with one animation more, Wave, the player's own wave emote. CommonLib's quest-giver template, which every villager's role is built on, waves at a player who walks up, and the player's body has no Wave of its own. A villager's model names this file as its Parent and lists only its own look. AnimationSets add to the parent's rather than replace them, so a villager's model can still add an animation of its own.",
+  "Parent": "Player",
+  "AnimationSets": {
+    "Wave": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Emote/Wave.blockyanim"
+        }
+      ]
+    }
+  }
+}

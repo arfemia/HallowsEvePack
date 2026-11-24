@@ -1,4 +1,4 @@
 {
-  "$Comment": "Old Jack on his own, as a group of one. The reputation group Hallows_Eve_Old_Jack (NPC/Reputation/Groups) names this group, which is how the game ties the way he treats each player to that player's favor with him. Add another role id to IncludeRoles and that character shares his favor.",
-  "IncludeRoles": [ "Hallows_Eve_Old_Jack" ]
+  "$Comment": "Old Jack on his own, as a group of one. The reputation group Hallows_Eve_Old_Jack (NPC/Reputation/Groups) names this group, which is how the game ties the way he treats each player to that player's favor with him. Add another role id to IncludeRoles, written *<id>, and that character shares his favor. Each role id is written after a * the way the game's own groups write *Chicken: the star still matches that role, while the game works a group out again as each mod's roles load, before this pack's own, so a bare id would log a warning at every server start though the group comes out the same.",
+  "IncludeRoles": [ "*Hallows_Eve_Old_Jack" ]
 }

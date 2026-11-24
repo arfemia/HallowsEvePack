@@ -1,4 +1,4 @@
 {
-  "$Comment": "Santa, Christmas's host, alone in a group of one. The reputation group Christmas_Nice_List (NPC/Reputation/Groups) names this group, which is how the game ties the way Santa treats each player to that player's place on his Nice List. Add another role id to IncludeRoles and that character shares Santa's list.",
-  "IncludeRoles": [ "Christmas_Santa" ]
+  "$Comment": "Santa, Christmas's host, alone in a group of one. The reputation group Christmas_Nice_List (NPC/Reputation/Groups) names this group, which is how the game ties the way Santa treats each player to that player's place on his Nice List. Add another role id to IncludeRoles, written *<id>, and that character shares Santa's list. Each role id is written after a * the way the game's own groups write *Chicken: the star still matches that role, while the game works a group out again as each mod's roles load, before this pack's own, so a bare id would log a warning at every server start though the group comes out the same.",
+  "IncludeRoles": [ "*Christmas_Santa" ]
 }

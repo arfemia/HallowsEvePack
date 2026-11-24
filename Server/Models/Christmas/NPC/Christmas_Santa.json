@@ -1,0 +1,13 @@
+{
+  "$Comment": "Santa's look: the game's own Santa (Parent NPC_Santa, the red coat, hat and boots and the long white beard on the player's body), every piece of it unchanged, with one animation more, Wave, the player's own wave emote. CommonLib's quest-giver template, which his role is built on, waves at a player who walks up, and the game's Santa has no Wave of his own. AnimationSets add to the parent's rather than replace them, so he walks, idles and turns exactly as the game's Santa does. The pack's other villagers take the same Wave from their shared parent, Seasons_Of_Orbis_Villager, which carries no Santa look. The role Christmas_Santa names this model.",
+  "Parent": "NPC_Santa",
+  "AnimationSets": {
+    "Wave": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Emote/Wave.blockyanim"
+        }
+      ]
+    }
+  }
+}

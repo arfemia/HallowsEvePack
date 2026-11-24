@@ -1,4 +1,4 @@
 {
-  "$Comment": "The Horseman's flying Head, the normal one and the hard ride's (_HM). His fights' scripts bind the Head through this group the moment it flies, so they can tell when players have struck it down, and clear it away when the fight resets.",
-  "IncludeRoles": [ "Hallows_Eve_Horseman_Head", "Hallows_Eve_Horseman_Head_HM" ]
+  "$Comment": "The Horseman's flying Head, the normal one and the hard ride's (_HM). His fights' scripts bind the Head through this group the moment it flies, so they can tell when players have struck it down, and clear it away when the fight resets. Each role id is written after a * the way the game's own groups write *Chicken: the star still matches that role, while the game works a group out again as each mod's roles load, before this pack's own, so a bare id would log a warning at every server start though the group comes out the same.",
+  "IncludeRoles": [ "*Hallows_Eve_Horseman_Head", "*Hallows_Eve_Horseman_Head_HM" ]
 }
